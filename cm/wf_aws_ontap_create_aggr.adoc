@@ -105,11 +105,11 @@ Optional parameters::
 None
 
 == Create aggregate for high availability pair
-You can use this workflow to create an aggregate for an HA system.
+You can use this workflow to create an aggregate for a HA system.
 
 === Step 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` value for the `workingEnvironmentId` parameter.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` value for the `workingEnvironmentId` parameter.
 
 === Step 2. Create the aggregate
 

@@ -83,7 +83,7 @@ You can use this workflow to add disks to an aggregate for HA system.
 
 === 1. Select the system to use
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` value for the `workingEnvironmentId` path parameter.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` value for the `workingEnvironmentId` path parameter.
 
 === 2. Select the aggregate
 

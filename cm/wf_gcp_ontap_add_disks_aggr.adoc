@@ -65,7 +65,7 @@ Output::
 None
 
 == Add disks to aggregate for high availability pair
-You can use this workflow to add disks to an aggregate in an HA system.
+You can use this workflow to add disks to an aggregate in a HA system.
 
 === 1. Select the system
 

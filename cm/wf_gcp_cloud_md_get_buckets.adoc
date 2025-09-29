@@ -61,7 +61,7 @@ JSON output example::
 ]
 
 == Get buckets for high availability pair
-You can use this workflow to retrieve the S3 buckets for an HA system.
+You can use this workflow to retrieve the S3 buckets for a HA system.
 
 === 1. Get the buckets
 

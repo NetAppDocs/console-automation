@@ -89,7 +89,7 @@ The JSON output provides an example of a list of Azure regions.
 
 
 == Get Azure regions for high availability pair
-You can perform this workflow to retrieve the Azure regions for an HA system.
+You can perform this workflow to retrieve the Azure regions for a HA system.
 
 .HTTP method and endpoint
 

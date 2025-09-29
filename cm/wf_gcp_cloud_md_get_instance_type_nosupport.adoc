@@ -53,7 +53,7 @@ JSON output example::
 }
 
 == Get instance types for high availability pair
-You can use this workflow to retrieve the Google Cloud instance types which do not support the acceleration and capacity tiering in an HA system.
+You can use this workflow to retrieve the Google Cloud instance types which do not support the acceleration and capacity tiering in a HA system.
 
 === 1. Get the instance types
 

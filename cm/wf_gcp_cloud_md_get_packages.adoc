@@ -131,7 +131,7 @@ JSON output example::
 ]
 
 == Get Google Cloud packages for high availability pair
-You can use this workflow to retrieve Google Cloud packages in an HA system.
+You can use this workflow to retrieve Google Cloud packages in a HA system.
 
 === 1. Get the packages
 

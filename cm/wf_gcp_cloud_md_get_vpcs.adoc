@@ -16,7 +16,7 @@ summary: You can use the permutations endpoint to retrieve the Cloud Volumes ONT
 You can perform this workflow to retrieve the Google Cloud networks and subnetworks over which a Cloud Volumes ONTAP system might be created.
 
 [NOTE]
-This workflow is applicable only for an HA system.
+This workflow is applicable only for a HA system.
 
 == Step 1. Select the project
 Perform the workflow link:wf_gcp_cloud_md_get_projects.html[Get projects] and choose `projectId` value of the required project for `projectId` query parameter.

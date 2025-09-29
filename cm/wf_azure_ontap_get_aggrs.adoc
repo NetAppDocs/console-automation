@@ -247,7 +247,7 @@ JSON output example::
 ]
 
 == Get aggregates for high availability pair
-You can use this workflow to retrieve the aggregates for an HA system.
+You can use this workflow to retrieve the aggregates for a HA system.
 
 === 1. Create the system
 

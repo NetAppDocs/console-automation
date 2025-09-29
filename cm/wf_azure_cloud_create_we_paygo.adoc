@@ -193,7 +193,7 @@ JSON output example::
 }
 
 == Create a system for a high availability pair
-You can use this workflow to create an HA system with PAYGO.
+You can use this workflow to create a HA system with PAYGO.
 
 === 1. Select the region
 

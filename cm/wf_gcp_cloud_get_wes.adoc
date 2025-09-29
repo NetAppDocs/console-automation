@@ -120,7 +120,7 @@ JSON output example::
 ]
 
 == Get a system for a high availability pair
-You can use this workflow to retrieve the Cloud Volumes ONTAP system related details for an HA system.
+You can use this workflow to retrieve the Cloud Volumes ONTAP system related details for a HA system.
 
 === 1. Get the systems
 

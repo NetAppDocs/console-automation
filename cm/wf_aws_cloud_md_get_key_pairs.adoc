@@ -80,7 +80,7 @@ The output shows the AWS user key pairs for a specific region.
 ----
 
 == Get key pairs for high availability pair
-You can use this workflow to retrieve the key pairs for an HA system.
+You can use this workflow to retrieve the key pairs for a HA system.
 
 === Step 1. Get the region
 Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] and choose the `code` value of the required region for the `region` query parameter.

@@ -113,7 +113,7 @@ The `exportpolicyInfo -> policyType` parameter can have two values `none` and `c
 None
 
 == Modify volume for high availability pair
-You can use this workflow to modify the configuration of an existing volume for an HA system.
+You can use this workflow to modify the configuration of an existing volume for a HA system.
 
 === Step 1. Select the system
 

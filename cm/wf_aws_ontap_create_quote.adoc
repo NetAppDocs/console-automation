@@ -100,11 +100,11 @@ The JSON output example includes an example of the quote details.
 ----
 
 == Create quote for high availability pair
-You can use this workflow to retrieve quote details for an HA system.
+You can use this workflow to retrieve quote details for a HA system.
 
 === Step 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` and `svmName` values of the system for the `workingEnvironmentId` and `svmName` parameters.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` and `svmName` values of the system for the `workingEnvironmentId` and `svmName` parameters.
 
 === Step 2. Select the aggregate
 

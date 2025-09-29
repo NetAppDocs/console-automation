@@ -159,7 +159,7 @@ None
 
 
 == Create a volume using NFS for high availability pair
-You can use this workflow to create volume using NFS for an HA system.
+You can use this workflow to create volume using NFS for a HA system.
 
 === Step 1. Select a system
 

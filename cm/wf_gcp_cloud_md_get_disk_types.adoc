@@ -90,7 +90,7 @@ JSON output example::
 ]
 
 == Get Google Cloud disk types for high availability pair
-You can use this workflow to retrieve Google Cloud disk types for an HA system.
+You can use this workflow to retrieve Google Cloud disk types for a HA system.
 
 === 1. Get the disk types
 

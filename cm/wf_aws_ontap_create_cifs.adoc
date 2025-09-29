@@ -176,7 +176,7 @@ The JSON input example includes the minimum list of parameters.
 None.
 
 == Create CIFS server configuration for high availability pair
-You can use this workflow to create a CIFS server configuration for an HA system.
+You can use this workflow to create a CIFS server configuration for a HA system.
 
 Choose the workflow that is specific to your goal:
 
@@ -188,7 +188,7 @@ You can configure a CIFS server in a workgroup when the Microsoft Active Directo
 
 ==== Step 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` path parameter.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` path parameter.
 
 ==== Step 2. Create the CIFS configuration
 
@@ -247,7 +247,7 @@ You can create a CIFS server on the SVM and specify the Active Directory (AD) do
 
 ==== 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` path parameter.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` path parameter.
 
 ==== 2. Determine the Active Directory configuration
 

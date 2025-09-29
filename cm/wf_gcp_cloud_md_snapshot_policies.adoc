@@ -82,7 +82,7 @@ The JSON output example includes the list of default snapshot policies available
 ----
 
 == Get Snapshot policies for high availability pair
-You can use this workflow to retrieve the Snapshot policies in an HA system.
+You can use this workflow to retrieve the Snapshot policies in a HA system.
 
 .HTTP method and endpoint
 

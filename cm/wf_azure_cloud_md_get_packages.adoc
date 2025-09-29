@@ -139,7 +139,7 @@ The JSON output example includes the packages information.
 
 == Get packages for high availability pair
 
-You can use this workflow to retrieve the packages information for an HA system.
+You can use this workflow to retrieve the packages information for a HA system.
 
 .HTTP method and endpoint
 

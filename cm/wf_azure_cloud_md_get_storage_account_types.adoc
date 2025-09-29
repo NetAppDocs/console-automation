@@ -252,7 +252,7 @@ JSON output example::
 ]
 
 == Get Azure storage account types for high availability pair
-You can perform this workflow to retrieve the Azure storage account types for an HA system.
+You can perform this workflow to retrieve the Azure storage account types for a HA system.
 
 === 1. Get the storage account types
 

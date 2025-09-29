@@ -77,11 +77,11 @@ The JSON input example includes the minimum list of parameters.
 None
 
 == Delete volume for high availability pair
-You can use this workflow to delete a volume for an HA system.
+You can use this workflow to delete a volume for a HA system.
 
 === Step 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` and `svmName` values of the system for the `workingEnvironmentId` and `svmName` path parameters.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` and `svmName` values of the system for the `workingEnvironmentId` and `svmName` path parameters.
 
 === Step 2. Select the volume
 

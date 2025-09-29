@@ -71,7 +71,7 @@ If `true` the system is deleted even if it is part of one or more SnapMirror rel
 None
 
 == Delete a system for a high availability pair
-You can use this workflow to delete an HA system.
+You can use this workflow to delete a HA system.
 
 === Step 1. Create the system 
 

@@ -62,7 +62,7 @@ Output::
 None
 
 == Delete a system for a high availability pair
-You can use this workflow to delete an HA system.
+You can use this workflow to delete a HA system.
 
 
 === 1. Select the system

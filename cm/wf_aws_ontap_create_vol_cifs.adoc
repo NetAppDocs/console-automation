@@ -137,7 +137,7 @@ If an aggregate name does not exist, you can set the `createAggregateIfNotFound`
 None
 
 == Create volume using CIFS for high availability pair
-You can use this workflow to create volume using CIFS for an HA system.
+You can use this workflow to create volume using CIFS for a HA system.
 
 === Step 1. Choose the CIFS configuration
 

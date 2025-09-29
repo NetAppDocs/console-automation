@@ -160,7 +160,7 @@ The JSON output example includes the list of Azure  storage account types.
 
 
 == Get Azure VNets for high availability pair
-You can perform this workflow to retrieve the Azure network extended information for an HA system.
+You can perform this workflow to retrieve the Azure network extended information for a HA system.
 
 .HTTP method and endpoint
 

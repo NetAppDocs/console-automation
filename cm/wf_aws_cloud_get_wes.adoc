@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: cm/wf_aws_cloud_get_wes.html
 keywords: cloud, manager, rest, api, list, working, environment, occm
-summary: "You can retrieve the Cloud Volumes ONTAP systems that are visible to the user currently signed in."
+summary: "You can retrieve the Cloud Volumes ONTAP systems that are visible to the user currently signed in." 
 ---
 
 = Get systems

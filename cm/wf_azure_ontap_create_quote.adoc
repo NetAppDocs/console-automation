@@ -93,7 +93,7 @@ JSON output example::
 
 
 == Create quote for high availability pair
-You can use this workflow to create a volume quote for an HA system.
+You can use this workflow to create a volume quote for a HA system.
 
 === 1. Create the system
 

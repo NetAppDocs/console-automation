@@ -113,7 +113,7 @@ The JSON output example includes the list of EBS volume types.
 ====
 
 == Get EBS volume types for high availability pair
-You can use this workflow to get the EBS volume types for an HA system.
+You can use this workflow to get the EBS volume types for a HA system.
 
 .HTTP method and endpoint
 

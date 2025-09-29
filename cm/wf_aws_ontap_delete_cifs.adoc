@@ -79,11 +79,11 @@ The JSON input example includes the minimum list of parameters.
 None.
 
 == Delete CIFS server configuration for high availability pair
-You can use this workflow to delete a CIFS server configuration for an HA system.
+You can use this workflow to delete a CIFS server configuration for a HA system.
 
 === Step 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` path parameter.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` path parameter.
 
 === Step 2. Delete the CIFS configurations
 

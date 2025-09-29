@@ -82,7 +82,7 @@ The JSON input example includes the minimum list of parameters.
 None
 
 == Create aggregate for high availability pair
-You can use this workflow to create an aggregate for an HA system.
+You can use this workflow to create an aggregate for a HA system.
 
 === Step 1. Create the system
 

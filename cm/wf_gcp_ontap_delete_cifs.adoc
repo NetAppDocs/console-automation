@@ -58,7 +58,7 @@ Output::
 None.
 
 == Delete CIFS for high availability pair
-You can use this workflow to delete a CIFS server configuration in an HA system.
+You can use this workflow to delete a CIFS server configuration in a HA system.
 
 === 1. Select the system
 
