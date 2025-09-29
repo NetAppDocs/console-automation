@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: cm/wf_onprem_before.html
+keywords: aws, workflows, cloud, manager, rest, api
+summary: There are several workflows you can use with the Amazon Web Services public cloud.
+---
+
+= Before you begin
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+There are several workflows you can use to manage the ONTAP on-premises clusters.
+
+[NOTE]
+Review the link:overview.html[Get started] section before using the on-premises ONTAP workflows.
+
+== Workflow categories
+
+The ONTAP on-premises workflows are organized into the following functional categories:
+
+* systems
+* Aggregates
+* Volumes
+
+See the link:workflow_processes.html[Workflow processes] for more information on these categories.
+
+== Console agent setup
+
+You can discover and manage on-premises ONTAP clusters with or without a Console agent. If you choose to use a Console agent, you need to install and deploy the Console agent in your cloud provider or on-premises environment. A direct discovery of the on-premises ONTAP clusters is also available through the NetApp Console; you don't require a Console agent for this option. Using a Console agent provides you with additional features and is required to manage volumes using the API. See link:https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^] to learn more about the available options to manage on-premises ONTAP clusters. 
+
+

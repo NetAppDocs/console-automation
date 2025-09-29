@@ -1,14 +1,72 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
-  tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
-      links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+  title: NetApp Console API documentation
+  lead: The NetApp Console enables you to build, protect, and govern your hybrid multi-cloud data from a single control plane. The Console is composed of distinct services, each of which exposes an associated REST API that enables you to automate the administration of your cloud-based and on-premises resources. Use this site to learn about the REST implementations and common REST workflows in the Console, and to access the REST API details for many of the Console services.
+  summary: The NetApp Console enables you to build, protect, and govern your hybrid multi-cloud data from a single control plane. The Console is composed of distinct services, each of which exposes an associated REST API that enables you to automate the administration of your cloud-based and on-premises resources. Use this site to learn about the REST implementations and common REST workflows in the Console, and to access the REST API details for many of the Console services.
+  keywords: automation, automating, bluexp, netapp, console
+  tiles:
+    - title: Get started
+      links:
+        - title: NetApp Console control plane
+          url: /platform/overview.html
+        - title: Common REST implementation
+          url: /platform/concepts.html
+        - title: Workflow processes and tasks
+          url: /platform/workflows_tasks.html
+        - title: Authentication and authorization
+          url: /platform/aa_concepts.html
+        - title: NetApp Console common workflows and tasks
+          url: /platform/get_identifiers.html
+    - title: Storage services 
+      links:
+        - title: ONTAP management - Cloud Volumes ONTAP  
+          url: /cm/overview.html#cloud-volumes-ontap-operations
+        - title: ONTAP management - On-premises ONTAP
+          url: /cm/overview.html#cloud-volumes-ontap-operations
+        - title: Amazon FSx for NetApp ONTAP management
+          url: /fsx/overview.html
+    - title: ONTAP management workflows
+      links:
+        - title: Cloud Volumes ONTAP typical deployment
+          url: /cm/cvo_deployment.html
+        - title: Cloud Volumes ONTAP AWS workflows
+          url: /cm/wf_aws_cloud_create_we_capacity.html
+        - title: Cloud Volumes ONTAP Azure workflows
+          url: /cm/wf_azure_cloud_create_we_capacity.html
+        - title: Cloud Volumes ONTAP Google Cloud workflows
+          url: /cm/wf_gcp_cloud_create_we_capacity.html
+        - title: On-premises ONTAP workflows
+          url: /cm/wf_onprem_before.html
+        - title: Common workflows
+          url: /cm/wf_common_before.html
+    - title: Platform services
+      links:
+       - title: Accounts (tenancy)
+         url: /tenancy/overview.html
+       - title: Audit
+         url: /audit/overview.html
+       - title: Backup and recovery
+         url: /cbs/overview.html
+       - title: Copy and sync
+         url: /copysync/overview.html
+       - title: Credentials
+         url: /credential/overview.html
+       - title: Digital wallet
+         url: /dw/overview.html
+       - title: Federation
+         url: /federation/overview.html
+       - title: IPA
+         url: /ipa/overview.html
+       - title: Identity and access management
+         url: /tenancyv4/overview.html
+    - title: More resources
+      links:
+        - title: NetApp Cloud solutions
+          url: https://www.netapp.com/cloud-services/
+        - title: NetApp Console automation catalog 
+          url: https://docs.netapp.com/us-en/netapp-automation/solutions/bac-overview.html
+        - title: ONTAP 9 documentation
+          url: https://docs.netapp.com/us-en/ontap/
+        - title: Additional resources
+          url: /support/additional_resources.html
+
+      
