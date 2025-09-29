@@ -17,10 +17,10 @@ You can delete an existing volume.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Delete volume for single node, Single Node>>
-* <<Delete volume for high availability pair, HA pair>>
+* <<Delete volume for a single node, Single Node>>
+* <<Delete volume for a high availability pair, HA pair>>
 
-== Delete volume for single node
+== Delete volume for a single node
 You can use this workflow to delete volume for a single node system.
 
 === 1. Create the system
@@ -29,7 +29,7 @@ Perform the link:wf_azure_cloud_create_we_paygo.html#create-a-system-for-a-singl
 
 === 2. Select the volume
 
-Perform the workflow link:wf_azure_ontap_get_volumes.html#get-volume-for-single-node[Get volumes] and choose the `name` and the `svmName` values of the volume to delete and use them for the `volumeName` and `svmName` path parameters.
+Perform the workflow link:wf_azure_ontap_get_volumes.html#get-volume-for-a-single-node[Get volumes] and choose the `name` and the `svmName` values of the volume to delete and use them for the `volumeName` and `svmName` path parameters.
 
 === 3. Delete the volume
 
@@ -58,7 +58,7 @@ Output::
 
 None
 
-== Delete volume for high availability pair
+== Delete volume for a high availability pair
 
 You can use this workflow to delete volume for an HA system.
 

@@ -17,10 +17,10 @@ You can perform this workflow to retrieve the pre-defined packages configuration
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get packages for single node, Single Node>>
-* <<Get packages for high availability pair, HA pair>>
+* <<Get packages for a single node, Single Node>>
+* <<Get packages for a high availability pair, HA pair>>
 
-== Get packages for single node
+== Get packages for a single node
 You can use this workflow to retrieve the packages information for a single node system.
 
 .HTTP method and endpoint
@@ -137,7 +137,7 @@ The JSON output example includes the packages information.
 ]
 ----
 
-== Get packages for high availability pair
+== Get packages for a high availability pair
 
 You can use this workflow to retrieve the packages information for an HA system.
 

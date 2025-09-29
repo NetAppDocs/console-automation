@@ -17,10 +17,10 @@ You can add disks to an existing aggregate.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Add disks to aggregate for single node, Single Node>>
-* <<Add disks to aggregate for high availability pair, HA pair>>
+* <<Add disks to aggregate for a single node, Single Node>>
+* <<Add disks to aggregate for a high availability pair, HA pair>>
 
-== Add disks to aggregate for single node
+== Add disks to aggregate for a single node
 You can use this workflow to add disks to an aggregate in a single node system.
 
 === 1. Select the system
@@ -64,7 +64,7 @@ Output::
 
 None
 
-== Add disks to aggregate for high availability pair
+== Add disks to aggregate for a high availability pair
 You can use this workflow to add disks to an aggregate in an HA system.
 
 === 1. Select the system

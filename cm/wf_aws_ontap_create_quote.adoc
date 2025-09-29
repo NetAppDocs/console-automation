@@ -17,10 +17,10 @@ You can create a quote for a new volume which returns a resource quote needed to
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create quote for single node, Single Node>>
-* <<Create quote for high availability pair, HA pair>>
+* <<Create quote for a single node, Single Node>>
+* <<Create quote for a high availability pair, HA pair>>
 
-== Create quote for single node
+== Create quote for a single node
 You can use this workflow to retrieve quote details for a single node system.
 
 === Step 1. Select the system
@@ -29,7 +29,7 @@ Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-single-nod
 
 === Step 2. Select the aggregate
 
-Perform the workflow link:wf_aws_ontap_get_aggrs.html#get-aggregates-for-single-node[Get aggregates] and choose the `name` value for the `name` parameter.
+Perform the workflow link:wf_aws_ontap_get_aggrs.html#get-aggregates-for-a-single-node[Get aggregates] and choose the `name` value for the `name` parameter.
 
 === Step 3. Select the permutations configuration
 
@@ -99,7 +99,7 @@ The JSON output example includes an example of the quote details.
 }
 ----
 
-== Create quote for high availability pair
+== Create quote for a high availability pair
 You can use this workflow to retrieve quote details for an HA system.
 
 === Step 1. Select the system

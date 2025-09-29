@@ -17,10 +17,10 @@ You can perform this workflow to retrieve and check the supported features while
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get supported features for single node, Single Node>>
-* <<Get supported features for high availability pair, HA pair>>
+* <<Get supported features for a single node, Single Node>>
+* <<Get supported features for a high availability pair, HA pair>>
 
-== Get supported features for single node
+== Get supported features for a single node
 You can use this workflow to retrieve the supported features in a single node system.
 
 === Step 1. Select the permutations
@@ -71,7 +71,7 @@ Query parameters:
 }
 ----
 
-== Get supported features for high availability pair
+== Get supported features for a high availability pair
 You can use this workflow to retrieve the supported features in an HA system.
 
 === Step 1. Select the permutations

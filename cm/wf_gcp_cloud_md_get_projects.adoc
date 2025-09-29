@@ -17,10 +17,10 @@ This workflow retrieves the list of projects that the caller has permission on.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get projects for single node, Single Node>>
-* <<Get projects for high availability pair, HA pair>>
+* <<Get projects for a single node, Single Node>>
+* <<Get projects for a high availability pair, HA pair>>
 
-== Get projects for single node
+== Get projects for a single node
 You can use this workflow to retrieve projects in a single node system.
 
 === 1. Get the list of projects
@@ -91,7 +91,7 @@ JSON output example::
     ]
 }
 
-== Get projects for high availability pair
+== Get projects for a high availability pair
 You can use this workflow to retrieve projects in an HA system.
 
 === 1. Get the list of projects

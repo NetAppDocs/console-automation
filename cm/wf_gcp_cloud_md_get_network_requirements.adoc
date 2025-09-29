@@ -17,10 +17,10 @@ This workflow retrieves the minimum number of required IPs for a Cloud Volumes O
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get network requirements for single node, Single Node>>
-* <<Get network requirements for high availability pair, HA pair>>
+* <<Get network requirements for a single node, Single Node>>
+* <<Get network requirements for a high availability pair, HA pair>>
 
-== Get network requirements for single node
+== Get network requirements for a single node
 You can use this workflow to retrieve the minimum number of IPs for a single node Cloud Volumes ONTAP system.
 
 === 1. Get the network requirements
@@ -53,7 +53,7 @@ JSON output example::
     "haVsaMinimumRequiredIps": 17
 }
 
-== Get network requirements for high availability pair
+== Get network requirements for a high availability pair
 You can use this workflow to retrieve the minimum number of IPs for an HA Cloud Volumes ONTAP system.
 
 === 1. Get the network requirements

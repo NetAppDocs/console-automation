@@ -17,10 +17,10 @@ This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP system m
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get regions for single node, Single Node>>
-* <<Get regions for high availability pair, HA pair>>
+* <<Get regions for a single node, Single Node>>
+* <<Get regions for a high availability pair, HA pair>>
 
-== Get regions for single node
+== Get regions for a single node
 You can use this workflow to retrieve the regions for a single node system.
 
 .HTTP method and endpoint
@@ -78,7 +78,7 @@ The JSON output provides an example of a list of AWS regions.
 ]
 ----
 
-== Get regions for high availability pair
+== Get regions for a high availability pair
 You can use this workflow to retrieve the regions for an HA pair.
 
 .HTTP method and endpoint

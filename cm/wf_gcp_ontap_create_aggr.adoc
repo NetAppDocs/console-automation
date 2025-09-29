@@ -17,10 +17,10 @@ You can create new aggregates within a Cloud Volumes ONTAP system using this wor
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create aggregate for single node, Single Node>>
-* <<Create aggregate for high availability pair, HA pair>>
+* <<Create aggregate for a single node, Single Node>>
+* <<Create aggregate for a high availability pair, HA pair>>
 
-== Create aggregate for single node
+== Create aggregate for a single node
 You can use this workflow to create aggregates in a single node system.
 
 === 1. Select the system
@@ -67,7 +67,7 @@ Output::
 
 None
 
-== Create aggregate for high availability pair
+== Create aggregate for a high availability pair
 You can use this workflow to create aggregates in an HA system.
 
 === 1. Select the system

@@ -22,10 +22,10 @@ If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provi
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create a volume using NFS for single node, Single Node>>
-* <<Create a volume using NFS for high availability pair, HA pair>>
+* <<Create a volume using NFS for a single node, Single Node>>
+* <<Create a volume using NFS for a high availability pair, HA pair>>
 
-== Create a volume using NFS for single node
+== Create a volume using NFS for a single node
 You can use this workflow to create a volume using NFS for a single node system.
 
 === Step 1. Select a system
@@ -34,14 +34,14 @@ Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-single-nod
 
 === Step 2. Select an aggregate
 
-Perform the workflow link:wf_aws_ontap_get_aggrs.html#get-aggregates-for-single-node[Get aggregates] and choose the `name` value of the aggregate for the `name` parameter. From the `providerVolumes` field in the response, you must also choose the value of `diskType` for the `providerVolumeType` parameter, the value of `iops` for the `iops` parameter, and the value of `throughput` for the `throughput` parameter.
+Perform the workflow link:wf_aws_ontap_get_aggrs.html#get-aggregates-for-a-single-node[Get aggregates] and choose the `name` value of the aggregate for the `name` parameter. From the `providerVolumes` field in the response, you must also choose the value of `diskType` for the `providerVolumeType` parameter, the value of `iops` for the `iops` parameter, and the value of `throughput` for the `throughput` parameter.
 
 [NOTE]
 If aggregate name does not exist and the `createAggregateIfNotFound` query parameter is set `true`, the create volume request is allowed if the named aggregate is not found.
 
 === Step 3. Select a virtual private cloud
 
-Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-single-node[Get virtual private clouds] and choose the `cidrBlock` value of the required VPC for the `ips` parameter or fill in the desired `exportPolicyInfo` value manually.
+Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-a-single-node[Get virtual private clouds] and choose the `cidrBlock` value of the required VPC for the `ips` parameter or fill in the desired `exportPolicyInfo` value manually.
 
 === Step 4. Choose the size for the disk
 
@@ -54,7 +54,7 @@ Choose values for the `exportPolicyInfo->rules->ruleAccessControl` and `exportPo
 
 === Step 6. Create a quote
 
-Perform the workflow link:wf_aws_ontap_create_quote.html#create-quote-for-single-node[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_aws_ontap_create_quote.html#create-quote-for-a-single-node[Create quote]. This is a recommended step but is not mandatory.
 
 === Step 7. Create a volume
 
@@ -158,7 +158,7 @@ If aggregate name does not exist, you can set the `createAggregateIfNotFound` qu
 None
 
 
-== Create a volume using NFS for high availability pair
+== Create a volume using NFS for a high availability pair
 You can use this workflow to create volume using NFS for an HA system.
 
 === Step 1. Select a system

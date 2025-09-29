@@ -17,10 +17,10 @@ This workflow retrieves the Google Cloud regions in which a Cloud Volumes ONTAP 
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get regions for single node, Single Node>>
-* <<Get regions for high availability pair, HA pair>>
+* <<Get regions for a single node, Single Node>>
+* <<Get regions for a high availability pair, HA pair>>
 
-== Get regions for single node
+== Get regions for a single node
 You can use this workflow to retrieve the Google Cloud regions in a single node system.
 
 === 1. Get the list of regions
@@ -151,7 +151,7 @@ JSON output example::
    }
 }
 
-== Get regions for high availability pair
+== Get regions for a high availability pair
 You can use this workflow to retrieve the Google Cloud regions in an HA system.
 
 === 1. Get the list of regions

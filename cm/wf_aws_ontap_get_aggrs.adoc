@@ -17,10 +17,10 @@ You can retrieve a list of available disk aggregates.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get aggregates for single node, Single Node>>
-* <<Get aggregates for high availability pair, HA pair>>
+* <<Get aggregates for a single node, Single Node>>
+* <<Get aggregates for a high availability pair, HA pair>>
 
-== Get aggregates for single node
+== Get aggregates for a single node
 You can use this workflow to retrieve the aggregates for a single node system.
 
 === Step 1. Select the system
@@ -249,7 +249,7 @@ An array of aggregates is returned for the system, as shown in the JSON output e
 ----
 ====
 
-== Get aggregates for high availability pair
+== Get aggregates for a high availability pair
 You can use this workflow to retrieve the aggregates for an HA system.
 
 === Step 1. Select the system

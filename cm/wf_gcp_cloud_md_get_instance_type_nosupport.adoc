@@ -17,10 +17,10 @@ This workflow retrieves the Google Cloud instance types which do not support the
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get instance types for single node, Single Node>>
-* <<Get instance types for high availability pair, HA pair>>
+* <<Get instance types for a single node, Single Node>>
+* <<Get instance types for a high availability pair, HA pair>>
 
-== Get instance types for single node
+== Get instance types for a single node
 You can use this workflow to retrieve the Google Cloud instance types which do not support the acceleration and capacity tiering in a single node system.
 
 === 1. Get the instance types
@@ -52,7 +52,7 @@ JSON output example::
     "instanceTypes": []
 }
 
-== Get instance types for high availability pair
+== Get instance types for a high availability pair
 You can use this workflow to retrieve the Google Cloud instance types which do not support the acceleration and capacity tiering in an HA system.
 
 === 1. Get the instance types

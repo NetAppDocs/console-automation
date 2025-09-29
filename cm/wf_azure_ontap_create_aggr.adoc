@@ -18,18 +18,18 @@ You can create a new aggregate within an Azure system using this workflow.
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
 * <<Create aggregate for a single node, Single Node>>
-* <<Create aggregate for high availability pair, HA pair>>
+* <<Create aggregate for a high availability pair, HA pair>>
 
-== Create aggregate for single node
+== Create aggregate for a single node
 You can use this workflow to create an aggregate for a single node system.
 
 === 1. Create the system
 
-Perform the workflow link:wf_azure_ontap_create_cifs.html#create-cifs-server-configuration-for-single-node[Create Azure single node system] and choose the `publicId` value for the `workingEnvironmentId` parameter in the JSON input.
+Perform the workflow link:wf_azure_ontap_create_cifs.html#create-cifs-server-configuration-for-a-single-node[Create Azure single node system] and choose the `publicId` value for the `workingEnvironmentId` parameter in the JSON input.
 
 === 2. Select the Azure Storage Account Types
 
-Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-storage-account-types-for-single-node[Get Azure Storage Account Types] workflow and choose the desired storage type:
+Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-storage-account-types-for-a-single-node[Get Azure Storage Account Types] workflow and choose the desired storage type:
 
 *	Choose the `diskType` of the desired storage type item for the `providerVolumeType` parameter in the JSON input.
 *	Choose the `size` value of the desired disk from the `sizes` -> `size` field for the `size` field inside `diskSize` parameter in the JSON input.
@@ -81,7 +81,7 @@ The JSON input example includes the minimum list of parameters.
 
 None
 
-== Create aggregate for high availability pair
+== Create aggregate for a high availability pair
 You can use this workflow to create an aggregate for an HA system.
 
 === Step 1. Create the system

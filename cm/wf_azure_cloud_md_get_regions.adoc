@@ -19,10 +19,10 @@ NOTE: Ensure that you've the Azure subscription ID. You can easily obtain the ID
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get Azure regions for single node, Single Node>>
-* <<Get Azure regions for high availability pair, HA pair>>
+* <<Get Azure regions for a single node, Single Node>>
+* <<Get Azure regions for a high availability pair, HA pair>>
 
-== Get Azure regions for single node
+== Get Azure regions for a single node
 You can perform this workflow to retrieve the Azure regions for a single node system.
 
 .HTTP method and endpoint
@@ -88,7 +88,7 @@ The JSON output provides an example of a list of Azure regions.
 ----
 
 
-== Get Azure regions for high availability pair
+== Get Azure regions for a high availability pair
 You can perform this workflow to retrieve the Azure regions for an HA system.
 
 .HTTP method and endpoint

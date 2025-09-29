@@ -17,10 +17,10 @@ You can modify the configuration of an existing volume.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Modify volume for single node, Single Node>>
-* <<Modify volume for high availability pair, HA pair>>
+* <<Modify volume for a single node, Single Node>>
+* <<Modify volume for a high availability pair, HA pair>>
 
-== Modify volume for single node
+== Modify volume for a single node
 You can use this workflow to modify the volume configuration for a single node system.
 
 === Step 1. Create the system
@@ -29,7 +29,7 @@ Perform the workflow link:wf_azure_cloud_create_we_paygo.html#create-a-system-fo
 
 === Step 2. Select the volume
 
-Perform the workflow link:wf_azure_ontap_get_volumes.html#get-volume-for-single-node[Get volumes] and choose the `name` and the `svmName` values of the volume to modify and use them for the `volumeName` and `svmName` path parameters.
+Perform the workflow link:wf_azure_ontap_get_volumes.html#get-volume-for-a-single-node[Get volumes] and choose the `name` and the `svmName` values of the volume to modify and use them for the `volumeName` and `svmName` path parameters.
 
 
 === Step 3. Modify the volume
@@ -114,7 +114,7 @@ The `exportpolicyInfo -> policyType` parameter can have two values `none` and `c
 
 None
 
-== Modify volume for high availability pair
+== Modify volume for a high availability pair
 You can use this workflow to modify the volume configuration for an HA system.
 
 === Step 1. Create the system

@@ -17,10 +17,10 @@ You can use the permutations endpoint to retrieve the Cloud Volumes ONTAP config
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get permutations for single node, Single Node>>
-* <<Get permutations for high availability pair, HA pair>>
+* <<Get permutations for a single node, Single Node>>
+* <<Get permutations for a high availability pair, HA pair>>
 
-== Get permutations for single node
+== Get permutations for a single node
 You can use this workflow to retrieve the Cloud Volumes ONTAP configurations information for a single node system.
 
 .HTTP method and endpoint
@@ -135,7 +135,7 @@ The JSON output example includes the list of Cloud Volumes ONTAP configurations.
 ]
 ----
 
-== Get permutations for high availability pair
+== Get permutations for a high availability pair
 You can use this workflow to retrieve the  Cloud Volumes ONTAP configurations information for an HA system.
 
 .HTTP method and endpoint

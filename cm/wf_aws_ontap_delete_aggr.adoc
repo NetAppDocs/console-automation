@@ -15,10 +15,10 @@ summary: 'You can delete an existing disk aggregate.'
 [.lead]
 You can delete an existing disk aggregate. Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Delete aggregate for single node, Single Node>>
-* <<Delete aggregate for high availability pair, HA pair>>
+* <<Delete aggregate for a single node, Single Node>>
+* <<Delete aggregate for a high availability pair, HA pair>>
 
-== Delete aggregate for single node
+== Delete aggregate for a single node
 You can use this workflow to delete an aggregate for a single node system.
 
 === Step 1. Select the system
@@ -27,7 +27,7 @@ Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-single-nod
 
 === Step 2. Select the aggregate to delete
 
-Perform the workflow link:wf_aws_ontap_get_aggrs.html#get-aggregates-for-single-node[Get aggregates] and choose the `name` value of the required for the `aggregateName` path parameter.
+Perform the workflow link:wf_aws_ontap_get_aggrs.html#get-aggregates-for-a-single-node[Get aggregates] and choose the `name` value of the required for the `aggregateName` path parameter.
 
 === Step 3. Delete the aggregate
 
@@ -73,7 +73,7 @@ The JSON input example includes the minimum list of parameters.
 
 None
 
-== Delete aggregate for high availability pair
+== Delete aggregate for a high availability pair
 You can use this workflow to delete an aggregate for an HA system.
 
 === Step 1. Select the system

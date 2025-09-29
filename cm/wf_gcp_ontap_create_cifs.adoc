@@ -17,10 +17,10 @@ If you want to create CIFS volumes on your Cloud Volumes ONTAP system, you first
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create CIFS for single node, Single Node>>
-* <<Create CIFS for high availability pair, HA pair>>
+* <<Create CIFS for a single node, Single Node>>
+* <<Create CIFS for a high availability pair, HA pair>>
 
-== Create CIFS for single node
+== Create CIFS for a single node
 You can use this workflow to create CIFS volumes in a single node system.
 
 Choose the workflow that is specific to your goal:
@@ -136,7 +136,7 @@ Output::
 
 None.
 
-== Create CIFS for high availability pair
+== Create CIFS for a high availability pair
 You can use this workflow to create CIFS volumes in an HA system.
 
 Choose the workflow that is specific to your goal:

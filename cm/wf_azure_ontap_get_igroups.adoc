@@ -17,10 +17,10 @@ You can use this workflow to retrieve all the initiator groups (iGroups). iGroup
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get iGroups for single node, Single Node>>
-* <<Get iGroups for high availability pair, HA pair>>
+* <<Get iGroups for a single node, Single Node>>
+* <<Get iGroups for a high availability pair, HA pair>>
 
-== Get iGroups for single node
+== Get iGroups for a single node
 You can use this workflow to retrieve iGroups for a single node system.
 
 === 1. Select the system
@@ -73,7 +73,7 @@ JSON output example::
     }
 ]
 
-== Get iGroups for high availability pair
+== Get iGroups for a high availability pair
 You can use this workflow to retrieve iGroups for an HA system.
 
 === 1. Select the system

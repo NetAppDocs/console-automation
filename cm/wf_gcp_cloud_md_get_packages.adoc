@@ -17,10 +17,10 @@ You can perform this workflow to retrieve the pre-defined packages configuration
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get Google Cloud packages for single node, Single Node>>
-* <<Get Google Cloud packages for high availability pair, HA pair>>
+* <<Get Google Cloud packages for a single node, Single Node>>
+* <<Get Google Cloud packages for a high availability pair, HA pair>>
 
-== Get Google Cloud packages for single node
+== Get Google Cloud packages for a single node
 You can use this workflow to retrieve Google Cloud packages in a single node system.
 
 === 1. Get the packages
@@ -130,7 +130,7 @@ JSON output example::
     }
 ]
 
-== Get Google Cloud packages for high availability pair
+== Get Google Cloud packages for a high availability pair
 You can use this workflow to retrieve Google Cloud packages in an HA system.
 
 === 1. Get the packages

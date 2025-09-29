@@ -33,7 +33,7 @@ You can use this workflow to create single node system with PAYGO.
 
 === 1. Select the region
 
-Perform the workflow link:wf_azure_cloud_md_get_regions.html#get-azure-regions-for-single-node[Get regions] and choose the `name` value of the required region for the `region` parameter in step 11.
+Perform the workflow link:wf_azure_cloud_md_get_regions.html#get-azure-regions-for-a-single-node[Get regions] and choose the `name` value of the required region for the `region` parameter in step 11.
 
 === 2. Select the workspace
 
@@ -41,7 +41,7 @@ Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and c
 
 === 3. Select the VNets
 
-Perform the workflow link:wf_azure_cloud_md_get_vnets.html#get-azure-vnets-for-single-node[Get VNets] and do the following:
+Perform the workflow link:wf_azure_cloud_md_get_vnets.html#get-azure-vnets-for-a-single-node[Get VNets] and do the following:
 
 * Choose the `id` value of the desired vnet from the `virtualNetworks` for the `vnetId` parameter in step 11.
 *	Choose the `cidr` value of the desired cidr from the `virtualNetworks` for the `cidr` parameter in step 11.
@@ -55,7 +55,7 @@ Perform the workflow link:wf_azure_cloud_md_get_availability_zones.html[Get Azur
 
 === 5. Get the Azure packages configuration
 
-Perform the link:wf_azure_cloud_md_get_packages.html#get-packages-for-single-node[Get Azure Packages] workflow and choose the `name` of the desired package item for the `packageName` parameter.
+Perform the link:wf_azure_cloud_md_get_packages.html#get-packages-for-a-single-node[Get Azure Packages] workflow and choose the `name` of the desired package item for the `packageName` parameter.
 
 === 6. Attach a marketplace subscription
 
@@ -75,7 +75,7 @@ Perform the link:wf_azure_cloud_md_create_account.html[Create Azure cloud provid
 
 === 9. Select the Azure permutations
 
-Perform the link:wf_azure_cloud_md_get_permutations.html#get-permutations-for-single-node[Get Azure Permutations] workflow and pick the desired permutation:
+Perform the link:wf_azure_cloud_md_get_permutations.html#get-permutations-for-a-single-node[Get Azure Permutations] workflow and pick the desired permutation:
 
 *	Choose the `ontapVersion` of the desired permutation for the `ontapVersion` field inside the `vsaMetadata` parameter  in step 11.
 *	Choose the `type` of the desired license item from the  `license` parameter for the `licenseType` field inside the `vsaMetadata` parameter in step 11.
@@ -83,7 +83,7 @@ Perform the link:wf_azure_cloud_md_get_permutations.html#get-permutations-for-si
 
 === 10. Select the Azure storage account types
 
-Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-storage-account-types-for-single-node[Get Azure Storage Account Types] workflow and pick the desired storage type.
+Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-storage-account-types-for-a-single-node[Get Azure Storage Account Types] workflow and pick the desired storage type.
 
 *	Choose the `diskType` of the desired storage type item for the `storageType` parameter in step 11.
 *	Choose the `size` of the desired disk size from the `sizes` -> `size` field for the `size` field inside the `diskSize` parameter in step 11.

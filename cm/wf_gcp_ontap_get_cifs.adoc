@@ -17,10 +17,10 @@ You can use this workflow to retrieve the Common Internet File System (CIFS) ser
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get CIFS for single node, Single Node>>
-* <<Get CIFS for high availability pair, HA pair>>
+* <<Get CIFS for a single node, Single Node>>
+* <<Get CIFS for a high availability pair, HA pair>>
 
-== Get CIFS for single node
+== Get CIFS for a single node
 You can use this workflow to retrieve CIFS server configuration in a single node system.
 
 === 1. Select the system
@@ -65,7 +65,7 @@ JSON output example::
     }
 ]
 
-== Get CIFS for high availability pair
+== Get CIFS for a high availability pair
 You can use this workflow to retrieve CIFS server configuration in an HA system.
 
 === 1. Select the system

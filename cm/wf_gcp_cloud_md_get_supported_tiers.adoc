@@ -17,10 +17,10 @@ You can retrieve the supported capacity tiers for Google Cloud disk types.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get capacity tiers for single node, Single Node>>
-* <<Get capacity tiers for high availability pair, HA pair>>
+* <<Get capacity tiers for a single node, Single Node>>
+* <<Get capacity tiers for a high availability pair, HA pair>>
 
-== Get capacity tiers for single node
+== Get capacity tiers for a single node
 You can use this workflow to retrieve the capacity tiers in a single node system.
 
 === Step 1. Select the permutations
@@ -97,7 +97,7 @@ The output shows a list of supported capacity tiers for the Google Cloud disk ty
 }
 ----
 
-== Get capacity tiers for high availability pair
+== Get capacity tiers for a high availability pair
 You can use this workflow to retrieve the capacity tiers in an HA system.
 
 === Step 1. Select the permutations

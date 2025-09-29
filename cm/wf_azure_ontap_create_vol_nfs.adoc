@@ -17,10 +17,10 @@ You can use this workflow to create a volume accessed through the NFS protocol.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create a volume using NFS for single node, Single Node>>
-* <<Create a volume using NFS for high availability pair, HA pair>>
+* <<Create a volume using NFS for a single node, Single Node>>
+* <<Create a volume using NFS for a high availability pair, HA pair>>
 
-== Create a volume using NFS for single node
+== Create a volume using NFS for a single node
 You can use this workflow to create a volume using NFS protocol for a single node system.
 
 === 1. Select a system
@@ -100,7 +100,7 @@ Output::
 
 None
 
-== Create a volume using NFS for high availability pair
+== Create a volume using NFS for a high availability pair
 
 You can use this workflow to create a volume using NFS protocol for an HA system.
 

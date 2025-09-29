@@ -17,10 +17,10 @@ You can perform this workflow to retrieve the default snapshot policies availabl
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get Snapshot policies for single node, Single Node>>
-* <<Get Snapshot policies for high availability pair, HA pair>>
+* <<Get Snapshot policies for a single node, Single Node>>
+* <<Get Snapshot policies for a high availability pair, HA pair>>
 
-== Get Snapshot policies for single node
+== Get Snapshot policies for a single node
 You can use this workflow to retrieve the Snapshot policies in a single node system.
 
 .HTTP method and endpoint
@@ -81,7 +81,7 @@ The JSON output example includes the list of default snapshot policies available
 ]
 ----
 
-== Get Snapshot policies for high availability pair
+== Get Snapshot policies for a high availability pair
 You can use this workflow to retrieve the Snapshot policies in an HA system.
 
 .HTTP method and endpoint

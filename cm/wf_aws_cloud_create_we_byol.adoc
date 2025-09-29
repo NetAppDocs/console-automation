@@ -35,7 +35,7 @@ You can use this workflow to create a single node Cloud Volumes ONTAP system.
 
 === Step 1. Select the region
 
-Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-single-node[Get regions] and choose the `code` value for the `region` parameter in step 7.
+Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-a-single-node[Get regions] and choose the `code` value for the `region` parameter in step 7.
 
 === Step 2. Select the workspace
 
@@ -43,17 +43,17 @@ Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and c
 
 === Step 3. Select the permutations configuration
 
-Perform the workflow link:wf_aws_cloud_md_get_permutations.html#get-permutations-for-single-node[Get permutations] and choose the `ontapVersion` and `license: type` and `instanceType` values for the `vsaMetadata` parameter in step 7.
+Perform the workflow link:wf_aws_cloud_md_get_permutations.html#get-permutations-for-a-single-node[Get permutations] and choose the `ontapVersion` and `license: type` and `instanceType` values for the `vsaMetadata` parameter in step 7.
 
 You will also need to include the `platformSerialNumber` value in `vsaMetadata` parameter in the REST API call.
 
 === Step 4. Select the VPC
 
-Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-single-node[Get VPCs] and choose the `vpcId` value for the `vpcId` parameter in step 7.
+Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-a-single-node[Get VPCs] and choose the `vpcId` value for the `vpcId` parameter in step 7.
 
 === Step 5. Select the EBS volume configuration
 
-Perform the workflow link:wf_aws_cloud_md_get_ebs_vol_types.html#get-ebs-volume-types-for-single-node[Get EBS volume types] and choose the `size` and `supportedVolumeTypes` values for the `ebsVolumeSize` and `ebsVolumeType` parameters in step 7.
+Perform the workflow link:wf_aws_cloud_md_get_ebs_vol_types.html#get-ebs-volume-types-for-a-single-node[Get EBS volume types] and choose the `size` and `supportedVolumeTypes` values for the `ebsVolumeSize` and `ebsVolumeType` parameters in step 7.
 
 NOTE: You need to choose one of the allowed values for the required `ebsVolumeType` parameter. We have used `gp2` value for this parameter in step 7.
 

@@ -17,14 +17,14 @@ You can use the key pairs endpoint to retrieve the AWS key pairs for specific re
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get key pairs for single node, Single Node>>
-* <<Get key pairs for high availability pair, HA pair>>
+* <<Get key pairs for a single node, Single Node>>
+* <<Get key pairs for a high availability pair, HA pair>>
 
-== Get key pairs for single node
+== Get key pairs for a single node
 You can use this workflow to retrieve the key pairs for a single node system.
 
 === Step 1. Get the region
-Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-single-node[Get regions] and choose the `code` value of the required region for the `region` query parameter.
+Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-a-single-node[Get regions] and choose the `code` value of the required region for the `region` query parameter.
 
 === Step 2. Get the key pairs
 You can issue the REST API call to retrieve the key pairs.
@@ -79,7 +79,7 @@ The output shows the AWS user key pairs for a specific region.
 ]
 ----
 
-== Get key pairs for high availability pair
+== Get key pairs for a high availability pair
 You can use this workflow to retrieve the key pairs for an HA system.
 
 === Step 1. Get the region

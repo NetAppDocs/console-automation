@@ -17,10 +17,10 @@ You can perform this workflow to retrieve the S3 buckets. The S3 buckets are the
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get buckets for single node, Single Node>>
-* <<Get buckets for high availability pair, HA pair>>
+* <<Get buckets for a single node, Single Node>>
+* <<Get buckets for a high availability pair, HA pair>>
 
-== Get buckets for single node
+== Get buckets for a single node
 You can use this workflow to retrieve the S3 buckets for a single node system.
 
 === 1. Get the buckets
@@ -60,7 +60,7 @@ JSON output example::
     }
 ]
 
-== Get buckets for high availability pair
+== Get buckets for a high availability pair
 You can use this workflow to retrieve the S3 buckets for an HA system.
 
 === 1. Get the buckets

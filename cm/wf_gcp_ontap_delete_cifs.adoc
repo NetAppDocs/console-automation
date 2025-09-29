@@ -17,10 +17,10 @@ You can use this workflow to delete a CIFS server configuration for an existing 
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Delete CIFS for single node, Single Node>>
-* <<Delete CIFS for high availability pair, HA pair>>
+* <<Delete CIFS for a single node, Single Node>>
+* <<Delete CIFS for a high availability pair, HA pair>>
 
-== Delete CIFS for single node
+== Delete CIFS for a single node
 You can use this workflow to delete CIFS server configuration in a single node system.
 
 === 1. Select the system
@@ -57,7 +57,7 @@ Output::
 
 None.
 
-== Delete CIFS for high availability pair
+== Delete CIFS for a high availability pair
 You can use this workflow to delete a CIFS server configuration in an HA system.
 
 === 1. Select the system

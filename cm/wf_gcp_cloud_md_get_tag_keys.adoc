@@ -17,17 +17,17 @@ You can perform this workflow to retrieve all the tag keys in the specified proj
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get tag keys for single node, Single Node>>
-* <<Get tag keys for high availability pair, HA pair>>
+* <<Get tag keys for a single node, Single Node>>
+* <<Get tag keys for a high availability pair, HA pair>>
 
-== Get tag keys for single node
+== Get tag keys for a single node
 You can use this workflow to retrieve the tag keys in a single node system.
 
 === Step 1. Select the project
-Perform the workflow link:wf_gcp_cloud_md_get_projects.html#get-projects-for-single-node[Get projects] and choose `projectId` value of the required project for `projectId` query parameter.
+Perform the workflow link:wf_gcp_cloud_md_get_projects.html#get-projects-for-a-single-node[Get projects] and choose `projectId` value of the required project for `projectId` query parameter.
 
 === Step 2. Select the region
-Perform the link:wf_gcp_cloud_md_get_regions.html#get-regions-for-single-node[Get regions] workflow and choose the `zone: name` value of the required region for the `zone` query parameter.
+Perform the link:wf_gcp_cloud_md_get_regions.html#get-regions-for-a-single-node[Get regions] workflow and choose the `zone: name` value of the required region for the `zone` query parameter.
 
 === Step 3. Get the tag keys
 
@@ -122,7 +122,7 @@ The JSON output example includes the list of labels in the specified project and
 ]
 ----
 
-== Get tag keys for high availability pair
+== Get tag keys for a high availability pair
 You can use this workflow to retrieve the tag keys in an HA system.
 
 === Step 1. Select the project
