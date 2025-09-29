@@ -118,7 +118,7 @@ Output::
 None
 
 == Create volume using CIFS for high availability pair
-You can use this workflow to create a volume using CIFS protocol for a HA system.
+You can use this workflow to create a volume using CIFS protocol for an HA system.
 
 === 1. Choose the CIFS configuration
 

@@ -95,7 +95,7 @@ The JSON output example includes the list of Cloud Volumes ONTAP packages.
 ----
 
 == Get packages for high availability pair
-You can use this workflow to retrieve the packages information for a HA system.
+You can use this workflow to retrieve the packages information for an HA system.
 
 .HTTP method and endpoint
 

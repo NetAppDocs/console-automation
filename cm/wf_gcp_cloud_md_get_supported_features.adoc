@@ -72,7 +72,7 @@ Query parameters:
 ----
 
 == Get supported features for high availability pair
-You can use this workflow to retrieve the supported features in a HA system.
+You can use this workflow to retrieve the supported features in an HA system.
 
 === Step 1. Select the permutations
 

@@ -74,7 +74,7 @@ curl --request POST \
 None
 
 == Add capacity for high availability pair
-You can use this workflow to add capacity in a HA system.
+You can use this workflow to add capacity in an HA system.
 
 === Step 1. Select the system
 Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the publicId value for the `workingEnvironmentId` path parameter.

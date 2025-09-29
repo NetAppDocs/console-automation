@@ -59,7 +59,7 @@ Output::
 None
 
 == Delete volume for high availability pair
-You can use this workflow to delete a volume for a HA system.
+You can use this workflow to delete a volume for an HA system.
 
 === 1. Select the system
 

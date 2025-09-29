@@ -220,7 +220,7 @@ The JSON output example includes details of a single node Azure system.
 
 
 == Get a system for a high availability pair
-You can use this workflow to retrieve the systems' details of a HA system.
+You can use this workflow to retrieve the systems' details of an HA system.
 
 === Step 1. Create an Azure HA system
 Perform the link:wf_azure_cloud_create_we_paygo.html#create-a-system-for-a-high-availability-pair[Create Azure dual node system] workflow and select the `publicId` from the output for the `workingEnvironmentId` path parameter.

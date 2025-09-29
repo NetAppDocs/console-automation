@@ -100,7 +100,7 @@ The JSON output example includes an example of the quote details.
 ----
 
 == Create quote for high availability pair
-You can use this workflow to retrieve quote details for a HA system.
+You can use this workflow to retrieve quote details for an HA system.
 
 === Step 1. Select the system
 

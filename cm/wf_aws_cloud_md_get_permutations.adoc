@@ -100,7 +100,7 @@ The JSON output example includes the list of Cloud Volumes ONTAP configurations.
 ====
 
 == Get permutations for high availability pair
-You can use this workflow to retrieve the configuration information for a HA system.
+You can use this workflow to retrieve the configuration information for an HA system.
 
 .HTTP method and endpoint
 

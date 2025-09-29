@@ -92,7 +92,7 @@ JSON output example::
 }
 
 == Get projects for high availability pair
-You can use this workflow to retrieve projects in a HA system.
+You can use this workflow to retrieve projects in an HA system.
 
 === 1. Get the list of projects
 

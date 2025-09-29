@@ -105,7 +105,7 @@ Optional parameters::
 None
 
 == Create aggregate for high availability pair
-You can use this workflow to create an aggregate for a HA system.
+You can use this workflow to create an aggregate for an HA system.
 
 === Step 1. Select the system
 

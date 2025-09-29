@@ -204,7 +204,7 @@ Output::
 None
 
 == Create volume using iSCSI for high availability
-You can use this workflow to create a volume using iSCSI protocol for a HA system.
+You can use this workflow to create a volume using iSCSI protocol for an HA system.
 
 There are two workflows available depending on whether a new or existing iGroup is used. You need to select the correct workflow:
 

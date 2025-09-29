@@ -56,7 +56,7 @@ Output::
 None
 
 == Delete aggregate for high availability pair
-You can use this workflow to delete an aggregate for a HA system.
+You can use this workflow to delete an aggregate for an HA system.
 
 === 1. Select the system
 

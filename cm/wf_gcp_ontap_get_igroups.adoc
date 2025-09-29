@@ -74,7 +74,7 @@ JSON output example::
 ]
 
 == Get iGroups for high availability pair
-You can use this workflow to retrieve the iGroups in a HA system.
+You can use this workflow to retrieve the iGroups in an HA system.
 
 === 1. Create the system
 

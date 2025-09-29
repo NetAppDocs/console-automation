@@ -140,7 +140,7 @@ JSON output example::
 
 == Get volume for high availability pair
 
-You can use this workflow to retrieve volume for a HA system.
+You can use this workflow to retrieve volume for an HA system.
 
 === 1. Create the system
 

@@ -68,7 +68,7 @@ Output::
 None
 
 == Create aggregate for high availability pair
-You can use this workflow to create aggregates in a HA system.
+You can use this workflow to create aggregates in an HA system.
 
 === 1. Select the system
 

@@ -176,7 +176,7 @@ The JSON input example includes the minimum list of parameters.
 None.
 
 == Create CIFS server configuration for high availability pair
-You can use this workflow to create a CIFS server configuration for a HA system.
+You can use this workflow to create a CIFS server configuration for an HA system.
 
 Choose the workflow that is specific to your goal:
 

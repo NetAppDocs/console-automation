@@ -166,7 +166,7 @@ The JSON output example includes the list of virtual private clouds.
 ====
 
 == Get VPCs for high availability pair
-You can use this workflow to retrieve the VPCs for a HA system.
+You can use this workflow to retrieve the VPCs for an HA system.
 
 === Step 1. Select the region to use
 

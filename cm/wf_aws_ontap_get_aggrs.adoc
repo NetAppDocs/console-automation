@@ -250,7 +250,7 @@ An array of aggregates is returned for the system, as shown in the JSON output e
 ====
 
 == Get aggregates for high availability pair
-You can use this workflow to retrieve the aggregates for a HA system.
+You can use this workflow to retrieve the aggregates for an HA system.
 
 === Step 1. Select the system
 

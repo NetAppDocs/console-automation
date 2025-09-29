@@ -79,7 +79,7 @@ The JSON input example includes the minimum list of parameters.
 None.
 
 == Delete CIFS server configuration for high availability pair
-You can use this workflow to delete a CIFS server configuration for a HA system.
+You can use this workflow to delete a CIFS server configuration for an HA system.
 
 === Step 1. Select the system
 

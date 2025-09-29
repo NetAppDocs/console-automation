@@ -152,7 +152,7 @@ JSON output example::
 }
 
 == Get regions for high availability pair
-You can use this workflow to retrieve the Google Cloud regions in a HA system.
+You can use this workflow to retrieve the Google Cloud regions in an HA system.
 
 === 1. Get the list of regions
 
