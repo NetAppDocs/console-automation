@@ -80,6 +80,8 @@ Perform the link:wf_azure_cloud_md_get_permutations.html#get-permutations-for-si
 *	Choose the `instanceType` of the desired permutation for the `instanceType` field inside the `vsaMetadata` parameter in step 10.
 
 You will also need to include the `serialNumber` value in the REST API call.
+
+
 === 9. Select the Azure storage account types
 
 Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-storage-account-types-for-single-node[Get Azure Storage Account Types] workflow and pick the desired storage type.
