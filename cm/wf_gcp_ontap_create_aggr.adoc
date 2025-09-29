@@ -5,7 +5,7 @@ keywords: cloud, manager, rest, api, aggregate, publicid, working, environment, 
 summary: 'You can create a new aggregate within a system.'
 ---
 
-= Create aggregate
+= Create an aggregate
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,10 +17,10 @@ You can create new aggregates within a Cloud Volumes ONTAP system using this wor
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create aggregate for a single node, Single Node>>
-* <<Create aggregate for a high availability pair, HA pair>>
+* <<Create an aggregate for a single node, Single Node>>
+* <<Create an aggregate for a high availability pair, HA pair>>
 
-== Create aggregate for a single node
+== Create an aggregate for a single node
 You can use this workflow to create aggregates in a single node system.
 
 === 1. Select the system
@@ -67,7 +67,7 @@ Output::
 
 None
 
-== Create aggregate for a high availability pair
+== Create an aggregate for a high availability pair
 You can use this workflow to create aggregates in an HA system.
 
 === 1. Select the system

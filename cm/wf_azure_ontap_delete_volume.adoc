@@ -5,7 +5,7 @@ keywords: delete, volume, cloud, manager, rest, api, existing, volume, aws, work
 summary: "You can delete an existing volume."
 ---
 
-= Delete volume
+= Delete a volume
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,10 +17,10 @@ You can delete an existing volume.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Delete volume for a single node, Single Node>>
-* <<Delete volume for a high availability pair, HA pair>>
+* <<Delete a volume for a single node, Single Node>>
+* <<Delete a volume for a high availability pair, HA pair>>
 
-== Delete volume for a single node
+== Delete a volume for a single node
 You can use this workflow to delete volume for a single node system.
 
 === 1. Create the system
@@ -58,7 +58,7 @@ Output::
 
 None
 
-== Delete volume for a high availability pair
+== Delete a volume for a high availability pair
 
 You can use this workflow to delete volume for an HA system.
 

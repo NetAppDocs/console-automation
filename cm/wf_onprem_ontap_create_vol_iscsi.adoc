@@ -5,7 +5,7 @@ keywords: cloud, manager, rest, api
 summary: 'You can use this workflow to create a volume accessed through iSCSI. There are two workflows available depending on whether a new or existing iGroup is used'
 ---
 
-= Create volume using iSCSI
+= Create a volume using iSCSI
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,10 +17,10 @@ You can use this workflow to create a volume accessed through the iSCSI protocol
 
 There are two workflows available depending on whether a new or existing iGroup is used. You need to select the correct workflow:
 
-* <<Create volume using iSCSI with a new iGroup>>
-* <<Create volume using iSCSI with an existing iGroup>>
+* <<Create a volume using iSCSI with a new iGroup>>
+* <<Create a volume using iSCSI with an existing iGroup>>
 
-== Create volume using iSCSI with a new iGroup
+== Create a volume using iSCSI with a new iGroup
 
 [NOTE]
 If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provided on the REST API call, the response will fail with a suggested name for the aggregate and the number of disks needed to fulfill the request.
@@ -128,7 +128,7 @@ If aggregate name does not exist, you can set the `createAggregateIfNotFound` qu
 
 None
 
-== Create volume using iSCSI with an existing iGroup
+== Create a volume using iSCSI with an existing iGroup
 
 [NOTE]
 If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provided on the REST API call, the response will fail with a suggested name for the aggregate and the number of disks needed to fulfill the request.

@@ -5,7 +5,7 @@ keywords: cloud, manager, rest, api, aggregate, volume quote, azure
 summary: 'You can create a quote for a new volume which returns a resource quote needed to satisfy the request.'
 ---
 
-= Create quote
+= Create a quote
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,11 +18,11 @@ You can create a quote for a new volume which returns a resource quote needed to
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create quote for a single node, Single Node>>
-* <<Create quote for a high availability pair, HA pair>>
+* <<Create a quote for a single node, Single Node>>
+* <<Create a quote for a high availability pair, HA pair>>
 
 
-== Create quote for a single node
+== Create a quote for a single node
 You can perform this workflow to create a volume quote for a single node system.
 
 === 1. Select the system
@@ -92,7 +92,7 @@ JSON output example::
 }
 
 
-== Create quote for a high availability pair
+== Create a quote for a high availability pair
 You can use this workflow to create a volume quote for an HA system.
 
 === 1. Create the system

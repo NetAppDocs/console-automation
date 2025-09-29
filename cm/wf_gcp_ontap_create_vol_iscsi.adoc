@@ -17,19 +17,19 @@ You can use this workflow to create a volume accessed through iSCSI.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create volume using iSCSI for a single node, Single Node>>
-* <<Create volume using iSCSI for a high availability pair, HA pair>>
+* <<Create a volume using iSCSI for a single node, Single Node>>
+* <<Create a volume using iSCSI for a high availability pair, HA pair>>
 
-== Create volume using iSCSI for a single node
+== Create a volume using iSCSI for a single node
 You can use this workflow to create a volume using the iSCSI protocol for a single node system.
 
 
 There are two workflows available depending on whether a new or existing iGroup is used. You need to select the correct workflow:
 
-* <<Create volume using iSCSI with a new iGroup>>
-* <<Create volume using iSCSI with an existing iGroup>>
+* <<Create a volume using iSCSI with a new iGroup>>
+* <<Create a volume using iSCSI with an existing iGroup>>
 
-=== Create volume using iSCSI with a new iGroup
+=== Create a volume using iSCSI with a new iGroup
 
 [NOTE]
 If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provided on the REST API call, the response will fail with a suggested name for the aggregate and the number of disks needed to fulfill the request.
@@ -61,7 +61,7 @@ You must choose the following values for the REST API call:
 
 ==== 5. Create the quote
 
-Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-a-single-node[Create quote].This is a recommended step but is not mandatory.
+Perform the workflow link:wf_gcp_ontap_create_quote.html#create-a-quote-for-a-single-node[Create a quote].This is a recommended step but is not mandatory.
 
 ==== 6. Create the volume
 
@@ -126,7 +126,7 @@ Output::
 
 None
 
-=== Create volume using iSCSI with an existing iGroup
+=== Create a volume using iSCSI with an existing iGroup
 
 [NOTE]
 If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provided on the REST API call, the response will fail with a suggested name for the aggregate and the number of disks needed to fulfill the request.
@@ -149,7 +149,7 @@ Perform the workflow link:wf_gcp_ontap_get_igroups.html#get-igroups-for-a-single
 
 ==== 5. Create the quote
 
-Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-a-single-node[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_gcp_ontap_create_quote.html#create-a-quote-for-a-single-node[Create a quote]. This is a recommended step but is not mandatory.
 
 ==== 6. Create the volume
 
@@ -201,16 +201,16 @@ Output::
 
 None
 
-== Create volume using iSCSI for a high availability pair
+== Create a volume using iSCSI for a high availability pair
 You can use this workflow to create a volume using the iSCSI protocol for an HA system.
 
 
 There are two workflows available depending on whether a new or existing iGroup is used. You need to select the correct workflow:
 
-* <<Create volume using iSCSI with a new iGroup>>
-* <<Create volume using iSCSI with an existing iGroup>>
+* <<Create a volume using iSCSI with a new iGroup>>
+* <<Create a volume using iSCSI with an existing iGroup>>
 
-=== Create volume using iSCSI with a new iGroup
+=== Create a volume using iSCSI with a new iGroup
 
 [NOTE]
 If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provided on the REST API call, the response will fail with a suggested name for the aggregate and the number of disks needed to fulfill the request.
@@ -242,7 +242,7 @@ You must choose the following values for the REST API call:
 
 ==== 5. Create the quote
 
-Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-a-high-availability-pair[Create quote].This is a recommended step but is not mandatory.
+Perform the workflow link:wf_gcp_ontap_create_quote.html#create-a-quote-for-a-high-availability-pair[Create a quote].This is a recommended step but is not mandatory.
 
 ==== 6. Create the volume
 
@@ -306,7 +306,7 @@ Output::
 
 None
 
-=== Create volume using iSCSI with an existing iGroup
+=== Create a volume using iSCSI with an existing iGroup
 
 [NOTE]
 If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provided on the REST API call, the response will fail with a suggested name for the aggregate and the number of disks needed to fulfill the request.
@@ -329,7 +329,7 @@ Perform the workflow link:wf_gcp_ontap_get_igroups.html#get-igroups-for-a-high-a
 
 ==== 5. Create the quote
 
-Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-a-high-availability-pair[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_gcp_ontap_create_quote.html#create-a-quote-for-a-high-availability-pair[Create a quote]. This is a recommended step but is not mandatory.
 
 ==== 6. Create the volume
 

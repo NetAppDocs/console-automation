@@ -77,15 +77,15 @@ Based on the cloud provider, you need to perform a workflow to create a volume q
 ====
 .AWS
 --
-Perform the workflow link:wf_aws_ontap_create_quote.html[Create quote] and choose the `providerVolumeType` and `name` values.
+Perform the workflow link:wf_aws_ontap_create_quote.html[Create a quote] and choose the `providerVolumeType` and `name` values.
 --
 .Azure
 --
-Perform the workflow link:wf_azure_ontap_create_quote.html[Create quote] and choose the `providerVolumeType` and `name` values.
+Perform the workflow link:wf_azure_ontap_create_quote.html[Create a quote] and choose the `providerVolumeType` and `name` values.
 --
 .Google cloud
 --
-Perform the workflow link:wf_gcp_ontap_create_quote.html[Create quote] and choose the `providerVolumeType` and `name` values.
+Perform the workflow link:wf_gcp_ontap_create_quote.html[Create a quote] and choose the `providerVolumeType` and `name` values.
 --
 ====
 

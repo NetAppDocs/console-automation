@@ -17,11 +17,11 @@ You can retrieve the list of volumes of an Azure system.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get volume for a single node, Single Node>>
-* <<Get volume for a high availability pair, HA pair>>
+* <<Get a volume for a single node, Single Node>>
+* <<Get a volume for a high availability pair, HA pair>>
 
 
-== Get volume for a single node
+== Get a volume for a single node
 You can use this workflow to retrieve volume for a single node system.
 
 === 1. Create the system
@@ -138,7 +138,7 @@ JSON output example::
     }
 ]
 
-== Get volume for a high availability pair
+== Get a volume for a high availability pair
 
 You can use this workflow to retrieve volume for an HA system.
 

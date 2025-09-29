@@ -17,10 +17,10 @@ You can use this workflow to create a volume accessed through CIFS.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create volume using CIFS for a single node, Single Node>>
-* <<Create volume using CIFS for a high availability pair, HA pair>>
+* <<Create a volume using CIFS for a single node, Single Node>>
+* <<Create a volume using CIFS for a high availability pair, HA pair>>
 
-== Create volume using CIFS for a single node
+== Create a volume using CIFS for a single node
 You can use this workflow to create a volume using CIFS protocol for a single node system.
 
 [NOTE]
@@ -50,7 +50,7 @@ Choose the size value for the `size:size` parameter. The `size:unit` must be one
 
 === 5. Create the quote
 
-Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-a-single-node[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_gcp_ontap_create_quote.html#create-a-quote-for-a-single-node[Create a quote]. This is a recommended step but is not mandatory.
 
 === 6. Create the volume
 
@@ -115,7 +115,7 @@ Output::
 
 None
 
-== Create volume using CIFS for a high availability pair
+== Create a volume using CIFS for a high availability pair
 You can use this workflow to create a volume using CIFS protocol for an HA system.
 
 [NOTE]
@@ -145,7 +145,7 @@ Choose the size value for the `size:size` parameter. The `size:unit` must be one
 
 === 5. Create the quote
 
-Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-a-high-availability-pair[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_gcp_ontap_create_quote.html#create-a-quote-for-a-high-availability-pair[Create a quote]. This is a recommended step but is not mandatory.
 
 === 6. Create the volume
 

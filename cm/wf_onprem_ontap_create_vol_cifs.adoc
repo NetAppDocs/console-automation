@@ -5,7 +5,7 @@ keywords: vcloud, manager, rest, api
 summary: 'You can use this workflow to create a volume accessed through CIFS.'
 ---
 
-= Create volume using CIFS
+= Create a volume using CIFS
 :hardbreaks:
 :nofooter:
 :icons: font

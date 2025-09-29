@@ -20,10 +20,10 @@ If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provi
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create volume using CIFS for a single node, Single Node>>
-* <<Create volume using CIFS for a high availability pair, HA pair>>
+* <<Create a volume using CIFS for a single node, Single Node>>
+* <<Create a volume using CIFS for a high availability pair, HA pair>>
 
-== Create volume using CIFS for a single node
+== Create a volume using CIFS for a single node
 You can use this workflow to create a volume using CIFS protocol for a single node system.
 
 === 1. Choose the CIFS configuration
@@ -50,7 +50,7 @@ Choose the size value for the `size:size` parameter. The `size:unit` must be one
 
 === 5. Create the quote
 
-Perform the workflow link:wf_azure_ontap_create_quote.html[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_azure_ontap_create_quote.html[Create a quote]. This is a recommended step but is not mandatory.
 
 === 6. Create the volume
 
@@ -117,7 +117,7 @@ Output::
 
 None
 
-== Create volume using CIFS for a high availability pair
+== Create a volume using CIFS for a high availability pair
 You can use this workflow to create a volume using CIFS protocol for an HA system.
 
 === 1. Choose the CIFS configuration
@@ -144,7 +144,7 @@ Choose the size value for the `size:size` parameter. The `size:unit` must be one
 
 === 5. Create the quote
 
-Perform the workflow link:wf_azure_ontap_create_quote.html#create-quote-for-a-high-availability-pair[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_azure_ontap_create_quote.html#create-a-quote-for-a-high-availability-pair[Create a quote]. This is a recommended step but is not mandatory.
 
 === 6. Create the volume
 
