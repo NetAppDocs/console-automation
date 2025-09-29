@@ -45,7 +45,7 @@ The Cloud Volumes ONTAP workflows can be performed with one cloud provider. The 
 
 The workflows for each cloud provider (AWS, Azure, Google Cloud) are placed in a specific functional category. The major categories as reflected in the navigation sidebar are presented below.
 
-*systems*
+*Systems*
 A system is the context within which a Cloud Volumes ONTAP instance is deployed and run. These workflows allow you to create systems and perform related administrative tasks. You can perform specific workflows to create a system based on your preferred licensing model (PAYGO or BYOL), remove a system, and retrieve the details of a system. In addition, you can configure the CIFS server when creating a volume that uses the CIFS protocol as part of creating a system.
 
 *Aggregates*
