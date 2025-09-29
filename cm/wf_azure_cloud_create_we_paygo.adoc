@@ -51,7 +51,7 @@ Perform the workflow link:wf_azure_cloud_md_get_vnets.html#get-azure-vnets-for-s
 
 === 4. Select the Azure availability zone
 
-Perform the workflow link:wf_azure_cloud_md_get_availability_zones.html#get-availability-zones-for-single-node[Get Azure Availability Zones] and choose the number from `zones` for the `availabilityZone` parameter in step 11.
+Perform the workflow link:wf_azure_cloud_md_get_availability_zones.html[Get Azure Availability Zones] and choose the number from `zones` for the `availabilityZone` parameter in step 11.
 
 === 5. Get the Azure packages configuration
 

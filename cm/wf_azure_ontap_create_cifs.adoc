@@ -141,8 +141,8 @@ You can use this workflow to create to create CIFS server configuration for an H
 
 Choose the workflow that is specific to your goal:
 
-* <<Set up a CIFS server in a workgroup (HA)>>
-* <<Set up a CIFS server in an Active Directory domain (HA)>>
+* <<Set up a CIFS server in a workgroup>>
+* <<Set up a CIFS server in an Active Directory domain>>
 
 === Set up a CIFS server in a workgroup
 You can configure a CIFS server in a workgroup when the Microsoft Active Directory domain infrastructure is not available.

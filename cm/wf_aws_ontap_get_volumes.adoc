@@ -162,7 +162,7 @@ You can use this workflow to retrieve a list of volumes for an HA system.
 
 === 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` query parameter.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` query parameter.
 
 === 2. Get the volumes
 

@@ -91,7 +91,7 @@ You can use this workflow to retrieve a CIFS server configuration for an HA syst
 
 === Step 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` path parameter.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` path parameter.
 
 === Step 2. Get the CIFS configurations
 

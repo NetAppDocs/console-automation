@@ -50,7 +50,7 @@ Choose the size value for the `size:size` parameter. The `size:unit` must be one
 
 === 5. Create the quote
 
-Perform the workflow link:wf_azure_ontap_create_quote.html#create-quote-for-a-single-node[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_azure_ontap_create_quote.html[Create quote]. This is a recommended step but is not mandatory.
 
 === 6. Create the volume
 

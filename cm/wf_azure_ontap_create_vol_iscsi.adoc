@@ -60,7 +60,7 @@ You must choose the following values for the REST API call:
 
 ==== 5. Create the quote
 
-Perform the workflow link:wf_azure_ontap_create_quote.html#create-quote-for-a-single-node[Create quote].This is a recommended step but is not mandatory.
+Perform the workflow link:wf_azure_ontap_create_quote.html[Create quote].This is a recommended step but is not mandatory.
 
 ==== 6. Create the volume
 
@@ -151,7 +151,7 @@ Perform the workflow link:wf_azure_ontap_get_igroups.html#get-igroups-for-single
 
 ==== 5. Create the quote
 
-Perform the workflow link:wf_azure_ontap_create_quote.html#create-quote-for-a-single-node[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_azure_ontap_create_quote.html[Create quote]. This is a recommended step but is not mandatory.
 
 ==== 6. Create the volume
 
@@ -203,7 +203,7 @@ Output::
 
 None
 
-== Create volume using iSCSI for high availability
+== Create volume using iSCSI for high availability pair
 You can use this workflow to create a volume using iSCSI protocol for an HA system.
 
 There are two workflows available depending on whether a new or existing iGroup is used. You need to select the correct workflow:
