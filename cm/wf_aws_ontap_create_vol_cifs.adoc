@@ -148,7 +148,7 @@ A CIFS server configuration must be defined for your system. You can do one of t
 
 === Step 2. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get systems] and choose the `publicId` and the `svmName` values for the `workingEnvironmentId` (system) and the `svmName` (SVM name) parameters. From the `capacityFeatures` field in the response, choose the value of `s3` for the `capacityTier` parameter. 
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` and the `svmName` values for the `workingEnvironmentId` (system) and the `svmName` (SVM name) parameters. From the `capacityFeatures` field in the response, choose the value of `s3` for the `capacityTier` parameter. 
 
 === Step 3. Select the aggregate
 

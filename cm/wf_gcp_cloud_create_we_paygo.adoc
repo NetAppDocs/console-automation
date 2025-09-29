@@ -44,10 +44,10 @@ Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and c
 Perform the workflow link:wf_gcp_cloud_md_get_projects.html#get-projects-for-single-node[Get projects] and choose the `projectId` value of the required project for `project` parameter in step 8.
 
 === 4. Select the permutations
-Perform the workflow link:wf_gcp_cloud_md_get_permutations.html#get-gcp-permutations-for-single-node[Get permutations] and choose the `ontapVersion`, `license: type`, and `instanceType` values of the required `vsaMetadata` parameter in step 8.
+Perform the workflow link:wf_gcp_cloud_md_get_permutations.html[Get permutations] and choose the `ontapVersion`, `license: type`, and `instanceType` values of the required `vsaMetadata` parameter in step 8.
 
 === 5. Select the packages configuration
-Perform the workflow link:wf_gcp_cloud_md_get_packages.html#get-gcp-packages-for-single-node[Get packages] and search the `licenseType` from the various permutations of packages configuration values:
+Perform the workflow link:wf_gcp_cloud_md_get_packages.html[Get packages] and search the `licenseType` from the various permutations of packages configuration values:
 
 * Choose the `name` for `packageName` parameter in step 8.
 *	Choose the `diskSize` for `gcpVolumeSize` in step 8.
@@ -176,10 +176,10 @@ Perform the link:wf_gcp_cloud_md_get_vpcs.html[Get vpcs] workflow and do the fol
 
 
 === 5. Select the permutations
-Perform the workflow link:wf_gcp_cloud_md_get_permutations.html#get-gcp-permutations-for-high-availability-pair[Get permutations] and choose the `ontapVersion`, `license: type`, and `instanceType` values of the required `vsaMetadata` parameter in step 9.
+Perform the workflow link:wf_gcp_cloud_md_get_permutations.html[Get permutations] and choose the `ontapVersion`, `license: type`, and `instanceType` values of the required `vsaMetadata` parameter in step 9.
 
 === 6. Select the packages configuration
-Perform the workflow link:wf_gcp_cloud_md_get_packages.html#get-gcp-packages-for-high-availability-pair[Get packages] and search the `licenseType` from permutations:
+Perform the workflow link:wf_gcp_cloud_md_get_packages.html[Get packages] and search the `licenseType` from permutations:
 
 * Choose the `name` for `packageName` parameter.
 *	Choose the `diskSize` for `gcpVolumeSize`.
