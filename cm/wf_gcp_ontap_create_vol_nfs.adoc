@@ -135,7 +135,7 @@ Perform the workflow link:wf_gcp_cloud_get_wes.html#get-a-system-for-a-high-avai
 
 === 2. Select an aggregate
 
-Perform the workflow link:wf_gcp_ontap_get_aggrs.html#get-aggregates-for-high-availability-pair[Get aggregates] and choose the `name` value of the aggregate for the `name` parameter.  From the `providerVolumes` field in the response, you must also choose the value of the `providerVolumeType` parameter, the value of the `iops` parameter, and the value of the `throughput` parameter.
+Perform the workflow link:wf_gcp_ontap_get_aggrs.html#get-aggregates-for-a-high-availability-pair[Get aggregates] and choose the `name` value of the aggregate for the `name` parameter.  From the `providerVolumes` field in the response, you must also choose the value of the `providerVolumeType` parameter, the value of the `iops` parameter, and the value of the `throughput` parameter.
 
 [NOTE]
 If aggregate name does not exist and the `createAggregateIfNotFound` query parameter is set `true`, the create volume request is allowed if the named aggregate is not found.
@@ -145,7 +145,7 @@ If aggregate name does not exist and the `createAggregateIfNotFound` query param
 Choose the size value for the `size:size` parameter. The `size:unit` must be one of the following: `TB`, `GB`, `MB`, `KB`, or `Byte`.
 
 === 4. Select a region
-Perform the workflow link:wf_gcp_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] workflow and pick `ipCidrRange` value of the required `region-> subnets` for `exportPolicy->ips` value.
+Perform the workflow link:wf_gcp_cloud_md_get_regions.html#get-regions-for-a-high-availability-pair[Get regions] workflow and pick `ipCidrRange` value of the required `region-> subnets` for `exportPolicy->ips` value.
 
 === 5. Select rules
 
@@ -154,7 +154,7 @@ parameters.
 
 === 6. Create a quote
 
-Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-high-availability-pair[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-a-high-availability-pair[Create quote]. This is a recommended step but is not mandatory.
 
 === 7. Create the volume
 

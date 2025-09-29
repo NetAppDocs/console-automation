@@ -125,8 +125,8 @@ If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provi
 
 A CIFS server configuration must be defined for your system. You can do one of the following:
 
-* If a CIFS configuration already exists, perform the workflow link:wf_gcp_ontap_get_cifs.html#get-cifs-for-high-availability-pair[Get CIFS server configurations] to access the configuration parameters.
-* If a CIFS configuration does not exist, perform the workflow link:wf_gcp_ontap_create_cifs.html#create-cifs-for-high-availability-pair[Create CIFS server configuration] to create one.
+* If a CIFS configuration already exists, perform the workflow link:wf_gcp_ontap_get_cifs.html#get-cifs-for-a-high-availability-pair[Get CIFS server configurations] to access the configuration parameters.
+* If a CIFS configuration does not exist, perform the workflow link:wf_gcp_ontap_create_cifs.html#create-cifs-for-a-high-availability-pair[Create CIFS server configuration] to create one.
 
 === 2. Select the system
 
@@ -134,7 +134,7 @@ Perform the workflow link:wf_gcp_cloud_get_wes.html#get-a-system-for-a-high-avai
 
 === 3. Select the aggregate
 
-Perform the workflow link:wf_gcp_ontap_get_aggrs.html#get-aggregates-for-high-availability-pair[Get aggregates] and choose the `name` for the `aggregateName` value. From the `providerVolumes` field in the response, you must also choose the value of the `providerVolumeType` parameter, the value of the `iops` parameter, and the value of the `throughput` parameter.
+Perform the workflow link:wf_gcp_ontap_get_aggrs.html#get-aggregates-for-a-high-availability-pair[Get aggregates] and choose the `name` for the `aggregateName` value. From the `providerVolumes` field in the response, you must also choose the value of the `providerVolumeType` parameter, the value of the `iops` parameter, and the value of the `throughput` parameter.
 
 [NOTE]
 If aggregate name does not exist and the `createAggregateIfNotFound` query parameter is set `true`, the create volume request is allowed if the named aggregate is not found.
@@ -145,7 +145,7 @@ Choose the size value for the `size:size` parameter. The `size:unit` must be one
 
 === 5. Create the quote
 
-Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-high-availability-pair[Create quote]. This is a recommended step but is not mandatory.
+Perform the workflow link:wf_gcp_ontap_create_quote.html#create-quote-for-a-high-availability-pair[Create quote]. This is a recommended step but is not mandatory.
 
 === 6. Create the volume
 

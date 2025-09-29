@@ -170,7 +170,7 @@ You can use this workflow to retrieve the VPCs for an HA system.
 
 === Step 1. Select the region to use
 
-Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] and choose the `code` value for the `region` query parameter.
+Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-a-high-availability-pair[Get regions] and choose the `code` value for the `region` query parameter.
 
 === Step 2. Get the VPCs
 

@@ -61,10 +61,10 @@ None
 You can use this workflow to create a bucket for an HA system.
 
 === 1. Select the project
-Perform the link:wf_gcp_cloud_md_get_projects.html#get-projects-for-high-availability-pair[Get projects] workflow and choose the `projectId`` value of the required project for the `projectId` parameter.
+Perform the link:wf_gcp_cloud_md_get_projects.html#get-projects-for-a-high-availability-pair[Get projects] workflow and choose the `projectId`` value of the required project for the `projectId` parameter.
 
 === 2. Select the region
-Perform the link:wf_gcp_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] workflow and choose the `name` value of the required region for the `location` parameter.
+Perform the link:wf_gcp_cloud_md_get_regions.html#get-regions-for-a-high-availability-pair[Get regions] workflow and choose the `name` value of the required region for the `location` parameter.
 
 === 3. Create a bucket
 

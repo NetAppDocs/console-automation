@@ -204,7 +204,7 @@ You can use this workflow to create an high availability (HA) Cloud Volumes ONTA
 
 === Step 1. Select the region
 
-Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] and choose the `code` value for the `region` parameter in step 11.
+Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-a-high-availability-pair[Get regions] and choose the `code` value for the `region` parameter in step 11.
 
 === Step 2. Select the cloud provider account
 
@@ -216,14 +216,14 @@ Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and c
 
 === Step 4. Select the permutations configuration
 
-Perform the workflow link:wf_aws_cloud_md_get_permutations.html#get-permutations-for-high-availability-pair[Get permutations] and choose the `ontapVersion` and `license: type` and `instanceType` values for the `vsaMetadata` parameter in step 11.
+Perform the workflow link:wf_aws_cloud_md_get_permutations.html#get-permutations-for-a-high-availability-pair[Get permutations] and choose the `ontapVersion` and `license: type` and `instanceType` values for the `vsaMetadata` parameter in step 11.
 
 === Step 5. Select the packages configuration
-Perform the link:wf_aws_cloud_md_get_packages.html#get-packages-for-high-availability-pair[Get Packages] and choose the `packageName`, `instanceTenancy` and `writingSpeedState` values for the corresponding parameters in step 11.
+Perform the link:wf_aws_cloud_md_get_packages.html#get-packages-for-a-high-availability-pair[Get Packages] and choose the `packageName`, `instanceTenancy` and `writingSpeedState` values for the corresponding parameters in step 11.
 
 === Step 6. Select the VPC
 
-Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-high-availability-pair[Get VPCs] and do the following:
+Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-a-high-availability-pair[Get VPCs] and do the following:
 
 * Choose the `vpcId` value for the `vpcId` parameter in step 11.
 * Choose three subnets and choose the `subnetId` value for the `haParams:mediatorSubnetId`, `haParams:node1SubnetId`, `haParams:node2SubnetId`.
@@ -236,7 +236,7 @@ Perform the workflow link:wf_aws_cloud_md_get_route_tables.html[Get route tables
 
 === Step 8. Select the EBS volume configuration
 
-Perform the workflow link:wf_aws_cloud_md_get_ebs_vol_types.html#get-ebs-volume-types-for-high-availability-pair[Get EBS volume types] and choose the `size` and `supportedVolumeTypes` values for the `ebsVolumeSize` and `ebsVolumeType` parameters in step 11.
+Perform the workflow link:wf_aws_cloud_md_get_ebs_vol_types.html#get-ebs-volume-types-for-a-high-availability-pair[Get EBS volume types] and choose the `size` and `supportedVolumeTypes` values for the `ebsVolumeSize` and `ebsVolumeType` parameters in step 11.
 
 NOTE: You need to choose one of the allowed values for the required `ebsVolumeType` parameter. We have used `gp2` value for this parameter in step 11.
 

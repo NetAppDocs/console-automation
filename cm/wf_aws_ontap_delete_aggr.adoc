@@ -82,7 +82,7 @@ Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-avail
 
 === Step 2. Select the aggregate to delete
 
-Perform the workflow link:wf_aws_ontap_get_aggrs.html#get-aggregates-for-high-availability-pair[Get aggregates] and choose the `name` value of the required for the `aggregateName` path parameter.
+Perform the workflow link:wf_aws_ontap_get_aggrs.html#get-aggregates-for-a-high-availability-pair[Get aggregates] and choose the `name` value of the required for the `aggregateName` path parameter.
 
 === Step 3. Delete the aggregate
 

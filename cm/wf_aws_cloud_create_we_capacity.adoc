@@ -292,7 +292,7 @@ Perform the link:wf_aws_cloud_md_get_packages.html[Get Packages] and choose the 
 
 === Step 7. Select the VPC
 
-Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-high-availability-pair[Get VPCs] and do the following:
+Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-a-high-availability-pair[Get VPCs] and do the following:
 
 * Choose the `vpcId` value for the `vpcId` parameter in step 13.
 * Choose three subnets and choose the `subnetId` value for the `haParams:mediatorSubnetId`, `haParams:node1SubnetId`, `haParams:node2SubnetId` in step 13.

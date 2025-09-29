@@ -19,10 +19,10 @@ NOTE: We use the Get route tables workflow only for the high availability pair.
 
 == Step 1. Get the region
 
-Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] and choose the `code` value of the required region for the `region` query parameter.
+Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-a-high-availability-pair[Get regions] and choose the `code` value of the required region for the `region` query parameter.
 
 == Step 2. Get the VPC
-Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-high-availability-pair[Get VPCs] and choose the `vpcId` value of the required VPC for the `vpcId` query parameter.
+Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-a-high-availability-pair[Get VPCs] and choose the `vpcId` value of the required VPC for the `vpcId` query parameter.
 
 == Step 3. Get the route tables
 
