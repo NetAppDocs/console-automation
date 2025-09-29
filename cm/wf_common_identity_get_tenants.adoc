@@ -10,7 +10,7 @@ summary: "You can retrieve a list of tenants visible to the user currently signe
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve a list of tenants visible to the user currently signed in through the account workspace.

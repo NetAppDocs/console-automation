@@ -10,7 +10,7 @@ summary: You can use the route tables endpoint to retrieve the route tables for 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use the route tables endpoint to retrieve the route tables labels for each VPC and their subnet association information.

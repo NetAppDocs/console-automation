@@ -10,7 +10,7 @@ summary: You can sign into the NetApp Console web user interface to retrieve sev
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can access the NetApp Console web UI to retrieve the identifiers needed for the workflows.

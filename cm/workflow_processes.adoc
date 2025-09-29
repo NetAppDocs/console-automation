@@ -10,7 +10,7 @@ summary: "You should be familiar with the high-level organization and format of 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You should be familiar with the organization and format of the Cloud Volumes ONTAP and ONTAP on-premises workflow processes before using them with a live deployment.

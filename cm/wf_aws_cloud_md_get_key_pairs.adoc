@@ -10,7 +10,7 @@ summary: You can use the key pairs endpoint to retrieve the AWS key pairs for sp
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use the key pairs endpoint to retrieve the AWS key pairs for specific regions.

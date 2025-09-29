@@ -10,7 +10,7 @@ summary: This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 This workflow retrieves the Google Cloud encryption keys for a specific region.

@@ -10,7 +10,7 @@ summary: You can use the permutations endpoint to retrieve the Cloud Volumes ONT
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use the permutations endpoint to retrieve the Cloud Volumes ONTAP configuration information.

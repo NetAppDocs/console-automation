@@ -10,7 +10,7 @@ summary: 'You can delete an existing disk aggregate.'
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can delete an existing disk aggregate in a Cloud Volumes ONTAP system.

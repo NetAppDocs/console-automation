@@ -10,7 +10,7 @@ summary: There are several workflows you can use with the Amazon Web Services pu
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 There are several workflows you can use to manage the ONTAP on-premises clusters.

@@ -10,7 +10,7 @@ summary: "You can modify the configuration of an existing volume."
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can modify the configuration of an existing volume.
@@ -122,7 +122,7 @@ Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-avai
 
 === Step 2. Select the volume
 
-Perform the workflow link:wf_aws_ontap_get_volumes.html#get-volumes-for-high-availability-pair[Get volumes] and choose the `name` for the `volumeName` path parameter.
+Perform the workflow link:wf_aws_ontap_get_volumes.html[Get volumes] and choose the `name` for the `volumeName` path parameter.
 
 === Step 3. Modify the volume
 

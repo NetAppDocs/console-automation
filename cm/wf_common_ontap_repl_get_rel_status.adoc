@@ -10,7 +10,7 @@ summary: "You can use this workflow to retrieve the status of all the SnapMirror
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to retrieve the status of all the SnapMirror replication relationships.

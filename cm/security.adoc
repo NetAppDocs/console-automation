@@ -10,7 +10,7 @@ summary: "The NetApp Console REST API provides robust security based on token au
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The NetApp Console REST APIs provides robust security based on token authentication and authorization.

@@ -10,7 +10,7 @@ summary: Use the resources on this page to get help integrating NetApp Console a
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 DevOps teams use a variety of tools to automate the setup and administration of their data center runtime environments. NetApp supports many of these technologies for the NetApp Console and Cloud Volumes ONTAP automation. The tools are commonly based on an Infrastructure as Code (IaC) design.

@@ -10,7 +10,7 @@ summary: 'You can create a new aggregate within a system.'
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can create a new aggregate within an Azure system using this workflow.

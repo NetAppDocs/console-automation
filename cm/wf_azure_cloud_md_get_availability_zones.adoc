@@ -10,7 +10,7 @@ summary: You can perform this workflow to retrieve the Azure availability zones 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can perform this workflow to retrieve the Azure availability zones by region.

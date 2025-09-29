@@ -10,7 +10,7 @@ summary: "You can retrieve the list of volumes."
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the list of volumes of an Azure system.

@@ -10,7 +10,7 @@ summary: You can add disks to an existing aggregate.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can add disks to an existing aggregate.

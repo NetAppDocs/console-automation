@@ -10,7 +10,7 @@ summary: You can perform this workflow to create the S3 buckets.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can perform this workflow to create a new bucket. This is a Google Cloud storage bucket (data container in Google Cloud) required for data tiering and backup.

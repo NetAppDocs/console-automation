@@ -10,7 +10,7 @@ summary: 'The NetApp Console REST API is based on the HTTP protocol as well as J
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The NetApp Console REST APIs are based on the HTTP protocol as well as JSON for content exchange. 

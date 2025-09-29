@@ -10,7 +10,7 @@ summary: 'You must generate a bearer token to authenticate and access the NetApp
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can perform this workflow to retrieve accounts.

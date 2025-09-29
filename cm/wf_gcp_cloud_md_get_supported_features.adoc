@@ -10,7 +10,7 @@ summary: You can perform this workflow to retrieve and check the supported featu
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can perform this workflow to retrieve and check the supported features while provisioning a Cloud Volumes ONTAP instance.

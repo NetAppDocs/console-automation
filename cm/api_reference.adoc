@@ -10,7 +10,7 @@ summary: 'This section contains the details of the NetApp Console REST API calls
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 This API reference contains the details of the ONTAP management REST API calls, including resources, endpoints, parameters, and status codes. You can refer to this content when developing applications that use the REST API.

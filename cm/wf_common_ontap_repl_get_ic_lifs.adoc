@@ -10,7 +10,7 @@ summary: "You can use this workflow to retrieve the intercluster LIFs used in a 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to retrieve the intercluster LIFs used in a cluster peering relationship.

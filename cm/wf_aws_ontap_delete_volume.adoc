@@ -10,7 +10,7 @@ summary: "You can delete an existing volume."
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can delete an existing volume.
@@ -85,7 +85,7 @@ Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-avail
 
 === Step 2. Select the volume
 
-Perform the workflow link:wf_aws_ontap_get_volumes.html#get-volumes-for-high-availability-pair[Get volumes] and choose the `name` of teh required volume for `volumeName` path parameter.
+Perform the workflow link:wf_aws_ontap_get_volumes.html[Get volumes] and choose the `name` of teh required volume for `volumeName` path parameter.
 
 === Step 3. Delete the volume
 

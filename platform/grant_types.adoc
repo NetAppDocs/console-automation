@@ -10,7 +10,7 @@ summary: The document describes the grant types and identity verification while 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 There are several OAuth 2.0 grant types available when requesting an access token to use with the NetApp Console. The grant type is based on the application requirements and authentication environment, and determines how the token is requested.

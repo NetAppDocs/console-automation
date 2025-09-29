@@ -10,7 +10,7 @@ summary: Use the resources on this page to get help integrating NetApp Console a
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ../media/
+:imagesdir: .../media/
 
 [.lead]
 There are several blog articles available to help you better understand the technologies and approaches available for automation with the NetApp Console.

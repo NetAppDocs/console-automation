@@ -10,7 +10,7 @@ summary: "You can use this workflow to retrieve information about the NetApp Con
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to retrieve information about the NetApp Console supported services including the _client id_ and _account id_ values.

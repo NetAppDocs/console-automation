@@ -10,7 +10,7 @@ summary: 'There are additional resources you can access to get help and find mor
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 There are additional resources you can access to get help and find more information about NetApp cloud services and support, ONTAP 9, and general REST and cloud concepts.

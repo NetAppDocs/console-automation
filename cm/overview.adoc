@@ -10,7 +10,7 @@ summary: 'There are several things you should do to prepare to use the NetApp Co
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 ONTAP management is composed of multiple related REST APIs that enable you to administer your cloud-based and on-premises ONTAP storage resources. Using the REST APIs, you can perform many different operations, including managing Cloud Volumes ONTAP single-node and high availability (HA) resources (ONTAP instances running on the public cloud providers), on-premises ONTAP cluster resources (including AFF/FAS systems), configure cloud providers, support the NetApp Console account resources, and more. 

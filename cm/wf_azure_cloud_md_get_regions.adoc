@@ -10,7 +10,7 @@ summary: This workflow retrieves the Azure regions in which an Cloud Volumes ONT
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 This workflow retrieves the Azure regions in which an Cloud Volumes ONTAP system may be created.

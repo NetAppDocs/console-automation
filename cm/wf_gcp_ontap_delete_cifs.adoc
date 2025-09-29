@@ -10,7 +10,7 @@ summary: You can use this workflow to delete a CIFS server configuration for an 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to delete a CIFS server configuration for an existing Cloud Volumes ONTAP system.

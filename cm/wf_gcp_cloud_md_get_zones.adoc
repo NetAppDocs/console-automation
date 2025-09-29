@@ -10,7 +10,7 @@ summary: You can perform this workflow to retrieve the Google Cloud regions and 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can perform this workflow to retrieve the Google Cloud regions and zones over which a Cloud Volumes ONTAP system might be created.

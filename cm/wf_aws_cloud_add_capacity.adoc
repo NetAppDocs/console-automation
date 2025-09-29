@@ -10,7 +10,7 @@ summary: You can use this workflow to add capacity to an existing aggregate with
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to add capacity to an existing aggregate with Elastic Volumes enabled.

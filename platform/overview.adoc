@@ -10,7 +10,7 @@ summary: The NetApp Console enables you to build, protect, and govern your hybri
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The NetApp Console enables you to build, protect, and govern your hybrid multi-cloud data from a single control plane. It is composed of several distinct services, each of which exposes an associated REST API. Collectively these services and APIs form a flexible and extensible development platform you can use to administer your cloud-based and on-premises resources. There are several benefits when using the Console REST APIs.

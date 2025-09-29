@@ -10,7 +10,7 @@ summary: 'You can use this workflow to create a FlexGroup volume accessed throug
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to create an ONTAP FlexGroup volume. 

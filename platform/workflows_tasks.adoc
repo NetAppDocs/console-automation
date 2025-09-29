@@ -10,7 +10,7 @@ summary: The NetApp Console REST APIs support many different workflows and tasks
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The NetApp Console REST APIs support many different workflows and tasks. You should be familiar with their common characteristics before reviewing and using a specific API.

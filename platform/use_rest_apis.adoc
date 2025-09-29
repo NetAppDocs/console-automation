@@ -10,7 +10,7 @@ summary: The document describes the general process to prepare and use the authe
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 There is a general process to prepare and use the authentication and authorization information needed to issue a REST API call using the NetApp Console.

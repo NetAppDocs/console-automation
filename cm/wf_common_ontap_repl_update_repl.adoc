@@ -10,7 +10,7 @@ summary: "You can use this workflow to update an existing SnapMirror replication
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to update an existing SnapMirror replication relationship.

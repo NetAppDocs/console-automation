@@ -10,7 +10,7 @@ summary: "You can retrieve the Cloud Volumes ONTAP systems that are visible to t
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the public identifier, system identifier, and the storage virtual machine name for Cloud Volumes ONTAP systems (visible to currently logged in user) which will be used in other workflows.

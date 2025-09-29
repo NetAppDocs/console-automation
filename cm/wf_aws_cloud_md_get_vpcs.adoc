@@ -10,7 +10,7 @@ summary: You can use this workflow to retrieve a list of the available virtual p
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to retrieve a list of the available virtual private clouds (VPCs).

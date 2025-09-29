@@ -10,7 +10,7 @@ summary: You can retrieve the supported capacity tiers for Google Cloud disk typ
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the supported capacity tiers for Google Cloud disk types.

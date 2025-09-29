@@ -10,7 +10,7 @@ summary: 'You can retrieve a list of available disk aggregates.'
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve a list of available disk aggregates.

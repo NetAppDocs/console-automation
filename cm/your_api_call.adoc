@@ -10,7 +10,7 @@ summary: "You can issue a curl command to get started using the REST API and con
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can issue a curl command to get started using a Cloud Volumes ONTAP REST API and confirm its availability.

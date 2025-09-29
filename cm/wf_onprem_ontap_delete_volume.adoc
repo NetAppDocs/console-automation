@@ -10,7 +10,7 @@ summary: "You can delete an existing volume."
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to delete a volume.

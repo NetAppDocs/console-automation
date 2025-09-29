@@ -10,7 +10,7 @@ summary: "You can use this workflow to create a new SnapMirror replication relat
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to create a new SnapMirror replication relationship to an ONTAP system. You can replicate data between systems by choosing a one-time data replication for data transfer, or a recurring schedule for disaster recovery or long-term retention.

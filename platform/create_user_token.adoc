@@ -10,7 +10,7 @@ summary: Create a NetApp Console user token by using this workflow
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You need to generate a bearer token to gain access to the NetApp Console REST APIs. A user token is more commonly used for customer automation than the service token. There are two workflows available to create a user token. The one you select depends on your authentication environment.

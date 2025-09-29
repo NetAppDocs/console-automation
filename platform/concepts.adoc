@@ -10,7 +10,7 @@ summary: 'Representational State Transfer (REST) is a style for creating distrib
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Representational State Transfer (REST) is a style for creating distributed web applications. When applied to the design of a web services API, it establishes a set of technologies and best practices for exposing server-based resources and managing their states. The NetApp Console REST APIs use mainstream protocols and standards to provide a flexible foundation for deploying and administering your cloud-based and on-premise resources.

@@ -10,7 +10,7 @@ summary: You can perform this workflow to retrieve the default snapshot policies
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can perform this workflow to retrieve the default snapshot policies available on the cluster.

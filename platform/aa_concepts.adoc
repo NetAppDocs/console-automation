@@ -10,7 +10,7 @@ summary: You should be familiar with the basic authentication and authorization 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You should be familiar with the basic authentication and authorization concepts before using the NetApp Console REST APIs.

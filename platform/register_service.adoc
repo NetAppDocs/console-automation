@@ -10,7 +10,7 @@ summary: You can register a service with the NetApp Console and use the associat
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can register a service with the NetApp Console and use the associated credentials to create a service token.

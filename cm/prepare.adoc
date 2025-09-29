@@ -10,7 +10,7 @@ summary: 'There are several things you should do to prepare to use the NetApp Co
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You need to prepare before using the REST APIs provided with ONTAP management. 

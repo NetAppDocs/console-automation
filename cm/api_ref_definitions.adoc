@@ -10,7 +10,7 @@ summary: The data definitions are used when making REST API calls.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The data definitions are used when making REST API calls.

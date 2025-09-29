@@ -10,7 +10,7 @@ summary: "You can delete an NetApp Support Site key."
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can delete an NetApp Support Site (NSS) key.

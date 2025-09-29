@@ -10,7 +10,7 @@ summary: "You can use this workflow to retrieve all the iGroups."
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to retrieve all the initiator groups (iGroups). iGroups is a collection of initiators (iSCSI clients). The iGroups information is required when creating a volume with the iSCSI protocol using an existing iGroup.

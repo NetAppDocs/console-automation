@@ -10,7 +10,7 @@ summary: "All of the requests made to the NetApp Console REST API are processed 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 All of the requests made to the NetApp Console REST API are processed asynchronously except those using the HTTP GET method. Each of these asynchronous requests is assigned a unique identifier which is returned to the caller in the response. You can use the request ID to retrieve information about the background task including its status.

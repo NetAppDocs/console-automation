@@ -10,7 +10,7 @@ summary: There are several workflows you can use with the public cloud providers
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use the Cloud Volumes ONTAP REST APIs to programmatically administer your cloud-based resources. The Cloud Volumes ONTAP REST API provides access to a subset of the functionality available in the NetApp Console with a focus on Cloud Volumes ONTAP deployments.

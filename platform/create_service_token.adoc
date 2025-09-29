@@ -10,7 +10,7 @@ summary: A workflow describing how to cerate a service token
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can create a service access token that can be used by the NetApp Console internal services and external clients.

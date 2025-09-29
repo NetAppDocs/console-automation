@@ -10,7 +10,7 @@ summary: The API Explorer is integrated with the NetApp Console API reference do
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The API Explorer is integrated with the NetApp Console API reference documentation, enabling you to test the various API endpoints while reviewing the documentation.

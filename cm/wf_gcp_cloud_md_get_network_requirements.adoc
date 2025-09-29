@@ -10,7 +10,7 @@ summary: This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 This workflow retrieves the minimum number of required IPs for a Cloud Volumes ONTAP system.

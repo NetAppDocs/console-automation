@@ -10,7 +10,7 @@ summary: 'You can use this workflow to create a new Cloud Volumes ONTAP system u
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to create a new Cloud Volumes ONTAP system using bring-your-own-license (BYOL) licensing.

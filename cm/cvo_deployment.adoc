@@ -10,7 +10,7 @@ summary: 'A summary of the major steps you should take to deploy and administer 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 A summary of the major steps needed to deploy and administer a Cloud Volumes ONTAP instance using the associated REST API is presented below.

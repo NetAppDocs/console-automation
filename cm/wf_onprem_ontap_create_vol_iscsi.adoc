@@ -10,7 +10,7 @@ summary: 'You can use this workflow to create a volume accessed through iSCSI. T
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to create a volume accessed through the iSCSI protocol.

@@ -10,7 +10,7 @@ summary: 'You can sign in to the NetApp Console web user interface to retrieve t
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can create a NetApp Support Site user ID through the NetApp Console web UI. This ID is included when creating system using the Console.

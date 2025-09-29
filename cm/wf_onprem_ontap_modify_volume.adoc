@@ -10,7 +10,7 @@ summary: "You can modify the configuration of an existing volume."
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can modify the configuration of an existing volume.
