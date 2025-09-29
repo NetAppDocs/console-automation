@@ -17,11 +17,11 @@ You can delete an existing Cloud Volumes ONTAP system.
 
 Choose the workflow to use based on the type of the Cloud Volumes ONTAP deployment:
 
-* <<Delete a a system for a single node, Single Node>>
-* <<Delete a a system for a high availability pair, HA pair>>
+* <<Delete a system for a single node, Single Node>>
+* <<Delete a system for a high availability pair, HA pair>>
 
 
-== Delete a a system for a single node
+== Delete a system for a single node
 
 You can use this workflow to delete a system for a single node system.
 
@@ -31,7 +31,7 @@ Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-single-nod
 
 === Step 2. Delete the system
 
-You can issue a REST API call to delete a a system for a single node.
+You can issue a REST API call to delete a system for a single node.
 
 .HTTP method and endpoint
 
@@ -74,7 +74,7 @@ In addition to the parameters common with all REST API calls, the following para
 
 None
 
-== Delete a a system for a high availability pair
+== Delete a system for a high availability pair
 
 You can use this workflow to delete a system for an HA pair.
 
@@ -84,7 +84,7 @@ Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-high-avai
 
 === Step 2. Delete the system
 
-You can issue a REST API call to delete a a system for a single node.
+You can issue a REST API call to delete a system for a single node.
 
 [cols="25,75"*,options="header"]
 |===
