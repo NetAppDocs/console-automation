@@ -258,7 +258,7 @@ If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provi
 
 ==== Step 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems] and choose the `publicId` value for the `workingEnvironmentId` parameter and the `svmName` value for the `svmName` parameter. From the `capacityFeatures` field in the response, choose the value of `s3` for the `capacityTier` parameter. 
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-high-availability-pair[Get systems]  and choose the `publicId` value for the `workingEnvironmentId` parameter and the `svmName` value for the `svmName` parameter. From the `capacityFeatures` field in the response, choose the value of `s3` for the `capacityTier` parameter. 
 
 ==== Step 2. Select the aggregate
 

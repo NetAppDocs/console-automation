@@ -31,7 +31,7 @@ If the properties `aggregateName` and `maxNumOfDisksApprovedToAdd` are not provi
 A CIFS server configuration must be defined for your system. You can do one of the following:
 
 * If a CIFS configuration already exists, perform the workflow link:wf_gcp_ontap_get_cifs.html#get-cifs-server-configuration-for-single-node[Get CIFS server configurations] to access the configuration parameters.
-* If a CIFS configuration does not exist, perform the workflow link:wf_gcp_ontap_create_cifs.html#create-cifs-server-configuration-for-single-node[Create CIFS server configuration] to create one.
+* If a CIFS configuration does not exist, perform the workflow link:wf_gcp_ontap_create_cifs.html#create-cifs-for-single-node[Create CIFS server configuration] to create one. 
 
 === 2. Select the system
 
