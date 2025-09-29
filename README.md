@@ -1,4 +1,4 @@
-# BlueXP Automation
+# NetApp Console Automation
 
 Welcome to the open-source documentation for the NetApp Console REST API and related automation technologies.
 
