@@ -17,15 +17,15 @@ You can retrieve the list of volumes.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Get volumes for single node, Single Node>>
-* <<Get volumes for high availability pair, HA pair>>
+* <<Get volumes for a single node, Single Node>>
+* <<Get volumes for a high availability pair, HA pair>>
 
-== Get volumes for single node
+== Get volumes for a single node
 You can use this workflow to retrieve a list of volumes for a single node system.
 
 === Step 1. Select the system
 
-Perform the workflow link:wf_aws_cloud_get_wes.html#get-a-system-for-a-single-node[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` query parameter.
+Perform the workflow link:wf_aws_cloud_get_wes.html#get-systems-for-a-single-node[Get systems] and choose the `publicId` value of the system for the `workingEnvironmentId` query parameter.
 
 === Step 2. Get the volumes
 
@@ -157,7 +157,7 @@ The JSON output example includes the list of volumes for the system.
 ]
 ----
 
-== Get volumes for high availability pair
+== Get volumes for a high availability pair
 You can use this workflow to retrieve a list of volumes for an HA system.
 
 === 1. Select the system

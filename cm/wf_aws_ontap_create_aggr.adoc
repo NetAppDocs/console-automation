@@ -16,7 +16,7 @@ summary: 'You can create a new aggregate within a system.'
 [.lead]
 You can create a new aggregate within a system using this workflow. Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 
-* <<Create aggregate for a single node, Single Node>>
+* <<Create an aggregate for a single node, Single Node>>
 * <<Create aggregate for high availability pair, HA pair>>
 
 == Create an aggregate for a single node
