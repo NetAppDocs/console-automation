@@ -29,8 +29,8 @@ Review link:../platform/use_rest_apis.html[Use the NetApp Console REST APIs] to 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Four"] Create a system
 [role="quick-margin-para"]
-Create a Cloud Volumes ONTAP system by using the workflow for your cloud provider.
+Create a Cloud Volumes ONTAP system by using the workflow for your cloud provider. For example, if your cloud provider is Amazon Web Services (AWS), and you want to create a system with a a capacity-based license, follow the link:wf_aws_cloud_create_we_capacity.html[Create a system with a capacity-based license] workflow.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Five"] Administer storage
 [role="quick-margin-para"]
-Administer the storage for your Cloud Volumes ONTAP instance based on your cloud provider and requirements.
+Administer the storage for your Cloud Volumes ONTAP instance based on your cloud provider and requirements. For example, if your cloud provider is AWS, and you want to create an aggregate, follow the link:wf_aws_ontap_create_aggr.html[Create an aggregate] workflow.
