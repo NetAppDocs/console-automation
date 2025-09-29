@@ -22,7 +22,7 @@ Review the link:overview.html[Get started] section before using the on-premises 
 
 The ONTAP on-premises workflows are organized into the following functional categories:
 
-* systems
+* Systems
 * Aggregates
 * Volumes
 

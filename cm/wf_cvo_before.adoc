@@ -23,7 +23,7 @@ Review the link:overview.html[Get started] section before using any of the Cloud
 == Workflow categories
 The workflows are organized into the following functional categories:
 
-* systems
+* Systems
 * Aggregates
 * Volumes
 * Metadata
