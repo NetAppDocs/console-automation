@@ -27,7 +27,7 @@ You must have an account for the Console. You normally create this account when 
 
 . Navigate to the Console website using a browser:
 +
-https://console.bluexp.netapp.com
+https://console.netapp.com
 
 . Sign in using your account credentials for the Console.
 

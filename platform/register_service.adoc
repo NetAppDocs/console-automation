@@ -23,7 +23,7 @@ You must have an account for the Console. You created this account when you firs
 
 . Navigate to the Console website using a browser:
 +
-link:https://console.bluexp.netapp.com[https://console.bluexp.netapp.com^]
+link:https://console.netapp.com[https://console.netapp.com^]
 
 . Sign in using your NetApp Console credentials or your NetApp Support Site credentials.
 
