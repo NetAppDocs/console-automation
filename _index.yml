@@ -60,7 +60,7 @@ indexpage:
          url: /tenancyv4/overview.html
     - title: More resources
       links:
-        - title: NetApp Cloud solutions
+        - title: NetApp Console solutions
           url: https://www.netapp.com/cloud-services/
         - title: NetApp Console automation catalog 
           url: https://docs.netapp.com/us-en/netapp-automation/solutions/bac-overview.html

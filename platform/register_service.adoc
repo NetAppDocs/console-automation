@@ -25,7 +25,7 @@ You must have an account for the Console. You created this account when you firs
 +
 link:https://console.bluexp.netapp.com[https://console.bluexp.netapp.com^]
 
-. Sign in using your NetApp Cloud credentials or your NetApp Support Site credentials.
+. Sign in using your NetApp Console credentials or your NetApp Support Site credentials.
 
 . Select the *Account* tab at the top of the SaaS UI.
 

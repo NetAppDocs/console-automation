@@ -47,7 +47,7 @@ The following steps provide an example of how to use the API Explorer to issue a
 
 . Select *Sign in* which redirects the browser to the Console website login page.
 
-. Enter your NetApp Cloud credentials, including the email address and password, and select *Login* or you can use your NetApp Support Site credentials to log in.
+. Enter your NetApp Console credentials, including the email address and password, and select *Login* or you can use your NetApp Support Site credentials to log in.
 +
 TIP: Use your single sign-on account for federated login.
 +

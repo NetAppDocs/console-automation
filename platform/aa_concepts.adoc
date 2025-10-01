@@ -25,11 +25,11 @@ OpenID Connect (OIDC) is a protocol that extends and enhances the OAuth 2.0 fram
 
 == Auth0 platform
 
-Auth0 is an authentication and authorization platform based on the OAuth 2.0 standard and the OpenID Connect protocol. It orchestrates user authentication as well as authorization to protected resources. The Auth0 authorization server issues access tokens to the client applications. The NetApp Cloud services use Auth0 to authenticate and authorize clients.
+Auth0 is an authentication and authorization platform based on the OAuth 2.0 standard and the OpenID Connect protocol. It orchestrates user authentication as well as authorization to protected resources. The Auth0 authorization server issues access tokens to the client applications. The NetApp Console services use Auth0 to authenticate and authorize clients.
 
 == Auth0 user
 
-An Auth0 user corresponds to a Console customer account and can be used to authorize an application or client (including a NetApp Cloud service) to access the account. The application's access is limited to the scope of the authorization granted (such as read or write). A Console customer account obtains its Auth0 user as part of the onboarding process at the Console website.
+An Auth0 user corresponds to a Console customer account and can be used to authorize an application or client (including a NetApp Console service) to access the account. The application's access is limited to the scope of the authorization granted (such as read or write). A Console customer account obtains its Auth0 user as part of the onboarding process at the Console website.
 
 == Access tokens
 

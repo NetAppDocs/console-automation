@@ -21,7 +21,7 @@ The Console APIs have been designed based on REST technology and current best pr
 .Rich set of platform services
 The APIs provide access to a rich set of services including storage, cloud, and security. Applications based on the Console platform are robust, resilient, and supportable.
 
-.Access to NetApp cloud token-based security
+.Access to NetApp console token-based security
 The Console authentication and authorization is based on the OAuth2 standard. NetApp relies on the Auth0 service implementation.
 
 .Alignment with the Console web UI

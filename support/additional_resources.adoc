@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: support/additional_resources.html
 keywords: netapp, support, cloud, services
-summary: 'There are additional resources you can access to get help and find more information about NetApp cloud services and support, ONTAP 9, and general REST and cloud concepts.'
+summary: 'There are additional resources you can access to get help and find more information about NetApp Console services and support, ONTAP 9, and general REST and cloud concepts.'
 ---
 
 = Additional resources
@@ -13,7 +13,7 @@ summary: 'There are additional resources you can access to get help and find mor
 :imagesdir: ../media/
 
 [.lead]
-There are additional resources you can access to get help and find more information about NetApp cloud services and support, ONTAP 9, and general REST and cloud concepts.
+There are additional resources you can access to get help and find more information about NetApp Console services and support, ONTAP 9, and general REST and cloud concepts.
 
 == NetApp Console 
 
@@ -21,7 +21,7 @@ There are additional resources you can access to get help and find more informat
 +
 Central location for accessing all the Console documentation for both on-premises and public cloud deployments.
 
-== NetApp cloud resources
+== NetApp Console resources
 
 
 * https://services.cloud.netapp.com/redirect-to-login?startOnSignup=false[NetApp Console^]
