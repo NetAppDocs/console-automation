@@ -304,7 +304,7 @@ This request uses the hourly pay-as-you-go (PAYGO) subscription as indicated in 
 JSON input example::
 [source,json]
 {
-   "name":"ranukazure12",
+   "name":"name",
    "volume":{
       "exportPolicyInfo":{
          "policyType":"custom",
@@ -360,7 +360,7 @@ JSON input example::
    "enableCompliance":true,
    "enableMonitoring":true,
    "availabilityZone":null,
-   "resourceGroup":"ranukazure12-rg"
+   "resourceGroup":"name-rg"
 }
 
 Output::
@@ -371,9 +371,9 @@ JSON output example::
 [source,json]
 {
    "publicId":"VsaWorkingEnvironment-1m76JaRt",
-   "name":"ranukazure12",
+   "name":"name",
    "tenantId":"tenantID",
-   "svmName":"svm_ranukazure12",
+   "svmName":"svm_name",
    "creatorUserEmail":"user_email",
    "status":null,
    "providerProperties":null,
