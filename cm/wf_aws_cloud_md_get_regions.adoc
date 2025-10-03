@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: cm/wf_aws_cloud_md_get_regions.html
 keywords: cloud, volumes, ontap, cvo, regions, aws, workflows
-summary: This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP system may be created.
+summary: This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP system might be created.
 ---
 
 = Get regions
@@ -13,7 +13,7 @@ summary: This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP
 :imagesdir: ../media/
 
 [.lead]
-This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP system may be created.
+This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP system might be created.
 
 Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
 

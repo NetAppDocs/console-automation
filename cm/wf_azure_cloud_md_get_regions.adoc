@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: cm/wf_azure_cloud_md_get_regions.html
 keywords: cloud, volumes, ontap, cvo, regions, aws, workflows
-summary: This workflow retrieves the Azure regions in which an Cloud Volumes ONTAP system may be created.
+summary: This workflow retrieves the Azure regions in which an Cloud Volumes ONTAP system might be created.
 ---
 
 = Get Azure regions
@@ -13,7 +13,7 @@ summary: This workflow retrieves the Azure regions in which an Cloud Volumes ONT
 :imagesdir: ../media/
 
 [.lead]
-This workflow retrieves the Azure regions in which an Cloud Volumes ONTAP system may be created.
+This workflow retrieves the Azure regions in which an Cloud Volumes ONTAP system might be created.
 
 NOTE: Ensure that you've the Azure subscription ID. You can easily obtain the ID from the Azure portal.
 
