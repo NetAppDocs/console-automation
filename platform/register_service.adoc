@@ -13,11 +13,12 @@ summary: You can register a service with the NetApp Console and use the associat
 :imagesdir: ../media/
 
 [.lead]
-You can register a service with the NetApp Console and use the associated credentials to create a service token.
+You can register a service with the NetApp Console and use the associated credentials to create a service token. The steps you follow depend on whether you want to create a service token using client secret authentication or private key JWT authentication.
 
 .Before you begin
 
-You must have an account for the Console. You created this account when you first logged in to the Console website and it was displayed at the top of the Console user interface. 
+* You must have an account for the Console. You created this account when you first logged in to the Console website and it was displayed at the top of the Console user interface. 
+* If you plan to use private key JWT authentication to create a service access token, you must have already generated your private/public RSA key or certificate/private key pair. You'll need to upload the public file during this task.
 
 .Steps
 
@@ -31,10 +32,27 @@ link:https://console.netapp.com[https://console.netapp.com^]
 
 . Select *Manage Account* and select the *Members* tab.
 
-. Select *Create Service Account* and provide the details for the service account
+. Select *Create Service Account* and provide the details for the service account depending on whether you want to use client secret authentication or private key JWT authentication.
++
+[role="tabbed-block"]
+====
+.Use client secret authentication
+--
 
-. Select *Create* to register the application.
+.. Enter the service account name.
+.. Select *Create* to register the application.
+.. After successfully completing the registration, the associated client ID and client secret are displayed.
+--
+.Use private key JWT authentication
+--
+.. Enter the service account name.
+.. Select *Create* to register the application.
+.. Check the *private key JWT authentication* box.
+.. Upload a valid X.509 certificate or RSA public key.
++
+NOTE: If you upload an RSA public key, you'll need to set an expiration date. The maximum expiration date you can enter is 13 months from the date of upload. If you upload a certificate, the certificate expiration date is automatically extracted.
 
-.After you finish
+.. After successfully completing the registration, the associated client ID and audience values are displayed.
 
-After successfully completing the registration, the associated client ID and client secret are displayed.
+-- 
+====
