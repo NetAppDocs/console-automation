@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: platform/connectors_clients.html
+keywords: connector, bluexp, rest, api, client credentials, client id, console, agent
+summary: There are several additional identifiers you typically need depending on the grant type and REST API call.
+---
+
+= Console agents and client identifiers
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+There are several additional identifiers you typically need depending on the grant type and REST API call.
+
+== Console agent
+
+A Console agent is a type of agent deployed in the public cloud on behalf of a customer. It executes commands and other actions on behalf of the NetApp Console as part of managing the local cloud environment. For example, a Console agent can be used to access to one or more Cloud Volumes ONTAP instances.
+
+.Console agent ID
+
+Every Console agent is assigned a unique identifier. This value is carried in the HTTP `x-agent-id` request header to identify the request destination.
+
+.Example of a Console agent ID
+----
+uzJbMFKEnuzi2ryLaENbCP52KBTXx0aIclients
+----
+
+== Client ID
+
+In general, a client ID uniquely identifies a client and can be used in several different ways with the Console REST APIs.
+
+Refresh token grant::
+When requesting a user access token with the refresh token grant for the SaaS access model, the client ID is constant and represents the Console. The value is always `Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC`.
+
+Client credentials grant::
+When requesting a service token with the client credentials grant, you must retrieve the client ID from the service account through the Console web user interface.
+
+Derive from Console agent ID::
+You can derive the client ID from the associated Console agent ID by simply removing the suffix `clients`. This value is used when accessing the Console agent directly (not through the SaaS model).

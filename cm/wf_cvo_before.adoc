@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: cm/wf_cvo_before.html
+keywords: aws, workflows, cloud, manager, rest, api, console, agent
+summary: There are several workflows you can use with the public cloud providers.
+---
+
+= Before you begin
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can use the Cloud Volumes ONTAP REST APIs to programmatically administer your cloud-based resources. The Cloud Volumes ONTAP REST API provides access to a subset of the functionality available in the NetApp Console with a focus on Cloud Volumes ONTAP deployments.
+
+There are several Cloud Volumes ONTAP workflows you can use with public cloud providers.
+
+[NOTE]
+Review the link:overview.html[Get started] section before using any of the Cloud Volumes ONTAP REST API workflows.
+
+== Workflow categories
+The workflows are organized into the following functional categories:
+
+* Systems
+* Aggregates
+* Volumes
+* Metadata
+* Miscellaneous
+
+See the link:workflow_processes.html[Workflow processes] for more information on these categories.
+
+[NOTE]
+The link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html[Amazon EBS Elastic Volumes^] feature is enabled by default on new Cloud Volumes ONTAP 9.11.0 or later systems when using `gp3` or `io1` disks.
+To support the feature, a few additional fields have been added. The workflows have been updated to reflect the changes. 
+
+== Console agent setup
+
+You must have a *Console agent* for the cloud environment before creating a system and performing other activities using the workflows. You can create a Console agent using the Console web UI. When you create a Console agent, the Console adds the cloud provider account that you deployed the Console agent in to your list of available accounts. Your public cloud account needs to have the right permissions in order to create a Console agent.
+
+Review link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Console agents^] to know how to create and deploy an agent.

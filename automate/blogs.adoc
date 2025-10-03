@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: automate/blogs.html
+keywords: terraform, terraform provider, automation, automating, netapp, console
+summary: Use the resources on this page to get help integrating NetApp Console and Cloud Volumes ONTAP with your infrastructure as code.
+---
+
+= Blogs about NetApp Console automation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+There are several blog articles available to help you better understand the technologies and approaches available for automation with the NetApp Console.
+
+.Using the Console REST APIs with Federated Access
+
+https://bluexp.netapp.com/blog/using-cloud-manager-rest-apis-with-federated-access[https://bluexp.netapp.com/blog/using-cloud-manager-rest-apis-with-federated-access^]
+
+.Cloud Automation with Cloud Volumes ONTAP and REST
+
+https://www.netapp.com/learn/cloud-automation-with-cloud-volumes-ontap-rest/[https://www.netapp.com/learn/cloud-automation-with-cloud-volumes-ontap-rest/^]
+
+.Automated Data Cloning for Cloud-Based Testing of Software Applications
+
+https://bluexp.netapp.com/blog/automated-data-cloning-for-cloud-based-testing[https://bluexp.netapp.com/blog/automated-data-cloning-for-cloud-based-testing^]
+
+//===== Infrastructure-As-Code (IaC) Accelerated with Ansible and NetApp
+//
+//https://blog.netapp.com/infrastructure-as-code-accelerated-with-ansible-netapp[https://blog.netapp.com/infrastructure-as-code-accelerated-with-ansible-netapp^]
+
+.Roles for Ansible ONTAP use
+
+https://netapp.io/2019/03/25/simplicity-at-its-finest-roles-for-ansible-ontap-use[https://netapp.io/2019/03/25/simplicity-at-its-finest-roles-for-ansible-ontap-use^]
