@@ -47,7 +47,7 @@ link:https://console.netapp.com[https://console.netapp.com^]
 --
 .. Enter the service account name.
 .. Select *Create* to register the application.
-.. Check the *private key JWT authentication* box.
+.. Check the box for *private key JWT authentication*.
 .. Upload a valid X.509 certificate or RSA public key.
 +
 NOTE: If you upload an RSA public key, you'll need to set an expiration date. The maximum expiration date you can enter is 13 months from the date of upload. If you upload a certificate, the certificate expiration date is automatically extracted.
