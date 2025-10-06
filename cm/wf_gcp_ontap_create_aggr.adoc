@@ -1,0 +1,116 @@
+---
+sidebar: sidebar
+permalink: cm/wf_gcp_ontap_create_aggr.html
+keywords: cloud, manager, rest, api, aggregate, publicid, working, environment, aws
+summary: 'You can create a new aggregate within a system.'
+---
+
+= Create an aggregate
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can create new aggregates within a Cloud Volumes ONTAP system using this workflow.
+
+Choose the workflow to use based on the type of Cloud Volumes ONTAP deployment:
+
+* <<Create an aggregate for a single node, Single Node>>
+* <<Create an aggregate for a high availability pair, HA pair>>
+
+== Create an aggregate for a single node
+You can use this workflow to create aggregates in a single node system.
+
+=== 1. Select the system
+
+Perform the workflow link:wf_gcp_cloud_get_wes.html#get-a-system-for-a-single-node[Get system] and choose the `publicId` value for the `workingEnvironmentId` parameter in the JSON input.
+
+=== 2. Select the Google Cloud disk types
+
+Perform the link:wf_gcp_cloud_md_get_disk_types.html[Get Google Cloud disk types] workflow and choose the `size`  and `supportedDiskType` values of the required `diskSize` and `providerVolumeType` parameters in the JSON input.
+
+=== 3. Create the aggregate
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|occm/api/gcp/vsa/aggregates
+|===
+
+curl example::
+[source,curl]
+curl --location --request POST 'https://api.bluexp.netapp.com/occm/api/gcp/vsa/aggregates' --header 'Content-Type: application/json' --header 'x-agent-id: <AGENT_ID>' --header 'Authorization: Bearer <ACCESS_TOKEN>' --d @JSONinput
+
+Input::
+
+The JSON input example includes the minimum list of input parameters.
+
+JSON input example::
+[source,json]
+{
+  "name": "ziv01agg01",
+  "workingEnvironmentId": "vsaworkingenvironment-sfrf3wvj",
+  "numberOfDisks": 1,
+  "diskSize": {
+    "size": 100,
+    "unit": "GB"
+  },
+  "providerVolumeType": "pd-ssd"
+}
+
+
+Output::
+
+None
+
+== Create an aggregate for a high availability pair
+You can use this workflow to create aggregates in an HA system.
+
+=== 1. Select the system
+
+Perform the workflow link:wf_gcp_cloud_get_wes.html#get-a-system-for-a-high-availability-pair[Get system] and choose the `publicId` value for the `workingEnvironmentId` parameter in the JSON input.
+
+=== 2. Select the Google Cloud disk types
+
+Perform the link:wf_gcp_cloud_md_get_disk_types.html[Get Google Cloud disk types] workflow and choose the `size`  and `supportedDiskType` values of the required `diskSize` and `providerVolumeType` parameters in the JSON input.
+
+=== 3. Create the aggregate
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|occm/api/gcp/ha/aggregates
+|===
+
+curl example::
+[source,curl]
+curl --location --request POST 'https://api.bluexp.netapp.com/occm/api/gcp/ha/aggregates' --header 'Content-Type: application/json' --header 'x-agent-id: <AGENT_ID>' --header 'Authorization: Bearer <ACCESS_TOKEN>' --d @JSONinput
+
+Input::
+
+The JSON input example includes the minimum list of input parameters.
+
+JSON input example::
+[source,json]
+{
+  "name": "ziv01we02agg01ha",
+  "workingEnvironmentId": "vsaworkingenvironment-blg9ei6u",
+  "numberOfDisks": 1,
+  "diskSize": {
+    "size": 100,
+    "unit": "GB"
+  },
+  "providerVolumeType": "pd-ssd"
+}
+
+
+
+Output::
+
+None
