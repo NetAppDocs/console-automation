@@ -17,7 +17,7 @@ There are additional resources you can access to get help and find more informat
 
 == NetApp Console 
 
-* https://docs.netapp.com/us-en/bluexp-family/[NetApp Console family documentation^]
+* https://docs.netapp.com/us-en/console-family/[NetApp Console family documentation^]
 +
 Central location for accessing all the Console documentation for both on-premises and public cloud deployments.
 
