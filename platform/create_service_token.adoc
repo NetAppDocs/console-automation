@@ -69,7 +69,6 @@ JSON output example::
 [source,json]
 {
     "access_token": "<SERVICE_TOKEN>",
-    "scope": "occm-access",
     "expires_in": 86400,
     "token_type": "Bearer"
 }
@@ -118,9 +117,10 @@ JSON input example::
     "audience": "https://api.cloud.netapp.com",
     "client_assertion_type": "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
     "client_assertion": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImhkMnY4U1BncGxkYjdhS0ZnZ2VpSWxVeDdhZjdXU1cxXzNmenZBN3BiUnMifQ.eyJpYXQiOjE3MzA0OTM4MjAsImlzcyI6IkV2MmJ2Y2NSdjVXODlZdzFLQ1Z2bHNQVHRNbXZXY3lnIiwic3ViIjoiRXYyYnZjY1J2NVc4OVl3MUtDVnZsc1BUdE1tdldjeWciLCJhdWQiOiJodHRwczovL2Rldi1uZXRhcHAtY2xvdWQtYWNjb3VudC5hdXRoMC5jb20vIiwiZXhwIjoxNzMwNDk0MTIwLCJqdGkiOiIwMzUwYzdlOS1mYjRjLTRkMjctYWY4Yi05MjllZmUyMjRlYWIifQ.X_8Wh-UCAqQICMdolb6TBDzQU9Z8yIrRXRiDkJC1NxHl5R25hTo8gKJpiQEuWTrRjXpne0NT5XHAozfnu_RD3i2TDDwxpftLCpLwahsJRTmvIRLapxhAJOa9Y57JJknft192SVcEadaMLnBpk8iJNUCGKDBDeNtd0DM1BBMosT_4QA8375-g5JRpzlXbI7RpMs7ylyy_G3Yjl4fm4xcSNNGC7n-p362iODG2h86waJDmIdt-D6JiKztcgtuGkEZPwG_bQZw25e06J_MIsKd42KeRTm3L5DLXiV-cpF5bwPAMMOFn6a36bBYriERKbLzpmMy8-b3HUunn4xH4i0TxZw",
-    "grant_type": "client_credentials"}
-
+    "grant_type": "client_credentials"
 }
+
+
 
 
 Output::
@@ -131,7 +131,6 @@ JSON output example::
 [source,json]
 {
     "access_token": "<SERVICE_TOKEN>",
-    "scope": "occm-access",
     "expires_in": 86400,
     "token_type": "Bearer"
 }
