@@ -13,7 +13,7 @@ summary: A workflow describing how to cerate a service token
 :imagesdir: ../media/
 
 [.lead]
-You can create a service access token that can be used by the NetApp Console internal services and external clients. You can create a service access token using client secret authentication or private key JWT authentication. Private key JWT authentication is recommended for increased security.
+Create a service access token that can be used by the NetApp Console internal services and external clients. You can create the token using client secret authentication or private key JWT authentication. Private key JWT authentication is recommended for increased security.
 
 [role="tabbed-block"]
 ====
