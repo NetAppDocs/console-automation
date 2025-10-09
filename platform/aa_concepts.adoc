@@ -45,7 +45,7 @@ There are several ways the two access tokens can be used depending on the specif
 |User token
 |This is a token identifying a user who accesses the Console through the REST API or web UI. A federated or non-federated authentication model can be used when requesting the token. See link:user_access_tokens.html[User access tokens] for more information. The token is valid for six hours.
 |Service token
-|This token is used by software applications to perform a REST API call. Example clients include internal Console service tasks and external clients. The token is valid for 24 hours.
+|This token is used by software applications to perform a REST API call. Example clients include internal Console service tasks and external clients. The token is valid for 24 hours. You can use client secret authentication or private key JWT authentication to create the service access token.
 |===
 
 == Grant type
@@ -59,3 +59,5 @@ A _scope_ within the OAuth 2.0 framework provides a way to limit access to data 
 == JWT encoding
 
 The JSON web token (JWT) is a standard way of representing claims between parties. It is encoded using base64url. See link:user_access_tokens.html[User access tokens] for more information including an example of a token.
+
+// 2025 Oct 09, BLUEXPDOC-903
