@@ -14,10 +14,10 @@ sidebar:
     - section: platform
     - section: workflows
     - section: api-cm
+    - section: cvo
     - section: tenancy
     - section: fsx
     - section: audit
-    - section: cvo
     - section: cbs
     - section: copysync
     - section: credential
