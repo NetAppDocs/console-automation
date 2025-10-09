@@ -18,7 +18,7 @@ You can register a service with the NetApp Console and use the associated creden
 .Before you begin
 
 * You must have an account for the Console. You created this account when you first logged in to the Console website and it was displayed at the top of the Console user interface. 
-* If you plan to use private key JWT authentication to create a service access token, you must have already generated your private/public RSA key or certificate/private key pair. You'll need to upload the public file during this task.
+* If you plan to use private key JWT authentication to create a service access token, you must have already generated your private/public RSA key or certificate/private key pair. You need to upload the public file during this task.
 
 .Steps
 
@@ -49,7 +49,7 @@ link:https://console.netapp.com[https://console.netapp.com^]
 .. Select the checkbox for *private key JWT authentication*.
 .. Upload a valid X.509 certificate or RSA public key.
 +
-NOTE: If you upload an RSA public key, you'll need to set an expiration date. The maximum expiration date you can enter is 13 months from the date of upload. If you upload a certificate, the certificate expiration date is automatically extracted.
+NOTE: You need to set an expiration date if you upload an RSA public key. The maximum expiration date you can enter is 13 months from the date of upload. If you upload a certificate, the certificate expiration date is automatically extracted.
 .. Select *Create* to register the application.
 .. After successfully completing the registration, the associated client ID and audience values are displayed.
 
