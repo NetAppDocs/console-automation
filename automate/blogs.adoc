@@ -17,20 +17,17 @@ There are several blog articles available to help you better understand the tech
 
 .Using the Console REST APIs with Federated Access
 
-https://bluexp.netapp.com/blog/using-cloud-manager-rest-apis-with-federated-access[https://bluexp.netapp.com/blog/using-cloud-manager-rest-apis-with-federated-access^]
+https://bluexp.netapp.com/blog/using-cloud-manager-rest-apis-with-federated-access[Using NetApp Console REST APIs with Federated Access^]
 
 .Cloud Automation with Cloud Volumes ONTAP and REST
 
-https://www.netapp.com/learn/cloud-automation-with-cloud-volumes-ontap-rest/[https://www.netapp.com/learn/cloud-automation-with-cloud-volumes-ontap-rest/^]
+https://www.netapp.com/learn/cloud-automation-with-cloud-volumes-ontap-rest/[Automating Cloud Operations with Cloud Volumes ONTAP and REST^]
 
 .Automated Data Cloning for Cloud-Based Testing of Software Applications
 
-https://bluexp.netapp.com/blog/automated-data-cloning-for-cloud-based-testing[https://bluexp.netapp.com/blog/automated-data-cloning-for-cloud-based-testing^]
+https://bluexp.netapp.com/blog/automated-data-cloning-for-cloud-based-testing[Automated Data Cloning for Cloud-Based Testing of Software Applications^]
 
 //===== Infrastructure-As-Code (IaC) Accelerated with Ansible and NetApp
 //
 //https://blog.netapp.com/infrastructure-as-code-accelerated-with-ansible-netapp[https://blog.netapp.com/infrastructure-as-code-accelerated-with-ansible-netapp^]
 
-.Roles for Ansible ONTAP use
-
-https://netapp.io/2019/03/25/simplicity-at-its-finest-roles-for-ansible-ontap-use[https://netapp.io/2019/03/25/simplicity-at-its-finest-roles-for-ansible-ontap-use^]

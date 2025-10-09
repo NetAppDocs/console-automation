@@ -39,4 +39,4 @@ To support the feature, a few additional fields have been added. The workflows h
 
 You must have a *Console agent* for the cloud environment before creating a system and performing other activities using the workflows. You can create a Console agent using the Console web UI. When you create a Console agent, the Console adds the cloud provider account that you deployed the Console agent in to your list of available accounts. Your public cloud account needs to have the right permissions in order to create a Console agent.
 
-Review link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Console agents^] to know how to create and deploy an agent.
+Review link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[Learn about Console agents^] to know how to create and deploy an agent.

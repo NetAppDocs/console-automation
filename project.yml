@@ -1,7 +1,5 @@
----
 settings:
   name: API
-  harmony_integration: maestro
   internal:
     pdf_enabled: false
     api_enabled: true
