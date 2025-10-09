@@ -17,6 +17,7 @@ sidebar:
     - section: tenancy
     - section: fsx
     - section: audit
+    - section: cvo
     - section: cbs
     - section: copysync
     - section: credential
