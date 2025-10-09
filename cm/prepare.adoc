@@ -16,13 +16,13 @@ summary: 'There are several things you should do to prepare to use the NetApp Co
 You need to prepare before using the REST APIs provided with ONTAP management. 
 
 == Step 1: Obtain NetApp Console credentials
-You need a NetApp account to acquire the access token required to issue the REST API calls. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-sign-up-saas.html[Sign up or log in to NetApp Console^] for more information.
+You need a NetApp account to acquire the access token required to issue the REST API calls. Refer to https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html[Sign up or log in to NetApp Console^] for more information.
 
 == Step 2: Review REST concepts and implementation
 Review the link:../platform/concepts.html[REST implementation details] for information about REST concepts and the details of how a REST API is designed.
 
 == Step 3: Review the Cloud Volumes ONTAP and ONTAP on-premises concepts
-If you plan to perform Cloud Volumes ONTAP and on-premises ONTAP administration tasks, you need to be familiar with the related ONTAP concepts, terminology, and procedures. Learn about link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-overview-cvo.html[Cloud Volumes ONTAP^] and https://docs.netapp.com/us-en/bluexp-ontap-onprem/concept-onprem-ontap.html[on-premises ONTAP^] concepts.
+If you plan to perform Cloud Volumes ONTAP and on-premises ONTAP administration tasks, you need to be familiar with the related ONTAP concepts, terminology, and procedures. Learn about link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-overview-cvo.html[Cloud Volumes ONTAP^] and https://docs.netapp.com/us-en/storage-management-ontap-onprem/concept-onprem-ontap.html[on-premises ONTAP^] concepts.
 
 
 == Step 4: Decide on the cloud provider and obtain credentials for Cloud Volumes ONTAP
