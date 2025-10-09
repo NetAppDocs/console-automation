@@ -59,3 +59,5 @@ A _scope_ within the OAuth 2.0 framework provides a way to limit access to data 
 == JWT encoding
 
 The JSON web token (JWT) is a standard way of representing claims between parties. It is encoded using base64url. See link:user_access_tokens.html[User access tokens] for more information including an example of a token.
+
+// 2025 Oct 09, BLUEXPDOC-903
