@@ -5650,7 +5650,7 @@
       "post": {
         "x-doc": {
           "title": "setupCifsConfiguration_13: Delete cifs configuration of an existing cloud volumes ontap working environment",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-delete-cifs.html",
           "subcategory": null
         }
@@ -5660,7 +5660,7 @@
       "get": {
         "x-doc": {
           "title": "cifsConfiguration_8: Retrieves cifs configuration to an existing cloud volumes ontap working environment",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-cifs.html",
           "subcategory": null
         }
@@ -5668,7 +5668,7 @@
       "post": {
         "x-doc": {
           "title": "setupCifsConfiguration_7: Setup a new cifs configuration to an existing cloud volumes ontap working environment",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-cifs.html",
           "subcategory": null
         }
@@ -5678,7 +5678,7 @@
       "get": {
         "x-doc": {
           "title": "preValidateByolToCapacity_6: Validate pre-req for conversion of an existing cloud volumes ontap working environment",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
         }
@@ -5688,7 +5688,7 @@
       "get": {
         "x-doc": {
           "title": "workingEnvironment_7: Retrieves an cloud volumes ontap working environment",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-.html",
           "subcategory": null
         }
@@ -5696,7 +5696,7 @@
       "delete": {
         "x-doc": {
           "title": "deleteVsaWorkingEnvironment_6: Deletes an existing cloud volumes ontap working environment, including all cloud resources created for this working environment (unless the localdelete flag is set to true)",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "delete-vsa-working-environments-.html",
           "subcategory": null
         }
@@ -5706,7 +5706,7 @@
       "put": {
         "x-doc": {
           "title": "modifyWritingSpeed_6: Sets the writing speed for cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-writing-speed.html",
           "subcategory": null
         }
@@ -5716,7 +5716,7 @@
       "get": {
         "x-doc": {
           "title": "licenseAndInstanceTypes_6: Retrieves all license types and their associated instance types for a given cloud volumes ontap instance",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -5724,7 +5724,7 @@
       "put": {
         "x-doc": {
           "title": "changeLicenseAndInstanceType_6: Sets the instance type of a specific cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -5734,7 +5734,7 @@
       "get": {
         "x-doc": {
           "title": "ontapAvailableImages_6: Retrieves images already installed on the cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-ontap-available-images.html",
           "subcategory": null
         }
@@ -5744,7 +5744,7 @@
       "post": {
         "x-doc": {
           "title": "updateSystemImage_6: Performs a complete image update operation on the single node of the specified cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-update-image.html",
           "subcategory": null
         }
@@ -5754,7 +5754,7 @@
       "get": {
         "x-doc": {
           "title": "occmUpgradeEligibilityChecks_6: Retrieves eligibility support status of a cloud volumes ontap system valid values - nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, license_expired",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-update-eligibility.html",
           "subcategory": null
         }
@@ -5764,7 +5764,7 @@
       "post": {
         "x-doc": {
           "title": "uploadLicenseFile_6: Uploads a cloud license file on the provided cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-upload-license-file.html",
           "subcategory": null
         }
@@ -5774,7 +5774,7 @@
       "post": {
         "x-doc": {
           "title": "uploadLicenseFileContent_6: Uploads a cloud license file content on the provided cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-upload-licenses.html",
           "subcategory": null
         }
@@ -5784,7 +5784,7 @@
       "put": {
         "x-doc": {
           "title": "activateOntapConfiguration_6: Activate offbox configuration",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-offbox.html",
           "subcategory": null
         }
@@ -5794,7 +5794,7 @@
       "put": {
         "x-doc": {
           "title": "changeNetworkOptimizationLevel_6: Modify the net port broadcast domain mtu of the cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-networkoptimization.html",
           "subcategory": null
         }
@@ -5804,7 +5804,7 @@
       "get": {
         "x-doc": {
           "title": "createRequestParameters_6: Retrieves action parameters used in create request of a given cloud volumes ontap instance",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-create-request-parameters.html",
           "subcategory": null
         }
@@ -5814,7 +5814,7 @@
       "post": {
         "x-doc": {
           "title": "enableCapacityTiering_6: Enable capacity tiering",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-enable-capacity-tiering.html",
           "subcategory": null
         }
@@ -5824,7 +5824,7 @@
       "get": {
         "x-doc": {
           "title": "occmProvidedCloudOntapUpgradeVersions_6: Retrieves a list of versions to which this cloud volumes ontap can be upgraded",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
         }
@@ -5834,7 +5834,7 @@
       "post": {
         "x-doc": {
           "title": "syncVsaWorkingEnvironmentsSubscription_6: Manually triggers subscription sync for all cloud volumes ontap working environments",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-sync-subscription.html",
           "subcategory": null
         }
@@ -5844,7 +5844,7 @@
       "get": {
         "x-doc": {
           "title": "workingEnvironmentCostAndUsage_6: Working environment cost and usage",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-cost-and-usage.html",
           "subcategory": null
         }
@@ -5854,7 +5854,7 @@
       "get": {
         "x-doc": {
           "title": "workingEnvironmentOntapSaving_6: Working environment ontap saving",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-ontap-saving.html",
           "subcategory": null
         }
@@ -5864,7 +5864,7 @@
       "get": {
         "x-doc": {
           "title": "getExtraCapacityLicenses_6: Get extra capacity licenses for cvo",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -5872,7 +5872,7 @@
       "put": {
         "x-doc": {
           "title": "updateExtraCapacityLicenses_6: Update extra capacity license",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -5880,7 +5880,7 @@
       "post": {
         "x-doc": {
           "title": "uploadExtraCapacityLicenses_6: Register extra capacity license",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -5890,7 +5890,7 @@
       "put": {
         "x-doc": {
           "title": "updateExtraCapacitySerials_6: Update extra capacity serials",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -5898,7 +5898,7 @@
       "post": {
         "x-doc": {
           "title": "uploadExtraCapacitySerials_6: Register extra capacity serials",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -5906,7 +5906,7 @@
       "delete": {
         "x-doc": {
           "title": "deleteExtraCapacityLicenses_6: Delete extra capacity licenses by serials",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "delete-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -5916,7 +5916,7 @@
       "put": {
         "x-doc": {
           "title": "updateVscanFileOperation_6: Updates default vscan file operation profile profile on existing cifs shares will change only on writes-only mode",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-vscan-file-op.html",
           "subcategory": null
         }
@@ -5926,7 +5926,7 @@
       "put": {
         "x-doc": {
           "title": "updatePassword_7: Updates cloud manager password of a specific cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -5936,7 +5936,7 @@
       "post": {
         "x-doc": {
           "title": "changeTierLevel_6: Change tier level",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-change-tier-level.html",
           "subcategory": null
         }
@@ -5946,7 +5946,7 @@
       "put": {
         "x-doc": {
           "title": "byolToCapacity_6: Updated byol licence to capacity based license to an existing cloud volumes ontap working environment",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
         }
@@ -5956,7 +5956,7 @@
       "put": {
         "x-doc": {
           "title": "enableWorm_6: Enable snaplock to an existing cloud volumes ontap working environment",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-enable-worm.html",
           "subcategory": null
         }
@@ -5966,7 +5966,7 @@
       "post": {
         "x-doc": {
           "title": "setupNtpServer_6: Setup ntp server",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-ntp.html",
           "subcategory": null
         }
@@ -5976,7 +5976,7 @@
       "post": {
         "x-doc": {
           "title": "startVsa_6: Starts a specific cloud volumes ontap instance",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-start.html",
           "subcategory": null
         }
@@ -5986,7 +5986,7 @@
       "post": {
         "x-doc": {
           "title": "stopVsa_6: Stops a specific cloud volumes ontap instance",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-stop.html",
           "subcategory": null
         }
@@ -5996,7 +5996,7 @@
       "get": {
         "x-doc": {
           "title": "status_7: Retrieves the support registration status of a cloud volumes ontap system",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -6004,7 +6004,7 @@
       "post": {
         "x-doc": {
           "title": "registerSupport_6: Registers a cloud volumes ontap system with netapp",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -6014,7 +6014,7 @@
       "get": {
         "x-doc": {
           "title": "getSchedules_6: List start-stop schedules for cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-schedules.html",
           "subcategory": null
         }
@@ -6022,7 +6022,7 @@
       "put": {
         "x-doc": {
           "title": "setSchedules_6: Set schedules for cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-schedules.html",
           "subcategory": null
         }
@@ -6032,7 +6032,7 @@
       "put": {
         "x-doc": {
           "title": "changeSvmName_6: Modify the svm name of the cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-svm.html",
           "subcategory": null
         }
@@ -6042,7 +6042,7 @@
       "put": {
         "x-doc": {
           "title": "activateFpolicy_6: Activate fpolicy for ransomeware files",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-activate-fpolicy.html",
           "subcategory": null
         }
@@ -6052,7 +6052,7 @@
       "put": {
         "x-doc": {
           "title": "disableFpolicy_6: Disable fpolicy for ransomeware files",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-disable-fpolicy.html",
           "subcategory": null
         }
@@ -6062,7 +6062,7 @@
       "delete": {
         "x-doc": {
           "title": "deleteFpolicy_6: Delete fpolicy for ransomeware files",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "delete-vsa-working-environments-fpolicy.html",
           "subcategory": null
         }
@@ -6072,7 +6072,7 @@
       "post": {
         "x-doc": {
           "title": "parseLicenseFile_6: Parses an uploaded cloud license file",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-parse-license-file.html",
           "subcategory": null
         }
@@ -6082,7 +6082,7 @@
       "get": {
         "x-doc": {
           "title": "userTags_6: Retrieves editable tags for cloud resources of a given cloud volumes ontap instance",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -6090,7 +6090,7 @@
       "put": {
         "x-doc": {
           "title": "modifyUserTags_6: Modify user tags for cloud resources of a given cloud volumes ontap instance",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -6100,7 +6100,7 @@
       "put": {
         "x-doc": {
           "title": "activateSnapshotPolicy_6: Activate snapshot policy assignment to all not protected rw volumes",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-activate-snapshot-policy.html",
           "subcategory": null
         }
@@ -6110,7 +6110,7 @@
       "post": {
         "x-doc": {
           "title": "createSnapshotPolicy_6: Create snapshot policy",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-snapshot-policy.html",
           "subcategory": null
         }
@@ -6120,7 +6120,7 @@
       "post": {
         "x-doc": {
           "title": "changeSerialNumber_6: Change serial number of cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments-change-serial.html",
           "subcategory": null
         }
@@ -6130,7 +6130,7 @@
       "put": {
         "x-doc": {
           "title": "setPassword_6: Sets the cluster password of a specific cloud volumes ontap",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "put-vsa-working-environments-set-password.html",
           "subcategory": null
         }
@@ -7720,7 +7720,7 @@
       "get": {
         "x-doc": {
           "title": "workingEnvironments_7: Retrieves cloud volumes ontap working environments visible to the currently logged in user",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "get-vsa-working-environments.html",
           "subcategory": null
         }
@@ -7728,7 +7728,7 @@
       "post": {
         "x-doc": {
           "title": "Creates a new cloud volumes ontap working environment refer to the api developers guide in order to understand how to fill in the values for region, licensetype, instancetype and version",
-          "category": "Ontap cloud aws working environment operations - working environments",
+          "category": "AWS system operations - systems",
           "filename": "post-vsa-working-environments.html",
           "subcategory": null
         }
