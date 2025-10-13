@@ -1044,7 +1044,7 @@
         "tags": [
           "Account operations"
         ],
-        "description": "Retrieves Google Cloud storage account using the public ID.",
+        "description": "Retrieves a Google Cloud storage account using the public ID.",
         "operationId": "gcpStorageAccount",
         "parameters": [
           {
