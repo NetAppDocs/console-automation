@@ -5473,7 +5473,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Working Environment Ontap Saving",
+        "description": "Retrieves system ONTAP savings.",
         "operationId": "workingEnvironmentOntapSaving",
         "parameters": [
           {
@@ -12815,7 +12815,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Working Environment Ontap Saving",
+        "description": "Retrieves system ONTAP savings.",
         "operationId": "workingEnvironmentOntapSaving_1",
         "parameters": [
           {
@@ -16963,7 +16963,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Working Environment Ontap Saving",
+        "description": "Retrieves system ONTAP savings.",
         "operationId": "workingEnvironmentOntapSaving_2",
         "parameters": [
           {
