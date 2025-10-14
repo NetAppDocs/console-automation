@@ -3,8 +3,8 @@
     "/gcp/ha/discovery/discover": {
       "get": {
         "x-doc": {
-          "title": "Retrieves a list of discovered systems that are visible to the current user in the specified google cloud region",
-          "category": "Ontap cloud gcp ha working environment operations - discovery",
+          "title": "Retrieve a list of discovered systems for a Google Cloud region",
+          "category": "Google Cloud HA system operations - discovery",
           "filename": "get-gcp-ha-discovery-discover.html",
           "subcategory": null
         }
@@ -14,7 +14,7 @@
       "post": {
         "x-doc": {
           "title": "Saves a previously discovered cloud volumes ontap system to the netapp console database",
-          "category": "Ontap cloud gcp ha working environment operations - discovery",
+          "category": "Google Cloud HA system operations - discovery",
           "filename": "post-gcp-ha-discovery-recover.html",
           "subcategory": null
         }
@@ -24,7 +24,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves a list of discovered systems that are visible to the current user in the specified google cloud zone",
-          "category": "Ontap cloud gcp working environment operations - discovery",
+          "category": "Google Cloud system operations -discovery",
           "filename": "get-gcp-vsa-discover.html",
           "subcategory": null
         }
@@ -34,7 +34,7 @@
       "post": {
         "x-doc": {
           "title": "recover_1: Saves a previously discovered cloud volumes ontap system to the netapp console database",
-          "category": "Ontap cloud gcp working environment operations - discovery",
+          "category": "Google Cloud system operations -discovery",
           "filename": "post-gcp-vsa-recover.html",
           "subcategory": null
         }
@@ -44,7 +44,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieves quotes for a new volume returns the resource quote required for the requested volume",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "post-azure-vsa-volumes-quote.html",
           "subcategory": null
         }
@@ -54,7 +54,7 @@
       "post": {
         "x-doc": {
           "title": "Updates the underlying volume tier",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "post-azure-vsa-volumes--change-tier.html",
           "subcategory": null
         }
@@ -64,7 +64,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves volumes for backup activation",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "get-azure-vsa-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -74,7 +74,7 @@
       "put": {
         "x-doc": {
           "title": "Modifies an existing volume",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "put-azure-vsa-volumes--.html",
           "subcategory": null
         }
@@ -82,7 +82,7 @@
       "delete": {
         "x-doc": {
           "title": "Deletes an existing volume",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "delete-azure-vsa-volumes--.html",
           "subcategory": null
         }
@@ -92,7 +92,7 @@
       "put": {
         "x-doc": {
           "title": "Adds an export policy rule",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "put-azure-vsa-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -102,7 +102,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves all igroups",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "get-azure-vsa-volumes-igroups-.html",
           "subcategory": null
         }
@@ -112,7 +112,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves all iscsi initiators",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "get-azure-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -120,7 +120,7 @@
       "post": {
         "x-doc": {
           "title": "Adds an iscsi initiator",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "post-azure-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -130,7 +130,7 @@
       "get": {
         "x-doc": {
           "title": "Returns a list of snapshot descriptions for the volume",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "get-azure-vsa-volumes--snapshots.html",
           "subcategory": null
         }
@@ -140,7 +140,7 @@
       "post": {
         "x-doc": {
           "title": "Clones an existing volume",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "post-azure-vsa-volumes--clone.html",
           "subcategory": null
         }
@@ -150,7 +150,7 @@
       "post": {
         "x-doc": {
           "title": "Moves an existing volume",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "post-azure-vsa-volumes--move.html",
           "subcategory": null
         }
@@ -160,7 +160,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves all volumes",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "get-azure-vsa-volumes.html",
           "subcategory": null
         }
@@ -168,7 +168,7 @@
       "post": {
         "x-doc": {
           "title": "Creates a new volume if the aggregatename and maxnumofdisksapprovedtoadd properties are not populated, the response fails with a suggested aggregate name and the number of disks that need to be created in order to fulfill the request",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "post-azure-vsa-volumes.html",
           "subcategory": null
         }
@@ -178,7 +178,7 @@
       "post": {
         "x-doc": {
           "title": "Creates a snapshot manually",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "post-azure-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -186,7 +186,7 @@
       "delete": {
         "x-doc": {
           "title": "Deletes a snapshot manually",
-          "category": "Ontap cloud azure working environment operations - volumes",
+          "category": "Azure system operations - volumes",
           "filename": "delete-azure-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -1684,7 +1684,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the most recently generated certificate signing request (csr), if it exists",
-          "category": "Cloud manager system operations - encryption - csr",
+          "category": "NetApp Console system operations - CSR",
           "filename": "get-occm-encryption-csr.html",
           "subcategory": null
         }
@@ -1692,7 +1692,7 @@
       "post": {
         "x-doc": {
           "title": "Generates, stores, and returns a certificate signing request (csr) this csr can be signed by a certificate authority (ca) and installed in the netapp console using /install_certificate successive calls will not overwrite previously generated csrs",
-          "category": "Cloud manager system operations - encryption - csr",
+          "category": "NetApp Console system operations - CSR",
           "filename": "post-occm-encryption-csr.html",
           "subcategory": null
         }
@@ -1702,7 +1702,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves all key manager certificate authority (ca) certificates",
-          "category": "Cloud manager system operations - encryption - key manager ca certificates operations",
+          "category": "NetApp Console system operations - CA certificates",
           "filename": "get-occm-encryption-key-managers-ca-certificates.html",
           "subcategory": null
         }
@@ -1710,7 +1710,7 @@
       "post": {
         "x-doc": {
           "title": "Adds a new key manager certificate authority (ca) certificate",
-          "category": "Cloud manager system operations - encryption - key manager ca certificates operations",
+          "category": "NetApp Console system operations - CA certificates ",
           "filename": "post-occm-encryption-key-managers-ca-certificates.html",
           "subcategory": null
         }
@@ -1720,7 +1720,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves a specific key manager certificate authority (ca)  certificate",
-          "category": "Cloud manager system operations - encryption - key manager ca certificates operations",
+          "category": "NetApp Console system operations - CA certificates ",
           "filename": "get-occm-encryption-key-managers-ca-certificates-.html",
           "subcategory": null
         }
@@ -1728,7 +1728,7 @@
       "delete": {
         "x-doc": {
           "title": "Deletes an existing key manager certificate authority (ca)  certificate",
-          "category": "Cloud manager system operations - encryption - key manager ca certificates operations",
+          "category": "NetApp Console system operations - CA certificates ",
           "filename": "delete-occm-encryption-key-managers-ca-certificates-.html",
           "subcategory": null
         }
@@ -1738,7 +1738,7 @@
       "get": {
         "x-doc": {
           "title": "Returns a specific key manager using the public id",
-          "category": "Cloud manager system operations - encryption - key managers",
+          "category": "NetApp Console system operations - key managers",
           "filename": "get-occm-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -1746,7 +1746,7 @@
       "put": {
         "x-doc": {
           "title": "Updates an existing key manager",
-          "category": "Cloud manager system operations - encryption - key managers",
+          "category": "NetApp Console system operations - key managers",
           "filename": "put-occm-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -1754,7 +1754,7 @@
       "delete": {
         "x-doc": {
           "title": "Deletes an existing key manager",
-          "category": "Cloud manager system operations - encryption - key managers",
+          "category": "NetApp Console system operations - key managers",
           "filename": "delete-occm-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -1764,7 +1764,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves all key managers",
-          "category": "Cloud manager system operations - encryption - key managers",
+          "category": "NetApp Console system operations - key managers",
           "filename": "get-occm-encryption-key-managers.html",
           "subcategory": null
         }
@@ -1772,7 +1772,7 @@
       "post": {
         "x-doc": {
           "title": "Adds a new key manager",
-          "category": "Cloud manager system operations - encryption - key managers",
+          "category": "NetApp Console system operations - key managers",
           "filename": "post-occm-encryption-key-managers.html",
           "subcategory": null
         }
@@ -4368,7 +4368,7 @@
       "post": {
         "x-doc": {
           "title": "Generates a new key pair and self certificate at the key store and returns a certificate signing request (csr) ",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "post-occm-key-store.html",
           "subcategory": null
         }
@@ -4378,7 +4378,7 @@
       "post": {
         "x-doc": {
           "title": "Generates new key pair and self certificate at the key store and returns a certificate signing request (csr) ",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "post-occm-key-store-external-certificate-file.html",
           "subcategory": null
         }
@@ -4388,7 +4388,7 @@
       "post": {
         "x-doc": {
           "title": "installExternalSignedCertificate: Generates a new key pair and self certificate at the key store and returns a certificate signing request (csr) ",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "post-occm-key-store-external-certificate.html",
           "subcategory": null
         }
@@ -4398,7 +4398,7 @@
       "post": {
         "x-doc": {
           "title": "Validates and installs the provided certificate in the trust store",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "post-occm-key-store-trusted-certificate-file.html",
           "subcategory": null
         }
@@ -4408,7 +4408,7 @@
       "post": {
         "x-doc": {
           "title": "Validates and installs the provided root certificate authority (ca) chain successive calls overwrite any previously installed root ca chain",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "post-occm-key-store-signed-certificate-file.html",
           "subcategory": null
         }
@@ -4418,7 +4418,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the certificate authority (ca) signed certificate of the netapp console key store, if one exists",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "get-occm-key-store-signed-certificate.html",
           "subcategory": null
         }
@@ -4426,7 +4426,7 @@
       "post": {
         "x-doc": {
           "title": "installSignedCertificate: Validates and installs the provided root certificate authority (ca) chain successive calls overwrite any previously installed root ca chain",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "post-occm-key-store-signed-certificate.html",
           "subcategory": null
         }
@@ -4436,7 +4436,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the self certificate of the netapp console key store, if one exists",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "get-occm-key-store-self-certificate.html",
           "subcategory": null
         }
@@ -4446,7 +4446,7 @@
       "get": {
         "x-doc": {
           "title": "Returns the existing trusted certificates added from the trust store",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "get-occm-key-store-user-trusted-certificates.html",
           "subcategory": null
         }
@@ -4456,7 +4456,7 @@
       "delete": {
         "x-doc": {
           "title": "Deletes an existing trusted certificate from the trust store",
-          "category": "Cloud manager system operations - encryption - key store operations",
+          "category": "NetApp Console system operations - key store",
           "filename": "delete-occm-key-store-trusted-certificate-.html",
           "subcategory": null
         }
@@ -4506,7 +4506,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the signed url for the netapp console support data",
-          "category": "Cloud manager system operations - asup",
+          "category": "NetApp Console system operations - AutoSupport",
           "filename": "get-occm-asup-download-signed.html",
           "subcategory": null
         }
@@ -4516,7 +4516,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the autosupport configuration",
-          "category": "Cloud manager system operations - asup",
+          "category": "NetApp Console system operations - AutoSupport",
           "filename": "get-occm-asup.html",
           "subcategory": null
         }
@@ -4524,7 +4524,7 @@
       "put": {
         "x-doc": {
           "title": "Updates the autosupport configuration",
-          "category": "Cloud manager system operations - asup",
+          "category": "NetApp Console system operations - AutoSupport",
           "filename": "put-occm-asup.html",
           "subcategory": null
         }
@@ -4534,7 +4534,7 @@
       "get": {
         "x-doc": {
           "title": "Downloads a compressed file of all the autosupport files from all vsas",
-          "category": "Cloud manager system operations - asup",
+          "category": "NetApp Console system operations - AutoSupport",
           "filename": "get-occm-asup-download-ontap-cloud-asups.html",
           "subcategory": null
         }
@@ -4544,7 +4544,7 @@
       "post": {
         "x-doc": {
           "title": "Sends cloud volumes ontap performance archive support data to netapp support",
-          "category": "Cloud manager system operations - asup",
+          "category": "NetApp Console system operations - AutoSupport",
           "filename": "post-occm-asup-send-cot-performance-asup-.html",
           "subcategory": null
         }
@@ -4554,7 +4554,7 @@
       "get": {
         "x-doc": {
           "title": "Downloads netapp console support data",
-          "category": "Cloud manager system operations - asup",
+          "category": "NetApp Console system operations - AutoSupport",
           "filename": "get-occm-asup-download.html",
           "subcategory": null
         }
@@ -4564,7 +4564,7 @@
       "post": {
         "x-doc": {
           "title": "Sends netapp console support data to netapp support",
-          "category": "Cloud manager system operations - asup",
+          "category": "NetApp Console system operations - AutoSupport",
           "filename": "post-occm-asup-send.html",
           "subcategory": null
         }
@@ -4574,7 +4574,7 @@
       "post": {
         "x-doc": {
           "title": "Sends cloud volumes ontap support data to netapp support",
-          "category": "Cloud manager system operations - asup",
+          "category": "NetApp Console system operations - AutoSupport",
           "filename": "post-occm-asup-send-cot-asup.html",
           "subcategory": null
         }
@@ -4584,7 +4584,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the current simplicator uri and status internal use only",
-          "category": "Cloud manager system operations - configuration",
+          "category": "NetApp Console system operations - configuration",
           "filename": "get-occm-config-simplicator.html",
           "subcategory": null
         }
@@ -4594,7 +4594,7 @@
       "post": {
         "x-doc": {
           "title": "Resets to the default simplicator uri internal use only",
-          "category": "Cloud manager system operations - configuration",
+          "category": "NetApp Console system operations - configuration",
           "filename": "post-occm-config-simplicator-reset.html",
           "subcategory": null
         }
@@ -4604,7 +4604,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves netapp console configuration parameters",
-          "category": "Cloud manager system operations - configuration",
+          "category": "NetApp Console system operations - configuration",
           "filename": "get-occm-config.html",
           "subcategory": null
         }
@@ -4612,7 +4612,7 @@
       "put": {
         "x-doc": {
           "title": "Configures modifiable netapp console parameters",
-          "category": "Cloud manager system operations - configuration",
+          "category": "NetApp Console system operations - configuration",
           "filename": "put-occm-config.html",
           "subcategory": null
         }
@@ -4622,7 +4622,7 @@
       "get": {
         "x-doc": {
           "title": "Checks for a new version of the netapp console",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "get-occm-system-available-update-versions.html",
           "subcategory": null
         }
@@ -4632,7 +4632,7 @@
       "post": {
         "x-doc": {
           "title": "Performs fetch and processing of cloud volumes ontap image update metadata files",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-cloud-ontap-update-image-metadata.html",
           "subcategory": null
         }
@@ -4642,7 +4642,7 @@
       "post": {
         "x-doc": {
           "title": "Performs fetch and cache of cloud volumes ontap and netapp console version information files from s3",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-cloud-ontap-update-metadata.html",
           "subcategory": null
         }
@@ -4652,7 +4652,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves supported regions for the cloud providers",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "get-occm-system-cloud-provider-regions.html",
           "subcategory": null
         }
@@ -4662,7 +4662,7 @@
       "post": {
         "x-doc": {
           "title": "Manually activates the cloud volumes ontap capacity automatic management cycle",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-manually-activate-auto-vsa-capacity-management-cycle.html",
           "subcategory": null
         }
@@ -4672,7 +4672,7 @@
       "post": {
         "x-doc": {
           "title": "Manually triggers daily notification sending",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-manually-trigger-send-daily-notification.html",
           "subcategory": null
         }
@@ -4682,7 +4682,7 @@
       "post": {
         "x-doc": {
           "title": "Restarts the server",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-restart-server.html",
           "subcategory": null
         }
@@ -4692,7 +4692,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves feature flags",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "get-occm-system-feature-flags.html",
           "subcategory": null
         }
@@ -4702,7 +4702,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the netapp console feedback configuration",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "get-occm-system-external-config.html",
           "subcategory": null
         }
@@ -4712,7 +4712,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the netapp console server information",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "get-occm-system-about.html",
           "subcategory": null
         }
@@ -4722,7 +4722,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the netapp console support services information",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "get-occm-system-support-services.html",
           "subcategory": null
         }
@@ -4732,7 +4732,7 @@
       "post": {
         "x-doc": {
           "title": "Updates the netapp console to the specified version",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-update.html",
           "subcategory": null
         }
@@ -4742,7 +4742,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves the region, vpc, and subnet in which the netapp console instance is running",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "get-occm-system-occm-instance-placement.html",
           "subcategory": null
         }
@@ -4752,7 +4752,7 @@
       "post": {
         "x-doc": {
           "title": "Updates the netapp console with the specified patch version  a backup should be provided in multipart/form-data, with the file at a part named 'patch'",
-          "category": "Cloud manager system operations - system",
+          "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-patch.html",
           "subcategory": null
         }
@@ -4762,7 +4762,7 @@
       "put": {
         "x-doc": {
           "title": "Updates the current netapp console service user",
-          "category": "Cloud manager system operations - tenancy service",
+          "category": "NetApp Console system operations - identity and access management",
           "filename": "put-occm-tenancy-service-users-update-current-user.html",
           "subcategory": null
         }
@@ -4772,7 +4772,7 @@
       "post": {
         "x-doc": {
           "title": "Associates a console agent with a workspace",
-          "category": "Cloud manager system operations - tenancy service",
+          "category": "NetApp Console system operations - identity and access management",
           "filename": "post-occm-tenancy-service-workspaces-associate.html",
           "subcategory": null
         }
@@ -4782,7 +4782,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieves workspaces that are visible to the user that is currently signed-in",
-          "category": "Cloud manager system operations - tenancy service",
+          "category": "NetApp Console system operations - identity and access management",
           "filename": "get-occm-tenancy-service-workspaces.html",
           "subcategory": null
         }
@@ -5212,7 +5212,7 @@
       "post": {
         "x-doc": {
           "title": "Validates a given proxy url",
-          "category": "Cloud manager working environment operations - initial setup",
+          "category": "NetApp Console system operations - initial setup",
           "filename": "post-occm-setup-validate-proxy.html",
           "subcategory": null
         }
@@ -5222,7 +5222,7 @@
       "post": {
         "x-doc": {
           "title": "Validates that cloud manager has an active internet connection",
-          "category": "Cloud manager working environment operations - initial setup",
+          "category": "NetApp Console system operations - initial setup",
           "filename": "post-occm-setup-validate-connectivity.html",
           "subcategory": null
         }

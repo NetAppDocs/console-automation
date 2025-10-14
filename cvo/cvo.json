@@ -20067,7 +20067,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Cloud Manager no longer manages this system, but this does not affect Data ONTAP itself.",
+        "description": "NetApp Console no longer manages this system, but this does not affect ONTAP itself.",
         "operationId": "removeOnPrem",
         "parameters": [
           {
@@ -20096,7 +20096,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Modifies the Cloud Manager password for an On-premises system.",
+        "description": "Modifies tthe NetApp Console password for an on-premises system.",
         "operationId": "updatePassword_3",
         "parameters": [
           {
@@ -21103,7 +21103,7 @@
         "tags": [
           "Cloud Manager working environment operations - Initial Setup"
         ],
-        "description": "Validates that Cloud Manager has an active Internet connection.",
+        "description": "Validates that the NetApp Console has an active internet connection.",
         "operationId": "validateConnectivity",
         "responses": {
           "default": {
@@ -21143,7 +21143,7 @@
         "tags": [
           "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Registers Cloud Manager to NetApp Cloud Central.",
+        "description": "Registers the NetApp Console with NetApp Cloud Central.",
         "operationId": "portalRegistration",
         "responses": {
           "default": {
@@ -21164,7 +21164,7 @@
         "tags": [
           "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Registers Cloud Manager to a dark site.",
+        "description": "Registers the NetApp Console to a dark site.",
         "operationId": "darkSiteRegistration",
         "responses": {
           "default": {
@@ -21263,7 +21263,7 @@
         "tags": [
           "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Sets up a given proxy URL.",
+        "description": "Sets up a specific proxy URL.",
         "operationId": "setProxy",
         "requestBody": {
           "content": {
@@ -21291,7 +21291,7 @@
         "tags": [
           "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Validates that Cloud Manager has an active Internet connection.",
+        "description": "Validates that the NetApp Console has an active internet connection.",
         "operationId": "validateConnectivity_1",
         "responses": {
           "default": {
@@ -21757,7 +21757,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Adds an existing NetApp Cloud Central user to Cloud Manager.",
+        "description": "Adds an existing NetApp Cloud Central user to the NetApp Console.",
         "operationId": "addUser",
         "requestBody": {
           "content": {
@@ -21787,7 +21787,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Removes a user from Cloud Manager.",
+        "description": "Removes a user from the NetApp Console.",
         "operationId": "removeUser",
         "parameters": [
           {
@@ -21874,7 +21874,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Discovery"
         ],
-        "description": "Saves a previously discovered Cloud Volumes ONTAP system to the Cloud Manager database.",
+        "description": "Saves a previously discovered Cloud Volumes ONTAP system to the the NetApp Console database.",
         "operationId": "discoverAzure_1",
         "requestBody": {
           "content": {
@@ -23862,7 +23862,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Updates the Cloud Manager password of a specific Cloud Volumes ONTAP.",
+        "description": "Updates the the NetApp Console password for a specific Cloud Volumes ONTAP system.",
         "operationId": "updatePassword_7",
         "parameters": [
           {
@@ -26161,7 +26161,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Updates the Cloud Manager password of a specific Cloud Volumes ONTAP.",
+        "description": "Updates the NetApp Console password for a specific Cloud Volumes ONTAP system.",
         "operationId": "updatePassword_5",
         "parameters": [
           {
@@ -28177,7 +28177,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Updates the Cloud Manager password of a specific Cloud Volumes ONTAP.",
+        "description": "Updates the NetApp Console password for a specific Cloud Volumes ONTAP system.",
         "operationId": "updatePassword_6",
         "parameters": [
           {
@@ -29177,7 +29177,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Discovery"
         ],
-        "description": "Saves a previously discovered Cloud Volumes ONTAP system to the Cloud Manager database.",
+        "description": "Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database.",
         "operationId": "recover_3",
         "requestBody": {
           "content": {
@@ -29382,7 +29382,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves all Cloud Manager manifests. Refer to the API Developers Guide in order to understand how to extract valid region codes, license types, instance types, and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP system.",
+        "description": "Retrieves all the NetApp Console manifests. Refer to the API Developers Guide in order to understand how to extract valid region codes, license types, instance types, and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP system.",
         "operationId": "manifests_1",
         "responses": {
           "default": {
