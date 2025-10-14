@@ -20031,7 +20031,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Retrieves an on-premises ONTAP working environment",
+        "description": "Retrieves an on-premises ONTAP system.",
         "operationId": "workingEnvironment_4",
         "parameters": [
           {
@@ -20067,7 +20067,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Cloud Manager will no longer manage this working environment, but will not affect the Data ONTAP itself",
+        "description": "Cloud Manager no longer manages this system, but this does not affect Data ONTAP itself.",
         "operationId": "removeOnPrem",
         "parameters": [
           {
@@ -20096,7 +20096,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Updates Cloud Manager password for an On Premises working environment",
+        "description": "Modifies the Cloud Manager password for an On-premises system.",
         "operationId": "updatePassword_3",
         "parameters": [
           {
@@ -20134,7 +20134,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Retrieves CIFS Configuration to an existing Cloud Volumes ONTAP working environment",
+        "description": "Retrieves a CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "cifsConfiguration_4",
         "parameters": [
           {
@@ -20183,7 +20183,7 @@
         "tags": [
           "Replication operations - Metadata"
         ],
-        "description": "retrieves SnapMirror policies based on source and destination Cloud Volumes ONTAP",
+        "description": "Retrieves SnapMirror policies based on source and destination Cloud Volumes ONTAP.",
         "operationId": "describeSnapmirrorPolicies",
         "parameters": [
           {
@@ -20241,7 +20241,7 @@
         "tags": [
           "Replication operations - Metadata"
         ],
-        "description": "retrieves SnapMirror policies based on source and destination Cloud Volumes ONTAP",
+        "description": "Retrieves SnapMirror policies based on source and destination Cloud Volumes ONTAP.",
         "operationId": "describeSnapmirrorPolicies_1",
         "parameters": [
           {
@@ -20291,7 +20291,7 @@
         "tags": [
           "Replication operations - Metadata"
         ],
-        "description": "return list of snapshot labels from the volume matching labels in the passed list",
+        "description": "Returns a list of snapshot labels from the volume matching labels in the returned list.",
         "operationId": "snapshotsLabelFlags",
         "parameters": [
           {
@@ -20362,7 +20362,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Breaks a SnapMirror replication relationship",
+        "description": "Breaks a SnapMirror replication relationship.",
         "operationId": "breakReplication",
         "parameters": [
           {
@@ -20407,7 +20407,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Return pairs of relationships",
+        "description": "Returns pairs of relationships.",
         "operationId": "allRelationShips",
         "parameters": [
           {
@@ -20437,7 +20437,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Creates a new replication to an FSx working environment",
+        "description": "Creates a new replication to an FSx system.",
         "operationId": "createReplicationFsx",
         "requestBody": {
           "content": {
@@ -20465,7 +20465,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Creates a new replication to an on-premises working environment",
+        "description": "Creates a new replication to an on-premises system.",
         "operationId": "createReplicationOnPrem",
         "requestBody": {
           "content": {
@@ -20493,7 +20493,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Creates a new replication to an Cloud Volumes ONTAP working environment",
+        "description": "Creates a new replication to an Cloud Volumes ONTAP system.",
         "operationId": "createReplicationVsa",
         "requestBody": {
           "content": {
@@ -20521,7 +20521,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Resyncs a SnapMirror replication relationship",
+        "description": "Resyncs a SnapMirror replication relationship.",
         "operationId": "resyncReplication",
         "parameters": [
           {
@@ -20566,7 +20566,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Updates the destination endpoint of the SnapMirror relationship",
+        "description": "Updates the destination endpoint of the SnapMirror relationship.",
         "operationId": "uptodateReplication",
         "parameters": [
           {
@@ -20611,7 +20611,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Removes a replication relationship",
+        "description": "Removes a replication relationship.",
         "operationId": "deleteReplication",
         "parameters": [
           {
@@ -20656,7 +20656,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Initializes an existing SnapMirror relationship. This method can only be performed in case the relationship has already been established and is healthy, yet is idle and uninitialized. For example, if the initial transfer were interrupted, then it can be restarted with this request",
+        "description": "Initializes an existing SnapMirror relationship. This method can only be performed in cases where the relationship has already been established and is healthy, yet is idle and uninitialized. For example, if the initial transfer was interrupted, then it can be restarted with this request.",
         "operationId": "initializeReplication",
         "parameters": [
           {
@@ -20701,7 +20701,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Reversing an existing SnapMirror relationship. This method can only be performed in case the relationship has already been established and is healthy and idle",
+        "description": "Reversing an existing SnapMirror relationship. This method can only be performed in cases where the relationship has already been established and is healthy and idle.",
         "operationId": "reverseResyncReplication",
         "parameters": [
           {
@@ -20755,7 +20755,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Updates a SnapMirror replication relationship",
+        "description": "Modifies a SnapMirror replication relationship.",
         "operationId": "updateReplication",
         "parameters": [
           {
@@ -20809,7 +20809,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Retrieves the intercluster LIFs used in a cluster peering relationship",
+        "description": "Retrieves the intercluster LIFs used in a cluster peering relationship.",
         "operationId": "interClusterLifs",
         "parameters": [
           {
@@ -20846,7 +20846,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Retrieves replication schedules of a specific working environment",
+        "description": "Retrieves the replication schedules of a specific system.",
         "operationId": "schedules",
         "parameters": [
           {
@@ -20888,7 +20888,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Retrieves the status of all SnapMirror relationships",
+        "description": "Retrieves the status of all SnapMirror relationships.",
         "operationId": "statuses",
         "parameters": [
           {
@@ -20932,7 +20932,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Retrieves SnapMirror replication relationship statuses of a specific working environment",
+        "description": "Retrieves SnapMirror replication relationship statuses of a specific system.",
         "operationId": "status_3",
         "parameters": [
           {
@@ -20975,9 +20975,9 @@
     "/occm/saas-mp-service/attach-subscription/{provider}/{cloudAccountId}": {
       "put": {
         "tags": [
-          "Cloud Manager system operations - SaaS MP service"
+          "Cloud Manager working environment operations - SaaS MP service"
         ],
-        "description": "Attach Saas subscription to cloud provider account",
+        "description": "Attaches an SaaS subscription to a cloud provider account.",
         "operationId": "AttachSubscriptionToCloudAccount",
         "parameters": [
           {
@@ -21021,9 +21021,9 @@
     "/occm/saas-mp-service/{workingEnvironmentId}/subscription": {
       "get": {
         "tags": [
-          "Cloud Manager system operations - SaaS MP service"
+          "Cloud Manager working environment operations - SaaS MP service"
         ],
-        "description": "Retrieves SaaS marketplace subscriptions for cvo",
+        "description": "Retrieves SaaS marketplace subscriptions for Cloud Volumes ONTAP.",
         "operationId": "describeCvoSubscription",
         "parameters": [
           {
@@ -21052,9 +21052,9 @@
     "/occm/saas-mp-service/account": {
       "get": {
         "tags": [
-          "Cloud Manager system operations - SaaS MP service"
+          "Cloud Manager working environment operations - SaaS MP service"
         ],
-        "description": "Retrieves current SaaS marketplace account and subscriptions",
+        "description": "Retrieves current SaaS marketplace accounts and subscriptions.",
         "operationId": "account",
         "responses": {
           "default": {
@@ -21073,9 +21073,9 @@
     "/occm/setup/validate/proxy": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup"
+          "Cloud Manager working environment operations - Initial Setup"
         ],
-        "description": "Validates a given proxy URL",
+        "description": "Validates a given proxy URL.",
         "operationId": "validateProxy",
         "requestBody": {
           "content": {
@@ -21101,9 +21101,9 @@
     "/occm/setup/validate/connectivity": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup"
+          "Cloud Manager working environment operations - Initial Setup"
         ],
-        "description": "Validates that Cloud Manager has an active Internet connection",
+        "description": "Validates that Cloud Manager has an active Internet connection.",
         "operationId": "validateConnectivity",
         "responses": {
           "default": {
@@ -21120,9 +21120,9 @@
     "/occm/setup-portal/complete-connectivity-pending-setup": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup operations using NetApp Cloud Central"
+          "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Complete setup which was pending connectivity",
+        "description": "Completes the setup which was pending connectivity.",
         "operationId": "completeConnectivityPendingSetup",
         "responses": {
           "default": {
@@ -21141,9 +21141,9 @@
     "/occm/setup-portal/register": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup operations using NetApp Cloud Central"
+          "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Register Cloud Manager to NetApp Cloud Central",
+        "description": "Registers Cloud Manager to NetApp Cloud Central.",
         "operationId": "portalRegistration",
         "responses": {
           "default": {
@@ -21162,9 +21162,9 @@
     "/occm/setup-portal/register-in-local-auth": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup operations using NetApp Cloud Central"
+          "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Register Cloud Manager in dark site",
+        "description": "Registers Cloud Manager to a dark site.",
         "operationId": "darkSiteRegistration",
         "responses": {
           "default": {
@@ -21183,9 +21183,9 @@
     "/occm/setup-portal/init": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup operations using NetApp Cloud Central"
+          "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Performs initial setup with NetApp Cloud Central",
+        "description": "Performs an initial setup with NetApp Cloud Central.",
         "operationId": "initialSetupWithPortal",
         "parameters": [
           {
@@ -21222,9 +21222,9 @@
     "/occm/setup-portal/init-standalone-local-auth": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup operations using NetApp Cloud Central"
+          "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Performs initial standalone setup with local identity provider",
+        "description": "Performs an initial standalone setup with the local identity provider.",
         "operationId": "initialStandaloneSetupWithLocalAuth",
         "parameters": [
           {
@@ -21261,9 +21261,9 @@
     "/occm/setup-portal/proxy/setup": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup operations using NetApp Cloud Central"
+          "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Setup a given proxy URL",
+        "description": "Sets up a given proxy URL.",
         "operationId": "setProxy",
         "requestBody": {
           "content": {
@@ -21289,9 +21289,9 @@
     "/occm/setup-portal/validate/connectivity": {
       "post": {
         "tags": [
-          "Cloud Manager system operations - Initial Setup operations using NetApp Cloud Central"
+          "Cloud Manager working environment operations - Initial Setup operations using NetApp Cloud Central"
         ],
-        "description": "Validates that Cloud Manager has an active Internet connection",
+        "description": "Validates that Cloud Manager has an active Internet connection.",
         "operationId": "validateConnectivity_1",
         "responses": {
           "default": {
@@ -21310,7 +21310,7 @@
         "tags": [
           "Tenant operations"
         ],
-        "description": "Retrieves a tenant",
+        "description": "Retrieves a tenant.",
         "operationId": "tenantById",
         "parameters": [
           {
@@ -21346,7 +21346,7 @@
         "tags": [
           "Tenant operations"
         ],
-        "description": "Updates an existing tenant",
+        "description": "Updates an existing tenant.",
         "operationId": "updateTenant",
         "parameters": [
           {
@@ -21384,7 +21384,7 @@
         "tags": [
           "Tenant operations"
         ],
-        "description": "Deletes an existing tenant. It is not possible to delete a tenant over which working environments exist",
+        "description": "Deletes an existing tenant. It is not possible to delete a tenant over which systems exist.",
         "operationId": "deleteTenant",
         "parameters": [
           {
@@ -21413,7 +21413,7 @@
         "tags": [
           "Tenant operations"
         ],
-        "description": "Links an existing tenant to a NetApp Support Site account",
+        "description": "Links an existing tenant to a NetApp Support Site account.",
         "operationId": "setTenantNssKeys",
         "parameters": [
           {
@@ -21453,7 +21453,7 @@
         "tags": [
           "Tenant operations"
         ],
-        "description": "Retrieves tenants that are visible to the currently logged in user",
+        "description": "Retrieves tenants that are visible to the currently logged in user.",
         "operationId": "list_1",
         "parameters": [
           {
@@ -21495,7 +21495,7 @@
         "tags": [
           "Tenant operations"
         ],
-        "description": "Creates a new tenant",
+        "description": "Creates a new tenant.",
         "operationId": "addTenant",
         "requestBody": {
           "content": {
@@ -21525,7 +21525,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Retrieves a specific user",
+        "description": "Retrieves a specific user.",
         "operationId": "userById",
         "parameters": [
           {
@@ -21554,7 +21554,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Updates an existing user",
+        "description": "Updates an existing user.",
         "operationId": "updateUser",
         "parameters": [
           {
@@ -21592,7 +21592,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Deletes an existing user. It is not possible to delete a user that has created existing working environments. It is not possible to delete the logged in user",
+        "description": "Deletes an existing user. It is not possible to delete the user that has created existing systems nor the user who is currently logged in.",
         "operationId": "deleteUser",
         "parameters": [
           {
@@ -21621,7 +21621,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Resets the password of the given user",
+        "description": "Resets the password of the given user.",
         "operationId": "resetPassword",
         "parameters": [
           {
@@ -21659,7 +21659,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Grants or revokes permissions to the given user for performing operations over the given working environments",
+        "description": "Grants or revokes permissions to the given user for performing operations over the given systems.",
         "operationId": "grantPermission",
         "parameters": [
           {
@@ -21697,7 +21697,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Retrieves all users visible to the current user",
+        "description": "Retrieves all of the users visible to the current user.",
         "operationId": "list_2",
         "responses": {
           "default": {
@@ -21727,7 +21727,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Creates a new user",
+        "description": "Creates a new user.",
         "operationId": "createUser",
         "requestBody": {
           "content": {
@@ -21757,7 +21757,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Add existing NetApp Cloud Central user to Cloud Manager",
+        "description": "Adds an existing NetApp Cloud Central user to Cloud Manager.",
         "operationId": "addUser",
         "requestBody": {
           "content": {
@@ -21787,7 +21787,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Remove user from Cloud Manager",
+        "description": "Removes a user from Cloud Manager.",
         "operationId": "removeUser",
         "parameters": [
           {
@@ -21816,7 +21816,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Discovery"
         ],
-        "description": "Retrieves a list of discovered working environments visible to the current user in the specified Azure region",
+        "description": "Retrieves a list of discovered systems visible to the current user in the specified Azure region",
         "operationId": "discover_4",
         "parameters": [
           {
@@ -21874,7 +21874,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Discovery"
         ],
-        "description": "Saves a previously discovered Cloud Volumes ONTAP working environment to the Cloud Manager database",
+        "description": "Saves a previously discovered Cloud Volumes ONTAP system to the Cloud Manager database.",
         "operationId": "discoverAzure_1",
         "requestBody": {
           "content": {
@@ -21904,7 +21904,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves associated subscriptions",
+        "description": "Retrieves associated subscriptions.",
         "operationId": "associatedSubscriptions_1",
         "parameters": [
           {
@@ -21945,7 +21945,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves Network Extended Info",
+        "description": "Retrieves network extended information.",
         "operationId": "vpcs_2",
         "parameters": [
           {
@@ -21989,7 +21989,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves Azure resource groups by region",
+        "description": "Retrieves Azure resource groups by region.",
         "operationId": "resourceGroups_1",
         "parameters": [
           {
@@ -22047,7 +22047,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieve all vaults",
+        "description": "Retrieves all vaults.",
         "operationId": "listVaults_1",
         "parameters": [
           {
@@ -22105,7 +22105,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieve all keys in a vault",
+        "description": "Retrieves all  of the keys in a vault.",
         "operationId": "listKeysInVault_1",
         "parameters": [
           {
@@ -22170,7 +22170,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves the minimum number of required IPs for a Cloud Volumes ONTAP system",
+        "description": "Retrieves the minimum number of required IPs for a Cloud Volumes ONTAP system.",
         "operationId": "networkRequirements_4",
         "responses": {
           "default": {
@@ -22191,7 +22191,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Validates the current user is subscribed to Cloud Volumes ONTAP product in Azure marketplace",
+        "description": "Confirms that the current user is subscribed to the Cloud Volumes ONTAP product in Azure marketplace.",
         "operationId": "validateSubscribedToOntapCloud_2",
         "requestBody": {
           "content": {
@@ -22221,7 +22221,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Create new blob container",
+        "description": "Creates a new blob container.",
         "operationId": "createBlobContainer_1",
         "requestBody": {
           "content": {
@@ -22249,7 +22249,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves Azure availability zones by region",
+        "description": "Retrieves Azure availability zones by region.",
         "operationId": "availabilityZones_1",
         "parameters": [
           {
@@ -22293,7 +22293,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves supported capacity tiers for Azure disk types",
+        "description": "Retrieves supported capacity tiers for Azure disk types.",
         "operationId": "supportedCapacityTiers_4",
         "parameters": [
           {
@@ -22365,7 +22365,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves supported Azure storage account types",
+        "description": "Retrieves supported Azure storage account types.",
         "operationId": "disks_4",
         "parameters": [
           {
@@ -22420,7 +22420,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves all the Tag names",
+        "description": "Retrieves all of the Tag names.",
         "operationId": "tagKeys_4",
         "parameters": [
           {
@@ -22468,7 +22468,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieve all blob containers",
+        "description": "Retrieves all of the blob containers.",
         "operationId": "listContainers_1",
         "parameters": [
           {
@@ -22533,7 +22533,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves all Cloud Volumes ONTAP configurations",
+        "description": "Retrieves all Cloud Volumes ONTAP configurations.",
         "operationId": "permutations_4",
         "responses": {
           "default": {
@@ -22565,7 +22565,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves Azure regions over which an Cloud Volumes ONTAP working environment may be created",
+        "description": "Retrieves the Azure regions over which a Cloud Volumes ONTAP system is created.",
         "operationId": "regions_4",
         "parameters": [
           {
@@ -22620,7 +22620,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves default snapshot policies available on a cluster",
+        "description": "Retrieves the default snapshot policies available on a cluster.",
         "operationId": "defaultSnapshotPolicies_4",
         "responses": {
           "default": {
@@ -22652,7 +22652,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves instance types not supporting acceleration and capacity tiering",
+        "description": "Retrieves instance types that do not support acceleration and capacity tiering.",
         "operationId": "instanceTypesNotSupportingAccelerationAndCapacityTiering_4",
         "responses": {
           "default": {
@@ -22673,7 +22673,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves supported features",
+        "description": "Retrieves supported features.",
         "operationId": "supportedFeatures_4",
         "parameters": [
           {
@@ -22731,7 +22731,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves packages configuration",
+        "description": "Retrieves packages configurations.",
         "operationId": "packages_4",
         "parameters": [
           {
@@ -22779,7 +22779,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Delete CIFS Configuration of an existing Cloud Volumes ONTAP working environment",
+        "description": "Deletes a CIFS configuration of an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_13",
         "parameters": [
           {
@@ -22817,7 +22817,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves CIFS Configuration to an existing Cloud Volumes ONTAP working environment",
+        "description": "Retrieves a CIFS configuration of an existing Cloud Volumes ONTAP system.",
         "operationId": "cifsConfiguration_8",
         "parameters": [
           {
@@ -22864,7 +22864,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Setup a new CIFS Configuration to an existing Cloud Volumes ONTAP working environment",
+        "description": "Sets up a new CIFS configuration to an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_7",
         "parameters": [
           {
@@ -22902,7 +22902,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Validate pre-req for conversion of an existing Cloud Volumes ONTAP working environment",
+        "description": "Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_6",
         "parameters": [
           {
@@ -22933,7 +22933,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves an Cloud Volumes ONTAP working environment",
+        "description": "Retrieves a Cloud Volumes ONTAP system.",
         "operationId": "workingEnvironment_7",
         "parameters": [
           {
@@ -22967,9 +22967,9 @@
       },
       "delete": {
         "tags": [
-          "ONTAP Cloud AWS working environment operations - Working environments"
+          "ONTAP Cloud AWS working environment operations -  Working environments"
         ],
-        "description": "Deletes an existing Cloud Volumes ONTAP working environment, including all Cloud resources created for this working environment (unless the localDelete flag is set to true)",
+        "description": "Deletes an existing Cloud Volumes ONTAP system, including all Cloud resources created for this system (unless the localDelete flag is set to true).",
         "operationId": "deleteVsaWorkingEnvironment_6",
         "parameters": [
           {
@@ -23014,7 +23014,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Sets the writing speed for Cloud Volumes ONTAP",
+        "description": "Sets the writing speed for Cloud Volumes ONTAP.",
         "operationId": "modifyWritingSpeed_6",
         "parameters": [
           {
@@ -23052,7 +23052,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves all license types and their associated instance types for a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves all license types and their associated instance types for a given Cloud Volumes ONTAP instance.",
         "operationId": "licenseAndInstanceTypes_6",
         "parameters": [
           {
@@ -23092,7 +23092,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Sets the instance type of a specific Cloud Volumes ONTAP",
+        "description": "Sets the instance type of a specific Cloud Volumes ONTAP.",
         "operationId": "changeLicenseAndInstanceType_6",
         "parameters": [
           {
@@ -23130,7 +23130,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves images already installed on the Cloud Volumes ONTAP",
+        "description": "Retrieves images already installed on the Cloud Volumes ONTAP.",
         "operationId": "ontapAvailableImages_6",
         "parameters": [
           {
@@ -23172,7 +23172,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP",
+        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP.",
         "operationId": "updateSystemImage_6",
         "parameters": [
           {
@@ -23210,7 +23210,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves eligibility support status of a Cloud Volumes ONTAP system. Valid values - NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, LICENSE_EXPIRED",
+        "description": "Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, and LICENSE_EXPIRED.",
         "operationId": "occmUpgradeEligibilityChecks_6",
         "parameters": [
           {
@@ -23241,7 +23241,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file on the provided Cloud Volumes ONTAP",
+        "description": "Uploads a Cloud license file on the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFile_6",
         "parameters": [
           {
@@ -23286,7 +23286,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file content on the provided Cloud Volumes ONTAP",
+        "description": "Uploads Cloud license file content on the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFileContent_6",
         "parameters": [
           {
@@ -23324,7 +23324,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Activate offbox configuration",
+        "description": "Activates an offbox configuration.",
         "operationId": "activateOntapConfiguration_6",
         "parameters": [
           {
@@ -23353,7 +23353,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Modify the net port broadcast domain mtu of the Cloud Volumes ONTAP",
+        "description": "Modifies the net port broadcast domain mtu of the Cloud Volumes ONTAP.",
         "operationId": "changeNetworkOptimizationLevel_6",
         "parameters": [
           {
@@ -23388,10 +23388,10 @@
     },
     "/vsa/working-environments/{workingEnvironmentId}/create-request-parameters": {
       "get": {
-        "tags": [
+        "tags": [ 
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves action parameters used in create request of a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves the action parameters used in a create request of a given Cloud Volumes ONTAP instance.",
         "operationId": "createRequestParameters_6",
         "parameters": [
           {
@@ -23422,7 +23422,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Enable capacity tiering",
+        "description": "Enables capacity tiering,",
         "operationId": "enableCapacityTiering_6",
         "parameters": [
           {
@@ -23460,7 +23460,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded",
+        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded to.",
         "operationId": "occmProvidedCloudOntapUpgradeVersions_6",
         "parameters": [
           {
@@ -23502,7 +23502,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Manually triggers subscription sync for all Cloud Volumes ONTAP working environments",
+        "description": "Manually triggers a subscription sync for all Cloud Volumes ONTAP systems.",
         "operationId": "syncVsaWorkingEnvironmentsSubscription_6",
         "responses": {
           "default": {
@@ -23521,7 +23521,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Working Environment Cost And Usage",
+        "description": "Retrieves systems cost and usage.",
         "operationId": "workingEnvironmentCostAndUsage_6",
         "parameters": [
           {
@@ -23566,7 +23566,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Working Environment Ontap Saving",
+        "description": "Retrieves systems ONTAP savings.",
         "operationId": "workingEnvironmentOntapSaving_6",
         "parameters": [
           {
@@ -23597,7 +23597,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Get extra capacity licenses for cvo",
+        "description": "Retrieves extra capacity licenses for Cloud Volumes ONTAP.",
         "operationId": "getExtraCapacityLicenses_6",
         "parameters": [
           {
@@ -23640,7 +23640,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Update extra capacity license",
+        "description": "Updates extra capacity licenses.",
         "operationId": "updateExtraCapacityLicenses_6",
         "parameters": [
           {
@@ -23676,7 +23676,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Register extra capacity license",
+        "description": "Registers extra capacity licenses.",
         "operationId": "uploadExtraCapacityLicenses_6",
         "parameters": [
           {
@@ -23714,7 +23714,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Update extra capacity serials",
+        "description": "Updates extra capacity serial numbers.",
         "operationId": "updateExtraCapacitySerials_6",
         "parameters": [
           {
@@ -23750,7 +23750,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Register extra capacity serials",
+        "description": "Registers extra capacity serial numbers.",
         "operationId": "uploadExtraCapacitySerials_6",
         "parameters": [
           {
@@ -23786,7 +23786,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Delete extra capacity licenses by serials",
+        "description": "Deletes extra capacity licenses by serial numbers.",
         "operationId": "deleteExtraCapacityLicenses_6",
         "parameters": [
           {
@@ -23824,7 +23824,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Updates default vscan file operation profile. Profile on existing CIFS shares will change only on writes-only mode",
+        "description": "Updates the default Vscan file operation profile. Profiles on existing CIFS shares only change for writes-only mode.",
         "operationId": "updateVscanFileOperation_6",
         "parameters": [
           {
@@ -23862,7 +23862,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Updates Cloud Manager password of a specific Cloud Volumes ONTAP",
+        "description": "Updates the Cloud Manager password of a specific Cloud Volumes ONTAP.",
         "operationId": "updatePassword_7",
         "parameters": [
           {
@@ -23900,7 +23900,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Change tier level",
+        "description": "Modifies the tier level.",
         "operationId": "changeTierLevel_6",
         "parameters": [
           {
@@ -23938,7 +23938,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Updated byol licence to capacity based license to an existing Cloud Volumes ONTAP working environment",
+        "description": "Updates the BYOL licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
         "operationId": "byolToCapacity_6",
         "parameters": [
           {
@@ -23978,7 +23978,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Enable Snaplock to an existing Cloud Volumes ONTAP working environment",
+        "description": "Enables Snaplock for an existing Cloud Volumes ONTAP system.",
         "operationId": "enableWorm_6",
         "parameters": [
           {
@@ -24016,7 +24016,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Setup NTP server",
+        "description": "Sets up an NTP server.",
         "operationId": "setupNtpServer_6",
         "parameters": [
           {
@@ -24054,7 +24054,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Starts a specific Cloud Volumes ONTAP instance",
+        "description": "Starts a specific Cloud Volumes ONTAP instance.",
         "operationId": "startVsa_6",
         "parameters": [
           {
@@ -24083,7 +24083,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Stops a specific Cloud Volumes ONTAP instance",
+        "description": "Stops a specific Cloud Volumes ONTAP instance.",
         "operationId": "stopVsa_6",
         "parameters": [
           {
@@ -24120,7 +24120,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves the support registration status of a Cloud Volumes ONTAP system",
+        "description": "Retrieves the support registration status of a Cloud Volumes ONTAP system.",
         "operationId": "status_7",
         "parameters": [
           {
@@ -24149,7 +24149,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Registers a Cloud Volumes ONTAP system with NetApp",
+        "description": "Registers a Cloud Volumes ONTAP system with NetApp.",
         "operationId": "registerSupport_6",
         "parameters": [
           {
@@ -24187,7 +24187,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "List start-stop schedules for Cloud Volumes ONTAP",
+        "description": "Lists the start-stop schedules for Cloud Volumes ONTAP.",
         "operationId": "getSchedules_6",
         "parameters": [
           {
@@ -24227,7 +24227,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Set schedules for Cloud Volumes ONTAP",
+        "description": "Sets the schedules for Cloud Volumes ONTAP.",
         "operationId": "setSchedules_6",
         "parameters": [
           {
@@ -24265,7 +24265,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Modify the svm name of the Cloud Volumes ONTAP",
+        "description": "Modifies the SVM name of the Cloud Volumes ONTAP.",
         "operationId": "changeSvmName_6",
         "parameters": [
           {
@@ -24303,7 +24303,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Activate FPolicy for ransomeware files",
+        "description": "Activates the FPolicy for ransomeware files.",
         "operationId": "activateFpolicy_6",
         "parameters": [
           {
@@ -24332,7 +24332,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Disable FPolicy for ransomeware files",
+        "description": "Disables the FPolicy for ransomeware files.",
         "operationId": "disableFpolicy_6",
         "parameters": [
           {
@@ -24361,7 +24361,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Delete FPolicy for ransomeware files",
+        "description": "Deletes the FPolicy for ransomeware files.",
         "operationId": "deleteFpolicy_6",
         "parameters": [
           {
@@ -24390,7 +24390,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Parses an uploaded Cloud license file",
+        "description": "Parses an uploaded Cloud license file.",
         "operationId": "parseLicenseFile_6",
         "parameters": [
           {
@@ -24429,7 +24429,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves editable tags for cloud resources of a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves editable tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
         "operationId": "userTags_6",
         "parameters": [
           {
@@ -24458,7 +24458,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Modify user tags for cloud resources of a given Cloud Volumes ONTAP instance",
+        "description": "Modifies user tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
         "operationId": "modifyUserTags_6",
         "parameters": [
           {
@@ -24496,7 +24496,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Activate snapshot policy assignment to all not protected rw volumes",
+        "description": "Activates snapshot policy assignments to all unprotected RW volumes.",
         "operationId": "activateSnapshotPolicy_6",
         "parameters": [
           {
@@ -24525,7 +24525,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Create snapshot policy",
+        "description": "Creates a snapshot policy.",
         "operationId": "createSnapshotPolicy_6",
         "parameters": [
           {
@@ -24563,7 +24563,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Change serial number of Cloud Volumes ONTAP",
+        "description": "Updates the serial number of Cloud Volumes ONTAP.",
         "operationId": "changeSerialNumber_6",
         "parameters": [
           {
@@ -24601,7 +24601,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP",
+        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP.",
         "operationId": "setPassword_6",
         "parameters": [
           {
@@ -24646,7 +24646,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP working environments visible to the currently logged in user",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the currently logged in user.",
         "operationId": "workingEnvironments_5",
         "parameters": [
           {
@@ -24692,7 +24692,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Creates a new Cloud Volumes ONTAP working environment",
+        "description": "Creates a new Cloud Volumes ONTAP system.",
         "operationId": "createVsaWorkingEnvironment_1",
         "requestBody": {
           "content": {
@@ -24722,7 +24722,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Deletes an SVM",
+        "description": "Deletes an SVM.",
         "operationId": "deleteSvm_2",
         "parameters": [
           {
@@ -24759,7 +24759,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Modify the svm name of the Cloud Volumes ONTAP",
+        "description": "Modifies the SVM name of the Cloud Volumes ONTAP.",
         "operationId": "changeSvmName_4",
         "parameters": [
           {
@@ -24795,7 +24795,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Creates a new SVM",
+        "description": "Creates a new SVM.",
         "operationId": "createSvm_2",
         "parameters": [
           {
@@ -24833,7 +24833,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Get Avs private cloud clusters for the existing subscription",
+        "description": "Retrieves Azure VMware Solution private cloud clusters for an existing subscription.",
         "operationId": "privateCloudClusters_1",
         "parameters": [
           {
@@ -24891,7 +24891,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Get AVS cluster hosts for the existing subscription",
+        "description": "Retrieves Azure VMware Solution cluster hosts for an existing subscription.",
         "operationId": "privateCloudClusterHosts_1",
         "parameters": [
           {
@@ -24960,7 +24960,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves number of available ip addresses in the Cloud Volumes ONTAP working environment's subnet",
+        "description": "Retrieves the number of available IP addresses in the Cloud Volumes ONTAP system's subnet.",
         "operationId": "availableIpsInVsaSubnet_1",
         "parameters": [
           {
@@ -24991,7 +24991,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Returns true if a resource group with that name already exists, false otherwise",
+        "description": "Returns true if a resource group with that name already exists, otherwise it returne false.",
         "operationId": "resourceGroupExists_1",
         "parameters": [
           {
@@ -25036,7 +25036,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Get Avs private cloud for the existing subscription",
+        "description": "Retrieves an Azure VMware Solution private cloud for the existing subscription.",
         "operationId": "privateClouds_1",
         "parameters": [
           {
@@ -25078,7 +25078,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves an Cloud Volumes ONTAP working environment",
+        "description": "Retrieves a Cloud Volumes ONTAP system.",
         "operationId": "workingEnvironment_5",
         "parameters": [
           {
@@ -25114,7 +25114,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Deletes an existing Cloud Volumes ONTAP working environment, including all Cloud resources created for this working environment (unless the localDelete flag is set to true)",
+        "description": "Deletes an existing Cloud Volumes ONTAP system, including all Cloud resources created for this system (unless the localDelete flag is set to true).",
         "operationId": "deleteVsaWorkingEnvironment_4",
         "parameters": [
           {
@@ -25159,7 +25159,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Delete CIFS Configuration of an existing Cloud Volumes ONTAP working environment",
+        "description": "Deletes a CIFS configuration of an existing Cloud Volumes ONTAPsystem.",
         "operationId": "setupCifsConfiguration_9",
         "parameters": [
           {
@@ -25197,7 +25197,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves CIFS Configuration to an existing Cloud Volumes ONTAP working environment",
+        "description": "Retrieves a CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "cifsConfiguration_6",
         "parameters": [
           {
@@ -25244,7 +25244,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Setup a new CIFS Configuration to an existing Cloud Volumes ONTAP working environment",
+        "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_10",
         "parameters": [
           {
@@ -25282,7 +25282,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Validate pre-req for conversion of an existing Cloud Volumes ONTAP working environment",
+        "description": "Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_4",
         "parameters": [
           {
@@ -25313,7 +25313,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Sets the writing speed for Cloud Volumes ONTAP",
+        "description": "Sets the writing speed for Cloud Volumes ONTAP.",
         "operationId": "modifyWritingSpeed_4",
         "parameters": [
           {
@@ -25351,7 +25351,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves all license types and their associated instance types for a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves all license types and their associated instance types for a given Cloud Volumes ONTAP instance.",
         "operationId": "licenseAndInstanceTypes_4",
         "parameters": [
           {
@@ -25391,7 +25391,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Sets the instance type of a specific Cloud Volumes ONTAP",
+        "description": "Sets the instance type of a specific Cloud Volumes ONTAP.",
         "operationId": "changeLicenseAndInstanceType_4",
         "parameters": [
           {
@@ -25429,7 +25429,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves images already installed on the Cloud Volumes ONTAP",
+        "description": "Retrieves images already installed on the Cloud Volumes ONTAP.",
         "operationId": "ontapAvailableImages_4",
         "parameters": [
           {
@@ -25471,7 +25471,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP",
+        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP.",
         "operationId": "updateSystemImage_4",
         "parameters": [
           {
@@ -25509,7 +25509,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves eligibility support status of a Cloud Volumes ONTAP system. Valid values - NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, LICENSE_EXPIRED",
+        "description": "Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, and LICENSE_EXPIRED.",
         "operationId": "occmUpgradeEligibilityChecks_4",
         "parameters": [
           {
@@ -25540,7 +25540,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file on the provided Cloud Volumes ONTAP",
+        "description": "Uploads a Cloud license file to the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFile_4",
         "parameters": [
           {
@@ -25585,7 +25585,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file content on the provided Cloud Volumes ONTAP",
+        "description": "Uploads a Cloud license file content to the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFileContent_4",
         "parameters": [
           {
@@ -25623,7 +25623,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Activate offbox configuration",
+        "description": "Activates an offbox configuration.",
         "operationId": "activateOntapConfiguration_4",
         "parameters": [
           {
@@ -25652,7 +25652,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Modify the net port broadcast domain mtu of the Cloud Volumes ONTAP",
+        "description": "Modifies the net port broadcast domain mtu of the Cloud Volumes ONTAP.",
         "operationId": "changeNetworkOptimizationLevel_4",
         "parameters": [
           {
@@ -25690,7 +25690,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves action parameters used in create request of a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves the action parameters used in a create request of a given Cloud Volumes ONTAP instance.",
         "operationId": "createRequestParameters_4",
         "parameters": [
           {
@@ -25721,7 +25721,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Enable capacity tiering",
+        "description": "Enables capacity tiering.",
         "operationId": "enableCapacityTiering_4",
         "parameters": [
           {
@@ -25759,7 +25759,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded",
+        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded to.",
         "operationId": "occmProvidedCloudOntapUpgradeVersions_4",
         "parameters": [
           {
@@ -25801,7 +25801,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Manually triggers subscription sync for all Cloud Volumes ONTAP working environments",
+        "description": "Manually triggers a subscription sync for all Cloud Volumes ONTAP systems.",
         "operationId": "syncVsaWorkingEnvironmentsSubscription_4",
         "responses": {
           "default": {
@@ -25820,7 +25820,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Working Environment Cost And Usage",
+        "description": "Retrieves systems cost and usage.",
         "operationId": "workingEnvironmentCostAndUsage_4",
         "parameters": [
           {
@@ -25865,7 +25865,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Working Environment Ontap Saving",
+        "description": "Retrieves systems ONTAP savings.",
         "operationId": "workingEnvironmentOntapSaving_4",
         "parameters": [
           {
@@ -25896,7 +25896,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Get extra capacity licenses for cvo",
+        "description": "Retrieves extra capacity licenses for Cloud Volumes ONTAP.",
         "operationId": "getExtraCapacityLicenses_4",
         "parameters": [
           {
@@ -25939,7 +25939,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Update extra capacity license",
+        "description": "Updates extra capacity licenses.",
         "operationId": "updateExtraCapacityLicenses_4",
         "parameters": [
           {
@@ -25975,7 +25975,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Register extra capacity license",
+        "description": "Registers extra capacity licenses.",
         "operationId": "uploadExtraCapacityLicenses_4",
         "parameters": [
           {
@@ -26013,7 +26013,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Update extra capacity serials",
+        "description": "Updates extra capacity serial numbers.",
         "operationId": "updateExtraCapacitySerials_4",
         "parameters": [
           {
@@ -26049,7 +26049,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Register extra capacity serials",
+        "description": "Registers extra capacity serial numbers.",
         "operationId": "uploadExtraCapacitySerials_4",
         "parameters": [
           {
@@ -26085,7 +26085,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Delete extra capacity licenses by serials",
+        "description": "Deletes extra capacity licenses by serial numbers.",
         "operationId": "deleteExtraCapacityLicenses_4",
         "parameters": [
           {
@@ -26123,7 +26123,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Updates default vscan file operation profile. Profile on existing CIFS shares will change only on writes-only mode",
+        "description": "Updates the default Vsacn file operation profile. Profiles on existing CIFS shares only change for writes-only mode.",
         "operationId": "updateVscanFileOperation_4",
         "parameters": [
           {
@@ -26161,7 +26161,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Updates Cloud Manager password of a specific Cloud Volumes ONTAP",
+        "description": "Updates the Cloud Manager password of a specific Cloud Volumes ONTAP.",
         "operationId": "updatePassword_5",
         "parameters": [
           {
@@ -26199,7 +26199,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Change tier level",
+        "description": "Changes the tier level.",
         "operationId": "changeTierLevel_4",
         "parameters": [
           {
@@ -26237,7 +26237,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Updated byol licence to capacity based license to an existing Cloud Volumes ONTAP working environment",
+        "description": "Updates the BYOL licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
         "operationId": "byolToCapacity_4",
         "parameters": [
           {
@@ -26277,7 +26277,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Enable Snaplock to an existing Cloud Volumes ONTAP working environment",
+        "description": "Enables Snaplock for an existing Cloud Volumes ONTAP system.",
         "operationId": "enableWorm_4",
         "parameters": [
           {
@@ -26315,7 +26315,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Setup NTP server",
+        "description": "Sets up an NTP server.",
         "operationId": "setupNtpServer_4",
         "parameters": [
           {
@@ -26353,7 +26353,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Starts a specific Cloud Volumes ONTAP instance",
+        "description": "Starts a specific Cloud Volumes ONTAP instance.",
         "operationId": "startVsa_4",
         "parameters": [
           {
@@ -26382,7 +26382,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Stops a specific Cloud Volumes ONTAP instance",
+        "description": "Stops a specific Cloud Volumes ONTAP instance.",
         "operationId": "stopVsa_4",
         "parameters": [
           {
@@ -26419,7 +26419,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves the support registration status of a Cloud Volumes ONTAP system",
+        "description": "Retrieves the support registration status of a Cloud Volumes ONTAP system.",
         "operationId": "status_5",
         "parameters": [
           {
@@ -26448,7 +26448,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Registers a Cloud Volumes ONTAP system with NetApp",
+        "description": "Registers a Cloud Volumes ONTAP system with NetApp.",
         "operationId": "registerSupport_4",
         "parameters": [
           {
@@ -26486,7 +26486,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "List start-stop schedules for Cloud Volumes ONTAP",
+        "description": "Lists the start-stop schedules for Cloud Volumes ONTAP.",
         "operationId": "getSchedules_4",
         "parameters": [
           {
@@ -26526,7 +26526,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Set schedules for Cloud Volumes ONTAP",
+        "description": "Sets the schedules for Cloud Volumes ONTAP.",
         "operationId": "setSchedules_4",
         "parameters": [
           {
@@ -26564,7 +26564,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Activate FPolicy for ransomeware files",
+        "description": "Activates the FPolicy for ransomeware files.",
         "operationId": "activateFpolicy_4",
         "parameters": [
           {
@@ -26593,7 +26593,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Disable FPolicy for ransomeware files",
+        "description": "Disables the FPolicy for ransomeware files.",
         "operationId": "disableFpolicy_4",
         "parameters": [
           {
@@ -26622,7 +26622,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Delete FPolicy for ransomeware files",
+        "description": "Deletes the FPolicy for ransomeware files.",
         "operationId": "deleteFpolicy_4",
         "parameters": [
           {
@@ -26651,7 +26651,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Parses an uploaded Cloud license file",
+        "description": "Parses an uploaded Cloud license file.",
         "operationId": "parseLicenseFile_4",
         "parameters": [
           {
@@ -26690,7 +26690,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves editable tags for cloud resources of a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves the editable tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
         "operationId": "userTags_4",
         "parameters": [
           {
@@ -26719,7 +26719,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Modify user tags for cloud resources of a given Cloud Volumes ONTAP instance",
+        "description": "Modifies the user tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
         "operationId": "modifyUserTags_4",
         "parameters": [
           {
@@ -26757,7 +26757,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Activate snapshot policy assignment to all not protected rw volumes",
+        "description": "Activates the snapshot policy assignment to all nof the unprotected RW volumes.",
         "operationId": "activateSnapshotPolicy_4",
         "parameters": [
           {
@@ -26786,7 +26786,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Create snapshot policy",
+        "description": "Creates a snapshot policy.",
         "operationId": "createSnapshotPolicy_4",
         "parameters": [
           {
@@ -26824,7 +26824,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Change serial number of Cloud Volumes ONTAP",
+        "description": "Updates the serial number of Cloud Volumes ONTAP.",
         "operationId": "changeSerialNumber_4",
         "parameters": [
           {
@@ -26862,7 +26862,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP",
+        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP.",
         "operationId": "setPassword_4",
         "parameters": [
           {
@@ -26907,7 +26907,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP working environments visible to the currently logged in user",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the currently logged in user.",
         "operationId": "workingEnvironments_6",
         "parameters": [
           {
@@ -26953,7 +26953,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Creates a new Cloud Volumes ONTAP working environment",
+        "description": "Creates a new Cloud Volumes ONTAP system.",
         "operationId": "createVsaWorkingEnvironment_2",
         "requestBody": {
           "content": {
@@ -26983,7 +26983,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Deletes an SVM",
+        "description": "Deletes an SVM.",
         "operationId": "deleteSvm_3",
         "parameters": [
           {
@@ -27020,7 +27020,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Modify the svm name of the Cloud Volumes ONTAP",
+        "description": "Modifies the SVM name of the Cloud Volumes ONTAP.",
         "operationId": "changeSvmName_5",
         "parameters": [
           {
@@ -27056,7 +27056,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Creates a new SVM",
+        "description": "Creates a new SVM.",
         "operationId": "createSvm_3",
         "parameters": [
           {
@@ -27094,7 +27094,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves an Cloud Volumes ONTAP working environment",
+        "description": "Retrieves a Cloud Volumes ONTAP system.",
         "operationId": "workingEnvironment_6",
         "parameters": [
           {
@@ -27130,7 +27130,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Deletes an existing Cloud Volumes ONTAP working environment, including all Cloud resources created for this working environment (unless the localDelete flag is set to true)",
+        "description": "Deletes an existing Cloud Volumes ONTAP system, including all Cloud resources created for this working environment (unless the localDelete flag is set to true).",
         "operationId": "deleteVsaWorkingEnvironment_5",
         "parameters": [
           {
@@ -27175,7 +27175,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Delete CIFS Configuration of an existing Cloud Volumes ONTAP working environment",
+        "description": "Deletes a CIFS configuration of an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_11",
         "parameters": [
           {
@@ -27213,7 +27213,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves CIFS Configuration to an existing Cloud Volumes ONTAP working environment",
+        "description": "Retrieves a CIFS configuration of an existing Cloud Volumes ONTAP system.",
         "operationId": "cifsConfiguration_7",
         "parameters": [
           {
@@ -27260,7 +27260,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Setup a new CIFS Configuration to an existing Cloud Volumes ONTAP working environment",
+        "description": "Sets up a new CIFS Configuration of an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_12",
         "parameters": [
           {
@@ -27298,7 +27298,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Validate pre-req for conversion of an existing Cloud Volumes ONTAP working environment",
+        "description": "Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_5",
         "parameters": [
           {
@@ -27329,7 +27329,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Sets the writing speed for Cloud Volumes ONTAP",
+        "description": "Sets the writing speed for Cloud Volumes ONTAP.",
         "operationId": "modifyWritingSpeed_5",
         "parameters": [
           {
@@ -27367,7 +27367,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves all license types and their associated instance types for a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves all of the license types and their associated instance types for a given Cloud Volumes ONTAP instance.",
         "operationId": "licenseAndInstanceTypes_5",
         "parameters": [
           {
@@ -27407,7 +27407,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Sets the instance type of a specific Cloud Volumes ONTAP",
+        "description": "Sets the instance type of a specific Cloud Volumes ONTAP.",
         "operationId": "changeLicenseAndInstanceType_5",
         "parameters": [
           {
@@ -27445,7 +27445,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves images already installed on the Cloud Volumes ONTAP",
+        "description": "Retrieves images already installed on the Cloud Volumes ONTAP.",
         "operationId": "ontapAvailableImages_5",
         "parameters": [
           {
@@ -27487,7 +27487,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP",
+        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP.",
         "operationId": "updateSystemImage_5",
         "parameters": [
           {
@@ -27525,7 +27525,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves eligibility support status of a Cloud Volumes ONTAP system. Valid values - NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, LICENSE_EXPIRED",
+        "description": "Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, and LICENSE_EXPIRED.",
         "operationId": "occmUpgradeEligibilityChecks_5",
         "parameters": [
           {
@@ -27556,7 +27556,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file on the provided Cloud Volumes ONTAP",
+        "description": "Uploads a Cloud license file on the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFile_5",
         "parameters": [
           {
@@ -27601,7 +27601,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file content on the provided Cloud Volumes ONTAP",
+        "description": "Uploads Cloud license file content on the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFileContent_5",
         "parameters": [
           {
@@ -27639,7 +27639,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Activate offbox configuration",
+        "description": "Activates an offbox configuration.",
         "operationId": "activateOntapConfiguration_5",
         "parameters": [
           {
@@ -27668,7 +27668,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Modify the net port broadcast domain mtu of the Cloud Volumes ONTAP",
+        "description": "Modifies the net port broadcast domain mtu of the Cloud Volumes ONTAP.",
         "operationId": "changeNetworkOptimizationLevel_5",
         "parameters": [
           {
@@ -27706,7 +27706,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves action parameters used in create request of a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves the action parameters used in a create request of a given Cloud Volumes ONTAP instance.",
         "operationId": "createRequestParameters_5",
         "parameters": [
           {
@@ -27737,7 +27737,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Enable capacity tiering",
+        "description": "Enables capacity tiering.",
         "operationId": "enableCapacityTiering_5",
         "parameters": [
           {
@@ -27775,7 +27775,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded",
+        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded to.",
         "operationId": "occmProvidedCloudOntapUpgradeVersions_5",
         "parameters": [
           {
@@ -27817,7 +27817,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Manually triggers subscription sync for all Cloud Volumes ONTAP working environments",
+        "description": "Manually triggers a subscription sync for all Cloud Volumes ONTAP systems",
         "operationId": "syncVsaWorkingEnvironmentsSubscription_5",
         "responses": {
           "default": {
@@ -27836,7 +27836,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Working Environment Cost And Usage",
+        "description": "Retrieves system cost and usage.",
         "operationId": "workingEnvironmentCostAndUsage_5",
         "parameters": [
           {
@@ -27881,7 +27881,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Working Environment Ontap Saving",
+        "description": "Retrieves system ONTAP savings.",
         "operationId": "workingEnvironmentOntapSaving_5",
         "parameters": [
           {
@@ -27912,7 +27912,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Get extra capacity licenses for cvo",
+        "description": "Retrieves extra capacity licenses for Cloud Volumes ONTAP.",
         "operationId": "getExtraCapacityLicenses_5",
         "parameters": [
           {
@@ -27953,9 +27953,9 @@
       },
       "put": {
         "tags": [
-          "ONTAP Cloud GCP working environment operations - Working environments"
+          "ONTAP Cloud GCP working envrionment operations - working envrionments"
         ],
-        "description": "Update extra capacity license",
+        "description": "Updates extra capacity licenses.",
         "operationId": "updateExtraCapacityLicenses_5",
         "parameters": [
           {
@@ -27991,7 +27991,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Register extra capacity license",
+        "description": "Registers extra capacity licenses.",
         "operationId": "uploadExtraCapacityLicenses_5",
         "parameters": [
           {
@@ -28029,7 +28029,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Update extra capacity serials",
+        "description": "Updates extra capacity serial numbers.",
         "operationId": "updateExtraCapacitySerials_5",
         "parameters": [
           {
@@ -28065,7 +28065,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Register extra capacity serials",
+        "description": "Registers extra capacity serial numbers.",
         "operationId": "uploadExtraCapacitySerials_5",
         "parameters": [
           {
@@ -28101,7 +28101,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Delete extra capacity licenses by serials",
+        "description": "Deletes extra capacity licenses by serial numbers.",
         "operationId": "deleteExtraCapacityLicenses_5",
         "parameters": [
           {
@@ -28139,7 +28139,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Updates default vscan file operation profile. Profile on existing CIFS shares will change only on writes-only mode",
+        "description": "Updates the default Vscan file operation profile. Profiles on existing CIFS shares only change on writes-only mode.",
         "operationId": "updateVscanFileOperation_5",
         "parameters": [
           {
@@ -28177,7 +28177,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Updates Cloud Manager password of a specific Cloud Volumes ONTAP",
+        "description": "Updates the Cloud Manager password of a specific Cloud Volumes ONTAP.",
         "operationId": "updatePassword_6",
         "parameters": [
           {
@@ -28215,7 +28215,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Change tier level",
+        "description": "Updates the tier level.",
         "operationId": "changeTierLevel_5",
         "parameters": [
           {
@@ -28253,7 +28253,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Updated byol licence to capacity based license to an existing Cloud Volumes ONTAP working environment",
+        "description": "Updates a BYOL licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
         "operationId": "byolToCapacity_5",
         "parameters": [
           {
@@ -28293,7 +28293,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Enable Snaplock to an existing Cloud Volumes ONTAP working environment",
+        "description": "Enables Snaplock for an existing Cloud Volumes ONTAP system.",
         "operationId": "enableWorm_5",
         "parameters": [
           {
@@ -28331,7 +28331,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Setup NTP server",
+        "description": "Sets up an NTP server.",
         "operationId": "setupNtpServer_5",
         "parameters": [
           {
@@ -28369,7 +28369,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Starts a specific Cloud Volumes ONTAP instance",
+        "description": "Starts a specific Cloud Volumes ONTAP instance.",
         "operationId": "startVsa_5",
         "parameters": [
           {
@@ -28398,7 +28398,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Stops a specific Cloud Volumes ONTAP instance",
+        "description": "Stops a specific Cloud Volumes ONTAP instance.",
         "operationId": "stopVsa_5",
         "parameters": [
           {
@@ -28435,7 +28435,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves the support registration status of a Cloud Volumes ONTAP system",
+        "description": "Retrieves the support registration status of a Cloud Volumes ONTAP system.",
         "operationId": "status_6",
         "parameters": [
           {
@@ -28464,7 +28464,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Registers a Cloud Volumes ONTAP system with NetApp",
+        "description": "Registers a Cloud Volumes ONTAP system with NetApp.",
         "operationId": "registerSupport_5",
         "parameters": [
           {
@@ -28502,7 +28502,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "List start-stop schedules for Cloud Volumes ONTAP",
+        "description": "Lists the start-stop schedules for Cloud Volumes ONTAP.",
         "operationId": "getSchedules_5",
         "parameters": [
           {
@@ -28542,7 +28542,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Set schedules for Cloud Volumes ONTAP",
+        "description": "Sets the schedules for Cloud Volumes ONTAP.",
         "operationId": "setSchedules_5",
         "parameters": [
           {
@@ -28580,7 +28580,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Activate FPolicy for ransomeware files",
+        "description": "Activates the FPolicy for ransomeware files.",
         "operationId": "activateFpolicy_5",
         "parameters": [
           {
@@ -28609,7 +28609,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Disable FPolicy for ransomeware files",
+        "description": "Disables the FPolicy for ransomeware files.",
         "operationId": "disableFpolicy_5",
         "parameters": [
           {
@@ -28638,7 +28638,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Delete FPolicy for ransomeware files",
+        "description": "Deletes the FPolicy for ransomeware files.",
         "operationId": "deleteFpolicy_5",
         "parameters": [
           {
@@ -28667,7 +28667,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Parses an uploaded Cloud license file",
+        "description": "Parses an uploaded Cloud license file.",
         "operationId": "parseLicenseFile_5",
         "parameters": [
           {
@@ -28706,7 +28706,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves editable tags for cloud resources of a given Cloud Volumes ONTAP instance",
+        "description": "Retrieves the editable tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
         "operationId": "userTags_5",
         "parameters": [
           {
@@ -28735,7 +28735,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Modify user tags for cloud resources of a given Cloud Volumes ONTAP instance",
+        "description": "Modifies the user tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
         "operationId": "modifyUserTags_5",
         "parameters": [
           {
@@ -28773,7 +28773,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Activate snapshot policy assignment to all not protected rw volumes",
+        "description": "Activates the snapshot policy assignment to all unprotected RW volumes.",
         "operationId": "activateSnapshotPolicy_5",
         "parameters": [
           {
@@ -28802,7 +28802,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Create snapshot policy",
+        "description": "Creates a snapshot policy.",
         "operationId": "createSnapshotPolicy_5",
         "parameters": [
           {
@@ -28840,7 +28840,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Change serial number of Cloud Volumes ONTAP",
+        "description": "Updates the serial number of Cloud Volumes ONTAP.",
         "operationId": "changeSerialNumber_5",
         "parameters": [
           {
@@ -28878,7 +28878,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP",
+        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP.",
         "operationId": "setPassword_5",
         "parameters": [
           {
@@ -28923,7 +28923,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Aggregates"
         ],
-        "description": "Adds capacity to an existing elastic volume aggregate",
+        "description": "Adds the capacity to an existing elastic volume aggregate.",
         "operationId": "addCapacityToEvAggregate_1",
         "parameters": [
           {
@@ -28969,7 +28969,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Aggregates"
         ],
-        "description": "Retrieves aggregates",
+        "description": "Retrieves aggregates.",
         "operationId": "aggregates_5",
         "parameters": [
           {
@@ -29008,7 +29008,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Aggregates"
         ],
-        "description": "Creates a new aggregate",
+        "description": "Creates a new aggregate.",
         "operationId": "createAggregate_5",
         "requestBody": {
           "content": {
@@ -29036,7 +29036,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Aggregates"
         ],
-        "description": "Deletes an existing aggregate",
+        "description": "Deletes an existing aggregate.",
         "operationId": "deleteAggregate_5",
         "parameters": [
           {
@@ -29073,7 +29073,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Aggregates"
         ],
-        "description": "Adds disks to an existing aggregate",
+        "description": "Adds disks to an existing aggregate.",
         "operationId": "addDisksToAggregate_5",
         "parameters": [
           {
@@ -29119,7 +29119,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Discovery"
         ],
-        "description": "Retrieves a list of discovered working environments visible to the current user in the specified AWS region",
+        "description": "Retrieves a list of discovered systems visible to the current user in the specified AWS region.",
         "operationId": "discover_5",
         "parameters": [
           {
@@ -29177,7 +29177,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Discovery"
         ],
-        "description": "Saves a previously discovered Cloud Volumes ONTAP working environment to the Cloud Manager database",
+        "description": "Saves a previously discovered Cloud Volumes ONTAP system to the Cloud Manager database.",
         "operationId": "recover_3",
         "requestBody": {
           "content": {
@@ -29207,7 +29207,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Encryption"
         ],
-        "description": "Updates the key manager CA certificate on the Cloud Volumes ONTAP system",
+        "description": "Updates the key manager CA certificate on the Cloud Volumes ONTAP system.",
         "operationId": "updateKeyManagerCaCertificate_1",
         "parameters": [
           {
@@ -29247,7 +29247,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Encryption"
         ],
-        "description": "Updates the client certificate on the Cloud Volumes ONTAP system",
+        "description": "Updates the client certificate on the Cloud Volumes ONTAP system.",
         "operationId": "updateClientCertificate_1",
         "parameters": [
           {
@@ -29278,7 +29278,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Encryption"
         ],
-        "description": "Adds a key manager to the Cloud Volumes ONTAP system",
+        "description": "Adds a key manager to the Cloud Volumes ONTAP system.",
         "operationId": "addKeyManagerToVsa_1",
         "parameters": [
           {
@@ -29313,7 +29313,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Encryption"
         ],
-        "description": "Deletes a key manager from the Cloud Volumes ONTAP system",
+        "description": "Deletes a key manager from the Cloud Volumes ONTAP system.",
         "operationId": "deleteKeyManagerFromVsa_1",
         "parameters": [
           {
@@ -29350,7 +29350,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves all Cloud Volumes ONTAP configurations",
+        "description": "Retrieves all Cloud Volumes ONTAP configurations.",
         "operationId": "permutations_5",
         "responses": {
           "default": {
@@ -29382,7 +29382,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves all Cloud Manager manifests. Refer to the API Developers Guide in order to understand how to extract valid region codes, license types, instance types and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP working environment.",
+        "description": "Retrieves all Cloud Manager manifests. Refer to the API Developers Guide in order to understand how to extract valid region codes, license types, instance types, and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP system.",
         "operationId": "manifests_1",
         "responses": {
           "default": {
@@ -29403,7 +29403,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves VPCs",
+        "description": "Retrieves VPCs.",
         "operationId": "vpcs_3",
         "parameters": [
           {
@@ -29458,7 +29458,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves AWS user Key Pairs for specific region",
+        "description": "Retrieves AWS user key pairs for a specific region.",
         "operationId": "keyPairs_1",
         "parameters": [
           {
@@ -29516,7 +29516,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves AWS user Key Pairs for all regions",
+        "description": "Retrieves AWS user key pairs for all regions.",
         "operationId": "keyPairsByRegion_1",
         "parameters": [
           {
@@ -29553,7 +29553,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves AWS instance profiles",
+        "description": "Retrieves AWS instance profiles.",
         "operationId": "instanceProfiles_1",
         "parameters": [
           {
@@ -29604,7 +29604,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieve S3 buckets summary",
+        "description": "Retrieve S3 buckets summary.",
         "operationId": "s3summary_1",
         "responses": {
           "default": {
@@ -29625,7 +29625,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves the minimum number of required IPs for a single Cloud Volumes ONTAP system, an HA node, and HA mediator",
+        "description": "Retrieves the minimum number of required IPs for a single Cloud Volumes ONTAP system, an HA node, and a HA mediator.",
         "operationId": "networkRequirements_5",
         "responses": {
           "default": {
@@ -29646,7 +29646,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves AWS encryption keys for specific region",
+        "description": "Retrieves AWS encryption keys for a specific region.",
         "operationId": "awsEncryptionKeys_1",
         "parameters": [
           {
@@ -29701,7 +29701,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Validates the current user is subscribed to Cloud Volumes ONTAP product in Amazon marketplace",
+        "description": "Comfirms that the current user is subscribed to the Cloud Volumes ONTAP product in the Amazon marketplace.",
         "operationId": "validateSubscribedToOntapCloud_3",
         "requestBody": {
           "content": {
@@ -29731,7 +29731,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieve all S3 buckets with additional info",
+        "description": "Retrieves all S3 buckets with additional information.",
         "operationId": "listDetailedBuckets_1",
         "responses": {
           "default": {
@@ -29752,7 +29752,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieve S3 buckets policy status and tiering level",
+        "description": "Retrieves the S3 buckets policy status and tiering level.",
         "operationId": "getBucketsPolicyAndTieringData_1",
         "requestBody": {
           "content": {
@@ -29796,7 +29796,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieve all S3 buckets",
+        "description": "Retrieves all S3 buckets.",
         "operationId": "listBuckets_3",
         "parameters": [
           {
@@ -29837,7 +29837,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves supported capacity tiers for EBS volume types",
+        "description": "Retrieves supported capacity tiers for EBS volume types.",
         "operationId": "supportedCapacityTiers_5",
         "parameters": [
           {
@@ -29895,7 +29895,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Create new S3 bucket",
+        "description": "Creates anew S3 bucket.",
         "operationId": "createBucket_3",
         "parameters": [
           {
@@ -29930,7 +29930,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves supported EBS volume types",
+        "description": "Retrieves supported EBS volume types.",
         "operationId": "disks_5",
         "responses": {
           "default": {
@@ -29962,7 +29962,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves all the Tag names",
+        "description": "Retrieves all of the Tag names.",
         "operationId": "tagKeys_5",
         "parameters": [
           {
@@ -30010,7 +30010,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves AWS regions over which an Cloud Volumes ONTAP working environment may be created",
+        "description": "Retrieves Amazon Web Services regions over which a Cloud Volumes ONTAP system is created.",
         "operationId": "regions_5",
         "responses": {
           "default": {
@@ -30045,7 +30045,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves default snapshot policies available on a cluster",
+        "description": "Retrieves default snapshot policies available on a cluster.",
         "operationId": "defaultSnapshotPolicies_5",
         "responses": {
           "default": {
@@ -30077,7 +30077,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves instance types not supporting acceleration and capacity tiering",
+        "description": "Retrieves instance types that do not support acceleration and capacity tiering.",
         "operationId": "instanceTypesNotSupportingAccelerationAndCapacityTiering_5",
         "responses": {
           "default": {
@@ -30098,7 +30098,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves supported features",
+        "description": "Retrieves supported features.",
         "operationId": "supportedFeatures_5",
         "parameters": [
           {
@@ -30156,7 +30156,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves packages configuration",
+        "description": "Retrieves packages configurations.",
         "operationId": "packages_5",
         "parameters": [
           {
@@ -30234,7 +30234,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Change underlying volume tier",
+        "description": "Updates the underlying volume tier.",
         "operationId": "changeVolumeTier_5",
         "parameters": [
           {
@@ -30288,7 +30288,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Retrieves volumes for Backup Activation",
+        "description": "Retrieves the volumes for backup activation.",
         "operationId": "volumesForBackup_6",
         "parameters": [
           {
@@ -30355,7 +30355,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Modify an existing volume",
+        "description": "Modifies an existing volume.",
         "operationId": "modifyVolume_7",
         "parameters": [
           {
@@ -30431,7 +30431,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Deletes an existing volume",
+        "description": "Deletes an existing volume.",
         "operationId": "deleteVolume_7",
         "parameters": [
           {
@@ -30476,7 +30476,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Add export policy rule",
+        "description": "Adds an export policy rule.",
         "operationId": "addExportPolicyRule_5",
         "parameters": [
           {
@@ -30554,7 +30554,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Get all igroups",
+        "description": "Retrieves all igroups.",
         "operationId": "getIgroups_6",
         "parameters": [
           {
@@ -30604,7 +30604,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Get all ISCSI initiators",
+        "description": "Retrieves all iSCSI initiators.",
         "operationId": "getInitiators_6",
         "responses": {
           "default": {
@@ -30637,7 +30637,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Add ISCSI initiator",
+        "description": "Adds an iSCSI initiator.",
         "operationId": "saveInitiator_6",
         "requestBody": {
           "content": {
@@ -30726,7 +30726,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Clones an existing volume",
+        "description": "Clones an existing volume.",
         "operationId": "cloneVolume_7",
         "parameters": [
           {
@@ -30780,7 +30780,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Move an existing volume",
+        "description": "Moves an existing volume.",
         "operationId": "moveVolume_5",
         "parameters": [
           {
@@ -30834,7 +30834,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Retrieves volumes",
+        "description": "Retrieves volumes.",
         "operationId": "volumes_6",
         "parameters": [
           {
@@ -30873,7 +30873,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Creates a new volume. If the properties aggregateName and maxNumOfDisksApprovedToAdd are not filled in, then the response will fail with a suggested aggregate name and the number of disks that will need to be created in order to fulfill the request",
+        "description": "Creates a new volume. If the properties aggregateName and maxNumOfDisksApprovedToAdd are not populated, then the response fails with a suggested aggregate name and the number of disks that need to be created in order to fulfill the request.",
         "operationId": "createVolume_7",
         "parameters": [
           {
@@ -30910,7 +30910,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Create snapshot manually",
+        "description": "Creates a snapshot manually.",
         "operationId": "createSnapshot_7",
         "parameters": [
           {
@@ -30962,7 +30962,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Delete snapshot manually",
+        "description": "Deletes a snapshot manually.",
         "operationId": "deleteSnapshot_7",
         "parameters": [
           {
@@ -31014,9 +31014,9 @@
     "/vsa/working-environments": {
       "get": {
         "tags": [
-          "ONTAP Cloud AWS working environment operations - Working environments"
+          "ONTAP Cloud AWS working environment operations - Systems"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP working environments visible to the currently logged in user",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the currently logged in user.",
         "operationId": "workingEnvironments_7",
         "parameters": [
           {
@@ -31060,9 +31060,9 @@
       },
       "post": {
         "tags": [
-          "ONTAP Cloud AWS working environment operations - Working environments"
+          "ONTAP Cloud AWS working environment operations - Systems"
         ],
-        "description": "Creates a new Cloud Volumes ONTAP working environment. Refer to the API Developers Guide in order to understand how to fill in the values for region, licenseType, instanceType and version",
+        "description": "Creates a new Cloud Volumes ONTAP system. Refer to the API Developers Guide in order to understand how to populate the values for region, licenseType, instanceType, and version.",
         "operationId": "createVsaWorkingEnvironment_3",
         "requestBody": {
           "content": {
