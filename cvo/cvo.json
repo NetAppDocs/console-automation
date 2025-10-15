@@ -4767,7 +4767,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
+        "description": "Deletes the CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration",
         "parameters": [
           {
@@ -4805,7 +4805,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Retrieves the CIFS configuration of an existing Cloud Volumes ONTAP system.",
+        "description": "Retrieves the CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "cifsConfiguration",
         "parameters": [
           {
@@ -5367,7 +5367,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP instance can be upgraded.",
+        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP system can be upgraded.",
         "operationId": "occmProvidedCloudOntapUpgradeVersions",
         "parameters": [
           {
@@ -5923,7 +5923,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Set up an NTP server.",
+        "description": "Sets up an NTP server.",
         "operationId": "setupNtpServer",
         "parameters": [
           {
@@ -12709,7 +12709,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which the Cloud Volumes ONTAP instance can be upgraded.",
+        "description": "Retrieves a list of versions to which the Cloud Volumes ONTAP system can be upgraded.",
         "operationId": "occmProvidedCloudOntapUpgradeVersions_1",
         "parameters": [
           {
@@ -13265,7 +13265,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Creates the NTP server.",
+        "description": "Sets up an NTP server.",
         "operationId": "setupNtpServer_1",
         "parameters": [
           {
@@ -17413,7 +17413,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Creates the NTP server.",
+        "description": "Sets up an NTP server.",
         "operationId": "setupNtpServer_2",
         "parameters": [
           {
@@ -22779,7 +22779,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Deletes a CIFS configuration of an existing Cloud Volumes ONTAP system.",
+        "description": "Deletes a CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_13",
         "parameters": [
           {
@@ -22817,7 +22817,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves a CIFS configuration of an existing Cloud Volumes ONTAP system.",
+        "description": "Retrieves a CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "cifsConfiguration_8",
         "parameters": [
           {
@@ -22902,7 +22902,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system.",
+        "description": "Confirms the prerequisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_6",
         "parameters": [
           {
@@ -23130,7 +23130,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves images already installed on the Cloud Volumes ONTAP.",
+        "description": "Retrieves images already installed on the Cloud Volumes ONTAP system.",
         "operationId": "ontapAvailableImages_6",
         "parameters": [
           {
@@ -23172,7 +23172,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP.",
+        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP system.",
         "operationId": "updateSystemImage_6",
         "parameters": [
           {
@@ -23241,7 +23241,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file on the provided Cloud Volumes ONTAP.",
+        "description": "Uploads a cloud license file on the specified Cloud Volumes ONTAP system.",
         "operationId": "uploadLicenseFile_6",
         "parameters": [
           {
@@ -23286,7 +23286,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Uploads Cloud license file content on the provided Cloud Volumes ONTAP.",
+        "description": "Uploads cloud license file content on the specified Cloud Volumes ONTAP system.",
         "operationId": "uploadLicenseFileContent_6",
         "parameters": [
           {
@@ -23460,7 +23460,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded to.",
+        "description": "Retrieves a list of versions to which the Cloud Volumes ONTAP system can be upgraded.",
         "operationId": "occmProvidedCloudOntapUpgradeVersions_6",
         "parameters": [
           {
@@ -23502,7 +23502,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Manually triggers a subscription sync for all Cloud Volumes ONTAP systems.",
+        "description": "Manually triggers subscription synchronization for all Cloud Volumes ONTAP systems.",
         "operationId": "syncVsaWorkingEnvironmentsSubscription_6",
         "responses": {
           "default": {
@@ -25159,7 +25159,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Deletes a CIFS configuration of an existing Cloud Volumes ONTAPsystem.",
+        "description": "Deletes a CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_9",
         "parameters": [
           {
@@ -25282,7 +25282,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system.",
+        "description": "Confirms the prerequisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_4",
         "parameters": [
           {
@@ -25429,7 +25429,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves images already installed on the Cloud Volumes ONTAP.",
+        "description": "Retrieves images already installed on the Cloud Volumes ONTAP system.",
         "operationId": "ontapAvailableImages_4",
         "parameters": [
           {
@@ -25471,7 +25471,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP.",
+        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP system.",
         "operationId": "updateSystemImage_4",
         "parameters": [
           {
@@ -25540,7 +25540,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file to the provided Cloud Volumes ONTAP.",
+        "description": "Uploads a cloud license file to the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFile_4",
         "parameters": [
           {
@@ -25585,7 +25585,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file content to the provided Cloud Volumes ONTAP.",
+        "description": "Uploads a cloud license file content to the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFileContent_4",
         "parameters": [
           {
@@ -25759,7 +25759,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded to.",
+        "description": "Retrieves a list of versions to which the Cloud Volumes ONTAP system can be upgraded.",
         "operationId": "occmProvidedCloudOntapUpgradeVersions_4",
         "parameters": [
           {
@@ -25801,7 +25801,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Manually triggers a subscription sync for all Cloud Volumes ONTAP systems.",
+        "description": "Manually triggers subscription synchronization for all Cloud Volumes ONTAP systems.",
         "operationId": "syncVsaWorkingEnvironmentsSubscription_4",
         "responses": {
           "default": {
@@ -27175,7 +27175,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Deletes a CIFS configuration of an existing Cloud Volumes ONTAP system.",
+        "description": "Deletes a CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_11",
         "parameters": [
           {
@@ -27213,7 +27213,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves a CIFS configuration of an existing Cloud Volumes ONTAP system.",
+        "description": "Retrieves a CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "cifsConfiguration_7",
         "parameters": [
           {
@@ -27260,7 +27260,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Sets up a new CIFS Configuration of an existing Cloud Volumes ONTAP system.",
+        "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_12",
         "parameters": [
           {
@@ -27298,7 +27298,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system.",
+        "description": "Confirms the prerequisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_5",
         "parameters": [
           {
@@ -27445,7 +27445,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves images already installed on the Cloud Volumes ONTAP.",
+        "description": "Retrieves images already installed on the Cloud Volumes ONTAP system.",
         "operationId": "ontapAvailableImages_5",
         "parameters": [
           {
@@ -27487,7 +27487,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP.",
+        "description": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP system.",
         "operationId": "updateSystemImage_5",
         "parameters": [
           {
@@ -27556,7 +27556,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Uploads a Cloud license file on the provided Cloud Volumes ONTAP.",
+        "description": "Uploads a cloud license file on the specified Cloud Volumes ONTAP system.",
         "operationId": "uploadLicenseFile_5",
         "parameters": [
           {
@@ -27601,7 +27601,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Uploads Cloud license file content on the provided Cloud Volumes ONTAP.",
+        "description": "Uploads cloud license file content on the specified Cloud Volumes ONTAP system.",
         "operationId": "uploadLicenseFileContent_5",
         "parameters": [
           {
@@ -27775,7 +27775,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which this Cloud Volumes ONTAP can be upgraded to.",
+        "description": "Retrieves a list of versions to which the Cloud Volumes ONTAP system can be upgraded.",
         "operationId": "occmProvidedCloudOntapUpgradeVersions_5",
         "parameters": [
           {
@@ -27817,7 +27817,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Manually triggers a subscription sync for all Cloud Volumes ONTAP systems",
+        "description": "Manually triggers subscription synchronization for all Cloud Volumes ONTAP systems.",
         "operationId": "syncVsaWorkingEnvironmentsSubscription_5",
         "responses": {
           "default": {
@@ -28773,7 +28773,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Activates the snapshot policy assignment to all unprotected RW volumes.",
+        "description": "Activates the snapshot policy assignment to all unprotected read/write volumes.",
         "operationId": "activateSnapshotPolicy_5",
         "parameters": [
           {
