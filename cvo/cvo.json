@@ -4568,7 +4568,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Retrieves the number of available IP addresses in the subnet of the Cloud Volumes ONTAP system.",
+        "description": "Retrieves the number of available IP addresses in the Cloud Volumes ONTAP system's subnet.",
         "operationId": "availableIpsInVsaSubnet",
         "parameters": [
           {
@@ -5117,7 +5117,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values - NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, LICENSE_EXPIRED",
+        "description": "Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, and LICENSE_EXPIRED.",
         "operationId": "occmUpgradeEligibilityChecks",
         "parameters": [
           {
@@ -6172,7 +6172,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Activates FPolicy for ransomware files.",
+        "description": "Activates the FPolicy for ransomware files.",
         "operationId": "activateFpolicy",
         "parameters": [
           {
@@ -6201,7 +6201,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Disables FPolicy for ransomware files.",
+        "description": "Disables the FPolicy for ransomware files.",
         "operationId": "disableFpolicy",
         "parameters": [
           {
@@ -6230,7 +6230,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Deletes FPolicy for ransomware files.",
+        "description": "Deletes the FPolicy for ransomware files.",
         "operationId": "deleteFpolicy",
         "parameters": [
           {
@@ -12459,7 +12459,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values - NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, LICENSE_EXPIRED",
+        "description": "Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, and LICENSE_EXPIRED.",
         "operationId": "occmUpgradeEligibilityChecks_1",
         "parameters": [
           {
@@ -13477,7 +13477,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Activates FPolicy for ransomware files.",
+        "description": "Activates the FPolicy for ransomware files.",
         "operationId": "activateFpolicy_1",
         "parameters": [
           {
@@ -13506,7 +13506,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Disables FPolicy for ransomware files.",
+        "description": "Disables the FPolicy for ransomware files.",
         "operationId": "disableFpolicy_1",
         "parameters": [
           {
@@ -13535,7 +13535,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Deletes FPolicy for ransomware files",
+        "description": "Deletes the FPolicy for ransomware files",
         "operationId": "deleteFpolicy_1",
         "parameters": [
           {
@@ -14539,7 +14539,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Metadata"
         ],
-        "description": "Retrieves AWS instance profiles",
+        "description": "Retrieves AWS instance profiles.",
         "operationId": "instanceProfiles",
         "parameters": [
           {
@@ -16607,7 +16607,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Retrieves eligibility support status of a Cloud Volumes ONTAP system. Valid values - NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, LICENSE_EXPIRED",
+        "description": "Retrieves eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, and LICENSE_EXPIRED.",
         "operationId": "occmUpgradeEligibilityChecks_2",
         "parameters": [
           {
@@ -17700,7 +17700,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Activates FPolicy for ransomware files.",
+        "description": "Activates the FPolicy for ransomware files.",
         "operationId": "activateFpolicy_2",
         "parameters": [
           {
@@ -17729,7 +17729,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Disables FPolicy for ransomware files.",
+        "description": "Disables the FPolicy for ransomware files.",
         "operationId": "disableFpolicy_2",
         "parameters": [
           {
@@ -17758,7 +17758,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Deletes FPolicy for ransomware files.",
+        "description": "Deletes the FPolicy for ransomware files.",
         "operationId": "deleteFpolicy_2",
         "parameters": [
           {
@@ -23324,7 +23324,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Activates an offbox configuration.",
+        "description": "Activates an off-box configuration.",
         "operationId": "activateOntapConfiguration_6",
         "parameters": [
           {
@@ -23978,7 +23978,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Enables Snaplock for an existing Cloud Volumes ONTAP system.",
+        "description": "Enables SnapLock for an existing Cloud Volumes ONTAP system.",
         "operationId": "enableWorm_6",
         "parameters": [
           {
@@ -24187,7 +24187,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Lists the start-stop schedules for Cloud Volumes ONTAP.",
+        "description": "Lists the start/stop schedules for Cloud Volumes ONTAP.",
         "operationId": "getSchedules_6",
         "parameters": [
           {
@@ -24303,7 +24303,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Activates the FPolicy for ransomeware files.",
+        "description": "Activates the FPolicy for ransomware files.",
         "operationId": "activateFpolicy_6",
         "parameters": [
           {
@@ -24332,7 +24332,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Disables the FPolicy for ransomeware files.",
+        "description": "Disables the FPolicy for ransomware files.",
         "operationId": "disableFpolicy_6",
         "parameters": [
           {
@@ -24361,7 +24361,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Deletes the FPolicy for ransomeware files.",
+        "description": "Deletes the FPolicy for ransomware files.",
         "operationId": "deleteFpolicy_6",
         "parameters": [
           {
@@ -24991,7 +24991,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Returns true if a resource group with that name already exists, otherwise it returne false.",
+        "description": "Returns true if a resource group with that name already exists, otherwise it returns false.",
         "operationId": "resourceGroupExists_1",
         "parameters": [
           {
@@ -25623,7 +25623,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Activates an offbox configuration.",
+        "description": "Activates an off-box configuration.",
         "operationId": "activateOntapConfiguration_4",
         "parameters": [
           {
@@ -26277,7 +26277,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Enables Snaplock for an existing Cloud Volumes ONTAP system.",
+        "description": "Enables SnapLock for an existing Cloud Volumes ONTAP system.",
         "operationId": "enableWorm_4",
         "parameters": [
           {
@@ -26486,7 +26486,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Lists the start-stop schedules for Cloud Volumes ONTAP.",
+        "description": "Lists the start/stop schedules for Cloud Volumes ONTAP.",
         "operationId": "getSchedules_4",
         "parameters": [
           {
@@ -26564,7 +26564,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Activates the FPolicy for ransomeware files.",
+        "description": "Activates the FPolicy for ransomware files.",
         "operationId": "activateFpolicy_4",
         "parameters": [
           {
@@ -26593,7 +26593,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Disables the FPolicy for ransomeware files.",
+        "description": "Disables the FPolicy for ransomware files.",
         "operationId": "disableFpolicy_4",
         "parameters": [
           {
@@ -26622,7 +26622,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Deletes the FPolicy for ransomeware files.",
+        "description": "Deletes the FPolicy for ransomware files.",
         "operationId": "deleteFpolicy_4",
         "parameters": [
           {
@@ -27639,7 +27639,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Activates an offbox configuration.",
+        "description": "Activates an off-box configuration.",
         "operationId": "activateOntapConfiguration_5",
         "parameters": [
           {
@@ -28293,7 +28293,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Enables Snaplock for an existing Cloud Volumes ONTAP system.",
+        "description": "Enables SnapLock for an existing Cloud Volumes ONTAP system.",
         "operationId": "enableWorm_5",
         "parameters": [
           {
@@ -28502,7 +28502,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Lists the start-stop schedules for Cloud Volumes ONTAP.",
+        "description": "Lists the start/stop schedules for Cloud Volumes ONTAP.",
         "operationId": "getSchedules_5",
         "parameters": [
           {
@@ -28580,7 +28580,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Activates the FPolicy for ransomeware files.",
+        "description": "Activates the FPolicy for ransomware files.",
         "operationId": "activateFpolicy_5",
         "parameters": [
           {
@@ -28609,7 +28609,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Disables the FPolicy for ransomeware files.",
+        "description": "Disables the FPolicy for ransomware files.",
         "operationId": "disableFpolicy_5",
         "parameters": [
           {
@@ -28638,7 +28638,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Deletes the FPolicy for ransomeware files.",
+        "description": "Deletes the FPolicy for ransomware files.",
         "operationId": "deleteFpolicy_5",
         "parameters": [
           {
