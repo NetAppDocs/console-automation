@@ -11,7 +11,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Discovery"
         ],
-        "description": "Retrieves a list of discovered systems that are visible to the current user in the specified Google Cloud region.",
+        "description": "Retrieves a list of discovered systems visible to the current user in the specified Google Cloud region.",
         "operationId": "discover",
         "parameters": [
           {
@@ -89,7 +89,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Discovery"
         ],
-        "description": "Retrieves a list of discovered systems that are visible to the current user in the specified Google Cloud zone.",
+        "description": "Retrieves a list of discovered systems visible to the current user in the specified Google Cloud zone.",
         "operationId": "discover_1",
         "parameters": [
           {
@@ -1905,7 +1905,7 @@
         "tags": [
           "User management operations - Authentication operations"
         ],
-        "description": "Retrieves representation of the currently signed-in user.",
+        "description": "Retrieves representation of the current user.",
         "operationId": "getCurrentUser",
         "responses": {
           "default": {
@@ -1926,7 +1926,7 @@
         "tags": [
           "User management operations - Authentication operations"
         ],
-        "description": "Updates the password of the currently signed-in user.",
+        "description": "Updates the password of the current user.",
         "operationId": "changeCurrentUserPassword",
         "requestBody": {
           "content": {
@@ -2286,7 +2286,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Discovery"
         ],
-        "description": "Retrieves a list of discovered systems that are visible to the current user in the specified Azure region.",
+        "description": "Retrieves a list of discovered systems visible to the current user in the specified Azure region.",
         "operationId": "discover_2",
         "parameters": [
           {
@@ -4223,7 +4223,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP systems that are visible to the user that is currently signed-in.",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the current user.",
         "operationId": "workingEnvironments",
         "parameters": [
           {
@@ -11773,7 +11773,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP systems that are visible to the user that is currently signed in.",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the current user.",
         "operationId": "workingEnvironments_2",
         "parameters": [
           {
@@ -14016,7 +14016,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Discovery"
         ],
-        "description": "Retrieves a list of discovered systems that are visible to the current user in the specified AWS region.",
+        "description": "Retrieves a list of discovered systems visible to the current user in the specified AWS region.",
         "operationId": "discover_3",
         "parameters": [
           {
@@ -16002,7 +16002,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP systems that are visible to the user that is currently logged in.",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the current user.",
         "operationId": "workingEnvironments_3",
         "parameters": [
           {
@@ -19145,7 +19145,7 @@
         "tags": [
           "Cloud Manager system operations - Tenancy service"
         ],
-        "description": "Retrieves workspaces that are visible to the user that is currently signed-in.",
+        "description": "Retrieves workspaces that are visible to the current user.",
         "operationId": "workspaces",
         "responses": {
           "default": {
@@ -19956,7 +19956,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Retrieves on-premises systems that are visible to the user that is currently signed-in.",
+        "description": "Retrieves on-premises systems that are visible to the current user.",
         "operationId": "workingEnvironments_4",
         "parameters": [
           {
@@ -20183,7 +20183,7 @@
         "tags": [
           "Replication operations - Metadata"
         ],
-        "description": "Retrieves SnapMirror policies based on source and destination Cloud Volumes ONTAP.",
+        "description": "Retrieves SnapMirror policies for an SVM based on source and destination Cloud Volumes ONTAP systems.",
         "operationId": "describeSnapmirrorPolicies",
         "parameters": [
           {
@@ -20241,7 +20241,7 @@
         "tags": [
           "Replication operations - Metadata"
         ],
-        "description": "Retrieves SnapMirror policies based on source and destination Cloud Volumes ONTAP.",
+        "description": "Retrieves SnapMirror policies based on source and destination Cloud Volumes ONTAP systems.",
         "operationId": "describeSnapmirrorPolicies_1",
         "parameters": [
           {
@@ -20493,7 +20493,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Creates a new replication to an Cloud Volumes ONTAP system.",
+        "description": "Creates a new replication to a Cloud Volumes ONTAP system.",
         "operationId": "createReplicationVsa",
         "requestBody": {
           "content": {
@@ -20611,7 +20611,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Removes a replication relationship.",
+        "description": "Removes a SnapMirror replication relationship.",
         "operationId": "deleteReplication",
         "parameters": [
           {
@@ -20656,7 +20656,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Initializes an existing SnapMirror relationship. This method can only be performed in cases where the relationship has already been established and is healthy, yet is idle and uninitialized. For example, if the initial transfer was interrupted, then it can be restarted with this request.",
+        "description": "Initializes an existing SnapMirror relationship. This method can only be used when the relationship has already been established and is healthy, but is idle and uninitialized. For example, if the initial transfer was interrupted, then it can be restarted with this request.",
         "operationId": "initializeReplication",
         "parameters": [
           {
@@ -20701,7 +20701,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Reversing an existing SnapMirror relationship. This method can only be performed in cases where the relationship has already been established and is healthy and idle.",
+        "description": "Reversing an existing SnapMirror relationship. This method can only be used when the relationship has already been established and is healthy and idle.",
         "operationId": "reverseResyncReplication",
         "parameters": [
           {
@@ -20932,7 +20932,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Retrieves SnapMirror replication relationship statuses of a specific system.",
+        "description": "Retrieves SnapMirror replication relationship status for a specific system.",
         "operationId": "status_3",
         "parameters": [
           {
@@ -21075,7 +21075,7 @@
         "tags": [
           "Cloud Manager working environment operations - Initial Setup"
         ],
-        "description": "Validates a given proxy URL.",
+        "description": "Validates a specified proxy URL.",
         "operationId": "validateProxy",
         "requestBody": {
           "content": {
@@ -21453,7 +21453,7 @@
         "tags": [
           "Tenant operations"
         ],
-        "description": "Retrieves tenants that are visible to the currently logged in user.",
+        "description": "Retrieves tenants that are visible to the current user.",
         "operationId": "list_1",
         "parameters": [
           {
@@ -21592,7 +21592,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Deletes an existing user. It is not possible to delete the user that has created existing systems nor the user who is currently logged in.",
+        "description": "Deletes an existing user. It is not possible to delete a user that has created existing systems or a user who is currently signed in.",
         "operationId": "deleteUser",
         "parameters": [
           {
@@ -21621,7 +21621,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Resets the password of the given user.",
+        "description": "Resets the password of the specified user.",
         "operationId": "resetPassword",
         "parameters": [
           {
@@ -21659,7 +21659,7 @@
         "tags": [
           "User management operations - Users"
         ],
-        "description": "Grants or revokes permissions to the given user for performing operations over the given systems.",
+        "description": "Grants or revokes permissions to the specified user to perform operations on the specified systems.",
         "operationId": "grantPermission",
         "parameters": [
           {
@@ -23052,7 +23052,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves all license types and their associated instance types for a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves all license types and their associated instance types for a specified Cloud Volumes ONTAP instance.",
         "operationId": "licenseAndInstanceTypes_6",
         "parameters": [
           {
@@ -23391,7 +23391,7 @@
         "tags": [ 
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves the action parameters used in a create request of a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the action parameters used in a create request of a specified Cloud Volumes ONTAP instance.",
         "operationId": "createRequestParameters_6",
         "parameters": [
           {
@@ -24429,7 +24429,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves editable tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves editable tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
         "operationId": "userTags_6",
         "parameters": [
           {
@@ -24458,7 +24458,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Modifies user tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
+        "description": "Modifies user tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
         "operationId": "modifyUserTags_6",
         "parameters": [
           {
@@ -24646,7 +24646,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP systems visible to the currently logged in user.",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the current user.",
         "operationId": "workingEnvironments_5",
         "parameters": [
           {
@@ -25351,7 +25351,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves all license types and their associated instance types for a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves all license types and their associated instance types for a specified Cloud Volumes ONTAP instance.",
         "operationId": "licenseAndInstanceTypes_4",
         "parameters": [
           {
@@ -25690,7 +25690,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves the action parameters used in a create request of a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the action parameters used in a create request of a specified Cloud Volumes ONTAP instance.",
         "operationId": "createRequestParameters_4",
         "parameters": [
           {
@@ -26690,7 +26690,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Retrieves the editable tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the editable tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
         "operationId": "userTags_4",
         "parameters": [
           {
@@ -26719,7 +26719,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Modifies the user tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
+        "description": "Modifies the user tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
         "operationId": "modifyUserTags_4",
         "parameters": [
           {
@@ -26907,7 +26907,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP systems visible to the currently logged in user.",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the current user.",
         "operationId": "workingEnvironments_6",
         "parameters": [
           {
@@ -27367,7 +27367,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves all of the license types and their associated instance types for a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves all of the license types and their associated instance types for a specified Cloud Volumes ONTAP instance.",
         "operationId": "licenseAndInstanceTypes_5",
         "parameters": [
           {
@@ -27706,7 +27706,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves the action parameters used in a create request of a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the action parameters used in a create request of a specified Cloud Volumes ONTAP instance.",
         "operationId": "createRequestParameters_5",
         "parameters": [
           {
@@ -27953,7 +27953,7 @@
       },
       "put": {
         "tags": [
-          "ONTAP Cloud GCP working envrionment operations - working envrionments"
+          "ONTAP Cloud GCP working environment operations - Working environments"
         ],
         "description": "Updates extra capacity licenses.",
         "operationId": "updateExtraCapacityLicenses_5",
@@ -28706,7 +28706,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Retrieves the editable tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the editable tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
         "operationId": "userTags_5",
         "parameters": [
           {
@@ -28735,7 +28735,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Modifies the user tags for the cloud resources of a given Cloud Volumes ONTAP instance.",
+        "description": "Modifies the user tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
         "operationId": "modifyUserTags_5",
         "parameters": [
           {
@@ -31016,7 +31016,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Systems"
         ],
-        "description": "Retrieves Cloud Volumes ONTAP systems visible to the currently logged in user.",
+        "description": "Retrieves Cloud Volumes ONTAP systems visible to the current user.",
         "operationId": "workingEnvironments_7",
         "parameters": [
           {
