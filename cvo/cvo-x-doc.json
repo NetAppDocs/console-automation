@@ -4,7 +4,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of HA systems for a Google Cloud region",
-          "category": "Google Cloud HA system operations - discovery",
+          "category": "Google Cloud HA systems - discovery",
           "filename": "get-gcp-ha-discovery-discover.html",
           "subcategory": null
         }
@@ -14,7 +14,7 @@
       "post": {
         "x-doc": {
           "title": "Save an HA system to the NetApp Console database",
-          "category": "Google Cloud HA system operations - discovery",
+          "category": "Google Cloud HA systems - discovery",
           "filename": "post-gcp-ha-discovery-recover.html",
           "subcategory": null
         }
@@ -24,7 +24,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of systems for a Google Cloud zone",
-          "category": "Google Cloud system operations -discovery",
+          "category": "Google Cloud systems -discovery",
           "filename": "get-gcp-vsa-discover.html",
           "subcategory": null
         }
@@ -34,7 +34,7 @@
       "post": {
         "x-doc": {
           "title": "Save a system to the NetApp Console database",
-          "category": "Google Cloud system operations -discovery",
+          "category": "Google Cloud systems -discovery",
           "filename": "post-gcp-vsa-recover.html",
           "subcategory": null
         }
@@ -1666,7 +1666,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the installed certificate",
-          "category": " NetApp Console system operations - certificates",
+          "category": "NetApp Console system operations - certificates",
           "filename": "get-occm-encryption-certificate.html",
           "subcategory": null
         }
@@ -1674,7 +1674,7 @@
       "post": {
         "x-doc": {
           "title": "Validate and install a certificate",
-          "category": " NetApp Console system operations - certificates",
+          "category": "NetApp Console system operations - certificates",
           "filename": "post-occm-encryption-certificate.html",
           "subcategory": null
         }
@@ -2405,7 +2405,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "createVolume_3: Create a new volume if the aggregatename and maxnumofdisksapprovedtoadd properties are not populated, the response fails with a suggested aggregate name and the number of disks that need to be created in order to fulfill the request",
+          "title": "Create a new volume",
           "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes.html",
           "subcategory": null
@@ -2415,7 +2415,7 @@
     "/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot": {
       "post": {
         "x-doc": {
-          "title": "createSnapshot_3: Create a snapshot manually",
+          "title": "Create a snapshot",
           "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes--snapshot.html",
           "subcategory": null
@@ -2423,7 +2423,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "deleteSnapshot_3: Delete a snapshot manually",
+          "title": "Delete a snapshot",
           "category": "Google Cloud systems - volumes",
           "filename": "delete-gcp-vsa-volumes--snapshot.html",
           "subcategory": null
@@ -2433,8 +2433,8 @@
     "/gcp/ha/aggregates/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "aggregates_3: Retrieve aggregates",
-          "category": "Ontap cloud gcp ha working environment operations - aggregates",
+          "title": "Retrieve aggregates",
+          "category": "Google Cloud HA systems - aggregates",
           "filename": "get-gcp-ha-aggregates-.html",
           "subcategory": null
         }
@@ -2443,8 +2443,8 @@
     "/gcp/ha/aggregates": {
       "post": {
         "x-doc": {
-          "title": "createAggregate_3: Create a new aggregate",
-          "category": "Ontap cloud gcp ha working environment operations - aggregates",
+          "title": "Create a new aggregate",
+          "category": "Google Cloud HA systems - aggregates",
           "filename": "post-gcp-ha-aggregates.html",
           "subcategory": null
         }
@@ -2453,8 +2453,8 @@
     "/gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}": {
       "delete": {
         "x-doc": {
-          "title": "deleteAggregate_3: Delete an existing aggregate",
-          "category": "Ontap cloud gcp ha working environment operations - aggregates",
+          "title": "Delete an aggregate",
+          "category": "Google Cloud HA systems - aggregates",
           "filename": "delete-gcp-ha-aggregates-.html",
           "subcategory": null
         }
@@ -2463,8 +2463,8 @@
     "/gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}/disks": {
       "post": {
         "x-doc": {
-          "title": "addDisksToAggregate_3: Add disks to an existing aggregate",
-          "category": "Ontap cloud gcp ha working environment operations - aggregates",
+          "title": "Add disks to an aggregate",
+          "category": "Google Cloud HA systems - aggregates",
           "filename": "post-gcp-ha-aggregates--disks.html",
           "subcategory": null
         }
@@ -2473,8 +2473,8 @@
     "/gcp/ha/metadata/vpcs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve google cloud networks and subnetworks over which a Cloud Volumes ONTAP system can be created",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve Google Cloud networks and subnetworks",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-vpcs.html",
           "subcategory": null
         }
@@ -2483,8 +2483,8 @@
     "/gcp/ha/metadata/zones": {
       "get": {
         "x-doc": {
-          "title": "Retrieve google cloud regions and zones over which a Cloud Volumes ONTAP working environment can be created",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve Google Cloud regions and zones",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-zones.html",
           "subcategory": null
         }
@@ -2493,8 +2493,8 @@
     "/gcp/ha/metadata/tag-keys": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all of the labels for the specified project ID and region",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve all labels for a project ID and region",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-tag-keys.html",
           "subcategory": null
         }
@@ -2503,8 +2503,8 @@
     "/gcp/ha/metadata/permutations": {
       "get": {
         "x-doc": {
-          "title": "permutations_2: Retrieve all Cloud Volumes ONTAP configurations",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve all Cloud Volumes ONTAP configurations",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-permutations.html",
           "subcategory": null
         }
@@ -2513,8 +2513,8 @@
     "/gcp/ha/metadata/gcp-encryption-keys": {
       "get": {
         "x-doc": {
-          "title": "gcpEncryptionKeys_1: Retrieve google cloud encryption keys for a specific region",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve Google Cloud encryption keys for a region",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-gcp-encryption-keys.html",
           "subcategory": null
         }
@@ -2523,8 +2523,8 @@
     "/gcp/ha/metadata/service-accounts": {
       "get": {
         "x-doc": {
-          "title": "serviceAccounts_1: Retrieve a list of service accounts from the project",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve a list of service accounts",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-service-accounts.html",
           "subcategory": null
         }
@@ -2533,8 +2533,8 @@
     "/gcp/ha/metadata/network-requirements": {
       "get": {
         "x-doc": {
-          "title": "networkRequirements_2: Retrieve the minimum number of required ip addresses for a Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve the minimum number of IP addresses for a system",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-network-requirements.html",
           "subcategory": null
         }
@@ -2543,8 +2543,8 @@
     "/gcp/ha/metadata/buckets": {
       "get": {
         "x-doc": {
-          "title": "listBuckets_1: Retrieve all cloud storage buckets",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve all cloud storage buckets",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-buckets.html",
           "subcategory": null
         }
@@ -2553,8 +2553,8 @@
     "/gcp/ha/metadata/supported-capacity-tiers": {
       "get": {
         "x-doc": {
-          "title": "supportedCapacityTiers_2: Retrieve the supported capacity tiers for google cloud disk types",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve supported capacity tiers for Google Cloud disk types",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-supported-capacity-tiers.html",
           "subcategory": null
         }
@@ -2563,8 +2563,8 @@
     "/gcp/ha/metadata/projects": {
       "get": {
         "x-doc": {
-          "title": "projects_1: Retrieve a list of projects for which the user has permission",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve a list of projects",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-projects.html",
           "subcategory": null
         }
@@ -2573,8 +2573,8 @@
     "/gcp/ha/metadata/create-bucket": {
       "post": {
         "x-doc": {
-          "title": "createBucket_1: Create a new bucket",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Create a new bucket",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "post-gcp-ha-metadata-create-bucket.html",
           "subcategory": null
         }
@@ -2584,7 +2584,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the supported disk types",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-gcp-disk-types.html",
           "subcategory": null
         }
@@ -2593,8 +2593,8 @@
     "/gcp/ha/metadata/regions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the google cloud regions where a Cloud Volumes ONTAP system can be created",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve Google Cloud regions",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-regions.html",
           "subcategory": null
         }
@@ -2603,8 +2603,8 @@
     "/gcp/ha/metadata/default-snapshot-policies": {
       "get": {
         "x-doc": {
-          "title": "defaultSnapshotPolicies_2: Retrieve the default snapshot policies available on a cluster",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve the default snapshot policies",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-default-snapshot-policies.html",
           "subcategory": null
         }
@@ -2613,8 +2613,8 @@
     "/gcp/ha/metadata/instance-types-not-supporting-acceleration-and-capacity-tiering": {
       "get": {
         "x-doc": {
-          "title": "instanceTypesNotSupportingAccelerationAndCapacityTiering_2: Retrieve the instance types that do not support acceleration and capacity tiering",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve instance types that do not support acceleration and capacity tiering",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null
         }
@@ -2623,8 +2623,8 @@
     "/gcp/ha/metadata/supported-features": {
       "get": {
         "x-doc": {
-          "title": "supportedFeatures_2: Retrieve supported features",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve supported features",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-supported-features.html",
           "subcategory": null
         }
@@ -2633,8 +2633,8 @@
     "/gcp/ha/metadata/packages": {
       "get": {
         "x-doc": {
-          "title": "packages_2: Retrieve the packages configuration",
-          "category": "Ontap cloud gcp ha working environment operations - metadata",
+          "title": "Retrieve the packages configuration",
+          "category": "Google Cloud HA systems - metadata",
           "filename": "get-gcp-ha-metadata-packages.html",
           "subcategory": null
         }
@@ -2643,8 +2643,8 @@
     "/gcp/ha/volumes/quote": {
       "post": {
         "x-doc": {
-          "title": "quoteVolume_3: Retrieve quotes for a new volume returns the resource quote required for the requested volume",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "title": "Retrieve quotes for a new volume",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "post-gcp-ha-volumes-quote.html",
           "subcategory": null
         }
@@ -2653,8 +2653,8 @@
     "/gcp/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/change-tier": {
       "post": {
         "x-doc": {
-          "title": "changeVolumeTier_3: Update the underlying volume tier",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "title": "Update the underlying volume tier",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "post-gcp-ha-volumes--change-tier.html",
           "subcategory": null
         }
@@ -2663,8 +2663,8 @@
     "/gcp/ha/volumes/volumes-for-backup": {
       "get": {
         "x-doc": {
-          "title": "volumesForBackup_3: Retrieve volumes for backup activation",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "title": "Retrieve volumes for backup activation",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "get-gcp-ha-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -2673,16 +2673,16 @@
     "/gcp/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}": {
       "put": {
         "x-doc": {
-          "title": "modifyVolume_4: Modify an existing volume",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "title": "Modify a volume",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "put-gcp-ha-volumes--.html",
           "subcategory": null
         }
       },
       "delete": {
         "x-doc": {
-          "title": "deleteVolume_4: Delete an existing volume",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "title": "Delete a volume",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "delete-gcp-ha-volumes--.html",
           "subcategory": null
         }
@@ -2692,7 +2692,7 @@
       "put": {
         "x-doc": {
           "title": "addExportPolicyRule_3: Add an export policy rule",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "put-gcp-ha-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -2702,7 +2702,7 @@
       "get": {
         "x-doc": {
           "title": "getIgroups_4: Retrieve all igroups",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "get-gcp-ha-volumes-igroups-.html",
           "subcategory": null
         }
@@ -2712,7 +2712,7 @@
       "get": {
         "x-doc": {
           "title": "getInitiators_4: Retrieve all iSCSI initiators",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "get-gcp-ha-volumes-initiator.html",
           "subcategory": null
         }
@@ -2720,7 +2720,7 @@
       "post": {
         "x-doc": {
           "title": "saveInitiator_4: Add an iSCSI initiator",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "post-gcp-ha-volumes-initiator.html",
           "subcategory": null
         }
@@ -2730,7 +2730,7 @@
       "get": {
         "x-doc": {
           "title": "volumeSnapshots_4: Retrieve a list of snapshot descriptions for the volume",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "get-gcp-ha-volumes--snapshots.html",
           "subcategory": null
         }
@@ -2740,7 +2740,7 @@
       "post": {
         "x-doc": {
           "title": "cloneVolume_4: Clones an existing volume",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "post-gcp-ha-volumes--clone.html",
           "subcategory": null
         }
@@ -2750,7 +2750,7 @@
       "post": {
         "x-doc": {
           "title": "moveVolume_3: Moves an existing volume",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "post-gcp-ha-volumes--move.html",
           "subcategory": null
         }
@@ -2760,7 +2760,7 @@
       "get": {
         "x-doc": {
           "title": "volumes_3: Retrieve volumes",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "get-gcp-ha-volumes.html",
           "subcategory": null
         }
@@ -2768,7 +2768,7 @@
       "post": {
         "x-doc": {
           "title": "createVolume_4: Create a new volume if the aggregatename and maxnumofdisksapprovedtoadd properties are not populated, the response fails with a suggested aggregate name and the number of disks that need to be created in order to fulfill the request",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "post-gcp-ha-volumes.html",
           "subcategory": null
         }
@@ -2778,7 +2778,7 @@
       "post": {
         "x-doc": {
           "title": "createSnapshot_4: Create a snapshot manually",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "post-gcp-ha-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2786,7 +2786,7 @@
       "delete": {
         "x-doc": {
           "title": "deleteSnapshot_4: Delete a snapshot manually",
-          "category": "Ontap cloud gcp ha working environment operations - volumes",
+          "category": "Google Cloud HA systems - volumes",
           "filename": "delete-gcp-ha-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2803,7 +2803,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new Cloud Volumes ONTAP google cloud high availability (ha) system",
+          "title": "Create a new Cloud Volumes ONTAP Google Cloud high availability (ha) system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments.html",
           "subcategory": null
@@ -4915,7 +4915,7 @@
     "/onprem/working-environments/{workingEnvironmentId}/gcp-cloud-backup-setup": {
       "post": {
         "x-doc": {
-          "title": "Sets up google cloud backup to cloud for an on-premises system",
+          "title": "Sets up Google Cloud backup to cloud for an on-premises system",
           "category": "On-premises (data ontap cluster) working environment operations - working environments",
           "filename": "post-onprem-working-environments-gcp-cloud-backup-setup.html",
           "subcategory": null
