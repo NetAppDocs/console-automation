@@ -2691,7 +2691,7 @@
     "/gcp/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/exportPolicy": {
       "put": {
         "x-doc": {
-          "title": "addExportPolicyRule_3: Add an export policy rule",
+          "title": "Add an export policy rule",
           "category": "Google Cloud HA systems - volumes",
           "filename": "put-gcp-ha-volumes--exportpolicy.html",
           "subcategory": null
@@ -2701,7 +2701,7 @@
     "/gcp/ha/volumes/igroups/{workingEnvironmentId}/{svmName}": {
       "get": {
         "x-doc": {
-          "title": "getIgroups_4: Retrieve all igroups",
+          "title": "Retrieve all igroups",
           "category": "Google Cloud HA systems - volumes",
           "filename": "get-gcp-ha-volumes-igroups-.html",
           "subcategory": null
@@ -2711,7 +2711,7 @@
     "/gcp/ha/volumes/initiator": {
       "get": {
         "x-doc": {
-          "title": "getInitiators_4: Retrieve all iSCSI initiators",
+          "title": "Retrieve all iSCSI initiators",
           "category": "Google Cloud HA systems - volumes",
           "filename": "get-gcp-ha-volumes-initiator.html",
           "subcategory": null
@@ -2796,7 +2796,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Cloud Volumes ONTAP systems that are visible to the user that is currently signed in",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments.html",
           "subcategory": null
         }
@@ -2804,7 +2804,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new Cloud Volumes ONTAP Google Cloud high availability (ha) system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments.html",
           "subcategory": null
         }
@@ -2814,7 +2814,7 @@
       "post": {
         "x-doc": {
           "title": "stopVsa_1: Stops a specific Cloud Volumes ONTAP instance",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-stop.html",
           "subcategory": null
         }
@@ -2824,7 +2824,7 @@
       "get": {
         "x-doc": {
           "title": "cifsLocksExist_1: Checks for non-persistent locks held on CIFS sessions",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-cifs-locks-exist.html",
           "subcategory": null
         }
@@ -2834,7 +2834,7 @@
       "delete": {
         "x-doc": {
           "title": "deleteSvm_1: Delete an svm",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "delete-gcp-ha-working-environments-svm-.html",
           "subcategory": null
         }
@@ -2844,7 +2844,7 @@
       "put": {
         "x-doc": {
           "title": "changeSvmName_1: Modify the svm name of the Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-svm.html",
           "subcategory": null
         }
@@ -2852,7 +2852,7 @@
       "post": {
         "x-doc": {
           "title": "createSvm_1: Create a new svm",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-svm.html",
           "subcategory": null
         }
@@ -2862,7 +2862,7 @@
       "get": {
         "x-doc": {
           "title": "workingEnvironment_2: Retrieve a Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-.html",
           "subcategory": null
         }
@@ -2870,7 +2870,7 @@
       "delete": {
         "x-doc": {
           "title": "deleteVsaWorkingEnvironment_1: Delete an existing Cloud Volumes ONTAP system, including all cloud resources created for the system (unless the localdelete flag is set to true)",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "delete-gcp-ha-working-environments-.html",
           "subcategory": null
         }
@@ -2880,7 +2880,7 @@
       "post": {
         "x-doc": {
           "title": "Delete the CIFS configuration for an existing Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-delete-cifs.html",
           "subcategory": null
         }
@@ -2890,7 +2890,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the CIFS configuration for an existing Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-cifs.html",
           "subcategory": null
         }
@@ -2898,7 +2898,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new CIFS configuration for an existing Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-cifs.html",
           "subcategory": null
         }
@@ -2908,7 +2908,7 @@
       "get": {
         "x-doc": {
           "title": "preValidateByolToCapacity_1: Validates the prerequisites for converting an existing Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
         }
@@ -2918,7 +2918,7 @@
       "put": {
         "x-doc": {
           "title": "modifyWritingSpeed_1: Sets the writing speed for Cloud Volumes ONTAP",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-writing-speed.html",
           "subcategory": null
         }
@@ -2928,7 +2928,7 @@
       "get": {
         "x-doc": {
           "title": "licenseAndInstanceTypes_1: Retrieve all license types and their associated instance types for a specific Cloud Volumes ONTAP instance",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -2936,7 +2936,7 @@
       "put": {
         "x-doc": {
           "title": "changeLicenseAndInstanceType_1: Sets the instance type of a specific Cloud Volumes ONTAP instance",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -2946,7 +2946,7 @@
       "get": {
         "x-doc": {
           "title": "ontapAvailableImages_1: Retrieve images that are already installed on the Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-ontap-available-images.html",
           "subcategory": null
         }
@@ -2956,7 +2956,7 @@
       "post": {
         "x-doc": {
           "title": "updateSystemImage_1: Performs a complete image update operation on a single node of the specified Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-update-image.html",
           "subcategory": null
         }
@@ -2966,7 +2966,7 @@
       "get": {
         "x-doc": {
           "title": "occmUpgradeEligibilityChecks_1: Retrieve the eligibility support status of a Cloud Volumes ONTAP system valid values - nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, license_expired",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-update-eligibility.html",
           "subcategory": null
         }
@@ -2976,7 +2976,7 @@
       "post": {
         "x-doc": {
           "title": "uploadLicenseFile_1: Uploads a cloud license file on the specified Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-upload-license-file.html",
           "subcategory": null
         }
@@ -2986,7 +2986,7 @@
       "post": {
         "x-doc": {
           "title": "Uploads cloud license file content on the specified Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-upload-licenses.html",
           "subcategory": null
         }
@@ -2996,7 +2996,7 @@
       "put": {
         "x-doc": {
           "title": "activateOntapConfiguration_1: Activates the off-box configuration",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-offbox.html",
           "subcategory": null
         }
@@ -3006,7 +3006,7 @@
       "put": {
         "x-doc": {
           "title": "changeNetworkOptimizationLevel_1: Modify the network port broadcast domain mtu of the Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-networkoptimization.html",
           "subcategory": null
         }
@@ -3016,7 +3016,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the action parameters used in a create request of a specific Cloud Volumes ONTAP instance",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-create-request-parameters.html",
           "subcategory": null
         }
@@ -3026,7 +3026,7 @@
       "post": {
         "x-doc": {
           "title": "enableCapacityTiering_1: Enables capacity tiering",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-enable-capacity-tiering.html",
           "subcategory": null
         }
@@ -3036,7 +3036,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of versions to which the Cloud Volumes ONTAP instance can be upgraded",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
         }
@@ -3046,7 +3046,7 @@
       "post": {
         "x-doc": {
           "title": "syncVsaWorkingEnvironmentsSubscription_1: Manually triggers subscription synchronization for all Cloud Volumes ONTAP systems",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-sync-subscription.html",
           "subcategory": null
         }
@@ -3056,7 +3056,7 @@
       "get": {
         "x-doc": {
           "title": "workingEnvironmentCostAndUsage_1: Retrieve the system cost and usage",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-cost-and-usage.html",
           "subcategory": null
         }
@@ -3066,7 +3066,7 @@
       "get": {
         "x-doc": {
           "title": "workingEnvironmentOntapSaving_1: Working environment ontap saving",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-ontap-saving.html",
           "subcategory": null
         }
@@ -3076,7 +3076,7 @@
       "get": {
         "x-doc": {
           "title": "getExtraCapacityLicenses_1: Retrieve extra capacity licenses for Cloud Volumes ONTAP",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -3084,7 +3084,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity licenses",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -3092,7 +3092,7 @@
       "post": {
         "x-doc": {
           "title": "uploadExtraCapacityLicenses_1: Registers an extra capacity license",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -3102,7 +3102,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity license serial numbers",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -3110,7 +3110,7 @@
       "post": {
         "x-doc": {
           "title": "Registers extra capacity license serial numbers",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -3118,7 +3118,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete extra capacity licenses using the license serial numbers",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "delete-gcp-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -3128,7 +3128,7 @@
       "put": {
         "x-doc": {
           "title": "Update the default vscan file operation profile a profile on an existing CIFS share updates only on writes-only mode",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-vscan-file-op.html",
           "subcategory": null
         }
@@ -3138,7 +3138,7 @@
       "put": {
         "x-doc": {
           "title": "updatePassword_1: Update the NetApp Console password for a specific Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -3148,7 +3148,7 @@
       "post": {
         "x-doc": {
           "title": "changeTierLevel_1: Update the tier level",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-change-tier-level.html",
           "subcategory": null
         }
@@ -3158,7 +3158,7 @@
       "put": {
         "x-doc": {
           "title": "Update a BYOL license to a capacity-based license",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-byol-to-capacity.html",
           "subcategory": null
         }
@@ -3168,7 +3168,7 @@
       "put": {
         "x-doc": {
           "title": "Enable SnapLock on a system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-enable-worm.html",
           "subcategory": null
         }
@@ -3178,7 +3178,7 @@
       "post": {
         "x-doc": {
           "title": "Create an NTP server",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-ntp.html",
           "subcategory": null
         }
@@ -3188,7 +3188,7 @@
       "post": {
         "x-doc": {
           "title": "startVsa_1: Starts a specific Cloud Volumes ONTAP instance",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-start.html",
           "subcategory": null
         }
@@ -3198,7 +3198,7 @@
       "get": {
         "x-doc": {
           "title": "status_1: Retrieve the support registration status of a Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -3206,7 +3206,7 @@
       "post": {
         "x-doc": {
           "title": "Registers a Cloud Volumes ONTAP system with NetApp",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -3216,7 +3216,7 @@
       "get": {
         "x-doc": {
           "title": "getSchedules_1: Lists the start/stop schedules for Cloud Volumes ONTAP",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-schedules.html",
           "subcategory": null
         }
@@ -3224,7 +3224,7 @@
       "put": {
         "x-doc": {
           "title": "Sets the schedules for Cloud Volumes ONTAP",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-schedules.html",
           "subcategory": null
         }
@@ -3234,7 +3234,7 @@
       "put": {
         "x-doc": {
           "title": "activateFpolicy_1: Activates fpolicy for ransomware files",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-activate-fpolicy.html",
           "subcategory": null
         }
@@ -3244,7 +3244,7 @@
       "put": {
         "x-doc": {
           "title": "disableFpolicy_1: Disables fpolicy for ransomware files",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-disable-fpolicy.html",
           "subcategory": null
         }
@@ -3254,7 +3254,7 @@
       "delete": {
         "x-doc": {
           "title": "deleteFpolicy_1: Delete fpolicy for ransomware files",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "delete-gcp-ha-working-environments-fpolicy.html",
           "subcategory": null
         }
@@ -3264,7 +3264,7 @@
       "post": {
         "x-doc": {
           "title": "parseLicenseFile_1: Parses an uploaded cloud license file",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-parse-license-file.html",
           "subcategory": null
         }
@@ -3274,7 +3274,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the editable tags for the cloud resources in a specific Cloud Volumes ONTAP instance",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "get-gcp-ha-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -3282,7 +3282,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the user tags for the cloud resources in a specific Cloud Volumes ONTAP instance",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -3292,7 +3292,7 @@
       "put": {
         "x-doc": {
           "title": "Activates the snapshot policy assignment for all unprotected read/write volumes",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-activate-snapshot-policy.html",
           "subcategory": null
         }
@@ -3302,7 +3302,7 @@
       "post": {
         "x-doc": {
           "title": "createSnapshotPolicy_1: Create a snapshot policy",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-snapshot-policy.html",
           "subcategory": null
         }
@@ -3312,7 +3312,7 @@
       "post": {
         "x-doc": {
           "title": "changeSerialNumber_1: Update the serial number of a Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "post-gcp-ha-working-environments-change-serial.html",
           "subcategory": null
         }
@@ -3322,7 +3322,7 @@
       "put": {
         "x-doc": {
           "title": "setPassword_1: Sets the cluster password for a specific Cloud Volumes ONTAP system",
-          "category": "Ontap cloud gcp ha working environment operations - working environments",
+          "category": "Google Cloud HA system - systems",
           "filename": "put-gcp-ha-working-environments-set-password.html",
           "subcategory": null
         }
