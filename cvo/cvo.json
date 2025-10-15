@@ -23092,7 +23092,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Sets the instance type of a specific Cloud Volumes ONTAP.",
+        "description": "Sets the instance type of a specific Cloud Volumes ONTAP system.",
         "operationId": "changeLicenseAndInstanceType_6",
         "parameters": [
           {
@@ -23353,7 +23353,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Modifies the net port broadcast domain mtu of the Cloud Volumes ONTAP.",
+        "description": "Modifies the network port broadcast domain MTU of the Cloud Volumes ONTAP system.",
         "operationId": "changeNetworkOptimizationLevel_6",
         "parameters": [
           {
@@ -24265,7 +24265,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Modifies the SVM name of the Cloud Volumes ONTAP.",
+        "description": "Modifies the SVM name of the Cloud Volumes ONTAP system.",
         "operationId": "changeSvmName_6",
         "parameters": [
           {
@@ -24563,7 +24563,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Updates the serial number of Cloud Volumes ONTAP.",
+        "description": "Updates the serial number of a Cloud Volumes ONTAP system.",
         "operationId": "changeSerialNumber_6",
         "parameters": [
           {
@@ -24601,7 +24601,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP.",
+        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP system.",
         "operationId": "setPassword_6",
         "parameters": [
           {
@@ -24759,7 +24759,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Modifies the SVM name of the Cloud Volumes ONTAP.",
+        "description": "Modifies the SVM name of the Cloud Volumes ONTAP system.",
         "operationId": "changeSvmName_4",
         "parameters": [
           {
@@ -25391,7 +25391,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Sets the instance type of a specific Cloud Volumes ONTAP.",
+        "description": "Sets the instance type of a specific Cloud Volumes ONTAP system.",
         "operationId": "changeLicenseAndInstanceType_4",
         "parameters": [
           {
@@ -25652,7 +25652,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Modifies the net port broadcast domain mtu of the Cloud Volumes ONTAP.",
+        "description": "Modifies the network port broadcast domain MTU of the Cloud Volumes ONTAP system.",
         "operationId": "changeNetworkOptimizationLevel_4",
         "parameters": [
           {
@@ -26824,7 +26824,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Updates the serial number of Cloud Volumes ONTAP.",
+        "description": "Updates the serial number of a Cloud Volumes ONTAP system.",
         "operationId": "changeSerialNumber_4",
         "parameters": [
           {
@@ -26862,7 +26862,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP.",
+        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP system.",
         "operationId": "setPassword_4",
         "parameters": [
           {
@@ -27020,7 +27020,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Modifies the SVM name of the Cloud Volumes ONTAP.",
+        "description": "Modifies the SVM name of the Cloud Volumes ONTAP system.",
         "operationId": "changeSvmName_5",
         "parameters": [
           {
@@ -27407,7 +27407,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Sets the instance type of a specific Cloud Volumes ONTAP.",
+        "description": "Sets the instance type of a specific Cloud Volumes ONTAP instance.",
         "operationId": "changeLicenseAndInstanceType_5",
         "parameters": [
           {
@@ -27668,7 +27668,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Modifies the net port broadcast domain mtu of the Cloud Volumes ONTAP.",
+        "description": "Modifies the network port broadcast domain MTU of the Cloud Volumes ONTAP system.",
         "operationId": "changeNetworkOptimizationLevel_5",
         "parameters": [
           {
@@ -28840,7 +28840,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Updates the serial number of Cloud Volumes ONTAP.",
+        "description": "Updates the serial number of a Cloud Volumes ONTAP system.",
         "operationId": "changeSerialNumber_5",
         "parameters": [
           {
@@ -28878,7 +28878,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP.",
+        "description": "Sets the cluster password of a specific Cloud Volumes ONTAP system.",
         "operationId": "setPassword_5",
         "parameters": [
           {
