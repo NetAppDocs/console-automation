@@ -33,7 +33,7 @@
     "/gcp/vsa/recover": {
       "post": {
         "x-doc": {
-          "title": "Save a Google Cloud system to the NetApp Console database",
+          "title": "Save a system to the NetApp Console database",
           "category": "Google Cloud system operations -discovery",
           "filename": "post-gcp-vsa-recover.html",
           "subcategory": null
@@ -44,7 +44,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new Azure volume",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "post-azure-vsa-volumes-quote.html",
           "subcategory": null
         }
@@ -54,7 +54,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "post-azure-vsa-volumes--change-tier.html",
           "subcategory": null
         }
@@ -64,7 +64,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "get-azure-vsa-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -74,7 +74,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "put-azure-vsa-volumes--.html",
           "subcategory": null
         }
@@ -82,7 +82,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "delete-azure-vsa-volumes--.html",
           "subcategory": null
         }
@@ -92,7 +92,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "put-azure-vsa-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -102,7 +102,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "get-azure-vsa-volumes-igroups-.html",
           "subcategory": null
         }
@@ -112,7 +112,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "get-azure-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -120,7 +120,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "post-azure-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -130,7 +130,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of volume snapshot descriptions",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "get-azure-vsa-volumes--snapshots.html",
           "subcategory": null
         }
@@ -140,7 +140,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "post-azure-vsa-volumes--clone.html",
           "subcategory": null
         }
@@ -150,7 +150,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "post-azure-vsa-volumes--move.html",
           "subcategory": null
         }
@@ -160,7 +160,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all volumes",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "get-azure-vsa-volumes.html",
           "subcategory": null
         }
@@ -168,7 +168,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "post-azure-vsa-volumes.html",
           "subcategory": null
         }
@@ -178,7 +178,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "post-azure-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -186,7 +186,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a snapshot",
-          "category": "Azure system operations - volumes",
+          "category": "Azure systems - volumes",
           "filename": "delete-azure-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -1015,7 +1015,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/resourceGroups/{resourceGroupName}/avs-private-clouds/{privateCloudName}/clusters": {
       "get": {
         "x-doc": {
-          "title": "Retrieve Azure VMware Solution private cloud clusters for the existing subscription",
+          "title": "Retrieve Azure VMware Solution private cloud clusters for a subscription",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-resourcegroups-avs-private-clouds-clusters.html",
           "subcategory": null
@@ -1025,7 +1025,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/resourceGroups/{resourceGroupName}/avs-private-clouds/{privateCloudName}/clusters/{clusterName}/hosts": {
       "get": {
         "x-doc": {
-          "title": "Retrieve Azure VMware Solution cluster hosts for the existing subscription",
+          "title": "Retrieve Azure VMware Solution cluster hosts for a subscription",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-resourcegroups-avs-private-clouds-clusters-hosts.html",
           "subcategory": null
@@ -1035,7 +1035,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/available-ips-in-subnet": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the number of available ip addresses in the subnet of the cloud volumes ontap system",
+          "title": "Retrieve available IP addresses in the subnet of a system",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-available-ips-in-subnet.html",
           "subcategory": null
@@ -1055,7 +1055,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/avs-private-clouds": {
       "get": {
         "x-doc": {
-          "title": "Retrieve an Azure VMware Solution private cloud for the existing subscription",
+          "title": "Retrieve an Azure VMware Solution private cloud for a subscription",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-avs-private-clouds.html",
           "subcategory": null
@@ -1065,7 +1065,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a cloud volumes ontap system",
+          "title": "Retrieve a system",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-.html",
           "subcategory": null
@@ -1073,7 +1073,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete an existing cloud volumes ontap system, including all cloud resources created for the system (unless the localdelete flag is set to true)",
+          "title": "Delete a system",
           "category": "Azure HA systems - systems",
           "filename": "delete-azure-ha-working-environments-.html",
           "subcategory": null
@@ -1083,7 +1083,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "x-doc": {
-          "title": "Delete the cifs configuration of an existing cloud volumes ontap system",
+          "title": "Delete the CIFS configuration for a system",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-delete-cifs.html",
           "subcategory": null
@@ -1093,7 +1093,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the cifs configuration of an existing cloud volumes ontap system",
+          "title": "Retrieve the CIFS configuration for a system",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-cifs.html",
           "subcategory": null
@@ -1101,7 +1101,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Set up a new cifs configuration for an existing cloud volumes ontap system",
+          "title": "Create a new CIFS configuration for a system",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-cifs.html",
           "subcategory": null
@@ -1111,7 +1111,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/validate-byol-to-capacity": {
       "get": {
         "x-doc": {
-          "title": "Validates the prerequisites for converting an existing cloud volumes ontap system",
+          "title": "Validate prerequisites for converting a system",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
@@ -1121,7 +1121,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/writing-speed": {
       "put": {
         "x-doc": {
-          "title": "Sets the writing speed for cloud volumes ontap",
+          "title": "Set the writing speed",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-writing-speed.html",
           "subcategory": null
@@ -1131,7 +1131,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/license-instance-type": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all license types and their associated instance types for a specific cloud volumes ontap instance",
+          "title": "Retrieve all license types and their associated instance types",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-license-instance-type.html",
           "subcategory": null
@@ -1139,7 +1139,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Sets the instance type of a specific cloud volumes ontap instance",
+          "title": "Set the instance type",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-license-instance-type.html",
           "subcategory": null
@@ -1149,7 +1149,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/ontap-available-images": {
       "get": {
         "x-doc": {
-          "title": "Retrieve images that are already installed on the cloud volumes ontap system",
+          "title": "Retrieve images already installed on a system",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-ontap-available-images.html",
           "subcategory": null
@@ -1159,7 +1159,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/update-image": {
       "post": {
         "x-doc": {
-          "title": "Performs a complete image update operation on a single node of the specified cloud volumes ontap system",
+          "title": "Perform an image update on a single node ",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-update-image.html",
           "subcategory": null
@@ -1169,7 +1169,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/update-eligibility": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the eligibility support status of a cloud volumes ontap system valid values - nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, license_expired",
+          "title": "Retrieve the eligibility support status of a system",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-update-eligibility.html",
           "subcategory": null
@@ -1179,7 +1179,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/upload-license-file": {
       "post": {
         "x-doc": {
-          "title": "Uploads a cloud license file on the specified cloud volumes ontap system",
+          "title": "Upload a cloud license file",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-upload-license-file.html",
           "subcategory": null
@@ -1189,7 +1189,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/upload-licenses": {
       "post": {
         "x-doc": {
-          "title": "Uploads the content of a cloud license file on the specified cloud volumes ontap system",
+          "title": "Upload cloud license file content",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-upload-licenses.html",
           "subcategory": null
@@ -1199,7 +1199,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/offbox": {
       "put": {
         "x-doc": {
-          "title": "Activates the off-box configuration",
+          "title": "Activate the off-box configuration",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-offbox.html",
           "subcategory": null
@@ -1209,7 +1209,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "Modify the network port broadcast domain mtu of the cloud volumes ontap system",
+          "title": "Modify the network port broadcast domain MTU",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-networkoptimization.html",
           "subcategory": null
@@ -1219,7 +1219,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/create-request-parameters": {
       "get": {
         "x-doc": {
-          "title": "Retrieve action parameters used in the create request for a specific cloud volumes ontap instance",
+          "title": "Retrieve action parameters",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-create-request-parameters.html",
           "subcategory": null
@@ -1229,7 +1229,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/enable-capacity-tiering": {
       "post": {
         "x-doc": {
-          "title": "Enables capacity tiering",
+          "title": "Enable capacity tiering",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-enable-capacity-tiering.html",
           "subcategory": null
@@ -1239,7 +1239,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a list of versions to which this cloud volumes ontap instance can be upgraded",
+          "title": "Retrieve a list of upgrade versions",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
@@ -1249,7 +1249,7 @@
     "/azure/ha/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "Manually triggers subscription synchronization for all cloud volumes ontap systems",
+          "title": "Manually triggers subscription synchronization",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-sync-subscription.html",
           "subcategory": null
@@ -1269,7 +1269,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/ontap-saving": {
       "get": {
         "x-doc": {
-          "title": "Working environment ontap saving",
+          "title": "Retrieve system ONTAP savings",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-ontap-saving.html",
           "subcategory": null
@@ -1279,7 +1279,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses": {
       "get": {
         "x-doc": {
-          "title": "Retrieve extra capacity licenses for cloud volumes ontap",
+          "title": "Retrieve extra capacity licenses",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
@@ -1295,7 +1295,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Registers an extra capacity license",
+          "title": "Register an extra capacity license",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
@@ -1313,7 +1313,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Registers extra capacity serial numbers",
+          "title": "Register extra capacity serial numbers",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
@@ -1321,7 +1321,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete extra capacity licenses by serial numbers",
+          "title": "Delete extra capacity licenses by serial number",
           "category": "Azure HA systems - systems",
           "filename": "delete-azure-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
@@ -1331,7 +1331,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/vscan-file-op": {
       "put": {
         "x-doc": {
-          "title": "Update the default vscan file operation profile a profile on an existing cifs share updates only when on writes-only mode",
+          "title": "Update the default Vscan file operation profile",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-vscan-file-op.html",
           "subcategory": null
@@ -1341,7 +1341,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "Update the NetApp Console password for a specific cloud volumes ontap system",
+          "title": "Update the NetApp Console password",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-update-credentials.html",
           "subcategory": null
@@ -1361,7 +1361,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/byol-to-capacity": {
       "put": {
         "x-doc": {
-          "title": "Update a bring-your-own-license (byol) license to a capacity-based license for an existing cloud volumes ontap system",
+          "title": "Update a BYOL license to a capacity-based license",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-byol-to-capacity.html",
           "subcategory": null
@@ -1371,7 +1371,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/enable-worm": {
       "put": {
         "x-doc": {
-          "title": "Enables snaplock for an existing cloud volumes ontap system",
+          "title": "Enable SnapLock for a system",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-enable-worm.html",
           "subcategory": null
@@ -1381,7 +1381,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/ntp": {
       "post": {
         "x-doc": {
-          "title": "Set up an ntp server",
+          "title": "Create an NTP server",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-ntp.html",
           "subcategory": null
@@ -1391,7 +1391,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/start": {
       "post": {
         "x-doc": {
-          "title": "Starts a specific cloud volumes ontap instance",
+          "title": "Start a Cloud Volumes ONTAP instance",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-start.html",
           "subcategory": null
@@ -1401,7 +1401,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/stop": {
       "post": {
         "x-doc": {
-          "title": "Stops a specific cloud volumes ontap instance",
+          "title": "Stop a Cloud Volumes ONTAP instance",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-stop.html",
           "subcategory": null
@@ -1411,7 +1411,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/support-registration": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the support registration status of a cloud volumes ontap system",
+          "title": "Retrieve the support registration status",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-support-registration.html",
           "subcategory": null
@@ -1419,7 +1419,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Registers a cloud volumes ontap system with netapp",
+          "title": "Register a Cloud Volumes ONTAP system with NetApp",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-support-registration.html",
           "subcategory": null
@@ -1429,7 +1429,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/schedules": {
       "get": {
         "x-doc": {
-          "title": "Lists the start/stop schedules for cloud volumes ontap",
+          "title": "List the start/stop schedules for Cloud Volumes ONTAP",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-schedules.html",
           "subcategory": null
@@ -1437,7 +1437,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Sets schedules for cloud volumes ontap",
+          "title": "Set schedules for Cloud Volumes ONTAP",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-schedules.html",
           "subcategory": null
@@ -1447,7 +1447,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/activate-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Activates fpolicy for ransomware files",
+          "title": "Activate FPolicy for ransomware files",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-activate-fpolicy.html",
           "subcategory": null
@@ -1457,7 +1457,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/disable-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Disables fpolicy for ransomware files",
+          "title": "Disable FPolicy for ransomware files",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-disable-fpolicy.html",
           "subcategory": null
@@ -1467,7 +1467,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/fpolicy": {
       "delete": {
         "x-doc": {
-          "title": "Delete fpolicy for ransomware files",
+          "title": "Delete FPolicy for ransomware files",
           "category": "Azure HA systems - systems",
           "filename": "delete-azure-ha-working-environments-fpolicy.html",
           "subcategory": null
@@ -1477,7 +1477,7 @@
     "/azure/ha/working-environments/parse-license-file": {
       "post": {
         "x-doc": {
-          "title": "Parses an uploaded cloud license file",
+          "title": "Parse an uploaded cloud license file",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-parse-license-file.html",
           "subcategory": null
@@ -1487,7 +1487,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/user-tags": {
       "get": {
         "x-doc": {
-          "title": "Retrieve editable tags for the cloud resources in a specific cloud volumes ontap instance",
+          "title": "Retrieve editable tags for the cloud resources",
           "category": "Azure HA systems - systems",
           "filename": "get-azure-ha-working-environments-user-tags.html",
           "subcategory": null
@@ -1495,7 +1495,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Modify the user tags for cloud resources in a specific cloud volumes ontap instance",
+          "title": "Modify the user tags for cloud resources",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-user-tags.html",
           "subcategory": null
@@ -1505,7 +1505,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/activate-snapshot-policy": {
       "put": {
         "x-doc": {
-          "title": "Activates snapshot policy assignment for all unprotected read/write volumes",
+          "title": "Activate snapshot policy assignment",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-activate-snapshot-policy.html",
           "subcategory": null
@@ -1525,7 +1525,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/change-serial": {
       "post": {
         "x-doc": {
-          "title": "Update the serial number of a cloud volumes ontap system",
+          "title": "Update the serial number of a system",
           "category": "Azure HA systems - systems",
           "filename": "post-azure-ha-working-environments-change-serial.html",
           "subcategory": null
@@ -1535,7 +1535,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/set-password": {
       "put": {
         "x-doc": {
-          "title": "Sets the cluster password for a specific cloud volumes ontap system",
+          "title": "Set the cluster password for a system",
           "category": "Azure HA systems - systems",
           "filename": "put-azure-ha-working-environments-set-password.html",
           "subcategory": null
@@ -1545,7 +1545,7 @@
     "/cloud-compliance/deploy-by-working-environments": {
       "post": {
         "x-doc": {
-          "title": "Deploys a cloud compliance instance by systems",
+          "title": "Deploy a cloud compliance instance by systems",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-deploy-by-working-environments.html",
           "subcategory": null
@@ -1565,7 +1565,7 @@
     "/cloud-compliance/{workingEnvironmentId}/disable-onprem-scan": {
       "post": {
         "x-doc": {
-          "title": "Disables on-premises scanning",
+          "title": "Disable on-premises scanning",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-disable-onprem-scan.html",
           "subcategory": null
@@ -1575,7 +1575,7 @@
     "/cloud-compliance/fsx/{fileSystemId}/compliance-status": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the service cloud compliance status using the file system id",
+          "title": "Retrieve the service cloud compliance status using the file system ID",
           "category": "Cloud compliance operations",
           "filename": "get-cloud-compliance-fsx-compliance-status.html",
           "subcategory": null
@@ -1585,7 +1585,7 @@
     "/cloud-compliance/{serviceId}/compliance-status": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the service cloud compliance status using the service id",
+          "title": "Retrieve the service cloud compliance status using the service ID",
           "category": "Cloud compliance operations",
           "filename": "get-cloud-compliance-compliance-status.html",
           "subcategory": null
@@ -1595,7 +1595,7 @@
     "/cloud-compliance/{serviceId}/enable-service-scan": {
       "post": {
         "x-doc": {
-          "title": "Enables scanning using the service id",
+          "title": "Enable scanning using the service ID",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-enable-service-scan.html",
           "subcategory": null
@@ -1605,7 +1605,7 @@
     "/cloud-compliance/{serviceId}/disable-service-scan": {
       "post": {
         "x-doc": {
-          "title": "Disables scanning using the service id",
+          "title": "Disable scanning using the service ID",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-disable-service-scan.html",
           "subcategory": null
@@ -1615,7 +1615,7 @@
     "/cloud-compliance/{workingEnvironmentId}/disable-scan": {
       "post": {
         "x-doc": {
-          "title": "Disables scanning using the system id",
+          "title": "Disable scanning using the system ID",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-disable-scan.html",
           "subcategory": null
@@ -1625,7 +1625,7 @@
     "/cloud-compliance/{workingEnvironmentId}/enable-scan": {
       "post": {
         "x-doc": {
-          "title": "Enables scanning using the system id",
+          "title": "Enable scanning using the system ID",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-enable-scan.html",
           "subcategory": null
@@ -1635,7 +1635,7 @@
     "/cloud-compliance/{workingEnvironmentId}/enable-onprem-scan": {
       "post": {
         "x-doc": {
-          "title": "Enables on-premises scanning using the system id",
+          "title": "Enable on-premises scanning using the system ID",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-enable-onprem-scan.html",
           "subcategory": null
@@ -1645,7 +1645,7 @@
     "/cloud-compliance/fsx/{fileSystemId}/enable-scan": {
       "post": {
         "x-doc": {
-          "title": "Enables scanning using the file system id",
+          "title": "Enable scanning using the file system ID",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-fsx-enable-scan.html",
           "subcategory": null
@@ -1655,7 +1655,7 @@
     "/cloud-compliance/fsx/{fileSystemId}/disable-scan": {
       "post": {
         "x-doc": {
-          "title": "Disables scanning using the file system id",
+          "title": "Disable scanning using the file system ID",
           "category": "Cloud compliance operations",
           "filename": "post-cloud-compliance-fsx-disable-scan.html",
           "subcategory": null
@@ -1665,16 +1665,16 @@
     "/occm/encryption/certificate": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the installed certificate if one exists",
-          "category": "Cloud manager system operations - encryption - certificate",
+          "title": "Retrieve the installed certificate",
+          "category": " NetApp Console system operations - certificates",
           "filename": "get-occm-encryption-certificate.html",
           "subcategory": null
         }
       },
       "post": {
         "x-doc": {
-          "title": "Validates and installs the provided certificate successive api calls overwrite any previously installed certificate the certificate must match a previously generated certificate signing request (csr)",
-          "category": "Cloud manager system operations - encryption - certificate",
+          "title": "Validate and install a certificate",
+          "category": " NetApp Console system operations - certificates",
           "filename": "post-occm-encryption-certificate.html",
           "subcategory": null
         }
@@ -1683,7 +1683,7 @@
     "/occm/encryption/csr": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the most recently generated certificate signing request (csr), if it exists",
+          "title": "Retrieve a generated certificate signing request",
           "category": "NetApp Console system operations - CSR",
           "filename": "get-occm-encryption-csr.html",
           "subcategory": null
@@ -1691,7 +1691,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Generates, stores, and returns a certificate signing request (csr) this csr can be signed by a certificate authority (ca) and installed in the NetApp Console using /install_certificate successive calls will not overwrite previously generated csrs",
+          "title": "Generate, store, and return a certificate signing request",
           "category": "NetApp Console system operations - CSR",
           "filename": "post-occm-encryption-csr.html",
           "subcategory": null
@@ -1701,7 +1701,7 @@
     "/occm/encryption/key-managers-ca-certificates": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all key manager certificate authority (ca) certificates",
+          "title": "Retrieve all key manager CA certificates",
           "category": "NetApp Console system operations - CA certificates ",
           "filename": "get-occm-encryption-key-managers-ca-certificates.html",
           "subcategory": null
@@ -1709,7 +1709,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Add a new key manager certificate authority (ca) certificate",
+          "title": "Add a new key manager CA certificate",
           "category": "NetApp Console system operations - CA certificates ",
           "filename": "post-occm-encryption-key-managers-ca-certificates.html",
           "subcategory": null
@@ -1719,7 +1719,7 @@
     "/occm/encryption/key-managers-ca-certificates/{keyManagerCaCertificateId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a specific key manager certificate authority (ca)  certificate",
+          "title": "Retrieve a key manager CA certificate",
           "category": "NetApp Console system operations - CA certificates ",
           "filename": "get-occm-encryption-key-managers-ca-certificates-.html",
           "subcategory": null
@@ -1727,7 +1727,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete an existing key manager certificate authority (ca)  certificate",
+          "title": "Delete a key manager CA certificate",
           "category": "NetApp Console system operations - CA certificates ",
           "filename": "delete-occm-encryption-key-managers-ca-certificates-.html",
           "subcategory": null
@@ -1737,7 +1737,7 @@
     "/occm/encryption/key-managers/{keyManagerId}": {
       "get": {
         "x-doc": {
-          "title": "Returns a specific key manager using the public id",
+          "title": "Retrieve a key manager using the public ID",
           "category": "NetApp Console system operations - key managers",
           "filename": "get-occm-encryption-key-managers-.html",
           "subcategory": null
@@ -1782,7 +1782,7 @@
       "get": {
         "x-doc": {
           "title": "Returns true if working environment with that name already exists, false otherwise",
-          "category": "Common working environment operations",
+          "category": "Common system operations",
           "filename": "get-working-environments-exists-.html",
           "subcategory": null
         }
@@ -1791,8 +1791,8 @@
     "/working-environments/actionRequired/{tenantId}": {
       "get": {
         "x-doc": {
-          "title": "Returns all non-premises system actions required for a specific tenant id",
-          "category": "Common working environment operations",
+          "title": "Retrieve all non-premises system actions for a tenant ID",
+          "category": "Common system operations",
           "filename": "get-working-environments-actionrequired-.html",
           "subcategory": null
         }
@@ -1802,7 +1802,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all systems",
-          "category": "Common working environment operations",
+          "category": "Common system operations",
           "filename": "get-working-environments.html",
           "subcategory": null
         }
@@ -1811,8 +1811,8 @@
     "/working-environments/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "workingEnvironment_1: Retrieve a cloud volumes ontap system",
-          "category": "Common working environment operations",
+          "title": "Retrieve a Cloud Volumes ONTAP system",
+          "category": "Common system operations",
           "filename": "get-working-environments-.html",
           "subcategory": null
         }
@@ -1821,8 +1821,8 @@
     "/flexcache/fsx": {
       "post": {
         "x-doc": {
-          "title": "Create a new flexcache volume for an fsx system",
-          "category": "Flexcache operations",
+          "title": "Create a new FlexCache volume for an Amazon FSx for NetApp ONTAP management system",
+          "category": "FlexCache operations",
           "filename": "post-flexcache-fsx.html",
           "subcategory": null
         }
@@ -1831,8 +1831,8 @@
     "/flexcache/all-relationships": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all flexcache volume relationships",
-          "category": "Flexcache operations",
+          "title": "Retrieve all FlexCache volume relationships",
+          "category": "FlexCache operations",
           "filename": "get-flexcache-all-relationships.html",
           "subcategory": null
         }
@@ -1841,16 +1841,16 @@
     "/flexcache/{workingEnvironmentId}/caches/{cacheId}": {
       "put": {
         "x-doc": {
-          "title": "Modify a flexcache volume",
-          "category": "Flexcache operations",
+          "title": "Modify a FlexCache volume",
+          "category": "FlexCache operations",
           "filename": "put-flexcache-caches-.html",
           "subcategory": null
         }
       },
       "delete": {
         "x-doc": {
-          "title": "Delete a flexcache volume",
-          "category": "Flexcache operations",
+          "title": "Delete a FlexCache volume",
+          "category": "FlexCache operations",
           "filename": "delete-flexcache-caches-.html",
           "subcategory": null
         }
@@ -1859,8 +1859,8 @@
     "/flexcache": {
       "post": {
         "x-doc": {
-          "title": "Create a new flexcache volume in a cloud volumes ontap system",
-          "category": "Flexcache operations",
+          "title": "Create a new FlexCache volume",
+          "category": "FlexCache operations",
           "filename": "post-flexcache.html",
           "subcategory": null
         }
@@ -1869,8 +1869,8 @@
     "/flexcache/caches": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all flexcache volumes lists",
-          "category": "Flexcache operations",
+          "title": "Retrieve all FlexCache volumes lists",
+          "category": "FlexCache operations",
           "filename": "get-flexcache-caches.html",
           "subcategory": null
         }
@@ -1879,8 +1879,8 @@
     "/fsx/volumes/{fileSystemId}": {
       "get": {
         "x-doc": {
-          "title": "fsxVolumes: Retrieve volumes",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Retrieve volumes",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "get-fsx-volumes-.html",
           "subcategory": null
         }
@@ -1889,8 +1889,8 @@
     "/fsx/volumes/{fileSystemId}/{volumeId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a volume using the id",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Retrieve a volume using the ID",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "get-fsx-volumes-.html",
           "subcategory": null
         }
@@ -1899,8 +1899,8 @@
     "/fsx/volumes/{fileSystemId}/nfs-clients": {
       "get": {
         "x-doc": {
-          "title": "Retrieve an nfs clients list for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Retrieve an NFS clients list for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "get-fsx-volumes-nfs-clients.html",
           "subcategory": null
         }
@@ -1909,8 +1909,8 @@
     "/fsx/volumes/{fileSystemId}/shares": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a cifs share list for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Retrieve a CIFS share list for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "get-fsx-volumes-shares.html",
           "subcategory": null
         }
@@ -1920,7 +1920,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the volume count",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "get-fsx-volumes-count.html",
           "subcategory": null
         }
@@ -1929,16 +1929,16 @@
     "/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}": {
       "put": {
         "x-doc": {
-          "title": "modifyVolume_2: Modify an existing volume",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Modify an existing volume",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "put-fsx-volumes--.html",
           "subcategory": null
         }
       },
       "delete": {
         "x-doc": {
-          "title": "deleteVolume_2: Delete an existing volume",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Delete an existing volume",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "delete-fsx-volumes--.html",
           "subcategory": null
         }
@@ -1947,8 +1947,8 @@
     "/fsx/volumes/igroups/{fileSystemId}/{svmName}": {
       "get": {
         "x-doc": {
-          "title": "getIgroups_2: Retrieve all igroups",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Retrieve all igroups",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "get-fsx-volumes-igroups-.html",
           "subcategory": null
         }
@@ -1957,16 +1957,16 @@
     "/fsx/volumes/initiator": {
       "get": {
         "x-doc": {
-          "title": "getInitiators_2: Retrieve all iSCSI initiators",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Retrieve all iSCSI initiators",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "get-fsx-volumes-initiator.html",
           "subcategory": null
         }
       },
       "post": {
         "x-doc": {
-          "title": "saveInitiator_2: Add an iSCSI initiator",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Add an iSCSI initiator",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "post-fsx-volumes-initiator.html",
           "subcategory": null
         }
@@ -1975,8 +1975,8 @@
     "/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}/snapshots": {
       "get": {
         "x-doc": {
-          "title": "volumeSnapshots_2: Returns a list of snapshot descriptions for the volume",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Retrieve a list of snapshot descriptions for a volume",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "get-fsx-volumes--snapshots.html",
           "subcategory": null
         }
@@ -1985,8 +1985,8 @@
     "/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}/clone": {
       "post": {
         "x-doc": {
-          "title": "cloneVolume_2: Clones an existing volume",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Clone a volume",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "post-fsx-volumes--clone.html",
           "subcategory": null
         }
@@ -1996,7 +1996,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "post-fsx-volumes.html",
           "subcategory": null
         }
@@ -2005,16 +2005,16 @@
     "/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}/snapshot": {
       "post": {
         "x-doc": {
-          "title": "createSnapshot_2: Create a snapshot manually",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Create a snapshot manually",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "post-fsx-volumes--snapshot.html",
           "subcategory": null
         }
       },
       "delete": {
         "x-doc": {
-          "title": "deleteSnapshot_2: Delete a snapshot manually",
-          "category": "Fsx (data ontap cluster) working environment operations - volumes",
+          "title": "Delete a snapshot manually",
+          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
           "filename": "delete-fsx-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2023,16 +2023,16 @@
     "/fsx/working-environments/{fileSystemId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve cifs configuration for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - working environments",
+          "title": "Retrieve CIFS configuration for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
           "filename": "get-fsx-working-environments-cifs.html",
           "subcategory": null
         }
       },
       "post": {
         "x-doc": {
-          "title": "Set up a new cifs configuration for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - working environments",
+          "title": "Create a new CIFS configuration for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
           "filename": "post-fsx-working-environments-cifs.html",
           "subcategory": null
         }
@@ -2041,8 +2041,8 @@
     "/fsx/working-environments/{fileSystemId}/export-policies": {
       "get": {
         "x-doc": {
-          "title": "Retrieve an export policies list for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - working environments",
+          "title": "Retrieve an export policies list for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
           "filename": "get-fsx-working-environments-export-policies.html",
           "subcategory": null
         }
@@ -2051,8 +2051,8 @@
     "/fsx/working-environments/{fileSystemId}/svms": {
       "get": {
         "x-doc": {
-          "title": "Retrieve an svm list for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - working environments",
+          "title": "Retrieve an SVM list for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
           "filename": "get-fsx-working-environments-svms.html",
           "subcategory": null
         }
@@ -2061,8 +2061,8 @@
     "/fsx/working-environments/validate-credentials": {
       "post": {
         "x-doc": {
-          "title": "Validates the provided credentials for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - working environments",
+          "title": "Validate the credentials for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
           "filename": "post-fsx-working-environments-validate-credentials.html",
           "subcategory": null
         }
@@ -2071,8 +2071,8 @@
     "/fsx/working-environments/{fileSystemId}/interfaces": {
       "get": {
         "x-doc": {
-          "title": "Retrieve network interfaces lists for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - working environments",
+          "title": "Retrieve network interfaces lists for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
           "filename": "get-fsx-working-environments-interfaces.html",
           "subcategory": null
         }
@@ -2081,8 +2081,8 @@
     "/fsx/working-environments/{fileSystemId}/snapshot-policies": {
       "get": {
         "x-doc": {
-          "title": "Retrieve snapshot policies for an existing fsx system",
-          "category": "Fsx (data ontap cluster) working environment operations - working environments",
+          "title": "Retrieve snapshot policies for an FSx system",
+          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
           "filename": "get-fsx-working-environments-snapshot-policies.html",
           "subcategory": null
         }
@@ -2091,8 +2091,8 @@
     "/gcp/vsa/metadata/gcp-encryption-keys": {
       "get": {
         "x-doc": {
-          "title": "Retrieve google cloud encryption keys for a specific region",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve Google Cloud encryption keys for a region",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-gcp-encryption-keys.html",
           "subcategory": null
         }
@@ -2101,8 +2101,8 @@
     "/gcp/vsa/metadata/service-accounts": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a list of service accounts from the project",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve a list of service accounts",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-service-accounts.html",
           "subcategory": null
         }
@@ -2111,8 +2111,8 @@
     "/gcp/vsa/metadata/network-requirements": {
       "get": {
         "x-doc": {
-          "title": "networkRequirements_1: Retrieve the minimum number of required ip addresses for a cloud volumes ontap system",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve the minimum number of IP addresses for a system",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-network-requirements.html",
           "subcategory": null
         }
@@ -2122,7 +2122,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all cloud storage buckets",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-buckets.html",
           "subcategory": null
         }
@@ -2131,8 +2131,8 @@
     "/gcp/vsa/metadata/supported-capacity-tiers": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the supported capacity tiers for google cloud disk types",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve supported capacity tiers for Google Cloud disk types",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-supported-capacity-tiers.html",
           "subcategory": null
         }
@@ -2141,8 +2141,8 @@
     "/gcp/vsa/metadata/projects": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a list of projects for which the user has permission",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve a list of projects",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-projects.html",
           "subcategory": null
         }
@@ -2152,7 +2152,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new bucket",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "category": "Google Cloud systems - metadata",
           "filename": "post-gcp-vsa-metadata-create-bucket.html",
           "subcategory": null
         }
@@ -2161,8 +2161,8 @@
     "/gcp/vsa/metadata/gcp-disk-types": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the supported google cloud disk types",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve the supported Google Cloud disk types",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-gcp-disk-types.html",
           "subcategory": null
         }
@@ -2171,8 +2171,8 @@
     "/gcp/vsa/metadata/tag-keys": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all the labels for the specific project id and zone",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve all the labels for a project ID and zone",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-tag-keys.html",
           "subcategory": null
         }
@@ -2181,8 +2181,8 @@
     "/gcp/vsa/metadata/permutations": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all cloud volumes ontap configurations",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve all Cloud Volumes ONTAP configurations",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-permutations.html",
           "subcategory": null
         }
@@ -2191,8 +2191,8 @@
     "/gcp/vsa/metadata/regions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve google cloud regions where a cloud volumes ontap system can be created",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve Google Cloud regions",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-regions.html",
           "subcategory": null
         }
@@ -2201,8 +2201,8 @@
     "/gcp/vsa/metadata/default-snapshot-policies": {
       "get": {
         "x-doc": {
-          "title": "defaultSnapshotPolicies_1: Retrieve the default snapshot policies available on a cluster",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve default snapshot policies",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-default-snapshot-policies.html",
           "subcategory": null
         }
@@ -2211,8 +2211,8 @@
     "/gcp/vsa/metadata/instance-types-not-supporting-acceleration-and-capacity-tiering": {
       "get": {
         "x-doc": {
-          "title": "instanceTypesNotSupportingAccelerationAndCapacityTiering_1: Retrieve the instance types that do not support acceleration and capacity tiering",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve the instance types that do not support acceleration and capacity tiering",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null
         }
@@ -2222,7 +2222,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-supported-features.html",
           "subcategory": null
         }
@@ -2231,8 +2231,8 @@
     "/gcp/vsa/metadata/packages": {
       "get": {
         "x-doc": {
-          "title": "packages_1: Retrieve the packages configuration",
-          "category": "Ontap cloud gcp working environment operations - metadata",
+          "title": "Retrieve the packages configuration",
+          "category": "Google Cloud systems - metadata",
           "filename": "get-gcp-vsa-metadata-packages.html",
           "subcategory": null
         }
@@ -2241,8 +2241,8 @@
     "/gcp/vsa/aggregates/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "aggregates_2: Retrieve aggregates",
-          "category": "Ontap cloud gcp working environment operations - aggregates",
+          "title": "Retrieve aggregates",
+          "category": "Google Cloud systems - aggregates",
           "filename": "get-gcp-vsa-aggregates-.html",
           "subcategory": null
         }
@@ -2251,8 +2251,8 @@
     "/gcp/vsa/aggregates": {
       "post": {
         "x-doc": {
-          "title": "createAggregate_2: Create a new aggregate",
-          "category": "Ontap cloud gcp working environment operations - aggregates",
+          "title": "Create a new aggregate",
+          "category": "Google Cloud systems - aggregates",
           "filename": "post-gcp-vsa-aggregates.html",
           "subcategory": null
         }
@@ -2261,8 +2261,8 @@
     "/gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}": {
       "delete": {
         "x-doc": {
-          "title": "deleteAggregate_2: Delete an existing aggregate",
-          "category": "Ontap cloud gcp working environment operations - aggregates",
+          "title": "Delete an aggregate",
+          "category": "Google Cloud systems - aggregates",
           "filename": "delete-gcp-vsa-aggregates-.html",
           "subcategory": null
         }
@@ -2271,8 +2271,8 @@
     "/gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}/disks": {
       "post": {
         "x-doc": {
-          "title": "addDisksToAggregate_2: Add disks to an existing aggregate",
-          "category": "Ontap cloud gcp working environment operations - aggregates",
+          "title": "Add disks to an aggregate",
+          "category": "Google Cloud systems - aggregates",
           "filename": "post-gcp-vsa-aggregates--disks.html",
           "subcategory": null
         }
@@ -2281,8 +2281,8 @@
     "/gcp/vsa/volumes/quote": {
       "post": {
         "x-doc": {
-          "title": "quoteVolume_2: Retrieve quotes for a new volume returns the resource quote required for the requested volume",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Retrieve quotes for a new volume",
+          "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes-quote.html",
           "subcategory": null
         }
@@ -2291,8 +2291,8 @@
     "/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/change-tier": {
       "post": {
         "x-doc": {
-          "title": "changeVolumeTier_2: Update the underlying volume tier",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Update the underlying volume tier",
+          "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes--change-tier.html",
           "subcategory": null
         }
@@ -2301,8 +2301,8 @@
     "/gcp/vsa/volumes/volumes-for-backup": {
       "get": {
         "x-doc": {
-          "title": "volumesForBackup_2: Retrieve volumes for backup activation",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Retrieve volumes for backup activation",
+          "category": "Google Cloud systems - volumes",
           "filename": "get-gcp-vsa-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -2311,16 +2311,16 @@
     "/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}": {
       "put": {
         "x-doc": {
-          "title": "modifyVolume_3: Modify an existing volume",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Modify a volume",
+          "category": "Google Cloud systems - volumes",
           "filename": "put-gcp-vsa-volumes--.html",
           "subcategory": null
         }
       },
       "delete": {
         "x-doc": {
-          "title": "deleteVolume_3: Delete an existing volume",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Delete a volume",
+          "category": "Google Cloud systems - volumes",
           "filename": "delete-gcp-vsa-volumes--.html",
           "subcategory": null
         }
@@ -2329,8 +2329,8 @@
     "/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/exportPolicy": {
       "put": {
         "x-doc": {
-          "title": "addExportPolicyRule_2: Add an export policy rule",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Add an export policy rule",
+          "category": "Google Cloud systems - volumes",
           "filename": "put-gcp-vsa-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -2339,8 +2339,8 @@
     "/gcp/vsa/volumes/igroups/{workingEnvironmentId}/{svmName}": {
       "get": {
         "x-doc": {
-          "title": "getIgroups_3: Retrieve all igroups",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Retrieve all igroups",
+          "category": "Google Cloud systems - volumes",
           "filename": "get-gcp-vsa-volumes-igroups-.html",
           "subcategory": null
         }
@@ -2349,16 +2349,16 @@
     "/gcp/vsa/volumes/initiator": {
       "get": {
         "x-doc": {
-          "title": "getInitiators_3: Retrieve all iSCSI initiators",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Retrieve all iSCSI initiators",
+          "category": "Google Cloud systems - volumes",
           "filename": "get-gcp-vsa-volumes-initiator.html",
           "subcategory": null
         }
       },
       "post": {
         "x-doc": {
-          "title": "saveInitiator_3: Add an iSCSI initiator",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Add an iSCSI initiator",
+          "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -2367,8 +2367,8 @@
     "/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshots": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a list of snapshot descriptions for the volume",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Retrieve a list of snapshot descriptions for a volume",
+          "category": "Google Cloud systems - volumes",
           "filename": "get-gcp-vsa-volumes--snapshots.html",
           "subcategory": null
         }
@@ -2377,8 +2377,8 @@
     "/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/clone": {
       "post": {
         "x-doc": {
-          "title": "cloneVolume_3: Clones an existing volume",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Clone a volume",
+          "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes--clone.html",
           "subcategory": null
         }
@@ -2387,8 +2387,8 @@
     "/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/move": {
       "post": {
         "x-doc": {
-          "title": "moveVolume_2: Moves an existing volume",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Move a volume",
+          "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes--move.html",
           "subcategory": null
         }
@@ -2397,8 +2397,8 @@
     "/gcp/vsa/volumes": {
       "get": {
         "x-doc": {
-          "title": "volumes_2: Retrieve volumes",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "title": "Retrieve volumes",
+          "category": "Google Cloud systems - volumes",
           "filename": "get-gcp-vsa-volumes.html",
           "subcategory": null
         }
@@ -2406,7 +2406,7 @@
       "post": {
         "x-doc": {
           "title": "createVolume_3: Create a new volume if the aggregatename and maxnumofdisksapprovedtoadd properties are not populated, the response fails with a suggested aggregate name and the number of disks that need to be created in order to fulfill the request",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes.html",
           "subcategory": null
         }
@@ -2416,7 +2416,7 @@
       "post": {
         "x-doc": {
           "title": "createSnapshot_3: Create a snapshot manually",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "category": "Google Cloud systems - volumes",
           "filename": "post-gcp-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2424,7 +2424,7 @@
       "delete": {
         "x-doc": {
           "title": "deleteSnapshot_3: Delete a snapshot manually",
-          "category": "Ontap cloud gcp working environment operations - volumes",
+          "category": "Google Cloud systems - volumes",
           "filename": "delete-gcp-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2473,7 +2473,7 @@
     "/gcp/ha/metadata/vpcs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve google cloud networks and subnetworks over which a cloud volumes ontap system can be created",
+          "title": "Retrieve google cloud networks and subnetworks over which a Cloud Volumes ONTAP system can be created",
           "category": "Ontap cloud gcp ha working environment operations - metadata",
           "filename": "get-gcp-ha-metadata-vpcs.html",
           "subcategory": null
@@ -2483,7 +2483,7 @@
     "/gcp/ha/metadata/zones": {
       "get": {
         "x-doc": {
-          "title": "Retrieve google cloud regions and zones over which a cloud volumes ontap working environment can be created",
+          "title": "Retrieve google cloud regions and zones over which a Cloud Volumes ONTAP working environment can be created",
           "category": "Ontap cloud gcp ha working environment operations - metadata",
           "filename": "get-gcp-ha-metadata-zones.html",
           "subcategory": null
@@ -2493,7 +2493,7 @@
     "/gcp/ha/metadata/tag-keys": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all of the labels for the specified project id and region",
+          "title": "Retrieve all of the labels for the specified project ID and region",
           "category": "Ontap cloud gcp ha working environment operations - metadata",
           "filename": "get-gcp-ha-metadata-tag-keys.html",
           "subcategory": null
@@ -2503,7 +2503,7 @@
     "/gcp/ha/metadata/permutations": {
       "get": {
         "x-doc": {
-          "title": "permutations_2: Retrieve all cloud volumes ontap configurations",
+          "title": "permutations_2: Retrieve all Cloud Volumes ONTAP configurations",
           "category": "Ontap cloud gcp ha working environment operations - metadata",
           "filename": "get-gcp-ha-metadata-permutations.html",
           "subcategory": null
@@ -2533,7 +2533,7 @@
     "/gcp/ha/metadata/network-requirements": {
       "get": {
         "x-doc": {
-          "title": "networkRequirements_2: Retrieve the minimum number of required ip addresses for a cloud volumes ontap system",
+          "title": "networkRequirements_2: Retrieve the minimum number of required ip addresses for a Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - metadata",
           "filename": "get-gcp-ha-metadata-network-requirements.html",
           "subcategory": null
@@ -2593,7 +2593,7 @@
     "/gcp/ha/metadata/regions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the google cloud regions where a cloud volumes ontap system can be created",
+          "title": "Retrieve the google cloud regions where a Cloud Volumes ONTAP system can be created",
           "category": "Ontap cloud gcp ha working environment operations - metadata",
           "filename": "get-gcp-ha-metadata-regions.html",
           "subcategory": null
@@ -2795,7 +2795,7 @@
     "/gcp/ha/working-environments": {
       "get": {
         "x-doc": {
-          "title": "Retrieve cloud volumes ontap systems that are visible to the user that is currently signed in",
+          "title": "Retrieve Cloud Volumes ONTAP systems that are visible to the user that is currently signed in",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments.html",
           "subcategory": null
@@ -2803,7 +2803,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new cloud volumes ontap google cloud high availability (ha) system",
+          "title": "Create a new Cloud Volumes ONTAP google cloud high availability (ha) system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments.html",
           "subcategory": null
@@ -2813,7 +2813,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/stop": {
       "post": {
         "x-doc": {
-          "title": "stopVsa_1: Stops a specific cloud volumes ontap instance",
+          "title": "stopVsa_1: Stops a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-stop.html",
           "subcategory": null
@@ -2823,7 +2823,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/cifs-locks-exist": {
       "get": {
         "x-doc": {
-          "title": "cifsLocksExist_1: Checks for non-persistent locks held on cifs sessions",
+          "title": "cifsLocksExist_1: Checks for non-persistent locks held on CIFS sessions",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-cifs-locks-exist.html",
           "subcategory": null
@@ -2843,7 +2843,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/svm": {
       "put": {
         "x-doc": {
-          "title": "changeSvmName_1: Modify the svm name of the cloud volumes ontap system",
+          "title": "changeSvmName_1: Modify the svm name of the Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-svm.html",
           "subcategory": null
@@ -2861,7 +2861,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "workingEnvironment_2: Retrieve a cloud volumes ontap system",
+          "title": "workingEnvironment_2: Retrieve a Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-.html",
           "subcategory": null
@@ -2869,7 +2869,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "deleteVsaWorkingEnvironment_1: Delete an existing cloud volumes ontap system, including all cloud resources created for the system (unless the localdelete flag is set to true)",
+          "title": "deleteVsaWorkingEnvironment_1: Delete an existing Cloud Volumes ONTAP system, including all cloud resources created for the system (unless the localdelete flag is set to true)",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "delete-gcp-ha-working-environments-.html",
           "subcategory": null
@@ -2879,7 +2879,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "x-doc": {
-          "title": "Delete the cifs configuration for an existing cloud volumes ontap system",
+          "title": "Delete the CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-delete-cifs.html",
           "subcategory": null
@@ -2889,7 +2889,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the cifs configuration for an existing cloud volumes ontap system",
+          "title": "Retrieve the CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-cifs.html",
           "subcategory": null
@@ -2897,7 +2897,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new cifs configuration for an existing cloud volumes ontap system",
+          "title": "Create a new CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-cifs.html",
           "subcategory": null
@@ -2907,7 +2907,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/validate-byol-to-capacity": {
       "get": {
         "x-doc": {
-          "title": "preValidateByolToCapacity_1: Validates the prerequisites for converting an existing cloud volumes ontap system",
+          "title": "preValidateByolToCapacity_1: Validates the prerequisites for converting an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
@@ -2917,7 +2917,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/writing-speed": {
       "put": {
         "x-doc": {
-          "title": "modifyWritingSpeed_1: Sets the writing speed for cloud volumes ontap",
+          "title": "modifyWritingSpeed_1: Sets the writing speed for Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-writing-speed.html",
           "subcategory": null
@@ -2927,7 +2927,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/license-instance-type": {
       "get": {
         "x-doc": {
-          "title": "licenseAndInstanceTypes_1: Retrieve all license types and their associated instance types for a specific cloud volumes ontap instance",
+          "title": "licenseAndInstanceTypes_1: Retrieve all license types and their associated instance types for a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-license-instance-type.html",
           "subcategory": null
@@ -2935,7 +2935,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "changeLicenseAndInstanceType_1: Sets the instance type of a specific cloud volumes ontap instance",
+          "title": "changeLicenseAndInstanceType_1: Sets the instance type of a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-license-instance-type.html",
           "subcategory": null
@@ -2945,7 +2945,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/ontap-available-images": {
       "get": {
         "x-doc": {
-          "title": "ontapAvailableImages_1: Retrieve images that are already installed on the cloud volumes ontap system",
+          "title": "ontapAvailableImages_1: Retrieve images that are already installed on the Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-ontap-available-images.html",
           "subcategory": null
@@ -2955,7 +2955,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/update-image": {
       "post": {
         "x-doc": {
-          "title": "updateSystemImage_1: Performs a complete image update operation on a single node of the specified cloud volumes ontap system",
+          "title": "updateSystemImage_1: Performs a complete image update operation on a single node of the specified Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-update-image.html",
           "subcategory": null
@@ -2965,7 +2965,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/update-eligibility": {
       "get": {
         "x-doc": {
-          "title": "occmUpgradeEligibilityChecks_1: Retrieve the eligibility support status of a cloud volumes ontap system valid values - nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, license_expired",
+          "title": "occmUpgradeEligibilityChecks_1: Retrieve the eligibility support status of a Cloud Volumes ONTAP system valid values - nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, license_expired",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-update-eligibility.html",
           "subcategory": null
@@ -2975,7 +2975,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/upload-license-file": {
       "post": {
         "x-doc": {
-          "title": "uploadLicenseFile_1: Uploads a cloud license file on the specified cloud volumes ontap system",
+          "title": "uploadLicenseFile_1: Uploads a cloud license file on the specified Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-upload-license-file.html",
           "subcategory": null
@@ -2985,7 +2985,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/upload-licenses": {
       "post": {
         "x-doc": {
-          "title": "Uploads cloud license file content on the specified cloud volumes ontap system",
+          "title": "Uploads cloud license file content on the specified Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-upload-licenses.html",
           "subcategory": null
@@ -3005,7 +3005,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "changeNetworkOptimizationLevel_1: Modify the network port broadcast domain mtu of the cloud volumes ontap system",
+          "title": "changeNetworkOptimizationLevel_1: Modify the network port broadcast domain mtu of the Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-networkoptimization.html",
           "subcategory": null
@@ -3015,7 +3015,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/create-request-parameters": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the action parameters used in a create request of a specific cloud volumes ontap instance",
+          "title": "Retrieve the action parameters used in a create request of a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-create-request-parameters.html",
           "subcategory": null
@@ -3035,7 +3035,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a list of versions to which the cloud volumes ontap instance can be upgraded",
+          "title": "Retrieve a list of versions to which the Cloud Volumes ONTAP instance can be upgraded",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
@@ -3045,7 +3045,7 @@
     "/gcp/ha/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "syncVsaWorkingEnvironmentsSubscription_1: Manually triggers subscription synchronization for all cloud volumes ontap systems",
+          "title": "syncVsaWorkingEnvironmentsSubscription_1: Manually triggers subscription synchronization for all Cloud Volumes ONTAP systems",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-sync-subscription.html",
           "subcategory": null
@@ -3075,7 +3075,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses": {
       "get": {
         "x-doc": {
-          "title": "getExtraCapacityLicenses_1: Retrieve extra capacity licenses for cloud volumes ontap",
+          "title": "getExtraCapacityLicenses_1: Retrieve extra capacity licenses for Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
@@ -3127,7 +3127,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/vscan-file-op": {
       "put": {
         "x-doc": {
-          "title": "Update the default vscan file operation profile a profile on an existing cifs share updates only on writes-only mode",
+          "title": "Update the default vscan file operation profile a profile on an existing CIFS share updates only on writes-only mode",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-vscan-file-op.html",
           "subcategory": null
@@ -3137,7 +3137,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "updatePassword_1: Update the NetApp Console password for a specific cloud volumes ontap system",
+          "title": "updatePassword_1: Update the NetApp Console password for a specific Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-update-credentials.html",
           "subcategory": null
@@ -3157,7 +3157,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/byol-to-capacity": {
       "put": {
         "x-doc": {
-          "title": "byolToCapacity_1: Update a bring-your-own-license (byol) license to a capacity-based license for an existing cloud volumes ontap system",
+          "title": "Update a BYOL license to a capacity-based license",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-byol-to-capacity.html",
           "subcategory": null
@@ -3167,7 +3167,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/enable-worm": {
       "put": {
         "x-doc": {
-          "title": "Enables snaplock on an existing cloud volumes ontap system",
+          "title": "Enable SnapLock on a system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-enable-worm.html",
           "subcategory": null
@@ -3177,7 +3177,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/ntp": {
       "post": {
         "x-doc": {
-          "title": "Create the ntp server",
+          "title": "Create an NTP server",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-ntp.html",
           "subcategory": null
@@ -3187,7 +3187,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/start": {
       "post": {
         "x-doc": {
-          "title": "startVsa_1: Starts a specific cloud volumes ontap instance",
+          "title": "startVsa_1: Starts a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-start.html",
           "subcategory": null
@@ -3197,7 +3197,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/support-registration": {
       "get": {
         "x-doc": {
-          "title": "status_1: Retrieve the support registration status of a cloud volumes ontap system",
+          "title": "status_1: Retrieve the support registration status of a Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-support-registration.html",
           "subcategory": null
@@ -3205,7 +3205,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "registerSupport_1: Registers a cloud volumes ontap system with netapp",
+          "title": "Registers a Cloud Volumes ONTAP system with NetApp",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-support-registration.html",
           "subcategory": null
@@ -3215,7 +3215,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/schedules": {
       "get": {
         "x-doc": {
-          "title": "getSchedules_1: Lists the start/stop schedules for cloud volumes ontap",
+          "title": "getSchedules_1: Lists the start/stop schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-schedules.html",
           "subcategory": null
@@ -3223,7 +3223,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Sets the schedules for cloud volumes ontap",
+          "title": "Sets the schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-schedules.html",
           "subcategory": null
@@ -3273,7 +3273,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/user-tags": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the editable tags for the cloud resources in a specific cloud volumes ontap instance",
+          "title": "Retrieve the editable tags for the cloud resources in a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "get-gcp-ha-working-environments-user-tags.html",
           "subcategory": null
@@ -3281,7 +3281,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Modify the user tags for the cloud resources in a specific cloud volumes ontap instance",
+          "title": "Modify the user tags for the cloud resources in a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-user-tags.html",
           "subcategory": null
@@ -3311,7 +3311,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/change-serial": {
       "post": {
         "x-doc": {
-          "title": "changeSerialNumber_1: Update the serial number of a cloud volumes ontap system",
+          "title": "changeSerialNumber_1: Update the serial number of a Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "post-gcp-ha-working-environments-change-serial.html",
           "subcategory": null
@@ -3321,7 +3321,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/set-password": {
       "put": {
         "x-doc": {
-          "title": "setPassword_1: Sets the cluster password for a specific cloud volumes ontap system",
+          "title": "setPassword_1: Sets the cluster password for a specific Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp ha working environment operations - working environments",
           "filename": "put-gcp-ha-working-environments-set-password.html",
           "subcategory": null
@@ -3389,7 +3389,7 @@
     "/aws/ha/discovery/recover": {
       "post": {
         "x-doc": {
-          "title": "recover_2: Saves a previously discovered cloud volumes ontap system to the NetApp Console database",
+          "title": "recover_2: Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database",
           "category": "Ontap cloud aws ha working environment operations - discovery",
           "filename": "post-aws-ha-discovery-recover.html",
           "subcategory": null
@@ -3399,7 +3399,7 @@
     "/aws/ha/encryption/{workingEnvironmentId}/update-key-manager-ca-certificate": {
       "post": {
         "x-doc": {
-          "title": "Update the key manager certificate authority (ca) certificate on the cloud volumes ontap system",
+          "title": "Update the key manager CA certificate on the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - encryption",
           "filename": "post-aws-ha-encryption-update-key-manager-ca-certificate.html",
           "subcategory": null
@@ -3409,7 +3409,7 @@
     "/aws/ha/encryption/{workingEnvironmentId}/update-client-certificate": {
       "post": {
         "x-doc": {
-          "title": "Update the client certificate on the cloud volumes ontap system",
+          "title": "Update the client certificate on the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - encryption",
           "filename": "post-aws-ha-encryption-update-client-certificate.html",
           "subcategory": null
@@ -3419,7 +3419,7 @@
     "/aws/ha/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}": {
       "post": {
         "x-doc": {
-          "title": "Add a key manager to the cloud volumes ontap system",
+          "title": "Add a key manager to the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - encryption",
           "filename": "post-aws-ha-encryption-key-managers-.html",
           "subcategory": null
@@ -3427,7 +3427,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete a key manager from the cloud volumes ontap system",
+          "title": "Delete a key manager from the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - encryption",
           "filename": "delete-aws-ha-encryption-key-managers-.html",
           "subcategory": null
@@ -3457,7 +3457,7 @@
     "/aws/ha/metadata/permutations": {
       "get": {
         "x-doc": {
-          "title": "permutations_3: Retrieve all cloud volumes ontap configurations",
+          "title": "permutations_3: Retrieve all Cloud Volumes ONTAP configurations",
           "category": "Ontap cloud aws ha working environment operations - metadata",
           "filename": "get-aws-ha-metadata-permutations.html",
           "subcategory": null
@@ -3467,7 +3467,7 @@
     "/aws/ha/metadata/manifests": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all NetApp Console manifests refer to the api developers guide to learn how to extract valid region codes, license types, instance types, and cloud volumes ontap version parameters to create a cloud volumes ontap system",
+          "title": "Retrieve all NetApp Console manifests refer to the api developers guide to learn how to extract valid region codes, license types, instance types, and Cloud Volumes ONTAP version parameters to create a Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - metadata",
           "filename": "get-aws-ha-metadata-manifests.html",
           "subcategory": null
@@ -3527,7 +3527,7 @@
     "/aws/ha/metadata/network-requirements": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the minimum number of required ip addresses for a single cloud volumes ontap system, a high availability (ha) node, and an ha mediator",
+          "title": "Retrieve the minimum number of required ip addresses for a single Cloud Volumes ONTAP system, a high availability (ha) node, and an ha mediator",
           "category": "Ontap cloud aws ha working environment operations - metadata",
           "filename": "get-aws-ha-metadata-network-requirements.html",
           "subcategory": null
@@ -3547,7 +3547,7 @@
     "/aws/ha/metadata/validate-subscribed-to-ontap-cloud": {
       "post": {
         "x-doc": {
-          "title": "Validates that the current user is subscribed to the cloud volumes ontap product in the aws marketplace",
+          "title": "Validates that the current user is subscribed to the Cloud Volumes ONTAP product in the aws marketplace",
           "category": "Ontap cloud aws ha working environment operations - metadata",
           "filename": "post-aws-ha-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
@@ -3627,7 +3627,7 @@
     "/aws/ha/metadata/regions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the aws regions where a cloud volumes ontap system can be created",
+          "title": "Retrieve the aws regions where a Cloud Volumes ONTAP system can be created",
           "category": "Ontap cloud aws ha working environment operations - metadata",
           "filename": "get-aws-ha-metadata-regions.html",
           "subcategory": null
@@ -3829,7 +3829,7 @@
     "/aws/ha/working-environments": {
       "get": {
         "x-doc": {
-          "title": "Retrieve cloud volumes ontap systems that are visible to the user that is currently logged in",
+          "title": "Retrieve Cloud Volumes ONTAP systems that are visible to the user that is currently logged in",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments.html",
           "subcategory": null
@@ -3837,7 +3837,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new aws high-availability (ha) cloud volumes ontap system",
+          "title": "Create a new aws high-availability (ha) Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments.html",
           "subcategory": null
@@ -3847,7 +3847,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/route-tables": {
       "put": {
         "x-doc": {
-          "title": "Update the route tables for a high-availability (ha) cloud volumes ontap system",
+          "title": "Update the route tables for a high-availability (ha) Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-route-tables.html",
           "subcategory": null
@@ -3857,7 +3857,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/update-mediator": {
       "post": {
         "x-doc": {
-          "title": "Update the mediator for a specific cloud volumes ontap system to the specified version",
+          "title": "Update the mediator for a specific Cloud Volumes ONTAP system to the specified version",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-update-mediator.html",
           "subcategory": null
@@ -3867,7 +3867,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/cifs-locks-exist": {
       "get": {
         "x-doc": {
-          "title": "cifsLocksExist_2: Checks for non-persistent locks held on cifs sessions",
+          "title": "cifsLocksExist_2: Checks for non-persistent locks held on CIFS sessions",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-cifs-locks-exist.html",
           "subcategory": null
@@ -3877,7 +3877,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a high availability (ha) cloud volumes ontap system",
+          "title": "Retrieve a high availability (ha) Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-.html",
           "subcategory": null
@@ -3885,7 +3885,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete an existing cloud volumes ontap system, including all cloud resources created for the working environment (unless the localdelete flag is set to true)",
+          "title": "Delete an existing Cloud Volumes ONTAP system, including all cloud resources created for the working environment (unless the localdelete flag is set to true)",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "delete-aws-ha-working-environments-.html",
           "subcategory": null
@@ -3895,7 +3895,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "x-doc": {
-          "title": "setupCifsConfiguration_5: Delete the cifs configuration for an existing cloud volumes ontap system",
+          "title": "setupCifsConfiguration_5: Delete the CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-delete-cifs.html",
           "subcategory": null
@@ -3905,7 +3905,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "cifsConfiguration_3: Retrieve the cifs configuration for an existing cloud volumes ontap system",
+          "title": "cifsConfiguration_3: Retrieve the CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-cifs.html",
           "subcategory": null
@@ -3913,7 +3913,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "setupCifsConfiguration_6: Create a new cifs configuration for an existing cloud volumes ontap system",
+          "title": "setupCifsConfiguration_6: Create a new CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-cifs.html",
           "subcategory": null
@@ -3923,7 +3923,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/validate-byol-to-capacity": {
       "get": {
         "x-doc": {
-          "title": "preValidateByolToCapacity_2: Validates the prerequisites for converting an existing cloud volumes ontap system",
+          "title": "preValidateByolToCapacity_2: Validates the prerequisites for converting an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
@@ -3933,7 +3933,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/writing-speed": {
       "put": {
         "x-doc": {
-          "title": "modifyWritingSpeed_2: Sets the writing speed for cloud volumes ontap",
+          "title": "modifyWritingSpeed_2: Sets the writing speed for Cloud Volumes ONTAP",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-writing-speed.html",
           "subcategory": null
@@ -3943,7 +3943,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/license-instance-type": {
       "get": {
         "x-doc": {
-          "title": "licenseAndInstanceTypes_2: Retrieve all license types and their associated instance types for a specific cloud volumes ontap instance",
+          "title": "licenseAndInstanceTypes_2: Retrieve all license types and their associated instance types for a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-license-instance-type.html",
           "subcategory": null
@@ -3951,7 +3951,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "changeLicenseAndInstanceType_2: Sets the instance type of a specific cloud volumes ontap instance",
+          "title": "changeLicenseAndInstanceType_2: Sets the instance type of a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-license-instance-type.html",
           "subcategory": null
@@ -3961,7 +3961,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/ontap-available-images": {
       "get": {
         "x-doc": {
-          "title": "Retrieve images already installed on the cloud volumes ontap system",
+          "title": "Retrieve images already installed on the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-ontap-available-images.html",
           "subcategory": null
@@ -3971,7 +3971,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/update-image": {
       "post": {
         "x-doc": {
-          "title": "updateSystemImage_2: Performs a complete image update operation on a single node of the specified cloud volumes ontap system",
+          "title": "updateSystemImage_2: Performs a complete image update operation on a single node of the specified Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-update-image.html",
           "subcategory": null
@@ -3981,7 +3981,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/update-eligibility": {
       "get": {
         "x-doc": {
-          "title": "Retrieve eligibility support status of a cloud volumes ontap system valid values - nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, license_expired",
+          "title": "Retrieve eligibility support status of a Cloud Volumes ONTAP system valid values - nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, license_expired",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-update-eligibility.html",
           "subcategory": null
@@ -3991,7 +3991,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/upload-license-file": {
       "post": {
         "x-doc": {
-          "title": "uploadLicenseFile_2: Uploads a cloud license file on the specified cloud volumes ontap system",
+          "title": "uploadLicenseFile_2: Uploads a cloud license file on the specified Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-upload-license-file.html",
           "subcategory": null
@@ -4001,7 +4001,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/upload-licenses": {
       "post": {
         "x-doc": {
-          "title": "uploadLicenseFileContent_2: Uploads cloud license file content on the specified cloud volumes ontap system",
+          "title": "uploadLicenseFileContent_2: Uploads cloud license file content on the specified Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-upload-licenses.html",
           "subcategory": null
@@ -4021,7 +4021,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "changeNetworkOptimizationLevel_2: Modify the network port broadcast domain mtu of the cloud volumes ontap system",
+          "title": "changeNetworkOptimizationLevel_2: Modify the network port broadcast domain mtu of the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-networkoptimization.html",
           "subcategory": null
@@ -4031,7 +4031,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/create-request-parameters": {
       "get": {
         "x-doc": {
-          "title": "Retrieve action parameters used in the create request of a specific cloud volumes ontap instance",
+          "title": "Retrieve action parameters used in the create request of a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-create-request-parameters.html",
           "subcategory": null
@@ -4051,7 +4051,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a list of versions to which the cloud volumes ontap system can be upgraded",
+          "title": "Retrieve a list of versions to which the Cloud Volumes ONTAP system can be upgraded",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
@@ -4061,7 +4061,7 @@
     "/aws/ha/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "syncVsaWorkingEnvironmentsSubscription_2: Manually triggers subscription synchronization for all cloud volumes ontap systems",
+          "title": "syncVsaWorkingEnvironmentsSubscription_2: Manually triggers subscription synchronization for all Cloud Volumes ONTAP systems",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-sync-subscription.html",
           "subcategory": null
@@ -4091,7 +4091,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses": {
       "get": {
         "x-doc": {
-          "title": "getExtraCapacityLicenses_2: Retrieve extra capacity licenses for cloud volumes ontap",
+          "title": "getExtraCapacityLicenses_2: Retrieve extra capacity licenses for Cloud Volumes ONTAP",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
@@ -4143,7 +4143,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/vscan-file-op": {
       "put": {
         "x-doc": {
-          "title": "updateVscanFileOperation_2: Update the default vscan file operation profile a profile on an existing cifs share updates only on writes-only mode",
+          "title": "updateVscanFileOperation_2: Update the default vscan file operation profile a profile on an existing CIFS share updates only on writes-only mode",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-vscan-file-op.html",
           "subcategory": null
@@ -4153,7 +4153,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "updatePassword_2: Update the NetApp Console password for a specific cloud volumes ontap system",
+          "title": "updatePassword_2: Update the NetApp Console password for a specific Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-update-credentials.html",
           "subcategory": null
@@ -4173,7 +4173,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/byol-to-capacity": {
       "put": {
         "x-doc": {
-          "title": "byolToCapacity_2: Update a bring-your-own-license (byol) license to a capacity-based license for an existing cloud volumes ontap system",
+          "title": "Update a BYOL license to a capacity-based license",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-byol-to-capacity.html",
           "subcategory": null
@@ -4183,7 +4183,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/enable-worm": {
       "put": {
         "x-doc": {
-          "title": "enableWorm_2: Enables snaplock for an existing cloud volumes ontap system",
+          "title": "enableWorm_2: Enables snaplock for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-enable-worm.html",
           "subcategory": null
@@ -4193,7 +4193,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/ntp": {
       "post": {
         "x-doc": {
-          "title": "setupNtpServer_2: Create the ntp server",
+          "title": "setupNtpServer_2: Create an NTP server",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-ntp.html",
           "subcategory": null
@@ -4203,7 +4203,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/start": {
       "post": {
         "x-doc": {
-          "title": "startVsa_2: Starts a specific cloud volumes ontap instance",
+          "title": "startVsa_2: Starts a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-start.html",
           "subcategory": null
@@ -4213,7 +4213,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/stop": {
       "post": {
         "x-doc": {
-          "title": "stopVsa_2: Stops a specific cloud volumes ontap instance",
+          "title": "stopVsa_2: Stops a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-stop.html",
           "subcategory": null
@@ -4223,7 +4223,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/support-registration": {
       "get": {
         "x-doc": {
-          "title": "status_2: Retrieve the support registration status of a cloud volumes ontap system",
+          "title": "status_2: Retrieve the support registration status of a Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-support-registration.html",
           "subcategory": null
@@ -4231,7 +4231,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "registerSupport_2: Registers a cloud volumes ontap system with netapp",
+          "title": "registerSupport_2: Registers a Cloud Volumes ONTAP system with NetApp",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-support-registration.html",
           "subcategory": null
@@ -4241,7 +4241,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/schedules": {
       "get": {
         "x-doc": {
-          "title": "getSchedules_2: Lists the start/stop schedules for cloud volumes ontap",
+          "title": "getSchedules_2: Lists the start/stop schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-schedules.html",
           "subcategory": null
@@ -4249,7 +4249,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "setSchedules_2: Sets schedules for cloud volumes ontap",
+          "title": "setSchedules_2: Sets schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-schedules.html",
           "subcategory": null
@@ -4259,7 +4259,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/svm": {
       "put": {
         "x-doc": {
-          "title": "changeSvmName_2: Modify the svm name of the cloud volumes ontap system",
+          "title": "changeSvmName_2: Modify the svm name of the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-svm.html",
           "subcategory": null
@@ -4309,7 +4309,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/user-tags": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the editable tags for cloud resources in a specific cloud volumes ontap instance",
+          "title": "Retrieve the editable tags for cloud resources in a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "get-aws-ha-working-environments-user-tags.html",
           "subcategory": null
@@ -4317,7 +4317,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "modifyUserTags_2: Modify the user tags for the cloud resources in a specific cloud volumes ontap instance",
+          "title": "modifyUserTags_2: Modify the user tags for the cloud resources in a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-user-tags.html",
           "subcategory": null
@@ -4347,7 +4347,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/change-serial": {
       "post": {
         "x-doc": {
-          "title": "changeSerialNumber_2: Update the serial number of a cloud volumes ontap system",
+          "title": "changeSerialNumber_2: Update the serial number of a Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "post-aws-ha-working-environments-change-serial.html",
           "subcategory": null
@@ -4357,7 +4357,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/set-password": {
       "put": {
         "x-doc": {
-          "title": "setPassword_2: Sets the cluster password for a specific cloud volumes ontap system",
+          "title": "setPassword_2: Sets the cluster password for a specific Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws ha working environment operations - working environments",
           "filename": "put-aws-ha-working-environments-set-password.html",
           "subcategory": null
@@ -4407,7 +4407,7 @@
     "/occm/key-store/signed-certificate-file": {
       "post": {
         "x-doc": {
-          "title": "Validates and installs the provided root certificate authority (ca) chain successive calls overwrite any previously installed root ca chain",
+          "title": "Validates and installs the provided root CA chain successive calls overwrite any previously installed root ca chain",
           "category": "NetApp Console system operations - key store",
           "filename": "post-occm-key-store-signed-certificate-file.html",
           "subcategory": null
@@ -4417,7 +4417,7 @@
     "/occm/key-store/signed-certificate": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the certificate authority (ca) signed certificate of the NetApp Console key store, if one exists",
+          "title": "Retrieve the CA signed certificate of the NetApp Console key store, if one exists",
           "category": "NetApp Console system operations - key store",
           "filename": "get-occm-key-store-signed-certificate.html",
           "subcategory": null
@@ -4425,7 +4425,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "installSignedCertificate: Validates and installs the provided root certificate authority (ca) chain successive calls overwrite any previously installed root ca chain",
+          "title": "installSignedCertificate: Validates and installs the provided root CA chain successive calls overwrite any previously installed root ca chain",
           "category": "NetApp Console system operations - key store",
           "filename": "post-occm-key-store-signed-certificate.html",
           "subcategory": null
@@ -4543,7 +4543,7 @@
     "/occm/asup/send-Cot-performance-Asup/{workingEnvironmentId}": {
       "post": {
         "x-doc": {
-          "title": "Sends cloud volumes ontap performance archive support data to netapp support",
+          "title": "Sends Cloud Volumes ONTAP performance archive support data to netapp support",
           "category": "NetApp Console system operations - AutoSupport",
           "filename": "post-occm-asup-send-cot-performance-asup-.html",
           "subcategory": null
@@ -4573,7 +4573,7 @@
     "/occm/asup/send-Cot-Asup": {
       "post": {
         "x-doc": {
-          "title": "Sends cloud volumes ontap support data to netapp support",
+          "title": "Sends Cloud Volumes ONTAP support data to netapp support",
           "category": "NetApp Console system operations - AutoSupport",
           "filename": "post-occm-asup-send-cot-asup.html",
           "subcategory": null
@@ -4631,7 +4631,7 @@
     "/occm/system/cloud-ontap-update-image-metadata": {
       "post": {
         "x-doc": {
-          "title": "Performs fetch and processing of cloud volumes ontap image update metadata files",
+          "title": "Performs fetch and processing of Cloud Volumes ONTAP image update metadata files",
           "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-cloud-ontap-update-image-metadata.html",
           "subcategory": null
@@ -4641,7 +4641,7 @@
     "/occm/system/cloud-ontap-update-metadata": {
       "post": {
         "x-doc": {
-          "title": "Performs fetch and cache of cloud volumes ontap and NetApp Console version information files from s3",
+          "title": "Performs fetch and cache of Cloud Volumes ONTAP and NetApp Console version information files from s3",
           "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-cloud-ontap-update-metadata.html",
           "subcategory": null
@@ -4661,7 +4661,7 @@
     "/occm/system/manually-activate-auto-vsa-capacity-management-cycle": {
       "post": {
         "x-doc": {
-          "title": "Manually activates the cloud volumes ontap capacity automatic management cycle",
+          "title": "Manually activates the Cloud Volumes ONTAP capacity automatic management cycle",
           "category": "NetApp Console system operations - system",
           "filename": "post-occm-system-manually-activate-auto-vsa-capacity-management-cycle.html",
           "subcategory": null
@@ -4762,7 +4762,7 @@
       "put": {
         "x-doc": {
           "title": "Update the current NetApp Console service user",
-          "category": "NetApp Console system operations - identity and access management",
+          "category": "NetApp Console system operations - IDentity and access management",
           "filename": "put-occm-tenancy-service-users-update-current-user.html",
           "subcategory": null
         }
@@ -4772,7 +4772,7 @@
       "post": {
         "x-doc": {
           "title": "Associates a console agent with a workspace",
-          "category": "NetApp Console system operations - identity and access management",
+          "category": "NetApp Console system operations - IDentity and access management",
           "filename": "post-occm-tenancy-service-workspaces-associate.html",
           "subcategory": null
         }
@@ -4782,7 +4782,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve workspaces that are visible to the user that is currently signed-in",
-          "category": "NetApp Console system operations - identity and access management",
+          "category": "NetApp Console system operations - IDentity and access management",
           "filename": "get-occm-tenancy-service-workspaces.html",
           "subcategory": null
         }
@@ -4935,7 +4935,7 @@
     "/onprem/working-environments/{workingEnvironmentId}/ip-spaces": {
       "get": {
         "x-doc": {
-          "title": "Retrieve an ipspace list for an existing cloud volumes ontap system",
+          "title": "Retrieve an ipspace list for an existing Cloud Volumes ONTAP system",
           "category": "On-premises (data ontap cluster) working environment operations - working environments",
           "filename": "get-onprem-working-environments-ip-spaces.html",
           "subcategory": null
@@ -4991,7 +4991,7 @@
     "/onprem/working-environments/{workingEnvironmentId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a cifs configuration for an existing cloud volumes ontap system",
+          "title": "Retrieve a CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "On-premises (data ontap cluster) working environment operations - working environments",
           "filename": "get-onprem-working-environments-cifs.html",
           "subcategory": null
@@ -5001,7 +5001,7 @@
     "/replication/metadata/snapmirror-svm-policies/{sourceWorkingEnvironmentId}/{svmName}/{targetWorkingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve snapmirror policies based on source and destination cloud volumes ontap",
+          "title": "Retrieve snapmirror policies based on source and destination Cloud Volumes ONTAP",
           "category": "Replication operations - metadata",
           "filename": "get-replication-metadata-snapmirror-svm-policies--.html",
           "subcategory": null
@@ -5011,7 +5011,7 @@
     "/replication/metadata/snapmirror-policies/{sourceWorkingEnvironmentId}/{targetWorkingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "describeSnapmirrorPolicies_1: Retrieve snapmirror policies based on source and destination cloud volumes ontap",
+          "title": "describeSnapmirrorPolicies_1: Retrieve snapmirror policies based on source and destination Cloud Volumes ONTAP",
           "category": "Replication operations - metadata",
           "filename": "get-replication-metadata-snapmirror-policies-.html",
           "subcategory": null
@@ -5071,7 +5071,7 @@
     "/replication/vsa": {
       "post": {
         "x-doc": {
-          "title": "Create a new replication to an cloud volumes ontap system",
+          "title": "Create a new replication to an Cloud Volumes ONTAP system",
           "category": "Replication operations",
           "filename": "post-replication-vsa.html",
           "subcategory": null
@@ -5111,7 +5111,7 @@
     "/replication/initialize/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}": {
       "post": {
         "x-doc": {
-          "title": "Initializes an existing snapmirror relationship this method can only be performed in cases where the relationship has already been established and is healthy, yet is idle and uninitialized for example, if the initial transfer was interrupted, then it can be restarted with this request",
+          "title": "Initializes an existing snapmirror relationship this method can only be performed in cases where the relationship has already been established and is healthy, yet is IDle and uninitialized for example, if the initial transfer was interrupted, then it can be restarted with this request",
           "category": "Replication operations",
           "filename": "post-replication-initialize--.html",
           "subcategory": null
@@ -5121,7 +5121,7 @@
     "/replication/reverse/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}": {
       "post": {
         "x-doc": {
-          "title": "Reversing an existing snapmirror relationship this method can only be performed in cases where the relationship has already been established and is healthy and idle",
+          "title": "Reversing an existing snapmirror relationship this method can only be performed in cases where the relationship has already been established and is healthy and IDle",
           "category": "Replication operations",
           "filename": "post-replication-reverse--.html",
           "subcategory": null
@@ -5191,7 +5191,7 @@
     "/occm/saas-mp-service/{workingEnvironmentId}/subscription": {
       "get": {
         "x-doc": {
-          "title": "Retrieve saas marketplace subscriptions for cloud volumes ontap",
+          "title": "Retrieve saas marketplace subscriptions for Cloud Volumes ONTAP",
           "category": "Cloud manager working environment operations - saas mp service",
           "filename": "get-occm-saas-mp-service-subscription.html",
           "subcategory": null
@@ -5271,7 +5271,7 @@
     "/occm/setup-portal/init-standalone-local-auth": {
       "post": {
         "x-doc": {
-          "title": "Performs an initial standalone setup with the local identity provider",
+          "title": "Performs an initial standalone setup with the local IDentity provider",
           "category": "Cloud manager working environment operations - initial setup operations using netapp cloud central",
           "filename": "post-occm-setup-portal-init-standalone-local-auth.html",
           "subcategory": null
@@ -5449,7 +5449,7 @@
     "/azure/vsa/recover": {
       "post": {
         "x-doc": {
-          "title": "Saves a previously discovered cloud volumes ontap system to the cloud manager database",
+          "title": "Saves a previously discovered Cloud Volumes ONTAP system to the cloud manager database",
           "category": "Ontap cloud Azure working environment operations - discovery",
           "filename": "post-azure-vsa-recover.html",
           "subcategory": null
@@ -5509,7 +5509,7 @@
     "/azure/vsa/metadata/network-requirements": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the minimum number of required ips for a cloud volumes ontap system",
+          "title": "Retrieve the minimum number of required ips for a Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - metadata",
           "filename": "get-azure-vsa-metadata-network-requirements.html",
           "subcategory": null
@@ -5519,7 +5519,7 @@
     "/azure/vsa/metadata/validate-subscribed-to-ontap-cloud": {
       "post": {
         "x-doc": {
-          "title": "Confirms that the current user is subscribed to the cloud volumes ontap product in Azure marketplace",
+          "title": "Confirms that the current user is subscribed to the Cloud Volumes ONTAP product in Azure marketplace",
           "category": "Ontap cloud Azure working environment operations - metadata",
           "filename": "post-azure-vsa-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
@@ -5589,7 +5589,7 @@
     "/azure/vsa/metadata/permutations": {
       "get": {
         "x-doc": {
-          "title": "permutations_4: Retrieve all cloud volumes ontap configurations",
+          "title": "permutations_4: Retrieve all Cloud Volumes ONTAP configurations",
           "category": "Ontap cloud Azure working environment operations - metadata",
           "filename": "get-azure-vsa-metadata-permutations.html",
           "subcategory": null
@@ -5599,7 +5599,7 @@
     "/azure/vsa/metadata/regions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the Azure regions over which a cloud volumes ontap system is created",
+          "title": "Retrieve the Azure regions over which a Cloud Volumes ONTAP system is created",
           "category": "Ontap cloud Azure working environment operations - metadata",
           "filename": "get-azure-vsa-metadata-regions.html",
           "subcategory": null
@@ -5649,7 +5649,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "x-doc": {
-          "title": "Delete a cifs configuration of an existing cloud volumes ontap system",
+          "title": "Delete a CIFS configuration of an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-delete-cifs.html",
           "subcategory": null
@@ -5659,7 +5659,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a cifs configuration of an existing cloud volumes ontap system",
+          "title": "Retrieve a CIFS configuration of an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-cifs.html",
           "subcategory": null
@@ -5667,7 +5667,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Sets up a new cifs configuration to an existing cloud volumes ontap system",
+          "title": "Sets up a new CIFS configuration to an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-cifs.html",
           "subcategory": null
@@ -5677,7 +5677,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/validate-byol-to-capacity": {
       "get": {
         "x-doc": {
-          "title": "Confirms the pre-requisites for converting an existing cloud volumes ontap system",
+          "title": "Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
@@ -5687,7 +5687,7 @@
     "/vsa/working-environments/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "workingEnvironment_7: Retrieve a cloud volumes ontap system",
+          "title": "workingEnvironment_7: Retrieve a Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-.html",
           "subcategory": null
@@ -5695,7 +5695,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete an existing cloud volumes ontap system, including all cloud resources created for this system (unless the localdelete flag is set to true)",
+          "title": "Delete an existing Cloud Volumes ONTAP system, including all cloud resources created for this system (unless the localdelete flag is set to true)",
           "category": "Ontap cloud aws working environment operations -  working environments",
           "filename": "delete-vsa-working-environments-.html",
           "subcategory": null
@@ -5705,7 +5705,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/writing-speed": {
       "put": {
         "x-doc": {
-          "title": "modifyWritingSpeed_6: Sets the writing speed for cloud volumes ontap",
+          "title": "modifyWritingSpeed_6: Sets the writing speed for Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-writing-speed.html",
           "subcategory": null
@@ -5715,7 +5715,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/license-instance-type": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all license types and their associated instance types for a given cloud volumes ontap instance",
+          "title": "Retrieve all license types and their associated instance types for a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-license-instance-type.html",
           "subcategory": null
@@ -5723,7 +5723,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Sets the instance type of a specific cloud volumes ontap",
+          "title": "Sets the instance type of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-license-instance-type.html",
           "subcategory": null
@@ -5733,7 +5733,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/ontap-available-images": {
       "get": {
         "x-doc": {
-          "title": "Retrieve images already installed on the cloud volumes ontap",
+          "title": "Retrieve images already installed on the Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-ontap-available-images.html",
           "subcategory": null
@@ -5743,7 +5743,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/update-image": {
       "post": {
         "x-doc": {
-          "title": "Performs a complete image update operation on the single node of the specified cloud volumes ontap",
+          "title": "Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-update-image.html",
           "subcategory": null
@@ -5753,7 +5753,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/update-eligibility": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the eligibility support status of a cloud volumes ontap system valid values are nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, and license_expired",
+          "title": "Retrieve the eligibility support status of a Cloud Volumes ONTAP system valid values are nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, and license_expired",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-update-eligibility.html",
           "subcategory": null
@@ -5763,7 +5763,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/upload-license-file": {
       "post": {
         "x-doc": {
-          "title": "Uploads a cloud license file on the provided cloud volumes ontap",
+          "title": "Uploads a cloud license file on the provided Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-upload-license-file.html",
           "subcategory": null
@@ -5773,7 +5773,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/upload-licenses": {
       "post": {
         "x-doc": {
-          "title": "Uploads cloud license file content on the provided cloud volumes ontap",
+          "title": "Uploads cloud license file content on the provided Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-upload-licenses.html",
           "subcategory": null
@@ -5793,7 +5793,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "Modify the net port broadcast domain mtu of the cloud volumes ontap",
+          "title": "Modify the net port broadcast domain mtu of the Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-networkoptimization.html",
           "subcategory": null
@@ -5803,7 +5803,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/create-request-parameters": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the action parameters used in a create request of a given cloud volumes ontap instance",
+          "title": "Retrieve the action parameters used in a create request of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-create-request-parameters.html",
           "subcategory": null
@@ -5823,7 +5823,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a list of versions to which this cloud volumes ontap can be upgraded to",
+          "title": "Retrieve a list of versions to which this Cloud Volumes ONTAP can be upgraded to",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
@@ -5833,7 +5833,7 @@
     "/vsa/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "Manually triggers a subscription sync for all cloud volumes ontap systems",
+          "title": "Manually triggers a subscription sync for all Cloud Volumes ONTAP systems",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-sync-subscription.html",
           "subcategory": null
@@ -5863,7 +5863,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/extra-capacity-licenses": {
       "get": {
         "x-doc": {
-          "title": "getExtraCapacityLicenses_6: Retrieve extra capacity licenses for cloud volumes ontap",
+          "title": "getExtraCapacityLicenses_6: Retrieve extra capacity licenses for Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
@@ -5915,7 +5915,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/vscan-file-op": {
       "put": {
         "x-doc": {
-          "title": "Update the default vscan file operation profile profiles on existing cifs shares only change for writes-only mode",
+          "title": "Update the default vscan file operation profile profiles on existing CIFS shares only change for writes-only mode",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-vscan-file-op.html",
           "subcategory": null
@@ -5925,7 +5925,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "Update the cloud manager password of a specific cloud volumes ontap",
+          "title": "Update the cloud manager password of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-update-credentials.html",
           "subcategory": null
@@ -5945,7 +5945,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/byol-to-capacity": {
       "put": {
         "x-doc": {
-          "title": "Update the byol licence to a capacity-based license for an existing cloud volumes ontap system",
+          "title": "Update the byol licence to a capacity-based license for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
@@ -5955,7 +5955,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/enable-worm": {
       "put": {
         "x-doc": {
-          "title": "enableWorm_6: Enables snaplock for an existing cloud volumes ontap system",
+          "title": "enableWorm_6: Enables snaplock for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-enable-worm.html",
           "subcategory": null
@@ -5975,7 +5975,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/start": {
       "post": {
         "x-doc": {
-          "title": "startVsa_6: Starts a specific cloud volumes ontap instance",
+          "title": "startVsa_6: Starts a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-start.html",
           "subcategory": null
@@ -5985,7 +5985,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/stop": {
       "post": {
         "x-doc": {
-          "title": "stopVsa_6: Stops a specific cloud volumes ontap instance",
+          "title": "stopVsa_6: Stops a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-stop.html",
           "subcategory": null
@@ -5995,7 +5995,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/support-registration": {
       "get": {
         "x-doc": {
-          "title": "status_7: Retrieve the support registration status of a cloud volumes ontap system",
+          "title": "status_7: Retrieve the support registration status of a Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-support-registration.html",
           "subcategory": null
@@ -6003,7 +6003,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "registerSupport_6: Registers a cloud volumes ontap system with netapp",
+          "title": "registerSupport_6: Registers a Cloud Volumes ONTAP system with NetApp",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-support-registration.html",
           "subcategory": null
@@ -6013,7 +6013,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/schedules": {
       "get": {
         "x-doc": {
-          "title": "Lists the start-stop schedules for cloud volumes ontap",
+          "title": "Lists the start-stop schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-schedules.html",
           "subcategory": null
@@ -6021,7 +6021,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "setSchedules_6: Sets the schedules for cloud volumes ontap",
+          "title": "setSchedules_6: Sets the schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-schedules.html",
           "subcategory": null
@@ -6031,7 +6031,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/svm": {
       "put": {
         "x-doc": {
-          "title": "Modify the svm name of the cloud volumes ontap",
+          "title": "Modify the svm name of the Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-svm.html",
           "subcategory": null
@@ -6081,7 +6081,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/user-tags": {
       "get": {
         "x-doc": {
-          "title": "Retrieve editable tags for the cloud resources of a given cloud volumes ontap instance",
+          "title": "Retrieve editable tags for the cloud resources of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "get-vsa-working-environments-user-tags.html",
           "subcategory": null
@@ -6089,7 +6089,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Modify user tags for the cloud resources of a given cloud volumes ontap instance",
+          "title": "Modify user tags for the cloud resources of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-user-tags.html",
           "subcategory": null
@@ -6119,7 +6119,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/change-serial": {
       "post": {
         "x-doc": {
-          "title": "Update the serial number of cloud volumes ontap",
+          "title": "Update the serial number of Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "post-vsa-working-environments-change-serial.html",
           "subcategory": null
@@ -6129,7 +6129,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/set-password": {
       "put": {
         "x-doc": {
-          "title": "Sets the cluster password of a specific cloud volumes ontap",
+          "title": "Sets the cluster password of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud aws working environment operations - working environments",
           "filename": "put-vsa-working-environments-set-password.html",
           "subcategory": null
@@ -6139,7 +6139,7 @@
     "/azure/vsa/working-environments": {
       "get": {
         "x-doc": {
-          "title": "Retrieve cloud volumes ontap systems visible to the currently logged in user",
+          "title": "Retrieve Cloud Volumes ONTAP systems visible to the currently logged in user",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments.html",
           "subcategory": null
@@ -6147,7 +6147,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new cloud volumes ontap system",
+          "title": "Create a new Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments.html",
           "subcategory": null
@@ -6167,7 +6167,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/svm": {
       "put": {
         "x-doc": {
-          "title": "changeSvmName_4: Modify the svm name of the cloud volumes ontap",
+          "title": "changeSvmName_4: Modify the svm name of the Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-svm.html",
           "subcategory": null
@@ -6205,7 +6205,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/available-ips-in-subnet": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the number of available ip addresses in the cloud volumes ontap system's subnet",
+          "title": "Retrieve the number of available ip addresses in the Cloud Volumes ONTAP system's subnet",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-available-ips-in-subnet.html",
           "subcategory": null
@@ -6235,7 +6235,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "workingEnvironment_5: Retrieve a cloud volumes ontap system",
+          "title": "workingEnvironment_5: Retrieve a Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-.html",
           "subcategory": null
@@ -6243,7 +6243,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "deleteVsaWorkingEnvironment_4: Delete an existing cloud volumes ontap system, including all cloud resources created for this system (unless the localdelete flag is set to true)",
+          "title": "deleteVsaWorkingEnvironment_4: Delete an existing Cloud Volumes ONTAP system, including all cloud resources created for this system (unless the localdelete flag is set to true)",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "delete-azure-vsa-working-environments-.html",
           "subcategory": null
@@ -6253,7 +6253,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "x-doc": {
-          "title": "Delete a cifs configuration of an existing cloud volumes ontapsystem",
+          "title": "Delete a CIFS configuration of an existing Cloud Volumes ONTAPsystem",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-delete-cifs.html",
           "subcategory": null
@@ -6263,7 +6263,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "cifsConfiguration_6: Retrieve a cifs configuration for an existing cloud volumes ontap system",
+          "title": "cifsConfiguration_6: Retrieve a CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-cifs.html",
           "subcategory": null
@@ -6271,7 +6271,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Sets up a new cifs configuration for an existing cloud volumes ontap system",
+          "title": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-cifs.html",
           "subcategory": null
@@ -6281,7 +6281,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/validate-byol-to-capacity": {
       "get": {
         "x-doc": {
-          "title": "preValidateByolToCapacity_4: Confirms the pre-requisites for converting an existing cloud volumes ontap system",
+          "title": "preValidateByolToCapacity_4: Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
@@ -6291,7 +6291,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/writing-speed": {
       "put": {
         "x-doc": {
-          "title": "modifyWritingSpeed_4: Sets the writing speed for cloud volumes ontap",
+          "title": "modifyWritingSpeed_4: Sets the writing speed for Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-writing-speed.html",
           "subcategory": null
@@ -6301,7 +6301,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/license-instance-type": {
       "get": {
         "x-doc": {
-          "title": "licenseAndInstanceTypes_4: Retrieve all license types and their associated instance types for a given cloud volumes ontap instance",
+          "title": "licenseAndInstanceTypes_4: Retrieve all license types and their associated instance types for a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-license-instance-type.html",
           "subcategory": null
@@ -6309,7 +6309,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "changeLicenseAndInstanceType_4: Sets the instance type of a specific cloud volumes ontap",
+          "title": "changeLicenseAndInstanceType_4: Sets the instance type of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-license-instance-type.html",
           "subcategory": null
@@ -6319,7 +6319,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/ontap-available-images": {
       "get": {
         "x-doc": {
-          "title": "ontapAvailableImages_4: Retrieve images already installed on the cloud volumes ontap",
+          "title": "ontapAvailableImages_4: Retrieve images already installed on the Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-ontap-available-images.html",
           "subcategory": null
@@ -6329,7 +6329,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/update-image": {
       "post": {
         "x-doc": {
-          "title": "updateSystemImage_4: Performs a complete image update operation on the single node of the specified cloud volumes ontap",
+          "title": "updateSystemImage_4: Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-update-image.html",
           "subcategory": null
@@ -6339,7 +6339,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/update-eligibility": {
       "get": {
         "x-doc": {
-          "title": "occmUpgradeEligibilityChecks_4: Retrieve the eligibility support status of a cloud volumes ontap system valid values are nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, and license_expired",
+          "title": "occmUpgradeEligibilityChecks_4: Retrieve the eligibility support status of a Cloud Volumes ONTAP system valid values are nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, and license_expired",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-update-eligibility.html",
           "subcategory": null
@@ -6349,7 +6349,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/upload-license-file": {
       "post": {
         "x-doc": {
-          "title": "Uploads a cloud license file to the provided cloud volumes ontap",
+          "title": "Uploads a cloud license file to the provided Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-upload-license-file.html",
           "subcategory": null
@@ -6359,7 +6359,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/upload-licenses": {
       "post": {
         "x-doc": {
-          "title": "Uploads a cloud license file content to the provided cloud volumes ontap",
+          "title": "Uploads a cloud license file content to the provided Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-upload-licenses.html",
           "subcategory": null
@@ -6379,7 +6379,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "changeNetworkOptimizationLevel_4: Modify the net port broadcast domain mtu of the cloud volumes ontap",
+          "title": "changeNetworkOptimizationLevel_4: Modify the net port broadcast domain mtu of the Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-networkoptimization.html",
           "subcategory": null
@@ -6389,7 +6389,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/create-request-parameters": {
       "get": {
         "x-doc": {
-          "title": "createRequestParameters_4: Retrieve the action parameters used in a create request of a given cloud volumes ontap instance",
+          "title": "createRequestParameters_4: Retrieve the action parameters used in a create request of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-create-request-parameters.html",
           "subcategory": null
@@ -6409,7 +6409,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions": {
       "get": {
         "x-doc": {
-          "title": "occmProvidedCloudOntapUpgradeVersions_4: Retrieve a list of versions to which this cloud volumes ontap can be upgraded to",
+          "title": "occmProvidedCloudOntapUpgradeVersions_4: Retrieve a list of versions to which this Cloud Volumes ONTAP can be upgraded to",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
@@ -6419,7 +6419,7 @@
     "/azure/vsa/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "syncVsaWorkingEnvironmentsSubscription_4: Manually triggers a subscription sync for all cloud volumes ontap systems",
+          "title": "syncVsaWorkingEnvironmentsSubscription_4: Manually triggers a subscription sync for all Cloud Volumes ONTAP systems",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-sync-subscription.html",
           "subcategory": null
@@ -6449,7 +6449,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/extra-capacity-licenses": {
       "get": {
         "x-doc": {
-          "title": "getExtraCapacityLicenses_4: Retrieve extra capacity licenses for cloud volumes ontap",
+          "title": "getExtraCapacityLicenses_4: Retrieve extra capacity licenses for Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
@@ -6501,7 +6501,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/vscan-file-op": {
       "put": {
         "x-doc": {
-          "title": "Update the default vsacn file operation profile profiles on existing cifs shares only change for writes-only mode",
+          "title": "Update the default vsacn file operation profile profiles on existing CIFS shares only change for writes-only mode",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-vscan-file-op.html",
           "subcategory": null
@@ -6511,7 +6511,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "updatePassword_5: Update the cloud manager password of a specific cloud volumes ontap",
+          "title": "updatePassword_5: Update the cloud manager password of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-update-credentials.html",
           "subcategory": null
@@ -6531,7 +6531,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/byol-to-capacity": {
       "put": {
         "x-doc": {
-          "title": "byolToCapacity_4: Update the byol licence to a capacity-based license for an existing cloud volumes ontap system",
+          "title": "byolToCapacity_4: Update the byol licence to a capacity-based license for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
@@ -6541,7 +6541,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/enable-worm": {
       "put": {
         "x-doc": {
-          "title": "enableWorm_4: Enables snaplock for an existing cloud volumes ontap system",
+          "title": "enableWorm_4: Enables snaplock for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-enable-worm.html",
           "subcategory": null
@@ -6561,7 +6561,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/start": {
       "post": {
         "x-doc": {
-          "title": "startVsa_4: Starts a specific cloud volumes ontap instance",
+          "title": "startVsa_4: Starts a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-start.html",
           "subcategory": null
@@ -6571,7 +6571,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/stop": {
       "post": {
         "x-doc": {
-          "title": "stopVsa_4: Stops a specific cloud volumes ontap instance",
+          "title": "stopVsa_4: Stops a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-stop.html",
           "subcategory": null
@@ -6581,7 +6581,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/support-registration": {
       "get": {
         "x-doc": {
-          "title": "status_5: Retrieve the support registration status of a cloud volumes ontap system",
+          "title": "status_5: Retrieve the support registration status of a Cloud Volumes ONTAP system",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-support-registration.html",
           "subcategory": null
@@ -6589,7 +6589,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "registerSupport_4: Registers a cloud volumes ontap system with netapp",
+          "title": "registerSupport_4: Registers a Cloud Volumes ONTAP system with NetApp",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-support-registration.html",
           "subcategory": null
@@ -6599,7 +6599,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/schedules": {
       "get": {
         "x-doc": {
-          "title": "getSchedules_4: Lists the start-stop schedules for cloud volumes ontap",
+          "title": "getSchedules_4: Lists the start-stop schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-schedules.html",
           "subcategory": null
@@ -6607,7 +6607,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "setSchedules_4: Sets the schedules for cloud volumes ontap",
+          "title": "setSchedules_4: Sets the schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-schedules.html",
           "subcategory": null
@@ -6657,7 +6657,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/user-tags": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the editable tags for the cloud resources of a given cloud volumes ontap instance",
+          "title": "Retrieve the editable tags for the cloud resources of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "get-azure-vsa-working-environments-user-tags.html",
           "subcategory": null
@@ -6665,7 +6665,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Modify the user tags for the cloud resources of a given cloud volumes ontap instance",
+          "title": "Modify the user tags for the cloud resources of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-user-tags.html",
           "subcategory": null
@@ -6695,7 +6695,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/change-serial": {
       "post": {
         "x-doc": {
-          "title": "changeSerialNumber_4: Update the serial number of cloud volumes ontap",
+          "title": "changeSerialNumber_4: Update the serial number of Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "post-azure-vsa-working-environments-change-serial.html",
           "subcategory": null
@@ -6705,7 +6705,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/set-password": {
       "put": {
         "x-doc": {
-          "title": "setPassword_4: Sets the cluster password of a specific cloud volumes ontap",
+          "title": "setPassword_4: Sets the cluster password of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud Azure working environment operations - working environments",
           "filename": "put-azure-vsa-working-environments-set-password.html",
           "subcategory": null
@@ -6715,7 +6715,7 @@
     "/gcp/vsa/working-environments": {
       "get": {
         "x-doc": {
-          "title": "workingEnvironments_6: Retrieve cloud volumes ontap systems visible to the currently logged in user",
+          "title": "workingEnvironments_6: Retrieve Cloud Volumes ONTAP systems visible to the currently logged in user",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments.html",
           "subcategory": null
@@ -6723,7 +6723,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "createVsaWorkingEnvironment_2: Create a new cloud volumes ontap system",
+          "title": "createVsaWorkingEnvironment_2: Create a new Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments.html",
           "subcategory": null
@@ -6743,7 +6743,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/svm": {
       "put": {
         "x-doc": {
-          "title": "changeSvmName_5: Modify the svm name of the cloud volumes ontap",
+          "title": "changeSvmName_5: Modify the svm name of the Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-svm.html",
           "subcategory": null
@@ -6761,7 +6761,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "workingEnvironment_6: Retrieve a cloud volumes ontap system",
+          "title": "workingEnvironment_6: Retrieve a Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-.html",
           "subcategory": null
@@ -6769,7 +6769,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete an existing cloud volumes ontap system, including all cloud resources created for this working environment (unless the localdelete flag is set to true)",
+          "title": "Delete an existing Cloud Volumes ONTAP system, including all cloud resources created for this working environment (unless the localdelete flag is set to true)",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "delete-gcp-vsa-working-environments-.html",
           "subcategory": null
@@ -6779,7 +6779,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "x-doc": {
-          "title": "setupCifsConfiguration_11: Delete a cifs configuration of an existing cloud volumes ontap system",
+          "title": "setupCifsConfiguration_11: Delete a CIFS configuration of an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-delete-cifs.html",
           "subcategory": null
@@ -6789,7 +6789,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "cifsConfiguration_7: Retrieve a cifs configuration of an existing cloud volumes ontap system",
+          "title": "cifsConfiguration_7: Retrieve a CIFS configuration of an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-cifs.html",
           "subcategory": null
@@ -6797,7 +6797,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Sets up a new cifs configuration of an existing cloud volumes ontap system",
+          "title": "Sets up a new CIFS configuration of an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-cifs.html",
           "subcategory": null
@@ -6807,7 +6807,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/validate-byol-to-capacity": {
       "get": {
         "x-doc": {
-          "title": "preValidateByolToCapacity_5: Confirms the pre-requisites for converting an existing cloud volumes ontap system",
+          "title": "preValidateByolToCapacity_5: Confirms the pre-requisites for converting an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
@@ -6817,7 +6817,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/writing-speed": {
       "put": {
         "x-doc": {
-          "title": "modifyWritingSpeed_5: Sets the writing speed for cloud volumes ontap",
+          "title": "modifyWritingSpeed_5: Sets the writing speed for Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-writing-speed.html",
           "subcategory": null
@@ -6827,7 +6827,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/license-instance-type": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all of the license types and their associated instance types for a given cloud volumes ontap instance",
+          "title": "Retrieve all of the license types and their associated instance types for a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-license-instance-type.html",
           "subcategory": null
@@ -6835,7 +6835,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "changeLicenseAndInstanceType_5: Sets the instance type of a specific cloud volumes ontap",
+          "title": "changeLicenseAndInstanceType_5: Sets the instance type of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-license-instance-type.html",
           "subcategory": null
@@ -6845,7 +6845,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/ontap-available-images": {
       "get": {
         "x-doc": {
-          "title": "ontapAvailableImages_5: Retrieve images already installed on the cloud volumes ontap",
+          "title": "ontapAvailableImages_5: Retrieve images already installed on the Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-ontap-available-images.html",
           "subcategory": null
@@ -6855,7 +6855,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/update-image": {
       "post": {
         "x-doc": {
-          "title": "updateSystemImage_5: Performs a complete image update operation on the single node of the specified cloud volumes ontap",
+          "title": "updateSystemImage_5: Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-update-image.html",
           "subcategory": null
@@ -6865,7 +6865,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/update-eligibility": {
       "get": {
         "x-doc": {
-          "title": "occmUpgradeEligibilityChecks_5: Retrieve the eligibility support status of a cloud volumes ontap system valid values are nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, and license_expired",
+          "title": "occmUpgradeEligibilityChecks_5: Retrieve the eligibility support status of a Cloud Volumes ONTAP system valid values are nss_not_valid, not_registered, ipa_problem, valid, nss_not_exists, and license_expired",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-update-eligibility.html",
           "subcategory": null
@@ -6875,7 +6875,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/upload-license-file": {
       "post": {
         "x-doc": {
-          "title": "uploadLicenseFile_5: Uploads a cloud license file on the provided cloud volumes ontap",
+          "title": "uploadLicenseFile_5: Uploads a cloud license file on the provided Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-upload-license-file.html",
           "subcategory": null
@@ -6885,7 +6885,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/upload-licenses": {
       "post": {
         "x-doc": {
-          "title": "uploadLicenseFileContent_5: Uploads cloud license file content on the provided cloud volumes ontap",
+          "title": "uploadLicenseFileContent_5: Uploads cloud license file content on the provided Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-upload-licenses.html",
           "subcategory": null
@@ -6905,7 +6905,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "changeNetworkOptimizationLevel_5: Modify the net port broadcast domain mtu of the cloud volumes ontap",
+          "title": "changeNetworkOptimizationLevel_5: Modify the net port broadcast domain mtu of the Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-networkoptimization.html",
           "subcategory": null
@@ -6915,7 +6915,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/create-request-parameters": {
       "get": {
         "x-doc": {
-          "title": "createRequestParameters_5: Retrieve the action parameters used in a create request of a given cloud volumes ontap instance",
+          "title": "createRequestParameters_5: Retrieve the action parameters used in a create request of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-create-request-parameters.html",
           "subcategory": null
@@ -6935,7 +6935,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions": {
       "get": {
         "x-doc": {
-          "title": "occmProvidedCloudOntapUpgradeVersions_5: Retrieve a list of versions to which this cloud volumes ontap can be upgraded to",
+          "title": "occmProvidedCloudOntapUpgradeVersions_5: Retrieve a list of versions to which this Cloud Volumes ONTAP can be upgraded to",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
@@ -6945,7 +6945,7 @@
     "/gcp/vsa/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "syncVsaWorkingEnvironmentsSubscription_5: Manually triggers a subscription sync for all cloud volumes ontap systems",
+          "title": "syncVsaWorkingEnvironmentsSubscription_5: Manually triggers a subscription sync for all Cloud Volumes ONTAP systems",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-sync-subscription.html",
           "subcategory": null
@@ -6975,7 +6975,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/extra-capacity-licenses": {
       "get": {
         "x-doc": {
-          "title": "getExtraCapacityLicenses_5: Retrieve extra capacity licenses for cloud volumes ontap",
+          "title": "getExtraCapacityLicenses_5: Retrieve extra capacity licenses for Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
@@ -7027,7 +7027,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/vscan-file-op": {
       "put": {
         "x-doc": {
-          "title": "Update the default vscan file operation profile profiles on existing cifs shares only change on writes-only mode",
+          "title": "Update the default vscan file operation profile profiles on existing CIFS shares only change on writes-only mode",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-vscan-file-op.html",
           "subcategory": null
@@ -7037,7 +7037,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "updatePassword_6: Update the cloud manager password of a specific cloud volumes ontap",
+          "title": "updatePassword_6: Update the cloud manager password of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-update-credentials.html",
           "subcategory": null
@@ -7057,7 +7057,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/byol-to-capacity": {
       "put": {
         "x-doc": {
-          "title": "Update a byol licence to a capacity-based license for an existing cloud volumes ontap system",
+          "title": "Update a byol licence to a capacity-based license for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
@@ -7067,7 +7067,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/enable-worm": {
       "put": {
         "x-doc": {
-          "title": "enableWorm_5: Enables snaplock for an existing cloud volumes ontap system",
+          "title": "enableWorm_5: Enables snaplock for an existing Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-enable-worm.html",
           "subcategory": null
@@ -7087,7 +7087,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/start": {
       "post": {
         "x-doc": {
-          "title": "startVsa_5: Starts a specific cloud volumes ontap instance",
+          "title": "startVsa_5: Starts a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-start.html",
           "subcategory": null
@@ -7097,7 +7097,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/stop": {
       "post": {
         "x-doc": {
-          "title": "stopVsa_5: Stops a specific cloud volumes ontap instance",
+          "title": "stopVsa_5: Stops a specific Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-stop.html",
           "subcategory": null
@@ -7107,7 +7107,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/support-registration": {
       "get": {
         "x-doc": {
-          "title": "status_6: Retrieve the support registration status of a cloud volumes ontap system",
+          "title": "status_6: Retrieve the support registration status of a Cloud Volumes ONTAP system",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-support-registration.html",
           "subcategory": null
@@ -7115,7 +7115,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "registerSupport_5: Registers a cloud volumes ontap system with netapp",
+          "title": "registerSupport_5: Registers a Cloud Volumes ONTAP system with NetApp",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-support-registration.html",
           "subcategory": null
@@ -7125,7 +7125,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/schedules": {
       "get": {
         "x-doc": {
-          "title": "getSchedules_5: Lists the start-stop schedules for cloud volumes ontap",
+          "title": "getSchedules_5: Lists the start-stop schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-schedules.html",
           "subcategory": null
@@ -7133,7 +7133,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "setSchedules_5: Sets the schedules for cloud volumes ontap",
+          "title": "setSchedules_5: Sets the schedules for Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-schedules.html",
           "subcategory": null
@@ -7183,7 +7183,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/user-tags": {
       "get": {
         "x-doc": {
-          "title": "userTags_5: Retrieve the editable tags for the cloud resources of a given cloud volumes ontap instance",
+          "title": "userTags_5: Retrieve the editable tags for the cloud resources of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "get-gcp-vsa-working-environments-user-tags.html",
           "subcategory": null
@@ -7191,7 +7191,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "modifyUserTags_5: Modify the user tags for the cloud resources of a given cloud volumes ontap instance",
+          "title": "modifyUserTags_5: Modify the user tags for the cloud resources of a given Cloud Volumes ONTAP instance",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-user-tags.html",
           "subcategory": null
@@ -7221,7 +7221,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/change-serial": {
       "post": {
         "x-doc": {
-          "title": "changeSerialNumber_5: Update the serial number of cloud volumes ontap",
+          "title": "changeSerialNumber_5: Update the serial number of Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "post-gcp-vsa-working-environments-change-serial.html",
           "subcategory": null
@@ -7231,7 +7231,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/set-password": {
       "put": {
         "x-doc": {
-          "title": "setPassword_5: Sets the cluster password of a specific cloud volumes ontap",
+          "title": "setPassword_5: Sets the cluster password of a specific Cloud Volumes ONTAP",
           "category": "Ontap cloud gcp working environment operations - working environments",
           "filename": "put-gcp-vsa-working-environments-set-password.html",
           "subcategory": null
@@ -7299,7 +7299,7 @@
     "/vsa/recover": {
       "post": {
         "x-doc": {
-          "title": "recover_3: Saves a previously discovered cloud volumes ontap system to the cloud manager database",
+          "title": "recover_3: Saves a previously discovered Cloud Volumes ONTAP system to the cloud manager database",
           "category": "Ontap cloud aws working environment operations - discovery",
           "filename": "post-vsa-recover.html",
           "subcategory": null
@@ -7309,7 +7309,7 @@
     "/vsa/encryption/{workingEnvironmentId}/update-key-manager-ca-certificate": {
       "post": {
         "x-doc": {
-          "title": "Update the key manager ca certificate on the cloud volumes ontap system",
+          "title": "Update the key manager ca certificate on the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - encryption",
           "filename": "post-vsa-encryption-update-key-manager-ca-certificate.html",
           "subcategory": null
@@ -7319,7 +7319,7 @@
     "/vsa/encryption/{workingEnvironmentId}/update-client-certificate": {
       "post": {
         "x-doc": {
-          "title": "updateClientCertificate_1: Update the client certificate on the cloud volumes ontap system",
+          "title": "updateClientCertificate_1: Update the client certificate on the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - encryption",
           "filename": "post-vsa-encryption-update-client-certificate.html",
           "subcategory": null
@@ -7329,7 +7329,7 @@
     "/vsa/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}": {
       "post": {
         "x-doc": {
-          "title": "addKeyManagerToVsa_1: Add a key manager to the cloud volumes ontap system",
+          "title": "addKeyManagerToVsa_1: Add a key manager to the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - encryption",
           "filename": "post-vsa-encryption-key-managers-.html",
           "subcategory": null
@@ -7337,7 +7337,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "deleteKeyManagerFromVsa_1: Delete a key manager from the cloud volumes ontap system",
+          "title": "deleteKeyManagerFromVsa_1: Delete a key manager from the Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - encryption",
           "filename": "delete-vsa-encryption-key-managers-.html",
           "subcategory": null
@@ -7347,7 +7347,7 @@
     "/vsa/metadata/permutations": {
       "get": {
         "x-doc": {
-          "title": "permutations_5: Retrieve all cloud volumes ontap configurations",
+          "title": "permutations_5: Retrieve all Cloud Volumes ONTAP configurations",
           "category": "Ontap cloud aws working environment operations - metadata",
           "filename": "get-vsa-metadata-permutations.html",
           "subcategory": null
@@ -7357,7 +7357,7 @@
     "/vsa/metadata/manifests": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all cloud manager manifests refer to the api developers guide in order to understand how to extract valid region codes, license types, instance types, and cloud volumes ontap version parameters for the creation of a cloud volumes ontap system",
+          "title": "Retrieve all cloud manager manifests refer to the api developers guide in order to understand how to extract valid region codes, license types, instance types, and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP system",
           "category": "Ontap cloud aws working environment operations - metadata",
           "filename": "get-vsa-metadata-manifests.html",
           "subcategory": null
@@ -7417,7 +7417,7 @@
     "/vsa/metadata/network-requirements": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the minimum number of required ips for a single cloud volumes ontap system, an ha node, and a ha mediator",
+          "title": "Retrieve the minimum number of required ips for a single Cloud Volumes ONTAP system, an ha node, and a ha mediator",
           "category": "Ontap cloud aws working environment operations - metadata",
           "filename": "get-vsa-metadata-network-requirements.html",
           "subcategory": null
@@ -7437,7 +7437,7 @@
     "/vsa/metadata/validate-subscribed-to-ontap-cloud": {
       "post": {
         "x-doc": {
-          "title": "Comfirms that the current user is subscribed to the cloud volumes ontap product in the amazon marketplace",
+          "title": "Comfirms that the current user is subscribed to the Cloud Volumes ONTAP product in the amazon marketplace",
           "category": "Ontap cloud aws working environment operations - metadata",
           "filename": "post-vsa-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
@@ -7517,7 +7517,7 @@
     "/vsa/metadata/regions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve amazon web services regions over which a cloud volumes ontap system is created",
+          "title": "Retrieve amazon web services regions over which a Cloud Volumes ONTAP system is created",
           "category": "Ontap cloud aws working environment operations - metadata",
           "filename": "get-vsa-metadata-regions.html",
           "subcategory": null
@@ -7719,7 +7719,7 @@
     "/vsa/working-environments": {
       "get": {
         "x-doc": {
-          "title": "workingEnvironments_7: Retrieve cloud volumes ontap systems visible to the currently logged in user",
+          "title": "workingEnvironments_7: Retrieve Cloud Volumes ONTAP systems visible to the currently logged in user",
           "category": "Ontap cloud aws working environment operations - systems",
           "filename": "get-vsa-working-environments.html",
           "subcategory": null
@@ -7727,7 +7727,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new cloud volumes ontap system refer to the api developers guide in order to understand how to populate the values for region, licensetype, instancetype, and version",
+          "title": "Create a new Cloud Volumes ONTAP system refer to the api developers guide in order to understand how to populate the values for region, licensetype, instancetype, and version",
           "category": "Ontap cloud aws working environment operations - systems",
           "filename": "post-vsa-working-environments.html",
           "subcategory": null
