@@ -3005,7 +3005,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "Modify the network port broadcast domain mtu",
+          "title": "Modify the network port broadcast domain MTU",
           "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-networkoptimization.html",
           "subcategory": null
@@ -3177,7 +3177,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/ntp": {
       "post": {
         "x-doc": {
-          "title": "Create an NTP server",
+          "title": "Set up an NTP server",
           "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-ntp.html",
           "subcategory": null
@@ -3331,7 +3331,7 @@
     "/aws/ha/aggregates/{workingEnvironmentId}/{aggregateName}/add-capacity": {
       "post": {
         "x-doc": {
-          "title": "Add capacity to an existing elastic volume aggregate",
+          "title": "Add capacity to an elastic volume aggregate",
           "category": "AWS HA aggregates",
           "filename": "post-aws-ha-aggregates--add-capacity.html",
           "subcategory": null
@@ -3359,7 +3359,7 @@
     "/aws/ha/aggregates/{workingEnvironmentId}/{aggregateName}": {
       "delete": {
         "x-doc": {
-          "title": "Delete an existing aggregate",
+          "title": "Delete an aggregate",
           "category": "AWS HA aggregates",
           "filename": "delete-aws-ha-aggregates-.html",
           "subcategory": null
@@ -3437,7 +3437,7 @@
     "/aws/ha/metadata/validate-floating-ips": {
       "post": {
         "x-doc": {
-          "title": "Validate high availability (ha) floating IP addresses",
+          "title": "Validate high availability (HA) floating IP addresses",
           "category": "AWS HA system metadata",
           "filename": "post-aws-ha-metadata-validate-floating-ips.html",
           "subcategory": null
@@ -3447,7 +3447,7 @@
     "/aws/ha/metadata/route-tables": {
       "get": {
         "x-doc": {
-          "title": "Retrieve route tables per vpc and their subnet associations",
+          "title": "Retrieve route tables per VPC and their subnet associations",
           "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-route-tables.html",
           "subcategory": null
@@ -3517,7 +3517,7 @@
     "/aws/ha/metadata/s3-summary": {
       "get": {
         "x-doc": {
-          "title": "Retrieve s3 buckets summary",
+          "title": "Retrieve S3 buckets summary",
           "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-s3-summary.html",
           "subcategory": null
@@ -3537,7 +3537,7 @@
     "/aws/ha/metadata/aws-encryption-keys": {
       "get": {
         "x-doc": {
-          "title": "Retrieve AWS encryption keys for by region",
+          "title": "Retrieve AWS encryption keys by region",
           "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-aws-encryption-keys.html",
           "subcategory": null
@@ -3547,7 +3547,7 @@
     "/aws/ha/metadata/validate-subscribed-to-ontap-cloud": {
       "post": {
         "x-doc": {
-          "title": "Confirm subscription of the current user",
+          "title": "Confirm the current user subscription",
           "category": "AWS HA system metadata",
           "filename": "post-aws-ha-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
@@ -3557,7 +3557,7 @@
     "/aws/ha/metadata/get-buckets-details": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all s3 buckets with additional information",
+          "title": "Retrieve all S3 buckets with additional information",
           "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-get-buckets-details.html",
           "subcategory": null
@@ -3567,7 +3567,7 @@
     "/aws/ha/metadata/get-buckets-application-info": {
       "post": {
         "x-doc": {
-          "title": "Retrieve the s3 buckets policy status and tiering level",
+          "title": "Retrieve the S3 buckets policy status and tiering level",
           "category": "AWS HA system metadata",
           "filename": "post-aws-ha-metadata-get-buckets-application-info.html",
           "subcategory": null
@@ -3577,7 +3577,7 @@
     "/aws/ha/metadata/buckets": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all s3 buckets",
+          "title": "Retrieve all S3 buckets",
           "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-buckets.html",
           "subcategory": null
@@ -3587,7 +3587,7 @@
     "/aws/ha/metadata/supported-capacity-tiers": {
       "get": {
         "x-doc": {
-          "title": "Retrieve supported capacity tiers for ebs volume types",
+          "title": "Retrieve supported capacity tiers for EBS volume types",
           "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-supported-capacity-tiers.html",
           "subcategory": null
@@ -3597,7 +3597,7 @@
     "/aws/ha/metadata/create-bucket": {
       "post": {
         "x-doc": {
-          "title": "Create a new s3 bucket",
+          "title": "Create a new S3 bucket",
           "category": "AWS HA system metadata",
           "filename": "post-aws-ha-metadata-create-bucket.html",
           "subcategory": null
@@ -3607,7 +3607,7 @@
     "/aws/ha/metadata/ebs-volume-types": {
       "get": {
         "x-doc": {
-          "title": "Retrieve supported ebs volume types",
+          "title": "Retrieve supported EBS volume types",
           "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-ebs-volume-types.html",
           "subcategory": null
@@ -4021,7 +4021,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "Modify the network port broadcast domain mtu",
+          "title": "Modify the network port broadcast domain MTU",
           "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-networkoptimization.html",
           "subcategory": null
@@ -4193,7 +4193,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/ntp": {
       "post": {
         "x-doc": {
-          "title": "Create an NTP server",
+          "title": "Set up an NTP server",
           "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-ntp.html",
           "subcategory": null
@@ -4445,7 +4445,7 @@
     "/occm/key-store/user-trusted-certificates": {
       "get": {
         "x-doc": {
-          "title": "Return the existing trusted certificates added from the trust store",
+          "title": "Return the existing trusted certificates from the trust store",
           "category": "NetApp Console key store",
           "filename": "get-occm-key-store-user-trusted-certificates.html",
           "subcategory": null
@@ -4505,7 +4505,7 @@
     "/occm/asup/download-signed": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the signed url for the NetApp Console support data",
+          "title": "Retrieve the signed URL for the NetApp Console support data",
           "category": "NetApp Console AutoSupport",
           "filename": "get-occm-asup-download-signed.html",
           "subcategory": null
@@ -4515,7 +4515,7 @@
     "/occm/asup": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the autosupport configuration",
+          "title": "Retrieve the AutoSupport configuration",
           "category": "NetApp Console AutoSupport",
           "filename": "get-occm-asup.html",
           "subcategory": null
@@ -4523,7 +4523,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Update the autosupport configuration",
+          "title": "Update the AutoSupport configuration",
           "category": "NetApp Console AutoSupport",
           "filename": "put-occm-asup.html",
           "subcategory": null
@@ -4533,7 +4533,7 @@
     "/occm/asup/download-ontap-cloud-asups": {
       "get": {
         "x-doc": {
-          "title": "Download a compressed file of all the autosupport files from all vsas",
+          "title": "Download a compressed file of all the AutoSupport files from all vsas",
           "category": "NetApp Console AutoSupport",
           "filename": "get-occm-asup-download-ontap-cloud-asups.html",
           "subcategory": null
@@ -4593,7 +4593,7 @@
     "/occm/config/simplicator/reset": {
       "post": {
         "x-doc": {
-          "title": "Reset to the default simplicator uri",
+          "title": "Reset to the default simplicator URI",
           "category": "NetApp Console configuration",
           "filename": "post-occm-config-simplicator-reset.html",
           "subcategory": null
@@ -4731,7 +4731,7 @@
     "/occm/system/update": {
       "post": {
         "x-doc": {
-          "title": "Update the NetApp Console to the specified version",
+          "title": "Update the NetApp Console",
           "category": "NetApp Console ",
           "filename": "post-occm-system-update.html",
           "subcategory": null
@@ -4741,7 +4741,7 @@
     "/occm/system/occm-instance-placement": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the region, vpc, and subnet",
+          "title": "Retrieve the region, VPC, and subnet",
           "category": "NetApp Console ",
           "filename": "get-occm-system-occm-instance-placement.html",
           "subcategory": null
@@ -4801,7 +4801,7 @@
     "/onprem/metadata/cluster-info": {
       "get": {
         "x-doc": {
-          "title": "Verify the address and credentials of the specified cluster",
+          "title": "Verify the address and credentials of a cluster",
           "category": "On-premises ONTAP cluster metadata",
           "filename": "get-onprem-metadata-cluster-info.html",
           "subcategory": null
@@ -4981,7 +4981,7 @@
     "/onprem/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "Modify the cloud manager password",
+          "title": "Modify the NetApp Console password",
           "category": "On-premises ONTAP cluster systems",
           "filename": "put-onprem-working-environments-update-credentials.html",
           "subcategory": null
@@ -4991,7 +4991,7 @@
     "/onprem/working-environments/{workingEnvironmentId}/cifs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a CIFS configuration for an existing system",
+          "title": "Retrieve a CIFS configuration for a system",
           "category": "On-premises ONTAP cluster systems",
           "filename": "get-onprem-working-environments-cifs.html",
           "subcategory": null
@@ -5001,7 +5001,7 @@
     "/replication/metadata/snapmirror-svm-policies/{sourceWorkingEnvironmentId}/{svmName}/{targetWorkingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve snapmirror policies",
+          "title": "Retrieve SnapMirror policies",
           "category": "Replication metadata",
           "filename": "get-replication-metadata-snapmirror-svm-policies--.html",
           "subcategory": null
@@ -5011,7 +5011,7 @@
     "/replication/metadata/snapmirror-policies/{sourceWorkingEnvironmentId}/{targetWorkingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve snapmirror policies",
+          "title": "Retrieve SnapMirror policies",
           "category": "Replication metadata",
           "filename": "get-replication-metadata-snapmirror-policies-.html",
           "subcategory": null
@@ -5031,7 +5031,7 @@
     "/replication/break/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}": {
       "post": {
         "x-doc": {
-          "title": "Break a snapmirror replication relationship",
+          "title": "Break a SnapmMirror replication relationship",
           "category": "Replication",
           "filename": "post-replication-break--.html",
           "subcategory": null
@@ -5051,7 +5051,7 @@
     "/replication/fsx": {
       "post": {
         "x-doc": {
-          "title": "Create a new replication to an FSX system",
+          "title": "Create a new replication for an FSX system",
           "category": "Replication",
           "filename": "post-replication-fsx.html",
           "subcategory": null
@@ -5061,7 +5061,7 @@
     "/replication/onprem": {
       "post": {
         "x-doc": {
-          "title": "Create a new replication to an on-premises system",
+          "title": "Create a new replication for an on-premises system",
           "category": "Replication",
           "filename": "post-replication-onprem.html",
           "subcategory": null
@@ -5071,7 +5071,7 @@
     "/replication/vsa": {
       "post": {
         "x-doc": {
-          "title": "Create a new replication to an Cloud Volumes ONTAP system",
+          "title": "Create a new replication for a Cloud Volumes ONTAP system",
           "category": "Replication",
           "filename": "post-replication-vsa.html",
           "subcategory": null
@@ -5081,7 +5081,7 @@
     "/replication/resync/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}": {
       "post": {
         "x-doc": {
-          "title": "Resyncs a snapmirror replication relationship",
+          "title": "Resyncs a SnapMirror replication relationship",
           "category": "Replication",
           "filename": "post-replication-resync--.html",
           "subcategory": null
@@ -5171,7 +5171,7 @@
     "/replication/status/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve SnapMirror replication relationship statuses",
+          "title": "Retrieve SnapMirror replication relationship status",
           "category": "Replication",
           "filename": "get-replication-status-.html",
           "subcategory": null
@@ -5211,7 +5211,7 @@
     "/occm/setup/validate/proxy": {
       "post": {
         "x-doc": {
-          "title": "Validate a given proxy URL",
+          "title": "Validate a proxy URL",
           "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-validate-proxy.html",
           "subcategory": null
@@ -5327,7 +5327,7 @@
     "/tenants/{tenantId}/nss-keys": {
       "put": {
         "x-doc": {
-          "title": "Link an existing tenant to a NetApp support site account",
+          "title": "Link a tenant to a NetApp support site account",
           "category": "Tenant operations",
           "filename": "put-tenants-nss-keys.html",
           "subcategory": null
@@ -5355,7 +5355,7 @@
     "/users/{userId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a specific user",
+          "title": "Retrieve a user",
           "category": "User management",
           "filename": "get-users-.html",
           "subcategory": null
@@ -5381,7 +5381,7 @@
     "/users/{userId}/reset-password": {
       "put": {
         "x-doc": {
-          "title": "Reset the password of a given user",
+          "title": "Reset the password",
           "category": "User management",
           "filename": "put-users-reset-password.html",
           "subcategory": null
@@ -5391,7 +5391,7 @@
     "/users/{userId}/working-environments-grant-revoke": {
       "post": {
         "x-doc": {
-          "title": "Grant or revoke permissions to a given user",
+          "title": "Grant or revoke permissions to a user",
           "category": "User management",
           "filename": "post-users-working-environments-grant-revoke.html",
           "subcategory": null
@@ -5401,7 +5401,7 @@
     "/users": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all of the users visible to the current user",
+          "title": "Retrieve all users",
           "category": "User management",
           "filename": "get-users.html",
           "subcategory": null
@@ -5419,7 +5419,7 @@
     "/users/add-user": {
       "post": {
         "x-doc": {
-          "title": "Add an existing NetApp cloud central user to NetApp Console",
+          "title": "Add a NetApp Cloud Central user to NetApp Console",
           "category": "User management",
           "filename": "post-users-add-user.html",
           "subcategory": null
@@ -5499,7 +5499,7 @@
     "/azure/vsa/metadata/keys-vault": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all the keys in a vault",
+          "title": "Retrieve all keys in a vault",
           "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-keys-vault.html",
           "subcategory": null
@@ -5509,7 +5509,7 @@
     "/azure/vsa/metadata/network-requirements": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the minimum number of required IPs",
+          "title": "Retrieve the minimum number of required IP addresses",
           "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-network-requirements.html",
           "subcategory": null
@@ -5519,7 +5519,7 @@
     "/azure/vsa/metadata/validate-subscribed-to-ontap-cloud": {
       "post": {
         "x-doc": {
-          "title": "Confirm that the current user is subscribed",
+          "title": "Confirm the current user subscription",
           "category": "Azure system metadata",
           "filename": "post-azure-vsa-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
@@ -5609,7 +5609,7 @@
     "/azure/vsa/metadata/default-snapshot-policies": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the default snapshot policies available on a cluster",
+          "title": "Retrieve the default snapshot policies",
           "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-default-snapshot-policies.html",
           "subcategory": null
@@ -5733,7 +5733,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/ontap-available-images": {
       "get": {
         "x-doc": {
-          "title": "Retrieve images already installed on the Cloud Volumes ONTAP",
+          "title": "Retrieve images already installed on the system",
           "category": "AWS systems",
           "filename": "get-vsa-working-environments-ontap-available-images.html",
           "subcategory": null
@@ -5743,7 +5743,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/update-image": {
       "post": {
         "x-doc": {
-          "title": "Perform a complete image update operation",
+          "title": "Perform a complete image update",
           "category": "AWS systems",
           "filename": "post-vsa-working-environments-update-image.html",
           "subcategory": null
@@ -5783,7 +5783,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/offbox": {
       "put": {
         "x-doc": {
-          "title": "Activate an offbox configuration",
+          "title": "Activate an off-box configuration",
           "category": "AWS systems",
           "filename": "put-vsa-working-environments-offbox.html",
           "subcategory": null
@@ -5793,7 +5793,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "Modify the net port broadcast domain mtu",
+          "title": "Modify the network port broadcast domain MTU",
           "category": "AWS systems",
           "filename": "put-vsa-working-environments-networkoptimization.html",
           "subcategory": null
@@ -5853,7 +5853,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/ontap-saving": {
       "get": {
         "x-doc": {
-          "title": "Retrieve systems ontap savings",
+          "title": "Retrieve systems ONTAP savings",
           "category": "AWS systems",
           "filename": "get-vsa-working-environments-ontap-saving.html",
           "subcategory": null
@@ -5925,7 +5925,7 @@
     "/vsa/working-environments/{workingOntapEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "Update the cloud manager password",
+          "title": "Update the NetApp Console password",
           "category": "AWS systems",
           "filename": "put-vsa-working-environments-update-credentials.html",
           "subcategory": null
@@ -6003,7 +6003,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Register a Cloud Volumes ONTAP system with NetApp",
+          "title": "Register a Cloud Volumes ONTAP system",
           "category": "AWS systems",
           "filename": "post-vsa-working-environments-support-registration.html",
           "subcategory": null
@@ -6013,7 +6013,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/schedules": {
       "get": {
         "x-doc": {
-          "title": "List the start-stop schedules",
+          "title": "List the start/stop schedules",
           "category": "AWS systems",
           "filename": "get-vsa-working-environments-schedules.html",
           "subcategory": null
@@ -6041,7 +6041,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/activate-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Activate the FPolicy for ransomeware files",
+          "title": "Activate the FPolicy for ransomware files",
           "category": "AWS systems",
           "filename": "put-vsa-working-environments-activate-fpolicy.html",
           "subcategory": null
@@ -6051,7 +6051,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/disable-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Disable the FPolicy for ransomeware files",
+          "title": "Disable the FPolicy for ransomware files",
           "category": "AWS systems",
           "filename": "put-vsa-working-environments-disable-fpolicy.html",
           "subcategory": null
@@ -6061,7 +6061,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/fpolicy": {
       "delete": {
         "x-doc": {
-          "title": "Delete the FPolicy for ransomeware files",
+          "title": "Delete the FPolicy for ransomware files",
           "category": "AWS systems",
           "filename": "delete-vsa-working-environments-fpolicy.html",
           "subcategory": null
@@ -6369,7 +6369,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/offbox": {
       "put": {
         "x-doc": {
-          "title": "Activate an offbox configuration",
+          "title": "Activate an off-box configuration",
           "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-offbox.html",
           "subcategory": null
@@ -6379,7 +6379,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "Modify the net port broadcast domain mtu",
+          "title": "Modify the network port broadcast domain MTU",
           "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-networkoptimization.html",
           "subcategory": null
@@ -6617,7 +6617,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/activate-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Activate the FPolicy for ransomeware files",
+          "title": "Activate the FPolicy for ransomware files",
           "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-activate-fpolicy.html",
           "subcategory": null
@@ -6627,7 +6627,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/disable-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Disable the FPolicy for ransomeware files",
+          "title": "Disable the FPolicy for ransomware files",
           "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-disable-fpolicy.html",
           "subcategory": null
@@ -6637,7 +6637,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/fpolicy": {
       "delete": {
         "x-doc": {
-          "title": "Delete the fpolicy for ransomeware files",
+          "title": "Delete the FPolicy  for ransomware files",
           "category": "Azure systems",
           "filename": "delete-azure-vsa-working-environments-fpolicy.html",
           "subcategory": null
@@ -6705,7 +6705,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/set-password": {
       "put": {
         "x-doc": {
-          "title": "Set the cluster password of a specific Cloud Volumes ONTAP",
+          "title": "Set the cluster password for a Cloud Volumes ONTAP system",
           "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-set-password.html",
           "subcategory": null
@@ -6733,7 +6733,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}": {
       "delete": {
         "x-doc": {
-          "title": "Delete an svm",
+          "title": "Delete an SVM",
           "category": "Google Cloud systems",
           "filename": "delete-gcp-vsa-working-environments-svm-.html",
           "subcategory": null
@@ -6743,7 +6743,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/svm": {
       "put": {
         "x-doc": {
-          "title": "Modify the svm name",
+          "title": "Modify the SVM name",
           "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-svm.html",
           "subcategory": null
@@ -6751,7 +6751,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new svm",
+          "title": "Create a new SVM",
           "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-svm.html",
           "subcategory": null
@@ -6905,7 +6905,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/networkOptimization": {
       "put": {
         "x-doc": {
-          "title": "Modify the net port broadcast domain mtu",
+          "title": "Modify the network port broadcast domain MTU",
           "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-networkoptimization.html",
           "subcategory": null
@@ -6965,7 +6965,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/ontap-saving": {
       "get": {
         "x-doc": {
-          "title": "Retrieve system ontap savings",
+          "title": "Retrieve system ONTAP savings",
           "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-ontap-saving.html",
           "subcategory": null
@@ -7057,7 +7057,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/byol-to-capacity": {
       "put": {
         "x-doc": {
-          "title": "Update a byol licence to a capacity-based license",
+          "title": "Update a BYOL licence to a capacity-based license",
           "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
@@ -7067,7 +7067,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/enable-worm": {
       "put": {
         "x-doc": {
-          "title": "Enable snaplock for an existing system",
+          "title": "Enable SnapLock for a system",
           "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-enable-worm.html",
           "subcategory": null
@@ -7077,7 +7077,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/ntp": {
       "post": {
         "x-doc": {
-          "title": "Set up an ntp server",
+          "title": "Set up an NTP server",
           "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-ntp.html",
           "subcategory": null
@@ -7087,7 +7087,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/start": {
       "post": {
         "x-doc": {
-          "title": "Start a specific Cloud Volumes ONTAP instance",
+          "title": "Start a Cloud Volumes ONTAP instance",
           "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-start.html",
           "subcategory": null
@@ -7097,7 +7097,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/stop": {
       "post": {
         "x-doc": {
-          "title": "Stop a specific Cloud Volumes ONTAP instance",
+          "title": "Stop a Cloud Volumes ONTAP instance",
           "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-stop.html",
           "subcategory": null
@@ -7115,7 +7115,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Register a Cloud Volumes ONTAP system with NetApp",
+          "title": "Register a Cloud Volumes ONTAP system",
           "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-support-registration.html",
           "subcategory": null
@@ -7125,7 +7125,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/schedules": {
       "get": {
         "x-doc": {
-          "title": "List the start-stop schedules",
+          "title": "List the start/stop schedules",
           "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-schedules.html",
           "subcategory": null
@@ -7143,7 +7143,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/activate-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Activate the fpolicy for ransomeware files",
+          "title": "Activate the FPolicy  for ransomware files",
           "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-activate-fpolicy.html",
           "subcategory": null
@@ -7153,7 +7153,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/disable-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Disable the fpolicy for ransomeware files",
+          "title": "Disable the FPolicy for ransomware files",
           "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-disable-fpolicy.html",
           "subcategory": null
@@ -7163,7 +7163,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/fpolicy": {
       "delete": {
         "x-doc": {
-          "title": "Delete the fpolicy for ransomeware files",
+          "title": "Delete the FPolicy  for ransomware files",
           "category": "Google Cloud systems",
           "filename": "delete-gcp-vsa-working-environments-fpolicy.html",
           "subcategory": null
@@ -7357,7 +7357,7 @@
     "/vsa/metadata/manifests": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all cloud manager manifests",
+          "title": "Retrieve all NetApp Console manifests",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-manifests.html",
           "subcategory": null
@@ -7367,7 +7367,7 @@
     "/vsa/metadata/vpcs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve vpcs",
+          "title": "Retrieve VPCs",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-vpcs.html",
           "subcategory": null
@@ -7377,7 +7377,7 @@
     "/vsa/metadata/key-pairs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve aws user key pairs for by region",
+          "title": "Retrieve AWS  user key pairs by region",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-key-pairs.html",
           "subcategory": null
@@ -7387,7 +7387,7 @@
     "/vsa/metadata/key-pairs-by-region": {
       "get": {
         "x-doc": {
-          "title": "Retrieve aws user key pairs for all regions",
+          "title": "Retrieve AWS  user key pairs for all regions",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-key-pairs-by-region.html",
           "subcategory": null
@@ -7397,7 +7397,7 @@
     "/vsa/metadata/instance-profiles": {
       "get": {
         "x-doc": {
-          "title": "Retrieve aws instance profiles",
+          "title": "Retrieve AWS  instance profiles",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-instance-profiles.html",
           "subcategory": null
@@ -7407,7 +7407,7 @@
     "/vsa/metadata/s3-summary": {
       "get": {
         "x-doc": {
-          "title": "Retrieve s3 buckets summary",
+          "title": "Retrieve S3 buckets summary",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-s3-summary.html",
           "subcategory": null
@@ -7417,7 +7417,7 @@
     "/vsa/metadata/network-requirements": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the minimum number of required ips",
+          "title": "Retrieve the minimum number of required IP addresses",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-network-requirements.html",
           "subcategory": null
@@ -7427,7 +7427,7 @@
     "/vsa/metadata/aws-encryption-keys": {
       "get": {
         "x-doc": {
-          "title": "Retrieve aws encryption keys for by region",
+          "title": "Retrieve AWS  encryption keys by region",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-aws-encryption-keys.html",
           "subcategory": null
@@ -7447,7 +7447,7 @@
     "/vsa/metadata/get-buckets-details": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all s3 buckets",
+          "title": "Retrieve all S3 buckets",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-get-buckets-details.html",
           "subcategory": null
@@ -7457,7 +7457,7 @@
     "/vsa/metadata/get-buckets-application-info": {
       "post": {
         "x-doc": {
-          "title": "Retrieve s3 buckets policy status and tiering level",
+          "title": "Retrieve S3 buckets policy status and tiering level",
           "category": "AWS system metadata",
           "filename": "post-vsa-metadata-get-buckets-application-info.html",
           "subcategory": null
@@ -7467,7 +7467,7 @@
     "/vsa/metadata/buckets": {
       "get": {
         "x-doc": {
-          "title": "Retrieve all s3 buckets",
+          "title": "Retrieve all S3 buckets",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-buckets.html",
           "subcategory": null
@@ -7477,7 +7477,7 @@
     "/vsa/metadata/supported-capacity-tiers": {
       "get": {
         "x-doc": {
-          "title": "Retrieve supported capacity tiers for ebs volume types",
+          "title": "Retrieve supported capacity tiers for EBS volume types",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-supported-capacity-tiers.html",
           "subcategory": null
@@ -7487,7 +7487,7 @@
     "/vsa/metadata/create-bucket": {
       "post": {
         "x-doc": {
-          "title": "Create a new s3 bucket",
+          "title": "Create a new S3 bucket",
           "category": "AWS system metadata",
           "filename": "post-vsa-metadata-create-bucket.html",
           "subcategory": null
@@ -7497,7 +7497,7 @@
     "/vsa/metadata/ebs-volume-types": {
       "get": {
         "x-doc": {
-          "title": "Retrieve supported ebs volume types",
+          "title": "Retrieve supported EBS volume types",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-ebs-volume-types.html",
           "subcategory": null
@@ -7517,7 +7517,7 @@
     "/vsa/metadata/regions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve aws regions",
+          "title": "Retrieve AWS  regions",
           "category": "AWS system metadata",
           "filename": "get-vsa-metadata-regions.html",
           "subcategory": null
