@@ -4,7 +4,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of HA systems for a Google Cloud region",
-          "category": "Google Cloud HA systems - discovery",
+          "category": "Google Cloud HA system discovery",
           "filename": "get-gcp-ha-discovery-discover.html",
           "subcategory": null
         }
@@ -14,7 +14,7 @@
       "post": {
         "x-doc": {
           "title": "Save an HA system to the NetApp Console database",
-          "category": "Google Cloud HA systems - discovery",
+          "category": "Google Cloud HA system discovery",
           "filename": "post-gcp-ha-discovery-recover.html",
           "subcategory": null
         }
@@ -24,7 +24,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of systems for a Google Cloud zone",
-          "category": "Google Cloud systems - discovery",
+          "category": "Google Cloud system discovery",
           "filename": "get-gcp-vsa-discover.html",
           "subcategory": null
         }
@@ -34,7 +34,7 @@
       "post": {
         "x-doc": {
           "title": "Save a system to the NetApp Console database",
-          "category": "Google Cloud systems - discovery",
+          "category": "Google Cloud system discovery",
           "filename": "post-gcp-vsa-recover.html",
           "subcategory": null
         }
@@ -44,7 +44,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new Azure volume",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "post-azure-vsa-volumes-quote.html",
           "subcategory": null
         }
@@ -54,7 +54,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "post-azure-vsa-volumes--change-tier.html",
           "subcategory": null
         }
@@ -64,7 +64,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "get-azure-vsa-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -74,7 +74,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "put-azure-vsa-volumes--.html",
           "subcategory": null
         }
@@ -82,7 +82,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "delete-azure-vsa-volumes--.html",
           "subcategory": null
         }
@@ -92,7 +92,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "put-azure-vsa-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -102,7 +102,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "get-azure-vsa-volumes-igroups-.html",
           "subcategory": null
         }
@@ -112,7 +112,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "get-azure-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -120,7 +120,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "post-azure-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -130,7 +130,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of volume snapshot descriptions",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "get-azure-vsa-volumes--snapshots.html",
           "subcategory": null
         }
@@ -140,7 +140,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "post-azure-vsa-volumes--clone.html",
           "subcategory": null
         }
@@ -150,7 +150,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "post-azure-vsa-volumes--move.html",
           "subcategory": null
         }
@@ -160,7 +160,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all volumes",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "get-azure-vsa-volumes.html",
           "subcategory": null
         }
@@ -168,7 +168,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "post-azure-vsa-volumes.html",
           "subcategory": null
         }
@@ -178,7 +178,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "post-azure-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -186,7 +186,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a snapshot",
-          "category": "Azure systems - volumes",
+          "category": "Azure volumes",
           "filename": "delete-azure-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -488,7 +488,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "Azure systems - aggregates",
+          "category": "Azure aggregates",
           "filename": "get-azure-vsa-aggregates-.html",
           "subcategory": null
         }
@@ -498,7 +498,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "Azure systems - aggregates",
+          "category": "Azure aggregates",
           "filename": "post-azure-vsa-aggregates.html",
           "subcategory": null
         }
@@ -508,7 +508,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an aggregate",
-          "category": "Azure systems - aggregates",
+          "category": "Azure aggregates",
           "filename": "delete-azure-vsa-aggregates-.html",
           "subcategory": null
         }
@@ -518,7 +518,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an aggregate",
-          "category": "Azure systems - aggregates",
+          "category": "Azure aggregates",
           "filename": "post-azure-vsa-aggregates--disks.html",
           "subcategory": null
         }
@@ -528,7 +528,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "Azure HA systems - aggregates",
+          "category": "Azure HA aggregates",
           "filename": "get-azure-ha-aggregates-.html",
           "subcategory": null
         }
@@ -538,7 +538,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "Azure HA systems - aggregates",
+          "category": "Azure HA aggregates",
           "filename": "post-azure-ha-aggregates.html",
           "subcategory": null
         }
@@ -548,7 +548,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an aggregate",
-          "category": "Azure HA systems - aggregates",
+          "category": "Azure HA aggregates",
           "filename": "delete-azure-ha-aggregates-.html",
           "subcategory": null
         }
@@ -558,7 +558,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an aggregate",
-          "category": "Azure HA systems - aggregates",
+          "category": "Azure HA aggregates",
           "filename": "post-azure-ha-aggregates--disks.html",
           "subcategory": null
         }
@@ -568,7 +568,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of systems for the Azure region",
-          "category": "Azure HA systems - discovery",
+          "category": "Azure HA system discovery",
           "filename": "get-azure-ha-discovery-discover.html",
           "subcategory": null
         }
@@ -578,7 +578,7 @@
       "post": {
         "x-doc": {
           "title": "Save a system to the NetApp Console database",
-          "category": "Azure HA systems - discovery",
+          "category": "Azure HA system discovery",
           "filename": "post-azure-ha-discovery-recover.html",
           "subcategory": null
         }
@@ -588,7 +588,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all ONTAP cloud configurations",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-permutations.html",
           "subcategory": null
         }
@@ -598,7 +598,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve subscriptions",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-associated-subscriptions.html",
           "subcategory": null
         }
@@ -608,7 +608,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve network extended information",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-vnets.html",
           "subcategory": null
         }
@@ -618,7 +618,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure resource groups",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-resource-groups.html",
           "subcategory": null
         }
@@ -628,7 +628,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all vaults",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-vaults.html",
           "subcategory": null
         }
@@ -638,7 +638,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all keys in a vault",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-keys-vault.html",
           "subcategory": null
         }
@@ -648,7 +648,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of IP addresses",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-network-requirements.html",
           "subcategory": null
         }
@@ -658,7 +658,7 @@
       "post": {
         "x-doc": {
           "title": "Validate the Azure marketplace subscription",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "post-azure-ha-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
         }
@@ -668,7 +668,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new blob container",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "post-azure-ha-metadata-create-container.html",
           "subcategory": null
         }
@@ -678,7 +678,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure availability zones",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-availability-zones.html",
           "subcategory": null
         }
@@ -688,7 +688,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve capacity tiers for Azure disk types",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-supported-capacity-tiers.html",
           "subcategory": null
         }
@@ -698,7 +698,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure storage account types",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-storage-account-types.html",
           "subcategory": null
         }
@@ -708,7 +708,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve tag names",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-tag-keys.html",
           "subcategory": null
         }
@@ -718,7 +718,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all blob containers",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-containers.html",
           "subcategory": null
         }
@@ -728,7 +728,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure regions",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-regions.html",
           "subcategory": null
         }
@@ -738,7 +738,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the default snapshot policies",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-default-snapshot-policies.html",
           "subcategory": null
         }
@@ -748,7 +748,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve unsupported instance types for acceleration and capacity tiering",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null
         }
@@ -758,7 +758,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-supported-features.html",
           "subcategory": null
         }
@@ -768,7 +768,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the packages configuration",
-          "category": "Azure HA systems - metadata",
+          "category": "Azure HA system metadata",
           "filename": "get-azure-ha-metadata-packages.html",
           "subcategory": null
         }
@@ -778,7 +778,7 @@
       "put": {
         "x-doc": {
           "title": "Synchronize Azure VMware Solution hosts",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "put-azure-ha-volumes-storage-vms-volumes-sync-avs-host.html",
           "subcategory": null
         }
@@ -788,7 +788,7 @@
       "delete": {
         "x-doc": {
           "title": "Remove Azure VMware Solution hosts on a volume",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "delete-azure-ha-volumes-storage-vms-volumes-remove-avs.html",
           "subcategory": null
         }
@@ -798,7 +798,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new volume",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "post-azure-ha-volumes-quote.html",
           "subcategory": null
         }
@@ -808,7 +808,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "post-azure-ha-volumes--change-tier.html",
           "subcategory": null
         }
@@ -818,7 +818,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "get-azure-ha-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -828,7 +828,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "put-azure-ha-volumes--.html",
           "subcategory": null
         }
@@ -836,7 +836,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "delete-azure-ha-volumes--.html",
           "subcategory": null
         }
@@ -846,7 +846,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "put-azure-ha-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -856,7 +856,7 @@
       "put": {
         "x-doc": {
           "title": "Set up Azure VMware Solution on a volume",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "put-azure-ha-volumes-storage-vms-volumes-setup-avs.html",
           "subcategory": null
         }
@@ -866,7 +866,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "get-azure-ha-volumes-igroups-.html",
           "subcategory": null
         }
@@ -876,7 +876,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "get-azure-ha-volumes-initiator.html",
           "subcategory": null
         }
@@ -884,7 +884,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "post-azure-ha-volumes-initiator.html",
           "subcategory": null
         }
@@ -894,7 +894,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of volume snapshot descriptions",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "get-azure-ha-volumes--snapshots.html",
           "subcategory": null
         }
@@ -904,7 +904,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "post-azure-ha-volumes--clone.html",
           "subcategory": null
         }
@@ -914,7 +914,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "post-azure-ha-volumes--move.html",
           "subcategory": null
         }
@@ -924,7 +924,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "get-azure-ha-volumes.html",
           "subcategory": null
         }
@@ -932,7 +932,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "post-azure-ha-volumes.html",
           "subcategory": null
         }
@@ -942,7 +942,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "post-azure-ha-volumes--snapshot.html",
           "subcategory": null
         }
@@ -950,7 +950,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a snapshot",
-          "category": "Azure HA systems - volumes",
+          "category": "Azure HA volumes",
           "filename": "delete-azure-ha-volumes--snapshot.html",
           "subcategory": null
         }
@@ -960,7 +960,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve HA systems",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments.html",
           "subcategory": null
         }
@@ -968,7 +968,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new Azure HA system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments.html",
           "subcategory": null
         }
@@ -978,7 +978,7 @@
       "get": {
         "x-doc": {
           "title": "Check for non-persistent locks",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-cifs-locks-exist.html",
           "subcategory": null
         }
@@ -988,7 +988,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an SVM",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "delete-azure-ha-working-environments-svm-.html",
           "subcategory": null
         }
@@ -998,7 +998,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the SVM name of the system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-svm.html",
           "subcategory": null
         }
@@ -1006,7 +1006,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new SVM",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-svm.html",
           "subcategory": null
         }
@@ -1016,7 +1016,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure VMware Solution private cloud clusters for a subscription",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-resourcegroups-avs-private-clouds-clusters.html",
           "subcategory": null
         }
@@ -1026,7 +1026,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure VMware Solution cluster hosts for a subscription",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-resourcegroups-avs-private-clouds-clusters-hosts.html",
           "subcategory": null
         }
@@ -1036,7 +1036,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve available IP addresses in the subnet of a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-available-ips-in-subnet.html",
           "subcategory": null
         }
@@ -1046,7 +1046,7 @@
       "get": {
         "x-doc": {
           "title": "Returns true if a resource group with that name already exists, false otherwise",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-resource-group-exists-.html",
           "subcategory": null
         }
@@ -1056,7 +1056,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve an Azure VMware Solution private cloud for a subscription",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-avs-private-clouds.html",
           "subcategory": null
         }
@@ -1066,7 +1066,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-.html",
           "subcategory": null
         }
@@ -1074,7 +1074,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "delete-azure-ha-working-environments-.html",
           "subcategory": null
         }
@@ -1084,7 +1084,7 @@
       "post": {
         "x-doc": {
           "title": "Delete the CIFS configuration for a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-delete-cifs.html",
           "subcategory": null
         }
@@ -1094,7 +1094,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the CIFS configuration for a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-cifs.html",
           "subcategory": null
         }
@@ -1102,7 +1102,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new CIFS configuration for a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-cifs.html",
           "subcategory": null
         }
@@ -1112,7 +1112,7 @@
       "get": {
         "x-doc": {
           "title": "Validate prerequisites for converting a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
         }
@@ -1122,7 +1122,7 @@
       "put": {
         "x-doc": {
           "title": "Set the writing speed",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-writing-speed.html",
           "subcategory": null
         }
@@ -1132,7 +1132,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all license types and their associated instance types",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -1140,7 +1140,7 @@
       "put": {
         "x-doc": {
           "title": "Set the instance type",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -1150,7 +1150,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve images already installed on a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-ontap-available-images.html",
           "subcategory": null
         }
@@ -1160,7 +1160,7 @@
       "post": {
         "x-doc": {
           "title": "Perform an image update on a single node",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-update-image.html",
           "subcategory": null
         }
@@ -1170,7 +1170,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the eligibility support status of a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-update-eligibility.html",
           "subcategory": null
         }
@@ -1180,7 +1180,7 @@
       "post": {
         "x-doc": {
           "title": "Upload a cloud license file",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-upload-license-file.html",
           "subcategory": null
         }
@@ -1190,7 +1190,7 @@
       "post": {
         "x-doc": {
           "title": "Upload cloud license file content",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-upload-licenses.html",
           "subcategory": null
         }
@@ -1200,7 +1200,7 @@
       "put": {
         "x-doc": {
           "title": "Activate the off-box configuration",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-offbox.html",
           "subcategory": null
         }
@@ -1210,7 +1210,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the network port broadcast domain MTU",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-networkoptimization.html",
           "subcategory": null
         }
@@ -1220,7 +1220,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve action parameters",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-create-request-parameters.html",
           "subcategory": null
         }
@@ -1230,7 +1230,7 @@
       "post": {
         "x-doc": {
           "title": "Enable capacity tiering",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-enable-capacity-tiering.html",
           "subcategory": null
         }
@@ -1240,7 +1240,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of upgrade versions",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
         }
@@ -1250,7 +1250,7 @@
       "post": {
         "x-doc": {
           "title": "Manually triggers subscription synchronization",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-sync-subscription.html",
           "subcategory": null
         }
@@ -1260,7 +1260,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the system cost and usage",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-cost-and-usage.html",
           "subcategory": null
         }
@@ -1270,7 +1270,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve system ONTAP savings",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-ontap-saving.html",
           "subcategory": null
         }
@@ -1280,7 +1280,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve extra capacity licenses",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -1288,7 +1288,7 @@
       "put": {
         "x-doc": {
           "title": "Update an extra capacity license",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -1296,7 +1296,7 @@
       "post": {
         "x-doc": {
           "title": "Register an extra capacity license",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -1306,7 +1306,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity serial numbers",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -1314,7 +1314,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity serial numbers",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -1322,7 +1322,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete extra capacity licenses by serial number",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "delete-azure-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -1332,7 +1332,7 @@
       "put": {
         "x-doc": {
           "title": "Update the default Vscan file operation profile",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-vscan-file-op.html",
           "subcategory": null
         }
@@ -1342,7 +1342,7 @@
       "put": {
         "x-doc": {
           "title": "Update the NetApp Console password",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -1352,7 +1352,7 @@
       "post": {
         "x-doc": {
           "title": "Update the tier level",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-change-tier-level.html",
           "subcategory": null
         }
@@ -1362,7 +1362,7 @@
       "put": {
         "x-doc": {
           "title": "Update a BYOL license to a capacity-based license",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-byol-to-capacity.html",
           "subcategory": null
         }
@@ -1372,7 +1372,7 @@
       "put": {
         "x-doc": {
           "title": "Enable SnapLock for a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-enable-worm.html",
           "subcategory": null
         }
@@ -1382,7 +1382,7 @@
       "post": {
         "x-doc": {
           "title": "Create an NTP server",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-ntp.html",
           "subcategory": null
         }
@@ -1392,7 +1392,7 @@
       "post": {
         "x-doc": {
           "title": "Start a Cloud Volumes ONTAP instance",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-start.html",
           "subcategory": null
         }
@@ -1402,7 +1402,7 @@
       "post": {
         "x-doc": {
           "title": "Stop a Cloud Volumes ONTAP instance",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-stop.html",
           "subcategory": null
         }
@@ -1412,7 +1412,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the support registration status",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -1420,7 +1420,7 @@
       "post": {
         "x-doc": {
           "title": "Register a Cloud Volumes ONTAP system with NetApp",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -1430,7 +1430,7 @@
       "get": {
         "x-doc": {
           "title": "List the start/stop schedules for Cloud Volumes ONTAP",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-schedules.html",
           "subcategory": null
         }
@@ -1438,7 +1438,7 @@
       "put": {
         "x-doc": {
           "title": "Set schedules for Cloud Volumes ONTAP",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-schedules.html",
           "subcategory": null
         }
@@ -1448,7 +1448,7 @@
       "put": {
         "x-doc": {
           "title": "Activate FPolicy for ransomware files",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-activate-fpolicy.html",
           "subcategory": null
         }
@@ -1458,7 +1458,7 @@
       "put": {
         "x-doc": {
           "title": "Disable FPolicy for ransomware files",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-disable-fpolicy.html",
           "subcategory": null
         }
@@ -1468,7 +1468,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete FPolicy for ransomware files",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "delete-azure-ha-working-environments-fpolicy.html",
           "subcategory": null
         }
@@ -1478,7 +1478,7 @@
       "post": {
         "x-doc": {
           "title": "Parse an uploaded cloud license file",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-parse-license-file.html",
           "subcategory": null
         }
@@ -1488,7 +1488,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve editable tags for the cloud resources",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "get-azure-ha-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -1496,7 +1496,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the user tags for cloud resources",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -1506,7 +1506,7 @@
       "put": {
         "x-doc": {
           "title": "Activate snapshot policy assignment",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-activate-snapshot-policy.html",
           "subcategory": null
         }
@@ -1516,7 +1516,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot policy",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-snapshot-policy.html",
           "subcategory": null
         }
@@ -1526,7 +1526,7 @@
       "post": {
         "x-doc": {
           "title": "Update the serial number of a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "post-azure-ha-working-environments-change-serial.html",
           "subcategory": null
         }
@@ -1536,7 +1536,7 @@
       "put": {
         "x-doc": {
           "title": "Set the cluster password for a system",
-          "category": "Azure HA systems - systems",
+          "category": "Azure HA systems",
           "filename": "put-azure-ha-working-environments-set-password.html",
           "subcategory": null
         }
@@ -1822,7 +1822,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new FlexCache volume for an Amazon FSx for NetApp ONTAP management system",
-          "category": "FlexCache operations",
+          "category": "FlexCache volume operations",
           "filename": "post-flexcache-fsx.html",
           "subcategory": null
         }
@@ -1832,7 +1832,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all FlexCache volume relationships",
-          "category": "FlexCache operations",
+          "category": "FlexCache volume operations",
           "filename": "get-flexcache-all-relationships.html",
           "subcategory": null
         }
@@ -1842,7 +1842,7 @@
       "put": {
         "x-doc": {
           "title": "Modify a FlexCache volume",
-          "category": "FlexCache operations",
+          "category": "FlexCache volume operations",
           "filename": "put-flexcache-caches-.html",
           "subcategory": null
         }
@@ -1850,7 +1850,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a FlexCache volume",
-          "category": "FlexCache operations",
+          "category": "FlexCache volume operations",
           "filename": "delete-flexcache-caches-.html",
           "subcategory": null
         }
@@ -1860,7 +1860,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new FlexCache volume",
-          "category": "FlexCache operations",
+          "category": "FlexCache volume operations",
           "filename": "post-flexcache.html",
           "subcategory": null
         }
@@ -1870,7 +1870,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all FlexCache volumes lists",
-          "category": "FlexCache operations",
+          "category": "FlexCache volume operations",
           "filename": "get-flexcache-caches.html",
           "subcategory": null
         }
@@ -1880,7 +1880,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "get-fsx-volumes-.html",
           "subcategory": null
         }
@@ -1890,7 +1890,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a volume using the ID",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "get-fsx-volumes-.html",
           "subcategory": null
         }
@@ -1900,7 +1900,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve an NFS clients list for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "get-fsx-volumes-nfs-clients.html",
           "subcategory": null
         }
@@ -1910,7 +1910,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a CIFS share list for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "get-fsx-volumes-shares.html",
           "subcategory": null
         }
@@ -1920,7 +1920,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the volume count",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "get-fsx-volumes-count.html",
           "subcategory": null
         }
@@ -1930,7 +1930,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "put-fsx-volumes--.html",
           "subcategory": null
         }
@@ -1938,7 +1938,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "delete-fsx-volumes--.html",
           "subcategory": null
         }
@@ -1948,7 +1948,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "get-fsx-volumes-igroups-.html",
           "subcategory": null
         }
@@ -1958,7 +1958,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "get-fsx-volumes-initiator.html",
           "subcategory": null
         }
@@ -1966,7 +1966,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "post-fsx-volumes-initiator.html",
           "subcategory": null
         }
@@ -1976,7 +1976,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of snapshot descriptions for a volume",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "get-fsx-volumes--snapshots.html",
           "subcategory": null
         }
@@ -1986,7 +1986,7 @@
       "post": {
         "x-doc": {
           "title": "Clone a volume",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "post-fsx-volumes--clone.html",
           "subcategory": null
         }
@@ -1996,7 +1996,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "post-fsx-volumes.html",
           "subcategory": null
         }
@@ -2006,7 +2006,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot manually",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "post-fsx-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2014,7 +2014,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a snapshot manually",
-          "category": "Amazon FSx for NetApp ONTAP management systems - volumes",
+          "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "delete-fsx-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2024,7 +2024,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve CIFS configuration for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
+          "category": "Amazon FSx for NetApp ONTAP management systems",
           "filename": "get-fsx-working-environments-cifs.html",
           "subcategory": null
         }
@@ -2032,7 +2032,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new CIFS configuration for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
+          "category": "Amazon FSx for NetApp ONTAP management systems",
           "filename": "post-fsx-working-environments-cifs.html",
           "subcategory": null
         }
@@ -2042,7 +2042,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve an export policies list for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
+          "category": "Amazon FSx for NetApp ONTAP management systems",
           "filename": "get-fsx-working-environments-export-policies.html",
           "subcategory": null
         }
@@ -2052,7 +2052,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve an SVM list for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
+          "category": "Amazon FSx for NetApp ONTAP management systems",
           "filename": "get-fsx-working-environments-svms.html",
           "subcategory": null
         }
@@ -2062,7 +2062,7 @@
       "post": {
         "x-doc": {
           "title": "Validate the credentials for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
+          "category": "Amazon FSx for NetApp ONTAP management systems",
           "filename": "post-fsx-working-environments-validate-credentials.html",
           "subcategory": null
         }
@@ -2072,7 +2072,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve network interfaces lists for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
+          "category": "Amazon FSx for NetApp ONTAP management systems",
           "filename": "get-fsx-working-environments-interfaces.html",
           "subcategory": null
         }
@@ -2082,7 +2082,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve snapshot policies for an FSx system",
-          "category": "Amazon FSx for NetApp ONTAP management systems - systems",
+          "category": "Amazon FSx for NetApp ONTAP management systems",
           "filename": "get-fsx-working-environments-snapshot-policies.html",
           "subcategory": null
         }
@@ -2092,7 +2092,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud encryption keys for a region",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-gcp-encryption-keys.html",
           "subcategory": null
         }
@@ -2102,7 +2102,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of service accounts",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-service-accounts.html",
           "subcategory": null
         }
@@ -2112,7 +2112,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of IP addresses for a system",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-network-requirements.html",
           "subcategory": null
         }
@@ -2122,7 +2122,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all cloud storage buckets",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-buckets.html",
           "subcategory": null
         }
@@ -2132,7 +2132,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for Google Cloud disk types",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-supported-capacity-tiers.html",
           "subcategory": null
         }
@@ -2142,7 +2142,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of projects",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-projects.html",
           "subcategory": null
         }
@@ -2152,7 +2152,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new bucket",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "post-gcp-vsa-metadata-create-bucket.html",
           "subcategory": null
         }
@@ -2162,7 +2162,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the supported Google Cloud disk types",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-gcp-disk-types.html",
           "subcategory": null
         }
@@ -2172,7 +2172,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all the labels for a project ID and zone",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-tag-keys.html",
           "subcategory": null
         }
@@ -2182,7 +2182,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all Cloud Volumes ONTAP configurations",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-permutations.html",
           "subcategory": null
         }
@@ -2192,7 +2192,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud regions",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-regions.html",
           "subcategory": null
         }
@@ -2202,7 +2202,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve default snapshot policies",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-default-snapshot-policies.html",
           "subcategory": null
         }
@@ -2212,7 +2212,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the instance types that do not support acceleration and capacity tiering",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null
         }
@@ -2222,7 +2222,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-supported-features.html",
           "subcategory": null
         }
@@ -2232,7 +2232,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the packages configuration",
-          "category": "Google Cloud systems - metadata",
+          "category": "Google Cloud system metadata",
           "filename": "get-gcp-vsa-metadata-packages.html",
           "subcategory": null
         }
@@ -2242,7 +2242,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "Google Cloud systems - aggregates",
+          "category": "Google Cloud aggregates",
           "filename": "get-gcp-vsa-aggregates-.html",
           "subcategory": null
         }
@@ -2252,7 +2252,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "Google Cloud systems - aggregates",
+          "category": "Google Cloud aggregates",
           "filename": "post-gcp-vsa-aggregates.html",
           "subcategory": null
         }
@@ -2262,7 +2262,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an aggregate",
-          "category": "Google Cloud systems - aggregates",
+          "category": "Google Cloud aggregates",
           "filename": "delete-gcp-vsa-aggregates-.html",
           "subcategory": null
         }
@@ -2272,7 +2272,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an aggregate",
-          "category": "Google Cloud systems - aggregates",
+          "category": "Google Cloud aggregates",
           "filename": "post-gcp-vsa-aggregates--disks.html",
           "subcategory": null
         }
@@ -2282,7 +2282,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new volume",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "post-gcp-vsa-volumes-quote.html",
           "subcategory": null
         }
@@ -2292,7 +2292,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "post-gcp-vsa-volumes--change-tier.html",
           "subcategory": null
         }
@@ -2302,7 +2302,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "get-gcp-vsa-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -2312,7 +2312,7 @@
       "put": {
         "x-doc": {
           "title": "Modify a volume",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "put-gcp-vsa-volumes--.html",
           "subcategory": null
         }
@@ -2320,7 +2320,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a volume",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "delete-gcp-vsa-volumes--.html",
           "subcategory": null
         }
@@ -2330,7 +2330,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "put-gcp-vsa-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -2340,7 +2340,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "get-gcp-vsa-volumes-igroups-.html",
           "subcategory": null
         }
@@ -2350,7 +2350,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "get-gcp-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -2358,7 +2358,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "post-gcp-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -2368,7 +2368,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of snapshot descriptions for a volume",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "get-gcp-vsa-volumes--snapshots.html",
           "subcategory": null
         }
@@ -2378,7 +2378,7 @@
       "post": {
         "x-doc": {
           "title": "Clone a volume",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "post-gcp-vsa-volumes--clone.html",
           "subcategory": null
         }
@@ -2388,7 +2388,7 @@
       "post": {
         "x-doc": {
           "title": "Move a volume",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "post-gcp-vsa-volumes--move.html",
           "subcategory": null
         }
@@ -2398,7 +2398,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "get-gcp-vsa-volumes.html",
           "subcategory": null
         }
@@ -2406,7 +2406,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "post-gcp-vsa-volumes.html",
           "subcategory": null
         }
@@ -2416,7 +2416,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "post-gcp-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2424,7 +2424,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a snapshot",
-          "category": "Google Cloud systems - volumes",
+          "category": "Google Cloud volumes",
           "filename": "delete-gcp-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2434,7 +2434,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "Google Cloud HA systems - aggregates",
+          "category": "Google Cloud HA aggregates",
           "filename": "get-gcp-ha-aggregates-.html",
           "subcategory": null
         }
@@ -2444,7 +2444,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "Google Cloud HA systems - aggregates",
+          "category": "Google Cloud HA aggregates",
           "filename": "post-gcp-ha-aggregates.html",
           "subcategory": null
         }
@@ -2454,7 +2454,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an aggregate",
-          "category": "Google Cloud HA systems - aggregates",
+          "category": "Google Cloud HA aggregates",
           "filename": "delete-gcp-ha-aggregates-.html",
           "subcategory": null
         }
@@ -2464,7 +2464,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an aggregate",
-          "category": "Google Cloud HA systems - aggregates",
+          "category": "Google Cloud HA aggregates",
           "filename": "post-gcp-ha-aggregates--disks.html",
           "subcategory": null
         }
@@ -2474,7 +2474,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud networks and subnetworks",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-vpcs.html",
           "subcategory": null
         }
@@ -2484,7 +2484,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud regions and zones",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-zones.html",
           "subcategory": null
         }
@@ -2494,7 +2494,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all labels for a project ID and region",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-tag-keys.html",
           "subcategory": null
         }
@@ -2504,7 +2504,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all Cloud Volumes ONTAP configurations",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-permutations.html",
           "subcategory": null
         }
@@ -2514,7 +2514,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud encryption keys for a region",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-gcp-encryption-keys.html",
           "subcategory": null
         }
@@ -2524,7 +2524,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of service accounts",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-service-accounts.html",
           "subcategory": null
         }
@@ -2534,7 +2534,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of IP addresses for a system",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-network-requirements.html",
           "subcategory": null
         }
@@ -2544,7 +2544,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all cloud storage buckets",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-buckets.html",
           "subcategory": null
         }
@@ -2554,7 +2554,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for Google Cloud disk types",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-supported-capacity-tiers.html",
           "subcategory": null
         }
@@ -2564,7 +2564,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of projects",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-projects.html",
           "subcategory": null
         }
@@ -2574,7 +2574,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new bucket",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "post-gcp-ha-metadata-create-bucket.html",
           "subcategory": null
         }
@@ -2584,7 +2584,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the supported disk types",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-gcp-disk-types.html",
           "subcategory": null
         }
@@ -2594,7 +2594,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud regions",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-regions.html",
           "subcategory": null
         }
@@ -2604,7 +2604,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the default snapshot policies",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-default-snapshot-policies.html",
           "subcategory": null
         }
@@ -2614,7 +2614,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve instance types that do not support acceleration and capacity tiering",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null
         }
@@ -2624,7 +2624,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-supported-features.html",
           "subcategory": null
         }
@@ -2634,7 +2634,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the packages configuration",
-          "category": "Google Cloud HA systems - metadata",
+          "category": "Google Cloud HA system metadata",
           "filename": "get-gcp-ha-metadata-packages.html",
           "subcategory": null
         }
@@ -2644,7 +2644,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new volume",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "post-gcp-ha-volumes-quote.html",
           "subcategory": null
         }
@@ -2654,7 +2654,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "post-gcp-ha-volumes--change-tier.html",
           "subcategory": null
         }
@@ -2664,7 +2664,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "get-gcp-ha-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -2674,7 +2674,7 @@
       "put": {
         "x-doc": {
           "title": "Modify a volume",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "put-gcp-ha-volumes--.html",
           "subcategory": null
         }
@@ -2682,7 +2682,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a volume",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "delete-gcp-ha-volumes--.html",
           "subcategory": null
         }
@@ -2692,7 +2692,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "put-gcp-ha-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -2702,7 +2702,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "get-gcp-ha-volumes-igroups-.html",
           "subcategory": null
         }
@@ -2712,7 +2712,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "get-gcp-ha-volumes-initiator.html",
           "subcategory": null
         }
@@ -2720,7 +2720,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "post-gcp-ha-volumes-initiator.html",
           "subcategory": null
         }
@@ -2730,7 +2730,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of snapshot descriptions",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "get-gcp-ha-volumes--snapshots.html",
           "subcategory": null
         }
@@ -2740,7 +2740,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "post-gcp-ha-volumes--clone.html",
           "subcategory": null
         }
@@ -2750,7 +2750,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "post-gcp-ha-volumes--move.html",
           "subcategory": null
         }
@@ -2760,7 +2760,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "get-gcp-ha-volumes.html",
           "subcategory": null
         }
@@ -2768,7 +2768,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "post-gcp-ha-volumes.html",
           "subcategory": null
         }
@@ -2778,7 +2778,7 @@
       "post": {
         "x-doc": {
           "title": "Manually create a snapshot",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "post-gcp-ha-volumes--snapshot.html",
           "subcategory": null
         }
@@ -2786,7 +2786,7 @@
       "delete": {
         "x-doc": {
           "title": "Manually delete a snapshot",
-          "category": "Google Cloud HA systems - volumes",
+          "category": "Google Cloud HA volumes",
           "filename": "delete-gcp-ha-volumes--snapshot.html",
           "subcategory": null
         }
@@ -3332,7 +3332,7 @@
       "post": {
         "x-doc": {
           "title": "Add capacity to an existing elastic volume aggregate",
-          "category": "AWS HA system - aggregates",
+          "category": "AWS HA aggregates",
           "filename": "post-aws-ha-aggregates--add-capacity.html",
           "subcategory": null
         }
@@ -3342,7 +3342,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "AWS HA system - aggregates",
+          "category": "AWS HA aggregates",
           "filename": "get-aws-ha-aggregates.html",
           "subcategory": null
         }
@@ -3350,7 +3350,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "AWS HA system - aggregates",
+          "category": "AWS HA aggregates",
           "filename": "post-aws-ha-aggregates.html",
           "subcategory": null
         }
@@ -3360,7 +3360,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing aggregate",
-          "category": "AWS HA system - aggregates",
+          "category": "AWS HA aggregates",
           "filename": "delete-aws-ha-aggregates-.html",
           "subcategory": null
         }
@@ -3370,7 +3370,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an existing aggregate",
-          "category": "AWS HA system - aggregates",
+          "category": "AWS HA aggregates",
           "filename": "post-aws-ha-aggregates--disks.html",
           "subcategory": null
         }
@@ -3380,7 +3380,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of discovered systems",
-          "category": "AWS HA system - discovery",
+          "category": "AWS HA system discovery",
           "filename": "get-aws-ha-discovery-discover.html",
           "subcategory": null
         }
@@ -3390,7 +3390,7 @@
       "post": {
         "x-doc": {
           "title": "Save a previously discovered system",
-          "category": "AWS HA system - discovery",
+          "category": "AWS HA system discovery",
           "filename": "post-aws-ha-discovery-recover.html",
           "subcategory": null
         }
@@ -3400,7 +3400,7 @@
       "post": {
         "x-doc": {
           "title": "Update the key manager CA certificate on a system",
-          "category": "AWS HA system - encryption",
+          "category": "AWS HA system encryption",
           "filename": "post-aws-ha-encryption-update-key-manager-ca-certificate.html",
           "subcategory": null
         }
@@ -3410,7 +3410,7 @@
       "post": {
         "x-doc": {
           "title": "Update client certificate on a system",
-          "category": "AWS HA system - encryption",
+          "category": "AWS HA system encryption",
           "filename": "post-aws-ha-encryption-update-client-certificate.html",
           "subcategory": null
         }
@@ -3420,7 +3420,7 @@
       "post": {
         "x-doc": {
           "title": "Add a key manager to a system",
-          "category": "AWS HA system - encryption",
+          "category": "AWS HA system encryption",
           "filename": "post-aws-ha-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -3428,7 +3428,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a key manager from a system",
-          "category": "AWS HA system - encryption",
+          "category": "AWS HA system encryption",
           "filename": "delete-aws-ha-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -3438,7 +3438,7 @@
       "post": {
         "x-doc": {
           "title": "Validate high availability (ha) floating IP addresses",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "post-aws-ha-metadata-validate-floating-ips.html",
           "subcategory": null
         }
@@ -3448,7 +3448,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve route tables per vpc and their subnet associations",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-route-tables.html",
           "subcategory": null
         }
@@ -3458,7 +3458,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all system configurations",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-permutations.html",
           "subcategory": null
         }
@@ -3468,7 +3468,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all NetApp Console manifests",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-manifests.html",
           "subcategory": null
         }
@@ -3478,7 +3478,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve VPCs",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-vpcs.html",
           "subcategory": null
         }
@@ -3488,7 +3488,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS user key pairs by region",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-key-pairs.html",
           "subcategory": null
         }
@@ -3498,7 +3498,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS user key pairs for all regions",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-key-pairs-by-region.html",
           "subcategory": null
         }
@@ -3508,7 +3508,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS instance profiles",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-instance-profiles.html",
           "subcategory": null
         }
@@ -3518,7 +3518,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve s3 buckets summary",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-s3-summary.html",
           "subcategory": null
         }
@@ -3528,7 +3528,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of required IP addresses",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-network-requirements.html",
           "subcategory": null
         }
@@ -3538,7 +3538,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS encryption keys for by region",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-aws-encryption-keys.html",
           "subcategory": null
         }
@@ -3548,7 +3548,7 @@
       "post": {
         "x-doc": {
           "title": "Confirm subscription of the current user",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "post-aws-ha-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
         }
@@ -3558,7 +3558,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all s3 buckets with additional information",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-get-buckets-details.html",
           "subcategory": null
         }
@@ -3568,7 +3568,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve the s3 buckets policy status and tiering level",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "post-aws-ha-metadata-get-buckets-application-info.html",
           "subcategory": null
         }
@@ -3578,7 +3578,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all s3 buckets",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-buckets.html",
           "subcategory": null
         }
@@ -3588,7 +3588,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for ebs volume types",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-supported-capacity-tiers.html",
           "subcategory": null
         }
@@ -3598,7 +3598,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new s3 bucket",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "post-aws-ha-metadata-create-bucket.html",
           "subcategory": null
         }
@@ -3608,7 +3608,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported ebs volume types",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-ebs-volume-types.html",
           "subcategory": null
         }
@@ -3618,7 +3618,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all tag names",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-tag-keys.html",
           "subcategory": null
         }
@@ -3628,7 +3628,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS regions",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-regions.html",
           "subcategory": null
         }
@@ -3638,7 +3638,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve default snapshot policies available on a cluster",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-default-snapshot-policies.html",
           "subcategory": null
         }
@@ -3648,7 +3648,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve unsupported instance types for acceleration and capacity tiering",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null
         }
@@ -3658,7 +3658,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-supported-features.html",
           "subcategory": null
         }
@@ -3668,7 +3668,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve packages configuration",
-          "category": "AWS HA system - metadata",
+          "category": "AWS HA system metadata",
           "filename": "get-aws-ha-metadata-packages.html",
           "subcategory": null
         }
@@ -3678,7 +3678,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new volume",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "post-aws-ha-volumes-quote.html",
           "subcategory": null
         }
@@ -3688,7 +3688,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "post-aws-ha-volumes--change-tier.html",
           "subcategory": null
         }
@@ -3698,7 +3698,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "get-aws-ha-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -3708,7 +3708,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "put-aws-ha-volumes--.html",
           "subcategory": null
         }
@@ -3716,7 +3716,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "delete-aws-ha-volumes--.html",
           "subcategory": null
         }
@@ -3726,7 +3726,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "put-aws-ha-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -3736,7 +3736,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "get-aws-ha-volumes-igroups-.html",
           "subcategory": null
         }
@@ -3746,7 +3746,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "get-aws-ha-volumes-initiator.html",
           "subcategory": null
         }
@@ -3754,7 +3754,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "post-aws-ha-volumes-initiator.html",
           "subcategory": null
         }
@@ -3764,7 +3764,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of snapshot descriptions for the volume",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "get-aws-ha-volumes--snapshots.html",
           "subcategory": null
         }
@@ -3774,7 +3774,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "post-aws-ha-volumes--clone.html",
           "subcategory": null
         }
@@ -3784,7 +3784,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "post-aws-ha-volumes--move.html",
           "subcategory": null
         }
@@ -3794,7 +3794,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all volumes",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "get-aws-ha-volumes.html",
           "subcategory": null
         }
@@ -3802,7 +3802,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "post-aws-ha-volumes.html",
           "subcategory": null
         }
@@ -3812,7 +3812,7 @@
       "post": {
         "x-doc": {
           "title": "Manually create a snapshot",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "post-aws-ha-volumes--snapshot.html",
           "subcategory": null
         }
@@ -3820,7 +3820,7 @@
       "delete": {
         "x-doc": {
           "title": "Manually delete a snapshot",
-          "category": "AWS HA system - volumes",
+          "category": "AWS HA volumes",
           "filename": "delete-aws-ha-volumes--snapshot.html",
           "subcategory": null
         }
@@ -3830,7 +3830,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Cloud Volumes ONTAP systems",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments.html",
           "subcategory": null
         }
@@ -3838,7 +3838,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new AWS high-availability (ha) Cloud Volumes ONTAP system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments.html",
           "subcategory": null
         }
@@ -3848,7 +3848,7 @@
       "put": {
         "x-doc": {
           "title": "Update the route tables for a high-availability (HA) system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-route-tables.html",
           "subcategory": null
         }
@@ -3858,7 +3858,7 @@
       "post": {
         "x-doc": {
           "title": "Update the mediator for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-update-mediator.html",
           "subcategory": null
         }
@@ -3868,7 +3868,7 @@
       "get": {
         "x-doc": {
           "title": "Check for non-persistent locks held on CIFS sessions",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-cifs-locks-exist.html",
           "subcategory": null
         }
@@ -3878,7 +3878,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a high availability (HA) system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-.html",
           "subcategory": null
         }
@@ -3886,7 +3886,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "delete-aws-ha-working-environments-.html",
           "subcategory": null
         }
@@ -3896,7 +3896,7 @@
       "post": {
         "x-doc": {
           "title": "Delete the CIFS configuration for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-delete-cifs.html",
           "subcategory": null
         }
@@ -3906,7 +3906,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the CIFS configuration for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-cifs.html",
           "subcategory": null
         }
@@ -3914,7 +3914,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new CIFS configuration for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-cifs.html",
           "subcategory": null
         }
@@ -3924,7 +3924,7 @@
       "get": {
         "x-doc": {
           "title": "Validate prerequisites for converting a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
         }
@@ -3934,7 +3934,7 @@
       "put": {
         "x-doc": {
           "title": "Set the writing speed for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-writing-speed.html",
           "subcategory": null
         }
@@ -3944,7 +3944,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all license types and their associated instance types",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -3952,7 +3952,7 @@
       "put": {
         "x-doc": {
           "title": "Set the instance type",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -3962,7 +3962,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve images already installed on system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-ontap-available-images.html",
           "subcategory": null
         }
@@ -3972,7 +3972,7 @@
       "post": {
         "x-doc": {
           "title": "Perform a complete image update operation",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-update-image.html",
           "subcategory": null
         }
@@ -3982,7 +3982,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the eligibility support status of a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-update-eligibility.html",
           "subcategory": null
         }
@@ -3992,7 +3992,7 @@
       "post": {
         "x-doc": {
           "title": "Upload a cloud license file",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-upload-license-file.html",
           "subcategory": null
         }
@@ -4002,7 +4002,7 @@
       "post": {
         "x-doc": {
           "title": "Upload cloud license file content",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-upload-licenses.html",
           "subcategory": null
         }
@@ -4012,7 +4012,7 @@
       "put": {
         "x-doc": {
           "title": "Activate an off-box configuration",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-offbox.html",
           "subcategory": null
         }
@@ -4022,7 +4022,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the network port broadcast domain mtu",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-networkoptimization.html",
           "subcategory": null
         }
@@ -4032,7 +4032,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve action parameters",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-create-request-parameters.html",
           "subcategory": null
         }
@@ -4042,7 +4042,7 @@
       "post": {
         "x-doc": {
           "title": "Enable capacity tiering",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-enable-capacity-tiering.html",
           "subcategory": null
         }
@@ -4052,7 +4052,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of upgrade versions",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
         }
@@ -4062,7 +4062,7 @@
       "post": {
         "x-doc": {
           "title": "Manually trigger subscription synchronization",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-sync-subscription.html",
           "subcategory": null
         }
@@ -4072,7 +4072,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the system cost and usage",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-cost-and-usage.html",
           "subcategory": null
         }
@@ -4082,7 +4082,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve systems ONTAP savings",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-ontap-saving.html",
           "subcategory": null
         }
@@ -4092,7 +4092,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve extra capacity licenses",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -4100,7 +4100,7 @@
       "put": {
         "x-doc": {
           "title": "Update an extra capacity license",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -4108,7 +4108,7 @@
       "post": {
         "x-doc": {
           "title": "Register an extra capacity license",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -4118,7 +4118,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity license serial numbers",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -4126,7 +4126,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity license serial numbers",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -4134,7 +4134,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete extra capacity licenses using the serial number",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "delete-aws-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -4144,7 +4144,7 @@
       "put": {
         "x-doc": {
           "title": "Update the default Vscan file operation profile",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-vscan-file-op.html",
           "subcategory": null
         }
@@ -4154,7 +4154,7 @@
       "put": {
         "x-doc": {
           "title": "Update the NetApp Console password for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -4164,7 +4164,7 @@
       "post": {
         "x-doc": {
           "title": "Update the tier level",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-change-tier-level.html",
           "subcategory": null
         }
@@ -4174,7 +4174,7 @@
       "put": {
         "x-doc": {
           "title": "Update a BYOL license to a capacity-based license",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-byol-to-capacity.html",
           "subcategory": null
         }
@@ -4184,7 +4184,7 @@
       "put": {
         "x-doc": {
           "title": "Enable SnapLock for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-enable-worm.html",
           "subcategory": null
         }
@@ -4194,7 +4194,7 @@
       "post": {
         "x-doc": {
           "title": "Create an NTP server",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-ntp.html",
           "subcategory": null
         }
@@ -4204,7 +4204,7 @@
       "post": {
         "x-doc": {
           "title": "Start a specific instance",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-start.html",
           "subcategory": null
         }
@@ -4214,7 +4214,7 @@
       "post": {
         "x-doc": {
           "title": "Stop a specific instance",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-stop.html",
           "subcategory": null
         }
@@ -4224,7 +4224,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the support registration status of a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -4232,7 +4232,7 @@
       "post": {
         "x-doc": {
           "title": "Register a system with NetApp",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -4242,7 +4242,7 @@
       "get": {
         "x-doc": {
           "title": "List the start/stop schedules for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-schedules.html",
           "subcategory": null
         }
@@ -4250,7 +4250,7 @@
       "put": {
         "x-doc": {
           "title": "Set the schedules for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-schedules.html",
           "subcategory": null
         }
@@ -4260,7 +4260,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the SVM name of a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-svm.html",
           "subcategory": null
         }
@@ -4270,7 +4270,7 @@
       "put": {
         "x-doc": {
           "title": "Activate FPolicy for ransomware files",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-activate-fpolicy.html",
           "subcategory": null
         }
@@ -4280,7 +4280,7 @@
       "put": {
         "x-doc": {
           "title": "Disable FPolicy for ransomware files",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-disable-fpolicy.html",
           "subcategory": null
         }
@@ -4290,7 +4290,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete FPolicy for ransomware files",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "delete-aws-ha-working-environments-fpolicy.html",
           "subcategory": null
         }
@@ -4300,7 +4300,7 @@
       "post": {
         "x-doc": {
           "title": "Parse an uploaded cloud license file",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-parse-license-file.html",
           "subcategory": null
         }
@@ -4310,7 +4310,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve editable tags for cloud resources",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "get-aws-ha-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -4318,7 +4318,7 @@
       "put": {
         "x-doc": {
           "title": "Modify user tags for cloud resources",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -4328,7 +4328,7 @@
       "put": {
         "x-doc": {
           "title": "Activate snapshot policy assignment for all unprotected read/write volumes",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-activate-snapshot-policy.html",
           "subcategory": null
         }
@@ -4338,7 +4338,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot policy",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-snapshot-policy.html",
           "subcategory": null
         }
@@ -4348,7 +4348,7 @@
       "post": {
         "x-doc": {
           "title": "Update the serial number of a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "post-aws-ha-working-environments-change-serial.html",
           "subcategory": null
         }
@@ -4358,7 +4358,7 @@
       "put": {
         "x-doc": {
           "title": "Set the cluster password for a system",
-          "category": "AWS HA system - systems",
+          "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-set-password.html",
           "subcategory": null
         }
@@ -5650,7 +5650,7 @@
       "post": {
         "x-doc": {
           "title": "Delete the CIFS configuration for a system",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-delete-cifs.html",
           "subcategory": null
         }
@@ -5660,7 +5660,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a CIFS configuration for a system",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-cifs.html",
           "subcategory": null
         }
@@ -5668,7 +5668,7 @@
       "post": {
         "x-doc": {
           "title": "Set up a new CIFS configuration",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-cifs.html",
           "subcategory": null
         }
@@ -5678,7 +5678,7 @@
       "get": {
         "x-doc": {
           "title": "Validate prerequisites for converting a system",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
         }
@@ -5688,7 +5688,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a Cloud Volumes ONTAP system",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-.html",
           "subcategory": null
         }
@@ -5696,7 +5696,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing Cloud Volumes ONTAP system",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "delete-vsa-working-environments-.html",
           "subcategory": null
         }
@@ -5706,7 +5706,7 @@
       "put": {
         "x-doc": {
           "title": "Set the writing speed for Cloud Volumes ONTAP",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-writing-speed.html",
           "subcategory": null
         }
@@ -5716,7 +5716,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all license types",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -5724,7 +5724,7 @@
       "put": {
         "x-doc": {
           "title": "Set the instance type",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -5734,7 +5734,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve images already installed on the Cloud Volumes ONTAP",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-ontap-available-images.html",
           "subcategory": null
         }
@@ -5744,7 +5744,7 @@
       "post": {
         "x-doc": {
           "title": "Perform a complete image update operation",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-update-image.html",
           "subcategory": null
         }
@@ -5754,7 +5754,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the eligibility support status",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-update-eligibility.html",
           "subcategory": null
         }
@@ -5764,7 +5764,7 @@
       "post": {
         "x-doc": {
           "title": "Upload a cloud license file",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-upload-license-file.html",
           "subcategory": null
         }
@@ -5774,7 +5774,7 @@
       "post": {
         "x-doc": {
           "title": "Upload cloud license file content",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-upload-licenses.html",
           "subcategory": null
         }
@@ -5784,7 +5784,7 @@
       "put": {
         "x-doc": {
           "title": "Activate an offbox configuration",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-offbox.html",
           "subcategory": null
         }
@@ -5794,7 +5794,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the net port broadcast domain mtu",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-networkoptimization.html",
           "subcategory": null
         }
@@ -5804,7 +5804,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the action parameters",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-create-request-parameters.html",
           "subcategory": null
         }
@@ -5814,7 +5814,7 @@
       "post": {
         "x-doc": {
           "title": "Enable capacity tiering,",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-enable-capacity-tiering.html",
           "subcategory": null
         }
@@ -5824,7 +5824,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of upgrade versions",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
         }
@@ -5834,7 +5834,7 @@
       "post": {
         "x-doc": {
           "title": "Manually trigger a subscription synchronization",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-sync-subscription.html",
           "subcategory": null
         }
@@ -5844,7 +5844,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve systems cost and usage",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-cost-and-usage.html",
           "subcategory": null
         }
@@ -5854,7 +5854,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve systems ontap savings",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-ontap-saving.html",
           "subcategory": null
         }
@@ -5864,7 +5864,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve extra capacity licenses",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -5872,7 +5872,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity licenses",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -5880,7 +5880,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity licenses",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -5890,7 +5890,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity serial numbers",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -5898,7 +5898,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity serial numbers",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -5906,7 +5906,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete extra capacity licenses by serial numbers",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "delete-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -5916,7 +5916,7 @@
       "put": {
         "x-doc": {
           "title": "Update the default Vscan file operation profile",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-vscan-file-op.html",
           "subcategory": null
         }
@@ -5926,7 +5926,7 @@
       "put": {
         "x-doc": {
           "title": "Update the cloud manager password",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -5936,7 +5936,7 @@
       "post": {
         "x-doc": {
           "title": "Modify the tier level",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-change-tier-level.html",
           "subcategory": null
         }
@@ -5946,7 +5946,7 @@
       "put": {
         "x-doc": {
           "title": "Update the BYOL licence to a capacity-based license",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
         }
@@ -5956,7 +5956,7 @@
       "put": {
         "x-doc": {
           "title": "Enable SnapLock for an existing system",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-enable-worm.html",
           "subcategory": null
         }
@@ -5966,7 +5966,7 @@
       "post": {
         "x-doc": {
           "title": "Set up an NTP server",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-ntp.html",
           "subcategory": null
         }
@@ -5976,7 +5976,7 @@
       "post": {
         "x-doc": {
           "title": "Start a specific Cloud Volumes ONTAP instance",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-start.html",
           "subcategory": null
         }
@@ -5986,7 +5986,7 @@
       "post": {
         "x-doc": {
           "title": "Stop a specific Cloud Volumes ONTAP instance",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-stop.html",
           "subcategory": null
         }
@@ -5996,7 +5996,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the support registration status",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -6004,7 +6004,7 @@
       "post": {
         "x-doc": {
           "title": "Register a Cloud Volumes ONTAP system with NetApp",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -6014,7 +6014,7 @@
       "get": {
         "x-doc": {
           "title": "List the start-stop schedules",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-schedules.html",
           "subcategory": null
         }
@@ -6022,7 +6022,7 @@
       "put": {
         "x-doc": {
           "title": "Set the schedules",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-schedules.html",
           "subcategory": null
         }
@@ -6032,7 +6032,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the SVM name",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-svm.html",
           "subcategory": null
         }
@@ -6042,7 +6042,7 @@
       "put": {
         "x-doc": {
           "title": "Activate the FPolicy for ransomeware files",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-activate-fpolicy.html",
           "subcategory": null
         }
@@ -6052,7 +6052,7 @@
       "put": {
         "x-doc": {
           "title": "Disable the FPolicy for ransomeware files",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-disable-fpolicy.html",
           "subcategory": null
         }
@@ -6062,7 +6062,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete the FPolicy for ransomeware files",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "delete-vsa-working-environments-fpolicy.html",
           "subcategory": null
         }
@@ -6072,7 +6072,7 @@
       "post": {
         "x-doc": {
           "title": "Parse an uploaded cloud license file",
-          "category": "AWS system  - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-parse-license-file.html",
           "subcategory": null
         }
@@ -6082,7 +6082,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve editable tags for cloud resources",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -6090,7 +6090,7 @@
       "put": {
         "x-doc": {
           "title": "Modify user tags for cloud resources",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -6100,7 +6100,7 @@
       "put": {
         "x-doc": {
           "title": "Activate snapshot policy assignments",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-activate-snapshot-policy.html",
           "subcategory": null
         }
@@ -6110,7 +6110,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot policy",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-snapshot-policy.html",
           "subcategory": null
         }
@@ -6120,7 +6120,7 @@
       "post": {
         "x-doc": {
           "title": "Update the serial number of Cloud Volumes ONTAP",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments-change-serial.html",
           "subcategory": null
         }
@@ -6130,7 +6130,7 @@
       "put": {
         "x-doc": {
           "title": "Set the cluster password",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "put-vsa-working-environments-set-password.html",
           "subcategory": null
         }
@@ -6140,7 +6140,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Cloud Volumes ONTAP systems",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments.html",
           "subcategory": null
         }
@@ -6148,7 +6148,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new Cloud Volumes ONTAP system",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments.html",
           "subcategory": null
         }
@@ -6158,7 +6158,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an SVM",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "delete-azure-vsa-working-environments-svm-.html",
           "subcategory": null
         }
@@ -6168,7 +6168,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the SVM name",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-svm.html",
           "subcategory": null
         }
@@ -6176,7 +6176,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new SVM",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-svm.html",
           "subcategory": null
         }
@@ -6186,7 +6186,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure VMware Solution private cloud clusters",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-resourcegroups-avs-private-clouds-clusters.html",
           "subcategory": null
         }
@@ -6196,7 +6196,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure VMware Solution cluster hosts",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-resourcegroups-avs-private-clouds-clusters-hosts.html",
           "subcategory": null
         }
@@ -6206,7 +6206,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the number of available IP addresses",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-available-ips-in-subnet.html",
           "subcategory": null
         }
@@ -6216,7 +6216,7 @@
       "get": {
         "x-doc": {
           "title": "Returns true if a resource group with that name already exists, false otherwise",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-resource-group-exists-.html",
           "subcategory": null
         }
@@ -6226,7 +6226,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve an Azure VMware Solution private cloud",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-avs-private-clouds.html",
           "subcategory": null
         }
@@ -6236,7 +6236,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a Cloud Volumes ONTAP system",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-.html",
           "subcategory": null
         }
@@ -6244,7 +6244,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing Cloud Volumes ONTAP system",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "delete-azure-vsa-working-environments-.html",
           "subcategory": null
         }
@@ -6254,7 +6254,7 @@
       "post": {
         "x-doc": {
           "title": "Delete a CIFS configuration",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-delete-cifs.html",
           "subcategory": null
         }
@@ -6264,7 +6264,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a CIFS configuration",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-cifs.html",
           "subcategory": null
         }
@@ -6272,7 +6272,7 @@
       "post": {
         "x-doc": {
           "title": "Set up a new CIFS configuration",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-cifs.html",
           "subcategory": null
         }
@@ -6282,7 +6282,7 @@
       "get": {
         "x-doc": {
           "title": "Validate prerequisites for converting a system",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
         }
@@ -6292,7 +6292,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the writing speed",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-writing-speed.html",
           "subcategory": null
         }
@@ -6302,7 +6302,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all license types",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -6310,7 +6310,7 @@
       "put": {
         "x-doc": {
           "title": "Set the instance type",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -6320,7 +6320,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve images already installed",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-ontap-available-images.html",
           "subcategory": null
         }
@@ -6330,7 +6330,7 @@
       "post": {
         "x-doc": {
           "title": "Perform a complete image update operation",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-update-image.html",
           "subcategory": null
         }
@@ -6340,7 +6340,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the eligibility support status",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-update-eligibility.html",
           "subcategory": null
         }
@@ -6350,7 +6350,7 @@
       "post": {
         "x-doc": {
           "title": "Upload a cloud license file",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-upload-license-file.html",
           "subcategory": null
         }
@@ -6360,7 +6360,7 @@
       "post": {
         "x-doc": {
           "title": "Upload cloud license file content",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-upload-licenses.html",
           "subcategory": null
         }
@@ -6370,7 +6370,7 @@
       "put": {
         "x-doc": {
           "title": "Activate an offbox configuration",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-offbox.html",
           "subcategory": null
         }
@@ -6380,7 +6380,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the net port broadcast domain mtu",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-networkoptimization.html",
           "subcategory": null
         }
@@ -6390,7 +6390,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the action parameters",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-create-request-parameters.html",
           "subcategory": null
         }
@@ -6400,7 +6400,7 @@
       "post": {
         "x-doc": {
           "title": "Enable capacity tiering",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-enable-capacity-tiering.html",
           "subcategory": null
         }
@@ -6410,7 +6410,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of upgrade versions",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
         }
@@ -6420,7 +6420,7 @@
       "post": {
         "x-doc": {
           "title": "Manually trigger a subscription sync",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-sync-subscription.html",
           "subcategory": null
         }
@@ -6430,7 +6430,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve systems cost and usage",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-cost-and-usage.html",
           "subcategory": null
         }
@@ -6440,7 +6440,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve systems ONTAP savings",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-ontap-saving.html",
           "subcategory": null
         }
@@ -6450,7 +6450,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve extra capacity licenses",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -6458,7 +6458,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity licenses",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -6466,7 +6466,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity licenses",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -6476,7 +6476,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity serial numbers",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -6484,7 +6484,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity serial numbers",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -6492,7 +6492,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete extra capacity licenses by serial numbers",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "delete-azure-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -6502,7 +6502,7 @@
       "put": {
         "x-doc": {
           "title": "Update the default Vsacn file operation profile",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-vscan-file-op.html",
           "subcategory": null
         }
@@ -6512,7 +6512,7 @@
       "put": {
         "x-doc": {
           "title": "Update the NetApp Condole password",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -6522,7 +6522,7 @@
       "post": {
         "x-doc": {
           "title": "Change the tier level",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-change-tier-level.html",
           "subcategory": null
         }
@@ -6532,7 +6532,7 @@
       "put": {
         "x-doc": {
           "title": "Update the byol licence to a capacity-based license",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
         }
@@ -6542,7 +6542,7 @@
       "put": {
         "x-doc": {
           "title": "Enable SnapLock for an existing system",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-enable-worm.html",
           "subcategory": null
         }
@@ -6552,7 +6552,7 @@
       "post": {
         "x-doc": {
           "title": "Set up an ntp server",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-ntp.html",
           "subcategory": null
         }
@@ -6562,7 +6562,7 @@
       "post": {
         "x-doc": {
           "title": "Start a specific Cloud Volumes ONTAP instance",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-start.html",
           "subcategory": null
         }
@@ -6572,7 +6572,7 @@
       "post": {
         "x-doc": {
           "title": "Stop a specific Cloud Volumes ONTAP instance",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-stop.html",
           "subcategory": null
         }
@@ -6582,7 +6582,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the support registration status",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -6590,7 +6590,7 @@
       "post": {
         "x-doc": {
           "title": "Register a Cloud Volumes ONTAP system with NetApp",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -6600,7 +6600,7 @@
       "get": {
         "x-doc": {
           "title": "List the start-stop schedules",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-schedules.html",
           "subcategory": null
         }
@@ -6608,7 +6608,7 @@
       "put": {
         "x-doc": {
           "title": "Set the schedules for Cloud Volumes ONTAP",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-schedules.html",
           "subcategory": null
         }
@@ -6618,7 +6618,7 @@
       "put": {
         "x-doc": {
           "title": "Activate the FPolicy for ransomeware files",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-activate-fpolicy.html",
           "subcategory": null
         }
@@ -6628,7 +6628,7 @@
       "put": {
         "x-doc": {
           "title": "Disable the FPolicy for ransomeware files",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-disable-fpolicy.html",
           "subcategory": null
         }
@@ -6638,7 +6638,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete the fpolicy for ransomeware files",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "delete-azure-vsa-working-environments-fpolicy.html",
           "subcategory": null
         }
@@ -6648,7 +6648,7 @@
       "post": {
         "x-doc": {
           "title": "Parse an uploaded cloud license file",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-parse-license-file.html",
           "subcategory": null
         }
@@ -6658,7 +6658,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve editable tags for cloud resources",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "get-azure-vsa-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -6666,7 +6666,7 @@
       "put": {
         "x-doc": {
           "title": "Modify user tags for cloud resources",
-          "category": "Azure system  - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -6676,7 +6676,7 @@
       "put": {
         "x-doc": {
           "title": "Activate snapshot policy assignment",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-activate-snapshot-policy.html",
           "subcategory": null
         }
@@ -6686,7 +6686,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot policy",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-snapshot-policy.html",
           "subcategory": null
         }
@@ -6696,7 +6696,7 @@
       "post": {
         "x-doc": {
           "title": "Update the serial number of Cloud Volumes ONTAP",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "post-azure-vsa-working-environments-change-serial.html",
           "subcategory": null
         }
@@ -6706,7 +6706,7 @@
       "put": {
         "x-doc": {
           "title": "Set the cluster password of a specific Cloud Volumes ONTAP",
-          "category": "Azure system - systems",
+          "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-set-password.html",
           "subcategory": null
         }
@@ -6716,7 +6716,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Cloud Volumes ONTAP systems",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments.html",
           "subcategory": null
         }
@@ -6724,7 +6724,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new Cloud Volumes ONTAP system",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments.html",
           "subcategory": null
         }
@@ -6734,7 +6734,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an svm",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "delete-gcp-vsa-working-environments-svm-.html",
           "subcategory": null
         }
@@ -6744,7 +6744,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the svm name",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-svm.html",
           "subcategory": null
         }
@@ -6752,7 +6752,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new svm",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-svm.html",
           "subcategory": null
         }
@@ -6762,7 +6762,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a Cloud Volumes ONTAP system",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-.html",
           "subcategory": null
         }
@@ -6770,7 +6770,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing Cloud Volumes ONTAP system",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "delete-gcp-vsa-working-environments-.html",
           "subcategory": null
         }
@@ -6780,7 +6780,7 @@
       "post": {
         "x-doc": {
           "title": "Delete a CIFS configuration",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-delete-cifs.html",
           "subcategory": null
         }
@@ -6790,7 +6790,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a CIFS configuration",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-cifs.html",
           "subcategory": null
         }
@@ -6798,7 +6798,7 @@
       "post": {
         "x-doc": {
           "title": "Set up a new CIFS configuration",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-cifs.html",
           "subcategory": null
         }
@@ -6808,7 +6808,7 @@
       "get": {
         "x-doc": {
           "title": "Validate prerequisites for converting a system",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
         }
@@ -6818,7 +6818,7 @@
       "put": {
         "x-doc": {
           "title": "Set the writing speed",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-writing-speed.html",
           "subcategory": null
         }
@@ -6828,7 +6828,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all license types and their associated instance types",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -6836,7 +6836,7 @@
       "put": {
         "x-doc": {
           "title": "Set the instance type",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -6846,7 +6846,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve images already installed",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-ontap-available-images.html",
           "subcategory": null
         }
@@ -6856,7 +6856,7 @@
       "post": {
         "x-doc": {
           "title": "Perform a complete image update operation",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-update-image.html",
           "subcategory": null
         }
@@ -6866,7 +6866,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the eligibility support status",
-          "category": "Google Cloud system - systemss",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-update-eligibility.html",
           "subcategory": null
         }
@@ -6876,7 +6876,7 @@
       "post": {
         "x-doc": {
           "title": "Upload a cloud license file",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-upload-license-file.html",
           "subcategory": null
         }
@@ -6886,7 +6886,7 @@
       "post": {
         "x-doc": {
           "title": "Upload cloud license file content",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-upload-licenses.html",
           "subcategory": null
         }
@@ -6896,7 +6896,7 @@
       "put": {
         "x-doc": {
           "title": "Activate an offbox configuration",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-offbox.html",
           "subcategory": null
         }
@@ -6906,7 +6906,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the net port broadcast domain mtu",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-networkoptimization.html",
           "subcategory": null
         }
@@ -6916,7 +6916,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the action parameters",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-create-request-parameters.html",
           "subcategory": null
         }
@@ -6926,7 +6926,7 @@
       "post": {
         "x-doc": {
           "title": "Enable capacity tiering",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-enable-capacity-tiering.html",
           "subcategory": null
         }
@@ -6936,7 +6936,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of upgrade versions",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
         }
@@ -6946,7 +6946,7 @@
       "post": {
         "x-doc": {
           "title": "Manually trigger a subscription sync",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-sync-subscription.html",
           "subcategory": null
         }
@@ -6956,7 +6956,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve system cost and usage",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-cost-and-usage.html",
           "subcategory": null
         }
@@ -6966,7 +6966,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve system ontap savings",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-ontap-saving.html",
           "subcategory": null
         }
@@ -6976,7 +6976,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve extra capacity licenses",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -6984,7 +6984,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity licenses",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -6992,7 +6992,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity licenses",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -7002,7 +7002,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity serial numbers",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -7010,7 +7010,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity serial numbers",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -7018,7 +7018,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete extra capacity licenses by serial numbers",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "delete-gcp-vsa-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -7027,8 +7027,8 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/vscan-file-op": {
       "put": {
         "x-doc": {
-          "title": "Update the default vscan file operation profile",
-          "category": "Google Cloud system - systems",
+          "title": "Update the default Vscan file operation profile",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-vscan-file-op.html",
           "subcategory": null
         }
@@ -7038,7 +7038,7 @@
       "put": {
         "x-doc": {
           "title": "Update the NetApp Console password",
-          "category": "Google Cloud system operations - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -7048,7 +7048,7 @@
       "post": {
         "x-doc": {
           "title": "Update the tier level",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-change-tier-level.html",
           "subcategory": null
         }
@@ -7058,7 +7058,7 @@
       "put": {
         "x-doc": {
           "title": "Update a byol licence to a capacity-based license",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
         }
@@ -7068,7 +7068,7 @@
       "put": {
         "x-doc": {
           "title": "Enable snaplock for an existing system",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-enable-worm.html",
           "subcategory": null
         }
@@ -7078,7 +7078,7 @@
       "post": {
         "x-doc": {
           "title": "Set up an ntp server",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-ntp.html",
           "subcategory": null
         }
@@ -7088,7 +7088,7 @@
       "post": {
         "x-doc": {
           "title": "Start a specific Cloud Volumes ONTAP instance",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-start.html",
           "subcategory": null
         }
@@ -7098,7 +7098,7 @@
       "post": {
         "x-doc": {
           "title": "Stop a specific Cloud Volumes ONTAP instance",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-stop.html",
           "subcategory": null
         }
@@ -7108,7 +7108,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the registration support status",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -7116,7 +7116,7 @@
       "post": {
         "x-doc": {
           "title": "Register a Cloud Volumes ONTAP system with NetApp",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -7126,7 +7126,7 @@
       "get": {
         "x-doc": {
           "title": "List the start-stop schedules",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-schedules.html",
           "subcategory": null
         }
@@ -7134,7 +7134,7 @@
       "put": {
         "x-doc": {
           "title": "Set the schedules for Cloud Volumes ONTAP",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-schedules.html",
           "subcategory": null
         }
@@ -7144,7 +7144,7 @@
       "put": {
         "x-doc": {
           "title": "Activate the fpolicy for ransomeware files",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-activate-fpolicy.html",
           "subcategory": null
         }
@@ -7154,7 +7154,7 @@
       "put": {
         "x-doc": {
           "title": "Disable the fpolicy for ransomeware files",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-disable-fpolicy.html",
           "subcategory": null
         }
@@ -7164,7 +7164,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete the fpolicy for ransomeware files",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "delete-gcp-vsa-working-environments-fpolicy.html",
           "subcategory": null
         }
@@ -7174,7 +7174,7 @@
       "post": {
         "x-doc": {
           "title": "Parse an uploaded cloud license file",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-parse-license-file.html",
           "subcategory": null
         }
@@ -7184,7 +7184,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve editable tags",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "get-gcp-vsa-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -7192,7 +7192,7 @@
       "put": {
         "x-doc": {
           "title": "Modify user tags for cloud resources",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -7202,7 +7202,7 @@
       "put": {
         "x-doc": {
           "title": "Activate snapshot policy assignment",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-activate-snapshot-policy.html",
           "subcategory": null
         }
@@ -7212,7 +7212,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot policy",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-snapshot-policy.html",
           "subcategory": null
         }
@@ -7222,7 +7222,7 @@
       "post": {
         "x-doc": {
           "title": "Update the serial number of Cloud Volumes ONTAP",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "post-gcp-vsa-working-environments-change-serial.html",
           "subcategory": null
         }
@@ -7232,7 +7232,7 @@
       "put": {
         "x-doc": {
           "title": "Set the cluster password",
-          "category": "Google Cloud system - systems",
+          "category": "Google Cloud systems",
           "filename": "put-gcp-vsa-working-environments-set-password.html",
           "subcategory": null
         }
@@ -7242,7 +7242,7 @@
       "post": {
         "x-doc": {
           "title": "Add the capacity to an existing elastic volume aggregate",
-          "category": "AWS system - aggregates",
+          "category": "AWS aggregates",
           "filename": "post-vsa-aggregates--add-capacity.html",
           "subcategory": null
         }
@@ -7252,7 +7252,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "AWS system - aggregates",
+          "category": "AWS aggregates",
           "filename": "get-vsa-aggregates.html",
           "subcategory": null
         }
@@ -7260,7 +7260,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "AWS system - aggregates",
+          "category": "AWS aggregates",
           "filename": "post-vsa-aggregates.html",
           "subcategory": null
         }
@@ -7270,7 +7270,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing aggregate",
-          "category": "AWS system - aggregates",
+          "category": "AWS aggregates",
           "filename": "delete-vsa-aggregates-.html",
           "subcategory": null
         }
@@ -7280,7 +7280,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an existing aggregate",
-          "category": "AWS system - aggregates",
+          "category": "AWS aggregates",
           "filename": "post-vsa-aggregates--disks.html",
           "subcategory": null
         }
@@ -7290,7 +7290,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of discovered systems",
-          "category": "AWS system - discovery",
+          "category": "AWS system discovery",
           "filename": "get-vsa-discover.html",
           "subcategory": null
         }
@@ -7300,7 +7300,7 @@
       "post": {
         "x-doc": {
           "title": "Save a previously discovered Cloud Volumes ONTAP system",
-          "category": "AWS system - discovery",
+          "category": "AWS system discovery",
           "filename": "post-vsa-recover.html",
           "subcategory": null
         }
@@ -7309,8 +7309,8 @@
     "/vsa/encryption/{workingEnvironmentId}/update-key-manager-ca-certificate": {
       "post": {
         "x-doc": {
-          "title": "Update the key manager ca certificate",
-          "category": "AWS system - encryption",
+          "title": "Update the key manager CA certificate",
+          "category": "AWS system encryption",
           "filename": "post-vsa-encryption-update-key-manager-ca-certificate.html",
           "subcategory": null
         }
@@ -7320,7 +7320,7 @@
       "post": {
         "x-doc": {
           "title": "Update the client certificate",
-          "category": "AWS system - encryption",
+          "category": "AWS system encryption",
           "filename": "post-vsa-encryption-update-client-certificate.html",
           "subcategory": null
         }
@@ -7330,7 +7330,7 @@
       "post": {
         "x-doc": {
           "title": "Add a key manager",
-          "category": "AWS system - encryption",
+          "category": "AWS system encryption",
           "filename": "post-vsa-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -7338,7 +7338,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a key manager",
-          "category": "AWS system - encryption",
+          "category": "AWS system encryption",
           "filename": "delete-vsa-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -7348,7 +7348,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all Cloud Volumes ONTAP configurations",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-permutations.html",
           "subcategory": null
         }
@@ -7358,7 +7358,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all cloud manager manifests",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-manifests.html",
           "subcategory": null
         }
@@ -7368,7 +7368,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve vpcs",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-vpcs.html",
           "subcategory": null
         }
@@ -7378,7 +7378,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aws user key pairs for by region",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-key-pairs.html",
           "subcategory": null
         }
@@ -7388,7 +7388,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aws user key pairs for all regions",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-key-pairs-by-region.html",
           "subcategory": null
         }
@@ -7398,7 +7398,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aws instance profiles",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-instance-profiles.html",
           "subcategory": null
         }
@@ -7408,7 +7408,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve s3 buckets summary",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-s3-summary.html",
           "subcategory": null
         }
@@ -7418,7 +7418,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of required ips",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-network-requirements.html",
           "subcategory": null
         }
@@ -7428,7 +7428,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aws encryption keys for by region",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-aws-encryption-keys.html",
           "subcategory": null
         }
@@ -7438,7 +7438,7 @@
       "post": {
         "x-doc": {
           "title": "Comfirm that the current user is subscribed",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "post-vsa-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
         }
@@ -7448,7 +7448,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all s3 buckets",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-get-buckets-details.html",
           "subcategory": null
         }
@@ -7458,7 +7458,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve s3 buckets policy status and tiering level",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "post-vsa-metadata-get-buckets-application-info.html",
           "subcategory": null
         }
@@ -7468,7 +7468,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all s3 buckets",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-buckets.html",
           "subcategory": null
         }
@@ -7478,7 +7478,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for ebs volume types",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-supported-capacity-tiers.html",
           "subcategory": null
         }
@@ -7488,7 +7488,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new s3 bucket",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "post-vsa-metadata-create-bucket.html",
           "subcategory": null
         }
@@ -7498,7 +7498,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported ebs volume types",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-ebs-volume-types.html",
           "subcategory": null
         }
@@ -7508,7 +7508,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all tag names",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-tag-keys.html",
           "subcategory": null
         }
@@ -7518,7 +7518,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aws regions",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-regions.html",
           "subcategory": null
         }
@@ -7528,7 +7528,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve default snapshot policies available on a cluster",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-default-snapshot-policies.html",
           "subcategory": null
         }
@@ -7538,7 +7538,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve unsupported instance types for acceleration and capacity tiering",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null
         }
@@ -7548,7 +7548,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-supported-features.html",
           "subcategory": null
         }
@@ -7558,7 +7558,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve package configurations",
-          "category": "AWS system - metadata",
+          "category": "AWS system metadata",
           "filename": "get-vsa-metadata-packages.html",
           "subcategory": null
         }
@@ -7568,7 +7568,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new volume",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "post-vsa-volumes-quote.html",
           "subcategory": null
         }
@@ -7578,7 +7578,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "post-vsa-volumes--change-tier.html",
           "subcategory": null
         }
@@ -7588,7 +7588,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the volumes for backup activation",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "get-vsa-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -7598,7 +7598,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "put-vsa-volumes--.html",
           "subcategory": null
         }
@@ -7606,7 +7606,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "delete-vsa-volumes--.html",
           "subcategory": null
         }
@@ -7616,7 +7616,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "put-vsa-volumes--exportpolicy.html",
           "subcategory": null
         }
@@ -7626,7 +7626,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "get-vsa-volumes-igroups-.html",
           "subcategory": null
         }
@@ -7636,7 +7636,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "get-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -7644,7 +7644,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "post-vsa-volumes-initiator.html",
           "subcategory": null
         }
@@ -7654,7 +7654,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of snapshot descriptions for the volume",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "get-vsa-volumes--snapshots.html",
           "subcategory": null
         }
@@ -7664,7 +7664,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "post-vsa-volumes--clone.html",
           "subcategory": null
         }
@@ -7674,7 +7674,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "post-vsa-volumes--move.html",
           "subcategory": null
         }
@@ -7684,7 +7684,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "get-vsa-volumes.html",
           "subcategory": null
         }
@@ -7692,7 +7692,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "AWS system  - volumes",
+          "category": "AWS volumes",
           "filename": "post-vsa-volumes.html",
           "subcategory": null
         }
@@ -7702,7 +7702,7 @@
       "post": {
         "x-doc": {
           "title": "Manually create a snapshot",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "post-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -7710,7 +7710,7 @@
       "delete": {
         "x-doc": {
           "title": "Manually delete a snapshot",
-          "category": "AWS system - volumes",
+          "category": "AWS volumes",
           "filename": "delete-vsa-volumes--snapshot.html",
           "subcategory": null
         }
@@ -7720,7 +7720,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Cloud Volumes ONTAP systems",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "get-vsa-working-environments.html",
           "subcategory": null
         }
@@ -7728,7 +7728,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new Cloud Volumes ONTAP system ",
-          "category": "AWS system - systems",
+          "category": "AWS systems",
           "filename": "post-vsa-working-environments.html",
           "subcategory": null
         }
