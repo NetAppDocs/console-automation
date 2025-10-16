@@ -21874,7 +21874,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Discovery"
         ],
-        "description": "Saves a previously discovered Cloud Volumes ONTAP system to the the NetApp Console database.",
+        "description": "Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database.",
         "operationId": "discoverAzure_1",
         "requestBody": {
           "content": {
@@ -23862,7 +23862,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Updates the the NetApp Console password for a specific Cloud Volumes ONTAP system.",
+        "description": "Updates the NetApp Console password for a specific Cloud Volumes ONTAP system.",
         "operationId": "updatePassword_7",
         "parameters": [
           {
