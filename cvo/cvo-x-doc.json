@@ -1666,7 +1666,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the installed certificate",
-          "category": "NetApp Console system operations - certificates",
+          "category": "NetApp Console certificates",
           "filename": "get-occm-encryption-certificate.html",
           "subcategory": null
         }
@@ -1674,7 +1674,7 @@
       "post": {
         "x-doc": {
           "title": "Validate and install a certificate",
-          "category": "NetApp Console system operations - certificates",
+          "category": "NetApp Console certificates",
           "filename": "post-occm-encryption-certificate.html",
           "subcategory": null
         }
@@ -1684,7 +1684,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a generated certificate signing request",
-          "category": "NetApp Console system operations - CSR",
+          "category": "NetApp Console certificate signing requests",
           "filename": "get-occm-encryption-csr.html",
           "subcategory": null
         }
@@ -1692,7 +1692,7 @@
       "post": {
         "x-doc": {
           "title": "Generate, store, and return a certificate signing request",
-          "category": "NetApp Console system operations - CSR",
+          "category": "NetApp Console certificate signing requests",
           "filename": "post-occm-encryption-csr.html",
           "subcategory": null
         }
@@ -1702,7 +1702,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all key manager CA certificates",
-          "category": "NetApp Console system operations - CA certificates ",
+          "category": "NetApp Console CA certificates ",
           "filename": "get-occm-encryption-key-managers-ca-certificates.html",
           "subcategory": null
         }
@@ -1710,7 +1710,7 @@
       "post": {
         "x-doc": {
           "title": "Add a new key manager CA certificate",
-          "category": "NetApp Console system operations - CA certificates ",
+          "category": "NetApp Console CA certificates ",
           "filename": "post-occm-encryption-key-managers-ca-certificates.html",
           "subcategory": null
         }
@@ -1720,7 +1720,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a key manager CA certificate",
-          "category": "NetApp Console system operations - CA certificates ",
+          "category": "NetApp Console CA certificates ",
           "filename": "get-occm-encryption-key-managers-ca-certificates-.html",
           "subcategory": null
         }
@@ -1728,7 +1728,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a key manager CA certificate",
-          "category": "NetApp Console system operations - CA certificates ",
+          "category": "NetApp Console CA certificates ",
           "filename": "delete-occm-encryption-key-managers-ca-certificates-.html",
           "subcategory": null
         }
@@ -1738,7 +1738,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a key manager using the public ID",
-          "category": "NetApp Console system operations - key managers",
+          "category": "NetApp Console key managers",
           "filename": "get-occm-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -1746,7 +1746,7 @@
       "put": {
         "x-doc": {
           "title": "Update an existing key manager",
-          "category": "NetApp Console system operations - key managers",
+          "category": "NetApp Console key managers",
           "filename": "put-occm-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -1754,7 +1754,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing key manager",
-          "category": "NetApp Console system operations - key managers",
+          "category": "NetApp Console key managers",
           "filename": "delete-occm-encryption-key-managers-.html",
           "subcategory": null
         }
@@ -1764,7 +1764,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all key managers",
-          "category": "NetApp Console system operations - key managers",
+          "category": "NetApp Console key managers",
           "filename": "get-occm-encryption-key-managers.html",
           "subcategory": null
         }
@@ -1772,7 +1772,7 @@
       "post": {
         "x-doc": {
           "title": "Add a new key manager",
-          "category": "NetApp Console system operations - key managers",
+          "category": "NetApp Console key managers",
           "filename": "post-occm-encryption-key-managers.html",
           "subcategory": null
         }
@@ -4368,7 +4368,7 @@
       "post": {
         "x-doc": {
           "title": "Generate a new key pair and self certificate",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "post-occm-key-store.html",
           "subcategory": null
         }
@@ -4378,7 +4378,7 @@
       "post": {
         "x-doc": {
           "title": "Generate a new key pair and self certificate at the key store",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "post-occm-key-store-external-certificate-file.html",
           "subcategory": null
         }
@@ -4388,7 +4388,7 @@
       "post": {
         "x-doc": {
           "title": "Generate a new key pair and self certificate at the key store",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "post-occm-key-store-external-certificate.html",
           "subcategory": null
         }
@@ -4398,7 +4398,7 @@
       "post": {
         "x-doc": {
           "title": "Validate and install the certificate in the trust store",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "post-occm-key-store-trusted-certificate-file.html",
           "subcategory": null
         }
@@ -4408,7 +4408,7 @@
       "post": {
         "x-doc": {
           "title": "Validate and install the provided root CA chain",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "post-occm-key-store-signed-certificate-file.html",
           "subcategory": null
         }
@@ -4418,7 +4418,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the CA signed certificate",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "get-occm-key-store-signed-certificate.html",
           "subcategory": null
         }
@@ -4426,7 +4426,7 @@
       "post": {
         "x-doc": {
           "title": "Validate and install the provided root CA chain",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "post-occm-key-store-signed-certificate.html",
           "subcategory": null
         }
@@ -4436,7 +4436,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the self certificate of the NetApp Console key store",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "get-occm-key-store-self-certificate.html",
           "subcategory": null
         }
@@ -4446,7 +4446,7 @@
       "get": {
         "x-doc": {
           "title": "Return the existing trusted certificates added from the trust store",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "get-occm-key-store-user-trusted-certificates.html",
           "subcategory": null
         }
@@ -4456,7 +4456,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing trusted certificate from the trust store",
-          "category": "NetApp Console system - key store",
+          "category": "NetApp Console key store",
           "filename": "delete-occm-key-store-trusted-certificate-.html",
           "subcategory": null
         }
@@ -4506,7 +4506,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the signed url for the NetApp Console support data",
-          "category": "NetApp Console system - AutoSupport",
+          "category": "NetApp Console AutoSupport",
           "filename": "get-occm-asup-download-signed.html",
           "subcategory": null
         }
@@ -4516,7 +4516,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the autosupport configuration",
-          "category": "NetApp Console system - AutoSupport",
+          "category": "NetApp Console AutoSupport",
           "filename": "get-occm-asup.html",
           "subcategory": null
         }
@@ -4524,7 +4524,7 @@
       "put": {
         "x-doc": {
           "title": "Update the autosupport configuration",
-          "category": "NetApp Console system - AutoSupport",
+          "category": "NetApp Console AutoSupport",
           "filename": "put-occm-asup.html",
           "subcategory": null
         }
@@ -4534,7 +4534,7 @@
       "get": {
         "x-doc": {
           "title": "Download a compressed file of all the autosupport files from all vsas",
-          "category": "NetApp Console system - AutoSupport",
+          "category": "NetApp Console AutoSupport",
           "filename": "get-occm-asup-download-ontap-cloud-asups.html",
           "subcategory": null
         }
@@ -4544,7 +4544,7 @@
       "post": {
         "x-doc": {
           "title": "Send performance archive support data to NetApp support",
-          "category": "NetApp Console system - AutoSupport",
+          "category": "NetApp Console AutoSupport",
           "filename": "post-occm-asup-send-cot-performance-asup-.html",
           "subcategory": null
         }
@@ -4554,7 +4554,7 @@
       "get": {
         "x-doc": {
           "title": "Download NetApp Console support data",
-          "category": "NetApp Console system - AutoSupport",
+          "category": "NetApp Console AutoSupport",
           "filename": "get-occm-asup-download.html",
           "subcategory": null
         }
@@ -4564,7 +4564,7 @@
       "post": {
         "x-doc": {
           "title": "Send NetApp Console support data to NetApp support",
-          "category": "NetApp Console system - AutoSupport",
+          "category": "NetApp Console AutoSupport",
           "filename": "post-occm-asup-send.html",
           "subcategory": null
         }
@@ -4574,7 +4574,7 @@
       "post": {
         "x-doc": {
           "title": "Send Cloud Volumes ONTAP support data to NetApp support",
-          "category": "NetApp Console system - AutoSupport",
+          "category": "NetApp Console AutoSupport",
           "filename": "post-occm-asup-send-cot-asup.html",
           "subcategory": null
         }
@@ -4583,8 +4583,8 @@
     "/occm/config/simplicator": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the current simplicator uri and status",
-          "category": "NetApp Console system - configuration",
+          "title": "Retrieve the current simplicator URI and status",
+          "category": "NetApp Console configuration",
           "filename": "get-occm-config-simplicator.html",
           "subcategory": null
         }
@@ -4594,7 +4594,7 @@
       "post": {
         "x-doc": {
           "title": "Reset to the default simplicator uri",
-          "category": "NetApp Console system - configuration",
+          "category": "NetApp Console configuration",
           "filename": "post-occm-config-simplicator-reset.html",
           "subcategory": null
         }
@@ -4604,7 +4604,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve NetApp Console configuration parameters",
-          "category": "NetApp Console system - configuration",
+          "category": "NetApp Console configuration",
           "filename": "get-occm-config.html",
           "subcategory": null
         }
@@ -4612,7 +4612,7 @@
       "put": {
         "x-doc": {
           "title": "Configure modifiable NetApp Console parameters",
-          "category": "NetApp Console system - configuration",
+          "category": "NetApp Console configuration",
           "filename": "put-occm-config.html",
           "subcategory": null
         }
@@ -4622,7 +4622,7 @@
       "get": {
         "x-doc": {
           "title": "Check for a new version of the NetApp Console",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "get-occm-system-available-update-versions.html",
           "subcategory": null
         }
@@ -4632,7 +4632,7 @@
       "post": {
         "x-doc": {
           "title": "Perform a fetch and process of image update metadata files",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "post-occm-system-cloud-ontap-update-image-metadata.html",
           "subcategory": null
         }
@@ -4642,7 +4642,7 @@
       "post": {
         "x-doc": {
           "title": "Perform a fetch and cache of Cloud Volumes ONTAP and NetApp Console files",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "post-occm-system-cloud-ontap-update-metadata.html",
           "subcategory": null
         }
@@ -4652,7 +4652,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported regions for the cloud providers",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "get-occm-system-cloud-provider-regions.html",
           "subcategory": null
         }
@@ -4662,7 +4662,7 @@
       "post": {
         "x-doc": {
           "title": "Manually activate the Cloud Volumes ONTAP capacity automatic management cycle",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "post-occm-system-manually-activate-auto-vsa-capacity-management-cycle.html",
           "subcategory": null
         }
@@ -4672,7 +4672,7 @@
       "post": {
         "x-doc": {
           "title": "Manually trigger sending daily notifications",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "post-occm-system-manually-trigger-send-daily-notification.html",
           "subcategory": null
         }
@@ -4682,7 +4682,7 @@
       "post": {
         "x-doc": {
           "title": "Restart the server",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "post-occm-system-restart-server.html",
           "subcategory": null
         }
@@ -4692,7 +4692,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve feature flags",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "get-occm-system-feature-flags.html",
           "subcategory": null
         }
@@ -4702,7 +4702,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the NetApp Console feedback configuration",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "get-occm-system-external-config.html",
           "subcategory": null
         }
@@ -4712,7 +4712,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the NetApp Console server information",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "get-occm-system-about.html",
           "subcategory": null
         }
@@ -4722,7 +4722,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the NetApp Console support services information",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "get-occm-system-support-services.html",
           "subcategory": null
         }
@@ -4732,7 +4732,7 @@
       "post": {
         "x-doc": {
           "title": "Update the NetApp Console to the specified version",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "post-occm-system-update.html",
           "subcategory": null
         }
@@ -4742,7 +4742,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the region, vpc, and subnet",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "get-occm-system-occm-instance-placement.html",
           "subcategory": null
         }
@@ -4752,7 +4752,7 @@
       "post": {
         "x-doc": {
           "title": "Update the NetApp Console with the specified patch version",
-          "category": "NetApp Console system - system",
+          "category": "NetApp Console ",
           "filename": "post-occm-system-patch.html",
           "subcategory": null
         }
@@ -4762,7 +4762,7 @@
       "put": {
         "x-doc": {
           "title": "Update the current NetApp Console service user",
-          "category": "NetApp Console system - identity and access management",
+          "category": "NetApp Console identity and access management",
           "filename": "put-occm-tenancy-service-users-update-current-user.html",
           "subcategory": null
         }
@@ -4772,7 +4772,7 @@
       "post": {
         "x-doc": {
           "title": "Associate a console agent with a system",
-          "category": "NetApp Console system - identity and access management",
+          "category": "NetApp Console identity and access management",
           "filename": "post-occm-tenancy-service-workspaces-associate.html",
           "subcategory": null
         }
@@ -4782,7 +4782,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve visible workspaces",
-          "category": "NetApp Console system - identity and access management",
+          "category": "NetApp Console identity and access management",
           "filename": "get-occm-tenancy-service-workspaces.html",
           "subcategory": null
         }
@@ -5182,7 +5182,7 @@
       "put": {
         "x-doc": {
           "title": "Attach an SaaS subscription",
-          "category": "NetApp Console system - SaaS marketplace",
+          "category": "NetApp Console SaaS marketplace",
           "filename": "put-occm-saas-mp-service-attach-subscription-.html",
           "subcategory": null
         }
@@ -5192,7 +5192,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve SaaS marketplace subscriptions",
-          "category": "NetApp Console system - SaaS marketplace",
+          "category": "NetApp Console SaaS marketplace",
           "filename": "get-occm-saas-mp-service-subscription.html",
           "subcategory": null
         }
@@ -5202,7 +5202,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve current SaaS marketplace accounts and subscriptions",
-          "category": "NetApp Console system - SaaS marketplace",
+          "category": "NetApp Console SaaS marketplace",
           "filename": "get-occm-saas-mp-service-account.html",
           "subcategory": null
         }
@@ -5212,7 +5212,7 @@
       "post": {
         "x-doc": {
           "title": "Validate a given proxy URL",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-validate-proxy.html",
           "subcategory": null
         }
@@ -5222,7 +5222,7 @@
       "post": {
         "x-doc": {
           "title": "Validate an active internet connection",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-validate-connectivity.html",
           "subcategory": null
         }
@@ -5232,7 +5232,7 @@
       "post": {
         "x-doc": {
           "title": "Complete the setup",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-complete-connectivity-pending-setup.html",
           "subcategory": null
         }
@@ -5242,7 +5242,7 @@
       "post": {
         "x-doc": {
           "title": "Register NetApp Console",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-register.html",
           "subcategory": null
         }
@@ -5252,7 +5252,7 @@
       "post": {
         "x-doc": {
           "title": "Register NetApp Console to a dark site",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-register-in-local-auth.html",
           "subcategory": null
         }
@@ -5262,7 +5262,7 @@
       "post": {
         "x-doc": {
           "title": "Perform an initial setup with NetApp Console",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-init.html",
           "subcategory": null
         }
@@ -5272,7 +5272,7 @@
       "post": {
         "x-doc": {
           "title": "Perform an initial standalone setup with the local identity provider",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-init-standalone-local-auth.html",
           "subcategory": null
         }
@@ -5282,7 +5282,7 @@
       "post": {
         "x-doc": {
           "title": "Set up a given proxy URL",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-proxy-setup.html",
           "subcategory": null
         }
@@ -5292,7 +5292,7 @@
       "post": {
         "x-doc": {
           "title": "Confirm that NetApp Console has an active internet connection",
-          "category": "NetApp Console system - initial setup",
+          "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-validate-connectivity.html",
           "subcategory": null
         }
