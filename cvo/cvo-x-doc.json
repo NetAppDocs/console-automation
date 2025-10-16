@@ -5484,7 +5484,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Cloud manager no longer manages this system, but this does not affect data ontap itself",
+          "title": "NetApp Console no longer manages this system, but this does not affect data ontap itself",
           "category": "On-premises ONTAP cluster systems",
           "filename": "delete-onprem-working-environments-.html",
           "subcategory": null,
