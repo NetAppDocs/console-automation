@@ -876,7 +876,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Volumes"
         ],
-        "description": "Creates a snapshot manually.",
+        "description": "Manually creates a snapshot.",
         "operationId": "createSnapshot",
         "parameters": [
           {
@@ -928,7 +928,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Volumes"
         ],
-        "description": "Deletes a snapshot manually.",
+        "description": "Manually deletes a snapshot.",
         "operationId": "deleteSnapshot",
         "parameters": [
           {
@@ -1115,7 +1115,7 @@
         "tags": [
           "Account operations"
         ],
-        "description": "Updates the vsa list of an existing NSS account.",
+        "description": "Updates the VSA list of an existing NSS account.",
         "operationId": "updateNssAccountVsaList",
         "parameters": [
           {
@@ -3035,7 +3035,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Metadata"
         ],
-        "description": "Retrieves Azure regions where a Cloud Volumes ONTAP system can be created.",
+        "description": "Retrieves the Azure regions where a Cloud Volumes ONTAP system can be created.",
         "operationId": "regions",
         "parameters": [
           {
@@ -3707,7 +3707,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Volumes"
         ],
-        "description": "Set up Azure VMware Solution on a volume.",
+        "description": "Sets up Azure VMware Solution on a volume.",
         "operationId": "setupAvsOnVolume",
         "parameters": [
           {
@@ -4117,7 +4117,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Volumes"
         ],
-        "description": "Creates a snapshot manually.",
+        "description": "Manually creates a snapshot.",
         "operationId": "createSnapshot_1",
         "parameters": [
           {
@@ -4169,7 +4169,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Volumes"
         ],
-        "description": "Deletes a snapshot manually.",
+        "description": "Manually deletes a snapshot.",
         "operationId": "deleteSnapshot_1",
         "parameters": [
           {
@@ -4852,7 +4852,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Set up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
+        "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
         "operationId": "setupCifsConfiguration_1",
         "parameters": [
           {
@@ -5231,7 +5231,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Activates the off-box configuration.",
+        "description": "Activates an off-box configuration.",
         "operationId": "activateOntapConfiguration",
         "parameters": [
           {
@@ -5298,7 +5298,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Retrieves action parameters used in the create request for a specific Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the action parameters used in the create request for a specific Cloud Volumes ONTAP instance.",
         "operationId": "createRequestParameters",
         "parameters": [
           {
@@ -5731,7 +5731,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Updates the default Vscan file operation profile. A profile on an existing CIFS share updates only when on writes-only mode.",
+        "description": "Updates the default Vscan file operation profile. A profile on an existing CIFS share only updates in writes-only mode.",
         "operationId": "updateVscanFileOperation",
         "parameters": [
           {
@@ -6298,7 +6298,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Retrieves editable tags for the cloud resources in a specific Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the editable tags for the cloud resources in a specific Cloud Volumes ONTAP instance.",
         "operationId": "userTags",
         "parameters": [
           {
@@ -6886,7 +6886,7 @@
         "tags": [
           "Cloud Manager system operations - Encryption - Certificate"
         ],
-        "description": "Validates and installs the provided certificate. Successive API calls overwrite any previously installed certificate. The certificate must match a previously generated certificate signing request (CSR).",
+        "description": "Validates and installs the provided certificate. Successive API calls overwrite any previously installed certificates. The certificate must match a previously generated certificate signing request (CSR).",
         "operationId": "installCertificate",
         "requestBody": {
           "content": {
@@ -7019,7 +7019,7 @@
         "tags": [
           "Cloud Manager system operations - Encryption - Key manager CA certificates operations"
         ],
-        "description": "Retrieves a specific key manager certificate authority (CA)  certificate.",
+        "description": "Retrieves a specific key manager certificate authority (CA) certificate.",
         "operationId": "keyManagerCaCertificate",
         "parameters": [
           {
@@ -7048,7 +7048,7 @@
         "tags": [
           "Cloud Manager system operations - Encryption - Key manager CA certificates operations"
         ],
-        "description": "Deletes an existing key manager certificate authority (CA)  certificate.",
+        "description": "Deletes an existing key manager certificate authority (CA) certificate.",
         "operationId": "deleteKeyManagerCaCertificate",
         "parameters": [
           {
@@ -7236,7 +7236,7 @@
         "tags": [
           "Common working environment operations"
         ],
-        "description": "Returns true if working environment with that name already exists, false otherwise",
+        "description": "Returns true if a system with that name already exists, false otherwise",
         "operationId": "workingEnvironmentsByName",
         "parameters": [
           {
@@ -7686,7 +7686,7 @@
         "tags": [
           "FSx (Data ONTAP cluster) working environment operations - Volumes"
         ],
-        "description": "Retrieves an NFS clients list for an existing FSx system.",
+        "description": "Retrieves an NFS client list for an existing FSx system.",
         "operationId": "fsxNfsClients",
         "parameters": [
           {
@@ -8215,7 +8215,7 @@
         "tags": [
           "FSx (Data ONTAP cluster) working environment operations - Volumes"
         ],
-        "description": "Creates a snapshot manually.",
+        "description": "Manually creates a snapshot.",
         "operationId": "createSnapshot_2",
         "parameters": [
           {
@@ -8267,7 +8267,7 @@
         "tags": [
           "FSx (Data ONTAP cluster) working environment operations - Volumes"
         ],
-        "description": "Deletes a snapshot manually.",
+        "description": "Manually deletes a snapshot.",
         "operationId": "deleteSnapshot_2",
         "parameters": [
           {
@@ -8321,7 +8321,7 @@
         "tags": [
           "FSx (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Retrieves CIFS configuration for an existing FSx system.",
+        "description": "Retrieves a CIFS configuration for an existing FSx system.",
         "operationId": "cifsConfiguration_1",
         "parameters": [
           {
@@ -8368,7 +8368,7 @@
         "tags": [
           "FSx (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Set up a new CIFS configuration for an existing FSx system.",
+        "description": "Sets up a new CIFS configuration for an existing FSx system.",
         "operationId": "setupCifsConfiguration_2",
         "parameters": [
           {
@@ -8527,7 +8527,7 @@
         "tags": [
           "FSx (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Retrieves network interfaces lists for an existing FSx system.",
+        "description": "Retrieves a network interfaces list for an existing FSx system.",
         "operationId": "fsxInterfaces",
         "parameters": [
           {
@@ -10045,7 +10045,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Volumes"
         ],
-        "description": "Creates a snapshot manually.",
+        "description": "Manually creates a snapshot.",
         "operationId": "createSnapshot_3",
         "parameters": [
           {
@@ -10097,7 +10097,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Volumes"
         ],
-        "description": "Deletes a snapshot manually.",
+        "description": "Manually deletes a snapshot.",
         "operationId": "deleteSnapshot_3",
         "parameters": [
           {
@@ -10351,7 +10351,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Metadata"
         ],
-        "description": "Retrieves Google Cloud regions and zones over which a Cloud Volumes ONTAP working environment can be created.",
+        "description": "Retrieves Google Cloud regions and zones over which a Cloud Volumes ONTAP system can be created.",
         "operationId": "regionsAndZones",
         "parameters": [
           {
@@ -11667,7 +11667,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Volumes"
         ],
-        "description": "Creates a snapshot manually.",
+        "description": "Manually creates a snapshot.",
         "operationId": "createSnapshot_4",
         "parameters": [
           {
@@ -11719,7 +11719,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Volumes"
         ],
-        "description": "Deletes a snapshot manually.",
+        "description": "Manually deletes a snapshot.",
         "operationId": "deleteSnapshot_4",
         "parameters": [
           {
@@ -12573,7 +12573,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Activates the off-box configuration.",
+        "description": "Activates an off-box configuration.",
         "operationId": "activateOntapConfiguration_1",
         "parameters": [
           {
@@ -12709,7 +12709,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Retrieves a list of versions to which the Cloud Volumes ONTAP system can be upgraded.",
+        "description": "Retrieves a list of versions to which the Cloud Volumes ONTAP system can be upgraded",
         "operationId": "occmProvidedCloudOntapUpgradeVersions_1",
         "parameters": [
           {
@@ -13073,7 +13073,7 @@
         "tags": [
           "ONTAP Cloud GCP HA working environment operations - Working environments"
         ],
-        "description": "Updates the default Vscan file operation profile. A profile on an existing CIFS share updates only on writes-only mode",
+        "description": "Updates the default Vscan file operation profile. A profile on an existing CIFS share only updates in writes-only mode",
         "operationId": "updateVscanFileOperation_1",
         "parameters": [
           {
@@ -15142,7 +15142,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Metadata"
         ],
-        "description": "Retrieves the packages configuration.",
+        "description": "Retrieves the packages configurations.",
         "operationId": "packages_3",
         "parameters": [
           {
@@ -15896,7 +15896,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Volumes"
         ],
-        "description": "Creates a snapshot manually.",
+        "description": "Manually creates a snapshot.",
         "operationId": "createSnapshot_5",
         "parameters": [
           {
@@ -15948,7 +15948,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Volumes"
         ],
-        "description": "Deletes a snapshot manually.",
+        "description": "Manually deletes a snapshot.",
         "operationId": "deleteSnapshot_5",
         "parameters": [
           {
@@ -16607,7 +16607,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Retrieves eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, and LICENSE_EXPIRED.",
+        "description": "Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, and LICENSE_EXPIRED.",
         "operationId": "occmUpgradeEligibilityChecks_2",
         "parameters": [
           {
@@ -16721,7 +16721,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Activates the off-box configuration.",
+        "description": "Activates an off-box configuration.",
         "operationId": "activateOntapConfiguration_2",
         "parameters": [
           {
@@ -16788,7 +16788,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Retrieves action parameters used in the create request of a specific Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the action parameters used in the create request of a specific Cloud Volumes ONTAP instance.",
         "operationId": "createRequestParameters_2",
         "parameters": [
           {
@@ -17221,7 +17221,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Updates the default Vscan file operation profile. A profile on an existing CIFS share updates only on writes-only mode.",
+        "description": "Updates the default Vscan file operation profile. A profile on an existing CIFS share only updates in writes-only mode.",
         "operationId": "updateVscanFileOperation_2",
         "parameters": [
           {
@@ -17826,7 +17826,7 @@
         "tags": [
           "ONTAP Cloud AWS HA working environment operations - Working environments"
         ],
-        "description": "Retrieves the editable tags for cloud resources in a specific Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the editable tags for the cloud resources in a specific Cloud Volumes ONTAP instance.",
         "operationId": "userTags_2",
         "parameters": [
           {
@@ -18812,7 +18812,7 @@
         "tags": [
           "Cloud Manager system operations - System"
         ],
-        "description": "Performs fetch and cache of Cloud Volumes ONTAP and NetApp Console version information files from S3.",
+        "description": "Performs fetch and caching of Cloud Volumes ONTAP and NetApp Console version information files from S3.",
         "operationId": "updateCloudOntapMetadata",
         "responses": {
           "default": {
@@ -19051,7 +19051,7 @@
         "tags": [
           "Cloud Manager system operations - System"
         ],
-        "description": "Updates the NetApp Console with the specified patch version.  A backup should be provided in multipart/form-data, with the file at a part named 'patch'.",
+        "description": "Updates the NetApp Console with the specified patch version. A backup should be provided in multipart/form-data, with the file at a part named 'patch'.",
         "operationId": "patch",
         "parameters": [
           {
@@ -19116,7 +19116,7 @@
         "tags": [
           "Cloud Manager system operations - Tenancy service"
         ],
-        "description": "Associates a Console agent with a workspace.",
+        "description": "Associates a Console agent with a system.",
         "operationId": "associateToWorkspace",
         "parameters": [
           {
@@ -19145,7 +19145,7 @@
         "tags": [
           "Cloud Manager system operations - Tenancy service"
         ],
-        "description": "Retrieves workspaces that are visible to the current user.",
+        "description": "Retrieves systems that are visible to the current user.",
         "operationId": "workspaces",
         "responses": {
           "default": {
@@ -19649,7 +19649,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Volumes"
         ],
-        "description": "Creates a snapshot manually.",
+        "description": "Manually creates a snapshot.",
         "operationId": "createSnapshot_6",
         "parameters": [
           {
@@ -19701,7 +19701,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Volumes"
         ],
-        "description": "Deletes a snapshot manually.",
+        "description": "Manually deletes a snapshot.",
         "operationId": "deleteSnapshot_6",
         "parameters": [
           {
@@ -20701,7 +20701,7 @@
         "tags": [
           "Replication operations"
         ],
-        "description": "Reversing an existing SnapMirror relationship. This method can only be used when the relationship has already been established and is healthy and idle.",
+        "description": "Reverses an existing SnapMirror relationship. This method can only be used when the relationship has already been established and is healthy and idle.",
         "operationId": "reverseResyncReplication",
         "parameters": [
           {
@@ -22105,7 +22105,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves all  of the keys in a vault.",
+        "description": "Retrieves all of the keys in a vault.",
         "operationId": "listKeysInVault_1",
         "parameters": [
           {
@@ -22420,7 +22420,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Metadata"
         ],
-        "description": "Retrieves all of the Tag names.",
+        "description": "Retrieves all tag names.",
         "operationId": "tagKeys_4",
         "parameters": [
           {
@@ -22902,7 +22902,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Confirms the prerequisites for converting an existing Cloud Volumes ONTAP system.",
+        "description": "Validates the prerequisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_6",
         "parameters": [
           {
@@ -23824,7 +23824,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Updates the default Vscan file operation profile. Profiles on existing CIFS shares only change for writes-only mode.",
+        "description": "Updates the default Vscan file operation profile. Profiles on existing CIFS shares only change in writes-only mode.",
         "operationId": "updateVscanFileOperation_6",
         "parameters": [
           {
@@ -23938,7 +23938,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Updates the BYOL licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
+        "description": "Updates the bring-your-own-license (BYOL) licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
         "operationId": "byolToCapacity_6",
         "parameters": [
           {
@@ -24429,7 +24429,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Retrieves editable tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
+        "description": "Retrieves the editable tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
         "operationId": "userTags_6",
         "parameters": [
           {
@@ -24458,7 +24458,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Modifies user tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
+        "description": "Modifies the user tags for the cloud resources of a specified Cloud Volumes ONTAP instance.",
         "operationId": "modifyUserTags_6",
         "parameters": [
           {
@@ -24496,7 +24496,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Working environments"
         ],
-        "description": "Activates snapshot policy assignments to all unprotected RW volumes.",
+        "description": "Activates snapshot policy assignments to all unprotected read/write volumes.",
         "operationId": "activateSnapshotPolicy_6",
         "parameters": [
           {
@@ -25282,7 +25282,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Confirms the prerequisites for converting an existing Cloud Volumes ONTAP system.",
+        "description": "Validates the prerequisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_4",
         "parameters": [
           {
@@ -25585,7 +25585,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Uploads a cloud license file content to the provided Cloud Volumes ONTAP.",
+        "description": "Uploads cloud license file content to the provided Cloud Volumes ONTAP.",
         "operationId": "uploadLicenseFileContent_4",
         "parameters": [
           {
@@ -26123,7 +26123,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Updates the default Vsacn file operation profile. Profiles on existing CIFS shares only change for writes-only mode.",
+        "description": "Updates the default Vsacn file operation profile. Profiles on existing CIFS shares only change in writes-only mode.",
         "operationId": "updateVscanFileOperation_4",
         "parameters": [
           {
@@ -26237,7 +26237,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Updates the BYOL licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
+        "description": "Updates the bring-your-own-license (BYOL) licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
         "operationId": "byolToCapacity_4",
         "parameters": [
           {
@@ -26757,7 +26757,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Activates the snapshot policy assignment to all nof the unprotected RW volumes.",
+        "description": "Activates the snapshot policy assignment to all of the unprotected read/write volumes.",
         "operationId": "activateSnapshotPolicy_4",
         "parameters": [
           {
@@ -27298,7 +27298,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Confirms the prerequisites for converting an existing Cloud Volumes ONTAP system.",
+        "description": "Validates the prerequisites for converting an existing Cloud Volumes ONTAP system.",
         "operationId": "preValidateByolToCapacity_5",
         "parameters": [
           {
@@ -28139,7 +28139,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Updates the default Vscan file operation profile. Profiles on existing CIFS shares only change on writes-only mode.",
+        "description": "Updates the default Vscan file operation profile. Profiles on existing CIFS shares only change in writes-only mode.",
         "operationId": "updateVscanFileOperation_5",
         "parameters": [
           {
@@ -28253,7 +28253,7 @@
         "tags": [
           "ONTAP Cloud GCP working environment operations - Working environments"
         ],
-        "description": "Updates a BYOL licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
+        "description": "Updates a bring-your-own-license (BYOL) licence to a capacity-based license for an existing Cloud Volumes ONTAP system.",
         "operationId": "byolToCapacity_5",
         "parameters": [
           {
@@ -29962,7 +29962,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Metadata"
         ],
-        "description": "Retrieves all of the Tag names.",
+        "description": "Retrieves all of the tag names.",
         "operationId": "tagKeys_5",
         "parameters": [
           {
@@ -30910,7 +30910,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Creates a snapshot manually.",
+        "description": "Manually creates a snapshot.",
         "operationId": "createSnapshot_7",
         "parameters": [
           {
@@ -30962,7 +30962,7 @@
         "tags": [
           "ONTAP Cloud AWS working environment operations - Volumes"
         ],
-        "description": "Deletes a snapshot manually.",
+        "description": "Manually deletes a snapshot.",
         "operationId": "deleteSnapshot_7",
         "parameters": [
           {
