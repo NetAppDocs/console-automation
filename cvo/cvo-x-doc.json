@@ -7671,7 +7671,7 @@
       }
     },
     "/vsa/working-environments/{workingEnvironmentId}/update-credentials": {
-      "post": {
+      "put": {
         "x-doc": {
           "title": "Update the the NetApp Console password ",
           "category": "AWS systems",
