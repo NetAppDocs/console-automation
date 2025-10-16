@@ -19116,7 +19116,7 @@
         "tags": [
           "Cloud Manager system operations - Tenancy service"
         ],
-        "description": "Associates a Console agent with a system.",
+        "description": "Associates a Console agent with a workspace.",
         "operationId": "associateToWorkspace",
         "parameters": [
           {
@@ -19145,7 +19145,7 @@
         "tags": [
           "Cloud Manager system operations - Tenancy service"
         ],
-        "description": "Retrieves systems that are visible to the current user.",
+        "description": "Retrieves workspaces that are visible to the current user.",
         "operationId": "workspaces",
         "responses": {
           "default": {
