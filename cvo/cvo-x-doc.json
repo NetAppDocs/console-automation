@@ -4153,7 +4153,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "Update the NetApp Console password for a system",
+          "title": "Update the NetApp Console password",
           "category": "AWS HA systems",
           "filename": "put-aws-ha-working-environments-update-credentials.html",
           "subcategory": null
@@ -4812,7 +4812,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "get-onprem-volumes-volumes-for-backup.html",
           "subcategory": null
         }
@@ -4822,7 +4822,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "put-onprem-volumes--.html",
           "subcategory": null
         }
@@ -4830,7 +4830,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "delete-onprem-volumes--.html",
           "subcategory": null
         }
@@ -4840,7 +4840,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of snapshot descriptions",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "get-onprem-volumes--snapshots.html",
           "subcategory": null
         }
@@ -4850,7 +4850,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "post-onprem-volumes--clone.html",
           "subcategory": null
         }
@@ -4860,7 +4860,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "get-onprem-volumes.html",
           "subcategory": null
         }
@@ -4868,7 +4868,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "post-onprem-volumes.html",
           "subcategory": null
         }
@@ -4878,7 +4878,7 @@
       "post": {
         "x-doc": {
           "title": "Manually create a snapshot",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "post-onprem-volumes--snapshot.html",
           "subcategory": null
         }
@@ -4886,7 +4886,7 @@
       "delete": {
         "x-doc": {
           "title": "Manually delete a snapshot",
-          "category": "On-premises ONTAP Cluster system - volumes",
+          "category": "On-premises ONTAP cluster volumes",
           "filename": "delete-onprem-volumes--snapshot.html",
           "subcategory": null
         }
