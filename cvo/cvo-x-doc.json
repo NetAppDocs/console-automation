@@ -448,7 +448,7 @@
       "post": {
         "x-doc": {
           "title": "Sign out of the NetApp Console",
-          "category": "User management - authentication ",
+          "category": "User management authentication ",
           "filename": "post-auth-logout.html",
           "subcategory": null
         }
@@ -458,7 +458,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve user representation",
-          "category": "User management - authentication ",
+          "category": "User management authentication ",
           "filename": "get-auth-current-user.html",
           "subcategory": null
         }
@@ -468,7 +468,7 @@
       "put": {
         "x-doc": {
           "title": "Update the user password",
-          "category": "User management - authentication ",
+          "category": "User management authentication ",
           "filename": "put-auth-current-user-change-password.html",
           "subcategory": null
         }
@@ -478,7 +478,7 @@
       "post": {
         "x-doc": {
           "title": "Sign in to the NetApp Console",
-          "category": "User management - authentication ",
+          "category": "User management authentication ",
           "filename": "post-auth-login.html",
           "subcategory": null
         }
@@ -2796,7 +2796,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Cloud Volumes ONTAP systems",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments.html",
           "subcategory": null
         }
@@ -2804,7 +2804,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new Cloud Volumes ONTAP Google Cloud High Availability (HA) system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments.html",
           "subcategory": null
         }
@@ -2814,7 +2814,7 @@
       "post": {
         "x-doc": {
           "title": "Stop a specific Cloud Volumes ONTAP instance",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-stop.html",
           "subcategory": null
         }
@@ -2824,7 +2824,7 @@
       "get": {
         "x-doc": {
           "title": "Check for non-persistent locks held on CIFS sessions",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-cifs-locks-exist.html",
           "subcategory": null
         }
@@ -2834,7 +2834,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an SVM",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "delete-gcp-ha-working-environments-svm-.html",
           "subcategory": null
         }
@@ -2844,7 +2844,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the SVM name of the Cloud Volumes ONTAP system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-svm.html",
           "subcategory": null
         }
@@ -2852,7 +2852,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new SVM",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-svm.html",
           "subcategory": null
         }
@@ -2862,7 +2862,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-.html",
           "subcategory": null
         }
@@ -2870,7 +2870,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "delete-gcp-ha-working-environments-.html",
           "subcategory": null
         }
@@ -2880,7 +2880,7 @@
       "post": {
         "x-doc": {
           "title": "Delete the CIFS configuration for a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-delete-cifs.html",
           "subcategory": null
         }
@@ -2890,7 +2890,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the CIFS configuration for a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-cifs.html",
           "subcategory": null
         }
@@ -2898,7 +2898,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new CIFS configuration for a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-cifs.html",
           "subcategory": null
         }
@@ -2908,7 +2908,7 @@
       "get": {
         "x-doc": {
           "title": "Validate prerequisites for converting a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-validate-byol-to-capacity.html",
           "subcategory": null
         }
@@ -2918,7 +2918,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the writing speed for a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-writing-speed.html",
           "subcategory": null
         }
@@ -2928,7 +2928,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all license types for a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -2936,7 +2936,7 @@
       "put": {
         "x-doc": {
           "title": "Set the instance type",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-license-instance-type.html",
           "subcategory": null
         }
@@ -2946,7 +2946,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve images already installed on a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-ontap-available-images.html",
           "subcategory": null
         }
@@ -2956,7 +2956,7 @@
       "post": {
         "x-doc": {
           "title": "Perform a complete image update",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-update-image.html",
           "subcategory": null
         }
@@ -2966,7 +2966,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the eligibility support status",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-update-eligibility.html",
           "subcategory": null
         }
@@ -2976,7 +2976,7 @@
       "post": {
         "x-doc": {
           "title": "Upload a cloud license file",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-upload-license-file.html",
           "subcategory": null
         }
@@ -2986,7 +2986,7 @@
       "post": {
         "x-doc": {
           "title": "Upload cloud license file content",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-upload-licenses.html",
           "subcategory": null
         }
@@ -2996,7 +2996,7 @@
       "put": {
         "x-doc": {
           "title": "Activate an off-box configuration",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-offbox.html",
           "subcategory": null
         }
@@ -3006,7 +3006,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the network port broadcast domain mtu",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-networkoptimization.html",
           "subcategory": null
         }
@@ -3016,7 +3016,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve action parameters",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-create-request-parameters.html",
           "subcategory": null
         }
@@ -3026,7 +3026,7 @@
       "post": {
         "x-doc": {
           "title": "Enable capacity tiering",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-enable-capacity-tiering.html",
           "subcategory": null
         }
@@ -3036,7 +3036,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of upgrade versions",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-occm-provided-upgrade-versions.html",
           "subcategory": null
         }
@@ -3046,7 +3046,7 @@
       "post": {
         "x-doc": {
           "title": "Manually triggers subscription synchronization",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-sync-subscription.html",
           "subcategory": null
         }
@@ -3056,7 +3056,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the system cost and usage",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-cost-and-usage.html",
           "subcategory": null
         }
@@ -3066,7 +3066,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve system ONTAP savings",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-ontap-saving.html",
           "subcategory": null
         }
@@ -3076,7 +3076,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve extra capacity licenses",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -3084,7 +3084,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity licenses",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -3092,7 +3092,7 @@
       "post": {
         "x-doc": {
           "title": "Register an extra capacity license",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-extra-capacity-licenses.html",
           "subcategory": null
         }
@@ -3102,7 +3102,7 @@
       "put": {
         "x-doc": {
           "title": "Update extra capacity license serial numbers",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -3110,7 +3110,7 @@
       "post": {
         "x-doc": {
           "title": "Register extra capacity license serial numbers",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -3118,7 +3118,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete extra capacity licenses using the license serial numbers",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "delete-gcp-ha-working-environments-extra-capacity-serials.html",
           "subcategory": null
         }
@@ -3128,7 +3128,7 @@
       "put": {
         "x-doc": {
           "title": "Update the default Vscan file operation profile",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-vscan-file-op.html",
           "subcategory": null
         }
@@ -3138,7 +3138,7 @@
       "put": {
         "x-doc": {
           "title": "Update the NetApp Console password",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -3148,7 +3148,7 @@
       "post": {
         "x-doc": {
           "title": "Update the tier level",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-change-tier-level.html",
           "subcategory": null
         }
@@ -3158,7 +3158,7 @@
       "put": {
         "x-doc": {
           "title": "Update a BYOL license to a capacity-based license",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-byol-to-capacity.html",
           "subcategory": null
         }
@@ -3168,7 +3168,7 @@
       "put": {
         "x-doc": {
           "title": "Enable SnapLock on a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-enable-worm.html",
           "subcategory": null
         }
@@ -3178,7 +3178,7 @@
       "post": {
         "x-doc": {
           "title": "Create an NTP server",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-ntp.html",
           "subcategory": null
         }
@@ -3188,7 +3188,7 @@
       "post": {
         "x-doc": {
           "title": "Start a Cloud Volumes ONTAP instance",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-start.html",
           "subcategory": null
         }
@@ -3198,7 +3198,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the support registration status",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -3206,7 +3206,7 @@
       "post": {
         "x-doc": {
           "title": "Register a Cloud Volumes ONTAP system with NetApp",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-support-registration.html",
           "subcategory": null
         }
@@ -3216,7 +3216,7 @@
       "get": {
         "x-doc": {
           "title": "List the start/stop schedules for Cloud Volumes ONTAP",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-schedules.html",
           "subcategory": null
         }
@@ -3224,7 +3224,7 @@
       "put": {
         "x-doc": {
           "title": "Set the schedules for Cloud Volumes ONTAP",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-schedules.html",
           "subcategory": null
         }
@@ -3234,7 +3234,7 @@
       "put": {
         "x-doc": {
           "title": "Activate FPolicy for ransomware files",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-activate-fpolicy.html",
           "subcategory": null
         }
@@ -3244,7 +3244,7 @@
       "put": {
         "x-doc": {
           "title": "Disable FPolicy for ransomware files",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-disable-fpolicy.html",
           "subcategory": null
         }
@@ -3254,7 +3254,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete FPolicy for ransomware files",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "delete-gcp-ha-working-environments-fpolicy.html",
           "subcategory": null
         }
@@ -3264,7 +3264,7 @@
       "post": {
         "x-doc": {
           "title": "Parse an uploaded cloud license file",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-parse-license-file.html",
           "subcategory": null
         }
@@ -3274,7 +3274,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve editable tags for cloud resources",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "get-gcp-ha-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -3282,7 +3282,7 @@
       "put": {
         "x-doc": {
           "title": "Modify user tags for cloud resources",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-user-tags.html",
           "subcategory": null
         }
@@ -3292,7 +3292,7 @@
       "put": {
         "x-doc": {
           "title": "Activate snapshot policy assignment for unprotected read/write volumes",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-activate-snapshot-policy.html",
           "subcategory": null
         }
@@ -3302,7 +3302,7 @@
       "post": {
         "x-doc": {
           "title": " Create a snapshot policy",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-snapshot-policy.html",
           "subcategory": null
         }
@@ -3312,7 +3312,7 @@
       "post": {
         "x-doc": {
           "title": "Update the serial number of a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "post-gcp-ha-working-environments-change-serial.html",
           "subcategory": null
         }
@@ -3322,7 +3322,7 @@
       "put": {
         "x-doc": {
           "title": "Set the cluster password for a system",
-          "category": "Google Cloud HA system - systems",
+          "category": "Google Cloud HA systems",
           "filename": "put-gcp-ha-working-environments-set-password.html",
           "subcategory": null
         }
@@ -4792,7 +4792,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "On-premises ONTAP Cluster system - aggregates",
+          "category": "On-premises ONTAP cluster aggregates",
           "filename": "get-onprem-aggregates.html",
           "subcategory": null
         }
@@ -4802,7 +4802,7 @@
       "get": {
         "x-doc": {
           "title": "Verify the address and credentials of the specified cluster",
-          "category": "On-premises ONTAP Cluster system - metadata",
+          "category": "On-premises ONTAP cluster metadata",
           "filename": "get-onprem-metadata-cluster-info.html",
           "subcategory": null
         }
@@ -4896,7 +4896,7 @@
       "post": {
         "x-doc": {
           "title": "Set up Azure backup to cloud",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "post-onprem-working-environments-azure-cloud-backup-setup.html",
           "subcategory": null
         }
@@ -4906,7 +4906,7 @@
       "post": {
         "x-doc": {
           "title": "Set up AWS backup to cloud",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "post-onprem-working-environments-aws-cloud-backup-setup.html",
           "subcategory": null
         }
@@ -4916,7 +4916,7 @@
       "post": {
         "x-doc": {
           "title": "Set up Google Cloud backup to cloud",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "post-onprem-working-environments-gcp-cloud-backup-setup.html",
           "subcategory": null
         }
@@ -4926,7 +4926,7 @@
       "post": {
         "x-doc": {
           "title": "Set up StorageGRID backup to cloud",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "post-onprem-working-environments-sgws-cloud-backup-setup.html",
           "subcategory": null
         }
@@ -4936,7 +4936,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve an IPspace list for an existing system",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "get-onprem-working-environments-ip-spaces.html",
           "subcategory": null
         }
@@ -4946,7 +4946,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve on-premises systems",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "get-onprem-working-environments.html",
           "subcategory": null
         }
@@ -4954,7 +4954,7 @@
       "post": {
         "x-doc": {
           "title": "Post /onprem/working-environments",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "post-onprem-working-environments.html",
           "subcategory": null
         }
@@ -4964,7 +4964,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve an on-premises ONTAP system",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "get-onprem-working-environments-.html",
           "subcategory": null
         }
@@ -4972,7 +4972,7 @@
       "delete": {
         "x-doc": {
           "title": "Cloud manager no longer manages this system, but this does not affect data ontap itself",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "delete-onprem-working-environments-.html",
           "subcategory": null
         }
@@ -4982,7 +4982,7 @@
       "put": {
         "x-doc": {
           "title": "Modify the cloud manager password",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "put-onprem-working-environments-update-credentials.html",
           "subcategory": null
         }
@@ -4992,7 +4992,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a CIFS configuration for an existing system",
-          "category": "On-premises ONTAP Cluster system - systems",
+          "category": "On-premises ONTAP cluster systems",
           "filename": "get-onprem-working-environments-cifs.html",
           "subcategory": null
         }
@@ -5002,7 +5002,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve snapmirror policies",
-          "category": "Replication operations - metadata",
+          "category": "Replication metadata",
           "filename": "get-replication-metadata-snapmirror-svm-policies--.html",
           "subcategory": null
         }
@@ -5012,7 +5012,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve snapmirror policies",
-          "category": "Replication operations - metadata",
+          "category": "Replication metadata",
           "filename": "get-replication-metadata-snapmirror-policies-.html",
           "subcategory": null
         }
@@ -5022,7 +5022,7 @@
       "get": {
         "x-doc": {
           "title": "Return a list of snapshot labels",
-          "category": "Replication operations - metadata",
+          "category": "Replication metadata",
           "filename": "get-replication-metadata-snapshot-labels--.html",
           "subcategory": null
         }
@@ -5032,7 +5032,7 @@
       "post": {
         "x-doc": {
           "title": "Break a snapmirror replication relationship",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "post-replication-break--.html",
           "subcategory": null
         }
@@ -5042,7 +5042,7 @@
       "get": {
         "x-doc": {
           "title": "Return pairs of relationships",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "get-replication-all-relationships.html",
           "subcategory": null
         }
@@ -5052,7 +5052,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new replication to an FSX system",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "post-replication-fsx.html",
           "subcategory": null
         }
@@ -5062,7 +5062,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new replication to an on-premises system",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "post-replication-onprem.html",
           "subcategory": null
         }
@@ -5072,7 +5072,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new replication to an Cloud Volumes ONTAP system",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "post-replication-vsa.html",
           "subcategory": null
         }
@@ -5082,7 +5082,7 @@
       "post": {
         "x-doc": {
           "title": "Resyncs a snapmirror replication relationship",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "post-replication-resync--.html",
           "subcategory": null
         }
@@ -5092,7 +5092,7 @@
       "post": {
         "x-doc": {
           "title": "Update the destination endpoint of the SnapMirror relationship",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "post-replication-update--.html",
           "subcategory": null
         }
@@ -5102,7 +5102,7 @@
       "delete": {
         "x-doc": {
           "title": "Remove a replication relationship",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "delete-replication--.html",
           "subcategory": null
         }
@@ -5112,7 +5112,7 @@
       "post": {
         "x-doc": {
           "title": "Initialize an existing SnapMirror relationship",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "post-replication-initialize--.html",
           "subcategory": null
         }
@@ -5122,7 +5122,7 @@
       "post": {
         "x-doc": {
           "title": "Reverse an existing SnapMirror relationship",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "post-replication-reverse--.html",
           "subcategory": null
         }
@@ -5132,7 +5132,7 @@
       "put": {
         "x-doc": {
           "title": "Modify a SnapMirror replication relationship",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "put-replication--.html",
           "subcategory": null
         }
@@ -5142,7 +5142,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the intercluster LIFs",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "get-replication-intercluster-lifs.html",
           "subcategory": null
         }
@@ -5152,7 +5152,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the replication schedules of a system",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "get-replication-schedules-.html",
           "subcategory": null
         }
@@ -5162,7 +5162,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the status of all SnapMirror relationships",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "get-replication-status.html",
           "subcategory": null
         }
@@ -5172,7 +5172,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve SnapMirror replication relationship statuses",
-          "category": "Replication operations",
+          "category": "Replication",
           "filename": "get-replication-status-.html",
           "subcategory": null
         }
@@ -5356,7 +5356,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a specific user",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "get-users-.html",
           "subcategory": null
         }
@@ -5364,7 +5364,7 @@
       "put": {
         "x-doc": {
           "title": "Update an existing user",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "put-users-.html",
           "subcategory": null
         }
@@ -5372,7 +5372,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing user",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "delete-users-.html",
           "subcategory": null
         }
@@ -5382,7 +5382,7 @@
       "put": {
         "x-doc": {
           "title": "Reset the password of a given user",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "put-users-reset-password.html",
           "subcategory": null
         }
@@ -5392,7 +5392,7 @@
       "post": {
         "x-doc": {
           "title": "Grant or revoke permissions to a given user",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "post-users-working-environments-grant-revoke.html",
           "subcategory": null
         }
@@ -5402,7 +5402,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all of the users visible to the current user",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "get-users.html",
           "subcategory": null
         }
@@ -5410,7 +5410,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new user",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "post-users.html",
           "subcategory": null
         }
@@ -5420,7 +5420,7 @@
       "post": {
         "x-doc": {
           "title": "Add an existing NetApp cloud central user to NetApp Console",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "post-users-add-user.html",
           "subcategory": null
         }
@@ -5430,7 +5430,7 @@
       "delete": {
         "x-doc": {
           "title": "Remove a user from NetApp Console",
-          "category": "User management operations - users",
+          "category": "User management",
           "filename": "delete-users-remove-user.html",
           "subcategory": null
         }
@@ -5440,7 +5440,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of discovered systems",
-          "category": "ONTAP Cloud Azure system - discovery",
+          "category": "Azure system discovery",
           "filename": "get-azure-vsa-discover.html",
           "subcategory": null
         }
@@ -5450,7 +5450,7 @@
       "post": {
         "x-doc": {
           "title": "Save a previously discovered Cloud Volumes ONTAP system",
-          "category": "ONTAP Cloud Azure system - discovery",
+          "category": "Azure system discovery",
           "filename": "post-azure-vsa-recover.html",
           "subcategory": null
         }
@@ -5460,7 +5460,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve associated subscriptions",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-associated-subscriptions.html",
           "subcategory": null
         }
@@ -5470,7 +5470,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve network extended information",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-vnets.html",
           "subcategory": null
         }
@@ -5480,7 +5480,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure resource groups by region",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-resource-groups.html",
           "subcategory": null
         }
@@ -5490,7 +5490,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all vaults",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-vaults.html",
           "subcategory": null
         }
@@ -5500,7 +5500,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all the keys in a vault",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-keys-vault.html",
           "subcategory": null
         }
@@ -5510,7 +5510,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of required IPs",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-network-requirements.html",
           "subcategory": null
         }
@@ -5520,7 +5520,7 @@
       "post": {
         "x-doc": {
           "title": "Confirm that the current user is subscribed",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "post-azure-vsa-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null
         }
@@ -5530,7 +5530,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new blob container",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "post-azure-vsa-metadata-create-container.html",
           "subcategory": null
         }
@@ -5540,7 +5540,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure availability zones by region",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-availability-zones.html",
           "subcategory": null
         }
@@ -5550,7 +5550,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for Azure disk types",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-supported-capacity-tiers.html",
           "subcategory": null
         }
@@ -5560,7 +5560,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported Azure storage account types",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-storage-account-types.html",
           "subcategory": null
         }
@@ -5570,7 +5570,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all tag names",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-tag-keys.html",
           "subcategory": null
         }
@@ -5580,7 +5580,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all blob containers",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-containers.html",
           "subcategory": null
         }
@@ -5590,7 +5590,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all Cloud Volumes ONTAP configurations",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-permutations.html",
           "subcategory": null
         }
@@ -5600,7 +5600,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Azure regions",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-regions.html",
           "subcategory": null
         }
@@ -5610,7 +5610,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the default snapshot policies available on a cluster",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-default-snapshot-policies.html",
           "subcategory": null
         }
@@ -5620,7 +5620,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve unsupported instance types for acceleration and capacity tiering",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null
         }
@@ -5630,7 +5630,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-supported-features.html",
           "subcategory": null
         }
@@ -5640,7 +5640,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve package configurations",
-          "category": "ONTAP Cloud Azure system - metadata",
+          "category": "Azure system metadata",
           "filename": "get-azure-vsa-metadata-packages.html",
           "subcategory": null
         }
@@ -6511,7 +6511,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "Update the NetApp Condole password",
+          "title": "Update the NetApp Console password",
           "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-update-credentials.html",
           "subcategory": null
@@ -6531,7 +6531,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/byol-to-capacity": {
       "put": {
         "x-doc": {
-          "title": "Update the byol licence to a capacity-based license",
+          "title": "Update the BYOL licence to a capacity-based license",
           "category": "Azure systems",
           "filename": "put-azure-vsa-working-environments-byol-to-capacity.html",
           "subcategory": null
