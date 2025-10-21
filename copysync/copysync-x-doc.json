@@ -873,7 +873,7 @@
       "/api/relationships/{id}/abort": {
         "put": {
           "x-doc": {
-            "title": "Abort the relationship data sync",
+            "title": "Stop the relationship data sync",
             "category": "Relationships",
             "filename": "put-api-relationships-abort.html",
             "subcategory": null,
