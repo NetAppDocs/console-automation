@@ -363,7 +363,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Associates a license with BlueXP either by providing a NetApp License File (NLF) in the license body field or a value for both the <code>serialNumber</code> query parameter and <code>nssKeyId</code> body field.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a BlueXP service token, accountId is not a required field.</li>\n<li>If you use a BlueXP user token, <code>accountId</code> is a required field.</li>\n<li><code>serialNumber</code> is a required field when using this site. In general, you can specify its value as <code>null</code>.</li>\n<li>If the value of <code>licenseType</code> is <code>EXTRA_CAPACITY</code>, you must provide the associated resource ID (resourceId).</li>\n<li><code>licenseType</code> is not a required field for data services and capacity based license types.</li>\n<li><code>expirationDate</code> is a required field unless you are registered with the NetApp Support Site.</li>\n<li><code>license</code> is not a required field if values for <code>serialnumber</code> and <code>nssKeyId</code> are provided.</li>\n<li><code>capacity</code> is a required field unless you are registered with the NetApp Support Site.</li>\n<li><code>packageValue</code> is a required field (used only for internal purposes) unless you are registered with the NetApp Support Site.</li>\n<li><code>metadata</code> is not a required field and is used to add additional data to a license that is not included in other request body fields.</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Associates a license with NetApp Condole either by providing a NetApp License File (NLF) in the license body field or a value for both the <code>serialNumber</code> query parameter and <code>nssKeyId</code> body field.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a NetApp Condole service token, accountId is not a required field.</li>\n<li>If you use a NetApp Console user token, <code>accountId</code> is a required field.</li>\n<li><code>serialNumber</code> is a required field when using this site. In general, you can specify its value as <code>null</code>.</li>\n<li>If the value of <code>licenseType</code> is <code>EXTRA_CAPACITY</code>, you must provide the associated resource ID (resourceId).</li>\n<li><code>licenseType</code> is not a required field for data services and capacity based license types.</li>\n<li><code>expirationDate</code> is a required field unless you are registered with the NetApp Support Site.</li>\n<li><code>license</code> is not a required field if values for <code>serialnumber</code> and <code>nssKeyId</code> are provided.</li>\n<li><code>capacity</code> is a required field unless you are registered with the NetApp Support Site.</li>\n<li><code>packageValue</code> is a required field (used only for internal purposes) unless you are registered with the NetApp Support Site.</li>\n<li><code>metadata</code> is not a required field and is used to add additional data to a license that is not included in other request body fields.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -424,7 +424,7 @@
                                 },
                                 "example": {
                                     "accountId": "string",
-                                    "resourceId": "string - assocaited resource identifier e.g. VsaWorkingEnvironment-XXXX",
+                                    "resourceId": "string - associated resource identifier e.g. VsaWorkingEnvironment-XXXX",
                                     "licenseType": "[ BACKUP | EXTRA_CAPACITY | CAPACITY_BASED | CVO_NODE ] - string",
                                     "expirationDate": "integer - UNIX time in milliseconds",
                                     "license": "string - license file content - can be fetched from IPA APIs by the serial number",
@@ -502,7 +502,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Updates a specified license by license serial number.<br />\nIf you use a user token, you must provide the NetApp License File (NLF). If you use the BlueXP service token, provide either the NLF or values for <code>serialNumber</code> and the fields that you want to update.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a BlueXP service token, accountId is not a required field.</li>\n<li>If you use a BlueXP user token, accountId is a required field.</li>\n<li>If you provide the NLF, the license data is overwritten by the NLF data.</li>\n<li>The <code>metadata</code> field value is appended to the existing metadata.</li>\n<li><code>Authorization</code> is a required field.</li>\n<li><code>serialNumber</code> is a required field when using this site. In general, you can specify its value as <code>null</code>.</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Updates a specified license by license serial number.<br />\nIf you use a user token, you must provide the NetApp License File (NLF). If you use the NetApp Console service token, provide either the NLF or values for <code>serialNumber</code> and the fields that you want to update.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a NetApp Console service token, accountId is not a required field.</li>\n<li>If you use a NetApp Console user token, accountId is a required field.</li>\n<li>If you provide the NLF, the license data is overwritten by the NLF data.</li>\n<li>The <code>metadata</code> field value is appended to the existing metadata.</li>\n<li><code>Authorization</code> is a required field.</li>\n<li><code>serialNumber</code> is a required field when using this site. In general, you can specify its value as <code>null</code>.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -558,7 +558,7 @@
                                 "example": {
                                     "accountId": "string",
                                     "capacity": "integer - should be in TB",
-                                    "expirationDate": "integer - UNIX time in milli seconds",
+                                    "expirationDate": "integer - UNIX time in milliseconds",
                                     "license": "string - license file content",
                                     "meteringStatus": true,
                                     "metadata": [
@@ -633,7 +633,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Deletes a license by using a specified serial number.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a BlueXP service token, accountId is not a required field.</li>\n<li>If you use a BlueXP user token, <code>accountId</code> is a required field.</li>\n<li><code>serialNumber</code> is a required parameter.</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Deletes a license by using a specified serial number.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a NetApp Console service token, accountId is not a required field.</li>\n<li>If you use a NetApp Console user token, <code>accountId</code> is a required field.</li>\n<li><code>serialNumber</code> is a required parameter.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -703,7 +703,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Associates extra-capacity per-node licenses with a Cloud Volumes ONTAP system either by providing NetApp License Files (NLF) in the <code>licenseFiles</code> body field or a value for both <code>serialNumbers</code> and <code>nssKeyId</code> body fields. A Cloud Volumes ONTAP resource is represented by the <code>cvoId</code> parameter. If it's a single-node Cloud Volumes ONTAP resource, only one license file or a serial number and an NSS key should be provided. For high-availability (HA) Cloud Volumes ONTAP resource, two license files or two serial numbers and an NSS key should be provided.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>The <code>cvoId</code> parameter is required.</li>\n<li>If you use a BlueXP service token, <code>accountId</code> is not a required field.</li>\n<li>If you use a BlueXP user token, <code>accountId</code> is a required field.</li>\n<li><code>serialNumbers</code> is a required field when using this site. In general, you can specify its value as <code>null</code>.</li>\n<li><code>licenseFiles</code> is not a required field if values for <code>serialnumbers</code> and <code>nssKeyId</code> are provided.</li>\n<li><code>nssKeyId</code> is a required field unless you provide a value for the <code>licenseFiles</code> body field. In the latter case, <code>nssKeyId</code> must be omitted.</li>\n<li><code>accountId</code> is a required field unless you use a service token.</li>\n<li>The <code>serialNumbers</code> and <code>licenseFiles</code> fields are mutually exclusive - one must have a value but not both.</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Associates extra-capacity per-node licenses with a Cloud Volumes ONTAP system either by providing NetApp License Files (NLF) in the <code>licenseFiles</code> body field or a value for both <code>serialNumbers</code> and <code>nssKeyId</code> body fields. A Cloud Volumes ONTAP resource is represented by the <code>cvoId</code> parameter. If it's a single-node Cloud Volumes ONTAP resource, only one license file or a serial number and an NSS key should be provided. For high-availability (HA) Cloud Volumes ONTAP resource, two license files or two serial numbers and an NSS key should be provided.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>The <code>cvoId</code> parameter is required.</li>\n<li>If you use a NetApp Console service token, <code>accountId</code> is not a required field.</li>\n<li>If you use a NetApp Console user token, <code>accountId</code> is a required field.</li>\n<li><code>serialNumbers</code> is a required field when using this site. In general, you can specify its value as <code>null</code>.</li>\n<li><code>licenseFiles</code> is not a required field if values for <code>serialnumbers</code> and <code>nssKeyId</code> are provided.</li>\n<li><code>nssKeyId</code> is a required field unless you provide a value for the <code>licenseFiles</code> body field. In the latter case, <code>nssKeyId</code> must be omitted.</li>\n<li><code>accountId</code> is a required field unless you use a service token.</li>\n<li>The <code>serialNumbers</code> and <code>licenseFiles</code> fields are mutually exclusive - one must have a value but not both.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -817,7 +817,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Retrieves a specified licence by type (<code>LicenseType</code>) and/or resource ID (<code>resourceId</code>).<br />\nThe license endpoints consult the used or consumed capacity under the <code>includeSummaryInfo</code> parameter when retrieving licenses with the GET API call.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a BlueXP service token, accountId is not a required field.</li>\n<li>If you use a BlueXP user token, <code>accountId</code> is a required field.</li>\n<li>When you enter a value in <code>serialNumber</code> , all other fields are ignored.</li>\n<li>The boolean parameter <code>includeSummaryInfo</code> (optional) retrieves the <code>totalLicensesCapacity</code>, <code>usedCapacity</code>, <code>reportTime</code> and events such as capacity expired or about to expire for each data service (CLOUD_BACKUP, CLOUD_DATA_SENSE, CLOUD_TIERING).</li>\n<li>The boolean parameter <code>fetchNlf</code> (optional) retrieves the most updated valid NetApp license file from NetApp systems.</li>\n<li>If you use the boolean parameter <code>fetchNlf</code>, you must provide <code>accountId</code>, <code>serialNumber</code>, and <code>nssKeyId</code>.</li>\n<li><code>fetchNlf</code> and <code>includeSummaryInfo</code> can't be provided in the same request.</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Retrieves a specified license by type (<code>LicenseType</code>) and/or resource ID (<code>resourceId</code>).<br />\nThe license endpoints consult the used or consumed capacity under the <code>includeSummaryInfo</code> parameter when retrieving licenses with the GET API call.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a NetApp Console service token, accountId is not a required field.</li>\n<li>If you use a NetApp Console user token, <code>accountId</code> is a required field.</li>\n<li>When you enter a value in <code>serialNumber</code> , all other fields are ignored.</li>\n<li>The boolean parameter <code>includeSummaryInfo</code> (optional) retrieves the <code>totalLicensesCapacity</code>, <code>usedCapacity</code>, <code>reportTime</code> and events such as capacity expired or about to expire for each data service (CLOUD_BACKUP, CLOUD_DATA_SENSE, CLOUD_TIERING).</li>\n<li>The boolean parameter <code>fetchNlf</code> (optional) retrieves the most updated valid NetApp license file from NetApp systems.</li>\n<li>If you use the boolean parameter <code>fetchNlf</code>, you must provide <code>accountId</code>, <code>serialNumber</code>, and <code>nssKeyId</code>.</li>\n<li><code>fetchNlf</code> and <code>includeSummaryInfo</code> can't be provided in the same request.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -1255,7 +1255,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Updates a specified license by resource ID.</p>\n \n<b>Token usage:</b> BlueXP service token.",
+                "description": "<p>Updates a specified license by resource ID.</p>\n \n<b>Token usage:</b> NetApp Console service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1333,7 +1333,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Deletes a specified license by resource ID.</p>\n \n<b>Token usage:</b> BlueXP service token.",
+                "description": "<p>Deletes a specified license by resource ID.</p>\n \n<b>Token usage:</b> NetApp Console service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -1393,7 +1393,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Associates a resource ID with a specified license. This association is applicable only for a Cloud Volumes ONTAP system with node-based licenses.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a BlueXP service token, <code>accountId</code> is not a required field.</li>\n<li>If you use a BlueXP user token, <code>accountId</code> is a required field.</li>\n<li>If you specify <code>resourceId</code> in the request payload, the license will be associated with the specified resource.</li>\n<li>If you omit <code>resourceId</code> or specify it as <code>null</code>, a license will be disassociated from a resource.</li>\n<li><code>serialNumber</code> is a required parameter.</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Associates a resource ID with a specified license. This association is applicable only for a Cloud Volumes ONTAP system with node-based licenses.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a NetApp Console service token, <code>accountId</code> is not a required field.</li>\n<li>If you use a NetApp Console user token, <code>accountId</code> is a required field.</li>\n<li>If you specify <code>resourceId</code> in the request payload, the license will be associated with the specified resource.</li>\n<li>If you omit <code>resourceId</code> or specify it as <code>null</code>, a license will be disassociated from a resource.</li>\n<li><code>serialNumber</code> is a required parameter.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1473,7 +1473,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Exchanges an unused Cloud Volume ONTAP license with a data service license.</p>\n<p><strong>Note:</strong><br />\nTo use this endpoint you must be an account administrator.</p>\n<ul>\n<li><code>accountId</code>, <code>targetLicenseType</code> and <code>resourceId</code> are required fields.</li>\n</ul>\n \n<b>Token usage:</b> BlueXP user token.",
+                "description": "<p>Exchanges an unused Cloud Volume ONTAP license with a data service license.</p>\n<p><strong>Note:</strong><br />\nTo use this endpoint you must be an account administrator.</p>\n<ul>\n<li><code>accountId</code>, <code>targetLicenseType</code> and <code>resourceId</code> are required fields.</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console user token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1563,7 +1563,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Dissociates a resource ID from a license. This dissociation is applicable only for a Cloud Volumes ONTAP system with<br />\nnode-based licenses.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a BlueXP service token, <code>accountId</code> is not a required field.</li>\n<li>If you use a BlueXP user token, <code>accountId</code> is a required field.</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Dissociates a resource ID from a license. This dissociation is applicable only for a Cloud Volumes ONTAP system with<br />\nnode-based licenses.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a NetApp Console service token, <code>accountId</code> is not a required field.</li>\n<li>If you use a NetApp Console user token, <code>accountId</code> is a required field.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1650,7 +1650,7 @@
                 "tags": [
                     "License"
                 ],
-                "description": "<p>Updates all licenses under an organization ID.</p>\n \n<b>Token usage:</b> BlueXP service token.",
+                "description": "<p>Updates all licenses under an organization ID.</p>\n \n<b>Token usage:</b> NetApp Console service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1723,7 +1723,7 @@
                 "tags": [
                     "Data Services"
                 ],
-                "description": "<p>Retrieves data service eligibility details to determine whether an account is eligible to use a data service in an on-premises or cloud environment.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>\n<p>You can use a user token or service token with scope: license:internal.</p>\n</li>\n<li>\n<p><code>accountId</code>, <code>cloudProvider</code>, and <code>service</code> are required parameters.</p>\n</li>\n<li>\n<p>The 'SGWS' value in the cloudProvider parameter denotes that the feature details request is for an on-premises ONTAP working environment backed up in StorageGRID and retrieves only license details.</p>\n</li>\n<li>\n<p><code>cloudAccountId</code> and <code>cvoId</code> are optional parameters.</p>\n</li>\n<li>\n<p>If the feature details request is for a Cloud Volumes ONTAP or an on-premises ONTAP working environment backed up on a cloud, you must provide <code>cloudAccountId</code>.</p>\n</li>\n<li>\n<p>If the feature details request is for Cloud Volumes ONTAP, you must provide the <code>cvoId</code> parameter that is used to retrieve the Cloud Volumes ONTAP package.</p>\n</li>\n<li>\n<p>The TotalServiceLicensesCapacity value is in TB, the TotalServiceLicensesUsedCapacity value is in TiB, and the FreeTrialEndDate value is in ISO 8601 format.</p>\n</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Retrieves data service eligibility details to determine whether an account is eligible to use a data service in an on-premises or cloud environment.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>\n<p>You can use a user token or service token with scope: license:internal.</p>\n</li>\n<li>\n<p><code>accountId</code>, <code>cloudProvider</code>, and <code>service</code> are required parameters.</p>\n</li>\n<li>\n<p>The 'SGWS' value in the cloudProvider parameter denotes that the feature details request is for an on-premises ONTAP system backed up in StorageGRID and retrieves only license details.</p>\n</li>\n<li>\n<p><code>cloudAccountId</code> and <code>cvoId</code> are optional parameters.</p>\n</li>\n<li>\n<p>If the feature details request is for a Cloud Volumes ONTAP or an on-premises ONTAP system backed up on a cloud, you must provide <code>cloudAccountId</code>.</p>\n</li>\n<li>\n<p>If the feature details request is for Cloud Volumes ONTAP, you must provide the <code>cvoId</code> parameter that is used to retrieve the Cloud Volumes ONTAP package.</p>\n</li>\n<li>\n<p>The TotalServiceLicensesCapacity value is in TB, the TotalServiceLicensesUsedCapacity value is in TiB, and the FreeTrialEndDate value is in ISO 8601 format.</p>\n</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -1837,7 +1837,7 @@
                 "tags": [
                     "Eval-License"
                 ],
-                "description": "<p>Creates an evaluation licenses associated with provided cvos.</p>\n<p><strong>Note:</strong><br />\nTo use this endpoint, you must use a BlueXP agent service token.</p>\n<ul>\n<li>\n<p><code>cvos</code> is a required field and must contain:</p>\n</li>\n<li>\n<p><code>cvoId</code>, <code>provider</code>, <code>cvoType</code>, <code>evalLicenses</code></p>\n</li>\n<li>\n<p><code>evalLicenses</code> is a required field in <code>cvos</code> and must contain: <code>serialNumber</code>,<code>expirationDate</code></p>\n</li>\n<li>\n<p><code>capacity</code> is an optional field in <code>evalLicenses</code></p>\n</li>\n<li>\n<p><code>accountId</code> is an optional field because can be fetched from agent token</p>\n</li>\n<li>\n<p><code>migration</code> has default value <code>false</code>, <code>true</code> value will cause skipping the expiry validation</p>\n</li>\n</ul>\n \n<b>Token usage:</b> BlueXP service token with the following scopes: occm-access.",
+                "description": "<p>Creates evaluation licenses associated with the provided Cloud Volumes ONTAP.</p>\n<p><strong>Note:</strong><br />\nTo use this endpoint, you must use a NetApp Console agent service token.</p>\n<ul>\n<li>\n<p><code>cvos</code> is a required field and must contain:</p>\n</li>\n<li>\n<p><code>cvoId</code>, <code>provider</code>, <code>cvoType</code>, <code>evalLicenses</code></p>\n</li>\n<li>\n<p><code>evalLicenses</code> is a required field in <code>cvos</code> and must contain: <code>serialNumber</code>,<code>expirationDate</code></p>\n</li>\n<li>\n<p><code>capacity</code> is an optional field in <code>evalLicenses</code></p>\n</li>\n<li>\n<p><code>accountId</code> is an optional field because can be fetched from agent token</p>\n</li>\n<li>\n<p><code>migration</code> has default value <code>false</code>, <code>true</code> value will cause skipping the expiry validation</p>\n</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console service token with the following scopes: occm-access.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2001,7 +2001,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Registers a subscription in BlueXP digital wallet and associates it with the account by using the Tenancy service.<br />\nEach subscription can be associated with multiple accounts.</p>\n<p><strong>Note:</strong></p>\n<p>This endpoint updates the expiration date based on the date provided in the request.</p>\n \n \n<b>Token usage:</b> BlueXP service token.",
+                "description": "<p>Registers a subscription in NetApp Console licenses and subscriptions and associates it with the account using the Tenancy service.<br />\nEach subscription can be associated with multiple accounts.</p>\n<p><strong>Note:</strong></p>\n<p>This endpoint updates the expiration date based on the date provided in the request.</p>\n \n \n<b>Token usage:</b> NetApp Console service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2016,7 +2016,7 @@
                                     },
                                     "dwAudit": {
                                         "type": "boolean",
-                                        "description": "<p>BlueXP digital wallet audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop BlueXP digital wallet from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n",
+                                        "description": "<p>NetApp Console licenses and subscriptions audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop NetApp Console licenses and subscriptions from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n",
                                         "default": true
                                     }
                                 },
@@ -2101,7 +2101,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription information of a specified subscription.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>In the context of an account provided in URL parameters, the API returns subscriptions of all accounts.</li>\n<li>If the subscription ID is provided, the API returns only the subscription details or an empty response.</li>\n<li>The API authorizes three types of calls: user call, agent call (BlueXP Connector), and service call (with a predefined scope).</li>\n<li>For a service call, you must send the subscription type as a query parameter (the API validates the scope against the subscription type).</li>\n</ul>\n \n<b>Token usage:</b> BlueXP service token.",
+                "description": "<p>Retrieves the subscription information of a specified subscription.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>In the context of an account provided in URL parameters, the API returns subscriptions for all accounts.</li>\n<li>If the subscription ID is provided, the API returns only the subscription details or an empty response.</li>\n<li>The API authorizes three types of calls: user call, agent call (NetApp Console Agent), and service call (with a predefined scope).</li>\n<li>For a service call, you must send the subscription type as a query parameter (the API validates the scope against the subscription type).</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -2200,7 +2200,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<h3>Note:</h3>\nTo update the expiration date, expiration date and service name are mandatory, dwAudit is optional.\nTo update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.\n \n \n<b>Token usage:</b> BlueXP service token.",
+                "description": "<p>Updates a subscription expiration date using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<h3>Note:</h3>\nTo update the expiration date, expiration date and service name are mandatory, dwAudit is optional.\nTo update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.\n \n \n<b>Token usage:</b> NetApp Console service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2215,7 +2215,7 @@
                                     },
                                     "dwAudit": {
                                         "type": "boolean",
-                                        "description": "<p>BlueXP digital wallet audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop BlueXP digital wallet from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n",
+                                        "description": "<p>NetApp Console licenses and subscriptions audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop NetApp Console licenses and subscriptions from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n",
                                         "default": true
                                     }
                                 },
@@ -2291,7 +2291,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Deletes or dissociates a subscription containing a specified subscription ID from an account.</p>\n<p>The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance.<br />\nIt deletes the subscription if no other account is associated with the subscription.<br />\nIf more than one account is associated with the subscription, this endpoint disassociates the account provided in <code>accountId</code> and the subscription.</p>\n \n<b>Token usage:</b> BlueXP service token.",
+                "description": "<p>Deletes or dissociates a subscription containing a specified subscription ID from an account.</p>\n<p>The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance.<br />\nIt deletes the subscription if no other account is associated with the subscription.<br />\nIf more than one account is associated with the subscription, this endpoint disassociates the account provided in <code>accountId</code> and the subscription.</p>\n \n<b>Token usage:</b> NetApp Console service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -2301,7 +2301,7 @@
                         "in": "query",
                         "name": "dwAudit",
                         "required": false,
-                        "description": "<p>BlueXP digital wallet audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop BlueXP digital wallet from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n"
+                        "description": "<p>NetApp Console licenses and subscriptions audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop NetApp Console licenses and subscriptions from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n"
                     },
                     {
                         "schema": {
@@ -2369,7 +2369,7 @@
                 "tags": [
                     "External Services"
                 ],
-                "description": "<p>Retrieves on-premises (on-prem) ONTAP cluster data.<br />\nThe ONTAP cluster must be configured for AutoSupport to send back the telemetry and configuration data to NetApp.</p>\n<p>Data retrieved by this endpoint is comprised mostly of ONTAP cluster configuration details<br />\n(such as cluster management IP address, capacity, contract date, feature licenses, and more).</p>\n \n<b>Token usage:</b> BlueXP user token.",
+                "description": "<p>Retrieves on-premises (on-prem) ONTAP cluster data.<br />\nThe ONTAP cluster must be configured for AutoSupport to send back the telemetry and configuration data to NetApp.</p>\n<p>Data retrieved by this endpoint is comprised mostly of ONTAP cluster configuration details<br />\n(such as cluster management IP address, capacity, contract date, feature licenses, and more).</p>\n \n<b>Token usage:</b> NetApp Console user token.",
                 "parameters": [
                     {
                         "schema": {
@@ -2471,7 +2471,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription entitlements information of a specified service name.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> BlueXP service token with the following scopes: %scopes%.",
+                "description": "<p>Retrieves the subscription entitlements information of a specified service name.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: %scopes%.",
                 "parameters": [
                     {
                         "schema": {
@@ -2527,7 +2527,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription information of a specified account ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>If entitlements are provided, the API endpoint also returns the entitlements related to each subscription.</li>\n<li>If serviceName is provided, the API returns only the subscription related to the service name.</li>\n<li>The API authorizes two types of calls: user calls and service calls (with a predefined scope).<br />\nFor KEYSTONE, only user calls are allowed.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Retrieves the subscription information of a specified account ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>If entitlements are provided, the API endpoint also returns the entitlements related to each subscription.</li>\n<li>If serviceName is provided, the API returns only the subscription related to the service name.</li>\n<li>The API authorizes two types of calls: user calls and service calls (with a predefined scope).<br />\nFor KEYSTONE, only user calls are allowed.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -2744,7 +2744,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Deletes or dissociates a subscription containing a specified subscription ID from an account.</p>\n<p>The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance.<br />\nIt deletes the subscription if no other account is associated with the subscription.<br />\nIf more than one account is associated with the subscription, this endpoint disassociates the account provided in <code>accountId</code> and the subscription.</p>\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Deletes or dissociates a subscription containing a specified subscription ID from an account.</p>\n<p>The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance.<br />\nIt deletes the subscription if no other account is associated with the subscription.<br />\nIf more than one account is associated with the subscription, this endpoint disassociates the account provided in <code>accountId</code> and the subscription.</p>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2820,7 +2820,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Associate a subscription with a Tenancy service account.<br />\nEach subscription can be associated with multiple accounts.</p>\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Associates a subscription with a Tenancy service account.<br />\nEach subscription can be associated with multiple accounts.</p>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2897,7 +2897,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription information of a specified subscription ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> BlueXP service token with the following scopes: %scopes%.",
+                "description": "<p>Retrieves the subscription information of a specified subscription ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: %scopes%.",
                 "parameters": [
                     {
                         "schema": {
@@ -2953,7 +2953,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<h3>Note:</h3>\nTo update the expiration date, expiration date and service name are mandatory, dwAudit is optional.\nTo update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<h3>Note:</h3>\nTo update the expiration date, expiration date and service name are mandatory, dwAudit is optional.\nTo update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2979,7 +2979,7 @@
                                     },
                                     "dwAudit": {
                                         "type": "boolean",
-                                        "description": "<p>BlueXP digital wallet audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop BlueXP digital wallet from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n"
+                                        "description": "<p>NetApp Console licenses and subscriptions audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop NetApp Console licenses and subscriptions from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n"
                                     }
                                 },
                                 "oneOf": [
@@ -3081,7 +3081,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Deletes or dissociates a subscription containing a specified subscription ID from an account.</p>\n<p>The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance.<br />\nIt deletes the subscription if no other account is associated with the subscription.<br />\nIf more than one account is associated with the subscription, this endpoint disassociates the account provided in <code>accountId</code> and the subscription.</p>\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Deletes or dissociates a subscription containing a specified subscription ID from an account.</p>\n<p>The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance.<br />\nIt deletes the subscription if no other account is associated with the subscription.<br />\nIf more than one account is associated with the subscription, this endpoint disassociates the account provided in <code>accountId</code> and the subscription.</p>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3150,7 +3150,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Associate a subscription with a Tenancy service account.<br />\nEach subscription can be associated with multiple accounts.</p>\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Associates a subscription with a Tenancy service account.<br />\nEach subscription can be associated with multiple accounts.</p>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3218,7 +3218,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription information of a specified subscription ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> BlueXP service token with the following scopes: %scopes%.",
+                "description": "<p>Retrieves the subscription information of a specified subscription ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: %scopes%.",
                 "parameters": [
                     {
                         "schema": {
@@ -3273,7 +3273,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<h3>Note:</h3>\nTo update the expiration date, expiration date and service name are mandatory, dwAudit is optional.\nTo update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<h3>Note:</h3>\nTo update the expiration date, expiration date and service name are mandatory, dwAudit is optional.\nTo update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3302,7 +3302,7 @@
                                     },
                                     "dwAudit": {
                                         "type": "boolean",
-                                        "description": "<p>BlueXP digital wallet audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop BlueXP digital wallet from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n"
+                                        "description": "<p>NetApp Console licenses and subscriptions audits, by default, all API calls.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To stop NetApp Console licenses and subscriptions from auditing a request, you can set the calling service to <code>false</code>.</li>\n<li><code>dwAudit</code> is an optional parameter, the default value is <code>true</code>.</li>\n</ul>\n"
                                     }
                                 },
                                 "oneOf": [
@@ -3405,7 +3405,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the associated subscription id to each cloud account id.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Retrieves the associated subscription ID to each cloud account ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3471,7 +3471,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the associated subscription id to each cloud account id.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n \n<b>Token usage:</b> BlueXP user token.",
+                "description": "<p>Retrieves the associated subscription ID to each cloud account ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console user token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3549,7 +3549,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription configuration information for a specified subscription id.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Retrieves the subscription configuration information for a specified subscription ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3615,7 +3615,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Set the subscription configuration.<br />\nAssociate subscription to cloud accounts.</p>\n <br> \n<b>Token usage:</b> BlueXP user token.",
+                "description": "<p>Sets the subscription configuration.<br />\nAssociates subscriptions to cloud accounts.</p>\n <br> \n<b>Token usage:</b> NetApp Console user token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3703,7 +3703,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the associated subscription id to each cloud account id.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a BlueXP user token or service token.",
+                "description": "<p>Retrieves the associated subscription ID to each cloud account ID.</p>\n<h3>Note:</h3>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3778,19 +3778,19 @@
         },
         {
             "name": "Subscription",
-            "description": "<details>\n<summary>Overview</summary>\n<fieldset>\nThe subscription endpoints manage subscriptions for BlueXP services for end users. \nThe endpoints register a specified subscription on BlueXP digital wallet and associate it with the Tenancy service. \n<p>A subscription for BlueXP services is a collection of the following:</p>\n<ul>\n<li>Subscription ID (such as 666777, A-S000003969)</li>\n<li>Subscription type (such as Keystone)</li>\n<li>Expiration date (such as 20251109)</li>\n<li>Last modified (such as 2021-11-09 00:00:00)</li>\n<li>Resource identifier (such as license-481000495-6897991f-f83f-41c1-b151-eb62073e57be), used internally</li>\n</ul>\n<p>The subscription endpoints support the Create-Read-Update-Delete (CRUD) operation on the <code>subscription</code> and <code>subscription_resource</code> tables based on the subscription ID.</p>\n<p>Each license or subscription that is managed by BlueXP digital wallet has a resource identifier in the Tenancy service that associates it with an account.</p>\n<p>You can perform the following actions with the subscription endpoints:</p>\n<ul>\n<li>Read, create, update, or delete a subscription.</li>\n</ul>\n</fieldset>\n</details>\n"
+            "description": "<details>\n<summary>Overview</summary>\n<fieldset>\nThe subscription endpoints manage subscriptions for NetApp Console services for end users. \nThe endpoints register a specified subscription on NetApp Console licenses and subscriptions and associate it with the Tenancy service. \n<p>A subscription for NetApp Console services is a collection of the following:</p>\n<ul>\n<li>Subscription ID (such as 666777, A-S000003969)</li>\n<li>Subscription type (such as Keystone)</li>\n<li>Expiration date (such as 20251109)</li>\n<li>Last modified (such as 2021-11-09 00:00:00)</li>\n<li>Resource identifier (such as license-481000495-6897991f-f83f-41c1-b151-eb62073e57be), used internally</li>\n</ul>\n<p>The subscription endpoints support the Create-Read-Update-Delete (CRUD) operation on the <code>subscription</code> and <code>subscription_resource</code> tables based on the subscription ID.</p>\n<p>Each license or subscription that is managed by NetApp Console licenses and subscriptions as a resource identifier in the Tenancy service that associates it with an account.</p>\n<p>You can perform the following actions with the subscription endpoints:</p>\n<ul>\n<li>Read, create, update, or delete a subscription.</li>\n</ul>\n</fieldset>\n</details>\n"
         },
         {
             "name": "External Services",
-            "description": "<details>\n<summary>Overview</summary>\n<fieldset>\nThe external services endpoints retrieve data from external services that display in BlueXP digital wallet.\n<p>You can perform the following actions with the external services endpoints:</p>\n<ul>\n<li>Read on-premises (on-prem) ONTAP cluster data.</li>\n</ul>\n</fieldset>\n</details>"
+            "description": "<details>\n<summary>Overview</summary>\n<fieldset>\nThe external services endpoints retrieve data from external services that display in NetApp Console licenses and subscriptions.\n<p>You can perform the following actions with the external services endpoints:</p>\n<ul>\n<li>Read on-premises (on-prem) ONTAP cluster data.</li>\n</ul>\n</fieldset>\n</details>"
         },
         {
             "name": "Data Services",
-            "description": "<details>\n<summary>Overview</summary>\n<fieldset>\nThe data services endpoints retrieve data service information that is managed in BlueXP digital wallet.\n<p>You can perform the following actions with the data services endpoints:</p>\n<ul>\n<li>Read eligibility details of an account for a data service</li>\n</ul>\n</fieldset>\n</details>\n"
+            "description": "<details>\n<summary>Overview</summary>\n<fieldset>\nThe data services endpoints retrieve data service information that is managed in NetApp Console licenses and subscriptions.\n<p>You can perform the following actions with the data services endpoints:</p>\n<ul>\n<li>Read eligibility details of an account for a data service</li>\n</ul>\n</fieldset>\n</details>\n"
         }
     ],
     "externalDocs": {
         "url": "https://docs.netapp.com/us-en/cloud-manager-automation/cm/introduction.html",
-        "description": "Learn more about the BlueXP control plane REST APIs."
+        "description": "Learn more about the NetApp Console control plane REST APIs."
     }
 }
