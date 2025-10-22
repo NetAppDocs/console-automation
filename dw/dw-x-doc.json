@@ -272,12 +272,12 @@
         }
       }
     },
-    "/license/node-based-Evaluation licensess": {
+    "/license/node-based-eval-licenses": {
       "post": {
         "x-doc": {
-          "title": "Create an evaluation licenses",
+          "title": "Create an evaluation license",
           "category": "Evaluation licenses",
-          "filename": "post-license-node-based-Evaluation licensess.html",
+          "filename": "post-license-node-based-eval-licenses.html",
           "subcategory": null
         }
       }
