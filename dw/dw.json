@@ -1837,7 +1837,7 @@
                 "tags": [
                     "Eval-License"
                 ],
-                "description": "<p>Creates evaluation licenses associated with the provided Cloud Volumes ONTAP system.</p>\n<p><strong>Note:</strong><br />\nTo use this endpoint, you must use a NetApp Console agent service token.</p>\n<ul>\n<li>\n<p><code>cvos</code> is a required field and must contain:</p>\n</li>\n<li>\n<p><code>cvoId</code>, <code>provider</code>, <code>cvoType</code>, <code>evalLicenses</code></p>\n</li>\n<li>\n<p><code>evalLicenses</code> is a required field in <code>cvos</code> and must contain: <code>serialNumber</code>,<code>expirationDate</code></p>\n</li>\n<li>\n<p><code>capacity</code> is an optional field in <code>evalLicenses</code></p>\n</li>\n<li>\n<p><code>accountId</code> is an optional field because can be fetched from agent token</p>\n</li>\n<li>\n<p><code>migration</code> has default value <code>false</code>, <code>true</code> value will cause skipping the expiry validation</p>\n</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console service token with the following scopes: occm-access.",
+                "description": "<p>Creates evaluation licenses associated with the provided Cloud Volumes ONTAP system.</p>\n<p><strong>Note:</strong><br />\nTo use this endpoint, you must use a NetApp Console agent service token.</p>\n<ul>\n<li>\n<p><code>cvos</code> is a required field and must contain:</p>\n</li>\n<li>\n<p><code>cvoId</code>, <code>provider</code>, <code>cvoType</code>, <code>evalLicenses</code></p>\n</li>\n<li>\n<p><code>evalLicenses</code> is a required field in <code>cvos</code> and must contain: <code>serialNumber</code>,<code>expirationDate</code></p>\n</li>\n<li>\n<p><code>capacity</code> is an optional field in <code>evalLicenses</code></p>\n</li>\n<li>\n<p><code>accountId</code> is an optional field because can be fetched from agent token</p>\n</li>\n<li>\n<p><code>migration</code> has default value <code>false</code>, <code>true</code> value will cause skipping the expiry validation</p>\n</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console service token with the occm-access scope.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2369,7 +2369,7 @@
                 "tags": [
                     "External Services"
                 ],
-                "description": "<p>Retrieves on-premises (on-prem) ONTAP cluster data.<br />\nThe ONTAP cluster must be configured for AutoSupport to send back the telemetry and configuration data to NetApp.</p>\n<p>Data retrieved by this endpoint is comprised mostly of ONTAP cluster configuration details<br />\n(such as cluster management IP address, capacity, contract date, feature licenses, and more).</p>\n \n<b>Token usage:</b> NetApp Console user token.",
+                "description": "<p>Retrieves on-premises (on-prem) ONTAP cluster data.<br />\nThe ONTAP cluster must be configured for AutoSupport to send back the telemetry and configuration data to NetApp.</p>\n<p>Data retrieved by this endpoint is comprised mostly of ONTAP cluster configuration details (such as cluster management IP address, capacity, contract date, feature licenses, and more).</p>\n \n<b>Token usage:</b> NetApp Console user token.",
                 "parameters": [
                     {
                         "schema": {
