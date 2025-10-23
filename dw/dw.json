@@ -2200,7 +2200,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Updates a subscription expiration date using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To update the expiration date, expiration date and service name are mandatory, dwAudit is optional.</li>\n<li>To update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.</li>\n \n \n<b>Token usage:</b> NetApp Console service token.",
+                "description": "<p>Updates a subscription expiration date using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To update the expiration date, expiration date and service name are mandatory, dwAudit is optional.</li>\n<li>To update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.</li>\n</ul>\n \n \n<b>Token usage:</b> NetApp Console service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2953,7 +2953,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<strong>Note:</strong>\nTo update the expiration date, expiration date and service name are mandatory, dwAudit is optional.\nTo update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To update the expiration date, expiration date and service name are mandatory, dwAudit is optional.</li>\n<li>To update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3273,7 +3273,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<strong>Note:</strong>\nTo update the expiration date, expiration date and service name are mandatory, dwAudit is optional.\nTo update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of services.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>To update the expiration date, expiration date and service name are mandatory, dwAudit is optional.</li>\n<li>To update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3549,7 +3549,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription configuration information for a specified subscription ID.</p>\n<strong>Note:</strong>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Retrieves the subscription configuration information for a specified subscription ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
