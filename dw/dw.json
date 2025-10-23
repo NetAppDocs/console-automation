@@ -2744,7 +2744,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Deletes or dissociates a subscription containing a specified subscription ID from an account.</p>\n<p>The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance.<br />\nIt deletes the subscription if no other account is associated with the subscription.<br />\nIf more than one account is associated with the subscription, this endpoint disassociates the account provided in <code>accountId</code> and the subscription.</p>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Deletes or disassociates a subscription containing a specified subscription ID from an account.</p>\n<p>The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance.<br />\nIt deletes the subscription if no other account is associated with the subscription.<br />\nIf more than one account is associated with the subscription, this endpoint disassociates the account provided in <code>accountId</code> and the subscription.</p>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "requestBody": {
                     "content": {
                         "application/json": {

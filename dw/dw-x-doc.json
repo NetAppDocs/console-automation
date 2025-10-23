@@ -255,7 +255,7 @@
     "/license/disassociate-resource/{associatedResourceId}": {
       "post": {
         "x-doc": {
-          "title": "Dissociate a resource ID from a license",
+          "title": "Disassociate a resource ID from a license",
           "category": "License",
           "filename": "post-license-disassociate-resource-.html",
           "subcategory": null
