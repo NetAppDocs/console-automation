@@ -1723,7 +1723,7 @@
                 "tags": [
                     "Data Services"
                 ],
-                "description": "<p>Retrieves data service eligibility details to determine whether an account is eligible to use a data service in an on-premises or cloud environment.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>\n<p>You can use a user token or service token with scope: license:internal.</p>\n</li>\n<li>\n<p><code>accountId</code>, <code>cloudProvider</code>, and <code>service</code> are required parameters.</p>\n</li>\n<li>\n<p>The 'SGWS' value in the cloudProvider parameter denotes that the feature details request is for an on-premises ONTAP system backed up in StorageGRID and retrieves only license details.</p>\n</li>\n<li>\n<p><code>cloudAccountId</code> and <code>cvoId</code> are optional parameters.</p>\n</li>\n<li>\n<p>If the feature details request is for a Cloud Volumes ONTAP or an on-premises ONTAP system backed up on a cloud, you must provide <code>cloudAccountId</code>.</p>\n</li>\n<li>\n<p>If the feature details request is for Cloud Volumes ONTAP, you must provide the <code>cvoId</code> parameter that is used to retrieve the Cloud Volumes ONTAP package.</p>\n</li>\n<li>\n<p>The TotalServiceLicensesCapacity value is in TB, the TotalServiceLicensesUsedCapacity value is in TiB, and the FreeTrialEndDate value is in ISO 8601 format.</p>\n</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Retrieves data service eligibility details to determine whether an account is eligible to use a data service in an on-premises or cloud environment.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>\n<p>You can use a user token or service token with the license:internal scope.</p>\n</li>\n<li>\n<p><code>accountId</code>, <code>cloudProvider</code>, and <code>service</code> are required parameters.</p>\n</li>\n<li>\n<p>The 'SGWS' value in the cloudProvider parameter denotes that the feature details request is for an on-premises ONTAP system backed up in StorageGRID and retrieves only license details.</p>\n</li>\n<li>\n<p><code>cloudAccountId</code> and <code>cvoId</code> are optional parameters.</p>\n</li>\n<li>\n<p>If the feature details request is for a Cloud Volumes ONTAP or an on-premises ONTAP system backed up on a cloud, you must provide <code>cloudAccountId</code>.</p>\n</li>\n<li>\n<p>If the feature details request is for Cloud Volumes ONTAP, you must provide the <code>cvoId</code> parameter that is used to retrieve the Cloud Volumes ONTAP package.</p>\n</li>\n<li>\n<p>The TotalServiceLicensesCapacity value is in TB, the TotalServiceLicensesUsedCapacity value is in TiB, and the FreeTrialEndDate value is in ISO 8601 format.</p>\n</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3405,7 +3405,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the associated subscription ID to each cloud account ID.\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Retrieves the associated subscription ID for each cloud account ID.\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls with a predefined scope only.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3471,7 +3471,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the associated subscription ID to each cloud account ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console user token.",
+                "description": "<p>Retrieves the associated subscription ID for each cloud account ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls with a predefined scope only.</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console user token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3549,7 +3549,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription configuration information for a specified subscription ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Retrieves the subscription configuration information for a specified subscription ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls with a predefined scope only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3615,7 +3615,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Sets the subscription configuration.<br />\nAssociates subscriptions to cloud accounts.</p>\n <br> \n<b>Token usage:</b> NetApp Console user token.",
+                "description": "<p>Sets the subscription configuration.<br />\nAssociates subscriptions with cloud accounts.</p>\n <br> \n<b>Token usage:</b> NetApp Console user token.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3703,7 +3703,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the associated subscription ID to each cloud account ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls (with a predefined scope) only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Retrieves the associated subscription ID for each cloud account ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user call and service calls with a predefined scope only.</li>\n</ul>\n <br> \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
