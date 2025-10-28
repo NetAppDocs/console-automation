@@ -48,7 +48,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new Azure volume",
-          "category": "Azure volumes (single-node systems)",
+          "category": "Azure volumes (single-node system)",
           "filename": "post-azure-vsa-volumes-quote.html",
           "subcategory": null,
           "explorer": false
@@ -59,7 +59,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "post-azure-vsa-volumes--change-tier.html",
           "subcategory": null,
           "explorer": false
@@ -70,7 +70,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "get-azure-vsa-volumes-volumes-for-backup.html",
           "subcategory": null,
           "explorer": false
@@ -81,7 +81,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "put-azure-vsa-volumes--.html",
           "subcategory": null,
           "explorer": false
@@ -90,7 +90,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "delete-azure-vsa-volumes--.html",
           "subcategory": null,
           "explorer": false
@@ -101,7 +101,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "put-azure-vsa-volumes--exportpolicy.html",
           "subcategory": null,
           "explorer": false
@@ -112,7 +112,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "get-azure-vsa-volumes-igroups-.html",
           "subcategory": null,
           "explorer": false
@@ -123,7 +123,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "get-azure-vsa-volumes-initiator.html",
           "subcategory": null,
           "explorer": false
@@ -132,7 +132,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "post-azure-vsa-volumes-initiator.html",
           "subcategory": null,
           "explorer": false
@@ -143,7 +143,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of volume snapshot descriptions",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "get-azure-vsa-volumes--snapshots.html",
           "subcategory": null,
           "explorer": false
@@ -154,7 +154,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "post-azure-vsa-volumes--clone.html",
           "subcategory": null,
           "explorer": false
@@ -165,7 +165,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "post-azure-vsa-volumes--move.html",
           "subcategory": null,
           "explorer": false
@@ -176,7 +176,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all volumes",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "get-azure-vsa-volumes.html",
           "subcategory": null,
           "explorer": false
@@ -185,7 +185,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "post-azure-vsa-volumes.html",
           "subcategory": null,
           "explorer": false
@@ -196,7 +196,7 @@
       "post": {
         "x-doc": {
           "title": "Create a snapshot",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "post-azure-vsa-volumes--snapshot.html",
           "subcategory": null,
           "explorer": false
@@ -205,7 +205,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a snapshot",
-          "category": "Azure volumes",
+          "category": "Azure volumes (single-node system)",
           "filename": "delete-azure-vsa-volumes--snapshot.html",
           "subcategory": null,
           "explorer": false
