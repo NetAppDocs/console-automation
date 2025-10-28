@@ -3751,7 +3751,7 @@
       "post": {
         "x-doc": {
           "title": "Update the key manager CA certificate on a system",
-          "category": "AWS HA system encryption",
+          "category": "AWS system encryption (HA)",
           "filename": "post-aws-ha-encryption-update-key-manager-ca-certificate.html",
           "subcategory": null,
           "explorer": false
@@ -3762,7 +3762,7 @@
       "post": {
         "x-doc": {
           "title": "Update client certificate on a system",
-          "category": "AWS HA system encryption",
+          "category": "AWS system encryption (HA)",
           "filename": "post-aws-ha-encryption-update-client-certificate.html",
           "subcategory": null,
           "explorer": false
@@ -3773,7 +3773,7 @@
       "post": {
         "x-doc": {
           "title": "Add a key manager to a system",
-          "category": "AWS HA system encryption",
+          "category": "AWS system encryption (HA)",
           "filename": "post-aws-ha-encryption-key-managers-.html",
           "subcategory": null,
           "explorer": false
@@ -3782,7 +3782,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a key manager from a system",
-          "category": "AWS HA system encryption",
+          "category": "AWS system encryption (HA)",
           "filename": "delete-aws-ha-encryption-key-managers-.html",
           "subcategory": null,
           "explorer": false
@@ -8065,7 +8065,7 @@
       "post": {
         "x-doc": {
           "title": "Update the key manager CA certificate",
-          "category": "AWS system encryption",
+          "category": "AWS system encryption (single-node)",
           "filename": "post-vsa-encryption-update-key-manager-ca-certificate.html",
           "subcategory": null,
           "explorer": false
@@ -8076,7 +8076,7 @@
       "post": {
         "x-doc": {
           "title": "Update the client certificate",
-          "category": "AWS system encryption",
+          "category": "AWS system encryption (single-node)",
           "filename": "post-vsa-encryption-update-client-certificate.html",
           "subcategory": null,
           "explorer": false
@@ -8087,7 +8087,7 @@
       "post": {
         "x-doc": {
           "title": "Add a key manager",
-          "category": "AWS system encryption",
+          "category": "AWS system encryption (single-node)",
           "filename": "post-vsa-encryption-key-managers-.html",
           "subcategory": null,
           "explorer": false
@@ -8096,7 +8096,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete a key manager",
-          "category": "AWS system encryption",
+          "category": "AWS system encryption (single-node)",
           "filename": "delete-vsa-encryption-key-managers-.html",
           "subcategory": null,
           "explorer": false
@@ -8317,7 +8317,7 @@
         "x-doc": {
           "title": "Retrieve unsupported instance types for acceleration and capacity tiering",
           "category": "AWS system metadata (single-node)",
-          "filename": "get-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
+          "filename":"get-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null,
           "explorer": false
         }
