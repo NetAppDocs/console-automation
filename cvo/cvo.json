@@ -1115,7 +1115,7 @@
         "tags": [
           "Account operations"
         ],
-        "description": "Updates the VSA list of an existing NSS account.",
+        "description": "Updates the system list of an existing NetApp Support Site account.",
         "operationId": "updateNssAccountVsaList",
         "parameters": [
           {
@@ -4599,7 +4599,7 @@
         "tags": [
           "ONTAP Cloud Azure HA working environment operations - Working environments"
         ],
-        "description": "Returns true if a resource group with that name already exists, false otherwise",
+        "description": "Checks if a resource group with the specified name already exists. Returns true if a resource group with that name already exists, false otherwise.",
         "operationId": "resourceGroupExists",
         "parameters": [
           {
@@ -7236,7 +7236,7 @@
         "tags": [
           "Common working environment operations"
         ],
-        "description": "Returns true if a system with that name already exists, false otherwise",
+        "description": "Checks if a system with the specified name already exists. Returns true if a system with that name already exists, false otherwise.",
         "operationId": "workingEnvironmentsByName",
         "parameters": [
           {
@@ -18043,7 +18043,7 @@
         "tags": [
           "Cloud Manager system operations - Encryption - Key store operations"
         ],
-        "description": "Generates a new key pair and self certificate at the key store and returns a certificate signing request (CSR). ",
+        "description": "Generates a new key pair and self-signed certificate at the key store and returns a certificate signing request (CSR). ",
         "operationId": "generateKeysAndCertificateRequest",
         "requestBody": {
           "content": {
@@ -18073,7 +18073,7 @@
         "tags": [
           "Cloud Manager system operations - Encryption - Key store operations"
         ],
-        "description": "Generates new key pair and self certificate at the key store and returns a certificate signing request (CSR). ",
+        "description": "Generates new key pair and self-signed certificate at the key store and returns a certificate signing request (CSR). ",
         "operationId": "installExternalSignedCertificateFile",
         "parameters": [
           {
@@ -18126,7 +18126,7 @@
         "tags": [
           "Cloud Manager system operations - Encryption - Key store operations"
         ],
-        "description": "Generates a new key pair and self certificate at the key store and returns a certificate signing request (CSR). ",
+        "description": "Generates a new key pair and self-signed certificate at the key store and returns a certificate signing request (CSR). ",
         "operationId": "installExternalSignedCertificate",
         "requestBody": {
           "content": {
@@ -18283,7 +18283,7 @@
         "tags": [
           "Cloud Manager system operations - Encryption - Key store operations"
         ],
-        "description": "Retrieves the self certificate of the NetApp Console key store, if one exists.",
+        "description": "Retrieves the self-signed certificate of the NetApp Console key store, if one exists.",
         "operationId": "selfCertificate",
         "responses": {
           "default": {
@@ -18543,7 +18543,7 @@
         "tags": [
           "Cloud Manager system operations - ASUP"
         ],
-        "description": "Downloads a compressed file of all the AutoSupport files from all VSAs.",
+        "description": "Downloads a compressed file of all the AutoSupport files from all systems.",
         "operationId": "downloadOntapCloudAsups",
         "responses": {
           "default": {
@@ -20067,7 +20067,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "NetApp Console no longer manages this system, but this does not affect ONTAP itself.",
+        "description": "Removes an on-premises ONTAP system from the NetApp Console. The Console will no longer manage the system and it will not affect ONTAP.",
         "operationId": "removeOnPrem",
         "parameters": [
           {
@@ -24991,7 +24991,7 @@
         "tags": [
           "ONTAP Cloud Azure working environment operations - Working environments"
         ],
-        "description": "Returns true if a resource group with that name already exists, otherwise it returns false.",
+        "description": "Checks if a resource group with the specfied name already exists.Returns true if a resource group with that name already exists, false otherwise.",
         "operationId": "resourceGroupExists_1",
         "parameters": [
           {
