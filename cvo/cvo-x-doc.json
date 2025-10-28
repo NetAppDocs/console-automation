@@ -2308,7 +2308,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud encryption keys for a region",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-gcp-encryption-keys.html",
           "subcategory": null,
           "explorer": false
@@ -2319,7 +2319,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of service accounts",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-service-accounts.html",
           "subcategory": null,
           "explorer": false
@@ -2330,7 +2330,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of IP addresses for a system",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-network-requirements.html",
           "subcategory": null,
           "explorer": false
@@ -2341,7 +2341,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all cloud storage buckets",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-buckets.html",
           "subcategory": null,
           "explorer": false
@@ -2352,7 +2352,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for Google Cloud disk types",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-supported-capacity-tiers.html",
           "subcategory": null,
           "explorer": false
@@ -2363,7 +2363,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of projects",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-projects.html",
           "subcategory": null,
           "explorer": false
@@ -2374,7 +2374,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new bucket",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "post-gcp-vsa-metadata-create-bucket.html",
           "subcategory": null,
           "explorer": false
@@ -2385,7 +2385,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the supported Google Cloud disk types",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-gcp-disk-types.html",
           "subcategory": null,
           "explorer": false
@@ -2396,7 +2396,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all the labels for a project ID and zone",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-tag-keys.html",
           "subcategory": null,
           "explorer": false
@@ -2407,7 +2407,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all Cloud Volumes ONTAP configurations",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-permutations.html",
           "subcategory": null,
           "explorer": false
@@ -2418,7 +2418,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud regions",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-regions.html",
           "subcategory": null,
           "explorer": false
@@ -2429,7 +2429,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve default snapshot policies",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-default-snapshot-policies.html",
           "subcategory": null,
           "explorer": false
@@ -2440,7 +2440,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the instance types that do not support acceleration and capacity tiering",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null,
           "explorer": false
@@ -2451,7 +2451,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-supported-features.html",
           "subcategory": null,
           "explorer": false
@@ -2462,7 +2462,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the packages configuration",
-          "category": "Google Cloud system metadata",
+          "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-vsa-metadata-packages.html",
           "subcategory": null,
           "explorer": false
@@ -2473,7 +2473,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "Google Cloud aggregates",
+          "category": "Google Cloud aggregates (single-node)",
           "filename": "get-gcp-vsa-aggregates-.html",
           "subcategory": null,
           "explorer": false
@@ -2484,7 +2484,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "Google Cloud aggregates",
+          "category": "Google Cloud aggregates (single-node)",
           "filename": "post-gcp-vsa-aggregates.html",
           "subcategory": null,
           "explorer": false
@@ -2495,7 +2495,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an aggregate",
-          "category": "Google Cloud aggregates",
+          "category": "Google Cloud aggregates (single-node)",
           "filename": "delete-gcp-vsa-aggregates-.html",
           "subcategory": null,
           "explorer": false
@@ -2506,7 +2506,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an aggregate",
-          "category": "Google Cloud aggregates",
+          "category": "Google Cloud aggregates (single-node)",
           "filename": "post-gcp-vsa-aggregates--disks.html",
           "subcategory": null,
           "explorer": false
@@ -2685,7 +2685,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "Google Cloud HA aggregates",
+          "category": "Google Cloud aggregates (HA)",
           "filename": "get-gcp-ha-aggregates-.html",
           "subcategory": null,
           "explorer": false
@@ -2696,7 +2696,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "Google Cloud HA aggregates",
+          "category": "Google Cloud aggregates (HA)",
           "filename": "post-gcp-ha-aggregates.html",
           "subcategory": null,
           "explorer": false
@@ -2707,7 +2707,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an aggregate",
-          "category": "Google Cloud HA aggregates",
+          "category": "Google Cloud aggregates (HA)",
           "filename": "delete-gcp-ha-aggregates-.html",
           "subcategory": null,
           "explorer": false
@@ -2718,7 +2718,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an aggregate",
-          "category": "Google Cloud HA aggregates",
+          "category": "Google Cloud aggregates (HA)",
           "filename": "post-gcp-ha-aggregates--disks.html",
           "subcategory": null,
           "explorer": false
@@ -2729,7 +2729,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud networks and subnetworks",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-vpcs.html",
           "subcategory": null,
           "explorer": false
@@ -2740,7 +2740,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud regions and zones",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-zones.html",
           "subcategory": null,
           "explorer": false
@@ -2751,7 +2751,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all labels for a project ID and region",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-tag-keys.html",
           "subcategory": null,
           "explorer": false
@@ -2762,7 +2762,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all Cloud Volumes ONTAP configurations",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-permutations.html",
           "subcategory": null,
           "explorer": false
@@ -2773,7 +2773,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud encryption keys for a region",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-gcp-encryption-keys.html",
           "subcategory": null,
           "explorer": false
@@ -2784,7 +2784,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of service accounts",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-service-accounts.html",
           "subcategory": null,
           "explorer": false
@@ -2795,7 +2795,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of IP addresses for a system",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-network-requirements.html",
           "subcategory": null,
           "explorer": false
@@ -2806,7 +2806,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all cloud storage buckets",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-buckets.html",
           "subcategory": null,
           "explorer": false
@@ -2817,7 +2817,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for Google Cloud disk types",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-supported-capacity-tiers.html",
           "subcategory": null,
           "explorer": false
@@ -2828,7 +2828,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of projects",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-projects.html",
           "subcategory": null,
           "explorer": false
@@ -2839,7 +2839,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new bucket",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "post-gcp-ha-metadata-create-bucket.html",
           "subcategory": null,
           "explorer": false
@@ -2850,7 +2850,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the supported disk types",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-gcp-disk-types.html",
           "subcategory": null,
           "explorer": false
@@ -2861,7 +2861,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve Google Cloud regions",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-regions.html",
           "subcategory": null,
           "explorer": false
@@ -2872,7 +2872,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the default snapshot policies",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-default-snapshot-policies.html",
           "subcategory": null,
           "explorer": false
@@ -2883,7 +2883,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve instance types that do not support acceleration and capacity tiering",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null,
           "explorer": false
@@ -2894,7 +2894,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-supported-features.html",
           "subcategory": null,
           "explorer": false
@@ -2905,7 +2905,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the packages configuration",
-          "category": "Google Cloud HA system metadata",
+          "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-ha-metadata-packages.html",
           "subcategory": null,
           "explorer": false
@@ -3676,7 +3676,7 @@
       "post": {
         "x-doc": {
           "title": "Add capacity to an elastic volume aggregate",
-          "category": "AWS HA aggregates",
+          "category": "AWS aggregates (HA)",
           "filename": "post-aws-ha-aggregates--add-capacity.html",
           "subcategory": null,
           "explorer": false
@@ -3687,7 +3687,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "AWS HA aggregates",
+          "category": "AWS aggregates (HA)",
           "filename": "get-aws-ha-aggregates.html",
           "subcategory": null,
           "explorer": false
@@ -3696,7 +3696,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "AWS HA aggregates",
+          "category": "AWS aggregates (HA)",
           "filename": "post-aws-ha-aggregates.html",
           "subcategory": null,
           "explorer": false
@@ -3707,7 +3707,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an aggregate",
-          "category": "AWS HA aggregates",
+          "category": "AWS aggregates (HA)",
           "filename": "delete-aws-ha-aggregates-.html",
           "subcategory": null,
           "explorer": false
@@ -3718,7 +3718,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an existing aggregate",
-          "category": "AWS HA aggregates",
+          "category": "AWS aggregates (HA)",
           "filename": "post-aws-ha-aggregates--disks.html",
           "subcategory": null,
           "explorer": false
@@ -3729,7 +3729,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of discovered systems",
-          "category": "AWS HA system discovery",
+          "category": "AWS  system discovery (HA)",
           "filename": "get-aws-ha-discovery-discover.html",
           "subcategory": null,
           "explorer": false
@@ -3740,7 +3740,7 @@
       "post": {
         "x-doc": {
           "title": "Save a previously discovered system",
-          "category": "AWS HA system discovery",
+          "category": "AWS  system discovery (HA)",
           "filename": "post-aws-ha-discovery-recover.html",
           "subcategory": null,
           "explorer": false
@@ -3793,7 +3793,7 @@
       "post": {
         "x-doc": {
           "title": "Validate high availability (HA) floating IP addresses",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "post-aws-ha-metadata-validate-floating-ips.html",
           "subcategory": null,
           "explorer": false
@@ -3804,7 +3804,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve route tables per VPC and their subnet associations",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-route-tables.html",
           "subcategory": null,
           "explorer": false
@@ -3815,7 +3815,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all system configurations",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-permutations.html",
           "subcategory": null,
           "explorer": false
@@ -3826,7 +3826,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all NetApp Console manifests",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-manifests.html",
           "subcategory": null,
           "explorer": false
@@ -3837,7 +3837,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve VPCs",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-vpcs.html",
           "subcategory": null,
           "explorer": false
@@ -3848,7 +3848,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS user key pairs by region",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-key-pairs.html",
           "subcategory": null,
           "explorer": false
@@ -3859,7 +3859,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS user key pairs for all regions",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-key-pairs-by-region.html",
           "subcategory": null,
           "explorer": false
@@ -3870,7 +3870,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS instance profiles",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-instance-profiles.html",
           "subcategory": null,
           "explorer": false
@@ -3881,7 +3881,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve S3 buckets summary",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-s3-summary.html",
           "subcategory": null,
           "explorer": false
@@ -3892,7 +3892,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of required IP addresses",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-network-requirements.html",
           "subcategory": null,
           "explorer": false
@@ -3903,7 +3903,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS encryption keys by region",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-aws-encryption-keys.html",
           "subcategory": null,
           "explorer": false
@@ -3914,7 +3914,7 @@
       "post": {
         "x-doc": {
           "title": "Confirm the current user subscription",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "post-aws-ha-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null,
           "explorer": false
@@ -3925,7 +3925,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all S3 buckets with additional information",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-get-buckets-details.html",
           "subcategory": null,
           "explorer": false
@@ -3936,7 +3936,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve the S3 buckets policy status and tiering level",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "post-aws-ha-metadata-get-buckets-application-info.html",
           "subcategory": null,
           "explorer": false
@@ -3947,7 +3947,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all S3 buckets",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-buckets.html",
           "subcategory": null,
           "explorer": false
@@ -3958,7 +3958,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for EBS volume types",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-supported-capacity-tiers.html",
           "subcategory": null,
           "explorer": false
@@ -3969,7 +3969,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new S3 bucket",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "post-aws-ha-metadata-create-bucket.html",
           "subcategory": null,
           "explorer": false
@@ -3980,7 +3980,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported EBS volume types",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-ebs-volume-types.html",
           "subcategory": null,
           "explorer": false
@@ -3991,7 +3991,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all tag names",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-tag-keys.html",
           "subcategory": null,
           "explorer": false
@@ -4002,7 +4002,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS regions",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-regions.html",
           "subcategory": null,
           "explorer": false
@@ -4013,7 +4013,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve default snapshot policies available on a cluster",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-default-snapshot-policies.html",
           "subcategory": null,
           "explorer": false
@@ -4024,7 +4024,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve unsupported instance types for acceleration and capacity tiering",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null,
           "explorer": false
@@ -4035,7 +4035,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-supported-features.html",
           "subcategory": null,
           "explorer": false
@@ -4046,7 +4046,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve packages configuration",
-          "category": "AWS HA system metadata",
+          "category": "AWS system metadata (HA)",
           "filename": "get-aws-ha-metadata-packages.html",
           "subcategory": null,
           "explorer": false
@@ -4057,7 +4057,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new volume",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "post-aws-ha-volumes-quote.html",
           "subcategory": null,
           "explorer": false
@@ -4068,7 +4068,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "post-aws-ha-volumes--change-tier.html",
           "subcategory": null,
           "explorer": false
@@ -4079,7 +4079,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes for backup activation",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "get-aws-ha-volumes-volumes-for-backup.html",
           "subcategory": null,
           "explorer": false
@@ -4090,7 +4090,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "put-aws-ha-volumes--.html",
           "subcategory": null,
           "explorer": false
@@ -4099,7 +4099,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "delete-aws-ha-volumes--.html",
           "subcategory": null,
           "explorer": false
@@ -4110,7 +4110,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "put-aws-ha-volumes--exportpolicy.html",
           "subcategory": null,
           "explorer": false
@@ -4121,7 +4121,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "get-aws-ha-volumes-igroups-.html",
           "subcategory": null,
           "explorer": false
@@ -4132,7 +4132,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "get-aws-ha-volumes-initiator.html",
           "subcategory": null,
           "explorer": false
@@ -4141,7 +4141,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "post-aws-ha-volumes-initiator.html",
           "subcategory": null,
           "explorer": false
@@ -4152,7 +4152,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of snapshot descriptions for the volume",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "get-aws-ha-volumes--snapshots.html",
           "subcategory": null,
           "explorer": false
@@ -4163,7 +4163,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "post-aws-ha-volumes--clone.html",
           "subcategory": null,
           "explorer": false
@@ -4174,7 +4174,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "post-aws-ha-volumes--move.html",
           "subcategory": null,
           "explorer": false
@@ -4185,7 +4185,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all volumes",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "get-aws-ha-volumes.html",
           "subcategory": null,
           "explorer": false
@@ -4194,7 +4194,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "post-aws-ha-volumes.html",
           "subcategory": null,
           "explorer": false
@@ -4205,7 +4205,7 @@
       "post": {
         "x-doc": {
           "title": "Manually create a snapshot",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "post-aws-ha-volumes--snapshot.html",
           "subcategory": null,
           "explorer": false
@@ -4214,7 +4214,7 @@
       "delete": {
         "x-doc": {
           "title": "Manually delete a snapshot",
-          "category": "AWS HA volumes",
+          "category": "AWS volumes (HA)",
           "filename": "delete-aws-ha-volumes--snapshot.html",
           "subcategory": null,
           "explorer": false
@@ -7990,7 +7990,7 @@
       "post": {
         "x-doc": {
           "title": "Add the capacity to an existing elastic volume aggregate",
-          "category": "AWS aggregates",
+          "category": "AWS aggregates (single-node)",
           "filename": "post-vsa-aggregates--add-capacity.html",
           "subcategory": null,
           "explorer": false
@@ -8001,7 +8001,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve aggregates",
-          "category": "AWS aggregates",
+          "category": "AWS aggregates (single-node)",
           "filename": "get-vsa-aggregates.html",
           "subcategory": null,
           "explorer": false
@@ -8010,7 +8010,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new aggregate",
-          "category": "AWS aggregates",
+          "category": "AWS aggregates (single-node)",
           "filename": "post-vsa-aggregates.html",
           "subcategory": null,
           "explorer": false
@@ -8021,7 +8021,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing aggregate",
-          "category": "AWS aggregates",
+          "category": "AWS aggregates (single-node)",
           "filename": "delete-vsa-aggregates-.html",
           "subcategory": null,
           "explorer": false
@@ -8032,7 +8032,7 @@
       "post": {
         "x-doc": {
           "title": "Add disks to an existing aggregate",
-          "category": "AWS aggregates",
+          "category": "AWS aggregates (single-node)",
           "filename": "post-vsa-aggregates--disks.html",
           "subcategory": null,
           "explorer": false
@@ -8043,7 +8043,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of discovered systems",
-          "category": "AWS system discovery",
+          "category": "AWS  system discovery (single-node)",
           "filename": "get-vsa-discover.html",
           "subcategory": null,
           "explorer": false
@@ -8054,7 +8054,7 @@
       "post": {
         "x-doc": {
           "title": "Save a previously discovered Cloud Volumes ONTAP system",
-          "category": "AWS system discovery",
+          "category": "AWS  system discovery (single-node)",
           "filename": "post-vsa-recover.html",
           "subcategory": null,
           "explorer": false
@@ -8107,7 +8107,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all Cloud Volumes ONTAP configurations",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-permutations.html",
           "subcategory": null,
           "explorer": false
@@ -8118,7 +8118,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all NetApp Console manifests",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-manifests.html",
           "subcategory": null,
           "explorer": false
@@ -8129,7 +8129,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve VPCs",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-vpcs.html",
           "subcategory": null,
           "explorer": false
@@ -8140,7 +8140,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS  user key pairs by region",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-key-pairs.html",
           "subcategory": null,
           "explorer": false
@@ -8151,7 +8151,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS  user key pairs for all regions",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-key-pairs-by-region.html",
           "subcategory": null,
           "explorer": false
@@ -8162,7 +8162,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS  instance profiles",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-instance-profiles.html",
           "subcategory": null,
           "explorer": false
@@ -8173,7 +8173,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve S3 buckets summary",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-s3-summary.html",
           "subcategory": null,
           "explorer": false
@@ -8184,7 +8184,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the minimum number of required IP addresses",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-network-requirements.html",
           "subcategory": null,
           "explorer": false
@@ -8195,7 +8195,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS  encryption keys by region",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-aws-encryption-keys.html",
           "subcategory": null,
           "explorer": false
@@ -8206,7 +8206,7 @@
       "post": {
         "x-doc": {
           "title": "Comfirm that the current user is subscribed",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "post-vsa-metadata-validate-subscribed-to-ontap-cloud.html",
           "subcategory": null,
           "explorer": false
@@ -8217,7 +8217,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all S3 buckets",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-get-buckets-details.html",
           "subcategory": null,
           "explorer": false
@@ -8228,7 +8228,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve S3 buckets policy status and tiering level",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "post-vsa-metadata-get-buckets-application-info.html",
           "subcategory": null,
           "explorer": false
@@ -8239,7 +8239,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all S3 buckets",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-buckets.html",
           "subcategory": null,
           "explorer": false
@@ -8250,7 +8250,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported capacity tiers for EBS volume types",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-supported-capacity-tiers.html",
           "subcategory": null,
           "explorer": false
@@ -8261,7 +8261,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new S3 bucket",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "post-vsa-metadata-create-bucket.html",
           "subcategory": null,
           "explorer": false
@@ -8272,7 +8272,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported EBS volume types",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-ebs-volume-types.html",
           "subcategory": null,
           "explorer": false
@@ -8283,7 +8283,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all tag names",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-tag-keys.html",
           "subcategory": null,
           "explorer": false
@@ -8294,7 +8294,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve AWS  regions",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-regions.html",
           "subcategory": null,
           "explorer": false
@@ -8305,7 +8305,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve default snapshot policies available on a cluster",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-default-snapshot-policies.html",
           "subcategory": null,
           "explorer": false
@@ -8316,7 +8316,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve unsupported instance types for acceleration and capacity tiering",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null,
           "explorer": false
@@ -8327,7 +8327,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve supported features",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-supported-features.html",
           "subcategory": null,
           "explorer": false
@@ -8338,7 +8338,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve package configurations",
-          "category": "AWS system metadata",
+          "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-packages.html",
           "subcategory": null,
           "explorer": false
@@ -8349,7 +8349,7 @@
       "post": {
         "x-doc": {
           "title": "Retrieve quotes for a new volume",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "post-vsa-volumes-quote.html",
           "subcategory": null,
           "explorer": false
@@ -8360,7 +8360,7 @@
       "post": {
         "x-doc": {
           "title": "Update the underlying volume tier",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "post-vsa-volumes--change-tier.html",
           "subcategory": null,
           "explorer": false
@@ -8371,7 +8371,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve the volumes for backup activation",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "get-vsa-volumes-volumes-for-backup.html",
           "subcategory": null,
           "explorer": false
@@ -8382,7 +8382,7 @@
       "put": {
         "x-doc": {
           "title": "Modify an existing volume",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "put-vsa-volumes--.html",
           "subcategory": null,
           "explorer": false
@@ -8391,7 +8391,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete an existing volume",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "delete-vsa-volumes--.html",
           "subcategory": null,
           "explorer": false
@@ -8402,7 +8402,7 @@
       "put": {
         "x-doc": {
           "title": "Add an export policy rule",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "put-vsa-volumes--exportpolicy.html",
           "subcategory": null,
           "explorer": false
@@ -8413,7 +8413,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all igroups",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "get-vsa-volumes-igroups-.html",
           "subcategory": null,
           "explorer": false
@@ -8424,7 +8424,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve all iSCSI initiators",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "get-vsa-volumes-initiator.html",
           "subcategory": null,
           "explorer": false
@@ -8433,7 +8433,7 @@
       "post": {
         "x-doc": {
           "title": "Add an iSCSI initiator",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "post-vsa-volumes-initiator.html",
           "subcategory": null,
           "explorer": false
@@ -8444,7 +8444,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of snapshot descriptions for the volume",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "get-vsa-volumes--snapshots.html",
           "subcategory": null,
           "explorer": false
@@ -8455,7 +8455,7 @@
       "post": {
         "x-doc": {
           "title": "Clone an existing volume",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "post-vsa-volumes--clone.html",
           "subcategory": null,
           "explorer": false
@@ -8477,7 +8477,7 @@
       "post": {
         "x-doc": {
           "title": "Move an existing volume",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "post-vsa-volumes--move.html",
           "subcategory": null,
           "explorer": false
@@ -8488,7 +8488,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve volumes",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "get-vsa-volumes.html",
           "subcategory": null,
           "explorer": false
@@ -8497,7 +8497,7 @@
       "post": {
         "x-doc": {
           "title": "Create a new volume",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "post-vsa-volumes.html",
           "subcategory": null,
           "explorer": false
@@ -8508,7 +8508,7 @@
       "post": {
         "x-doc": {
           "title": "Manually create a snapshot",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "post-vsa-volumes--snapshot.html",
           "subcategory": null,
           "explorer": false
@@ -8517,7 +8517,7 @@
       "delete": {
         "x-doc": {
           "title": "Manually delete a snapshot",
-          "category": "AWS volumes",
+          "category": "AWS volumes (single-node)",
           "filename": "delete-vsa-volumes--snapshot.html",
           "subcategory": null,
           "explorer": false
