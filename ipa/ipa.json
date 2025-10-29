@@ -2709,7 +2709,7 @@
       },
       {
          "name": "Services",
-         "description": "<details>\n<summary>Overview</summary>\n<fieldset>\n<p>The services endpoint performs the NetApp IPA serial number (sn) lookup and serial number token lookup operations.<br />\nYou need a lookup token to look up a serial number. You can retrieve both a serial number and a lookup token by using this endpoint.</p>\n<p>To look up a serial number token (sn-token), the NetApp Console IPA services endpoint consults the <code>sn-lookup-service</code> endpoint.<br />\nTo look up a serial number (sn-lookup), the NetApp Console IPA services endpoint consults the <code>sn-service</code> endpoint.</p>\n<p>You can perform the following operations with the IPA services endpoint:</p>\n<ul>\n<li>Retrieve serial number lookup token</li>\n<li>Look up serial number</li>\n</ul>\n</fieldset>\n</details>\n"
+         "description": "<details>\n<summary>Overview</summary>\n<fieldset>\n<p>The services endpoint performs the NetApp IPA serial number (sn) lookup and serial number token lookup operations.<br />\nYou need a lookup token to retrieve a serial number. You can retrieve both a serial number and a lookup token by using this endpoint.</p>\n<p>To retrieve a serial number token (sn-token), the NetApp Console IPA services endpoint consults the <code>sn-lookup-service</code> endpoint.<br />\nTo retrieve a serial number (sn-lookup), the NetApp Console IPA services endpoint consults the <code>sn-service</code> endpoint.</p>\n<p>You can perform the following operations with the IPA services endpoint:</p>\n<ul>\n<li>Retrieve a serial number lookup token</li>\n<li>Retrieve a serial number</li>\n</ul>\n</fieldset>\n</details>\n"
       },
       {
          "name": "NSS",
