@@ -160,11 +160,13 @@
           },
           "hasRecords": {
             "type": "boolean",
-            "readOnly": true
+            "readOnly": true,
+            "example": true
           },
           "hasFailedRecord": {
             "type": "boolean",
-            "readOnly": true
+            "readOnly": true,
+            "example:": false
           },
           "lastModified": {
             "type": "number",
