@@ -166,7 +166,7 @@
           "hasFailedRecord": {
             "type": "boolean",
             "readOnly": true,
-            "example:": false
+            "example": false
           },
           "lastModified": {
             "type": "number",
