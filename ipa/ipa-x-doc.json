@@ -67,7 +67,7 @@
     "/ipa/services/account/{accountId}/sn-lookup-token": {
       "post": {
         "x-doc": {
-          "title": "Create an IPA serial number token",
+          "title": "Retrieve an IPA serial number token",
           "category": "Services",
           "filename": "post-ipa-services-account-sn-lookup-token.html",
           "explorer": false,
@@ -78,7 +78,7 @@
     "/ipa/services/sn-lookup": {
       "post": {
         "x-doc": {
-          "title": "Create an IPA serial number",
+          "title": "Retrieve an IPA serial number",
           "category": "Services",
           "filename": "post-ipa-services-sn-lookup.html",
           "explorer": false,
