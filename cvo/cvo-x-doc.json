@@ -208,7 +208,7 @@
           "category": "Azure volumes (single-node)",
           "filename": "delete-azure-vsa-volumes--snapshot.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false 
         }
       }
     },
