@@ -20936,7 +20936,7 @@
         "tags": [
           "Cloud Manager working environment operations - SaaS MP service"
         ],
-        "description": "Attaches an SaaS subscription to a cloud provider account.",
+        "description": "Attaches a SaaS subscription to a cloud provider account.",
         "operationId": "AttachSubscriptionToCloudAccount",
         "parameters": [
           {

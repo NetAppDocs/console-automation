@@ -5715,7 +5715,7 @@
     "/occm/saas-mp-service/attach-subscription/{provider}/{cloudAccountId}": {
       "put": {
         "x-doc": {
-          "title": "Attach an SaaS subscription",
+          "title": "Attach a SaaS subscription",
           "category": "NetApp Console SaaS marketplace",
           "filename": "put-occm-saas-mp-service-attach-subscription-.html",
           "subcategory": null,
