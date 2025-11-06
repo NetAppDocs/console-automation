@@ -90,7 +90,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve NetApp Support Site key credentials",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "get-ipa-account-nss-key-.html",
           "subcategory": null
         }
@@ -98,7 +98,7 @@
       "put": {
         "x-doc": {
           "title": "Update NetApp Support Site key credentials",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "put-ipa-account-nss-key-.html",
           "subcategory": null
         }
@@ -106,7 +106,7 @@
       "delete": {
         "x-doc": {
           "title": "Delete NetApp Support Site key credentials",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "delete-ipa-account-nss-key-.html",
           "subcategory": null
         }
@@ -116,7 +116,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of NetApp Support Site key credentials",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "get-ipa-account-nss-keys.html",
           "subcategory": null
         }
@@ -126,7 +126,7 @@
       "post": {
         "x-doc": {
           "title": "Create NetApp Support Site key credentials",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "post-ipa-account-nss-key.html",
           "subcategory": null
         }
@@ -136,7 +136,7 @@
       "post": {
         "x-doc": {
           "title": "Create an IDaaS NetApp Support Site key credential",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "post-ipa-account-idaas-key.html",
           "subcategory": null
         }
@@ -146,7 +146,7 @@
       "post": {
         "x-doc": {
           "title": "Associate a resource",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "post-ipa-account-nss-key-associate.html",
           "subcategory": null
         }
@@ -156,7 +156,7 @@
       "post": {
         "x-doc": {
           "title": "Disassociate a resource",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "post-ipa-account-nss-key-disassociate.html",
           "subcategory": null
         }
@@ -166,7 +166,7 @@
       "post": {
         "x-doc": {
           "title": "Update a resource NetApp Support Site key",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "post-ipa-account-src-nss-key-dst-nss_key-resource-.html",
           "subcategory": null
         }
@@ -176,7 +176,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve NetApp Support Site credentials",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "get-ipa-account-nss-key-resource-.html",
           "subcategory": null
         }
@@ -186,7 +186,7 @@
       "post": {
         "x-doc": {
           "title": "Migrate NetApp Support Site keys",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "post-ipa-account-migrate.html",
           "explorer": false
         }
@@ -196,7 +196,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve an access token",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "get-ipa-nss-key-access-token.html",
           "explorer": false,
           "subcategory": null
@@ -207,7 +207,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve NetApp Support Site data for accounts",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "get-ipa-accounts-nss-data.html",
           "subcategory": null
         }
@@ -217,7 +217,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve NetApp Support Site data for an account and key ID",
-          "category": "NetApp Support Site",
+          "category": "NSS",
           "filename": "get-ipa-account-nss-key-nss-data.html",
           "subcategory": null
         }
