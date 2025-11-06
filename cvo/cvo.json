@@ -1954,7 +1954,7 @@
         "tags": [
           "User management operations - Authentication operations"
         ],
-        "description": "Sign in to the NetApp Console.",
+        "description": "Signs in to the NetApp Console.",
         "operationId": "login",
         "requestBody": {
           "content": {
