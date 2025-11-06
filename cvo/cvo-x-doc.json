@@ -1152,7 +1152,7 @@
     "/azure/ha/working-environments/resource-group-exists/{resourceGroupName}": {
       "get": {
         "x-doc": {
-          "title": "Returns true if a resource group with that name already exists, false otherwise",
+          "title": "Checks if a resource group with the specified name exists",
           "category": "Azure systems (HA)",
           "filename": "get-azure-ha-working-environments-resource-group-exists-.html",
           "subcategory": null,
@@ -1965,7 +1965,7 @@
     "/working-environments/exists/{workingEnvironmentName}": {
       "get": {
         "x-doc": {
-          "title": "Returns true if working environment with that name already exists, false otherwise",
+          "title": "Checks if a system with the specified name exists",
           "category": "Common system operations",
           "filename": "get-working-environments-exists-.html",
           "subcategory": null,
@@ -6856,7 +6856,7 @@
     "/azure/vsa/working-environments/resource-group-exists/{resourceGroupName}": {
       "get": {
         "x-doc": {
-          "title": "Returns true if a resource group with that name already exists, false otherwise",
+          "title": "Checks if a resource group with the specified name exists",
           "category": "Azure systems (single-node)",
           "filename": "get-azure-vsa-working-environments-resource-group-exists-.html",
           "subcategory": null,
