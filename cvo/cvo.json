@@ -18662,48 +18662,6 @@
         }
       }
     },
-    "/occm/config/simplicator": {
-      "get": {
-        "tags": [
-          "Cloud Manager system operations - Configuration"
-        ],
-        "description": "Retrieves the current simplicator URI and status. Internal use only.",
-        "operationId": "currentSimplicatorConfig",
-        "responses": {
-          "default": {
-            "description": "default response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ConfigResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/occm/config/simplicator/reset": {
-      "post": {
-        "tags": [
-          "Cloud Manager system operations - Configuration"
-        ],
-        "description": "Resets to the default simplicator URI. Internal use only.",
-        "operationId": "resetSimplicatorConfig",
-        "responses": {
-          "default": {
-            "description": "default response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ConfigResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/occm/config": {
       "get": {
         "tags": [
