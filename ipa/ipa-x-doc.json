@@ -206,7 +206,7 @@
     "/ipa/accounts/nss-data": {
       "get": {
         "x-doc": {
-          "title": "Retrieve NetApp Support Site data",
+          "title": "Retrieve NetApp Support Site data for accounts",
           "category": "NetApp Support Site",
           "filename": "get-ipa-accounts-nss-data.html",
           "subcategory": null
@@ -216,7 +216,7 @@
     "/ipa/account/{accountId}/nss-key/{nssKeyId}/nss-data": {
       "get": {
         "x-doc": {
-          "title": "Retrieve NetApp Support Site data",
+          "title": "Retrieve NetApp Support Site data for an account and key ID",
           "category": "NetApp Support Site",
           "filename": "get-ipa-account-nss-key-nss-data.html",
           "subcategory": null
