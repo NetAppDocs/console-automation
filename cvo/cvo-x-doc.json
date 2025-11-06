@@ -5464,7 +5464,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Post /onprem/working-environments",
+          "title": "Discover an on-premises system",
           "category": "On-premises ONTAP cluster systems",
           "filename": "post-onprem-working-environments.html",
           "subcategory": null,
@@ -5484,7 +5484,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "NetApp Console no longer manages this system, but this does not affect data ontap itself",
+          "title": "Delete an on-premises ONTAP system",
           "category": "On-premises ONTAP cluster systems",
           "filename": "delete-onprem-working-environments-.html",
           "subcategory": null,

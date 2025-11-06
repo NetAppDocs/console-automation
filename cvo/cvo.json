@@ -20002,6 +20002,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
+        "description": "Discovers an on-premises system in the NetApp Console.",
         "operationId": "discoverOnPrem",
         "requestBody": {
           "content": {
@@ -20096,7 +20097,7 @@
         "tags": [
           "On-premises (Data ONTAP cluster) working environment operations - Working environments"
         ],
-        "description": "Modifies tthe NetApp Console password for an on-premises system.",
+        "description": "Modifies the NetApp Console password for an on-premises system.",
         "operationId": "updatePassword_3",
         "parameters": [
           {
