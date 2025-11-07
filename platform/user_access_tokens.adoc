@@ -81,7 +81,7 @@ AfLVrnwBXuapKUzyL--tU4jzpob5vji1bWAlkXo_p8SqJY4TzU99tiSp470bw
 .PAYLOAD:DATA
 ----
 {
-  "http://cloud.netapp.com/full_name": "Ranu Kundu",
+  "http://cloud.netapp.com/full_name": "<full_name>",
   "http://cloud.netapp.com/email_verified": true,
   "http://cloud.netapp.com/connection_id": "con_gPjfcs3cccczh4b",
   "http://cloud.netapp.com/is_federated": false,

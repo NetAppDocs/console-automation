@@ -60,7 +60,7 @@ The JSON input example includes the minimum list of parameters.
 
 ** `localDelete` boolean
 +
-If `true` the Cloud Volumes ONTAP instance in the cloud is not terminated, but the NetApp Console no longer manages it (default is `false`).
+If `true`, the Cloud Volumes ONTAP instance in the cloud is not terminated, but the NetApp Console no longer manages it (default is `false`).
 
 ** `forceDelete` boolean
 +
@@ -110,7 +110,7 @@ Path parameter <WORKING_ENV_ID> `(workingEnvironmentId)` string
 
 * `localDelete` boolean
 +
-If `true` the Cloud Volumes ONTAP instance in the cloud is not terminated, but the Console no longer manages it (default is `false`).
+If `true`, the Cloud Volumes ONTAP instance in the cloud is not terminated, but the Console no longer manages it (default is `false`).
 
 * `forceDelete` boolean
 +

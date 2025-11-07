@@ -50,7 +50,7 @@ Input::
 
 ** `localDelete` boolean
 +
-If `true` the Cloud Volumes ONTAP instance in the cloud is not terminated, but the NetApp Console no longer manages it (default is `false`).
+If `true`, the Cloud Volumes ONTAP instance in the cloud is not terminated, but the NetApp Console no longer manages it (default is `false`).
 +
 If `false` the Cloud Volumes ONTAP instance is deleted including all the cloud resources created for this system.
 
@@ -91,7 +91,7 @@ Input::
 
 ** `localDelete` boolean
 +
-If `true` the Cloud Volumes ONTAP instance in the cloud is not terminated, but the Console no longer manages it (default is `false`). If `false` the Cloud Volumes ONTAP instance is deleted including all the cloud resources created for this system.
+If `true`, the Cloud Volumes ONTAP instance in the cloud is not terminated, but the Console no longer manages it (default is `false`). If `false` the Cloud Volumes ONTAP instance is deleted including all the cloud resources created for this system.
 
 ** `forceDelete` boolean
 +

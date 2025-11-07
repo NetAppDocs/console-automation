@@ -23,7 +23,7 @@ There are several things you should consider before performing REST API call usi
 
 An account for the Console is required to access the platform. The system prompts you to create an account when you attempt to sign in to the Console web UI.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-sign-up-saas.html[Sign up or log in to NetApp Console^]. 
+https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html[Sign up or log in to NetApp Console^]. 
 
 == Access token usage scenarios
 
@@ -59,8 +59,8 @@ Several Console APIs require a Console agent ID to route the request to the appr
 
 Depending on the REST API call, you might need a user token, a service token, or both. These tokens can be obtained from the Auth0 authorization service. The tokens need to be included with every API call. For more information, see:
 
-* https://docs.netapp.com/us-en/bluexp-automation/platform/create_user_token.html[Create user token]
-* https://docs.netapp.com/us-en/bluexp-automation/platform/create_service_token.html[Create service token]
+* https://docs.netapp.com/us-en/console-automation/platform/create_user_token.html[Create user token]
+* https://docs.netapp.com/us-en/console-automation/platform/create_service_token.html[Create service token]
 
 === 3. Create the required request headers
 

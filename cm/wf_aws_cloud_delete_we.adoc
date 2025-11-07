@@ -65,7 +65,7 @@ In addition to the parameters common with all REST API calls, the following para
 |Required
 |Description
 | `workingEnvironmentId` <WORKING_ENV_ID> |Path |Yes |Identifies the system ID
-| `localDelete` |Query |No |If `true` the Cloud Volumes ONTAP instance in the cloud is not terminated, but the NetApp Console no longer manages it (default is `false`).
+| `localDelete` |Query |No |If `true`, the Cloud Volumes ONTAP instance in the cloud is not terminated, but the NetApp Console no longer manages it (default is `false`).
 | `forceDelete` |Query |No |If `true` the system is deleted even if it is part of one or more SnapMirror relationships (default is `false`).
 |===
 
@@ -113,7 +113,7 @@ In addition to the parameters common with all REST API calls, the following para
 |Required
 |Description
 | `workingEnvironmentId` <WORKING_ENV_ID> |Path |Yes |Identifies the system ID
-| `localDelete` |Query |No |If `true` the Cloud Volumes ONTAP instance in the cloud is not terminated, but the Console no longer manages it (default is `false`).
+| `localDelete` |Query |No |If `true`, the Cloud Volumes ONTAP instance in the cloud is not terminated, but the Console no longer manages it (default is `false`).
 | `forceDelete` |Query |No |If `true` the system is deleted even if it is part of one or more SnapMirror relationships (default is `false`).
 |===
 

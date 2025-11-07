@@ -20,7 +20,7 @@ You can use this workflow to retrieve the current marketplace account and subscr
 Every cloud account can _optionally_ have a subscription associated with it. The subscription identifies how the various cloud services used by the account are charged. When retrieving the following SaaS accounts, notice that the `subscriptionId` values in the `cloudAccounts` array objects match the `id` values in the associated subscription arrays for the three cloud providers.
 
 [NOTE]
-Each cloud account can have exactly only one subscription or none. You must have a subscription when creating a system using PAYGO ("pay as you go").
+Each cloud account can only have one subscription or none. You must have a subscription when creating a system using PAYGO ("pay as you go").
 
 .HTTP method and endpoint
 
