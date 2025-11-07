@@ -90,7 +90,7 @@
     "/license/account/{accountId}/subscriptions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve subscription information",
+          "title": "Retrieve all subscriptions for an account",
           "category": "Subscription",
           "filename": "get-license-account-subscriptions.html",
           "explorer": false,
@@ -144,7 +144,7 @@
     "/license/subscriptions/account/{accountId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the subscription information",
+          "title": "Retrieve subscription information for an account",
           "category": "Subscription",
           "filename": "get-license-subscriptions-account-.html",
           "explorer": false,
@@ -173,7 +173,7 @@
     "/license/subscriptions/subscription/{subscriptionId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the subscription information of a specified subscription",
+          "title": "Retrieve subscription information using the subscription ID",
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription-.html",
           "explorer": false,
