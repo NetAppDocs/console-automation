@@ -3546,7 +3546,7 @@ paths:
         information.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: boolean
           description: Filters the policies based on the archival enablement status
@@ -3674,7 +3674,7 @@ paths:
         can be enabled in the "UNLOCKED" mode or "LOCKED"
         mode.</p><p><strong>Token usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -3784,7 +3784,7 @@ paths:
         system.</p><p><strong>Token usage:</strong></span> BlueXP
         user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -3825,7 +3825,7 @@ paths:
         includes cloud storage pool information as well. </p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -3923,7 +3923,7 @@ paths:
         environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -3969,7 +3969,7 @@ paths:
         total-volumes-count information.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: boolean
           description: Returns only partial response without volumes count for a working
@@ -4042,7 +4042,7 @@ paths:
         environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: boolean
           description: Returns only partial response without volumes count for a working
@@ -4107,7 +4107,7 @@ paths:
         total size, and aggregate available size.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -4175,7 +4175,7 @@ paths:
         information.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: boolean
           description: Returns only partial response
@@ -4295,7 +4295,7 @@ paths:
         and Recovery service is enabled.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -4380,7 +4380,7 @@ paths:
         within the volume.</p><p><strong>Token usage:</strong></span> BlueXP
         user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Target SVM
@@ -4446,7 +4446,7 @@ paths:
         details.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           required: true
@@ -4491,7 +4491,7 @@ paths:
         policies.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -4574,7 +4574,7 @@ paths:
         system.</p><p><strong>Token usage:</strong></span> BlueXP
         user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -4617,7 +4617,7 @@ paths:
         policies.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: boolean
           description: returns the attached-volumes-count with the policy if set to true
@@ -4718,7 +4718,7 @@ paths:
         environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -4785,7 +4785,7 @@ paths:
         cluster level for the specified system.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -4823,7 +4823,7 @@ paths:
         environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -4885,7 +4885,7 @@ paths:
         relationship.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: number
           description: Maximum records to return
@@ -4997,7 +4997,7 @@ paths:
         parameter for the API call. </p><p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -5041,7 +5041,7 @@ paths:
         the results should be fetched.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: number
           description: Maximum records to return
@@ -5117,7 +5117,7 @@ paths:
         copy name and label are used as headers.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -5170,7 +5170,7 @@ paths:
         ID are passed as parameters for the REST API call.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -5219,7 +5219,7 @@ paths:
         status details.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -5307,7 +5307,7 @@ paths:
         system. </p><p><strong>Token usage:</strong></span> BlueXP
         user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -5349,7 +5349,7 @@ paths:
         Environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - type: string
           description: Account ID
@@ -5416,7 +5416,7 @@ paths:
       description: <p> This API creates a new cron schedule in a system.
         </p><p><strong>Token usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -5513,7 +5513,7 @@ paths:
         count and snapmirror labels in a system.
         </p><p><strong>Token usage:</strong></span> NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -5576,7 +5576,7 @@ paths:
         removal of schedules. </p><p><strong>Token usage:</strong></span> BlueXP
         user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -5640,7 +5640,7 @@ paths:
         list of systems.</p><p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
       tags:
-        - Working Environment
+        - System
       parameters:
         - name: body
           in: body
@@ -8362,7 +8362,7 @@ paths:
       description: <p>This API endpoint enables you to retrieve the inventory report
         data that was generated by the Inventory Report POST API. When called,
         it downloads the inventory report data based on the scope (account,
-        working envirnment, storage VM) specified during the deployment of the
+        system, storage VM) specified during the deployment of the
         Inventory Report POST API.</p><p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
       tags:
@@ -9429,7 +9429,7 @@ tags:
       endpoints:</p><ul><li>Restore volumes, folder, and files.
       </li><br><li>Retrieve volume, folder, and file restore
       status.</li><br></ul></details>
-  - name: Working Environment
+  - name: System
     description: <details><summary>Overview</summary><p>The system
       endpoints retrieves details of the systems, manage the backup
       policies and configure an object store associated with a working
