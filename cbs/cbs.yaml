@@ -9,7 +9,7 @@ info:
     clusters (AFF/FAS/OTS). By using this service, you can automatically
     generate and store backups in an object store in the public or private cloud
     account of your choice, and you can easily restore data any time and to any
-    location, as per your requirements.</p><p> There are ten categories of
+    location, as per your requirements.</p><p> There are thirteen categories of
     endpoints defined within the Backup and Recovery service:</p><ul><li> backup
     </li><li> catalog </li><li> cloud </li><li> job </li><li> license </li><li>
     restore </li><li> single file-level restore (SFR) </li><li>  system
@@ -32,7 +32,7 @@ info:
     Header</th><th>Description</th></tr></thead><tbody><tr><td><code>Authorization</code></td><td>Required.Contains
     a JWT access
     token</td></tr><tr><td><code>x-agent-id</code></td><td>Required. Contains
-    the NetApp Console Agent ID.
+    the Console agent ID.
     </td></tr><tr><td><code>x-netapp-cache-control</code></td><td>Using this
     header will bypass the local cache and retrieve actual data from upstream
     sources like a NetApp Console SaaS application and ONTAP
@@ -42,7 +42,7 @@ info:
     <tbody><tr><td>license</td><td>accountId(required),</br>workingEnvironmentId.</br>    <tbody><tr><td>catalog</td><td>accountId(required),</br>workingEnvironmentId.</br>    <tbody><tr><td>job</td><td>accountId(required),</br>jobId.    </td></tr></tbody></table><h3>Response
     headers</h3><p>This API uses the standard HTTP response headers common with
     all NetApp Console APIs. See
-    <a    href="https://docs.netapp.com/us-en/cloud-manager-automation/platform/http_details.html#request-headers">REST
+    <a    href="https://docs.netapp.com/us-en/console-automation/platform/http_details.html#request-headers">REST
     implementation</a> for more information.</p><h3>HTTP
     status    codes</h3><table><thead><tr><th>HTTP
     Status    Code</th><th>Description</th></tr></thead><tbody><tr><td><code>200</code></td><td>OK:Returned  for
@@ -106,7 +106,7 @@ info:
     a job directly in the database, and retrieve the current status of a job
     from the database.</p> </details> <hr /> <details>    <summary><strong>How
     to use the Backup and Recovery REST APIs</strong></summary><p><strong>Getting
-    started</strong></p><p> To get started with the NetApp Backup and Recovery
+    started</strong></p><p> To get started with the Backup and Recovery
     APIs, obtain a user token, a NetApp Console account ID, and the Console agent
     ID. When making API calls, add the user token in the Authorization header
     and the console agent ID in the x-agent-id header. Use the NetApp Console
@@ -285,7 +285,7 @@ paths:
           in: query
           name: fileType
         - type: string
-          description: The column name to be sorted with
+          description: The column name to sort with
           enum:
             - name
             - size
@@ -294,7 +294,7 @@ paths:
           in: query
           name: sortBy
         - type: string
-          description: Order of the results either ASCENDING or DESCENDING
+          description: Order of the results, either ASCENDING or DESCENDING
           enum:
             - ASC
             - DESC
@@ -405,7 +405,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}/files/status:
     get:
       description: <p>Returns the file and folder status when you initiate a file or
-        folder search during restore operation.</p><p><strong>Token
+        folder search during a restore operation.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
         - SFR
@@ -424,9 +424,9 @@ paths:
           in: query
           name: snapshotLocation
         - type: boolean
-          description: By default, the count is retrieved from browsestatus table. When
-            this flag is true, it will retrieve the count of the actual records
-            existing in browsedb table
+          description: By default, the count is retrieved from the browsestatus table. When
+            this flag is true, it retrieves the count of the actual records
+            existing in the browsedb table.
           required: false
           in: query
           name: actualCount
@@ -473,9 +473,9 @@ paths:
                 type: boolean
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment:
     get:
-      description: <p>Retrieves the details of all the systems that are
-        backed up by using the NetApp Backup and Recovery service within an account.
-        It retrieves backup enablement status, archive storage class, archive
+      description: <p>Retrieves the details of all systems that are
+        backed up using the NetApp Backup and Recovery service within an account.
+        It retrieves the backup enablement status, archive storage class, archive
         after days, catalog enablement status, auto enablement status, maximum
         transfer status, backup policy details, cloud storage pool, and remote
         MetroCluster ID. </p><p><strong>Token usage:</strong></span> NetApp Console user
@@ -695,7 +695,7 @@ paths:
                           description: JSON data containing data specific to cmek
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment:
     get:
-      description: <p>Retrieves the details of all the systems that are
+      description: <p>Retrieves the details of all systems that are
         backed up by using the NetApp Backup and Recovery service within an account.
         It retrieves backup enablement status, archive storage class, archive
         after days, catalog enablement status, auto enablement status, maximum
@@ -956,9 +956,9 @@ paths:
               rsw-scan-interval:
                 type: string
     delete:
-      description: <p>Unregisters a system. You can remove NetApp Backup
+      description: <p>Unregisters a system. You can remove the NetApp Backup
         and Recovery service from a system. Before you unregister,
-        make sure that you delete all backups and disable NetApp Backup and
+        make sure that you delete all backups and disable the Backup and
         Recovery service on a system. This action also deletes the
         backup folder.</p><p><strong>Token usage:</strong></span> NetApp Console
         user      token.</p>
@@ -1125,7 +1125,7 @@ paths:
         for a particular system synchronously (V2). You can modify
         the state, backup policy, archive storage class, cloud storage pool,
         AWS|Azure|Google Cloud|StorageGRID access and secret key, IPspace, maximum
-        transfer rate, and enable auto backup.</p><p><strong>Token
+        transfer rate, and enable automatic backup.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
         - Backup
@@ -1137,16 +1137,14 @@ paths:
             properties:
               state:
                 type: string
-                description: Updates the SnapMirror relationship state in the working
-                  environment to the state specified
+                description: Updates the SnapMirror relationship state in the system to the specified state
                 enum:
                   - ENABLE
                   - DISABLE
               backup-policy:
                 type: object
                 description: Uses an existing policy or creates a new policy if not found in the
-                  list of ONTAP policies and modifies the backed up working
-                  environment relationships to use the existing one.
+                  list of ONTAP policies and modifies the backed up system relationships to use the existing one.
                 properties:
                   name:
                     type: string
@@ -1219,7 +1217,7 @@ paths:
                   - DEEP_ARCHIVE
               auto-backup-enabled:
                 type: boolean
-                description: Auto backup all volumes in the systems
+                description: Automatically backup all volumes in the systems
               max-transfer-rate:
                 type: number
                 description: Modifies node-level throttling of an ONTAP cluster. Value to be
@@ -1308,9 +1306,9 @@ paths:
     
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}:
     get:
-      description: <p> Retrieves information of a specified volume backed up by
+      description: <p> Retrieves information for a specified volume backed up by
         using the NetApp Backup and Recovery service. It retrieves the
-        details of the volume from the NetApp Console SaaS application. It retrieves
+        details of the volume from the NetApp Console SaaS application. It retrieves the
         archive after days, backup status, relationship policy name, and
         capacity details. It also retrieves details of the archive after days,
         object lock, ransomware scan status, last ransomware scan, and
@@ -1659,14 +1657,13 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume:
     get:
-      description: <p>Retrieves details of all the volumes for a specified working
-        environment backed up by using the NetApp Backup and Recovery service. It
+      description: <p>Retrieves details of all the volumes for a specified system backed up by using the NetApp Backup and Recovery service. It
         retrieves the volume name, volume type, protocol, storage VM, backup
         status, last backup creation time, snapshot count, associated
         backup policy, and backup policy rules. It also retrieves details of the
         archive after days, object lock, ransomware scan status, last ransomware
         scan, and ransomware detected snapshots with last ransomware
-        scan  information.</p><p><strong>Token usage:</strong></span> BlueXP
+        scan  information.</p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
         - Backup
@@ -2108,7 +2105,7 @@ paths:
     delete:
       description: <p> Deletes all the snapshots for a specified volume backed
         up by using the NetApp Backup and Recovery service for a working
-        environment.</p><p><strong>Token        usage:</strong></span> BlueXP
+        environment.</p><p><strong>Token        usage:</strong></span> NetApp Console
         user token.</p>
       tags:
         - Backup
@@ -2233,8 +2230,7 @@ paths:
                         - FAILED
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}/snapshot:
     delete:
-      description: <p> Deletes all the snapshots for a specified working
-        environment backed up by using the NetApp Backup and Recovery service (V2
+      description: <p> Deletes all the snapshots for a specified system backed up by using the NetApp Backup and Recovery service (V2
         version).</p><p><strong>Token      usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -2505,7 +2501,7 @@ paths:
                           - region
               auto-backup-enabled:
                 type: boolean
-                description: Auto backup all volumes in the system
+                description: Automatically backup all volumes in the system
               max-transfer-rate:
                 type: number
                 description: Modifies node-level throttling of an ONTAP cluster. Value to be
@@ -2600,8 +2596,7 @@ paths:
             properties:
               state:
                 type: string
-                description: Updates the SnapMirror relationship state in the working
-                  environment to the state specified
+                description: Updates the SnapMirror relationship state in the system to the state specified
                 enum:
                   - ENABLE
                   - DISABLE
@@ -3012,7 +3007,7 @@ paths:
         Alternatively, if there is no existing relationship, the API can be used
         to create SnapMirror to Cloud relationship. It will create a bucket in
         the specified cloud provider and then execute a SnapMirror Cloud
-        update/initialize operation. </p><p><strong>Token usage:</strong> BlueXP
+        update/initialize operation. </p><p><strong>Token usage:</strong> NetApp Console
         user token.</p>
       tags:
         - Panoramic Protection
@@ -3540,7 +3535,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/backup-policy:
     get:
       description: <p> Retrieves a list of ONTAP backup policies associated with a
-        working   environment. You can filter the policies based on the archival
+        system. You can filter the policies based on the archival
         enablement status. This API endpoint retrieves the backup-policy name,
         rule, attached volume count, archive-after-days, and object-lock mode
         information.</p><p><strong>Token usage:</strong></span> NetApp Console user
@@ -3661,8 +3656,7 @@ paths:
         of     retained backups can be up to a maximum of 1018 when no backup
         policies are assigned to a volume. You can edit a policy to create up to
         4000 backups after you assign volumes to a policy through ONTAP CLI.
-        This API endpoint validates whether the ONTAP version used by a working
-        environment supports archiving. You can archive the backups to a cloud
+        This API endpoint validates whether the ONTAP version used by a system supports archiving. You can archive the backups to a cloud
         archive tier by setting the archive-after-days in the policy. You can
         archive to AWS Glacier, Deep Glacier, Azure Archive, and Google
         Archive.</p><p>You can enable DataLock and Ransomware protection
@@ -3781,7 +3775,7 @@ paths:
     delete:
       summary: Delete backup policy
       description: <p> This API endpoint delete backup policies associated with a
-        system.</p><p><strong>Token usage:</strong></span> BlueXP
+        system.</p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
         - System
@@ -4377,7 +4371,7 @@ paths:
     get:
       description: <p>Retrieves a list of system volume directories. You
         can query by using a target storage VM and path of directories to browse
-        within the volume.</p><p><strong>Token usage:</strong></span> BlueXP
+        within the volume.</p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
         - System
@@ -4483,10 +4477,8 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policies:
     get:
-      description: <p>Lists the Snapshot policies associated with a working
-        environment. The API will list the Snapshot policies created on the
-        cluster level for the specified system. The working
-        environment ID is passed as a parameter for the API REST call. It
+      description: <p>Lists the Snapshot policies associated with a system. The API will list the Snapshot policies created on the
+        cluster level for the specified system. The system ID is passed as a parameter for the API REST call. It
         returns the Snapshot policies and the rules associated with the
         policies.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
@@ -4571,7 +4563,7 @@ paths:
     delete:
       summary: Delete snapshot policy by uuid
       description: <p>The API will delete the Snapshot policy for the specified
-        system.</p><p><strong>Token usage:</strong></span> BlueXP
+        system.</p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
         - System
@@ -4611,8 +4603,7 @@ paths:
     get:
       description: <p> Retrieves a list of ONTAP replication policies associated with
         a system. The API will list the SnapMirror policies created
-        on the cluster level for the specified system. The working
-        environment ID is passed as a parameter for the REST API call. It
+        on the cluster level for the specified system. The system ID is passed as a parameter for the REST API call. It
         returns the Snapmirror policies and the rules associated with the
         policies.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
@@ -5033,8 +5024,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot:
     get:
       description: <p>Retrieves a list of snapshot details pertaining to a
-        specific volume in a particular system. The working
-        environment ID, volume ID, and snapshot ID are passed as parameters for
+        specific volume in a particular system. The system ID, volume ID, and snapshot ID are passed as parameters for
         the REST API call. You can query by passing parameters to specify the
         maximum number of records that should be returned, next subsequent
         Snapshot UUID to get results from, and the next `CP-COUNT` from where
@@ -5304,7 +5294,7 @@ paths:
     put:
       description: <p> Modify the snapshot policy to match with volume snapshot policy
         based on the snapmirror relationship associated with the volume in a
-        system. </p><p><strong>Token usage:</strong></span> BlueXP
+        system. </p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
         - System
@@ -5573,7 +5563,7 @@ paths:
       description: <p> This API modifies the snapshot policy in a system.
         Specifically for existing schedules attached to a snapshot policy
         Snapmirror Label & Count can be modified, it also supports addition &
-        removal of schedules. </p><p><strong>Token usage:</strong></span> BlueXP
+        removal of schedules. </p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
         - System
@@ -5679,8 +5669,8 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/account:
     get:
-      description: <p>Retrieves a list of AWS accounts from
-        BlueXP.</p><p><strong>Token usage:</strong></span> NetApp Console user
+      description: <p>Retrieves a list of AWS accounts from the
+        NetApp Console.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
         - Cloud
@@ -7346,7 +7336,7 @@ paths:
         working-environments. It can also search for a specified volume. It is
         possible to narrow down your file search based on a particular working
         environment, file extensions, size ranges, creation date range, and also
-        location of a backup. </p><p><strong>Token usage:</strong></span>BlueXP
+        location of a backup. </p><p><strong>Token usage:</strong></span>NetApp Console
         user token.</p>
       tags:
         - Catalog
@@ -7479,7 +7469,7 @@ paths:
         systems. It can also search for a specified volume. It is
         possible to narrow down your file search based on a particular working
         environment, file extensions, size ranges, creation date range, and also
-        location of a backup. </p><p><strong>Token usage:</strong></span>BlueXP
+        location of a backup. </p><p><strong>Token usage:</strong></span>NetApp Console
         user token.</p>
       tags:
         - Catalog
@@ -7705,7 +7695,7 @@ paths:
       description: "<p>Retrieves the license validity of the systems from
         the NetApp Console SaaS application. The API retrieves the eligibility of the
         current license used and it also returns the days remaining if you are
-        using a trial license.</p><p><strong>Token usage:</strong></span> BlueXP
+        using a trial license.</p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p> "
       tags:
         - License
@@ -9519,5 +9509,5 @@ tags:
       application.</p><p>You can perform the following operations by using the
       StorageGRID endpoints:<br><ul><li>Retrieve StorageGRID server
       version</li><li>Retrieve details of the StorageGRID
-      server.</li><li>Discover or add new StorageGRID server into
-      BlueXP.</li><br></ul></p></details>
+      server.</li><li>Discover or add new StorageGRID server into the
+      NetApp Console.</li><br></ul></p></details>
