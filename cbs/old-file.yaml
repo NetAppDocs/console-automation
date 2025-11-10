@@ -57,7 +57,7 @@ info:
     caller for any specifichandling</li></ul></details><hr />
     <details><summary><strong>cURL  examples</strong></summary><h3>Retrieve
     specific volume details</h3><p>This example retrieves the details of a
-    specific volume that has been backed up by using NetApp Backup and Recovery
+    specific volume that has been backed up by using the NetApp Backup and Recovery
     service.</p><pre><code  class="language-bash">curl -X
     GET    &quot;https://cloudmanager.cloud.netapp.com/account/(account_id)/providers/cloudmanager_cbs/api/v1/backup/working-environment/(working_environment_id)/volume/(volume_id)&quot;   -H
     &quot;accept: application/json&quot; -H &quot;authorization: (user
@@ -88,8 +88,8 @@ info:
     deprecated?</strong></p> <p>Previously, NetApp Backup and Recovery relied on
     an additional Cloud Restore VM instance for exporting the snapshots
     and creating a file list when you initiated a "File Restore" operation from
-    the Restore dashboard. Now instead of creating an additional cloud restore
-    virtual machine (VM) instance during a file-level restore operation, NetApp Backup and Recovery service deploys a restore container on the Connector VM
+    the Restore dashboard. Instead of creating an additional cloud restore
+    virtual machine (VM) instance during a file-level restore operation, the NetApp Backup and Recovery service deploys a restore container on the Connector VM
     instance. These containers contain the latest Active Data Connector
     image (version 1.4). This implementation does not require the file system to 
     be exported, therefore the export file system    API endpoint under the SFR
