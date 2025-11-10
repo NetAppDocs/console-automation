@@ -13,7 +13,7 @@ info:
     endpoints defined within Backup and Recovery:</p><ul><li> backup
     </li><li> catalog </li><li> cloud </li><li> configuration </li><li> credentials</li><li> features </li><li> IAMRA </li><li>  job </li><li> license </li><li> migration </li><li> object storage </li><li>panoramic protection</li><li>ransomware scan</li><li>replication</li><li>report</li><li> restore </li><li> single file-level restore (SFR) </li><li> StorageGRID </li><li>  system </li><li>  volumes </li></ul><p> Note: Before
     using the API reference documentation, review the
-    <a    href="https://docs.netapp.com/us-en/console-automation/platform/overview.html">Get
+    <a    href="https://docs.netapp.com/us-en/cloud-manager-automation/platform/overview.html">Get
     started</a> section for the NetApp Console APIs. For more information about the
     security tokens and identifiers you’ll need when using the API, review the
     Common workflows and tasks section
