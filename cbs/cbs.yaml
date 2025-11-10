@@ -38,7 +38,7 @@ info:
     sources like a NetApp Console SaaS application and ONTAP
     clusters.</td></tr></tbody></table><h3>Query parameters</h3><p>You can use
     query parameters with endpoints in the
-    following    components:</p><table><thead><tr><th>Component</th><th>Query    Parameter</th></tr></thead><tbody><tr><td>sfr</td><td>accountId(required),</br>volumeId,</br>snapshotId.</br>    <tbody><tr><td>backup</td><td>accountId(required),</br>workingEnvironmentId,</br>volumeId,</br>snapshotId.</br>    <tbody><tr><td>restore</td><td>accountId(required).</br>  <tbody><tr><td>System </td><td>accountId(required),</br>workingEnvironmentId,</br>volumeId,</br>snapshotId.</b>    <tbody><tr><td>cloud</td><td>accountId(required),</br>workingEnvironmentId,</br>volumeId,</br>snapshotId,</b>awsAccountId,</br>regionCode,</br>subscriptionId,</br>vaultName,</br>projectId,</br>jobId.
+    following    components:</p><table><thead><tr><th>Component</th><th>Query    Parameter</th></tr></thead><tbody><tr><td>sfr</td><td>accountId(required),</br>volumeId,</br>snapshotId.</br>    <tbody><tr><td>backup</td><td>accountId(required),</br>workingEnvironmentId,</br>volumeId,</br>snapshotId.</br>    <tbody><tr><td>restore</td><td>accountId(required).</br>  <tbody><tr><td>system </td><td>accountId(required),</br>workingEnvironmentId,</br>volumeId,</br>snapshotId.</b>    <tbody><tr><td>cloud</td><td>accountId(required),</br>workingEnvironmentId,</br>volumeId,</br>snapshotId,</b>awsAccountId,</br>regionCode,</br>subscriptionId,</br>vaultName,</br>projectId,</br>jobId.
     <tbody><tr><td>license</td><td>accountId(required),</br>workingEnvironmentId.</br>    <tbody><tr><td>catalog</td><td>accountId(required),</br>workingEnvironmentId.</br>    <tbody><tr><td>job</td><td>accountId(required),</br>jobId.    </td></tr></tbody></table><h3>Response
     headers</h3><p>This API uses the standard HTTP response headers common with
     all NetApp Console APIs. See
@@ -692,7 +692,7 @@ paths:
                         keyDetails:
                           type: object
                           additionalProperties: true
-                          description: JSON data containing data specific to cmek
+                          description: JSON data containing data specific to Customer Managed Encryption Keys
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment:
     get:
       description: <p>Retrieves the details of all systems that are
@@ -952,7 +952,7 @@ paths:
                   keyDetails:
                     type: object
                     additionalProperties: true
-                    description: JSON data containing data specific to cmek
+                    description: JSON data containing data specific to Customer Managed Encryption Keys
               rsw-scan-interval:
                 type: string
     delete:
@@ -1582,8 +1582,8 @@ paths:
                 description: AD_HOC mode creates an on-demand snapshot and backs it up on
                   the respective cloud. SCHEDULED mode creates snapshots
                   as per the ONTAP snapshot policy and backs it up to the cloud as
-                  per the backup policy. [Deprecated] IMMEDIATE mode designed
-                  for internal use case and not to be used for newer
+                  per the backup policy. [Deprecated] IMMEDIATE mode is designed
+                  for internal use cases and cannot be used for newer
                   integrations
                 enum:
                   - AD_HOC
@@ -1793,8 +1793,7 @@ paths:
                     cbsChargingEnabled:
                       type: boolean
     put:
-      description: <p>Modifies multiple backed-up volumes in a specific working
-        environment. This API endpoint modifies the volume state, backup-policy,
+      description: <p>Modifies multiple backed-up volumes in a specific system. This API endpoint modifies the volume state, backup-policy,
         backup policy rule and retention, and archive-after-days
         parameters.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
@@ -1967,9 +1966,8 @@ paths:
               svm:
                 type: string
     delete:
-      description: <p> Deletes a specified snapshot for a specified volume backed
-        up by  using the NetApp Backup and Recovery service for a working
-        environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
+      description: <p> Deletes a specified snapshot of a specified volume backed
+        up using the NetApp Backup and Recovery service for a system.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
         - Backup
@@ -2016,10 +2014,9 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot:
     get:
       description: <p> Retrieves snapshot information for a specified volume
-        backed up by using the NetApp Backup and Recovery service for a working
-        environment. This API endpoint retrieves the details of the volume
+        backed up using the NetApp Backup and Recovery service for a system. This API endpoint retrieves the details of the volume
         snapshots from the NetApp Console SaaS application. It retrieves the
-        Snapshot name, Snapshot creation time, archive status, and size. It also
+        snapshot name, snapshot creation time, archive status, and size. It also
         retrieves the object-lock, ransomware-scan-status-failure, and
         ransomware-scan-status details.</p>    <p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
@@ -2104,8 +2101,7 @@ paths:
                       type: string
     delete:
       description: <p> Deletes all the snapshots for a specified volume backed
-        up by using the NetApp Backup and Recovery service for a working
-        environment.</p><p><strong>Token        usage:</strong></span> NetApp Console
+        up by using the NetApp Backup and Recovery service for a system.</p><p><strong>Token        usage:</strong></span> NetApp Console
         user token.</p>
       tags:
         - Backup
@@ -2120,7 +2116,7 @@ paths:
           name: force
         - type: boolean
           default: false
-          description: If set to true, the object store config which is not being used by
+          description: If set to true, the object store configuration that is not being used by
             any volume will be cleaned up from the system.
           required: false
           in: query
@@ -2163,9 +2159,9 @@ paths:
     get:
       summary: List of snapshots by account id
       description: <p> Retrieves snapshot information for a specified account by
-        using. This API endpoint retrieves the details of the  snapshots
-        from the NetApp Console SaaS application. It retrieves the Snapshot name,
-        Snapshot creation time, archive status, and size. It also retrieves the
+        using the account ID. This API endpoint retrieves the details of the snapshots
+        from the NetApp Console SaaS application. It retrieves the snapshot name,
+        snapshot creation time, archive status, and size. It also retrieves the
         object-lock, ransomware-scan-status-failure, and
         ransomware-scan-status.</p>    <p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
@@ -2230,7 +2226,7 @@ paths:
                         - FAILED
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}/snapshot:
     delete:
-      description: <p> Deletes all the snapshots for a specified system backed up by using the NetApp Backup and Recovery service (V2
+      description: <p> Deletes all snapshots for a specified system that are backed up using the NetApp Backup and Recovery service (V2
         version).</p><p><strong>Token      usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -2238,7 +2234,7 @@ paths:
       parameters:
         - type: boolean
           default: false
-          description: If set to true, the object store config which is not being used by
+          description: If set to true, the object store configuration which is not being used by
             any volume (other than the current volume being processed) will be
             cleaned up from the system.
           required: false
@@ -2247,9 +2243,9 @@ paths:
         - type: boolean
           default: false
           description: If set to true, all metadata for the snapshots will be removed from
-            the database and we will not wait for deletion of backups from
-            object store. Snapshot data in the object store may or may not be
-            deleted automatically; you must manually verify and remove it.
+            the database without waiting for the deletion of backups from the
+            object store. Snapshot data in the object store might not be
+            deleted automatically; you must manually verify and remove the data.
           required: false
           in: query
           name: force
@@ -2284,9 +2280,9 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/panaromic-protection/working-environment/{workingEnvironmentId}:
     post:
-      description: <p>Activate comprehensive protection in a system.
+      description: <p>Activates comprehensive protection in a system.
         Based on the cascading or fan-out backup workflow selected on the
-        systems, the API verifies whether a cluster peering
+        system, the API verifies whether a cluster peering
         relationship exists between primary and secondary clusters to set up
         replication. If not, it creates a cluster peering relationship between
         the two clusters. To create a backup to cloud, the API enables backup on
@@ -2302,7 +2298,7 @@ paths:
             properties:
               provider:
                 type: string
-                description: Required input field for on-premises use case
+                description: Required input field for on-premises use cases
                 enum:
                   - AWS
                   - AZURE
@@ -2312,7 +2308,7 @@ paths:
                   - S3_COMPATIBLE
               region:
                 type: string
-                description: Required input field for on-premises
+                description: Required input field for on-premises use cases
               aws:
                 type: object
                 properties:
@@ -2321,10 +2317,10 @@ paths:
                     description: Required when the provider is AWS
                   access-key:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   secret-password:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   kms-key-id:
                     type: string
                     description: Optional input field for customer managed key use case
@@ -2379,10 +2375,10 @@ paths:
                     description: Required when the provider is Google Cloud
                   access-key:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   secret-password:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   kms:
                     type: object
                     properties:
@@ -2402,10 +2398,10 @@ paths:
                       provider
                   access-key:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   secret-password:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
               ontap-s3:
                 type: object
                 properties:
@@ -2414,10 +2410,10 @@ paths:
                     description: ONTAP S3 server URL. Required input field for ONTAP_S3 provider
                   access-key:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   secret-password:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
               s3-compatible:
                 type: object
                 properties:
@@ -2426,16 +2422,16 @@ paths:
                     description: s3 storage server
                   access-key:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   secret-password:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
               bucket:
                 type: string
                 description: Optional input
               ip-space:
                 type: string
-                description: Required input field for on-premises use case
+                description: Required input field for on-premises use cases
               backup-policy:
                 type: object
                 properties:
@@ -2469,16 +2465,16 @@ paths:
                         properties:
                           provider:
                             type: string
-                            description: Cloud provider where cloud storage pool will be hosted
+                            description: Cloud provider where the cloud storage pool will be hosted
                             enum:
                               - AWS
                               - AZURE
                           provider-account-id:
                             type: string
-                            description: Cloud provider account ID where cloud storage pool will be hosted
+                            description: Cloud provider account ID where the cloud storage pool will be hosted
                           region:
                             type: string
-                            description: Cloud provider region cloud storage pool will be hosted
+                            description: Cloud provider region where the cloud storage pool will be hosted
                           access-key:
                             type: string
                             description: Required input field if the provider is AWS
@@ -2509,13 +2505,13 @@ paths:
                   unlimited throttling
               export-existing-snapshots:
                 type: boolean
-                description: Export pre-existing snapshot copies to object storage
+                description: Export pre-existing snapshots to object storage
               architecture:
                 type: string
                 enum:
                   - CASCADING
                   - FANOUT
-                description: Type of storage architecture. Fanout or Cascading
+                description: Type of storage architecture. Fan-out or Cascading
               snapshot-policy:
                 type: string
                 description: Snapshot policy name
@@ -2571,13 +2567,12 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/panaromic-protection/working-environment/{workingEnvironmentId}:
     put:
-      description: <p>Modify comprehensive protection configuration in a working
-        environment. This API enables you to enhance the protection capabilities
+      description: <p>Modifies comprehensive protection configuration in a system. This API enables you to enhance the protection capabilities
         within a system by adding replication and backup
         functionalities. This enables the creation of fan-out or cascading
         backup topologies in the cloud. When replication is selected, the API
         first checks for the presence of an existing cluster-peering
-        relationship. If such a relationship is not found, the API creates the
+        relationship. If a relationship is not found, the API creates the
         necessary cluster-peering relationship. Alternatively, if backup to the
         cloud is selected, the API creates a bucket in the specified cloud
         provider or appliance (AWS, AZURE, GCP, SGWS, ONTAP_S3) specifically for
@@ -2602,7 +2597,7 @@ paths:
                   - DISABLE
               provider:
                 type: string
-                description: Required input field for on-premises use case
+                description: Required input field for on-premises use cases
                 enum:
                   - AWS
                   - AZURE
@@ -2699,10 +2694,10 @@ paths:
                     description: ONTAP S3 server URL. Required input field for ONTAP_S3 provider
                   access-key:
                     type: string
-                    description: Access-key:Required input field for on-premises use case
+                    description: Access-key:Required input field for on-premises use cases
                   secret-password:
                     type: string
-                    description: Secret-password:Required input field for on-premises use case
+                    description: Secret-password:Required input field for on-premises use cases
               s3-compatible:
                 type: object
                 properties:
@@ -2711,16 +2706,16 @@ paths:
                     description: s3 storage server
                   access-key:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   secret-password:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
               bucket:
                 type: string
                 description: Optional input
               ip-space:
                 type: string
-                description: Required input field for on-premises use case
+                description: Required input field for on-premises use cases
               backup-policy:
                 type: object
                 properties:
@@ -2754,16 +2749,16 @@ paths:
                         properties:
                           provider:
                             type: string
-                            description: Cloud provider where cloud storage pool will be hosted
+                            description: Cloud provider where the cloud storage pool will be hosted
                             enum:
                               - AWS
                               - AZURE
                           provider-account-id:
                             type: string
-                            description: Cloud provider account ID where cloud storage pool will be hosted
+                            description: Cloud provider account ID where the cloud storage pool will be hosted
                           region:
                             type: string
-                            description: Cloud provider region cloud storage pool will be hosted
+                            description: Cloud provider region where the cloud storage pool will be hosted
                           archive-storage-class:
                             type: string
                             description: Required for AWS to specify which storage class to use for
@@ -2785,13 +2780,13 @@ paths:
                   unlimited throttling
               export-existing-snapshots:
                 type: boolean
-                description: Export pre-existing snapshot copies to object storage
+                description: Exports pre-existing snapshots to object storage
               architecture:
                 type: string
                 enum:
                   - CASCADING
                   - FANOUT
-                description: Type of storage architecture. Fanout or Cascading
+                description: Type of storage architecture. Fan-out or Cascading
               snapshot-policy:
                 type: string
                 description: "Snapshot policy name. To disable local snapshot, pass the value
@@ -2856,7 +2851,7 @@ paths:
         cluster and then creates a backup to cloud relationship with cloud or
         StorageGRID object store. While setting up the replication relationship,
         the API verifies whether a cluster peering relationship is set up
-        between primary and secondary clusters. If not, it creates a cluster
+        between primary and secondary clusters. If there is no relationship, it creates a cluster
         peering relationship, storage VM peering, and a DP volume on the
         secondary cluster. Once the replication setup is complete, the API
         executes a SnapMirror Create and Initialize operation. For creating a
@@ -2897,7 +2892,7 @@ paths:
                       enum:
                         - CASCADING
                         - FANOUT
-                      description: Type of storage architecture. Fanout or Cascading
+                      description: Type of storage architecture. Fan-out or Cascading
                     mode:
                       type: string
                       enum:
@@ -3078,7 +3073,7 @@ paths:
                       enum:
                         - CASCADING
                         - FANOUT
-                      description: Type of storage architecture. Fanout or Cascading
+                      description: Type of storage architecture. Fan-out or Cascading
                     replication:
                       type: object
                       properties:
@@ -3144,10 +3139,10 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/snapshot:
     get:
       description: <p> Retrieves snapshot information for a specified volume
-        backed up by using NetApp Backup and Recovery for a system.
+        backed up using NetApp Backup and Recovery for a system.
         This API endpoint retrieves the details of the volume snapshots
-        from the NetApp Console SaaS application. It retrieves the Snapshot name,
-        Snapshot creation time, archive status, and size. It also retrieves the
+        from the NetApp Console SaaS application. It retrieves the snapshot name,
+        snapshot creation time, archive status, and size. It also retrieves the
         object-lock, ransomware-scan-status-failure, and ransomware-scan-status
         details.</p>    <p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
@@ -3232,8 +3227,7 @@ paths:
                       type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/replication/working-environment/{workingEnvironmentId}/relationship:
     patch:
-      description: <p>Performs an action on a volume on which SnapMirror replication
-        is enabled. Using this API, you will be able to do a SnapMirror
+      description: <p>Performs an action on a volume that has SnapMirror replication enabled. Using this API, you will be able to perform a SnapMirror
         relationship update, delete, pause, resync, reverse-resync, abort, and
         resume functionality on a replicated volume.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
@@ -3241,7 +3235,7 @@ paths:
         - Replication
       parameters:
         - type: boolean
-          description: Update snapshot info in DB after transfer to object store. Default
+          description: Update snapshot information in the database after a transfer to the object store. Default
             value is false.
           default: false
           required: false
@@ -3326,16 +3320,15 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/restore:
     post:
       description: <p> Performs a volume and file level restore (version 2) operation.
-        This  API validates whether a backup of a volume exists. Restore
+        This  API validates whether a backup of a volume exists. The restore
         operation is not supported on data protection volumes, on a target
         volume with a different language code than the source volume, and for
-        volumes with size less than 1GB. Restore operation is not allowed on a
+        volumes with size less than 1GB. The restore operation is not allowed on a
         volume enabled with a SnapLock license (WORM license). It checks whether
         the source and target  cloud provider matches. It also verifies whether
-        the backup and restore operation is supported in the working
-        environments.</p><p>If DataLock and ransomware protection is enabled on
-        a system, ransomware scan is performed on a specified
-        cloud     backup pertaining to a particular volume when it is chosen to
+        the backup and restore operation is supported in the system.</p><p>If DataLock and ransomware protection is enabled on
+        a system, ransomware scan is performed on the specified
+        cloud backup that relates to a particular volume when it is chosen to
         be restored. To skip the scan, set the "skip-ransomware-check" parameter
         to "true".</p><p><strong>Token        usage:</strong></span> NetApp Console user
         token.</p>
@@ -3438,13 +3431,13 @@ paths:
                     description: Skips a ransomware scan
                   skip-file-rename:
                     type: boolean
-                    description: Skip file rename while restore
+                    description: Skips file rename while restore
                   is-on-demand-restore:
                     type: boolean
                     description: Triggers an on-demand restore
                   skip-azure-private-endpoint-creation:
                     type: boolean
-                    description: Optional input field to skip private endpoint creation for azure
+                    description: Optional input field to skip private endpoint creation for Azure
                     default: false
                 required:
                   - type
@@ -3478,8 +3471,8 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/revert/working-environment/{workingEnvironmentId}/volume/{volumeId}:
     post:
-      description: <p> Reverts a snapshot for a volume. It restores a Snapshot
-        copy to be the read-write parent volume for the volume family. This
+      description: <p> Reverts a snapshot for a volume. It restores a snapshot
+        to be the read-write parent volume for the volume family. This
         replaces the current working copy of the volume with the snapshot
         that results in a loss of all changes made since the snapshot was
         created.  The system ID and volume ID are passed as
@@ -3554,7 +3547,7 @@ paths:
           in: query
           name: is-mcc-cluster
         - type: boolean
-          description: returns the attached-volumes-count with the policy if set to true
+          description: Returns the attached-volumes-count with the policy if set to true
           required: false
           in: query
           name: partial
@@ -3774,7 +3767,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/backup-policy/{policyId}:
     delete:
       summary: Delete backup policy
-      description: <p> This API endpoint delete backup policies associated with a
+      description: <p> Deletes the backup policies associated with a
         system.</p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
@@ -3815,8 +3808,8 @@ paths:
     put:
       description: <p> Updates a backup policy in a system. This V2
         version of the API endpoint facilitates modification of the rule, label,
-        retention, archive-after-days, and StorageGRID archival details which
-        includes cloud storage pool information as well. </p><p><strong>Token
+        retention, archive-after-days, and StorageGRID archival details which also
+        includes cloud storage pool information. </p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
         - System
@@ -3876,7 +3869,7 @@ paths:
                 type: string
               archive-after-days:
                 type: string
-                description: Archive after days value to which the policy will be modified.
+                description: Archive after days value to which the policy will be modified,
                   "never" implies the removal of the archive-after-days property
                   from a backup policy.
             required:
@@ -3913,8 +3906,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/ip-space:
     get:
-      description: <p> Retrieves a list of IP spaces within a specified working
-        environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
+      description: <p> Retrieves a list of IP spaces within a specified system.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
         - System
@@ -3958,7 +3950,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment:
     get:
       description: <p> Retrieves a list of systems and their details.
-        This API   endpoint retrieves the name, region, status, type,
+        This API  endpoint retrieves the name, region, status, type,
         cloud-provider, provider-accountId, ontap-version, and
         total-volumes-count information.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
@@ -3966,8 +3958,7 @@ paths:
         - System
       parameters:
         - type: boolean
-          description: Returns only partial response without volumes count for a working
-            environments
+          description: Returns only partial response without volumes count for systems
           required: false
           in: query
           name: partial
@@ -4032,15 +4023,13 @@ paths:
       description: <p> Retrieves the details of a specific system. This
         API    endpoint retrieves the name, region, status, type,
         cloud-provider, provider-accountId, ontap-version, and
-        total-volumes-count of a specific working
-        environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
+        total-volumes-count of a specific system.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
         - System
       parameters:
         - type: boolean
-          description: Returns only partial response without volumes count for a working
-            environment
+          description: Returns only a partial response without a volumes count for a system
           required: false
           in: query
           name: partial
@@ -4172,7 +4161,7 @@ paths:
         - System
       parameters:
         - type: boolean
-          description: Returns only partial response
+          description: Returns only a partial response
           required: false
           in: query
           name: completeResponse
@@ -4210,7 +4199,7 @@ paths:
           in: query
           name: max-records
         - type: string
-          description: Next volume UUID to get results from
+          description: The next volume UUID to use to retrieve results
           required: false
           in: query
           name: cursor
@@ -4285,7 +4274,7 @@ paths:
         object store configure API. It verifies whether a private endpoint is
         enabled and a certificate is installed. You can verify whether
         previously created private endpoints are enabled for AWS and Azure. This
-        API endpoint is called if no object stores are found when NetApp Console Backup
+        API endpoint is called if no object stores are found when the NetApp Backup
         and Recovery service is enabled.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
@@ -4370,7 +4359,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/list:
     get:
       description: <p>Retrieves a list of system volume directories. You
-        can query by using a target storage VM and path of directories to browse
+        can run a query by using a target storage VM and the path of directories to browse
         within the volume.</p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
@@ -4477,9 +4466,9 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policies:
     get:
-      description: <p>Lists the Snapshot policies associated with a system. The API will list the Snapshot policies created on the
+      description: <p>Lists the snapshot policies associated with a system. The API will list the snapshot policies created on the
         cluster level for the specified system. The system ID is passed as a parameter for the API REST call. It
-        returns the Snapshot policies and the rules associated with the
+        returns the snapshot policies and the rules associated with the
         policies.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -4561,8 +4550,8 @@ paths:
                             type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policies/{policyId}:
     delete:
-      summary: Delete snapshot policy by uuid
-      description: <p>The API will delete the Snapshot policy for the specified
+      summary: Deletes a snapshot policy by uuid
+      description: <p>Deletes the snapshot policy for the specified
         system.</p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
@@ -4611,7 +4600,7 @@ paths:
         - System
       parameters:
         - type: boolean
-          description: returns the attached-volumes-count with the policy if set to true
+          description: Returns the attached-volumes-count with the policy if set to true
           required: false
           in: query
           name: partial
@@ -4705,8 +4694,7 @@ paths:
                     allow-policy-deletion:
                       type: boolean
     post:
-      description: <p> Creates a replication policy in a working
-        environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
+      description: <p> Creates a replication policy in a system.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
         - System
@@ -4729,7 +4717,7 @@ paths:
                       type: string
               transfer-schedule:
                 type: string
-                description: "Cron based schedule for transfers. To disable the schedule, pass
+                description: "CRON based schedule for transfers. To disable the schedule, pass
                   the value as: none(case sensitive). By default hourly schedule
                   is selected."
               copy-all-source-snapshots:
@@ -4740,7 +4728,7 @@ paths:
                 description: Copy only latest source snapshot to replication detstination
               svm-name:
                 type: string
-                description: Name of SVM where the replication policy should be created
+                description: Name of the SVM where the replication policy should be created
             required:
               - name
         - type: string
@@ -4772,7 +4760,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy/{policyId}:
     delete:
       summary: Delete replication policy
-      description: <p> The API will delete the SnapMirror policies created on the
+      description: <p> Deletes the SnapMirror policies created on the
         cluster level for the specified system.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
@@ -4810,8 +4798,7 @@ paths:
             type: object
             description: Default response
     patch:
-      description: <p> Modifies a replication policy in a working
-        environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
+      description: <p> Modifies a replication policy in a system.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
         - System
@@ -4832,7 +4819,7 @@ paths:
                       type: string
               transfer-schedule:
                 type: string
-                description: "Cron based schedule for transfers. To disable the schedule, pass
+                description: "CRON based schedule for transfers. To disable the schedule, pass
                   the value as: none(case sensitive). By default hourly schedule
                   is selected."
         - type: string
@@ -4846,7 +4833,7 @@ paths:
           in: path
           name: workingEnvironmentId
         - type: string
-          description: Replication policy uuid
+          description: Replication policy UUID
           required: true
           in: path
           name: policyId
@@ -4871,7 +4858,7 @@ paths:
       description: <p> Retrieves a list of ONTAP relationships associated with a
         system. The system ID is passed as a parameter
         for the REST API call. You can query by passing parameters to specify
-        the maximum number of records that should be returned, next subsequent
+        the maximum number of records that should be returned, the next subsequent
         volume UUID to get results from, and the type of
         relationship.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
@@ -4983,8 +4970,7 @@ paths:
                 type: number
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/peercluster:
     get:
-      description: <p> Retrieves a list of ONTAP clusters peered to specific working
-        environment. The required system ID is passed as a
+      description: <p> Retrieves a list of ONTAP clusters peered to a specific system. The required system ID is passed as a
         parameter for the API call. </p><p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
       tags:
@@ -5026,8 +5012,8 @@ paths:
       description: <p>Retrieves a list of snapshot details pertaining to a
         specific volume in a particular system. The system ID, volume ID, and snapshot ID are passed as parameters for
         the REST API call. You can query by passing parameters to specify the
-        maximum number of records that should be returned, next subsequent
-        Snapshot UUID to get results from, and the next `CP-COUNT` from where
+        maximum number of records that should be returned, the next subsequent
+        snapshot UUID to get results from, and the next `CP-COUNT` from where
         the results should be fetched.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
@@ -5103,8 +5089,8 @@ paths:
       description: <p> Creates a snapshot for a particular volume. The API
         initiates the creation of a snapshot of the volume-based on the
         Snapshot policy assigned. The system ID, volume ID, and
-        Snapshot ID are passed as parameters for the REST API call. The Snapshot
-        copy name and label are used as headers.</p><p><strong>Token
+        Snapshot ID are passed as parameters for the REST API call. The snapshot
+        name and label are used as headers.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
         - System
@@ -5154,9 +5140,9 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}:
     delete:
-      description: <p> Deletes a snapshot for a volume. The API deletes a
+      description: <p> Deletes a snapshot of a volume. The API deletes a
         specific snapshot of a particular volume belonging to a specific
-        system. The system ID, volume ID, and Snapshot
+        system. The system ID, volume ID, and snapshot
         ID are passed as parameters for the REST API call.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
@@ -5204,7 +5190,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/relationship/{relationshipId}:
     get:
       description: <p>Lists the relationship details associated with a volume
-        SnapMirror replication. The API returns the source details, destination
+        SnapMirror replication relationship. The API returns the source details, destination
         details, policy details, status, health, transfer type, and relationship
         status details.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
@@ -5292,8 +5278,8 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot-policy:
     put:
-      description: <p> Modify the snapshot policy to match with volume snapshot policy
-        based on the snapmirror relationship associated with the volume in a
+      description: <p> Modifies the snapshot policy to match the volume snapshot policy
+        based on the SnapMirror relationship associated with the volume in a
         system. </p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
@@ -5335,8 +5321,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/schedules:
     get:
-      description: <p> This API retrieves a list of schedules present in a Working
-        Environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
+      description: <p> Retrieves a list of schedules present in a system.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
         - System
@@ -5403,7 +5388,7 @@ paths:
                     interval:
                       type: string
     post:
-      description: <p> This API creates a new cron schedule in a system.
+      description: <p> Creates a new cron schedule in a system.
         </p><p><strong>Token usage:</strong></span> NetApp Console user token.</p>
       tags:
         - System
@@ -5500,7 +5485,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policy:
     post:
       description: <p> Creates a snapshot policy with the user specified schedule,
-        count and snapmirror labels in a system.
+        count and SnapMirror labels in a system.
         </p><p><strong>Token usage:</strong></span> NetApp Console user token.</p>
       tags:
         - System
@@ -5522,10 +5507,10 @@ paths:
                       type: string
                     label:
                       type: string
-                      description: Label for snapmirror operations
+                      description: Label for SnapMirror operations
                     count:
                       type: number
-                      description: Number of snapshot copies to maintain for this schedule
+                      description: Number of snapshots to maintain for this schedule
                   required:
                     - schedule-name
                     - count
@@ -5560,9 +5545,9 @@ paths:
             description: Default response
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policy/{policyId}:
     patch:
-      description: <p> This API modifies the snapshot policy in a system.
-        Specifically for existing schedules attached to a snapshot policy
-        Snapmirror Label & Count can be modified, it also supports addition &
+      description: <p> Modifies the snapshot policy in a system.
+        Specifically for existing schedules attached to a snapshot policy,
+        The SnapMirror label and count can be modified, it also supports the addition and
         removal of schedules. </p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
@@ -5582,10 +5567,10 @@ paths:
                       type: string
                     label:
                       type: string
-                      description: Label for snapmirror operations
+                      description: Label for SnapMirror operations
                     count:
                       type: number
-                      description: Number of snapshot copies to maintain for this rule
+                      description: Number of snapshots to maintain for this rule
                   required:
                     - name
                     - label
@@ -5626,7 +5611,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/discover/volumes:
     post:
-      description: <p> This API discovers all volumes with relationships for given
+      description: <p> Discovers all volumes with relationships for a
         list of systems.</p><p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
       tags:
@@ -5956,7 +5941,7 @@ paths:
           in: path
           name: awsAccountId
         - type: string
-          description: AWS Bucket Name
+          description: AWS bucket name
           required: true
           in: path
           name: bucketName
@@ -6329,7 +6314,7 @@ paths:
                       type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resourceGroup/{resourceGroup}/storageAccounts:
     get:
-      description: <p>Retrieves a list of Azure storage account for a specific
+      description: <p>Retrieves a list of Azure storage accounts for a specific
         subscription ID in a resource group in Azure cloud from the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
@@ -6551,7 +6536,7 @@ paths:
           in: path
           name: projectId
         - type: string
-          description: Region or Location (for example, "us-east1")
+          description: Region or location (for example, "us-east1")
           required: true
           in: path
           name: locationId
@@ -6749,7 +6734,7 @@ paths:
                       type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/gcp/credentials:
     get:
-      description: <p>API to list Google Cloud credentials in the NetApp Console SaaS
+      description: <p>Lists Google Cloud credentials in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -6772,17 +6757,17 @@ paths:
           name: x-agent-id
       responses:
         "200":
-          description: List of Google Cloud credential ids.
+          description: List of Google Cloud credential IDs
           schema:
             type: object
-            description: List of Google Cloud credential ids.
+            description: List of Google Cloud credential IDs
             properties:
               ids:
                 type: array
                 items:
                   type: string
     post:
-      description: <p>Register Google Cloud credentials for Google Cloud project in
+      description: <p>Registers Google Cloud credentials for a Google Cloud project in
         the NetApp Console SaaS application.</p><p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
       tags:
@@ -6795,7 +6780,7 @@ paths:
             properties:
               credentials-id:
                 type: string
-                description: Credentials Dd. Must only contain lower case alphabets, numbers and
+                description: Credentials ID. Must only contain lower case alphabets, numbers and
                   hyphen(-). Must start and end with an alphabet or number.
               access-key:
                 type: string
@@ -6830,7 +6815,7 @@ paths:
             description: Default response
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/gcp/credentials/{credentialsId}:
     put:
-      description: <p>Update Google Cloud credentials for Google Cloud project in the
+      description: <p>Updates Google Cloud credentials for a Google Cloud project in the
         NetApp Console SaaS application.</p><p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
       tags:
@@ -6874,7 +6859,7 @@ paths:
             type: object
             description: Default response
     delete:
-      description: <p>Delete Google Cloud credentials for Google Cloud project in the
+      description: <p>Deletes the Google Cloud credentials for a Google Cloud project in the
         NetApp Console SaaS application.</p><p><strong>Token usage:</strong></span>
         NetApp Console user token.</p>
       tags:
@@ -6980,7 +6965,7 @@ paths:
                           properties:
                             volume:
                               type: array
-                              description: Array of objects containing volume backup status/error with the
+                              description: Array of objects containing volume backup status or errors with the
                                 volume ID
                               items:
                                 type: object
@@ -7003,10 +6988,10 @@ paths:
                           properties:
                             type:
                               type: string
-                              description: Type of restore - file / volume
+                              description: Type of restore - file or volume
                             source:
                               type: object
-                              description: Optional object, present only in case of restore operation
+                              description: Optional object, present only for restore operations
                               properties:
                                 working-environment-id:
                                   type: string
@@ -7022,7 +7007,7 @@ paths:
                                   type: string
                             target:
                               type: object
-                              description: Optional object, present only in case of restore operation
+                              description: Optional object, present only for restore operations
                               properties:
                                 working-environment-id:
                                   type: string
@@ -7038,7 +7023,7 @@ paths:
                                   type: string
                             batch:
                               type: array
-                              description: Optional array present only in case of restore file operation
+                              description: Optional array, present only for restore file operations
                               items:
                                 type: object
                                 properties:
@@ -7129,7 +7114,7 @@ paths:
                       type: number
                     data:
                       type: object
-                      description: Optional object present in case of batch or individual operations
+                      description: Optional object, present for batch or individual operations
                         running inside the main job only
                       properties:
                         multi-volume-backup:
@@ -7138,7 +7123,7 @@ paths:
                           properties:
                             volume:
                               type: array
-                              description: Array of objects containing volume backup status/error with the
+                              description: Array of objects containing volume backup status or errors with the
                                 volume ID
                               items:
                                 type: object
@@ -8428,7 +8413,7 @@ paths:
                         keyDetails:
                           type: object
                           additionalProperties: true
-                          description: JSON data containing data specific to cmek
+                          description: JSON data containing data specific to Customer Managed Encryption Keys
                     volumes:
                       type: array
                       items:
@@ -8770,7 +8755,7 @@ paths:
                       type: string
               ip-space:
                 type: string
-                description: Required input field for on-premises use case.
+                description: Required input field for on-premises use cases
               aws:
                 type: object
                 properties:
@@ -8801,10 +8786,10 @@ paths:
                 properties:
                   access-key:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
                   secret-password:
                     type: string
-                    description: Required input field for on-premises use case
+                    description: Required input field for on-premises use cases
             required:
               - sourceWorkingEnvironmentId
               - migrationWorkingEnvironmentId
@@ -9406,8 +9391,7 @@ tags:
       backup operations of cloud and on-premises resources and retrieve details
       of the backup data when required. You can perform the following operations
       by using the Backup endpoints:</p><ul><li>Retrieve details of the backup
-      data of a system, volumes, and Snapshot
-      copies.</li><br><li>Enable cloud backup on a system, back up
+      data of a system, volumes, and snapshots.</li><br><li>Enable cloud backup on a system, back up
       volumes, and create on-demand backups.</li><br><li>Modify the backup
       configuration of systems and volumes.</li><br><li>Disable
       backups for systems and volumes, and delete
