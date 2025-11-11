@@ -7214,7 +7214,7 @@ paths:
                                           type: number
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/feature-flags:
     get:
-      description: Get the list of features which are enabled or disabled for the account
+      description: Retrieves a list of features which are enabled or disabled for the account.
       tags:
         - Features
       parameters:
@@ -7317,7 +7317,7 @@ paths:
     post:
       description: <p> Searches for a specific file from the backups taken by the
         NetApp Backup and Recovery service across volumes and
-        working-environments. It can also search for a specified volume. It is
+        systems. It can also search for a specified volume. It is
         possible to narrow down your file search based on a particular system, file extensions, size ranges, creation date range, and also
         location of a backup. </p><p><strong>Token usage:</strong></span>NetApp Console
         user token.</p>
@@ -8675,7 +8675,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/migration/validate:
     post:
       summary: Validate Migration Operations
-      description: API to validate migration of backups from Source ONTAP to Target ONTAP
+      description: Validates the migration of backups from the source ONTAP cluster to the target ONTAP cluster.
       tags:
         - migration
       parameters:
@@ -8724,7 +8724,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/migration:
     post:
       summary: Migration Operations
-      description: API to trigger migration of backups from Source ONTAP to Target ONTAP
+      description: Triggers the migration of backups from the source ONTAP cluster to the target ONTAP cluster.
       tags:
         - migration
       parameters:
@@ -8809,7 +8809,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage:
     post:
-      description: Creates bucket for specified cloud provider
+      description: Creates a bucket for the specified cloud provider.
       tags:
         - Object Storage
       parameters:
@@ -8997,7 +8997,7 @@ paths:
           description: Default Response
           schema: {}
     put:
-      description: Modifies bucket properties for specified provider
+      description: Modifies the bucket properties for the specified provider.
       tags:
         - Object Storage
       parameters:
@@ -9177,7 +9177,7 @@ paths:
                 - creation-time
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage/{provider}/{objectStoreName}:
     get:
-      description: Get specific bucket for specified cloud provider
+      description: Retrieves a specific bucket for the specified cloud provider.
       tags:
         - Object Storage
       parameters:
@@ -9264,7 +9264,7 @@ paths:
               - provider
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations:
     put:
-      description: API to modify the configuration
+      description: Modifies the configuration.
       tags:
         - Configuration
       parameters:
@@ -9318,7 +9318,7 @@ paths:
               message: Configuration property "feature-flags.update-db-backups" is not defined
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations/{key}:
     get:
-      description: API to get the configuration value for a given key
+      description: Retrieves the configuration value for the specified key.
       tags:
         - Configuration
       parameters:
