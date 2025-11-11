@@ -5546,8 +5546,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policy/{policyId}:
     patch:
       description: <p> Modifies the snapshot policy in a system.
-        Specifically for existing schedules attached to a snapshot policy,
-        The SnapMirror label and count can be modified, it also supports the addition and
+        For existing schedules attached to a snapshot policy, the SnapMirror label and count can be modified, it also supports the addition and
         removal of schedules. </p><p><strong>Token usage:</strong></span> NetApp Console
         user token.</p>
       tags:
@@ -9376,7 +9375,7 @@ produces:
 tags:
   - name: SFR
     description: <details><summary>Overview</summary><p>The single file restore
-      (SFR)endpoints retrieve files from the volume snapshots.</p><p>You
+      (SFR) endpoints retrieve files from the volume snapshots.</p><p>You
       can perform the following operations by using the SFR
       endpoints:<br><ul><li>Start a Snapshot backup file explore
       operation.</li><li>Retrieve Snapshot backup file explore
