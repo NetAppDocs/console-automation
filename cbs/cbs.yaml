@@ -7319,8 +7319,7 @@ paths:
       description: <p> Searches for a specific file from the backups taken by the
         NetApp Backup and Recovery service across volumes and
         working-environments. It can also search for a specified volume. It is
-        possible to narrow down your file search based on a particular working
-        environment, file extensions, size ranges, creation date range, and also
+        possible to narrow down your file search based on a particular system, file extensions, size ranges, creation date range, and also
         location of a backup. </p><p><strong>Token usage:</strong></span>NetApp Console
         user token.</p>
       tags:
@@ -7452,8 +7451,7 @@ paths:
       description: <p> Searches for a specific file from the backups taken by the
         NetApp Backup and Recovery service across volumes and
         systems. It can also search for a specified volume. It is
-        possible to narrow down your file search based on a particular working
-        environment, file extensions, size ranges, creation date range, and also
+        possible to narrow down your file search based on a particular system, file extensions, size ranges, creation date range, and also
         location of a backup. </p><p><strong>Token usage:</strong></span>NetApp Console
         user token.</p>
       tags:
@@ -7735,8 +7733,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/license/working-environment/{workingEnvironmentId}/validity:
     get:
       description: <p>Checks if there is a valid marketplace subscription, backup
-        license, and SnapMirror license in a working
-        environment.</p><p><strong>Token usage:</strong></span> NetApp Console user
+        license, and SnapMirror license in a system.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
         - License
@@ -8272,8 +8269,7 @@ paths:
     post:
       description: <p>Generates inventory report. You can create the inventory report
         for the whole account or a specific list of systems. It is
-        also possible to generate reports for storage VMs under a working
-        environment. By setting the "inventory-type" as "BACKUP", you can create
+        also possible to generate reports for storage VMs under a system. By setting the "inventory-type" as "BACKUP", you can create
         a report for the backup actions. By setting it as "ALL", you can create
         a report for all the actions.</p>
       tags:
@@ -9406,8 +9402,7 @@ tags:
   - name: System
     description: <details><summary>Overview</summary><p>The system
       endpoints retrieves details of the systems, manage the backup
-      policies and configure an object store associated with a working
-      environment.</p><p>You can perform the following operations by using the
+      policies and configure an object store associated with a system.</p><p>You can perform the following operations by using the
       system endpoints:</p><ul><li>Retrieve the list and details of
       systems, backup policies, IP spaces, storage VMs,
       and  volumes, snapshot-policies, peer-cluster relationships, and
