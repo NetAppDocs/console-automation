@@ -256,7 +256,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}/file-explore/list:
     get:
       description: <p>Retrieves a list of files and folders within a specified volume
-        snapshot in a paginated fashion during a file or folder restore
+        snapshot in a paginated format during a file or folder restore
         operation (V2 version of the file-explore/list API). You can pass the
         number of pages and limit of the number of files that the API endpoint
         should retrieve while fetching the details in a paginated format. The
@@ -1881,7 +1881,7 @@ paths:
         specified volume backed up by using the NetApp Backup and Recovery
         service for a system. This API endpoint retrieves the
         details of the volume snapshots from the NetApp Console SaaS application.
-        It retrieves the Snapshot name, Snapshot creation time, archive status,
+        It retrieves the snapshot name, snapshot creation time, archive status,
         and size. It also retrieves the object-lock,
         ransomware-scan-status-failure, and
         ransomware-scan-status.  </p><p><strong>Token usage:</strong></span>
@@ -4593,7 +4593,7 @@ paths:
       description: <p> Retrieves a list of ONTAP replication policies associated with
         a system. The API will list the SnapMirror policies created
         on the cluster level for the specified system. The system ID is passed as a parameter for the REST API call. It
-        returns the Snapmirror policies and the rules associated with the
+        returns the SnapMirror policies and the rules associated with the
         policies.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -4717,7 +4717,7 @@ paths:
                       type: string
               transfer-schedule:
                 type: string
-                description: "CRON based schedule for transfers. To disable the schedule, pass
+                description: "Cron based schedule for transfers. To disable the schedule, pass
                   the value as: none(case sensitive). By default hourly schedule
                   is selected."
               copy-all-source-snapshots:
@@ -4819,7 +4819,7 @@ paths:
                       type: string
               transfer-schedule:
                 type: string
-                description: "CRON based schedule for transfers. To disable the schedule, pass
+                description: "Cron based schedule for transfers. To disable the schedule, pass
                   the value as: none(case sensitive). By default hourly schedule
                   is selected."
         - type: string
@@ -5025,7 +5025,7 @@ paths:
           in: query
           name: max-records
         - type: string
-          description: Next Snapshot UUID to get results from
+          description: Next snapshot UUID to get results from
           required: false
           in: query
           name: cursor
@@ -5088,8 +5088,8 @@ paths:
     post:
       description: <p> Creates a snapshot for a particular volume. The API
         initiates the creation of a snapshot of the volume-based on the
-        Snapshot policy assigned. The system ID, volume ID, and
-        Snapshot ID are passed as parameters for the REST API call. The snapshot
+        snapshot policy assigned. The system ID, volume ID, and
+        snapshot ID are passed as parameters for the REST API call. The snapshot
         name and label are used as headers.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
@@ -7864,7 +7864,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/sg:
     post:
-      description: <p>Discovers a new StorageGRID server in NetApp Console SaaS
+      description: <p>Discovers a new StorageGRID server in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -7969,7 +7969,7 @@ paths:
             description: Default response
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/buckets:
     post:
-      description: <p>Retrieves a list of SGWS buckets from the StorageGRID
+      description: <p>Retrieves a list of StorageGRID buckets from the StorageGRID
         server.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8100,7 +8100,7 @@ paths:
                       type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/sg:
     get:
-      description: <p>List StorageGRID servers in NetApp Console SaaS
+      description: <p>List StorageGRID servers in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8134,7 +8134,7 @@ paths:
                   type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/sg/credentials:
     post:
-      description: <p>Register a new StorageGRID credentials in NetApp Console SaaS
+      description: <p>Register a new StorageGRID credentials in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8185,7 +8185,7 @@ paths:
             description: Default response
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/sg/credentials/{storageServerName}:
     put:
-      description: <p>Update StorageGRID credentials in NetApp Console SaaS
+      description: <p>Update StorageGRID credentials in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8232,7 +8232,7 @@ paths:
             type: object
             description: Default response
     delete:
-      description: <p>Delete StorageGRID credentials in NetApp Console SaaS
+      description: <p>Delete StorageGRID credentials in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8329,7 +8329,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/report/job/{jobId}:
     get:
-      description: <p>This API endpoint enables you to retrieve the inventory report
+      description: <p>Retrieves the inventory report
         data that was generated by the Inventory Report POST API. When called,
         it downloads the inventory report data based on the scope (account,
         system, storage VM) specified during the deployment of the
@@ -8484,7 +8484,7 @@ paths:
                 type: number
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/report/snapshot/job/{jobId}:
     get:
-      description: <p>This API endpoint enables you to retrieve the local snapshots
+      description: <p>Retrieves the local snapshots
         report data that was generated by the Local Snapshot Inventory Report
         POST API. When called, it downloads the  local snapshot report data
         based on the scope (account, system) specified during the
@@ -8575,7 +8575,7 @@ paths:
                 type: number
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/report/replication/job/{jobId}:
     get:
-      description: <p>This API endpoint enables you to retrieve the replication report
+      description: <p>Retrieves the replication report
         data that was generated by the Replication Inventory Report POST API.
         When called, it downloads the replication report data based on the scope
         (account, system) specified during the deployment of the
@@ -8833,7 +8833,7 @@ paths:
           required: false
           in: query
           name: subscription
-        - description: Credential ID for the SGWS or Ontap S3 provider
+        - description: Credential ID for the SGWS or ONTAP S3 provider
           type: string
           required: false
           in: query
@@ -9444,8 +9444,8 @@ tags:
       remaining if you are using a trial license.</p></details>
   - name: Ransomware Scan
     description: <details><summary>Overview</summary><p>The Ransomware scan API
-      endpoint enables you to initiate a ransomware scan on a specified Snapshot
-      copy available in the cloud object-store bucket. It scans only cloud
+      endpoint enables you to initiate a ransomware scan on a specified snapshot
+      available in the cloud object-store bucket. It scans only cloud
       backups. It does not support scanning local snapshots. Ransomware
       attacks on local snapshots cannot be detected.</p></details>
   - name: Panoramic Protection
@@ -9456,7 +9456,7 @@ tags:
       managers and assistance from specially trained personnel. You can
       configure backups either in a cascading workflow or fan-out workflow. You
       can perform the following operations by using the Panaromic Protection
-      endpoints:</p>ul><li>Enable 3-2-1 backup on systems by
+      endpoints:</p><ul><li>Enable 3-2-1 backup on systems by
       creating the required cluster-peering for replication and the required
       object-store buckets for backup to cloud in cascading or fan-out
       topologies.  </li><br><li> Modify 3-2-1 backup on systems by
