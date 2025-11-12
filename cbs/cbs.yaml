@@ -9,11 +9,11 @@ info:
     clusters (AFF/FAS/OTS). By using this service, you can automatically
     generate and store backups in an object store in the public or private cloud
     account of your choice, and you can easily restore data any time and to any
-    location, as per your requirements.</p><p> There are thirteen categories of
+    location, as per your requirements.</p><p> There are 17 categories of
     endpoints defined within the Backup and Recovery service:</p><ul><li> backup
-    </li><li> catalog </li><li> cloud </li><li> job </li><li> license </li><li>
+    </li><li> catalog </li><li> cloud </li><li> job </li><li> license </li><li> migration </li><li> object store </li><li>
     restore </li><li> single file-level restore (SFR) </li><li>  system
-    </li><li>storagegrid (sg)</li> <li>ransomware scan</li><li>panaromic
+    </li><li>StorageGRID (sg)</li> <li>ransomware scan</li><li>panoramic
     protection</li><li>replication</li><li>reports</li></ul><p> Note: Before
     using the API reference documentation, review the
     <a    href="https://docs.netapp.com/us-en/console-automation/platform/overview.html">Get
@@ -7282,7 +7282,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/catalog/re-index:
     post:
-      description: <p> Re-indexes the catalog for all the systems in an
+      description: <p> Re-indexes the catalog for all of the systems in an
         account</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -7447,7 +7447,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/search/job:
     get:
       description: <p> Searches for a specific file from the backups taken by the
-        NetApp Backup and Recovery service across volumes and
+        NetApp Backup and Recovery service across on-premises volumes and
         systems. It can also search for a specified volume. It is
         possible to narrow down your file search based on a particular system, file extensions, size ranges, creation date range, and also
         location of a backup. </p><p><strong>Token usage:</strong></span>NetApp Console
@@ -7525,7 +7525,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/snapshots:
     post:
-      description: <p>Retrieves a list of local and cloud snapshots pertaining
+      description: <p>Retrieves a list of local and cloud snapshots related
         to a particular volume by using the catalog index query.
         </p><p><strong>Token usage:</strong></span> NetApp Console user token.</p>
       tags:
@@ -7640,8 +7640,7 @@ paths:
             properties:
               state:
                 type: string
-                description: Modifies all the SnapMirror relationship states in the working
-                  envrionment to the state specified
+                description: Modifies all of the SnapMirror relationship states in the system to the state specified.
                 enum:
                   - ENABLE
                   - DISABLE
@@ -7693,7 +7692,7 @@ paths:
         - type: string
           description: Cloud provider account ID. AWS account ID/Azure subscription ID/
             Google Cloud project ID. It is not mandatory to send this query
-            parameter for StorageGRID
+            parameter for StorageGRID.
           required: false
           in: query
           name: cloudProviderAccountId
@@ -7772,7 +7771,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/ransomware/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}:
     post:
       description: <p>Initiates a ransomware scan on the specified cloud backup
-        pertaining to volume snapshot transferred by the SnapMirror - Cloud
+        related to a volume snapshot transferred by the SnapMirror - Cloud
         engine to the cloud object storage system. It scans only cloud backups.
         It does not support scanning local snapshots. Ransomware attacks
         on local snapshots cannot be detected.</p></p><p><strong>Token
@@ -7876,7 +7875,7 @@ paths:
             properties:
               admin-host:
                 type: string
-                description: StorageGRID Admin host IP.
+                description: StorageGRID Admin host IP address.
               admin-username:
                 type: string
                 description: StorageGRID Admin username.
@@ -8099,7 +8098,7 @@ paths:
                       type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/sg:
     get:
-      description: <p>List StorageGRID servers in the NetApp Console SaaS
+      description: <p>Lists the StorageGRID servers in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8338,8 +8337,8 @@ paths:
         - Report
       parameters:
         - type: number
-          description: Page number to the fetch the paginated report. Last page of the
-            report must be accessed to clean up the report from the memory
+          description: Page number to the fetch the paginated report. The last page of the
+            report must be accessed to clean up the report from the memory.
           required: false
           in: query
           name: page
@@ -8493,7 +8492,7 @@ paths:
         - Report
       parameters:
         - type: number
-          description: Page number to the fetch the paginated report. Last page of the
+          description: Page number to the fetch the paginated report. The last page of the
             report must be accessed to clean up the report from the memory
           required: false
           in: query
@@ -8584,8 +8583,8 @@ paths:
         - Report
       parameters:
         - type: number
-          description: Page number to the fetch the paginated report. Last page of the
-            report must be accessed to clean up the report from the memory
+          description: Page number to the fetch the paginated report. The last page of the
+            report must be accessed to clean up the report from the memory.
           required: false
           in: query
           name: page
@@ -9239,7 +9238,7 @@ paths:
                 description: Encryption type used for the bucket
                 type: string
               is-public:
-                description: Is the bucket public?
+                description: Indicates whether the bucket is public
                 type: boolean
               object-lock:
                 description: Object lock enabled for the bucket
@@ -9273,10 +9272,10 @@ paths:
             type: object
             properties:
               key:
-                description: Configuration Key
+                description: Configuration key
                 type: string
               value:
-                description: Configuration Value
+                description: Configuration value
             required:
               - key
               - value
@@ -9321,7 +9320,7 @@ paths:
       tags:
         - Configuration
       parameters:
-        - description: Configuration Key
+        - description: Configuration key
           type: string
           required: true
           in: path
@@ -9376,9 +9375,9 @@ tags:
     description: <details><summary>Overview</summary><p>The single file restore
       (SFR) endpoints retrieve files from the volume snapshots.</p><p>You
       can perform the following operations by using the SFR
-      endpoints:<br><ul><li>Start a Snapshot backup file explore
-      operation.</li><li>Retrieve Snapshot backup file explore
-      status.</li><li>List files during Snapshot backup file explore
+      endpoints:<br><ul><li>Start a snapshot backup file explore
+      operation.</li><li>Retrieve the snapshot backup file explore
+      status.</li><li>List files during snapshot backup file explore
       operations.</li><br></ul></p></details>
   - name: Backup
     description: <details><summary>Overview</summary><p>The backup endpoints manage
@@ -9416,7 +9415,7 @@ tags:
       region private links, AWS archival storage class, Azure subscription,
       Azure subscription regions, Azure subscription resource-group, Azure
       subscription VNet, Azure subscription vault key, Google Cloud projects,
-      Google Cloud project region, Google Key Rings and more.</li><br><li>Create
+      Google Cloud project region, Google KeyRings and more.</li><br><li>Create
       a subscription resource-group.</li><br></ul></details>
   - name: Job
     description: <details><summary>Overview</summary><p>The Job endpoints display
@@ -9481,7 +9480,7 @@ tags:
       inventory reports</li></ul></details>
   - name: StorageGRID
     description: <details><summary>Overview</summary><p>The StorageGRID API
-      endpoints retrieve version and details of the StorageGRID server. You can
+      endpoints retrieve version and other details for the StorageGRID server. You can
       also discover StorageGRID WebScale server in the NetApp Console SaaS
       application.</p><p>You can perform the following operations by using the
       StorageGRID endpoints:<br><ul><li>Retrieve StorageGRID server

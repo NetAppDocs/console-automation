@@ -1004,7 +1004,7 @@ paths:
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/search/job":
     get:
       x-doc:
-        title: Search for a specific file 
+        title: Search for a specific file (on premises)
         category: Catalog
         filename: get-account-providers-cloudmanager_cbs-api-v1-catalog-search-job.html
         subcategory: 
