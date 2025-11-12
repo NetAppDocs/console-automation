@@ -11,7 +11,7 @@ info:
     account of your choice, and you can easily restore data any time and to any
     location, as per your requirements.</p><p> There are 17 categories of
     endpoints defined within the Backup and Recovery service:</p><ul><li> backup
-    </li><li> catalog </li><li> cloud </li><li> job </li><li> license </li><li> migration </li><li> object store </li><li>
+    </li><li> catalog </li><li> cloud </li><li> configuration </li><li> features </li><li> job </li><li> license </li><li> migration </li><li> object store </li><li>
     restore </li><li> single file-level restore (SFR) </li><li>  system
     </li><li>StorageGRID (sg)</li> <li>ransomware scan</li><li>panoramic
     protection</li><li>replication</li><li>reports</li></ul><p> Note: Before
