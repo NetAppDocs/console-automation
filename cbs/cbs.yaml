@@ -29,7 +29,7 @@ info:
     or  collection</td></tr><tr><td><code>PATCH</code></td><td>Update an
     existing     object</td></tr><tr><td><code>DELETE</code></td><td>Remove an
     existing  object</td></tr></tbody></table><h3>Request   headers</h3><table><thead><tr><th>Request
-    Header</th><th>Description</th></tr></thead><tbody><tr><td><code>Authorization</code></td><td>Required.Contains
+    Header</th><th>Description</th></tr></thead><tbody><tr><td><code>Authorization</code></td><td>Required. Contains
     a JWT access
     token</td></tr><tr><td><code>x-agent-id</code></td><td>Required. Contains
     the Console agent ID.
@@ -70,7 +70,7 @@ info:
     same command. Which version should I use?</strong></p>  <p>If there are
     multiple versions of the same API endpoint, make sure to use the latest
     version of the API. The version of each endpoint is mentioned in the path.
-    </p> <p><strong>What’s the difference between a user token and service token
+    </p> <p><strong>Whats the difference between a user token and service token
     and why do we need two types of token authorization ?</strong></p> <p>A user
     token is used for communication between a user (or the UI) and the NetApp Console
     REST APIs, whereas the service token is used for communication    between
@@ -144,7 +144,7 @@ info:
     to activate a backup on a system with a new policy that has daily, hourly,
     and weekly labels set, and archive after days set as 180 days in East-US-2
     region in Azure cloud. This enables backup only on a system but no volumes
-    are backed up. If you choose “"auto-backup-enabled": true, then any volumes
+    are backed up. If you choose "auto-backup-enabled": true, then any volumes
     already existing in the system are backed up and future volumes added.
     </p>  <pre><code     class="language-bash">curl -X
     GET     &quot;https://cloudmanager.cloud.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v3/backup/working-environment/VsaWorkingEnvironment-99hPYEgk&quot;     -H
@@ -484,7 +484,7 @@ paths:
         - Backup
       parameters:
         - type: boolean
-          description: Returns only partial response for the systems
+          description: Returns only a partial response for the systems
           required: false
           in: query
           name: partial
@@ -696,7 +696,7 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment:
     get:
       description: <p>Retrieves the details of all systems that are
-        backed up by using the NetApp Backup and Recovery service within an account.
+        backed up using the NetApp Backup and Recovery service within an account.
         It retrieves backup enablement status, archive storage class, archive
         after days, catalog enablement status, auto enablement status, maximum
         transfer status, backup policy details, cloud storage pool, and remote
@@ -1122,9 +1122,9 @@ paths:
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}:
     put:
       description: <p>Modifies the NetApp Backup and Recovery service backup configuration
-        for a particular system synchronously (V2). You can modify
+        for a particular system synchronously (V2 version). You can modify
         the state, backup policy, archive storage class, cloud storage pool,
-        AWS|Azure|Google Cloud|StorageGRID access and secret key, IPspace, maximum
+        AWS/Azure/Google Cloud/StorageGRID access and secret key, IPspace, maximum
         transfer rate, and enable automatic backup.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
@@ -1154,7 +1154,7 @@ paths:
                       convention is created.
                   rule:
                     type: array
-                    description: Specify the rules for a new policy
+                    description: Specifies the rules for a new policy
                     items:
                       type: object
                       properties:
@@ -1217,7 +1217,7 @@ paths:
                   - DEEP_ARCHIVE
               auto-backup-enabled:
                 type: boolean
-                description: Automatically backup all volumes in the systems
+                description: Automatically backs up all volumes in the systems
               max-transfer-rate:
                 type: number
                 description: Modifies node-level throttling of an ONTAP cluster. Value to be
@@ -1225,17 +1225,17 @@ paths:
                   unlimited throttling
               delete-yearly-snapshots:
                 type: boolean
-                description: Disable the deletion of local yearly snapshots after being
+                description: Disables the deletion of local yearly snapshots after being
                   transferred to object store
               export-existing-snapshots:
                 type: boolean
-                description: Export pre-existing snapshots to object storage
+                description: Exports pre-existing snapshots to object storage
               ip-space:
                 type: string
                 description: IP space for the backed up system
               toggle-rsw-scan:
                 type: boolean
-                description: Toggle RSW scheduled scan on or off
+                description: Toggles RSW scheduled scan on or off
               rsw-scan-interval:
                 type: string
                 description: RSW scheduled scans interval
@@ -1249,7 +1249,7 @@ paths:
                   - 7d
               aws:
                 type: object
-                description: Access key and secret password for the system
+                description: Accesses key and secret password for the system
                 properties:
                   access-key:
                     type: string
@@ -1257,7 +1257,7 @@ paths:
                     type: string
               gcp:
                 type: object
-                description: Access key and secret password for the system
+                description: Accesses key and secret password for the system
                 properties:
                   access-key:
                     type: string
@@ -1265,7 +1265,7 @@ paths:
                     type: string
               sgws:
                 type: object
-                description: Access key and secret password for the system
+                description: Accesses key and secret password for the system
                 properties:
                   access-key:
                     type: string
@@ -1514,8 +1514,7 @@ paths:
                 type: string
     delete:
       description: <p> Removes the backup settings on a specified backed up volume. To
-        disable backup on a volume, the snapshots of the volume must be
-        deleted. </p><p><strong>Token usage:</strong></span>NetApp Console user
+        disable backup on a volume, the volume snapshots must be deleted.</p><p><strong>Token usage:</strong></span>NetApp Console user
         token.</p>
       tags:
         - Backup
@@ -1556,7 +1555,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v3/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}:
     post:
-      description: <p> Enables backup for a specified volume (version 3). This version
+      description: <p> Enables backup for a specified volume (version V3). This version
         of    the endpoint runs the job asynchronously. Backup is not allowed
         for a volume enabled with a SnapLock license (WORM license). You can
         configure the different backup modes. The AD_HOC mode creates an
@@ -1669,7 +1668,7 @@ paths:
         - Backup
       parameters:
         - type: boolean
-          description: Returns only partial response from the NetApp Backup and Recovery
+          description: Returns only a partial response from the NetApp Backup and Recovery
             service database. API calls with this query parameter skips fetching
             data from ONTAP
           required: false
@@ -2497,7 +2496,7 @@ paths:
                           - region
               auto-backup-enabled:
                 type: boolean
-                description: Automatically backup all volumes in the system
+                description: Automatically backs up all volumes in the system
               max-transfer-rate:
                 type: number
                 description: Modifies node-level throttling of an ONTAP cluster. Value to be
@@ -2505,7 +2504,7 @@ paths:
                   unlimited throttling
               export-existing-snapshots:
                 type: boolean
-                description: Export pre-existing snapshots to object storage
+                description: Exports pre-existing snapshots to object storage
               architecture:
                 type: string
                 enum:
@@ -3319,7 +3318,7 @@ paths:
                 type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/restore:
     post:
-      description: <p> Performs a volume and file level restore (version 2) operation.
+      description: <p> Performs a volume and file level restore (V2 version) operation.
         This  API validates whether a backup of a volume exists. The restore
         operation is not supported on data protection volumes, on a target
         volume with a different language code than the source volume, and for
@@ -3958,7 +3957,7 @@ paths:
         - System
       parameters:
         - type: boolean
-          description: Returns only partial response without volumes count for systems
+          description: Returns only a partial response without volumes count for systems
           required: false
           in: query
           name: partial
@@ -4328,7 +4327,7 @@ paths:
               - cloud-provider
               - object-store-name
         - type: string
-          description: Account id
+          description: Account ID
           required: true
           in: path
           name: accountId
@@ -4717,15 +4716,15 @@ paths:
                       type: string
               transfer-schedule:
                 type: string
-                description: "Cron based schedule for transfers. To disable the schedule, pass
-                  the value as: none(case sensitive). By default hourly schedule
+                description: "Cron-based schedule for transfers. To disable the schedule, pass
+                  the value as: none(case sensitive). By default, an hourly schedule
                   is selected."
               copy-all-source-snapshots:
                 type: boolean
-                description: Copy all source snapshots to replication detstination
+                description: Copies all source snapshots to the replication detstination
               copy-latest-source-snapshot:
                 type: boolean
-                description: Copy only latest source snapshot to replication detstination
+                description: Copies only the latest source snapshot to the replication detstination
               svm-name:
                 type: string
                 description: Name of the SVM where the replication policy should be created
@@ -4819,8 +4818,8 @@ paths:
                       type: string
               transfer-schedule:
                 type: string
-                description: "Cron based schedule for transfers. To disable the schedule, pass
-                  the value as: none(case sensitive). By default hourly schedule
+                description: "Cron-based schedule for transfers. To disable the schedule, pass
+                  the value as: none(case sensitive). By default, an hourly schedule
                   is selected."
         - type: string
           description: Account ID
@@ -6779,8 +6778,8 @@ paths:
             properties:
               credentials-id:
                 type: string
-                description: Credentials ID. Must only contain lower case alphabets, numbers and
-                  hyphen(-). Must start and end with an alphabet or number.
+                description: Credentials ID. Must only contain lower case alphabetic characters, numbers and
+                  hyphen(-). Must start and end with an alphabetic character or number.
               access-key:
                 type: string
                 description: Google Cloud access-key.
@@ -7325,7 +7324,7 @@ paths:
         - Catalog
       parameters:
         - type: string
-          description: Search sting
+          description: Search string
           required: true
           in: query
           name: query
@@ -7457,7 +7456,7 @@ paths:
         - Catalog
       parameters:
         - type: string
-          description: Search sting
+          description: Search string
           required: true
           in: query
           name: query
@@ -7880,10 +7879,10 @@ paths:
                 description: StorageGRID Admin host IP.
               admin-username:
                 type: string
-                description: StorageGRID Admin Username.
+                description: StorageGRID Admin username.
               admin-password:
                 type: string
-                description: StorageGRID Admin Password.
+                description: StorageGRID Admin password.
             required:
               - admin-host
               - admin-username
@@ -8134,7 +8133,7 @@ paths:
                   type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/sg/credentials:
     post:
-      description: <p>Registers a new StorageGRID credentials in the NetApp Console SaaS
+      description: <p>Registers new StorageGRID credentials in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -9240,7 +9239,7 @@ paths:
                 description: Encryption type used for the bucket
                 type: string
               is-public:
-                description: Is the bucket public
+                description: Is the bucket public?
                 type: boolean
               object-lock:
                 description: Object lock enabled for the bucket
