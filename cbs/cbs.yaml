@@ -3235,7 +3235,7 @@ paths:
         - Replication
       parameters:
         - type: boolean
-          description: Update snapshot information in the database after a transfer to the object store. Default
+          description: Updates snapshot information in the database after a transfer to the object store. Default
             value is false.
           default: false
           required: false
@@ -8134,7 +8134,7 @@ paths:
                   type: string
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/sg/credentials:
     post:
-      description: <p>Register a new StorageGRID credentials in the NetApp Console SaaS
+      description: <p>Registers a new StorageGRID credentials in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8185,7 +8185,7 @@ paths:
             description: Default response
   /account/{accountId}/providers/cloudmanager_cbs/api/v2/sg/credentials/{storageServerName}:
     put:
-      description: <p>Update StorageGRID credentials in the NetApp Console SaaS
+      description: <p>Updates StorageGRID credentials in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8232,7 +8232,7 @@ paths:
             type: object
             description: Default response
     delete:
-      description: <p>Delete StorageGRID credentials in the NetApp Console SaaS
+      description: <p>Deletes StorageGRID credentials in the NetApp Console SaaS
         application.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -8266,7 +8266,7 @@ paths:
             description: Default response
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/report:
     post:
-      description: <p>Generates inventory report. You can create the inventory report
+      description: <p>Generates an inventory report. You can create the inventory report
         for the whole account or a specific list of systems. It is
         also possible to generate reports for storage VMs under a system. By setting the "inventory-type" as "BACKUP", you can create
         a report for the backup actions. By setting it as "ALL", you can create
@@ -9106,7 +9106,7 @@ paths:
           schema: {}
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage/{provider}:
     get:
-      description: Get buckets for specified cloud provider
+      description: Retrieves buckets for the specified cloud provider.
       tags:
         - Object Storage
       parameters:
@@ -9430,7 +9430,7 @@ tags:
       the indexed catalog search for files based on a query. You can perform the
       following operations by using the Catalog endpoints:</p><ul><li>Initiate
       an indexed catalog search based on a query  </li><br><li>Retrieve a list
-      of snapshots pertaining to a particular volume by using the Catalog
+      of snapshots related to a particular volume by using the Catalog
       Index query</li><br><li>Configure an indexed catalog service on AWS,
       Azure, Google Cloud and on-premises or dark sites. </li><br><li>Modify the state of
       an indexed catalog service.</li></ul></details>
