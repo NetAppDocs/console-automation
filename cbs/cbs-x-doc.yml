@@ -907,7 +907,7 @@ paths:
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/buckets/{bucketName}":
     get:
       x-doc:
-        title: Retrieve an AWS s3 bucket from a region 
+        title: Retrieve an AWS S3 bucket from a region 
         category: Cloud
         filename: get-account-providers-cloudmanager_cbs-api-v1-aws-awsaccountid-buckets-.html
         subcategory: 
