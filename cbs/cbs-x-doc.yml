@@ -1152,14 +1152,14 @@ paths:
         category: Credentials
         filename: put-account-providers-cloudmanager_cbs-api-v3-credentials-.html
         subcategory: 
-  "/account/{accountId}/providers/cloudmanager_cbs/api/v1/configs":
+  "/account/{accountId}/providers/cloudmanager_cbs/api/v1/configuration":
     put:
       x-doc:
         title: Modify the configuration
         category: Configuration
         filename: put-account-providers-cloudmanager_cbs-api-v1-configurations.html
         subcategory: 
-  "/account/{accountId}/providers/cloudmanager_cbs/api/v1/configs/{key}":
+  "/account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations/{key}":
     get:
       x-doc:
         title: Retrieve the configuration value for the specified key
