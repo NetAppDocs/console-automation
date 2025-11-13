@@ -8121,10 +8121,10 @@ paths:
           name: x-agent-id
       responses:
         "200":
-          description: List of storage grid server names
+          description: List of StorageGRID server names
           schema:
             type: object
-            description: List of storage grid server names
+            description: List of StorageGRID server names
             properties:
               ids:
                 type: array
