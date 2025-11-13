@@ -1302,7 +1302,7 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v3-credentials-.html
         subcategory: 
         explorer: false
-  "/account/{accountId}/providers/cloudmanager_cbs/api/v1/configuration":
+  "/account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations":
     put:
       x-doc:
         title: Modify the configuration
