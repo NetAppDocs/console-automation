@@ -1397,86 +1397,6 @@
                 }
             }
         },
-        "/license/associate-resource/serial-number/{serialNumber}": {
-            "post": {
-                "tags": [
-                    "License"
-                ],
-                "description": "<p>Associates a resource ID with a specified license. This association is applicable only for a Cloud Volumes ONTAP system with node-based licenses.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a NetApp Console service token, <code>accountId</code> is not a required field.</li>\n<li>If you use a NetApp Console user token, <code>accountId</code> is a required field.</li>\n<li>If you specify <code>resourceId</code> in the request payload, the license will be associated with the specified resource.</li>\n<li>If you omit <code>resourceId</code> or specify it as <code>null</code>, a license will be disassociated from a resource.</li>\n<li><code>serialNumber</code> is a required parameter.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "type": "object",
-                                "properties": {
-                                    "accountId": {
-                                        "type": "string"
-                                    },
-                                    "resourceId": {
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "parameters": [
-                    {
-                        "schema": {
-                            "oneOf": [
-                                {
-                                    "type": "string",
-                                    "pattern": "^[0-9]{1,20}$"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ]
-                        },
-                        "in": "path",
-                        "name": "serialNumber",
-                        "required": true
-                    },
-                    {
-                        "schema": {
-                            "type": "string"
-                        },
-                        "in": "header",
-                        "name": "X-Service-Request-Id",
-                        "required": false,
-                        "description": "Request identifier"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Success response",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "description": "Success response",
-                                    "type": "string",
-                                    "example": "OK"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "description": "Error response",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/def-1",
-                                    "description": "Error response"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/license/exchange": {
             "post": {
                 "tags": [
@@ -1554,93 +1474,6 @@
                         }
                     },
                     "5XX": {
-                        "description": "Error response",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/def-1",
-                                    "description": "Error response"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/license/disassociate-resource/{associatedResourceId}": {
-            "post": {
-                "tags": [
-                    "License"
-                ],
-                "description": "<p>Disassociates a resource ID from a license. This disassociation is applicable only for a Cloud Volumes ONTAP system with node-based licenses.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If you use a NetApp Console service token, <code>accountId</code> is not a required field.</li>\n<li>If you use a NetApp Console user token, <code>accountId</code> is a required field.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "oneOf": [
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "accountId": {
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ]
-                                            },
-                                            "skipExtraCapacity": {
-                                                "type": [
-                                                    "boolean",
-                                                    "null"
-                                                ],
-                                                "default": false
-                                            }
-                                        },
-                                        "example": {
-                                            "accountId": "account-id",
-                                            "skipExtraCapacity": true
-                                        }
-                                    },
-                                    {
-                                        "type": "null"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                "parameters": [
-                    {
-                        "schema": {
-                            "type": "string"
-                        },
-                        "in": "path",
-                        "name": "associatedResourceId",
-                        "required": true
-                    },
-                    {
-                        "schema": {
-                            "type": "string"
-                        },
-                        "in": "header",
-                        "name": "X-Service-Request-Id",
-                        "required": false,
-                        "description": "Request identifier"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Success response",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "description": "Success response",
-                                    "type": "string",
-                                    "example": "OK"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
                         "description": "Error response",
                         "content": {
                             "application/json": {
@@ -3250,7 +3083,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the associated subscription ID for each cloud account ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user calls and service calls with a predefined scope only.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
+                "description": "<p>Retrieves the preferred subscription ID for a specified account ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user calls and service calls with a predefined scope only.</li>\n</ul>\n \n<b>Token usage:</b> Either a NetApp Console user token or service token.",
                 "parameters": [
                     {
                         "schema": {
@@ -3316,7 +3149,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the associated subscription ID for each cloud account ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user calls and service calls with a predefined scope only.</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console user token.",
+                "description": "<p>Updates the preferred subscription for a specified account ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes user calls and service calls with a predefined scope only.</li>\n</ul>\n \n<b>Token usage:</b> NetApp Console user token.",
                 "requestBody": {
                     "content": {
                         "application/json": {

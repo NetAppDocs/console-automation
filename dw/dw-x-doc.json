@@ -285,7 +285,7 @@
     "/license/account/{accountId}/subscriptions/preferred": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the associated subscription ID",
+          "title": "Retrieve the preferred subscription ID for an account",
           "category": "Subscription",
           "filename": "get-license-account-subscriptions-preferred.html",
           "subcategory": null
@@ -293,7 +293,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Retrieve the associated subscription ID",
+          "title": "Update the the preferred subscription ID for an account",
           "category": "Subscription",
           "filename": "put-license-account-subscriptions-preferred.html",
           "subcategory": null
@@ -321,7 +321,7 @@
     "/license/subscriptions/cloud-account/association": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the associated subscription ID",
+          "title": "Retrieve the associated subscription ID for cloud accounts",
           "category": "Subscription",
           "filename": "get-license-subscriptions-cloud-account-association.html",
           "subcategory": null
