@@ -1157,14 +1157,14 @@ paths:
       x-doc:
         title: Modify the configuration
         category: Configuration
-        filename: put-account-providers-cloudmanager_cbs-api-v1-configs.html
+        filename: put-account-providers-cloudmanager_cbs-api-v1-configurations.html
         subcategory: 
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/configs/{key}":
     get:
       x-doc:
         title: Retrieve the configuration value for the specified key
         category: Configuration
-        filename: get-account-providers-cloudmanager_cbs-api-v1-configs-.html
+        filename: get-account-providers-cloudmanager_cbs-api-v1-configurations-.html
         subcategory: 
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/panoramic-protection/working-environment/{workingEnvironmentId}/volume":
     post:
