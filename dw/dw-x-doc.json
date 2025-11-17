@@ -6,7 +6,8 @@
           "title": "Associate a license",
           "category": "License",
           "filename": "post-license-serial-number-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "patch": {
@@ -14,7 +15,8 @@
           "title": "Update a license by serial number",
           "category": "License",
           "filename": "patch-license-serial-number-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "delete": {
@@ -22,7 +24,8 @@
           "title": "Delete a license",
           "category": "License",
           "filename": "delete-license-serial-number-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -32,7 +35,8 @@
           "title": "Retrieve a license by type",
           "category": "License",
           "filename": "get-license-licenses.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -42,8 +46,8 @@
           "title": "Update a license by resource ID",
           "category": "License",
           "filename": "patch-license-account-licenseresource-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "delete": {
@@ -51,8 +55,8 @@
           "title": "Delete a license by resource ID",
           "category": "License",
           "filename": "delete-license-account-licenseresource-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -62,7 +66,8 @@
           "title": "Exchange a Cloud Volumes ONTAP license",
           "category": "License",
           "filename": "post-license-exchange.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -72,7 +77,8 @@
           "title": "Retrieve data service eligibility details",
           "category": "Data Services",
           "filename": "get-license-data-service-eligibility-account-provider-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -82,8 +88,8 @@
           "title": "Register a subscription",
           "category": "Subscription",
           "filename": "post-license-account-subscriptions-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -93,8 +99,8 @@
           "title": "Retrieve all subscriptions for an account",
           "category": "Subscription",
           "filename": "get-license-account-subscriptions.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -104,8 +110,8 @@
           "title": "Update a subscription expiration date",
           "category": "Subscription",
           "filename": "patch-license-subscriptions-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -115,8 +121,8 @@
           "title": "Delete a subscription",
           "category": "Subscription",
           "filename": "delete-license-account-subscription-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -126,7 +132,8 @@
           "title": "Retrieve on-prem ONTAP data",
           "category": "External Services",
           "filename": "get-license-onprem-account-clusters.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -136,8 +143,8 @@
           "title": "Retrieve the subscription entitlements",
           "category": "Subscription",
           "filename": "get-license-subscriptions-entitlements.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -147,8 +154,8 @@
           "title": "Retrieve subscription information for an account",
           "category": "Subscription",
           "filename": "get-license-subscriptions-account-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "delete": {
@@ -156,8 +163,8 @@
           "title": "Delete a subscription",
           "category": "Subscription",
           "filename": "delete-license-subscriptions-account-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "post": {
@@ -165,8 +172,8 @@
           "title": "Associate a subscription",
           "category": "Subscription",
           "filename": "post-license-subscriptions-account-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -176,8 +183,8 @@
           "title": "Retrieve subscription information using the subscription ID",
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "patch": {
@@ -185,8 +192,8 @@
           "title": "Update subscription expiration date",
           "category": "Subscription",
           "filename": "patch-license-subscriptions-subscription-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -196,8 +203,8 @@
           "title": "Delete a subscription",
           "category": "Subscription",
           "filename": "delete-license-subscriptions-account-subscription-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -207,8 +214,8 @@
           "title": "Associate a subscription",
           "category": "Subscription",
           "filename": "post-license-subscriptions-subscription-account-.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -218,8 +225,8 @@
           "title": "Retrieve subscription information ",
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "patch": {
@@ -227,8 +234,8 @@
           "title": "Update a subscription expiration date",
           "category": "Subscription",
           "filename": "patch-license-subscriptions-subscription.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -238,7 +245,8 @@
           "title": "Associate extra-capacity per-node licenses with a Cloud Volumes ONTAP system",
           "category": "License",
           "filename": "post-license-extra-capacity-licenses-cvoid-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -248,7 +256,8 @@
           "title": "Associate a resource ID with a specified license",
           "category": "License",
           "filename": "post-license-associate-resource-serial-number-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -258,7 +267,8 @@
           "title": "Disassociate a resource ID from a license",
           "category": "License",
           "filename": "post-license-disassociate-resource-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -268,7 +278,8 @@
           "title": "Update all licenses under an organization ID",
           "category": "License",
           "filename": "patch-license-account-licenses.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -278,7 +289,8 @@
           "title": "Create an evaluation license",
           "category": "Evaluation licenses",
           "filename": "post-license-node-based-eval-licenses.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -288,7 +300,8 @@
           "title": "Retrieve the preferred subscription ID for an account",
           "category": "Subscription",
           "filename": "get-license-account-subscriptions-preferred.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "put": {
@@ -296,7 +309,8 @@
           "title": "Update the the preferred subscription ID for an account",
           "category": "Subscription",
           "filename": "put-license-account-subscriptions-preferred.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -306,7 +320,8 @@
           "title": "Retrieve subscription configuration information",
           "category": "Subscription",
           "filename": "get-license-subscriptions-configuration.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "patch": {
@@ -314,7 +329,8 @@
           "title": "Set the subscription configuration",
           "category": "Subscription",
           "filename": "patch-license-subscriptions-configuration.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -324,7 +340,8 @@
           "title": "Retrieve the associated subscription ID for cloud accounts",
           "category": "Subscription",
           "filename": "get-license-subscriptions-cloud-account-association.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     }
