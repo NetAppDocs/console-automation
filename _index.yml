@@ -46,7 +46,7 @@ indexpage:
          url: /audit/overview.html
        - title: Backup and recovery
          url: /cbs/overview.html
-       - title: Copy and sync
+       - title: Copy and Sync
          url: /copysync/overview.html
        - title: Credentials
          url: /credential/overview.html
