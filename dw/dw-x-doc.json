@@ -90,7 +90,7 @@
     "/license/account/{accountId}/subscriptions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve subscription information",
+          "title": "Retrieve all subscriptions for an account",
           "category": "Subscription",
           "filename": "get-license-account-subscriptions.html",
           "explorer": false,
@@ -144,7 +144,7 @@
     "/license/subscriptions/account/{accountId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the subscription information",
+          "title": "Retrieve subscription information for an account",
           "category": "Subscription",
           "filename": "get-license-subscriptions-account-.html",
           "explorer": false,
@@ -173,7 +173,7 @@
     "/license/subscriptions/subscription/{subscriptionId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the subscription information of a specified subscription",
+          "title": "Retrieve subscription information using the subscription ID",
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription-.html",
           "explorer": false,
@@ -255,7 +255,7 @@
     "/license/disassociate-resource/{associatedResourceId}": {
       "post": {
         "x-doc": {
-          "title": "Dissociate a resource ID from a license",
+          "title": "Disassociate a resource ID from a license",
           "category": "License",
           "filename": "post-license-disassociate-resource-.html",
           "subcategory": null
@@ -272,12 +272,12 @@
         }
       }
     },
-    "/license/node-based-Evaluation licensess": {
+    "/license/node-based-eval-licenses": {
       "post": {
         "x-doc": {
-          "title": "Create an evaluation licenses",
+          "title": "Create an evaluation license",
           "category": "Evaluation licenses",
-          "filename": "post-license-node-based-Evaluation licensess.html",
+          "filename": "post-license-node-based-eval-licenses.html",
           "subcategory": null
         }
       }
@@ -285,7 +285,7 @@
     "/license/account/{accountId}/subscriptions/preferred": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the associated subscription ID",
+          "title": "Retrieve the preferred subscription ID for an account",
           "category": "Subscription",
           "filename": "get-license-account-subscriptions-preferred.html",
           "subcategory": null
@@ -293,7 +293,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Retrieve the associated subscription ID",
+          "title": "Update the the preferred subscription ID for an account",
           "category": "Subscription",
           "filename": "put-license-account-subscriptions-preferred.html",
           "subcategory": null
@@ -321,7 +321,7 @@
     "/license/subscriptions/cloud-account/association": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the associated subscription ID",
+          "title": "Retrieve the associated subscription ID for cloud accounts",
           "category": "Subscription",
           "filename": "get-license-subscriptions-cloud-account-association.html",
           "subcategory": null
