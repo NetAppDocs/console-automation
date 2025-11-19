@@ -210,7 +210,6 @@
           "title": "Retrieve an access token",
           "category": "NSS",
           "filename": "get-ipa-nss-key-access-token.html",
-          "explorer": false,
           "subcategory": null,
           "explorer": false
         }
