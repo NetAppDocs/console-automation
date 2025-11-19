@@ -3472,21 +3472,21 @@ paths:
     post:
       description: <p> Performs a volume, file, and folder-level restore (version
         3) operation. It is also possible to do a multi-level or nested-level
-        folder restore. This API  validates whether a backup of a volume exists.
+        folder restore operation. This API validates whether a backup of a volume exists.
         The restore operation is not supported on data protection volumes, a target
         volume with a different language code than the source volume, volumes
-        with a size less than 1 GB, and volumes enabled with a SnapLock license
+        with a size of less than 1GB, and volumes enabled with a SnapLock license
         (WORM license). In addition, restoring both files and folders is not
-        supported. Restoring multiple folders are also not supported. It checks
-        whether the source and target cloud providers match and it also verifies
+        supported. Restoring multiple folders is also not supported. The API checks
+        whether the source and target cloud providers match and also verifies
         whether the backup and restore operation is supported in the system.</p><p>If DataLock and ransomware protection is enabled on
-        a system, ransomware scan is performed on the specified cloud
-        backup that relates to a particular volume when it is chosen to be
+        a system, a ransomware scan is performed on the specified cloud
+        backup related to the volume that is to be
         restored. To skip the scan, set the "skip-ransomware-check" parameter to
         "true".</p><p>To indicate that the volume restore is part
         of an application restore workflow, set the "is-app-volume-restore"
         parameter to "true". This disables certain steps such as mounting the
-        volume post the storage volume restore.</p><p>This version adds support
+        volume after the storage volume restore.</p><p>This version adds support
         for accepting a list of target aggregates.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
       tags:
