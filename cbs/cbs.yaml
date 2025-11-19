@@ -3468,6 +3468,271 @@ paths:
             properties:
               job-id:
                 type: string
+  /account/{accountId}/providers/cloudmanager_cbs/api/v3/restore:
+    post:
+      description: <p> Performs a volume, file, and folder-level restore (version
+        3) operation. It is also possible to do a multi-level or nested-level
+        folder restore. This API  validates whether a backup of a volume exists.
+        The restore operation is not supported on data protection volumes, a target
+        volume with a different language code than the source volume, volumes
+        with a size less than 1 GB, and volumes enabled with a SnapLock license
+        (WORM license). In addition, restoring both files and folders is not
+        supported. Restoring multiple folders are also not supported. It checks
+        whether the source and target cloud providers match and it also verifies
+        whether the backup and restore operation is supported in the system.</p><p>If DataLock and ransomware protection is enabled on
+        a system, ransomware scan is performed on the specified cloud
+        backup that relates to a particular volume when it is chosen to be
+        restored. To skip the scan, set the "skip-ransomware-check" parameter to
+        "true".</p><p>To indicate that the volume restore is part
+        of an application restore workflow, set the "is-app-volume-restore"
+        parameter to "true". This disables certain steps such as mounting the
+        volume post the storage volume restore.</p><p>This version adds support
+        for accepting a list of target aggregates.</p><p><strong>Token
+        usage:</strong></span> NetApp Console user token.</p>
+      tags:
+        - Restore
+      parameters:
+        - name: body
+          in: body
+          schema:
+            type: object
+            properties:
+              restore:
+                type: object
+                properties:
+                  type:
+                    type: string
+                  restore-source:
+                    type: string
+                    description: Specifies the source of the restore 
+                    enum:
+                      - LOCAL
+                      - CLOUD
+                  restore-to-replication-source:
+                    type: boolean
+                  archive-restore-priority:
+                    type: string
+                    description: Required to specify the archival retrieval priority to determine
+                      the restoration time
+                    enum:
+                      - High
+                      - Standard
+                      - Low
+                  source:
+                    type: object
+                    properties:
+                      working-environment-id:
+                        type: string
+                      working-environment-name:
+                        type: string
+                      bucket:
+                        type: string
+                      volume-name:
+                        type: string
+                      volume-id:
+                        type: string
+                      snapshot:
+                        type: string
+                    required:
+                      - working-environment-id
+                      - working-environment-name
+                      - bucket
+                      - volume-name
+                      - volume-id
+                      - snapshot
+                  target:
+                    type: object
+                    properties:
+                      working-environment-id:
+                        type: string
+                      working-environment-name:
+                        type: string
+                      svm:
+                        type: string
+                      volume-name:
+                        type: string
+                      path:
+                        type: string
+                      retain-source-path:
+                        type: boolean
+                      aggregates:
+                        type: array
+                        items:
+                          type: string
+                    required:
+                      - working-environment-id
+                      - working-environment-name
+                      - svm
+                      - volume-name
+                  file:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        inode:
+                          type: string
+                        path:
+                          type: string
+                          minLength: 1
+                        type:
+                          type: string
+                        size:
+                          type: number
+                        mtime:
+                          type: number
+                        source-file-path:
+                          type: string
+                      required:
+                        - inode
+                        - path
+                        - type
+                        - size
+                        - mtime
+                    minItems: 1
+                  skip-ransomware-check:
+                    type: boolean
+                    description: Skips a ransomware scan
+                  skip-file-rename:
+                    type: boolean
+                    description: Skips file rename during the restore
+                  is-on-demand-restore:
+                    type: boolean
+                    description: Triggers an on-demand restore
+                  is-app-volume-restore:
+                    type: boolean
+                    description: Indicates that the volume restore is part of an application
+                      restore workflow
+                  skip-azure-private-endpoint-creation:
+                    type: boolean
+                    description: Optional input field to skip private endpoint creation for Azure
+                    default: false
+                required:
+                  - type
+                  - source
+                  - target
+            required:
+              - restore
+        - type: string
+          description: Account ID
+          required: true
+          in: path
+          name: accountId
+        - type: string
+          description: User token
+          required: true
+          in: header
+          name: authorization
+        - type: string
+          description: Request identifier
+          required: true
+          in: header
+          name: x-agent-id
+      responses:
+        "202":
+          description: Default response
+          schema:
+            type: object
+            description: Default response
+            properties:
+              job-id:
+                type: string
+  /account/{accountId}/providers/cloudmanager_cbs/api/v1/restore/status:
+    get:
+      description: <p> Retrieves the status of the restore operation. This API
+        endpoint tracks the restore job and retrieves the job status, error,
+        time, and details of the restore job.</p><p><strong>Token
+        usage:</strong></span> NetApp Console user token.</p>
+      tags:
+        - Restore
+      parameters:
+        - type: string
+          description: Account ID
+          required: true
+          in: path
+          name: accountId
+        - type: string
+          description: User token
+          required: true
+          in: header
+          name: authorization
+        - type: string
+          description: Request identifier
+          required: true
+          in: header
+          name: x-agent-id
+      responses:
+        "200":
+          description: Default response
+          schema:
+            type: object
+            description: Default response
+            properties:
+              job:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    status:
+                      type: string
+                    error:
+                      type: string
+                    time:
+                      type: number
+                    data:
+                      type: object
+                      properties:
+                        restore:
+                          type: object
+                          properties:
+                            type:
+                              type: string
+                            source:
+                              type: object
+                              properties:
+                                working-environment-id:
+                                  type: string
+                                working-environment-name:
+                                  type: string
+                                bucket:
+                                  type: string
+                                volume-id:
+                                  type: string
+                                volume-name:
+                                  type: string
+                                snapshot:
+                                  type: string
+                            target:
+                              type: object
+                              properties:
+                                working-environment-id:
+                                  type: string
+                                working-environment-name:
+                                  type: string
+                                svm:
+                                  type: string
+                                volume-name:
+                                  type: string
+                                volume-size:
+                                  type: number
+                                path:
+                                  type: string
+                            file:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  inode:
+                                    type: number
+                                  path:
+                                    type: string
+                                  type:
+                                    type: string
+                                  size:
+                                    type: number
+                                  mtime:
+                                    type: number
   /account/{accountId}/providers/cloudmanager_cbs/api/v1/revert/working-environment/{workingEnvironmentId}/volume/{volumeId}:
     post:
       description: <p> Reverts a snapshot for a volume. It restores a snapshot
