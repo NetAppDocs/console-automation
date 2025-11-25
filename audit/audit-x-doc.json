@@ -6,7 +6,8 @@
             "title": "Retrieve account records",
             "category": null,
             "filename": "get-audit.html",
-            "subcategory": null
+            "subcategory": null,
+            "explorer": false
           }
         }
       },
@@ -16,7 +17,8 @@
             "title": "Retrieve records by service",
             "category": null,
             "filename": "get-audit--records.html",
-            "subcategory": null
+            "subcategory": null,
+            "explorer": false
           }
         }
       },
@@ -26,7 +28,8 @@
             "title": "Retrieve audit options",
             "category": null,
             "filename": "get-audit-options.html",
-            "subcategory": null
+            "subcategory": null,
+            "explorer": false
           }
         }
      
