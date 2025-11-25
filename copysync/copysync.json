@@ -17715,7 +17715,7 @@
         },
         {
             "name": "Relationships",
-            "description": "<details><summary>Overview</summary>\nThe relationships endpoints provide information about the sync relationships between source and target destinations in an account and enable you to perform various operations to manage the sync relationships.\nThe following actions can be performed with the relationships endpoints:\n<ul>\n<li>Retrieve sync relationship information (including statistics)</li>\n<li>Create a sync relationship</li>\n<li>Delete a sync relationship</li>\n<li>Change sync relationship settings</li>\n<li>Start a new sync on a relationship</li>\n<li>Abort a sync operation</li>\n<li>Update relationship endpoint credentials</li>\n<li>Update relationship tags</li>\n<li>Retrieve the identifier of the sync relationship (without all other properties)</li>\n</ul>\n</details>"
+            "description": "<details><summary>Overview</summary>\nThe relationships endpoints provide information about the sync relationships between source and target destinations in an account and enable you to perform various operations to manage the sync relationships.\nThe following actions can be performed with the relationships endpoints:\n<ul>\n<li>Retrieve sync relationship information (including statistics)</li>\n<li>Create a sync relationship</li>\n<li>Delete a sync relationship</li>\n<li>Change sync relationship settings</li>\n<li>Start a new sync on a relationship</li>\n<li>Stop a sync operation</li>\n<li>Update relationship endpoint credentials</li>\n<li>Update relationship tags</li>\n<li>Retrieve the identifier of the sync relationship (without all other properties)</li>\n</ul>\n</details>"
         },
         {
             "name": "Reports",
