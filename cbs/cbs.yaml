@@ -243,7 +243,7 @@ paths:
         Google Cloud, and StorageGRID cloud storage
         providers.</p><p><strong>Token usage:</strong></span>BlueXP user
         token.</p>
-      tags: &a1
+      tags: 
         - SFR
       parameters:
         - type: string
@@ -287,7 +287,7 @@ paths:
         Google Cloud, and StorageGRID cloud storage
         providers.</p><p><strong>Token usage:</strong></span>BlueXP user
         token.</p>
-      tags: *a1
+      tags: 
       parameters:
         - type: string
           description: Location of the snapshot
@@ -344,7 +344,7 @@ paths:
         restore process and the overall status of the file listing
         operation.</p><p><strong>Token usage:</strong></span> BlueXP user
         token.</p>
-      tags: &a2
+      tags: 
         - SFR
       parameters:
         - type: string
@@ -384,7 +384,7 @@ paths:
         restore process and the overall status of the file listing
         operation.</p><p><strong>Token usage:</strong></span> BlueXP user
         token.</p>
-      tags: *a2
+      tags: 
       parameters:
         - type: string
           description: Account ID
@@ -9905,7 +9905,7 @@ paths:
         analytics service for Azure setup, Google BigQuery service for GCP setup
         and DuckDB installation for StorageGRID.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
-      tags: &a3
+      tags: 
         - Catalog
       parameters:
         - type: string
@@ -9945,7 +9945,7 @@ paths:
         analytics service for Azure setup, Google BigQuery service for GCP setup
         and DuckDB installation for StorageGRID.</p><p><strong>Token
         usage:</strong></span> NetApp Console user token.</p>
-      tags: *a3
+      tags: 
       parameters:
         - type: string
           description: Account ID
