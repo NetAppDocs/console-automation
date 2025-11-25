@@ -5001,7 +5001,7 @@
     "/occm/asup/download-ontap-cloud-asups": {
       "get": {
         "x-doc": {
-          "title": "Download a compressed file of all the AutoSupport files from all vsas",
+          "title": "Download a compressed file of all the AutoSupport files from all VSAs",
           "category": "NetApp Console AutoSupport",
           "filename": "get-occm-asup-download-ontap-cloud-asups.html",
           "subcategory": null,
@@ -5263,7 +5263,7 @@
     "/occm/tenancy-service/workspaces/{workspaceId}/associate": {
       "post": {
         "x-doc": {
-          "title": "Associate a console agent with a system",
+          "title": "Associate a console agent with a workspace",
           "category": "NetApp Console identity and access management",
           "filename": "post-occm-tenancy-service-workspaces-associate.html",
           "subcategory": null,
