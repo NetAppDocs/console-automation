@@ -138,7 +138,7 @@ info:
     {REDACTED}&quot; </code></pre>     <p> This API will return a
     response like the following. You can retrieve the agent ID by parsing the
     output from occm.[0].[agent].[agentId].</p>
-    <p>Response:</p>     &quot;{"occms":[{"account":"{ACCOUNT_ID}","accountName":"{ACCOUNT_NAME}","occm":"{REDACTED}","agentId":"{REDACTED}","status":"ready","occmName":"{AGENT_NAME}","primaryCallbackUri":"","manualOverrideUris":[],"automaticCallbackUris":[],"createDate":"1652120369286","agent":{"useDockerInfra":true,"network":"default","name":"{AGENT_NAME}","agentId":"{REDACTED}","provider":"gcp","systemId":"<SYSTEM_ID>&quot;<p><strong>Example
+    <p>Response:</p>     &quot;{"occms":[{"account":"{ACCOUNT_ID}","accountName":"{ACCOUNT_NAME}","occm":"{REDACTED}","agentId":"{REDACTED}","status":"ready","occmName":"{AGENT_NAME}","primaryCallbackUri":"","manualOverrideUris":[],"automaticCallbackUris":[],"createDate":"1652120369286","agent":{"useDockerInfra":true,"network":"default","name":"{AGENT_NAME}","agentId":"{REDACTED}","provider":"gcp","systemId":"{SYSTEM_ID}&quot;<p><strong>Example
     using the APIs</strong></p>     <p> The following example shows an API call
     to activate a backup on a system with a new policy that has daily, hourly,
     and weekly labels set, and archive after days set as 180 days in East-US-2
