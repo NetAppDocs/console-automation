@@ -211,7 +211,7 @@
     "/license/subscriptions/subscription/{subscriptionId}/account/{accountId}": {
       "post": {
         "x-doc": {
-          "title": "Associate a subscription",
+          "title": "Associate a subscription (deprecated)",
           "category": "Subscription",
           "filename": "post-license-subscriptions-subscription-account-.html",
           "subcategory": null,
