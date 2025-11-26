@@ -116,11 +116,10 @@ info:
     refresh token is an alpha-numeric string that is used to generate a user
     token. </p> <pre><code  class="language-bash">curl -X
     GET    &quot;https://netapp-cloud-account.auth0.com/oauth/token?=&quot; -H
-    &quot;Content-Type: application/json&quot; -d   &quot;tgrant_type&quot;
-    &quot;refresh_token&quot;, &quot;refresh_token&quot;:
+    &quot;Content-Type: application/json&quot; -d   &quot;grant_type&quot;
+    &quot;refresh_token&quot;, &quot;refresh_token&quot;
     &quot;<REDACTED>&quot;,
-    &quot;client_id&quot: &quot;<REDACTED>&quot;}
-    &quot;</code></pre> <p><strong>Obtain your NetApp Console account
+    &quot;client_id&quot;<REDACTED>&quot;}</code></pre> <p><strong>Obtain your NetApp Console account
     ID</strong></p>  <pre><code  class="language-bash">curl -X
     GET  &quot;https://cloudmanager.cloud.netapp.com/tenancy/account&quot;    -H
     &quot;accept: application/json&quot;  -H &quot;authority:
@@ -149,7 +148,7 @@ info:
     </p>  <pre><code     class="language-bash">curl -X
     GET     &quot;https://cloudmanager.cloud.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v3/backup/working-environment/VsaWorkingEnvironment-99hPYEgk&quot;     -H
     &quot;accept: application/json&quot;  -H &quot;X-Agent-Id:
-    <REDACTED>&quot&quot;  -H
+    <REDACTED>&quot;  -H
     &quot;authorization: Bearer <REDACTED>&quot; -d
     &quot;{"provider":"AZURE","backup-policy": {"archive-after-days":
     180,"rule": [{"label": "hourly","retention": "2"},{"label":
