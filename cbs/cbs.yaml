@@ -116,16 +116,16 @@ info:
     refresh token is an alpha-numeric string that is used to generate a user
     token. </p> <pre><code  class="language-bash">curl -X
     GET    &quot;https://netapp-cloud-account.auth0.com/oauth/token?=&quot; -H
-    &quot;Content-Type: application/json&quot; -d   &quot;{&quotgrant_type&quot:
-    &quotrefresh_token&quot, &quotrefresh_token&quot:
-    &quot;<REDACTED>&quot,
-    &quotclient_id&quot: &quot;<REDACTED>&quot}
+    &quot;Content-Type: application/json&quot; -d   &quot;tgrant_type&quot;
+    &quot;refresh_token&quot;, &quot;refresh_token&quot;:
+    &quot;<REDACTED>&quot;,
+    &quot;client_id&quot: &quot;<REDACTED>&quot;}
     &quot;</code></pre> <p><strong>Obtain your NetApp Console account
     ID</strong></p>  <pre><code  class="language-bash">curl -X
     GET  &quot;https://cloudmanager.cloud.netapp.com/tenancy/account&quot;    -H
-    &quot;accept: application/json&quot;  -H &quot;&quotauthority:
-    cloudmanager.cloud.netapp.com&quot&quot; -H &quot;&quotaccept-language:
-    en-GB,en;q=0.9&quot&quot;  -H &quot;&quotauthorization: Bearer
+    &quot;accept: application/json&quot;  -H &quot;authority:
+    cloudmanager.cloud.netapp.com&quot; -H &quot;accept-language:
+    en-GB,en;q=0.9&quot;  -H &quot;authorization: Bearer
     <REDACTED>&quot; </code></pre> <p> This API will return a
     response like the following. You can retrieve the account ID by parsing the
     output from [0].[ accountPublicId].</p>
@@ -133,9 +133,9 @@ info:
     <p><strong>Obtain the X-Agent-Id that contains the Agent ID.</strong></p>
     <pre><code  class="language-bash">curl -X GET
     &quot;https://api.services.cloud.netapp.com/occm/list-occms/<ACCOUNT_ID>?excludeStandalone=true&source=saas&quot;     -H
-    &quot;accept: application/json&quot;  -H &quot;&quotauthority:
-    api.services.cloud.netapp.com&quot&quot; -H &quot;&quotaccept-language:
-    en-GB,en;q=0.9&quot&quot;  -H &quot;&quotauthorization: Bearer
+    &quot;accept: application/json&quot;  -H &quot;authority:
+    api.services.cloud.netapp.com&quot; -H &quot;accept-language:
+    en-GB,en;q=0.9&quot;  -H &quot;authorization: Bearer
     <REDACTED>&quot; </code></pre>     <p> This API will return a
     response like the following. You can retrieve the agent ID by parsing the
     output from occm.[0].[agent].[agentId].</p>
@@ -148,9 +148,9 @@ info:
     already existing in the system are backed up and future volumes added.
     </p>  <pre><code     class="language-bash">curl -X
     GET     &quot;https://cloudmanager.cloud.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v3/backup/working-environment/VsaWorkingEnvironment-99hPYEgk&quot;     -H
-    &quot;accept: application/json&quot;  -H &quot;&quotX-Agent-Id:
+    &quot;accept: application/json&quot;  -H &quot;X-Agent-Id:
     <REDACTED>&quot&quot;  -H
-    &quot;&quotauthorization: Bearer <REDACTED>&quot; -d
+    &quot;authorization: Bearer <REDACTED>&quot; -d
     &quot;{"provider":"AZURE","backup-policy": {"archive-after-days":
     180,"rule": [{"label": "hourly","retention": "2"},{"label":
     "daily","retention": "30"},{"label": "weekly", "retention":
