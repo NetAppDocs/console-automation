@@ -44,7 +44,7 @@ indexpage:
          url: /tenancy/overview.html
        - title: Audit
          url: /audit/overview.html
-       - title: Backup and recovery
+       - title: Backup and Recovery
          url: /cbs/overview.html
        - title: Copy and sync
          url: /copysync/overview.html

@@ -80,7 +80,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Enable the NetApp backup and recovery service
+        title: Enable the Backup and Recovery service
         category: Backup
         filename: post-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-.html
         explorer: false
@@ -88,7 +88,7 @@ paths:
         explorer: false
     put:
       x-doc:
-        title: Modify the NetApp backup and recovery service
+        title: Modify the Backup and Recovery service
         category: Backup
         filename: put-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-.html
         explorer: false
@@ -114,7 +114,7 @@ paths:
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}":
     post:
       x-doc:
-        title: Enable NetApp backup and recovery (v2)
+        title: Enable Backup and Recovery  (v2)
         category: Backup
         filename: post-account-providers-cloudmanager_cbs-api-v2-backup-working-environment-.html
         explorer: false
@@ -122,7 +122,7 @@ paths:
         explorer: false
     put:
       x-doc:
-        title: Modify NetApp backup and recovery service backup configuration
+        title: Modify the Backup and Recovery service backup configuration
         category: Backup
         filename: put-account-providers-cloudmanager_cbs-api-v2-backup-working-environment-.html
         explorer: false
@@ -131,7 +131,7 @@ paths:
   "/account/{accountId}/providers/cloudmanager_cbs/api/v3/backup/working-environment/{workingEnvironmentId}":
     post:
       x-doc:
-        title: Enable NetApp backup and recovery (v3)
+        title: Enable Backup and Recovery  (v3)
         category: Backup
         filename: post-account-providers-cloudmanager_cbs-api-v3-backup-working-environment-.html
         explorer: false
