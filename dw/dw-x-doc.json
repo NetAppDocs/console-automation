@@ -107,7 +107,7 @@
     "/license/subscriptions/{subscriptionId}": {
       "patch": {
         "x-doc": {
-          "title": "Update a subscription expiration date",
+          "title": "Update a subscription expiration date using the subscription ID",
           "category": "Subscription",
           "filename": "patch-license-subscriptions-.html",
           "subcategory": null,
@@ -160,7 +160,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete a subscription",
+          "title": "Delete a subscription using account ID",
           "category": "Subscription",
           "filename": "delete-license-subscriptions-account-.html",
           "subcategory": null,
@@ -180,7 +180,7 @@
     "/license/subscriptions/subscription/{subscriptionId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve subscription information using the subscription ID",
+          "title": "Retrieve subscription information (deprecated)",
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription-.html",
           "subcategory": null,
@@ -189,7 +189,7 @@
       },
       "patch": {
         "x-doc": {
-          "title": "Update subscription expiration date",
+          "title": "Update subscription expiration date (deprecated)",
           "category": "Subscription",
           "filename": "patch-license-subscriptions-subscription-.html",
           "subcategory": null,
@@ -200,7 +200,7 @@
     "/license/subscriptions/account/{accountId}/subscription/{subscriptionId}": {
       "delete": {
         "x-doc": {
-          "title": "Delete a subscription",
+          "title": "Delete a subscription (deprecated)",
           "category": "Subscription",
           "filename": "delete-license-subscriptions-account-subscription-.html",
           "subcategory": null,
@@ -211,7 +211,7 @@
     "/license/subscriptions/subscription/{subscriptionId}/account/{accountId}": {
       "post": {
         "x-doc": {
-          "title": "Associate a subscription",
+          "title": "Associate a subscription (deprecated)",
           "category": "Subscription",
           "filename": "post-license-subscriptions-subscription-account-.html",
           "subcategory": null,
@@ -222,7 +222,7 @@
     "/license/subscriptions/subscription": {
       "get": {
         "x-doc": {
-          "title": "Retrieve subscription information ",
+          "title": "Retrieve subscription information using the subscription ID",
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription.html",
           "subcategory": null,
