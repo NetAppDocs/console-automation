@@ -208,7 +208,7 @@
           "category": "Azure volumes (single-node)",
           "filename": "delete-azure-vsa-volumes--snapshot.html",
           "subcategory": null,
-          "explorer": false 
+          "explorer": false
         }
       }
     },
@@ -565,6 +565,15 @@
           "subcategory": null,
           "explorer": false
         }
+      },
+      "put": {
+        "x-doc": {
+          "title": "Updates IOPS and throughput for disks in an existing aggregate(single-node)",
+          "category": "Azure aggregates (single-node)",
+          "filename": "put-azure-vsa-aggregates-.html",
+          "subcategory": null,
+          "explorer": false
+        }
       }
     },
     "/azure/vsa/aggregates/{workingEnvironmentId}/{aggregateName}/disks": {
@@ -606,6 +615,15 @@
           "title": "Delete an aggregate",
           "category": "Azure aggregates (HA)",
           "filename": "delete-azure-ha-aggregates-.html",
+          "subcategory": null,
+          "explorer": false
+        }
+      },
+      "put": {
+        "x-doc": {
+          "title": "Updates IOPS and throughput for disks in an existing aggregate",
+          "category": "Azure aggregates (HA)",
+          "filename": "put-azure-ha-aggregates-.html",
           "subcategory": null,
           "explorer": false
         }
@@ -3092,7 +3110,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new Cloud Volumes ONTAP Google Cloud High Availability (HA) system",
+          "title": "Create a new Cloud Volumes ONTAP Google Cloud HA system",
           "category": "Google Cloud systems (HA)",
           "filename": "post-gcp-ha-working-environments.html",
           "subcategory": null,
@@ -3792,7 +3810,7 @@
     "/aws/ha/metadata/validate-floating-ips": {
       "post": {
         "x-doc": {
-          "title": "Validate high availability (HA) floating IP addresses",
+          "title": "Validate HA floating IP addresses",
           "category": "AWS system metadata (HA)",
           "filename": "post-aws-ha-metadata-validate-floating-ips.html",
           "subcategory": null,
@@ -4233,7 +4251,7 @@
       },
       "post": {
         "x-doc": {
-          "title": "Create a new AWS high-availability (ha) Cloud Volumes ONTAP system",
+          "title": "Create a new AWS HA Cloud Volumes ONTAP system",
           "category": "AWS systems (HA)",
           "filename": "post-aws-ha-working-environments.html",
           "subcategory": null,
@@ -4244,7 +4262,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/route-tables": {
       "put": {
         "x-doc": {
-          "title": "Update the route tables for a high-availability (HA) system",
+          "title": "Update the route tables for an HA system",
           "category": "AWS systems (HA)",
           "filename": "put-aws-ha-working-environments-route-tables.html",
           "subcategory": null,
@@ -4277,7 +4295,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a high availability (HA) system",
+          "title": "Retrieve an HA system",
           "category": "AWS systems (HA)",
           "filename": "get-aws-ha-working-environments-.html",
           "subcategory": null,
@@ -8317,7 +8335,7 @@
         "x-doc": {
           "title": "Retrieve unsupported instance types for acceleration and capacity tiering",
           "category": "AWS system metadata (single-node)",
-          "filename":"get-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
+          "filename": "get-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html",
           "subcategory": null,
           "explorer": false
         }
@@ -8546,4 +8564,3 @@
     }
   }
 }
-   
