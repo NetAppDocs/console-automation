@@ -5590,7 +5590,7 @@
     "/replication/fsx": {
       "post": {
         "x-doc": {
-          "title": "Create a new replication for an FSX system",
+          "title": "Create a new replication for an FSx system",
           "category": "Replication",
           "filename": "post-replication-fsx.html",
           "subcategory": null,
