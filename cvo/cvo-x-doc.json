@@ -2027,7 +2027,7 @@
     "/flexcache/fsx": {
       "post": {
         "x-doc": {
-          "title": "Create a new FlexCache volume for an Amazon FSx for NetApp ONTAP management system",
+          "title": "Create a new FlexCache volume for an FSx system",
           "category": "FlexCache volume operations",
           "filename": "post-flexcache-fsx.html",
           "subcategory": null,
@@ -4836,7 +4836,7 @@
     "/occm/key-store": {
       "post": {
         "x-doc": {
-          "title": "Generate a new key pair and self certificate",
+          "title": "Generate a new key pair and self-signed certificate",
           "category": "NetApp Console key store",
           "filename": "post-occm-key-store.html",
           "subcategory": null,
@@ -4847,7 +4847,7 @@
     "/occm/key-store/external-certificate-file": {
       "post": {
         "x-doc": {
-          "title": "Generate a new key pair and self certificate at the key store",
+          "title": "Generate a new key pair and self-signed certificate at the key store",
           "category": "NetApp Console key store",
           "filename": "post-occm-key-store-external-certificate-file.html",
           "subcategory": null,
@@ -4858,7 +4858,7 @@
     "/occm/key-store/external-certificate": {
       "post": {
         "x-doc": {
-          "title": "Generate a new key pair and self certificate at the key store",
+          "title": "Generate a new key pair and self-signed certificate at the key store",
           "category": "NetApp Console key store",
           "filename": "post-occm-key-store-external-certificate.html",
           "subcategory": null,
@@ -4911,7 +4911,7 @@
     "/occm/key-store/self-certificate": {
       "get": {
         "x-doc": {
-          "title": "Retrieve the self certificate of the NetApp Console key store",
+          "title": "Retrieve the self-signed certificate of the NetApp Console key store",
           "category": "NetApp Console key store",
           "filename": "get-occm-key-store-self-certificate.html",
           "subcategory": null,
@@ -5843,7 +5843,7 @@
     "/occm/setup-portal/proxy/setup": {
       "post": {
         "x-doc": {
-          "title": "Set up a given proxy URL",
+          "title": "Set up a proxy URL",
           "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-proxy-setup.html",
           "subcategory": null,
@@ -5854,7 +5854,7 @@
     "/occm/setup-portal/validate/connectivity": {
       "post": {
         "x-doc": {
-          "title": "Confirm that NetApp Console has an active internet connection",
+          "title": "Confirm the NetApp Console active internet connection",
           "category": "NetApp Console initial setup",
           "filename": "post-occm-setup-portal-validate-connectivity.html",
           "subcategory": null,
@@ -6430,7 +6430,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/enable-capacity-tiering": {
       "post": {
         "x-doc": {
-          "title": "Enable capacity tiering,",
+          "title": "Enable capacity tiering",
           "category": "AWS systems (single-node)",
           "filename": "post-vsa-working-environments-enable-capacity-tiering.html",
           "subcategory": null,
