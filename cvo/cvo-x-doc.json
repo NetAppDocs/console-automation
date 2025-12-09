@@ -568,7 +568,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Updates IOPS and throughput for disks in an existing aggregate(single-node)",
+          "title": "Updates IOPS and throughput for disks in an existing aggregate (single-node)",
           "category": "Azure aggregates (single-node)",
           "filename": "put-azure-vsa-aggregates-.html",
           "subcategory": null,
@@ -1170,7 +1170,7 @@
     "/azure/ha/working-environments/resource-group-exists/{resourceGroupName}": {
       "get": {
         "x-doc": {
-          "title": "Checks if a resource group with the specified name exists",
+          "title": "Check if a resource group with the specified name exists",
           "category": "Azure systems (HA)",
           "filename": "get-azure-ha-working-environments-resource-group-exists-.html",
           "subcategory": null,
@@ -1395,7 +1395,7 @@
     "/azure/ha/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "Manually triggers subscription synchronization",
+          "title": "Trigger subscription synchronization",
           "category": "Azure systems (HA)",
           "filename": "post-azure-ha-working-environments-sync-subscription.html",
           "subcategory": null,
@@ -1983,7 +1983,7 @@
     "/working-environments/exists/{workingEnvironmentName}": {
       "get": {
         "x-doc": {
-          "title": "Checks if a system with the specified name exists",
+          "title": "Check if a system with the specified name exists",
           "category": "Common system operations",
           "filename": "get-working-environments-exists-.html",
           "subcategory": null,
@@ -2230,7 +2230,7 @@
     "/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}/snapshot": {
       "post": {
         "x-doc": {
-          "title": "Create a snapshot manually",
+          "title": "Create a snapshot",
           "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "post-fsx-volumes--snapshot.html",
           "subcategory": null,
@@ -2239,7 +2239,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete a snapshot manually",
+          "title": "Delete a snapshot",
           "category": "Amazon FSx for NetApp ONTAP management volumes",
           "filename": "delete-fsx-volumes--snapshot.html",
           "subcategory": null,
@@ -3081,7 +3081,7 @@
     "/gcp/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot": {
       "post": {
         "x-doc": {
-          "title": "Manually create a snapshot",
+          "title": "Create a snapshot",
           "category": "Google Cloud volumes (HA)",
           "filename": "post-gcp-ha-volumes--snapshot.html",
           "subcategory": null,
@@ -3090,7 +3090,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Manually delete a snapshot",
+          "title": "Delete a snapshot",
           "category": "Google Cloud volumes (HA)",
           "filename": "delete-gcp-ha-volumes--snapshot.html",
           "subcategory": null,
@@ -3377,7 +3377,7 @@
     "/gcp/ha/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "Manually triggers subscription synchronization",
+          "title": "Trigger subscription synchronization",
           "category": "Google Cloud systems (HA)",
           "filename": "post-gcp-ha-working-environments-sync-subscription.html",
           "subcategory": null,
@@ -3747,7 +3747,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of discovered systems",
-          "category": "AWS  system discovery (HA)",
+          "category": "AWS system discovery (HA)",
           "filename": "get-aws-ha-discovery-discover.html",
           "subcategory": null,
           "explorer": false
@@ -3758,7 +3758,7 @@
       "post": {
         "x-doc": {
           "title": "Save a previously discovered system",
-          "category": "AWS  system discovery (HA)",
+          "category": "AWS system discovery (HA)",
           "filename": "post-aws-ha-discovery-recover.html",
           "subcategory": null,
           "explorer": false
@@ -4222,7 +4222,7 @@
     "/aws/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot": {
       "post": {
         "x-doc": {
-          "title": "Manually create a snapshot",
+          "title": "Create a snapshot",
           "category": "AWS volumes (HA)",
           "filename": "post-aws-ha-volumes--snapshot.html",
           "subcategory": null,
@@ -4231,7 +4231,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Manually delete a snapshot",
+          "title": "Delete a snapshot",
           "category": "AWS volumes (HA)",
           "filename": "delete-aws-ha-volumes--snapshot.html",
           "subcategory": null,
@@ -4498,7 +4498,7 @@
     "/aws/ha/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "Manually trigger subscription synchronization",
+          "title": "Trigger subscription synchronization",
           "category": "AWS systems (HA)",
           "filename": "post-aws-ha-working-environments-sync-subscription.html",
           "subcategory": null,
@@ -5160,7 +5160,7 @@
     "/occm/system/manually-activate-auto-vsa-capacity-management-cycle": {
       "post": {
         "x-doc": {
-          "title": "Manually activate the Cloud Volumes ONTAP capacity automatic management cycle",
+          "title": "Activate the Cloud Volumes ONTAP capacity automatic management cycle",
           "category": "NetApp Console ",
           "filename": "post-occm-system-manually-activate-auto-vsa-capacity-management-cycle.html",
           "subcategory": null,
@@ -5171,7 +5171,7 @@
     "/occm/system/manually-trigger-send-daily-notification": {
       "post": {
         "x-doc": {
-          "title": "Manually trigger sending daily notifications",
+          "title": "Trigger sending daily notifications",
           "category": "NetApp Console ",
           "filename": "post-occm-system-manually-trigger-send-daily-notification.html",
           "subcategory": null,
@@ -5398,7 +5398,7 @@
     "/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot": {
       "post": {
         "x-doc": {
-          "title": "Manually create a snapshot",
+          "title": "Create a snapshot",
           "category": "On-premises ONTAP cluster volumes",
           "filename": "post-onprem-volumes--snapshot.html",
           "subcategory": null,
@@ -5407,7 +5407,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Manually delete a snapshot",
+          "title": "Delete a snapshot",
           "category": "On-premises ONTAP cluster volumes",
           "filename": "delete-onprem-volumes--snapshot.html",
           "subcategory": null,
@@ -5568,7 +5568,7 @@
     "/replication/break/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}": {
       "post": {
         "x-doc": {
-          "title": "Break a SnapmMirror replication relationship",
+          "title": "Break a SnapMirror replication relationship",
           "category": "Replication",
           "filename": "post-replication-break--.html",
           "subcategory": null,
@@ -5623,7 +5623,7 @@
     "/replication/resync/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}": {
       "post": {
         "x-doc": {
-          "title": "Resyncs a SnapMirror replication relationship",
+          "title": "Resync a SnapMirror replication relationship",
           "category": "Replication",
           "filename": "post-replication-resync--.html",
           "subcategory": null,
@@ -6452,7 +6452,7 @@
     "/vsa/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "Manually trigger a subscription synchronization",
+          "title": "Trigger subscription synchronization",
           "category": "AWS systems (single-node)",
           "filename": "post-vsa-working-environments-sync-subscription.html",
           "subcategory": null,
@@ -6874,7 +6874,7 @@
     "/azure/vsa/working-environments/resource-group-exists/{resourceGroupName}": {
       "get": {
         "x-doc": {
-          "title": "Checks if a resource group with the specified name exists",
+          "title": "Check if a resource group with the specified name exists",
           "category": "Azure systems (single-node)",
           "filename": "get-azure-vsa-working-environments-resource-group-exists-.html",
           "subcategory": null,
@@ -7099,7 +7099,7 @@
     "/azure/vsa/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "Manually trigger a subscription sync",
+          "title": "Trigger subscription synchronization",
           "category": "Azure systems (single-node)",
           "filename": "post-azure-vsa-working-environments-sync-subscription.html",
           "subcategory": null,
@@ -7190,7 +7190,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/vscan-file-op": {
       "put": {
         "x-doc": {
-          "title": "Update the default Vsacn file operation profile",
+          "title": "Update the default Vscan file operation profile",
           "category": "Azure systems (single-node)",
           "filename": "put-azure-vsa-working-environments-vscan-file-op.html",
           "subcategory": null,
@@ -7245,7 +7245,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/ntp": {
       "post": {
         "x-doc": {
-          "title": "Set up an ntp server",
+          "title": "Set up an NTP server",
           "category": "Azure systems (single-node)",
           "filename": "post-azure-vsa-working-environments-ntp.html",
           "subcategory": null,
@@ -7340,7 +7340,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/fpolicy": {
       "delete": {
         "x-doc": {
-          "title": "Delete the FPolicy  for ransomware files",
+          "title": "Delete the FPolicy for ransomware files",
           "category": "Azure systems (single-node)",
           "filename": "delete-azure-vsa-working-environments-fpolicy.html",
           "subcategory": null,
@@ -7680,7 +7680,7 @@
     "/gcp/vsa/working-environments/sync-subscription": {
       "post": {
         "x-doc": {
-          "title": "Manually trigger a subscription sync",
+          "title": "Trigger subscription synchronization",
           "category": "Google Cloud systems (single-node)",
           "filename": "post-gcp-vsa-working-environments-sync-subscription.html",
           "subcategory": null,
@@ -7899,7 +7899,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/activate-fpolicy": {
       "put": {
         "x-doc": {
-          "title": "Activate the FPolicy  for ransomware files",
+          "title": "Activate the FPolicy for ransomware files",
           "category": "Google Cloud systems (single-node)",
           "filename": "put-gcp-vsa-working-environments-activate-fpolicy.html",
           "subcategory": null,
@@ -7921,7 +7921,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/fpolicy": {
       "delete": {
         "x-doc": {
-          "title": "Delete the FPolicy  for ransomware files",
+          "title": "Delete the FPolicy for ransomware files",
           "category": "Google Cloud systems (single-node)",
           "filename": "delete-gcp-vsa-working-environments-fpolicy.html",
           "subcategory": null,
@@ -8061,7 +8061,7 @@
       "get": {
         "x-doc": {
           "title": "Retrieve a list of discovered systems",
-          "category": "AWS  system discovery (single-node)",
+          "category": "AWS system discovery (single-node)",
           "filename": "get-vsa-discover.html",
           "subcategory": null,
           "explorer": false
@@ -8072,7 +8072,7 @@
       "post": {
         "x-doc": {
           "title": "Save a previously discovered Cloud Volumes ONTAP system",
-          "category": "AWS  system discovery (single-node)",
+          "category": "AWS system discovery (single-node)",
           "filename": "post-vsa-recover.html",
           "subcategory": null,
           "explorer": false
@@ -8157,7 +8157,7 @@
     "/vsa/metadata/key-pairs": {
       "get": {
         "x-doc": {
-          "title": "Retrieve AWS  user key pairs by region",
+          "title": "Retrieve AWS user key pairs by region",
           "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-key-pairs.html",
           "subcategory": null,
@@ -8168,7 +8168,7 @@
     "/vsa/metadata/key-pairs-by-region": {
       "get": {
         "x-doc": {
-          "title": "Retrieve AWS  user key pairs for all regions",
+          "title": "Retrieve AWS user key pairs for all regions",
           "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-key-pairs-by-region.html",
           "subcategory": null,
@@ -8179,7 +8179,7 @@
     "/vsa/metadata/instance-profiles": {
       "get": {
         "x-doc": {
-          "title": "Retrieve AWS  instance profiles",
+          "title": "Retrieve AWS instance profiles",
           "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-instance-profiles.html",
           "subcategory": null,
@@ -8212,7 +8212,7 @@
     "/vsa/metadata/aws-encryption-keys": {
       "get": {
         "x-doc": {
-          "title": "Retrieve AWS  encryption keys by region",
+          "title": "Retrieve AWS encryption keys by region",
           "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-aws-encryption-keys.html",
           "subcategory": null,
@@ -8311,7 +8311,7 @@
     "/vsa/metadata/regions": {
       "get": {
         "x-doc": {
-          "title": "Retrieve AWS  regions",
+          "title": "Retrieve AWS regions",
           "category": "AWS system metadata (single-node)",
           "filename": "get-vsa-metadata-regions.html",
           "subcategory": null,
@@ -8525,7 +8525,7 @@
     "/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot": {
       "post": {
         "x-doc": {
-          "title": "Manually create a snapshot",
+          "title": "Create a snapshot",
           "category": "AWS volumes (single-node)",
           "filename": "post-vsa-volumes--snapshot.html",
           "subcategory": null,
@@ -8534,7 +8534,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Manually delete a snapshot",
+          "title": "Delete a snapshot",
           "category": "AWS volumes (single-node)",
           "filename": "delete-vsa-volumes--snapshot.html",
           "subcategory": null,
