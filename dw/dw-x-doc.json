@@ -180,7 +180,7 @@
     "/license/subscriptions/subscription/{subscriptionId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve subscription information (deprecated)",
+          "title": "Retrieve subscription information using the subscription ID (deprecated)",
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription-.html",
           "subcategory": null,
