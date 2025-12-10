@@ -118,7 +118,7 @@
     "/license/account/{accountId}/subscription/{subscriptionId}": {
       "delete": {
         "x-doc": {
-          "title": "Delete a subscription",
+          "title": "Delete a subscription using the subscription ID",
           "category": "Subscription",
           "filename": "delete-license-account-subscription-.html",
           "subcategory": null,
@@ -160,7 +160,7 @@
       },
       "delete": {
         "x-doc": {
-          "title": "Delete a subscription using account ID",
+          "title": "Delete a subscription using the account ID",
           "category": "Subscription",
           "filename": "delete-license-subscriptions-account-.html",
           "subcategory": null,
@@ -189,7 +189,7 @@
       },
       "patch": {
         "x-doc": {
-          "title": "Update subscription expiration date (deprecated)",
+          "title": "Update a subscription expiration date (deprecated)",
           "category": "Subscription",
           "filename": "patch-license-subscriptions-subscription-.html",
           "subcategory": null,
@@ -200,7 +200,7 @@
     "/license/subscriptions/account/{accountId}/subscription/{subscriptionId}": {
       "delete": {
         "x-doc": {
-          "title": "Delete a subscription (deprecated)",
+          "title": "Delete a subscription using the subscription ID (deprecated)",
           "category": "Subscription",
           "filename": "delete-license-subscriptions-account-subscription-.html",
           "subcategory": null,
