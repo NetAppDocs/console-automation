@@ -568,7 +568,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Updates IOPS and throughput for disks in an existing aggregate (single-node)",
+          "title": "Update IOPS and throughput for disks in an existing aggregate (single-node)",
           "category": "Azure aggregates (single-node)",
           "filename": "put-azure-vsa-aggregates-.html",
           "subcategory": null,
@@ -621,7 +621,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Updates IOPS and throughput for disks in an existing aggregate",
+          "title": "Update IOPS and throughput for disks in an existing aggregate",
           "category": "Azure aggregates (HA)",
           "filename": "put-azure-ha-aggregates-.html",
           "subcategory": null,
@@ -8483,7 +8483,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/update-credentials": {
       "put": {
         "x-doc": {
-          "title": "Update the the NetApp Console password ",
+          "title": "Update the NetApp Console password ",
           "category": "AWS systems (single-node)",
           "filename": "put-vsa-working-environments-update-credentials.html",
           "subcategory": null,

@@ -306,7 +306,7 @@
       },
       "put": {
         "x-doc": {
-          "title": "Update the the preferred subscription ID for an account",
+          "title": "Update the preferred subscription ID for an account",
           "category": "Subscription",
           "filename": "put-license-account-subscriptions-preferred.html",
           "subcategory": null,

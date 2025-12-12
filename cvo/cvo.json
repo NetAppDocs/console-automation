@@ -19134,7 +19134,7 @@
         "tags": [
           "Cloud Manager system operations - Tenancy service"
         ],
-        "description": "Associates a a console agent with a workspace.",
+        "description": "Associates a console agent with a workspace.",
         "operationId": "associateToWorkspace",
         "parameters": [
           {

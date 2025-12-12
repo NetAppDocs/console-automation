@@ -5223,7 +5223,7 @@
                 "tags": [
                     "Groups"
                 ],
-                "description": "Retrieves the the Box API root folder.",
+                "description": "Retrieves the Box API root folder.",
                 "parameters": [
                     {
                         "schema": {
