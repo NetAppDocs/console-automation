@@ -4,9 +4,10 @@
         "get": {
           "x-doc": {
             "title": "Retrieve account records",
-            "category": "audit",
+            "category": null,
             "filename": "get-audit.html",
-            "subcategory": null
+            "subcategory": null,
+            "explorer": false
           }
         }
       },
@@ -14,9 +15,10 @@
         "get": {
           "x-doc": {
             "title": "Retrieve records by service",
-            "category": "audit",
+            "category": null,
             "filename": "get-audit--records.html",
-            "subcategory": null
+            "subcategory": null,
+            "explorer": false
           }
         }
       },
@@ -24,9 +26,10 @@
         "get": {
           "x-doc": {
             "title": "Retrieve audit options",
-            "category": "audit",
+            "category": null,
             "filename": "get-audit-options.html",
-            "subcategory": null
+            "subcategory": null,
+            "explorer": false
           }
         }
      

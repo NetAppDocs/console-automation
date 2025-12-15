@@ -44,13 +44,13 @@ indexpage:
          url: /tenancy/overview.html
        - title: Audit
          url: /audit/overview.html
-       - title: Backup and recovery
+       - title: Backup and Recovery
          url: /cbs/overview.html
-       - title: Copy and sync
+       - title: Copy and Sync
          url: /copysync/overview.html
        - title: Credentials
          url: /credential/overview.html
-       - title: Digital wallet
+       - title: Licenses and subscriptions
          url: /dw/overview.html
        - title: Federation
          url: /federation/overview.html
@@ -62,7 +62,7 @@ indexpage:
       links:
         - title: NetApp Console solutions
           url: https://www.netapp.com/cloud-services/
-        - title: NetApp Console automation catalog 
+        - title: NetApp Console automation hub
           url: https://docs.netapp.com/us-en/netapp-automation/solutions/bac-overview.html
         - title: ONTAP 9 documentation
           url: https://docs.netapp.com/us-en/ontap/

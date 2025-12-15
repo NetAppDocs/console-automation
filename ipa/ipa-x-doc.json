@@ -6,8 +6,8 @@
           "title": "Register a license",
           "category": "License",
           "filename": "post-ipa-account-serial-number-register.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -17,8 +17,8 @@
           "title": "Deregister a license",
           "category": "License",
           "filename": "post-ipa-serial-number-deregister.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -28,7 +28,8 @@
           "title": "Retrieve license status",
           "category": "License",
           "filename": "post-ipa-serial-number-registration-status.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -38,8 +39,8 @@
           "title": "Retrieve IPA license status (v5)",
           "category": "License",
           "filename": "post-ipa-account-serial-number-status-v5.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -49,7 +50,8 @@
           "title": "Authenticate an IPA license (v5)",
           "category": "License",
           "filename": "post-ipa-authenticate-v5.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -59,86 +61,92 @@
           "title": "Retrieve IPA license status (v6)",
           "category": "License",
           "filename": "post-ipa-account-serial-number-status-v6.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/services/account/{accountId}/sn-lookup-token": {
       "post": {
         "x-doc": {
-          "title": "Create an IPA serial number token",
+          "title": "Retrieve an IPA serial number token",
           "category": "Services",
           "filename": "post-ipa-services-account-sn-lookup-token.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/services/sn-lookup": {
       "post": {
         "x-doc": {
-          "title": "Create an IPA serial number",
+          "title": "Retrieve an IPA serial number",
           "category": "Services",
           "filename": "post-ipa-services-sn-lookup.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/account/{accountId}/nss-key/{nssKeyId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve NSS key credentials",
+          "title": "Retrieve NetApp Support Site key credentials",
           "category": "NSS",
           "filename": "get-ipa-account-nss-key-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "put": {
         "x-doc": {
-          "title": "Update NSS key credentials",
+          "title": "Update NetApp Support Site key credentials",
           "category": "NSS",
           "filename": "put-ipa-account-nss-key-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       },
       "delete": {
         "x-doc": {
-          "title": "Delete NSS key credentials",
+          "title": "Delete NetApp Support Site key credentials",
           "category": "NSS",
           "filename": "delete-ipa-account-nss-key-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/account/{accountId}/nss-keys": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a list of NSS key credentials",
+          "title": "Retrieve a list of NetApp Support Site key credentials",
           "category": "NSS",
           "filename": "get-ipa-account-nss-keys.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/account/{accountId}/nss-key": {
       "post": {
         "x-doc": {
-          "title": "Create NSS key credentials",
+          "title": "Create NetApp Support Site key credentials",
           "category": "NSS",
           "filename": "post-ipa-account-nss-key.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/account/{accountId}/idaas-key": {
       "post": {
         "x-doc": {
-          "title": "Create an IDaaS NSS key credential",
+          "title": "Create an IDaaS NetApp Support Site key credential",
           "category": "NSS",
           "filename": "post-ipa-account-idaas-key.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -148,7 +156,8 @@
           "title": "Associate a resource",
           "category": "NSS",
           "filename": "post-ipa-account-nss-key-associate.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -158,34 +167,37 @@
           "title": "Disassociate a resource",
           "category": "NSS",
           "filename": "post-ipa-account-nss-key-disassociate.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/account/{accountId}/src-nss-key/{srcNssKeyId}/dst-nss_key/{dstNssKeyId}/resource/{resourceId}": {
       "post": {
         "x-doc": {
-          "title": "Update a resource NSS key",
+          "title": "Update a resource NetApp Support Site key",
           "category": "NSS",
           "filename": "post-ipa-account-src-nss-key-dst-nss_key-resource-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/account/{accountId}/nss-key/resource/{resourceId}": {
       "get": {
         "x-doc": {
-          "title": "Retrieve NSS credentials",
+          "title": "Retrieve NetApp Support Site credentials",
           "category": "NSS",
           "filename": "get-ipa-account-nss-key-resource-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/account/{accountId}/migrate": {
       "post": {
         "x-doc": {
-          "title": "Migrate NSS keys",
+          "title": "Migrate NetApp Support Site keys",
           "category": "NSS",
           "filename": "post-ipa-account-migrate.html",
           "explorer": false
@@ -198,28 +210,30 @@
           "title": "Retrieve an access token",
           "category": "NSS",
           "filename": "get-ipa-nss-key-access-token.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/accounts/nss-data": {
       "get": {
         "x-doc": {
-          "title": "Retrieve NSS data",
+          "title": "Retrieve NetApp Support Site data for accounts",
           "category": "NSS",
           "filename": "get-ipa-accounts-nss-data.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/account/{accountId}/nss-key/{nssKeyId}/nss-data": {
       "get": {
         "x-doc": {
-          "title": "Retrieve NSS data",
+          "title": "Retrieve NetApp Support Site data for an account and key ID",
           "category": "NSS",
           "filename": "get-ipa-account-nss-key-nss-data.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -229,8 +243,8 @@
           "title": "Check system entitlements",
           "category": "Support",
           "filename": "post-ipa-support-case-system-entitlements.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -240,8 +254,8 @@
           "title": "Create a support case",
           "category": "Support",
           "filename": "post-ipa-support-case-create.html",
-          "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -251,17 +265,19 @@
           "title": "Upload an attachment for a support case",
           "category": "Support",
           "filename": "post-ipa-support-case-upload.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
     "/ipa/support/case/{caseNumber}/file/{fileName}/upload-url": {
       "get": {
         "x-doc": {
-          "title": "Retrieve a temporary url to attach file",
+          "title": "Retrieve a temporary URL for file attachment",
           "category": "Support",
           "filename": "get-ipa-support-case-file-upload-url.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -271,7 +287,8 @@
           "title": "Retrieve support cases",
           "category": "Support",
           "filename": "get-ipa-support-case-search.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -281,7 +298,8 @@
           "title": "Retrieve support case details",
           "category": "Support",
           "filename": "get-ipa-support-case-details.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -291,7 +309,19 @@
           "title": "Update support case notes or status",
           "category": "Support",
           "filename": "put-ipa-support-case-.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
+        }
+      }
+    },
+    "/ipa/support/case-notes/{caseNumber}": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve a list of case notes",
+          "category": "Support",
+          "filename": "get-ipa-support-case-notes-.html",
+          "subcategory": null,
+          "explorer": false
         }
       }
     }
