@@ -2047,7 +2047,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Retrieves a list of support cases according to the filter parameters.\n            <br>\n            <br><b>Token usage:</b>Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
+            "description": "Retrieves a list of support cases according to the filter parameters.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "parameters": [
                {
                   "schema": {
