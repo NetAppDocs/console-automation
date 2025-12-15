@@ -2419,7 +2419,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Updates the support case notes or status.\n            <br>\n            <br><b>Token usage:</b> BBoth a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
+            "description": "Updates the support case notes or status.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "requestBody": {
                "content": {
                   "application/json": {
