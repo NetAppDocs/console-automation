@@ -1695,7 +1695,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Checks system entitlements for a specified serial number. This checks whether a user is entitled to create a case for the requested serial number.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include the following scopes: %scopes%. Pass the user token in the %userTokenHeader% request header and the service token in the %serviceTokenHeader% request header.",
+            "description": "Checks system entitlements for a specified serial number. This checks whether a user is entitled to create a case for the requested serial number.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "requestBody": {
                "content": {
                   "application/json": {
@@ -1769,7 +1769,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Creates a support case.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include the following scopes: %scopes%. Pass the user token in the %userTokenHeader% request header and the service token in the %serviceTokenHeader% request header.",
+            "description": "Creates a support case.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "requestBody": {
                "content": {
                   "application/json": {
@@ -1875,7 +1875,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Uploads an attachment file to a support case.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include the following scopes: %scopes%. Pass the user token in the %userTokenHeader% request header and the service token in the %serviceTokenHeader% request header.",
+            "description": "Uploads an attachment file to a support case.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "requestBody": {
                "content": {
                   "application/json": {
@@ -1967,7 +1967,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Retrieves a temporary URL for uploading an attachment file.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include the following scopes: %scopes%. Pass the user token in the %userTokenHeader% request header and the service token in the %serviceTokenHeader% request header.",
+            "description": "Retrieves a temporary URL for uploading an attachment file.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "parameters": [
                {
                   "schema": {
@@ -2047,7 +2047,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Retrieves a list of support cases according to the filter parameters.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include the following scopes: %scopes%. Pass the user token in the %userTokenHeader% request header and the service token in the %serviceTokenHeader% request header.",
+            "description": "Retrieves a list of support cases according to the filter parameters.\n            <br>\n            <br><b>Token usage:</b>Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "parameters": [
                {
                   "schema": {
@@ -2271,7 +2271,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Retrieves support case details.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include the following scopes: %scopes%. Pass the user token in the %userTokenHeader% request header and the service token in the %serviceTokenHeader% request header.",
+            "description": "Retrieves support case details.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "parameters": [
                {
                   "schema": {
@@ -2419,7 +2419,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Updates the support case notes or status.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include the following scopes: %scopes%. Pass the user token in the %userTokenHeader% request header and the service token in the %serviceTokenHeader% request header.",
+            "description": "Updates the support case notes or status.\n            <br>\n            <br><b>Token usage:</b> BBoth a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "requestBody": {
                "content": {
                   "application/json": {
@@ -2541,7 +2541,7 @@
             "tags": [
                "Support"
             ],
-            "description": "Retrieves a list of case notes.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include the following scopes: %scopes%. Pass the user token in the %userTokenHeader% request header and the service token in the %serviceTokenHeader% request header.",
+            "description": "Retrieves a list of case notes.\n            <br>\n            <br><b>Token usage:</b> Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.",
             "parameters": [
                {
                   "schema": {
