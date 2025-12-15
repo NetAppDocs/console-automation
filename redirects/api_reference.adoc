@@ -1,0 +1,5 @@
+---
+sidebar: sidebar
+permalink: cm/api_reference.html
+redirect: console-automation/cm/overview.html
+---
