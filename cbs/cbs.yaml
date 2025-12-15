@@ -2282,8 +2282,8 @@ paths:
         Based on the cascading or fan-out backup workflow selected on the
         system, the API verifies whether a cluster peering
         relationship exists between primary and secondary clusters to set up
-        replication. If not, it creates a cluster peering relationship between
-        the two clusters. To create a backup to cloud, the API enables backup on
+        replication. It creates a cluster peering relationship between
+        the two clusters if one does not exist. To create a backup to cloud relationship, the API enables backup on
         the system and creates a bucket to which the backup will be
         transferred.</p>
       tags:
@@ -2846,15 +2846,15 @@ paths:
       description: <p> Enables comprehensive panoramic protection for multiple
         volumes. Based on the backup workflow chosen, Cascading or Fan-Out, the
         API creates a replication relationship with a volume in the secondary
-        cluster and then creates a backup to cloud relationship with cloud or
+        cluster and then creates a backup to cloud relationship with a cloud or
         StorageGRID object store. While setting up the replication relationship,
         the API verifies whether a cluster peering relationship is set up
         between primary and secondary clusters. If there is no relationship, it creates a cluster
         peering relationship, storage VM peering, and a DP volume on the
         secondary cluster. Once the replication setup is complete, the API
-        executes a SnapMirror Create and Initialize operation. For creating a
+        performs a SnapMirror Create and Initialize operation. For creating a
         backup to cloud, it  first creates a bucket to which the backup is
-        transferred, and then a SnapMirror Cloud relationship is created and
+        transferred, and then a SnapMirror cloud relationship is created and
         initialized.</p><p><strong>Token usage:</strong></span> NetApp Console user
         token.</p>
       tags:
@@ -2994,12 +2994,12 @@ paths:
         can use the API to modify the replication policy. Otherwise, the API can
         be used to create a replication relationship. It creates a cluster-peer
         relationship, establishes a storage VM-peer relationship, creates a DP
-        volume, and then performs a SnapMirror update/initialize process.
+        volume, and then performs the SnapMirror update/initialize process.
         Similarly, if the selected volume already has an existing "backup to the
         cloud" relationship, the API enables you to modify the backup policy.
         Alternatively, if there is no existing relationship, the API can be used
-        to create SnapMirror to Cloud relationship. It will create a bucket in
-        the specified cloud provider and then execute a SnapMirror Cloud
+        to create SnapMirror cloud relationship. It creates a bucket in
+        the specified cloud provider and then performs a SnapMirror cloud
         update/initialize operation. </p><p><strong>Token usage:</strong> NetApp Console
         user token.</p>
       tags:
