@@ -5,7 +5,7 @@ keywords: rest, api, cloud, manager, http, endpoints, administrative resources, 
 summary: 'Representational State Transfer (REST) is a style for creating distributed web applications.' 
 ---
 
-= Basic NetApp Console REST API concepts
+= Basic concepts when using the NetApp Console REST APIs
 :hardbreaks:
 :nofooter:
 :icons: font
