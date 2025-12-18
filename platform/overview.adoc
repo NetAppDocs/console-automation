@@ -5,7 +5,7 @@ keywords: overview, bluexp, rest, apis, hybrid, multicloud, dat, estate
 summary: The NetApp Console enables you to build, protect, and govern your hybrid multicloud data from a single control plane
 ---
 
-= Learn about NetApp Console
+= Learn about the NetApp Console
 :hardbreaks:
 :nofooter:
 :icons: font
