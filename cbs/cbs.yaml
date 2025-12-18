@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   title: NetApp Backup and Recovery REST API Reference
   version: 4.0.6
-  description: '<details><summary><strong>Overview</strong></summary><p>NetApp
+  description: '<details><summary><strong>Learn about NetApp Backup and Recovery</strong></summary><p>NetApp
     Backup and Recovery is a service embedded within the NetApp Console platform
     that provides backup and restore capabilities for protection and long-term
     archiving of your data residing in Cloud Volumes ONTAP and on-premises ONTAP
