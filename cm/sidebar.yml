@@ -240,7 +240,7 @@ entries:
                url: /cm/wf_gcp_cloud_md_get_zones.html
   - title: On-premises ONTAP cluster workflows
     entries:
-    - title: Prepare to use the On-premises ONTAP cluster workflows
+    - title: Prepare to use the on-premises ONTAP cluster workflows
       url: /cm/wf_onprem_before.html
     - title: Systems
       entries:
