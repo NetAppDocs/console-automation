@@ -5,7 +5,7 @@ keywords: netapp, support, cloud, services
 summary: 'There are additional resources you can access to get help and find more information about NetApp Console services and support, ONTAP 9, and general REST and cloud concepts.'
 ---
 
-= Additional resources
+= Additional NetApp Console resources
 :hardbreaks:
 :nofooter:
 :icons: font

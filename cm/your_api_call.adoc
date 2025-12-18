@@ -5,7 +5,7 @@ keywords: hello, world, cloud, manager, rest, api, cloud , netapp, console
 summary: "You can issue a curl command to get started using the REST API and confirm its availability."
 ---
 
-= Your first API call
+= Learn how to issue a NetApp Console ONTAP Management API call
 :hardbreaks:
 :nofooter:
 :icons: font

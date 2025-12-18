@@ -5,7 +5,7 @@ keywords: generate, user, token, api explorer, bluexp, rest, apis
 summary: The API Explorer is integrated with the NetApp Console API reference documentation, enabling you to test the various API endpoints while reviewing the documentation.
 ---
 
-= Use the API Explorer
+= Use the API Explorer with the NetApp Console API reference documentation
 :hardbreaks:
 :nofooter:
 :icons: font

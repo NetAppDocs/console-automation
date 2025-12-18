@@ -4,8 +4,7 @@ permalink: platform/http_details.html
 keywords: http, details, bluexp, rest, api, request headers, status, codes, netapp, console
 summary: 'The NetApp Console REST API is based on the HTTP protocol as well as JSON for content exchange.'
 ---
-
-= HTTP details
+= NetApp Console REST API HTTP details 
 :hardbreaks:
 :nofooter:
 :icons: font

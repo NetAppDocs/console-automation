@@ -5,7 +5,7 @@ keywords: client, id, account, identifiers, cloud, manager, rest, api, netapp, u
 summary: You can sign into the NetApp Console web user interface to retrieve several identifiers needed with the workflows.
 ---
 
-= Get required identifiers
+= Get required identifiers from the NetApp Console UI
 :hardbreaks:
 :nofooter:
 :icons: font

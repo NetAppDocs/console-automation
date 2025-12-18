@@ -5,7 +5,7 @@ keywords: connector, bluexp, rest, api, client credentials, client id, console, 
 summary: There are several additional identifiers you typically need depending on the grant type and REST API call.
 ---
 
-= Console agents and client identifiers
+= Console agents and client identifiers used in NetApp Console REST API calls
 :hardbreaks:
 :nofooter:
 :icons: font
