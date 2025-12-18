@@ -3,7 +3,7 @@ title: ONTAP management
 entries:
   - title: Get started
     entries:
-      - title: Overview
+      - title: Learn about the NetApp Console ONTAP management REST APIs
         url: /cm/overview.html 
       - title: Prepare
         url: /cm/prepare.html 
