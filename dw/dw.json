@@ -2149,7 +2149,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription entitlements information for a specified service name.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes service calls with a predefined scope only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: %scopes%.",
+                "description": "<p>Retrieves the subscription entitlements information for a specified service name.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes service calls with a predefined scope only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: cc:admin:tenancy', 'subscription:external'.",
                 "parameters": [
                     {
                         "schema": {
@@ -2575,7 +2575,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription information for a specified subscription ID. A newer version of this deprecated endpoint is available <a href=\"https://docs.netapp.com/us-en/console-automation/dw/get-license-subscriptions-subscription.html\">here.</a> </p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes service calls with a predefined scope only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: %scopes%.",
+                "description": "<p>Retrieves the subscription information for a specified subscription ID. A newer version of this deprecated endpoint is available <a href=\"https://docs.netapp.com/us-en/console-automation/dw/get-license-subscriptions-subscription.html\">here.</a> </p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes service calls with a predefined scope only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: 'cc:admin:tenancy', 'subscription:external'",
                 "parameters": [
                     {
                         "schema": {
@@ -2896,7 +2896,7 @@
                 "tags": [
                     "Subscription"
                 ],
-                "description": "<p>Retrieves the subscription information for a specified subscription ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes service calls with a predefined scope only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: %scopes%.",
+                "description": "<p>Retrieves the subscription information for a specified subscription ID.</p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>This API authorizes service calls with a predefined scope only.</li>\n</ul>\n <br> \n<b>Token usage:</b> NetApp Console service token with the following scopes: 'cc:admin:tenancy', 'subscription:external'",
                 "parameters": [
                     {
                         "schema": {
