@@ -5,7 +5,7 @@ keywords: bluexp, rest, api, credentials, cloud, volumes, ONTAP, API, netapp, co
 summary: 'There are several things you should do to prepare to use the NetApp Console REST API and associated workflows.'
 ---
 
-= Prepare to use the NetApp Console ONTAP management REST API 
+= Prepare to use the ONTAP management REST API 
 :hardbreaks:
 :nofooter:
 :icons: font
