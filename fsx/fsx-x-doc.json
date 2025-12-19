@@ -1,4 +1,5 @@
 {
+  "overview": "Amazon FSx for NetApp ONTAP management REST API",
   "paths": {
     "/aws-credentials/{accountId}": {
       "get": {

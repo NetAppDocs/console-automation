@@ -1,4 +1,5 @@
 {
+    "overview": "NetApp Copy and Sync REST API",
     "paths": {
       "/api/accounts": {
         "get": {
