@@ -55,7 +55,7 @@ indexpage:
        - title: Federation
          url: /federation/federation_rest_api_for_the_netapp_console.html
        - title: IPA
-         url: /ipa/n-product_automation_rest_api_for_the_netapp_console.html
+         url: /ipa/in-product_automation_rest_api_for_the_netapp_console.html
        - title: Identity and access management
          url: /tenancyv4/identity_and_access_management_rest_api.html
     - title: More resources
