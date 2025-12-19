@@ -5,7 +5,7 @@ keywords: workflows, processes, bluexp, api, cloud, volumes, ontap, netapp, cons
 summary: The NetApp Console REST APIs support many different workflows and tasks. You should be familiar with their common characteristics before reviewing a specific API.
 ---
 
-= NetApp Console workflow processes and tasks
+= NetApp Console REST API workflow processes and tasks
 :hardbreaks:
 :nofooter:
 :icons: font

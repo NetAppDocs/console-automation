@@ -5,7 +5,7 @@ keywords: oauth2, refresh token, password grant type, client credentials,
 summary: The document describes the grant types and identity verification while using NetApp Console APIs
 ---
 
-= Grant types and identity verification for NetApp Console REST APIs
+= Grant types and identity verification for the NetApp Console REST APIs
 :hardbreaks:
 :nofooter:
 :icons: font
