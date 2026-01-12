@@ -1,5 +1,6 @@
 {
   "overview": "Licenses and subscriptions REST API for the NetApp Console",
+  "permalink": "overview.html",
   "paths": {
     "/license/serial-number/{serialNumber}": {
       "post": {

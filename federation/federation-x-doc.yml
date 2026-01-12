@@ -1,5 +1,6 @@
 ---
 overview: Federation REST API for the NetApp Console
+permalink: overview.html
 paths:
   "/organizations/{organization_id}/domains":
     get:

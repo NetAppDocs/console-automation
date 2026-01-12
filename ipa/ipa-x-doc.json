@@ -1,5 +1,6 @@
 {
   "overview": "In-Product Automation REST API for the NetApp Console",
+  "permalink": "overview.html",
   "paths": {
     "/ipa/account/{accountId}/serial-number/{serialNumber}/register": {
       "post": {

@@ -1,5 +1,6 @@
 {
   "overview": "Accounts REST API",
+  "permalink": "overview.html",
   "paths": {
     "/tenancy/account/{accountName}": {
       "post": {
