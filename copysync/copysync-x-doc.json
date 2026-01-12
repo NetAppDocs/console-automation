@@ -986,8 +986,50 @@
             "filename": "get-api-timelines.html",
             "subcategory": null,
             "explorer": false
-          }
-        }
+       }
       }
     }
-  }
+  },
+  "categories": [
+    {
+      "id": "accounts",
+      "title": "Learn about the Accounts REST API endpoints",
+      "permalink": "accounts_overview.html"
+    },
+    {
+      "id": "data brokers",
+      "title": "Learn about the Data brokers REST API endpoints",
+      "permalink": "data_brokers_overview.html"
+    },
+    {
+      "id": "groups",
+      "title": "Learn about the Groups REST API endpoints",
+      "permalink": "groups_overview.html"
+    },
+    {
+      "id": "messages",
+      "title": "Learn about the Messages REST API endpoints",
+      "permalink": "messages_overview.html"
+    },
+    {
+      "id": "relationships",
+      "title": "Learn about the Relationships REST API endpoints",
+      "permalink": "relationships_overview.html"
+    },
+    {
+      "id": "reports",
+      "title": "Learn about the Reports REST API endpoints",
+      "permalink": "reports_overview.html"
+    },
+    {
+      "id": "storages",
+      "title": "Learn about the Storages REST API endpoints",
+      "permalink": "storages_overview.html"
+    },
+    {
+      "id": "timelines",
+      "title": "Learn about the Timelines REST API endpoints",
+      "permalink": "timelines_overview.html"
+    }
+  ]
+}

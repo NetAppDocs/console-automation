@@ -347,5 +347,27 @@
         }
       }
     }
-  }
+  },
+  "categories": [
+    {
+      "id": "license",
+      "title": "Learn about the License REST API endpoints",
+      "permalink": "license_overview.html"
+    },
+    {
+      "id": "subscription",
+      "title": "Learn about the Subscription REST API endpoints",
+      "permalink": "subscription_overview.html"
+    },
+    {
+      "id": "external services",
+      "title": "Learn about the External services REST API endpoints",
+      "permalink": "external_services_overview.html"
+    },
+    {
+      "id": "data services",
+      "title": "Learn about the Data services REST API endpoints",
+      "permalink": "data_services_overview.html"
+    }
+  ]
 }
