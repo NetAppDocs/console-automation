@@ -5,7 +5,7 @@ keywords: aws, workflows, cloud, manager, rest, api, console, agent
 summary: There are several workflows you can use with the public cloud providers.
 ---
 
-= Prepare to use the Cloud Volumes ONTAP workflows
+= Prepare to use the Cloud Volumes ONTAP API workflows
 :hardbreaks:
 :nofooter:
 :icons: font

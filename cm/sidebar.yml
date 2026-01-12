@@ -13,7 +13,7 @@ entries:
         url: /cm/workflow_processes.html
   - title: Cloud Volumes ONTAP workflows
     entries:
-      - title: Prepare to use the Cloud Volumes ONTAP workflows
+      - title: Prepare to use the workflows
         url: /cm/wf_cvo_before.html
       - title: Typical deployment
         url: /cm/cvo_deployment.html
@@ -240,7 +240,7 @@ entries:
                url: /cm/wf_gcp_cloud_md_get_zones.html
   - title: On-premises ONTAP cluster workflows
     entries:
-    - title: Prepare to use the on-premises ONTAP cluster workflows
+    - title: Prepare to use the workflows
       url: /cm/wf_onprem_before.html
     - title: Systems
       entries:
@@ -271,7 +271,7 @@ entries:
    
   - title: ONTAP management common workflows
     entries:
-    - title: Prepare to use the ONTAP management common workflows
+    - title: Prepare to use the workflows
       url: /cm/wf_common_before.html
     - title: Identity and access
       entries:
