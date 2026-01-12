@@ -1,6 +1,6 @@
 ---
 overview: NetApp Backup and Recovery REST API
-permalink: cbs/overview.html
+permalink: overview.html
 paths:
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/volume/{volumeId}/file-explore/start":
     post:
