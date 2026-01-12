@@ -1,5 +1,6 @@
 {
     "overview": "Audit REST API for the NetApp Console",
+    "permalink": "overview.html",
     "paths": {
       "/audit/{accountId}": {
         "get": {

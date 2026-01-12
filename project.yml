@@ -1,4 +1,5 @@
 settings:
+jekyll: api-testing2
   name: API
   internal:
     pdf_enabled: false
