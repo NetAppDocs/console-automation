@@ -989,47 +989,4 @@
        }
       }
     }
-  },
-  "categories": [
-    {
-      "id": "accounts",
-      "title": "Learn about the Accounts REST API endpoints",
-      "permalink": "accounts_overview.html"
-    },
-    {
-      "id": "data brokers",
-      "title": "Learn about the Data Brokers endpoints in the Copy and Sync REST API",
-      "permalink": "data_brokers_overview.html"
-    },
-    {
-      "id": "groups",
-      "title": "Learn about the Groups endpoints in the Copy and Sync REST API",
-      "permalink": "groups_overview.html"
-    },
-    {
-      "id": "messages",
-      "title": "Learn about the Messages endpoints in the Copy and Sync REST API",
-      "permalink": "messages_overview.html"
-    },
-    {
-      "id": "relationships",
-      "title": "Learn about the Relationships endpoints in the Copy and Sync REST API",
-      "permalink": "relationships_overview.html"
-    },
-    {
-      "id": "reports",
-      "title": "Learn about the Reports endpoints in the Copy and Sync REST API",
-      "permalink": "reports_overview.html"
-    },
-    {
-      "id": "storages",
-      "title": "Learn about the Storages endpoints in the Copy and Sync REST API",
-      "permalink": "storages_overview.html"
-    },
-    {
-      "id": "timelines",
-      "title": "Learn about the Timelines endpoints in the Copy and Sync REST API",
-      "permalink": "timelines_overview.html"
-    }
-  ]
-}
+  }
