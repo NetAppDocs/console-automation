@@ -366,7 +366,7 @@
     },
     {
       "id": "data services",
-      "title": "Data Services endpoints in the License and subscriptions REST API for the NetApp Console",
+      "title": "Data services endpoints in the License and subscriptions REST API for the NetApp Console",
       "permalink": "data_services_overview.html"
     }
   ]

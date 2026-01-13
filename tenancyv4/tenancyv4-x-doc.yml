@@ -1,5 +1,6 @@
 ---
 overview: Identity and access management REST API
+permalink: overview.html
 paths:
   "/bindings":
     get:
@@ -1982,3 +1983,22 @@ paths:
         filename: get-users-permissions-resources-.html
         subcategory: 
         explorer: false
+categories:
+- id: partnership
+  title: Partnership endpoints in the identity and access management REST API for the NetApp Console
+  permalink: partnership_overview.html
+- id: resource and resourcegroup
+  title: Resource and resourcegroup endpoints in the identity and access management REST API for the NetApp Console
+  permalink: resource_and_resourcegroup_overview.html
+- id: permission
+  title: Permission endpoints in the identity and access management REST API for the NetApp Console
+  permalink: permission_overview.html
+- id: role
+  title: Role endpoints in the identity and access management REST API for the NetApp Console
+  permalink: role_overview.html
+- id: hierarchy
+  title: Hierarchy endpoints in the identity and access management REST API for the NetApp Console
+  permalink: hierarchy_overview.html
+- id: user and usergroup
+  title: User and usergroup endpoints in the identity and access management REST API for the NetApp Console
+  permalink: user_and_usergroup_overview.html

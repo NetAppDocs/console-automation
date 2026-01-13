@@ -998,7 +998,7 @@
     },
     {
       "id": "data brokers",
-      "title": "Data Brokers endpoints in the NetApp Copy and Sync REST API",
+      "title": "Data brokers endpoints in the NetApp Copy and Sync REST API",
       "permalink": "data_brokers_overview.html"
     },
     {
@@ -1023,7 +1023,7 @@
     },
     {
       "id": "storages",
-      "title": "Storage endpoints in the NetApp Copy and Sync REST API",
+      "title": "Storages endpoints in the NetApp Copy and Sync REST API",
       "permalink": "storages_overview.html"
     },
     {
