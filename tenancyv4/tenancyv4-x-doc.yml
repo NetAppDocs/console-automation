@@ -1,5 +1,6 @@
 ---
 overview: Identity and access management REST API
+permalink: overview.html
 paths:
   "/bindings":
     get:
