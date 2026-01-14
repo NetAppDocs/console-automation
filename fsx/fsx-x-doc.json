@@ -171,8 +171,30 @@
           "category": "AWS Operations",
           "filename": "get-aws-supported-regions.html",
           "explorer": false
-        }
+      }
       }
     }
-  }
+  },
+  "categories": [
+    {
+      "id": "working environments",
+      "title": "Working environments endpoints in the Amazon FSx for NetApp ONTAP management REST API",
+      "permalink": "working_environments_overview.html"
+    },
+    {
+      "id": "aws operations",
+      "title": "AWS operations endpoints in the Amazon FSx for NetApp ONTAP management REST API",
+      "permalink": "aws_operations_overview.html"
+    },
+    {
+      "id": "aws credentials",
+      "title": "AWS credentials endpoints in the Amazon FSx for NetApp ONTAP management REST API",
+      "permalink": "aws_credentials_overview.html"
+    },
+    {
+      "id": "fsx ontap discovery",
+      "title": "FSx ONTAP discovery endpoints in the Amazon FSx for NetApp ONTAP management REST API",
+      "permalink": "fsx_ontap_discovery_overview.html"
+    }
+  ]
 }

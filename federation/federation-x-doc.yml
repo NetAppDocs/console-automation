@@ -92,4 +92,13 @@ paths:
         filename: patch-unmigratedconnections-.html
         subcategory: 
         explorer: false
-
+categories:
+- id: domain
+  title: Domain endpoints in the Federation REST API for the NetApp Console
+  permalink: domain_overview.html
+- id: federation
+  title: Federation endpoints in the Federation REST API for the NetApp Console
+  permalink: federation_overview.html
+- id: unmigrated connection
+  title: Unmigrated connection endpoints in the Federation REST API for the NetApp Console
+  permalink: unmigrated_connection_overview.html

@@ -1334,3 +1334,43 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html
         subcategory: 
         explorer: false
+categories:
+- id: sfr
+  title: Single file restore endpoints in the NetApp Backup and Recovery REST API
+  permalink: sfr_overview.html
+- id: backup
+  title: Backup endpoints in the NetApp Backup and Recovery REST API
+  permalink: backup_overview.html
+- id: restore
+  title: Restore endpoints in the NetApp Backup and Recovery REST API
+  permalink: restore_overview.html
+- id: system
+  title: System endpoints in the NetApp Backup and Recovery REST API
+  permalink: system_overview.html
+- id: cloud
+  title: Cloud endpoints in the NetApp Backup and Recovery REST API
+  permalink: cloud_overview.html
+- id: job
+  title: Job endpoints in the NetApp Backup and Recovery REST API
+  permalink: job_overview.html
+- id: catalog
+  title: Catalog endpoints in the NetApp Backup and Recovery REST API
+  permalink: catalog_overview.html
+- id: license
+  title: License endpoints in the NetApp Backup and Recovery REST API
+  permalink: license_overview.html
+- id: ransomware scan
+  title: Ransomware scan endpoints in the NetApp Backup and Recovery REST API
+  permalink: ransomware_scan_overview.html
+- id: panoramic protection
+  title: Panoramic protection endpoints in the NetApp Backup and Recovery REST API
+  permalink: panoramic_protection_overview.html
+- id: replication
+  title: Replication endpoints in the NetApp Backup and Recovery REST API
+  permalink: replication_overview.html
+- id: report
+  title: Report endpoints in the NetApp Backup and Recovery REST API
+  permalink: report_overview.html
+- id: storagegrid
+  title: StorageGRID endpoints in the NetApp Backup and Recovery REST API
+  permalink: storagegrid_overview.html

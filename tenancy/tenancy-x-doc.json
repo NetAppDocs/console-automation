@@ -507,8 +507,40 @@
           "category": "Service Account",
           "filename": "post-tenancy-account-service-account-generate-service-account-secret.html",
           "subcategory": null
-        }
+       }
       }
     }
-  }
+  },
+  "categories": [
+    {
+      "id": "account",
+      "title": "Account endpoints in the Accounts REST API",
+      "permalink": "account_overview.html"
+    },
+    {
+      "id": "workspace",
+      "title": "Workspace endpoints in the Accounts REST API",
+      "permalink": "workspace_overview.html"
+    },
+    {
+      "id": "authorize",
+      "title": "Authorize endpoints in the Accounts REST API",
+      "permalink": "authorize_overview.html"
+    },
+    {
+      "id": "resource",
+      "title": "Resource endpoints in the Accounts REST API",
+      "permalink": "resource_overview.html"
+    },
+    {
+      "id": "service account",
+      "title": "Service account endpoints in the Accounts REST API",
+      "permalink": "service_account_overview.html"
+    },
+    {
+      "id": "user",
+      "title": "User endpoints in the Accounts REST API",
+      "permalink": "user_overview.html"
+    }
+  ]
 }

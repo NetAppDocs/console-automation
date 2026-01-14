@@ -986,8 +986,50 @@
             "filename": "get-api-timelines.html",
             "subcategory": null,
             "explorer": false
-          }
-        }
+       }
       }
     }
-  }
+  },
+  "categories": [
+    {
+      "id": "accounts",
+      "title": "Accounts REST API endpoints in the NetApp Copy and Sync REST API",
+      "permalink": "accounts_overview.html"
+    },
+    {
+      "id": "data brokers",
+      "title": "Data brokers endpoints in the NetApp Copy and Sync REST API",
+      "permalink": "data_brokers_overview.html"
+    },
+    {
+      "id": "groups",
+      "title": "Groups endpoints in the NetApp Copy and Sync REST API",
+      "permalink": "groups_overview.html"
+    },
+    {
+      "id": "messages",
+      "title": "Messages endpoints in the NetApp Copy and Sync REST API",
+      "permalink": "messages_overview.html"
+    },
+    {
+      "id": "relationships",
+      "title": "Relationships endpoints in the NetApp Copy and Sync REST API",
+      "permalink": "relationships_overview.html"
+    },
+    {
+      "id": "reports",
+      "title": "Reports endpoints in the NetApp Copy and Sync REST API",
+      "permalink": "reports_overview.html"
+    },
+    {
+      "id": "storages",
+      "title": "Storages endpoints in the NetApp Copy and Sync REST API",
+      "permalink": "storages_overview.html"
+    },
+    {
+      "id": "timelines",
+      "title": "Timelines endpoints in the NetApp Copy and Sync REST API",
+      "permalink": "timelines_overview.html"
+    }
+  ]
+}
