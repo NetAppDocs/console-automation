@@ -23,7 +23,7 @@ indexpage:
         - title: ONTAP management - On-premises ONTAP
           url: /cm/overview.html#cloud-volumes-ontap-operations
         - title: Amazon FSx for NetApp ONTAP management
-          url: /fsx/amazon_fsx_for_netapp_ontap_management_rest_api.html
+          url: /fsx/overview.html
     - title: ONTAP management workflows
       links:
         - title: Cloud Volumes ONTAP typical deployment
@@ -41,23 +41,23 @@ indexpage:
     - title: Platform services
       links:
        - title: Accounts (tenancy)
-         url: /tenancy/accounts_rest_api.html
+         url: /tenancy/overview.html
        - title: Audit
-         url: /audit/audit_rest_api_for_the_netapp_console.html
+         url: /audit/overview.html
        - title: Backup and Recovery
-         url: /cbs/netapp_backup_and_recovery_rest_api.html
+         url: /cbs/overview.html
        - title: Copy and Sync
-         url: /copysync/netapp_copy_and_sync_rest_api.html
+         url: /copysync/overview.html
        - title: Credentials
-         url: /credential/credentials_rest_api_for_the_netapp_console.html
+         url: /credential/overview.html
        - title: Licenses and subscriptions
-         url: /dw/licenses_and_subscriptions_rest_api_for_the_netapp_console.html
+         url: /dw/overview.html
        - title: Federation
-         url: /federation/federation_rest_api_for_the_netapp_console.html
+         url: /federation/overview.html
        - title: IPA
-         url: /ipa/in-product_automation_rest_api_for_the_netapp_console.html
+         url: /ipa/overview.html
        - title: Identity and access management
-         url: /tenancyv4/identity_and_access_management_rest_api.html
+         url: /tenancyv4/overview.html
     - title: More resources
       links:
         - title: NetApp Console solutions
