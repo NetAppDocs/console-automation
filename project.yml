@@ -1,4 +1,3 @@
-jekyll: api-testing2
 settings:
   name: API
   internal:
@@ -33,6 +32,7 @@ product-family:
   name: NetApp Console
   repo: console-family
   
+
 
 
 
