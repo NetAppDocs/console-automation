@@ -4,8 +4,7 @@ permalink: platform/aa_concepts.html
 keywords: bluexp, authorization, authentication, oauth2.0, access tokens, rest, apis, netapp, console
 summary: You should be familiar with the basic authentication and authorization concepts before using the NetApp Console REST APIs.
 ---
-
-= Basic concepts and terminology
+= Authorization and authentication concepts when using the NetApp Console REST APIs 
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: cloud, manager, rest, api, netapp, console
 summary: "The NetApp Console REST API provides robust security based on token authentication and authorization."
 ---
 
-= Security
+= Learn about NetApp Console REST API security 
 :hardbreaks:
 :nofooter:
 :icons: font

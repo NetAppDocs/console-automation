@@ -5,7 +5,7 @@ keywords: bluexp, rest, apis, access, tokens, user, token
 summary: The types of access tokens used to establish identity and authorization are described here
 ---
 
-= User access tokens
+= NetApp Console REST API user access tokens
 :hardbreaks:
 :nofooter:
 :icons: font

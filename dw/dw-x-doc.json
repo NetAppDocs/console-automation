@@ -1,4 +1,6 @@
 {
+  "overview": "Licenses and subscriptions REST API for the NetApp Console",
+  "permalink": "overview.html",
   "paths": {
     "/license/serial-number/{serialNumber}": {
       "post": {
@@ -345,5 +347,27 @@
         }
       }
     }
-  }
+  },
+  "categories": [
+    {
+      "id": "license",
+      "title": "License endpoints in the License and subscriptions REST API for the NetApp Console",
+      "permalink": "license_overview.html"
+    },
+    {
+      "id": "subscription",
+      "title": "Subscription endpoints in the License and subscriptions REST API for the NetApp Console",
+      "permalink": "subscription_overview.html"
+    },
+    {
+      "id": "external services",
+      "title": "External services endpoints in the License and subscriptions REST API for the NetApp Console",
+      "permalink": "external_services_overview.html"
+    },
+    {
+      "id": "data services",
+      "title": "Data services endpoints in the License and subscriptions REST API for the NetApp Console",
+      "permalink": "data_services_overview.html"
+    }
+  ]
 }

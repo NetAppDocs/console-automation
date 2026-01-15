@@ -5,7 +5,7 @@ keywords: public, cloud, common, workflow, rest, api, BlueXP, console, agent, ne
 summary: 'There are several common workflows you can use with any of the public cloud providers.'
 ---
 
-= Before you begin
+= Prepare to use the ONTAP management common API workflows
 :hardbreaks:
 :nofooter:
 :icons: font

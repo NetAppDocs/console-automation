@@ -1,4 +1,6 @@
 {
+  "overview": "In-Product Automation REST API for the NetApp Console",
+  "permalink": "overview.html",
   "paths": {
     "/ipa/account/{accountId}/serial-number/{serialNumber}/register": {
       "post": {
@@ -322,8 +324,30 @@
           "filename": "get-ipa-support-case-notes-.html",
           "subcategory": null,
           "explorer": false
-        }
+       }
       }
     }
-  }
+  },
+  "categories": [
+    {
+      "id": "license",
+      "title": "License endpoints in the In-Product Automation REST API for the NetApp Console", 
+      "permalink": "license_overview.html"
+    },
+    {
+      "id": "services",
+      "title": "Services endpoints in the In-Product Automation REST API for the NetApp Console",
+      "permalink": "services_overview.html"
+    },
+    {
+      "id": "nss",
+      "title": "NetApp Support Site endpoints in the In-Product Automation REST API for the NetApp Console",
+      "permalink": "nss_overview.html"
+    },
+    {
+      "id": "support",
+      "title": "Support endpoints in the In-Product Automation REST API for the NetApp Console",
+      "permalink": "support_overview.html"
+    }
+  ]
 }
