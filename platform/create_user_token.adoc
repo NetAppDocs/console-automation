@@ -5,7 +5,7 @@ keywords: generate, user, token, bluexp, rest, apis, federated authentication, n
 summary: Create a NetApp Console user token by using this workflow
 ---
 
-= Create user token
+= Create a NetApp Console user token
 :hardbreaks:
 :nofooter:
 :icons: font

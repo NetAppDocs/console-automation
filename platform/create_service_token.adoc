@@ -5,7 +5,7 @@ keywords: generate, user, token, service, token, bluexp, rest, apis, netapp, con
 summary: A workflow describing how to cerate a service token
 ---
 
-= Create a service token for the NetApp Console
+= Create a NetApp Console service token
 :hardbreaks:
 :nofooter:
 :icons: font

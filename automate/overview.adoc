@@ -5,7 +5,7 @@ keywords: terraform, terraform provider, automation, automating, netapp, console
 summary: Use the resources on this page to get help integrating NetApp Console and Cloud Volumes ONTAP with your infrastructure as code.
 ---
 
-= Overview of NetApp Console automation options
+= Learn about the NetApp Console automation options
 :hardbreaks:
 :nofooter:
 :icons: font

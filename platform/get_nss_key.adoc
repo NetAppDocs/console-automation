@@ -5,7 +5,7 @@ keywords: nss, credentials, key, bluexp, rest, api, nss, credential, netapp, con
 summary: 'You can sign in to the NetApp Console web user interface to retrieve the NetApp Support Site credentials key.'
 ---
 
-= Generate an NSS user ID
+= Generate an NSS user ID from the NetApp Console interface
 :hardbreaks:
 :nofooter:
 :icons: font

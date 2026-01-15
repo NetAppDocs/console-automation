@@ -5,7 +5,7 @@ keywords: cloud, manager, deployment, rest, api, occm, workflow, deploy, cloud
 summary: 'A summary of the major steps you should take to deploy and administer a Cloud Volumes ONTAP instance using the REST API is presented below.'
 ---
 
-= Typical Cloud Volumes ONTAP deployment
+= Typical Cloud Volumes ONTAP deployment using the REST API
 :hardbreaks:
 :nofooter:
 :icons: font
