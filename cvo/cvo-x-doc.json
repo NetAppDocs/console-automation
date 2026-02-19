@@ -8559,6 +8559,26 @@
           "filename": "post-vsa-working-environments.html",
           "subcategory": null,
           "explorer": false
+       }
+      }
+    },
+    "/gcp/vsa/metadata/workerPools": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system",
+          "category": "Google Cloud system metadata (HA)",
+          "filename": "get-gcp-vsa-metadata-workerpools.html",
+          "subcategory": null
+        }
+      }
+    },
+    "/gcp/ha/metadata/workerPools": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system",
+          "category": "Google Cloud system metadata (single-node)",
+          "filename": "get-gcp-ha-metadata-workerpools.html",
+          "subcategory": null
         }
       }
     }
