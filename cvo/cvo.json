@@ -8907,7 +8907,7 @@
         "tags": [
           "ONTAP Cloud Google Cloud system operations - Metadata"
         ],
-        "description": "Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a private mode single-node Cloud Volumes ONTAP system can be created.",
+        "description": "Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a private mode Cloud Volumes ONTAP system can be created.",
         "operationId": "workerPools",
         "parameters": [
           {
@@ -10798,7 +10798,7 @@
         "tags": [
           "ONTAP Cloud GCP HA system operations - Metadata"
         ],
-        "description": "Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a private mode HA Cloud Volumes ONTAP system can be created.",
+        "description": "Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a private mode Cloud Volumes ONTAP system can be created.",
         "operationId": "workerPools_1",
         "parameters": [
           {
