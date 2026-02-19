@@ -8568,7 +8568,8 @@
           "title": "Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system",
           "category": "Google Cloud system metadata (HA)",
           "filename": "get-gcp-vsa-metadata-workerpools.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     },
@@ -8578,7 +8579,8 @@
           "title": "Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system",
           "category": "Google Cloud system metadata (single-node)",
           "filename": "get-gcp-ha-metadata-workerpools.html",
-          "subcategory": null
+          "subcategory": null,
+          "explorer": false
         }
       }
     }
