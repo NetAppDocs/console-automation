@@ -1,40 +1,57 @@
 {
-    "overview": "Audit REST API for the NetApp Console",
-    "permalink": "overview.html",
-    "paths": {
-      "/audit/{accountId}": {
-        "get": {
-          "x-doc": {
-            "title": "Retrieve account records",
-            "category": null,
-            "filename": "get-audit.html",
-            "subcategory": null,
-            "explorer": false
+  "overview": "Audit REST API for the NetApp Console",
+  "permalink": "overview.html",
+  "paths": {
+    "/audit/{accountId}": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve account records",
+          "category": null,
+          "filename": "get-audit.html",
+          "subcategory": null,
+          "explorer": false,
+          "ai-gen": {
+            "title": "Retrieve an Audit service API account record",
+            "summary": "Retrieve account records using a specific account public ID.",
+            "keywords": "account records,accountId,audit records,public ID,NetApp Console,account audits,record retrieval,user audits,user data,account search",
+            "lead": "Retrieves account records in the Audit service API using a specified account public ID, allowing you to access detailed audit information for that account."
           }
         }
-      },
-      "/audit/{accountId}/{service}/{requestId}/records": {
-        "get": {
-          "x-doc": {
-            "title": "Retrieve records by service",
-            "category": null,
-            "filename": "get-audit--records.html",
-            "subcategory": null,
-            "explorer": false
+      }
+    },
+    "/audit/{accountId}/{service}/{requestId}/records": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve records by service",
+          "category": null,
+          "filename": "get-audit--records.html",
+          "subcategory": null,
+          "explorer": false,
+          "ai-gen": {
+            "title": "Retrieve an Audit service API record",
+            "summary": "Retrieve records using account ID, service, and request ID.",
+            "keywords": "records retrieval,account records,service records,request id records,audit records,netapp records,ontap records,retrieve records,account service records,record retrieval",
+            "lead": "Retrieves specified audit records by account, service, and request ID, allowing you to access detailed information for auditing purposes."
           }
         }
-      },
-      "/audit/{accountId}/options": {
-        "get": {
-          "x-doc": {
-            "title": "Retrieve audit options",
-            "category": null,
-            "filename": "get-audit-options.html",
-            "subcategory": null,
-            "explorer": false
+      }
+    },
+    "/audit/{accountId}/options": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve audit options",
+          "category": null,
+          "filename": "get-audit-options.html",
+          "subcategory": null,
+          "explorer": false,
+          "ai-gen": {
+            "title": "Retrieve an Audit Service API filter option",
+            "summary": "Retrieve filter options using a specific account ID.",
+            "keywords": "audit options,filter options,account id,netapp console,user token,retrieve options,filter by account,netapp ontap",
+            "lead": "Retrieves audit filter options by a specified account ID in the Audit service API, allowing you to configure and manage audit settings effectively."
           }
         }
-     
       }
     }
   }
+}

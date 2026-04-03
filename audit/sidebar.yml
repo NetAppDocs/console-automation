@@ -1,3 +1,12 @@
+---
 section: audit
-title: Audit 
-generate: audit
+title: Audit
+entries:
+- title: Overview
+  url: "/audit/overview.html"
+- title: Retrieve an Audit Service API filter option
+  url: "/audit/get-audit-options.html"
+- title: Retrieve an Audit service API account record
+  url: "/audit/get-audit.html"
+- title: Retrieve an Audit service API record
+  url: "/audit/get-audit--records.html"

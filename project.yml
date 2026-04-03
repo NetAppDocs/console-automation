@@ -1,38 +1,41 @@
+---
 settings:
   name: API
   internal:
     pdf_enabled: false
-    api_enabled: true
   prod:
     pdf_enabled: false
-    api_enabled: true
     harmony_enabled: false
 sidebar:
   entries:
-    - title: NetApp Console API docs
-      url: /index.html
-    - section: platform
-    - section: workflows
-    - section: api-cm
-    - section: tenancy
-    - section: fsx
-    - section: audit
-    - section: cbs
-    - section: copysync
-    - section: credential
-    - section: dw
-    - section: federation
-    - section: ipa
-    - section: tenancyv4
-    - section: automate
-    - section: support
-    - title: Legal notices
-      url: /legal-notices.html
+  - title: NetApp Console API docs
+    url: "/index.html"
+  - section: platform
+  - section: workflows
+  - section: api-cm
+  - section: tenancy
+  - section: fsx
+  - title: Audit
+    entries:
+    - title: Overview
+      url: "/audit/overview.html"
+    - title: Retrieve an Audit Service API filter option
+      url: "/audit/get-audit-options.html"
+    - title: Retrieve an Audit service API account record
+      url: "/audit/get-audit.html"
+    - title: Retrieve an Audit service API record
+      url: "/audit/get-audit--records.html"
+  - section: cbs
+  - section: copysync
+  - section: credential
+  - section: dw
+  - section: federation
+  - section: ipa
+  - section: tenancyv4
+  - section: automate
+  - section: support
+  - title: Legal notices
+    url: "/legal-notices.html"
 product-family:
   name: NetApp Console
   repo: console-family
-  
-
-
-
-
