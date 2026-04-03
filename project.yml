@@ -21,7 +21,7 @@ sidebar:
       url: "/audit/overview.html"
     - title: Retrieve an Audit Service API filter option
       url: "/audit/get-audit-options.html"
-    - title: Retrieve an Audit service API record
+    - title: Retrieve an Audit service API record by account
       url: "/audit/get-audit--records.html"
     - title: Retrieve an Audit service account record
       url: "/audit/get-audit.html"
