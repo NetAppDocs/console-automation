@@ -11,10 +11,10 @@
           "subcategory": null,
           "explorer": false,
           "ai-gen": {
-            "title": "Retrieve an Audit service API account record",
-            "summary": "Retrieve account records using a specific account public ID.",
-            "keywords": "account records,accountId,audit records,public ID,NetApp Console,account audits,record retrieval,user audits,user data,account search",
-            "lead": "Retrieves account records in the Audit service API using a specified account public ID, allowing you to access detailed audit information for that account."
+            "title": "Retrieve an Audit service account record",
+            "summary": "Retrieve account records using a specified account public ID.",
+            "keywords": "audit records,account records,account public ID,netapp console,user token,from last modified,to last modified,start time,user audits,user data",
+            "lead": "Retrieves account records by a specified account public ID so you can access detailed account information for auditing purposes."
           }
         }
       }
@@ -29,9 +29,9 @@
           "explorer": false,
           "ai-gen": {
             "title": "Retrieve an Audit service API record",
-            "summary": "Retrieve records using account ID, service, and request ID.",
-            "keywords": "records retrieval,account records,service records,request id records,audit records,netapp records,ontap records,retrieve records,account service records,record retrieval",
-            "lead": "Retrieves specified audit records by account, service, and request ID, allowing you to access detailed information for auditing purposes."
+            "summary": "Retrieve audit records using account, service, and request ID.",
+            "keywords": "audit records,account records,service records,request records,netapp console,account service,request id,netapp ontap,record retrieval",
+            "lead": "Retrieves specified records in the Audit service API by account, service, and request ID so you can monitor and analyze audit logs for security and compliance purposes."
           }
         }
       }
@@ -46,9 +46,9 @@
           "explorer": false,
           "ai-gen": {
             "title": "Retrieve an Audit Service API filter option",
-            "summary": "Retrieve filter options using a specific account ID.",
-            "keywords": "audit options,filter options,account id,netapp console,user token,retrieve options,filter by account,netapp ontap",
-            "lead": "Retrieves audit filter options by a specified account ID in the Audit service API, allowing you to configure and manage audit settings effectively."
+            "summary": "Retrieve filter options for a specified account ID.",
+            "keywords": "filter options,audit options,account filter,netapp console,account id,netapp audit,filter retrieval,netapp options",
+            "lead": "Retrieves audit filter options for a specified account ID, allowing you to view and manage audit configurations within the Audit service API."
           }
         }
       }
