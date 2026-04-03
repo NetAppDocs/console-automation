@@ -18,6 +18,12 @@ There are several OAuth 2.0 grant types available when requesting an access toke
 [TIP]
 The refresh token grant is the most secure option when requesting a user access token. It can be used in both a federated and non-federated authentication environment.
 
+== Authentication endpoint
+
+All grant types use the following authentication endpoint to request an access token:
+
+`POST \https://netapp-cloud-account.auth0.com/oauth/token`
+
 == Refresh token
 
 This grant type generates a token used with either federated or non-federated authentication. You need to provide the OAuth2-compliant refresh token to the authentication endpoint to generate a long-lived access token. The generated token can be used to access resources across multiple domains. Here is an example of the JSON input used when requesting the token with a description of each parameter.
@@ -79,9 +85,11 @@ This grant type generates a token used with non-federated authentication to acce
 |The client ID issued when you registered the application.
 |===
 
-== Client credentials
+== Client credentials using a NetApp Console service account
 
-In some cases, static clients or applications need to acquire an access token to perform operations on behalf of a user. Applications need to obtain an access token for their own service account without user intervention. In these situations you can use the client credentials grant type. Here is an example of the JSON input used when requesting the token with a description of each parameter.
+In some cases, static clients or applications need to acquire an access token to perform operations on behalf of a user. Applications need to obtain an access token for their own service account without user intervention. In these situations you can use the client credentials grant type. To use client credentials, you must create a service account using the link:https://console.netapp.com/identity-access-mgmt/users#add-user[NetApp Console UI^].
+
+The following is a JSON input example for requesting the token with a description of each parameter.
 
 [source,json,%autofill]
 ---------------------------------------------------------------------
@@ -109,3 +117,5 @@ In some cases, static clients or applications need to acquire an access token to
 |===
 
 The OAuth2 server verifies the application through the client ID with client secret and returns an access token in the response.
+
+// 2026 April 03, GH 9
