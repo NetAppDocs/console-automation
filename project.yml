@@ -3,10 +3,12 @@ settings:
   internal:
     pdf_enabled: false
     api_enabled: true
+    api_standardize: false
   prod:
     pdf_enabled: false
     api_enabled: true
     harmony_enabled: false
+    api_standardize: false
 sidebar:
   entries:
     - title: NetApp Console API docs
