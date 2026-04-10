@@ -1,0 +1,90 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-ha-metadata-keys-vault.html'
+summary: 'Retrieve all keys in a vault'
+---
+
+= Retrieve all keys in a vault
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/keys-vault`#
+
+
+
+Retrieves all keys in a vault.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|subscriptionId
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|resourceGroupName
+|string
+|query
+|False
+a|
+
+|vaultName
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|keyName
+|string
+|True
+a|
+
+|kid
+|string
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "keyName": "string",
+  "kid": "string"
+}
+====
+

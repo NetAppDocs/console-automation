@@ -1,0 +1,79 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-users-working-environments-grant-revoke.html'
+summary: 'Grant or revoke permissions to a user'
+---
+
+= Grant or revoke permissions to a user
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/users/{userId}/working-environments-grant-revoke`#
+
+
+
+Grants or revokes permissions to the specified user for performing operations over the specified systems.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|userId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|addWorkingEnvironments
+|array[string]
+|True
+a|
+
+|removeWorkingEnvironments
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "addWorkingEnvironments": [
+    "string"
+  ],
+  "removeWorkingEnvironments": [
+    "string"
+  ]
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

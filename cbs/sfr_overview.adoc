@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/sfr_overview.html'
+summary: 'Single file restore endpoints in the NetApp Backup and Recovery REST API'
+---
+
+= Single file restore endpoints in the NetApp Backup and Recovery REST API
+
+
+
+The single file restore (SFR) endpoints retrieve files from the volume snapshots.
+
+You can perform the following operations by using the SFR endpoints: +
+
+* Start a snapshot backup file explore operation.
+* Retrieve the snapshot backup file explore status.
+* List files during snapshot backup file explore operations. +
+
+
+

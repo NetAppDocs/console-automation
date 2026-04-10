@@ -1,0 +1,90 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-aws-ha-metadata-get-buckets-application-info.html'
+summary: 'Retrieve the S3 buckets policy status and tiering level'
+---
+
+= Retrieve the S3 buckets policy status and tiering level
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/get-buckets-application-info`#
+
+
+
+Retrieves the S3 buckets policy status and tiering level.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|buckets
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "buckets": [
+    "string"
+  ]
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|bucketName
+|string
+|True
+a|
+
+|tieringLevel
+|string
+|False
+a|
+
+|accessData
+|string
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "bucketName": "string",
+  "tieringLevel": "string",
+  "accessData": "string"
+}
+====
+

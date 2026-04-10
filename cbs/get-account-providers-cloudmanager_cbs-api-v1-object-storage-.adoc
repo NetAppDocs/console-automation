@@ -1,0 +1,65 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-object-storage-.html'
+summary: 'Retrieve buckets for a cloud provider'
+---
+
+= Retrieve buckets for a cloud provider
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage/{provider}`#
+
+
+
+Retrieves buckets for the specified cloud provider.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|provider
+|string
+|path
+|True
+a|Cloud provider type
+
+* enum: ["AWS", "GCP", "AZURE", "SGWS", "ONTAP_S3"]
+
+
+|authorization
+|string
+|header
+|True
+a|Authorization token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Agent ID
+
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+

@@ -1,0 +1,86 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-fsx-working-environments-svms.html'
+summary: 'Retrieve an SVM list for an FSx system'
+---
+
+= Retrieve an SVM list for an FSx system
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/svms`#
+
+
+
+Retrieves an SVM list for an existing FSx system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fileSystemId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|state
+|string
+|False
+a|
+
+|language
+|string
+|False
+a|
+
+|allowedProtocols
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "state": "string",
+  "language": "string",
+  "allowedProtocols": [
+    "string"
+  ]
+}
+====
+

@@ -1,0 +1,87 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-audit-local-audit--records.html'
+summary: 'Retrieve an audit record'
+---
+
+= Retrieve an audit record
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}/{service}/{requestId}/records`#
+
+
+
+Retrieves an audit record with the specified request ID for the local UI.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|requestId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|creationTime
+|integer
+|True
+a|
+
+|action
+|string
+|True
+a|
+
+|status
+|string
+|False
+a|
+
+|data
+|string
+|False
+a|
+
+|errors
+|array[string]
+|True
+a|
+
+|recordId
+|integer
+|False
+a|
+
+|count
+|integer
+|False
+a|
+
+|===
+
+

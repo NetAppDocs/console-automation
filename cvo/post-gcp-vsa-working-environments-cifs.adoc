@@ -1,0 +1,113 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-gcp-vsa-working-environments-cifs.html'
+summary: 'Set up a new CIFS configuration'
+---
+
+= Set up a new CIFS configuration
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/cifs`#
+
+
+
+Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dnsDomain
+|string
+|False
+a|
+
+|ipAddresses
+|array[string]
+|True
+a|
+
+|netBIOS
+|string
+|True
+a|
+
+|organizationalUnit
+|string
+|True
+a|
+
+|activeDirectoryDomain
+|string
+|True
+a|
+
+|activeDirectoryUsername
+|string
+|True
+a|
+
+|activeDirectoryPassword
+|string
+|True
+a|
+
+|svmName
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "dnsDomain": "string",
+  "ipAddresses": [
+    "string"
+  ],
+  "netBIOS": "string",
+  "organizationalUnit": "string",
+  "activeDirectoryDomain": "string",
+  "activeDirectoryUsername": "string",
+  "activeDirectoryPassword": "string",
+  "svmName": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

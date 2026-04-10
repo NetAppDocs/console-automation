@@ -1,0 +1,316 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-catalog-snapshots.html'
+summary: 'Retrieve snapshots'
+---
+
+= Retrieve snapshots
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/snapshots`#
+
+
+
+Retrieves a list of local and cloud snapshots related to a particular volume by using the catalog index query.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|resourceName
+|string
+|True
+a|
+
+|workingEnvironmentId
+|string
+|True
+a|
+
+|volumeId
+|string
+|True
+a|
+
+|resourceType
+|string
+|True
+a|
+
+|inode
+|string
+|False
+a|
+
+|mtime
+|number
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "resourceName": "string",
+  "workingEnvironmentId": "string",
+  "volumeId": "string",
+  "resourceType": "string",
+  "inode": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|results
+|link:#results[results]
+|False
+a|
+
+|endOfResults
+|boolean
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "results": {
+    "workingEnvironmentId": "string",
+    "workingEnvironmentName": "string",
+    "volumeName": "string",
+    "volumeId": "string",
+    "snapshots": [
+      {
+        "snapshotId": "string",
+        "snapshotName": "string",
+        "location": "string",
+        "ransomware-scan-status-failure": "string",
+        "object-lock": "string",
+        "ransomware-scan-status": "string"
+      }
+    ]
+  }
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|resourceName
+|string
+|True
+a|
+
+|workingEnvironmentId
+|string
+|True
+a|
+
+|volumeId
+|string
+|True
+a|
+
+|resourceType
+|string
+|True
+a|
+
+|inode
+|string
+|False
+a|
+
+|mtime
+|number
+|False
+a|
+
+|===
+
+
+[#snapshots]
+[.api-collapsible-fifth-title]
+snapshots
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|snapshotId
+|string
+|False
+a|
+
+|snapshotName
+|string
+|False
+a|
+
+|snapshotSize
+|number
+|False
+a|
+
+|snapshotCreationTime
+|number
+|False
+a|
+
+|location
+|string
+|False
+a|
+
+|last-ransomware-scan
+|number
+|False
+a|
+
+|ransomware-scan-status-failure
+|string
+|False
+a|
+
+|object-lock
+|string
+|False
+a|
+
+|ransomware-scan-status
+|string
+|False
+a|
+
+|archived
+|boolean
+|False
+a|
+
+|===
+
+
+[#results]
+[.api-collapsible-fifth-title]
+results
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|False
+a|
+
+|workingEnvironmentName
+|string
+|False
+a|
+
+|volumeName
+|string
+|False
+a|
+
+|volumeId
+|string
+|False
+a|
+
+|snapshots
+|array[link:#snapshots[snapshots]]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

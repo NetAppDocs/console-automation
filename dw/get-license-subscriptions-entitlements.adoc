@@ -1,0 +1,199 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/get-license-subscriptions-entitlements.html'
+summary: 'Retrieve the subscription entitlements'
+---
+
+= Retrieve the subscription entitlements
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/entitlements`#
+
+
+
+Retrieves the subscription entitlements information for a specified service name.
+
+**Note:**
+
+* This API authorizes service calls with a predefined scope only.
+
+{blank} +
+*Token usage:* NetApp Console service token with the following scopes: %scopes%.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|serviceName
+|string
+|query
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+List of link:#response[response]
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#Value]
+[.api-collapsible-fifth-title]
+Value
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|IntegerValue
+|integer
+|False
+a|
+
+|===
+
+
+[#entitlements]
+[.api-collapsible-fifth-title]
+entitlements
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|CustomerIdentifier
+|string
+|False
+a|
+
+|Dimension
+|string
+|False
+a|
+
+|ExpirationDate
+|string
+|False
+a|
+
+|ProductCode
+|string
+|False
+a|
+
+|Value
+|link:#Value[Value]
+|False
+a|
+
+|===
+
+
+[#response]
+[.api-collapsible-fifth-title]
+response
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|entitlements
+|array[link:#entitlements[entitlements]]
+|False
+a|
+
+|productCode
+|string
+|False
+a|
+
+|error
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

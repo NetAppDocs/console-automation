@@ -1,0 +1,69 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-azure-ha-working-environments-vscan-file-op.html'
+summary: 'Update the default Vscan file operation profile'
+---
+
+= Update the default Vscan file operation profile
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/vscan-file-op`#
+
+
+
+Updates the default Vscan file operation profile. Profiles on existing CIFS shares will change only on writes-only mode.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|vscanFileOp
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "vscanFileOp": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

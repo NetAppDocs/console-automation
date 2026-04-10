@@ -1,0 +1,97 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-ha-working-environments-extra-capacity-licenses.html'
+summary: 'Retrieve extra capacity licenses'
+---
+
+= Retrieve extra capacity licenses
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
+
+
+
+Retrieves extra capacity licenses for Cloud Volumes ONTAP.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|serialNumber
+|string
+|True
+a|
+
+|resourceId
+|string
+|False
+a|
+
+|licenseType
+|string
+|False
+a|
+
+|expirationDate
+|integer
+|True
+a|
+
+|license
+|string
+|False
+a|
+
+|capacity
+|number
+|True
+a|
+
+|metadata
+|string
+|False
+a|
+
+|associatedResourceId
+|string
+|False
+a|
+
+|licensePackage
+|string
+|False
+a|
+
+|===
+
+

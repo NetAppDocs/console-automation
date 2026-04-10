@@ -1,0 +1,68 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-vsa-metadata-workerpools.html'
+summary: 'Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system'
+---
+
+= Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/workerPools`#
+
+
+
+Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a private mode Cloud Volumes ONTAP system can be created.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|project
+|string
+|query
+|False
+a|
+
+|region
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|empty
+|boolean
+|True
+a|
+
+|defined
+|boolean
+|False
+a|
+
+|===
+
+

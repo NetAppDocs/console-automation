@@ -1,0 +1,57 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-auth-login.html'
+summary: 'Sign in to the NetApp Console'
+---
+
+= Sign in to the NetApp Console
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/auth/login`#
+
+
+
+Signs in to the NetApp Console.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|email
+|string
+|True
+a|
+
+|password
+|string
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "email": "string",
+  "password": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

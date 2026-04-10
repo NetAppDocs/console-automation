@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'federation/federation_overview.html'
+summary: 'Federation endpoints in the Federation REST API for the NetApp Console'
+---
+
+= Federation endpoints in the Federation REST API for the NetApp Console
+
+
+
+The federation endpoints enable you to create and manage federation connections with identity providers. Federation provided through the NetApp Console replaces the functionality provided through Cloud Central Federation Setup.
+
+You can perform the following actions using the federation endpoints:
+
+* List federations
+* Create a federation
+* Delete a federation
+* Retrieve a federation
+* Update a federation
+
+

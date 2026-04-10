@@ -1,0 +1,95 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-vsa-working-environments-create-request-parameters.html'
+summary: 'Retrieve the action parameters'
+---
+
+= Retrieve the action parameters
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/create-request-parameters`#
+
+
+
+Retrieves the action parameters used in the create request for a specific Cloud Volumes ONTAP instance.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|parameters
+|link:#MapStringObject[MapStringObject]
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#MapStringObject]
+[.api-collapsible-fifth-title]
+MapStringObject
+
+
+[#MapStringObject]
+[.api-collapsible-fifth-title]
+MapStringObject
+Hash mapping strings to link:#MapStringObject[MapStringObject]
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|traversableAgain
+|boolean
+|True
+a|
+
+|empty
+|boolean
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

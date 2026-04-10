@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-occm-asup-download-ontap-cloud-asups.html'
+summary: 'Download a compressed file of all the AutoSupport files from all VSAs'
+---
+
+= Download a compressed file of all the AutoSupport files from all VSAs
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup/download-ontap-cloud-asups`#
+
+
+
+Downloads a compressed file of all AutoSupport files from all VSAs.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

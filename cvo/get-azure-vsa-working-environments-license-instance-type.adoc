@@ -1,0 +1,144 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-vsa-working-environments-license-instance-type.html'
+summary: 'Retrieve all license types'
+---
+
+= Retrieve all license types
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/license-instance-type`#
+
+
+
+Retrieves all license types and their associated instance types for a specific Cloud Volumes ONTAP instance.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|licenseType
+|string
+|True
+a|
+
+|name
+|string
+|False
+a|
+
+|description
+|string
+|False
+a|
+
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
+a|
+
+|instanceTypes
+|array[link:#InstanceTypeInfo[InstanceTypeInfo]]
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+[#InstanceTypeInfo]
+[.api-collapsible-fifth-title]
+InstanceTypeInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|instanceType
+|string
+|False
+a|
+
+|supportsEncryption
+|boolean
+|True
+a|
+
+|supportedFeatures
+|array[string]
+|True
+a|
+
+|isDefault
+|boolean
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

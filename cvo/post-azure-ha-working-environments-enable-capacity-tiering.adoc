@@ -1,0 +1,81 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-azure-ha-working-environments-enable-capacity-tiering.html'
+summary: 'Enable capacity tiering'
+---
+
+= Enable capacity tiering
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/enable-capacity-tiering`#
+
+
+
+Enables capacity tiering.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|instanceProfileName
+|string
+|False
+a|
+
+|gcpStorageAccountId
+|string
+|False
+a|
+
+|storageAccountPrefix
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "instanceProfileName": "string",
+  "gcpStorageAccountId": "string",
+  "storageAccountPrefix": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

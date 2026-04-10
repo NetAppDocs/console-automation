@@ -1,0 +1,185 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment.html'
+summary: 'Retrieve systems'
+---
+
+= Retrieve systems
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment`#
+
+
+
+Retrieves a list of systems and their details. This API endpoint retrieves the name, region, status, type, cloud-provider, provider-accountId, ontap-version, and total-volumes-count information.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|partial
+|boolean
+|query
+|False
+a|
+
+|cache
+|boolean
+|query
+|False
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|working-environment
+|array[link:#working-environment[working-environment]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "working-environment": [
+    {
+      "id": "string",
+      "cluster-uuid": "string",
+      "name": "string",
+      "error": "string",
+      "region": "string",
+      "status": "string",
+      "ontap-version": "string",
+      "type": "string",
+      "provider": "string",
+      "provider-account-id": "string",
+      "total-volumes-count": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#working-environment]
+[.api-collapsible-fifth-title]
+working-environment
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|False
+a|
+
+|cluster-uuid
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|error
+|string
+|False
+a|
+
+|region
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|ontap-version
+|string
+|False
+a|
+
+|type
+|string
+|False
+a|
+
+|provider
+|string
+|False
+a|
+
+|provider-account-id
+|string
+|False
+a|AWS account ID/ Azure subscription ID / Google Cloud project ID
+
+
+|total-volumes-count
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

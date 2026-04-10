@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/license_overview.html'
+summary: 'License endpoints in the NetApp Backup and Recovery REST API'
+---
+
+= License endpoints in the NetApp Backup and Recovery REST API
+
+
+
+The license endpoints enable you to retrieve the license validity of the systems from the NetApp Console SaaS application. A valid license is required to activate NetApp Backup and Recovery on a system, create backups of your production data, and restore backup data on a production system. This API retrieves the eligibility of the current license used and returns the days remaining if you are using a trial license.
+
+

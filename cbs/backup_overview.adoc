@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/backup_overview.html'
+summary: 'Backup endpoints in the NetApp Backup and Recovery REST API'
+---
+
+= Backup endpoints in the NetApp Backup and Recovery REST API
+
+
+
+The backup endpoints manage backup operations of cloud and on-premises resources and retrieve details of the backup data when required. You can perform the following operations by using the Backup endpoints:
+
+* Retrieve details of the backup data of a system, volumes, and snapshots. +
+
+* Enable cloud backup on a system, back up volumes, and create on-demand backups. +
+
+* Modify the backup configuration of systems and volumes. +
+
+* Disable backups for systems and volumes, and delete backups.
+
+

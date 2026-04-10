@@ -1,0 +1,75 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-occm-saas-mp-service-attach-subscription-.html'
+summary: 'Attach a SaaS subscription'
+---
+
+= Attach a SaaS subscription
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/occm/saas-mp-service/attach-subscription/{provider}/{cloudAccountId}`#
+
+
+
+Attaches a SaaS subscription to a cloud provider account.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|cloudAccountId
+|string
+|path
+|True
+a|
+
+|provider
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subscriptionId
+|string
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "subscriptionId": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

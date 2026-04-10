@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-gcp-vsa-working-environments-activate-snapshot-policy.html'
+summary: 'Activate snapshot policy assignment'
+---
+
+= Activate snapshot policy assignment
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/activate-snapshot-policy`#
+
+
+
+Activates snapshot policy assignment for all unprotected read/write volumes.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

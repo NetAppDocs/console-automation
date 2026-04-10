@@ -1,0 +1,177 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/post-license-serial-number-.html'
+summary: 'Associate a license'
+---
+
+= Associate a license
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/serial-number/{serialNumber}`#
+
+
+
+Associates a license with the NetApp Console either by providing a NetApp License File (NLF) in the license body field or a value for both the `serialNumber` query parameter and `nssKeyId` body field.
+
+**Note:**
+
+* If you use a NetApp Console service token, accountId is not a required field.
+* If you use a NetApp Console user token, `accountId` is a required field.
+* `serialNumber` is a required field when using this site. In general, you can specify its value as `null`.
+* If the value of `licenseType` is `EXTRA_CAPACITY`, you must provide the associated resource ID (resourceId).
+* `licenseType` is not a required field for data services and capacity based license types.
+* `expirationDate` is a required field unless you are registered with the NetApp Support Site.
+* `license` is not a required field if values for `serialnumber` and `nssKeyId` are provided.
+* `capacity` is a required field unless you are registered with the NetApp Support Site.
+* `packageValue` is a required field (used only for internal purposes) unless you are registered with the NetApp Support Site.
+* `metadata` is not a required field and is used to add additional data to a license that is not included in other request body fields.
+
+*Token usage:* Either a NetApp Console user token or service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|serialNumber
+|["string", "null"]
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|False
+a|
+
+|resourceId
+|["string", "null"]
+|False
+a|
+
+|licenseType
+|string
+|False
+a|
+
+|expirationDate
+|["integer", "null"]
+|False
+a|
+
+|license
+|string
+|False
+a|
+
+|capacity
+|["integer", "null"]
+|False
+a|
+
+|metadata
+|["array", "null"]
+|False
+a|
+
+|nssKeyId
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string",
+  "licenseType": "string",
+  "license": "string",
+  "nssKeyId": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

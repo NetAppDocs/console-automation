@@ -1,0 +1,66 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-data-brokers-list-s3-bucket-folders.html'
+summary: 'Retrieve the S3 bucket folders'
+---
+
+= Retrieve the S3 bucket folders
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-s3-bucket-folders`#
+
+
+
+Retrieves the S3 bucket folders from a NetApp data broker.
+
+
+
+CAUTION: This operation is deprecated.
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|bucket
+|string
+|query
+|True
+a|Bucket
+
+
+|prefix
+|string
+|query
+|False
+a|Path inside the container, to list folders in
+
+
+|id
+|string
+|path
+|True
+a|Data Broker ID
+
+
+|x-account-id
+|string
+|header
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

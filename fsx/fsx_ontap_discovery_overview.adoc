@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'fsx/fsx_ontap_discovery_overview.html'
+summary: 'FSx ONTAP discovery endpoints in the Amazon FSx for NetApp ONTAP management REST API'
+---
+
+= FSx ONTAP discovery endpoints in the Amazon FSx for NetApp ONTAP management REST API
+
+
+
++++<fieldset>+++The discovery endpoints provide an API for discovering FSx ONTAP systems for a specified account in Cloud Manager.
+
+You can perform the following actions with the discovery endpoints:
+
+* Discover an FSx for ONTAP an account+++</fieldset>+++
+
+

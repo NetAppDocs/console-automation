@@ -1,0 +1,450 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-vsa-volumes--exportpolicy.html'
+summary: 'Add an export policy rule'
+---
+
+= Add an export policy rule
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/exportPolicy`#
+
+
+
+Adds an export policy rule.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|svmName
+|string
+|path
+|True
+a|
+
+|volumeName
+|string
+|path
+|True
+a|
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|svmName
+|string
+|path
+|True
+a|
+
+|volumeName
+|link:#VolumeName[VolumeName]
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|snapshotPolicyName
+|string
+|False
+a|
+
+|shareInfo
+|link:#CifsShareInfo[CifsShareInfo]
+|False
+a|
+
+|exportPolicyInfo
+|link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
+|False
+a|
+
+|qualityOfService
+|link:#VolumeQualityOfService[VolumeQualityOfService]
+|False
+a|
+
+|tieringPolicy
+|string
+|False
+a|
+
+|minimumCoolingDays
+|integer
+|False
+a|
+
+|comment
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "snapshotPolicyName": "string",
+  "shareInfo": {
+    "shareName": "string",
+    "accessControlList": [
+      {
+        "permission": "string",
+        "users": [
+          "string"
+        ]
+      }
+    ],
+    "vscanFileOpPolicy": "string"
+  },
+  "exportPolicyInfo": {
+    "name": "string",
+    "policyType": "string",
+    "ips": [
+      "string"
+    ],
+    "nfsVersion": [
+      "string"
+    ],
+    "rules": [
+      {}
+    ]
+  },
+  "tieringPolicy": "string",
+  "comment": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#pattern]
+[.api-collapsible-fifth-title]
+pattern
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|pattern
+|string
+|False
+a|
+
+|flags
+|integer
+|True
+a|
+
+|cursor
+|integer
+|False
+a|
+
+|===
+
+
+[#Regex]
+[.api-collapsible-fifth-title]
+Regex
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|pattern
+|link:#pattern[pattern]
+|True
+a|
+
+|groupNames
+|array[string]
+|True
+a|
+
+|===
+
+
+[#PatternMessage]
+[.api-collapsible-fifth-title]
+PatternMessage
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|regex
+|link:#Regex[Regex]
+|True
+a|
+
+|message
+|string
+|False
+a|
+
+|===
+
+
+[#VolumeName]
+[.api-collapsible-fifth-title]
+VolumeName
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|_1
+|string
+|True
+a|
+
+|validatesWith
+|link:#PatternMessage[PatternMessage]
+|True
+a|
+
+|===
+
+
+[#CifsShareUserPermissions]
+[.api-collapsible-fifth-title]
+CifsShareUserPermissions
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|permission
+|string
+|False
+a|
+
+|users
+|array[string]
+|True
+a|
+
+|===
+
+
+[#CifsShareInfo]
+[.api-collapsible-fifth-title]
+CifsShareInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|shareName
+|string
+|True
+a|
+
+|accessControlList
+|array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
+|True
+a|
+
+|vscanFileOpPolicy
+|string
+|False
+a|
+
+|===
+
+
+[#index]
+[.api-collapsible-fifth-title]
+index
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|index
+|link:#index[index]
+|False
+a|
+
+|ruleAccessControl
+|string
+|True
+a|
+
+|ips
+|array[string]
+|True
+a|
+
+|nfsVersion
+|array[string]
+|False
+a|
+
+|superUser
+|boolean
+|True
+a|
+
+|===
+
+
+[#NamedExportPolicyInfo]
+[.api-collapsible-fifth-title]
+NamedExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|policyType
+|string
+|True
+a|
+
+|ips
+|array[string]
+|True
+a|
+
+|nfsVersion
+|array[string]
+|False
+a|
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|True
+a|
+
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+[#VolumeQualityOfService]
+[.api-collapsible-fifth-title]
+VolumeQualityOfService
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|maxIops
+|integer
+|False
+a|
+
+|maxDataRate
+|link:#Capacity[Capacity]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

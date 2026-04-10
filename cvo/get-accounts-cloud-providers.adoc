@@ -1,0 +1,411 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-accounts-cloud-providers.html'
+summary: 'Retrieve all cloud accounts'
+---
+
+= Retrieve all cloud accounts
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/cloud-providers`#
+
+
+
+Retrieves all cloud accounts (AWS, Azure, and Google Cloud).
+
+
+
+CAUTION: This operation is deprecated.
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|providerType
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|awsAccounts
+|array[link:#AwsAccountResponse[AwsAccountResponse]]
+|True
+a|
+
+|azureAccounts
+|array[link:#AzureAccountResponse[AzureAccountResponse]]
+|True
+a|
+
+|gcpStorageAccounts
+|array[link:#GcpAccountResponse[GcpAccountResponse]]
+|True
+a|
+
+|nssAccounts
+|array[link:#NssAccountResponse[NssAccountResponse]]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "awsAccounts": [
+    {
+      "publicId": "string",
+      "accountName": "string",
+      "accountType": "string",
+      "accountId": "string",
+      "accessKey": "string",
+      "assumeRole": {
+        "roleName": "string",
+        "accountId": "string"
+      },
+      "occmRole": "string",
+      "vsaList": [
+        {
+          "publicId": "string",
+          "name": "string",
+          "workingEnvironmentType": "string"
+        }
+      ],
+      "subscriptionId": "string"
+    }
+  ],
+  "azureAccounts": [
+    {
+      "publicId": "string",
+      "accountName": "string",
+      "accountType": "string",
+      "tenantId": "string",
+      "applicationId": "string",
+      "occmRole": "string",
+      "vsaList": [
+        {
+          "publicId": "string",
+          "name": "string",
+          "workingEnvironmentType": "string"
+        }
+      ]
+    }
+  ],
+  "gcpStorageAccounts": [
+    {
+      "publicId": "string",
+      "accountName": "string",
+      "accountType": "string",
+      "accessKey": "string",
+      "vsaList": [
+        {
+          "publicId": "string",
+          "name": "string",
+          "workingEnvironmentType": "string"
+        }
+      ],
+      "occmRole": "string"
+    }
+  ],
+  "nssAccounts": [
+    {
+      "publicId": "string",
+      "accountName": "string",
+      "accountType": "string",
+      "nssUserName": "string",
+      "vsaList": [
+        {
+          "publicId": "string",
+          "name": "string",
+          "workingEnvironmentType": "string"
+        }
+      ]
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#AssumeRole]
+[.api-collapsible-fifth-title]
+AssumeRole
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|roleName
+|string
+|False
+a|
+
+|accountId
+|string
+|False
+a|
+
+|isGov
+|boolean
+|False
+a|
+
+|===
+
+
+[#AccountWorkingEnvironmentResponse]
+[.api-collapsible-fifth-title]
+AccountWorkingEnvironmentResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|workingEnvironmentType
+|string
+|False
+a|
+
+|===
+
+
+[#AwsAccountResponse]
+[.api-collapsible-fifth-title]
+AwsAccountResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|True
+a|
+
+|accountName
+|string
+|False
+a|
+
+|accountType
+|string
+|False
+a|
+
+|accountId
+|string
+|False
+a|
+
+|accessKey
+|string
+|False
+a|
+
+|assumeRole
+|link:#AssumeRole[AssumeRole]
+|False
+a|
+
+|occmRole
+|string
+|False
+a|
+
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|True
+a|
+
+|subscriptionId
+|string
+|False
+a|
+
+|===
+
+
+[#AzureAccountResponse]
+[.api-collapsible-fifth-title]
+AzureAccountResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|False
+a|
+
+|accountName
+|string
+|False
+a|
+
+|accountType
+|string
+|False
+a|
+
+|tenantId
+|string
+|False
+a|
+
+|applicationId
+|string
+|False
+a|
+
+|occmRole
+|string
+|False
+a|
+
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|False
+a|
+
+|===
+
+
+[#GcpAccountResponse]
+[.api-collapsible-fifth-title]
+GcpAccountResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|True
+a|
+
+|accountName
+|string
+|False
+a|
+
+|accountType
+|string
+|False
+a|
+
+|accessKey
+|string
+|False
+a|
+
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|True
+a|
+
+|occmRole
+|string
+|False
+a|
+
+|===
+
+
+[#NssAccountResponse]
+[.api-collapsible-fifth-title]
+NssAccountResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|True
+a|
+
+|accountName
+|string
+|False
+a|
+
+|accountType
+|string
+|False
+a|
+
+|nssUserName
+|string
+|False
+a|
+
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

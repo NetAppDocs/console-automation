@@ -1,0 +1,103 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-ha-discovery-discover.html'
+summary: 'Retrieve a list of HA systems for a Google Cloud region'
+---
+
+= Retrieve a list of HA systems for a Google Cloud region
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/discovery/discover`#
+
+
+
+Retrieves a list of discovered systems visible to the current user in the specified Google Cloud region.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|region
+|string
+|query
+|False
+a|
+
+|project
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|id
+|string
+|False
+a|
+
+|publicId
+|string
+|False
+a|
+
+|zones
+|array[string]
+|True
+a|
+
+|vpcs
+|array[string]
+|False
+a|
+
+|subnetIds
+|array[string]
+|False
+a|
+
+|projectName
+|string
+|False
+a|
+
+|clusterAddress
+|string
+|False
+a|
+
+|recoverable
+|boolean
+|True
+a|
+
+|===
+
+

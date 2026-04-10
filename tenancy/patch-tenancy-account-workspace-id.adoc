@@ -1,0 +1,157 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/patch-tenancy-account-workspace-id.html'
+summary: 'Rename a workspace'
+---
+
+= Rename a workspace
+
+[.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}`#
+
+
+
+Renames a workspace with a specified new name.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workspacePublicId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|Authorization JWT access token
+
+
+|X-User-Token
+|string
+|header
+|False
+a|User JWT access token
+
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|newName
+|string
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "newName": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|workspacePublicId
+|string
+|False
+a|
+
+|workspaceName
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "workspacePublicId": "string",
+  "workspaceName": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|newName
+|string
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,145 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-occm-system-occm-instance-placement.html'
+summary: 'Retrieve the region, VPC, and subnet'
+---
+
+= Retrieve the region, VPC, and subnet
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/occm-instance-placement`#
+
+
+
+Retrieves the region, VPC, and subnet in which the NetApp Console instance is running.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|clearCache
+|boolean
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|region
+|string
+|False
+a|
+
+|vpcId
+|string
+|False
+a|
+
+|subnetId
+|string
+|False
+a|
+
+|keyPair
+|string
+|False
+a|
+
+|installLocation
+|string
+|False
+a|
+
+|role
+|string
+|False
+a|
+
+|providerRoleType
+|string
+|False
+a|
+
+|publicIp
+|string
+|False
+a|
+
+|account
+|string
+|False
+a|
+
+|govCloud
+|boolean
+|False
+a|
+
+|china
+|boolean
+|False
+a|
+
+|isLegacyInstance
+|boolean
+|False
+a|
+
+|instanceType
+|string
+|False
+a|
+
+|isLegacyOs
+|boolean
+|False
+a|
+
+|darkSite
+|boolean
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "region": "string",
+  "vpcId": "string",
+  "subnetId": "string",
+  "keyPair": "string",
+  "installLocation": "string",
+  "role": "string",
+  "providerRoleType": "string",
+  "publicIp": "string",
+  "account": "string",
+  "instanceType": "string"
+}
+====
+

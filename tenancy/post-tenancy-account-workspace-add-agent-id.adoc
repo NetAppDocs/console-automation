@@ -1,0 +1,73 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/post-tenancy-account-workspace-add-agent-id.html'
+summary: 'Add an agent'
+---
+
+= Add an agent
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}/add-agent/{agentAuth0Id}`#
+
+
+
+Adds an agent to a specified workspace.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|agentAuth0Id
+|string
+|path
+|True
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workspacePublicId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-User-Token
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
