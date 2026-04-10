@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-aws-ha-metadata-ebs-volume-types.html'
+summary: 'Retrieve supported EBS volume types'
+---
+
+= Retrieve supported EBS volume types
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/ebs-volume-types`#
+
+
+
+Retrieves supported EBS volume types.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|description
+|string
+|True
+a|
+
+|size
+|link:#Capacity[Capacity]
+|True
+a|
+
+|supportedVolumeTypes
+|array[string]
+|True
+a|
+
+|supportedOccmLicenses
+|array[string]
+|False
+a|
+
+|isDefault
+|boolean
+|False
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

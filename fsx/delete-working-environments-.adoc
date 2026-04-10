@@ -1,0 +1,61 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'fsx/delete-working-environments-.html'
+summary: 'Delete an FSX working environment'
+---
+
+= Delete an FSX working environment
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/working-environments/{accountId}/{workingEnvironmentId}`#
+
+
+
+Deletes an FSx ONTAP working environment.
+
+**Token usage:** Cloud Manager user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|x-simulator
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Response
+
+```
+Status: 200, 
+```
+

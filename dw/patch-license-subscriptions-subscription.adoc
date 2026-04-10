@@ -1,0 +1,165 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/patch-license-subscriptions-subscription.html'
+summary: 'Update a subscription expiration date'
+---
+
+= Update a subscription expiration date
+
+[.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/subscriptions/subscription`#
+
+
+
+Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of the services.
+
+**Note:** +
+To update the expiration date, the expiration date and service name are mandatory, dwAudit is optional. +
+To update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.
+
+{blank} +
+*Token usage:* Either a NetApp Console user token or service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subscriptionId
+|string
+|False
+a|
+
+|accountId
+|string
+|False
+a|
+
+|serviceName
+|string
+|False
+a|
+
+|subscriptionName
+|string
+|False
+a|
+
+|expirationDate
+|integer
+|False
+a|
+
+|subscriptionType
+|string
+|False
+a|
+
+|dwAudit
+|boolean
+|False
+a|The NetApp Console audits, by default, all API calls.
+
+NOTE:
+
+* To stop the NetApp Console from auditing a request, you can set the calling service to `false`.
+* `dwAudit` is an optional parameter, the default value is `true`.
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "subscriptionId": "string",
+  "accountId": "string",
+  "serviceName": "string",
+  "subscriptionName": "string",
+  "subscriptionType": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

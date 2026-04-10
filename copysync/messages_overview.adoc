@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/messages_overview.html'
+summary: 'Messages endpoints in the NetApp Copy and Sync REST API'
+---
+
+= Messages endpoints in the NetApp Copy and Sync REST API
+
+
+
+The messages endpoint sends user information, received by performing asynchronous operations, such as listing an S3 bucket, listing shares, and listing exports, to a client.
+
+The API call process involves the following steps:
+
+. Execute the API endpoint initially without using the "`last`" query parameter. The API response will include an ID field value.
+. Subsequently, execute the API endpoint using the ID field value obtained after performing Step 1.
+
+

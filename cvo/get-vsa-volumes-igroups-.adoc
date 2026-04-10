@@ -1,0 +1,219 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-vsa-volumes-igroups-.html'
+summary: 'Retrieve all igroups'
+---
+
+= Retrieve all igroups
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/volumes/igroups/{workingEnvironmentId}/{svmName}`#
+
+
+
+Retrieves all igroups.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|svmName
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|igroupName
+|string
+|True
+a|
+
+|osType
+|string
+|False
+a|
+
+|portsetName
+|string
+|False
+a|
+
+|igroupType
+|string
+|True
+a|
+
+|initiators
+|array[string]
+|True
+a|
+
+|lunMaps
+|array[link:#LunMapsLun[LunMapsLun]]
+|True
+a|
+
+|initiatorsWithConnStatus
+|array[link:#InitiatorsConnectivityStateNameObject[InitiatorsConnectivityStateNameObject]]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "igroupName": "string",
+  "osType": "string",
+  "portsetName": "string",
+  "igroupType": "string",
+  "initiators": [
+    "string"
+  ],
+  "lunMaps": [
+    {
+      "lun": {
+        "name": "string",
+        "uuid": "string"
+      }
+    }
+  ],
+  "initiatorsWithConnStatus": [
+    {
+      "connectivity_tracking": {
+        "connection_state": "string"
+      },
+      "name": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#NameUuidObject]
+[.api-collapsible-fifth-title]
+NameUuidObject
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|uuid
+|string
+|False
+a|
+
+|===
+
+
+[#LunMapsLun]
+[.api-collapsible-fifth-title]
+LunMapsLun
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|lun
+|link:#NameUuidObject[NameUuidObject]
+|True
+a|
+
+|===
+
+
+[#ConnectionState]
+[.api-collapsible-fifth-title]
+ConnectionState
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|connection_state
+|string
+|False
+a|
+
+|===
+
+
+[#InitiatorsConnectivityStateNameObject]
+[.api-collapsible-fifth-title]
+InitiatorsConnectivityStateNameObject
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|connectivity_tracking
+|link:#ConnectionState[ConnectionState]
+|True
+a|
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,174 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-flexcache-caches.html'
+summary: 'Retrieve all FlexCache volumes lists'
+---
+
+= Retrieve all FlexCache volumes lists
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/flexcache/caches`#
+
+
+
+Retrieves all FlexCache volume lists.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workspaceId
+|string
+|query
+|False
+a|
+
+|workingEnvironmentId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|source
+|link:#FlexCacheSide[FlexCacheSide]
+|True
+a|
+
+|destination
+|link:#FlexCacheSide[FlexCacheSide]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "source": {
+    "workingEnvironmentId": "string",
+    "workingEnvironmentType": "string",
+    "clusterName": "string",
+    "svm": "string",
+    "volume": "string",
+    "uuid": "string"
+  },
+  "destination": {
+    "workingEnvironmentId": "string",
+    "workingEnvironmentType": "string",
+    "clusterName": "string",
+    "svm": "string",
+    "volume": "string",
+    "uuid": "string"
+  }
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+[#FlexCacheSide]
+[.api-collapsible-fifth-title]
+FlexCacheSide
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|False
+a|
+
+|workingEnvironmentType
+|string
+|False
+a|
+
+|clusterName
+|string
+|False
+a|
+
+|svm
+|string
+|False
+a|
+
+|volume
+|string
+|False
+a|
+
+|uuid
+|string
+|False
+a|
+
+|size
+|link:#Capacity[Capacity]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

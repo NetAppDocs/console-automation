@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-cloud-compliance-enable-scan.html'
+summary: 'Enable scanning using the system ID'
+---
+
+= Enable scanning using the system ID
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{workingEnvironmentId}/enable-scan`#
+
+
+
+Enables scanning using the system ID.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

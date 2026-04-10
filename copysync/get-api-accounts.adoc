@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts.html'
+summary: 'Retrieve the tenancy accounts'
+---
+
+= Retrieve the tenancy accounts
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts`#
+
+
+
+Retrieves the tenancy accounts.
+
+
+== Response
+
+```
+Status: 200, Default Response
+```
+

@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'federation/domain_overview.html'
+summary: 'Domain endpoints in the Federation REST API for the NetApp Console'
+---
+
+= Domain endpoints in the Federation REST API for the NetApp Console
+
+
+
+The domain endpoints enable you to verify ownership of a domain name. All domains that don't match your user's email address must be verified.
+
+You can perform the following actions using the domain endpoints:
+
+* List domains
+* Create a domain
+* Delete a domain
+* Retrieve a domain
+* Update a domain
+
+

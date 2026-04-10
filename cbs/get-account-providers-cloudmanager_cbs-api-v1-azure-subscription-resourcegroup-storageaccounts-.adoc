@@ -1,0 +1,154 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-azure-subscription-resourcegroup-storageaccounts-.html'
+summary: 'Retrieve a specific Azure storage account for a subscription ID'
+---
+
+= Retrieve a specific Azure storage account for a subscription ID
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resourceGroup/{resourceGroup}/storageAccounts/{storageAccountName}`#
+
+
+
+Retrieves a specific Azure storage account for a specific subscription ID in a resource group in Azure cloud from the NetApp Console SaaS application.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fields
+|string
+|query
+|False
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|subscriptionId
+|string
+|path
+|True
+a|
+
+|resourceGroup
+|string
+|path
+|True
+a|
+
+|storageAccountName
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|storageAccounts
+|array[link:#storageAccounts[storageAccounts]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "storageAccounts": [
+    {
+      "name": "string",
+      "is-encrypted": "string",
+      "is-public": "string",
+      "region": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#storageAccounts]
+[.api-collapsible-fifth-title]
+storageAccounts
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|is-encrypted
+|string
+|False
+a|
+
+|is-public
+|string
+|False
+a|
+
+|region
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

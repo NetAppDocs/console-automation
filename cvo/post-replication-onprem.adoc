@@ -1,0 +1,205 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-replication-onprem.html'
+summary: 'Create a new replication for an on-premises system'
+---
+
+= Create a new replication for an on-premises system
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/onprem`#
+
+
+
+Creates a new replication to an on-premises system.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|replicationRequest
+|link:#ReplicationRequest[ReplicationRequest]
+|True
+a|
+
+|replicationVolume
+|link:#OnPremVolumeRequest[OnPremVolumeRequest]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "replicationRequest": {
+    "sourceWorkingEnvironmentId": "string",
+    "destinationWorkingEnvironmentId": "string",
+    "sourceInterclusterLifIps": [
+      "string"
+    ],
+    "destinationInterclusterLifIps": [
+      "string"
+    ],
+    "policyName": "string",
+    "scheduleName": "string",
+    "sourceIpSpace": "string",
+    "destinationIpSpace": "string"
+  },
+  "replicationVolume": {
+    "sourceSvmName": "string",
+    "sourceVolumeName": "string",
+    "destinationVolumeName": "string",
+    "destinationAggregateName": "string",
+    "destinationSvmName": "string",
+    "destinationCapacityTier": "string",
+    "tieringPolicy": "string"
+  }
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#ReplicationRequest]
+[.api-collapsible-fifth-title]
+ReplicationRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|
+
+|destinationWorkingEnvironmentId
+|string
+|True
+a|
+
+|sourceInterclusterLifIps
+|array[string]
+|True
+a|
+
+|destinationInterclusterLifIps
+|array[string]
+|True
+a|
+
+|policyName
+|string
+|True
+a|
+
+|scheduleName
+|string
+|False
+a|
+
+|maxTransferRate
+|integer
+|False
+a|
+
+|sourceIpSpace
+|string
+|False
+a|
+
+|destinationIpSpace
+|string
+|False
+a|
+
+|===
+
+
+[#minimumCoolingDays]
+[.api-collapsible-fifth-title]
+minimumCoolingDays
+
+
+[#OnPremVolumeRequest]
+[.api-collapsible-fifth-title]
+OnPremVolumeRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceSvmName
+|string
+|True
+a|
+
+|sourceVolumeName
+|string
+|True
+a|
+
+|destinationVolumeName
+|string
+|True
+a|
+
+|destinationAggregateName
+|string
+|True
+a|
+
+|destinationSvmName
+|string
+|True
+a|
+
+|destinationCapacityTier
+|string
+|False
+a|
+
+|tieringPolicy
+|string
+|False
+a|
+
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

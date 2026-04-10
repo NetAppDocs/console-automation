@@ -1,0 +1,61 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/get-tenancy-account-members.html'
+summary: 'Retrieve user and service account data'
+---
+
+= Retrieve user and service account data
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/members`#
+
+
+
+Retrieves the user and service account data of the specified account.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-User-Token
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+

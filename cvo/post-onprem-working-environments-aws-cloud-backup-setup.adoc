@@ -1,0 +1,111 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-onprem-working-environments-aws-cloud-backup-setup.html'
+summary: 'Set up AWS backup to cloud'
+---
+
+= Set up AWS backup to cloud
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/aws-cloud-backup-setup`#
+
+
+
+Sets up AWS backup to cloud on an on-premises system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|awsAccessKeys
+|link:#AwsAccessKeys[AwsAccessKeys]
+|True
+a|
+
+|ipSpace
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "awsAccessKeys": {
+    "accessKey": "string",
+    "secretKey": "string"
+  },
+  "ipSpace": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#AwsAccessKeys]
+[.api-collapsible-fifth-title]
+AwsAccessKeys
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accessKey
+|string
+|True
+a|
+
+|secretKey
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

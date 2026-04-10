@@ -1,0 +1,99 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/delete-azure-ha-volumes-storage-vms-volumes-remove-avs.html'
+summary: 'Remove Azure VMware Solution hosts on a volume'
+---
+
+= Remove Azure VMware Solution hosts on a volume
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/remove-avs`#
+
+
+
+Removes Azure VMware Solution hosts on a volume.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|svmName
+|string
+|path
+|True
+a|
+
+|volumeName
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|privateCloudName
+|string
+|True
+a|
+
+|clusterName
+|string
+|True
+a|
+
+|resourceGroup
+|string
+|True
+a|
+
+|dataStoreName
+|string
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "privateCloudName": "string",
+  "clusterName": "string",
+  "resourceGroup": "string",
+  "dataStoreName": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

@@ -1,0 +1,97 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-flexcache-fsx.html'
+summary: 'Create a new FlexCache volume for an FSx system'
+---
+
+= Create a new FlexCache volume for an FSx system
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/flexcache/fsx`#
+
+
+
+Creates a new FlexCache volume in an FSx system.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|
+
+|destinationWorkingEnvironmentId
+|string
+|True
+a|
+
+|sourceSvmName
+|string
+|True
+a|
+
+|destinationSvmName
+|string
+|True
+a|
+
+|sourceIpSpace
+|string
+|False
+a|
+
+|destinationIpSpace
+|string
+|False
+a|
+
+|sourceVolumes
+|array[string]
+|True
+a|
+
+|cacheVolumePercentage
+|integer
+|True
+a|
+
+|nameForSingleVolume
+|string
+|False
+a|
+
+|namePrefix
+|string
+|False
+a|
+
+|nameSuffix
+|string
+|False
+a|
+
+|replicateNfsCifsShares
+|boolean
+|True
+a|
+
+|===
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

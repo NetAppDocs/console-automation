@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/accounts_overview.html'
+summary: 'Accounts REST API endpoints in the NetApp Copy and Sync REST API'
+---
+
+= Accounts REST API endpoints in the NetApp Copy and Sync REST API
+
+
+
+The accounts endpoints provide information about the identity of the user's tenancy account. The endpoints enable you to receive information about licensing ( PAYGO or CONTRACT subscriptions from Microsoft Azure, AWS marketplace, or bring your own license (BYOL from NetApp) and perform licensing-related operations.
+The following actions can be performed with the accounts endpoints:
+
+* Retrieve account statistics information
+* Add a BYOL license
+* Retrieve a list of NSS credentials associated with an account
+* Retrieve license information of an account
+* Update subscription information (using the /register API call)
+
+

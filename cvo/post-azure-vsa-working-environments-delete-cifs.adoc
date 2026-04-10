@@ -1,0 +1,81 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-azure-vsa-working-environments-delete-cifs.html'
+summary: 'Delete a CIFS configuration'
+---
+
+= Delete a CIFS configuration
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/delete-cifs`#
+
+
+
+Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|activeDirectoryUsername
+|string
+|False
+a|
+
+|activeDirectoryPassword
+|string
+|False
+a|
+
+|svmName
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "activeDirectoryUsername": "string",
+  "activeDirectoryPassword": "string",
+  "svmName": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

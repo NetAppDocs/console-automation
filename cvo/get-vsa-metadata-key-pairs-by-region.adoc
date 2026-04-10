@@ -1,0 +1,96 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-vsa-metadata-key-pairs-by-region.html'
+summary: 'Retrieve AWS user key pairs for all regions'
+---
+
+= Retrieve AWS user key pairs for all regions
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/key-pairs-by-region`#
+
+
+
+Retrieves AWS user Key Pairs for all regions.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|roleArn
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|regionToKeyPairs
+|link:#regionToKeyPairs[regionToKeyPairs]
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#regionToKeyPairs]
+[.api-collapsible-fifth-title]
+regionToKeyPairs
+Hash mapping strings to array[string]
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|traversableAgain
+|boolean
+|False
+a|
+
+|empty
+|boolean
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

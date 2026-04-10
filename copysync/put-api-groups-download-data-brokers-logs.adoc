@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/put-api-groups-download-data-brokers-logs.html'
+summary: 'Download the data broker group logs'
+---
+
+= Download the data broker group logs
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/groups/{id}/download-data-brokers-logs`#
+
+
+
+Downloads the data broker group logs.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|id
+|string
+|path
+|True
+a|Data Broker Group ID
+
+
+|x-account-id
+|string
+|header
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

@@ -1,0 +1,112 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/post-tenancy-account-id.html'
+summary: 'Create an account'
+---
+
+= Create an account
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountName}`#
+
+
+
+Creates a new account with the specified account name.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountName
+|string
+|path
+|True
+a|Account name
+
+* pattern: {caret}[-_.a-zA-Z0-9]{1,40}$
+
+
+|authorization
+|string
+|header
+|True
+a|Authorization JWT access token
+
+
+|X-User-Token
+|string
+|header
+|False
+a|User JWT access token
+
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|isSaasDisabled
+|boolean
+|False
+a|Specifies if created account is saas disabled, default false
+
+
+|===
+
+
+== Response
+
+```
+Status: 200, Successful create account response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountPublicId
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountPublicId": "string"
+}
+====
+

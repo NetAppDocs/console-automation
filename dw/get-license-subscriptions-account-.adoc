@@ -1,0 +1,172 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/get-license-subscriptions-account-.html'
+summary: 'Retrieve subscription information for an account'
+---
+
+= Retrieve subscription information for an account
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/account/{accountId}`#
+
+
+
+Retrieves the subscription information for a specified account ID.
+
+**Note:**
+
+* If entitlements are provided, the API endpoint also returns the entitlements related to each subscription.
+* If serviceName is provided, the API returns only the subscription related to the service name.
+* The API authorizes two types of calls: user calls and service calls (with a predefined scope). +
+For KEYSTONE, only user calls are allowed.
+
+{blank} +
+*Token usage:* Either a NetApp Console user token or service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|serviceName
+|string
+|query
+|False
+a|
+
+|entitlements
+|boolean
+|query
+|False
+a|
+
+|subscriptionId
+|string
+|query
+|False
+a|
+
+|dimensions
+|boolean
+|query
+|False
+a|
+
+|cloudProvider
+|string
+|query
+|False
+a|
+
+|extendSubInfo
+|boolean
+|query
+|False
+a|
+
+|extendEntitlementsInfo
+|boolean
+|query
+|False
+a|
+
+|extendUsageReport
+|boolean
+|query
+|False
+a|
+
+|includeCloudAccounts
+|boolean
+|query
+|False
+a|
+
+|includeSummaryInfo
+|boolean
+|query
+|False
+a|
+
+|eventTypes
+|string
+|query
+|False
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

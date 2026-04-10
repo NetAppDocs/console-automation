@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-onprem-working-environments-ip-spaces.html'
+summary: 'Retrieve an IPspace list for an existing system'
+---
+
+= Retrieve an IPspace list for an existing system
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/ip-spaces`#
+
+
+
+Retrieves an IPspace list for an existing Cloud Volumes ONTAP system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|vserver
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ipSpace
+|string
+|True
+a|
+
+|vservers
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "ipSpace": "string",
+  "vservers": [
+    "string"
+  ]
+}
+====
+

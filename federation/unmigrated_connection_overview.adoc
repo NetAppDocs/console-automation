@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'federation/unmigrated_connection_overview.html'
+summary: 'Unmigrated connection endpoints in the Federation REST API for the NetApp Console'
+---
+
+= Unmigrated connection endpoints in the Federation REST API for the NetApp Console
+
+
+
+The unmigrated connection endpoints enable you to import connections from Cloud Central into the NetApp Console. After you import a connection, it cannot be managed through Cloud Central Federation Setup.
+
+You can perform the following actions using the unmigrated connection endpoints:
+
+* List unmigrated connections
+* Import a connection
+
+

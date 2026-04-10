@@ -1,0 +1,249 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume.html'
+summary: 'Modify multiple backed up volumes'
+---
+
+= Modify multiple backed up volumes
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume`#
+
+
+
+Modifies multiple backed-up volumes in a specific system. This API endpoint modifies the volume state, backup-policy, backup policy rule and retention, and archive-after-days parameters.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|volume
+|array[link:#volume[volume]]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "volume": [
+    {
+      "state": "string",
+      "file-system-id": "string",
+      "backup-policy": {
+        "name": "string",
+        "rule": [
+          {
+            "label": "string",
+            "retention": "string"
+          }
+        ],
+        "archive-after-days": "string",
+        "object-lock": "string"
+      }
+    }
+  ]
+}
+====
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#rule]
+[.api-collapsible-fifth-title]
+rule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|label
+|string
+|False
+a|
+
+|retention
+|string
+|False
+a|
+
+|===
+
+
+[#backup-policy]
+[.api-collapsible-fifth-title]
+backup-policy
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|rule
+|array[link:#rule[rule]]
+|False
+a|
+
+|archive-after-days
+|string
+|False
+a|
+
+|object-lock
+|string
+|False
+a|
+
+|===
+
+
+[#volume]
+[.api-collapsible-fifth-title]
+volume
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|state
+|string
+|False
+a|
+
+|file-system-id
+|string
+|True
+a|
+
+|backup-policy
+|link:#backup-policy[backup-policy]
+|False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|volume
+|array[link:#volume[volume]]
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

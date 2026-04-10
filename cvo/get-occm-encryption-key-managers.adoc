@@ -1,0 +1,78 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-occm-encryption-key-managers.html'
+summary: 'Retrieve all key managers'
+---
+
+= Retrieve all key managers
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/encryption/key-managers`#
+
+
+
+Retrieves all key managers.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|address
+|string
+|False
+a|
+
+|usernameField
+|string
+|False
+a|
+
+|usernameValue
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "publicId": "string",
+  "name": "string",
+  "address": "string",
+  "usernameField": "string",
+  "usernameValue": "string",
+  "status": "string"
+}
+====
+

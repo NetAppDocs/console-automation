@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'tenancyv4/resource_and_resourcegroup_overview.html'
+summary: 'Resource and resourcegroup endpoints in the identity and access management REST API for the NetApp Console'
+---
+
+= Resource and resourcegroup endpoints in the identity and access management REST API for the NetApp Console
+
+
+
+The resource and resourcegroup endpoints enable management of NetApp Console identity and access management (IAM) ResourceTypes, resources, and resource groups.
+
+ResourceTypes represent the various types of resources that are stored in IAM and can only be modified by NetApp.
+
+A resource is a working environment that NetApp Console already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster). NetApp Console is aware of undiscovered resources based on your organization's telemetry data.
+
+A resource group is a set of resources that you can manage as a group. In IAM, you can manage implicit resource groups and explicit resource groups. In an implicit resource group, resources belong to the same organization, project, or folder. In an explicit resource group, resources can belong to different elements of a resource hierarchy.
+
+

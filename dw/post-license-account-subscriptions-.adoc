@@ -1,0 +1,144 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/post-license-account-subscriptions-.html'
+summary: 'Register a subscription'
+---
+
+= Register a subscription
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/account/{accountId}/subscriptions/{subscriptionId}`#
+
+
+
+Registers a subscription with the NetApp Console and associates it with the account by using the identity and access management service. +
+Each subscription can be associated with multiple accounts.
+
+**Note:**
+
+This endpoint updates the expiration date based on the date provided in the request.
+
+*Token usage:* NetApp Console service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|subscriptionId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subscriptionType
+|string
+|True
+a|
+
+|expirationDate
+|integer
+|True
+a|
+
+|dwAudit
+|boolean
+|False
+a|The NetApp Console audits, by default, all API calls.
+
+NOTE:
+
+* To stop the NetApp Console from auditing a request, you can set the calling service to `false`.
+* `dwAudit` is an optional parameter, the default value is `true`.
+
+
+|===
+
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

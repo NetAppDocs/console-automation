@@ -1,0 +1,158 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-configurations.html'
+summary: 'Modify the configuration'
+---
+
+= Modify the configuration
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations`#
+
+
+
+Modifies the configuration.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|authorization
+|string
+|header
+|True
+a|Authorization token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Agent ID
+
+
+|accountId
+|string
+|path
+|True
+a|
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key
+|string
+|True
+a|Configuration key
+
+
+|value
+|
+|True
+a|Configuration value
+
+
+|===
+
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+== Error
+
+```
+Status: 500, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|statusCode
+|number
+|False
+a|
+
+|error
+|string
+|False
+a|
+
+|message
+|string
+|False
+a|
+
+|===
+
+
+.Example error
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": "string",
+  "message": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key
+|string
+|True
+a|Configuration key
+
+
+|value
+|
+|True
+a|Configuration value
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

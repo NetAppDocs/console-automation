@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/support_overview.html'
+summary: 'Support endpoints in the In-Product Automation REST API for the NetApp Console'
+---
+
+= Support endpoints in the In-Product Automation REST API for the NetApp Console
+
+
+
+The support endpoint performs the case system entitlements and case creation operations.
+
+You can perform the following operations with the IPA support endpoint:
+
+* Check system entitlements for serial number - this checks if the user is entitled to create a case for the requested serial number.
+* Create a support case
+
+

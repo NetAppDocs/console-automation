@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/delete-api-accounts-licenses-v2-.html'
+summary: 'Delete a license serial number'
+---
+
+= Delete a license serial number
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/accounts/{accountId}/licenses-v2/{serialNumber}`#
+
+
+
+Deletes a license serial number.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|serialNumber
+|string
+|path
+|True
+a|License Serial Number
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+

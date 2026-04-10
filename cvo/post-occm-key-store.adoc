@@ -1,0 +1,76 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-occm-key-store.html'
+summary: 'Generate a new key pair and self-signed certificate'
+---
+
+= Generate a new key pair and self-signed certificate
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/key-store`#
+
+
+
+Generates a new key pair and self-signed certificate at the key store and returns a certificate signing request (CSR).
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|commonName
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "commonName": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|csr
+|string
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "csr": "string"
+}
+====
+

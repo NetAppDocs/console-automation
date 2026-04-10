@@ -1,0 +1,901 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-.html'
+summary: 'Modify the comprehensive protection configuration in a system (v2)'
+---
+
+= Modify the comprehensive protection configuration in a system (v2)
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/panoramic-protection/working-environment/{workingEnvironmentId}`#
+
+
+
+Modifies comprehensive protection configuration in a system. This API enables you to enhance the protection capabilities within a system by adding replication and backup functionalities. This enables the creation of fan-out or cascading backup topologies in the cloud. When replication is selected, the API first checks for the presence of an existing cluster-peering relationship. If a relationship is not found, the API creates the necessary cluster-peering relationship. Alternatively, if backup to the cloud is selected, the API creates a bucket in the specified cloud provider or appliance (AWS, AZURE, GCP, SGWS, ONTAP_S3) specifically for the system. This designated bucket is used for storing backups taken from the system. Archival tiers or DataLock/Ransomware capability can be set while enabling backup to cloud.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|state
+|string
+|False
+a|Updates the SnapMirror relationship state in the system to the state specified
+
+
+|provider
+|string
+|False
+a|Required input field for on-premises use cases
+
+* enum: ["AWS", "AZURE", "GCP", "SGWS", "ONTAP_S3", "S3_COMPATIBLE"]
+
+
+|region
+|string
+|False
+a|Required input field for on-premises
+
+
+|aws
+|link:#aws[aws]
+|False
+a|
+
+|azure
+|link:#azure[azure]
+|False
+a|
+
+|gcp
+|link:#gcp[gcp]
+|False
+a|
+
+|sgws
+|link:#sgws[sgws]
+|False
+a|
+
+|ontap-s3
+|link:#ontap-s3[ontap-s3]
+|False
+a|
+
+|s3-compatible
+|link:#s3-compatible[s3-compatible]
+|False
+a|
+
+|bucket
+|string
+|False
+a|Optional input
+
+
+|ip-space
+|string
+|False
+a|Required input field for on-premises use cases
+
+
+|backup-policy
+|link:#backup-policy[backup-policy]
+|False
+a|
+
+|max-transfer-rate
+|number
+|False
+a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second(kbps). A value of 0 implies unlimited throttling
+
+
+|export-existing-snapshots
+|boolean
+|False
+a|Exports pre-existing snapshots to object storage
+
+
+|architecture
+|string
+|False
+a|Type of storage architecture. Fan-out or Cascading
+
+
+|snapshot-policy
+|string
+|False
+a|Snapshot policy name. To disable local snapshot, pass the value as: none(case sensitive).
+
+
+|replication-target
+|link:#replication-target[replication-target]
+|False
+a|
+
+|fix-mismatch-labels
+|boolean
+|False
+a|
+
+|toggle-rsw-scan
+|boolean
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "state": "string",
+  "provider": "string",
+  "region": "string",
+  "aws": {
+    "account-id": "string",
+    "kms-key-id": "string",
+    "private-endpoint": {
+      "id": "string"
+    },
+    "archive-storage-class": "string"
+  },
+  "azure": {
+    "resource-group": "string",
+    "storage-account": "string",
+    "subscription": "string",
+    "private-endpoint": {
+      "subnet": "string"
+    },
+    "key-vault": {
+      "key-vault-id": "string",
+      "key-name": "string"
+    }
+  },
+  "gcp": {
+    "project-id": "string",
+    "credentials-id": "string",
+    "kms": {
+      "key-ring-id": "string",
+      "crypto-key-id": "string"
+    }
+  },
+  "sgws": {
+    "storage-grid-id": "string",
+    "storage-server-name": "string"
+  },
+  "ontap-s3": {
+    "storage-server": "string",
+    "access-key": "string",
+    "secret-password": "string"
+  },
+  "s3-compatible": {
+    "storage-server": "string",
+    "access-key": "string",
+    "secret-password": "string"
+  },
+  "bucket": "string",
+  "ip-space": "string",
+  "backup-policy": {
+    "name": "string",
+    "rule": [
+      {
+        "label": "string",
+        "retention": "string"
+      }
+    ],
+    "archive-after-days": "string",
+    "object-lock": "string",
+    "sgws-archival": {
+      "cloud-storage-pool": {
+        "provider": "string",
+        "provider-account-id": "string",
+        "region": "string",
+        "archive-storage-class": "string",
+        "resource-group": "string"
+      }
+    }
+  },
+  "architecture": "string",
+  "snapshot-policy": "string",
+  "replication-target": {
+    "policy-name": "string",
+    "working-environment-id": "string",
+    "working-environment-name": "string",
+    "svm": "string",
+    "prefix": "string",
+    "suffix": "string",
+    "aggregates": [
+      "string"
+    ]
+  }
+}
+====
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#private-endpoint]
+[.api-collapsible-fifth-title]
+private-endpoint
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|False
+a|Optional input field for a private endpoint
+
+
+|===
+
+
+[#aws]
+[.api-collapsible-fifth-title]
+aws
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|account-id
+|string
+|False
+a|Required when the provider is AWS
+
+
+|kms-key-id
+|string
+|False
+a|Optional input field for customer managed key use case
+
+
+|private-endpoint
+|link:#private-endpoint[private-endpoint]
+|False
+a|
+
+|archive-storage-class
+|string
+|False
+a|Required for AWS to specify which storage class to use for archiving
+
+
+|===
+
+
+[#private-endpoint]
+[.api-collapsible-fifth-title]
+private-endpoint
+
+Required input field for private link configuration
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subnet
+|string
+|False
+a|Required input field for on-premises private link configuration
+
+
+|skip-creation
+|boolean
+|False
+a|Optional input field to skip private endpoint creation
+
+
+|===
+
+
+[#key-vault]
+[.api-collapsible-fifth-title]
+key-vault
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key-vault-id
+|string
+|False
+a|
+
+|key-name
+|string
+|False
+a|
+
+|===
+
+
+[#azure]
+[.api-collapsible-fifth-title]
+azure
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|resource-group
+|string
+|False
+a|Required when the provider is Azure
+
+
+|storage-account
+|string
+|False
+a|Required when the provider is Azure
+
+
+|subscription
+|string
+|False
+a|Required when the provider is Azure
+
+
+|private-endpoint
+|link:#private-endpoint[private-endpoint]
+|False
+a|Required input field for private link configuration
+
+
+|key-vault
+|link:#key-vault[key-vault]
+|False
+a|
+
+|===
+
+
+[#kms]
+[.api-collapsible-fifth-title]
+kms
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key-ring-id
+|string
+|False
+a|
+
+|crypto-key-id
+|string
+|False
+a|
+
+|===
+
+
+[#gcp]
+[.api-collapsible-fifth-title]
+gcp
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|project-id
+|string
+|False
+a|Required when the provider is Google Cloud
+
+
+|credentials-id
+|string
+|False
+a|Google Cloud credentials ID. Required when the provider is Google Cloud
+
+
+|kms
+|link:#kms[kms]
+|False
+a|
+
+|===
+
+
+[#sgws]
+[.api-collapsible-fifth-title]
+sgws
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|storage-grid-id
+|string
+|False
+a|StorageGRID ID. Required input field for StorageGRID provider
+
+
+|storage-server-name
+|string
+|False
+a|StorageGRID server name. Required input field for a StorageGRID provider
+
+
+|===
+
+
+[#ontap-s3]
+[.api-collapsible-fifth-title]
+ontap-s3
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|storage-server
+|string
+|False
+a|ONTAP S3 server URL. Required input field for ONTAP_S3 provider
+
+
+|access-key
+|string
+|False
+a|Access-key:Required input field for on-premises use cases
+
+
+|secret-password
+|string
+|False
+a|Secret-password:Required input field for on-premises use cases
+
+
+|===
+
+
+[#s3-compatible]
+[.api-collapsible-fifth-title]
+s3-compatible
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|storage-server
+|string
+|False
+a|s3 storage server
+
+
+|access-key
+|string
+|False
+a|Required input field for on-premises use cases
+
+
+|secret-password
+|string
+|False
+a|Required input field for on-premises use cases
+
+
+|===
+
+
+[#rule]
+[.api-collapsible-fifth-title]
+rule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|label
+|string
+|False
+a|
+
+|retention
+|string
+|False
+a|
+
+|===
+
+
+[#cloud-storage-pool]
+[.api-collapsible-fifth-title]
+cloud-storage-pool
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|provider
+|string
+|True
+a|Cloud provider where the cloud storage pool will be hosted
+
+
+|provider-account-id
+|string
+|True
+a|Cloud provider account ID where the cloud storage pool will be hosted
+
+
+|region
+|string
+|True
+a|Cloud provider region where the cloud storage pool will be hosted
+
+
+|archive-storage-class
+|string
+|False
+a|Required for AWS to specify which storage class to use for archiving
+
+
+|resource-group
+|string
+|False
+a|Required when the provider is Azure
+
+
+|===
+
+
+[#sgws-archival]
+[.api-collapsible-fifth-title]
+sgws-archival
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cloud-storage-pool
+|link:#cloud-storage-pool[cloud-storage-pool]
+|False
+a|
+
+|===
+
+
+[#backup-policy]
+[.api-collapsible-fifth-title]
+backup-policy
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|Required input
+
+
+|rule
+|array[link:#rule[rule]]
+|False
+a|
+
+|archive-after-days
+|string
+|False
+a|
+
+|object-lock
+|string
+|False
+a|
+
+|sgws-archival
+|link:#sgws-archival[sgws-archival]
+|False
+a|
+
+|===
+
+
+[#replication-target]
+[.api-collapsible-fifth-title]
+replication-target
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|policy-name
+|string
+|False
+a|
+
+|working-environment-id
+|string
+|False
+a|
+
+|working-environment-name
+|string
+|False
+a|
+
+|svm
+|string
+|False
+a|
+
+|prefix
+|string
+|False
+a|
+
+|suffix
+|string
+|False
+a|
+
+|aggregates
+|array[string]
+|False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|state
+|string
+|False
+a|Updates the SnapMirror relationship state in the system to the state specified
+
+
+|provider
+|string
+|False
+a|Required input field for on-premises use cases
+
+* enum: ["AWS", "AZURE", "GCP", "SGWS", "ONTAP_S3", "S3_COMPATIBLE"]
+
+
+|region
+|string
+|False
+a|Required input field for on-premises
+
+
+|aws
+|link:#aws[aws]
+|False
+a|
+
+|azure
+|link:#azure[azure]
+|False
+a|
+
+|gcp
+|link:#gcp[gcp]
+|False
+a|
+
+|sgws
+|link:#sgws[sgws]
+|False
+a|
+
+|ontap-s3
+|link:#ontap-s3[ontap-s3]
+|False
+a|
+
+|s3-compatible
+|link:#s3-compatible[s3-compatible]
+|False
+a|
+
+|bucket
+|string
+|False
+a|Optional input
+
+
+|ip-space
+|string
+|False
+a|Required input field for on-premises use cases
+
+
+|backup-policy
+|link:#backup-policy[backup-policy]
+|False
+a|
+
+|max-transfer-rate
+|number
+|False
+a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second(kbps). A value of 0 implies unlimited throttling
+
+
+|export-existing-snapshots
+|boolean
+|False
+a|Exports pre-existing snapshots to object storage
+
+
+|architecture
+|string
+|False
+a|Type of storage architecture. Fan-out or Cascading
+
+
+|snapshot-policy
+|string
+|False
+a|Snapshot policy name. To disable local snapshot, pass the value as: none(case sensitive).
+
+
+|replication-target
+|link:#replication-target[replication-target]
+|False
+a|
+
+|fix-mismatch-labels
+|boolean
+|False
+a|
+
+|toggle-rsw-scan
+|boolean
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-monitoring-enable-monitoring.html'
+summary: 'Enable monitoring'
+---
+
+= Enable monitoring
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/monitoring/{workingEnvironmentId}/enable-monitoring`#
+
+
+
+Enables monitoring.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

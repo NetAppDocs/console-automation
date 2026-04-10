@@ -1,0 +1,69 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-gcp-vsa-working-environments-writing-speed.html'
+summary: 'Set the writing speed'
+---
+
+= Set the writing speed
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/writing-speed`#
+
+
+
+Sets the writing speed for Cloud Volumes ONTAP.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|writingSpeedState
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "writingSpeedState": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

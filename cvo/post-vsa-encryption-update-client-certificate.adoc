@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-vsa-encryption-update-client-certificate.html'
+summary: 'Update the client certificate'
+---
+
+= Update the client certificate
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/encryption/{workingEnvironmentId}/update-client-certificate`#
+
+
+
+Updates the client certificate on the Cloud Volumes ONTAP system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|False
+a|
+
+|directIssuerName
+|string
+|False
+a|
+
+|subjectName
+|string
+|False
+a|
+
+|startDate
+|integer
+|True
+a|
+
+|endDate
+|integer
+|False
+a|
+
+|serialNumber
+|string
+|False
+a|
+
+|certificate
+|string
+|False
+a|
+
+|certificateType
+|string
+|False
+a|
+
+|===
+
+

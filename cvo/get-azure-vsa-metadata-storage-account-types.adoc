@@ -1,0 +1,161 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-vsa-metadata-storage-account-types.html'
+summary: 'Retrieve supported Azure storage account types'
+---
+
+= Retrieve supported Azure storage account types
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/storage-account-types`#
+
+
+
+Retrieves supported Azure storage account types.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|isMultiZone
+|boolean
+|query
+|False
+a|
+
+|isFlashcacheInstance
+|boolean
+|query
+|False
+a|
+
+|isManagedDiskSupported
+|boolean
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|diskType
+|string
+|True
+a|
+
+|availabilityTypes
+|array[string]
+|True
+a|
+
+|sizes
+|array[link:#AzureDiskSize[AzureDiskSize]]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "diskType": "string",
+  "availabilityTypes": [
+    "string"
+  ],
+  "sizes": [
+    {}
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+[#AzureDiskSize]
+[.api-collapsible-fifth-title]
+AzureDiskSize
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|link:#Capacity[Capacity]
+|True
+a|
+
+|description
+|string
+|False
+a|
+
+|supportedOccmLicenses
+|array[string]
+|False
+a|
+
+|isDefault
+|boolean
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

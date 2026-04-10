@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/external_services_overview.html'
+summary: 'External services endpoints in the License and subscriptions REST API for the NetApp Console'
+---
+
+= External services endpoints in the License and subscriptions REST API for the NetApp Console
+
+
+
+The external services endpoints retrieve data from external services that display in the NetApp Console.
+
+You can perform the following actions with the external services endpoints:
+
+* Read on-premises (on-prem) ONTAP cluster data.
+
+

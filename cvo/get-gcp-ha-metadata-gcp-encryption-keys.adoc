@@ -1,0 +1,90 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-ha-metadata-gcp-encryption-keys.html'
+summary: 'Retrieve Google Cloud encryption keys for a region'
+---
+
+= Retrieve Google Cloud encryption keys for a region
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/gcp-encryption-keys`#
+
+
+
+Retrieves Google Cloud encryption keys for a specific region.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|region
+|string
+|query
+|False
+a|
+
+|project
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|id
+|string
+|False
+a|
+
+|keyRing
+|string
+|False
+a|
+
+|location
+|string
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "id": "string",
+  "keyRing": "string",
+  "location": "string"
+}
+====
+

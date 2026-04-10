@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-replication-break--.html'
+summary: 'Break a SnapMirror replication relationship'
+---
+
+= Break a SnapMirror replication relationship
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/break/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
+
+
+
+Breaks a SnapMirror replication relationship.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|destinationWorkingEnvironmentId
+|string
+|path
+|True
+a|
+
+|destinationSvmName
+|string
+|path
+|True
+a|
+
+|destinationVolumeName
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
