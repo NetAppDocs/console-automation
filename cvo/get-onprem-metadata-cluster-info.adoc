@@ -1,0 +1,99 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-onprem-metadata-cluster-info.html'
+summary: 'Verify the address and credentials of a cluster'
+---
+
+= Verify the address and credentials of a cluster
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/metadata/cluster-info`#
+
+
+
+Verifies the address and credentials of the specified cluster by retrieving the cluster information.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|clusterAddress
+|string
+|header
+|False
+a|
+
+|clusterUsername
+|string
+|header
+|False
+a|
+
+|clusterPassword
+|string
+|header
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|serialNumber
+|string
+|True
+a|
+
+|clusterName
+|string
+|False
+a|
+
+|clusterUuid
+|string
+|False
+a|
+
+|ontapVersion
+|string
+|False
+a|
+
+|nodeModels
+|array[string]
+|True
+a|
+
+|isAdmin
+|boolean
+|True
+a|
+
+|clusterIp
+|string
+|False
+a|
+
+|===
+
+

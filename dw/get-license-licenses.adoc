@@ -1,0 +1,175 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/get-license-licenses.html'
+summary: 'Retrieve a license by type'
+---
+
+= Retrieve a license by type
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/licenses`#
+
+
+
+Retrieves a specified license by type (`LicenseType`), a resource ID (`resourceId`), or both. +
+The license endpoints consult the used or consumed capacity under the `includeSummaryInfo` parameter when retrieving licenses with the GET API call.
+
+**Note:**
+
+* If you use a NetApp Console service token, accountId is not a required field.
+* If you use a NetApp Console user token, `accountId` is a required field.
+* When you enter a value in `serialNumber` , all other fields are ignored.
+* The boolean parameter `includeSummaryInfo` (optional) retrieves the `totalLicensesCapacity`, `usedCapacity`, `reportTime` and events such as capacity expired or about to expire for each data service (CLOUD_BACKUP, CLOUD_DATA_SENSE, CLOUD_TIERING).
+* The boolean parameter `fetchNlf` (optional) retrieves the most updated valid NetApp license file from NetApp systems.
+* If you use the boolean parameter `fetchNlf`, you must provide `accountId`, `serialNumber`, and `nssKeyId`.
+* `fetchNlf` and `includeSummaryInfo` can't be provided in the same request.
+
+*Token usage:* Either a NetApp Console user token or service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|query
+|False
+a|
+
+|serialNumber
+|["string", "null"]
+|query
+|False
+a|
+
+|resourceId
+|string
+|query
+|False
+a|
+
+|licenseType
+|string
+|query
+|False
+a|
+
+|service
+|string
+|query
+|False
+a|
+
+|group
+|string
+|query
+|False
+a|
+
+|includeSummaryInfo
+|boolean
+|query
+|False
+a|
+
+|includeExchangedLicenses
+|boolean
+|query
+|False
+a|
+
+|fetchNlf
+|boolean
+|query
+|False
+a|
+
+|nssKeyId
+|string
+|query
+|False
+a|
+
+|eventTypes
+|string
+|query
+|False
+a|
+
+|meteringStatus
+|string
+|query
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

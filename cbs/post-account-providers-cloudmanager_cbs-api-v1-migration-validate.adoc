@@ -1,0 +1,186 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-migration-validate.html'
+summary: 'Validate migration operations'
+---
+
+= Validate migration operations
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/migration/validate`#
+
+
+
+Validates the migration of backups from the source ONTAP cluster to the target ONTAP cluster.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|authorization
+|string
+|header
+|True
+a|
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|
+
+|migrationWorkingEnvironmentId
+|string
+|True
+a|
+
+|migrationMappingDetails
+|array[link:#migrationMappingDetails[migrationMappingDetails]]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "sourceWorkingEnvironmentId": "string",
+  "migrationWorkingEnvironmentId": "string",
+  "migrationMappingDetails": [
+    {
+      "sourceVolumeUuid": "string",
+      "migratedVolumeUuid": "string",
+      "policyName": "string"
+    }
+  ]
+}
+====
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#migrationMappingDetails]
+[.api-collapsible-fifth-title]
+migrationMappingDetails
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceVolumeUuid
+|string
+|False
+a|
+
+|migratedVolumeUuid
+|string
+|False
+a|
+
+|policyName
+|string
+|False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|
+
+|migrationWorkingEnvironmentId
+|string
+|True
+a|
+
+|migrationMappingDetails
+|array[link:#migrationMappingDetails[migrationMappingDetails]]
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

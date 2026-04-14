@@ -1,0 +1,294 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/get-ipa-support-case-search.html'
+summary: 'Retrieve support cases'
+---
+
+= Retrieve support cases
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/support/case-search`#
+
+
+
+Retrieves a list of support cases according to the filter parameters.
+            +
+ +
+*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|nssKeyId
+|string
+|query
+|True
+a|
+
+|accountId
+|string
+|query
+|True
+a|
+
+|numberOfResults
+|integer
+|query
+|False
+a|
+
+|offset
+|integer
+|query
+|False
+a|
+
+|dateStart
+|string
+|query
+|False
+a|
+
+|dateEnd
+|string
+|query
+|False
+a|
+
+|systemSerialNumber
+|string
+|query
+|False
+a|
+
+|referenceNumber
+|string
+|query
+|False
+a|
+
+|caseStatus
+|
+|query
+|False
+a|
+
+|caseNumber
+|integer
+|query
+|False
+a|
+
+|allCasesByOwnerCompany
+|
+|query
+|False
+a|
+
+|allCasesByCaseContact
+|
+|query
+|False
+a|
+
+|systemCloudID
+|string
+|query
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|caseList
+|array[link:#caseList[caseList]]
+|False
+a|
+
+|totalResultsNumber
+|integer
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "caseList": [
+    {
+      "caseNumber": "string",
+      "symptom": "string",
+      "systemSerialNumber": "string",
+      "dateOpened": "string",
+      "dateUpdated": "string",
+      "priority": "Low",
+      "status": "Unassigned",
+      "clusterName": "string",
+      "caseAssignedToContact": "string",
+      "caseOwnerCompany": "string",
+      "caseContact": "string"
+    }
+  ]
+}
+====
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": "string",
+  "message": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#caseList]
+[.api-collapsible-fifth-title]
+caseList
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|caseNumber
+|string
+|False
+a|
+
+|symptom
+|string
+|False
+a|
+
+|systemSerialNumber
+|string
+|False
+a|
+
+|dateOpened
+|string
+|False
+a|
+
+|dateUpdated
+|string
+|False
+a|
+
+|priority
+|
+|False
+a|
+
+|status
+|
+|False
+a|
+
+|clusterName
+|string
+|False
+a|
+
+|caseAssignedToContact
+|string
+|False
+a|
+
+|caseOwnerCompany
+|string
+|False
+a|
+
+|caseContact
+|string
+|False
+a|
+
+|numberOfResults
+|integer
+|False
+a|
+
+|offset
+|integer
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

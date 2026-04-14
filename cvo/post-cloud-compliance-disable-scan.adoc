@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-cloud-compliance-disable-scan.html'
+summary: 'Disable scanning using the system ID'
+---
+
+= Disable scanning using the system ID
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{workingEnvironmentId}/disable-scan`#
+
+
+
+Disables scanning using the system ID.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

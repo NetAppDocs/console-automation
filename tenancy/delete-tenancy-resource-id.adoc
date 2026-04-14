@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/delete-tenancy-resource-id.html'
+summary: 'Delete a resource from an account'
+---
+
+= Delete a resource from an account
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}`#
+
+
+
+Deletes a resource from a specified account. accountId must be passed to the X-Tenancy-Account-Id request header.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|resourceIdentifier
+|string
+|path
+|True
+a|
+
+|Authorization
+|string
+|header
+|True
+a|
+
+|X-User-Token
+|string
+|header
+|False
+a|
+
+|X-Tenancy-Account-Id
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+

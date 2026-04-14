@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/catalog_overview.html'
+summary: 'Catalog endpoints in the NetApp Backup and Recovery REST API'
+---
+
+= Catalog endpoints in the NetApp Backup and Recovery REST API
+
+
+
+The catalog endpoints manage the indexed catalog search for files based on a query. You can perform the following operations by using the Catalog endpoints:
+
+* Initiate an indexed catalog search based on a query +
+
+* Retrieve a list of snapshots related to a particular volume by using the Catalog Index query +
+
+* Configure an indexed catalog service on AWS, Azure, Google Cloud and on-premises or dark sites. +
+
+* Modify the state of an indexed catalog service.
+
+

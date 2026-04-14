@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/services_overview.html'
+summary: 'Services endpoints in the In-Product Automation REST API for the NetApp Console'
+---
+
+= Services endpoints in the In-Product Automation REST API for the NetApp Console
+
+
+
+The services endpoint performs the NetApp IPA serial number (sn) lookup and serial number token lookup operations. +
+You need a serial number lookup token to retrieve a serial number. You can retrieve both a serial number and a lookup token by using this endpoint.
+
+To retrieve a serial number token (sn-token), the NetApp Console IPA services endpoint consults the `sn-lookup-service` endpoint. +
+To retrieve a serial number (sn-lookup), the NetApp Console IPA services endpoint consults the `sn-service` endpoint.
+
+You can perform the following operations with the IPA services endpoint:
+
+* Retrieve a serial number lookup token
+* Retrieve a serial number
+
+

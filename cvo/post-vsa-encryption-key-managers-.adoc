@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-vsa-encryption-key-managers-.html'
+summary: 'Add a key manager'
+---
+
+= Add a key manager
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}`#
+
+
+
+Adds a key manager to the Cloud Volumes ONTAP system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|keyManagerIp
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

@@ -1,0 +1,113 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-fsx-working-environments-snapshot-policies.html'
+summary: 'Retrieve snapshot policies for an FSx system'
+---
+
+= Retrieve snapshot policies for an FSx system
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/snapshot-policies`#
+
+
+
+Retrieves the snapshot policies for an existing FSx system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fileSystemId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|schedules
+|array[link:#PolicySchedule[PolicySchedule]]
+|True
+a|
+
+|description
+|string
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "schedules": [
+    {}
+  ],
+  "description": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#PolicySchedule]
+[.api-collapsible-fifth-title]
+PolicySchedule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|frequency
+|string
+|True
+a|
+
+|retention
+|integer
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

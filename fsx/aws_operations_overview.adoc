@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'fsx/aws_operations_overview.html'
+summary: 'AWS operations endpoints in the Amazon FSx for NetApp ONTAP management REST API'
+---
+
+= AWS operations endpoints in the Amazon FSx for NetApp ONTAP management REST API
+
+
+
++++<fieldset>+++The AWS operations endpoints manage operations made directly on AWS resources by using AWS credentials.
+
+You can perform the following actions with the AWS operations endpoints:
+
+* Retrieve AWS VPCs
+* Retrieve AWS route tables
+* Retrieve AWS encryption keys+++</fieldset>+++
+
+

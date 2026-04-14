@@ -1,0 +1,102 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-fsx-volumes-nfs-clients.html'
+summary: 'Retrieve an NFS clients list for an FSx system'
+---
+
+= Retrieve an NFS clients list for an FSx system
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/nfs-clients`#
+
+
+
+Retrieves an NFS client list for an existing FSx system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fileSystemId
+|string
+|path
+|True
+a|
+
+|svm
+|string
+|query
+|False
+a|
+
+|volume
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|volume
+|string
+|True
+a|
+
+|svm
+|string
+|False
+a|
+
+|exportPolicy
+|string
+|False
+a|
+
+|clientIp
+|string
+|False
+a|
+
+|idleDuration
+|string
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "volume": "string",
+  "svm": "string",
+  "exportPolicy": "string",
+  "clientIp": "string",
+  "idleDuration": "string"
+}
+====
+

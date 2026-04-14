@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-azure-vsa-working-environments-stop.html'
+summary: 'Stop a specific Cloud Volumes ONTAP instance'
+---
+
+= Stop a specific Cloud Volumes ONTAP instance
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/stop`#
+
+
+
+Stops a specific Cloud Volumes ONTAP instance.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|takeSnapshots
+|boolean
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

@@ -1,0 +1,116 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-ha-metadata-zones.html'
+summary: 'Retrieve Google Cloud regions and zones'
+---
+
+= Retrieve Google Cloud regions and zones
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/zones`#
+
+
+
+Retrieves Google Cloud regions and zones where a Cloud Volumes ONTAP system can be created.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|project
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|displayName
+|string
+|True
+a|
+
+|name
+|string
+|False
+a|
+
+|location
+|string
+|False
+a|
+
+|zones
+|array[link:#GcpZoneResponse[GcpZoneResponse]]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "displayName": "string",
+  "name": "string",
+  "location": "string",
+  "zones": [
+    {
+      "name": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#GcpZoneResponse]
+[.api-collapsible-fifth-title]
+GcpZoneResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

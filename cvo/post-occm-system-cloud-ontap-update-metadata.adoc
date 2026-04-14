@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-occm-system-cloud-ontap-update-metadata.html'
+summary: 'Perform a fetch and cache of Cloud Volumes ONTAP and NetApp Console files'
+---
+
+= Perform a fetch and cache of Cloud Volumes ONTAP and NetApp Console files
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/cloud-ontap-update-metadata`#
+
+
+
+Performs fetch and cache of Cloud Volumes ONTAP and NetApp Console version information files from S3.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

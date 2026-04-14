@@ -1,0 +1,161 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/patch-license-serial-number-.html'
+summary: 'Update a license by serial number'
+---
+
+= Update a license by serial number
+
+[.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/serial-number/{serialNumber}`#
+
+
+
+Updates a specified license by license serial number. +
+If you use a user token, you must provide the NetApp License File (NLF). If you use the NetApp Console service token, provide either the NLF or values for `serialNumber` and the fields that you want to update.
+
+**Note:**
+
+* If you use a NetApp Console service token, accountId is not a required field.
+* If you use a NetApp Console user token, accountId is a required field.
+* If you provide the NLF, the license data is overwritten by the NLF data.
+* The `metadata` field value is appended to the existing metadata.
+* `Authorization` is a required field.
+* `serialNumber` is a required field when using this site. In general, you can specify its value as `null`.
+
+*Token usage:* Either a NetApp Console user token or service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|serialNumber
+|["string", "null"]
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|False
+a|
+
+|capacity
+|["integer", "null"]
+|False
+a|
+
+|expirationDate
+|["integer", "null"]
+|False
+a|
+
+|license
+|["string", "null"]
+|False
+a|
+
+|meteringStatus
+|boolean
+|False
+a|
+
+|metadata
+|["array", "null"]
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

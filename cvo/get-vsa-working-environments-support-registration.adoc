@@ -1,0 +1,101 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-vsa-working-environments-support-registration.html'
+summary: 'Retrieve the support registration status'
+---
+
+= Retrieve the support registration status
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/support-registration`#
+
+
+
+Retrieves the support registration status of a Cloud Volumes ONTAP system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|status
+|string
+|True
+a|
+
+|licenseExpiryDate
+|link:#licenseExpiryDate[licenseExpiryDate]
+|False
+a|
+
+|licenseStartDate
+|link:#licenseStartDate[licenseStartDate]
+|False
+a|
+
+|nssAccountId
+|string
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "status": "string",
+  "nssAccountId": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#licenseExpiryDate]
+[.api-collapsible-fifth-title]
+licenseExpiryDate
+
+
+[#licenseStartDate]
+[.api-collapsible-fifth-title]
+licenseStartDate
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,71 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-azure-ha-working-environments-extra-capacity-licenses.html'
+summary: 'Update an extra capacity license'
+---
+
+= Update an extra capacity license
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
+
+
+
+Updates an extra capacity license.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|licences
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "licences": [
+    "string"
+  ]
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

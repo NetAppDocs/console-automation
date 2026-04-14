@@ -1,0 +1,204 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-accounts-azure.html'
+summary: 'Create an Azure account'
+---
+
+= Create an Azure account
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/azure`#
+
+
+
+Creates an Azure account.
+
+
+
+CAUTION: This operation is deprecated.
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountName
+|string
+|False
+a|
+
+|providerKeys
+|link:#AzureKeys[AzureKeys]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountName": "string",
+  "providerKeys": {
+    "tenantId": "string",
+    "applicationId": "string",
+    "applicationKey": "string",
+    "subscription": "string"
+  }
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|False
+a|
+
+|accountName
+|string
+|False
+a|
+
+|accountType
+|string
+|False
+a|
+
+|tenantId
+|string
+|False
+a|
+
+|applicationId
+|string
+|False
+a|
+
+|occmRole
+|string
+|False
+a|
+
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "publicId": "string",
+  "accountName": "string",
+  "accountType": "string",
+  "tenantId": "string",
+  "applicationId": "string",
+  "occmRole": "string",
+  "vsaList": [
+    {
+      "publicId": "string",
+      "name": "string",
+      "workingEnvironmentType": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#AzureKeys]
+[.api-collapsible-fifth-title]
+AzureKeys
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|tenantId
+|string
+|True
+a|
+
+|applicationId
+|string
+|False
+a|
+
+|applicationKey
+|string
+|False
+a|
+
+|subscription
+|string
+|False
+a|
+
+|===
+
+
+[#AccountWorkingEnvironmentResponse]
+[.api-collapsible-fifth-title]
+AccountWorkingEnvironmentResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|workingEnvironmentType
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

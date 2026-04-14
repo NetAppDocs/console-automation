@@ -1,0 +1,77 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-groups-list-ontap-s3-buckets.html'
+summary: 'Retrieve the ONTAP S3 buckets'
+---
+
+= Retrieve the ONTAP S3 buckets
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-ontap-s3-buckets`#
+
+
+
+Retrieves the ONTAP S3 buckets accessible from a NetApp data broker.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|host
+|string
+|query
+|True
+a|ONTAP S3 hostname or IP
+
+
+|port
+|number
+|query
+|False
+a|Server port
+
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|id
+|string
+|path
+|True
+a|Data Brokers Group ID
+
+
+|access-key
+|string
+|header
+|True
+a|StorageGRID server access-key
+
+
+|secret-key
+|string
+|header
+|True
+a|StorageGRID server secret-key
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

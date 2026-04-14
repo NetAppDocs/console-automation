@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'tenancy/get-tenancy-account-user-workspaces.html'
+summary: 'Retrieve user account workspaces'
+---
+
+= Retrieve user account workspaces
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/user/{userId}/workspaces`#
+
+
+
+Retrieves specified user account workspaces.
+            +
+*Token usage:* BlueXP service token with the following scopes: tenancy:external.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|userId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-User-Token
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+

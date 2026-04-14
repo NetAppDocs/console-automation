@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/job_overview.html'
+summary: 'Job endpoints in the NetApp Backup and Recovery REST API'
+---
+
+= Job endpoints in the NetApp Backup and Recovery REST API
+
+
+
+The Job endpoints display information about jobs executed on the NetApp Console SaaS application.
+
+You can perform the following operation by using the Job endpoints:
+
+* Retrieve a list of jobs and job details.
+
+

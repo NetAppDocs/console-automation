@@ -1,0 +1,327 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-relationship.html'
+summary: 'Retrieve a list of ONTAP relationships associated with a system'
+---
+
+= Retrieve a list of ONTAP relationships associated with a system
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/relationship`#
+
+
+
+Retrieves a list of ONTAP relationships associated with a system. The system ID is passed as a parameter for the REST API call. You can query by passing parameters to specify the maximum number of records that should be returned, the next subsequent volume UUID to get results from, and the type of relationship.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|max-records
+|number
+|query
+|False
+a|
+
+|cursor
+|string
+|query
+|False
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|relationship
+|array[link:#relationship[relationship]]
+|False
+a|
+
+|cursor
+|string
+|False
+a|
+
+|num-records
+|number
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "relationship": [
+    {
+      "uuid": "string",
+      "source": {
+        "path": "string",
+        "svm": "string"
+      },
+      "destination": {
+        "path": "string"
+      },
+      "policy": {
+        "name": "string"
+      },
+      "state": "string",
+      "healthy": "string",
+      "relationship-type": "string",
+      "transfer": {
+        "last-transfer-size": "string",
+        "last-transfer-duration": "string",
+        "lag": "string",
+        "end-time": "string",
+        "state": "string",
+        "throttle": "string"
+      },
+      "protection-status": "string",
+      "unhealthy-reason": "string",
+      "working-environment-id": "string",
+      "working-environment-name": "string"
+    }
+  ],
+  "cursor": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#source]
+[.api-collapsible-fifth-title]
+source
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|path
+|string
+|False
+a|
+
+|svm
+|string
+|False
+a|
+
+|===
+
+
+[#destination]
+[.api-collapsible-fifth-title]
+destination
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|path
+|string
+|False
+a|
+
+|===
+
+
+[#policy]
+[.api-collapsible-fifth-title]
+policy
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+[#transfer]
+[.api-collapsible-fifth-title]
+transfer
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|last-transfer-size
+|string
+|False
+a|
+
+|last-transfer-duration
+|string
+|False
+a|
+
+|lag
+|string
+|False
+a|
+
+|end-time
+|string
+|False
+a|
+
+|state
+|string
+|False
+a|
+
+|throttle
+|string
+|False
+a|
+
+|===
+
+
+[#relationship]
+[.api-collapsible-fifth-title]
+relationship
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|uuid
+|string
+|False
+a|
+
+|source
+|link:#source[source]
+|False
+a|
+
+|destination
+|link:#destination[destination]
+|False
+a|
+
+|policy
+|link:#policy[policy]
+|False
+a|
+
+|state
+|string
+|False
+a|
+
+|healthy
+|string
+|False
+a|
+
+|relationship-type
+|string
+|False
+a|
+
+|transfer
+|link:#transfer[transfer]
+|False
+a|
+
+|protection-status
+|string
+|False
+a|
+
+|unhealthy-reason
+|string
+|False
+a|
+
+|working-environment-id
+|string
+|False
+a|
+
+|working-environment-name
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

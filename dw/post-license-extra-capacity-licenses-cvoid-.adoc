@@ -1,0 +1,209 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/post-license-extra-capacity-licenses-cvoid-.html'
+summary: 'Associate extra-capacity per-node licenses with a Cloud Volumes ONTAP system'
+---
+
+= Associate extra-capacity per-node licenses with a Cloud Volumes ONTAP system
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/extra-capacity-licenses/cvoId/{cvoId}`#
+
+
+
+Associates extra-capacity per-node licenses with a Cloud Volumes ONTAP system either by providing NetApp License Files (NLF) in the `licenseFiles` body field or a value for both `serialNumbers` and `nssKeyId` body fields. A Cloud Volumes ONTAP resource is represented by the `cvoId` parameter. If it's a single-node Cloud Volumes ONTAP resource, only one license file or a serial number and a NetApp Support Site key should be provided. For high-availability (HA) Cloud Volumes ONTAP resource, two license files or two serial numbers and a NetApp Support Site key should be provided.
+
+**Note:**
+
+* The `cvoId` parameter is required.
+* If you use a NetApp Console service token, `accountId` is not a required field.
+* If you use a NetApp Console user token, `accountId` is a required field.
+* `serialNumbers` is a required field when using this site. In general, you can specify its value as `null`.
+* `licenseFiles` is not a required field if values for `serialnumbers` and `nssKeyId` are provided.
+* `nssKeyId` is a required field unless you provide a value for the `licenseFiles` body field. In the latter case, `nssKeyId` must be omitted.
+* `accountId` is a required field unless you use a service token.
+* The `serialNumbers` and `licenseFiles` fields are mutually exclusive - one must have a value but not both.
+
+*Token usage:* Either a NetApp Console user token or service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|cvoId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|["string", "null"]
+|False
+a|
+
+|serialNumbers
+|array[["string", "null"]]
+|False
+a|
+
+|licenseFiles
+|array[["string", "null"]]
+|False
+a|
+
+|nssKeyId
+|["string", "null"]
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "serialNumbers": [
+    [
+      "string",
+      "null"
+    ]
+  ],
+  "licenseFiles": [
+    [
+      "string",
+      "null"
+    ]
+  ]
+}
+====
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+
+== Response
+
+```
+Status: 5xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

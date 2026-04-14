@@ -1,0 +1,115 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/get-ipa-nss-key-access-token.html'
+summary: 'Retrieve an access token'
+---
+
+= Retrieve an access token
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/nss-key/{nssKeyId}/access-token`#
+
+
+
+Retrieves a NetApp Support Site user B2C access token.
+            +
+ +
+*Token usage:* NetApp Console service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|nssKeyId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|access_token
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "access_token": "string"
+}
+====
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": "string",
+  "message": "string"
+}
+====
+

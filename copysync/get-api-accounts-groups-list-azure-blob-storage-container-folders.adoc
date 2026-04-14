@@ -1,0 +1,77 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-groups-list-azure-blob-storage-container-folders.html'
+summary: 'Retrieve the Azure blob storage container folders'
+---
+
+= Retrieve the Azure blob storage container folders
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-azure-blob-storage-container-folders`#
+
+
+
+Retrieves the Azure blob storage container folders.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|storageAccountName
+|string
+|query
+|True
+a|Azure storage account name
+
+
+|container
+|string
+|query
+|True
+a|Container
+
+
+|prefix
+|string
+|query
+|False
+a|Path inside the container, to list folders in
+
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|id
+|string
+|path
+|True
+a|Data Brokers Group ID
+
+
+|storage-account-connection-string
+|string
+|header
+|True
+a|Azure storage account connection-string
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

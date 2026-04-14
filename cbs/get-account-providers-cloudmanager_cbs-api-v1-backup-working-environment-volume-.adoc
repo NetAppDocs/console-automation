@@ -1,0 +1,351 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume-.html'
+summary: 'Retrieve volume information'
+---
+
+= Retrieve volume information
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}`#
+
+
+
+Retrieves information for a specified volume backed up by using the NetApp Backup and Recovery service. It retrieves the details of the volume from the NetApp Console SaaS application. It retrieves the archive after days, backup status, relationship policy name, and capacity details. It also retrieves details of the archive after days, object lock, ransomware scan status, last ransomware scan, and ransomware detected snapshots with last ransomware scan information.
+
+**Token usage:**NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|volumeId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|file-system-id
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|protocol
+|string
+|False
+a|
+
+|svm
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|backup-status
+|string
+|False
+a|
+
+|last-backup-creation-time
+|number
+|False
+a|
+
+|snapshot-count
+|string
+|False
+a|
+
+|backup-policy
+|link:#backup-policy[backup-policy]
+|False
+a|
+
+|lag
+|string
+|False
+a|
+
+|capacity
+|link:#capacity[capacity]
+|False
+a|
+
+|type
+|string
+|False
+a|
+
+|snaplock-type
+|string
+|False
+a|
+
+|style
+|string
+|False
+a|
+
+|object-lock
+|string
+|False
+a|
+
+|ransomware-scan-status
+|string
+|False
+a|
+
+|last-ransomware-scan
+|number
+|False
+a|
+
+|ransomware-detected-snapshots
+|array[link:#ransomware-detected-snapshots[ransomware-detected-snapshots]]
+|False
+a|
+
+|geometry
+|number
+|False
+a|
+
+|aggregate-count
+|number
+|False
+a|
+
+|cbsChargingEnabled
+|boolean
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "file-system-id": "string",
+  "name": "string",
+  "protocol": "string",
+  "svm": "string",
+  "status": "string",
+  "backup-status": "string",
+  "snapshot-count": "string",
+  "backup-policy": {
+    "name": "string",
+    "rule": [
+      {
+        "label": "string",
+        "retention": "string"
+      }
+    ],
+    "archive-after-days": "string"
+  },
+  "lag": "string",
+  "capacity": {
+    "allocated": "string",
+    "used": "string",
+    "charging": "string",
+    "logicalUsedSize": "string"
+  },
+  "type": "string",
+  "snaplock-type": "string",
+  "style": "string",
+  "object-lock": "string",
+  "ransomware-scan-status": "string",
+  "ransomware-detected-snapshots": [
+    {
+      "snapshot-id": "string",
+      "snapshot-name": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#rule]
+[.api-collapsible-fifth-title]
+rule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|label
+|string
+|False
+a|
+
+|retention
+|string
+|False
+a|
+
+|===
+
+
+[#backup-policy]
+[.api-collapsible-fifth-title]
+backup-policy
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|rule
+|array[link:#rule[rule]]
+|False
+a|
+
+|archive-after-days
+|string
+|False
+a|
+
+|===
+
+
+[#capacity]
+[.api-collapsible-fifth-title]
+capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|allocated
+|string
+|False
+a|
+
+|used
+|string
+|False
+a|
+
+|charging
+|string
+|False
+a|
+
+|logicalUsedSize
+|string
+|False
+a|
+
+|===
+
+
+[#ransomware-detected-snapshots]
+[.api-collapsible-fifth-title]
+ransomware-detected-snapshots
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|snapshot-id
+|string
+|False
+a|
+
+|snapshot-name
+|string
+|False
+a|
+
+|last-ransomware-scan
+|number
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,182 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-tenants.html'
+summary: 'Retrieve tenants'
+---
+
+= Retrieve tenants
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenants`#
+
+
+
+Retrieves tenants that are visible to the current user.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fields
+|link:#Expands[Expands]
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|publicId
+|string
+|False
+a|
+
+|workingEnvironmentsInformation
+|link:#WorkingEnvironmentsInformation[WorkingEnvironmentsInformation]
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "publicId": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#Expand]
+[.api-collapsible-fifth-title]
+Expand
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+[#Expands]
+[.api-collapsible-fifth-title]
+Expands
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|raw
+|string
+|True
+a|
+
+|expands
+|array[link:#Expand[Expand]]
+|True
+a|
+
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+[#WorkingEnvironmentsInformation]
+[.api-collapsible-fifth-title]
+WorkingEnvironmentsInformation
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|regionsCount
+|integer
+|False
+a|
+
+|totalReservedSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|workingEnvironmentsCount
+|integer
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

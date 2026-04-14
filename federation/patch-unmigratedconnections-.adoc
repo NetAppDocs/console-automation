@@ -1,0 +1,476 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'federation/patch-unmigratedconnections-.html'
+summary: 'Import a connection'
+---
+
+= Import a connection
+
+[.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/unmigratedconnections/{connection_id}`#
+
+
+
+Imports the connection into the NetApp Console.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|connection_id
+|string
+|path
+|True
+a|ID of the Auth0 connection.
+
+* example: con_jxQFVfPHKSdiwoxs
+
+
+|===
+
+== Request Body
+
+Imports the connection into the Console and creates a federation using the specified attributes in the request body provided.
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|expirationNotificationPeriod
+|string
+|False
+a|The time period when expiration notifications are generated. Defined values are:
+
+* "P7D" - Notifications are sent daily 7 days before expiration.
+* "P30D" - Notifications are sent weekly 30 days before expiration. Notifications are sent daily 7 days before expiration.
+
+
+|expirationTimestamp
+|string
+|False
+a|The date that the credentials expire. This is only applicable when `providerType=ENTRAID`. When a
+certificate is provided for other provider types, the value is set to the certificate's expiration timestamp.
+
+
+|name
+|string
+|True
+a|The name of the federation.
+
+
+|organizationId
+|string
+|True
+a|Identifier for an organization.
+
+
+|stateDesired
+|string
+|True
+a|The desired state of the connection.
+
+
+|type
+|string
+|True
+a|Media type of the resource.
+
+
+|version
+|string
+|True
+a|Version of the resource.
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "expirationNotificationPeriod": "P30D",
+  "expirationTimestamp": "2024-11-18T20:58:16.305662Z",
+  "name": "Imported Federation",
+  "organizationId": "9b0ee210-70a0-4158-b025-0decde66e4de",
+  "stateDesired": "IMPORTED",
+  "type": "application/vnd.netapp.bxp.unmigratedconnection",
+  "version": "1.0"
+}
+====
+
+== Response
+
+```
+Status: 200, Returns the imported federation reference.
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|federationId
+|string
+|False
+a|Identifier of the federation that was created.
+
+
+|id
+|string
+|False
+a|The ID of the connection in Auth0.
+
+
+|organizationId
+|string
+|False
+a|Identifier for an organization.
+
+
+|state
+|string
+|False
+a|The current state of the connection.
+
+
+|type
+|string
+|False
+a|Media type of the resource.
+
+
+|version
+|string
+|False
+a|Version of the resource.
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "federationId": "645eae30-ea32-4542-af58-1d9012fed81a",
+  "id": "con_jxQFVfPHKSdiwoxs",
+  "organizationId": "9b0ee210-70a0-4158-b025-0decde66e4de",
+  "state": "IMPORTED",
+  "type": "application/vnd.netapp.bxp.unmigratedconnection",
+  "version": "1.0"
+}
+====
+
+== Error
+
+```
+Status: 400, Bad request
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|correlationId
+|string
+|False
+a|Internal UUID representing the request or trace ID related.
+
+
+|detail
+|string
+|False
+a|Details about the problem.
+
+
+|invalidParams
+|array[link:#invalidParams[invalidParams]]
+|False
+a|List of invalid parameters.
+
+
+|status
+|string
+|True
+a|HTTP error code related to the problem.
+
+
+|title
+|string
+|True
+a|Title description of the problem.
+
+
+|type
+|string
+|True
+a|Content-type of the object.
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "detail": "The supplied query parameters are invalid.",
+  "status": "400",
+  "title": "Invalid query parameters",
+  "type": "https://bluexp.netapp.io/problems/1"
+}
+====
+
+== Error
+
+```
+Status: 401, Unauthorized
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|correlationId
+|string
+|False
+a|Internal UUID representing the request or trace ID related.
+
+
+|detail
+|string
+|False
+a|Details about the problem.
+
+
+|invalidParams
+|array[link:#invalidParams[invalidParams]]
+|False
+a|List of invalid parameters.
+
+
+|status
+|string
+|True
+a|HTTP error code related to the problem.
+
+
+|title
+|string
+|True
+a|Title description of the problem.
+
+
+|type
+|string
+|True
+a|Content-type of the object.
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "detail": "The request is missing the required bearer token.",
+  "status": "401",
+  "title": "Missing bearer token",
+  "type": "https://bluexp.netapp.io/problems/1"
+}
+====
+
+== Error
+
+```
+Status: 403, Forbidden
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|correlationId
+|string
+|False
+a|Internal UUID representing the request or trace ID related.
+
+
+|detail
+|string
+|False
+a|Details about the problem.
+
+
+|invalidParams
+|array[link:#invalidParams[invalidParams]]
+|False
+a|List of invalid parameters.
+
+
+|status
+|string
+|True
+a|HTTP error code related to the problem.
+
+
+|title
+|string
+|True
+a|Title description of the problem.
+
+
+|type
+|string
+|True
+a|Content-type of the object.
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "detail": "The requested operation isn't permitted.",
+  "status": "403",
+  "title": "Operation not permitted",
+  "type": "https://bluexp.netapp.io/problems/11"
+}
+====
+
+== Error
+
+```
+Status: 404, Not found
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|correlationId
+|string
+|False
+a|Internal UUID representing the request or trace ID related.
+
+
+|detail
+|string
+|False
+a|Details about the problem.
+
+
+|invalidParams
+|array[link:#invalidParams[invalidParams]]
+|False
+a|List of invalid parameters.
+
+
+|status
+|string
+|True
+a|HTTP error code related to the problem.
+
+
+|title
+|string
+|True
+a|Title description of the problem.
+
+
+|type
+|string
+|True
+a|Content-type of the object.
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "detail": "The collection specified in the request URI wasn't found.",
+  "status": "404",
+  "title": "Collection not found",
+  "type": "https://bluexp.netapp.io/problems/2"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#invalidParams]
+[.api-collapsible-fifth-title]
+invalidParams
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|Name of the invalid parameter.
+
+
+|reason
+|string
+|True
+a|Reason why the parameter is invalid.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

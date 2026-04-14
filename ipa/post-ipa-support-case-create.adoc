@@ -1,0 +1,208 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/post-ipa-support-case-create.html'
+summary: 'Create a support case'
+---
+
+= Create a support case
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/support/case/create`#
+
+
+
+Creates a support case.
+            +
+ +
+*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|True
+a|
+
+|additionalEmail
+|string
+|False
+a|
+
+|attributeMap
+|link:#attributeMap[attributeMap]
+|False
+a|
+
+|caseDescription
+|string
+|False
+a|
+
+|priority
+|
+|False
+a|
+
+|caseTitle
+|string
+|False
+a|
+
+|serialNumber
+|string
+|True
+a|
+
+|nssKeyId
+|string
+|True
+a|
+
+|category1
+|integer
+|False
+a|
+
+|category2
+|integer
+|False
+a|
+
+|node
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string",
+  "additionalEmail": "string",
+  "caseDescription": "string",
+  "priority": "P1",
+  "caseTitle": "string",
+  "serialNumber": "string",
+  "nssKeyId": "string",
+  "node": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|caseNumber
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "caseNumber": "string"
+}
+====
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": "string",
+  "message": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#attributeMap]
+[.api-collapsible-fifth-title]
+attributeMap
+
+
+//end collapsible .Definitions block
+====

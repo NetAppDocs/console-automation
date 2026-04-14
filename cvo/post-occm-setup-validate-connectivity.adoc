@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-occm-setup-validate-connectivity.html'
+summary: 'Validate an active internet connection'
+---
+
+= Validate an active internet connection
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup/validate/connectivity`#
+
+
+
+Validates that the NetApp Console has an active internet connection.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

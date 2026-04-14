@@ -1,0 +1,186 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/patch-account-providers-cloudmanager_cbs-api-v1-working-environment-snapshot-policy-.html'
+summary: 'Modify the snapshot policy in a system'
+---
+
+= Modify the snapshot policy in a system
+
+[.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policy/{policyId}`#
+
+
+
+Modifies the snapshot policy in a system. For existing schedules attached to a snapshot policy, the SnapMirror label and count can be modified, it also supports the addition and removal of schedules.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|policyId
+|string
+|path
+|True
+a|Snapshot Policy ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|rules
+|array[link:#rules[rules]]
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "rules": [
+    {}
+  ]
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|status
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "status": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#rules]
+[.api-collapsible-fifth-title]
+rules
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|label
+|string
+|True
+a|Label for SnapMirror operations
+
+
+|count
+|number
+|True
+a|Number of snapshots to maintain for this rule
+
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|rules
+|array[link:#rules[rules]]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

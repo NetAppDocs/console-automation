@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-vsa-working-environments-occm-provided-upgrade-versions.html'
+summary: 'Retrieve a list of upgrade versions'
+---
+
+= Retrieve a list of upgrade versions
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions`#
+
+
+
+Retrieves a list of versions to which this Cloud Volumes ONTAP system can be upgraded.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|imageVersion
+|string
+|True
+a|
+
+|lastModified
+|integer
+|True
+a|
+
+|autoUpdateAllowed
+|boolean
+|True
+a|
+
+|===
+
+

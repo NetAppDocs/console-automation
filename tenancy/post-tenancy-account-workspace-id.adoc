@@ -1,0 +1,102 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/post-tenancy-account-workspace-id.html'
+summary: 'Create a workspace'
+---
+
+= Create a workspace
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{name}`#
+
+
+
+Creates a workspace in a specified account.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|name
+|string
+|path
+|True
+a|* pattern: {caret}[-_.a-zA-Z0-9]{1,40}$
+
+
+|authorization
+|string
+|header
+|True
+a|Authorization JWT access token
+
+
+|X-User-Token
+|string
+|header
+|False
+a|User JWT access token
+
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|workspacePublicId
+|string
+|False
+a|
+
+|workspaceName
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "workspacePublicId": "string",
+  "workspaceName": "string"
+}
+====
+

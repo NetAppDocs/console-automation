@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/delete-flexcache-caches-.html'
+summary: 'Delete a FlexCache volume'
+---
+
+= Delete a FlexCache volume
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/flexcache/{workingEnvironmentId}/caches/{cacheId}`#
+
+
+
+Deletes a FlexCache volume.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|cacheId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

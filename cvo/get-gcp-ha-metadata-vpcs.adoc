@@ -1,0 +1,160 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-ha-metadata-vpcs.html'
+summary: 'Retrieve Google Cloud networks and subnetworks'
+---
+
+= Retrieve Google Cloud networks and subnetworks
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/vpcs`#
+
+
+
+Retrieves Google Cloud networks and subnetworks where a Cloud Volumes ONTAP system can be created.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|region
+|string
+|query
+|False
+a|
+
+|project
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|vpcPath
+|string
+|True
+a|
+
+|subnets
+|array[link:#GcpSubnetResponse[GcpSubnetResponse]]
+|True
+a|
+
+|firewalls
+|array[link:#GcpFirewallResponse[GcpFirewallResponse]]
+|True
+a|
+
+|isShared
+|boolean
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#GcpSubnetResponse]
+[.api-collapsible-fifth-title]
+GcpSubnetResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ipCidrRange
+|string
+|True
+a|
+
+|name
+|string
+|True
+a|
+
+|path
+|string
+|True
+a|
+
+|availableIps
+|integer
+|True
+a|
+
+|minimumRequiredIps
+|integer
+|True
+a|
+
+|===
+
+
+[#GcpFirewallResponse]
+[.api-collapsible-fifth-title]
+GcpFirewallResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|vpc
+|string
+|True
+a|
+
+|targetServiceAccount
+|array[string]
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,278 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-ha-metadata-regions.html'
+summary: 'Retrieve Google Cloud regions'
+---
+
+= Retrieve Google Cloud regions
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/regions`#
+
+
+
+Retrieves Google Cloud regions where a Cloud Volumes ONTAP system can be created.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|project
+|string
+|query
+|False
+a|
+
+|fields
+|link:#Expands[Expands]
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|displayName
+|string
+|True
+a|
+
+|name
+|string
+|False
+a|
+
+|zones
+|array[link:#GcpZoneResponse[GcpZoneResponse]]
+|True
+a|
+
+|vpcs
+|array[link:#GcpVirtualNetworkResponse[GcpVirtualNetworkResponse]]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "displayName": "string",
+  "name": "string",
+  "zones": [
+    {
+      "name": "string"
+    }
+  ],
+  "vpcs": [
+    {
+      "name": "string",
+      "subnets": [
+        {}
+      ],
+      "firewalls": [
+        {
+          "name": "string",
+          "vpc": "string",
+          "targetServiceAccount": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#Expand]
+[.api-collapsible-fifth-title]
+Expand
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+[#Expands]
+[.api-collapsible-fifth-title]
+Expands
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|raw
+|string
+|True
+a|
+
+|expands
+|array[link:#Expand[Expand]]
+|True
+a|
+
+|===
+
+
+[#GcpZoneResponse]
+[.api-collapsible-fifth-title]
+GcpZoneResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|===
+
+
+[#GcpSubnetResponse]
+[.api-collapsible-fifth-title]
+GcpSubnetResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ipCidrRange
+|string
+|True
+a|
+
+|name
+|string
+|True
+a|
+
+|path
+|string
+|True
+a|
+
+|availableIps
+|integer
+|True
+a|
+
+|minimumRequiredIps
+|integer
+|True
+a|
+
+|===
+
+
+[#GcpFirewallResponse]
+[.api-collapsible-fifth-title]
+GcpFirewallResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|vpc
+|string
+|True
+a|
+
+|targetServiceAccount
+|array[string]
+|True
+a|
+
+|===
+
+
+[#GcpVirtualNetworkResponse]
+[.api-collapsible-fifth-title]
+GcpVirtualNetworkResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|subnets
+|array[link:#GcpSubnetResponse[GcpSubnetResponse]]
+|True
+a|
+
+|firewalls
+|array[link:#GcpFirewallResponse[GcpFirewallResponse]]
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

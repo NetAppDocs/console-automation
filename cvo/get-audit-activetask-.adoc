@@ -1,0 +1,72 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-audit-activetask-.html'
+summary: 'Retrieve an active task'
+---
+
+= Retrieve an active task
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/activeTask/{requestId}`#
+
+
+
+Retrieves the active task for the request ID.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|requestId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|status
+|integer
+|True
+a|
+
+|closeTime
+|integer
+|True
+a|
+
+|actionName
+|string
+|True
+a|
+
+|error
+|string
+|False
+a|
+
+|===
+
+

@@ -1,0 +1,78 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/put-api-accounts-register.html'
+summary: 'Register an account to a marketplace'
+---
+
+= Register an account to a marketplace
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/register`#
+
+
+
+Registers an account to a marketplace.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|x-account-id
+|string
+|header
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|mpProvider
+|string
+|True
+a|Customer subscription provider received from the marketplace
+
+
+|mpCustomerToken
+|string
+|True
+a|Customer subscription token received from the marketplace
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "mpProvider": "string",
+  "mpCustomerToken": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default Response
+```
+

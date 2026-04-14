@@ -1,0 +1,77 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-groups-list-sftp-root-directory.html'
+summary: 'Retrieve the SFTP root directory'
+---
+
+= Retrieve the SFTP root directory
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-sftp-root-directory`#
+
+
+
+Retrieves the SFTP root directory.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|host
+|string
+|query
+|True
+a|SFTP server hostname or IP
+
+
+|port
+|number
+|query
+|True
+a|SFTP server port
+
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|id
+|string
+|path
+|True
+a|Data Brokers Group ID
+
+
+|username
+|string
+|header
+|True
+a|SFTP server username
+
+
+|password
+|string
+|header
+|True
+a|SFTP server password
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

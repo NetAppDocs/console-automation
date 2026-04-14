@@ -1,0 +1,123 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-aws-ha-metadata-route-tables.html'
+summary: 'Retrieve route tables per VPC and their subnet associations'
+---
+
+= Retrieve route tables per VPC and their subnet associations
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/route-tables`#
+
+
+
+Retrieves route tables per VPC and their subnet associations.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|region
+|string
+|query
+|False
+a|
+
+|vpcId
+|string
+|query
+|False
+a|
+
+|roleArn
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|
+
+|main
+|boolean
+|True
+a|
+
+|subnets
+|array[string]
+|True
+a|
+
+|tags
+|array[link:#RouteTableTag[RouteTableTag]]
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#RouteTableTag]
+[.api-collapsible-fifth-title]
+RouteTableTag
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key
+|string
+|False
+a|
+
+|value
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

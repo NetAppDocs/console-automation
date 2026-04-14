@@ -1,0 +1,277 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'audit/get-audit.html'
+summary: 'Retrieve account records'
+---
+
+= Retrieve account records
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{accountId}`#
+
+
+
+Retrieves account records by a specified account public ID.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|fromLastModified
+|number
+|query
+|False
+a|
+
+|toLastModified
+|number
+|query
+|False
+a|
+
+|fromStartTime
+|number
+|query
+|False
+a|
+
+|qAction
+|string
+|query
+|False
+a|
+
+|qService
+|string
+|query
+|False
+a|
+
+|qStatus
+|string
+|query
+|False
+a|
+
+|qAgent
+|string
+|query
+|False
+a|
+
+|qResource
+|string
+|query
+|False
+a|
+
+|qUser
+|string
+|query
+|False
+a|
+
+|includeUserAudits
+|boolean
+|query
+|False
+a|
+
+|toStartTime
+|number
+|query
+|False
+a|
+
+|offset
+|number
+|query
+|False
+a|
+
+|includeUserData
+|boolean
+|query
+|False
+a|
+
+|===
+
+== Response
+
+```
+Status: 200, 
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|True
+a|
+
+|startTime
+|number
+|True
+a|The start time of the event. Unix epoch in milliseconds
+
+
+|endTime
+|number
+|True
+a|The start time of the event. Unix epoch in milliseconds
+
+
+|action
+|string
+|True
+a|Action name of the event.
+
+
+|status
+|string
+|True
+a|Status of the operation.
+
+
+|requestId
+|string
+|True
+a|RequestId of the operation. globally unique for the service.
+
+
+|service
+|string
+|True
+a|Service in which the operation was performed.
+
+
+|principalId
+|string
+|True
+a|Id of the entity performing the operation.
+
+
+|userEmail
+|string
+|False
+a|Email-id of the entity performing the operation.
+
+
+|agentName
+|string
+|False
+a|Name of the agent which performed the operation.
+
+
+|agentId
+|string
+|False
+a|Id of the agent which performed the operation.
+
+
+|resourceName
+|string
+|False
+a|Name of the resource acted upon by the operation.
+
+
+|resourceId
+|string
+|False
+a|Id of the resource acted upon by the operation.
+
+
+|errors
+|array[string]
+|False
+a|Array of error message/s if exists. that related to this auditGroup
+
+
+|requestData
+|string
+|False
+a|Parameters related to request of operation. a string, can be JSON string
+
+
+|responseData
+|string
+|False
+a|Response of the operation.  Must be a string, can be JSON in a string.
+
+
+|workspaceId
+|string
+|False
+a|Id of the workspace in which the resource is contained.
+
+
+|hasRecords
+|boolean
+|True
+a|
+
+|hasFailedRecord
+|boolean
+|True
+a|
+
+|lastModified
+|number
+|True
+a|Last modified time. Unix epoch in milliseconds
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string",
+  "startTime": 1676559600,
+  "endTime": 1676669600,
+  "action": "Create Replication Vsa",
+  "status": "success",
+  "requestId": "c53qRZlA",
+  "service": "fsx",
+  "principalId": "auth0|5cd02b613c58e90888cd5741",
+  "userEmail": "abcd@efgh.com",
+  "agentName": "agent-1",
+  "agentId": "123-456-769",
+  "resourceName": "CVO",
+  "resourceId": "resource-123",
+  "errors": "[error1,error2]",
+  "requestData": "\"{\"replicationRequest\":{\"policyName\":\"MirrorAllSnapshots\",\"destinationWorkingEnvironmentId\":\"VsaWorkingEnvironment-LspTA9zs\",\"sourceWorkingEnvironmentId\":\"VsaWorkingEnvironment-bMyCULIC\",\"destinationInterclusterLifIps\":[\"10.0.0.35\"],\"sourceInterclusterLifIps\":[\"1.1.1.1\"],\"maxTransferRate\":null,\"scheduleName\":\"weekly\"},\"replicationVolume\":{\"destinationProviderVolumeType\":\"Standard_LRS\",\"destinationVolumeName\":\"vol2_1000g_case3_copy\",\"sourceVolumeName\":\"vol2_1000g\",\"advancedMode\":false,\"numOfDisksApprovedToAdd\":1,\"destinationCapacityTier\":null,\"destinationAggregateName\":\"aggr2\",\"sourceSvmName\":\"svm_srcVsa1\"}}\"",
+  "responseData": "\"{\"response\":{\"policyName\":\"MirrorAllSnapshots\",\"destinationWorkingEnvironmentId\":\"VsaWorkingEnvironment-LspTA9zs\",\"sourceWorkingEnvironmentId\":\"VsaWorkingEnvironment-bMyCULIC\",\"destinationInterclusterLifIps\":[\"10.0.0.35\"],\"sourceInterclusterLifIps\":[\"1.1.1.1\"],\"maxTransferRate\":null,\"scheduleName\":\"weekly\"},\"replicationVolume\":{\"destinationProviderVolumeType\":\"Standard_LRS\",\"destinationVolumeName\":\"vol2_1000g_case3_copy\",\"sourceVolumeName\":\"vol2_1000g\",\"advancedMode\":false,\"numOfDisksApprovedToAdd\":1,\"destinationCapacityTier\":null,\"destinationAggregateName\":\"aggr2\",\"sourceSvmName\":\"svm_srcVsa1\"}}\"",
+  "workspaceId": "workspace-3778fs72",
+  "hasRecords": true,
+  "hasFailedRecord": false,
+  "lastModified": 1684050775135
+}
+====
+

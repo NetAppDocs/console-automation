@@ -1,0 +1,25 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/system_overview.html'
+summary: 'System endpoints in the NetApp Backup and Recovery REST API'
+---
+
+= System endpoints in the NetApp Backup and Recovery REST API
+
+
+
+The system endpoints retrieves details of the systems, manage the backup policies and configure an object store associated with a system.
+
+You can perform the following operations by using the system endpoints:
+
+* Retrieve the list and details of systems, backup policies, IP spaces, storage VMs, and volumes, snapshot-policies, peer-cluster relationships, and SnapMirror relationships. +
+
+* Create a backup policy and configure an object store. +
+
+* List system volume directories. +
+
+* Modify a backup policy.
+
+

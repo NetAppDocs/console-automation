@@ -1,0 +1,161 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-azure-vsa-metadata-validate-subscribed-to-ontap-cloud.html'
+summary: 'Confirm the current user subscription'
+---
+
+= Confirm the current user subscription
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/metadata/validate-subscribed-to-ontap-cloud`#
+
+
+
+Validates that the current user is subscribed to the Cloud Volumes ONTAP product in the Azure marketplace.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|region
+|string
+|True
+a|
+
+|vsaMetadata
+|link:#VsaMetadataRequest[VsaMetadataRequest]
+|True
+a|
+
+|subscriptionId
+|string
+|False
+a|
+
+|cloudProviderAccount
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "region": "string",
+  "vsaMetadata": {
+    "ontapVersion": "string",
+    "licenseType": "string",
+    "instanceType": "string",
+    "platformSerialNumber": "string",
+    "providedLicense": "string",
+    "capacityPackageName": "string",
+    "keyStoneSubscription": "string"
+  },
+  "subscriptionId": "string",
+  "cloudProviderAccount": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|failureInfo
+|string
+|False
+a|
+
+|isSubscribed
+|boolean
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#VsaMetadataRequest]
+[.api-collapsible-fifth-title]
+VsaMetadataRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ontapVersion
+|string
+|True
+a|
+
+|licenseType
+|string
+|True
+a|
+
+|instanceType
+|string
+|True
+a|
+
+|platformSerialNumber
+|string
+|False
+a|
+
+|providedLicense
+|string
+|False
+a|
+
+|capacityPackageName
+|string
+|False
+a|
+
+|keyStoneSubscription
+|string
+|False
+a|
+
+|useLatestVersion
+|boolean
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

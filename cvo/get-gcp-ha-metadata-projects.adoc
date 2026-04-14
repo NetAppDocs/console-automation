@@ -1,0 +1,137 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-ha-metadata-projects.html'
+summary: 'Retrieve a list of projects'
+---
+
+= Retrieve a list of projects
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/projects`#
+
+
+
+Retrieves a list of projects for which the user has permission.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|projects
+|array[link:#GcpProjectResponse[GcpProjectResponse]]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "projects": [
+    {}
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#parent]
+[.api-collapsible-fifth-title]
+parent
+Hash mapping strings to string
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|traversableAgain
+|boolean
+|False
+a|
+
+|empty
+|boolean
+|False
+a|
+
+|===
+
+
+[#GcpProjectResponse]
+[.api-collapsible-fifth-title]
+GcpProjectResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|isDefault
+|boolean
+|True
+a|
+
+|projectNumber
+|string
+|True
+a|
+
+|projectId
+|string
+|False
+a|
+
+|lifecycleState
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|createTime
+|string
+|False
+a|
+
+|parent
+|link:#parent[parent]
+|True
+a|
+
+|subscriptionId
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

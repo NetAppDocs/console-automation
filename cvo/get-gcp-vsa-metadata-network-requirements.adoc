@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-vsa-metadata-network-requirements.html'
+summary: 'Retrieve the minimum number of IP addresses for a system'
+---
+
+= Retrieve the minimum number of IP addresses for a system
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/network-requirements`#
+
+
+
+Retrieves the minimum number of required IP addresses for a Cloud Volumes ONTAP system.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|vsaMinimumRequiredIps
+|integer
+|True
+a|
+
+|haVsaMinimumRequiredIps
+|integer
+|False
+a|
+
+|===
+
+

@@ -1,0 +1,88 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'tenancy/get-tenancy-users-for-action-id.html'
+summary: 'Retrieve users authorized for all resources'
+---
+
+= Retrieve users authorized for all resources
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/users/for-action/{accountId}/{action}`#
+
+
+
+Retrieves users authorized for actions across all resources.
+            +
+*Token usage:* BlueXP service token with the following scopes: tenancy:internal.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|action
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|userIds
+|array[string]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "userIds": [
+    "string"
+  ]
+}
+====
+

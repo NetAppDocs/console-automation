@@ -1,0 +1,113 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-fsx-working-environments-cifs.html'
+summary: 'Create a new CIFS configuration for an FSx system'
+---
+
+= Create a new CIFS configuration for an FSx system
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/cifs`#
+
+
+
+Sets up a new CIFS configuration for an existing FSx system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fileSystemId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dnsDomain
+|string
+|False
+a|
+
+|ipAddresses
+|array[string]
+|True
+a|
+
+|netBIOS
+|string
+|True
+a|
+
+|organizationalUnit
+|string
+|True
+a|
+
+|activeDirectoryDomain
+|string
+|True
+a|
+
+|activeDirectoryUsername
+|string
+|True
+a|
+
+|activeDirectoryPassword
+|string
+|True
+a|
+
+|svmName
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "dnsDomain": "string",
+  "ipAddresses": [
+    "string"
+  ],
+  "netBIOS": "string",
+  "organizationalUnit": "string",
+  "activeDirectoryDomain": "string",
+  "activeDirectoryUsername": "string",
+  "activeDirectoryPassword": "string",
+  "svmName": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
