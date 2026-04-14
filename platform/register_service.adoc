@@ -28,7 +28,7 @@ link:https://console.netapp.com[https://console.netapp.com^]
 
 . Sign in using your NetApp Console credentials or your NetApp Support Site credentials.
 
-. Select the image:console-menu.png[hamburger] icon at the top left of the page.
+. Select the image:../media/console-menu.png[hamburger] icon at the top left of the page.
 
 . Select *Administration* and then select *Identity and access*.
 
