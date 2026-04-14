@@ -4,13 +4,12 @@ permalink: platform/register_service.html
 keywords: generate, user, token, bluexp, rest, apis, account, create, application, netapp, console
 summary: You can register a service with the NetApp Console and use the associated credentials to create a service token.
 ---
-
 = Register a service with the NetApp Console
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 You can register a service with the NetApp Console and use the associated credentials to create a service token. The steps you follow depend on whether you want to create a service token using client secret authentication or private key JWT authentication.
@@ -28,7 +27,7 @@ link:https://console.netapp.com[https://console.netapp.com^]
 
 . Sign in using your NetApp Console credentials or your NetApp Support Site credentials.
 
-. Select the image:../media/console-menu.png[hamburger] icon at the top left of the page.
+. Select the image:console-menu.png[hamburger] icon at the top left of the page.
 
 . Select *Administration* and then select *Identity and access*.
 
