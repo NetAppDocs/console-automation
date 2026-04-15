@@ -37,10 +37,7 @@ link:https://console.netapp.com/[https://console.netapp.com^]
 +
 You can find the console agent system ID at the top of the page.
 
-. You can optionally derive the associated client ID by removing the `clients` suffix. This ID applies when accessing the agent directly in _local mode_ and not through the SaaS interface.
-+
-*Example*
-`uzJbMFKEnuzi2ryLaENbCP52KBTXx0aI`
+. Hover and select the ID to copy it.
 
 .After you finish
 
