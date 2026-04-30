@@ -16,7 +16,7 @@ You can register a service with the NetApp Console and use the associated creden
 
 .Before you begin
 
-* You must have an account for the Console. You created this account when you first logged in to the Console website and it was displayed at the top of the Console user interface. 
+* You must have an account for the Console. You created this account when you first logged in to the Console website and it was displayed at the top of the Console user interface. See, https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html[Sign up or log in to NetApp Console^].  
 * If you plan to use private key JWT authentication to create a service access token, you must have already generated your private/public RSA key or certificate/private key pair. You need to upload the public file during this task.
 
 .Steps
