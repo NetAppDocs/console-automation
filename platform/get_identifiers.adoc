@@ -45,7 +45,7 @@ You can use the console agent system ID in the `x-agent-id` request header to pr
 
 == Get the account identifier
 
-Several of the workflows require the account identifier. The following steps show how to obtain the unique identifier for an account.
+Several of the workflows require the account identifier. The steps needed to obtain the unique identifier for an account are presented below.
 
 .About this task
 
@@ -53,7 +53,7 @@ If you maintain multiple accounts, each is assigned a unique identifier.
 
 .Before you begin
 
-You must have an account for the Console. You created this account when you first logged in to the Console website and it's displayed at the top of the Console user interface. link:https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html[Sign up or log in to NetApp Console^].
+You must have an account for the Console. You created this account when you first logged in to the Console website and it’s displayed at the top of the Console user interface. link:https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html[Sign up or log in to NetApp Console^].
 
 .Steps
 
@@ -63,8 +63,6 @@ link:https://console.netapp.com/[https://console.netapp.com^]
 
 . Sign in using your account credentials for the Console.
 
-. Select the button at the top left of the page to expand the menu options.
+. Click the *Account* drop-down and click *Manage Account* for the selected account.
 
-. Select *Administration* and then select *Identity and access*.
-+
-Your account ID is shown at the top of the *Organization* page.
+. In the *Overview* section copy the *Account ID* value.
