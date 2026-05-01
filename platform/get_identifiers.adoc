@@ -35,13 +35,13 @@ link:https://console.netapp.com/[https://console.netapp.com^]
 
 . Select *Administration > Support > Agents*.
 +
-You can find the console agent system ID at the top of the page.
+You can find the Console agent system ID at the top of the page.
 
 . Hover and select the ID to copy it.
 
 .After you finish
 
-You can use the console agent system ID in the `x-agent-id` request header to properly route the request. See the curl examples in the workflows for more information.
+You can use the Console agent system ID in the `x-agent-id` request header to properly route the request. See the curl examples in the workflows for more information.
 
 == Get the account identifier
 
