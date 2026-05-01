@@ -4,7 +4,6 @@ permalink: platform/get_identifiers.html
 keywords: client, id, account, identifiers, cloud, manager, rest, api, netapp, user interface, console, netapp
 summary: You can sign into the NetApp Console web user interface to retrieve several identifiers needed with the workflows.
 ---
-
 = Get required identifiers from the NetApp Console interface
 :hardbreaks:
 :nofooter:
@@ -20,7 +19,7 @@ In addition to the Console web user interface, you can also obtain the ID values
 
 == Get the Console agent identifier
 
-Every Console agent is assigned a unique identifier. You can retrieve the ID for a Console agent and include it in the `x-agent-id` HTTP request header with each REST API call.
+Every Console agent is assigned a unique identifier. You can retrieve the system ID for a Console agent and include it in the `x-agent-id` HTTP request header with each REST API call.
 
 .Before you begin
 
@@ -34,23 +33,15 @@ link:https://console.netapp.com/[https://console.netapp.com^]
 
 . Sign in using your account credentials for the Console.
 
-. Select the image:icon-agent.png[Console agents] icon in the top right to view the list of available agents.
-
-.  Select *Manage agents*.
-
-. Select the *Console agent ID*.
+. Select *Administration > Support > Agents*.
 +
-*Example*
-`uzJbMFKEnuzi2ryLaENbCP52KBTXx0aIclients`
+You can find the Console agent system ID at the top of the page.
 
-. You can optionally derive the associated client ID by removing the `clients` suffix. This ID applies when accessing the agent directly in _local mode_ and not through the SaaS interface.
-+
-*Example*
-`uzJbMFKEnuzi2ryLaENbCP52KBTXx0aI`
+. Hover and select the ID to copy it.
 
 .After you finish
 
-You can use the agent ID in the `x-agent-id` request header to properly route the request. See the curl examples in the workflows for more information.
+You can use the Console agent system ID in the `x-agent-id` request header to properly route the request. See the curl examples in the workflows for more information.
 
 == Get the account identifier
 
