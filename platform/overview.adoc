@@ -13,7 +13,7 @@ summary: The NetApp Console enables you to build, protect, and govern your hybri
 :imagesdir: ../media/
 
 [.lead]
-The NetApp Console provides centralized management of NetApp storage and NetApp Data Services across on-premises and cloud environments at enterprise grade. It delivers real-time insights, faster workflows, and simplified administration that is highly secure and compliant.
+The NetApp Console provides centralized management of NetApp storage and data services across on-premises and cloud environments at enterprise grade. It delivers real-time insights, faster workflows, and simplified administration that is highly secure and compliant.
 
 The Console is composed of several distinct services, each of which exposes an associated REST API. Collectively these services and APIs form a flexible and extensible development platform you can use to administer your cloud-based and on-premises resources. There are several benefits when using the Console REST APIs.
 

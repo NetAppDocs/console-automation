@@ -68,17 +68,17 @@ indexpage:
       url: https://docs.netapp.com/us-en/ontap/
     - title: Additional resources
       url: "/support/additional_resources.html"
-lead: The NetApp Console provides centralized management of NetApp storage and NetApp
-  Data Services across on-premises and cloud environments at enterprise grade. It
+lead: The NetApp Console provides centralized management of NetApp storage and data
+  services across on-premises and cloud environments at enterprise grade. It delivers
+  real-time insights, faster workflows, and simplified administration that is highly
+  secure and compliant. The Console is composed of distinct services, each of which
+  exposes an associated REST API that enables you to automate the administration of
+  your cloud-based and on-premises resources.
+summary: The NetApp Console provides centralized management of NetApp storage and
+  data services across on-premises and cloud environments at enterprise grade. It
   delivers real-time insights, faster workflows, and simplified administration that
   is highly secure and compliant. The Console is composed of distinct services, each
   of which exposes an associated REST API that enables you to automate the administration
-  of your cloud-based and on-premises resources.
-summary: The NetApp Console provides centralized management of NetApp storage and
-  NetApp Data Services across on-premises and cloud environments at enterprise grade.
-  It delivers real-time insights, faster workflows, and simplified administration
-  that is highly secure and compliant. The Console is composed of distinct services,
-  each of which exposes an associated REST API that enables you to automate the administration
   of your cloud-based and on-premises resources.
 keywords: automation, automating, bluexp, netapp, console
 
