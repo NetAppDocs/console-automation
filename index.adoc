@@ -71,11 +71,19 @@ indexpage:
 lead: The NetApp Console provides centralized management of NetApp storage and NetApp
   Data Services across on-premises and cloud environments at enterprise grade, delivering
   real-time insights, faster workflows, and simplified administration that is highly
-  secure and compliant.
+  secure and compliant. The Console is composed of distinct services, each of which
+  exposes an associated REST API that enables you to automate the administration of
+  your cloud-based and on-premises resources. Use this site to learn about the REST
+  implementations and common REST workflows in the Console, and to access the REST
+  API details for many of the Console services.
 summary: The NetApp Console provides centralized management of NetApp storage and
   NetApp Data Services across on-premises and cloud environments at enterprise grade,
   delivering real-time insights, faster workflows, and simplified administration that
-  is highly secure and compliant.
+  is highly secure and compliant. The Console is composed of distinct services, each
+  of which exposes an associated REST API that enables you to automate the administration
+  of your cloud-based and on-premises resources. Use this site to learn about the
+  REST implementations and common REST workflows in the Console, and to access the
+  REST API details for many of the Console services.
 keywords: automation, automating, bluexp, netapp, console
 
 ---
