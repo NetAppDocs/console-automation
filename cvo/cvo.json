@@ -1886,7 +1886,7 @@
         "tags": [
           "User management operations - Authentication operations"
         ],
-        "description": "Retrieves a representation of the current user with roles.",
+        "description": "Retrieves a representation of the current user with the associated roles.",
         "operationId": "getCurrentUserWithRoles",
         "responses": {
           "default": {
@@ -3412,13 +3412,14 @@
         "tags": [
           "ONTAP Cloud Azure HA system operations - Volumes"
         ],
-        "description": "Resize Volume and respective Avs DataStore",
+        "description": "Resizes the volume and the respective Azure VMware Solution (AVS) DataStore.",
         "operationId": "resizeAvsOnVolume",
         "parameters": [
           {
             "name": "workingEnvironmentId",
             "in": "path",
             "required": true,
+            "description":"The system ID",
             "schema": {
               "type": "string"
             }
@@ -3427,6 +3428,7 @@
             "name": "svmName",
             "in": "path",
             "required": true,
+            "description":"The SVM name",
             "schema": {
               "type": "string"
             }
@@ -3434,6 +3436,7 @@
           {
             "name": "volumeName",
             "in": "path",
+            "description":"The volume name",
             "required": true,
             "schema": {
               "$ref": "#/components/schemas/VolumeName"
@@ -7399,7 +7402,7 @@
         "tags": [
           "Common system operations"
         ],
-        "description": "Returns capacity-based BYOL license details for darksite using local DB and license service data. Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.",
+        "description": "Returns capacity-based bring your own license (BYOL) license details for a dark site using local database and license service data. Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.",
         "operationId": "darksiteByCapacityByolDetailsV2",
         "responses": {
           "default": {
@@ -9432,13 +9435,14 @@
         "tags": [
           "ONTAP Cloud Google Cloud system operations - Aggregates"
         ],
-        "description": "Updates IOPS and throughput for the disks in an existing aggregate. Atleast one of the parameter is required.",
+        "description": "Updates IOPS and throughput for the disks in an existing aggregate. At least one of the parameters is required.",
         "operationId": "changeDisksIopsAndThroughput",
         "parameters": [
           {
             "name": "workingEnvironmentId",
             "in": "path",
             "required": true,
+            "description": "The system ID",
             "schema": {
               "type": "string"
             }
@@ -9447,6 +9451,7 @@
             "name": "aggregateName",
             "in": "path",
             "required": true,
+            "description": "The aggregate name",
             "schema": {
               "type": "string"
             }
@@ -31488,7 +31493,7 @@
         "properties": {
           "actionType": {
             "type": "string",
-            "description": "The type of the Action"
+            "description": "The type of the action"
           },
           "parameters": {
             "$ref": "#/components/schemas/ActionRequiredParameters"
@@ -31555,14 +31560,14 @@
           },
           "serialNumber": {
             "type": "string",
-            "description": "Platform Serial number"
+            "description": "Platform serial number"
           },
           "volumeMoveParameters": {
             "$ref": "#/components/schemas/VolumeMoveParameters"
           },
           "workingEnvironmentId": {
             "type": "string",
-            "description": "Working environment public id"
+            "description": "System public ID"
           },
           "licenseParameters": {
             "$ref": "#/components/schemas/ChangeLicenseParameters"
@@ -31580,14 +31585,14 @@
                 "type": "boolean"
               }
             },
-            "description": "Instances info",
+            "description": "Instances information",
             "items": {
               "$ref": "#/components/schemas/InstanceNameIdAndType"
             }
           },
           "moreInfo": {
             "type": "string",
-            "description": "More info"
+            "description": "More information"
           },
           "providerVolumeType": {
             "type": "string",
@@ -31602,11 +31607,11 @@
           },
           "isComposite": {
             "type": "boolean",
-            "description": "Is composite aggregate"
+            "description": "Indicates if the aggregate is a composite aggregate"
           },
           "isCapacityBased": {
             "type": "boolean",
-            "description": "Is Capacity Based License Type"
+            "description": "Indicates if the license type is a  capacity-based license type"
           }
         }
       },
@@ -31982,7 +31987,7 @@
                 "type": "boolean"
               }
             },
-            "description": "New raids info",
+            "description": "New RAID information",
             "items": {
               "$ref": "#/components/schemas/RaidInfoForEvAggregate"
             }
@@ -32318,7 +32323,7 @@
                 "type": "boolean"
               }
             },
-            "description": "Actions currently being performed on this working environment",
+            "description": "Actions currently being performed on this system",
             "items": {
               "type": "string"
             }
@@ -32551,15 +32556,15 @@
         "properties": {
           "ip": {
             "type": "string",
-            "description": "Lif ip"
+            "description": "LIF IP address"
           },
           "netmask": {
             "type": "string",
-            "description": "Lif netmask"
+            "description": "LIF netmask"
           },
           "lifType": {
             "type": "string",
-            "description": "Lif type"
+            "description": "LIF type"
           },
           "dataProtocols": {
             "type": "array",
@@ -32582,7 +32587,7 @@
           },
           "privateIp": {
             "type": "boolean",
-            "description": "Whether this Lif ip is a private address"
+            "description": "Specifies whether the LIF IP address is a private address"
           }
         }
       },
@@ -32931,7 +32936,7 @@
         "properties": {
           "numOfDisks": {
             "type": "integer",
-            "description": "Number of new disks needed for the raid",
+            "description": "Number of new disks needed for the RAID group",
             "format": "int32"
           },
           "diskSize": {
@@ -33113,7 +33118,7 @@
             "type": "boolean"
           }
         },
-        "description": "Instances info",
+        "description": "Instances information",
         "items": {
           "$ref": "#/components/schemas/InstanceNameIdAndType"
         }
@@ -33241,7 +33246,7 @@
             "type": "boolean"
           }
         },
-        "description": "New raids info",
+        "description": "New RAID information",
         "items": {
           "$ref": "#/components/schemas/RaidInfoForEvAggregate"
         }
@@ -34145,7 +34150,7 @@
           },
           "autoVsaCapacityManagement": {
             "type": "boolean",
-            "description": "Is auto Cloud Volumes ONTAP capacity management enabled"
+            "description": "Indicates if automatic Cloud Volumes ONTAP capacity management is enabled"
           },
           "elasticVolumeQuoteResponse": {
             "$ref": "#/components/schemas/ElasticVolumeQuoteInfo"
@@ -34259,7 +34264,7 @@
           },
           "newAggregate": {
             "type": "boolean",
-            "description": "Is it a newly created aggregate"
+            "description": "Indicates if it is a newly created aggregate"
           },
           "newDiskTypeName": {
             "type": "string",
@@ -34862,7 +34867,7 @@
           },
           "parentSnapshot": {
             "type": "string",
-            "description": "Snapshot name to use for clone"
+            "description": "Snapshot name to use for the clone"
           }
         }
       },
@@ -34903,7 +34908,7 @@
             "type": "boolean"
           }
         },
-        "description": "The share names, permissions and users for CIFS",
+        "description": "The share names, permissions, and users for CIFS",
         "items": {
           "$ref": "#/components/schemas/CifsShareInfo"
         }
@@ -35009,23 +35014,23 @@
           },
           "thinProvisioning": {
             "type": "boolean",
-            "description": "Whether thin provisioning is enabled"
+            "description": "Specifies whether thin provisioning is enabled"
           },
           "compression": {
             "type": "boolean",
-            "description": "Whether compression is enabled"
+            "description": "Specifies whether compression is enabled"
           },
           "deduplication": {
             "type": "boolean",
-            "description": "Whether deduplication is enabled"
+            "description": "Specifies whether deduplication is enabled"
           },
           "snapshotPolicy": {
             "type": "string",
-            "description": "The name of the Snapshot policy"
+            "description": "The name of the snapshot policy"
           },
           "securityStyle": {
             "type": "string",
-            "description": "The type of the Security style"
+            "description": "The type of the security style"
           },
           "exportPolicyInfo": {
             "$ref": "#/components/schemas/NamedExportPolicyInfo"
@@ -35056,7 +35061,7 @@
                 "type": "boolean"
               }
             },
-            "description": "The share names, permissions and users for CIFS",
+            "description": "The share names, permissions, and users for CIFS",
             "items": {
               "$ref": "#/components/schemas/CifsShareInfo"
             }
@@ -35114,7 +35119,7 @@
           },
           "moving": {
             "type": "boolean",
-            "description": "Is Volume during move process"
+            "description": "Specifies if the volume move process is in progress"
           },
           "primaryNoFailoverMountPoint": {
             "type": "string",
@@ -35152,7 +35157,7 @@
           },
           "tierInactiveUserDataPercent": {
             "type": "integer",
-            "description": "Tier inactive user data percent",
+            "description": "Tier inactive user data percentage",
             "format": "int32"
           },
           "comment": {
@@ -35165,7 +35170,7 @@
           },
           "snaplockType": {
             "type": "string",
-            "description": "Snaplock type"
+            "description": "SnapLock type"
           },
           "constituentsAggregates": {
             "type": "array",
@@ -35196,15 +35201,15 @@
           },
           "targetName": {
             "type": "string",
-            "description": "ISCSI target IQN"
+            "description": "iSCSI target IQN"
           },
           "iscsiEnabled": {
             "type": "boolean",
-            "description": "Flag to indicate if the volume is used by iSCSI protocol"
+            "description": "Indicates if the volume is used by the iSCSI protocol"
           },
           "isFlexGroupVolume": {
             "type": "boolean",
-            "description": "Flag to indicate if the volume is FlexGroup volume"
+            "description": "Indicates if the volume is a FlexGroup volume"
           }
         }
       },
@@ -35227,11 +35232,11 @@
           },
           "createTargetAggregate": {
             "type": "boolean",
-            "description": "Is new Target aggregate"
+            "description": "Indicates a new target aggregate"
           },
           "newDiskTypeName": {
             "type": "string",
-            "description": "Volume's new Disk type"
+            "description": "New volume disk type"
           },
           "newCapacityTier": {
             "type": "string",
@@ -35278,7 +35283,7 @@
                 "type": "boolean"
               }
             },
-            "description": "Igroups",
+            "description": "Initiator groups",
             "items": {
               "type": "string"
             }
@@ -35352,7 +35357,7 @@
                 "type": "boolean"
               }
             },
-            "description": "Names of aggregates for the flexgroup volume",
+            "description": "Names of aggregates for the FlexGroup volume",
             "items": {
               "type": "string",
               "description": "Custom export policy list of IPs"
@@ -35360,7 +35365,7 @@
           },
           "numberOfConstituents": {
             "type": "integer",
-            "description": "Number of constituents for the flexgroup volume",
+            "description": "Number of constituents for the FlexGroup volume",
             "format": "int32"
           }
         }
@@ -35385,7 +35390,7 @@
           },
           "igroupName": {
             "type": "string",
-            "description": "Igroup name"
+            "description": "Initiator group name"
           }
         }
       },
@@ -36130,7 +36135,7 @@
           },
           "requestId": {
             "type": "string",
-            "description": "Request ID of action associated with audit group"
+            "description": "Request ID of an action associated with the audit group"
           },
           "startDate": {
             "type": "integer",
@@ -36152,15 +36157,15 @@
           },
           "userName": {
             "type": "string",
-            "description": "Name of user who performed the action"
+            "description": "Name of the user who performed the action"
           },
           "tenantName": {
             "type": "string",
-            "description": "Name of tenant"
+            "description": "Name of the tenant"
           },
           "workingEnvironmentName": {
             "type": "string",
-            "description": "Name of system related to the user action"
+            "description": "Name of the system related to the user action"
           },
           "actionParameters": {
             "type": "string",
@@ -36617,15 +36622,15 @@
                 "type": "boolean"
               }
             },
-            "description": "Cloud Sync License types",
+            "description": "Cloud sync license types",
             "items": {
               "type": "string",
-              "description": "List of public IDs of all of the systems visible to the user"
+              "description": "List of public IDs for all of the systems visible to the user"
             }
           },
           "licenseExpirationDate": {
             "type": "integer",
-            "description": "Cloud Sync License Expiration Date",
+            "description": "Cloud sync license expiration date",
             "format": "int64"
           }
         }
@@ -36679,10 +36684,10 @@
                 "type": "boolean"
               }
             },
-            "description": "List of public IDs of all of the systems visible to the user",
+            "description": "List of public IDs for all of the systems visible to the user",
             "items": {
               "type": "string",
-              "description": "List of public IDs of all of the systems visible to the user"
+              "description": "List of public IDs for all of the systems visible to the user"
             }
           },
           "firstName": {
@@ -36747,7 +36752,7 @@
             "description": "Roles",
             "items": {
               "type": "string",
-              "description": "List of public IDs of all of the systems visible to the user"
+              "description": "List of public IDs for all of the systems visible to the user"
             }
           },
           "permissions": {
@@ -36763,7 +36768,7 @@
             "description": "Permissions",
             "items": {
               "type": "string",
-              "description": "List of public IDs of all of the systems visible to the user"
+              "description": "List of public IDs for all of the systems visible to the user"
             }
           }
         }
@@ -36778,15 +36783,15 @@
         "properties": {
           "publicId": {
             "type": "string",
-            "description": "Working environment public ID"
+            "description": "System public ID"
           },
           "name": {
             "type": "string",
-            "description": "Working environment name"
+            "description": "System name"
           },
           "workingEnvironmentType": {
             "type": "string",
-            "description": "Working environment Type"
+            "description": "System type"
           }
         }
       },
@@ -36840,10 +36845,10 @@
                 "type": "boolean"
               }
             },
-            "description": "List of public IDs of all of the systems visible to the user",
+            "description": "List of public IDs for all of the systems visible to the user",
             "items": {
               "type": "string",
-              "description": "List of public IDs of all of the systems visible to the user"
+              "description": "List of public IDs for all of the systems visible to the user"
             }
           },
           "firstName": {
@@ -36897,7 +36902,7 @@
           },
           "notificationsOptIn": {
             "type": "boolean",
-            "description": "Notification OptIn"
+            "description": "Notification Opt-In"
           },
           "permissions": {
             "type": "array",
@@ -36912,7 +36917,7 @@
             "description": "Permissions",
             "items": {
               "type": "string",
-              "description": "List of public IDs of all of the systems visible to the user"
+              "description": "List of public IDs for all of the systems visible to the user"
             }
           }
         }
@@ -36926,11 +36931,11 @@
         "properties": {
           "email": {
             "type": "string",
-            "description": "Email address of the user attempting to login"
+            "description": "Email address of the user attempting to log in"
           },
           "password": {
             "type": "string",
-            "description": "Password of the user attempting to login"
+            "description": "Password of the user attempting to log in"
           }
         }
       },
@@ -36948,7 +36953,7 @@
           },
           "throughput": {
             "type": "integer",
-            "description": "New Throughput",
+            "description": "New throughput",
             "format": "int32"
           }
         }
@@ -37268,15 +37273,15 @@
           },
           "thinProvisioned": {
             "type": "boolean",
-            "description": "Is volume thin-provisioned"
+            "description": "Indicates if the volume is thin-provisioned"
           },
           "isClone": {
             "type": "boolean",
-            "description": "Is clone volume"
+            "description": "Indicates if the volume is a clone volume"
           },
           "rootVolume": {
             "type": "boolean",
-            "description": "Is volume the root volume of the SVM"
+            "description": "Indicates if the volume is the root volume of the SVM"
           }
         }
       },
@@ -37331,7 +37336,7 @@
         "properties": {
           "numberOfDisks": {
             "type": "integer",
-            "description": "Number of Disks",
+            "description": "Number of disks",
             "format": "int32"
           }
         }
@@ -37489,7 +37494,7 @@
           },
           "providerAccount": {
             "type": "string",
-            "description": "ID of subscription where VSA is located"
+            "description": "ID of subscription where the VSA is located"
           },
           "cloudProviderAccount": {
             "type": "string",
@@ -37684,35 +37689,35 @@
         "properties": {
           "ontapVersion": {
             "type": "string",
-            "description": "Ontap Version"
+            "description": "ONTAP version"
           },
           "licenseType": {
             "type": "string",
-            "description": "License Type"
+            "description": "License type"
           },
           "instanceType": {
             "type": "string",
-            "description": "Instance Type"
+            "description": "Instance type"
           },
           "platformSerialNumber": {
             "type": "string",
-            "description": "Optional platform Serial Number"
+            "description": "Optional platform serial number"
           },
           "providedLicense": {
             "type": "string",
-            "description": "Optional provided License"
+            "description": "Optional provided license"
           },
           "capacityPackageName": {
             "type": "string",
-            "description": "Optional Capacity based package"
+            "description": "Optional capacity-based package"
           },
           "keyStoneSubscription": {
             "type": "string",
-            "description": "Keystone Subscription Id"
+            "description": "Keystone subscription ID"
           },
           "useLatestVersion": {
             "type": "boolean",
-            "description": "Use Latest Version"
+            "description": "Use the latest version"
           }
         }
       },
@@ -37758,15 +37763,15 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "Security Group Id"
+            "description": "Security group ID"
           },
           "name": {
             "type": "string",
-            "description": "Security Group Name"
+            "description": "Security group name"
           },
           "resourceGroup": {
             "type": "string",
-            "description": "Resource Group"
+            "description": "Resource group"
           }
         }
       },
@@ -37781,7 +37786,7 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "Subnet Id"
+            "description": "Subnet ID"
           },
           "cidr": {
             "type": "string",
@@ -37846,7 +37851,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "Virtual Network Name"
+            "description": "Virtual Network name"
           },
           "id": {
             "type": "string",
@@ -37973,11 +37978,11 @@
         "properties": {
           "key": {
             "type": "string",
-            "description": "tag key"
+            "description": "Tag key"
           },
           "value": {
             "type": "string",
-            "description": "tag value"
+            "description": "Tag value"
           }
         }
       },
@@ -37992,19 +37997,19 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "vault name"
+            "description": "Vault name"
           },
           "resourceGroup": {
             "type": "string",
-            "description": "resource group"
+            "description": "Resource group"
           },
           "location": {
             "type": "string",
-            "description": "location"
+            "description": "Location"
           },
           "vaultUri": {
             "type": "string",
-            "description": "vault uri"
+            "description": "Vault URI"
           }
         }
       },
@@ -38034,11 +38039,11 @@
         "properties": {
           "keyName": {
             "type": "string",
-            "description": "key name"
+            "description": "Key name"
           },
           "kid": {
             "type": "string",
-            "description": "key id"
+            "description": "Key ID"
           }
         }
       },
@@ -38137,10 +38142,10 @@
                 "type": "boolean"
               }
             },
-            "description": "zone values",
+            "description": "Zone values",
             "items": {
               "type": "object",
-              "description": "zone values"
+              "description": "Zone values"
             }
           }
         }
@@ -38633,7 +38638,7 @@
           },
           "resourceGroup": {
             "type": "string",
-            "description": "Private cloud resourceGroup name"
+            "description": "Private cloud resource group name"
           }
         }
       },
@@ -38657,11 +38662,11 @@
           },
           "resourceGroup": {
             "type": "string",
-            "description": "Private cloud resourceGroup name"
+            "description": "Private cloud resource group name"
           },
           "dataStoreName": {
             "type": "string",
-            "description": "Private cloud DataStore name"
+            "description": "Private cloud data store name"
           },
           "dataStoreSize": {
             "$ref": "#/components/schemas/Capacity"
@@ -38687,11 +38692,11 @@
           },
           "resourceGroup": {
             "type": "string",
-            "description": "Private cloud resourceGroup name"
+            "description": "Private cloud resource group name"
           },
           "dataStoreName": {
             "type": "string",
-            "description": "Private cloud DataStore name"
+            "description": "Private cloud data store name"
           }
         }
       },
@@ -38715,11 +38720,11 @@
           },
           "resourceGroup": {
             "type": "string",
-            "description": "Private cloud resourceGroup name"
+            "description": "Private cloud resource group name"
           },
           "dataStoreName": {
             "type": "string",
-            "description": "Private cloud DataStore name"
+            "description": "Private cloud data store name"
           },
           "dataStoreSize": {
             "$ref": "#/components/schemas/Capacity"
@@ -39596,7 +39601,7 @@
           },
           "mgmtLif": {
             "type": "boolean",
-            "description": "Create management lif for SVM"
+            "description": "Create a management LIF for the SVM"
           },
           "rootVolumeAggregate": {
             "type": "string",
@@ -43291,7 +43296,7 @@
             "type": "boolean"
           }
         },
-        "description": "Avs Connection Status",
+        "description": "AVS connection status",
         "items": {
           "$ref": "#/components/schemas/AvsIqnStatusResponse"
         }
@@ -48876,7 +48881,7 @@
         "properties": {
           "sourceWorkingEnvironmentId": {
             "type": "string",
-            "description": "working environment Id"
+            "description": "System ID"
           },
           "sourceSvmName": {
             "type": "string",
@@ -49186,7 +49191,7 @@
                 "type": "boolean"
               }
             },
-            "description": "Working Environment Intercluster Lifs",
+            "description": "System Intercluster LIFs",
             "items": {
               "$ref": "#/components/schemas/ReplicationInterClusterLif"
             }
