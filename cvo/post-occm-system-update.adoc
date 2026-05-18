@@ -1,0 +1,52 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-occm-system-update.html'
+summary: 'Update the NetApp Console'
+---
+
+= Update the NetApp Console
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/update`#
+
+
+
+Updates the NetApp Console to the specified version.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|date
+|integer
+|True
+a|
+
+|releaseNumber
+|integer
+|True
+a|
+
+|===
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

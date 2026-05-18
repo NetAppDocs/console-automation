@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'tenancyv4/user_and_usergroup_overview.html'
+summary: 'User and usergroup endpoints in the identity and access management REST API for the NetApp Console'
+---
+
+= User and usergroup endpoints in the identity and access management REST API for the NetApp Console
+
+
+
+The user and usergroup endpoints enable you to create and manage users and user groups.
+
+In NetApp Console identity and access management (IAM), a user represents a human user, a service account, or an agent. For example, you can create a user that represents a Connector.
+
+A user group is a set of users that you can manage as a group. In NetApp Console IAM, you can manage implicit user groups and explicit user groups. In an implicit user group, users belong to the same organization, project, or folder. In an explicit user group, users can belong to different elements of the resource hierarchy.
+
+

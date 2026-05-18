@@ -1,0 +1,116 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'audit/get-audit--records.html'
+summary: 'Retrieve records by service'
+---
+
+= Retrieve records by service
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{accountId}/{service}/{requestId}/records`#
+
+
+
+Retrieves specified records by account, service, and request ID.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|service
+|string
+|path
+|True
+a|
+
+|requestId
+|string
+|path
+|True
+a|
+
+|===
+
+== Response
+
+```
+Status: 200, 
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|creationTime
+|number
+|True
+a|Creation time of the record. Unix epoch in milliseconds.
+
+
+|action
+|string
+|False
+a|Action name of the event.
+
+
+|status
+|string
+|True
+a|Status of the operation.
+
+
+|data
+|string
+|False
+a|Any optional data of the record. String value can be stringified JSON.
+
+
+|errors
+|array[string]
+|False
+a|Array of error message/s if exists. that related to this auditRecord
+
+
+|recordId
+|number
+|True
+a|Record id - is unique per requestId per service.
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "creationTime": 1676559600,
+  "action": "Create Replication Vsa",
+  "status": "success",
+  "data": "\"{\"replicationRequest\":{\"policyName\":\"MirrorAllSnapshots\",\"destinationWorkingEnvironmentId\":\"VsaWorkingEnvironment-LspTA9zs\",\"sourceWorkingEnvironmentId\":\"VsaWorkingEnvironment-bMyCULIC\",\"destinationInterclusterLifIps\":[\"10.0.0.35\"],\"sourceInterclusterLifIps\":[\"1.1.1.1\"],\"maxTransferRate\":null,\"scheduleName\":\"weekly\"},\"replicationVolume\":{\"destinationProviderVolumeType\":\"Standard_LRS\",\"destinationVolumeName\":\"vol2_1000g_case3_copy\",\"sourceVolumeName\":\"vol2_1000g\",\"advancedMode\":false,\"numOfDisksApprovedToAdd\":1,\"destinationCapacityTier\":null,\"destinationAggregateName\":\"aggr2\",\"sourceSvmName\":\"svm_srcVsa1\"}}\"",
+  "errors": "[error1,error2]",
+  "recordId": 234543
+}
+====
+

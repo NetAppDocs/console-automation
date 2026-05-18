@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/data_services_overview.html'
+summary: 'Data services endpoints in the License and subscriptions REST API for the NetApp Console'
+---
+
+= Data services endpoints in the License and subscriptions REST API for the NetApp Console
+
+
+
+The data services endpoints retrieve data service information that is managed in the NetApp Console.
+
+You can perform the following actions with the data services endpoints:
+
+* Read eligibility details of an account for a data service
+
+

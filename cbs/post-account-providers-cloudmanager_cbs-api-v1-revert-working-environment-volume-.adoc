@@ -1,0 +1,153 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-revert-working-environment-volume-.html'
+summary: 'Revert a snapshot for a volume'
+---
+
+= Revert a snapshot for a volume
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/revert/working-environment/{workingEnvironmentId}/volume/{volumeId}`#
+
+
+
+Reverts a snapshot for a volume. It restores a snapshot to be the read-write parent volume for the volume family. This replaces the current working copy of the volume with the snapshot that results in a loss of all changes made since the snapshot was created. The system ID and volume ID are passed as parameters in the API REST call and the required snapshot to which the volume needs to restored to should be sent in the input body of the REST API.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|volumeId
+|string
+|path
+|True
+a|Volume ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|snapshot-name
+|string
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "snapshot-name": "string"
+}
+====
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|snapshot-name
+|string
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

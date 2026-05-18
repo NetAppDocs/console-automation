@@ -1,0 +1,252 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/overview.html'
+summary: 'NetApp Backup and Recovery REST API'
+---
+
+= NetApp Backup and Recovery REST API
+
+
+
+NetApp Backup and Recovery is a service embedded within the NetApp Console platform that provides backup and restore capabilities for protection and long-term archiving of your data residing in Cloud Volumes ONTAP and on-premises ONTAP clusters (AFF/FAS/OTS). By using this service, you can automatically generate and store backups in an object store in the public or private cloud account of your choice, and you can easily restore data any time and to any location, as per your requirements.
+
+There are 17 categories of endpoints defined within the Backup and Recovery service:
+
+* backup
+* catalog
+* cloud
+* configuration
+* features
+* job
+* license
+* migration
+* object store
+* restore
+* single file-level restore (SFR)
+* system
+* StorageGRID (sg)
+* ransomware scan
+* panoramic protection
+* replication
+* reports
+
+NOTE: Before using the API reference documentation, review the https://docs.netapp.com/us-en/console-automation/platform/overview.html[Get started] section for the NetApp Console APIs. For more information about the security tokens and identifiers you'll need when using the API, review the Common workflows and tasks section https://docs.netapp.com/us-en/console-automation/platform/get_identifiers.html[Common workflows and tasks] section.
+
+{blank} +
+
+'''
+
+== +++<strong>+++REST    implementation+++</strong>+++
+
+=== HTTP    methods
+
+|===
+| Method | Description
+
+| `POST`
+| Create an object instance
+
+| `GET`
+| Retrieve an object instance or collection
+
+| `PATCH`
+| Update an existing object
+
+| `DELETE`
+| Remove an existing object
+|===
+
+=== Request   headers
+
+|===
+| Request Header | Description
+
+| `Authorization`
+| Required. Contains a JWT access token.
+
+| `X-Agent-Id`
+| Required. Contains the Console agent ID.
+
+| `X-NetApp-Cache-Control`
+| Using this header will bypass the local cache and retrieve actual data from upstream sources like a NetApp Console SaaS application and ONTAP clusters.
+|===
+
+=== Query parameters
+
+You can use query parameters with endpoints in the following components:
+
+|===
+| Component | Query Parameter
+
+| sfr
+| accountId(required), +
+volumeId, +
+snapshotId. +
+
+
+| backup
+| accountId(required), +
+workingEnvironmentId, +
+volumeId, +
+snapshotId. +
+
+
+| restore
+| accountId(required). +
+
+
+| system
+| accountId(required), +
+workingEnvironmentId, +
+volumeId, +
+snapshotId.
+
+| cloud
+| accountId(required), +
+workingEnvironmentId, +
+volumeId, +
+snapshotId,awsAccountId, +
+regionCode, +
+subscriptionId, +
+vaultName, +
+projectId, +
+jobId.
+
+| license
+| accountId(required), +
+workingEnvironmentId. +
+
+
+| catalog
+| accountId(required), +
+workingEnvironmentId. +
+
+
+| job
+| accountId(required), +
+jobId.
+|===
+
+=== Response headers
+
+This API uses the standard HTTP response headers common with all NetApp Console APIs. See https://docs.netapp.com/us-en/console-automation/platform/http_details.html#request-headers[REST implementation] for more information.
+
+=== HTTP status    codes
+
+|===
+| HTTP Status Code | Description
+
+| `200`
+| OK:Returned for successful operation completion
+
+| `400`
+| Bad Request:Returned if the input is malformed and could not be parsed
+
+| `401`
+| Unauthorized:Returned if user authentication failed or the token has expired
+
+| `403`
+| Forbidden:Returned for authorization errors depending on the resource and token
+|===
+
+'''
+
+== *Error handling*
+
+There are two processes involved with error handling and processing.
+
+* The error is logged for supportability
+* The error is also returned to the caller for any specific handling
+
+'''
+
+== *cURL examples*
+
+=== Retrieve specific volume details
+
+This example retrieves the details of a specific volume that has been backed up by using the Backup and Recovery service.
+
+....
+
+  curl -X GET    "https://cloudmanager.cloud.netapp.com/account/(account_id)/providers/cloudmanager_cbs/api/v1/backup/working-environment/(working_environment_id)/volume/(volume_id)"   -H "accept: application/json" -H "authorization: (user token)"
+....
+
+'''
+
+== *Frequently asked questions*
+
+**There are multiple versions of the same command. Which version should I use?**
+
+If there are multiple versions of the same API endpoint, make sure to use the latest version of the API. The version of each endpoint is mentioned in the path.
+
+**Whats the difference between a user token and service token and why do we need two types of token authorization ?**
+
+A user token is used for communication between a user (or the UI) and the NetApp Console REST APIs, whereas the service token is used for communication between two services (machine-to-machine interaction) in the NetApp Console platform. The type of token required to invoke an API is documented in the description of each endpoint.
+
+**What is the difference between SFR NetApp Backup and Recovery APIs and Catalog NetApp Backup and Recovery APIs?**
+
+The SFR NetApp Backup and Recovery APIs provide the option to use the "Browse and Restore" feature while performing a volume level or single/multiple file restore operation from backups stored on the cloud. The Catalog NetApp Backup and Recovery APIs have introduced a new "Search and Restore" feature, which enables you to search for a specific file from all backups stored on Amazon S3 cloud storage and then perform a restore operation. It enables you to perform a quick and focused search for files across all the backups in the cloud and gives you the option to narrow down the searches by using multiple search criteria.
+
+**Why has the export file system API endpoint under the SFR category been deprecated?**
+
+Previously, NetApp Backup and Recovery relied on an additional Cloud Restore VM instance for exporting the snapshots and creating a file list when you initiated a "File Restore" operation from the Restore dashboard. Instead of creating an additional cloud restore virtual machine (VM) instance during a file-level restore operation, the NetApp Backup and Recovery service deploys a restore container on the Agent VM instance. These containers contain the latest Active Data Agent image (version 1.4). This implementation does not require the file system to be exported, therefore the export file system API endpoint under the SFR category has been deprecated.
+
+**Why have the API endpoints under the jobs category changed?**
+
+The old job API endpoints have been replaced with a set of new job API endpoints. The functionality of the new endpoints differ from the old ones. Previously, the job endpoints were used to retrieve a list of jobs and the details of a particular job. The new job API endpoints allow services to create job entries, update the status of a job directly in the database, and retrieve the current status of a job from the database.
+
+'''
+
+== *How to use the Backup and Recovery REST APIs*
+
+**Getting started**
+
+To get started with the Backup and Recovery APIs, obtain a user token, a NetApp Console account ID, and the Console agent ID. When making API calls, add the user token in the Authorization header and the console agent ID in the X-Agent-Id header. Use the NetApp Console account ID in the APIs.
+
+**Obtain a user token from NetApp Console.**
+
+Make sure to generate the refresh token from the following link: https://services.cloud.netapp.com/refresh-token/. The refresh token is an alpha-numeric string that is used to generate a user token.
+
+....
+
+  curl -X GET    "https://netapp-cloud-account.auth0.com/oauth/token?=" -H "Content-Type: application/json" -d   "grant_type" "refresh_token", "refresh_token" "{REDACTED}", "client_id"{REDACTED}"}
+....
+
+**Obtain your NetApp Console account ID**
+
+....
+
+  curl -X GET  "https://cloudmanager.cloud.netapp.com/tenancy/account"    -H "accept: application/json"  -H "authority: cloudmanager.cloud.netapp.com" -H "accept-language: en-GB,en;q=0.9"  -H "authorization: Bearer {REDACTED}"
+....
+
+This API will return a response like the following. You can retrieve the account ID by parsing the output from [0].[ accountPublicId].
+
+Response:
+
+  "[{"accountPublicId":"{ACCOUNT_ID}","accountName":"{ACCOUNT_NAME}","isSaas":true,"isGov":false,"isPrivatePreviewEnabled":false,"is3rdPartyServicesEnabled":false,"accountSerial":"{REDACTED}","userRole":"Role-1"}………"
+
+**Obtain the X-Agent-Id that contains the Agent ID.**
+
+....
+
+  curl -X GET "https://api.services.cloud.netapp.com/occm/list-occms/{ACCOUNT_ID}?excludeStandalone=true&source=saas"     -H "accept: application/json"  -H "authority: api.services.cloud.netapp.com" -H "accept-language: en-GB,en;q=0.9"  -H "authorization: Bearer {REDACTED}"
+....
+
+This API will return a response like the following. You can retrieve the agent ID by parsing the output from occm.[0].[agent].[agentId].
+
+Response:
+
+  "{"occms":[{"account":"{ACCOUNT_ID}","accountName":"{ACCOUNT_NAME}","occm":"{REDACTED}","agentId":"{REDACTED}","status":"ready","occmName":"{AGENT_NAME}","primaryCallbackUri":"","manualOverrideUris":[],"automaticCallbackUris":[],"createDate":"1652120369286","agent":{"useDockerInfra":true,"network":"default","name":"{AGENT_NAME}","agentId":"{REDACTED}","provider":"gcp","systemId":"{SYSTEM_ID}"
+
+**Example using the APIs**
+
+The following example shows an API call to activate a backup on a system with a new policy that has daily, hourly, and weekly labels set, and archive after days set as 180 days in East-US-2 region in Azure cloud. This enables backup only on a system but no volumes are backed up. If you choose "auto-backup-enabled": true, then any volumes already existing in the system are backed up and future volumes added.
+
+....
+
+  curl -X GET     "https://cloudmanager.cloud.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v3/backup/working-environment/VsaWorkingEnvironment-99hPYEgk"     -H "accept: application/json"  -H "X-Agent-Id: {REDACTED}"  -H "authorization: Bearer {REDACTED}" -d "{"provider":"AZURE","backup-policy": {"archive-after-days": 180,"rule": [{"label": "hourly","retention": "2"},{"label": "daily","retention": "30"},{"label": "weekly", "retention": "52"}]},"ip-space": "Default","region": "eastus2","azure": {"resource-group": "rn-test-backup-rg",     "subscription": "3beb4dd0-25d4-464f-9bb0-303d7cf5c0c2"}}"
+....
+
+

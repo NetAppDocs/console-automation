@@ -1,0 +1,123 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'fsx/get-working-environments-.html'
+summary: 'Retrieve working environments'
+---
+
+= Retrieve working environments
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/{accountId}`#
+
+
+
+Retrieves all working environments of a Cloud Volumes ONTAP instance for a specified account.
+  You can filter by a specified workspace ID. Pass provider-details parameter to retrieve provider data.
+
+**Token usage:** Cloud Manager user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|x-simulator
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workspace-id
+|string
+|query
+|False
+a|
+
+|provider-details
+|string
+|query
+|False
+a|
+
+|===
+
+== Response
+
+```
+Status: 200, 
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|
+
+|name
+|string
+|True
+a|
+
+|region
+|string
+|True
+a|
+
+|deploymentType
+|string
+|True
+a|
+
+|providerDetails
+|link:#providerDetails[providerDetails]
+|True
+a|
+
+|volumes
+|array[string]
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#providerDetails]
+[.api-collapsible-fifth-title]
+providerDetails
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,109 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-flexcache.html'
+summary: 'Create a new FlexCache volume'
+---
+
+= Create a new FlexCache volume
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/flexcache`#
+
+
+
+Creates a new FlexCache volume in a Cloud Volumes ONTAP system.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|Source system ID
+
+
+|destinationWorkingEnvironmentId
+|string
+|True
+a|Destination system ID
+
+
+|sourceSvmName
+|string
+|True
+a|Source SVM name
+
+
+|destinationSvmName
+|string
+|True
+a|Destination SVM name
+
+
+|sourceIpSpace
+|string
+|False
+a|Source IPspace
+
+
+|destinationIpSpace
+|string
+|False
+a|Destination IPspace
+
+
+|sourceVolumes
+|array[string]
+|True
+a|Names of source volumes
+
+
+|cacheVolumePercentage
+|integer
+|True
+a|FlexCache volume percentage
+
+
+|nameForSingleVolume
+|string
+|False
+a|FlexCache volume name for a single volume
+
+
+|namePrefix
+|string
+|False
+a|FlexCache name prefix
+
+
+|nameSuffix
+|string
+|False
+a|FlexCache name suffix
+
+
+|replicateNfsCifsShares
+|boolean
+|True
+a|Replicate NFS and CIFS shares as source volume
+
+
+|===
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

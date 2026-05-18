@@ -1,0 +1,71 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-accounts-nss-set-vsa-list-.html'
+summary: 'Update the VSA list of an NSS account'
+---
+
+= Update the VSA list of an NSS account
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/nss/set-vsa-list/{cloudProviderAccountId}`#
+
+
+
+Updates the system list of an existing NetApp Support Site account.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|cloudProviderAccountId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|vsaList
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "vsaList": [
+    "string"
+  ]
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

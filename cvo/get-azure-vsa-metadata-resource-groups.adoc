@@ -1,0 +1,84 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-vsa-metadata-resource-groups.html'
+summary: 'Retrieve Azure resource groups by region'
+---
+
+= Retrieve Azure resource groups by region
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/resource-groups`#
+
+
+
+Retrieves Azure resource groups by region.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|region
+|string
+|query
+|False
+a|
+
+|subscriptionId
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|id
+|string
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "id": "string"
+}
+====
+

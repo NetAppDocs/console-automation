@@ -1,0 +1,436 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-onprem-volumes.html'
+summary: 'Create a new volume'
+---
+
+= Create a new volume
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/volumes`#
+
+
+
+Creates a new volume.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|True
+a|Target system ID
+
+
+|svmName
+|string
+|True
+a|SVM name
+
+
+|aggregateName
+|string
+|False
+a|Aggregate in which to create the volume
+
+
+|name
+|string
+|False
+a|Volume name, unique within the SVM
+
+
+|size
+|link:#PositiveCapacity[PositiveCapacity]
+|True
+a|
+
+|initialSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|snapshotPolicyName
+|string
+|True
+a|Snapshot policy name
+
+
+|exportPolicyInfo
+|link:#ExportPolicyInfo[ExportPolicyInfo]
+|False
+a|
+
+|shareInfo
+|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
+|False
+a|
+
+|iscsiInfo
+|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
+|False
+a|
+
+|enableThinProvisioning
+|boolean
+|True
+a|Enable thin provisioning on the volume
+
+
+|enableCompression
+|boolean
+|True
+a|Enable compression on the volume
+
+
+|enableDeduplication
+|boolean
+|True
+a|Enable deduplication on the volume
+
+
+|syncToS3
+|boolean
+|True
+a|Add a cloud sync relationship
+
+
+|volumeTags
+|array[link:#VolumeTags[VolumeTags]]
+|True
+a|Optionally, provide key-value pairs with which to tag the ONTAP volume using the App Template service.
+
+
+|flexGroupVolumeInfo
+|link:#FlexGroupVolumeInfo[FlexGroupVolumeInfo]
+|False
+a|
+
+|===
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#PositiveCapacity]
+[.api-collapsible-fifth-title]
+PositiveCapacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|Size
+
+
+|unit
+|string
+|True
+a|Unit
+
+
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|Size
+
+
+|unit
+|string
+|True
+a|Unit
+
+
+|===
+
+
+[#index]
+[.api-collapsible-fifth-title]
+index
+
+Export policy rule index
+
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|index
+|link:#index[index]
+|False
+a|Export policy rule index
+
+
+|ruleAccessControl
+|string
+|True
+a|Export policy rule access control
+
+
+|ips
+|array[string]
+|True
+a|Export policy rule list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy rule protocol
+
+
+|superUser
+|boolean
+|True
+a|Export policy rule super user access
+
+
+|===
+
+
+[#ExportPolicyInfo]
+[.api-collapsible-fifth-title]
+ExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|policyType
+|string
+|False
+a|Export policy type
+
+
+|ips
+|array[string]
+|False
+a|Custom export policy list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy protocol
+
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|False
+a|Export policy rules
+
+
+|===
+
+
+[#CifsShareUserPermissions]
+[.api-collapsible-fifth-title]
+CifsShareUserPermissions
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|permission
+|string
+|False
+a|CIFS share permission type
+
+
+|users
+|array[string]
+|True
+a|List of users with the permission
+
+
+|===
+
+
+[#CreateCifsShareInfoRequest]
+[.api-collapsible-fifth-title]
+CreateCifsShareInfoRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|shareName
+|string
+|False
+a|Share name
+
+
+|accessControl
+|link:#CifsShareUserPermissions[CifsShareUserPermissions]
+|False
+a|
+
+|===
+
+
+[#IgroupCreationRequest]
+[.api-collapsible-fifth-title]
+IgroupCreationRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|initiators
+|array[string]
+|False
+a|Initiators
+
+
+|igroupName
+|string
+|False
+a|Initiator group name
+
+
+|===
+
+
+[#CreateIscsiInfoRequest]
+[.api-collapsible-fifth-title]
+CreateIscsiInfoRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|osName
+|string
+|False
+a|Operating system
+
+
+|igroupCreationRequest
+|link:#IgroupCreationRequest[IgroupCreationRequest]
+|False
+a|
+
+|igroups
+|array[string]
+|False
+a|Initiator groups
+
+
+|===
+
+
+[#VolumeTags]
+[.api-collapsible-fifth-title]
+VolumeTags
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|tagKey
+|string
+|False
+a|
+
+|tagValue
+|string
+|False
+a|
+
+|===
+
+
+[#FlexGroupVolumeInfo]
+[.api-collapsible-fifth-title]
+FlexGroupVolumeInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|aggregateList
+|array[string]
+|False
+a|Names of aggregates for the FlexGroup volume
+
+
+|numberOfConstituents
+|integer
+|False
+a|Number of constituents for the FlexGroup volume
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

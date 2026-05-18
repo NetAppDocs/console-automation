@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-occm-asup-download.html'
+summary: 'Download NetApp Console support data'
+---
+
+= Download NetApp Console support data
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup/download`#
+
+
+
+Downloads NetApp Console support data.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

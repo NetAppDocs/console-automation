@@ -1,0 +1,1857 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-relationships-v2-.html'
+summary: 'Retrieve a relationship'
+---
+
+= Retrieve a relationship
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/relationships-v2/{id}`#
+
+
+
+Retrieves a relationship.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|id
+|string
+|path
+|True
+a|Relationship ID
+
+
+|x-account-id
+|string
+|header
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|Relationship ID
+
+
+|isCM
+|string
+|False
+a|Was the relationship created through CloudManager
+
+
+|dataBroker
+|string
+|False
+a|Data Broker ID
+
+
+|relationshipId
+|string
+|False
+a|Relationship ID
+
+
+|source
+|link:#source[source]
+|True
+a|
+
+|target
+|link:#target[target]
+|True
+a|
+
+|encryption
+|link:#encryption[encryption]
+|False
+a|
+
+|group
+|string
+|False
+a|Group ID
+
+
+|settings
+|link:#settings[settings]
+|False
+a|
+
+|activity
+|link:#activity[activity]
+|False
+a|
+
+|createdAt
+|number
+|True
+a|Relationship Creation time
+
+
+|customHeaders
+|link:#customHeaders[customHeaders]
+|False
+a|Custom headers for the relationship
+
+
+|extraInformation
+|link:#extraInformation[extraInformation]
+|False
+a|
+
+|tags
+|array[link:#tags[tags]]
+|False
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#credentials]
+[.api-collapsible-fifth-title]
+credentials
+
+CIFS credentials
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|username
+|string
+|True
+a|User name
+
+
+|password
+|string
+|True
+a|password
+
+
+|domain
+|string
+|False
+a|Domain
+
+
+|===
+
+
+[#cifs]
+[.api-collapsible-fifth-title]
+cifs
+
+CIFS Details
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|host
+|string
+|True
+a|CIFS host
+
+
+|share
+|string
+|True
+a|CIFS share
+
+
+|provider
+|string
+|True
+a|CIFS type
+
+
+|path
+|string
+|False
+a|CIFS path
+
+
+|version
+|string
+|False
+a|Supported CIFS versions
+
+
+|workingEnvironmentId
+|string
+|False
+a|Relevant system ID
+
+
+|credentials
+|link:#credentials[credentials]
+|False
+a|CIFS credentials
+
+
+|===
+
+
+[#nfs]
+[.api-collapsible-fifth-title]
+nfs
+
+NFS Details
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|host
+|string
+|True
+a|NFS host
+
+
+|export
+|string
+|True
+a|NFS export
+
+
+|provider
+|string
+|True
+a|NFS type
+
+
+|path
+|string
+|False
+a|NFS path
+
+
+|version
+|string
+|False
+a|Supported NFS versions
+
+
+|workingEnvironmentId
+|string
+|False
+a|Relevant system ID
+
+
+|accessPoint
+|string
+|False
+a|EFS access point
+
+
+|===
+
+
+[#encryption]
+[.api-collapsible-fifth-title]
+encryption
+
+S3 encryption
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|protocol
+|string
+|False
+a|Encryption type
+
+
+|keyId
+|string
+|False
+a|Encryption key arn in case it is kms encryption
+
+
+|===
+
+
+[#tags]
+[.api-collapsible-fifth-title]
+tags
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key
+|string
+|False
+a|Tag Key
+
+
+|value
+|string
+|False
+a|Tag Value
+
+
+|===
+
+
+[#glacier]
+[.api-collapsible-fifth-title]
+glacier
+
+Glacier storage class restore information (available only for s3 as source endpoint)
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|days
+|number
+|True
+a|Lifetime of the active copy in days
+
+
+|tier
+|string
+|True
+a|Glacier retrieval tier at which the restore will be processed
+
+
+|===
+
+
+[#deepArchive]
+[.api-collapsible-fifth-title]
+deepArchive
+
+Deep Archive storage class restore information (available only for s3 as source endpoint)
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|days
+|number
+|True
+a|Lifetime of the active copy in days
+
+
+|tier
+|string
+|True
+a|Deep Archive retrieval tier at which the restore will be processed
+
+
+|===
+
+
+[#s3]
+[.api-collapsible-fifth-title]
+s3
+
+S3 details
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|host
+|string
+|False
+a|SGWS or IBM or ONTAP host
+
+
+|port
+|integer
+|False
+a|SGWS or IBM or ONTAP port
+
+
+|bucket
+|string
+|True
+a|Bucket
+
+
+|prefix
+|string
+|False
+a|Prefix
+
+
+|region
+|string
+|False
+a|Bucket region
+
+
+|encryption
+|link:#encryption[encryption]
+|False
+a|S3 encryption
+
+
+|privateLinkDns
+|string
+|False
+a|AWS S3 Private Link DNS
+
+
+|tags
+|array[link:#tags[tags]]
+|False
+a|
+
+|storageClass
+|string
+|False
+a|S3 Storage Class
+
+
+|provider
+|string
+|True
+a|Object Storage Type
+
+
+|workingEnvironmentId
+|string
+|False
+a|Relevant system ID - for storageGrid system
+
+
+|glacier
+|link:#glacier[glacier]
+|False
+a|Glacier storage class restore information (available only for s3 as source endpoint)
+
+
+|deepArchive
+|link:#deepArchive[deepArchive]
+|False
+a|Deep Archive storage class restore information (available only for s3 as source endpoint)
+
+
+|===
+
+
+[#local]
+[.api-collapsible-fifth-title]
+local
+
+Local object details
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|path
+|string
+|True
+a|Local Path
+
+
+|===
+
+
+[#azure]
+[.api-collapsible-fifth-title]
+azure
+
+Azure Blob Storage Details
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|container
+|string
+|True
+a|Azure Blob Storage container name
+
+
+|storageAccountName
+|string
+|False
+a|Azure Blob Storage account name
+
+
+|prefix
+|string
+|False
+a|Container blob prefix
+
+
+|path
+|string
+|False
+a|Container path, used in azure data lake storage
+
+
+|tags
+|array[link:#tags[tags]]
+|False
+a|
+
+|blobTier
+|string
+|False
+a|Blob tier type
+
+
+|provider
+|string
+|True
+a|Azure type
+
+
+|===
+
+
+[#gcp]
+[.api-collapsible-fifth-title]
+gcp
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|bucket
+|string
+|True
+a|GCP Bucket
+
+
+|prefix
+|string
+|False
+a|GCP Bucket prefix
+
+
+|tags
+|array[link:#tags[tags]]
+|False
+a|
+
+|storageClass
+|string
+|False
+a|GCP Storage Class
+
+
+|kmsKeyName
+|string
+|False
+a|GCP Kms name
+
+
+|provider
+|string
+|True
+a|GCP Type
+
+
+|===
+
+
+[#gdrive]
+[.api-collapsible-fifth-title]
+gdrive
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|driveId
+|string
+|True
+a|Drive Id
+
+
+|driveName
+|string
+|False
+a|Drive Name
+
+
+|folderId
+|string
+|False
+a|Google Drive folderId
+
+
+|path
+|string
+|False
+a|Folder path
+
+
+|provider
+|string
+|True
+a|Google Drive Type
+
+
+|tags
+|array[link:#tags[tags]]
+|False
+a|
+
+|subject
+|string
+|True
+a|subject - user email
+
+
+|===
+
+
+[#sftp]
+[.api-collapsible-fifth-title]
+sftp
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|host
+|string
+|True
+a|SFTP host
+
+
+|port
+|integer
+|True
+a|SFTP port number
+
+
+|path
+|string
+|False
+a|Directory path
+
+
+|rootDirectory
+|string
+|True
+a|Root Directory path
+
+
+|provider
+|string
+|True
+a|SFTP Type
+
+
+|===
+
+
+[#box]
+[.api-collapsible-fifth-title]
+box
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|rootDirectory
+|string
+|False
+a|Root Directory
+
+
+|path
+|string
+|False
+a|path
+
+
+|folderId
+|string
+|True
+a|Folder ID
+
+
+|clientId
+|string
+|True
+a|Client ID
+
+
+|appName
+|string
+|False
+a|Box Application Name
+
+
+|enterpriseId
+|string
+|False
+a|Enterprise Id
+
+
+|provider
+|string
+|True
+a|Box Type
+
+
+|===
+
+
+[#source]
+[.api-collapsible-fifth-title]
+source
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|protocol
+|string
+|False
+a|Endpoint protocol
+
+
+|cifs
+|link:#cifs[cifs]
+|False
+a|CIFS Details
+
+
+|nfs
+|link:#nfs[nfs]
+|False
+a|NFS Details
+
+
+|s3
+|link:#s3[s3]
+|False
+a|S3 details
+
+
+|local
+|link:#local[local]
+|False
+a|Local object details
+
+
+|azure
+|link:#azure[azure]
+|False
+a|Azure Blob Storage Details
+
+
+|gcp
+|link:#gcp[gcp]
+|False
+a|
+
+|gdrive
+|link:#gdrive[gdrive]
+|False
+a|
+
+|sftp
+|link:#sftp[sftp]
+|False
+a|
+
+|box
+|link:#box[box]
+|False
+a|
+
+|===
+
+
+[#target]
+[.api-collapsible-fifth-title]
+target
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|protocol
+|string
+|False
+a|Endpoint protocol
+
+
+|cifs
+|link:#cifs[cifs]
+|False
+a|CIFS Details
+
+
+|nfs
+|link:#nfs[nfs]
+|False
+a|NFS Details
+
+
+|s3
+|link:#s3[s3]
+|False
+a|S3 details
+
+
+|local
+|link:#local[local]
+|False
+a|Local object details
+
+
+|azure
+|link:#azure[azure]
+|False
+a|Azure Blob Storage Details
+
+
+|gcp
+|link:#gcp[gcp]
+|False
+a|
+
+|gdrive
+|link:#gdrive[gdrive]
+|False
+a|
+
+|sftp
+|link:#sftp[sftp]
+|False
+a|
+
+|box
+|link:#box[box]
+|False
+a|
+
+|===
+
+
+[#initiator]
+[.api-collapsible-fifth-title]
+initiator
+
+Initiator details
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dataBrokerId
+|string
+|False
+a|Data Broker Id
+
+
+|groupId
+|string
+|False
+a|Group Id
+
+
+|encryptionType
+|string
+|False
+a|Data Broker network location - if initiator is src, listener must be trg
+
+
+|===
+
+
+[#listener]
+[.api-collapsible-fifth-title]
+listener
+
+Listener details
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dataBrokerId
+|string
+|False
+a|Data Broker Id
+
+
+|groupId
+|string
+|False
+a|Group Id
+
+
+|encryptionType
+|string
+|False
+a|Data Broker network location - if initiator is src, listener must be trg
+
+
+|===
+
+
+[#encryption]
+[.api-collapsible-fifth-title]
+encryption
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|initiator
+|link:#initiator[initiator]
+|False
+a|Initiator details
+
+
+|listener
+|link:#listener[listener]
+|False
+a|Listener details
+
+
+|===
+
+
+[#fileTypes]
+[.api-collapsible-fifth-title]
+fileTypes
+
+The file types that is included in the relationship
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|files
+|boolean
+|False
+a|Include files
+
+
+|directories
+|boolean
+|False
+a|Include directories
+
+
+|symlinks
+|boolean
+|False
+a|Include symbolic links
+
+
+|hardlinks
+|boolean
+|False
+a|include hard links
+
+
+|===
+
+
+[#compareBy]
+[.api-collapsible-fifth-title]
+compareBy
+
+The file attributes that should be compared
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|uid
+|boolean
+|False
+a|uid ( relevant when source or target is file system )
+
+
+|gid
+|boolean
+|False
+a|gid ( relevant when source or target is file system )
+
+
+|mtime
+|boolean
+|False
+a|mtime
+
+
+|mode
+|boolean
+|False
+a|mode
+
+
+|===
+
+
+[#copyProperties]
+[.api-collapsible-fifth-title]
+copyProperties
+
+The object properties that should be copied
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|metadata
+|boolean
+|False
+a|copy metadata ( cloud to cloud )
+
+
+|tags
+|boolean
+|False
+a|copy tags ( cloud to cloud only S3 compatible )
+
+
+|===
+
+
+[#files]
+[.api-collapsible-fifth-title]
+files
+
+Settings related to files.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|excludeExtensions
+|array[string]
+|False
+a|Excluded extensions array (For example - [".log", ".tar.gz"])
+
+
+|excludeByRegex
+|array[string]
+|False
+a|Excluded files by regex (For example - ".txt." will exclude the files file.doc.txt.gz)
+
+
+|minSize
+|integer
+|False
+a|Minimum file size (in bytes). Only files of equal or larger size will be transferred by the relationship
+
+
+|maxSize
+|integer
+|False
+a|Maximum file size (in bytes). Only files of equal or smaller size will be transferred by the relationship
+
+
+|minDate
+|string
+|False
+a|Data broker will sync files that were last modified after this date. The date must be an ISO 8601 valid date. For example - '2012-02-21'
+
+
+|maxDate
+|["null", "string"]
+|False
+a|Data broker will sync files that were last modified before this date. Insert 'null' to sync all future files. The date must be an ISO 8601 valid date
+
+
+|minCreationDate
+|string
+|False
+a|Data broker will sync files that were created after this date. The date must be an ISO 8601 valid date. For example - '2012-02-21'
+
+
+|maxCreationDate
+|["null", "string"]
+|False
+a|Data broker will sync files that were created before this date. Insert 'null' to sync all future files. The date must be an ISO 8601 valid date
+
+
+|===
+
+
+[#directories]
+[.api-collapsible-fifth-title]
+directories
+
+Settings related to directories.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|excludeNames
+|array[string]
+|False
+a|Excluded directories names array (For example - ["dir1"])
+
+
+|excludeByRegex
+|array[string]
+|False
+a|Excluded directories names by regex (For example - "._tmp._." will exclude the directories with names that include tmp )
+
+
+|===
+
+
+[#schedule]
+[.api-collapsible-fifth-title]
+schedule
+
+Sync schedule settings.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|syncInDays
+|integer
+|False
+a|Days interval for sync scheduler
+
+
+|syncInHours
+|integer
+|False
+a|
+
+|syncInMinutes
+|integer
+|False
+a|
+
+|isEnabled
+|boolean
+|False
+a|Activate automatic scheduler
+
+
+|nextTime
+|string
+|False
+a|The first time the relationship should run
+
+
+|syncWhenCreated
+|boolean
+|False
+a|Start the sync upon creation
+
+
+|===
+
+
+[#cm]
+[.api-collapsible-fifth-title]
+cm
+
+NetApp Console notifications
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|done
+|boolean
+|False
+a|Should send notification about DONE status
+
+
+|failed
+|boolean
+|False
+a|Should send notification about FAILED status
+
+
+|aborted
+|boolean
+|False
+a|Should send notification about ABORTED status
+
+
+|running_continuously
+|boolean
+|False
+a|Should send notification about RUNNING_CONTINUOUSLY status
+
+
+|===
+
+
+[#notifications]
+[.api-collapsible-fifth-title]
+notifications
+
+Notifications settings.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cm
+|link:#cm[cm]
+|False
+a|NetApp Console notifications
+
+
+|===
+
+
+[#scheduleAbort]
+[.api-collapsible-fifth-title]
+scheduleAbort
+
+Schedule abort settings.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|abortInDays
+|integer
+|False
+a|Days interval for abort scheduler
+
+
+|abortInHours
+|integer
+|False
+a|Hours interval for abort scheduler
+
+
+|abortInMinutes
+|integer
+|False
+a|Minutes interval for abort scheduler
+
+
+|isEnabled
+|boolean
+|False
+a|Activate automatic scheduler abort
+
+
+|===
+
+
+[#settings]
+[.api-collapsible-fifth-title]
+settings
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|gracePeriod
+|number
+|True
+a|Grace period time ( seconds )
+
+
+|deleteOnSource
+|boolean
+|True
+a|Enable delete on source
+
+
+|deleteOnTarget
+|boolean
+|True
+a|Enable delete on target
+
+
+|objectTagging
+|boolean
+|True
+a|Use S3 tagging to store object metadata
+
+
+|retries
+|integer
+|True
+a|Number of retries
+
+
+|copyAcl
+|boolean
+|False
+a|Enable ACL copy
+
+
+|copyData
+|boolean
+|True
+a|Copy data only
+
+
+|continuousSync
+|boolean
+|False
+a|Listen to object notifications
+
+
+|fileTypes
+|link:#fileTypes[fileTypes]
+|True
+a|The file types that is included in the relationship
+
+
+|compareBy
+|link:#compareBy[compareBy]
+|True
+a|The file attributes that should be compared
+
+
+|copyProperties
+|link:#copyProperties[copyProperties]
+|False
+a|The object properties that should be copied
+
+
+|files
+|link:#files[files]
+|True
+a|Settings related to files.
+
+
+|directories
+|link:#directories[directories]
+|True
+a|Settings related to directories.
+
+
+|schedule
+|link:#schedule[schedule]
+|True
+a|Sync schedule settings.
+
+
+|notifications
+|link:#notifications[notifications]
+|False
+a|Notifications settings.
+
+
+|scheduleAbort
+|link:#scheduleAbort[scheduleAbort]
+|True
+a|Schedule abort settings.
+
+
+|===
+
+
+[#topFiveMostCommonRelationshipErrors]
+[.api-collapsible-fifth-title]
+topFiveMostCommonRelationshipErrors
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|step
+|string
+|False
+a|Sync step that failed - TRANSFER or SCAN
+
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|counter
+|number
+|False
+a|Number of errors
+
+
+|description
+|string
+|False
+a|Error description
+
+
+|===
+
+
+[#errors]
+[.api-collapsible-fifth-title]
+errors
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dataBrokerId
+|string
+|False
+a|Data Broker with initialized error
+
+
+|reason
+|string
+|False
+a|Error
+
+
+|===
+
+
+[#activity]
+[.api-collapsible-fifth-title]
+activity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|syncType
+|string
+|False
+a|field for UI - to indicate if we copy only acl or copy also data
+
+
+|status
+|string
+|False
+a|Relationship status
+
+
+|type
+|string
+|False
+a|Relationship phase - Initial copy or sync
+
+
+|bytesMarkedForCopy
+|number
+|False
+a|Bytes marked for copy
+
+
+|filesMarkedForCopy
+|number
+|False
+a|Files marked for copy
+
+
+|dirsMarkedForCopy
+|number
+|False
+a|Directories marked for copy
+
+
+|filesCopied
+|number
+|False
+a|Files copied
+
+
+|bytesCopied
+|number
+|False
+a|Bytes copied
+
+
+|dirsCopied
+|number
+|False
+a|Directories copied
+
+
+|filesFailed
+|number
+|False
+a|files failed to copy
+
+
+|bytesFailed
+|number
+|False
+a|Bytes failed to copy
+
+
+|dirsFailed
+|number
+|False
+a|Directories failed to copy
+
+
+|filesMarkedForRemove
+|number
+|False
+a|Files marked for remove
+
+
+|bytesMarkedForRemove
+|number
+|False
+a|Byes marked for remove
+
+
+|dirsMarkedForRemove
+|number
+|False
+a|Directories marked for remove
+
+
+|filesRemoved
+|number
+|False
+a|Files removed
+
+
+|bytesRemoved
+|number
+|False
+a|Bytes removed
+
+
+|dirsRemoved
+|number
+|False
+a|Directories removed
+
+
+|bytesRemovedFailed
+|number
+|False
+a|Bytes failed to remove
+
+
+|filesRemovedFailed
+|number
+|False
+a|Filed failed to remove
+
+
+|filesMarkedForIgnore
+|number
+|False
+a|Files marked for ignore
+
+
+|dirsScanned
+|number
+|False
+a|Directories scanned
+
+
+|filesScanned
+|number
+|False
+a|Files scanned
+
+
+|bytesScanned
+|number
+|False
+a|Bytes scanned
+
+
+|dirsFailedToScan
+|number
+|False
+a|Directories failed to scan
+
+
+|timeEstimation
+|number
+|False
+a|Time estimation until the end of the sync
+
+
+|progress
+|number
+|False
+a|Relationship progress
+
+
+|endTime
+|string
+|False
+a|End time
+
+
+|startTime
+|string
+|False
+a|Start time
+
+
+|executionTime
+|number
+|False
+a|Execution time
+
+
+|failureMessage
+|string
+|False
+a|Failure message
+
+
+|lastMessageTime
+|string
+|False
+a|Last message time
+
+
+|topFiveMostCommonRelationshipErrors
+|array[link:#topFiveMostCommonRelationshipErrors[topFiveMostCommonRelationshipErrors]]
+|False
+a|
+
+|errors
+|array[link:#errors[errors]]
+|False
+a|
+
+|===
+
+
+[#customHeaders]
+[.api-collapsible-fifth-title]
+customHeaders
+
+Custom headers for the relationship
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|x-netapp-external-request-id-src
+|string
+|False
+a|Source request ID header
+
+
+|x-netapp-external-request-id-trg
+|string
+|False
+a|Target request ID header
+
+
+|x-source-edge
+|string
+|False
+a|Edge cluster UUID
+
+
+|x-target-edge
+|string
+|False
+a|Edge cluster UUID
+
+
+|x-sync-source
+|string
+|False
+a|Is source Edge
+
+
+|x-sync-target
+|string
+|False
+a|is target Edge
+
+
+|===
+
+
+[#extraInformation]
+[.api-collapsible-fifth-title]
+extraInformation
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dataSenseQueryUid
+|string
+|False
+a|Data sense query uid
+
+
+|connectorId
+|string
+|False
+a|Console agent ID ( for data sense query )
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,90 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-vsa-metadata-containers.html'
+summary: 'Retrieve all blob containers'
+---
+
+= Retrieve all blob containers
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/containers`#
+
+
+
+Retrieves all blob containers.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|subscriptionId
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|resourceGroupName
+|string
+|query
+|False
+a|
+
+|storageAccountName
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "id": "string",
+  "name": "string"
+}
+====
+

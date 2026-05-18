@@ -1,0 +1,86 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'audit/get-audit-options.html'
+summary: 'Retrieve audit options'
+---
+
+= Retrieve audit options
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{accountId}/options`#
+
+
+
+Retrieves filter options by a specified account ID.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|===
+
+== Response
+
+```
+Status: 200, 
+```
+
+Hash mapping strings to array[link:#AuditOptionItem[AuditOptionItem]]
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#AuditOptionItem]
+[.api-collapsible-fifth-title]
+AuditOptionItem
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|column
+|string
+|False
+a|Column name for the audit option
+
+
+|identifier
+|string
+|False
+a|Unique identifier for the audit option
+
+
+|label
+|string
+|False
+a|Display label for the audit option
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

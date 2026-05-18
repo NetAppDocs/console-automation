@@ -1,0 +1,156 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-snapshot.html'
+summary: 'Retrieve a list of snapshots using the account ID'
+---
+
+= Retrieve a list of snapshots using the account ID
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/snapshot`#
+
+
+
+Retrieves snapshot information for a specified account by using the account ID. This API endpoint retrieves the details of the snapshots from the NetApp Console SaaS application. It retrieves the snapshot name, snapshot creation time, archive status, and size. It also retrieves the object-lock, ransomware-scan-status-failure, and ransomware-scan-status.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|snapshot
+|array[link:#snapshot[snapshot]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "snapshot": [
+    {
+      "id": "string",
+      "name": "string",
+      "object-lock": "string",
+      "ransomware-scan-status-failure": "string",
+      "ransomware-scan-status": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#snapshot]
+[.api-collapsible-fifth-title]
+snapshot
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|creation-time
+|number
+|False
+a|
+
+|size
+|number
+|False
+a|
+
+|last-ransomware-scan
+|number
+|False
+a|
+
+|object-lock
+|string
+|False
+a|
+
+|ransomware-scan-status-failure
+|string
+|False
+a|
+
+|archived
+|boolean
+|False
+a|
+
+|ransomware-scan-status
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

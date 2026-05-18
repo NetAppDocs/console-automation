@@ -1,0 +1,122 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'fsx/get-aws-encryption-keys.html'
+summary: 'Retrieve encryption keys'
+---
+
+= Retrieve encryption keys
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/encryption-keys`#
+
+
+
+Retrieves all encryption keys for a specified region and VPC by using the credentials.
+
+**Token usage:** Cloud Manager user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|x-simulator
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+
+|region
+|string
+|query
+|True
+a|
+
+|account-id
+|string
+|query
+|True
+a|
+
+|credentials-id
+|string
+|query
+|True
+a|
+
+|===
+
+== Response
+
+```
+Status: 200, 
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|alias
+|link:#alias[alias]
+|True
+a|
+
+|keyId
+|string
+|True
+a|
+
+|keyArn
+|string
+|True
+a|
+
+|validTo
+|number
+|True
+a|
+
+|origin
+|string
+|True
+a|
+
+|status
+|string
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#alias]
+[.api-collapsible-fifth-title]
+alias
+
+
+//end collapsible .Definitions block
+====

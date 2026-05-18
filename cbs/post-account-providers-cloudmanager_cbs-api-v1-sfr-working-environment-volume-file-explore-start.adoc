@@ -1,0 +1,113 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-sfr-working-environment-volume-file-explore-start.html'
+summary: 'Start a file and folder explore operation (v1)'
+---
+
+= Start a file and folder explore operation (v1)
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/file-explore/start`#
+
+
+
+Starts a file and folder explore operation while initiating a single file restore (SFR) operation. This API endpoint initiates the deployment of an Active Data Connector container on the Console agent and mounts the snapshot under the /tmp folder to browse the files and folders. This API endpoint is currently supported on Cloud Volumes ONTAP on AWS, Azure, Google Cloud, and on-premises ONTAP systems. It supports retrieving files and folders from backups stored on AWS, Azure, Google Cloud, and StorageGRID cloud storage providers.
+
+**Token usage:**NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|snapshotLocation
+|string
+|query
+|False
+a|Location of the snapshot
+
+* enum: ["LOCAL", "CLOUD"]
+
+
+|snapshotId
+|string
+|query
+|False
+a|Snapshot ID of the source snapshot
+
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|volumeId
+|string
+|path
+|True
+a|File system ID/Volume ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+

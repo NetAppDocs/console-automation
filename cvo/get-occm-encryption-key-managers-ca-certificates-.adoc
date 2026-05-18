@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-occm-encryption-key-managers-ca-certificates-.html'
+summary: 'Retrieve a key manager CA certificate'
+---
+
+= Retrieve a key manager CA certificate
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/encryption/key-managers-ca-certificates/{keyManagerCaCertificateId}`#
+
+
+
+Retrieves a specific key manager certificate authority (CA) certificate.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|keyManagerCaCertificateId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|False
+a|
+
+|directIssuerName
+|string
+|False
+a|
+
+|subjectName
+|string
+|False
+a|
+
+|startDate
+|integer
+|True
+a|
+
+|endDate
+|integer
+|False
+a|
+
+|serialNumber
+|string
+|False
+a|
+
+|certificate
+|string
+|False
+a|
+
+|certificateType
+|string
+|False
+a|
+
+|===
+
+

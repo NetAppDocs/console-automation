@@ -1,0 +1,69 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-occm-setup-validate-proxy.html'
+summary: 'Validate a proxy URL'
+---
+
+= Validate a proxy URL
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup/validate/proxy`#
+
+
+
+Validates the specified proxy URL.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|uri
+|string
+|False
+a|
+
+|proxyUserName
+|string
+|False
+a|
+
+|proxyPassword
+|string
+|False
+a|
+
+|proxyDomain
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "uri": "string",
+  "proxyUserName": "string",
+  "proxyPassword": "string",
+  "proxyDomain": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

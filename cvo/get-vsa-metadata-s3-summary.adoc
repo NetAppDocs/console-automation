@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-vsa-metadata-s3-summary.html'
+summary: 'Retrieve S3 buckets summary'
+---
+
+= Retrieve S3 buckets summary
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/s3-summary`#
+
+
+
+Retrieves the S3 buckets summary.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|isSupportable
+|boolean
+|True
+a|
+
+|numOfBuckets
+|integer
+|True
+a|
+
+|numOfRegions
+|integer
+|False
+a|
+
+|===
+
+

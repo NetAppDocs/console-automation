@@ -1,0 +1,125 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-catalog-working-environments-.html'
+summary: 'Enable or disable the service'
+---
+
+= Enable or disable the service
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/working-environments/{workingEnvironmentId}`#
+
+
+
+Enables or disables the indexed cataloging service for a specified system on AWS, Azure, Google Cloud and on-premise or dark site deployments.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|state
+|string
+|False
+a|Modifies all of the SnapMirror relationship states in the system to the state specified.
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "state": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|state
+|string
+|False
+a|Modifies all of the SnapMirror relationship states in the system to the state specified.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

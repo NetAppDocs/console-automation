@@ -1,0 +1,63 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-groups-list-azure-blob-storage-containers.html'
+summary: 'Retrieve the Azure blob storage containers'
+---
+
+= Retrieve the Azure blob storage containers
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-azure-blob-storage-containers`#
+
+
+
+Retrieves the Azure blob storage containers.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|storageAccountName
+|string
+|query
+|True
+a|Azure storage account name
+
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|id
+|string
+|path
+|True
+a|Data Brokers Group ID
+
+
+|storage-account-connection-string
+|string
+|header
+|True
+a|Azure storage account connection-string
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

@@ -1,0 +1,123 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-sfr-working-environment-volume-snapshot-files-status.html'
+summary: 'Retrieve the file and folder status'
+---
+
+= Retrieve the file and folder status
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}/files/status`#
+
+
+
+Returns the file and folder status when you initiate a file or folder search during a restore operation.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|path
+|string
+|query
+|False
+a|The path of the directory
+
+
+|snapshotLocation
+|string
+|query
+|False
+a|Location of the snapshot
+
+* enum: ["LOCAL", "CLOUD"]
+
+
+|actualCount
+|boolean
+|query
+|False
+a|By default, the count is retrieved from the browsestatus table. When this flag is true, it retrieves the count of the actual records existing in the browsedb table.
+
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|volumeId
+|string
+|path
+|True
+a|File system ID/Volume ID
+
+
+|snapshotId
+|string
+|path
+|True
+a|Snapshot ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|counter
+|integer
+|False
+a|
+
+|inProgress
+|boolean
+|False
+a|
+
+|===
+
+

@@ -1,0 +1,149 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-replication-intercluster-lifs.html'
+summary: 'Retrieve the intercluster LIFs'
+---
+
+= Retrieve the intercluster LIFs
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/intercluster-lifs`#
+
+
+
+Retrieves the intercluster LIFs used in a cluster peering relationship.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|query
+|False
+a|
+
+|peerWorkingEnvironmentId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|interClusterLifs
+|array[link:#ReplicationInterClusterLif[ReplicationInterClusterLif]]
+|True
+a|System Intercluster LIFs
+
+
+|peerInterClusterLifs
+|array[link:#ReplicationInterClusterLif[ReplicationInterClusterLif]]
+|True
+a|Peer system Intercluster Lifs
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "interClusterLifs": [
+    {}
+  ],
+  "peerInterClusterLifs": [
+    {}
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#ReplicationInterClusterLif]
+[.api-collapsible-fifth-title]
+ReplicationInterClusterLif
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|Specifies the name
+
+
+|address
+|string
+|True
+a|Address
+
+
+|netmaskLength
+|integer
+|True
+a|Netmask Length
+
+
+|port
+|string
+|True
+a|Port
+
+
+|node
+|string
+|True
+a|Node
+
+
+|status
+|string
+|True
+a|Status
+
+
+|isPeered
+|boolean
+|True
+a|Is Peered
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

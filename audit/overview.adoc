@@ -1,0 +1,114 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'audit/overview.html'
+summary: 'Audit REST API for the NetApp Console'
+---
+
+= Audit REST API for the NetApp Console
+
+
+
+The Audit service records information about the operations performed by the NetApp Console services. This includes the originating IP addresses, workspaces, Console agents used, and other telemetry data.
+
+You can use this data to determine what actions were performed, who performed them, and when they occurred. This information can be useful in forensic situations or environments where compliance is required. The associated REST API provides several endpoints you can use to retrieve the audit data and account options. The identity of the API caller and account are established through a user access token that must be included with each call. All Audit service API calls in this document are short-lived and run synchronously.
+
+NOTE: Before using the API reference documentation, review the https://docs.netapp.com/us-en/cloud-manager-automation/platform/overview.html[Get started] section for the NetApp Console APIs. For more information about the security tokens and identifiers you'll need when using the API, review the https://docs.netapp.com/us-en/cloud-manager-automation/platform/get_identifiers.html[Common workflows and tasks] section.
+
+'''
+
+== REST implementation
+
+=== HTTP methods
+
+|===
+| Method | Description
+
+| `GET`
+| Retrieve an object instance or collection
+|===
+
+=== Request headers
+
+|===
+| Request Header | Description
+
+| `Authorization`
+| Required. Contains the JWT access token
+|===
+
+=== Query parameters
+
+A list of all the possible query parameters available for each service component is provided in the table below. This is a summary by component, however not every query parameter can be used with each endpoint in a specific component. See the detailed descriptions of the individual API calls for more details.
+
+|===
+| Component | Query Parameter
+
+| Audit
+| account (required) +
+fromLastModified +
+toLastModified +
+fromStartTime +
+qAction +
+qService +
+qStatus +
+qAgent +
+qResource +
+qUser +
+includeUserAudits +
+toStartTime +
+offset +
+includeUserData
+|===
+
+=== Response headers
+
+This API uses the standard HTTP response headers common with all NetApp Console APIs. See https://docs.netapp.com/us-en/cloud-manager-automation/platform/http_details.html[REST implementation] for more information.
+
+=== HTTP status codes
+
+|===
+| HTTP Status Code | Description
+
+| `200`
+| OK: Returned for successful operation completion
+
+| `400`
+| Bad Request: Returned if the input is malformed and could not be parsed
+
+| `401`
+| Unauthorized: Returned if user authentication failed or the token has expired
+
+| `403`
+| Forbidden: Returned for authorization errors depending on the resource and token
+|===
+
+'''
+
+== Error handling
+
+There are two processes involved with error handling and processing:
+
+* The error is logged for supportability
+* The error is also returned to the caller for any specific handling
+
+'''
+
+== cURL examples
+
+=== Retrieve audit records for a specified account
+
+This example retrieves the audit records for a specified account.
+
+....
+
+  curl -X GET "https://cloudmanager.cloud.netapp.com/audit/<account_id>" -H  "accept: application/json" -H  "authorization: <user token>"
+....
+
+'''
+
+{blank} +
+ +
+
+

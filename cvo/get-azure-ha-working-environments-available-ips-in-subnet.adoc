@@ -1,0 +1,57 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-ha-working-environments-available-ips-in-subnet.html'
+summary: 'Retrieve available IP addresses in the subnet of a system'
+---
+
+= Retrieve available IP addresses in the subnet of a system
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/available-ips-in-subnet`#
+
+
+
+Retrieves the number of available IP addresses in the Cloud Volumes ONTAP system's subnet.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|availableIps
+|integer
+|True
+a|
+
+|===
+
+

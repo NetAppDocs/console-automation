@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/delete-users-.html'
+summary: 'Delete an existing user'
+---
+
+= Delete an existing user
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/users/{userId}`#
+
+
+
+Deletes an existing user. It is not possible to delete a user that has created existing systems. It is not possible to delete the logged in user.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|userId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

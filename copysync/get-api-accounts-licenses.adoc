@@ -1,0 +1,110 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-licenses.html'
+summary: 'Retrieve a list of all licenses'
+---
+
+= Retrieve a list of all licenses
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/licenses`#
+
+
+
+Retrieves a list of all licenses.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|x-account-id
+|string
+|header
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|licenses
+|array[link:#licenses[licenses]]
+|True
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "licenses": [
+    {}
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#licenses]
+[.api-collapsible-fifth-title]
+licenses
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|serialNumber
+|string
+|True
+a|The license's serial number
+
+
+|reservedRelationships
+|number
+|True
+a|The reserved relationships
+
+
+|expirationDate
+|number
+|True
+a|The license expiration date
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

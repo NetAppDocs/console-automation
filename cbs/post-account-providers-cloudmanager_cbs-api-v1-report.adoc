@@ -1,0 +1,200 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-report.html'
+summary: 'Generate an inventory report'
+---
+
+= Generate an inventory report
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/report`#
+
+
+
+Generates an inventory report. You can create the inventory report for the whole account or a specific list of systems. It is also possible to generate reports for storage VMs under a system. By setting the "inventory-type" as "BACKUP", you can create a report for the backup actions. By setting it as "ALL", you can create a report for all the actions.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|inventory-type
+|string
+|False
+a|
+
+|protection-type
+|string
+|False
+a|
+
+|returnSnapshots
+|boolean
+|False
+a|
+
+|filters
+|array[link:#filters[filters]]
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "inventory-type": "string",
+  "protection-type": "string",
+  "filters": [
+    {
+      "working-environment-id": "string",
+      "svm": [
+        "string"
+      ]
+    }
+  ]
+}
+====
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#filters]
+[.api-collapsible-fifth-title]
+filters
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|working-environment-id
+|string
+|False
+a|
+
+|svm
+|array[string]
+|False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|inventory-type
+|string
+|False
+a|
+
+|protection-type
+|string
+|False
+a|
+
+|returnSnapshots
+|boolean
+|False
+a|
+
+|filters
+|array[link:#filters[filters]]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-azure-ha-working-environments-sync-subscription.html'
+summary: 'Trigger subscription synchronization'
+---
+
+= Trigger subscription synchronization
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/sync-subscription`#
+
+
+
+Manually triggers subscription synchronization for all Cloud Volumes ONTAP systems.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

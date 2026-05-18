@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-occm-system-cloud-ontap-update-image-metadata.html'
+summary: 'Perform a fetch and process of image update metadata files'
+---
+
+= Perform a fetch and process of image update metadata files
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/cloud-ontap-update-image-metadata`#
+
+
+
+Retrieves and processes Cloud Volumes ONTAP image update metadata files.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

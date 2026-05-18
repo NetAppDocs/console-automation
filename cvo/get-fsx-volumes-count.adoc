@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-fsx-volumes-count.html'
+summary: 'Retrieve the volume count'
+---
+
+= Retrieve the volume count
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/count`#
+
+
+
+Retrieves the volume count.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fileSystemId
+|string
+|path
+|True
+a|
+
+|svm
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+

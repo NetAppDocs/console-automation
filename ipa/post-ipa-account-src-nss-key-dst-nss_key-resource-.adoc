@@ -1,0 +1,109 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/post-ipa-account-src-nss-key-dst-nss_key-resource-.html'
+summary: 'Update a resource NetApp Support Site key'
+---
+
+= Update a resource NetApp Support Site key
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/src-nss-key/{srcNssKeyId}/dst-nss_key/{dstNssKeyId}/resource/{resourceId}`#
+
+
+
+Transfers the source NetApp Support Site data to the destination NetApp Support Site key of the associated resource.
+            +
+*Token usage:* NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|srcNssKeyId
+|string
+|path
+|True
+a|
+
+|dstNssKeyId
+|string
+|path
+|True
+a|
+
+|resourceId
+|string
+|path
+|True
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": "string",
+  "message": "string"
+}
+====
+

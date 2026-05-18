@@ -1,0 +1,261 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-volume.html'
+summary: 'Retrieve volumes'
+---
+
+= Retrieve volumes
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume`#
+
+
+
+Retrieves a list of volumes and their details from a specific system. This API endpoint retrieves the name, file-system-id, status, storage VM, type, style, capacity allocated, capacity used, and SnapMirror label information.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|completeResponse
+|boolean
+|query
+|False
+a|
+
+|name
+|string
+|query
+|False
+a|
+
+|language
+|string
+|query
+|False
+a|
+
+|type
+|string
+|query
+|False
+a|
+
+|style
+|string
+|query
+|False
+a|
+
+|snaplockType
+|string
+|query
+|False
+a|
+
+|max-records
+|number
+|query
+|False
+a|
+
+|cursor
+|string
+|query
+|False
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|volume
+|array[link:#volume[volume]]
+|False
+a|
+
+|num-records
+|number
+|False
+a|
+
+|cursor
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "volume": [
+    {
+      "name": "string",
+      "file-system-id": "string",
+      "status": "string",
+      "svm": "string",
+      "type": "string",
+      "style": "string",
+      "snapmirror-label": [
+        "string"
+      ],
+      "snaplock-type": "string",
+      "language": "string"
+    }
+  ],
+  "cursor": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#capacity]
+[.api-collapsible-fifth-title]
+capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|allocated
+|number
+|False
+a|
+
+|used
+|number
+|False
+a|
+
+|logicalUsedByAfs
+|number
+|False
+a|
+
+|===
+
+
+[#volume]
+[.api-collapsible-fifth-title]
+volume
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|file-system-id
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|svm
+|string
+|False
+a|
+
+|type
+|string
+|False
+a|
+
+|style
+|string
+|False
+a|
+
+|capacity
+|link:#capacity[capacity]
+|False
+a|
+
+|snapmirror-label
+|array[string]
+|False
+a|
+
+|snaplock-type
+|string
+|False
+a|
+
+|language
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-ha-metadata-tag-keys.html'
+summary: 'Retrieve tag names'
+---
+
+= Retrieve tag names
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/tag-keys`#
+
+
+
+Retrieves all of the tag names.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|subscriptionId
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key
+|string
+|True
+a|
+
+|values
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "key": "string",
+  "values": [
+    "string"
+  ]
+}
+====
+

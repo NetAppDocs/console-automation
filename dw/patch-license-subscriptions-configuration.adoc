@@ -1,0 +1,134 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/patch-license-subscriptions-configuration.html'
+summary: 'Set the subscription configuration'
+---
+
+= Set the subscription configuration
+
+[.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/subscriptions/configuration`#
+
+
+
+Sets the subscription configuration. +
+Associates subscriptions to cloud accounts.
+
+{blank} +
+*Token usage:* NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|True
+a|
+
+|subscriptionId
+|string
+|True
+a|
+
+|cloudAccountIds
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string",
+  "subscriptionId": "string",
+  "cloudAccountIds": [
+    "string"
+  ]
+}
+====
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

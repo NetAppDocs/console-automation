@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'tenancyv4/role_overview.html'
+summary: 'Role endpoints in the identity and access management REST API for the NetApp Console'
+---
+
+= Role endpoints in the identity and access management REST API for the NetApp Console
+
+
+
+The role endpoints enable you to create and view roles, which are sets of permissions.
+
+In NetApp Console identity and access management (IAM), you don't assign permissions directly to users in an organization. Instead, you assign each user a role. A role contains a set of permissions that enables a user to perform specific actions at a specific level of the resource hierarchy. Roles can represent actions or features, or the access level that user has for a particular service.
+
+IAM supports several predefined roles that you can assign to the users in your organization. Custom roles are not supported.
+
+

@@ -1,0 +1,151 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v2-working-environment-discover-volumes.html'
+summary: 'Discover all volumes with relationships for a list of systems'
+---
+
+= Discover all volumes with relationships for a list of systems
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/discover/volumes`#
+
+
+
+Discovers all volumes with relationships for a list of systems.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|workingEnvironmentIds
+|array[string]
+|False
+a|
+
+|discoverRelationships
+|boolean
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "workingEnvironmentIds": [
+    "string"
+  ]
+}
+====
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|workingEnvironmentIds
+|array[string]
+|False
+a|
+
+|discoverRelationships
+|boolean
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,109 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'tenancy/delete-tenancy-service-resource-.html'
+summary: 'Delete service resources'
+---
+
+= Delete service resources
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenancy/service-resources`#
+
+
+
+Deletes service resources from a specified account.
+            +
+*Token usage:* BlueXP service token with the following scopes: tenancy:internal.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|authorization
+|string
+|header
+|True
+a|Authorization JWT access token
+
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|resourceIdentifiers
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "resourceIdentifiers": [
+    "string"
+  ]
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|resourceIdentifiers
+|array[string]
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

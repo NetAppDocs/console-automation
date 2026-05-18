@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/nss_overview.html'
+summary: 'NetApp Support Site endpoints in the In-Product Automation REST API for the NetApp Console'
+---
+
+= NetApp Support Site endpoints in the In-Product Automation REST API for the NetApp Console
+
+
+
+NetApp Support Site (NSS) endpoints in the NetApp Console IPA service provide various functions related to NetApp Support Site key management, migration, and access-token retrieval.
+
+A NetApp Support Site key is a collection of the following:
+
+* Public identifier
+* Resource identifier -- used internally (such as VsaWorkingEnvironment-6iEs02vL)
+* Account ID (such as account-NJ1nCpW5)
+* Resource class (such as ON_PREM, VSA, S3)
+* NetApp Support Site key ID (such as a75d2cbb-4be9-4115-b8d0-31fa10c7791c)
+* NetApp Support Site username - the name used to make a NetApp Support Site registration
+
+You can perform the following actions with the NetApp Support Site endpoints:
+
+* NetApp Support Site key management (retrieve, update, delete)
+* Associate or disassociate a NetApp Support Site key
+* Update a NetApp Support Site key of a resource
+* Migrate a NetApp Support Site key and associate it with a resource
+* Retrieve an access token (required for registration)
+* Retrieve a NetApp Support Site username and email address
+
+

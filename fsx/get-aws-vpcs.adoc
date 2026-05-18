@@ -1,0 +1,118 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'fsx/get-aws-vpcs.html'
+summary: 'Retrieve VPCs'
+---
+
+= Retrieve VPCs
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/vpcs`#
+
+
+
+Retrieves all VPCs by region by using the credentials.
+
+**Token usage:** Cloud Manager user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|x-simulator
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+
+|region
+|string
+|query
+|True
+a|
+
+|account-id
+|string
+|query
+|True
+a|
+
+|credentials-id
+|string
+|query
+|True
+a|
+
+|===
+
+== Response
+
+```
+Status: 200, 
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|vpcId
+|string
+|True
+a|
+
+|state
+|string
+|True
+a|
+
+|cidrBlock
+|string
+|True
+a|
+
+|tags
+|array[string]
+|True
+a|
+
+|default
+|boolean
+|True
+a|
+
+|subnets
+|array[string]
+|True
+a|
+
+|securityGroups
+|array[string]
+|True
+a|
+
+|tenancy
+|string
+|True
+a|
+
+|===
+
+

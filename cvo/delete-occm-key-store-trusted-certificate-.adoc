@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/delete-occm-key-store-trusted-certificate-.html'
+summary: 'Delete an existing trusted certificate from the trust store'
+---
+
+= Delete an existing trusted certificate from the trust store
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/occm/key-store/trusted-certificate/{certificateId}`#
+
+
+
+Deletes an existing trusted certificate from the trust store.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|certificateId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

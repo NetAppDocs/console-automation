@@ -1,0 +1,103 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/post-ipa-account-nss-key-associate.html'
+summary: 'Associate a resource'
+---
+
+= Associate a resource
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-key/{nssKeyId}/associate`#
+
+
+
+Associates a resource with a specified NetApp Support Site key. +
+ +
+*Token usage:* NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|resourceId
+|string
+|query
+|True
+a|
+
+|nssKeyId
+|string
+|path
+|True
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": "string",
+  "message": "string"
+}
+====
+

@@ -1,0 +1,401 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-fsx-volumes.html'
+summary: 'Create a new volume'
+---
+
+= Create a new volume
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/fsx/volumes`#
+
+
+
+Creates a new volume.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|fileSystemId
+|string
+|True
+a|Target file system ID
+
+
+|svmName
+|string
+|True
+a|SVM name
+
+
+|name
+|string
+|False
+a|Volume name, unique within the SVM
+
+
+|size
+|link:#PositiveCapacity[PositiveCapacity]
+|True
+a|
+
+|initialSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|snapshotPolicyName
+|string
+|True
+a|Snapshot policy name
+
+
+|exportPolicyInfo
+|link:#ExportPolicyInfo[ExportPolicyInfo]
+|False
+a|
+
+|shareInfo
+|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
+|False
+a|
+
+|ProtocolIscsiInfo
+|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
+|False
+a|
+
+|enableStorageEfficiency
+|boolean
+|True
+a|Storage efficiency
+
+
+|tieringPolicy
+|string
+|False
+a|Tiering policy
+
+
+|awsTags
+|array[link:#AwsTag[AwsTag]]
+|True
+a|Optionally, provide up to 50 key-value pairs to be used as volume tags.
+
+
+|numberOfConstituents
+|link:#numberOfConstituents[numberOfConstituents]
+|False
+a|Number of constituents for the FlexGroup volume
+
+
+|===
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#PositiveCapacity]
+[.api-collapsible-fifth-title]
+PositiveCapacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|Size
+
+
+|unit
+|string
+|True
+a|Unit
+
+
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|Size
+
+
+|unit
+|string
+|True
+a|Unit
+
+
+|===
+
+
+[#index]
+[.api-collapsible-fifth-title]
+index
+
+Export policy rule index
+
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|index
+|link:#index[index]
+|False
+a|Export policy rule index
+
+
+|ruleAccessControl
+|string
+|True
+a|Export policy rule access control
+
+
+|ips
+|array[string]
+|True
+a|Export policy rule list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy rule protocol
+
+
+|superUser
+|boolean
+|True
+a|Export policy rule super user access
+
+
+|===
+
+
+[#ExportPolicyInfo]
+[.api-collapsible-fifth-title]
+ExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|policyType
+|string
+|False
+a|Export policy type
+
+
+|ips
+|array[string]
+|False
+a|Custom export policy list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy protocol
+
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|False
+a|Export policy rules
+
+
+|===
+
+
+[#CifsShareUserPermissions]
+[.api-collapsible-fifth-title]
+CifsShareUserPermissions
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|permission
+|string
+|False
+a|CIFS share permission type
+
+
+|users
+|array[string]
+|True
+a|List of users with the permission
+
+
+|===
+
+
+[#CreateCifsShareInfoRequest]
+[.api-collapsible-fifth-title]
+CreateCifsShareInfoRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|shareName
+|string
+|False
+a|Share name
+
+
+|accessControl
+|link:#CifsShareUserPermissions[CifsShareUserPermissions]
+|False
+a|
+
+|===
+
+
+[#IgroupCreationRequest]
+[.api-collapsible-fifth-title]
+IgroupCreationRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|initiators
+|array[string]
+|False
+a|Initiators
+
+
+|igroupName
+|string
+|False
+a|Initiator group name
+
+
+|===
+
+
+[#CreateIscsiInfoRequest]
+[.api-collapsible-fifth-title]
+CreateIscsiInfoRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|osName
+|string
+|False
+a|Operating system
+
+
+|igroupCreationRequest
+|link:#IgroupCreationRequest[IgroupCreationRequest]
+|False
+a|
+
+|igroups
+|array[string]
+|False
+a|Initiator groups
+
+
+|===
+
+
+[#AwsTag]
+[.api-collapsible-fifth-title]
+AwsTag
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|tagKey
+|string
+|False
+a|
+
+|tagValue
+|string
+|False
+a|
+
+|===
+
+
+[#numberOfConstituents]
+[.api-collapsible-fifth-title]
+numberOfConstituents
+
+Number of constituents for the FlexGroup volume
+
+
+
+//end collapsible .Definitions block
+====

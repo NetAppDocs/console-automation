@@ -1,0 +1,175 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-gcp-ha-metadata-vpcs.html'
+summary: 'Retrieve Google Cloud networks and subnetworks'
+---
+
+= Retrieve Google Cloud networks and subnetworks
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/vpcs`#
+
+
+
+Retrieves Google Cloud networks and subnetworks where a Cloud Volumes ONTAP system can be created.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|region
+|string
+|query
+|False
+a|
+
+|project
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|Virtual Network Name
+
+
+|vpcPath
+|string
+|True
+a|Virtual Network path
+
+
+|subnets
+|array[link:#GcpSubnetResponse[GcpSubnetResponse]]
+|True
+a|Subnets
+
+
+|firewalls
+|array[link:#GcpFirewallResponse[GcpFirewallResponse]]
+|True
+a|Firewalls
+
+
+|isShared
+|boolean
+|True
+a|isShared
+
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#GcpSubnetResponse]
+[.api-collapsible-fifth-title]
+GcpSubnetResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ipCidrRange
+|string
+|True
+a|Classless Inter-Domain Routing (CIDR)
+
+
+|name
+|string
+|True
+a|Subnet name
+
+
+|path
+|string
+|True
+a|Subnet path
+
+
+|availableIps
+|integer
+|True
+a|The number of available IP addresses on the subnet
+
+
+|minimumRequiredIps
+|integer
+|True
+a|The minimum needed IP addresses for the Cloud Volumes ONTAP system creation
+
+* format: int32
+
+
+|===
+
+
+[#GcpFirewallResponse]
+[.api-collapsible-fifth-title]
+GcpFirewallResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|Firewall Name
+
+
+|vpc
+|string
+|True
+a|VPC
+
+
+|targetServiceAccount
+|array[string]
+|True
+a|Target Service Account
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

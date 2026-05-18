@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/get-tenancy-account-workspace-agents.html'
+summary: 'Retrieve agents'
+---
+
+= Retrieve agents
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}/agents`#
+
+
+
+Retrieves agents associated with a specified workspace.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workspacePublicId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-User-Token
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+

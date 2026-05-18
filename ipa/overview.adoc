@@ -1,0 +1,151 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/overview.html'
+summary: 'In-Product Automation REST API for the NetApp Console'
+---
+
+= In-Product Automation REST API for the NetApp Console
+
+
+
+In-Product Automation (IPA) is a core NetApp Console platform service enabling license enforcement and policy-driven operational control for a variety of software licensing models. It supports several different NetApp product families, including ONTAP (AFF, FAS, Cloud Volumes ONTAP), E-Series, StorageGRID, SolidFire as well as additional host-based solutions such as OnCommand Insight. IPA provides a REST API you can use to access the features available with the service.
+
+The NetApp Console IPA service orchestrates the overall IPA configuration to facilitate the management of licenses, services, and NetApp Support Site user data. It provides streamlined orchestration of Cloud Volumes ONTAP system management of IPA functions.
+
+The IPA service provides secure and granular role-based access control (RBAC) for the resources available through the NetApp Console control plane. The service operates within the context of a NetApp Console account. The identity of the API caller and the account are established using a user or service token.
+
+There are four components defined within the IPA service that expose REST endpoints.
+
+* License
+* Services
+* NetApp Support Site (NSS)
+* Support
+
+The IPA service has two modes of operation:
+
+* Legacy password-based authentication mode
+* Current token-based authentication mode
+
+The operational mode used depends on how the license is registered for a given serial number. Token-based authentication is preferred. If a license is registered with a password, the legacy Oracle password-based authentication mode is used.
+
+The key benefits of the IPA service include:
+
+* A consistent user experience for all the IPA-related features (such as license and NSS)
+* An intuitive REST API to manage the IPA-related features which can be used to return a license, service, and NetApp Support site user within the same context
+
+All IPA service API calls are short-lived and run synchronously. Asynchronous processing and internal process tracking are not supported.
+
+**Note:** Before using the API reference documentation, review the https://docs.netapp.com/us-en/console-automation/platform/overview.html[Get started] section for the NetApp Console APIs. +
+For more information about the security tokens and identifiers you'll need when using the API, review the https://docs.netapp.com/us-en/console-automation/platform/get_identifiers.html[Common workflows and tasks] section.
+
+'''
+
+== REST implementation
+
+=== HTTP methods
+
+|===
+| Method | Description
+
+| `POST`
+| Create an object instance
+
+| `GET`
+| Retrieve an object instance or collection
+
+| `PUT`
+| Update an existing object's specified properties
+
+| `DELETE`
+| Remove an existing object
+|===
+
+=== Request headers
+
+|===
+| Request Header | Description
+
+| `Authorization`
+| Required. Contains the JWT token (user/service)
+
+| `X-service-request-id`
+| Used to tag a request with application-specific keys for improved supportability. Free-text string
+|===
+
+=== Query parameters
+
+You can use query parameters with endpoints in the following components:
+
+|===
+| Component | Query Parameter
+
+| NetApp Support Site
+| accountId (required) +
+nssKeyId (required) +
+resourceId (required)
+
+|
+|
+|===
+
+=== Response headers
+
+This API uses the standard HTTP response headers common with all NetApp Console APIs. See https://docs.netapp.com/us-en/cloud-manager-automation/platform/http_details.html#response-headers[REST implementation] for more information.
+
+=== HTTP status codes
+
+|===
+| HTTP Status Code | Description
+
+| `200`
+| OK: Returned for successful operation completion
+
+| `400`
+| Bad Request: Returned if the input is malformed and could not be parsed
+
+| `401`
+| Unauthorized: Returned if user authentication failed or the token has expired
+
+| `403`
+| Forbidden: Returned for authorization errors depending on the resource and token
+
+| `404`
+| Not Found: Returned if the requested resource could not be found
+
+| `500`
+| Processing Error: Returned if an error occurs on the server while processing the API call
+|===
+
+'''
+
+== Error handling
+
+There are three processes involved with error handling and processing:
+
+* The error is logged for supportability
+* The error is returned to the caller for specific handling
+* The database connection is rolled back
+
+'''
+
+== cURL examples
+
+=== Retrieve NetApp Support Site data for a specified account
+
+This cURL example retrieves NetApp Support Site data by using a specified account ID and NetApp Support Site key ID. +
+The NetApp Support Site data contains the NetApp Support Site ID, username, and email ID.
+
+....
+
+  curl -X GET "https://cloudmanager.cloud.netapp.com/ipa/account/<accountId>/nss-key/<nssKeyId>/nss-data
+" -H  "accept: application/json" -H  "authorization: <user token>"
+....
+
+'''
+
+{blank} +
+ +
+
+

@@ -1,0 +1,101 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-ha-metadata-associated-subscriptions.html'
+summary: 'Retrieve subscriptions'
+---
+
+= Retrieve subscriptions
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/associated-subscriptions`#
+
+
+
+Retrieves associated subscriptions.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subscriptionId
+|string
+|True
+a|
+
+|name
+|string
+|False
+a|
+
+|default
+|boolean
+|True
+a|
+
+|saasSubscriptionId
+|string
+|False
+a|
+
+|highAvailabilityEnabled
+|link:#highAvailabilityEnabled[highAvailabilityEnabled]
+|False
+a|
+
+|vMOrchestratorZonalMultiFDEnabled
+|link:#vMOrchestratorZonalMultiFDEnabled[vMOrchestratorZonalMultiFDEnabled]
+|False
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#highAvailabilityEnabled]
+[.api-collapsible-fifth-title]
+highAvailabilityEnabled
+
+
+[#vMOrchestratorZonalMultiFDEnabled]
+[.api-collapsible-fifth-title]
+vMOrchestratorZonalMultiFDEnabled
+
+
+//end collapsible .Definitions block
+====

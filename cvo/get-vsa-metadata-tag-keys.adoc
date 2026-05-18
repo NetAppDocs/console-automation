@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-vsa-metadata-tag-keys.html'
+summary: 'Retrieve all tag names'
+---
+
+= Retrieve all tag names
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/tag-keys`#
+
+
+
+Retrieves all of the tag names.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|roleArn
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key
+|string
+|True
+a|
+
+|values
+|array[string]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "key": "string",
+  "values": [
+    "string"
+  ]
+}
+====
+

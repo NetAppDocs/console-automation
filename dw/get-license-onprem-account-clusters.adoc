@@ -1,0 +1,218 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/get-license-onprem-account-clusters.html'
+summary: 'Retrieve on-prem ONTAP data'
+---
+
+= Retrieve on-prem ONTAP data
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/onPrem/account/{accountId}/clusters`#
+
+
+
+Retrieves on-premises ONTAP cluster data. +
+The ONTAP cluster must be configured for AutoSupport to send back the telemetry and configuration data to NetApp.
+
+Data retrieved by this endpoint is comprised mostly of ONTAP cluster configuration details (such as the cluster management IP address, capacity, contract date, feature licenses, and more).
+
+*Token usage:* NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Account onPremise data
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|partialResponse
+|boolean
+|False
+a|
+
+|clusterData
+|array[link:#clusterData[clusterData]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "clusterData": [
+    {
+      "hostName": "string",
+      "serialNumber": "string",
+      "hardwareContractEndDate": "string",
+      "softwareContractEndDate": "string",
+      "serviceTier": "string",
+      "clusterIp": "string",
+      "clusterName": "string",
+      "clusterId": "string"
+    }
+  ]
+}
+====
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#clusterData]
+[.api-collapsible-fifth-title]
+clusterData
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|hostName
+|string
+|False
+a|
+
+|serialNumber
+|string
+|False
+a|
+
+|hardwareContractEndDate
+|string
+|False
+a|
+
+|softwareContractEndDate
+|string
+|False
+a|
+
+|serviceTier
+|string
+|False
+a|
+
+|clusterIp
+|string
+|False
+a|
+
+|clusterName
+|string
+|False
+a|
+
+|clusterId
+|string
+|False
+a|
+
+|usedCapacity
+|integer
+|False
+a|
+
+|allocatedCapacity
+|integer
+|False
+a|
+
+|discovered
+|boolean
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

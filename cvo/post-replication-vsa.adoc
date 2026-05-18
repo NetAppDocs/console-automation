@@ -1,0 +1,315 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-replication-vsa.html'
+summary: 'Create a new replication for a Cloud Volumes ONTAP system'
+---
+
+= Create a new replication for a Cloud Volumes ONTAP system
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/vsa`#
+
+
+
+Creates a new replication to a Cloud Volumes ONTAP system.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|replicationRequest
+|link:#ReplicationRequest[ReplicationRequest]
+|True
+a|
+
+|replicationVolume
+|link:#VsaVolumeRequest[VsaVolumeRequest]
+|True
+a|
+
+|===
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#ReplicationRequest]
+[.api-collapsible-fifth-title]
+ReplicationRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|Source system ID
+
+
+|destinationWorkingEnvironmentId
+|string
+|True
+a|Destination system ID
+
+
+|sourceInterclusterLifIps
+|array[string]
+|True
+a|Source intercluster LIF IPs
+
+
+|destinationInterclusterLifIps
+|array[string]
+|True
+a|Destination intercluster LIF IPs
+
+
+|policyName
+|string
+|True
+a|SnapMirror policy name
+
+
+|scheduleName
+|string
+|False
+a|Schedule name
+
+
+|maxTransferRate
+|integer
+|False
+a|Maximum transfer rate limit (KB/s). Use 0 for no limit, otherwise use number between 1024 and 2,147,482,624
+
+
+|sourceIpSpace
+|string
+|False
+a|Source IpSpace
+
+
+|destinationIpSpace
+|string
+|False
+a|Destination IpSpace
+
+
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|Size
+
+
+|unit
+|string
+|True
+a|Unit
+
+
+|===
+
+
+[#RaidInfoForEvAggregate]
+[.api-collapsible-fifth-title]
+RaidInfoForEvAggregate
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|numOfDisks
+|integer
+|True
+a|Number of new disks needed for the RAID group
+
+
+|diskSize
+|link:#Capacity[Capacity]
+|True
+a|
+
+|===
+
+
+[#ElasticVolumeQuoteInfo]
+[.api-collapsible-fifth-title]
+ElasticVolumeQuoteInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
+|addedCapacityToExistingEvDisks
+|link:#Capacity[Capacity]
+|False
+a|
+
+|newRaidForEvInfo
+|array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
+|False
+a|New RAID information
+
+
+|totalEvDisks
+|integer
+|False
+a|
+
+|===
+
+
+[#minimumCoolingDays]
+[.api-collapsible-fifth-title]
+minimumCoolingDays
+
+Cooling Days
+
+
+
+[#VsaVolumeRequest]
+[.api-collapsible-fifth-title]
+VsaVolumeRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceSvmName
+|string
+|True
+a|Source SVM name
+
+
+|sourceVolumeName
+|string
+|True
+a|Source volume name
+
+
+|destinationVolumeName
+|string
+|True
+a|Destination volume name
+
+
+|destinationAggregateName
+|string
+|True
+a|Destination aggregate name
+
+
+|numOfDisksApprovedToAdd
+|integer
+|True
+a|Maximum number of disks approved to add
+
+
+|evCapacityApprovedToAdd
+|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
+|False
+a|
+
+|advancedMode
+|boolean
+|True
+a|Use advanced allocation for destination volume
+
+
+|destinationProviderVolumeType
+|string
+|False
+a|Destination provider volume type
+
+
+|destinationCapacityTier
+|string
+|False
+a|Destination aggregate capacity tier
+
+
+|destinationSvmName
+|string
+|False
+a|Destination SVM name
+
+
+|iops
+|integer
+|False
+a|Provisioned IOPS
+
+
+|throughput
+|integer
+|False
+a|Provisioned throughput
+
+
+|tieringPolicy
+|string
+|False
+a|Tiering policy
+
+
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|Cooling Days
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,186 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'tenancy/overview.html'
+summary: 'Accounts REST API'
+---
+
+= Accounts REST API
+
+
+
+The Tenancy service provides secure and granular role-based access control (RBAC) for the resources in the BlueXP platform when using BlueXP in restricted mode or private mode. +
+
+It consists of several internal major components that operate together to enable and restrict resource access. +
+The service operates within the context of a BlueXP account. The identity of the API caller and the account are established through a user or service token.
+
+If you're using BlueXP in standard mode, you no longer have a BlueXP account. Instead, you have a BlueXP organization that you manage using BlueXP identity and access management (IAM). A separate API is available for BlueXP IAM. If you've been using the tenancy API to manage accounts, the API for BlueXP IAM is backwards compatible with the tenancy API.
+https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[View the API for BlueXP IAM]
+
+There are six components defined within the Tenancy service.
+
+* account
+* authorize
+* resource
+* service account
+* user
+* workspace
+
+**Note**: Before using the API reference documentation, review the https://docs.netapp.com/us-en/cloud-manager-automation/platform/overview.html[Get started] section for the BlueXP APIs. For more information about the security tokens and identifiers you'll need when using the API, review the https://docs.netapp.com/us-en/cloud-manager-automation/platform/get_identifiers.html[Common workflows and tasks] section.
+
+'''
+
+== REST implementation
+
+=== HTTP methods
+
+|===
+| Method | Description
+
+| `POST`
+| Create an object instance
+
+| `GET`
+| Retrieve an object instance or collection
+
+| `PATCH`
+| Update an existing object
+
+| `DELETE`
+| Remove an existing object
+|===
+
+=== Request headers
+
+|===
+| Request Header | Description
+
+| `Authorization`
+| Required. Contains a JWT access token
+
+| `X-service-request-id`
+| Used to tag a request with application-specific keys for improved supportability
+
+| `X-agent-id`
+| Contains the BlueXP Connector ID and can be included depending on the call
+
+| `X-tenancy-account-id`
+| Contains the account identifier and can be included depending on the call
+|===
+
+=== Query parameters
+
+You can use query parameters with endpoints in the following components:
+
+|===
+| Component | Query Parameter
+
+| Resource
+| account (required) +
+resourceType +
+workspace +
+resourceClass +
+resourceId
+
+|
+|
+|===
+
+=== Response headers
+
+This API uses the standard HTTP response headers common with all BlueXP APIs. See https://docs.netapp.com/us-en/cloud-manager-automation/platform/http_details.html[REST implementation] for more information.
+
+=== HTTP status codes
+
+|===
+| HTTP Status Code | Description
+
+| `200`
+| OK: Returned for successful operation completion
+
+| `400`
+| Bad Request: Returned if the input is malformed and could not be parsed
+
+| `401`
+| Unauthorized: Returned if user authentication failed or the token has expired
+
+| `403`
+| Forbidden: Returned for authorization errors depending on the resource and token
+|===
+
+'''
+
+== Error handling
+
+There are three processes involved with error handling and processing.
+
+* The error is logged for supportability
+* The error is also returned to the caller for any specific handling
+* The database connection is rolled back
+
+'''
+
+== cURL examples
+
+=== Retrieve resources for a specified account
+
+This example retrieves the resources for a specified account.
+
+....
+
+  curl -X GET "https://cloudmanager.cloud.netapp.com/tenancy/resource?account=<account_id>" -H  "accept: application/json" -H  "authorization: <user token>"
+....
+
+'''
+
+== Frequently asked questions
+
+**What is the use case for account migration, where the account configuration data is moved from one account to another?**
+
+Suppose a company is in stealth mode and doing a proof of concept (PoC) with a BlueXP account. If it's successful, the company might want to move from the PoC account to a development account. Another migration use case is account consolidation.
+
+**If the '`CMNotificationOptIn`' account option is enabled, will all users associated with the account receive the BlueXP event notifications?**
+
+No. The API endpoint used in this case is "PATCH tenancy/account/\{accountId}/update-user". The occm service token is carried in the "authorization" request header and the specific user to receive the notifications is identified with the "x-user-token" header.
+
+**What are the SaaS enablement and third-part service enablement options for a BlueXP account?**
+
+SaaS enablement is used to allow an account to have access to the BlueXP portal. Third-party service enablement allows or enables third party services (such as Fluid).
+
+**What are some examples of actions that can be performed with the Authorize REST endpoint?**
+
+Actions are defined as permissions. The general definition pattern is `<principal_type>:<action>`. Two examples include `accounts:create` and `workspace:*`.
+
+**The API endpoint 'authorize-user-is-in-account' only accepts the parameter '`accountId`'. In this case, how does the API determine which user is to be authorized?**
+
+It checks if the user belongs to the account. The '`authorization`' header contains the user token identifying the user. One possible use case is account migration, where the application continually polls to determine if all the users are migrated to the destination account.
+
+**The API endpoint 'authorize-agent-in-account' accepts the '`x-agent-id`' request header. What does this mean?**
+
+The '`authorization`' header contains the user token and the '`x-agent-id`' header has the BlueXP client identifier.
+
+**Every BlueXP resource has the data field '`cloud_id`'. What is this field and how is it used?**
+
+This field is the cloud identifier for the resource. For example, this could be the cloud VM ID.
+
+**Every resource can be associated with one or more workspaces, which is a 1:N relationship model. Why would a resource be associated with more than one workspace?**
+
+An account or workspace administrator can manage multiple workspaces. In this case, for example, it's possible to have one NetApp Cloud Volumes Service resource in multiple workspaces.
+
+**What is the difference between discovering a resource and creating a resource?**
+
+Discovery is the process of locating an existing resource and attaching it to the account. Creating a resource, on the other hand, first involves various allocation and provisioning operations and then attaching the resource.
+
+**What is a service resource? Why is DELETE the only supported operation? Are there other options available when managing a service resource?**
+
+This question applies to the following REST API call: "DELETE /tenancy/service-resource/\{resource-id}". There is no special meaning associated with a service resource. It's just another way for services to delete resources.
+
+**There is an API operation '`remove-resource-from-agent`'. Why isn't there a corresponding '`add-to-agent`' call?**
+
+The add operation occurs during resource discovery or creation. From the view of an external BlueXP user, only the Connector can discover and create resources. However, internally there are some resources available without explicitly attaching them to the Connector (such as license and persistence). These resources instead belong to the account.
+
+{blank} +
+ +
+
+

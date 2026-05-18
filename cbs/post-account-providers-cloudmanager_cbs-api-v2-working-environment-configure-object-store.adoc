@@ -1,0 +1,338 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v2-working-environment-configure-object-store.html'
+summary: 'Configure object storage (v2)'
+---
+
+= Configure object storage (v2)
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/{workingEnvironmentId}/configure-object-store`#
+
+
+
+Configures an object storage. This is a V2 version of the object store configure API. It verifies whether a private endpoint is enabled and a certificate is installed. You can verify whether previously created private endpoints are enabled for AWS and Azure. This API endpoint is called if no object stores are found when the NetApp Backup and Recovery service is enabled.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cloud-provider
+|string
+|True
+a|
+
+|object-store-name
+|string
+|True
+a|
+
+|ip-space
+|string
+|False
+a|
+
+|access-key
+|string
+|False
+a|
+
+|secret-password
+|string
+|False
+a|
+
+|storage-server
+|string
+|False
+a|
+
+|region
+|string
+|False
+a|
+
+|aws
+|link:#aws[aws]
+|False
+a|
+
+|azure
+|link:#azure[azure]
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "cloud-provider": "string",
+  "object-store-name": "string",
+  "ip-space": "string",
+  "access-key": "string",
+  "secret-password": "string",
+  "storage-server": "string",
+  "region": "string",
+  "aws": {
+    "account-id": "string",
+    "private-endpoint": {
+      "id": "string"
+    }
+  },
+  "azure": {
+    "subscription": "string",
+    "private-endpoint": {
+      "subnet": "string"
+    }
+  }
+}
+====
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#private-endpoint]
+[.api-collapsible-fifth-title]
+private-endpoint
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|False
+a|Optional input field for private endpoints.
+
+
+|===
+
+
+[#aws]
+[.api-collapsible-fifth-title]
+aws
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|account-id
+|string
+|False
+a|Required when the provider is AWS
+
+
+|private-endpoint
+|link:#private-endpoint[private-endpoint]
+|False
+a|
+
+|===
+
+
+[#private-endpoint]
+[.api-collapsible-fifth-title]
+private-endpoint
+
+Required input field for an on-premises private link configuration
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subnet
+|string
+|False
+a|Required input field for an on-premises private link configuration
+
+
+|===
+
+
+[#azure]
+[.api-collapsible-fifth-title]
+azure
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subscription
+|string
+|False
+a|Required when the provider is Azure
+
+
+|private-endpoint
+|link:#private-endpoint[private-endpoint]
+|False
+a|Required input field for an on-premises private link configuration
+
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cloud-provider
+|string
+|True
+a|
+
+|object-store-name
+|string
+|True
+a|
+
+|ip-space
+|string
+|False
+a|
+
+|access-key
+|string
+|False
+a|
+
+|secret-password
+|string
+|False
+a|
+
+|storage-server
+|string
+|False
+a|
+
+|region
+|string
+|False
+a|
+
+|aws
+|link:#aws[aws]
+|False
+a|
+
+|azure
+|link:#azure[azure]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

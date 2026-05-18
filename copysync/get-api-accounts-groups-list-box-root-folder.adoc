@@ -1,0 +1,98 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-groups-list-box-root-folder.html'
+summary: 'Retrieve the Box API root folder'
+---
+
+= Retrieve the Box API root folder
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-box-root-folder`#
+
+
+
+Retrieves the Box API root folder.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|clientId
+|string
+|query
+|True
+a|Box clientID
+
+
+|enterpriseId
+|string
+|query
+|True
+a|Box enterpriseID
+
+
+|appName
+|string
+|query
+|False
+a|Box appName
+
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|id
+|string
+|path
+|True
+a|Data Brokers Group ID
+
+
+|client-secret
+|string
+|header
+|True
+a|Box clientSecret
+
+
+|public-key-id
+|string
+|header
+|True
+a|Box publicKeyID
+
+
+|private-key
+|string
+|header
+|True
+a|Box privateKey
+
+
+|passphrase
+|string
+|header
+|True
+a|Box passphrase
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

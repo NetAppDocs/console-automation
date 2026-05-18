@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/replication_overview.html'
+summary: 'Replication endpoints in the NetApp Backup and Recovery REST API'
+---
+
+= Replication endpoints in the NetApp Backup and Recovery REST API
+
+
+
+The Replication enpoint enables you to perform an action on a volume on which SnapMirror replication is enabled. Using this API, you will be able to perform a SnapMirror relationship update, delete, pause, resync, reverse-resync, abort, and resume functionality on a replicated volume.
+
+

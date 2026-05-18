@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-aws-ha-metadata-create-bucket.html'
+summary: 'Create a new S3 bucket'
+---
+
+= Create a new S3 bucket
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/create-bucket`#
+
+
+
+Creates a new S3 bucket.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|region
+|string
+|query
+|False
+a|
+
+|bucketName
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

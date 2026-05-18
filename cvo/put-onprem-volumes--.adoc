@@ -1,0 +1,412 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-onprem-volumes--.html'
+summary: 'Modify an existing volume'
+---
+
+= Modify an existing volume
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
+
+
+
+Modifies an existing volume.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|svmName
+|string
+|path
+|True
+a|
+
+|volumeName
+|string
+|path
+|True
+a|
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|svmName
+|string
+|path
+|True
+a|
+
+|volumeName
+|link:#VolumeName[VolumeName]
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|snapshotPolicyName
+|string
+|False
+a|Snapshot policy name
+
+
+|shareInfo
+|link:#CifsShareInfo[CifsShareInfo]
+|False
+a|
+
+|exportPolicyInfo
+|link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
+|False
+a|
+
+|tieringPolicy
+|string
+|False
+a|Tiering policy
+
+
+|minimumCoolingDays
+|integer
+|False
+a|Tiering minimum cooling days
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "snapshotPolicyName": "string",
+  "shareInfo": {
+    "shareName": "string",
+    "accessControlList": [
+      {
+        "permission": "string",
+        "users": [
+          "string"
+        ]
+      }
+    ],
+    "vscanFileOpPolicy": "string"
+  },
+  "exportPolicyInfo": {
+    "name": "string",
+    "policyType": "string",
+    "ips": [
+      "string"
+    ],
+    "nfsVersion": [
+      "string"
+    ],
+    "rules": [
+      {}
+    ]
+  },
+  "tieringPolicy": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#pattern]
+[.api-collapsible-fifth-title]
+pattern
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|pattern
+|string
+|False
+a|
+
+|flags
+|integer
+|True
+a|
+
+|cursor
+|integer
+|False
+a|
+
+|===
+
+
+[#Regex]
+[.api-collapsible-fifth-title]
+Regex
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|pattern
+|link:#pattern[pattern]
+|True
+a|
+
+|groupNames
+|array[string]
+|True
+a|
+
+|===
+
+
+[#PatternMessage]
+[.api-collapsible-fifth-title]
+PatternMessage
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|regex
+|link:#Regex[Regex]
+|True
+a|
+
+|message
+|string
+|False
+a|
+
+|===
+
+
+[#VolumeName]
+[.api-collapsible-fifth-title]
+VolumeName
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|_1
+|string
+|True
+a|
+
+|validatesWith
+|link:#PatternMessage[PatternMessage]
+|True
+a|
+
+|===
+
+
+[#CifsShareUserPermissions]
+[.api-collapsible-fifth-title]
+CifsShareUserPermissions
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|permission
+|string
+|False
+a|CIFS share permission type
+
+
+|users
+|array[string]
+|True
+a|List of users with the permission
+
+
+|===
+
+
+[#CifsShareInfo]
+[.api-collapsible-fifth-title]
+CifsShareInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|shareName
+|string
+|True
+a|Share name
+
+
+|accessControlList
+|array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
+|True
+a|List of CIFS share permissions
+
+
+|vscanFileOpPolicy
+|string
+|False
+a|Vscan file operations profile
+
+
+|===
+
+
+[#index]
+[.api-collapsible-fifth-title]
+index
+
+Export policy rule index
+
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|index
+|link:#index[index]
+|False
+a|Export policy rule index
+
+
+|ruleAccessControl
+|string
+|True
+a|Export policy rule access control
+
+
+|ips
+|array[string]
+|True
+a|Export policy rule list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy rule protocol
+
+
+|superUser
+|boolean
+|True
+a|Export policy rule super user access
+
+
+|===
+
+
+[#NamedExportPolicyInfo]
+[.api-collapsible-fifth-title]
+NamedExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|Export policy name
+
+
+|policyType
+|string
+|True
+a|Export policy type
+
+
+|ips
+|array[string]
+|True
+a|Custom export policy list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy protocol
+
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|True
+a|Export policy rules
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

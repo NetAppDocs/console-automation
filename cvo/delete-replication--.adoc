@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/delete-replication--.html'
+summary: 'Remove a replication relationship'
+---
+
+= Remove a replication relationship
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/replication/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
+
+
+
+Removes a replication relationship.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|destinationWorkingEnvironmentId
+|string
+|path
+|True
+a|
+
+|destinationSvmName
+|string
+|path
+|True
+a|
+
+|destinationVolumeName
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

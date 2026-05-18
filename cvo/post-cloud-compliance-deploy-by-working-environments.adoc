@@ -1,0 +1,58 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-cloud-compliance-deploy-by-working-environments.html'
+summary: 'Deploy a cloud compliance instance by systems'
+---
+
+= Deploy a cloud compliance instance by systems
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/deploy-by-working-environments`#
+
+
+
+Deploys a Cloud Compliance instance by systems.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|workingEnvironmentIds
+|array[string]
+|True
+a|
+
+|enableAnf
+|boolean
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "workingEnvironmentIds": [
+    "string"
+  ]
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

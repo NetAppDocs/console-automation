@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-groups-list-s3-buckets.html'
+summary: 'Retrieve the S3 buckets'
+---
+
+= Retrieve the S3 buckets
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-s3-buckets`#
+
+
+
+Retrieves the S3 buckets accessible from a NetApp data broker.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|id
+|string
+|path
+|True
+a|Data Brokers Group ID
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

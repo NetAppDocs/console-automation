@@ -1,0 +1,94 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-data-brokers-list-nfs-export-folders.html'
+summary: 'Retrieve the NFS server folders by ID'
+---
+
+= Retrieve the NFS server folders by ID
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-nfs-export-folders`#
+
+
+
+Retrieves the NFS server folders from the data broker.
+
+
+
+CAUTION: This operation is deprecated.
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|host
+|string
+|query
+|True
+a|NFS server hostname or IP
+
+
+|exportName
+|string
+|query
+|True
+a|NFS server export
+
+
+|isEFS
+|boolean
+|query
+|False
+a|Indicates if the is target EFS
+
+
+|version
+|string
+|query
+|False
+a|NFS version supported versions 3, 4.0, 4.1, 4.2
+
+
+|accessPoint
+|string
+|query
+|False
+a|EFS access point
+
+
+|path
+|string
+|query
+|False
+a|NFS Export path
+
+
+|id
+|string
+|path
+|True
+a|Data Broker ID
+
+
+|x-account-id
+|string
+|header
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

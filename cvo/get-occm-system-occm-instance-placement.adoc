@@ -1,0 +1,160 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-occm-system-occm-instance-placement.html'
+summary: 'Retrieve the region, VPC, and subnet'
+---
+
+= Retrieve the region, VPC, and subnet
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/occm-instance-placement`#
+
+
+
+Retrieves the region, VPC, and subnet in which the NetApp Console instance is running.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|clearCache
+|boolean
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|region
+|string
+|False
+a|Region
+
+
+|vpcId
+|string
+|False
+a|VPC
+
+
+|subnetId
+|string
+|False
+a|Subnet
+
+
+|keyPair
+|string
+|False
+a|KeyPair
+
+
+|installLocation
+|string
+|False
+a|Install Location
+
+
+|role
+|string
+|False
+a|Role
+
+
+|providerRoleType
+|string
+|False
+a|Provider Role Type
+
+
+|publicIp
+|string
+|False
+a|Public IP
+
+
+|account
+|string
+|False
+a|Account
+
+
+|govCloud
+|boolean
+|False
+a|Gov cloud
+
+
+|china
+|boolean
+|False
+a|China
+
+
+|isLegacyInstance
+|boolean
+|False
+a|isLegacyInstance
+
+
+|instanceType
+|string
+|False
+a|instanceType
+
+
+|isLegacyOs
+|boolean
+|False
+a|isLegacyOs
+
+
+|darkSite
+|boolean
+|False
+a|is dark site
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "region": "string",
+  "vpcId": "string",
+  "subnetId": "string",
+  "keyPair": "string",
+  "installLocation": "string",
+  "role": "string",
+  "providerRoleType": "string",
+  "publicIp": "string",
+  "account": "string",
+  "instanceType": "string"
+}
+====
+

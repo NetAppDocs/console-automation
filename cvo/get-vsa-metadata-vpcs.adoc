@@ -1,0 +1,237 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-vsa-metadata-vpcs.html'
+summary: 'Retrieve VPCs'
+---
+
+= Retrieve VPCs
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/vpcs`#
+
+
+
+Retrieves VPCs.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|region
+|string
+|query
+|False
+a|
+
+|roleArn
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|vpcId
+|string
+|True
+a|The VPC identifier
+
+
+|state
+|string
+|True
+a|The state of the VPC
+
+
+|cidrBlock
+|string
+|True
+a|VPC Classless Inter-Domain Routing (CIDR) block
+
+
+|tags
+|array[link:#VpcTagResponse[VpcTagResponse]]
+|True
+a|VPC tags
+
+
+|default
+|boolean
+|True
+a|Indicates whether the VPC is the default
+
+
+|subnets
+|array[link:#SubnetResponse[SubnetResponse]]
+|True
+a|Subnets associated with the VPC
+
+
+|securityGroups
+|array[link:#SecurityGroupResponse[SecurityGroupResponse]]
+|True
+a|Security groups associated with the VPC
+
+
+|tenancy
+|string
+|True
+a|Tenancy configuration for the VPC
+
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#VpcTagResponse]
+[.api-collapsible-fifth-title]
+VpcTagResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key
+|string
+|True
+a|VPC tag key
+
+
+|value
+|string
+|True
+a|VPC tag value
+
+
+|===
+
+
+[#SubnetResponse]
+[.api-collapsible-fifth-title]
+SubnetResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subnetId
+|string
+|True
+a|Subnet ID
+
+
+|cidr
+|string
+|True
+a|CIDR
+
+
+|subnetName
+|string
+|False
+a|Subnet name
+
+
+|availabilityZone
+|string
+|True
+a|Availability zone
+
+
+|availableIps
+|integer
+|True
+a|The number of available IP addresses on the subnet
+
+
+|minimumRequiredIps
+|integer
+|True
+a|The minimum required IP addresses for the Cloud Volumes ONTAP create operation
+
+* format: int32
+
+
+|outpostArn
+|string
+|False
+a|The ARN of the outpost
+
+
+|===
+
+
+[#SecurityGroupResponse]
+[.api-collapsible-fifth-title]
+SecurityGroupResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|securityGroupId
+|string
+|True
+a|Security group ID
+
+
+|description
+|string
+|True
+a|Description
+
+
+|name
+|string
+|True
+a|Specifies the name
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

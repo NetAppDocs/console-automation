@@ -1,0 +1,192 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/overview.html'
+summary: 'Licenses and subscriptions REST API for the NetApp Console'
+---
+
+= Licenses and subscriptions REST API for the NetApp Console
+
+
+
+NetApp Console manages licenses for Cloud Volumes ONTAP and subscriptions to other Console services.
+
+Every license and subscription managed by the Console is assigned a unique resource identifier in the identity and access management service. The ID associates it with a specific account.
+
+You can view and manage procured licenses and subscriptions by using the **Licenses and subscriptions** menu in the Console UI and through the licenses and subscriptions REST API endpoints.
+
+You can manage the following types of licenses in the Console:
+
+* Node: Each node has a unique serial number
+* Capacity: Comes with multiple packages (Professional, Essential, Freemium (500 GB))
+* Data services: Used for data management services (Backup & Restore, Compliance (Data Sense), and Tiering)
+
+Each license contains the following information to monitor the expiration and capacity usage of licenses in an account:
+
+* License serial number (such as 481000485)
+* License type/service (such as BACKUP)
+* Permitted/Entitled capacity (TB)
+* Expiration date
+
+Each subscription contains the following information to monitor the expiration and capacity subscriptions in an account +
+(a subscription can be associated with more than one account):
+
+* Subscription number (subscription ID)
+* Permitted/entitled capacity (TiB)
+* Currently used (or consumed) capacity (TiB)
+* Expiration date
+
+The following components are defined in the licenses and subscriptions REST API:
+
+* Data services
+* External services
+* License
+* Subscription
+
+All licenses and subscriptions API calls are short-lived and run synchronously. Asynchronous processing and internal process tracking are not supported.
+
+**Note:** Before using the API reference documentation, review the https://docs.netapp.com/us-en/console-automation/platform/overview.html[Get started] section for the NetApp Console APIs. For more information about the security tokens and identifiers you'll need when using the API, review the https://docs.netapp.com/us-en/console-automation/platform/get_identifiers.html[Common workflows and tasks] section.
+
+'''
+
+== REST implementation
+
+=== HTTP methods
+
+|===
+| Method | Description
+
+| `POST`
+| Create an object instance
+
+| `GET`
+| Retrieve an object instance or collection
+
+| `PATCH`
+| Update an existing object
+
+| `DELETE`
+| Remove an existing object
+|===
+
+=== Request headers
+
+|===
+| Request Header | Description
+
+| `Authorization`
+| Contains the JWT access token and is required
+
+| `X-Service-Request-Id`
+| Used to tag a request with application-specific keys for improved supportability
+|===
+
+=== Query parameters
+
+You can use query parameters with endpoints in the following components:
+
+|===
+| Component | Query Parameter
+
+| `License`
+| accountId +
+serialNumber +
+resourceId +
+licenseType +
+service +
+group +
+includeSummaryInfo (boolean)
+
+| `Subscription`
+| subscriptionId +
+subscriptionType
+|===
+
+=== Response headers
+
+This API uses the standard HTTP response headers common with all NetApp Console APIs. +
+See https://docs.netapp.com/us-en/console-automation/platform/http_details.html#response-headers[REST implementation] for more information.
+
+=== HTTP status codes
+
+|===
+| HTTP Status Code | Description
+
+| `200`
+| OK: Returned for successful operation completion
+
+| `400`
+| Bad Request: Returned if the input is malformed and could not be parsed
+
+| `401`
+| Unauthorized: Returned if user authentication failed or the token has expired
+
+| `403`
+| Forbidden: Returned for authorization errors depending on the resource and token
+
+| `404`
+| Not Found: Returned if the requested resource could not be found
+
+| `405`
+| Method Not Allowed: Returned if the HTTP request method is not supported for a requested resource
+
+| `500`
+| Processing Error: Returned if an error occurs on the server while processing the API call
+|===
+
+'''
+
+== Error handling
+
+There are three processes involved with error handling and processing.
+
+* The error is logged for supportability
+* The error is also returned to the caller for any specific handling
+* The database connection is rolled back
+
+'''
+
+== cURL examples
+
+=== Retrieve licenses
+
+This example retrieves all the licenses associated with a specified account.
+
+....
+
+  curl -X GET "https://api.bluexp.netapp.com/license/licenses?includeSummaryInfo=true" -H  "accept: application/json" -H  "authorization: <user token>"
+....
+
+'''
+
+== Frequently asked questions
+
+**What's the difference between user token and service token and why do we need two types of token authorization ?**
+
+A user token is used for communication between a user (or the UI) and the NetApp Console REST APIs, +
+whereas the service token is used for communication between two services (machine-to-machine interaction) in the NetApp Console control plane. +
+The type of token required to invoke an API is documented in the description of each endpoint.
+
+**What is a resource ID ?**
+
+A resource ID is an internal identifier to denote a resource in the Console control plane. For example, a resource ID such as `license-481000495-6897991f-f83f-41c1-b151-eb62073e57be` denotes a license resource, +
+a resource ID such as `VsaWorkingEnvironment-XXXX` denotes a Cloud Volumes ONTAP instance.
+
+**What's `X-Service-Request-Id` and why do we use it ?**
+
+`X-Service-Request-Id` is an optional parameter and can be passed to the NetApp Console APIs to identify the origin of the request. +
+It is used for tagging the API call with a specific ID for logging and better supportability.
+
+**What does the parameter `includeSummaryInfo` mean in a GET license API call ?**
+
+The `includeSummaryInfo` parameter contains various pieces of additional information associated with a license +
+relating to its expiration and capacity usage. By default, the summary information is not included in the API response. +
+You must pass the parameter explicitly to retrieve this information.
+
+**What does the parameter `group` mean in a GET license API call ?**
+
+`group` is the logical grouping of the various license types. Groups can be `Data Services` or `CVO`. +
+The `Data Services` group includes `Cloud Backup`, `Cloud Data Sense` and `Cloud Tiering` services.
+
+

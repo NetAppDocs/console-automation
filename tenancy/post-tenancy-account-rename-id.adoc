@@ -1,0 +1,71 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/post-tenancy-account-rename-id.html'
+summary: 'Rename an account'
+---
+
+= Rename an account
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/rename/{newAccountName}`#
+
+
+
+Renames the specified account with a specified new name.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|newAccountName
+|string
+|path
+|True
+a|* pattern: {caret}[-_.a-zA-Z0-9]{1,40}$
+
+
+|authorization
+|string
+|header
+|True
+a|Authorization JWT access token
+
+
+|X-User-Token
+|string
+|header
+|False
+a|User JWT access token
+
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+

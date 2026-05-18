@@ -1,0 +1,82 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-account.html'
+summary: 'Retrieve AWS accounts'
+---
+
+= Retrieve AWS accounts
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/account`#
+
+
+
+Retrieves a list of AWS accounts from the NetApp Console.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|account
+|array[string]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "account": [
+    "string"
+  ]
+}
+====
+

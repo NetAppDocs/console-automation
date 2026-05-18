@@ -1,0 +1,212 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-audit-auditserver.html'
+summary: 'Retrieve audit groups and group records'
+---
+
+= Retrieve audit groups and group records
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/auditserver`#
+
+
+
+Retrieves audit groups and group records. You can optionally filter by query parameters.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|_id
+|integer
+|True
+a|
+
+|id
+|string
+|True
+a|Audit group public ID
+
+
+|requestId
+|string
+|True
+a|Request ID of an action associated with the audit group
+
+
+|startDate
+|integer
+|True
+a|Start date
+
+
+|endDate
+|integer
+|False
+a|End date
+
+
+|actionName
+|string
+|True
+a|Audit group name
+
+
+|status
+|string
+|False
+a|Audit group status
+
+
+|userName
+|string
+|False
+a|Name of the user who performed the action
+
+
+|tenantName
+|string
+|False
+a|Name of the tenant
+
+
+|workingEnvironmentName
+|string
+|False
+a|Name of the system related to the user action
+
+
+|actionParameters
+|string
+|False
+a|Parameters of the user action
+
+
+|records
+|array[link:#AuditGroupSummaryRecord[AuditGroupSummaryRecord]]
+|True
+a|List of audit records
+
+
+|errorMessage
+|string
+|False
+a|Audit failure information (if relevant)
+
+
+|version
+|string
+|True
+a|Version of NetApp Console used to create this audit
+
+
+|parentId
+|link:#parentId[parentId]
+|False
+a|
+
+|userId
+|string
+|False
+a|
+
+|workingEnvironmentId
+|string
+|False
+a|
+
+|containsFailedRecords
+|boolean
+|False
+a|
+
+|containsRecords
+|boolean
+|False
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#AuditGroupSummaryRecord]
+[.api-collapsible-fifth-title]
+AuditGroupSummaryRecord
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|Audit record public ID
+
+
+|date
+|integer
+|True
+a|Date
+
+
+|actionName
+|string
+|True
+a|Action
+
+
+|status
+|string
+|True
+a|Status
+
+
+|parameters
+|string
+|False
+a|Action parameters
+
+
+|errorMessage
+|string
+|False
+a|Audit failure information (if relevant)
+
+
+|count
+|integer
+|True
+a|Aggregated count of similar records
+
+
+|===
+
+
+[#parentId]
+[.api-collapsible-fifth-title]
+parentId
+
+
+//end collapsible .Definitions block
+====

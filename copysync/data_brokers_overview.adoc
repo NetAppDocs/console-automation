@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/data_brokers_overview.html'
+summary: 'Data brokers endpoints in the NetApp Copy and Sync REST API'
+---
+
+= Data brokers endpoints in the NetApp Copy and Sync REST API
+
+
+
+The data brokers endpoints provide information about the data brokers in an account and enable you to perform various operations on the data brokers.
+The following actions can be performed with the data brokers endpoints:
+
+* Retrieve data broker information (including type, groupId, address, operating system, node version , VPC, Vnet, and more)
+* Delete a data broker
+* Restart a data broker
+* Change a data broker's proxy configuration
+* Move a data broker between groups
+* Retrieve data broker's local configuration
+
+There are a few deprecated API calls to use a data broker to retrieve information from the customer network utilizing the network permissions, such as list S3 buckets, list CIFS shares, and more. +
+The deprecated operations are as follows:
+
+* List S3 buckets
+* List CIFS shares
+* List NFS exports
+* List Azure containers
+* List NFS export folders
+* List CIFS share folders
+* List S3 buckets folders
+* List StorageGRID buckets
+* List StorageGRID bucket folders
+* List IBM buckets
+* List IBM bucket folders
+* List ONTAP S3 buckets
+* List ONTAP S3 bucket folders
+* List KMS keys
+* List S3 private endpoints
+* List Google buckets
+* List Google bucket folders
+
+

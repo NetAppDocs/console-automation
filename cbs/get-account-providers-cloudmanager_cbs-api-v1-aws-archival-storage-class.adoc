@@ -1,0 +1,82 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-archival-storage-class.html'
+summary: 'Retrieve AWS storage classes'
+---
+
+= Retrieve AWS storage classes
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/archival-storage-class`#
+
+
+
+Retrieves a list of AWS storage classes available for archival support.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|storage-class
+|array[string]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "storage-class": [
+    "string"
+  ]
+}
+====
+

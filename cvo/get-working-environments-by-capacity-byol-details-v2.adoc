@@ -1,0 +1,179 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'cvo/get-working-environments-by-capacity-byol-details-v2.html'
+summary: 'Returns capacity-based bring your own license (BYOL) license details for a dark site using local database and license service data. Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.'
+---
+
+= Returns capacity-based bring your own license (BYOL) license details for a dark site using local database and license service data. Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/by-capacity-byol-details-v2`#
+
+
+
+Returns capacity-based bring your own license (BYOL) license details for a dark site using local database and license service data. Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|licenses
+|array[link:#LicenseFlavorInfo[LicenseFlavorInfo]]
+|True
+a|
+
+|flavourAggregatedInfo
+|array[link:#FlavourAggregatedInfo[FlavourAggregatedInfo]]
+|True
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "licenses": [
+    {}
+  ],
+  "flavourAggregatedInfo": [
+    {}
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#LicenseFlavorInfo]
+[.api-collapsible-fifth-title]
+LicenseFlavorInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|True
+a|
+
+|serialNumber
+|string
+|False
+a|
+
+|expirationDate
+|integer
+|True
+a|
+
+|capacity
+|integer
+|False
+a|
+
+|flavorType
+|string
+|False
+a|
+
+|metadata
+|string
+|False
+a|
+
+|===
+
+
+[#TotalCapacity]
+[.api-collapsible-fifth-title]
+TotalCapacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|capacity
+|integer
+|True
+a|
+
+|units
+|string
+|False
+a|
+
+|===
+
+
+[#FlavourAggregatedInfo]
+[.api-collapsible-fifth-title]
+FlavourAggregatedInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|flavorType
+|string
+|False
+a|
+
+|totalLicensedCapacity
+|link:#TotalCapacity[TotalCapacity]
+|True
+a|
+
+|totalAllocatedLicensedCapacity
+|link:#TotalCapacity[TotalCapacity]
+|False
+a|
+
+|totalConsumedCapacity
+|link:#TotalCapacity[TotalCapacity]
+|False
+a|
+
+|totalPaygoCapacity
+|link:#TotalCapacity[TotalCapacity]
+|False
+a|
+
+|contractType
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,225 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-replication-onprem.html'
+summary: 'Create a new replication for an on-premises system'
+---
+
+= Create a new replication for an on-premises system
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/onprem`#
+
+
+
+Creates a new replication to an on-premises system.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|replicationRequest
+|link:#ReplicationRequest[ReplicationRequest]
+|True
+a|
+
+|replicationVolume
+|link:#OnPremVolumeRequest[OnPremVolumeRequest]
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "replicationRequest": {
+    "sourceWorkingEnvironmentId": "string",
+    "destinationWorkingEnvironmentId": "string",
+    "sourceInterclusterLifIps": [
+      "string"
+    ],
+    "destinationInterclusterLifIps": [
+      "string"
+    ],
+    "policyName": "string",
+    "scheduleName": "string",
+    "sourceIpSpace": "string",
+    "destinationIpSpace": "string"
+  },
+  "replicationVolume": {
+    "sourceSvmName": "string",
+    "sourceVolumeName": "string",
+    "destinationVolumeName": "string",
+    "destinationAggregateName": "string",
+    "destinationSvmName": "string",
+    "destinationCapacityTier": "string",
+    "tieringPolicy": "string"
+  }
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#ReplicationRequest]
+[.api-collapsible-fifth-title]
+ReplicationRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|Source system ID
+
+
+|destinationWorkingEnvironmentId
+|string
+|True
+a|Destination system ID
+
+
+|sourceInterclusterLifIps
+|array[string]
+|True
+a|Source intercluster LIF IPs
+
+
+|destinationInterclusterLifIps
+|array[string]
+|True
+a|Destination intercluster LIF IPs
+
+
+|policyName
+|string
+|True
+a|SnapMirror policy name
+
+
+|scheduleName
+|string
+|False
+a|Schedule name
+
+
+|maxTransferRate
+|integer
+|False
+a|Maximum transfer rate limit (KB/s). Use 0 for no limit, otherwise use number between 1024 and 2,147,482,624
+
+
+|sourceIpSpace
+|string
+|False
+a|Source IpSpace
+
+
+|destinationIpSpace
+|string
+|False
+a|Destination IpSpace
+
+
+|===
+
+
+[#minimumCoolingDays]
+[.api-collapsible-fifth-title]
+minimumCoolingDays
+
+Cooling Days
+
+
+
+[#OnPremVolumeRequest]
+[.api-collapsible-fifth-title]
+OnPremVolumeRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceSvmName
+|string
+|True
+a|Source SVM name
+
+
+|sourceVolumeName
+|string
+|True
+a|Source volume name
+
+
+|destinationVolumeName
+|string
+|True
+a|Destination volume name
+
+
+|destinationAggregateName
+|string
+|True
+a|Destination aggregate name
+
+
+|destinationSvmName
+|string
+|True
+a|Destination SVM name
+
+
+|destinationCapacityTier
+|string
+|False
+a|Destination aggregate capacity tier
+
+
+|tieringPolicy
+|string
+|False
+a|Tiering policy
+
+
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|Cooling Days
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

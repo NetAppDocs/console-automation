@@ -1,0 +1,73 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/post-tenancy-account-workspace-remove-user-id.html'
+summary: 'Remove a user'
+---
+
+= Remove a user
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountPublicId}/workspace/{workspacePublicId}/remove-user/{userPublicId}`#
+
+
+
+Removes a user from a specified workspace.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountPublicId
+|string
+|path
+|True
+a|
+
+|workspacePublicId
+|string
+|path
+|True
+a|
+
+|userPublicId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-User-Token
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+

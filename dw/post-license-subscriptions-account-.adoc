@@ -1,0 +1,128 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/post-license-subscriptions-account-.html'
+summary: 'Associate a subscription'
+---
+
+= Associate a subscription
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/subscriptions/account/{accountId}`#
+
+
+
+Associate a subscription with an identity and access management service account. +
+Each subscription can be associated with multiple accounts.
+
+{blank} +
+*Token usage:* Either a NetApp Console user token or service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|subscriptionId
+|string
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "subscriptionId": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

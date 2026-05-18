@@ -1,0 +1,237 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/get-ipa-support-case-notes-.html'
+summary: 'Retrieve a list of case notes'
+---
+
+= Retrieve a list of case notes
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/support/case-notes/{caseNumber}`#
+
+
+
+Retrieves a list of case notes.
+            +
+ +
+*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|nssKeyId
+|string
+|query
+|True
+a|
+
+|accountId
+|string
+|query
+|True
+a|
+
+|fetchEmail
+|string
+|query
+|False
+a|
+
+|latestEmailInThread
+|string
+|query
+|False
+a|
+
+|numberOfResults
+|integer
+|query
+|False
+a|
+
+|offset
+|integer
+|query
+|False
+a|
+
+|caseNumber
+|integer
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|caseNumber
+|string
+|False
+a|
+
+|totalResults
+|string
+|False
+a|
+
+|caseNotes
+|array[link:#caseNotes[caseNotes]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "caseNumber": "string",
+  "totalResults": "string",
+  "caseNotes": [
+    {
+      "noteType": "string",
+      "transactionDescription": "string",
+      "transactionID": "string",
+      "transactionAssignedTo": "string",
+      "transactionStatus": "string",
+      "textDetails": "string",
+      "createdOnDateTime": "string",
+      "createdBy": "string"
+    }
+  ]
+}
+====
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": "string",
+  "message": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#caseNotes]
+[.api-collapsible-fifth-title]
+caseNotes
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|noteType
+|string
+|False
+a|
+
+|transactionDescription
+|string
+|False
+a|
+
+|transactionID
+|string
+|False
+a|
+
+|transactionAssignedTo
+|string
+|False
+a|
+
+|transactionStatus
+|string
+|False
+a|
+
+|textDetails
+|string
+|False
+a|
+
+|createdOnDateTime
+|string
+|False
+a|
+
+|createdBy
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-vsa-working-environments-ontap-available-images.html'
+summary: 'Retrieve images already installed'
+---
+
+= Retrieve images already installed
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/ontap-available-images`#
+
+
+
+Retrieves images already installed on the Cloud Volumes ONTAP system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|version
+|string
+|False
+a|
+
+|isCurrent
+|boolean
+|True
+a|
+
+|===
+
+

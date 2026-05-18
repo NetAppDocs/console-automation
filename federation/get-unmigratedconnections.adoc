@@ -1,0 +1,513 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'federation/get-unmigratedconnections.html'
+summary: 'List unmigrated connections'
+---
+
+= List unmigrated connections
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/unmigratedconnections`#
+
+
+
+Lists connections managed through Cloud Central that you can import into the NetApp Console.
+Connections must be enabled in Cloud Central to be eligible for import.
+Only connections that you have permission to manage in Cloud Central are returned.
+
+
+== Response
+
+```
+Status: 200, List of unmigrated connections.
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|items
+|array[link:#unmigratedconnection_1_0_get_response_body[unmigratedconnection_1.0_get_response_body]]
+|True
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "items": [
+    {
+      "adfsOptions": {
+        "metadataFileProvided": true,
+        "metadataUrl": "https://example.com/FederationMetadata/2007-06/FederationMetadata.xml",
+        "signInUrl": "https://example.com/adfs/ls/"
+      },
+      "creatorUsers": [
+        "auth0|680f8f5e279840afb355ab00",
+        "auth0|680f8f5e279840afb355ab11"
+      ],
+      "domains": [
+        "example.com",
+        "example2.com"
+      ],
+      "emailDomain": "example.com",
+      "entraIdOptions": {
+        "clientId": "94e2a45c-64e6-48d1-a31e-1eee0ded5c2a",
+        "tenantDomain": "example.onmicrosoft.com"
+      },
+      "id": "con_jxQFVfPHKSdiwoxs",
+      "name": "fed-example-com-waad",
+      "pingFederateOptions": {
+        "serverUrl": "https://example.com/saml/signin"
+      },
+      "providerType": "ENTRAID",
+      "samlOptions": {
+        "signInUrl": "https://example.com/saml/signin"
+      },
+      "type": "application/vnd.netapp.bxp.unmigratedconnection",
+      "version": "1.0"
+    }
+  ]
+}
+====
+
+== Error
+
+```
+Status: 400, Bad request
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|correlationId
+|string
+|False
+a|Internal UUID representing the request or trace ID related.
+
+
+|detail
+|string
+|False
+a|Details about the problem.
+
+
+|invalidParams
+|array[link:#invalidParams[invalidParams]]
+|False
+a|List of invalid parameters.
+
+
+|status
+|string
+|True
+a|HTTP error code related to the problem.
+
+
+|title
+|string
+|True
+a|Title description of the problem.
+
+
+|type
+|string
+|True
+a|Content-type of the object.
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "detail": "The supplied query parameters are invalid.",
+  "status": "400",
+  "title": "Invalid query parameters",
+  "type": "https://bluexp.netapp.io/problems/1"
+}
+====
+
+== Error
+
+```
+Status: 401, Unauthorized
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|correlationId
+|string
+|False
+a|Internal UUID representing the request or trace ID related.
+
+
+|detail
+|string
+|False
+a|Details about the problem.
+
+
+|invalidParams
+|array[link:#invalidParams[invalidParams]]
+|False
+a|List of invalid parameters.
+
+
+|status
+|string
+|True
+a|HTTP error code related to the problem.
+
+
+|title
+|string
+|True
+a|Title description of the problem.
+
+
+|type
+|string
+|True
+a|Content-type of the object.
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "detail": "The request is missing the required bearer token.",
+  "status": "401",
+  "title": "Missing bearer token",
+  "type": "https://bluexp.netapp.io/problems/1"
+}
+====
+
+== Error
+
+```
+Status: 403, Forbidden
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|correlationId
+|string
+|False
+a|Internal UUID representing the request or trace ID related.
+
+
+|detail
+|string
+|False
+a|Details about the problem.
+
+
+|invalidParams
+|array[link:#invalidParams[invalidParams]]
+|False
+a|List of invalid parameters.
+
+
+|status
+|string
+|True
+a|HTTP error code related to the problem.
+
+
+|title
+|string
+|True
+a|Title description of the problem.
+
+
+|type
+|string
+|True
+a|Content-type of the object.
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "detail": "The requested operation isn't permitted.",
+  "status": "403",
+  "title": "Operation not permitted",
+  "type": "https://bluexp.netapp.io/problems/11"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#unmigratedconnection_1_0_adfs_response_options]
+[.api-collapsible-fifth-title]
+unmigratedconnection_1.0_adfs_response_options
+
+Active Directory Federation Services (AD FS) configuration options when `providerType=ADFS`.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|metadataFileProvided
+|boolean
+|False
+a|Indicates whether the connection uses the Federation metadata XML file or the server URL.
+
+
+|metadataUrl
+|string
+|False
+a|AD FS server URL for the Federation metadata XML file.
+
+
+|signInUrl
+|string
+|False
+a|AD FS single login URL extracted from the Federation metadata XML file.
+
+
+|===
+
+
+[#unmigratedconnection_1_0_entraid_response_options]
+[.api-collapsible-fifth-title]
+unmigratedconnection_1.0_entraid_response_options
+
+Microsoft Entra ID (formerly Azure Active Directory) configuration options when `providerType=ENTRAID`.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|clientId
+|string
+|False
+a|Entra ID client ID.
+
+
+|tenantDomain
+|string
+|False
+a|Entra ID domain.
+
+
+|===
+
+
+[#unmigratedconnection_1_0_pingfederate_response_options]
+[.api-collapsible-fifth-title]
+unmigratedconnection_1.0_pingfederate_response_options
+
+PingFederate configuration options when `providerType=PINGFEDERATE`.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|serverUrl
+|string
+|False
+a|PingFederate server URL.
+
+
+|===
+
+
+[#unmigratedconnection_1_0_saml_response_options]
+[.api-collapsible-fifth-title]
+unmigratedconnection_1.0_saml_response_options
+
+SAML configuration options when `providerType=SAML`.
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|signInUrl
+|string
+|False
+a|SAML single login URL.
+
+
+|===
+
+
+[#unmigratedconnection_1_0_get_response_body]
+[.api-collapsible-fifth-title]
+unmigratedconnection_1.0_get_response_body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|adfsOptions
+|link:#unmigratedconnection_1_0_adfs_response_options[unmigratedconnection_1.0_adfs_response_options]
+|False
+a|Active Directory Federation Services (AD FS) configuration options when `providerType=ADFS`.
+
+
+|creatorUsers
+|array[string]
+|False
+a|Array of Auth0 user IDs that can manage the connection in Cloud Central.
+
+
+|domains
+|array[string]
+|False
+a|Array of domain names that are associated with the connection.
+
+
+|emailDomain
+|string
+|False
+a|The primary email domain associated with the connection.
+
+
+|entraIdOptions
+|link:#unmigratedconnection_1_0_entraid_response_options[unmigratedconnection_1.0_entraid_response_options]
+|False
+a|Microsoft Entra ID (formerly Azure Active Directory) configuration options when `providerType=ENTRAID`.
+
+
+|id
+|string
+|False
+a|The ID of the connection in Auth0.
+
+
+|name
+|string
+|False
+a|The name of the connection in Auth0.
+
+
+|pingFederateOptions
+|link:#unmigratedconnection_1_0_pingfederate_response_options[unmigratedconnection_1.0_pingfederate_response_options]
+|False
+a|PingFederate configuration options when `providerType=PINGFEDERATE`.
+
+
+|providerType
+|string
+|False
+a|The type of the identity provider. Defined values are:
+
+* "ADFS" - Active Directory Federation Services
+* "ENTRAID" - Microsoft Entra ID (formerly Azure Active Directory)
+* "PINGFEDERATE" - PingFederate
+* "SAML" - Security Assertion Markup Language 2.0
+
+
+|samlOptions
+|link:#unmigratedconnection_1_0_saml_response_options[unmigratedconnection_1.0_saml_response_options]
+|False
+a|SAML configuration options when `providerType=SAML`.
+
+
+|type
+|string
+|False
+a|Media type of the resource.
+
+
+|version
+|string
+|False
+a|Version of the resource.
+
+
+|===
+
+
+[#invalidParams]
+[.api-collapsible-fifth-title]
+invalidParams
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|Name of the invalid parameter.
+
+
+|reason
+|string
+|True
+a|Reason why the parameter is invalid.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

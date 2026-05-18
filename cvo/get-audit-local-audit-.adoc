@@ -1,0 +1,133 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-audit-local-audit-.html'
+summary: 'Retrieve audit group entries'
+---
+
+= Retrieve audit group entries
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}`#
+
+
+
+Retrieves audit group entries. You can optionally filter by query parameters for the local UI.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|True
+a|
+
+|principalId
+|string
+|False
+a|
+
+|agentId
+|string
+|False
+a|
+
+|agentName
+|string
+|False
+a|
+
+|resourceId
+|string
+|False
+a|
+
+|resourceName
+|string
+|False
+a|
+
+|action
+|string
+|False
+a|
+
+|startTime
+|integer
+|True
+a|
+
+|endTime
+|link:#endTime[endTime]
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|requestId
+|string
+|False
+a|
+
+|service
+|string
+|False
+a|
+
+|errors
+|array[string]
+|True
+a|
+
+|requestData
+|string
+|False
+a|
+
+|hasRecords
+|boolean
+|False
+a|
+
+|hasFailedRecords
+|boolean
+|False
+a|
+
+|lastModified
+|integer
+|False
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#endTime]
+[.api-collapsible-fifth-title]
+endTime
+
+
+//end collapsible .Definitions block
+====

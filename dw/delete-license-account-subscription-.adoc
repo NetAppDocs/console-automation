@@ -1,0 +1,120 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/delete-license-account-subscription-.html'
+summary: 'Delete a subscription using the subscription ID'
+---
+
+= Delete a subscription using the subscription ID
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/license/account/{accountId}/subscription/{subscriptionId}`#
+
+
+
+Deletes or disassociates a subscription that contains the specified subscription ID from an account.
+
+The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance. +
+This endpoint deletes the subscription if no other account is associated with the subscription. +
+If more than one account is associated with the subscription, this endpoint disassociates the account provided in the `accountId` field and the subscription.
+
+*Token usage:* NetApp Console service token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|dwAudit
+|boolean
+|query
+|False
+a|The NetApp Console audits, by default, all API calls.
+
+**Note:**
+
+* To stop the NetApp Console from auditing a request, you can set the calling service to `false`.
+* `dwAudit` is an optional parameter, the default value is `true`.
+
+
+|accountId
+|string
+|path
+|True
+a|
+
+|subscriptionId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

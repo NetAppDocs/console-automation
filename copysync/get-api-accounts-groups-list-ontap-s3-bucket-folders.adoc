@@ -1,0 +1,91 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-groups-list-ontap-s3-bucket-folders.html'
+summary: 'Retrieve the ONTAP S3 bucket folders'
+---
+
+= Retrieve the ONTAP S3 bucket folders
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-ontap-s3-bucket-folders`#
+
+
+
+Retrieves the ONTAP S3 bucket folders from a NetApp data broker.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|host
+|string
+|query
+|True
+a|ONTAP S3 hostname or IP
+
+
+|port
+|number
+|query
+|False
+a|Server port
+
+
+|bucket
+|string
+|query
+|True
+a|Bucket
+
+
+|prefix
+|string
+|query
+|False
+a|Path inside the bucket, to list folders in
+
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|id
+|string
+|path
+|True
+a|Data Brokers Group ID
+
+
+|access-key
+|string
+|header
+|True
+a|StorageGRID server access-key
+
+
+|secret-key
+|string
+|header
+|True
+a|StorageGRID server secret-key
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

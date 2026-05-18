@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/groups_overview.html'
+summary: 'Groups endpoints in the NetApp Copy and Sync REST API'
+---
+
+= Groups endpoints in the NetApp Copy and Sync REST API
+
+
+
+The groups endpoints provide information about the data broker groups in an account and enable you to manage the groups.
+The following actions can be performed with the data broker groups endpoints:
+
+* Retrieve data broker group information (information on the group configuration and each data broker in the group)
+* Download data broker group logs (download logs from each data broker in the group)
+* Change data broker group configuration - control the number of processes and concurrency in the data brokers
+* Delete a data broker group
+* Use the data broker group to perform various asynchronous operations such as:
+* List S3 buckets
+* List NFS exports
+* List SMB shares
+* List SFTP directories
+* List AWS KMS keys
+* List StorageGRID buckets
+* List IBM buckets
+* List ONTAP S3 buckets
+* List Azure storage account containers
+* List Google drives
+* List S3 private links
+
+

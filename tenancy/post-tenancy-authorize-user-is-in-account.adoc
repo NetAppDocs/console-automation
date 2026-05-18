@@ -1,0 +1,107 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/post-tenancy-authorize-user-is-in-account.html'
+summary: 'Authorize a user for an account'
+---
+
+= Authorize a user for an account
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-user-is-in-account`#
+
+
+
+Authorizes a user in a specified account.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|authorization
+|string
+|header
+|True
+a|Authorization JWT access token
+
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|True
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

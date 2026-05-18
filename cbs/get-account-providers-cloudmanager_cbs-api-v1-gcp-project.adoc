@@ -1,0 +1,118 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-gcp-project.html'
+summary: 'Retrieve Google Cloud projects'
+---
+
+= Retrieve Google Cloud projects
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project`#
+
+
+
+Retrieves a list of Google Cloud projects.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|project
+|array[link:#project[project]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "project": [
+    {
+      "name": "string",
+      "id": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#project]
+[.api-collapsible-fifth-title]
+project
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|id
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

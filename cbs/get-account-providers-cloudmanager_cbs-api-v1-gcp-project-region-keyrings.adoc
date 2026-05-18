@@ -1,0 +1,130 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-gcp-project-region-keyrings.html'
+summary: 'Retrieve a list of KeyRings for a region'
+---
+
+= Retrieve a list of KeyRings for a region
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/region/{locationId}/keyrings`#
+
+
+
+Retrieves a list of KeyRings for a region from a specific Google Cloud project.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|projectId
+|string
+|path
+|True
+a|
+
+|locationId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|keyRings
+|array[link:#keyRings[keyRings]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "keyRings": [
+    {
+      "id": "string",
+      "name": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#keyRings]
+[.api-collapsible-fifth-title]
+keyRings
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

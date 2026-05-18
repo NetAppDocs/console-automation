@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-relationships-v2.html'
+summary: 'Retrieve all relationships'
+---
+
+= Retrieve all relationships
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/relationships-v2`#
+
+
+
+Retrieves all relationships.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|x-account-id
+|string
+|header
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+

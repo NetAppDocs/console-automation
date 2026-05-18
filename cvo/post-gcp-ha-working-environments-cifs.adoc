@@ -1,0 +1,121 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-gcp-ha-working-environments-cifs.html'
+summary: 'Create a new CIFS configuration for a system'
+---
+
+= Create a new CIFS configuration for a system
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/cifs`#
+
+
+
+Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dnsDomain
+|string
+|False
+a|DNS domain name
+
+
+|ipAddresses
+|array[string]
+|True
+a|DNS server IP addresses
+
+
+|netBIOS
+|string
+|True
+a|CIFS server NetBIOS name
+
+
+|organizationalUnit
+|string
+|True
+a|Organizational unit for registration
+
+
+|activeDirectoryDomain
+|string
+|True
+a|Active Directory domain name
+
+
+|activeDirectoryUsername
+|string
+|True
+a|Active Directory username
+
+
+|activeDirectoryPassword
+|string
+|True
+a|Active Directory password
+
+
+|svmName
+|string
+|False
+a|SVM name
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "dnsDomain": "string",
+  "ipAddresses": [
+    "string"
+  ],
+  "netBIOS": "string",
+  "organizationalUnit": "string",
+  "activeDirectoryDomain": "string",
+  "activeDirectoryUsername": "string",
+  "activeDirectoryPassword": "string",
+  "svmName": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

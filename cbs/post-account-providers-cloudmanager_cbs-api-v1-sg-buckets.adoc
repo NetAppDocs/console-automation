@@ -1,0 +1,203 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-sg-buckets.html'
+summary: 'Retrieve a list of StorageGRID buckets'
+---
+
+= Retrieve a list of StorageGRID buckets
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/buckets`#
+
+
+
+Retrieves a list of StorageGRID buckets from the StorageGRID server.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fields
+|string
+|query
+|False
+a|bucket fields
+
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|storage-server
+|string
+|True
+a|StorageGRID server URL. Required input field for a StorageGRID provider
+
+
+|access-key
+|string
+|True
+a|Required input field for an on-premises use case
+
+
+|secret-password
+|string
+|True
+a|Required input field for an on-premises use case
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "storage-server": "string",
+  "access-key": "string",
+  "secret-password": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|buckets
+|array[link:#buckets[buckets]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "buckets": [
+    {
+      "name": "string",
+      "region": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|storage-server
+|string
+|True
+a|StorageGRID server URL. Required input field for a StorageGRID provider
+
+
+|access-key
+|string
+|True
+a|Required input field for an on-premises use case
+
+
+|secret-password
+|string
+|True
+a|Required input field for an on-premises use case
+
+
+|===
+
+
+[#buckets]
+[.api-collapsible-fifth-title]
+buckets
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|region
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

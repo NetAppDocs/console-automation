@@ -1,0 +1,605 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-fsx-volumes-.html'
+summary: 'Retrieve a volume using the ID'
+---
+
+= Retrieve a volume using the ID
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/{volumeId}`#
+
+
+
+Retrieves volume using the ID.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|fields
+|link:#Expands[Expands]
+|query
+|False
+a|
+
+|fileSystemId
+|string
+|path
+|True
+a|
+
+|volumeId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|Volume name
+
+
+|uuid
+|string
+|True
+a|Volume UUID
+
+
+|svmName
+|string
+|True
+a|Volume SVM name
+
+
+|size
+|link:#Capacity[Capacity]
+|True
+a|
+
+|usedSize
+|link:#Capacity[Capacity]
+|True
+a|
+
+|junctionPath
+|string
+|True
+a|The junction path at which this volume is mounted
+
+
+|volumeTotalInodes
+|integer
+|False
+a|Total volume inodes size
+
+
+|volumeUsedInodes
+|integer
+|False
+a|Used volume inodes size
+
+
+|mountPoint
+|string
+|False
+a|Mount Point
+
+
+|compressionSpaceSaved
+|link:#Capacity[Capacity]
+|True
+a|
+
+|deduplicationSpaceSaved
+|link:#Capacity[Capacity]
+|True
+a|
+
+|thinProvisioning
+|boolean
+|True
+a|Specifies whether thin provisioning is enabled
+
+
+|compression
+|boolean
+|True
+a|Specifies whether compression is enabled
+
+
+|deduplication
+|boolean
+|True
+a|Specifies whether deduplication is enabled
+
+
+|snapshotPolicy
+|string
+|True
+a|The name of the snapshot policy
+
+
+|securityStyle
+|string
+|True
+a|The type of the security style
+
+
+|exportPolicyInfo
+|link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
+|True
+a|
+
+|shareNames
+|array[string]
+|True
+a|The share names for CIFS
+
+
+|shareInfo
+|array[link:#CifsShareInfo[CifsShareInfo]]
+|True
+a|The share names, permissions, and users for CIFS
+
+
+|parentVolumeName
+|string
+|True
+a|Name of the parent flexible volume for the clone
+
+
+|rootVolume
+|boolean
+|True
+a|Flag to indicate if the volume is a SVM root
+
+
+|state
+|string
+|True
+a|Volume state
+
+
+|volumeType
+|string
+|True
+a|Volume type
+
+
+|aggregateName
+|string
+|True
+a|Aggregate name
+
+
+|parentSnapshot
+|string
+|False
+a|The snapshot name the volume is based on
+
+
+|autoSizeMode
+|string
+|True
+a|The operating mode of autosize
+
+
+|maxGrowSize
+|link:#Capacity[Capacity]
+|True
+a|
+
+|providerVolumeType
+|string
+|False
+a|Cloud provider volume type
+
+
+|cloneNames
+|array[string]
+|True
+a|Names of cloned copies of the volume
+
+
+|moving
+|boolean
+|True
+a|Specifies if the volume move process is in progress
+
+
+|primaryNoFailoverMountPoint
+|string
+|False
+a|Primary mount point without failover
+
+
+|secondaryNoFailoverMountPoint
+|string
+|False
+a|Secondary mount point without failover
+
+
+|capacityTier
+|string
+|False
+a|Capacity tier
+
+
+|capacityTierUsedSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|cifsShareAccessPoint
+|string
+|False
+a|CIFS share access point
+
+
+|primaryCifsShareAccessPoint
+|string
+|False
+a|Primary CIFS share access point
+
+
+|secondaryCifsShareAccessPoint
+|string
+|False
+a|Secondary CIFS share access point
+
+
+|tieringPolicy
+|string
+|False
+a|Tiering policy
+
+
+|tierInactiveUserData
+|link:#Capacity[Capacity]
+|False
+a|
+
+|tierInactiveUserDataPercent
+|integer
+|False
+a|Tier inactive user data percentage
+
+
+|comment
+|string
+|False
+a|Volume comment
+
+
+|qosPolicyGroupName
+|string
+|False
+a|Quality of service policy group name
+
+
+|snaplockType
+|string
+|False
+a|SnapLock type
+
+
+|constituentsAggregates
+|array[string]
+|True
+a|Aggregates which are used for FlexGroup constituents
+
+
+|snapshotsUsedSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|cbsBackupsInfo
+|link:#VolumeCbsInfo[VolumeCbsInfo]
+|False
+a|
+
+|minimumCoolingDays
+|integer
+|False
+a|Tiering minimum cooling days
+
+
+|targetName
+|string
+|True
+a|iSCSI target IQN
+
+
+|iscsiEnabled
+|boolean
+|True
+a|Indicates if the volume is used by the iSCSI protocol
+
+
+|isFlexGroupVolume
+|boolean
+|True
+a|Indicates if the volume is a FlexGroup volume
+
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#Expand]
+[.api-collapsible-fifth-title]
+Expand
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+[#Expands]
+[.api-collapsible-fifth-title]
+Expands
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|raw
+|string
+|True
+a|
+
+|expands
+|array[link:#Expand[Expand]]
+|True
+a|
+
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|Size
+
+
+|unit
+|string
+|True
+a|Unit
+
+
+|===
+
+
+[#index]
+[.api-collapsible-fifth-title]
+index
+
+Export policy rule index
+
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|index
+|link:#index[index]
+|False
+a|Export policy rule index
+
+
+|ruleAccessControl
+|string
+|True
+a|Export policy rule access control
+
+
+|ips
+|array[string]
+|True
+a|Export policy rule list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy rule protocol
+
+
+|superUser
+|boolean
+|True
+a|Export policy rule super user access
+
+
+|===
+
+
+[#NamedExportPolicyInfo]
+[.api-collapsible-fifth-title]
+NamedExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|Export policy name
+
+
+|policyType
+|string
+|True
+a|Export policy type
+
+
+|ips
+|array[string]
+|True
+a|Custom export policy list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy protocol
+
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|True
+a|Export policy rules
+
+
+|===
+
+
+[#CifsShareUserPermissions]
+[.api-collapsible-fifth-title]
+CifsShareUserPermissions
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|permission
+|string
+|False
+a|CIFS share permission type
+
+
+|users
+|array[string]
+|True
+a|List of users with the permission
+
+
+|===
+
+
+[#CifsShareInfo]
+[.api-collapsible-fifth-title]
+CifsShareInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|shareName
+|string
+|True
+a|Share name
+
+
+|accessControlList
+|array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
+|True
+a|List of CIFS share permissions
+
+
+|vscanFileOpPolicy
+|string
+|False
+a|Vscan file operations profile
+
+
+|===
+
+
+[#VolumeCbsInfo]
+[.api-collapsible-fifth-title]
+VolumeCbsInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|totalBackups
+|integer
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

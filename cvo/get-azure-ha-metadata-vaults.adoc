@@ -1,0 +1,100 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-ha-metadata-vaults.html'
+summary: 'Retrieve all vaults'
+---
+
+= Retrieve all vaults
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/vaults`#
+
+
+
+Retrieves all vaults.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|subscriptionId
+|string
+|query
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|query
+|False
+a|
+
+|region
+|string
+|query
+|False
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|Vault name
+
+
+|resourceGroup
+|string
+|True
+a|Resource group
+
+
+|location
+|string
+|True
+a|Location
+
+
+|vaultUri
+|string
+|True
+a|Vault URI
+
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "resourceGroup": "string",
+  "location": "string",
+  "vaultUri": "string"
+}
+====
+

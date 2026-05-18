@@ -1,0 +1,147 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-relationships-stats.html'
+summary: 'Retrieve the logged-in accounts relationship status'
+---
+
+= Retrieve the logged-in accounts relationship status
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/relationships-stats`#
+
+
+
+Retrieves the logged-in account's relationship status.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|target
+|string
+|query
+|False
+a|Request for relationships with target Azure NetApp Files and source Cloud Volumes ONTAP stats
+
+
+|sourceEdge
+|string
+|query
+|False
+a|Source Edge Cluster UUID
+
+
+|targetEdge
+|string
+|query
+|False
+a|Target Edge Cluster UUID
+
+
+|syncTarget
+|string
+|query
+|False
+a|Target sync type (edge or cloud)
+
+
+|syncSource
+|string
+|query
+|False
+a|Source sync type (edge or cloud)
+
+
+|x-account-id
+|string
+|header
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|totalBytes
+|number
+|True
+a|Total bytes copied according to requested flags
+
+
+|numberOfRelationships
+|number
+|False
+a|Total number of relationships according to the requested flags
+
+
+|totalFiles
+|number
+|True
+a|Total number of files copied according to requested flags
+
+
+|bytesCopiedInTheLast30Days
+|array[link:#bytesCopiedInTheLast30Days[bytesCopiedInTheLast30Days]]
+|True
+a|Array of bytes copied per day in the last 30 days
+
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#bytesCopiedInTheLast30Days]
+[.api-collapsible-fifth-title]
+bytesCopiedInTheLast30Days
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|date
+|string
+|True
+a|date
+
+
+|bytesCopied
+|number
+|True
+a|Total bytes copied in a day
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

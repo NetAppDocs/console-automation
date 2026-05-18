@@ -1,0 +1,155 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'ipa/post-ipa-support-case-system-entitlements.html'
+summary: 'Check system entitlements'
+---
+
+= Check system entitlements
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/support/case/system-entitlements`#
+
+
+
+Checks system entitlements for a specified serial number. This checks whether a user is entitled to create a case for the requested serial number.
+            +
+ +
+*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|serialNumber
+|string
+|True
+a|
+
+|email
+|string
+|False
+a|
+
+|nssKeyId
+|string
+|False
+a|
+
+|accountId
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "serialNumber": "string",
+  "email": "string",
+  "nssKeyId": "string",
+  "accountId": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ntapUID
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "ntapUID": "string"
+}
+====
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": "string",
+  "message": "string"
+}
+====
+

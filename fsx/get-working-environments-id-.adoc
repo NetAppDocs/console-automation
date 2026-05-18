@@ -1,0 +1,130 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'fsx/get-working-environments-id-.html'
+summary: 'Retrieve working environments by account'
+---
+
+= Retrieve working environments by account
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/{accountId}/{workingEnvironmentId}`#
+
+
+
+Retrieves FSx working environments by specifying the workingEnvironmentId parameter.
+   Pass provider-details:'true'  parameter to get provider data.
+   Pass `volumes:'true'`  parameter to retrieve volumes.
+
+**Token usage:** Cloud Manager user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|x-simulator
+|string
+|header
+|False
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|volumes
+|string
+|query
+|False
+a|
+
+|provider-details
+|string
+|query
+|False
+a|
+
+|===
+
+== Response
+
+```
+Status: 200, 
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|
+
+|name
+|string
+|True
+a|
+
+|region
+|string
+|True
+a|
+
+|deploymentType
+|string
+|True
+a|
+
+|providerDetails
+|link:#providerDetails[providerDetails]
+|True
+a|
+
+|volumes
+|array[string]
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#providerDetails]
+[.api-collapsible-fifth-title]
+providerDetails
+
+
+//end collapsible .Definitions block
+====

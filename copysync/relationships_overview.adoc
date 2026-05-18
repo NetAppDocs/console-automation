@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/relationships_overview.html'
+summary: 'Relationships endpoints in the NetApp Copy and Sync REST API'
+---
+
+= Relationships endpoints in the NetApp Copy and Sync REST API
+
+
+
+The relationships endpoints provide information about the sync relationships between source and target destinations in an account and enable you to perform various operations to manage the sync relationships.
+The following actions can be performed with the relationships endpoints:
+
+* Retrieve sync relationship information (including statistics)
+* Create a sync relationship
+* Delete a sync relationship
+* Change sync relationship settings
+* Start a new sync on a relationship
+* Stop a sync operation
+* Update relationship endpoint credentials
+* Update relationship tags
+* Retrieve the identifier of the sync relationship (without all other properties)
+
+

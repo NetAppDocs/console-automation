@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/license_overview.html'
+summary: 'License endpoints in the License and subscriptions REST API for the NetApp Console'
+---
+
+= License endpoints in the License and subscriptions REST API for the NetApp Console
+
+
+
+The license endpoints manage the licenses for end users. +
+This includes monitoring the expiration and capacity usage of end-user licenses.
+
+A license is a collection of the following information:
+
+* License serial number (such as 481000495)
+* Resource identifier (such as license-481000495-6897991f-f83f-41c1-b151-eb62073e57be), used internally
+* License type (such as BACKUP)
+* Permitted capacity
+* Expiration date
+
+

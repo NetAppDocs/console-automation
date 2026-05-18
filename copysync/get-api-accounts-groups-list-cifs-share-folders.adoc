@@ -1,0 +1,98 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-groups-list-cifs-share-folders.html'
+summary: 'Retrieve the CIFS server folders'
+---
+
+= Retrieve the CIFS server folders
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-cifs-share-folders`#
+
+
+
+Retrieves the CIFS server folders from a NetApp data broker.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|host
+|string
+|query
+|True
+a|CIFS server hostname or IP
+
+
+|version
+|string
+|query
+|False
+a|CIFS version
+
+
+|path
+|string
+|query
+|False
+a|CIFS server share path
+
+
+|share
+|string
+|query
+|True
+a|Cifs share
+
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|id
+|string
+|path
+|True
+a|Data Brokers Group ID
+
+
+|username
+|string
+|header
+|True
+a|CIFS server username
+
+
+|password
+|string
+|header
+|True
+a|CIFS server password
+
+
+|domain
+|string
+|header
+|False
+a|CIFS server domain
+
+
+|===
+
+== Response
+
+```
+Status: 202, Default Response
+```
+

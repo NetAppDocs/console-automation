@@ -1,0 +1,152 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-aws-ha-metadata-validate-floating-ips.html'
+summary: 'Validate HA floating IP addresses'
+---
+
+= Validate HA floating IP addresses
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/validate-floating-ips`#
+
+
+
+Validates HA floating IP addresses.
+
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|floatingIps
+|link:#FloatingIps[FloatingIps]
+|True
+a|
+
+|routeTablesIds
+|array[string]
+|True
+a|
+
+|vpcId
+|string
+|True
+a|
+
+|region
+|string
+|False
+a|
+
+|roleArn
+|string
+|False
+a|
+
+|cloudProviderAccountId
+|string
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "floatingIps": {
+    "clusterFloatingIP": "string",
+    "dataFloatingIP": "string",
+    "dataFloatingIP2": "string",
+    "svmFloatingIP": "string"
+  },
+  "routeTablesIds": [
+    "string"
+  ],
+  "vpcId": "string",
+  "region": "string",
+  "roleArn": "string",
+  "cloudProviderAccountId": "string"
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|result
+|boolean
+|True
+a|
+
+|reasons
+|array[string]
+|True
+a|
+
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#FloatingIps]
+[.api-collapsible-fifth-title]
+FloatingIps
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|clusterFloatingIP
+|string
+|False
+a|
+
+|dataFloatingIP
+|string
+|False
+a|
+
+|dataFloatingIP2
+|string
+|False
+a|
+
+|svmFloatingIP
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

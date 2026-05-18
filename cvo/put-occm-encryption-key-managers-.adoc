@@ -1,0 +1,174 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-occm-encryption-key-managers-.html'
+summary: 'Update an existing key manager'
+---
+
+= Update an existing key manager
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/occm/encryption/key-managers/{keyManagerId}`#
+
+
+
+Updates an existing key manager.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|keyManagerId
+|string
+|path
+|True
+a|
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|address
+|string
+|False
+a|
+
+|usernameField
+|link:#NonEmptyOptionalString[NonEmptyOptionalString]
+|False
+a|
+
+|usernameValue
+|link:#NonEmptyOptionalString[NonEmptyOptionalString]
+|False
+a|
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "address": "string",
+  "usernameField": {
+    "_1": "string"
+  },
+  "usernameValue": {
+    "_1": "string"
+  }
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|address
+|string
+|False
+a|
+
+|usernameField
+|string
+|False
+a|
+
+|usernameValue
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "publicId": "string",
+  "name": "string",
+  "address": "string",
+  "usernameField": "string",
+  "usernameValue": "string",
+  "status": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#NonEmptyOptionalString]
+[.api-collapsible-fifth-title]
+NonEmptyOptionalString
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|_1
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

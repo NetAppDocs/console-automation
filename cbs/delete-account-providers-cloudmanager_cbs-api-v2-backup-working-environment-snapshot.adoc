@@ -1,0 +1,108 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v2-backup-working-environment-snapshot.html'
+summary: 'Delete all snapshots (system)'
+---
+
+= Delete all snapshots (system)
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}/snapshot`#
+
+
+
+Deletes all snapshots for a specified system that are backed up using the NetApp Backup and Recovery service (V2 version).
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|remove-object-store-config
+|boolean
+|query
+|False
+a|If set to true, the object store configuration which is not being used by any volume (other than the current volume being processed) will be cleaned up from the system.
+
+* Default value:
+
+
+|force
+|boolean
+|query
+|False
+a|If set to true, all metadata for the snapshots will be removed from the database without waiting for the deletion of backups from the object store. Snapshot data in the object store might not be deleted automatically; you must manually verify and remove the data.
+
+* Default value:
+
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+

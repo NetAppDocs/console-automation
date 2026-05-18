@@ -1,0 +1,141 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-azure-vsa-working-environments-schedules.html'
+summary: 'List the start-stop schedules'
+---
+
+= List the start-stop schedules
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/schedules`#
+
+
+
+Lists the start/stop schedules for Cloud Volumes ONTAP.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|schedule
+|array[link:#StartStopRange[StartStopRange]]
+|True
+a|
+
+|enabled
+|boolean
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "schedule": [
+    {}
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#TimePoint]
+[.api-collapsible-fifth-title]
+TimePoint
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|day
+|integer
+|True
+a|
+
+|hour
+|integer
+|False
+a|
+
+|minute
+|integer
+|False
+a|
+
+|===
+
+
+[#StartStopRange]
+[.api-collapsible-fifth-title]
+StartStopRange
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|stop
+|link:#TimePoint[TimePoint]
+|True
+a|
+
+|start
+|link:#TimePoint[TimePoint]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-messages-client.html'
+summary: 'Retrieve the asynchronous messages'
+---
+
+= Retrieve the asynchronous messages
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/messages/client`#
+
+
+
+Retrieves the asynchronous messages. This API endpoint refers to a long polling endpoint for asynchronous messages.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|last
+|string
+|query
+|False
+a|Last Received message ID
+
+
+|x-account-id
+|string
+|header
+|False
+a|NetApp Tenancy Account ID
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+

@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/timelines_overview.html'
+summary: 'Timelines endpoints in the NetApp Copy and Sync REST API'
+---
+
+= Timelines endpoints in the NetApp Copy and Sync REST API
+
+
+
+The timelines endpoints provide information about historic operations in an account (for example, create a relationship, sync relationships, and abort a relationship).
+The timelines API endpoints are deprecated; use the https://docs.netapp.com/us-en/console-automation/audit/overview.html[Audit service API] to view your historic account-related operations.
+
+

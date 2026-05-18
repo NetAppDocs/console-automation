@@ -1,0 +1,177 @@
+---
+sidebar: sidebar
+api: true
+explorer: true
+permalink: 'tenancy/post-tenancy-account-associate.html'
+summary: 'Associate a user'
+---
+
+= Associate a user
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/associate`#
+
+
+
+Associates the user to the account by using the user email.
+            +
+*Token usage:* BlueXP user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|Authorization JWT access token
+
+
+|X-User-Token
+|string
+|header
+|False
+a|User JWT access token
+
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|associatedEmail
+|string
+|False
+a|User email to be associated with the account
+
+
+|rolePublicId
+|string
+|False
+a|User role name. For example, use Role-1 for account admin or Role-2 for workspace admin.
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "associatedEmail": "string",
+  "rolePublicId": "Role-1"
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|userPublicId
+|string
+|False
+a|
+
+|userClientId
+|string
+|False
+a|
+
+|userRole
+|string
+|False
+a|
+
+|cloudManagerNotificationsOptIn
+|boolean
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "userPublicId": "string",
+  "userClientId": "string",
+  "userRole": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|associatedEmail
+|string
+|False
+a|User email to be associated with the account
+
+
+|rolePublicId
+|string
+|False
+a|User role name. For example, use Role-1 for account admin or Role-2 for workspace admin.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

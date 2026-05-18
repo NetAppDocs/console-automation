@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-replication-resync--.html'
+summary: 'Resync a SnapMirror replication relationship'
+---
+
+= Resync a SnapMirror replication relationship
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/resync/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
+
+
+
+Resyncs a SnapMirror replication relationship.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|destinationWorkingEnvironmentId
+|string
+|path
+|True
+a|
+
+|destinationSvmName
+|string
+|path
+|True
+a|
+
+|destinationVolumeName
+|string
+|path
+|True
+a|
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

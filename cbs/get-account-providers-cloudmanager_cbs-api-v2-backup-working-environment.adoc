@@ -1,0 +1,154 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v2-backup-working-environment.html'
+summary: 'Retrieve the details of all the systems that are backed up'
+---
+
+= Retrieve the details of all the systems that are backed up
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment`#
+
+
+
+Retrieves the details of all systems that are backed up using the NetApp Backup and Recovery service within an account. It retrieves backup enablement status, archive storage class, archive after days, catalog enablement status, auto enablement status, maximum transfer status, backup policy details, cloud storage pool, and remote MetroCluster ID.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|working-environment
+|array[link:#working-environment[working-environment]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "working-environment": [
+    {
+      "id": "string",
+      "name": "string",
+      "publicId": "string",
+      "clusterId": "string",
+      "ontapVersion": "string",
+      "status": "string",
+      "type": "string",
+      "provider": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#working-environment]
+[.api-collapsible-fifth-title]
+working-environment
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|publicId
+|string
+|False
+a|
+
+|clusterId
+|string
+|False
+a|
+
+|ontapVersion
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|type
+|string
+|False
+a|
+
+|provider
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

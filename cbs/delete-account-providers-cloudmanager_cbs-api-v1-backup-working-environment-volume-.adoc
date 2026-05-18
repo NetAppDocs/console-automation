@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume-.html'
+summary: 'Remove backup settings'
+---
+
+= Remove backup settings
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}`#
+
+
+
+Removes the backup settings on a specified backed up volume. To disable backup on a volume, the volume snapshots must be deleted.
+
+**Token usage:**NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|
+
+|volumeId
+|string
+|path
+|True
+a|
+
+|authorization
+|string
+|header
+|True
+a|
+
+|X-Agent-Id
+|string
+|header
+|True
+a|
+|===
+
+== Response
+
+```
+Status: 202, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|job-id
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "job-id": "string"
+}
+====
+

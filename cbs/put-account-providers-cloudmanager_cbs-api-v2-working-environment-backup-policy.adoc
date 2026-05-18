@@ -1,0 +1,307 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v2-working-environment-backup-policy.html'
+summary: 'Update a backup policy (v2)'
+---
+
+= Update a backup policy (v2)
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/{workingEnvironmentId}/backup-policy`#
+
+
+
+Updates a backup policy in a system. This V2 version of the API endpoint facilitates modification of the rule, label, retention, archive-after-days, and StorageGRID archival details which also includes cloud storage pool information.
+
+**Token usage:** NetApp Console user token.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|Account ID
+
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|System ID
+
+
+|authorization
+|string
+|header
+|True
+a|User token
+
+
+|X-Agent-Id
+|string
+|header
+|True
+a|Request identifier
+
+|===
+
+== Request Body
+
+                
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|policyName
+|string
+|True
+a|Backup policy name
+
+
+|rule
+|array[link:#rule[rule]]
+|True
+a|
+
+|sgws-archival
+|link:#sgws-archival[sgws-archival]
+|False
+a|
+
+|transfer-schedule
+|string
+|False
+a|
+
+|archive-after-days
+|string
+|False
+a|Archive after days value to which the policy will be modified, "never" implies the removal of the archive-after-days property from a backup policy.
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "policyName": "string",
+  "rule": [
+    {
+      "label": "string",
+      "retention": "string",
+      "period": "string"
+    }
+  ],
+  "sgws-archival": {
+    "cloud-storage-pool": {
+      "provider": "string",
+      "provider-account-id": "string",
+      "region": "string",
+      "access-key": "string",
+      "secret-password": "string",
+      "archive-storage-class": "string"
+    }
+  },
+  "transfer-schedule": "string",
+  "archive-after-days": "string"
+}
+====
+
+== Response
+
+```
+Status: 200, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string"
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#rule]
+[.api-collapsible-fifth-title]
+rule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|label
+|string
+|False
+a|
+
+|retention
+|string
+|False
+a|
+
+|period
+|string
+|False
+a|
+
+|===
+
+
+[#cloud-storage-pool]
+[.api-collapsible-fifth-title]
+cloud-storage-pool
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|provider
+|string
+|True
+a|Cloud provider where the cloud storage pool is hosted
+
+
+|provider-account-id
+|string
+|True
+a|Cloud provider account ID where the cloud storage pool is hosted
+
+
+|region
+|string
+|True
+a|Cloud provider region where the cloud storage pool is hosted
+
+
+|access-key
+|string
+|False
+a|Required input field if the provider is AWS
+
+
+|secret-password
+|string
+|False
+a|Required input field if the provider is AWS
+
+
+|archive-storage-class
+|string
+|False
+a|Required for AWS to specify which storage class to use for archiving
+
+
+|===
+
+
+[#sgws-archival]
+[.api-collapsible-fifth-title]
+sgws-archival
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cloud-storage-pool
+|link:#cloud-storage-pool[cloud-storage-pool]
+|False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|policyName
+|string
+|True
+a|Backup policy name
+
+
+|rule
+|array[link:#rule[rule]]
+|True
+a|
+
+|sgws-archival
+|link:#sgws-archival[sgws-archival]
+|False
+a|
+
+|transfer-schedule
+|string
+|False
+a|
+
+|archive-after-days
+|string
+|False
+a|Archive after days value to which the policy will be modified, "never" implies the removal of the archive-after-days property from a backup policy.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

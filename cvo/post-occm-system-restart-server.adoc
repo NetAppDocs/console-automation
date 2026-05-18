@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-occm-system-restart-server.html'
+summary: 'Restart the server'
+---
+
+= Restart the server
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/restart-server`#
+
+
+
+Restarts the server.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

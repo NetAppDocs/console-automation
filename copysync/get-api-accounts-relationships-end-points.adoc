@@ -1,0 +1,209 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'copysync/get-api-accounts-relationships-end-points.html'
+summary: 'Retrieve the relationship endpoints'
+---
+
+= Retrieve the relationship endpoints
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/relationships/end-points`#
+
+
+
+Retrieves the relationship endpoints.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|accountId
+|string
+|path
+|True
+a|NetApp tenancy account ID
+
+
+|===
+
+== Response
+
+```
+Status: 200, Default Response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|relationships
+|array[link:#relationships[relationships]]
+|False
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "relationships": [
+    {
+      "source": {
+        "id": "string",
+        "metadata": {
+          "bucket": "string",
+          "host": "string",
+          "container": "string",
+          "provider": "string"
+        }
+      },
+      "target": {
+        "id": "string",
+        "metadata": {
+          "bucket": "string",
+          "host": "string",
+          "container": "string",
+          "provider": "string"
+        }
+      }
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#metadata]
+[.api-collapsible-fifth-title]
+metadata
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|bucket
+|string
+|False
+a|Bucket name
+
+
+|host
+|string
+|False
+a|Host
+
+
+|container
+|string
+|False
+a|Container
+
+
+|provider
+|string
+|False
+a|Provider
+
+
+|===
+
+
+[#source]
+[.api-collapsible-fifth-title]
+source
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|Endpoint ID system ID or aws,azure,gcp,sgws,ibm
+
+
+|metadata
+|link:#metadata[metadata]
+|False
+a|
+
+|===
+
+
+[#target]
+[.api-collapsible-fifth-title]
+target
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|Endpoint ID system ID or aws,azure,gcp,sgws,ibm
+
+
+|metadata
+|link:#metadata[metadata]
+|False
+a|
+
+|===
+
+
+[#relationships]
+[.api-collapsible-fifth-title]
+relationships
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|source
+|link:#source[source]
+|False
+a|
+
+|target
+|link:#target[target]
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

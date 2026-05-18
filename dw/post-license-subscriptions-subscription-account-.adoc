@@ -1,0 +1,109 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'dw/post-license-subscriptions-subscription-account-.html'
+summary: 'Associate a subscription (deprecated)'
+---
+
+= Associate a subscription (deprecated)
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/subscriptions/subscription/{subscriptionId}/account/{accountId}`#
+
+
+
+Associate a subscription with an identity and access management service account. +
+Each subscription can be associated with multiple accounts. A newer version of this deprecated endpoint is available https://docs.netapp.com/us-en/console-automation/dw/post-license-subscriptions-account-.html[here.]
+
+{blank} +
+*Token usage:* Either a NetApp Console user token or service token.
+
+
+
+CAUTION: This operation is deprecated.
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|subscriptionId
+|string
+|path
+|True
+a|
+
+|accountId
+|string
+|path
+|True
+a|
+
+|X-Service-Request-Id
+|string
+|header
+|False
+a|Request identifier
+
+
+|===
+
+== Response
+
+```
+Status: 200, Success response
+```
+
+
+
+== Response
+
+```
+Status: 4xx, Error response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|errorCode
+|string
+|False
+a|Error code
+
+
+|error
+|string
+|False
+a|Error code/category
+
+
+|message
+|string
+|False
+a|Error description message
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "errorCode": "string",
+  "error": "string",
+  "message": "string"
+}
+====
+

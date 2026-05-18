@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-vsa-metadata-network-requirements.html'
+summary: 'Retrieve the minimum number of required IP addresses'
+---
+
+= Retrieve the minimum number of required IP addresses
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/network-requirements`#
+
+
+
+Retrieves the minimum number of required IP addresses for a single Cloud Volumes ONTAP system, HA node, and HA mediator.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|nonHaNodeMinimumRequiredIps
+|integer
+|True
+a|
+
+|haNodeMinimumRequiredIps
+|integer
+|False
+a|
+
+|haMediatorMinimumRequiredIps
+|integer
+|False
+a|
+
+|===
+
+

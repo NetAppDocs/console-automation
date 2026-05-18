@@ -1,0 +1,140 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/get-audit-local-audit-options.html'
+summary: 'Retrieve audit page filter options'
+---
+
+= Retrieve audit page filter options
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}/options`#
+
+
+
+Retrieves audit page filter options for the local UI.
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|service
+|array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
+|True
+a|
+
+|action
+|array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
+|False
+a|
+
+|agent
+|array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
+|False
+a|
+
+|resource
+|array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
+|False
+a|
+
+|user
+|array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
+|False
+a|
+
+|===
+
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "service": [
+    {
+      "column": "string",
+      "identifier": "string",
+      "label": "string"
+    }
+  ],
+  "action": [
+    {
+      "column": "string",
+      "identifier": "string",
+      "label": "string"
+    }
+  ],
+  "agent": [
+    {
+      "column": "string",
+      "identifier": "string",
+      "label": "string"
+    }
+  ],
+  "resource": [
+    {
+      "column": "string",
+      "identifier": "string",
+      "label": "string"
+    }
+  ],
+  "user": [
+    {
+      "column": "string",
+      "identifier": "string",
+      "label": "string"
+    }
+  ]
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#CloudCentralAuditOptionsEntryResponse]
+[.api-collapsible-fifth-title]
+CloudCentralAuditOptionsEntryResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|column
+|string
+|True
+a|
+
+|identifier
+|string
+|False
+a|
+
+|label
+|string
+|False
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====
