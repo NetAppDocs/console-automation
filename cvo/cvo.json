@@ -10440,7 +10440,7 @@
         "tags": [
           "ONTAP Cloud GCP HA system operations - Aggregates"
         ],
-        "description": "Updates IOPS and throughput for the disks in an existing aggregate. Atleast one of the parameter is required.",
+        "description": "Updates IOPS and throughput for the disks in an existing aggregate. At least one of the parameters is required.",
         "operationId": "changeDisksIopsAndThroughput_1",
         "parameters": [
           {
