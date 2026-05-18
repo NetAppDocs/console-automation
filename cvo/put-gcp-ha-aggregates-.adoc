@@ -29,13 +29,15 @@ Updates IOPS and throughput for the disks in an existing aggregate. At least one
 |string
 |path
 |True
-a|
+a|The system ID
+
 
 |aggregateName
 |string
 |path
 |True
-a|
+a|The aggregate name
+
 
 |===
 
