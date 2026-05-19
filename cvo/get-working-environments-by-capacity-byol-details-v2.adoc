@@ -1,12 +1,12 @@
 ---
 sidebar: sidebar
 api: true
-explorer: true
+explorer: false
 permalink: 'cvo/get-working-environments-by-capacity-byol-details-v2.html'
-summary: 'Returns capacity-based bring your own license (BYOL) license details for a dark site using local database and license service data. Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.'
+summary: 'Retrieve capacity-based BYOL license details for a NetApp Console dark site'
 ---
 
-= Returns capacity-based bring your own license (BYOL) license details for a dark site using local database and license service data. Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.
+= Retrieve capacity-based BYOL license details for a NetApp Console dark site
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/by-capacity-byol-details-v2`#
 

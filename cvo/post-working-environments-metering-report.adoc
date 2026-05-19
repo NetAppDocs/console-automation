@@ -1,12 +1,12 @@
 ---
 sidebar: sidebar
 api: true
-explorer: true
+explorer: false
 permalink: 'cvo/post-working-environments-metering-report.html'
-summary: 'Triggers darksite capacity metering report generation and returns the full report output.'
+summary: 'Trigger NetApp Console dark site capacity metering report generation'
 ---
 
-= Triggers darksite capacity metering report generation and returns the full report output.
+= Trigger NetApp Console dark site capacity metering report generation
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/working-environments/metering-report`#
 

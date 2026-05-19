@@ -1,12 +1,12 @@
 ---
 sidebar: sidebar
 api: true
-explorer: true
+explorer: false
 permalink: 'cvo/put-gcp-vsa-aggregates-.html'
-summary: 'Updates IOPS and throughput for the disks in an existing aggregate. At least one of the parameters is required.'
+summary: 'Update IOPS and throughput for the disks in an existing Cloud Volumes ONTAP aggregate'
 ---
 
-= Updates IOPS and throughput for the disks in an existing aggregate. At least one of the parameters is required.
+= Update IOPS and throughput for the disks in an existing Cloud Volumes ONTAP aggregate
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}`#
 

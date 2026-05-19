@@ -3,10 +3,10 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-volumes-storage-vms-volumes-sync-avs-host.html'
-summary: 'Synchronize Azure VMware Solution hosts'
+summary: 'Synchronize Azure VMware Solution (AVS) hosts'
 ---
 
-= Synchronize Azure VMware Solution hosts
+= Synchronize Azure VMware Solution (AVS) hosts
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/sync-avs-host`#
 

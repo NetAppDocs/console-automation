@@ -1,12 +1,12 @@
 ---
 sidebar: sidebar
 api: true
-explorer: true
+explorer: false
 permalink: 'cvo/put-gcp-ha-aggregates-.html'
-summary: 'changeDisksIopsAndThroughput_1\: Updates IOPS and throughput for the disks in an existing aggregate. At least one of the parameters is required.'
+summary: 'Update IOPS and throughput for the disks in an existing Cloud Volumes ONTAP aggregate'
 ---
 
-= changeDisksIopsAndThroughput_1: Updates IOPS and throughput for the disks in an existing aggregate. At least one of the parameters is required.
+= Update IOPS and throughput for the disks in an existing Cloud Volumes ONTAP aggregate
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}`#
 

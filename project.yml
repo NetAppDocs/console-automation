@@ -4696,22 +4696,33 @@ sidebar:
           data-introduced: ''
       - title: Azure volumes (HA)
         entries:
-        - title: Synchronize Azure VMware Solution hosts
+        - title: Synchronize AVS hosts
           url: "/cvo/put-azure-ha-volumes-storage-vms-volumes-sync-avs-host.html"
           swagger-title: PUT /azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/sync-avs-host
           data-api-method: PUT
           data-api-path: "/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/sync-avs-host"
-          data-summary: Synchronize Azure VMware Solution hosts
+          data-summary: Synchronize Azure VMware Solution (AVS) hosts
           data-deprecated: false
           data-category: Azure volumes (HA)
           data-tag-description: ''
           data-introduced: ''
-        - title: Remove Azure VMware Solution hosts on a volume
+        - title: Resize a volume and the respective AVS DataStore
+          url: "/cvo/put-azure-ha-volumes-storage-vms-volumes-resize-avs-ds.html"
+          swagger-title: PUT /azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/resize-avs-ds
+          data-api-method: PUT
+          data-api-path: "/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/resize-avs-ds"
+          data-summary: Resize an Azure volume and the respective AVS DataStore with
+            Cloud Volumes ONTAP
+          data-deprecated: false
+          data-category: Azure volumes (HA)
+          data-tag-description: ''
+          data-introduced: ''
+        - title: Remove AVS hosts on a volume
           url: "/cvo/delete-azure-ha-volumes-storage-vms-volumes-remove-avs.html"
           swagger-title: DELETE /azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/remove-avs
           data-api-method: DELETE
           data-api-path: "/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/remove-avs"
-          data-summary: Remove Azure VMware Solution hosts on a volume
+          data-summary: Remove AVS hosts on a volume
           data-deprecated: false
           data-category: Azure volumes (HA)
           data-tag-description: ''
@@ -5175,6 +5186,28 @@ sidebar:
           data-introduced: ''
       - title: Common system operations
         entries:
+        - title: Retrieve capacity-based BYOL license details for a dark site
+          url: "/cvo/get-working-environments-by-capacity-byol-details-v2.html"
+          swagger-title: GET /working-environments/by-capacity-byol-details-v2
+          data-api-method: GET
+          data-api-path: "/working-environments/by-capacity-byol-details-v2"
+          data-summary: Retrieve capacity-based BYOL license details for a NetApp
+            Console dark site
+          data-deprecated: false
+          data-category: Common system operations
+          data-tag-description: ''
+          data-introduced: ''
+        - title: Trigger dark site capacity metering report generation
+          url: "/cvo/post-working-environments-metering-report.html"
+          swagger-title: POST /working-environments/metering-report
+          data-api-method: POST
+          data-api-path: "/working-environments/metering-report"
+          data-summary: Trigger NetApp Console dark site capacity metering report
+            generation
+          data-deprecated: false
+          data-category: Common system operations
+          data-tag-description: ''
+          data-introduced: ''
         - title: Check if a system with the specified name exists
           url: "/cvo/get-working-environments-exists-.html"
           swagger-title: GET /working-environments/exists/{workingEnvironmentName}
@@ -5279,6 +5312,17 @@ sidebar:
           data-introduced: ''
       - title: Google Cloud aggregates (HA)
         entries:
+        - title: Update IOPS and throughput for the disks in an existing aggregate
+          url: "/cvo/put-gcp-ha-aggregates-.html"
+          swagger-title: PUT /gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}
+          data-api-method: PUT
+          data-api-path: "/gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}"
+          data-summary: Update IOPS and throughput for the disks in an existing Cloud
+            Volumes ONTAP aggregate
+          data-deprecated: false
+          data-category: Google Cloud aggregates (HA)
+          data-tag-description: ''
+          data-introduced: ''
         - title: Delete an aggregate
           url: "/cvo/delete-gcp-ha-aggregates-.html"
           swagger-title: DELETE /gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}
@@ -5321,6 +5365,17 @@ sidebar:
           data-introduced: ''
       - title: Google Cloud aggregates (single-node)
         entries:
+        - title: Update IOPS and throughput for the disks in an existing aggregate
+          url: "/cvo/put-gcp-vsa-aggregates-.html"
+          swagger-title: PUT /gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}
+          data-api-method: PUT
+          data-api-path: "/gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}"
+          data-summary: Update IOPS and throughput for the disks in an existing Cloud
+            Volumes ONTAP aggregate
+          data-deprecated: false
+          data-category: Google Cloud aggregates (single-node)
+          data-tag-description: ''
+          data-introduced: ''
         - title: Delete an aggregate
           url: "/cvo/delete-gcp-vsa-aggregates-.html"
           swagger-title: DELETE /gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}
@@ -5407,17 +5462,6 @@ sidebar:
           data-introduced: ''
       - title: Google Cloud system metadata (HA)
         entries:
-        - title: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
-          url: "/cvo/get-gcp-vsa-metadata-workerpools.html"
-          swagger-title: GET /gcp/vsa/metadata/workerPools
-          data-api-method: GET
-          data-api-path: "/gcp/vsa/metadata/workerPools"
-          data-summary: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP
-            system
-          data-deprecated: false
-          data-category: Google Cloud system metadata (HA)
-          data-tag-description: ''
-          data-introduced: ''
         - title: Retrieve Google Cloud regions and zones
           url: "/cvo/get-gcp-ha-metadata-zones.html"
           swagger-title: GET /gcp/ha/metadata/zones
@@ -5454,6 +5498,17 @@ sidebar:
           data-api-method: GET
           data-api-path: "/gcp/ha/metadata/permutations"
           data-summary: Retrieve all Cloud Volumes ONTAP configurations
+          data-deprecated: false
+          data-category: Google Cloud system metadata (HA)
+          data-tag-description: ''
+          data-introduced: ''
+        - title: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
+          url: "/cvo/get-gcp-ha-metadata-workerpools.html"
+          swagger-title: GET /gcp/ha/metadata/workerPools
+          data-api-method: GET
+          data-api-path: "/gcp/ha/metadata/workerPools"
+          data-summary: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP
+            system
           data-deprecated: false
           data-category: Google Cloud system metadata (HA)
           data-tag-description: ''
@@ -5592,6 +5647,17 @@ sidebar:
           data-introduced: ''
       - title: Google Cloud system metadata (single-node)
         entries:
+        - title: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
+          url: "/cvo/get-gcp-vsa-metadata-workerpools.html"
+          swagger-title: GET /gcp/vsa/metadata/workerPools
+          data-api-method: GET
+          data-api-path: "/gcp/vsa/metadata/workerPools"
+          data-summary: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP
+            system
+          data-deprecated: false
+          data-category: Google Cloud system metadata (single-node)
+          data-tag-description: ''
+          data-introduced: ''
         - title: Retrieve Google Cloud encryption keys for a region
           url: "/cvo/get-gcp-vsa-metadata-gcp-encryption-keys.html"
           swagger-title: GET /gcp/vsa/metadata/gcp-encryption-keys
@@ -5740,17 +5806,6 @@ sidebar:
           data-api-method: GET
           data-api-path: "/gcp/vsa/metadata/packages"
           data-summary: Retrieve the packages configuration
-          data-deprecated: false
-          data-category: Google Cloud system metadata (single-node)
-          data-tag-description: ''
-          data-introduced: ''
-        - title: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
-          url: "/cvo/get-gcp-ha-metadata-workerpools.html"
-          swagger-title: GET /gcp/ha/metadata/workerPools
-          data-api-method: GET
-          data-api-path: "/gcp/ha/metadata/workerPools"
-          data-summary: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP
-            system
           data-deprecated: false
           data-category: Google Cloud system metadata (single-node)
           data-tag-description: ''
@@ -8435,6 +8490,16 @@ sidebar:
           data-introduced: ''
       - title: 'User management authentication '
         entries:
+        - title: Retrieve a user representation with roles
+          url: "/cvo/get-auth-v4-current-user.html"
+          swagger-title: GET /auth/v4/current-user
+          data-api-method: GET
+          data-api-path: "/auth/v4/current-user"
+          data-summary: Retrieve a NetApp Console user representation with roles
+          data-deprecated: false
+          data-category: 'User management authentication '
+          data-tag-description: ''
+          data-introduced: ''
         - title: Sign out of the NetApp Console
           url: "/cvo/post-auth-logout.html"
           swagger-title: POST /auth/logout
@@ -8473,82 +8538,6 @@ sidebar:
           data-summary: Sign in to the NetApp Console
           data-deprecated: false
           data-category: 'User management authentication '
-          data-tag-description: ''
-          data-introduced: ''
-      - title: User management operations - authentication operations
-        entries:
-        - title: Retrieves a representation of the current user with the associated
-            roles.
-          url: "/cvo/get-auth-v4-current-user.html"
-          swagger-title: GET /auth/v4/current-user
-          data-api-method: GET
-          data-api-path: "/auth/v4/current-user"
-          data-summary: Retrieves a representation of the current user with the associated
-            roles.
-          data-deprecated: false
-          data-category: User management operations - authentication operations
-          data-tag-description: ''
-          data-introduced: ''
-        - title: Resizes the volume and the respective Azure VMware Solution (AVS)
-            DataStore.
-          url: "/cvo/put-azure-ha-volumes-storage-vms-volumes-resize-avs-ds.html"
-          swagger-title: PUT /azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/resize-avs-ds
-          data-api-method: PUT
-          data-api-path: "/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/resize-avs-ds"
-          data-summary: Resizes the volume and the respective Azure VMware Solution
-            (AVS) DataStore.
-          data-deprecated: false
-          data-category: User management operations - authentication operations
-          data-tag-description: ''
-          data-introduced: ''
-        - title: Returns capacity-based bring your own license (BYOL) license details
-            for a dark site using local database and license...
-          url: "/cvo/get-working-environments-by-capacity-byol-details-v2.html"
-          swagger-title: GET /working-environments/by-capacity-byol-details-v2
-          data-api-method: GET
-          data-api-path: "/working-environments/by-capacity-byol-details-v2"
-          data-summary: Returns capacity-based bring your own license (BYOL) license
-            details for a dark site using local database and license service data.
-            Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.
-          data-deprecated: false
-          data-category: User management operations - authentication operations
-          data-tag-description: ''
-          data-introduced: ''
-        - title: Triggers darksite capacity metering report generation and returns
-            the full report output.
-          url: "/cvo/post-working-environments-metering-report.html"
-          swagger-title: POST /working-environments/metering-report
-          data-api-method: POST
-          data-api-path: "/working-environments/metering-report"
-          data-summary: Triggers darksite capacity metering report generation and
-            returns the full report output.
-          data-deprecated: false
-          data-category: User management operations - authentication operations
-          data-tag-description: ''
-          data-introduced: ''
-        - title: Updates IOPS and throughput for the disks in an existing aggregate.
-            At least one of the parameters is required.
-          url: "/cvo/put-gcp-vsa-aggregates-.html"
-          swagger-title: PUT /gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}
-          data-api-method: PUT
-          data-api-path: "/gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}"
-          data-summary: Updates IOPS and throughput for the disks in an existing aggregate.
-            At least one of the parameters is required.
-          data-deprecated: false
-          data-category: User management operations - authentication operations
-          data-tag-description: ''
-          data-introduced: ''
-        - title: 'changeDisksIopsAndThroughput_1: Updates IOPS and throughput for
-            the disks in an existing aggregate.'
-          url: "/cvo/put-gcp-ha-aggregates-.html"
-          swagger-title: PUT /gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}
-          data-api-method: PUT
-          data-api-path: "/gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}"
-          data-summary: 'changeDisksIopsAndThroughput_1: Updates IOPS and throughput
-            for the disks in an existing aggregate. At least one of the parameters
-            is required.'
-          data-deprecated: false
-          data-category: User management operations - authentication operations
           data-tag-description: ''
           data-introduced: ''
   - title: Accounts (tenancy)

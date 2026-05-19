@@ -1,12 +1,12 @@
 ---
 sidebar: sidebar
 api: true
-explorer: true
+explorer: false
 permalink: 'cvo/put-azure-ha-volumes-storage-vms-volumes-resize-avs-ds.html'
-summary: 'Resizes the volume and the respective Azure VMware Solution (AVS) DataStore.'
+summary: 'Resize an Azure volume and the respective AVS DataStore with Cloud Volumes ONTAP'
 ---
 
-= Resizes the volume and the respective Azure VMware Solution (AVS) DataStore.
+= Resize an Azure volume and the respective AVS DataStore with Cloud Volumes ONTAP
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/resize-avs-ds`#
 

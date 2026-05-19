@@ -1,12 +1,12 @@
 ---
 sidebar: sidebar
 api: true
-explorer: true
+explorer: false
 permalink: 'cvo/get-auth-v4-current-user.html'
-summary: 'Retrieves a representation of the current user with the associated roles.'
+summary: 'Retrieve a NetApp Console user representation with roles'
 ---
 
-= Retrieves a representation of the current user with the associated roles.
+= Retrieve a NetApp Console user representation with roles
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/auth/v4/current-user`#
 
