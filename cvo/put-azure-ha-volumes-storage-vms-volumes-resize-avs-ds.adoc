@@ -29,7 +29,7 @@ Resizes the volume and the respective Azure VMware Solution (AVS) DataStore.
 |string
 |path
 |True
-a|The system ID
+a|The public ID of the system
 
 
 |svmName
