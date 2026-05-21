@@ -5186,13 +5186,13 @@ sidebar:
           data-introduced: ''
       - title: Common system operations
         entries:
-        - title: Retrieve capacity-based BYOL license details for a dark site
+        - title: Retrieve capacity-based BYOL license metering details
           url: "/cvo/get-working-environments-by-capacity-byol-details-v2.html"
           swagger-title: GET /working-environments/by-capacity-byol-details-v2
           data-api-method: GET
           data-api-path: "/working-environments/by-capacity-byol-details-v2"
-          data-summary: Retrieve capacity-based BYOL license details for a NetApp
-            Console dark site
+          data-summary: Retrieve Cloud Volumes ONTAP capacity-based BYOL license metering
+            details
           data-deprecated: false
           data-category: Common system operations
           data-tag-description: ''

@@ -3,10 +3,10 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-working-environments-by-capacity-byol-details-v2.html'
-summary: 'Retrieve capacity-based BYOL license details for a NetApp Console dark site'
+summary: 'Retrieve Cloud Volumes ONTAP capacity-based BYOL license metering details'
 ---
 
-= Retrieve capacity-based BYOL license details for a NetApp Console dark site
+= Retrieve Cloud Volumes ONTAP capacity-based BYOL license metering details
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/by-capacity-byol-details-v2`#
 
