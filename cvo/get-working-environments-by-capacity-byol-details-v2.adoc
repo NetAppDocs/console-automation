@@ -12,7 +12,7 @@ summary: 'Retrieve capacity-based BYOL license details for a NetApp Console dark
 
 
 
-Returns capacity-based bring your own license (BYOL) license details for a dark site using local database and license service data. Mirrors the SaaS-MP by-capacity-byol-details-v2 response structure.
+Returns capacity-based bring your own license (BYOL) license metering details.
 
 
 == Error
