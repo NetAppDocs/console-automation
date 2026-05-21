@@ -71,7 +71,7 @@ a|Private cloud cluster name
 |resourceGroup
 |string
 |True
-a|Private cloud resource group name
+a|Private cloud resourceGroup name
 
 
 |===

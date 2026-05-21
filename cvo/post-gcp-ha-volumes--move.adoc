@@ -71,13 +71,13 @@ a|Target aggregate number of disks to add
 |createTargetAggregate
 |boolean
 |True
-a|Indicates a new target aggregate
+a|Specifies if the aggregate is a new target aggregate
 
 
 |newDiskTypeName
 |string
 |False
-a|New volume disk type
+a|New disk type for the volume
 
 
 |newCapacityTier

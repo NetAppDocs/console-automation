@@ -74,13 +74,13 @@ a|Private cloud cluster name
 |resourceGroup
 |string
 |True
-a|Private cloud resource group name
+a|Private cloud resourceGroup name
 
 
 |dataStoreName
 |string
 |True
-a|Private cloud data store name
+a|Private cloud DataStore name
 
 
 |dataStoreSize

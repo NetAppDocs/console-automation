@@ -778,7 +778,7 @@ a|Initiators
 |igroupName
 |string
 |False
-a|Initiator group name
+a|Igroup name
 
 
 |===
@@ -809,7 +809,7 @@ a|
 |igroups
 |array[string]
 |False
-a|Initiator groups
+a|Igroups
 
 
 |===
