@@ -29,12 +29,14 @@ Adds an iSCSI initiator.
 |aliasName
 |string
 |True
-a|
+a|Initiator alias
+
 
 |iqn
 |string
 |True
-a|
+a|Initiator IQN
+
 
 |===
 

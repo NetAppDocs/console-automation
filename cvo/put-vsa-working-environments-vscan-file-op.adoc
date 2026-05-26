@@ -47,7 +47,8 @@ a|
 |vscanFileOp
 |string
 |False
-a|
+a|Vscan file-operation
+
 
 |===
 

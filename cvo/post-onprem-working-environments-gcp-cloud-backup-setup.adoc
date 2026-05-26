@@ -47,27 +47,32 @@ a|
 |project
 |string
 |False
-a|
+a|Google Cloud project ID. By default, the NetApp Console project.
+
 
 |region
 |string
 |False
-a|
+a|The region. By default, the NetApp Console region.
+
 
 |accessKey
 |string
 |False
-a|
+a|Google Cloud access key used by NetApp Backup and Recovery.
+
 
 |secretKey
 |string
 |False
-a|
+a|Google Cloud secret key used by NetApp Backup and Recovery.
+
 
 |ipSpace
 |string
 |False
-a|
+a|IPspace
+
 
 |===
 

@@ -47,7 +47,8 @@ a|
 |writingSpeedState
 |string
 |False
-a|
+a|Writing speed state
+
 
 |===
 

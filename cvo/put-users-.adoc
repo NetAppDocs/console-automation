@@ -47,27 +47,32 @@ a|
 |firstName
 |string
 |False
-a|
+a|The first name of the user
+
 
 |lastName
 |string
 |False
-a|
+a|The last name of the user
+
 
 |email
 |string
 |False
-a|
+a|The email address of the user
+
 
 |ldapUserName
 |string
 |False
-a|
+a|Active Directory user name
+
 
 |notificationsOptIn
 |boolean
 |False
-a|
+a|Email notifications opt-in
+
 
 |===
 
@@ -101,42 +106,50 @@ Status: Default, Default response
 |publicId
 |string
 |True
-a|
+a|User public ID
+
 
 |assignedWorkingEnvironments
 |array[string]
 |True
-a|
+a|List of public IDs for all of the systems visible to the user
+
 
 |firstName
 |string
 |True
-a|
+a|The first name of the user
+
 
 |lastName
 |string
 |True
-a|
+a|The last name of the user
+
 
 |email
 |string
 |True
-a|
+a|The email address of the user
+
 
 |roleId
 |string
 |True
-a|
+a|Role ID of the user
+
 
 |tenantId
 |string
 |True
-a|
+a|Tenant ID of the user
+
 
 |createdWorkingEnvironments
 |array[link:#UserWorkingEnvironmentResponse[UserWorkingEnvironmentResponse]]
 |True
-a|
+a|List of all systems created by the user
+
 
 |azureCredentials
 |link:#AzureCredentials[AzureCredentials]
@@ -151,22 +164,26 @@ a|
 |isLdap
 |boolean
 |True
-a|
+a|Indicates whether the user is an LDAP user
+
 
 |ldapUserName
 |string
 |True
-a|
+a|The LDAP user name
+
 
 |notificationsOptIn
 |boolean
 |True
-a|
+a|Notification Opt-In
+
 
 |permissions
 |array[string]
 |True
-a|
+a|Permissions
+
 
 |===
 
@@ -192,17 +209,20 @@ UserWorkingEnvironmentResponse
 |publicId
 |string
 |True
-a|
+a|System public ID
+
 
 |name
 |string
 |True
-a|
+a|System name
+
 
 |workingEnvironmentType
 |string
 |True
-a|
+a|System type
+
 
 |===
 
@@ -255,12 +275,14 @@ CloudSyncLicenseInformation
 |cloudSyncLicenseTypes
 |array[string]
 |False
-a|
+a|Cloud sync license types
+
 
 |licenseExpirationDate
 |integer
 |False
-a|
+a|Cloud sync license expiration date
+
 
 |===
 

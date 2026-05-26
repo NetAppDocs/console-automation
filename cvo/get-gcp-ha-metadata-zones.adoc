@@ -107,7 +107,8 @@ GcpZoneResponse
 |name
 |string
 |True
-a|
+a|Zone Name
+
 
 |===
 

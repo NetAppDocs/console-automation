@@ -47,17 +47,20 @@ a|
 |activeDirectoryUsername
 |string
 |False
-a|
+a|Active Directory username
+
 
 |activeDirectoryPassword
 |string
 |False
-a|
+a|Active Directory password
+
 
 |svmName
 |string
 |False
-a|
+a|SVM name
+
 
 |===
 

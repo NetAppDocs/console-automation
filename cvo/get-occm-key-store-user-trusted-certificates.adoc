@@ -32,12 +32,14 @@ Status: Default, Default response
 |id
 |string
 |True
-a|
+a|Specifies the ID
+
 
 |status
 |string
 |True
-a|
+a|Status
+
 
 |certificateInfo
 |link:#CertificateResponse[CertificateResponse]

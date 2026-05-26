@@ -1,0 +1,75 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-gcp-vsa-aggregates-.html'
+summary: 'Update IOPS and throughput for the disks in an existing Cloud Volumes ONTAP aggregate'
+---
+
+= Update IOPS and throughput for the disks in an existing Cloud Volumes ONTAP aggregate
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}`#
+
+
+
+Updates IOPS and throughput for the disks in an existing aggregate. At least one of the parameters is required.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|The public ID of the system
+
+
+|aggregateName
+|string
+|path
+|True
+a|The name of the aggregate to update
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|iops
+|integer
+|False
+a|New IOPS
+
+
+|throughput
+|integer
+|False
+a|New Throughput
+
+
+|===
+
+
+== Error
+
+```
+Status: Default, Default response
+```
+

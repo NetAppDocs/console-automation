@@ -29,22 +29,26 @@ Creates a new volume.
 |workingEnvironmentId
 |string
 |True
-a|
+a|Target system ID
+
 
 |svmName
 |string
 |True
-a|
+a|SVM name
+
 
 |aggregateName
 |string
 |False
-a|
+a|Aggregate in which to create the volume
+
 
 |name
 |string
 |False
-a|
+a|Volume name, unique within the SVM
+
 
 |size
 |link:#PositiveCapacity[PositiveCapacity]
@@ -59,7 +63,8 @@ a|
 |snapshotPolicyName
 |string
 |True
-a|
+a|Snapshot policy name
+
 
 |exportPolicyInfo
 |link:#ExportPolicyInfo[ExportPolicyInfo]
@@ -79,27 +84,32 @@ a|
 |enableThinProvisioning
 |boolean
 |True
-a|
+a|Enable thin provisioning on the volume
+
 
 |enableCompression
 |boolean
 |True
-a|
+a|Enable compression on the volume
+
 
 |enableDeduplication
 |boolean
 |True
-a|
+a|Enable deduplication on the volume
+
 
 |syncToS3
 |boolean
 |True
-a|
+a|Add a cloud sync relationship
+
 
 |volumeTags
 |array[link:#VolumeTags[VolumeTags]]
 |True
-a|
+a|Optionally, provide key-value pairs with which to tag the ONTAP volume using the App Template service.
+
 
 |flexGroupVolumeInfo
 |link:#FlexGroupVolumeInfo[FlexGroupVolumeInfo]
@@ -136,12 +146,14 @@ PositiveCapacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -160,12 +172,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -173,6 +187,9 @@ a|
 [#index]
 [.api-collapsible-fifth-title]
 index
+
+Export policy rule index
+
 
 
 [#ExportPolicyRule]
@@ -189,27 +206,32 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|
+a|Export policy rule index
+
 
 |ruleAccessControl
 |string
 |True
-a|
+a|Export policy rule access control
+
 
 |ips
 |array[string]
 |True
-a|
+a|Export policy rule list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy rule protocol
+
 
 |superUser
 |boolean
 |True
-a|
+a|Export policy rule super user access
+
 
 |===
 
@@ -228,22 +250,26 @@ ExportPolicyInfo
 |policyType
 |string
 |False
-a|
+a|Export policy type
+
 
 |ips
 |array[string]
 |False
-a|
+a|Custom export policy list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy protocol
+
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |False
-a|
+a|Export policy rules
+
 
 |===
 
@@ -262,12 +288,14 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|
+a|CIFS share permission type
+
 
 |users
 |array[string]
 |True
-a|
+a|List of users with the permission
+
 
 |===
 
@@ -286,7 +314,8 @@ CreateCifsShareInfoRequest
 |shareName
 |string
 |False
-a|
+a|Share name
+
 
 |accessControl
 |link:#CifsShareUserPermissions[CifsShareUserPermissions]
@@ -310,12 +339,14 @@ IgroupCreationRequest
 |initiators
 |array[string]
 |False
-a|
+a|Initiators
+
 
 |igroupName
 |string
 |False
-a|
+a|Igroup name
+
 
 |===
 
@@ -334,7 +365,8 @@ CreateIscsiInfoRequest
 |osName
 |string
 |False
-a|
+a|Operating system
+
 
 |igroupCreationRequest
 |link:#IgroupCreationRequest[IgroupCreationRequest]
@@ -344,7 +376,8 @@ a|
 |igroups
 |array[string]
 |False
-a|
+a|Igroups
+
 
 |===
 
@@ -387,12 +420,14 @@ FlexGroupVolumeInfo
 |aggregateList
 |array[string]
 |False
-a|
+a|Names of aggregates for the FlexGroup volume
+
 
 |numberOfConstituents
 |integer
 |False
-a|
+a|Number of constituents for the FlexGroup volume
+
 
 |===
 

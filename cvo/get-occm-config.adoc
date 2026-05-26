@@ -94,6 +94,11 @@ a|
 |True
 a|
 
+|enableColdDataReportingOnStartup
+|boolean
+|False
+a|
+
 |useVolumeViewAsDefault
 |boolean
 |False
@@ -196,6 +201,11 @@ a|
 
 |userPrivateDnsZoneSettings
 |link:#UserPrivateDnsZoneSettings[UserPrivateDnsZoneSettings]
+|False
+a|
+
+|proxyMode
+|string
 |False
 a|
 

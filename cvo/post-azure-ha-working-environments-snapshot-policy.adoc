@@ -47,12 +47,14 @@ a|
 |snapshotPolicyName
 |string
 |False
-a|
+a|Snapshot policy name
+
 
 |schedules
 |array[link:#SnapshotPolicyScheduleRequest[SnapshotPolicyScheduleRequest]]
 |True
-a|
+a|Snapshot policy schedules
+
 
 |===
 
@@ -96,12 +98,14 @@ SnapshotPolicyScheduleRequest
 |scheduleType
 |string
 |True
-a|
+a|Snapshot policy schedule type
+
 
 |retention
 |integer
 |True
-a|
+a|Snapshot policy retention
+
 
 |===
 

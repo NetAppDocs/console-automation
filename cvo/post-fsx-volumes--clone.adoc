@@ -59,12 +59,14 @@ a|
 |newVolumeName
 |string
 |True
-a|
+a|New volume name
+
 
 |parentSnapshot
 |string
 |False
-a|
+a|Snapshot name to use for the clone
+
 
 |===
 

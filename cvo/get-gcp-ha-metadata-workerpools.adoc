@@ -29,13 +29,15 @@ Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a
 |string
 |query
 |False
-a|
+a|The project ID to use for the request
+
 
 |region
 |string
 |query
-|False
-a|
+|True
+a|The region in which to list worker pools
+
 
 |===
 

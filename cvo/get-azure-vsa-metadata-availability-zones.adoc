@@ -62,12 +62,14 @@ Status: Default, Default response
 |region
 |string
 |True
-a|
+a|region value
+
 
 |zones
 |array[link:#zones[zones]]
 |True
-a|
+a|Zone values
+
 
 |===
 
@@ -94,6 +96,9 @@ a|
 [#zones]
 [.api-collapsible-fifth-title]
 zones
+
+Zone values
+
 
 
 //end collapsible .Definitions block

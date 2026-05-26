@@ -32,12 +32,14 @@ Status: Default, Default response
 |aliasName
 |string
 |True
-a|
+a|Initiator alias
+
 
 |iqn
 |string
 |True
-a|
+a|Initiator IQN
+
 
 |===
 

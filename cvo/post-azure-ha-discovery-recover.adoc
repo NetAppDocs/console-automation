@@ -49,17 +49,20 @@ a|
 |providerAccount
 |string
 |False
-a|
+a|ID of subscription where the VSA is located
+
 
 |cloudProviderAccount
 |string
 |False
-a|
+a|Cloud provider account
+
 
 |nssAccountId
 |string
 |False
-a|
+a|NetApp Support Site (NSS) account
+
 
 |===
 

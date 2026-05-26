@@ -186,6 +186,16 @@ a|
 |False
 a|
 
+|enableColdDataReportingOnStartup
+|boolean
+|False
+a|
+
+|proxyMode
+|string
+|False
+a|
+
 |===
 
 
@@ -266,6 +276,11 @@ a|
 |autoVsaCapacityManagement
 |boolean
 |True
+a|
+
+|enableColdDataReportingOnStartup
+|boolean
+|False
 a|
 
 |useVolumeViewAsDefault
@@ -370,6 +385,11 @@ a|
 
 |userPrivateDnsZoneSettings
 |link:#UserPrivateDnsZoneSettings[UserPrivateDnsZoneSettings]
+|False
+a|
+
+|proxyMode
+|string
 |False
 a|
 

@@ -56,32 +56,38 @@ Status: Default, Default response
 |dnsDomain
 |string
 |True
-a|
+a|DNS domain name
+
 
 |activeDirectoryDomain
 |string
 |True
-a|
+a|Active Directory domain name
+
 
 |ipAddresses
 |array[string]
 |True
-a|
+a|DNS server IP addresses
+
 
 |netBIOS
 |string
 |True
-a|
+a|CIFS server NetBIOS name
+
 
 |organizationalUnit
 |string
 |True
-a|
+a|Organizational unit for registration
+
 
 |authenticationType
 |string
 |True
-a|
+a|Authentication type
+
 
 |===
 

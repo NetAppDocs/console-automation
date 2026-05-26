@@ -129,42 +129,50 @@ VsaMetadataRequest
 |ontapVersion
 |string
 |True
-a|
+a|ONTAP version
+
 
 |licenseType
 |string
 |True
-a|
+a|License type
+
 
 |instanceType
 |string
 |True
-a|
+a|Instance type
+
 
 |platformSerialNumber
 |string
 |False
-a|
+a|Optional platform serial number
+
 
 |providedLicense
 |string
 |False
-a|
+a|Optional provided license
+
 
 |capacityPackageName
 |string
 |False
-a|
+a|Optional capacity-based package
+
 
 |keyStoneSubscription
 |string
 |False
-a|
+a|Keystone subscription ID
+
 
 |useLatestVersion
 |boolean
 |False
-a|
+a|Use the latest version
+
 
 |===
 

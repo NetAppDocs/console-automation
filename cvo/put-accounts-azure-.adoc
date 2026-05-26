@@ -91,7 +91,7 @@ Status: Default, Default response
 
 |publicId
 |string
-|False
+|True
 a|
 
 |accountName
@@ -121,7 +121,7 @@ a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|False
+|True
 a|
 
 |===
@@ -184,7 +184,8 @@ a|
 |subscription
 |string
 |False
-a|
+a|Subscription
+
 
 |===
 

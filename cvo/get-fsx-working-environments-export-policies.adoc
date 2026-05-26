@@ -95,6 +95,9 @@ a|
 [.api-collapsible-fifth-title]
 index
 
+Export policy rule index
+
+
 
 [#ExportPolicyRule]
 [.api-collapsible-fifth-title]
@@ -110,27 +113,32 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|
+a|Export policy rule index
+
 
 |ruleAccessControl
 |string
 |True
-a|
+a|Export policy rule access control
+
 
 |ips
 |array[string]
 |True
-a|
+a|Export policy rule list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy rule protocol
+
 
 |superUser
 |boolean
 |True
-a|
+a|Export policy rule super user access
+
 
 |===
 

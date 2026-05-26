@@ -74,7 +74,8 @@ a|
 |ebsVolumeType
 |string
 |True
-a|
+a|EBS volume type
+
 
 |vsaMetadata
 |link:#VsaMetadataRequest[VsaMetadataRequest]
@@ -84,7 +85,8 @@ a|
 |dataEncryptionType
 |string
 |True
-a|
+a|Type of encryption to use for this system
+
 
 |ontapEncryptionParameters
 |link:#OntapEncryption[OntapEncryption]
@@ -109,12 +111,14 @@ a|
 |openSecurityGroup
 |link:#openSecurityGroup[openSecurityGroup]
 |False
-a|
+a|Open the security group to all IP ranges
+
 
 |awsTags
 |array[link:#AwsTag[AwsTag]]
 |True
-a|
+a|Optionally, provide up to four key-value pairs with which to tag all AWS entities created by the NetApp Console.
+
 
 |cifsConfigurationRequest
 |link:#CIFSConfigurationRequest[CIFSConfigurationRequest]
@@ -124,57 +128,68 @@ a|
 |optimizedNetworkUtilization
 |boolean
 |False
-a|
+a|Use optimized network utilization
+
 
 |clusterKeyPairName
 |string
 |False
-a|
+a|Support SSH using a key-pair
+
 
 |instanceTenancy
 |string
 |False
-a|
+a|Instance tenancy configuration
+
 
 |failedToCreateWorkingEnvironmentId
 |string
 |False
-a|
+a|Public ID of a failed-to-create system
+
 
 |capacityTier
 |string
 |False
-a|
+a|Capacity tier
+
 
 |iops
 |integer
 |False
-a|
+a|Provisioned IOPS
+
 
 |throughput
 |integer
 |False
-a|
+a|Provisioned throughput
+
 
 |packageName
 |string
 |False
-a|
+a|Pre-configured package name
+
 
 |instanceProfileName
 |string
 |False
-a|
+a|Instance profile name
+
 
 |roleArn
 |string
 |False
-a|
+a|ARN of an optional role to assume
+
 
 |svmName
 |string
 |False
-a|
+a|SVM name
+
 
 |wormRequest
 |link:#WormRequest[WormRequest]
@@ -184,52 +199,62 @@ a|
 |cloudProviderAccount
 |string
 |False
-a|
+a|Cloud provider account
+
 
 |nssAccount
 |string
 |False
-a|
+a|NetApp Support Site (NSS) account
+
 
 |saasSubscriptionId
 |string
 |False
-a|
+a|SaaS subscription ID
+
 
 |backupVolumesToCbs
 |boolean
 |False
-a|
+a|Automatically back up all volumes to Amazon S3
+
 
 |enableCompliance
 |boolean
 |True
-a|
+a|Enable compliance
+
 
 |disableEv
 |boolean
 |False
-a|
+a|Disable Elastic Volume
+
 
 |tierLevel
 |string
 |False
-a|
+a|Tier Level
+
 
 |enableMonitoring
 |boolean
 |True
-a|
+a|Enable monitoring
+
 
 |enableServices
 |array[string]
 |False
-a|
+a|Enable services
+
 
 |writingSpeedState
 |string
 |False
-a|
+a|Writing speed state
+
 
 |subnetId
 |string
@@ -341,7 +366,8 @@ a|
 |activeActions
 |array[string]
 |False
-a|
+a|Actions currently being performed on this system
+
 
 |replicationProperties
 |link:#ReplicationProperties[ReplicationProperties]
@@ -553,12 +579,14 @@ PositiveCapacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -577,12 +605,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -590,6 +620,9 @@ a|
 [#index]
 [.api-collapsible-fifth-title]
 index
+
+Export policy rule index
+
 
 
 [#ExportPolicyRule]
@@ -606,27 +639,32 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|
+a|Export policy rule index
+
 
 |ruleAccessControl
 |string
 |True
-a|
+a|Export policy rule access control
+
 
 |ips
 |array[string]
 |True
-a|
+a|Export policy rule list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy rule protocol
+
 
 |superUser
 |boolean
 |True
-a|
+a|Export policy rule super user access
+
 
 |===
 
@@ -645,22 +683,26 @@ ExportPolicyInfo
 |policyType
 |string
 |False
-a|
+a|Export policy type
+
 
 |ips
 |array[string]
 |False
-a|
+a|Custom export policy list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy protocol
+
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |False
-a|
+a|Export policy rules
+
 
 |===
 
@@ -679,12 +721,14 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|
+a|CIFS share permission type
+
 
 |users
 |array[string]
 |True
-a|
+a|List of users with the permission
+
 
 |===
 
@@ -703,7 +747,8 @@ CreateCifsShareInfoRequest
 |shareName
 |string
 |False
-a|
+a|Share name
+
 
 |accessControl
 |link:#CifsShareUserPermissions[CifsShareUserPermissions]
@@ -727,12 +772,14 @@ IgroupCreationRequest
 |initiators
 |array[string]
 |False
-a|
+a|Initiators
+
 
 |igroupName
 |string
 |False
-a|
+a|Igroup name
+
 
 |===
 
@@ -751,7 +798,8 @@ CreateIscsiInfoRequest
 |osName
 |string
 |False
-a|
+a|Operating system
+
 
 |igroupCreationRequest
 |link:#IgroupCreationRequest[IgroupCreationRequest]
@@ -761,7 +809,8 @@ a|
 |igroups
 |array[string]
 |False
-a|
+a|Igroups
+
 
 |===
 
@@ -804,7 +853,8 @@ VsaVolumeOnNewVsaCreateRequest
 |name
 |string
 |False
-a|
+a|Volume name, unique within the SVM
+
 
 |size
 |link:#PositiveCapacity[PositiveCapacity]
@@ -839,27 +889,32 @@ a|
 |enableThinProvisioning
 |boolean
 |False
-a|
+a|Enable thin provisioning on the volume
+
 
 |enableCompression
 |boolean
 |False
-a|
+a|Enable compression on the volume
+
 
 |enableDeduplication
 |boolean
 |False
-a|
+a|Enable deduplication on the volume
+
 
 |tieringPolicy
 |string
 |False
-a|
+a|Tiering policy
+
 
 |junctionPath
 |string
 |False
-a|
+a|Junction path
+
 
 |qualityOfService
 |link:#VolumeQualityOfService[VolumeQualityOfService]
@@ -883,42 +938,50 @@ VsaMetadataRequest
 |ontapVersion
 |string
 |True
-a|
+a|ONTAP version
+
 
 |licenseType
 |string
 |True
-a|
+a|License type
+
 
 |instanceType
 |string
 |True
-a|
+a|Instance type
+
 
 |platformSerialNumber
 |string
 |False
-a|
+a|Optional platform serial number
+
 
 |providedLicense
 |string
 |False
-a|
+a|Optional provided license
+
 
 |capacityPackageName
 |string
 |False
-a|
+a|Optional capacity-based package
+
 
 |keyStoneSubscription
 |string
 |False
-a|
+a|Keystone subscription ID
+
 
 |useLatestVersion
 |boolean
 |False
-a|
+a|Use the latest version
+
 
 |===
 
@@ -1079,7 +1142,8 @@ a|
 |failoverMode
 |string
 |False
-a|
+a|HA failover mode
+
 
 |mediatorProxy
 |link:#MediatorProxy[MediatorProxy]
@@ -1112,6 +1176,9 @@ a|
 [#openSecurityGroup]
 [.api-collapsible-fifth-title]
 openSecurityGroup
+
+Open the security group to all IP ranges
+
 
 
 [#AwsTag]
@@ -1152,42 +1219,50 @@ CIFSConfigurationRequest
 |dnsDomain
 |string
 |False
-a|
+a|DNS domain name
+
 
 |ipAddresses
 |array[string]
 |True
-a|
+a|DNS server IP addresses
+
 
 |netBIOS
 |string
 |True
-a|
+a|CIFS server NetBIOS name
+
 
 |organizationalUnit
 |string
 |True
-a|
+a|Organizational unit for registration
+
 
 |activeDirectoryDomain
 |string
 |True
-a|
+a|Active Directory domain name
+
 
 |activeDirectoryUsername
 |string
 |True
-a|
+a|Active Directory username
+
 
 |activeDirectoryPassword
 |string
 |True
-a|
+a|Active Directory password
+
 
 |svmName
 |string
 |False
-a|
+a|SVM name
+
 
 |===
 
@@ -1206,12 +1281,14 @@ WormRetentionPeriod
 |length
 |integer
 |True
-a|
+a|Length
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -1301,6 +1378,9 @@ a|
 [#tags]
 [.api-collapsible-fifth-title]
 tags
+
+Instance tags
+
 Hash mapping strings to string
 [cols=4*,options=header]
 |===
@@ -1336,97 +1416,116 @@ InstanceResponse
 |id
 |string
 |True
-a|
+a|Instance ID
+
 
 |name
 |string
 |True
-a|
+a|Instance name
+
 
 |instanceType
 |string
 |True
-a|
+a|Instance type
+
 
 |state
 |string
 |True
-a|
+a|Instance state
+
 
 |publicIpAddress
 |string
 |True
-a|
+a|Public IP address that is assigned to the instance
+
 
 |privateIpAddress
 |string
 |True
-a|
+a|Private IP address that is assigned to the instance
+
 
 |publicDnsName
 |string
 |True
-a|
+a|Public DNS
+
 
 |privateDnsName
 |string
 |True
-a|
+a|Private DNS name
+
 
 |imageId
 |string
 |True
-a|
+a|Image ID
+
 
 |subnetId
 |string
 |True
-a|
+a|Subnet ID
+
 
 |availabilityZone
 |string
 |True
-a|
+a|Availability zone
+
 
 |isVsaInstance
 |boolean
 |True
-a|
+a|Indicates if the instance is a Cloud Volumes ONTAP instance
+
 
 |isOCCMInstance
 |boolean
 |True
-a|
+a|Indicates if the instance is a NetApp Console instance
+
 
 |tags
 |link:#tags[tags]
 |True
-a|
+a|Instance tags
+
 
 |productCode
 |string
 |True
-a|
+a|Product code
+
 
 |tenancy
 |string
 |True
-a|
+a|Instance Tenancy
+
 
 |placementGroup
 |string
 |True
-a|
+a|Placement group
+
 
 |keyPairName
 |string
 |True
-a|
+a|Key pair
+
 
 |instanceProfileId
 |string
 |False
-a|
+a|Instance profile ID
+
 
 |===
 
@@ -1445,12 +1544,14 @@ VpcTagResponse
 |key
 |string
 |True
-a|
+a|VPC tag key
+
 
 |value
 |string
 |True
-a|
+a|VPC tag value
+
 
 |===
 
@@ -1469,27 +1570,32 @@ VpcBasicResponse
 |vpcId
 |string
 |True
-a|
+a|The VPC identifier
+
 
 |state
 |string
 |True
-a|
+a|The state of the VPC
+
 
 |cidrBlock
 |string
 |True
-a|
+a|VPC Classless Inter-Domain Routing (CIDR) block
+
 
 |tags
 |array[link:#VpcTagResponse[VpcTagResponse]]
 |True
-a|
+a|VPC tags
+
 
 |default
 |boolean
 |True
-a|
+a|Indicates whether the VPC is the default
+
 
 |===
 
@@ -1778,32 +1884,38 @@ LifResponse
 |ip
 |string
 |True
-a|
+a|LIF IP address
+
 
 |netmask
 |string
 |True
-a|
+a|LIF netmask
+
 
 |lifType
 |string
 |True
-a|
+a|LIF type
+
 
 |dataProtocols
 |array[string]
 |True
-a|
+a|List of supported protocols
+
 
 |nodeName
 |string
 |True
-a|
+a|Node name
+
 
 |privateIp
 |boolean
 |True
-a|
+a|Specifies whether the LIF IP address is a private address
+
 
 |===
 
@@ -1822,7 +1934,8 @@ VsaLicense
 |name
 |string
 |True
-a|
+a|License name
+
 
 |capacityLimit
 |link:#Capacity[Capacity]
@@ -2255,7 +2368,8 @@ RaidInfoForEvAggregate
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed for the RAID group
+
 
 |diskSize
 |link:#Capacity[Capacity]
@@ -2289,7 +2403,8 @@ a|
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
 |False
-a|
+a|New RAID information
+
 
 |totalEvDisks
 |integer
@@ -2546,12 +2661,14 @@ ActionRequiredParameters
 |aggregateName
 |string
 |True
-a|
+a|Aggregate name
+
 
 |numOfDisks
 |integer
 |True
-a|
+a|Number of disks relevant to the action
+
 
 |totalCapacity
 |link:#Capacity[Capacity]
@@ -2566,7 +2683,8 @@ a|
 |volumeNames
 |array[string]
 |True
-a|
+a|A limited list of volumes on the aggregate
+
 
 |maxCapacity
 |link:#Capacity[Capacity]
@@ -2576,12 +2694,14 @@ a|
 |licenseExpiryDate
 |integer
 |True
-a|
+a|License expiry date
+
 
 |serialNumber
 |string
 |True
-a|
+a|Platform serial number
+
 
 |volumeMoveParameters
 |link:#VolumeMoveParameters[VolumeMoveParameters]
@@ -2591,7 +2711,8 @@ a|
 |workingEnvironmentId
 |string
 |True
-a|
+a|System public ID
+
 
 |licenseParameters
 |link:#ChangeLicenseParameters[ChangeLicenseParameters]
@@ -2606,17 +2727,20 @@ a|
 |instances
 |array[link:#InstanceNameIdAndType[InstanceNameIdAndType]]
 |True
-a|
+a|Instances information
+
 
 |moreInfo
 |string
 |False
-a|
+a|More information
+
 
 |providerVolumeType
 |string
 |False
-a|
+a|Provider volume type
+
 
 |volumeInfo
 |link:#VolumeInfo[VolumeInfo]
@@ -2626,17 +2750,20 @@ a|
 |currentInstanceType
 |string
 |False
-a|
+a|Current instance type
+
 
 |isComposite
 |boolean
 |True
-a|
+a|Indicates if the aggregate is a composite aggregate
+
 
 |isCapacityBased
 |boolean
 |True
-a|
+a|Indicates if the license type is a  capacity-based license type
+
 
 |===
 
@@ -2655,7 +2782,8 @@ ActionRequired
 |actionType
 |string
 |True
-a|
+a|The type of the action
+
 
 |parameters
 |link:#ActionRequiredParameters[ActionRequiredParameters]
@@ -2665,7 +2793,8 @@ a|
 |severity
 |string
 |True
-a|
+a|Action Severity
+
 
 |===
 
@@ -2777,12 +2906,14 @@ PolicySchedule
 |frequency
 |string
 |True
-a|
+a|Frequency
+
 
 |retention
 |integer
 |True
-a|
+a|Retention
+
 
 |===
 
@@ -2801,17 +2932,20 @@ SnapshotPolicy
 |name
 |string
 |True
-a|
+a|Name
+
 
 |schedules
 |array[link:#PolicySchedule[PolicySchedule]]
 |True
-a|
+a|Schedules
+
 
 |description
 |string
 |True
-a|
+a|Description
+
 
 |===
 
@@ -2860,12 +2994,14 @@ a|
 |ver3Enabled
 |boolean
 |True
-a|
+a|NFS Version 3 enabled
+
 
 |ver4Enabled
 |boolean
 |True
-a|
+a|NFS Version 4 enabled
+
 
 |===
 

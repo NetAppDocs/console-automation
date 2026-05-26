@@ -139,12 +139,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -163,7 +165,8 @@ WorkingEnvironmentsInformation
 |regionsCount
 |integer
 |False
-a|
+a|Number of regions for which systems exist over this tenant
+
 
 |totalReservedSize
 |link:#Capacity[Capacity]
@@ -173,7 +176,8 @@ a|
 |workingEnvironmentsCount
 |integer
 |False
-a|
+a|Number of systems created over this tenant
+
 
 |===
 

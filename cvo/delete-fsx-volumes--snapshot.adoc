@@ -59,7 +59,8 @@ a|
 |snapshotName
 |array[string]
 |True
-a|
+a|Snapshot name
+
 
 |===
 

@@ -228,32 +228,38 @@ LifResponse
 |ip
 |string
 |True
-a|
+a|LIF IP address
+
 
 |netmask
 |string
 |True
-a|
+a|LIF netmask
+
 
 |lifType
 |string
 |True
-a|
+a|LIF type
+
 
 |dataProtocols
 |array[string]
 |True
-a|
+a|List of supported protocols
+
 
 |nodeName
 |string
 |True
-a|
+a|Node name
+
 
 |privateIp
 |boolean
 |True
-a|
+a|Specifies whether the LIF IP address is a private address
+
 
 |===
 
@@ -331,12 +337,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -355,7 +363,8 @@ VsaLicense
 |name
 |string
 |True
-a|
+a|License name
+
 
 |capacityLimit
 |link:#Capacity[Capacity]

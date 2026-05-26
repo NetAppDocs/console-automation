@@ -66,14 +66,14 @@ a|
 |True
 a|
 
-|parts
-|array[link:#InputPart[InputPart]]
-|True
-a|
-
 |preamble
 |string
 |False
+a|
+
+|parts
+|array[link:#InputPart[InputPart]]
+|True
 a|
 
 |===
@@ -161,7 +161,7 @@ mediaType
 
 |type
 |string
-|False
+|True
 a|
 
 |subtype
@@ -176,7 +176,7 @@ a|
 
 |wildcardSubtype
 |boolean
-|True
+|False
 a|
 
 |wildcardType
@@ -217,8 +217,8 @@ InputPart
 |Required
 |Description
 
-|bodyAsString
-|string
+|contentTypeFromMessage
+|boolean
 |True
 a|
 
@@ -227,8 +227,8 @@ a|
 |True
 a|
 
-|contentTypeFromMessage
-|boolean
+|bodyAsString
+|string
 |False
 a|
 

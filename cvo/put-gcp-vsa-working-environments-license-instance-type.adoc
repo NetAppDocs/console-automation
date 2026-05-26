@@ -47,12 +47,14 @@ a|
 |instanceType
 |string
 |True
-a|
+a|New instance type
+
 
 |licenseType
 |string
 |True
-a|
+a|New license type
+
 
 |===
 

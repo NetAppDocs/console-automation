@@ -172,7 +172,8 @@ GcpZoneResponse
 |name
 |string
 |True
-a|
+a|Zone Name
+
 
 |===
 
@@ -191,27 +192,34 @@ GcpSubnetResponse
 |ipCidrRange
 |string
 |True
-a|
+a|Classless Inter-Domain Routing (CIDR)
+
 
 |name
 |string
 |True
-a|
+a|Subnet name
+
 
 |path
 |string
 |True
-a|
+a|Subnet path
+
 
 |availableIps
 |integer
 |True
-a|
+a|The number of available IP addresses on the subnet
+
 
 |minimumRequiredIps
 |integer
 |True
-a|
+a|The minimum needed IP addresses for the Cloud Volumes ONTAP system creation
+
+* format: int32
+
 
 |===
 
@@ -230,17 +238,20 @@ GcpFirewallResponse
 |name
 |string
 |True
-a|
+a|Firewall Name
+
 
 |vpc
 |string
 |True
-a|
+a|VPC
+
 
 |targetServiceAccount
 |array[string]
 |True
-a|
+a|Target Service Account
+
 
 |===
 
@@ -259,17 +270,20 @@ GcpVirtualNetworkResponse
 |name
 |string
 |True
-a|
+a|Virtual Network Name
+
 
 |subnets
 |array[link:#GcpSubnetResponse[GcpSubnetResponse]]
 |True
-a|
+a|Subnets
+
 
 |firewalls
 |array[link:#GcpFirewallResponse[GcpFirewallResponse]]
 |True
-a|
+a|Firewalls
+
 
 |===
 

@@ -32,17 +32,20 @@ Status: Default, Default response
 |name
 |string
 |True
-a|
+a|Name
+
 
 |schedules
 |array[link:#PolicySchedule[PolicySchedule]]
 |True
-a|
+a|Schedules
+
 
 |description
 |string
 |True
-a|
+a|Description
+
 
 |===
 
@@ -81,12 +84,14 @@ PolicySchedule
 |frequency
 |string
 |True
-a|
+a|Frequency
+
 
 |retention
 |integer
 |True
-a|
+a|Retention
+
 
 |===
 

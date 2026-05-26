@@ -79,12 +79,14 @@ WormRetentionPeriod
 |length
 |integer
 |True
-a|
+a|Length
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 

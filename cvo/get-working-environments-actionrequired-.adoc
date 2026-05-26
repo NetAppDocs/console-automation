@@ -92,12 +92,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -116,7 +118,8 @@ RaidInfoForEvAggregate
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed for the RAID group
+
 
 |diskSize
 |link:#Capacity[Capacity]
@@ -150,7 +153,8 @@ a|
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
 |False
-a|
+a|New RAID information
+
 
 |totalEvDisks
 |integer
@@ -407,12 +411,14 @@ ActionRequiredParameters
 |aggregateName
 |string
 |True
-a|
+a|Aggregate name
+
 
 |numOfDisks
 |integer
 |True
-a|
+a|Number of disks relevant to the action
+
 
 |totalCapacity
 |link:#Capacity[Capacity]
@@ -427,7 +433,8 @@ a|
 |volumeNames
 |array[string]
 |True
-a|
+a|A limited list of volumes on the aggregate
+
 
 |maxCapacity
 |link:#Capacity[Capacity]
@@ -437,12 +444,14 @@ a|
 |licenseExpiryDate
 |integer
 |True
-a|
+a|License expiry date
+
 
 |serialNumber
 |string
 |True
-a|
+a|Platform serial number
+
 
 |volumeMoveParameters
 |link:#VolumeMoveParameters[VolumeMoveParameters]
@@ -452,7 +461,8 @@ a|
 |workingEnvironmentId
 |string
 |True
-a|
+a|System public ID
+
 
 |licenseParameters
 |link:#ChangeLicenseParameters[ChangeLicenseParameters]
@@ -467,17 +477,20 @@ a|
 |instances
 |array[link:#InstanceNameIdAndType[InstanceNameIdAndType]]
 |True
-a|
+a|Instances information
+
 
 |moreInfo
 |string
 |False
-a|
+a|More information
+
 
 |providerVolumeType
 |string
 |False
-a|
+a|Provider volume type
+
 
 |volumeInfo
 |link:#VolumeInfo[VolumeInfo]
@@ -487,17 +500,20 @@ a|
 |currentInstanceType
 |string
 |False
-a|
+a|Current instance type
+
 
 |isComposite
 |boolean
 |True
-a|
+a|Indicates if the aggregate is a composite aggregate
+
 
 |isCapacityBased
 |boolean
 |True
-a|
+a|Indicates if the license type is a  capacity-based license type
+
 
 |===
 
@@ -516,7 +532,8 @@ ActionRequired
 |actionType
 |string
 |True
-a|
+a|The type of the action
+
 
 |parameters
 |link:#ActionRequiredParameters[ActionRequiredParameters]
@@ -526,7 +543,8 @@ a|
 |severity
 |string
 |True
-a|
+a|Action Severity
+
 
 |===
 

@@ -59,42 +59,50 @@ a|
 |aggregateName
 |string
 |True
-a|
+a|Target aggregate name
+
 
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed
+
 
 |newAggregate
 |boolean
 |True
-a|
+a|Indicates if it is a newly created aggregate
+
 
 |newDiskTypeName
 |string
 |True
-a|
+a|New disk type name
+
 
 |newCapacityTier
 |string
 |False
-a|
+a|New capacity tier
+
 
 |iops
 |integer
 |False
-a|
+a|Provisioned IOPS
+
 
 |throughput
 |integer
 |False
-a|
+a|Provisioned throughput
+
 
 |newTieringPolicy
 |string
 |False
-a|
+a|New tiering policy
+
 
 |evCapacityApprovedToAdd
 |link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
@@ -104,7 +112,8 @@ a|
 |minimumCoolingDays
 |link:#minimumCoolingDays[minimumCoolingDays]
 |False
-a|
+a|Cooling Days
+
 
 |===
 
@@ -136,12 +145,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -160,7 +171,8 @@ RaidInfoForEvAggregate
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed for the RAID group
+
 
 |diskSize
 |link:#Capacity[Capacity]
@@ -194,7 +206,8 @@ a|
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
 |False
-a|
+a|New RAID information
+
 
 |totalEvDisks
 |integer
@@ -207,6 +220,9 @@ a|
 [#minimumCoolingDays]
 [.api-collapsible-fifth-title]
 minimumCoolingDays
+
+Cooling Days
+
 
 
 //end collapsible .Definitions block

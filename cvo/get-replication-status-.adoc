@@ -60,17 +60,20 @@ a|
 |mirrorState
 |string
 |True
-a|
+a|SnapMirror status
+
 
 |relationshipType
 |string
 |True
-a|
+a|SnapMirror relationship type
+
 
 |relationshipStatus
 |string
 |True
-a|
+a|SnapMirror relationship status
+
 
 |relationshipProgress
 |link:#Capacity[Capacity]
@@ -80,17 +83,20 @@ a|
 |policy
 |string
 |True
-a|
+a|Policy name
+
 
 |policyType
 |string
 |True
-a|
+a|Policy type
+
 
 |schedule
 |string
 |True
-a|
+a|Schedule name
+
 
 |maxTransferRate
 |link:#Capacity[Capacity]
@@ -100,17 +106,20 @@ a|
 |networkCompressionRatio
 |string
 |True
-a|
+a|Network compression ratio
+
 
 |healthy
 |boolean
 |True
-a|
+a|SnapMirror health
+
 
 |unhealthyReason
 |string
 |True
-a|
+a|The reason SnapMirror is unhealthy
+
 
 |lagTime
 |link:#Duration[Duration]
@@ -120,12 +129,14 @@ a|
 |newestSnapshotName
 |string
 |True
-a|
+a|Newest snapshot name
+
 
 |newestSnapshotCreated
 |string
 |True
-a|
+a|Newest snapshot creation time
+
 
 |lastTransferInfo
 |link:#ReplicationStatusLastTransferInfo[ReplicationStatusLastTransferInfo]
@@ -181,52 +192,62 @@ ReplicationStatusSide
 |workingEnvironmentId
 |string
 |False
-a|
+a|System ID
+
 
 |workingEnvironmentType
 |string
 |False
-a|
+a|System type
+
 
 |workingEnvironmentStatus
 |string
 |False
-a|
+a|System status
+
 
 |clusterName
 |string
 |False
-a|
+a|Cluster name
+
 
 |region
 |string
 |False
-a|
+a|AWS region name
+
 
 |availabilityZone
 |string
 |False
-a|
+a|AWS availability zone name
+
 
 |svmName
 |string
 |False
-a|
+a|SVM name
+
 
 |svmPeerAliasName
 |string
 |False
-a|
+a|SVM peer alias name
+
 
 |nodeName
 |string
 |False
-a|
+a|Node name
+
 
 |volumeName
 |string
 |False
-a|
+a|Volume name
+
 
 |===
 
@@ -245,12 +266,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -269,12 +292,14 @@ Duration
 |length
 |integer
 |False
-a|
+a|Length
+
 
 |unit
 |string
 |False
-a|
+a|Unit
+
 
 |===
 
@@ -293,7 +318,8 @@ ReplicationStatusLastTransferInfo
 |transferType
 |string
 |True
-a|
+a|Last transfer type
+
 
 |transferSize
 |link:#Capacity[Capacity]
@@ -308,12 +334,14 @@ a|
 |transferEnded
 |string
 |True
-a|
+a|Last transfer end time
+
 
 |transferError
 |string
 |True
-a|
+a|Last transfer error
+
 
 |===
 
@@ -332,17 +360,20 @@ ReplicationStatusCurrentTransferInfo
 |transferType
 |string
 |True
-a|
+a|Current transfer type
+
 
 |transferPriority
 |string
 |True
-a|
+a|Current transfer priority
+
 
 |transferError
 |string
 |True
-a|
+a|Current transfer error
+
 
 |===
 

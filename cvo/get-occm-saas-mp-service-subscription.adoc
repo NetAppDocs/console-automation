@@ -81,12 +81,14 @@ SubscriptionResponse
 |id
 |string
 |True
-a|
+a|Specifies the ID
+
 
 |name
 |string
 |True
-a|
+a|Specifies the name
+
 
 |provider
 |string
@@ -96,17 +98,26 @@ a|
 |active
 |boolean
 |True
-a|
+a|Active
+
 
 |contract
 |boolean
 |True
-a|
+a|contract
+
 
 |byNodeMode
 |boolean
 |True
-a|
+a|By node mode
+
+
+|eligibleCvoPackages
+|array[string]
+|True
+a|Eligible Cloud Volumes ONTAP packages
+
 
 |===
 
