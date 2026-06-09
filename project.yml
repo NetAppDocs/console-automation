@@ -1,5 +1,4 @@
 ---
-jekyll: autogen-conflict
 settings:
   name: API
   internal:
