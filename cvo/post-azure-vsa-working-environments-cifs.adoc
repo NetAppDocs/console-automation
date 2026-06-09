@@ -47,42 +47,50 @@ a|
 |dnsDomain
 |string
 |False
-a|
+a|DNS domain name
+
 
 |ipAddresses
 |array[string]
 |True
-a|
+a|DNS server IP addresses
+
 
 |netBIOS
 |string
 |True
-a|
+a|CIFS server NetBIOS name
+
 
 |organizationalUnit
 |string
 |True
-a|
+a|Organizational unit for registration
+
 
 |activeDirectoryDomain
 |string
 |True
-a|
+a|Active Directory domain name
+
 
 |activeDirectoryUsername
 |string
 |True
-a|
+a|Active Directory username
+
 
 |activeDirectoryPassword
 |string
 |True
-a|
+a|Active Directory password
+
 
 |svmName
 |string
 |False
-a|
+a|SVM name
+
 
 |===
 

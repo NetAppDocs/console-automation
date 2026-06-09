@@ -47,7 +47,8 @@ a|
 |ntpServer
 |string
 |True
-a|
+a|NTPS server
+
 
 |===
 

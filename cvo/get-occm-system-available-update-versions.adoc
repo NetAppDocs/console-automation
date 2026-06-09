@@ -32,17 +32,20 @@ Status: Default, Default response
 |name
 |string
 |True
-a|
+a|Update name
+
 
 |date
 |integer
 |True
-a|
+a|Last Modified
+
 
 |releaseNumber
 |integer
 |True
-a|
+a|Release Number
+
 
 |===
 

@@ -29,12 +29,14 @@ Signs in to the NetApp Console.
 |email
 |string
 |True
-a|
+a|Email address of the user attempting to log in
+
 
 |password
 |string
 |True
-a|
+a|Password of the user attempting to log in
+
 
 |===
 

@@ -47,12 +47,14 @@ a|
 |addWorkingEnvironments
 |array[string]
 |True
-a|
+a|List of system public IDs for which permissions should be added
+
 
 |removeWorkingEnvironments
 |array[string]
 |True
-a|
+a|List of system public IDs for which permissions should be removed
+
 
 |===
 

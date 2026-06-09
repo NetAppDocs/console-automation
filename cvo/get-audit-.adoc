@@ -61,67 +61,80 @@ a|
 |id
 |string
 |True
-a|
+a|Audit group public ID
+
 
 |requestId
 |string
 |True
-a|
+a|Request ID of an action associated with the audit group
+
 
 |startDate
 |integer
 |True
-a|
+a|Start date
+
 
 |endDate
 |integer
 |False
-a|
+a|End date
+
 
 |actionName
 |string
 |True
-a|
+a|Audit group name
+
 
 |status
 |string
 |False
-a|
+a|Audit group status
+
 
 |userName
 |string
 |False
-a|
+a|Name of the user who performed the action
+
 
 |tenantName
 |string
 |False
-a|
+a|Name of the tenant
+
 
 |workingEnvironmentName
 |string
 |False
-a|
+a|Name of the system related to the user action
+
 
 |actionParameters
 |string
 |False
-a|
+a|Parameters of the user action
+
 
 |records
 |array[link:#AuditGroupSummaryRecord[AuditGroupSummaryRecord]]
 |True
-a|
+a|List of audit records
+
 
 |errorMessage
 |string
 |False
-a|
+a|Audit failure information (if relevant)
+
 
 |version
 |string
 |True
-a|
+a|Version of NetApp Console used to create this audit
+
 
 |parentId
 |link:#parentId[parentId]
@@ -172,37 +185,44 @@ AuditGroupSummaryRecord
 |id
 |string
 |True
-a|
+a|Audit record public ID
+
 
 |date
 |integer
 |True
-a|
+a|Date
+
 
 |actionName
 |string
 |True
-a|
+a|Action
+
 
 |status
 |string
 |True
-a|
+a|Status
+
 
 |parameters
 |string
 |False
-a|
+a|Action parameters
+
 
 |errorMessage
 |string
 |False
-a|
+a|Audit failure information (if relevant)
+
 
 |count
 |integer
 |True
-a|
+a|Aggregated count of similar records
+
 
 |===
 

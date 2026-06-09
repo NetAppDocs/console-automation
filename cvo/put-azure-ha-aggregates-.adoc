@@ -53,12 +53,14 @@ a|
 |iops
 |integer
 |True
-a|
+a|New IOPS
+
 
 |throughput
 |integer
 |True
-a|
+a|New throughput
+
 
 |===
 

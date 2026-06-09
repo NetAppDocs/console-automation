@@ -29,22 +29,26 @@ Retrieves quotes for a new volume. Returns the resource quote required for the r
 |workingEnvironmentId
 |string
 |True
-a|
+a|Cloud Volumes ONTAP system ID
+
 
 |svmName
 |string
 |True
-a|
+a|SVM name
+
 
 |aggregateName
 |string
 |False
-a|
+a|Optionally choose in which aggregate to create the volume
+
 
 |name
 |string
 |False
-a|
+a|Volume name, unique within the SVM
+
 
 |size
 |link:#PositiveCapacity[PositiveCapacity]
@@ -59,42 +63,50 @@ a|
 |enableThinProvisioning
 |boolean
 |True
-a|
+a|Enable thin provisioning on the volume
+
 
 |providerVolumeType
 |string
 |False
-a|
+a|Provider volume type
+
 
 |verifyNameUniqueness
 |boolean
 |True
-a|
+a|Verify volume name uniqueness within the SVM
+
 
 |capacityTier
 |string
 |False
-a|
+a|Capacity tier
+
 
 |isReplicationFlow
 |boolean
 |True
-a|
+a|Is replication flow
+
 
 |iops
 |integer
 |False
-a|
+a|Provisioned IOPS
+
 
 |throughput
 |integer
 |False
-a|
+a|Provisioned throughput
+
 
 |tieringPolicy
 |string
 |False
-a|
+a|Tiering policy
+
 
 |===
 
@@ -116,7 +128,8 @@ Status: Default, Default response
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed
+
 
 |diskSize
 |link:#Capacity[Capacity]
@@ -126,17 +139,20 @@ a|
 |aggregateName
 |string
 |True
-a|
+a|The aggregate on which the requested volume will be created
+
 
 |newAggregate
 |boolean
 |True
-a|
+a|Is it a newly created aggregate
+
 
 |autoVsaCapacityManagement
 |boolean
 |True
-a|
+a|Indicates if automatic Cloud Volumes ONTAP capacity management is enabled
+
 
 |elasticVolumeQuoteResponse
 |link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
@@ -167,12 +183,14 @@ PositiveCapacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -191,12 +209,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -215,7 +235,8 @@ RaidInfoForEvAggregate
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed for the RAID group
+
 
 |diskSize
 |link:#Capacity[Capacity]
@@ -249,7 +270,8 @@ a|
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
 |False
-a|
+a|New RAID information
+
 
 |totalEvDisks
 |integer

@@ -69,12 +69,14 @@ a|
 |iops
 |integer
 |False
-a|
+a|Provisioned IOPS
+
 
 |throughput
 |integer
 |False
-a|
+a|Provisioned throughput
+
 
 |===
 
@@ -119,12 +121,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 

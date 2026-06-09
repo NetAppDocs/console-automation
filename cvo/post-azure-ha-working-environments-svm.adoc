@@ -57,12 +57,14 @@ a|
 |mgmtLif
 |boolean
 |True
-a|
+a|Create a management LIF for the SVM
+
 
 |rootVolumeAggregate
 |string
 |False
-a|
+a|Root volume aggregate name
+
 
 |===
 

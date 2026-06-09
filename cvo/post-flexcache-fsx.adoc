@@ -29,62 +29,74 @@ Creates a new FlexCache volume in an FSx system.
 |sourceWorkingEnvironmentId
 |string
 |True
-a|
+a|Source system ID
+
 
 |destinationWorkingEnvironmentId
 |string
 |True
-a|
+a|Destination system ID
+
 
 |sourceSvmName
 |string
 |True
-a|
+a|Source SVM name
+
 
 |destinationSvmName
 |string
 |True
-a|
+a|Destination SVM name
+
 
 |sourceIpSpace
 |string
 |False
-a|
+a|Source IPspace
+
 
 |destinationIpSpace
 |string
 |False
-a|
+a|Destination IPspace
+
 
 |sourceVolumes
 |array[string]
 |True
-a|
+a|Names of source volumes
+
 
 |cacheVolumePercentage
 |integer
 |True
-a|
+a|FlexCache volume percentage
+
 
 |nameForSingleVolume
 |string
 |False
-a|
+a|FlexCache volume name for a single volume
+
 
 |namePrefix
 |string
 |False
-a|
+a|FlexCache name prefix
+
 
 |nameSuffix
 |string
 |False
-a|
+a|FlexCache name suffix
+
 
 |replicateNfsCifsShares
 |boolean
 |True
-a|
+a|Replicate NFS and CIFS shares as source volume
+
 
 |===
 

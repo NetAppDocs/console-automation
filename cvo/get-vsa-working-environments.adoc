@@ -136,7 +136,8 @@ a|
 |activeActions
 |array[string]
 |False
-a|
+a|Actions currently being performed on this system
+
 
 |replicationProperties
 |link:#ReplicationProperties[ReplicationProperties]
@@ -342,6 +343,9 @@ a|
 [#tags]
 [.api-collapsible-fifth-title]
 tags
+
+Instance tags
+
 Hash mapping strings to string
 [cols=4*,options=header]
 |===
@@ -377,97 +381,116 @@ InstanceResponse
 |id
 |string
 |True
-a|
+a|Instance ID
+
 
 |name
 |string
 |True
-a|
+a|Instance name
+
 
 |instanceType
 |string
 |True
-a|
+a|Instance type
+
 
 |state
 |string
 |True
-a|
+a|Instance state
+
 
 |publicIpAddress
 |string
 |True
-a|
+a|Public IP address that is assigned to the instance
+
 
 |privateIpAddress
 |string
 |True
-a|
+a|Private IP address that is assigned to the instance
+
 
 |publicDnsName
 |string
 |True
-a|
+a|Public DNS
+
 
 |privateDnsName
 |string
 |True
-a|
+a|Private DNS name
+
 
 |imageId
 |string
 |True
-a|
+a|Image ID
+
 
 |subnetId
 |string
 |True
-a|
+a|Subnet ID
+
 
 |availabilityZone
 |string
 |True
-a|
+a|Availability zone
+
 
 |isVsaInstance
 |boolean
 |True
-a|
+a|Indicates if the instance is a Cloud Volumes ONTAP instance
+
 
 |isOCCMInstance
 |boolean
 |True
-a|
+a|Indicates if the instance is a NetApp Console instance
+
 
 |tags
 |link:#tags[tags]
 |True
-a|
+a|Instance tags
+
 
 |productCode
 |string
 |True
-a|
+a|Product code
+
 
 |tenancy
 |string
 |True
-a|
+a|Instance Tenancy
+
 
 |placementGroup
 |string
 |True
-a|
+a|Placement group
+
 
 |keyPairName
 |string
 |True
-a|
+a|Key pair
+
 
 |instanceProfileId
 |string
 |False
-a|
+a|Instance profile ID
+
 
 |===
 
@@ -486,12 +509,14 @@ VpcTagResponse
 |key
 |string
 |True
-a|
+a|VPC tag key
+
 
 |value
 |string
 |True
-a|
+a|VPC tag value
+
 
 |===
 
@@ -510,27 +535,32 @@ VpcBasicResponse
 |vpcId
 |string
 |True
-a|
+a|The VPC identifier
+
 
 |state
 |string
 |True
-a|
+a|The state of the VPC
+
 
 |cidrBlock
 |string
 |True
-a|
+a|VPC Classless Inter-Domain Routing (CIDR) block
+
 
 |tags
 |array[link:#VpcTagResponse[VpcTagResponse]]
 |True
-a|
+a|VPC tags
+
 
 |default
 |boolean
 |True
-a|
+a|Indicates whether the VPC is the default
+
 
 |===
 
@@ -623,12 +653,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -843,32 +875,38 @@ LifResponse
 |ip
 |string
 |True
-a|
+a|LIF IP address
+
 
 |netmask
 |string
 |True
-a|
+a|LIF netmask
+
 
 |lifType
 |string
 |True
-a|
+a|LIF type
+
 
 |dataProtocols
 |array[string]
 |True
-a|
+a|List of supported protocols
+
 
 |nodeName
 |string
 |True
-a|
+a|Node name
+
 
 |privateIp
 |boolean
 |True
-a|
+a|Specifies whether the LIF IP address is a private address
+
 
 |===
 
@@ -887,7 +925,8 @@ VsaLicense
 |name
 |string
 |True
-a|
+a|License name
+
 
 |capacityLimit
 |link:#Capacity[Capacity]
@@ -1320,7 +1359,8 @@ RaidInfoForEvAggregate
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed for the RAID group
+
 
 |diskSize
 |link:#Capacity[Capacity]
@@ -1354,7 +1394,8 @@ a|
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
 |False
-a|
+a|New RAID information
+
 
 |totalEvDisks
 |integer
@@ -1611,12 +1652,14 @@ ActionRequiredParameters
 |aggregateName
 |string
 |True
-a|
+a|Aggregate name
+
 
 |numOfDisks
 |integer
 |True
-a|
+a|Number of disks relevant to the action
+
 
 |totalCapacity
 |link:#Capacity[Capacity]
@@ -1631,7 +1674,8 @@ a|
 |volumeNames
 |array[string]
 |True
-a|
+a|A limited list of volumes on the aggregate
+
 
 |maxCapacity
 |link:#Capacity[Capacity]
@@ -1641,12 +1685,14 @@ a|
 |licenseExpiryDate
 |integer
 |True
-a|
+a|License expiry date
+
 
 |serialNumber
 |string
 |True
-a|
+a|Platform serial number
+
 
 |volumeMoveParameters
 |link:#VolumeMoveParameters[VolumeMoveParameters]
@@ -1656,7 +1702,8 @@ a|
 |workingEnvironmentId
 |string
 |True
-a|
+a|System public ID
+
 
 |licenseParameters
 |link:#ChangeLicenseParameters[ChangeLicenseParameters]
@@ -1671,17 +1718,20 @@ a|
 |instances
 |array[link:#InstanceNameIdAndType[InstanceNameIdAndType]]
 |True
-a|
+a|Instances information
+
 
 |moreInfo
 |string
 |False
-a|
+a|More information
+
 
 |providerVolumeType
 |string
 |False
-a|
+a|Provider volume type
+
 
 |volumeInfo
 |link:#VolumeInfo[VolumeInfo]
@@ -1691,17 +1741,20 @@ a|
 |currentInstanceType
 |string
 |False
-a|
+a|Current instance type
+
 
 |isComposite
 |boolean
 |True
-a|
+a|Indicates if the aggregate is a composite aggregate
+
 
 |isCapacityBased
 |boolean
 |True
-a|
+a|Indicates if the license type is a  capacity-based license type
+
 
 |===
 
@@ -1720,7 +1773,8 @@ ActionRequired
 |actionType
 |string
 |True
-a|
+a|The type of the action
+
 
 |parameters
 |link:#ActionRequiredParameters[ActionRequiredParameters]
@@ -1730,7 +1784,8 @@ a|
 |severity
 |string
 |True
-a|
+a|Action Severity
+
 
 |===
 
@@ -1842,12 +1897,14 @@ PolicySchedule
 |frequency
 |string
 |True
-a|
+a|Frequency
+
 
 |retention
 |integer
 |True
-a|
+a|Retention
+
 
 |===
 
@@ -1866,17 +1923,20 @@ SnapshotPolicy
 |name
 |string
 |True
-a|
+a|Name
+
 
 |schedules
 |array[link:#PolicySchedule[PolicySchedule]]
 |True
-a|
+a|Schedules
+
 
 |description
 |string
 |True
-a|
+a|Description
+
 
 |===
 
@@ -1925,12 +1985,14 @@ a|
 |ver3Enabled
 |boolean
 |True
-a|
+a|NFS Version 3 enabled
+
 
 |ver4Enabled
 |boolean
 |True
-a|
+a|NFS Version 4 enabled
+
 
 |===
 

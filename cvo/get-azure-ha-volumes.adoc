@@ -50,17 +50,20 @@ Status: Default, Default response
 |name
 |string
 |True
-a|
+a|Volume name
+
 
 |uuid
 |string
 |True
-a|
+a|Volume UUID
+
 
 |svmName
 |string
 |True
-a|
+a|Volume SVM name
+
 
 |size
 |link:#Capacity[Capacity]
@@ -75,22 +78,26 @@ a|
 |junctionPath
 |string
 |True
-a|
+a|The junction path at which this volume is mounted
+
 
 |volumeTotalInodes
 |integer
 |False
-a|
+a|Total volume inodes size
+
 
 |volumeUsedInodes
 |integer
 |False
-a|
+a|Used volume inodes size
+
 
 |mountPoint
 |string
 |False
-a|
+a|Mount Point
+
 
 |compressionSpaceSaved
 |link:#Capacity[Capacity]
@@ -105,27 +112,32 @@ a|
 |thinProvisioning
 |boolean
 |True
-a|
+a|Specifies whether thin provisioning is enabled
+
 
 |compression
 |boolean
 |True
-a|
+a|Specifies whether compression is enabled
+
 
 |deduplication
 |boolean
 |True
-a|
+a|Specifies whether deduplication is enabled
+
 
 |snapshotPolicy
 |string
 |True
-a|
+a|The name of the snapshot policy
+
 
 |securityStyle
 |string
 |True
-a|
+a|The type of the security style
+
 
 |exportPolicyInfo
 |link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
@@ -135,47 +147,56 @@ a|
 |shareNames
 |array[string]
 |True
-a|
+a|The share names for CIFS
+
 
 |shareInfo
 |array[link:#CifsShareInfo[CifsShareInfo]]
 |True
-a|
+a|The share names, permissions, and users for CIFS
+
 
 |parentVolumeName
 |string
 |True
-a|
+a|Name of the parent flexible volume for the clone
+
 
 |rootVolume
 |boolean
 |True
-a|
+a|Flag to indicate if the volume is a SVM root
+
 
 |state
 |string
 |True
-a|
+a|Volume state
+
 
 |volumeType
 |string
 |True
-a|
+a|Volume type
+
 
 |aggregateName
 |string
 |True
-a|
+a|Aggregate name
+
 
 |parentSnapshot
 |string
 |False
-a|
+a|The snapshot name the volume is based on
+
 
 |autoSizeMode
 |string
 |True
-a|
+a|The operating mode of autosize
+
 
 |maxGrowSize
 |link:#Capacity[Capacity]
@@ -185,32 +206,38 @@ a|
 |providerVolumeType
 |string
 |False
-a|
+a|Cloud provider volume type
+
 
 |cloneNames
 |array[string]
 |True
-a|
+a|Names of cloned copies of the volume
+
 
 |moving
 |boolean
 |True
-a|
+a|Specifies if the volume move process is in progress
+
 
 |primaryNoFailoverMountPoint
 |string
 |False
-a|
+a|Primary mount point without failover
+
 
 |secondaryNoFailoverMountPoint
 |string
 |False
-a|
+a|Secondary mount point without failover
+
 
 |capacityTier
 |string
 |False
-a|
+a|Capacity tier
+
 
 |capacityTierUsedSize
 |link:#Capacity[Capacity]
@@ -220,22 +247,26 @@ a|
 |cifsShareAccessPoint
 |string
 |False
-a|
+a|CIFS share access point
+
 
 |primaryCifsShareAccessPoint
 |string
 |False
-a|
+a|Primary CIFS share access point
+
 
 |secondaryCifsShareAccessPoint
 |string
 |False
-a|
+a|Secondary CIFS share access point
+
 
 |tieringPolicy
 |string
 |False
-a|
+a|Tiering policy
+
 
 |tierInactiveUserData
 |link:#Capacity[Capacity]
@@ -245,27 +276,32 @@ a|
 |tierInactiveUserDataPercent
 |integer
 |False
-a|
+a|Tier inactive user data percentage
+
 
 |comment
 |string
 |False
-a|
+a|Volume comment
+
 
 |qosPolicyGroupName
 |string
 |False
-a|
+a|Quality of service policy group name
+
 
 |snaplockType
 |string
 |False
-a|
+a|SnapLock type
+
 
 |constituentsAggregates
 |array[string]
 |True
-a|
+a|Aggregates which are used for FlexGroup constituents
+
 
 |snapshotsUsedSize
 |link:#Capacity[Capacity]
@@ -280,22 +316,26 @@ a|
 |minimumCoolingDays
 |integer
 |False
-a|
+a|Tiering minimum cooling days
+
 
 |targetName
 |string
 |True
-a|
+a|iSCSI target IQN
+
 
 |iscsiEnabled
 |boolean
 |True
-a|
+a|Indicates if the volume is used by the iSCSI protocol
+
 
 |isFlexGroupVolume
 |boolean
 |True
-a|
+a|Indicates if the volume is a FlexGroup volume
+
 
 |===
 
@@ -321,12 +361,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -334,6 +376,9 @@ a|
 [#index]
 [.api-collapsible-fifth-title]
 index
+
+Export policy rule index
+
 
 
 [#ExportPolicyRule]
@@ -350,27 +395,32 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|
+a|Export policy rule index
+
 
 |ruleAccessControl
 |string
 |True
-a|
+a|Export policy rule access control
+
 
 |ips
 |array[string]
 |True
-a|
+a|Export policy rule list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy rule protocol
+
 
 |superUser
 |boolean
 |True
-a|
+a|Export policy rule super user access
+
 
 |===
 
@@ -389,27 +439,32 @@ NamedExportPolicyInfo
 |name
 |string
 |False
-a|
+a|Export policy name
+
 
 |policyType
 |string
 |True
-a|
+a|Export policy type
+
 
 |ips
 |array[string]
 |True
-a|
+a|Custom export policy list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy protocol
+
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |True
-a|
+a|Export policy rules
+
 
 |===
 
@@ -428,12 +483,14 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|
+a|CIFS share permission type
+
 
 |users
 |array[string]
 |True
-a|
+a|List of users with the permission
+
 
 |===
 
@@ -452,17 +509,20 @@ CifsShareInfo
 |shareName
 |string
 |True
-a|
+a|Share name
+
 
 |accessControlList
 |array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
 |True
-a|
+a|List of CIFS share permissions
+
 
 |vscanFileOpPolicy
 |string
 |False
-a|
+a|Vscan file operations profile
+
 
 |===
 

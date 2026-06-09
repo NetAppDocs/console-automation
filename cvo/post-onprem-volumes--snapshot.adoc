@@ -59,7 +59,8 @@ a|
 |snapshotName
 |string
 |False
-a|
+a|Snapshot name
+
 
 |===
 

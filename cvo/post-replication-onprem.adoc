@@ -97,47 +97,56 @@ ReplicationRequest
 |sourceWorkingEnvironmentId
 |string
 |True
-a|
+a|Source system ID
+
 
 |destinationWorkingEnvironmentId
 |string
 |True
-a|
+a|Destination system ID
+
 
 |sourceInterclusterLifIps
 |array[string]
 |True
-a|
+a|Source intercluster LIF IPs
+
 
 |destinationInterclusterLifIps
 |array[string]
 |True
-a|
+a|Destination intercluster LIF IPs
+
 
 |policyName
 |string
 |True
-a|
+a|SnapMirror policy name
+
 
 |scheduleName
 |string
 |False
-a|
+a|Schedule name
+
 
 |maxTransferRate
 |integer
 |False
-a|
+a|Maximum transfer rate limit (KB/s). Use 0 for no limit, otherwise use number between 1024 and 2,147,482,624
+
 
 |sourceIpSpace
 |string
 |False
-a|
+a|Source IpSpace
+
 
 |destinationIpSpace
 |string
 |False
-a|
+a|Destination IpSpace
+
 
 |===
 
@@ -145,6 +154,9 @@ a|
 [#minimumCoolingDays]
 [.api-collapsible-fifth-title]
 minimumCoolingDays
+
+Cooling Days
+
 
 
 [#OnPremVolumeRequest]
@@ -161,42 +173,50 @@ OnPremVolumeRequest
 |sourceSvmName
 |string
 |True
-a|
+a|Source SVM name
+
 
 |sourceVolumeName
 |string
 |True
-a|
+a|Source volume name
+
 
 |destinationVolumeName
 |string
 |True
-a|
+a|Destination volume name
+
 
 |destinationAggregateName
 |string
 |True
-a|
+a|Destination aggregate name
+
 
 |destinationSvmName
 |string
 |True
-a|
+a|Destination SVM name
+
 
 |destinationCapacityTier
 |string
 |False
-a|
+a|Destination aggregate capacity tier
+
 
 |tieringPolicy
 |string
 |False
-a|
+a|Tiering policy
+
 
 |minimumCoolingDays
 |link:#minimumCoolingDays[minimumCoolingDays]
 |False
-a|
+a|Cooling Days
+
 
 |===
 

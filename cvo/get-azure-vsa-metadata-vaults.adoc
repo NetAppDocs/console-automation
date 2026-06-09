@@ -62,22 +62,26 @@ Status: Default, Default response
 |name
 |string
 |True
-a|
+a|Vault name
+
 
 |resourceGroup
 |string
 |True
-a|
+a|Resource group
+
 
 |location
 |string
 |True
-a|
+a|Location
+
 
 |vaultUri
 |string
 |True
-a|
+a|Vault URI
+
 
 |===
 

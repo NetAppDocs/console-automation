@@ -59,37 +59,34 @@ a|
 |privateCloudName
 |string
 |True
-a|
+a|Azure VMware Solution (AVS) private cloud name
+
 
 |clusterName
 |string
 |True
-a|
+a|Private cloud cluster name
+
 
 |resourceGroup
 |string
 |True
-a|
+a|Private cloud resourceGroup name
+
 
 |dataStoreName
 |string
+|True
+a|Private cloud DataStore name
+
+
+|dataStoreSize
+|link:#Capacity[Capacity]
 |True
 a|
 
 |===
 
-
-.Example request
-[%collapsible%closed]
-====
-[source,json,subs=+macros]
-{
-  "privateCloudName": "string",
-  "clusterName": "string",
-  "resourceGroup": "string",
-  "dataStoreName": "string"
-}
-====
 
 == Error
 
@@ -201,6 +198,32 @@ a|
 |link:#PatternMessage[PatternMessage]
 |True
 a|
+
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|Size
+
+
+|unit
+|string
+|True
+a|Unit
+
 
 |===
 

@@ -50,12 +50,14 @@ Status: Default, Default response
 |name
 |string
 |True
-a|
+a|Specifies the name
+
 
 |description
 |string
 |False
-a|
+a|Description
+
 
 |cronJobSchedule
 |link:#CronJobScheduleResponse[CronJobScheduleResponse]
@@ -113,27 +115,32 @@ CronJobScheduleResponse
 |months
 |array[integer]
 |True
-a|
+a|List of months
+
 
 |days
 |array[integer]
 |True
-a|
+a|List of days of the month
+
 
 |weekDays
 |array[integer]
 |True
-a|
+a|List of week days
+
 
 |hours
 |array[integer]
 |True
-a|
+a|List of hours
+
 
 |minutes
 |array[integer]
 |True
-a|
+a|List of minutes
+
 
 |===
 

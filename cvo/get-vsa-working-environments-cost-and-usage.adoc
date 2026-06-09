@@ -62,12 +62,14 @@ Status: Default, Default response
 |hasPermissions
 |boolean
 |True
-a|
+a|Permissions to view the cost and usage details
+
 
 |costByTime
 |array[link:#CostByTime[CostByTime]]
 |True
-a|
+a|System cost and usage details
+
 
 |===
 
@@ -93,12 +95,14 @@ Money
 |amount
 |number
 |True
-a|
+a|Amount
+
 
 |currency
 |string
 |True
-a|
+a|Currency
+
 
 |===
 
@@ -117,12 +121,14 @@ Usage
 |amount
 |number
 |False
-a|
+a|Amount
+
 
 |units
 |string
 |True
-a|
+a|Units
+
 
 |===
 
@@ -141,7 +147,8 @@ CostByUsage
 |name
 |string
 |True
-a|
+a|Breakdown element name
+
 
 |cost
 |link:#Money[Money]
@@ -170,7 +177,8 @@ CostByService
 |name
 |string
 |True
-a|
+a|Name of the cost domain (compute, disk/blob storage, object storage, data transfer)
+
 
 |total
 |link:#Money[Money]
@@ -180,7 +188,8 @@ a|
 |costByUsage
 |array[link:#CostByUsage[CostByUsage]]
 |True
-a|
+a|Cost domain breakdown
+
 
 |===
 
@@ -199,17 +208,20 @@ CostByTime
 |start
 |string
 |True
-a|
+a|Cost period start date
+
 
 |end
 |string
 |True
-a|
+a|Cost period end date
+
 
 |estimated
 |boolean
 |True
-a|
+a|Indicates whether the cost is estimated
+
 
 |total
 |link:#Money[Money]
@@ -219,7 +231,8 @@ a|
 |costByService
 |array[link:#CostByService[CostByService]]
 |True
-a|
+a|Monthly cost and usage details
+
 
 |===
 

@@ -29,17 +29,20 @@ Creates a new volume.
 |fileSystemId
 |string
 |True
-a|
+a|Target file system ID
+
 
 |svmName
 |string
 |True
-a|
+a|SVM name
+
 
 |name
 |string
 |False
-a|
+a|Volume name, unique within the SVM
+
 
 |size
 |link:#PositiveCapacity[PositiveCapacity]
@@ -54,7 +57,8 @@ a|
 |snapshotPolicyName
 |string
 |True
-a|
+a|Snapshot policy name
+
 
 |exportPolicyInfo
 |link:#ExportPolicyInfo[ExportPolicyInfo]
@@ -74,22 +78,26 @@ a|
 |enableStorageEfficiency
 |boolean
 |True
-a|
+a|Storage efficiency
+
 
 |tieringPolicy
 |string
 |False
-a|
+a|Tiering policy
+
 
 |awsTags
 |array[link:#AwsTag[AwsTag]]
 |True
-a|
+a|Optionally, provide up to 50 key-value pairs to be used as volume tags.
+
 
 |numberOfConstituents
 |link:#numberOfConstituents[numberOfConstituents]
 |False
-a|
+a|Number of constituents for the FlexGroup volume
+
 
 |===
 
@@ -121,12 +129,14 @@ PositiveCapacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -145,12 +155,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -158,6 +170,9 @@ a|
 [#index]
 [.api-collapsible-fifth-title]
 index
+
+Export policy rule index
+
 
 
 [#ExportPolicyRule]
@@ -174,27 +189,32 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|
+a|Export policy rule index
+
 
 |ruleAccessControl
 |string
 |True
-a|
+a|Export policy rule access control
+
 
 |ips
 |array[string]
 |True
-a|
+a|Export policy rule list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy rule protocol
+
 
 |superUser
 |boolean
 |True
-a|
+a|Export policy rule super user access
+
 
 |===
 
@@ -213,22 +233,26 @@ ExportPolicyInfo
 |policyType
 |string
 |False
-a|
+a|Export policy type
+
 
 |ips
 |array[string]
 |False
-a|
+a|Custom export policy list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy protocol
+
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |False
-a|
+a|Export policy rules
+
 
 |===
 
@@ -247,12 +271,14 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|
+a|CIFS share permission type
+
 
 |users
 |array[string]
 |True
-a|
+a|List of users with the permission
+
 
 |===
 
@@ -271,7 +297,8 @@ CreateCifsShareInfoRequest
 |shareName
 |string
 |False
-a|
+a|Share name
+
 
 |accessControl
 |link:#CifsShareUserPermissions[CifsShareUserPermissions]
@@ -295,12 +322,14 @@ IgroupCreationRequest
 |initiators
 |array[string]
 |False
-a|
+a|Initiators
+
 
 |igroupName
 |string
 |False
-a|
+a|Igroup name
+
 
 |===
 
@@ -319,7 +348,8 @@ CreateIscsiInfoRequest
 |osName
 |string
 |False
-a|
+a|Operating system
+
 
 |igroupCreationRequest
 |link:#IgroupCreationRequest[IgroupCreationRequest]
@@ -329,7 +359,8 @@ a|
 |igroups
 |array[string]
 |False
-a|
+a|Igroups
+
 
 |===
 
@@ -361,6 +392,9 @@ a|
 [#numberOfConstituents]
 [.api-collapsible-fifth-title]
 numberOfConstituents
+
+Number of constituents for the FlexGroup volume
+
 
 
 //end collapsible .Definitions block

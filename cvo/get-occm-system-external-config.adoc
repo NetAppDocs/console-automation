@@ -722,6 +722,9 @@ a|
 [#MapStringString]
 [.api-collapsible-fifth-title]
 MapStringString
+
+Instance tags
+
 Hash mapping strings to string
 [cols=4*,options=header]
 |===
@@ -801,7 +804,8 @@ a|
 |metadata
 |link:#MapStringString[MapStringString]
 |False
-a|
+a|Instance tags
+
 
 |localSupport
 |link:#LocalServiceInfo[LocalServiceInfo]

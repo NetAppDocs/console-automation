@@ -62,42 +62,50 @@ Status: Default, Default response
 |vpcId
 |string
 |True
-a|
+a|The VPC identifier
+
 
 |state
 |string
 |True
-a|
+a|The state of the VPC
+
 
 |cidrBlock
 |string
 |True
-a|
+a|VPC Classless Inter-Domain Routing (CIDR) block
+
 
 |tags
 |array[link:#VpcTagResponse[VpcTagResponse]]
 |True
-a|
+a|VPC tags
+
 
 |default
 |boolean
 |True
-a|
+a|Indicates whether the VPC is the default
+
 
 |subnets
 |array[link:#SubnetResponse[SubnetResponse]]
 |True
-a|
+a|Subnets associated with the VPC
+
 
 |securityGroups
 |array[link:#SecurityGroupResponse[SecurityGroupResponse]]
 |True
-a|
+a|Security groups associated with the VPC
+
 
 |tenancy
 |string
 |True
-a|
+a|Tenancy configuration for the VPC
+
 
 |===
 
@@ -123,12 +131,14 @@ VpcTagResponse
 |key
 |string
 |True
-a|
+a|VPC tag key
+
 
 |value
 |string
 |True
-a|
+a|VPC tag value
+
 
 |===
 
@@ -147,37 +157,46 @@ SubnetResponse
 |subnetId
 |string
 |True
-a|
+a|Subnet ID
+
 
 |cidr
 |string
 |True
-a|
+a|CIDR
+
 
 |subnetName
 |string
 |False
-a|
+a|Subnet name
+
 
 |availabilityZone
 |string
 |True
-a|
+a|Availability zone
+
 
 |availableIps
 |integer
 |True
-a|
+a|The number of available IP addresses on the subnet
+
 
 |minimumRequiredIps
 |integer
 |True
-a|
+a|The minimum required IP addresses for the Cloud Volumes ONTAP create operation
+
+* format: int32
+
 
 |outpostArn
 |string
 |False
-a|
+a|The ARN of the outpost
+
 
 |===
 
@@ -196,17 +215,20 @@ SecurityGroupResponse
 |securityGroupId
 |string
 |True
-a|
+a|Security group ID
+
 
 |description
 |string
 |True
-a|
+a|Description
+
 
 |name
 |string
 |True
-a|
+a|Specifies the name
+
 
 |===
 

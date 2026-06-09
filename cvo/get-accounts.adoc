@@ -288,7 +288,7 @@ AzureAccountResponse
 
 |publicId
 |string
-|False
+|True
 a|
 
 |accountName
@@ -318,7 +318,7 @@ a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|False
+|True
 a|
 
 |===

@@ -70,7 +70,8 @@ a|
 |labels
 |link:#MapStringString[MapStringString]
 |True
-a|
+a|Instance tags
+
 
 |===
 
@@ -85,6 +86,9 @@ a|
 [#MapStringString]
 [.api-collapsible-fifth-title]
 MapStringString
+
+Instance tags
+
 Hash mapping strings to string
 [cols=4*,options=header]
 |===

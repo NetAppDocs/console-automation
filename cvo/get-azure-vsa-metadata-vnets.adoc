@@ -129,27 +129,34 @@ AzureSubnetResponse
 |id
 |string
 |True
-a|
+a|Subnet ID
+
 
 |cidr
 |string
 |False
-a|
+a|CIDR
+
 
 |name
 |string
 |True
-a|
+a|Subnet name
+
 
 |availableIps
 |integer
 |True
-a|
+a|The number of available IP addresses on the subnet
+
 
 |minimumRequiredIps
 |integer
 |True
-a|
+a|The minimum needed IP addresses for the Cloud Volumes ONTAP system creation
+
+* format: int32
+
 
 |===
 
@@ -168,12 +175,14 @@ AzureVirtualNetworkCidrData
 |cidr
 |string
 |True
-a|
+a|CIDR
+
 
 |subnets
 |array[link:#AzureSubnetResponse[AzureSubnetResponse]]
 |True
-a|
+a|Subnets
+
 
 |===
 
@@ -192,12 +201,14 @@ TagResponse
 |key
 |string
 |True
-a|
+a|Tag key
+
 
 |value
 |string
 |True
-a|
+a|Tag value
+
 
 |===
 
@@ -216,27 +227,32 @@ AzureVirtualNetworkResponse
 |name
 |string
 |True
-a|
+a|Virtual Network name
+
 
 |id
 |string
 |True
-a|
+a|Virtual Network ID
+
 
 |cidrs
 |array[link:#AzureVirtualNetworkCidrData[AzureVirtualNetworkCidrData]]
 |True
-a|
+a|CIDRs
+
 
 |resourceGroup
 |string
 |True
-a|
+a|Resource Group
+
 
 |tags
 |array[link:#TagResponse[TagResponse]]
 |True
-a|
+a|Tags
+
 
 |===
 
@@ -255,17 +271,20 @@ AzureSecurityGroupResponse
 |id
 |string
 |True
-a|
+a|Security group ID
+
 
 |name
 |string
 |True
-a|
+a|Security group name
+
 
 |resourceGroup
 |string
 |False
-a|
+a|Resource group
+
 
 |===
 

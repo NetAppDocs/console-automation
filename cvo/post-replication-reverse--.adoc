@@ -59,17 +59,20 @@ a|
 |sourceWorkingEnvironmentId
 |string
 |True
-a|
+a|System ID
+
 
 |sourceSvmName
 |string
 |True
-a|
+a|SVM name
+
 
 |sourceVolumeName
 |string
 |True
-a|
+a|volume name
+
 
 |===
 

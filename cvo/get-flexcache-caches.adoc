@@ -111,12 +111,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -135,32 +137,38 @@ FlexCacheSide
 |workingEnvironmentId
 |string
 |False
-a|
+a|System ID
+
 
 |workingEnvironmentType
 |string
 |False
-a|
+a|System type
+
 
 |clusterName
 |string
 |False
-a|
+a|Cluster name
+
 
 |svm
 |string
 |False
-a|
+a|SVM name
+
 
 |volume
 |string
 |False
-a|
+a|Volume name
+
 
 |uuid
 |string
 |False
-a|
+a|Volume UUID
+
 
 |size
 |link:#Capacity[Capacity]

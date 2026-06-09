@@ -47,7 +47,8 @@ a|
 |instanceProfileName
 |string
 |False
-a|
+a|Instance profile name
+
 
 |===
 

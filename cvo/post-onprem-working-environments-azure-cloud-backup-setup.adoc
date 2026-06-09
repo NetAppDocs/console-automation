@@ -47,22 +47,26 @@ a|
 |rgName
 |string
 |False
-a|
+a|Azure resource group name. By default, it creates a new resource group.
+
 
 |ipSpace
 |string
 |False
-a|
+a|IPspace
+
 
 |region
 |string
 |False
-a|
+a|The region. By default, the NetApp Console region.
+
 
 |subscriptionId
 |string
 |False
-a|
+a|The subscription ID. By default, the NetApp Console Azure subscription.
+
 
 |===
 

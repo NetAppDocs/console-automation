@@ -50,7 +50,8 @@ Status: Default, Default response
 |name
 |string
 |True
-a|
+a|Aggregate name
+
 
 |availableCapacity
 |link:#Capacity[Capacity]
@@ -70,52 +71,62 @@ a|
 |volumes
 |array[link:#Volume[Volume]]
 |True
-a|
+a|Volumes
+
 
 |providerVolumes
 |array[link:#ProviderVolumeResponse[ProviderVolumeResponse]]
 |True
-a|
+a|Provider volumes
+
 
 |disks
 |array[link:#Disk[Disk]]
 |True
-a|
+a|Disks
+
 
 |state
 |string
 |False
-a|
+a|State
+
 
 |encryptionType
 |string
 |True
-a|
+a|Encryption Type
+
 
 |encryptionKeyId
 |string
 |False
-a|
+a|Encryption Key
+
 
 |isRoot
 |boolean
 |True
-a|
+a|Is Root
+
 
 |homeNode
 |string
 |True
-a|
+a|Home node
+
 
 |ownerNode
 |string
 |False
-a|
+a|Owner node
+
 
 |capacityTier
 |string
 |False
-a|
+a|Capacity tier
+
 
 |capacityTierUsed
 |link:#Capacity[Capacity]
@@ -125,22 +136,26 @@ a|
 |sidlEnabled
 |boolean
 |True
-a|
+a|SIDL enabled
+
 
 |snaplockType
 |string
 |True
-a|
+a|Snaplock type
+
 
 |evCompatibilityType
 |string
 |True
-a|
+a|Elastic Volume Compatibility Type
+
 
 |iops
 |link:#iops[iops]
 |False
-a|
+a|Aggregate IOPS
+
 
 |===
 
@@ -166,12 +181,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -190,7 +207,8 @@ Volume
 |name
 |string
 |True
-a|
+a|Name
+
 
 |totalSize
 |link:#Capacity[Capacity]
@@ -205,17 +223,20 @@ a|
 |thinProvisioned
 |boolean
 |True
-a|
+a|Indicates if the volume is thin-provisioned
+
 
 |isClone
 |boolean
 |True
-a|
+a|Indicates if the volume is a clone volume
+
 
 |rootVolume
 |boolean
 |True
-a|
+a|Indicates if the volume is the root volume of the SVM
+
 
 |===
 
@@ -234,12 +255,14 @@ ProviderVolumeResponse
 |id
 |string
 |True
-a|
+a|Specifies the ID
+
 
 |name
 |string
-|False
-a|
+|True
+a|Specifies the name
+
 
 |size
 |link:#Capacity[Capacity]
@@ -249,42 +272,50 @@ a|
 |state
 |string
 |True
-a|
+a|State
+
 
 |device
 |string
 |True
-a|
+a|Device
+
 
 |instanceId
 |string
 |True
-a|
+a|InstanceId
+
 
 |diskType
 |string
 |True
-a|
+a|Type
+
 
 |encrypted
 |boolean
 |True
-a|
+a|Encrypted
+
 
 |iops
 |integer
 |False
-a|
+a|Provisioned IOPS
+
 
 |throughput
 |integer
 |False
-a|
+a|Provisioned throughput
+
 
 |instance2Id
 |string
 |False
-a|
+a|Instance2Id
+
 
 |===
 
@@ -332,22 +363,26 @@ Disk
 |name
 |string
 |False
-a|
+a|Name
+
 
 |containerType
 |string
 |True
-a|
+a|Container type
+
 
 |ownerNode
 |string
 |True
-a|
+a|Owner node
+
 
 |device
 |string
 |False
-a|
+a|Device
+
 
 |vmDiskProperties
 |link:#VmDiskProperties[VmDiskProperties]
@@ -360,6 +395,9 @@ a|
 [#iops]
 [.api-collapsible-fifth-title]
 iops
+
+Aggregate IOPS
+
 
 
 //end collapsible .Definitions block

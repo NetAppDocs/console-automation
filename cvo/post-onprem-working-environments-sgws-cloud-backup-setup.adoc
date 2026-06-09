@@ -52,7 +52,8 @@ a|
 |ipSpace
 |string
 |False
-a|
+a|IPspace
+
 
 |===
 
@@ -98,17 +99,20 @@ SgwsCredentialsRequest
 |accessKey
 |string
 |True
-a|
+a|StorageGRID access key
+
 
 |secretKey
 |string
 |True
-a|
+a|StorageGRID secret key
+
 
 |serviceUrl
 |string
 |False
-a|
+a|StorageGRID endpoint (protocol, FQDN, and port)
+
 
 |===
 

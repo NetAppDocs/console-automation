@@ -96,7 +96,8 @@ a|
 |snaplockType
 |string
 |True
-a|
+a|Snaplock type
+
 
 |tieringRestriction
 |link:#TieringRestriction[TieringRestriction]
@@ -137,12 +138,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 

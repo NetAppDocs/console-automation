@@ -53,7 +53,8 @@ a|
 |subscriptionId
 |string
 |True
-a|
+a|SaaS marketplace subscription ID
+
 
 |===
 

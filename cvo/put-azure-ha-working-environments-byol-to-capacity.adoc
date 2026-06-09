@@ -47,7 +47,8 @@ a|
 |capacityPackageName
 |string
 |True
-a|
+a|Capacity based package
+
 
 |sendAsup
 |boolean

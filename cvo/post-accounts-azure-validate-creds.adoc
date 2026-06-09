@@ -140,7 +140,8 @@ a|
 |subscription
 |string
 |False
-a|
+a|Subscription
+
 
 |===
 

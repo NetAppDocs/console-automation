@@ -50,77 +50,92 @@ Status: Default, Default response
 |region
 |string
 |False
-a|
+a|Region
+
 
 |vpcId
 |string
 |False
-a|
+a|VPC
+
 
 |subnetId
 |string
 |False
-a|
+a|Subnet
+
 
 |keyPair
 |string
 |False
-a|
+a|KeyPair
+
 
 |installLocation
 |string
 |False
-a|
+a|Install Location
+
 
 |role
 |string
 |False
-a|
+a|Role
+
 
 |providerRoleType
 |string
 |False
-a|
+a|Provider Role Type
+
 
 |publicIp
 |string
 |False
-a|
+a|Public IP
+
 
 |account
 |string
 |False
-a|
+a|Account
+
 
 |govCloud
 |boolean
 |False
-a|
+a|Gov cloud
+
 
 |china
 |boolean
 |False
-a|
+a|China
+
 
 |isLegacyInstance
 |boolean
 |False
-a|
+a|isLegacyInstance
+
 
 |instanceType
 |string
 |False
-a|
+a|instanceType
+
 
 |isLegacyOs
 |boolean
 |False
-a|
+a|isLegacyOs
+
 
 |darkSite
 |boolean
 |False
-a|
+a|is dark site
+
 
 |===
 

@@ -53,7 +53,8 @@ a|
 |numberOfDisks
 |integer
 |True
-a|
+a|Number of disks
+
 
 |===
 

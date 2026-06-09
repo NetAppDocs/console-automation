@@ -64,32 +64,38 @@ a|
 |subnetPath
 |string
 |False
-a|
+a|Subnet path for a single node cluster
+
 
 |subnetId
 |string
 |True
-a|
+a|Subnet ID for a single node cluster
+
 
 |firewallRule
 |string
 |False
-a|
+a|Firewall name for a single node cluster
+
 
 |firewallTagNameRule
 |string
 |False
-a|
+a|Firewall tag name for a single node cluster
+
 
 |firewallIpRanges
 |link:#firewallIpRanges[firewallIpRanges]
 |False
-a|
+a|Firewall IP ranges
+
 
 |dataEncryptionType
 |string
 |True
-a|
+a|Type of encryption to use for this system
+
 
 |securityGroupId
 |string
@@ -109,7 +115,8 @@ a|
 |serialNumber
 |string
 |False
-a|
+a|Serial number for BYOL
+
 
 |gcpVolumeSize
 |link:#Capacity[Capacity]
@@ -119,42 +126,50 @@ a|
 |gcpVolumeType
 |string
 |True
-a|
+a|Google Cloud volume type
+
 
 |gcpLabels
 |array[link:#GcpLabel[GcpLabel]]
 |True
-a|
+a|Optionally, provide up to four key-value pairs with which to tag all Google Cloud entities created by the NetApp Console.
+
 
 |workerPool
 |string
 |False
-a|
+a|The worker pool URI. Required for private mode Google Cloud deployments with Cloud Volumes ONTAP.
+
 
 |writingSpeedState
 |string
 |False
-a|
+a|Writing speed state
+
 
 |failedToCreateWorkingEnvironmentId
 |string
 |False
-a|
+a|Public ID of the failed-to-create system
+
 
 |capacityTier
 |string
 |False
-a|
+a|Capacity tier
+
 
 |packageName
 |string
 |False
-a|
+a|Pre-configured package name
+
 
 |svmName
 |string
 |False
-a|
+a|SVM name
+
 
 |wormRequest
 |link:#WormRequest[WormRequest]
@@ -164,27 +179,32 @@ a|
 |nssAccount
 |string
 |False
-a|
+a|NetApp Support Service (NSS) account
+
 
 |gcpStorageAccount
 |string
 |False
-a|
+a|Google Cloud storage account
+
 
 |gcpServiceAccount
 |string
 |False
-a|
+a|Google Cloud service account
+
 
 |tierLevel
 |string
 |False
-a|
+a|Google Cloud available storage classes
+
 
 |saasSubscriptionId
 |string
 |False
-a|
+a|SaaS subscription ID
+
 
 |cloudProviderAccount
 |string
@@ -194,12 +214,14 @@ a|
 |project
 |string
 |False
-a|
+a|Google Cloud optional project
+
 
 |enableCompliance
 |boolean
 |True
-a|
+a|Enable compliance
+
 
 |gcpEncryptionParameters
 |link:#GcpEncryption[GcpEncryption]
@@ -209,27 +231,32 @@ a|
 |providedImage
 |string
 |False
-a|
+a|Provided external Cloud Volumes ONTAP image
+
 
 |providedMediatorImage
 |string
 |False
-a|
+a|Provided external mediator image
+
 
 |enableMonitoring
 |boolean
 |True
-a|
+a|Enable monitoring
+
 
 |enableServices
 |array[string]
 |False
-a|
+a|Enable services
+
 
 |backupVolumesToCbs
 |boolean
 |False
-a|
+a|Automatically back up all volumes to the cloud
+
 
 |haParams
 |link:#GcpHaParameters[GcpHaParameters]
@@ -244,12 +271,14 @@ a|
 |skipSvmManagementLif
 |boolean
 |True
-a|
+a|SVM management LIF flag. Beginning with ONTAP 9.11.1, the flag is always set to true.
+
 
 |flashCache
 |boolean
 |True
-a|
+a|Enable Flash Cache
+
 
 |===
 
@@ -336,7 +365,8 @@ a|
 |activeActions
 |array[string]
 |False
-a|
+a|Actions currently being performed on this system
+
 
 |replicationProperties
 |link:#ReplicationProperties[ReplicationProperties]
@@ -548,12 +578,14 @@ PositiveCapacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -572,12 +604,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -585,6 +619,9 @@ a|
 [#index]
 [.api-collapsible-fifth-title]
 index
+
+Export policy rule index
+
 
 
 [#ExportPolicyRule]
@@ -601,27 +638,32 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|
+a|Export policy rule index
+
 
 |ruleAccessControl
 |string
 |True
-a|
+a|Export policy rule access control
+
 
 |ips
 |array[string]
 |True
-a|
+a|Export policy rule list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy rule protocol
+
 
 |superUser
 |boolean
 |True
-a|
+a|Export policy rule super user access
+
 
 |===
 
@@ -640,22 +682,26 @@ ExportPolicyInfo
 |policyType
 |string
 |False
-a|
+a|Export policy type
+
 
 |ips
 |array[string]
 |False
-a|
+a|Custom export policy list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy protocol
+
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |False
-a|
+a|Export policy rules
+
 
 |===
 
@@ -674,12 +720,14 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|
+a|CIFS share permission type
+
 
 |users
 |array[string]
 |True
-a|
+a|List of users with the permission
+
 
 |===
 
@@ -698,7 +746,8 @@ CreateCifsShareInfoRequest
 |shareName
 |string
 |False
-a|
+a|Share name
+
 
 |accessControl
 |link:#CifsShareUserPermissions[CifsShareUserPermissions]
@@ -722,12 +771,14 @@ IgroupCreationRequest
 |initiators
 |array[string]
 |False
-a|
+a|Initiators
+
 
 |igroupName
 |string
 |False
-a|
+a|Igroup name
+
 
 |===
 
@@ -746,7 +797,8 @@ CreateIscsiInfoRequest
 |osName
 |string
 |False
-a|
+a|Operating system
+
 
 |igroupCreationRequest
 |link:#IgroupCreationRequest[IgroupCreationRequest]
@@ -756,7 +808,8 @@ a|
 |igroups
 |array[string]
 |False
-a|
+a|Igroups
+
 
 |===
 
@@ -799,7 +852,8 @@ VsaVolumeOnNewVsaCreateRequest
 |name
 |string
 |False
-a|
+a|Volume name, unique within the SVM
+
 
 |size
 |link:#PositiveCapacity[PositiveCapacity]
@@ -834,27 +888,32 @@ a|
 |enableThinProvisioning
 |boolean
 |False
-a|
+a|Enable thin provisioning on the volume
+
 
 |enableCompression
 |boolean
 |False
-a|
+a|Enable compression on the volume
+
 
 |enableDeduplication
 |boolean
 |False
-a|
+a|Enable deduplication on the volume
+
 
 |tieringPolicy
 |string
 |False
-a|
+a|Tiering policy
+
 
 |junctionPath
 |string
 |False
-a|
+a|Junction path
+
 
 |qualityOfService
 |link:#VolumeQualityOfService[VolumeQualityOfService]
@@ -867,6 +926,9 @@ a|
 [#firewallIpRanges]
 [.api-collapsible-fifth-title]
 firewallIpRanges
+
+Firewall IP ranges
+
 
 
 [#VsaMetadataRequest]
@@ -883,42 +945,50 @@ VsaMetadataRequest
 |ontapVersion
 |string
 |True
-a|
+a|ONTAP version
+
 
 |licenseType
 |string
 |True
-a|
+a|License type
+
 
 |instanceType
 |string
 |True
-a|
+a|Instance type
+
 
 |platformSerialNumber
 |string
 |False
-a|
+a|Optional platform serial number
+
 
 |providedLicense
 |string
 |False
-a|
+a|Optional provided license
+
 
 |capacityPackageName
 |string
 |False
-a|
+a|Optional capacity-based package
+
 
 |keyStoneSubscription
 |string
 |False
-a|
+a|Keystone subscription ID
+
 
 |useLatestVersion
 |boolean
 |False
-a|
+a|Use the latest version
+
 
 |===
 
@@ -937,42 +1007,50 @@ CIFSConfigurationRequest
 |dnsDomain
 |string
 |False
-a|
+a|DNS domain name
+
 
 |ipAddresses
 |array[string]
 |True
-a|
+a|DNS server IP addresses
+
 
 |netBIOS
 |string
 |True
-a|
+a|CIFS server NetBIOS name
+
 
 |organizationalUnit
 |string
 |True
-a|
+a|Organizational unit for registration
+
 
 |activeDirectoryDomain
 |string
 |True
-a|
+a|Active Directory domain name
+
 
 |activeDirectoryUsername
 |string
 |True
-a|
+a|Active Directory username
+
 
 |activeDirectoryPassword
 |string
 |True
-a|
+a|Active Directory password
+
 
 |svmName
 |string
 |False
-a|
+a|SVM name
+
 
 |===
 
@@ -1015,12 +1093,14 @@ WormRetentionPeriod
 |length
 |integer
 |True
-a|
+a|Length
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -1077,107 +1157,128 @@ GcpHaParameters
 |platformSerialNumberNode1
 |string
 |False
-a|
+a|Platform serial number for node 1
+
 
 |platformSerialNumberNode2
 |string
 |False
-a|
+a|Platform serial number for node 2
+
 
 |node1Zone
 |string
 |False
-a|
+a|Zone for node 1
+
 
 |node2Zone
 |string
 |False
-a|
+a|Zone for node 2
+
 
 |mediatorZone
 |string
 |False
-a|
+a|Zone for mediator
+
 
 |vpc0NodeAndDataConnectivity
 |string
 |False
-a|
+a|VPC path for nic1, required for node and data connectivity
+
 
 |vpc1ClusterConnectivity
 |string
 |False
-a|
+a|VPC path for nic2, required for cluster connectivity
+
 
 |vpc2HAConnectivity
 |string
 |False
-a|
+a|VPC path for nic3, required for HA connectivity
+
 
 |vpc3DataReplication
 |string
 |False
-a|
+a|VPC path for nic4, required for data replication
+
 
 |subnet0NodeAndDataConnectivity
 |string
 |False
-a|
+a|Subnet path for nic1, required for node and data connectivity
+
 
 |subnet1ClusterConnectivity
 |string
 |False
-a|
+a|Subnet path for nic2, required for cluster connectivity
+
 
 |subnet2HAConnectivity
 |string
 |False
-a|
+a|Subnet path for nic3, required for HA connectivity
+
 
 |subnet3DataReplication
 |string
 |False
-a|
+a|Subnet path for nic4, required for data replication
+
 
 |vpc0FirewallRuleName
 |string
 |False
-a|
+a|Optional firewall rule name for vpc1
+
 
 |vpc1FirewallRuleName
 |string
 |False
-a|
+a|Optional firewall rule name for vpc2
+
 
 |vpc2FirewallRuleName
 |string
 |False
-a|
+a|Optional firewall rule name for vpc3
+
 
 |vpc3FirewallRuleName
 |string
 |False
-a|
+a|Optional firewall rule name for vpc4
+
 
 |vpc0FirewallRuleTagName
 |string
 |False
-a|
+a|Optional firewall tag name for vpc1
+
 
 |vpc1FirewallRuleTagName
 |string
 |False
-a|
+a|Optional firewall tag name for vpc2
+
 
 |vpc2FirewallRuleTagName
 |string
 |False
-a|
+a|Optional firewall tag name for vpc3
+
 
 |vpc3FirewallRuleTagName
 |string
 |False
-a|
+a|Optional firewall tag name for vpc4
+
 
 |===
 
@@ -1186,10 +1287,16 @@ a|
 [.api-collapsible-fifth-title]
 iops
 
+Optional IOPS for the aggregate
+
+
 
 [#throughput]
 [.api-collapsible-fifth-title]
 throughput
+
+Optional throughput for the aggregate
+
 
 
 [#GcpPerformance]
@@ -1206,12 +1313,14 @@ GcpPerformance
 |iops
 |link:#iops[iops]
 |False
-a|
+a|Optional IOPS for the aggregate
+
 
 |throughput
 |link:#throughput[throughput]
 |False
-a|
+a|Optional throughput for the aggregate
+
 
 |===
 
@@ -1376,32 +1485,38 @@ LifResponse
 |ip
 |string
 |True
-a|
+a|LIF IP address
+
 
 |netmask
 |string
 |True
-a|
+a|LIF netmask
+
 
 |lifType
 |string
 |True
-a|
+a|LIF type
+
 
 |dataProtocols
 |array[string]
 |True
-a|
+a|List of supported protocols
+
 
 |nodeName
 |string
 |True
-a|
+a|Node name
+
 
 |privateIp
 |boolean
 |True
-a|
+a|Specifies whether the LIF IP address is a private address
+
 
 |===
 
@@ -1420,7 +1535,8 @@ VsaLicense
 |name
 |string
 |True
-a|
+a|License name
+
 
 |capacityLimit
 |link:#Capacity[Capacity]
@@ -1853,12 +1969,14 @@ PolicySchedule
 |frequency
 |string
 |True
-a|
+a|Frequency
+
 
 |retention
 |integer
 |True
-a|
+a|Retention
+
 
 |===
 
@@ -1877,17 +1995,20 @@ SnapshotPolicy
 |name
 |string
 |True
-a|
+a|Name
+
 
 |schedules
 |array[link:#PolicySchedule[PolicySchedule]]
 |True
-a|
+a|Schedules
+
 
 |description
 |string
 |True
-a|
+a|Description
+
 
 |===
 
@@ -1906,7 +2027,8 @@ RaidInfoForEvAggregate
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed for the RAID group
+
 
 |diskSize
 |link:#Capacity[Capacity]
@@ -1940,7 +2062,8 @@ a|
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
 |False
-a|
+a|New RAID information
+
 
 |totalEvDisks
 |integer
@@ -2197,12 +2320,14 @@ ActionRequiredParameters
 |aggregateName
 |string
 |True
-a|
+a|Aggregate name
+
 
 |numOfDisks
 |integer
 |True
-a|
+a|Number of disks relevant to the action
+
 
 |totalCapacity
 |link:#Capacity[Capacity]
@@ -2217,7 +2342,8 @@ a|
 |volumeNames
 |array[string]
 |True
-a|
+a|A limited list of volumes on the aggregate
+
 
 |maxCapacity
 |link:#Capacity[Capacity]
@@ -2227,12 +2353,14 @@ a|
 |licenseExpiryDate
 |integer
 |True
-a|
+a|License expiry date
+
 
 |serialNumber
 |string
 |True
-a|
+a|Platform serial number
+
 
 |volumeMoveParameters
 |link:#VolumeMoveParameters[VolumeMoveParameters]
@@ -2242,7 +2370,8 @@ a|
 |workingEnvironmentId
 |string
 |True
-a|
+a|System public ID
+
 
 |licenseParameters
 |link:#ChangeLicenseParameters[ChangeLicenseParameters]
@@ -2257,17 +2386,20 @@ a|
 |instances
 |array[link:#InstanceNameIdAndType[InstanceNameIdAndType]]
 |True
-a|
+a|Instances information
+
 
 |moreInfo
 |string
 |False
-a|
+a|More information
+
 
 |providerVolumeType
 |string
 |False
-a|
+a|Provider volume type
+
 
 |volumeInfo
 |link:#VolumeInfo[VolumeInfo]
@@ -2277,17 +2409,20 @@ a|
 |currentInstanceType
 |string
 |False
-a|
+a|Current instance type
+
 
 |isComposite
 |boolean
 |True
-a|
+a|Indicates if the aggregate is a composite aggregate
+
 
 |isCapacityBased
 |boolean
 |True
-a|
+a|Indicates if the license type is a  capacity-based license type
+
 
 |===
 
@@ -2306,7 +2441,8 @@ ActionRequired
 |actionType
 |string
 |True
-a|
+a|The type of the action
+
 
 |parameters
 |link:#ActionRequiredParameters[ActionRequiredParameters]
@@ -2316,7 +2452,8 @@ a|
 |severity
 |string
 |True
-a|
+a|Action Severity
+
 
 |===
 
@@ -2471,12 +2608,14 @@ a|
 |ver3Enabled
 |boolean
 |True
-a|
+a|NFS Version 3 enabled
+
 
 |ver4Enabled
 |boolean
 |True
-a|
+a|NFS Version 4 enabled
+
 
 |===
 
@@ -2600,6 +2739,11 @@ a|
 a|
 
 |===
+
+
+[#iops]
+[.api-collapsible-fifth-title]
+iops
 
 
 [#DefaultProviderVolume]

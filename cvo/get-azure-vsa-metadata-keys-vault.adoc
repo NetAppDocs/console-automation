@@ -68,12 +68,14 @@ Status: Default, Default response
 |keyName
 |string
 |True
-a|
+a|Key name
+
 
 |kid
 |string
 |True
-a|
+a|Key ID
+
 
 |===
 

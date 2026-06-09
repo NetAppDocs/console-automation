@@ -77,7 +77,8 @@ a|
 |snapshotPolicyName
 |string
 |False
-a|
+a|Snapshot policy name
+
 
 |exportPolicyInfo
 |link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
@@ -87,7 +88,8 @@ a|
 |tieringPolicy
 |string
 |False
-a|
+a|Tiering policy
+
 
 |shareInfo
 |link:#CifsShareInfo[CifsShareInfo]
@@ -250,6 +252,9 @@ a|
 [.api-collapsible-fifth-title]
 index
 
+Export policy rule index
+
+
 
 [#ExportPolicyRule]
 [.api-collapsible-fifth-title]
@@ -265,27 +270,32 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|
+a|Export policy rule index
+
 
 |ruleAccessControl
 |string
 |True
-a|
+a|Export policy rule access control
+
 
 |ips
 |array[string]
 |True
-a|
+a|Export policy rule list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy rule protocol
+
 
 |superUser
 |boolean
 |True
-a|
+a|Export policy rule super user access
+
 
 |===
 
@@ -304,27 +314,32 @@ NamedExportPolicyInfo
 |name
 |string
 |False
-a|
+a|Export policy name
+
 
 |policyType
 |string
 |True
-a|
+a|Export policy type
+
 
 |ips
 |array[string]
 |True
-a|
+a|Custom export policy list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy protocol
+
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |True
-a|
+a|Export policy rules
+
 
 |===
 
@@ -343,12 +358,14 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|
+a|CIFS share permission type
+
 
 |users
 |array[string]
 |True
-a|
+a|List of users with the permission
+
 
 |===
 
@@ -367,17 +384,20 @@ CifsShareInfo
 |shareName
 |string
 |True
-a|
+a|Share name
+
 
 |accessControlList
 |array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
 |True
-a|
+a|List of CIFS share permissions
+
 
 |vscanFileOpPolicy
 |string
 |False
-a|
+a|Vscan file operations profile
+
 
 |===
 

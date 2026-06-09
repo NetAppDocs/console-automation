@@ -3,10 +3,10 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-ha-volumes-storage-vms-volumes-remove-avs.html'
-summary: 'Remove Azure VMware Solution hosts on a volume'
+summary: 'Remove AVS hosts on a volume'
 ---
 
-= Remove Azure VMware Solution hosts on a volume
+= Remove AVS hosts on a volume
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/remove-avs`#
 
@@ -59,22 +59,26 @@ a|
 |privateCloudName
 |string
 |True
-a|
+a|Azure VMware Solution (AVS) private cloud name
+
 
 |clusterName
 |string
 |True
-a|
+a|Private cloud cluster name
+
 
 |resourceGroup
 |string
 |True
-a|
+a|Private cloud resourceGroup name
+
 
 |dataStoreName
 |string
 |True
-a|
+a|Private cloud DataStore name
+
 
 |===
 

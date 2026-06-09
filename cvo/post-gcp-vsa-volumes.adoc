@@ -47,22 +47,26 @@ a|
 |workingEnvironmentId
 |string
 |True
-a|
+a|Cloud Volumes ONTAP system ID
+
 
 |svmName
 |string
 |True
-a|
+a|SVM name
+
 
 |aggregateName
 |string
 |True
-a|
+a|Aggregate in which the volume will be created
+
 
 |name
 |string
 |False
-a|
+a|Volume name, unique within the SVM
+
 
 |size
 |link:#PositiveCapacity[PositiveCapacity]
@@ -77,7 +81,8 @@ a|
 |snapshotPolicyName
 |string
 |True
-a|
+a|Snapshot policy name
+
 
 |exportPolicyInfo
 |link:#ExportPolicyInfo[ExportPolicyInfo]
@@ -97,22 +102,26 @@ a|
 |enableThinProvisioning
 |boolean
 |True
-a|
+a|Enable thin provisioning on the volume
+
 
 |enableCompression
 |boolean
 |True
-a|
+a|Enable compression on the volume
+
 
 |enableDeduplication
 |boolean
 |True
-a|
+a|Enable deduplication on the volume
+
 
 |maxNumOfDisksApprovedToAdd
 |integer
 |True
-a|
+a|Maximum number of disks approved to allocate
+
 
 |evCapacityApprovedToAdd
 |link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
@@ -122,37 +131,44 @@ a|
 |providerVolumeType
 |string
 |False
-a|
+a|Provider volume type
+
 
 |syncToS3
 |boolean
 |True
-a|
+a|Add a cloud sync relationship
+
 
 |capacityTier
 |string
 |False
-a|
+a|Capacity tier
+
 
 |iops
 |integer
 |False
-a|
+a|Provisioned IOPS
+
 
 |throughput
 |integer
 |False
-a|
+a|Provisioned throughput
+
 
 |tieringPolicy
 |string
 |False
-a|
+a|Tiering policy
+
 
 |junctionPath
 |string
 |False
-a|
+a|Junction path
+
 
 |qualityOfService
 |link:#VolumeQualityOfService[VolumeQualityOfService]
@@ -162,17 +178,20 @@ a|
 |minimumCoolingDays
 |link:#minimumCoolingDays[minimumCoolingDays]
 |False
-a|
+a|Cooling Days
+
 
 |volumeTags
 |array[link:#VolumeTags[VolumeTags]]
 |True
-a|
+a|Optionally, provide key-value pairs with which to tag the ONTAP volume using the App Template service.
+
 
 |comment
 |string
 |False
-a|
+a|Volume Comment
+
 
 |flexGroupVolumeInfo
 |link:#FlexGroupVolumeInfo[FlexGroupVolumeInfo]
@@ -209,12 +228,14 @@ PositiveCapacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -233,12 +254,14 @@ Capacity
 |size
 |number
 |True
-a|
+a|Size
+
 
 |unit
 |string
 |True
-a|
+a|Unit
+
 
 |===
 
@@ -246,6 +269,9 @@ a|
 [#index]
 [.api-collapsible-fifth-title]
 index
+
+Export policy rule index
+
 
 
 [#ExportPolicyRule]
@@ -262,27 +288,32 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|
+a|Export policy rule index
+
 
 |ruleAccessControl
 |string
 |True
-a|
+a|Export policy rule access control
+
 
 |ips
 |array[string]
 |True
-a|
+a|Export policy rule list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy rule protocol
+
 
 |superUser
 |boolean
 |True
-a|
+a|Export policy rule super user access
+
 
 |===
 
@@ -301,22 +332,26 @@ ExportPolicyInfo
 |policyType
 |string
 |False
-a|
+a|Export policy type
+
 
 |ips
 |array[string]
 |False
-a|
+a|Custom export policy list of IPs
+
 
 |nfsVersion
 |array[string]
 |False
-a|
+a|Export policy protocol
+
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |False
-a|
+a|Export policy rules
+
 
 |===
 
@@ -335,12 +370,14 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|
+a|CIFS share permission type
+
 
 |users
 |array[string]
 |True
-a|
+a|List of users with the permission
+
 
 |===
 
@@ -359,7 +396,8 @@ CreateCifsShareInfoRequest
 |shareName
 |string
 |False
-a|
+a|Share name
+
 
 |accessControl
 |link:#CifsShareUserPermissions[CifsShareUserPermissions]
@@ -383,12 +421,14 @@ IgroupCreationRequest
 |initiators
 |array[string]
 |False
-a|
+a|Initiators
+
 
 |igroupName
 |string
 |False
-a|
+a|Igroup name
+
 
 |===
 
@@ -407,7 +447,8 @@ CreateIscsiInfoRequest
 |osName
 |string
 |False
-a|
+a|Operating system
+
 
 |igroupCreationRequest
 |link:#IgroupCreationRequest[IgroupCreationRequest]
@@ -417,7 +458,8 @@ a|
 |igroups
 |array[string]
 |False
-a|
+a|Igroups
+
 
 |===
 
@@ -436,7 +478,8 @@ RaidInfoForEvAggregate
 |numOfDisks
 |integer
 |True
-a|
+a|Number of new disks needed for the RAID group
+
 
 |diskSize
 |link:#Capacity[Capacity]
@@ -470,7 +513,8 @@ a|
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
 |False
-a|
+a|New RAID information
+
 
 |totalEvDisks
 |integer
@@ -507,6 +551,9 @@ a|
 [#minimumCoolingDays]
 [.api-collapsible-fifth-title]
 minimumCoolingDays
+
+Cooling Days
+
 
 
 [#VolumeTags]
@@ -547,12 +594,14 @@ FlexGroupVolumeInfo
 |aggregateList
 |array[string]
 |False
-a|
+a|Names of aggregates for the FlexGroup volume
+
 
 |numberOfConstituents
 |integer
 |False
-a|
+a|Number of constituents for the FlexGroup volume
+
 
 |===
 

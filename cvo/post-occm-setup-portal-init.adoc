@@ -47,17 +47,20 @@ a|
 |site
 |string
 |False
-a|
+a|Site
+
 
 |company
 |string
 |False
-a|
+a|Company
+
 
 |tenancyAccountId
 |string
 |False
-a|
+a|Tenancy account ID
+
 
 |proxyUrl
 |link:#ProxyUri[ProxyUri]

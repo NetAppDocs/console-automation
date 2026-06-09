@@ -56,12 +56,14 @@ Status: Default, Default response
 |interClusterLifs
 |array[link:#ReplicationInterClusterLif[ReplicationInterClusterLif]]
 |True
-a|
+a|System Intercluster LIFs
+
 
 |peerInterClusterLifs
 |array[link:#ReplicationInterClusterLif[ReplicationInterClusterLif]]
 |True
-a|
+a|Peer system Intercluster Lifs
+
 
 |===
 
@@ -101,37 +103,44 @@ ReplicationInterClusterLif
 |name
 |string
 |True
-a|
+a|Specifies the name
+
 
 |address
 |string
 |True
-a|
+a|Address
+
 
 |netmaskLength
 |integer
 |True
-a|
+a|Netmask Length
+
 
 |port
 |string
 |True
-a|
+a|Port
+
 
 |node
 |string
 |True
-a|
+a|Node
+
 
 |status
 |string
 |True
-a|
+a|Status
+
 
 |isPeered
 |boolean
 |True
-a|
+a|Is Peered
+
 
 |===
 
