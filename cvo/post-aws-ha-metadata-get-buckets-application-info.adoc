@@ -59,17 +59,17 @@ Status: Default, Default response
 |Required
 |Description
 
+|accessData
+|string
+|False
+a|
+
 |bucketName
 |string
 |True
 a|
 
 |tieringLevel
-|string
-|False
-a|
-
-|accessData
 |string
 |False
 a|
@@ -82,9 +82,9 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "accessData": "string",
   "bucketName": "string",
-  "tieringLevel": "string",
-  "accessData": "string"
+  "tieringLevel": "string"
 }
 ====
 

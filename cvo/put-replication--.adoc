@@ -56,16 +56,16 @@ a|
 |Required
 |Description
 
-|schedule
-|string
-|False
-a|New replication schedule name
-
-
 |maxTransferRate
 |integer
 |False
 a|New maximum transfer rate limit (KB/s). Use 0 for no limit, otherwise use a number between 1024 and 2,147,482,624.
+
+
+|schedule
+|string
+|False
+a|New replication schedule name
 
 
 |===

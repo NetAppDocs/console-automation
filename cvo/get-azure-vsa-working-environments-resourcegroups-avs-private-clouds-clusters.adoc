@@ -69,13 +69,13 @@ a|
 |False
 a|
 
-|tags
-|link:#tags[tags]
+|properties
+|link:#AvsPrivateCloudClusterProperties[AvsPrivateCloudClusterProperties]
 |True
 a|
 
-|properties
-|link:#AvsPrivateCloudClusterProperties[AvsPrivateCloudClusterProperties]
+|tags
+|link:#tags[tags]
 |True
 a|
 
@@ -89,30 +89,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#tags]
-[.api-collapsible-fifth-title]
-tags
-Hash mapping strings to string
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|traversableAgain
-|boolean
-|True
-a|
-
-|empty
-|boolean
-|False
-a|
-
-|===
-
-
 [#AvsPrivateCloudClusterProperties]
 [.api-collapsible-fifth-title]
 AvsPrivateCloudClusterProperties
@@ -134,6 +110,11 @@ a|
 |False
 a|
 
+|hosts
+|array[string]
+|True
+a|
+
 |provisioningState
 |string
 |False
@@ -144,8 +125,27 @@ a|
 |False
 a|
 
-|hosts
-|array[string]
+|===
+
+
+[#tags]
+[.api-collapsible-fifth-title]
+tags
+Hash mapping strings to string
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|empty
+|boolean
+|False
+a|
+
+|traversableAgain
+|boolean
 |True
 a|
 

@@ -26,17 +26,38 @@ Creates a new volume.
 |Required
 |Description
 
+|ProtocolIscsiInfo
+|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
+|False
+a|
+
+|awsTags
+|array[link:#AwsTag[AwsTag]]
+|True
+a|Optionally, provide up to 50 key-value pairs to be used as volume tags.
+
+
+|enableStorageEfficiency
+|boolean
+|True
+a|Storage efficiency
+
+
+|exportPolicyInfo
+|link:#ExportPolicyInfo[ExportPolicyInfo]
+|False
+a|
+
 |fileSystemId
 |string
 |True
 a|Target file system ID
 
 
-|svmName
-|string
-|True
-a|SVM name
-
+|initialSize
+|link:#Capacity[Capacity]
+|False
+a|
 
 |name
 |string
@@ -44,14 +65,20 @@ a|SVM name
 a|Volume name, unique within the SVM
 
 
+|numberOfConstituents
+|link:#numberOfConstituents[numberOfConstituents]
+|False
+a|Number of constituents for the FlexGroup volume
+
+
+|shareInfo
+|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
+|False
+a|
+
 |size
 |link:#PositiveCapacity[PositiveCapacity]
 |True
-a|
-
-|initialSize
-|link:#Capacity[Capacity]
-|False
 a|
 
 |snapshotPolicyName
@@ -60,43 +87,16 @@ a|
 a|Snapshot policy name
 
 
-|exportPolicyInfo
-|link:#ExportPolicyInfo[ExportPolicyInfo]
-|False
-a|
-
-|shareInfo
-|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
-|False
-a|
-
-|ProtocolIscsiInfo
-|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
-|False
-a|
-
-|enableStorageEfficiency
-|boolean
+|svmName
+|string
 |True
-a|Storage efficiency
+a|SVM name
 
 
 |tieringPolicy
 |string
 |False
 a|Tiering policy
-
-
-|awsTags
-|array[link:#AwsTag[AwsTag]]
-|True
-a|Optionally, provide up to 50 key-value pairs to be used as volume tags.
-
-
-|numberOfConstituents
-|link:#numberOfConstituents[numberOfConstituents]
-|False
-a|Number of constituents for the FlexGroup volume
 
 
 |===
@@ -115,9 +115,9 @@ Status: Default, Default response
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#PositiveCapacity]
+[#IgroupCreationRequest]
 [.api-collapsible-fifth-title]
-PositiveCapacity
+IgroupCreationRequest
 
 [cols=4*,options=header]
 |===
@@ -126,16 +126,161 @@ PositiveCapacity
 |Required
 |Description
 
-|size
-|number
+|igroupName
+|string
+|False
+a|Igroup name
+
+
+|initiators
+|array[string]
+|False
+a|Initiators
+
+
+|===
+
+
+[#CreateIscsiInfoRequest]
+[.api-collapsible-fifth-title]
+CreateIscsiInfoRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|igroupCreationRequest
+|link:#IgroupCreationRequest[IgroupCreationRequest]
+|False
+a|
+
+|igroups
+|array[string]
+|False
+a|Igroups
+
+
+|osName
+|string
+|False
+a|Operating system
+
+
+|===
+
+
+[#AwsTag]
+[.api-collapsible-fifth-title]
+AwsTag
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|tagKey
+|string
+|False
+a|
+
+|tagValue
+|string
+|False
+a|
+
+|===
+
+
+[#index]
+[.api-collapsible-fifth-title]
+index
+
+Export policy rule index
+
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|index
+|link:#index[index]
+|False
+a|Export policy rule index
+
+
+|ips
+|array[string]
 |True
-a|Size
+a|Export policy rule list of IPs
 
 
-|unit
+|nfsVersion
+|array[string]
+|False
+a|Export policy rule protocol
+
+
+|ruleAccessControl
 |string
 |True
-a|Unit
+a|Export policy rule access control
+
+
+|superUser
+|boolean
+|True
+a|Export policy rule super user access
+
+
+|===
+
+
+[#ExportPolicyInfo]
+[.api-collapsible-fifth-title]
+ExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ips
+|array[string]
+|False
+a|Custom export policy list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy protocol
+
+
+|policyType
+|string
+|False
+a|Export policy type
+
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|False
+a|Export policy rules
 
 
 |===
@@ -167,94 +312,12 @@ a|Unit
 |===
 
 
-[#index]
+[#numberOfConstituents]
 [.api-collapsible-fifth-title]
-index
+numberOfConstituents
 
-Export policy rule index
+Number of constituents for the FlexGroup volume
 
-
-
-[#ExportPolicyRule]
-[.api-collapsible-fifth-title]
-ExportPolicyRule
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|index
-|link:#index[index]
-|False
-a|Export policy rule index
-
-
-|ruleAccessControl
-|string
-|True
-a|Export policy rule access control
-
-
-|ips
-|array[string]
-|True
-a|Export policy rule list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy rule protocol
-
-
-|superUser
-|boolean
-|True
-a|Export policy rule super user access
-
-
-|===
-
-
-[#ExportPolicyInfo]
-[.api-collapsible-fifth-title]
-ExportPolicyInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|policyType
-|string
-|False
-a|Export policy type
-
-
-|ips
-|array[string]
-|False
-a|Custom export policy list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy protocol
-
-
-|rules
-|array[link:#ExportPolicyRule[ExportPolicyRule]]
-|False
-a|Export policy rules
-
-
-|===
 
 
 [#CifsShareUserPermissions]
@@ -294,23 +357,23 @@ CreateCifsShareInfoRequest
 |Required
 |Description
 
+|accessControl
+|link:#CifsShareUserPermissions[CifsShareUserPermissions]
+|False
+a|
+
 |shareName
 |string
 |False
 a|Share name
 
 
-|accessControl
-|link:#CifsShareUserPermissions[CifsShareUserPermissions]
-|False
-a|
-
 |===
 
 
-[#IgroupCreationRequest]
+[#PositiveCapacity]
 [.api-collapsible-fifth-title]
-IgroupCreationRequest
+PositiveCapacity
 
 [cols=4*,options=header]
 |===
@@ -319,82 +382,19 @@ IgroupCreationRequest
 |Required
 |Description
 
-|initiators
-|array[string]
-|False
-a|Initiators
+|size
+|number
+|True
+a|Size
 
 
-|igroupName
+|unit
 |string
-|False
-a|Igroup name
+|True
+a|Unit
 
 
 |===
-
-
-[#CreateIscsiInfoRequest]
-[.api-collapsible-fifth-title]
-CreateIscsiInfoRequest
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|osName
-|string
-|False
-a|Operating system
-
-
-|igroupCreationRequest
-|link:#IgroupCreationRequest[IgroupCreationRequest]
-|False
-a|
-
-|igroups
-|array[string]
-|False
-a|Igroups
-
-
-|===
-
-
-[#AwsTag]
-[.api-collapsible-fifth-title]
-AwsTag
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|tagKey
-|string
-|False
-a|
-
-|tagValue
-|string
-|False
-a|
-
-|===
-
-
-[#numberOfConstituents]
-[.api-collapsible-fifth-title]
-numberOfConstituents
-
-Number of constituents for the FlexGroup volume
-
 
 
 //end collapsible .Definitions block

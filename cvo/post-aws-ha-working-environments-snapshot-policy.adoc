@@ -44,16 +44,16 @@ a|
 |Required
 |Description
 
-|snapshotPolicyName
-|string
-|False
-a|Snapshot policy name
-
-
 |schedules
 |array[link:#SnapshotPolicyScheduleRequest[SnapshotPolicyScheduleRequest]]
 |True
 a|Snapshot policy schedules
+
+
+|snapshotPolicyName
+|string
+|False
+a|Snapshot policy name
 
 
 |===
@@ -64,10 +64,10 @@ a|Snapshot policy schedules
 ====
 [source,json,subs=+macros]
 {
-  "snapshotPolicyName": "string",
   "schedules": [
     {}
-  ]
+  ],
+  "snapshotPolicyName": "string"
 }
 ====
 
@@ -95,16 +95,16 @@ SnapshotPolicyScheduleRequest
 |Required
 |Description
 
-|scheduleType
-|string
-|True
-a|Snapshot policy schedule type
-
-
 |retention
 |integer
 |True
 a|Snapshot policy retention
+
+
+|scheduleType
+|string
+|True
+a|Snapshot policy schedule type
 
 
 |===

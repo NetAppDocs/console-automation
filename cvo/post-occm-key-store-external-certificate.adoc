@@ -26,17 +26,17 @@ Generates a new key pair and self-signed certificate at the key store and return
 |Required
 |Description
 
+|algorithm
+|string
+|False
+a|
+
 |occmCertificate
 |string
 |True
 a|
 
 |privateKey
-|string
-|False
-a|
-
-|algorithm
 |string
 |False
 a|
@@ -49,9 +49,9 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "algorithm": "string",
   "occmCertificate": "string",
-  "privateKey": "string",
-  "algorithm": "string"
+  "privateKey": "string"
 }
 ====
 
@@ -69,7 +69,12 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
+|certificate
+|string
+|False
+a|
+
+|certificateType
 |string
 |False
 a|
@@ -79,7 +84,17 @@ a|
 |False
 a|
 
-|subjectName
+|endDate
+|integer
+|False
+a|
+
+|publicId
+|string
+|False
+a|
+
+|serialNumber
 |string
 |False
 a|
@@ -89,22 +104,7 @@ a|
 |True
 a|
 
-|endDate
-|integer
-|False
-a|
-
-|serialNumber
-|string
-|False
-a|
-
-|certificate
-|string
-|False
-a|
-
-|certificateType
+|subjectName
 |string
 |False
 a|

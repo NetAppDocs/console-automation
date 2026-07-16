@@ -47,7 +47,12 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
+|certificate
+|string
+|False
+a|
+
+|certificateType
 |string
 |False
 a|
@@ -57,7 +62,17 @@ a|
 |False
 a|
 
-|subjectName
+|endDate
+|integer
+|False
+a|
+
+|publicId
+|string
+|False
+a|
+
+|serialNumber
 |string
 |False
 a|
@@ -67,22 +82,7 @@ a|
 |True
 a|
 
-|endDate
-|integer
-|False
-a|
-
-|serialNumber
-|string
-|False
-a|
-
-|certificate
-|string
-|False
-a|
-
-|certificateType
+|subjectName
 |string
 |False
 a|

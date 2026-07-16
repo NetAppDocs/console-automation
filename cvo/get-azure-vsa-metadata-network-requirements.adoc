@@ -29,14 +29,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|vsaMinimumRequiredIps
-|integer
-|True
-a|
-
 |haVsaMinimumRequiredIps
 |integer
 |False
+a|
+
+|vsaMinimumRequiredIps
+|integer
+|True
 a|
 
 |===

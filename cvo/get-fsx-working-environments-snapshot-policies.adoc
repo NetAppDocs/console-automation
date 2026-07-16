@@ -47,6 +47,12 @@ Status: Default, Default response
 |Required
 |Description
 
+|description
+|string
+|True
+a|Description
+
+
 |name
 |string
 |True
@@ -59,12 +65,6 @@ a|Name
 a|Schedules
 
 
-|description
-|string
-|True
-a|Description
-
-
 |===
 
 
@@ -73,11 +73,11 @@ a|Description
 ====
 [source,json,subs=+macros]
 {
+  "description": "string",
   "name": "string",
   "schedules": [
     {}
-  ],
-  "description": "string"
+  ]
 }
 ====
 

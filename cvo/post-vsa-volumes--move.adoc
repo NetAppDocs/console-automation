@@ -56,22 +56,21 @@ a|
 |Required
 |Description
 
-|targetAggregateName
-|string
-|True
-a|Target aggregate name
-
-
-|numOfDisksToAdd
-|integer
-|True
-a|Target aggregate number of disks to add
-
-
 |createTargetAggregate
 |boolean
 |True
 a|Specifies if the aggregate is a new target aggregate
+
+
+|evCapacityApprovedToAdd
+|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
+|False
+a|
+
+|newCapacityTier
+|string
+|False
+a|New capacity tier
 
 
 |newDiskTypeName
@@ -80,22 +79,23 @@ a|Specifies if the aggregate is a new target aggregate
 a|New disk type for the volume
 
 
-|newCapacityTier
-|string
-|False
-a|New capacity tier
-
-
 |newTieringPolicy
 |string
 |False
 a|New tiering policy
 
 
-|evCapacityApprovedToAdd
-|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
-|False
-a|
+|numOfDisksToAdd
+|integer
+|True
+a|Target aggregate number of disks to add
+
+
+|targetAggregateName
+|string
+|True
+a|Target aggregate name
+
 
 |===
 
@@ -150,16 +150,16 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|diskSize
+|link:#Capacity[Capacity]
+|True
+a|
+
 |numOfDisks
 |integer
 |True
 a|Number of new disks needed for the RAID group
 
-
-|diskSize
-|link:#Capacity[Capacity]
-|True
-a|
 
 |===
 
@@ -175,11 +175,6 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
-|False
-a|
-
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -190,6 +185,11 @@ a|
 |False
 a|New RAID information
 
+
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
 
 |totalEvDisks
 |integer

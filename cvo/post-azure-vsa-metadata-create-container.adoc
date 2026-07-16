@@ -26,12 +26,12 @@ Creates a new blob container.
 |Required
 |Description
 
-|subscriptionId
+|cloudProviderAccountId
 |string
 |False
 a|
 
-|cloudProviderAccountId
+|containerName
 |string
 |False
 a|
@@ -46,7 +46,7 @@ a|
 |False
 a|
 
-|containerName
+|subscriptionId
 |string
 |False
 a|
@@ -59,11 +59,11 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "subscriptionId": "string",
   "cloudProviderAccountId": "string",
+  "containerName": "string",
   "resourceGroupName": "string",
   "storageAccountName": "string",
-  "containerName": "string"
+  "subscriptionId": "string"
 }
 ====
 

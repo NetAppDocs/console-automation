@@ -47,21 +47,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
-|string
-|True
-a|
-
-|location
-|string
-|False
-a|
-
-|storageClass
-|string
-|False
-a|
-
 |kmsKeyName
 |string
 |False
@@ -72,6 +57,21 @@ a|
 |True
 a|Instance tags
 
+
+|location
+|string
+|False
+a|
+
+|name
+|string
+|True
+a|
+
+|storageClass
+|string
+|False
+a|
 
 |===
 
@@ -97,12 +97,12 @@ Hash mapping strings to string
 |Required
 |Description
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|

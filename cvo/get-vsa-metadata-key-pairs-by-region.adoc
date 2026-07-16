@@ -79,12 +79,12 @@ Hash mapping strings to array[string]
 |Required
 |Description
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|

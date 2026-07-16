@@ -47,6 +47,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|isCurrent
+|boolean
+|True
+a|
+
 |name
 |string
 |True
@@ -55,11 +60,6 @@ a|
 |version
 |string
 |False
-a|
-
-|isCurrent
-|boolean
-|True
 a|
 
 |===

@@ -26,27 +26,12 @@ Creates a new aggregate.
 |Required
 |Description
 
-|name
+|capacityTier
 |string
-|False
-a|
-
-|workingEnvironmentId
-|string
-|True
-a|
-
-|numberOfDisks
-|integer
 |False
 a|
 
 |diskSize
-|link:#Capacity[Capacity]
-|False
-a|
-
-|initialEvAggregateSize
 |link:#Capacity[Capacity]
 |False
 a|
@@ -56,13 +41,8 @@ a|
 |False
 a|
 
-|providerVolumeType
-|string
-|False
-a|
-
-|capacityTier
-|string
+|initialEvAggregateSize
+|link:#Capacity[Capacity]
 |False
 a|
 
@@ -72,11 +52,31 @@ a|
 a|Provisioned IOPS
 
 
+|name
+|string
+|False
+a|
+
+|numberOfDisks
+|integer
+|False
+a|
+
+|providerVolumeType
+|string
+|False
+a|
+
 |throughput
 |integer
 |False
 a|Provisioned throughput
 
+
+|workingEnvironmentId
+|string
+|True
+a|
 
 |===
 
@@ -86,11 +86,11 @@ a|Provisioned throughput
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
-  "workingEnvironmentId": "string",
+  "capacityTier": "string",
   "homeNode": "string",
+  "name": "string",
   "providerVolumeType": "string",
-  "capacityTier": "string"
+  "workingEnvironmentId": "string"
 }
 ====
 

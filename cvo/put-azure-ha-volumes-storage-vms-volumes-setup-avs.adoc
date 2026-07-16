@@ -56,22 +56,10 @@ a|
 |Required
 |Description
 
-|privateCloudName
-|string
-|True
-a|Azure VMware Solution (AVS) private cloud name
-
-
 |clusterName
 |string
 |True
 a|Private cloud cluster name
-
-
-|resourceGroup
-|string
-|True
-a|Private cloud resourceGroup name
 
 
 |dataStoreName
@@ -84,6 +72,18 @@ a|Private cloud DataStore name
 |link:#Capacity[Capacity]
 |True
 a|
+
+|privateCloudName
+|string
+|True
+a|Azure VMware Solution (AVS) private cloud name
+
+
+|resourceGroup
+|string
+|True
+a|Private cloud resourceGroup name
+
 
 |===
 
@@ -112,8 +112,8 @@ pattern
 |Required
 |Description
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -122,8 +122,8 @@ a|
 |True
 a|
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -141,13 +141,13 @@ Regex
 |Required
 |Description
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
@@ -165,14 +165,14 @@ PatternMessage
 |Required
 |Description
 
-|regex
-|link:#Regex[Regex]
-|True
-a|
-
 |message
 |string
 |False
+a|
+
+|regex
+|link:#Regex[Regex]
+|True
 a|
 
 |===

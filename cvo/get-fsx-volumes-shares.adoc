@@ -64,11 +64,6 @@ Status: Default, Default response
 |True
 a|
 
-|volume
-|string
-|False
-a|
-
 |path
 |string
 |False
@@ -77,6 +72,11 @@ a|
 |permissions
 |array[link:#SharePermissions[SharePermissions]]
 |True
+a|
+
+|volume
+|string
+|False
 a|
 
 |===
@@ -88,14 +88,14 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
-  "volume": "string",
   "path": "string",
   "permissions": [
     {
-      "userOrGroup": "string",
-      "permission": "string"
+      "permission": "string",
+      "userOrGroup": "string"
     }
-  ]
+  ],
+  "volume": "string"
 }
 ====
 
@@ -117,12 +117,12 @@ SharePermissions
 |Required
 |Description
 
-|userOrGroup
+|permission
 |string
 |False
 a|
 
-|permission
+|userOrGroup
 |string
 |False
 a|

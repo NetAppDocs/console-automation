@@ -56,16 +56,16 @@ a|
 |Required
 |Description
 
-|privateCloudName
-|string
-|True
-a|Azure VMware Solution (AVS) private cloud name
-
-
 |clusterName
 |string
 |True
 a|Private cloud cluster name
+
+
+|privateCloudName
+|string
+|True
+a|Azure VMware Solution (AVS) private cloud name
 
 
 |resourceGroup
@@ -82,8 +82,8 @@ a|Private cloud resourceGroup name
 ====
 [source,json,subs=+macros]
 {
-  "privateCloudName": "string",
   "clusterName": "string",
+  "privateCloudName": "string",
   "resourceGroup": "string"
 }
 ====
@@ -112,8 +112,8 @@ pattern
 |Required
 |Description
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -122,8 +122,8 @@ a|
 |True
 a|
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -141,13 +141,13 @@ Regex
 |Required
 |Description
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
@@ -165,14 +165,14 @@ PatternMessage
 |Required
 |Description
 
-|regex
-|link:#Regex[Regex]
-|True
-a|
-
 |message
 |string
 |False
+a|
+
+|regex
+|link:#Regex[Regex]
+|True
 a|
 
 |===

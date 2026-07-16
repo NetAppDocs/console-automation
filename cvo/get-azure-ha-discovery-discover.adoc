@@ -59,6 +59,21 @@ Status: Default, Default response
 |Required
 |Description
 
+|byol
+|boolean
+|False
+a|
+
+|clusterAddress
+|string
+|False
+a|
+
+|isDirectMarketplace
+|boolean
+|False
+a|
+
 |name
 |string
 |True
@@ -69,17 +84,22 @@ a|
 |False
 a|
 
+|recoverable
+|boolean
+|True
+a|
+
 |region
 |string
 |False
 a|
 
-|vnetName
-|string
+|registered
+|boolean
 |False
 a|
 
-|vnetId
+|resourceGroup
 |string
 |False
 a|
@@ -94,33 +114,13 @@ a|
 |False
 a|
 
-|resourceGroup
+|vnetId
 |string
 |False
 a|
 
-|clusterAddress
+|vnetName
 |string
-|False
-a|
-
-|recoverable
-|boolean
-|True
-a|
-
-|byol
-|boolean
-|False
-a|
-
-|registered
-|boolean
-|False
-a|
-
-|isDirectMarketplace
-|boolean
 |False
 a|
 

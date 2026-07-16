@@ -53,12 +53,12 @@ Status: Default, Default response
 |Required
 |Description
 
-|source
+|destination
 |link:#FlexCacheSide[FlexCacheSide]
 |True
 a|
 
-|destination
+|source
 |link:#FlexCacheSide[FlexCacheSide]
 |True
 a|
@@ -71,21 +71,21 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "source": {
-    "workingEnvironmentId": "string",
-    "workingEnvironmentType": "string",
-    "clusterName": "string",
-    "svm": "string",
-    "volume": "string",
-    "uuid": "string"
-  },
   "destination": {
-    "workingEnvironmentId": "string",
-    "workingEnvironmentType": "string",
     "clusterName": "string",
     "svm": "string",
+    "uuid": "string",
     "volume": "string",
-    "uuid": "string"
+    "workingEnvironmentId": "string",
+    "workingEnvironmentType": "string"
+  },
+  "source": {
+    "clusterName": "string",
+    "svm": "string",
+    "uuid": "string",
+    "volume": "string",
+    "workingEnvironmentId": "string",
+    "workingEnvironmentType": "string"
   }
 }
 ====
@@ -134,6 +134,35 @@ FlexCacheSide
 |Required
 |Description
 
+|clusterName
+|string
+|False
+a|Cluster name
+
+
+|size
+|link:#Capacity[Capacity]
+|False
+a|
+
+|svm
+|string
+|False
+a|SVM name
+
+
+|uuid
+|string
+|False
+a|Volume UUID
+
+
+|volume
+|string
+|False
+a|Volume name
+
+
 |workingEnvironmentId
 |string
 |False
@@ -145,35 +174,6 @@ a|System ID
 |False
 a|System type
 
-
-|clusterName
-|string
-|False
-a|Cluster name
-
-
-|svm
-|string
-|False
-a|SVM name
-
-
-|volume
-|string
-|False
-a|Volume name
-
-
-|uuid
-|string
-|False
-a|Volume UUID
-
-
-|size
-|link:#Capacity[Capacity]
-|False
-a|
 
 |===
 

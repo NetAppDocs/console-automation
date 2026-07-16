@@ -62,10 +62,10 @@ a|
 {
   "weActions": [
     {
-      "publicId": "string",
       "actions": [
         {}
-      ]
+      ],
+      "publicId": "string"
     }
   ]
 }
@@ -115,16 +115,16 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|diskSize
+|link:#Capacity[Capacity]
+|True
+a|
+
 |numOfDisks
 |integer
 |True
 a|Number of new disks needed for the RAID group
 
-
-|diskSize
-|link:#Capacity[Capacity]
-|True
-a|
 
 |===
 
@@ -140,11 +140,6 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
-|False
-a|
-
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -156,6 +151,11 @@ a|
 a|New RAID information
 
 
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
 |totalEvDisks
 |integer
 |False
@@ -164,9 +164,9 @@ a|
 |===
 
 
-[#VolumeMoveParameters]
+[#InstanceNameIdAndType]
 [.api-collapsible-fifth-title]
-VolumeMoveParameters
+InstanceNameIdAndType
 
 [cols=4*,options=header]
 |===
@@ -175,27 +175,17 @@ VolumeMoveParameters
 |Required
 |Description
 
-|volumeName
+|instanceId
 |string
 |False
 a|
 
-|svmName
+|instanceName
 |string
 |False
 a|
 
-|targetAggregateName
-|string
-|False
-a|
-
-|isNewTargetAggregate
-|boolean
-|False
-a|
-
-|homeNode
+|instanceType
 |string
 |False
 a|
@@ -214,7 +204,22 @@ OntapLicenseType
 |Required
 |Description
 
-|type
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
+a|
+
+|capacity_limit
+|string
+|False
+a|
+
+|default
+|boolean
+|False
+a|
+
+|description
 |string
 |False
 a|
@@ -224,7 +229,12 @@ a|
 |False
 a|
 
-|description
+|platformLicenseRequired
+|boolean
+|False
+a|
+
+|subDescription
 |string
 |False
 a|
@@ -234,29 +244,9 @@ a|
 |False
 a|
 
-|subDescription
+|type
 |string
 |False
-a|
-
-|capacity_limit
-|string
-|False
-a|
-
-|platformLicenseRequired
-|boolean
-|False
-a|
-
-|default
-|boolean
-|False
-a|
-
-|capacityLimit
-|link:#Capacity[Capacity]
-|True
 a|
 
 |===
@@ -273,42 +263,13 @@ ChangeLicenseParameters
 |Required
 |Description
 
-|newLicenseType
-|link:#OntapLicenseType[OntapLicenseType]
-|False
-a|
-
 |newInstanceType
 |string
 |False
 a|
 
-|===
-
-
-[#InstanceNameIdAndType]
-[.api-collapsible-fifth-title]
-InstanceNameIdAndType
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|instanceName
-|string
-|False
-a|
-
-|instanceType
-|string
-|False
-a|
-
-|instanceId
-|string
+|newLicenseType
+|link:#OntapLicenseType[OntapLicenseType]
 |False
 a|
 
@@ -326,11 +287,6 @@ DisksDetails
 |Required
 |Description
 
-|numberOfDisks
-|integer
-|False
-a|
-
 |diskSize
 |link:#Capacity[Capacity]
 |False
@@ -338,6 +294,11 @@ a|
 
 |diskType
 |string
+|False
+a|
+
+|numberOfDisks
+|integer
 |False
 a|
 
@@ -379,8 +340,8 @@ VolumeInfo
 |Required
 |Description
 
-|volumeName
-|string
+|newCapacity
+|link:#Capacity[Capacity]
 |False
 a|
 
@@ -389,8 +350,47 @@ a|
 |False
 a|
 
-|newCapacity
-|link:#Capacity[Capacity]
+|volumeName
+|string
+|False
+a|
+
+|===
+
+
+[#VolumeMoveParameters]
+[.api-collapsible-fifth-title]
+VolumeMoveParameters
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|homeNode
+|string
+|False
+a|
+
+|isNewTargetAggregate
+|boolean
+|False
+a|
+
+|svmName
+|string
+|False
+a|
+
+|targetAggregateName
+|string
+|False
+a|
+
+|volumeName
+|string
 |False
 a|
 
@@ -414,63 +414,14 @@ ActionRequiredParameters
 a|Aggregate name
 
 
-|numOfDisks
-|integer
-|True
-a|Number of disks relevant to the action
+|currentInstanceType
+|string
+|False
+a|Current instance type
 
-
-|totalCapacity
-|link:#Capacity[Capacity]
-|True
-a|
 
 |evCapacityDetails
 |link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
-|False
-a|
-
-|volumeNames
-|array[string]
-|True
-a|A limited list of volumes on the aggregate
-
-
-|maxCapacity
-|link:#Capacity[Capacity]
-|True
-a|
-
-|licenseExpiryDate
-|integer
-|True
-a|License expiry date
-
-
-|serialNumber
-|string
-|True
-a|Platform serial number
-
-
-|volumeMoveParameters
-|link:#VolumeMoveParameters[VolumeMoveParameters]
-|False
-a|
-
-|workingEnvironmentId
-|string
-|True
-a|System public ID
-
-
-|licenseParameters
-|link:#ChangeLicenseParameters[ChangeLicenseParameters]
-|False
-a|
-
-|resourcesToDelete
-|link:#ResourcesToDelete[ResourcesToDelete]
 |False
 a|
 
@@ -480,27 +431,10 @@ a|
 a|Instances information
 
 
-|moreInfo
-|string
-|False
-a|More information
-
-
-|providerVolumeType
-|string
-|False
-a|Provider volume type
-
-
-|volumeInfo
-|link:#VolumeInfo[VolumeInfo]
-|False
-a|
-
-|currentInstanceType
-|string
-|False
-a|Current instance type
+|isCapacityBased
+|boolean
+|True
+a|Indicates if the license type is a  capacity-based license type
 
 
 |isComposite
@@ -509,10 +443,76 @@ a|Current instance type
 a|Indicates if the aggregate is a composite aggregate
 
 
-|isCapacityBased
-|boolean
+|licenseExpiryDate
+|integer
 |True
-a|Indicates if the license type is a  capacity-based license type
+a|License expiry date
+
+
+|licenseParameters
+|link:#ChangeLicenseParameters[ChangeLicenseParameters]
+|False
+a|
+
+|maxCapacity
+|link:#Capacity[Capacity]
+|True
+a|
+
+|moreInfo
+|string
+|False
+a|More information
+
+
+|numOfDisks
+|integer
+|True
+a|Number of disks relevant to the action
+
+
+|providerVolumeType
+|string
+|False
+a|Provider volume type
+
+
+|resourcesToDelete
+|link:#ResourcesToDelete[ResourcesToDelete]
+|False
+a|
+
+|serialNumber
+|string
+|True
+a|Platform Serial number
+
+
+|totalCapacity
+|link:#Capacity[Capacity]
+|True
+a|
+
+|volumeInfo
+|link:#VolumeInfo[VolumeInfo]
+|False
+a|
+
+|volumeMoveParameters
+|link:#VolumeMoveParameters[VolumeMoveParameters]
+|False
+a|
+
+|volumeNames
+|array[string]
+|True
+a|A limited list of volumes on the aggregate
+
+
+|workingEnvironmentId
+|string
+|True
+a|System public ID
 
 
 |===
@@ -532,7 +532,7 @@ ActionRequired
 |actionType
 |string
 |True
-a|The type of the action
+a|The type of the Action
 
 
 |parameters
@@ -560,13 +560,13 @@ WeActionRequiredResponse
 |Required
 |Description
 
-|publicId
-|string
+|actions
+|array[link:#ActionRequired[ActionRequired]]
 |True
 a|
 
-|actions
-|array[link:#ActionRequired[ActionRequired]]
+|publicId
+|string
 |True
 a|
 

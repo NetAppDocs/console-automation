@@ -47,28 +47,28 @@ Status: Default, Default response
 |Required
 |Description
 
-|region
+|account
 |string
 |False
-a|Region
+a|Account
 
 
-|vpcId
-|string
+|china
+|boolean
 |False
-a|VPC
+a|China
 
 
-|subnetId
-|string
+|darkSite
+|boolean
 |False
-a|Subnet
+a|is dark site
 
 
-|keyPair
-|string
+|govCloud
+|boolean
 |False
-a|KeyPair
+a|Gov cloud
 
 
 |installLocation
@@ -77,10 +77,28 @@ a|KeyPair
 a|Install Location
 
 
-|role
+|instanceType
 |string
 |False
-a|Role
+a|instanceType
+
+
+|isLegacyInstance
+|boolean
+|False
+a|isLegacyInstance
+
+
+|isLegacyOs
+|boolean
+|False
+a|isLegacyOs
+
+
+|keyPair
+|string
+|False
+a|KeyPair
 
 
 |providerRoleType
@@ -95,46 +113,28 @@ a|Provider Role Type
 a|Public IP
 
 
-|account
+|region
 |string
 |False
-a|Account
+a|Region
 
 
-|govCloud
-|boolean
-|False
-a|Gov cloud
-
-
-|china
-|boolean
-|False
-a|China
-
-
-|isLegacyInstance
-|boolean
-|False
-a|isLegacyInstance
-
-
-|instanceType
+|role
 |string
 |False
-a|instanceType
+a|Role
 
 
-|isLegacyOs
-|boolean
+|subnetId
+|string
 |False
-a|isLegacyOs
+a|Subnet
 
 
-|darkSite
-|boolean
+|vpcId
+|string
 |False
-a|is dark site
+a|VPC
 
 
 |===
@@ -145,16 +145,16 @@ a|is dark site
 ====
 [source,json,subs=+macros]
 {
-  "region": "string",
-  "vpcId": "string",
-  "subnetId": "string",
-  "keyPair": "string",
+  "account": "string",
   "installLocation": "string",
-  "role": "string",
+  "instanceType": "string",
+  "keyPair": "string",
   "providerRoleType": "string",
   "publicIp": "string",
-  "account": "string",
-  "instanceType": "string"
+  "region": "string",
+  "role": "string",
+  "subnetId": "string",
+  "vpcId": "string"
 }
 ====
 

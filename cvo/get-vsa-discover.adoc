@@ -59,6 +59,21 @@ Status: Default, Default response
 |Required
 |Description
 
+|availabilityZone
+|string
+|False
+a|
+
+|clusterAddress
+|string
+|False
+a|
+
+|isByol
+|boolean
+|False
+a|
+
 |name
 |string
 |True
@@ -69,27 +84,22 @@ a|
 |False
 a|
 
+|recoverable
+|boolean
+|True
+a|
+
 |region
 |string
 |False
 a|
 
-|vpcName
-|string
+|registered
+|boolean
 |False
 a|
 
-|vpcId
-|string
-|False
-a|
-
-|availabilityZone
-|string
-|False
-a|
-
-|subnetId
+|stackId
 |string
 |False
 a|
@@ -99,28 +109,18 @@ a|
 |False
 a|
 
-|stackId
+|subnetId
 |string
 |False
 a|
 
-|clusterAddress
+|vpcId
 |string
 |False
 a|
 
-|recoverable
-|boolean
-|True
-a|
-
-|isByol
-|boolean
-|False
-a|
-
-|registered
-|boolean
+|vpcName
+|string
 |False
 a|
 

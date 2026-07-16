@@ -47,7 +47,7 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
+|address
 |string
 |False
 a|
@@ -57,7 +57,12 @@ a|
 |False
 a|
 
-|address
+|publicId
+|string
+|False
+a|
+
+|status
 |string
 |False
 a|
@@ -72,11 +77,6 @@ a|
 |False
 a|
 
-|status
-|string
-|False
-a|
-
 |===
 
 
@@ -85,12 +85,12 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "publicId": "string",
-  "name": "string",
   "address": "string",
+  "name": "string",
+  "publicId": "string",
+  "status": "string",
   "usernameField": "string",
-  "usernameValue": "string",
-  "status": "string"
+  "usernameValue": "string"
 }
 ====
 

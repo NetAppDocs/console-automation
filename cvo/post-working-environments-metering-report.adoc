@@ -29,6 +29,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|bucketsGenerated
+|array[link:#BucketEntry[BucketEntry]]
+|True
+a|
+
 |calculationTimeUtc
 |string
 |True
@@ -44,18 +49,13 @@ a|
 |False
 a|
 
-|minimumCapacityGb
-|integer
-|True
-a|
-
 |chargeThresholdGb
 |integer
 |False
 a|
 
-|bucketsGenerated
-|array[link:#BucketEntry[BucketEntry]]
+|minimumCapacityGb
+|integer
 |True
 a|
 
@@ -90,13 +90,13 @@ BucketEntry
 |False
 a|
 
-|dimension
-|string
+|consumptionGb
+|integer
 |False
 a|
 
-|consumptionGb
-|integer
+|dimension
+|string
 |False
 a|
 

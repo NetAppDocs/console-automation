@@ -118,13 +118,13 @@ Expands
 |Required
 |Description
 
-|raw
-|string
+|expands
+|array[link:#Expand[Expand]]
 |True
 a|
 
-|expands
-|array[link:#Expand[Expand]]
+|raw
+|string
 |True
 a|
 

@@ -56,12 +56,6 @@ a|
 |Required
 |Description
 
-|sourceWorkingEnvironmentId
-|string
-|True
-a|System ID
-
-
 |sourceSvmName
 |string
 |True
@@ -74,6 +68,12 @@ a|SVM name
 a|volume name
 
 
+|sourceWorkingEnvironmentId
+|string
+|True
+a|System ID
+
+
 |===
 
 
@@ -82,9 +82,9 @@ a|volume name
 ====
 [source,json,subs=+macros]
 {
-  "sourceWorkingEnvironmentId": "string",
   "sourceSvmName": "string",
-  "sourceVolumeName": "string"
+  "sourceVolumeName": "string",
+  "sourceWorkingEnvironmentId": "string"
 }
 ====
 

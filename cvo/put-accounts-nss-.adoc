@@ -69,8 +69,8 @@ a|
 {
   "accountName": "string",
   "providerKeys": {
-    "nssUserName": "string",
-    "nssPassword": "string"
+    "nssPassword": "string",
+    "nssUserName": "string"
   },
   "vsaList": [
     "string"
@@ -92,11 +92,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
-|string
-|True
-a|
-
 |accountName
 |string
 |False
@@ -112,6 +107,11 @@ a|
 |False
 a|
 
+|publicId
+|string
+|True
+a|
+
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
@@ -125,14 +125,14 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "publicId": "string",
   "accountName": "string",
   "accountType": "string",
   "nssUserName": "string",
+  "publicId": "string",
   "vsaList": [
     {
-      "publicId": "string",
       "name": "string",
+      "publicId": "string",
       "workingEnvironmentType": "string"
     }
   ]
@@ -157,14 +157,14 @@ NssAccountCredentials
 |Required
 |Description
 
-|nssUserName
-|string
-|True
-a|
-
 |nssPassword
 |string
 |False
+a|
+
+|nssUserName
+|string
+|True
 a|
 
 |===
@@ -181,12 +181,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|publicId
+|name
 |string
 |False
 a|
 
-|name
+|publicId
 |string
 |False
 a|

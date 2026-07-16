@@ -59,6 +59,12 @@ Status: Default, Default response
 |Required
 |Description
 
+|location
+|string
+|True
+a|Location
+
+
 |name
 |string
 |True
@@ -69,12 +75,6 @@ a|Vault name
 |string
 |True
 a|Resource group
-
-
-|location
-|string
-|True
-a|Location
 
 
 |vaultUri
@@ -91,9 +91,9 @@ a|Vault URI
 ====
 [source,json,subs=+macros]
 {
+  "location": "string",
   "name": "string",
   "resourceGroup": "string",
-  "location": "string",
   "vaultUri": "string"
 }
 ====

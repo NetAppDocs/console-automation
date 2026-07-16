@@ -12,7 +12,7 @@ summary: 'Retrieve Cloud Volumes ONTAP capacity-based BYOL license metering deta
 
 
 
-Returns capacity-based bring your own license (BYOL) license metering details.
+Returns capacity-based bring your own license (BYOL) license  metering details.
 
 
 == Error
@@ -29,13 +29,13 @@ Status: Default, Default response
 |Required
 |Description
 
-|licenses
-|array[link:#LicenseFlavorInfo[LicenseFlavorInfo]]
+|flavourAggregatedInfo
+|array[link:#FlavourAggregatedInfo[FlavourAggregatedInfo]]
 |True
 a|
 
-|flavourAggregatedInfo
-|array[link:#FlavourAggregatedInfo[FlavourAggregatedInfo]]
+|licenses
+|array[link:#LicenseFlavorInfo[LicenseFlavorInfo]]
 |True
 a|
 
@@ -47,10 +47,10 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "licenses": [
+  "flavourAggregatedInfo": [
     {}
   ],
-  "flavourAggregatedInfo": [
+  "licenses": [
     {}
   ]
 }
@@ -63,50 +63,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#LicenseFlavorInfo]
-[.api-collapsible-fifth-title]
-LicenseFlavorInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|accountId
-|string
-|True
-a|
-
-|serialNumber
-|string
-|False
-a|
-
-|expirationDate
-|integer
-|True
-a|
-
-|capacity
-|integer
-|False
-a|
-
-|flavorType
-|string
-|False
-a|
-
-|metadata
-|string
-|False
-a|
-
-|===
-
-
 [#TotalCapacity]
 [.api-collapsible-fifth-title]
 TotalCapacity
@@ -142,14 +98,14 @@ FlavourAggregatedInfo
 |Required
 |Description
 
-|flavorType
+|contractType
 |string
 |False
 a|
 
-|totalLicensedCapacity
-|link:#TotalCapacity[TotalCapacity]
-|True
+|flavorType
+|string
+|False
 a|
 
 |totalAllocatedLicensedCapacity
@@ -162,12 +118,56 @@ a|
 |False
 a|
 
+|totalLicensedCapacity
+|link:#TotalCapacity[TotalCapacity]
+|True
+a|
+
 |totalPaygoCapacity
 |link:#TotalCapacity[TotalCapacity]
 |False
 a|
 
-|contractType
+|===
+
+
+[#LicenseFlavorInfo]
+[.api-collapsible-fifth-title]
+LicenseFlavorInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accountId
+|string
+|True
+a|
+
+|capacity
+|integer
+|False
+a|
+
+|expirationDate
+|integer
+|True
+a|
+
+|flavorType
+|string
+|False
+a|
+
+|metadata
+|string
+|False
+a|
+
+|serialNumber
 |string
 |False
 a|

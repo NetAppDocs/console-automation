@@ -62,22 +62,27 @@ a|
 a|Target aggregate name
 
 
-|numOfDisks
+|evCapacityApprovedToAdd
+|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
+|False
+a|
+
+|iops
 |integer
-|True
-a|Number of new disks needed
+|False
+a|Provisioned IOPS
+
+
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|Cooling Days
 
 
 |newAggregate
 |boolean
 |True
-a|Indicates if it is a newly created aggregate
-
-
-|newDiskTypeName
-|string
-|True
-a|New disk type name
+a|Is it a newly created aggregate
 
 
 |newCapacityTier
@@ -86,16 +91,10 @@ a|New disk type name
 a|New capacity tier
 
 
-|iops
-|integer
-|False
-a|Provisioned IOPS
-
-
-|throughput
-|integer
-|False
-a|Provisioned throughput
+|newDiskTypeName
+|string
+|True
+a|New disk type name
 
 
 |newTieringPolicy
@@ -104,15 +103,16 @@ a|Provisioned throughput
 a|New tiering policy
 
 
-|evCapacityApprovedToAdd
-|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
-|False
-a|
+|numOfDisks
+|integer
+|True
+a|Number of new disks needed
 
-|minimumCoolingDays
-|link:#minimumCoolingDays[minimumCoolingDays]
+
+|throughput
+|integer
 |False
-a|Cooling Days
+a|Provisioned throughput
 
 
 |===
@@ -168,16 +168,16 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|diskSize
+|link:#Capacity[Capacity]
+|True
+a|
+
 |numOfDisks
 |integer
 |True
 a|Number of new disks needed for the RAID group
 
-
-|diskSize
-|link:#Capacity[Capacity]
-|True
-a|
 
 |===
 
@@ -193,11 +193,6 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
-|False
-a|
-
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -208,6 +203,11 @@ a|
 |False
 a|New RAID information
 
+
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
 
 |totalEvDisks
 |integer

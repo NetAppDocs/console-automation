@@ -44,16 +44,16 @@ a|
 |Required
 |Description
 
-|nssUserName
-|string
-|False
-a|NetApp Support Site user name
-
-
 |nssPassword
 |string
 |False
 a|NetApp Support Site password
+
+
+|nssUserName
+|string
+|False
+a|NetApp Support Site user name
 
 
 |===
@@ -64,8 +64,8 @@ a|NetApp Support Site password
 ====
 [source,json,subs=+macros]
 {
-  "nssUserName": "string",
-  "nssPassword": "string"
+  "nssPassword": "string",
+  "nssUserName": "string"
 }
 ====
 

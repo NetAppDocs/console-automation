@@ -69,13 +69,13 @@ a|
 |False
 a|
 
-|vnets
-|link:#AzureNetworkExtendedResponse[AzureNetworkExtendedResponse]
+|supportsZonesAndPssdV2
+|link:#supportsZonesAndPssdV2[supportsZonesAndPssdV2]
 |False
 a|
 
-|supportsZonesAndPssdV2
-|link:#supportsZonesAndPssdV2[supportsZonesAndPssdV2]
+|vnets
+|link:#AzureNetworkExtendedResponse[AzureNetworkExtendedResponse]
 |False
 a|
 
@@ -90,10 +90,15 @@ a|
   "displayName": "string",
   "name": "string",
   "vnets": {
+    "securityGroups": [
+      {
+        "id": "string",
+        "name": "string",
+        "resourceGroup": "string"
+      }
+    ],
     "virtualNetworks": [
       {
-        "name": "string",
-        "id": "string",
         "cidrs": [
           {
             "cidr": "string",
@@ -102,6 +107,8 @@ a|
             ]
           }
         ],
+        "id": "string",
+        "name": "string",
         "resourceGroup": "string",
         "tags": [
           {
@@ -109,13 +116,6 @@ a|
             "value": "string"
           }
         ]
-      }
-    ],
-    "securityGroups": [
-      {
-        "id": "string",
-        "name": "string",
-        "resourceGroup": "string"
       }
     ]
   }
@@ -159,15 +159,52 @@ Expands
 |Required
 |Description
 
+|expands
+|array[link:#Expand[Expand]]
+|True
+a|
+
 |raw
 |string
 |True
 a|
 
-|expands
-|array[link:#Expand[Expand]]
+|===
+
+
+[#supportsZonesAndPssdV2]
+[.api-collapsible-fifth-title]
+supportsZonesAndPssdV2
+
+
+[#AzureSecurityGroupResponse]
+[.api-collapsible-fifth-title]
+AzureSecurityGroupResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
 |True
-a|
+a|Security group ID
+
+
+|name
+|string
+|True
+a|Security group name
+
+
+|resourceGroup
+|string
+|False
+a|Resource group
+
 
 |===
 
@@ -183,10 +220,10 @@ AzureSubnetResponse
 |Required
 |Description
 
-|id
-|string
+|availableIps
+|integer
 |True
-a|Subnet ID
+a|The number of available IP addresses on the subnet
 
 
 |cidr
@@ -195,16 +232,10 @@ a|Subnet ID
 a|CIDR
 
 
-|name
+|id
 |string
 |True
-a|Subnet name
-
-
-|availableIps
-|integer
-|True
-a|The number of available IP addresses on the subnet
+a|Subnet ID
 
 
 |minimumRequiredIps
@@ -213,6 +244,12 @@ a|The number of available IP addresses on the subnet
 a|The minimum needed IP addresses for the Cloud Volumes ONTAP system creation
 
 * format: int32
+
+
+|name
+|string
+|True
+a|Subnet name
 
 
 |===
@@ -281,10 +318,10 @@ AzureVirtualNetworkResponse
 |Required
 |Description
 
-|name
-|string
+|cidrs
+|array[link:#AzureVirtualNetworkCidrData[AzureVirtualNetworkCidrData]]
 |True
-a|Virtual Network name
+a|CIDRs
 
 
 |id
@@ -293,54 +330,22 @@ a|Virtual Network name
 a|Virtual Network ID
 
 
-|cidrs
-|array[link:#AzureVirtualNetworkCidrData[AzureVirtualNetworkCidrData]]
+|name
+|string
 |True
-a|CIDRs
+a|Virtual Network name
 
 
 |resourceGroup
 |string
 |True
-a|Resource Group
+a|Resource group
 
 
 |tags
 |array[link:#TagResponse[TagResponse]]
 |True
 a|Tags
-
-
-|===
-
-
-[#AzureSecurityGroupResponse]
-[.api-collapsible-fifth-title]
-AzureSecurityGroupResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|id
-|string
-|True
-a|Security group ID
-
-
-|name
-|string
-|True
-a|Security group name
-
-
-|resourceGroup
-|string
-|False
-a|Resource group
 
 
 |===
@@ -357,22 +362,17 @@ AzureNetworkExtendedResponse
 |Required
 |Description
 
-|virtualNetworks
-|array[link:#AzureVirtualNetworkResponse[AzureVirtualNetworkResponse]]
-|False
-a|
-
 |securityGroups
 |array[link:#AzureSecurityGroupResponse[AzureSecurityGroupResponse]]
 |False
 a|
 
+|virtualNetworks
+|array[link:#AzureVirtualNetworkResponse[AzureVirtualNetworkResponse]]
+|False
+a|
+
 |===
-
-
-[#supportsZonesAndPssdV2]
-[.api-collapsible-fifth-title]
-supportsZonesAndPssdV2
 
 
 //end collapsible .Definitions block

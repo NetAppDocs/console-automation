@@ -44,16 +44,16 @@ a|
 |Required
 |Description
 
-|sgwsCredentials
-|link:#SgwsCredentialsRequest[SgwsCredentialsRequest]
-|True
-a|
-
 |ipSpace
 |string
 |False
 a|IPspace
 
+
+|sgwsCredentials
+|link:#SgwsCredentialsRequest[SgwsCredentialsRequest]
+|True
+a|
 
 |===
 
@@ -63,12 +63,12 @@ a|IPspace
 ====
 [source,json,subs=+macros]
 {
+  "ipSpace": "string",
   "sgwsCredentials": {
     "accessKey": "string",
     "secretKey": "string",
     "serviceUrl": "string"
-  },
-  "ipSpace": "string"
+  }
 }
 ====
 

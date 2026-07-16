@@ -44,16 +44,16 @@ a|
 |Required
 |Description
 
-|activeDirectoryUsername
-|string
-|False
-a|Active Directory username
-
-
 |activeDirectoryPassword
 |string
 |False
 a|Active Directory password
+
+
+|activeDirectoryUsername
+|string
+|False
+a|Active Directory username
 
 
 |svmName
@@ -70,8 +70,8 @@ a|SVM name
 ====
 [source,json,subs=+macros]
 {
-  "activeDirectoryUsername": "string",
   "activeDirectoryPassword": "string",
+  "activeDirectoryUsername": "string",
   "svmName": "string"
 }
 ====

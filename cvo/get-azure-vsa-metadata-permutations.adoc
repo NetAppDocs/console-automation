@@ -29,13 +29,13 @@ Status: Default, Default response
 |Required
 |Description
 
-|ontapVersion
-|string
-|True
+|defaultInstance
+|boolean
+|False
 a|
 
-|license
-|link:#OntapLicenseType[OntapLicenseType]
+|features
+|array[string]
 |True
 a|
 
@@ -44,18 +44,18 @@ a|
 |False
 a|
 
-|region
-|link:#Region[Region]
+|license
+|link:#OntapLicenseType[OntapLicenseType]
 |True
 a|
 
-|defaultInstance
-|boolean
-|False
+|ontapVersion
+|string
+|True
 a|
 
-|features
-|array[string]
+|region
+|link:#Region[Region]
 |True
 a|
 
@@ -111,7 +111,22 @@ OntapLicenseType
 |Required
 |Description
 
-|type
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
+a|
+
+|capacity_limit
+|string
+|False
+a|
+
+|default
+|boolean
+|False
+a|
+
+|description
 |string
 |False
 a|
@@ -121,7 +136,12 @@ a|
 |False
 a|
 
-|description
+|platformLicenseRequired
+|boolean
+|False
+a|
+
+|subDescription
 |string
 |False
 a|
@@ -131,29 +151,9 @@ a|
 |False
 a|
 
-|subDescription
+|type
 |string
 |False
-a|
-
-|capacity_limit
-|string
-|False
-a|
-
-|platformLicenseRequired
-|boolean
-|False
-a|
-
-|default
-|boolean
-|False
-a|
-
-|capacityLimit
-|link:#Capacity[Capacity]
-|True
 a|
 
 |===
@@ -170,11 +170,6 @@ Region
 |Required
 |Description
 
-|name
-|string
-|True
-a|
-
 |code
 |string
 |False
@@ -183,6 +178,11 @@ a|
 |location
 |string
 |False
+a|
+
+|name
+|string
+|True
 a|
 
 |s3Region
