@@ -26,27 +26,16 @@ Deploys a Cloud Compliance instance by systems.
 |Required
 |Description
 
-<<<<<<< HEAD
 |enableAnf
 |boolean
 |False
 a|
 
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |workingEnvironmentIds
 |array[string]
 |True
 a|
 
-<<<<<<< HEAD
-=======
-|enableAnf
-|boolean
-|False
-a|
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |===
 
 

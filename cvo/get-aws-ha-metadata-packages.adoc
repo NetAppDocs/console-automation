@@ -53,16 +53,7 @@ Status: Default, Default response
 |Required
 |Description
 
-<<<<<<< HEAD
 |capacityTier
-=======
-|name
-|string
-|True
-a|
-
-|displayName
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |string
 |False
 a|
@@ -72,7 +63,6 @@ a|
 |False
 a|
 
-<<<<<<< HEAD
 |diskSize
 |link:#Capacity[Capacity]
 |True
@@ -89,9 +79,6 @@ a|
 a|
 
 |instanceTenancy
-=======
-|licenseType
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |string
 |False
 a|
@@ -101,21 +88,16 @@ a|
 |True
 a|
 
-<<<<<<< HEAD
 |iops
 |link:#iops[iops]
 |False
 a|
 
 |licenseType
-=======
-|diskType
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |string
 |False
 a|
 
-<<<<<<< HEAD
 |name
 |string
 |True
@@ -123,20 +105,6 @@ a|
 
 |throughput
 |link:#throughput[throughput]
-=======
-|diskSize
-|link:#Capacity[Capacity]
-|True
-a|
-
-|capacityTier
-|string
-|False
-a|
-
-|instanceTenancy
-|string
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |False
 a|
 
@@ -145,19 +113,6 @@ a|
 |False
 a|
 
-<<<<<<< HEAD
-=======
-|iops
-|link:#iops[iops]
-|False
-a|
-
-|throughput
-|link:#throughput[throughput]
-|False
-a|
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |===
 
 
@@ -168,33 +123,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-<<<<<<< HEAD
-=======
-[#InstanceTypeRegionMapping]
-[.api-collapsible-fifth-title]
-InstanceTypeRegionMapping
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|region
-|string
-|False
-a|
-
-|instanceType
-|string
-|False
-a|
-
-|===
-
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 [#Capacity]
 [.api-collapsible-fifth-title]
 Capacity
@@ -221,7 +149,6 @@ a|Unit
 |===
 
 
-<<<<<<< HEAD
 [#InstanceTypeRegionMapping]
 [.api-collapsible-fifth-title]
 InstanceTypeRegionMapping
@@ -246,8 +173,6 @@ a|
 |===
 
 
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 [#iops]
 [.api-collapsible-fifth-title]
 iops

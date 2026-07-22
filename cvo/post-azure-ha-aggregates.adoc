@@ -26,58 +26,23 @@ Creates a new aggregate.
 |Required
 |Description
 
-<<<<<<< HEAD
 |capacityTier
-=======
-|name
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |string
 |False
 a|
 
-<<<<<<< HEAD
-=======
-|workingEnvironmentId
-|string
-|True
-a|
-
-|numberOfDisks
-|integer
-|False
-a|
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |diskSize
 |link:#Capacity[Capacity]
 |False
 a|
 
-<<<<<<< HEAD
-=======
-|initialEvAggregateSize
-|link:#Capacity[Capacity]
-|False
-a|
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |homeNode
 |string
 |False
 a|
 
-<<<<<<< HEAD
 |initialEvAggregateSize
 |link:#Capacity[Capacity]
-=======
-|providerVolumeType
-|string
-|False
-a|
-
-|capacityTier
-|string
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |False
 a|
 
@@ -87,7 +52,6 @@ a|
 a|Provisioned IOPS
 
 
-<<<<<<< HEAD
 |name
 |string
 |False
@@ -103,22 +67,17 @@ a|
 |False
 a|
 
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |throughput
 |integer
 |False
 a|Provisioned throughput
 
 
-<<<<<<< HEAD
 |workingEnvironmentId
 |string
 |True
 a|
 
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |===
 
 
@@ -127,19 +86,11 @@ a|
 ====
 [source,json,subs=+macros]
 {
-<<<<<<< HEAD
   "capacityTier": "string",
   "homeNode": "string",
   "name": "string",
   "providerVolumeType": "string",
   "workingEnvironmentId": "string"
-=======
-  "name": "string",
-  "workingEnvironmentId": "string",
-  "homeNode": "string",
-  "providerVolumeType": "string",
-  "capacityTier": "string"
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 }
 ====
 

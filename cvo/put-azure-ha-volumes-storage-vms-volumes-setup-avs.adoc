@@ -56,30 +56,12 @@ a|
 |Required
 |Description
 
-<<<<<<< HEAD
-=======
-|privateCloudName
-|string
-|True
-a|Azure VMware Solution (AVS) private cloud name
-
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |clusterName
 |string
 |True
 a|Private cloud cluster name
 
 
-<<<<<<< HEAD
-=======
-|resourceGroup
-|string
-|True
-a|Private cloud resourceGroup name
-
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |dataStoreName
 |string
 |True
@@ -91,7 +73,6 @@ a|Private cloud DataStore name
 |True
 a|
 
-<<<<<<< HEAD
 |privateCloudName
 |string
 |True
@@ -104,8 +85,6 @@ a|Azure VMware Solution (AVS) private cloud name
 a|Private cloud resourceGroup name
 
 
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |===
 
 
@@ -133,13 +112,8 @@ pattern
 |Required
 |Description
 
-<<<<<<< HEAD
 |cursor
 |integer
-=======
-|pattern
-|string
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |False
 a|
 
@@ -148,13 +122,8 @@ a|
 |True
 a|
 
-<<<<<<< HEAD
 |pattern
 |string
-=======
-|cursor
-|integer
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |False
 a|
 
@@ -172,7 +141,6 @@ Regex
 |Required
 |Description
 
-<<<<<<< HEAD
 |groupNames
 |array[string]
 |True
@@ -180,15 +148,6 @@ a|
 
 |pattern
 |link:#pattern[pattern]
-=======
-|pattern
-|link:#pattern[pattern]
-|True
-a|
-
-|groupNames
-|array[string]
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |True
 a|
 
@@ -206,27 +165,16 @@ PatternMessage
 |Required
 |Description
 
-<<<<<<< HEAD
 |message
 |string
 |False
 a|
 
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |regex
 |link:#Regex[Regex]
 |True
 a|
 
-<<<<<<< HEAD
-=======
-|message
-|string
-|False
-a|
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |===
 
 
