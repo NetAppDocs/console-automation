@@ -24,10 +24,6 @@ The license endpoints consult the used or consumed capacity under the `includeSu
 * The boolean parameter `fetchNlf` (optional) retrieves the most updated valid NetApp license file from NetApp systems.
 * If you use the boolean parameter `fetchNlf`, you must provide `accountId`, `serialNumber`, and `nssKeyId`.
 * `fetchNlf` and `includeSummaryInfo` can't be provided in the same request.
-<<<<<<< HEAD
-
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 *Token usage:* Either a NetApp Console user token or service token.
 
 

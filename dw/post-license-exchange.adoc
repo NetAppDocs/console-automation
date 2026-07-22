@@ -18,10 +18,6 @@ Exchanges an unused Cloud Volume ONTAP license with a data service license.
 To use this endpoint you must be an account administrator.
 
 * `accountId`, `targetLicenseType` and `resourceId` are required fields.
-<<<<<<< HEAD
-
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 *Token usage:* NetApp Console user token.
 
 

@@ -29,15 +29,12 @@ Status: Default, Default response
 |Required
 |Description
 
-<<<<<<< HEAD
 |description
 |string
 |True
 a|Description
 
 
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |name
 |string
 |True
@@ -50,15 +47,6 @@ a|Name
 a|Schedules
 
 
-<<<<<<< HEAD
-=======
-|description
-|string
-|True
-a|Description
-
-
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 |===
 
 
@@ -67,19 +55,11 @@ a|Description
 ====
 [source,json,subs=+macros]
 {
-<<<<<<< HEAD
   "description": "string",
   "name": "string",
   "schedules": [
     {}
   ]
-=======
-  "name": "string",
-  "schedules": [
-    {}
-  ],
-  "description": "string"
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 }
 ====
 

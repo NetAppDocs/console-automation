@@ -23,10 +23,6 @@ If you use a user token, you must provide the NetApp License File (NLF). If you 
 * The `metadata` field value is appended to the existing metadata.
 * `Authorization` is a required field.
 * `serialNumber` is a required field when using this site. In general, you can specify its value as `null`.
-<<<<<<< HEAD
-
-=======
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 *Token usage:* Either a NetApp Console user token or service token.
 
 
