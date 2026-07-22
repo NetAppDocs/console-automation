@@ -17,7 +17,10 @@ Retrieves the preferred subscription ID for a specified account ID.
 **Note:**
 
 * This API authorizes user calls and service calls with a predefined scope only.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 *Token usage:* Either a NetApp Console user token or service token.
 
 

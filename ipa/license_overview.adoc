@@ -19,11 +19,19 @@ Similarly, the license status check endpoint has different versions that relate 
 
 The following describes the mapping between the NetApp Console IPA licensing endpoints and the IPA product registration endpoints:
 
+<<<<<<< HEAD
 * Registration and deregistration maps to+++<ipaendpoint>+++/IPA/v2/prodregister+++</ipaendpoint>+++
 * Status check maps to+++<ipaendpoint>+++/IPA/v2/prodstatus+++</ipaendpoint>+++
 * IPA version-5 (IPA v5) status maps to+++<ipaendpoint>+++/entitlement/IPA/v4/prodstatus+++</ipaendpoint>+++
 * IPA v5 authentication maps to+++<ipaendpoint>+++/entitlement/IPA/v4/authenticate+++</ipaendpoint>+++
 * IPA v6 status maps to+++<ipaendpoint>+++/entitlement/IPA/v6/prodstatus+++</ipaendpoint>+++
+=======
+* Registration and deregistration maps to +++<ipaendpoint>+++/IPA/v2/prodregister+++</ipaendpoint>+++
+* Status check maps to +++<ipaendpoint>+++/IPA/v2/prodstatus+++</ipaendpoint>+++
+* IPA version-5 (IPA v5) status maps to +++<ipaendpoint>+++/entitlement/IPA/v4/prodstatus+++</ipaendpoint>+++
+* IPA v5 authentication maps to +++<ipaendpoint>+++/entitlement/IPA/v4/authenticate+++</ipaendpoint>+++
+* IPA v6 status maps to +++<ipaendpoint>+++/entitlement/IPA/v6/prodstatus+++</ipaendpoint>+++
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 
 For the credentials required for license management, the license endpoints map to cred_service_endpoint/accounts/:accountId/credentials.
 

@@ -24,7 +24,10 @@ Associates extra-capacity per-node licenses with a Cloud Volumes ONTAP system ei
 * `nssKeyId` is a required field unless you provide a value for the `licenseFiles` body field. In the latter case, `nssKeyId` must be omitted.
 * `accountId` is a required field unless you use a service token.
 * The `serialNumbers` and `licenseFiles` fields are mutually exclusive - one must have a value but not both.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 *Token usage:* Either a NetApp Console user token or service token.
 
 

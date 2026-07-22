@@ -20,7 +20,10 @@ Retrieves the subscription information for a specified subscription.
 * If the subscription ID is provided, the API returns only the subscription details or an empty response.
 * The API authorizes three types of calls: user calls, agent calls (Console agent), and service calls (with a predefined scope).
 * For a service call, you must send the subscription type as a query parameter (the API validates the scope against the subscription type).
+<<<<<<< HEAD
 
+=======
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 *Token usage:* NetApp Console service token.
 
 

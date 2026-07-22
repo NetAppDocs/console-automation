@@ -16,7 +16,7 @@ You can perform the following operations by using the StorageGRID endpoints: +
 
 * Retrieve StorageGRID server version
 * Retrieve details of the StorageGRID server.
-* Discover or add new StorageGRID server into the NetApp Console. +
-
+* Discover or add new StorageGRID server into the NetApp Console.
+ +
 
 

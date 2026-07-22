@@ -14,12 +14,12 @@ The system endpoints retrieves details of the systems, manage the backup policie
 
 You can perform the following operations by using the system endpoints:
 
-* Retrieve the list and details of systems, backup policies, IP spaces, storage VMs, and volumes, snapshot-policies, peer-cluster relationships, and SnapMirror relationships. +
-
-* Create a backup policy and configure an object store. +
-
-* List system volume directories. +
-
+* Retrieve the list and details of systems, backup policies, IP spaces, storage VMs, and  volumes, snapshot-policies, peer-cluster relationships, and SnapMirror relationships.
+ +
+* Create a backup policy and configure an object store.
+ +
+* List system volume directories.
+ +
 * Modify a backup policy.
 
 

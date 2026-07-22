@@ -62,7 +62,11 @@ Status: Default, Default response
 |region
 |string
 |True
+<<<<<<< HEAD
 a|Region value
+=======
+a|region value
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 
 
 |zones

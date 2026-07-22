@@ -10,24 +10,33 @@ summary: 'Account endpoints in the Accounts REST API'
 
 
 
+<<<<<<< HEAD
 +++<fieldset>+++The account endpoints provide the primary identity and organizational structure for controlling access to the resources. An account can consist of one of the following:
 
 * Single person
 * Group of people
 * Internal software service
+=======
++++<fieldset>+++The account endpoints provide the primary identity and organizational structure for controlling access to the resources. An account can consist of one of the following: * Single person * Group of people * Internal software service
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 
 A single person or group of people is identified through a user token. A software service is represented with a service token.
 
 At a high level, an account is a collection of the following:
 
+<<<<<<< HEAD
 * Associated person or group of people or software service
 * One or more workspaces
 * One or more BlueXP Connectors
+=======
+* Associated person or group of people or software service * One or more workspaces * One or more BlueXP Connectors
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 
 Each account has a name selected by the administrator. In addition, a unique identifier is assigned by the system when the account is created. You must include the account ID on subsequent API calls to refer to the account.
 
 The following actions can be performed with the account endpoints:
 
+<<<<<<< HEAD
 * Create an account
 * Delete an account
 * Associate a user (person) to an account
@@ -42,5 +51,8 @@ The following actions can be performed with the account endpoints:
 * Migrate the configuration data from one account to another account
 * Rename an account
 * Set miscellaneous account enablement options+++</fieldset>+++
+=======
+* Create an account * Delete an account * Associate a user (person) to an account * Disassociate a user from an account * List the users of an account * List the services (service accounts) of an account * List the members (users and services) of an account * List the roles and permissions of an account * Leave an account * Allow a user to enable or disable receiving BlueXP notifications * List the accounts a user is associated with * Migrate the configuration data from one account to another account * Rename an account * Set miscellaneous account enablement options+++</fieldset>+++
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 
 

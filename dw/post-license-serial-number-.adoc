@@ -26,7 +26,10 @@ Associates a license with the NetApp Console either by providing a NetApp Licens
 * `capacity` is a required field unless you are registered with the NetApp Support Site.
 * `packageValue` is a required field (used only for internal purposes) unless you are registered with the NetApp Support Site.
 * `metadata` is not a required field and is used to add additional data to a license that is not included in other request body fields.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 *Token usage:* Either a NetApp Console user token or service token.
 
 
