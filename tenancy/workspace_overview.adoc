@@ -22,19 +22,6 @@ Workspaces enable enhanced access control granularity by isolating resources. Fo
 
 The following actions can be performed with the workspace endpoints:
 
-<<<<<<< HEAD
-* Create a workspace
-* List the workspaces within an account
-* Add a user to a workspace
-* Remove a user from a workspace
-* List the workspaces associated with a user
-* Delete a workspace
-* Rename a workspace
-* Add a Connector to a workspace
-* Remove a Connector from a workspace
-* List the Connectors associated with a workspace+++</fieldset>+++
-=======
 * Create a workspace * List the workspaces within an account * Add a user to a workspace * Remove a user from a workspace * List the workspaces associated with a user * Delete a workspace * Rename a workspace * Add a Connector to a workspace * Remove a Connector from a workspace * List the Connectors associated with a workspace+++</fieldset>+++
->>>>>>> 548e457b54a3237566d158603c7be3ff05914276
 
 
