@@ -64,7 +64,17 @@ Status: Default, Default response
 |False
 a|
 
+|default
+|boolean
+|False
+a|
+
 |keyId
+|string
+|False
+a|
+
+|origin
 |string
 |False
 a|
@@ -79,16 +89,6 @@ a|
 |False
 a|
 
-|origin
-|string
-|False
-a|
-
-|default
-|boolean
-|False
-a|
-
 |===
 
 
@@ -99,8 +99,8 @@ a|
 {
   "alias": "string",
   "keyId": "string",
-  "status": "string",
-  "origin": "string"
+  "origin": "string",
+  "status": "string"
 }
 ====
 

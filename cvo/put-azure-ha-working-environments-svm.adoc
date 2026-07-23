@@ -44,12 +44,12 @@ a|
 |Required
 |Description
 
-|svmNewName
+|svmName
 |string
 |False
 a|
 
-|svmName
+|svmNewName
 |string
 |False
 a|
@@ -62,8 +62,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "svmNewName": "string",
-  "svmName": "string"
+  "svmName": "string",
+  "svmNewName": "string"
 }
 ====
 

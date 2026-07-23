@@ -29,16 +29,16 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
-|string
-|True
-a|Update name
-
-
 |date
 |integer
 |True
 a|Last Modified
+
+
+|name
+|string
+|True
+a|Update name
 
 
 |releaseNumber

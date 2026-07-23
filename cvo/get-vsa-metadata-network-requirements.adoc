@@ -29,9 +29,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|nonHaNodeMinimumRequiredIps
+|haMediatorMinimumRequiredIps
 |integer
-|True
+|False
 a|
 
 |haNodeMinimumRequiredIps
@@ -39,9 +39,9 @@ a|
 |False
 a|
 
-|haMediatorMinimumRequiredIps
+|nonHaNodeMinimumRequiredIps
 |integer
-|False
+|True
 a|
 
 |===

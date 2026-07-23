@@ -58,16 +58,6 @@ Status: Default, Default response
 |True
 a|
 
-|osType
-|string
-|False
-a|
-
-|portsetName
-|string
-|False
-a|
-
 |igroupType
 |string
 |True
@@ -78,14 +68,24 @@ a|
 |True
 a|
 
+|initiatorsWithConnStatus
+|array[link:#InitiatorsConnectivityStateNameObject[InitiatorsConnectivityStateNameObject]]
+|True
+a|
+
 |lunMaps
 |array[link:#LunMapsLun[LunMapsLun]]
 |True
 a|
 
-|initiatorsWithConnStatus
-|array[link:#InitiatorsConnectivityStateNameObject[InitiatorsConnectivityStateNameObject]]
-|True
+|osType
+|string
+|False
+a|
+
+|portsetName
+|string
+|False
 a|
 
 |===
@@ -97,11 +97,17 @@ a|
 [source,json,subs=+macros]
 {
   "igroupName": "string",
-  "osType": "string",
-  "portsetName": "string",
   "igroupType": "string",
   "initiators": [
     "string"
+  ],
+  "initiatorsWithConnStatus": [
+    {
+      "connectivity_tracking": {
+        "connection_state": "string"
+      },
+      "name": "string"
+    }
   ],
   "lunMaps": [
     {
@@ -111,14 +117,8 @@ a|
       }
     }
   ],
-  "initiatorsWithConnStatus": [
-    {
-      "connectivity_tracking": {
-        "connection_state": "string"
-      },
-      "name": "string"
-    }
-  ]
+  "osType": "string",
+  "portsetName": "string"
 }
 ====
 
@@ -129,49 +129,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#NameUuidObject]
-[.api-collapsible-fifth-title]
-NameUuidObject
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|False
-a|
-
-|uuid
-|string
-|False
-a|
-
-|===
-
-
-[#LunMapsLun]
-[.api-collapsible-fifth-title]
-LunMapsLun
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|lun
-|link:#NameUuidObject[NameUuidObject]
-|True
-a|
-
-|===
-
-
 [#ConnectionState]
 [.api-collapsible-fifth-title]
 ConnectionState
@@ -210,6 +167,49 @@ a|
 |name
 |string
 |False
+a|
+
+|===
+
+
+[#NameUuidObject]
+[.api-collapsible-fifth-title]
+NameUuidObject
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|uuid
+|string
+|False
+a|
+
+|===
+
+
+[#LunMapsLun]
+[.api-collapsible-fifth-title]
+LunMapsLun
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|lun
+|link:#NameUuidObject[NameUuidObject]
+|True
 a|
 
 |===

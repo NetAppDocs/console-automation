@@ -59,12 +59,7 @@ Status: Default, Default response
 |Required
 |Description
 
-|volume
-|string
-|True
-a|
-
-|svm
+|clientIp
 |string
 |False
 a|
@@ -74,14 +69,19 @@ a|
 |False
 a|
 
-|clientIp
+|idleDuration
 |string
 |False
 a|
 
-|idleDuration
+|svm
 |string
 |False
+a|
+
+|volume
+|string
+|True
 a|
 
 |===
@@ -92,11 +92,11 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "volume": "string",
-  "svm": "string",
-  "exportPolicy": "string",
   "clientIp": "string",
-  "idleDuration": "string"
+  "exportPolicy": "string",
+  "idleDuration": "string",
+  "svm": "string",
+  "volume": "string"
 }
 ====
 

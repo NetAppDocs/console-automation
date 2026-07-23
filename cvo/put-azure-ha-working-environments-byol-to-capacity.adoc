@@ -50,14 +50,14 @@ a|
 a|Capacity based package
 
 
-|sendAsup
-|boolean
-|True
-a|
-
 |deleteByNodeByolLicense
 |boolean
 |False
+a|
+
+|sendAsup
+|boolean
+|True
 a|
 
 |===

@@ -44,6 +44,24 @@ a|
 |Required
 |Description
 
+|activeDirectoryDomain
+|string
+|True
+a|Active Directory domain name
+
+
+|activeDirectoryPassword
+|string
+|True
+a|Active Directory password
+
+
+|activeDirectoryUsername
+|string
+|True
+a|Active Directory username
+
+
 |dnsDomain
 |string
 |False
@@ -68,24 +86,6 @@ a|CIFS server NetBIOS name
 a|Organizational unit for registration
 
 
-|activeDirectoryDomain
-|string
-|True
-a|Active Directory domain name
-
-
-|activeDirectoryUsername
-|string
-|True
-a|Active Directory username
-
-
-|activeDirectoryPassword
-|string
-|True
-a|Active Directory password
-
-
 |svmName
 |string
 |False
@@ -100,15 +100,15 @@ a|SVM name
 ====
 [source,json,subs=+macros]
 {
+  "activeDirectoryDomain": "string",
+  "activeDirectoryPassword": "string",
+  "activeDirectoryUsername": "string",
   "dnsDomain": "string",
   "ipAddresses": [
     "string"
   ],
   "netBIOS": "string",
   "organizationalUnit": "string",
-  "activeDirectoryDomain": "string",
-  "activeDirectoryUsername": "string",
-  "activeDirectoryPassword": "string",
   "svmName": "string"
 }
 ====

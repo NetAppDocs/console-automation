@@ -26,58 +26,10 @@ Creates a new user.
 |Required
 |Description
 
-|firstName
-|string
-|False
-a|The first name of the user
-
-
-|lastName
-|string
-|False
-a|The last name of the user
-
-
-|email
-|string
-|False
-a|The email address of the user
-
-
-|roleId
-|string
-|True
-a|Role ID of the user
-
-
-|tenantId
-|string
-|False
-a|Tenant ID of the user
-
-
-|password
-|string
-|False
-a|User password
-
-
 |accessKey
 |string
 |False
 a|The AWS access key of the user
-
-
-|secretKey
-|string
-|False
-a|The AWS secret key of the user
-
-
-|s3Bucket
-|string
-|False
-a|The AWS S3 bucket of the user
 
 
 |azureCredentials
@@ -85,10 +37,28 @@ a|The AWS S3 bucket of the user
 |False
 a|
 
+|email
+|string
+|False
+a|The email address of the user
+
+
+|firstName
+|string
+|False
+a|The first name of the user
+
+
 |isLdap
 |boolean
 |True
 a|Indicates whether the user is an LDAP user
+
+
+|lastName
+|string
+|False
+a|The last name of the user
 
 
 |ldapUserName
@@ -101,6 +71,36 @@ a|The LDAP user name
 |boolean
 |False
 a|Email notifications opt-in
+
+
+|password
+|string
+|False
+a|User password
+
+
+|roleId
+|string
+|True
+a|Role ID of the user
+
+
+|s3Bucket
+|string
+|False
+a|The AWS S3 bucket of the user
+
+
+|secretKey
+|string
+|False
+a|The AWS secret key of the user
+
+
+|tenantId
+|string
+|False
+a|Tenant ID of the user
 
 
 |===
@@ -120,52 +120,10 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
-|string
-|True
-a|User public ID
-
-
 |assignedWorkingEnvironments
 |array[string]
 |True
 a|List of public IDs for all of the systems visible to the user
-
-
-|firstName
-|string
-|True
-a|The first name of the user
-
-
-|lastName
-|string
-|True
-a|The last name of the user
-
-
-|email
-|string
-|True
-a|The email address of the user
-
-
-|roleId
-|string
-|True
-a|Role ID of the user
-
-
-|tenantId
-|string
-|True
-a|Tenant ID of the user
-
-
-|createdWorkingEnvironments
-|array[link:#UserWorkingEnvironmentResponse[UserWorkingEnvironmentResponse]]
-|True
-a|List of all systems created by the user
 
 
 |azureCredentials
@@ -178,10 +136,34 @@ a|
 |False
 a|
 
+|createdWorkingEnvironments
+|array[link:#UserWorkingEnvironmentResponse[UserWorkingEnvironmentResponse]]
+|True
+a|List of all systems created by the user
+
+
+|email
+|string
+|True
+a|The email address of the user
+
+
+|firstName
+|string
+|True
+a|The first name of the user
+
+
 |isLdap
 |boolean
 |True
 a|Indicates whether the user is an LDAP user
+
+
+|lastName
+|string
+|True
+a|The last name of the user
 
 
 |ldapUserName
@@ -193,13 +175,31 @@ a|The LDAP user name
 |notificationsOptIn
 |boolean
 |True
-a|Notification Opt-In
+a|Notification opt-in
 
 
 |permissions
 |array[string]
 |True
 a|Permissions
+
+
+|publicId
+|string
+|True
+a|User public ID
+
+
+|roleId
+|string
+|True
+a|Role ID of the user
+
+
+|tenantId
+|string
+|True
+a|Tenant ID of the user
 
 
 |===
@@ -223,18 +223,6 @@ AzureCredentialsRequest
 |Required
 |Description
 
-|subscriptionId
-|string
-|False
-a|The subscription ID
-
-
-|tenantId
-|string
-|False
-a|The tenant ID
-
-
 |applicationId
 |string
 |False
@@ -247,36 +235,16 @@ a|The application ID
 a|The application key
 
 
-|===
-
-
-[#UserWorkingEnvironmentResponse]
-[.api-collapsible-fifth-title]
-UserWorkingEnvironmentResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|publicId
+|subscriptionId
 |string
-|True
-a|System public ID
+|False
+a|The subscription ID
 
 
-|name
+|tenantId
 |string
-|True
-a|System name
-
-
-|workingEnvironmentType
-|string
-|True
-a|System type
+|False
+a|The tenant ID
 
 
 |===
@@ -293,22 +261,22 @@ AzureCredentials
 |Required
 |Description
 
-|subscriptionId
-|string
-|False
-a|
-
-|tenantId
-|string
-|False
-a|
-
 |applicationId
 |string
 |False
 a|
 
 |applicationKey
+|string
+|False
+a|
+
+|subscriptionId
+|string
+|False
+a|
+
+|tenantId
 |string
 |False
 a|
@@ -330,13 +298,45 @@ CloudSyncLicenseInformation
 |cloudSyncLicenseTypes
 |array[string]
 |False
-a|Cloud sync license types
+a|Cloud Sync license types
 
 
 |licenseExpirationDate
 |integer
 |False
-a|Cloud sync license expiration date
+a|Cloud Sync License Expiration Date
+
+
+|===
+
+
+[#UserWorkingEnvironmentResponse]
+[.api-collapsible-fifth-title]
+UserWorkingEnvironmentResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|System name
+
+
+|publicId
+|string
+|True
+a|System public ID
+
+
+|workingEnvironmentType
+|string
+|True
+a|System type
 
 
 |===

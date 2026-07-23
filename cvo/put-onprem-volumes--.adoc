@@ -74,10 +74,15 @@ a|
 |Required
 |Description
 
-|snapshotPolicyName
-|string
+|exportPolicyInfo
+|link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
 |False
-a|Snapshot policy name
+a|
+
+|minimumCoolingDays
+|integer
+|False
+a|Tiering minimum cooling days
 
 
 |shareInfo
@@ -85,21 +90,16 @@ a|Snapshot policy name
 |False
 a|
 
-|exportPolicyInfo
-|link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
+|snapshotPolicyName
+|string
 |False
-a|
+a|Snapshot policy name
+
 
 |tieringPolicy
 |string
 |False
 a|Tiering policy
-
-
-|minimumCoolingDays
-|integer
-|False
-a|Tiering minimum cooling days
 
 
 |===
@@ -110,9 +110,20 @@ a|Tiering minimum cooling days
 ====
 [source,json,subs=+macros]
 {
-  "snapshotPolicyName": "string",
+  "exportPolicyInfo": {
+    "ips": [
+      "string"
+    ],
+    "name": "string",
+    "nfsVersion": [
+      "string"
+    ],
+    "policyType": "string",
+    "rules": [
+      {}
+    ]
+  },
   "shareInfo": {
-    "shareName": "string",
     "accessControlList": [
       {
         "permission": "string",
@@ -121,21 +132,10 @@ a|Tiering minimum cooling days
         ]
       }
     ],
+    "shareName": "string",
     "vscanFileOpPolicy": "string"
   },
-  "exportPolicyInfo": {
-    "name": "string",
-    "policyType": "string",
-    "ips": [
-      "string"
-    ],
-    "nfsVersion": [
-      "string"
-    ],
-    "rules": [
-      {}
-    ]
-  },
+  "snapshotPolicyName": "string",
   "tieringPolicy": "string"
 }
 ====
@@ -164,8 +164,8 @@ pattern
 |Required
 |Description
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -174,8 +174,8 @@ a|
 |True
 a|
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -193,13 +193,13 @@ Regex
 |Required
 |Description
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
@@ -217,14 +217,14 @@ PatternMessage
 |Required
 |Description
 
-|regex
-|link:#Regex[Regex]
-|True
-a|
-
 |message
 |string
 |False
+a|
+
+|regex
+|link:#Regex[Regex]
+|True
 a|
 
 |===
@@ -250,6 +250,102 @@ a|
 |link:#PatternMessage[PatternMessage]
 |True
 a|
+
+|===
+
+
+[#index]
+[.api-collapsible-fifth-title]
+index
+
+Export policy rule index
+
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|index
+|link:#index[index]
+|False
+a|Export policy rule index
+
+
+|ips
+|array[string]
+|True
+a|Export policy rule list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy rule protocol
+
+
+|ruleAccessControl
+|string
+|True
+a|Export policy rule access control
+
+
+|superUser
+|boolean
+|True
+a|Export policy rule super user access
+
+
+|===
+
+
+[#NamedExportPolicyInfo]
+[.api-collapsible-fifth-title]
+NamedExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ips
+|array[string]
+|True
+a|Custom export policy list of IPs
+
+
+|name
+|string
+|False
+a|Export policy name
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy protocol
+
+
+|policyType
+|string
+|True
+a|Export policy type
+
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|True
+a|Export policy rules
+
 
 |===
 
@@ -291,118 +387,22 @@ CifsShareInfo
 |Required
 |Description
 
-|shareName
-|string
-|True
-a|Share name
-
-
 |accessControlList
 |array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
 |True
 a|List of CIFS share permissions
 
 
+|shareName
+|string
+|True
+a|Share name
+
+
 |vscanFileOpPolicy
 |string
 |False
 a|Vscan file operations profile
-
-
-|===
-
-
-[#index]
-[.api-collapsible-fifth-title]
-index
-
-Export policy rule index
-
-
-
-[#ExportPolicyRule]
-[.api-collapsible-fifth-title]
-ExportPolicyRule
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|index
-|link:#index[index]
-|False
-a|Export policy rule index
-
-
-|ruleAccessControl
-|string
-|True
-a|Export policy rule access control
-
-
-|ips
-|array[string]
-|True
-a|Export policy rule list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy rule protocol
-
-
-|superUser
-|boolean
-|True
-a|Export policy rule super user access
-
-
-|===
-
-
-[#NamedExportPolicyInfo]
-[.api-collapsible-fifth-title]
-NamedExportPolicyInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|False
-a|Export policy name
-
-
-|policyType
-|string
-|True
-a|Export policy type
-
-
-|ips
-|array[string]
-|True
-a|Custom export policy list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy protocol
-
-
-|rules
-|array[link:#ExportPolicyRule[ExportPolicyRule]]
-|True
-a|Export policy rules
 
 
 |===

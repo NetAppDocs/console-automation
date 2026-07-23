@@ -14,8 +14,6 @@ summary: 'AWS operations endpoints in the Amazon FSx for NetApp ONTAP management
 
 You can perform the following actions with the AWS operations endpoints:
 
-* Retrieve AWS VPCs
-* Retrieve AWS route tables
-* Retrieve AWS encryption keys+++</fieldset>+++
+* Retrieve AWS VPCs * Retrieve AWS route tables * Retrieve AWS encryption keys+++</fieldset>+++
 
 

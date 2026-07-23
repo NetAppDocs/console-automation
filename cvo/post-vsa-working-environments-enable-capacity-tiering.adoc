@@ -44,12 +44,12 @@ a|
 |Required
 |Description
 
-|instanceProfileName
+|gcpStorageAccountId
 |string
 |False
 a|
 
-|gcpStorageAccountId
+|instanceProfileName
 |string
 |False
 a|
@@ -67,8 +67,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "instanceProfileName": "string",
   "gcpStorageAccountId": "string",
+  "instanceProfileName": "string",
   "storageAccountPrefix": "string"
 }
 ====

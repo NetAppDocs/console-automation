@@ -61,7 +61,7 @@ a|New IOPS
 |throughput
 |integer
 |False
-a|New Throughput
+a|New throughput
 
 
 |===

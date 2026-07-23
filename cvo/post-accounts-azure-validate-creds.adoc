@@ -49,10 +49,10 @@ a|
 {
   "accountName": "string",
   "providerKeys": {
-    "tenantId": "string",
     "applicationId": "string",
     "applicationKey": "string",
-    "subscription": "string"
+    "subscription": "string",
+    "tenantId": "string"
   }
 }
 ====
@@ -71,9 +71,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|subscriptionId
-|string
+|default
+|boolean
 |True
+a|
+
+|highAvailabilityEnabled
+|link:#highAvailabilityEnabled[highAvailabilityEnabled]
+|False
 a|
 
 |name
@@ -81,19 +86,14 @@ a|
 |False
 a|
 
-|default
-|boolean
-|True
-a|
-
 |saasSubscriptionId
 |string
 |False
 a|
 
-|highAvailabilityEnabled
-|link:#highAvailabilityEnabled[highAvailabilityEnabled]
-|False
+|subscriptionId
+|string
+|True
 a|
 
 |vMOrchestratorZonalMultiFDEnabled
@@ -122,11 +122,6 @@ AzureKeys
 |Required
 |Description
 
-|tenantId
-|string
-|True
-a|
-
 |applicationId
 |string
 |False
@@ -142,6 +137,11 @@ a|
 |False
 a|Subscription
 
+
+|tenantId
+|string
+|True
+a|
 
 |===
 

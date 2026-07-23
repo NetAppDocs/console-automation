@@ -26,14 +26,14 @@ Creates a new bucket.
 |Required
 |Description
 
-|projectId
-|string
-|False
-a|
-
 |bucketName
 |string
 |True
+a|
+
+|kmsKeyName
+|string
+|False
 a|
 
 |location
@@ -41,12 +41,12 @@ a|
 |False
 a|
 
-|storageClass
+|projectId
 |string
 |False
 a|
 
-|kmsKeyName
+|storageClass
 |string
 |False
 a|
@@ -59,11 +59,11 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "projectId": "string",
   "bucketName": "string",
+  "kmsKeyName": "string",
   "location": "string",
-  "storageClass": "string",
-  "kmsKeyName": "string"
+  "projectId": "string",
+  "storageClass": "string"
 }
 ====
 

@@ -53,14 +53,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
+|availabilityState
 |string
-|True
-a|
-
-|totalCapacity
-|link:#Capacity[Capacity]
-|True
+|False
 a|
 
 |availableCapacity
@@ -68,8 +63,8 @@ a|
 |False
 a|
 
-|state
-|string
+|commonDiskProperties
+|link:#CommonDiskProperties[CommonDiskProperties]
 |False
 a|
 
@@ -83,13 +78,13 @@ a|
 |False
 a|
 
-|objectStoreName
+|name
 |string
-|False
+|True
 a|
 
-|usedCapacity
-|link:#Capacity[Capacity]
+|objectStoreName
+|string
 |False
 a|
 
@@ -99,18 +94,23 @@ a|
 a|Snaplock type
 
 
+|state
+|string
+|False
+a|
+
 |tieringRestriction
 |link:#TieringRestriction[TieringRestriction]
 |False
 a|
 
-|availabilityState
-|string
-|False
+|totalCapacity
+|link:#Capacity[Capacity]
+|True
 a|
 
-|commonDiskProperties
-|link:#CommonDiskProperties[CommonDiskProperties]
+|usedCapacity
+|link:#Capacity[Capacity]
 |False
 a|
 
@@ -150,30 +150,6 @@ a|Unit
 |===
 
 
-[#TieringRestriction]
-[.api-collapsible-fifth-title]
-TieringRestriction
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|isTieringRestricted
-|boolean
-|False
-a|
-
-|restrictionReason
-|string
-|False
-a|
-
-|===
-
-
 [#rpm]
 [.api-collapsible-fifth-title]
 rpm
@@ -195,13 +171,37 @@ CommonDiskProperties
 |False
 a|
 
+|rpm
+|link:#rpm[rpm]
+|False
+a|
+
 |sizeKB
 |integer
 |False
 a|
 
-|rpm
-|link:#rpm[rpm]
+|===
+
+
+[#TieringRestriction]
+[.api-collapsible-fifth-title]
+TieringRestriction
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|isTieringRestricted
+|boolean
+|False
+a|
+
+|restrictionReason
+|string
 |False
 a|
 

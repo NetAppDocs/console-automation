@@ -59,28 +59,10 @@ Status: Default, Default response
 |Required
 |Description
 
-|vpcId
-|string
-|True
-a|The VPC identifier
-
-
-|state
-|string
-|True
-a|The state of the VPC
-
-
 |cidrBlock
 |string
 |True
 a|VPC Classless Inter-Domain Routing (CIDR) block
-
-
-|tags
-|array[link:#VpcTagResponse[VpcTagResponse]]
-|True
-a|VPC tags
 
 
 |default
@@ -89,22 +71,40 @@ a|VPC tags
 a|Indicates whether the VPC is the default
 
 
-|subnets
-|array[link:#SubnetResponse[SubnetResponse]]
-|True
-a|Subnets associated with the VPC
-
-
 |securityGroups
 |array[link:#SecurityGroupResponse[SecurityGroupResponse]]
 |True
 a|Security groups associated with the VPC
 
 
+|state
+|string
+|True
+a|The state of the VPC
+
+
+|subnets
+|array[link:#SubnetResponse[SubnetResponse]]
+|True
+a|Subnets associated with the VPC
+
+
+|tags
+|array[link:#VpcTagResponse[VpcTagResponse]]
+|True
+a|VPC tags
+
+
 |tenancy
 |string
 |True
 a|Tenancy configuration for the VPC
+
+
+|vpcId
+|string
+|True
+a|The VPC identifier
 
 
 |===
@@ -117,6 +117,96 @@ a|Tenancy configuration for the VPC
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#SecurityGroupResponse]
+[.api-collapsible-fifth-title]
+SecurityGroupResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|description
+|string
+|True
+a|Description
+
+
+|name
+|string
+|True
+a|Specifies the name
+
+
+|securityGroupId
+|string
+|True
+a|Security group ID
+
+
+|===
+
+
+[#SubnetResponse]
+[.api-collapsible-fifth-title]
+SubnetResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|availabilityZone
+|string
+|True
+a|Availability zone
+
+
+|availableIps
+|integer
+|True
+a|The number of available IP addresses on the subnet
+
+
+|cidr
+|string
+|True
+a|CIDR
+
+
+|minimumRequiredIps
+|integer
+|True
+a|The minimum required IP addresses for the Cloud Volumes ONTAP create operation
+
+* format: int32
+
+
+|outpostArn
+|string
+|False
+a|The ARN of the outpost
+
+
+|subnetId
+|string
+|True
+a|Subnet ID
+
+
+|subnetName
+|string
+|False
+a|Subnet name
+
+
+|===
+
+
 [#VpcTagResponse]
 [.api-collapsible-fifth-title]
 VpcTagResponse
@@ -138,96 +228,6 @@ a|VPC tag key
 |string
 |True
 a|VPC tag value
-
-
-|===
-
-
-[#SubnetResponse]
-[.api-collapsible-fifth-title]
-SubnetResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|subnetId
-|string
-|True
-a|Subnet ID
-
-
-|cidr
-|string
-|True
-a|CIDR
-
-
-|subnetName
-|string
-|False
-a|Subnet name
-
-
-|availabilityZone
-|string
-|True
-a|Availability zone
-
-
-|availableIps
-|integer
-|True
-a|The number of available IP addresses on the subnet
-
-
-|minimumRequiredIps
-|integer
-|True
-a|The minimum required IP addresses for the Cloud Volumes ONTAP create operation
-
-* format: int32
-
-
-|outpostArn
-|string
-|False
-a|The ARN of the outpost
-
-
-|===
-
-
-[#SecurityGroupResponse]
-[.api-collapsible-fifth-title]
-SecurityGroupResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|securityGroupId
-|string
-|True
-a|Security group ID
-
-
-|description
-|string
-|True
-a|Description
-
-
-|name
-|string
-|True
-a|Specifies the name
 
 
 |===

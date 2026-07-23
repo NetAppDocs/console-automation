@@ -45,26 +45,26 @@ a|
 [source,json,subs=+macros]
 {
   "replicationRequest": {
-    "sourceWorkingEnvironmentId": "string",
-    "destinationWorkingEnvironmentId": "string",
-    "sourceInterclusterLifIps": [
-      "string"
-    ],
     "destinationInterclusterLifIps": [
       "string"
     ],
+    "destinationIpSpace": "string",
+    "destinationWorkingEnvironmentId": "string",
     "policyName": "string",
     "scheduleName": "string",
+    "sourceInterclusterLifIps": [
+      "string"
+    ],
     "sourceIpSpace": "string",
-    "destinationIpSpace": "string"
+    "sourceWorkingEnvironmentId": "string"
   },
   "replicationVolume": {
+    "destinationAggregateName": "string",
+    "destinationCapacityTier": "string",
+    "destinationSvmName": "string",
+    "destinationVolumeName": "string",
     "sourceSvmName": "string",
     "sourceVolumeName": "string",
-    "destinationVolumeName": "string",
-    "destinationAggregateName": "string",
-    "destinationSvmName": "string",
-    "destinationCapacityTier": "string",
     "tieringPolicy": "string"
   }
 }
@@ -94,10 +94,16 @@ ReplicationRequest
 |Required
 |Description
 
-|sourceWorkingEnvironmentId
-|string
+|destinationInterclusterLifIps
+|array[string]
 |True
-a|Source system ID
+a|Destination intercluster LIF IPs
+
+
+|destinationIpSpace
+|string
+|False
+a|Destination IPspace
 
 
 |destinationWorkingEnvironmentId
@@ -106,16 +112,10 @@ a|Source system ID
 a|Destination system ID
 
 
-|sourceInterclusterLifIps
-|array[string]
-|True
-a|Source intercluster LIF IPs
-
-
-|destinationInterclusterLifIps
-|array[string]
-|True
-a|Destination intercluster LIF IPs
+|maxTransferRate
+|integer
+|False
+a|Maximum transfer rate limit (KB/s). Use 0 for no limit, otherwise use number between 1024 and 2,147,482,624
 
 
 |policyName
@@ -130,22 +130,22 @@ a|SnapMirror policy name
 a|Schedule name
 
 
-|maxTransferRate
-|integer
-|False
-a|Maximum transfer rate limit (KB/s). Use 0 for no limit, otherwise use number between 1024 and 2,147,482,624
+|sourceInterclusterLifIps
+|array[string]
+|True
+a|Source intercluster LIF IPs
 
 
 |sourceIpSpace
 |string
 |False
-a|Source IpSpace
+a|Source IPspace
 
 
-|destinationIpSpace
+|sourceWorkingEnvironmentId
 |string
-|False
-a|Destination IpSpace
+|True
+a|Source system ID
 
 
 |===
@@ -170,6 +170,36 @@ OnPremVolumeRequest
 |Required
 |Description
 
+|destinationAggregateName
+|string
+|True
+a|Destination aggregate name
+
+
+|destinationCapacityTier
+|string
+|False
+a|Destination aggregate capacity tier
+
+
+|destinationSvmName
+|string
+|True
+a|Destination SVM name
+
+
+|destinationVolumeName
+|string
+|True
+a|Destination volume name
+
+
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|Cooling Days
+
+
 |sourceSvmName
 |string
 |True
@@ -182,40 +212,10 @@ a|Source SVM name
 a|Source volume name
 
 
-|destinationVolumeName
-|string
-|True
-a|Destination volume name
-
-
-|destinationAggregateName
-|string
-|True
-a|Destination aggregate name
-
-
-|destinationSvmName
-|string
-|True
-a|Destination SVM name
-
-
-|destinationCapacityTier
-|string
-|False
-a|Destination aggregate capacity tier
-
-
 |tieringPolicy
 |string
 |False
 a|Tiering policy
-
-
-|minimumCoolingDays
-|link:#minimumCoolingDays[minimumCoolingDays]
-|False
-a|Cooling Days
 
 
 |===

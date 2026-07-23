@@ -47,13 +47,13 @@ Status: Default, Default response
 |Required
 |Description
 
-|subscription
-|link:#SubscriptionResponse[SubscriptionResponse]
+|freeTrialExpiry
+|link:#freeTrialExpiry[freeTrialExpiry]
 |False
 a|
 
-|freeTrialExpiry
-|link:#freeTrialExpiry[freeTrialExpiry]
+|subscription
+|link:#SubscriptionResponse[SubscriptionResponse]
 |False
 a|
 
@@ -67,6 +67,11 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#freeTrialExpiry]
+[.api-collapsible-fifth-title]
+freeTrialExpiry
+
+
 [#SubscriptionResponse]
 [.api-collapsible-fifth-title]
 SubscriptionResponse
@@ -77,6 +82,30 @@ SubscriptionResponse
 |Type
 |Required
 |Description
+
+|active
+|boolean
+|True
+a|Active
+
+
+|byNodeMode
+|boolean
+|True
+a|By node mode
+
+
+|contract
+|boolean
+|True
+a|contract
+
+
+|eligibleCvoPackages
+|array[string]
+|True
+a|Eligible Cloud Volumes ONTAP packages
+
 
 |id
 |string
@@ -95,36 +124,7 @@ a|Specifies the name
 |True
 a|
 
-|active
-|boolean
-|True
-a|Active
-
-
-|contract
-|boolean
-|True
-a|contract
-
-
-|byNodeMode
-|boolean
-|True
-a|By node mode
-
-
-|eligibleCvoPackages
-|array[string]
-|True
-a|Eligible Cloud Volumes ONTAP packages
-
-
 |===
-
-
-[#freeTrialExpiry]
-[.api-collapsible-fifth-title]
-freeTrialExpiry
 
 
 //end collapsible .Definitions block

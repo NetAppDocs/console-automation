@@ -26,13 +26,13 @@ Updates the NetApp Console to the specified version.
 |Required
 |Description
 
-|name
-|string
+|date
+|integer
 |True
 a|
 
-|date
-|integer
+|name
+|string
 |True
 a|
 

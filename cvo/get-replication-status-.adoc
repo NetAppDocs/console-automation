@@ -47,13 +47,34 @@ Status: Default, Default response
 |Required
 |Description
 
-|source
-|link:#ReplicationStatusSide[ReplicationStatusSide]
+|currentTransferInfo
+|link:#ReplicationStatusCurrentTransferInfo[ReplicationStatusCurrentTransferInfo]
 |True
 a|
 
 |destination
 |link:#ReplicationStatusSide[ReplicationStatusSide]
+|True
+a|
+
+|healthy
+|boolean
+|True
+a|SnapMirror health
+
+
+|lagTime
+|link:#Duration[Duration]
+|True
+a|
+
+|lastTransferInfo
+|link:#ReplicationStatusLastTransferInfo[ReplicationStatusLastTransferInfo]
+|True
+a|
+
+|maxTransferRate
+|link:#Capacity[Capacity]
 |True
 a|
 
@@ -63,22 +84,23 @@ a|
 a|SnapMirror status
 
 
-|relationshipType
+|networkCompressionRatio
 |string
 |True
-a|SnapMirror relationship type
+a|Network compression ratio
 
 
-|relationshipStatus
+|newestSnapshotCreated
 |string
 |True
-a|SnapMirror relationship status
+a|Newest snapshot creation time
 
 
-|relationshipProgress
-|link:#Capacity[Capacity]
+|newestSnapshotName
+|string
 |True
-a|
+a|Newest snapshot name
+
 
 |policy
 |string
@@ -92,64 +114,31 @@ a|Policy name
 a|Policy type
 
 
+|relationshipProgress
+|link:#Capacity[Capacity]
+|True
+a|
+
+|relationshipStatus
+|string
+|True
+a|SnapMirror relationship status
+
+
+|relationshipType
+|string
+|True
+a|SnapMirror relationship type
+
+
 |schedule
 |string
 |True
 a|Schedule name
 
 
-|maxTransferRate
-|link:#Capacity[Capacity]
-|True
-a|
-
-|networkCompressionRatio
-|string
-|True
-a|Network compression ratio
-
-
-|healthy
-|boolean
-|True
-a|SnapMirror health
-
-
-|unhealthyReason
-|string
-|True
-a|The reason SnapMirror is unhealthy
-
-
-|lagTime
-|link:#Duration[Duration]
-|True
-a|
-
-|newestSnapshotName
-|string
-|True
-a|Newest snapshot name
-
-
-|newestSnapshotCreated
-|string
-|True
-a|Newest snapshot creation time
-
-
-|lastTransferInfo
-|link:#ReplicationStatusLastTransferInfo[ReplicationStatusLastTransferInfo]
-|True
-a|
-
-|currentTransferInfo
-|link:#ReplicationStatusCurrentTransferInfo[ReplicationStatusCurrentTransferInfo]
-|True
-a|
-
-|totalTransferTime
-|link:#Duration[Duration]
+|source
+|link:#ReplicationStatusSide[ReplicationStatusSide]
 |True
 a|
 
@@ -158,12 +147,23 @@ a|
 |True
 a|
 
-|volumeUsedSize
+|totalTransferTime
+|link:#Duration[Duration]
+|True
+a|
+
+|unhealthyReason
+|string
+|True
+a|The reason SnapMirror is unhealthy
+
+
+|volumeCapacityTier
 |link:#Capacity[Capacity]
 |True
 a|
 
-|volumeCapacityTier
+|volumeUsedSize
 |link:#Capacity[Capacity]
 |True
 a|
@@ -178,6 +178,38 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#ReplicationStatusCurrentTransferInfo]
+[.api-collapsible-fifth-title]
+ReplicationStatusCurrentTransferInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|transferError
+|string
+|True
+a|Current transfer error
+
+
+|transferPriority
+|string
+|True
+a|Current transfer priority
+
+
+|transferType
+|string
+|True
+a|Current transfer type
+
+
+|===
+
+
 [#ReplicationStatusSide]
 [.api-collapsible-fifth-title]
 ReplicationStatusSide
@@ -189,22 +221,10 @@ ReplicationStatusSide
 |Required
 |Description
 
-|workingEnvironmentId
+|availabilityZone
 |string
 |False
-a|System ID
-
-
-|workingEnvironmentType
-|string
-|False
-a|System type
-
-
-|workingEnvironmentStatus
-|string
-|False
-a|System status
+a|AWS availability zone name
 
 
 |clusterName
@@ -213,16 +233,16 @@ a|System status
 a|Cluster name
 
 
+|nodeName
+|string
+|False
+a|Node name
+
+
 |region
 |string
 |False
 a|AWS region name
-
-
-|availabilityZone
-|string
-|False
-a|AWS availability zone name
 
 
 |svmName
@@ -237,42 +257,28 @@ a|SVM name
 a|SVM peer alias name
 
 
-|nodeName
-|string
-|False
-a|Node name
-
-
 |volumeName
 |string
 |False
 a|Volume name
 
 
-|===
-
-
-[#Capacity]
-[.api-collapsible-fifth-title]
-Capacity
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|size
-|number
-|True
-a|Size
-
-
-|unit
+|workingEnvironmentId
 |string
-|True
-a|Unit
+|False
+a|System ID
+
+
+|workingEnvironmentStatus
+|string
+|False
+a|System status
+
+
+|workingEnvironmentType
+|string
+|False
+a|System type
 
 
 |===
@@ -304,6 +310,32 @@ a|Unit
 |===
 
 
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|Size
+
+
+|unit
+|string
+|True
+a|Unit
+
+
+|===
+
+
 [#ReplicationStatusLastTransferInfo]
 [.api-collapsible-fifth-title]
 ReplicationStatusLastTransferInfo
@@ -314,17 +346,6 @@ ReplicationStatusLastTransferInfo
 |Type
 |Required
 |Description
-
-|transferType
-|string
-|True
-a|Last transfer type
-
-
-|transferSize
-|link:#Capacity[Capacity]
-|True
-a|
 
 |transferDuration
 |link:#Duration[Duration]
@@ -343,36 +364,15 @@ a|Last transfer end time
 a|Last transfer error
 
 
-|===
-
-
-[#ReplicationStatusCurrentTransferInfo]
-[.api-collapsible-fifth-title]
-ReplicationStatusCurrentTransferInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
+|transferSize
+|link:#Capacity[Capacity]
+|True
+a|
 
 |transferType
 |string
 |True
-a|Current transfer type
-
-
-|transferPriority
-|string
-|True
-a|Current transfer priority
-
-
-|transferError
-|string
-|True
-a|Current transfer error
+a|Last transfer type
 
 
 |===

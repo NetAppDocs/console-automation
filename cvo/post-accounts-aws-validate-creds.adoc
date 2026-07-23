@@ -54,11 +54,11 @@ a|
 {
   "accountName": "string",
   "providerKeys": {
+    "assumeRoleArn": "string",
     "awsAccessKeys": {
       "accessKey": "string",
       "secretKey": "string"
-    },
-    "assumeRoleArn": "string"
+    }
   },
   "subscriptionId": "string"
 }
@@ -114,13 +114,13 @@ AwsKeysRequest
 |Required
 |Description
 
-|awsAccessKeys
-|link:#AwsAccessKeys[AwsAccessKeys]
+|assumeRoleArn
+|string
 |False
 a|
 
-|assumeRoleArn
-|string
+|awsAccessKeys
+|link:#AwsAccessKeys[AwsAccessKeys]
 |False
 a|
 

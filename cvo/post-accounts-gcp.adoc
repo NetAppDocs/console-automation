@@ -69,9 +69,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
+|accessKey
 |string
-|True
+|False
 a|
 
 |accountName
@@ -84,19 +84,19 @@ a|
 |False
 a|
 
-|accessKey
+|occmRole
 |string
 |False
+a|
+
+|publicId
+|string
+|True
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
-a|
-
-|occmRole
-|string
-|False
 a|
 
 |===
@@ -107,18 +107,18 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "publicId": "string",
+  "accessKey": "string",
   "accountName": "string",
   "accountType": "string",
-  "accessKey": "string",
+  "occmRole": "string",
+  "publicId": "string",
   "vsaList": [
     {
-      "publicId": "string",
       "name": "string",
+      "publicId": "string",
       "workingEnvironmentType": "string"
     }
-  ],
-  "occmRole": "string"
+  ]
 }
 ====
 
@@ -164,12 +164,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|publicId
+|name
 |string
 |False
 a|
 
-|name
+|publicId
 |string
 |False
 a|

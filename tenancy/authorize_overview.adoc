@@ -14,11 +14,6 @@ summary: 'Authorize endpoints in the Accounts REST API'
 
 The following actions can be performed with the authorization endpoints:
 
-* Authorize a resource to take specific actions
-* Authorize a Connector
-* Authorize a workspace and a Connector in the workspace
-* Authorize a user as an account administrator
-* Authorize a user in an account
-* Authorize an agent in an account+++</fieldset>+++
+* Authorize a resource to take specific actions * Authorize a Connector * Authorize a workspace and a Connector in the workspace * Authorize a user as an account administrator * Authorize a user in an account * Authorize an agent in an account+++</fieldset>+++
 
 

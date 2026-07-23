@@ -26,65 +26,10 @@ Creates a new volume.
 |Required
 |Description
 
-|workingEnvironmentId
-|string
-|True
-a|Target system ID
-
-
-|svmName
-|string
-|True
-a|SVM name
-
-
 |aggregateName
 |string
 |False
 a|Aggregate in which to create the volume
-
-
-|name
-|string
-|False
-a|Volume name, unique within the SVM
-
-
-|size
-|link:#PositiveCapacity[PositiveCapacity]
-|True
-a|
-
-|initialSize
-|link:#Capacity[Capacity]
-|False
-a|
-
-|snapshotPolicyName
-|string
-|True
-a|Snapshot policy name
-
-
-|exportPolicyInfo
-|link:#ExportPolicyInfo[ExportPolicyInfo]
-|False
-a|
-
-|shareInfo
-|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
-|False
-a|
-
-|iscsiInfo
-|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
-|False
-a|
-
-|enableThinProvisioning
-|boolean
-|True
-a|Enable thin provisioning on the volume
 
 
 |enableCompression
@@ -99,6 +44,60 @@ a|Enable compression on the volume
 a|Enable deduplication on the volume
 
 
+|enableThinProvisioning
+|boolean
+|True
+a|Enable thin provisioning on the volume
+
+
+|exportPolicyInfo
+|link:#ExportPolicyInfo[ExportPolicyInfo]
+|False
+a|
+
+|flexGroupVolumeInfo
+|link:#FlexGroupVolumeInfo[FlexGroupVolumeInfo]
+|False
+a|
+
+|initialSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|iscsiInfo
+|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
+|False
+a|
+
+|name
+|string
+|False
+a|Volume name, unique within the SVM
+
+
+|shareInfo
+|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
+|False
+a|
+
+|size
+|link:#PositiveCapacity[PositiveCapacity]
+|True
+a|
+
+|snapshotPolicyName
+|string
+|True
+a|Snapshot policy name
+
+
+|svmName
+|string
+|True
+a|SVM name
+
+
 |syncToS3
 |boolean
 |True
@@ -111,10 +110,11 @@ a|Add a cloud sync relationship
 a|Optionally, provide key-value pairs with which to tag the ONTAP volume using the App Template service.
 
 
-|flexGroupVolumeInfo
-|link:#FlexGroupVolumeInfo[FlexGroupVolumeInfo]
-|False
-a|
+|workingEnvironmentId
+|string
+|True
+a|Target system ID
+
 
 |===
 
@@ -132,9 +132,17 @@ Status: Default, Default response
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#PositiveCapacity]
+[#index]
 [.api-collapsible-fifth-title]
-PositiveCapacity
+index
+
+Export policy rule index
+
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
 
 [cols=4*,options=header]
 |===
@@ -143,16 +151,98 @@ PositiveCapacity
 |Required
 |Description
 
-|size
-|number
+|index
+|link:#index[index]
+|False
+a|Export policy rule index
+
+
+|ips
+|array[string]
 |True
-a|Size
+a|Export policy rule list of IPs
 
 
-|unit
+|nfsVersion
+|array[string]
+|False
+a|Export policy rule protocol
+
+
+|ruleAccessControl
 |string
 |True
-a|Unit
+a|Export policy rule access control
+
+
+|superUser
+|boolean
+|True
+a|Export policy rule super user access
+
+
+|===
+
+
+[#ExportPolicyInfo]
+[.api-collapsible-fifth-title]
+ExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ips
+|array[string]
+|False
+a|Custom export policy list of IPs
+
+
+|nfsVersion
+|array[string]
+|False
+a|Export policy protocol
+
+
+|policyType
+|string
+|False
+a|Export policy type
+
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|False
+a|Export policy rules
+
+
+|===
+
+
+[#FlexGroupVolumeInfo]
+[.api-collapsible-fifth-title]
+FlexGroupVolumeInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|aggregateList
+|array[string]
+|False
+a|Names of aggregates for the FlexGroup volume
+
+
+|numberOfConstituents
+|integer
+|False
+a|Number of constituents for the flexgroup volume
 
 
 |===
@@ -184,17 +274,9 @@ a|Unit
 |===
 
 
-[#index]
+[#IgroupCreationRequest]
 [.api-collapsible-fifth-title]
-index
-
-Export policy rule index
-
-
-
-[#ExportPolicyRule]
-[.api-collapsible-fifth-title]
-ExportPolicyRule
+IgroupCreationRequest
 
 [cols=4*,options=header]
 |===
@@ -203,42 +285,24 @@ ExportPolicyRule
 |Required
 |Description
 
-|index
-|link:#index[index]
-|False
-a|Export policy rule index
-
-
-|ruleAccessControl
+|igroupName
 |string
-|True
-a|Export policy rule access control
+|False
+a|Igroup name
 
 
-|ips
-|array[string]
-|True
-a|Export policy rule list of IPs
-
-
-|nfsVersion
+|initiators
 |array[string]
 |False
-a|Export policy rule protocol
-
-
-|superUser
-|boolean
-|True
-a|Export policy rule super user access
+a|Initiators
 
 
 |===
 
 
-[#ExportPolicyInfo]
+[#CreateIscsiInfoRequest]
 [.api-collapsible-fifth-title]
-ExportPolicyInfo
+CreateIscsiInfoRequest
 
 [cols=4*,options=header]
 |===
@@ -247,28 +311,21 @@ ExportPolicyInfo
 |Required
 |Description
 
-|policyType
+|igroupCreationRequest
+|link:#IgroupCreationRequest[IgroupCreationRequest]
+|False
+a|
+
+|igroups
+|array[string]
+|False
+a|Igroups
+
+
+|osName
 |string
 |False
-a|Export policy type
-
-
-|ips
-|array[string]
-|False
-a|Custom export policy list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy protocol
-
-
-|rules
-|array[link:#ExportPolicyRule[ExportPolicyRule]]
-|False
-a|Export policy rules
+a|Operating system
 
 
 |===
@@ -311,23 +368,23 @@ CreateCifsShareInfoRequest
 |Required
 |Description
 
+|accessControl
+|link:#CifsShareUserPermissions[CifsShareUserPermissions]
+|False
+a|
+
 |shareName
 |string
 |False
 a|Share name
 
 
-|accessControl
-|link:#CifsShareUserPermissions[CifsShareUserPermissions]
-|False
-a|
-
 |===
 
 
-[#IgroupCreationRequest]
+[#PositiveCapacity]
 [.api-collapsible-fifth-title]
-IgroupCreationRequest
+PositiveCapacity
 
 [cols=4*,options=header]
 |===
@@ -336,47 +393,16 @@ IgroupCreationRequest
 |Required
 |Description
 
-|initiators
-|array[string]
-|False
-a|Initiators
+|size
+|number
+|True
+a|Size
 
 
-|igroupName
+|unit
 |string
-|False
-a|Igroup name
-
-
-|===
-
-
-[#CreateIscsiInfoRequest]
-[.api-collapsible-fifth-title]
-CreateIscsiInfoRequest
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|osName
-|string
-|False
-a|Operating system
-
-
-|igroupCreationRequest
-|link:#IgroupCreationRequest[IgroupCreationRequest]
-|False
-a|
-
-|igroups
-|array[string]
-|False
-a|Igroups
+|True
+a|Unit
 
 
 |===
@@ -402,32 +428,6 @@ a|
 |string
 |False
 a|
-
-|===
-
-
-[#FlexGroupVolumeInfo]
-[.api-collapsible-fifth-title]
-FlexGroupVolumeInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|aggregateList
-|array[string]
-|False
-a|Names of aggregates for the FlexGroup volume
-
-
-|numberOfConstituents
-|integer
-|False
-a|Number of constituents for the FlexGroup volume
-
 
 |===
 

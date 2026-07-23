@@ -62,7 +62,7 @@ Status: Default, Default response
 |region
 |string
 |True
-a|region value
+a|Region value
 
 
 |zones

@@ -17,8 +17,7 @@ Retrieves the subscription information for a specified subscription ID.
 **Note:**
 
 * This API authorizes service calls with a predefined scope only.
-
-{blank} +
+ +
 *Token usage:* NetApp Console service token with the following scopes: %scopes%.
 
 

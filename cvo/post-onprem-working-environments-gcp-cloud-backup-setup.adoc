@@ -44,6 +44,18 @@ a|
 |Required
 |Description
 
+|accessKey
+|string
+|False
+a|Google Cloud access key used by NetApp Backup and Recovery.
+
+
+|ipSpace
+|string
+|False
+a|IPspace
+
+
 |project
 |string
 |False
@@ -56,22 +68,10 @@ a|Google Cloud project ID. By default, the NetApp Console project.
 a|The region. By default, the NetApp Console region.
 
 
-|accessKey
-|string
-|False
-a|Google Cloud access key used by NetApp Backup and Recovery.
-
-
 |secretKey
 |string
 |False
 a|Google Cloud secret key used by NetApp Backup and Recovery.
-
-
-|ipSpace
-|string
-|False
-a|IPspace
 
 
 |===
@@ -82,11 +82,11 @@ a|IPspace
 ====
 [source,json,subs=+macros]
 {
+  "accessKey": "string",
+  "ipSpace": "string",
   "project": "string",
   "region": "string",
-  "accessKey": "string",
-  "secretKey": "string",
-  "ipSpace": "string"
+  "secretKey": "string"
 }
 ====
 

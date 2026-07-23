@@ -14,18 +14,10 @@ summary: 'Resource endpoints in the Accounts REST API'
 
 Each resource contains the following information:
 
-* Public identifier (such as resource-PnA04qmQ)
-* Resource identifier -- used internally (such as VsaWorkingEnvironment-6iEs02vL)
-* Resource type (such as S3, AZURE, GCP)
-* Resource class (such as ON_PREM, VSA, S3)
+* Public identifier (such as resource-PnA04qmQ) * Resource identifier -- used internally (such as VsaWorkingEnvironment-6iEs02vL) * Resource type (such as S3, AZURE, GCP) * Resource class (such as ON_PREM, VSA, S3)
 
 The following actions can be performed with the resource endpoints:
 
-* Discover a resource
-* Create, update, or delete a resource
-* List the resources available in an account
-* Delete a service resource from an account
-* Associate or disassociate a resource from the workspace
-* Disassociate a resource from a Connector+++</fieldset>+++
+* Discover a resource * Create, update, or delete a resource * List the resources available in an account * Delete a service resource from an account * Associate or disassociate a resource from the workspace * Disassociate a resource from a Connector+++</fieldset>+++
 
 

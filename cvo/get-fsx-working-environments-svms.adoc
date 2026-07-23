@@ -47,6 +47,16 @@ Status: Default, Default response
 |Required
 |Description
 
+|allowedProtocols
+|array[string]
+|True
+a|
+
+|language
+|string
+|False
+a|
+
 |name
 |string
 |True
@@ -57,16 +67,6 @@ a|
 |False
 a|
 
-|language
-|string
-|False
-a|
-
-|allowedProtocols
-|array[string]
-|True
-a|
-
 |===
 
 
@@ -75,12 +75,12 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
-  "state": "string",
-  "language": "string",
   "allowedProtocols": [
     "string"
-  ]
+  ],
+  "language": "string",
+  "name": "string",
+  "state": "string"
 }
 ====
 

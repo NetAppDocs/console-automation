@@ -47,11 +47,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
-|string
-|True
-a|
-
 |accountName
 |string
 |False
@@ -67,6 +62,11 @@ a|
 |False
 a|
 
+|publicId
+|string
+|True
+a|
+
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
@@ -80,14 +80,14 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "publicId": "string",
   "accountName": "string",
   "accountType": "string",
   "nssUserName": "string",
+  "publicId": "string",
   "vsaList": [
     {
-      "publicId": "string",
       "name": "string",
+      "publicId": "string",
       "workingEnvironmentType": "string"
     }
   ]
@@ -112,12 +112,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|publicId
+|name
 |string
 |False
 a|
 
-|name
+|publicId
 |string
 |False
 a|

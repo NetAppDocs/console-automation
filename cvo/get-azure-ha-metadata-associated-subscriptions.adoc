@@ -47,9 +47,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|subscriptionId
-|string
+|default
+|boolean
 |True
+a|
+
+|highAvailabilityEnabled
+|link:#highAvailabilityEnabled[highAvailabilityEnabled]
+|False
 a|
 
 |name
@@ -57,19 +62,14 @@ a|
 |False
 a|
 
-|default
-|boolean
-|True
-a|
-
 |saasSubscriptionId
 |string
 |False
 a|
 
-|highAvailabilityEnabled
-|link:#highAvailabilityEnabled[highAvailabilityEnabled]
-|False
+|subscriptionId
+|string
+|True
 a|
 
 |vMOrchestratorZonalMultiFDEnabled

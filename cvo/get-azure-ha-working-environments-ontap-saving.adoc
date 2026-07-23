@@ -111,16 +111,16 @@ SavingsInfo
 |Required
 |Description
 
+|monthlySaving
+|link:#Money[Money]
+|True
+a|
+
 |name
 |string
 |True
 a|Name of saving element
 
-
-|monthlySaving
-|link:#Money[Money]
-|True
-a|
 
 |===
 

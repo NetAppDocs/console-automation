@@ -74,32 +74,16 @@ a|
 |Required
 |Description
 
-|snapshotPolicyName
+|comment
 |string
 |False
-a|Snapshot policy name
+a|Comment
 
-
-|shareInfo
-|link:#CifsShareInfo[CifsShareInfo]
-|False
-a|
 
 |exportPolicyInfo
 |link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
 |False
 a|
-
-|qualityOfService
-|link:#VolumeQualityOfService[VolumeQualityOfService]
-|False
-a|
-
-|tieringPolicy
-|string
-|False
-a|Tiering policy
-
 
 |minimumCoolingDays
 |integer
@@ -107,10 +91,26 @@ a|Tiering policy
 a|Tiering minimum cooling days
 
 
-|comment
+|qualityOfService
+|link:#VolumeQualityOfService[VolumeQualityOfService]
+|False
+a|
+
+|shareInfo
+|link:#CifsShareInfo[CifsShareInfo]
+|False
+a|
+
+|snapshotPolicyName
 |string
 |False
-a|Comment
+a|Snapshot policy name
+
+
+|tieringPolicy
+|string
+|False
+a|Tiering policy
 
 
 |===
@@ -121,9 +121,21 @@ a|Comment
 ====
 [source,json,subs=+macros]
 {
-  "snapshotPolicyName": "string",
+  "comment": "string",
+  "exportPolicyInfo": {
+    "ips": [
+      "string"
+    ],
+    "name": "string",
+    "nfsVersion": [
+      "string"
+    ],
+    "policyType": "string",
+    "rules": [
+      {}
+    ]
+  },
   "shareInfo": {
-    "shareName": "string",
     "accessControlList": [
       {
         "permission": "string",
@@ -132,23 +144,11 @@ a|Comment
         ]
       }
     ],
+    "shareName": "string",
     "vscanFileOpPolicy": "string"
   },
-  "exportPolicyInfo": {
-    "name": "string",
-    "policyType": "string",
-    "ips": [
-      "string"
-    ],
-    "nfsVersion": [
-      "string"
-    ],
-    "rules": [
-      {}
-    ]
-  },
-  "tieringPolicy": "string",
-  "comment": "string"
+  "snapshotPolicyName": "string",
+  "tieringPolicy": "string"
 }
 ====
 
@@ -176,8 +176,8 @@ pattern
 |Required
 |Description
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -186,8 +186,8 @@ a|
 |True
 a|
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -205,13 +205,13 @@ Regex
 |Required
 |Description
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
@@ -229,14 +229,14 @@ PatternMessage
 |Required
 |Description
 
-|regex
-|link:#Regex[Regex]
-|True
-a|
-
 |message
 |string
 |False
+a|
+
+|regex
+|link:#Regex[Regex]
+|True
 a|
 
 |===
@@ -266,64 +266,6 @@ a|
 |===
 
 
-[#CifsShareUserPermissions]
-[.api-collapsible-fifth-title]
-CifsShareUserPermissions
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|permission
-|string
-|False
-a|CIFS share permission type
-
-
-|users
-|array[string]
-|True
-a|List of users with the permission
-
-
-|===
-
-
-[#CifsShareInfo]
-[.api-collapsible-fifth-title]
-CifsShareInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|shareName
-|string
-|True
-a|Share name
-
-
-|accessControlList
-|array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
-|True
-a|List of CIFS share permissions
-
-
-|vscanFileOpPolicy
-|string
-|False
-a|Vscan file operations profile
-
-
-|===
-
-
 [#index]
 [.api-collapsible-fifth-title]
 index
@@ -349,12 +291,6 @@ ExportPolicyRule
 a|Export policy rule index
 
 
-|ruleAccessControl
-|string
-|True
-a|Export policy rule access control
-
-
 |ips
 |array[string]
 |True
@@ -365,6 +301,12 @@ a|Export policy rule list of IPs
 |array[string]
 |False
 a|Export policy rule protocol
+
+
+|ruleAccessControl
+|string
+|True
+a|Export policy rule access control
 
 
 |superUser
@@ -387,28 +329,28 @@ NamedExportPolicyInfo
 |Required
 |Description
 
-|name
-|string
-|False
-a|Export policy name
-
-
-|policyType
-|string
-|True
-a|Export policy type
-
-
 |ips
 |array[string]
 |True
 a|Custom export policy list of IPs
 
 
+|name
+|string
+|False
+a|Export policy name
+
+
 |nfsVersion
 |array[string]
 |False
 a|Export policy protocol
+
+
+|policyType
+|string
+|True
+a|Export policy type
 
 
 |rules
@@ -457,15 +399,73 @@ VolumeQualityOfService
 |Required
 |Description
 
+|maxDataRate
+|link:#Capacity[Capacity]
+|False
+a|
+
 |maxIops
 |integer
 |False
 a|
 
-|maxDataRate
-|link:#Capacity[Capacity]
+|===
+
+
+[#CifsShareUserPermissions]
+[.api-collapsible-fifth-title]
+CifsShareUserPermissions
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|permission
+|string
 |False
-a|
+a|CIFS share permission type
+
+
+|users
+|array[string]
+|True
+a|List of users with the permission
+
+
+|===
+
+
+[#CifsShareInfo]
+[.api-collapsible-fifth-title]
+CifsShareInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|accessControlList
+|array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
+|True
+a|List of CIFS share permissions
+
+
+|shareName
+|string
+|True
+a|Share name
+
+
+|vscanFileOpPolicy
+|string
+|False
+a|Vscan file operations profile
+
 
 |===
 

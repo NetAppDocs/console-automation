@@ -26,34 +26,10 @@ Creates a new FlexCache volume in a Cloud Volumes ONTAP system.
 |Required
 |Description
 
-|sourceWorkingEnvironmentId
-|string
+|cacheVolumePercentage
+|integer
 |True
-a|Source system ID
-
-
-|destinationWorkingEnvironmentId
-|string
-|True
-a|Destination system ID
-
-
-|sourceSvmName
-|string
-|True
-a|Source SVM name
-
-
-|destinationSvmName
-|string
-|True
-a|Destination SVM name
-
-
-|sourceIpSpace
-|string
-|False
-a|Source IPspace
+a|FlexCache volume percentage
 
 
 |destinationIpSpace
@@ -62,16 +38,16 @@ a|Source IPspace
 a|Destination IPspace
 
 
-|sourceVolumes
-|array[string]
+|destinationSvmName
+|string
 |True
-a|Names of source volumes
+a|Destination SVM name
 
 
-|cacheVolumePercentage
-|integer
+|destinationWorkingEnvironmentId
+|string
 |True
-a|FlexCache volume percentage
+a|Destination system ID
 
 
 |nameForSingleVolume
@@ -96,6 +72,30 @@ a|FlexCache name suffix
 |boolean
 |True
 a|Replicate NFS and CIFS shares as source volume
+
+
+|sourceIpSpace
+|string
+|False
+a|Source IPspace
+
+
+|sourceSvmName
+|string
+|True
+a|Source SVM name
+
+
+|sourceVolumes
+|array[string]
+|True
+a|Names of source volumes
+
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|Source system ID
 
 
 |===

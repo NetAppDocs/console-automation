@@ -29,8 +29,8 @@ Status: Default, Default response
 |Required
 |Description
 
-|workspacePublicId
-|string
+|associatedToAgent
+|boolean
 |True
 a|
 
@@ -39,8 +39,8 @@ a|
 |False
 a|
 
-|associatedToAgent
-|boolean
+|workspacePublicId
+|string
 |True
 a|
 

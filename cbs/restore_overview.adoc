@@ -12,9 +12,9 @@ summary: 'Restore endpoints in the NetApp Backup and Recovery REST API'
 
 The restore endpoints enable you to perform volume, folder and file-level restore operations. You can perform the following operations by using the Restore endpoints:
 
-* Restore volumes, folder, and files. +
-
-* Retrieve volume, folder, and file restore status. +
-
+* Restore volumes, folder, and files.
+ +
+* Retrieve volume, folder, and file restore status.
+ +
 
 

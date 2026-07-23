@@ -47,7 +47,7 @@ Status: Default, Default response
 |Required
 |Description
 
-|scanStatus
+|complianceBackupStatus
 |string
 |False
 a|
@@ -62,7 +62,7 @@ a|
 |False
 a|
 
-|complianceBackupStatus
+|scanStatus
 |string
 |False
 a|
@@ -75,20 +75,20 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "scanStatus": "string",
+  "complianceBackupStatus": "string",
   "complianceStatus": {
     "scanStatus": {
       "volumes": [
         {
+          "error": "string",
           "name": "string",
-          "status": "string",
-          "error": "string"
+          "status": "string"
         }
       ]
     }
   },
   "lastDeploymentError": "string",
-  "complianceBackupStatus": "string"
+  "scanStatus": "string"
 }
 ====
 
@@ -115,23 +115,23 @@ ComplianceScanStatusVolumeResponse
 |Required
 |Description
 
-|name
-|string
-|False
-a|
-
-|status
-|string
-|False
-a|
-
 |error
+|string
+|False
+a|
+
+|name
 |string
 |False
 a|
 
 |scopeId
 |link:#scopeId[scopeId]
+|False
+a|
+
+|status
+|string
 |False
 a|
 
@@ -149,12 +149,12 @@ ComplianceScanStatusResponse
 |Required
 |Description
 
-|scanned
+|notScanned
 |integer
 |False
 a|
 
-|notScanned
+|scanned
 |integer
 |False
 a|
@@ -178,7 +178,7 @@ ComplianceExtendedStatusResponse
 |Required
 |Description
 
-|sensitivePersonalHits
+|nonSensitiveHits
 |integer
 |False
 a|
@@ -188,13 +188,13 @@ a|
 |False
 a|
 
-|nonSensitiveHits
-|integer
+|scanStatus
+|link:#ComplianceScanStatusResponse[ComplianceScanStatusResponse]
 |False
 a|
 
-|scanStatus
-|link:#ComplianceScanStatusResponse[ComplianceScanStatusResponse]
+|sensitivePersonalHits
+|integer
 |False
 a|
 

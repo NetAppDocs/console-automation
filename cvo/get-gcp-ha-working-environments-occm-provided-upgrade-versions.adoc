@@ -47,6 +47,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|autoUpdateAllowed
+|boolean
+|True
+a|
+
 |imageVersion
 |string
 |True
@@ -54,11 +59,6 @@ a|
 
 |lastModified
 |integer
-|True
-a|
-
-|autoUpdateAllowed
-|boolean
 |True
 a|
 

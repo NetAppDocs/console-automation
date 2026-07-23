@@ -26,6 +26,29 @@ Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console d
 |Required
 |Description
 
+|cloudProviderAccount
+|string
+|False
+a|Cloud provider account
+
+
+|clusterCredentials
+|link:#ClusterCredentialsRequest[ClusterCredentialsRequest]
+|True
+a|
+
+|nssAccountId
+|string
+|False
+a|NetApp Support Site (NSS) account
+
+
+|providerAccount
+|string
+|False
+a|ID of the subscription where the VSA is located
+
+
 |region
 |string
 |True
@@ -36,33 +59,10 @@ a|
 |False
 a|
 
-|clusterCredentials
-|link:#ClusterCredentialsRequest[ClusterCredentialsRequest]
-|True
-a|
-
 |tenantId
 |string
 |False
 a|
-
-|providerAccount
-|string
-|False
-a|ID of subscription where the VSA is located
-
-
-|cloudProviderAccount
-|string
-|False
-a|Cloud provider account
-
-
-|nssAccountId
-|string
-|False
-a|NetApp Support Site (NSS) account
-
 
 |===
 
@@ -72,16 +72,16 @@ a|NetApp Support Site (NSS) account
 ====
 [source,json,subs=+macros]
 {
+  "cloudProviderAccount": "string",
+  "clusterCredentials": {
+    "password": "string",
+    "userName": "string"
+  },
+  "nssAccountId": "string",
+  "providerAccount": "string",
   "region": "string",
   "resourceGroupName": "string",
-  "clusterCredentials": {
-    "userName": "string",
-    "password": "string"
-  },
-  "tenantId": "string",
-  "providerAccount": "string",
-  "cloudProviderAccount": "string",
-  "nssAccountId": "string"
+  "tenantId": "string"
 }
 ====
 
@@ -99,27 +99,7 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
-|string
-|True
-a|
-
-|publicId
-|string
-|False
-a|
-
-|tenantPublicId
-|string
-|False
-a|
-
-|region
-|string
-|False
-a|
-
-|vpcId
+|cloudProviderAccount
 |string
 |False
 a|
@@ -134,7 +114,17 @@ a|
 |True
 a|
 
-|resourceGroup
+|isDirectMarketplace
+|link:#isDirectMarketplace[isDirectMarketplace]
+|False
+a|
+
+|name
+|string
+|True
+a|
+
+|nssAccountId
 |string
 |False
 a|
@@ -144,18 +134,28 @@ a|
 |False
 a|
 
-|cloudProviderAccount
+|publicId
 |string
 |False
 a|
 
-|nssAccountId
+|region
 |string
 |False
 a|
 
-|isDirectMarketplace
-|link:#isDirectMarketplace[isDirectMarketplace]
+|resourceGroup
+|string
+|False
+a|
+
+|tenantPublicId
+|string
+|False
+a|
+
+|vpcId
+|string
 |False
 a|
 
@@ -180,14 +180,14 @@ ClusterCredentialsRequest
 |Required
 |Description
 
-|userName
-|string
-|True
-a|
-
 |password
 |string
 |False
+a|
+
+|userName
+|string
+|True
 a|
 
 |===
@@ -204,9 +204,9 @@ ClusterCredentials
 |Required
 |Description
 
-|userName
-|string
-|False
+|id
+|integer
+|True
 a|
 
 |password
@@ -214,12 +214,12 @@ a|
 |True
 a|
 
-|id
-|integer
-|True
+|publicId
+|string
+|False
 a|
 
-|publicId
+|userName
 |string
 |False
 a|

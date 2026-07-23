@@ -53,12 +53,22 @@ Status: Default, Default response
 |Required
 |Description
 
+|clusterAddress
+|string
+|False
+a|
+
+|id
+|string
+|False
+a|
+
 |name
 |string
 |True
 a|
 
-|id
+|projectName
 |string
 |False
 a|
@@ -68,12 +78,12 @@ a|
 |False
 a|
 
-|zone
-|string
-|False
+|recoverable
+|boolean
+|True
 a|
 
-|vnetName
+|subnetName
 |string
 |False
 a|
@@ -83,24 +93,14 @@ a|
 |False
 a|
 
-|projectName
+|vnetName
 |string
 |False
 a|
 
-|subnetName
+|zone
 |string
 |False
-a|
-
-|clusterAddress
-|string
-|False
-a|
-
-|recoverable
-|boolean
-|True
 a|
 
 |===

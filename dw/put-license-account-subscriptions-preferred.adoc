@@ -17,7 +17,6 @@ Updates the preferred subscription for a specified account ID.
 **Note:**
 
 * This API authorizes user calls and service calls with a predefined scope only.
-
 *Token usage:* NetApp Console user token.
 
 

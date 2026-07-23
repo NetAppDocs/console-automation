@@ -29,18 +29,8 @@ Status: Default, Default response
 |Required
 |Description
 
-|status
-|string
-|True
-a|
-
-|widgetUrl
-|string
-|False
-a|
-
-|privateIp
-|string
+|containerActive
+|boolean
 |False
 a|
 
@@ -54,8 +44,18 @@ a|
 |False
 a|
 
-|containerActive
-|boolean
+|privateIp
+|string
+|False
+a|
+
+|status
+|string
+|True
+a|
+
+|widgetUrl
+|string
 |False
 a|
 

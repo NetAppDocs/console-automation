@@ -26,10 +26,10 @@ Creates a new tenant.
 |Required
 |Description
 
-|name
+|costCenter
 |string
 |False
-a|Tenant name
+a|Tenant cost center
 
 
 |description
@@ -38,10 +38,10 @@ a|Tenant name
 a|Tenant description
 
 
-|costCenter
+|name
 |string
 |False
-a|Tenant cost center
+a|Tenant name
 
 
 |nssKeys
@@ -57,12 +57,12 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
-  "description": "string",
   "costCenter": "string",
+  "description": "string",
+  "name": "string",
   "nssKeys": {
-    "nssUserName": "string",
-    "nssPassword": "string"
+    "nssPassword": "string",
+    "nssUserName": "string"
   }
 }
 ====
@@ -127,16 +127,16 @@ SetNssKeysRequest
 |Required
 |Description
 
-|nssUserName
-|string
-|False
-a|NetApp Support Site user name
-
-
 |nssPassword
 |string
 |False
 a|NetApp Support Site password
+
+
+|nssUserName
+|string
+|False
+a|NetApp Support Site user name
 
 
 |===

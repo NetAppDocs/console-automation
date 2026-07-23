@@ -54,11 +54,11 @@ a|
 {
   "accountName": "string",
   "providerKeys": {
+    "assumeRoleArn": "string",
     "awsAccessKeys": {
       "accessKey": "string",
       "secretKey": "string"
-    },
-    "assumeRoleArn": "string"
+    }
   },
   "subscriptionId": "string"
 }
@@ -78,17 +78,7 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
-|string
-|True
-a|
-
-|accountName
-|string
-|False
-a|
-
-|accountType
+|accessKey
 |string
 |False
 a|
@@ -98,7 +88,12 @@ a|
 |False
 a|
 
-|accessKey
+|accountName
+|string
+|False
+a|
+
+|accountType
 |string
 |False
 a|
@@ -113,14 +108,19 @@ a|
 |False
 a|
 
-|vsaList
-|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|publicId
+|string
 |True
 a|
 
 |subscriptionId
 |string
 |False
+a|
+
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|True
 a|
 
 |===
@@ -131,24 +131,24 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "publicId": "string",
+  "accessKey": "string",
+  "accountId": "string",
   "accountName": "string",
   "accountType": "string",
-  "accountId": "string",
-  "accessKey": "string",
   "assumeRole": {
-    "roleName": "string",
-    "accountId": "string"
+    "accountId": "string",
+    "roleName": "string"
   },
   "occmRole": "string",
+  "publicId": "string",
+  "subscriptionId": "string",
   "vsaList": [
     {
-      "publicId": "string",
       "name": "string",
+      "publicId": "string",
       "workingEnvironmentType": "string"
     }
-  ],
-  "subscriptionId": "string"
+  ]
 }
 ====
 
@@ -194,13 +194,13 @@ AwsKeysRequest
 |Required
 |Description
 
-|awsAccessKeys
-|link:#AwsAccessKeys[AwsAccessKeys]
+|assumeRoleArn
+|string
 |False
 a|
 
-|assumeRoleArn
-|string
+|awsAccessKeys
+|link:#AwsAccessKeys[AwsAccessKeys]
 |False
 a|
 
@@ -218,11 +218,6 @@ AssumeRole
 |Required
 |Description
 
-|roleName
-|string
-|False
-a|
-
 |accountId
 |string
 |False
@@ -230,6 +225,11 @@ a|
 
 |isGov
 |boolean
+|False
+a|
+
+|roleName
+|string
 |False
 a|
 
@@ -247,12 +247,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|publicId
+|name
 |string
 |False
 a|
 
-|name
+|publicId
 |string
 |False
 a|

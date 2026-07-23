@@ -16,7 +16,7 @@ You can perform the following operations by using the SFR endpoints: +
 
 * Start a snapshot backup file explore operation.
 * Retrieve the snapshot backup file explore status.
-* List files during snapshot backup file explore operations. +
-
+* List files during snapshot backup file explore operations.
+ +
 
 
