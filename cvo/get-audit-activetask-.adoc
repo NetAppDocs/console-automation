@@ -47,8 +47,8 @@ Status: Default, Default response
 |Required
 |Description
 
-|status
-|integer
+|actionName
+|string
 |True
 a|
 
@@ -57,14 +57,14 @@ a|
 |True
 a|
 
-|actionName
-|string
-|True
-a|
-
 |error
 |string
 |False
+a|
+
+|status
+|integer
+|True
 a|
 
 |===

@@ -26,14 +26,14 @@ Deploys a Cloud Compliance instance by systems.
 |Required
 |Description
 
-|workingEnvironmentIds
-|array[string]
-|True
-a|
-
 |enableAnf
 |boolean
 |False
+a|
+
+|workingEnvironmentIds
+|array[string]
+|True
 a|
 
 |===

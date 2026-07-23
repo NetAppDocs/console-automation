@@ -44,16 +44,16 @@ a|
 |Required
 |Description
 
-|updateType
-|string
-|True
-a|System update type. System updates can be performed by providing either an external URL that ONTAP will use to download the image file or a name of an image provided by the NetApp Console.
-
-
 |updateParameter
 |string
 |True
 a|Parameter specific to the specified update type. External file URL or the NetApp Console provided image name.
+
+
+|updateType
+|string
+|True
+a|System update type. System updates can be performed by providing either an external URL that ONTAP will use to download the image file or a name of an image provided by the NetApp Console.
 
 
 |===
@@ -64,8 +64,8 @@ a|Parameter specific to the specified update type. External file URL or the NetA
 ====
 [source,json,subs=+macros]
 {
-  "updateType": "string",
-  "updateParameter": "string"
+  "updateParameter": "string",
+  "updateType": "string"
 }
 ====
 

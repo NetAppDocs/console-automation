@@ -80,38 +80,38 @@ a|
 {
   "awsAccounts": [
     {
-      "publicId": "string",
+      "accessKey": "string",
+      "accountId": "string",
       "accountName": "string",
       "accountType": "string",
-      "accountId": "string",
-      "accessKey": "string",
       "assumeRole": {
-        "roleName": "string",
-        "accountId": "string"
+        "accountId": "string",
+        "roleName": "string"
       },
       "occmRole": "string",
+      "publicId": "string",
+      "subscriptionId": "string",
       "vsaList": [
         {
-          "publicId": "string",
           "name": "string",
+          "publicId": "string",
           "workingEnvironmentType": "string"
         }
-      ],
-      "subscriptionId": "string"
+      ]
     }
   ],
   "azureAccounts": [
     {
-      "publicId": "string",
       "accountName": "string",
       "accountType": "string",
-      "tenantId": "string",
       "applicationId": "string",
       "occmRole": "string",
+      "publicId": "string",
+      "tenantId": "string",
       "vsaList": [
         {
-          "publicId": "string",
           "name": "string",
+          "publicId": "string",
           "workingEnvironmentType": "string"
         }
       ]
@@ -119,30 +119,30 @@ a|
   ],
   "gcpStorageAccounts": [
     {
-      "publicId": "string",
+      "accessKey": "string",
       "accountName": "string",
       "accountType": "string",
-      "accessKey": "string",
+      "occmRole": "string",
+      "publicId": "string",
       "vsaList": [
         {
-          "publicId": "string",
           "name": "string",
+          "publicId": "string",
           "workingEnvironmentType": "string"
         }
-      ],
-      "occmRole": "string"
+      ]
     }
   ],
   "nssAccounts": [
     {
-      "publicId": "string",
       "accountName": "string",
       "accountType": "string",
       "nssUserName": "string",
+      "publicId": "string",
       "vsaList": [
         {
-          "publicId": "string",
           "name": "string",
+          "publicId": "string",
           "workingEnvironmentType": "string"
         }
       ]
@@ -169,11 +169,6 @@ AssumeRole
 |Required
 |Description
 
-|roleName
-|string
-|False
-a|
-
 |accountId
 |string
 |False
@@ -181,6 +176,11 @@ a|
 
 |isGov
 |boolean
+|False
+a|
+
+|roleName
+|string
 |False
 a|
 
@@ -198,12 +198,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|publicId
+|name
 |string
 |False
 a|
 
-|name
+|publicId
 |string
 |False
 a|
@@ -227,17 +227,7 @@ AwsAccountResponse
 |Required
 |Description
 
-|publicId
-|string
-|True
-a|
-
-|accountName
-|string
-|False
-a|
-
-|accountType
+|accessKey
 |string
 |False
 a|
@@ -247,7 +237,12 @@ a|
 |False
 a|
 
-|accessKey
+|accountName
+|string
+|False
+a|
+
+|accountType
 |string
 |False
 a|
@@ -262,14 +257,19 @@ a|
 |False
 a|
 
-|vsaList
-|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|publicId
+|string
 |True
 a|
 
 |subscriptionId
 |string
 |False
+a|
+
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
+|True
 a|
 
 |===
@@ -286,22 +286,12 @@ AzureAccountResponse
 |Required
 |Description
 
-|publicId
-|string
-|True
-a|
-
 |accountName
 |string
 |False
 a|
 
 |accountType
-|string
-|False
-a|
-
-|tenantId
 |string
 |False
 a|
@@ -316,9 +306,19 @@ a|
 |False
 a|
 
+|publicId
+|string
+|False
+a|
+
+|tenantId
+|string
+|False
+a|
+
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|True
+|False
 a|
 
 |===
@@ -335,9 +335,9 @@ GcpAccountResponse
 |Required
 |Description
 
-|publicId
+|accessKey
 |string
-|True
+|False
 a|
 
 |accountName
@@ -350,19 +350,19 @@ a|
 |False
 a|
 
-|accessKey
+|occmRole
 |string
 |False
+a|
+
+|publicId
+|string
+|True
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
-a|
-
-|occmRole
-|string
-|False
 a|
 
 |===
@@ -379,11 +379,6 @@ NssAccountResponse
 |Required
 |Description
 
-|publicId
-|string
-|True
-a|
-
 |accountName
 |string
 |False
@@ -397,6 +392,11 @@ a|
 |nssUserName
 |string
 |False
+a|
+
+|publicId
+|string
+|True
 a|
 
 |vsaList

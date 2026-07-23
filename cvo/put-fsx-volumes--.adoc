@@ -74,27 +74,27 @@ a|
 |Required
 |Description
 
+|exportPolicyInfo
+|link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
+|False
+a|
+
+|shareInfo
+|link:#CifsShareInfo[CifsShareInfo]
+|False
+a|
+
 |snapshotPolicyName
 |string
 |False
 a|Snapshot policy name
 
 
-|exportPolicyInfo
-|link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
-|False
-a|
-
 |tieringPolicy
 |string
 |False
 a|Tiering policy
 
-
-|shareInfo
-|link:#CifsShareInfo[CifsShareInfo]
-|False
-a|
 
 |===
 
@@ -104,23 +104,20 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "snapshotPolicyName": "string",
   "exportPolicyInfo": {
-    "name": "string",
-    "policyType": "string",
     "ips": [
       "string"
     ],
+    "name": "string",
     "nfsVersion": [
       "string"
     ],
+    "policyType": "string",
     "rules": [
       {}
     ]
   },
-  "tieringPolicy": "string",
   "shareInfo": {
-    "shareName": "string",
     "accessControlList": [
       {
         "permission": "string",
@@ -129,8 +126,11 @@ a|
         ]
       }
     ],
+    "shareName": "string",
     "vscanFileOpPolicy": "string"
-  }
+  },
+  "snapshotPolicyName": "string",
+  "tieringPolicy": "string"
 }
 ====
 
@@ -158,8 +158,8 @@ pattern
 |Required
 |Description
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -168,8 +168,8 @@ a|
 |True
 a|
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -187,13 +187,13 @@ Regex
 |Required
 |Description
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
@@ -211,14 +211,14 @@ PatternMessage
 |Required
 |Description
 
-|regex
-|link:#Regex[Regex]
-|True
-a|
-
 |message
 |string
 |False
+a|
+
+|regex
+|link:#Regex[Regex]
+|True
 a|
 
 |===
@@ -273,12 +273,6 @@ ExportPolicyRule
 a|Export policy rule index
 
 
-|ruleAccessControl
-|string
-|True
-a|Export policy rule access control
-
-
 |ips
 |array[string]
 |True
@@ -289,6 +283,12 @@ a|Export policy rule list of IPs
 |array[string]
 |False
 a|Export policy rule protocol
+
+
+|ruleAccessControl
+|string
+|True
+a|Export policy rule access control
 
 
 |superUser
@@ -311,28 +311,28 @@ NamedExportPolicyInfo
 |Required
 |Description
 
-|name
-|string
-|False
-a|Export policy name
-
-
-|policyType
-|string
-|True
-a|Export policy type
-
-
 |ips
 |array[string]
 |True
 a|Custom export policy list of IPs
 
 
+|name
+|string
+|False
+a|Export policy name
+
+
 |nfsVersion
 |array[string]
 |False
 a|Export policy protocol
+
+
+|policyType
+|string
+|True
+a|Export policy type
 
 
 |rules
@@ -381,16 +381,16 @@ CifsShareInfo
 |Required
 |Description
 
-|shareName
-|string
-|True
-a|Share name
-
-
 |accessControlList
 |array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
 |True
 a|List of CIFS share permissions
+
+
+|shareName
+|string
+|True
+a|Share name
 
 
 |vscanFileOpPolicy

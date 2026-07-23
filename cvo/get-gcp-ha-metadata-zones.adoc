@@ -52,12 +52,12 @@ Status: Default, Default response
 |True
 a|
 
-|name
+|location
 |string
 |False
 a|
 
-|location
+|name
 |string
 |False
 a|
@@ -76,8 +76,8 @@ a|
 [source,json,subs=+macros]
 {
   "displayName": "string",
-  "name": "string",
   "location": "string",
+  "name": "string",
   "zones": [
     {
       "name": "string"

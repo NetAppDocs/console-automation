@@ -59,9 +59,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
+|byol
+|boolean
+|False
+a|
+
+|clusterAddress
 |string
-|True
+|False
 a|
 
 |id
@@ -69,9 +74,19 @@ a|
 |False
 a|
 
+|name
+|string
+|True
+a|
+
 |publicId
 |string
 |False
+a|
+
+|recoverable
+|boolean
+|True
 a|
 
 |region
@@ -79,12 +94,12 @@ a|
 |False
 a|
 
-|vnetName
-|string
+|registered
+|boolean
 |False
 a|
 
-|vnetId
+|resourceGroup
 |string
 |False
 a|
@@ -99,28 +114,13 @@ a|
 |False
 a|
 
-|resourceGroup
+|vnetId
 |string
 |False
 a|
 
-|clusterAddress
+|vnetName
 |string
-|False
-a|
-
-|recoverable
-|boolean
-|True
-a|
-
-|byol
-|boolean
-|False
-a|
-
-|registered
-|boolean
 |False
 a|
 

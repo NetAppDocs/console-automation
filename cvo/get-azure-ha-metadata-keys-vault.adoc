@@ -74,7 +74,7 @@ a|Key name
 |kid
 |string
 |True
-a|Key ID
+a|Key id
 
 
 |===

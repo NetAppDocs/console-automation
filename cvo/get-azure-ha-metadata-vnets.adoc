@@ -59,13 +59,13 @@ Status: Default, Default response
 |Required
 |Description
 
-|virtualNetworks
-|array[link:#AzureVirtualNetworkResponse[AzureVirtualNetworkResponse]]
+|securityGroups
+|array[link:#AzureSecurityGroupResponse[AzureSecurityGroupResponse]]
 |False
 a|
 
-|securityGroups
-|array[link:#AzureSecurityGroupResponse[AzureSecurityGroupResponse]]
+|virtualNetworks
+|array[link:#AzureVirtualNetworkResponse[AzureVirtualNetworkResponse]]
 |False
 a|
 
@@ -77,10 +77,15 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "securityGroups": [
+    {
+      "id": "string",
+      "name": "string",
+      "resourceGroup": "string"
+    }
+  ],
   "virtualNetworks": [
     {
-      "name": "string",
-      "id": "string",
       "cidrs": [
         {
           "cidr": "string",
@@ -89,6 +94,8 @@ a|
           ]
         }
       ],
+      "id": "string",
+      "name": "string",
       "resourceGroup": "string",
       "tags": [
         {
@@ -96,13 +103,6 @@ a|
           "value": "string"
         }
       ]
-    }
-  ],
-  "securityGroups": [
-    {
-      "id": "string",
-      "name": "string",
-      "resourceGroup": "string"
     }
   ]
 }
@@ -115,9 +115,9 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#AzureSubnetResponse]
+[#AzureSecurityGroupResponse]
 [.api-collapsible-fifth-title]
-AzureSubnetResponse
+AzureSecurityGroupResponse
 
 [cols=4*,options=header]
 |===
@@ -129,7 +129,39 @@ AzureSubnetResponse
 |id
 |string
 |True
-a|Subnet ID
+a|Security group ID
+
+
+|name
+|string
+|True
+a|Security group name
+
+
+|resourceGroup
+|string
+|False
+a|Resource group
+
+
+|===
+
+
+[#AzureSubnetResponse]
+[.api-collapsible-fifth-title]
+AzureSubnetResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|availableIps
+|integer
+|True
+a|The number of available IP addresses on the subnet
 
 
 |cidr
@@ -138,16 +170,10 @@ a|Subnet ID
 a|CIDR
 
 
-|name
+|id
 |string
 |True
-a|Subnet name
-
-
-|availableIps
-|integer
-|True
-a|The number of available IP addresses on the subnet
+a|Subnet ID
 
 
 |minimumRequiredIps
@@ -156,6 +182,12 @@ a|The number of available IP addresses on the subnet
 a|The minimum needed IP addresses for the Cloud Volumes ONTAP system creation
 
 * format: int32
+
+
+|name
+|string
+|True
+a|Subnet name
 
 
 |===
@@ -224,10 +256,10 @@ AzureVirtualNetworkResponse
 |Required
 |Description
 
-|name
-|string
+|cidrs
+|array[link:#AzureVirtualNetworkCidrData[AzureVirtualNetworkCidrData]]
 |True
-a|Virtual Network name
+a|CIDRs
 
 
 |id
@@ -236,54 +268,22 @@ a|Virtual Network name
 a|Virtual Network ID
 
 
-|cidrs
-|array[link:#AzureVirtualNetworkCidrData[AzureVirtualNetworkCidrData]]
+|name
+|string
 |True
-a|CIDRs
+a|Virtual Network name
 
 
 |resourceGroup
 |string
 |True
-a|Resource Group
+a|Resource group
 
 
 |tags
 |array[link:#TagResponse[TagResponse]]
 |True
 a|Tags
-
-
-|===
-
-
-[#AzureSecurityGroupResponse]
-[.api-collapsible-fifth-title]
-AzureSecurityGroupResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|id
-|string
-|True
-a|Security group ID
-
-
-|name
-|string
-|True
-a|Security group name
-
-
-|resourceGroup
-|string
-|False
-a|Resource group
 
 
 |===

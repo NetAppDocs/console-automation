@@ -47,11 +47,10 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
-|string
+|cronJobSchedule
+|link:#CronJobScheduleResponse[CronJobScheduleResponse]
 |True
-a|Specifies the name
-
+a|
 
 |description
 |string
@@ -59,10 +58,11 @@ a|Specifies the name
 a|Description
 
 
-|cronJobSchedule
-|link:#CronJobScheduleResponse[CronJobScheduleResponse]
+|name
+|string
 |True
-a|
+a|Specifies the name
+
 
 |===
 
@@ -72,16 +72,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
-  "description": "string",
   "cronJobSchedule": {
-    "months": [
-      "integer"
-    ],
     "days": [
-      "integer"
-    ],
-    "weekDays": [
       "integer"
     ],
     "hours": [
@@ -89,8 +81,16 @@ a|
     ],
     "minutes": [
       "integer"
+    ],
+    "months": [
+      "integer"
+    ],
+    "weekDays": [
+      "integer"
     ]
-  }
+  },
+  "description": "string",
+  "name": "string"
 }
 ====
 
@@ -112,22 +112,10 @@ CronJobScheduleResponse
 |Required
 |Description
 
-|months
-|array[integer]
-|True
-a|List of months
-
-
 |days
 |array[integer]
 |True
 a|List of days of the month
-
-
-|weekDays
-|array[integer]
-|True
-a|List of week days
 
 
 |hours
@@ -140,6 +128,18 @@ a|List of hours
 |array[integer]
 |True
 a|List of minutes
+
+
+|months
+|array[integer]
+|True
+a|List of months
+
+
+|weekDays
+|array[integer]
+|True
+a|List of week days
 
 
 |===

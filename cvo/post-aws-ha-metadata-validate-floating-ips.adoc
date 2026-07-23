@@ -26,18 +26,13 @@ Validates HA floating IP addresses.
 |Required
 |Description
 
+|cloudProviderAccountId
+|string
+|False
+a|
+
 |floatingIps
 |link:#FloatingIps[FloatingIps]
-|True
-a|
-
-|routeTablesIds
-|array[string]
-|True
-a|
-
-|vpcId
-|string
 |True
 a|
 
@@ -51,9 +46,14 @@ a|
 |False
 a|
 
-|cloudProviderAccountId
+|routeTablesIds
+|array[string]
+|True
+a|
+
+|vpcId
 |string
-|False
+|True
 a|
 
 |===
@@ -64,19 +64,19 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "cloudProviderAccountId": "string",
   "floatingIps": {
     "clusterFloatingIP": "string",
     "dataFloatingIP": "string",
     "dataFloatingIP2": "string",
     "svmFloatingIP": "string"
   },
+  "region": "string",
+  "roleArn": "string",
   "routeTablesIds": [
     "string"
   ],
-  "vpcId": "string",
-  "region": "string",
-  "roleArn": "string",
-  "cloudProviderAccountId": "string"
+  "vpcId": "string"
 }
 ====
 
@@ -94,13 +94,13 @@ Status: Default, Default response
 |Required
 |Description
 
-|result
-|boolean
+|reasons
+|array[string]
 |True
 a|
 
-|reasons
-|array[string]
+|result
+|boolean
 |True
 a|
 

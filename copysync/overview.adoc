@@ -211,6 +211,7 @@ The following processes are involved with error handling and processing:
 * The error is logged for supportability.
 * The error is also returned to the API caller on synchronous operations.
 * In case of asynchronous operations, the error will be returned on the GET /messages API.
+
 == cURL examples
 
 The following example retrieves relationships for a specific account:

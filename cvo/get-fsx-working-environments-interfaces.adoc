@@ -53,19 +53,24 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
-|string
-|True
-a|
-
 |address
 |string
 |False
 a|
 
-|svm
+|dataProtocols
+|array[string]
+|True
+a|
+
+|ipSpace
 |string
 |False
+a|
+
+|name
+|string
+|True
 a|
 
 |role
@@ -78,14 +83,9 @@ a|
 |False
 a|
 
-|ipSpace
+|svm
 |string
 |False
-a|
-
-|dataProtocols
-|array[string]
-|True
 a|
 
 |===
@@ -96,15 +96,15 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
   "address": "string",
-  "svm": "string",
-  "role": "string",
-  "status": "string",
-  "ipSpace": "string",
   "dataProtocols": [
     "string"
-  ]
+  ],
+  "ipSpace": "string",
+  "name": "string",
+  "role": "string",
+  "status": "string",
+  "svm": "string"
 }
 ====
 

@@ -26,9 +26,24 @@ Validates that the current user is subscribed to the Cloud Volumes ONTAP product
 |Required
 |Description
 
+|cloudProviderAccount
+|string
+|False
+a|
+
 |region
 |string
 |True
+a|
+
+|roleArn
+|string
+|False
+a|
+
+|securityGroupId
+|string
+|False
 a|
 
 |subnetId
@@ -41,21 +56,6 @@ a|
 |True
 a|
 
-|roleArn
-|string
-|False
-a|
-
-|cloudProviderAccount
-|string
-|False
-a|
-
-|securityGroupId
-|string
-|False
-a|
-
 |===
 
 
@@ -64,20 +64,20 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "cloudProviderAccount": "string",
   "region": "string",
+  "roleArn": "string",
+  "securityGroupId": "string",
   "subnetId": "string",
   "vsaMetadata": {
-    "ontapVersion": "string",
-    "licenseType": "string",
-    "instanceType": "string",
-    "platformSerialNumber": "string",
-    "providedLicense": "string",
     "capacityPackageName": "string",
-    "keyStoneSubscription": "string"
-  },
-  "roleArn": "string",
-  "cloudProviderAccount": "string",
-  "securityGroupId": "string"
+    "instanceType": "string",
+    "keyStoneSubscription": "string",
+    "licenseType": "string",
+    "ontapVersion": "string",
+    "platformSerialNumber": "string",
+    "providedLicense": "string"
+  }
 }
 ====
 
@@ -126,10 +126,22 @@ VsaMetadataRequest
 |Required
 |Description
 
-|ontapVersion
+|capacityPackageName
+|string
+|False
+a|Optional capacity-based package
+
+
+|instanceType
 |string
 |True
-a|ONTAP version
+a|Instance type
+
+
+|keyStoneSubscription
+|string
+|False
+a|Keystone subscription ID
 
 
 |licenseType
@@ -138,10 +150,10 @@ a|ONTAP version
 a|License type
 
 
-|instanceType
+|ontapVersion
 |string
 |True
-a|Instance type
+a|ONTAP version
 
 
 |platformSerialNumber
@@ -154,18 +166,6 @@ a|Optional platform serial number
 |string
 |False
 a|Optional provided license
-
-
-|capacityPackageName
-|string
-|False
-a|Optional capacity-based package
-
-
-|keyStoneSubscription
-|string
-|False
-a|Keystone subscription ID
 
 
 |useLatestVersion

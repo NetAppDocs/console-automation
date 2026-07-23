@@ -14,5 +14,7 @@ The messages endpoint sends user information, received by performing asynchronou
 
 The API call process involves the following steps:
 
+. Execute the API endpoint initially without using the "`last`" query parameter. The API response will include an ID field value.
+. Subsequently, execute the API endpoint using the ID field value obtained after performing Step 1.
 
 

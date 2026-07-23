@@ -54,14 +54,14 @@ a|
 |True
 a|
 
-|preamble
-|string
-|False
-a|
-
 |parts
 |array[link:#InputPart[InputPart]]
 |True
+a|
+
+|preamble
+|string
+|False
 a|
 
 |===
@@ -80,50 +80,6 @@ Status: Default, Default response
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#parameters]
-[.api-collapsible-fifth-title]
-parameters
-Hash mapping strings to string
-
-[#mediaType]
-[.api-collapsible-fifth-title]
-mediaType
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|type
-|string
-|True
-a|
-
-|subtype
-|string
-|False
-a|
-
-|parameters
-|link:#parameters[parameters]
-|True
-a|
-
-|wildcardSubtype
-|boolean
-|False
-a|
-
-|wildcardType
-|boolean
-|False
-a|
-
-|===
-
-
 [#headers]
 [.api-collapsible-fifth-title]
 headers
@@ -143,6 +99,50 @@ a|
 |===
 
 
+[#parameters]
+[.api-collapsible-fifth-title]
+parameters
+Hash mapping strings to string
+
+[#mediaType]
+[.api-collapsible-fifth-title]
+mediaType
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|parameters
+|link:#parameters[parameters]
+|True
+a|
+
+|subtype
+|string
+|False
+a|
+
+|type
+|string
+|False
+a|
+
+|wildcardSubtype
+|boolean
+|False
+a|
+
+|wildcardType
+|boolean
+|False
+a|
+
+|===
+
+
 [#InputPart]
 [.api-collapsible-fifth-title]
 InputPart
@@ -154,23 +154,23 @@ InputPart
 |Required
 |Description
 
+|bodyAsString
+|string
+|True
+a|
+
 |contentTypeFromMessage
 |boolean
 |True
 a|
 
-|mediaType
-|link:#mediaType[mediaType]
+|headers
+|link:#headers[headers]
 |True
 a|
 
-|bodyAsString
-|string
-|False
-a|
-
-|headers
-|link:#headers[headers]
+|mediaType
+|link:#mediaType[mediaType]
 |True
 a|
 

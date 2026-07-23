@@ -58,14 +58,14 @@ Status: Default, Default response
 |True
 a|
 
-|svm
-|string
-|False
-a|
-
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |True
+a|
+
+|svm
+|string
+|False
 a|
 
 |===
@@ -77,10 +77,10 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
-  "svm": "string",
   "rules": [
     {}
-  ]
+  ],
+  "svm": "string"
 }
 ====
 
@@ -116,12 +116,6 @@ ExportPolicyRule
 a|Export policy rule index
 
 
-|ruleAccessControl
-|string
-|True
-a|Export policy rule access control
-
-
 |ips
 |array[string]
 |True
@@ -132,6 +126,12 @@ a|Export policy rule list of IPs
 |array[string]
 |False
 a|Export policy rule protocol
+
+
+|ruleAccessControl
+|string
+|True
+a|Export policy rule access control
 
 
 |superUser

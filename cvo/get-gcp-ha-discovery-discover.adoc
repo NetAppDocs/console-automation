@@ -53,12 +53,22 @@ Status: Default, Default response
 |Required
 |Description
 
+|clusterAddress
+|string
+|False
+a|
+
+|id
+|string
+|False
+a|
+
 |name
 |string
 |True
 a|
 
-|id
+|projectName
 |string
 |False
 a|
@@ -68,14 +78,9 @@ a|
 |False
 a|
 
-|zones
-|array[string]
+|recoverable
+|boolean
 |True
-a|
-
-|vpcs
-|array[string]
-|False
 a|
 
 |subnetIds
@@ -83,18 +88,13 @@ a|
 |False
 a|
 
-|projectName
-|string
+|vpcs
+|array[string]
 |False
 a|
 
-|clusterAddress
-|string
-|False
-a|
-
-|recoverable
-|boolean
+|zones
+|array[string]
 |True
 a|
 

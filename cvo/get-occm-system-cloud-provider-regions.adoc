@@ -49,17 +49,17 @@ a|
 {
   "aws": [
     {
-      "name": "string",
       "code": "string",
       "location": "string",
+      "name": "string",
       "s3Region": "string"
     }
   ],
   "azure": [
     {
-      "name": "string",
       "code": "string",
       "location": "string",
+      "name": "string",
       "s3Region": "string"
     }
   ]
@@ -84,11 +84,6 @@ Region
 |Required
 |Description
 
-|name
-|string
-|True
-a|
-
 |code
 |string
 |False
@@ -97,6 +92,11 @@ a|
 |location
 |string
 |False
+a|
+
+|name
+|string
+|True
 a|
 
 |s3Region

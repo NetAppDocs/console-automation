@@ -34,10 +34,55 @@ Status: Default, Default response
 |True
 a|
 
+|actionName
+|string
+|True
+a|Audit group name
+
+
+|actionParameters
+|string
+|False
+a|Parameters of the user action
+
+
+|containsFailedRecords
+|boolean
+|False
+a|
+
+|containsRecords
+|boolean
+|False
+a|
+
+|endDate
+|integer
+|False
+a|End date
+
+
+|errorMessage
+|string
+|False
+a|Audit failure information (if relevant)
+
+
 |id
 |string
 |True
 a|Audit group public ID
+
+
+|parentId
+|link:#parentId[parentId]
+|False
+a|
+
+|records
+|array[link:#AuditGroupSummaryRecord[AuditGroupSummaryRecord]]
+|True
+a|List of audit records
 
 
 |requestId
@@ -52,28 +97,10 @@ a|Request ID of an action associated with the audit group
 a|Start date
 
 
-|endDate
-|integer
-|False
-a|End date
-
-
-|actionName
-|string
-|True
-a|Audit group name
-
-
 |status
 |string
 |False
 a|Audit group status
-
-
-|userName
-|string
-|False
-a|Name of the user who performed the action
 
 
 |tenantName
@@ -82,28 +109,15 @@ a|Name of the user who performed the action
 a|Name of the tenant
 
 
-|workingEnvironmentName
+|userId
 |string
 |False
-a|Name of the system related to the user action
+a|
 
-
-|actionParameters
+|userName
 |string
 |False
-a|Parameters of the user action
-
-
-|records
-|array[link:#AuditGroupSummaryRecord[AuditGroupSummaryRecord]]
-|True
-a|List of audit records
-
-
-|errorMessage
-|string
-|False
-a|Audit failure information (if relevant)
+a|Name of the user who performed the action
 
 
 |version
@@ -112,30 +126,16 @@ a|Audit failure information (if relevant)
 a|Version of NetApp Console used to create this audit
 
 
-|parentId
-|link:#parentId[parentId]
-|False
-a|
-
-|userId
-|string
-|False
-a|
-
 |workingEnvironmentId
 |string
 |False
 a|
 
-|containsFailedRecords
-|boolean
+|workingEnvironmentName
+|string
 |False
-a|
+a|Name of the system related to the user action
 
-|containsRecords
-|boolean
-|False
-a|
 
 |===
 
@@ -147,6 +147,11 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#parentId]
+[.api-collapsible-fifth-title]
+parentId
+
+
 [#AuditGroupSummaryRecord]
 [.api-collapsible-fifth-title]
 AuditGroupSummaryRecord
@@ -158,40 +163,10 @@ AuditGroupSummaryRecord
 |Required
 |Description
 
-|id
-|string
-|True
-a|Audit record public ID
-
-
-|date
-|integer
-|True
-a|Date
-
-
 |actionName
 |string
 |True
 a|Action
-
-
-|status
-|string
-|True
-a|Status
-
-
-|parameters
-|string
-|False
-a|Action parameters
-
-
-|errorMessage
-|string
-|False
-a|Audit failure information (if relevant)
 
 
 |count
@@ -200,12 +175,37 @@ a|Audit failure information (if relevant)
 a|Aggregated count of similar records
 
 
+|date
+|integer
+|True
+a|Date
+
+
+|errorMessage
+|string
+|False
+a|Audit failure information (if relevant)
+
+
+|id
+|string
+|True
+a|Audit record public ID
+
+
+|parameters
+|string
+|False
+a|Action parameters
+
+
+|status
+|string
+|True
+a|Status
+
+
 |===
-
-
-[#parentId]
-[.api-collapsible-fifth-title]
-parentId
 
 
 //end collapsible .Definitions block

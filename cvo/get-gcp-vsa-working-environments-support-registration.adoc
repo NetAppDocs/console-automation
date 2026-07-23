@@ -47,11 +47,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|status
-|string
-|True
-a|
-
 |licenseExpiryDate
 |link:#licenseExpiryDate[licenseExpiryDate]
 |False
@@ -67,6 +62,11 @@ a|
 |False
 a|
 
+|status
+|string
+|True
+a|
+
 |===
 
 
@@ -75,8 +75,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "status": "string",
-  "nssAccountId": "string"
+  "nssAccountId": "string",
+  "status": "string"
 }
 ====
 

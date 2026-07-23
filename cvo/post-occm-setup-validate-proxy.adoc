@@ -26,12 +26,7 @@ Validates the specified proxy URL.
 |Required
 |Description
 
-|uri
-|string
-|False
-a|
-
-|proxyUserName
+|proxyDomain
 |string
 |False
 a|
@@ -41,7 +36,12 @@ a|
 |False
 a|
 
-|proxyDomain
+|proxyUserName
+|string
+|False
+a|
+
+|uri
 |string
 |False
 a|
@@ -54,10 +54,10 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "uri": "string",
-  "proxyUserName": "string",
+  "proxyDomain": "string",
   "proxyPassword": "string",
-  "proxyDomain": "string"
+  "proxyUserName": "string",
+  "uri": "string"
 }
 ====
 

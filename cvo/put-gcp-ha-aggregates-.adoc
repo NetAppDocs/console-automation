@@ -36,7 +36,7 @@ a|The public ID of the system
 |string
 |path
 |True
-a|The aggregate to update
+a|The name of the aggregate to update
 
 
 |===
@@ -61,7 +61,7 @@ a|New IOPS
 |throughput
 |integer
 |False
-a|New Throughput
+a|New throughput
 
 
 |===

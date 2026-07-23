@@ -55,14 +55,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|empty
-|boolean
-|True
-a|
-
 |defined
 |boolean
 |False
+a|
+
+|empty
+|boolean
+|True
 a|
 
 |===

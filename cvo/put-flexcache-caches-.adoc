@@ -50,16 +50,16 @@ a|
 |Required
 |Description
 
-|name
-|string
-|False
-a|FlexCache volume name
-
-
 |cacheVolumeSize
 |link:#cacheVolumeSize[cacheVolumeSize]
 |False
 a|FlexCache size
+
+
+|exportPolicy
+|string
+|False
+a|FlexCache NFS export policy
 
 
 |junctionPath
@@ -68,10 +68,10 @@ a|FlexCache size
 a|FlexCache volume junction path
 
 
-|exportPolicy
+|name
 |string
 |False
-a|FlexCache NFS export policy
+a|FlexCache volume name
 
 
 |===
@@ -82,9 +82,9 @@ a|FlexCache NFS export policy
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
+  "exportPolicy": "string",
   "junctionPath": "string",
-  "exportPolicy": "string"
+  "name": "string"
 }
 ====
 

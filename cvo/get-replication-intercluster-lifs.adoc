@@ -62,7 +62,7 @@ a|System Intercluster LIFs
 |peerInterClusterLifs
 |array[link:#ReplicationInterClusterLif[ReplicationInterClusterLif]]
 |True
-a|Peer system Intercluster Lifs
+a|Peer system Intercluster LIFs
 
 
 |===
@@ -100,16 +100,22 @@ ReplicationInterClusterLif
 |Required
 |Description
 
-|name
-|string
-|True
-a|Specifies the name
-
-
 |address
 |string
 |True
 a|Address
+
+
+|isPeered
+|boolean
+|True
+a|Is Peered
+
+
+|name
+|string
+|True
+a|Specifies the name
 
 
 |netmaskLength
@@ -118,28 +124,22 @@ a|Address
 a|Netmask Length
 
 
-|port
-|string
-|True
-a|Port
-
-
 |node
 |string
 |True
 a|Node
 
 
+|port
+|string
+|True
+a|Port
+
+
 |status
 |string
 |True
 a|Status
-
-
-|isPeered
-|boolean
-|True
-a|Is Peered
 
 
 |===

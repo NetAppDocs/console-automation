@@ -44,10 +44,10 @@ a|
 |Required
 |Description
 
-|name
+|costCenter
 |string
 |False
-a|Tenant name
+a|Tenant cost center
 
 
 |description
@@ -56,10 +56,10 @@ a|Tenant name
 a|Tenant description
 
 
-|costCenter
+|name
 |string
 |False
-a|Tenant cost center
+a|Tenant name
 
 
 |===
@@ -70,9 +70,9 @@ a|Tenant cost center
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
+  "costCenter": "string",
   "description": "string",
-  "costCenter": "string"
+  "name": "string"
 }
 ====
 

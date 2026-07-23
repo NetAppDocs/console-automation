@@ -83,14 +83,14 @@ Hash mapping strings to string
 |Required
 |Description
 
-|traversableAgain
-|boolean
-|True
-a|
-
 |empty
 |boolean
 |False
+a|
+
+|traversableAgain
+|boolean
+|True
 a|
 
 |===

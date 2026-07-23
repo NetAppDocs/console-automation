@@ -47,6 +47,21 @@ Status: Default, Default response
 |Required
 |Description
 
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
+a|
+
+|description
+|string
+|False
+a|
+
+|instanceTypes
+|array[link:#InstanceTypeInfo[InstanceTypeInfo]]
+|True
+a|
+
 |licenseType
 |string
 |True
@@ -55,21 +70,6 @@ a|
 |name
 |string
 |False
-a|
-
-|description
-|string
-|False
-a|
-
-|capacityLimit
-|link:#Capacity[Capacity]
-|True
-a|
-
-|instanceTypes
-|array[link:#InstanceTypeInfo[InstanceTypeInfo]]
-|True
 a|
 
 |===
@@ -124,9 +124,9 @@ InstanceTypeInfo
 |False
 a|
 
-|supportsEncryption
+|isDefault
 |boolean
-|True
+|False
 a|
 
 |supportedFeatures
@@ -134,9 +134,9 @@ a|
 |True
 a|
 
-|isDefault
+|supportsEncryption
 |boolean
-|False
+|True
 a|
 
 |===

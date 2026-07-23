@@ -59,9 +59,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|serialNumber
+|clusterIp
 |string
-|True
+|False
 a|
 
 |clusterName
@@ -74,9 +74,9 @@ a|
 |False
 a|
 
-|ontapVersion
-|string
-|False
+|isAdmin
+|boolean
+|True
 a|
 
 |nodeModels
@@ -84,14 +84,14 @@ a|
 |True
 a|
 
-|isAdmin
-|boolean
-|True
-a|
-
-|clusterIp
+|ontapVersion
 |string
 |False
+a|
+
+|serialNumber
+|string
+|True
 a|
 
 |===

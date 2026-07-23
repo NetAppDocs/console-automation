@@ -49,12 +49,12 @@ a|
 |True
 a|
 
-|site
+|company
 |string
 |False
 a|
 
-|company
+|site
 |string
 |False
 a|
@@ -69,11 +69,11 @@ a|
 {
   "adminUser": {
     "email": "string",
-    "password": "string",
-    "fullName": "string"
+    "fullName": "string",
+    "password": "string"
   },
-  "site": "string",
-  "company": "string"
+  "company": "string",
+  "site": "string"
 }
 ====
 
@@ -131,14 +131,14 @@ LocalAuthSetupUserRequest
 |False
 a|
 
-|password
-|string
-|False
-a|
-
 |fullName
 |string
 |True
+a|
+
+|password
+|string
+|False
 a|
 
 |===

@@ -53,16 +53,22 @@ Status: Default, Default response
 |Required
 |Description
 
-|dnsDomain
-|string
-|True
-a|DNS domain name
-
-
 |activeDirectoryDomain
 |string
 |True
 a|Active Directory domain name
+
+
+|authenticationType
+|string
+|True
+a|Authentication type
+
+
+|dnsDomain
+|string
+|True
+a|DNS domain name
 
 
 |ipAddresses
@@ -83,12 +89,6 @@ a|CIFS server NetBIOS name
 a|Organizational unit for registration
 
 
-|authenticationType
-|string
-|True
-a|Authentication type
-
-
 |===
 
 
@@ -97,14 +97,14 @@ a|Authentication type
 ====
 [source,json,subs=+macros]
 {
-  "dnsDomain": "string",
   "activeDirectoryDomain": "string",
+  "authenticationType": "string",
+  "dnsDomain": "string",
   "ipAddresses": [
     "string"
   ],
   "netBIOS": "string",
-  "organizationalUnit": "string",
-  "authenticationType": "string"
+  "organizationalUnit": "string"
 }
 ====
 

@@ -29,19 +29,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|enabled
-|boolean
-|True
-a|
-
-|site
-|string
-|True
-a|
-
 |company
 |string
 |False
+a|
+
+|enabled
+|boolean
+|True
 a|
 
 |hostName
@@ -56,6 +51,11 @@ a|
 
 |schedule
 |link:#AsupSchedule[AsupSchedule]
+|True
+a|
+
+|site
+|string
 |True
 a|
 

@@ -34,13 +34,13 @@ Status: Default, Default response
 |True
 a|
 
-|size
-|link:#Capacity[Capacity]
-|True
+|isDefault
+|boolean
+|False
 a|
 
-|supportedVolumeTypes
-|array[string]
+|size
+|link:#Capacity[Capacity]
 |True
 a|
 
@@ -49,9 +49,9 @@ a|
 |False
 a|
 
-|isDefault
-|boolean
-|False
+|supportedVolumeTypes
+|array[string]
+|True
 a|
 
 |===

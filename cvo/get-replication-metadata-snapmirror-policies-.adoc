@@ -53,24 +53,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
-|string
-|True
-a|
-
 |comment
 |string
 |False
-a|
-
-|policyType
-|string
-|False
-a|
-
-|rules
-|array[link:#SnapMirrorRuleResponse[SnapMirrorRuleResponse]]
-|True
 a|
 
 |isDefault
@@ -83,9 +68,24 @@ a|
 |False
 a|
 
+|name
+|string
+|True
+a|
+
+|policyType
+|string
+|False
+a|
+
 |reason
 |string
 |False
+a|
+
+|rules
+|array[link:#SnapMirrorRuleResponse[SnapMirrorRuleResponse]]
+|True
 a|
 
 |===
@@ -96,13 +96,13 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
   "comment": "string",
+  "name": "string",
   "policyType": "string",
+  "reason": "string",
   "rules": [
     {}
-  ],
-  "reason": "string"
+  ]
 }
 ====
 
@@ -124,14 +124,14 @@ SnapMirrorRuleResponse
 |Required
 |Description
 
-|snapMirrorLabel
-|string
-|False
-a|
-
 |retention
 |integer
 |True
+a|
+
+|snapMirrorLabel
+|string
+|False
 a|
 
 |===

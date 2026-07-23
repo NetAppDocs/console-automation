@@ -53,12 +53,7 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
-|string
-|True
-a|
-
-|displayName
+|capacityTier
 |string
 |False
 a|
@@ -68,13 +63,8 @@ a|
 |False
 a|
 
-|licenseType
-|string
-|False
-a|
-
-|instanceTypeMapping
-|array[link:#InstanceTypeRegionMapping[InstanceTypeRegionMapping]]
+|diskSize
+|link:#Capacity[Capacity]
 |True
 a|
 
@@ -83,12 +73,7 @@ a|
 |False
 a|
 
-|diskSize
-|link:#Capacity[Capacity]
-|True
-a|
-
-|capacityTier
+|displayName
 |string
 |False
 a|
@@ -98,9 +83,9 @@ a|
 |False
 a|
 
-|writingSpeedState
-|string
-|False
+|instanceTypeMapping
+|array[link:#InstanceTypeRegionMapping[InstanceTypeRegionMapping]]
+|True
 a|
 
 |iops
@@ -108,8 +93,23 @@ a|
 |False
 a|
 
+|licenseType
+|string
+|False
+a|
+
+|name
+|string
+|True
+a|
+
 |throughput
 |link:#throughput[throughput]
+|False
+a|
+
+|writingSpeedState
+|string
 |False
 a|
 
@@ -123,30 +123,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#InstanceTypeRegionMapping]
-[.api-collapsible-fifth-title]
-InstanceTypeRegionMapping
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|region
-|string
-|False
-a|
-
-|instanceType
-|string
-|False
-a|
-
-|===
-
-
 [#Capacity]
 [.api-collapsible-fifth-title]
 Capacity
@@ -169,6 +145,30 @@ a|Size
 |True
 a|Unit
 
+
+|===
+
+
+[#InstanceTypeRegionMapping]
+[.api-collapsible-fifth-title]
+InstanceTypeRegionMapping
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|instanceType
+|string
+|False
+a|
+
+|region
+|string
+|False
+a|
 
 |===
 

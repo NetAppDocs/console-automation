@@ -59,14 +59,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|name
-|string
-|True
-a|
-
 |id
 |string
 |False
+a|
+
+|name
+|string
+|True
 a|
 
 |===
@@ -77,8 +77,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "name": "string",
-  "id": "string"
+  "id": "string",
+  "name": "string"
 }
 ====
 

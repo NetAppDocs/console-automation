@@ -53,22 +53,47 @@ Status: Default, Default response
 |Required
 |Description
 
-|publicId
-|string
+|actionsRequired
+|array[link:#ActionRequired[ActionRequired]]
 |True
 a|
 
-|tenantId
-|string
+|aff
+|boolean
 |False
+a|
+
+|capacityFeatures
+|link:#OnPremCapacityFeatures[OnPremCapacityFeatures]
+|False
+a|
+
+|cbsProperties
+|link:#CbsPropertiesWithReason[CbsPropertiesWithReason]
+|False
+a|
+
+|cloudSyncProperties
+|link:#CloudSyncProperties[CloudSyncProperties]
+|False
+a|
+
+|clusterProperties
+|link:#OnPremClusterProperties[OnPremClusterProperties]
+|False
+a|
+
+|complianceProperties
+|link:#CloudComplianceStatusResponse[CloudComplianceStatusResponse]
+|False
+a|
+
+|cronJobSchedules
+|array[link:#CronJobSchedule[CronJobSchedule]]
+|True
 a|
 
 |description
-|string
-|False
-a|
-
-|name
 |string
 |False
 a|
@@ -78,48 +103,23 @@ a|
 |False
 a|
 
-|location
-|string
-|False
-a|
-
-|reservedSize
-|link:#Capacity[Capacity]
-|False
-a|
-
-|status
-|link:#StatusProperties[StatusProperties]
-|False
-a|
-
 |interClusterLifs
 |array[link:#InterClusterLif[InterClusterLif]]
 |True
 a|
 
-|cronJobSchedules
-|array[link:#CronJobSchedule[CronJobSchedule]]
-|True
-a|
-
-|svms
-|array[link:#Svm[Svm]]
-|True
-a|
-
-|snapshotPolicies
-|array[link:#SnapshotPolicy[SnapshotPolicy]]
-|True
-a|
-
-|replicationProperties
-|link:#ReplicationProperties[ReplicationProperties]
+|location
+|string
 |False
 a|
 
-|clusterProperties
-|link:#OnPremClusterProperties[OnPremClusterProperties]
+|monitoringProperties
+|link:#MonitoringStatusResponse[MonitoringStatusResponse]
+|False
+a|
+
+|name
+|string
 |False
 a|
 
@@ -128,43 +128,43 @@ a|
 |False
 a|
 
-|workingEnvironmentType
+|publicId
+|string
+|True
+a|
+
+|replicationProperties
+|link:#ReplicationProperties[ReplicationProperties]
+|False
+a|
+
+|reservedSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|snapshotPolicies
+|array[link:#SnapshotPolicy[SnapshotPolicy]]
+|True
+a|
+
+|status
+|link:#StatusProperties[StatusProperties]
+|False
+a|
+
+|svms
+|array[link:#Svm[Svm]]
+|True
+a|
+
+|tenantId
 |string
 |False
 a|
 
-|cloudSyncProperties
-|link:#CloudSyncProperties[CloudSyncProperties]
-|False
-a|
-
-|actionsRequired
-|array[link:#ActionRequired[ActionRequired]]
-|True
-a|
-
-|capacityFeatures
-|link:#OnPremCapacityFeatures[OnPremCapacityFeatures]
-|False
-a|
-
-|aff
-|boolean
-|False
-a|
-
-|cbsProperties
-|link:#CbsPropertiesWithReason[CbsPropertiesWithReason]
-|False
-a|
-
-|complianceProperties
-|link:#CloudComplianceStatusResponse[CloudComplianceStatusResponse]
-|False
-a|
-
-|monitoringProperties
-|link:#MonitoringStatusResponse[MonitoringStatusResponse]
+|workingEnvironmentType
+|string
 |False
 a|
 
@@ -176,59 +176,172 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "publicId": "string",
-  "tenantId": "string",
-  "description": "string",
-  "name": "string",
-  "discoverUserEmail": "string",
-  "location": "string",
-  "status": {
-    "status": "string",
-    "message": "string",
-    "extendedFailureReason": "string"
+  "actionsRequired": [
+    {}
+  ],
+  "capacityFeatures": {
+    "objectStoreConfigExtended": {
+      "objectStoreConfig": {
+        "objectStoreName": "string",
+        "providerType": "string",
+        "s3Name": "string",
+        "server": "string"
+      },
+      "tierLevel": "string"
+    }
   },
-  "interClusterLifs": [
-    {
-      "name": "string",
-      "address": "string",
-      "port": "string",
-      "node": "string",
+  "cbsProperties": {
+    "cbsBackupStatus": "string",
+    "cbsPolicyName": "string",
+    "cbsRules": [
+      {
+        "snapmirrorLabel": "string"
+      }
+    ],
+    "exclusionReason": "string",
+    "ipSpace": "string",
+    "objectStoreName": "string",
+    "providerAccountName": "string",
+    "providerSpecific": {
+      "azureRgName": "string",
+      "gcpProjectId": "string",
+      "gcpRegion": "string"
+    },
+    "region": "string"
+  },
+  "cloudSyncProperties": {
+    "dataBrokerProperties": {
+      "dataBrokerPlacement": {
+        "instanceId": "string",
+        "instanceType": "string",
+        "keyPair": "string",
+        "subnetId": "string",
+        "vpcId": "string"
+      },
+      "id": "string",
+      "name": "string"
+    },
+    "relationships": [
+      {
+        "failureMessage": "string",
+        "id": "string",
+        "relationshipStatus": "string",
+        "s3Location": "string",
+        "svmName": "string",
+        "volumeName": "string"
+      }
+    ],
+    "s3Location": "string",
+    "status": {
+      "failureMessage": "string",
       "status": "string"
     }
-  ],
+  },
+  "clusterProperties": {
+    "clusterAddress": "string",
+    "clusterName": "string",
+    "clusterUuid": "string",
+    "licenses": [
+      "string"
+    ],
+    "lifs": [
+      {}
+    ],
+    "nodeModels": [
+      "string"
+    ],
+    "ontapVersion": "string",
+    "serialNumber": "string",
+    "systemId": "string",
+    "systemManagerUrl": "string"
+  },
+  "complianceProperties": {
+    "complianceBackupStatus": "string",
+    "complianceStatus": {
+      "scanStatus": {
+        "volumes": [
+          {
+            "error": "string",
+            "name": "string",
+            "status": "string"
+          }
+        ]
+      }
+    },
+    "lastDeploymentError": "string",
+    "scanStatus": "string"
+  },
   "cronJobSchedules": [
     {
-      "name": "string",
-      "description": "string",
-      "months": [
-        "string"
-      ],
       "days": [
         "string"
       ],
-      "weekDays": [
-        "string"
-      ],
+      "description": "string",
       "hours": [
         "string"
       ],
       "minutes": [
         "string"
+      ],
+      "months": [
+        "string"
+      ],
+      "name": "string",
+      "weekDays": [
+        "string"
       ]
     }
   ],
-  "svms": [
-    {}
-  ],
-  "snapshotPolicies": [
+  "description": "string",
+  "discoverUserEmail": "string",
+  "interClusterLifs": [
     {
+      "address": "string",
       "name": "string",
-      "schedules": [
-        {}
-      ],
-      "description": "string"
+      "node": "string",
+      "port": "string",
+      "status": "string"
     }
   ],
+  "location": "string",
+  "monitoringProperties": {
+    "monitoringInfo": {
+      "averageLatency": {
+        "unit": "string"
+      },
+      "node1AverageThroughput": {
+        "unit": "string"
+      },
+      "node2AverageThroughput": {
+        "unit": "string"
+      },
+      "storageAverageThroughput": {
+        "unit": "string"
+      }
+    },
+    "monitoringStatus": "string",
+    "tenantUrl": "string"
+  },
+  "name": "string",
+  "ontapClusterProperties": {
+    "clusterAddress": "string",
+    "clusterName": "string",
+    "clusterUuid": "string",
+    "licenses": [
+      "string"
+    ],
+    "lifs": [
+      {}
+    ],
+    "nodeModels": [
+      "string"
+    ],
+    "ontapVersion": "string",
+    "serialNumber": "string",
+    "systemId": "string",
+    "systemManagerUrl": "string"
+  },
+  "publicId": "string",
   "replicationProperties": {
     "peers": [
       "string"
@@ -237,138 +350,25 @@ a|
       "string"
     ]
   },
-  "clusterProperties": {
-    "clusterAddress": "string",
-    "ontapVersion": "string",
-    "clusterName": "string",
-    "serialNumber": "string",
-    "systemId": "string",
-    "licenses": [
-      "string"
-    ],
-    "systemManagerUrl": "string",
-    "clusterUuid": "string",
-    "nodeModels": [
-      "string"
-    ],
-    "lifs": [
-      {}
-    ]
-  },
-  "ontapClusterProperties": {
-    "clusterAddress": "string",
-    "ontapVersion": "string",
-    "clusterName": "string",
-    "serialNumber": "string",
-    "systemId": "string",
-    "licenses": [
-      "string"
-    ],
-    "systemManagerUrl": "string",
-    "clusterUuid": "string",
-    "nodeModels": [
-      "string"
-    ],
-    "lifs": [
-      {}
-    ]
-  },
-  "workingEnvironmentType": "string",
-  "cloudSyncProperties": {
-    "status": {
-      "status": "string",
-      "failureMessage": "string"
-    },
-    "dataBrokerProperties": {
-      "id": "string",
+  "snapshotPolicies": [
+    {
+      "description": "string",
       "name": "string",
-      "dataBrokerPlacement": {
-        "vpcId": "string",
-        "subnetId": "string",
-        "instanceType": "string",
-        "instanceId": "string",
-        "keyPair": "string"
-      }
-    },
-    "s3Location": "string",
-    "relationships": [
-      {
-        "volumeName": "string",
-        "svmName": "string",
-        "relationshipStatus": "string",
-        "s3Location": "string",
-        "id": "string",
-        "failureMessage": "string"
-      }
-    ]
+      "schedules": [
+        {}
+      ]
+    }
+  ],
+  "status": {
+    "extendedFailureReason": "string",
+    "message": "string",
+    "status": "string"
   },
-  "actionsRequired": [
+  "svms": [
     {}
   ],
-  "capacityFeatures": {
-    "objectStoreConfigExtended": {
-      "objectStoreConfig": {
-        "objectStoreName": "string",
-        "s3Name": "string",
-        "server": "string",
-        "providerType": "string"
-      },
-      "tierLevel": "string"
-    }
-  },
-  "cbsProperties": {
-    "cbsBackupStatus": "string",
-    "cbsRules": [
-      {
-        "snapmirrorLabel": "string"
-      }
-    ],
-    "objectStoreName": "string",
-    "providerSpecific": {
-      "azureRgName": "string",
-      "gcpProjectId": "string",
-      "gcpRegion": "string"
-    },
-    "cbsPolicyName": "string",
-    "ipSpace": "string",
-    "region": "string",
-    "providerAccountName": "string",
-    "exclusionReason": "string"
-  },
-  "complianceProperties": {
-    "scanStatus": "string",
-    "complianceStatus": {
-      "scanStatus": {
-        "volumes": [
-          {
-            "name": "string",
-            "status": "string",
-            "error": "string"
-          }
-        ]
-      }
-    },
-    "lastDeploymentError": "string",
-    "complianceBackupStatus": "string"
-  },
-  "monitoringProperties": {
-    "monitoringStatus": "string",
-    "monitoringInfo": {
-      "averageLatency": {
-        "unit": "string"
-      },
-      "storageAverageThroughput": {
-        "unit": "string"
-      },
-      "node1AverageThroughput": {
-        "unit": "string"
-      },
-      "node2AverageThroughput": {
-        "unit": "string"
-      }
-    },
-    "tenantUrl": "string"
-  }
+  "tenantId": "string",
+  "workingEnvironmentType": "string"
 }
 ====
 
@@ -409,13 +409,13 @@ Expands
 |Required
 |Description
 
-|raw
-|string
+|expands
+|array[link:#Expand[Expand]]
 |True
 a|
 
-|expands
-|array[link:#Expand[Expand]]
+|raw
+|string
 |True
 a|
 
@@ -448,629 +448,6 @@ a|Unit
 |===
 
 
-[#FailureCauses]
-[.api-collapsible-fifth-title]
-FailureCauses
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|invalidOntapCredentials
-|boolean
-|True
-a|
-
-|noCloudProviderConnection
-|boolean
-|False
-a|
-
-|invalidCloudProviderCredentials
-|boolean
-|False
-a|
-
-|===
-
-
-[#StatusProperties]
-[.api-collapsible-fifth-title]
-StatusProperties
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|status
-|string
-|False
-a|
-
-|message
-|string
-|False
-a|
-
-|failureCauses
-|link:#FailureCauses[FailureCauses]
-|False
-a|
-
-|extendedFailureReason
-|string
-|False
-a|
-
-|===
-
-
-[#InterClusterLif]
-[.api-collapsible-fifth-title]
-InterClusterLif
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|False
-a|
-
-|address
-|string
-|False
-a|
-
-|port
-|string
-|False
-a|
-
-|node
-|string
-|False
-a|
-
-|status
-|string
-|False
-a|
-
-|isPeered
-|boolean
-|False
-a|
-
-|===
-
-
-[#CronJobSchedule]
-[.api-collapsible-fifth-title]
-CronJobSchedule
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|False
-a|
-
-|description
-|string
-|False
-a|
-
-|months
-|array[string]
-|True
-a|
-
-|days
-|array[string]
-|False
-a|
-
-|weekDays
-|array[string]
-|False
-a|
-
-|hours
-|array[string]
-|False
-a|
-
-|minutes
-|array[string]
-|False
-a|
-
-|===
-
-
-[#Value]
-[.api-collapsible-fifth-title]
-Value
-
-
-[#Svm]
-[.api-collapsible-fifth-title]
-Svm
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|False
-a|
-
-|state
-|string
-|False
-a|
-
-|allowedProtocols
-|array[link:#Value[Value]]
-|True
-a|
-
-|language
-|string
-|False
-a|
-
-|allowedAggregates
-|array[string]
-|False
-a|
-
-|ver3Enabled
-|boolean
-|True
-a|NFS Version 3 enabled
-
-
-|ver4Enabled
-|boolean
-|True
-a|NFS Version 4 enabled
-
-
-|===
-
-
-[#PolicySchedule]
-[.api-collapsible-fifth-title]
-PolicySchedule
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|frequency
-|string
-|True
-a|Frequency
-
-
-|retention
-|integer
-|True
-a|Retention
-
-
-|===
-
-
-[#SnapshotPolicy]
-[.api-collapsible-fifth-title]
-SnapshotPolicy
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|True
-a|Name
-
-
-|schedules
-|array[link:#PolicySchedule[PolicySchedule]]
-|True
-a|Schedules
-
-
-|description
-|string
-|True
-a|Description
-
-
-|===
-
-
-[#ReplicationProperties]
-[.api-collapsible-fifth-title]
-ReplicationProperties
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|peers
-|array[string]
-|False
-a|
-
-|replicationTargets
-|array[string]
-|False
-a|
-
-|===
-
-
-[#LifResponse]
-[.api-collapsible-fifth-title]
-LifResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|ip
-|string
-|True
-a|LIF IP address
-
-
-|netmask
-|string
-|True
-a|LIF netmask
-
-
-|lifType
-|string
-|True
-a|LIF type
-
-
-|dataProtocols
-|array[string]
-|True
-a|List of supported protocols
-
-
-|nodeName
-|string
-|True
-a|Node name
-
-
-|privateIp
-|boolean
-|True
-a|Specifies whether the LIF IP address is a private address
-
-
-|===
-
-
-[#OnPremClusterProperties]
-[.api-collapsible-fifth-title]
-OnPremClusterProperties
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|clusterAddress
-|string
-|False
-a|
-
-|ontapVersion
-|string
-|False
-a|
-
-|clusterName
-|string
-|False
-a|
-
-|serialNumber
-|string
-|False
-a|
-
-|systemId
-|string
-|False
-a|
-
-|isSnapmirrorLicenseExists
-|boolean
-|False
-a|
-
-|licenses
-|array[string]
-|False
-a|
-
-|systemManagerUrl
-|string
-|False
-a|
-
-|location
-|link:#Value[Value]
-|False
-a|
-
-|clusterUuid
-|string
-|False
-a|
-
-|nodeModels
-|array[string]
-|False
-a|
-
-|lifs
-|array[link:#LifResponse[LifResponse]]
-|False
-a|
-
-|isAff
-|boolean
-|False
-a|
-
-|aggregateCount
-|integer
-|False
-a|
-
-|volumeCount
-|integer
-|False
-a|
-
-|sanOptimized
-|boolean
-|False
-a|
-
-|disaggregated
-|boolean
-|False
-a|
-
-|===
-
-
-[#CloudSyncStatus]
-[.api-collapsible-fifth-title]
-CloudSyncStatus
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|status
-|string
-|False
-a|
-
-|failureMessage
-|string
-|False
-a|
-
-|===
-
-
-[#DataBrokerPlacement]
-[.api-collapsible-fifth-title]
-DataBrokerPlacement
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|vpcId
-|string
-|False
-a|
-
-|subnetId
-|string
-|False
-a|
-
-|instanceType
-|string
-|False
-a|
-
-|instanceId
-|string
-|False
-a|
-
-|keyPair
-|string
-|False
-a|
-
-|===
-
-
-[#DataBrokerProperties]
-[.api-collapsible-fifth-title]
-DataBrokerProperties
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|id
-|string
-|False
-a|
-
-|name
-|string
-|False
-a|
-
-|dataBrokerPlacement
-|link:#DataBrokerPlacement[DataBrokerPlacement]
-|False
-a|
-
-|===
-
-
-[#CloudSyncRelationship]
-[.api-collapsible-fifth-title]
-CloudSyncRelationship
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|volumeName
-|string
-|False
-a|
-
-|svmName
-|string
-|False
-a|
-
-|relationshipStatus
-|string
-|False
-a|
-
-|s3Location
-|string
-|False
-a|
-
-|id
-|string
-|False
-a|
-
-|progress
-|integer
-|False
-a|
-
-|failureMessage
-|string
-|False
-a|
-
-|===
-
-
-[#CloudSyncProperties]
-[.api-collapsible-fifth-title]
-CloudSyncProperties
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|isSynced
-|boolean
-|False
-a|
-
-|status
-|link:#CloudSyncStatus[CloudSyncStatus]
-|False
-a|
-
-|dataBrokerProperties
-|link:#DataBrokerProperties[DataBrokerProperties]
-|False
-a|
-
-|s3Location
-|string
-|False
-a|
-
-|relationships
-|array[link:#CloudSyncRelationship[CloudSyncRelationship]]
-|False
-a|
-
-|===
-
-
 [#RaidInfoForEvAggregate]
 [.api-collapsible-fifth-title]
 RaidInfoForEvAggregate
@@ -1082,16 +459,16 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|diskSize
+|link:#Capacity[Capacity]
+|True
+a|
+
 |numOfDisks
 |integer
 |True
 a|Number of new disks needed for the RAID group
 
-
-|diskSize
-|link:#Capacity[Capacity]
-|True
-a|
 
 |===
 
@@ -1107,11 +484,6 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
-|False
-a|
-
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -1123,6 +495,11 @@ a|
 a|New RAID information
 
 
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
 |totalEvDisks
 |integer
 |False
@@ -1131,9 +508,9 @@ a|
 |===
 
 
-[#VolumeMoveParameters]
+[#InstanceNameIdAndType]
 [.api-collapsible-fifth-title]
-VolumeMoveParameters
+InstanceNameIdAndType
 
 [cols=4*,options=header]
 |===
@@ -1142,27 +519,17 @@ VolumeMoveParameters
 |Required
 |Description
 
-|volumeName
+|instanceId
 |string
 |False
 a|
 
-|svmName
+|instanceName
 |string
 |False
 a|
 
-|targetAggregateName
-|string
-|False
-a|
-
-|isNewTargetAggregate
-|boolean
-|False
-a|
-
-|homeNode
+|instanceType
 |string
 |False
 a|
@@ -1181,7 +548,22 @@ OntapLicenseType
 |Required
 |Description
 
-|type
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
+a|
+
+|capacity_limit
+|string
+|False
+a|
+
+|default
+|boolean
+|False
+a|
+
+|description
 |string
 |False
 a|
@@ -1191,7 +573,12 @@ a|
 |False
 a|
 
-|description
+|platformLicenseRequired
+|boolean
+|False
+a|
+
+|subDescription
 |string
 |False
 a|
@@ -1201,29 +588,9 @@ a|
 |False
 a|
 
-|subDescription
+|type
 |string
 |False
-a|
-
-|capacity_limit
-|string
-|False
-a|
-
-|platformLicenseRequired
-|boolean
-|False
-a|
-
-|default
-|boolean
-|False
-a|
-
-|capacityLimit
-|link:#Capacity[Capacity]
-|True
 a|
 
 |===
@@ -1240,42 +607,13 @@ ChangeLicenseParameters
 |Required
 |Description
 
-|newLicenseType
-|link:#OntapLicenseType[OntapLicenseType]
-|False
-a|
-
 |newInstanceType
 |string
 |False
 a|
 
-|===
-
-
-[#InstanceNameIdAndType]
-[.api-collapsible-fifth-title]
-InstanceNameIdAndType
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|instanceName
-|string
-|False
-a|
-
-|instanceType
-|string
-|False
-a|
-
-|instanceId
-|string
+|newLicenseType
+|link:#OntapLicenseType[OntapLicenseType]
 |False
 a|
 
@@ -1293,11 +631,6 @@ DisksDetails
 |Required
 |Description
 
-|numberOfDisks
-|integer
-|False
-a|
-
 |diskSize
 |link:#Capacity[Capacity]
 |False
@@ -1305,6 +638,11 @@ a|
 
 |diskType
 |string
+|False
+a|
+
+|numberOfDisks
+|integer
 |False
 a|
 
@@ -1346,8 +684,8 @@ VolumeInfo
 |Required
 |Description
 
-|volumeName
-|string
+|newCapacity
+|link:#Capacity[Capacity]
 |False
 a|
 
@@ -1356,8 +694,47 @@ a|
 |False
 a|
 
-|newCapacity
-|link:#Capacity[Capacity]
+|volumeName
+|string
+|False
+a|
+
+|===
+
+
+[#VolumeMoveParameters]
+[.api-collapsible-fifth-title]
+VolumeMoveParameters
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|homeNode
+|string
+|False
+a|
+
+|isNewTargetAggregate
+|boolean
+|False
+a|
+
+|svmName
+|string
+|False
+a|
+
+|targetAggregateName
+|string
+|False
+a|
+
+|volumeName
+|string
 |False
 a|
 
@@ -1381,63 +758,14 @@ ActionRequiredParameters
 a|Aggregate name
 
 
-|numOfDisks
-|integer
-|True
-a|Number of disks relevant to the action
+|currentInstanceType
+|string
+|False
+a|Current instance type
 
-
-|totalCapacity
-|link:#Capacity[Capacity]
-|True
-a|
 
 |evCapacityDetails
 |link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
-|False
-a|
-
-|volumeNames
-|array[string]
-|True
-a|A limited list of volumes on the aggregate
-
-
-|maxCapacity
-|link:#Capacity[Capacity]
-|True
-a|
-
-|licenseExpiryDate
-|integer
-|True
-a|License expiry date
-
-
-|serialNumber
-|string
-|True
-a|Platform serial number
-
-
-|volumeMoveParameters
-|link:#VolumeMoveParameters[VolumeMoveParameters]
-|False
-a|
-
-|workingEnvironmentId
-|string
-|True
-a|System public ID
-
-
-|licenseParameters
-|link:#ChangeLicenseParameters[ChangeLicenseParameters]
-|False
-a|
-
-|resourcesToDelete
-|link:#ResourcesToDelete[ResourcesToDelete]
 |False
 a|
 
@@ -1447,27 +775,10 @@ a|
 a|Instances information
 
 
-|moreInfo
-|string
-|False
-a|More information
-
-
-|providerVolumeType
-|string
-|False
-a|Provider volume type
-
-
-|volumeInfo
-|link:#VolumeInfo[VolumeInfo]
-|False
-a|
-
-|currentInstanceType
-|string
-|False
-a|Current instance type
+|isCapacityBased
+|boolean
+|True
+a|Indicates if the license type is a  capacity-based license type
 
 
 |isComposite
@@ -1476,10 +787,76 @@ a|Current instance type
 a|Indicates if the aggregate is a composite aggregate
 
 
-|isCapacityBased
-|boolean
+|licenseExpiryDate
+|integer
 |True
-a|Indicates if the license type is a  capacity-based license type
+a|License expiry date
+
+
+|licenseParameters
+|link:#ChangeLicenseParameters[ChangeLicenseParameters]
+|False
+a|
+
+|maxCapacity
+|link:#Capacity[Capacity]
+|True
+a|
+
+|moreInfo
+|string
+|False
+a|More information
+
+
+|numOfDisks
+|integer
+|True
+a|Number of disks relevant to the action
+
+
+|providerVolumeType
+|string
+|False
+a|Provider volume type
+
+
+|resourcesToDelete
+|link:#ResourcesToDelete[ResourcesToDelete]
+|False
+a|
+
+|serialNumber
+|string
+|True
+a|Platform Serial number
+
+
+|totalCapacity
+|link:#Capacity[Capacity]
+|True
+a|
+
+|volumeInfo
+|link:#VolumeInfo[VolumeInfo]
+|False
+a|
+
+|volumeMoveParameters
+|link:#VolumeMoveParameters[VolumeMoveParameters]
+|False
+a|
+
+|volumeNames
+|array[string]
+|True
+a|A limited list of volumes on the aggregate
+
+
+|workingEnvironmentId
+|string
+|True
+a|System public ID
 
 
 |===
@@ -1499,7 +876,7 @@ ActionRequired
 |actionType
 |string
 |True
-a|The type of the action
+a|The type of the Action
 
 
 |parameters
@@ -1532,13 +909,13 @@ ObjectStoreConfigInfo
 |False
 a|
 
-|s3Name
+|providerType
 |string
 |False
 a|
 
-|usedSpace
-|link:#Capacity[Capacity]
+|s3Name
+|string
 |False
 a|
 
@@ -1547,8 +924,8 @@ a|
 |False
 a|
 
-|providerType
-|string
+|usedSpace
+|link:#Capacity[Capacity]
 |False
 a|
 
@@ -1590,6 +967,16 @@ OnPremCapacityFeatures
 |Required
 |Description
 
+|fiveYearSavings
+|number
+|False
+a|
+
+|inactiveUserData
+|link:#Capacity[Capacity]
+|False
+a|
+
 |objectStoreConfigExtended
 |link:#ExtendedObjectStoreConfigInfo[ExtendedObjectStoreConfigInfo]
 |False
@@ -1600,18 +987,8 @@ a|
 |False
 a|
 
-|inactiveUserData
-|link:#Capacity[Capacity]
-|False
-a|
-
 |rawCapacity
 |link:#Capacity[Capacity]
-|False
-a|
-
-|fiveYearSavings
-|number
 |False
 a|
 
@@ -1687,8 +1064,23 @@ CbsPropertiesWithReason
 |False
 a|
 
+|cbsPolicyName
+|string
+|False
+a|
+
 |cbsRules
 |array[link:#CbsSchedule[CbsSchedule]]
+|False
+a|
+
+|exclusionReason
+|string
+|False
+a|
+
+|ipSpace
+|string
 |False
 a|
 
@@ -1702,12 +1094,17 @@ a|
 |False
 a|
 
+|providerAccountName
+|string
+|False
+a|
+
 |providerSpecific
 |link:#ProviderSpecific[ProviderSpecific]
 |False
 a|
 
-|cbsPolicyName
+|region
 |string
 |False
 a|
@@ -1717,23 +1114,337 @@ a|
 |False
 a|
 
-|ipSpace
+|===
+
+
+[#DataBrokerPlacement]
+[.api-collapsible-fifth-title]
+DataBrokerPlacement
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|instanceId
 |string
 |False
 a|
 
-|region
+|instanceType
 |string
 |False
 a|
 
-|providerAccountName
+|keyPair
 |string
 |False
 a|
 
-|exclusionReason
+|subnetId
 |string
+|False
+a|
+
+|vpcId
+|string
+|False
+a|
+
+|===
+
+
+[#DataBrokerProperties]
+[.api-collapsible-fifth-title]
+DataBrokerProperties
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dataBrokerPlacement
+|link:#DataBrokerPlacement[DataBrokerPlacement]
+|False
+a|
+
+|id
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|===
+
+
+[#CloudSyncRelationship]
+[.api-collapsible-fifth-title]
+CloudSyncRelationship
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|failureMessage
+|string
+|False
+a|
+
+|id
+|string
+|False
+a|
+
+|progress
+|integer
+|False
+a|
+
+|relationshipStatus
+|string
+|False
+a|
+
+|s3Location
+|string
+|False
+a|
+
+|svmName
+|string
+|False
+a|
+
+|volumeName
+|string
+|False
+a|
+
+|===
+
+
+[#CloudSyncStatus]
+[.api-collapsible-fifth-title]
+CloudSyncStatus
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|failureMessage
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|===
+
+
+[#CloudSyncProperties]
+[.api-collapsible-fifth-title]
+CloudSyncProperties
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dataBrokerProperties
+|link:#DataBrokerProperties[DataBrokerProperties]
+|False
+a|
+
+|isSynced
+|boolean
+|False
+a|
+
+|relationships
+|array[link:#CloudSyncRelationship[CloudSyncRelationship]]
+|False
+a|
+
+|s3Location
+|string
+|False
+a|
+
+|status
+|link:#CloudSyncStatus[CloudSyncStatus]
+|False
+a|
+
+|===
+
+
+[#LifResponse]
+[.api-collapsible-fifth-title]
+LifResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|dataProtocols
+|array[string]
+|True
+a|List of supported protocols
+
+
+|ip
+|string
+|True
+a|LIF IP address
+
+
+|lifType
+|string
+|True
+a|LIF type
+
+
+|netmask
+|string
+|True
+a|LIF netmask
+
+
+|nodeName
+|string
+|True
+a|Node name
+
+
+|privateIp
+|boolean
+|True
+a|Specifies whether the IP address is a private address
+
+
+|===
+
+
+[#Value]
+[.api-collapsible-fifth-title]
+Value
+
+
+[#OnPremClusterProperties]
+[.api-collapsible-fifth-title]
+OnPremClusterProperties
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|aggregateCount
+|integer
+|False
+a|
+
+|clusterAddress
+|string
+|False
+a|
+
+|clusterName
+|string
+|False
+a|
+
+|clusterUuid
+|string
+|False
+a|
+
+|disaggregated
+|boolean
+|False
+a|
+
+|isAff
+|boolean
+|False
+a|
+
+|isSnapmirrorLicenseExists
+|boolean
+|False
+a|
+
+|licenses
+|array[string]
+|False
+a|
+
+|lifs
+|array[link:#LifResponse[LifResponse]]
+|False
+a|
+
+|location
+|link:#Value[Value]
+|False
+a|
+
+|nodeModels
+|array[string]
+|False
+a|
+
+|ontapVersion
+|string
+|False
+a|
+
+|sanOptimized
+|boolean
+|False
+a|
+
+|serialNumber
+|string
+|False
+a|
+
+|systemId
+|string
+|False
+a|
+
+|systemManagerUrl
+|string
+|False
+a|
+
+|volumeCount
+|integer
 |False
 a|
 
@@ -1756,23 +1467,23 @@ ComplianceScanStatusVolumeResponse
 |Required
 |Description
 
-|name
-|string
-|False
-a|
-
-|status
-|string
-|False
-a|
-
 |error
+|string
+|False
+a|
+
+|name
 |string
 |False
 a|
 
 |scopeId
 |link:#scopeId[scopeId]
+|False
+a|
+
+|status
+|string
 |False
 a|
 
@@ -1790,12 +1501,12 @@ ComplianceScanStatusResponse
 |Required
 |Description
 
-|scanned
+|notScanned
 |integer
 |False
 a|
 
-|notScanned
+|scanned
 |integer
 |False
 a|
@@ -1819,7 +1530,7 @@ ComplianceExtendedStatusResponse
 |Required
 |Description
 
-|sensitivePersonalHits
+|nonSensitiveHits
 |integer
 |False
 a|
@@ -1829,13 +1540,13 @@ a|
 |False
 a|
 
-|nonSensitiveHits
-|integer
+|scanStatus
+|link:#ComplianceScanStatusResponse[ComplianceScanStatusResponse]
 |False
 a|
 
-|scanStatus
-|link:#ComplianceScanStatusResponse[ComplianceScanStatusResponse]
+|sensitivePersonalHits
+|integer
 |False
 a|
 
@@ -1853,7 +1564,7 @@ CloudComplianceStatusResponse
 |Required
 |Description
 
-|scanStatus
+|complianceBackupStatus
 |string
 |False
 a|
@@ -1868,7 +1579,100 @@ a|
 |False
 a|
 
-|complianceBackupStatus
+|scanStatus
+|string
+|False
+a|
+
+|===
+
+
+[#CronJobSchedule]
+[.api-collapsible-fifth-title]
+CronJobSchedule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|days
+|array[string]
+|False
+a|
+
+|description
+|string
+|False
+a|
+
+|hours
+|array[string]
+|False
+a|
+
+|minutes
+|array[string]
+|False
+a|
+
+|months
+|array[string]
+|True
+a|
+
+|name
+|string
+|False
+a|
+
+|weekDays
+|array[string]
+|False
+a|
+
+|===
+
+
+[#InterClusterLif]
+[.api-collapsible-fifth-title]
+InterClusterLif
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|address
+|string
+|False
+a|
+
+|isPeered
+|boolean
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|node
+|string
+|False
+a|
+
+|port
+|string
+|False
+a|
+
+|status
 |string
 |False
 a|
@@ -1887,13 +1691,13 @@ KpiUnitValue
 |Required
 |Description
 
-|value
-|number
+|unit
+|string
 |False
 a|
 
-|unit
-|string
+|value
+|number
 |False
 a|
 
@@ -1921,17 +1725,17 @@ a|
 |False
 a|
 
-|storageAverageThroughput
-|link:#KpiUnitValue[KpiUnitValue]
-|False
-a|
-
 |node1AverageThroughput
 |link:#KpiUnitValue[KpiUnitValue]
 |False
 a|
 
 |node2AverageThroughput
+|link:#KpiUnitValue[KpiUnitValue]
+|False
+a|
+
+|storageAverageThroughput
 |link:#KpiUnitValue[KpiUnitValue]
 |False
 a|
@@ -1950,13 +1754,13 @@ MonitoringStatusResponse
 |Required
 |Description
 
-|monitoringStatus
-|string
+|monitoringInfo
+|link:#MonitoringInfo[MonitoringInfo]
 |False
 a|
 
-|monitoringInfo
-|link:#MonitoringInfo[MonitoringInfo]
+|monitoringStatus
+|string
 |False
 a|
 
@@ -1964,6 +1768,202 @@ a|
 |string
 |False
 a|
+
+|===
+
+
+[#ReplicationProperties]
+[.api-collapsible-fifth-title]
+ReplicationProperties
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|peers
+|array[string]
+|False
+a|
+
+|replicationTargets
+|array[string]
+|False
+a|
+
+|===
+
+
+[#PolicySchedule]
+[.api-collapsible-fifth-title]
+PolicySchedule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|frequency
+|string
+|True
+a|Frequency
+
+
+|retention
+|integer
+|True
+a|Retention
+
+
+|===
+
+
+[#SnapshotPolicy]
+[.api-collapsible-fifth-title]
+SnapshotPolicy
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|description
+|string
+|True
+a|Description
+
+
+|name
+|string
+|True
+a|Name
+
+
+|schedules
+|array[link:#PolicySchedule[PolicySchedule]]
+|True
+a|Schedules
+
+
+|===
+
+
+[#FailureCauses]
+[.api-collapsible-fifth-title]
+FailureCauses
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|invalidCloudProviderCredentials
+|boolean
+|False
+a|
+
+|invalidOntapCredentials
+|boolean
+|True
+a|
+
+|noCloudProviderConnection
+|boolean
+|False
+a|
+
+|===
+
+
+[#StatusProperties]
+[.api-collapsible-fifth-title]
+StatusProperties
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|extendedFailureReason
+|string
+|False
+a|
+
+|failureCauses
+|link:#FailureCauses[FailureCauses]
+|False
+a|
+
+|message
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|===
+
+
+[#Svm]
+[.api-collapsible-fifth-title]
+Svm
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|allowedAggregates
+|array[string]
+|False
+a|
+
+|allowedProtocols
+|array[link:#Value[Value]]
+|True
+a|
+
+|language
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|state
+|string
+|False
+a|
+
+|ver3Enabled
+|boolean
+|True
+a|NFS Version 3 enabled
+
+
+|ver4Enabled
+|boolean
+|True
+a|NFS Version 4 enabled
+
 
 |===
 

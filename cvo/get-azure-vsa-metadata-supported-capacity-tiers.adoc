@@ -83,11 +83,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|supportedCapacityTiersPerVolumeType
-|array[link:#SupportedCapacityTiersResponse[SupportedCapacityTiersResponse]]
-|True
-a|
-
 |capacityTiersDisableReasons
 |array[string]
 |False
@@ -103,6 +98,11 @@ a|
 |False
 a|
 
+|supportedCapacityTiersPerVolumeType
+|array[link:#SupportedCapacityTiersResponse[SupportedCapacityTiersResponse]]
+|True
+a|
+
 |===
 
 
@@ -111,19 +111,19 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "capacityTiersDisableReasons": [
+    "string"
+  ],
   "supportedCapacityTiersPerVolumeType": [
     {
-      "volumeType": "string",
+      "availableTieringPolicies": [
+        "string"
+      ],
       "supportedCapacityTiers": [
         "string"
       ],
-      "availableTieringPolicies": [
-        "string"
-      ]
+      "volumeType": "string"
     }
-  ],
-  "capacityTiersDisableReasons": [
-    "string"
   ]
 }
 ====
@@ -146,8 +146,8 @@ SupportedCapacityTiersResponse
 |Required
 |Description
 
-|volumeType
-|string
+|availableTieringPolicies
+|array[string]
 |False
 a|
 
@@ -156,8 +156,8 @@ a|
 |False
 a|
 
-|availableTieringPolicies
-|array[string]
+|volumeType
+|string
 |False
 a|
 
