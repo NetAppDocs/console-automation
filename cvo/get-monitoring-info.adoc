@@ -7,6 +7,7 @@ summary: 'Retrieve monitoring information'
 ---
 
 = Retrieve monitoring information
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/monitoring/info`#
 
@@ -29,12 +30,17 @@ Status: Default, Default response
 |Required
 |Description
 
+|status
+|string
+|True
+a|
+
 |healthy
 |boolean
 |True
 a|
 
-|id
+|url
 |string
 |False
 a|
@@ -44,16 +50,24 @@ a|
 |False
 a|
 
-|status
-|string
-|True
-a|
-
-|url
+|id
 |string
 |False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "status": "string",
+  "healthy": false,
+  "url": "string",
+  "lastDeploymentError": "string",
+  "id": "string"
+}
+====
 

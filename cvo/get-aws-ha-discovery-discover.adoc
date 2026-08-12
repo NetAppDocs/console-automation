@@ -7,6 +7,7 @@ summary: 'Retrieve a list of discovered systems'
 ---
 
 = Retrieve a list of discovered systems
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/discovery/discover`#
 
@@ -59,21 +60,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|availabilityZones
-|array[string]
-|True
-a|
-
-|byol
-|boolean
-|False
-a|
-
-|clusterAddress
-|string
-|False
-a|
-
 |name
 |string
 |True
@@ -84,37 +70,7 @@ a|
 |False
 a|
 
-|recoverable
-|boolean
-|True
-a|
-
 |region
-|string
-|False
-a|
-
-|registered
-|boolean
-|False
-a|
-
-|stackId
-|string
-|False
-a|
-
-|stackName
-|string
-|False
-a|
-
-|subnetIds
-|array[string]
-|False
-a|
-
-|vpcId
 |string
 |False
 a|
@@ -124,6 +80,74 @@ a|
 |False
 a|
 
+|vpcId
+|string
+|False
+a|
+
+|availabilityZones
+|array[string]
+|True
+a|
+
+|subnetIds
+|array[string]
+|False
+a|
+
+|stackName
+|string
+|False
+a|
+
+|stackId
+|string
+|False
+a|
+
+|clusterAddress
+|string
+|False
+a|
+
+|recoverable
+|boolean
+|True
+a|
+
+|byol
+|boolean
+|False
+a|
+
+|registered
+|boolean
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "publicId": "string",
+  "region": "string",
+  "vpcName": "string",
+  "vpcId": "string",
+  "availabilityZones": [
+    "string"
+  ],
+  "subnetIds": [
+    "string"
+  ],
+  "stackName": "string",
+  "stackId": "string",
+  "clusterAddress": "string",
+  "recoverable": false
+}
+====
 

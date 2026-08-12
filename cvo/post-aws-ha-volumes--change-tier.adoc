@@ -7,6 +7,7 @@ summary: 'Update the underlying volume tier'
 ---
 
 = Update the underlying volume tier
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/change-tier`#
 
@@ -59,64 +60,88 @@ a|
 |aggregateName
 |string
 |True
-a|Target aggregate name
+a|
 
+|numOfDisks
+|integer
+|True
+a|
 
-|evCapacityApprovedToAdd
-|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
+|newAggregate
+|boolean
+|True
+a|
+
+|newDiskTypeName
+|string
+|True
+a|
+
+|newCapacityTier
+|string
 |False
 a|
 
 |iops
 |integer
 |False
-a|Provisioned IOPS
-
-
-|minimumCoolingDays
-|link:#minimumCoolingDays[minimumCoolingDays]
-|False
-a|Cooling Days
-
-
-|newAggregate
-|boolean
-|True
-a|Is it a newly created aggregate
-
-
-|newCapacityTier
-|string
-|False
-a|New capacity tier
-
-
-|newDiskTypeName
-|string
-|True
-a|New disk type name
-
-
-|newTieringPolicy
-|string
-|False
-a|New tiering policy
-
-
-|numOfDisks
-|integer
-|True
-a|Number of new disks needed
-
+a|
 
 |throughput
 |integer
 |False
-a|Provisioned throughput
+a|
 
+|newTieringPolicy
+|string
+|False
+a|
+
+|evCapacityApprovedToAdd
+|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
+|False
+a|
+
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "aggregateName": "string",
+  "numOfDisks": 0,
+  "newAggregate": false,
+  "newDiskTypeName": "string",
+  "newCapacityTier": "string",
+  "newTieringPolicy": "string",
+  "evCapacityApprovedToAdd": {
+    "totalCapacityToAdd": {
+      "size": 0,
+      "unit": "string"
+    },
+    "addedCapacityToExistingEvDisks": {
+      "size": 0,
+      "unit": "string"
+    },
+    "newRaidForEvInfo": [
+      {
+        "numOfDisks": 0,
+        "diskSize": {
+          "size": 0,
+          "unit": "string"
+        }
+      }
+    ]
+  }
+}
+====
 
 == Error
 
@@ -145,14 +170,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -168,16 +191,15 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|numOfDisks
+|integer
+|True
+a|
+
 |diskSize
 |link:#Capacity[Capacity]
 |True
 a|
-
-|numOfDisks
-|integer
-|True
-a|Number of new disks needed for the RAID group
-
 
 |===
 
@@ -193,6 +215,11 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -200,12 +227,6 @@ a|
 
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
-|False
-a|New RAID information
-
-
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
 |False
 a|
 
@@ -220,9 +241,6 @@ a|
 [#minimumCoolingDays]
 [.api-collapsible-fifth-title]
 minimumCoolingDays
-
-Cooling Days
-
 
 
 //end collapsible .Definitions block

@@ -7,6 +7,7 @@ summary: 'Set up an NTP server'
 ---
 
 = Set up an NTP server
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/ntp`#
 
@@ -47,8 +48,7 @@ a|
 |ntpServer
 |string
 |True
-a|NTPS server
-
+a|
 
 |===
 

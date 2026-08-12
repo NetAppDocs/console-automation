@@ -7,6 +7,7 @@ summary: 'Retrieve a resource group'
 ---
 
 = Retrieve a resource group
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resourcegroups/{resourcegroup_id}`#
 

@@ -7,6 +7,7 @@ summary: 'Perform a complete image update operation'
 ---
 
 = Perform a complete image update operation
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/update-image`#
 
@@ -44,17 +45,15 @@ a|
 |Required
 |Description
 
-|updateParameter
-|string
-|True
-a|Parameter specific to the specified update type. External file URL or the NetApp Console provided image name.
-
-
 |updateType
 |string
 |True
-a|System update type. System updates can be performed by providing either an external URL that ONTAP will use to download the image file or a name of an image provided by the NetApp Console.
+a|
 
+|updateParameter
+|string
+|True
+a|
 
 |===
 
@@ -64,8 +63,8 @@ a|System update type. System updates can be performed by providing either an ext
 ====
 [source,json,subs=+macros]
 {
-  "updateParameter": "string",
-  "updateType": "string"
+  "updateType": "string",
+  "updateParameter": "string"
 }
 ====
 

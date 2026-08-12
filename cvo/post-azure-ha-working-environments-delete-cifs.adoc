@@ -7,6 +7,7 @@ summary: 'Delete the CIFS configuration for a system'
 ---
 
 = Delete the CIFS configuration for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/delete-cifs`#
 
@@ -44,23 +45,20 @@ a|
 |Required
 |Description
 
-|activeDirectoryPassword
-|string
-|False
-a|Active Directory password
-
-
 |activeDirectoryUsername
 |string
 |False
-a|Active Directory username
+a|
 
+|activeDirectoryPassword
+|string
+|False
+a|
 
 |svmName
 |string
 |False
-a|SVM name
-
+a|
 
 |===
 
@@ -70,8 +68,8 @@ a|SVM name
 ====
 [source,json,subs=+macros]
 {
-  "activeDirectoryPassword": "string",
   "activeDirectoryUsername": "string",
+  "activeDirectoryPassword": "string",
   "svmName": "string"
 }
 ====

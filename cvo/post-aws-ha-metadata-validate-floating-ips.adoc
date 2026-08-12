@@ -7,6 +7,7 @@ summary: 'Validate HA floating IP addresses'
 ---
 
 = Validate HA floating IP addresses
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/validate-floating-ips`#
 
@@ -26,13 +27,18 @@ Validates HA floating IP addresses.
 |Required
 |Description
 
-|cloudProviderAccountId
-|string
-|False
-a|
-
 |floatingIps
 |link:#FloatingIps[FloatingIps]
+|True
+a|
+
+|routeTablesIds
+|array[string]
+|True
+a|
+
+|vpcId
+|string
 |True
 a|
 
@@ -46,14 +52,9 @@ a|
 |False
 a|
 
-|routeTablesIds
-|array[string]
-|True
-a|
-
-|vpcId
+|cloudProviderAccountId
 |string
-|True
+|False
 a|
 
 |===
@@ -64,19 +65,19 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "cloudProviderAccountId": "string",
   "floatingIps": {
     "clusterFloatingIP": "string",
     "dataFloatingIP": "string",
     "dataFloatingIP2": "string",
     "svmFloatingIP": "string"
   },
-  "region": "string",
-  "roleArn": "string",
   "routeTablesIds": [
     "string"
   ],
-  "vpcId": "string"
+  "vpcId": "string",
+  "region": "string",
+  "roleArn": "string",
+  "cloudProviderAccountId": "string"
 }
 ====
 
@@ -94,18 +95,30 @@ Status: Default, Default response
 |Required
 |Description
 
-|reasons
-|array[string]
-|True
-a|
-
 |result
 |boolean
 |True
 a|
 
+|reasons
+|array[string]
+|True
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "result": false,
+  "reasons": [
+    "string"
+  ]
+}
+====
 
 == Definitions
 

@@ -7,6 +7,7 @@ summary: 'Modify the writing speed'
 ---
 
 = Modify the writing speed
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/writing-speed`#
 
@@ -47,8 +48,7 @@ a|
 |writingSpeedState
 |string
 |False
-a|Writing speed state
-
+a|
 
 |===
 

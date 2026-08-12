@@ -7,6 +7,7 @@ summary: 'Set up Azure VMware Solution on a volume'
 ---
 
 = Set up Azure VMware Solution on a volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/setup-avs`#
 
@@ -56,37 +57,40 @@ a|
 |Required
 |Description
 
-|clusterName
-|string
-|True
-a|Private cloud cluster name
-
-
-|dataStoreName
-|string
-|True
-a|Private cloud DataStore name
-
-
-|dataStoreSize
-|link:#Capacity[Capacity]
-|True
-a|
-
 |privateCloudName
 |string
 |True
-a|Azure VMware Solution (AVS) private cloud name
+a|
 
+|clusterName
+|string
+|True
+a|
 
 |resourceGroup
 |string
 |True
-a|Private cloud resourceGroup name
+a|
 
+|dataStoreName
+|string
+|True
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "privateCloudName": "string",
+  "clusterName": "string",
+  "resourceGroup": "string",
+  "dataStoreName": "string"
+}
+====
 
 == Error
 
@@ -112,8 +116,8 @@ pattern
 |Required
 |Description
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -122,8 +126,8 @@ a|
 |True
 a|
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -141,13 +145,13 @@ Regex
 |Required
 |Description
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
@@ -165,14 +169,14 @@ PatternMessage
 |Required
 |Description
 
-|message
-|string
-|False
-a|
-
 |regex
 |link:#Regex[Regex]
 |True
+a|
+
+|message
+|string
+|False
 a|
 
 |===
@@ -198,32 +202,6 @@ a|
 |link:#PatternMessage[PatternMessage]
 |True
 a|
-
-|===
-
-
-[#Capacity]
-[.api-collapsible-fifth-title]
-Capacity
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|size
-|number
-|True
-a|Size
-
-
-|unit
-|string
-|True
-a|Unit
-
 
 |===
 

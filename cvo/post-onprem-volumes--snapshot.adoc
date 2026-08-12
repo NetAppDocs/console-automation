@@ -7,6 +7,7 @@ summary: 'Create a snapshot'
 ---
 
 = Create a snapshot
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
 
@@ -59,8 +60,7 @@ a|
 |snapshotName
 |string
 |False
-a|Snapshot name
-
+a|
 
 |===
 

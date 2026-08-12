@@ -7,6 +7,7 @@ summary: 'Create a new blob container'
 ---
 
 = Create a new blob container
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/metadata/create-container`#
 
@@ -26,12 +27,12 @@ Creates a new blob container.
 |Required
 |Description
 
-|cloudProviderAccountId
+|subscriptionId
 |string
 |False
 a|
 
-|containerName
+|cloudProviderAccountId
 |string
 |False
 a|
@@ -46,7 +47,7 @@ a|
 |False
 a|
 
-|subscriptionId
+|containerName
 |string
 |False
 a|
@@ -59,11 +60,11 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "subscriptionId": "string",
   "cloudProviderAccountId": "string",
-  "containerName": "string",
   "resourceGroupName": "string",
   "storageAccountName": "string",
-  "subscriptionId": "string"
+  "containerName": "string"
 }
 ====
 

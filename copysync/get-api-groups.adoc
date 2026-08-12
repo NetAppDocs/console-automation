@@ -7,6 +7,7 @@ summary: 'Retrieve all groups'
 ---
 
 = Retrieve all groups
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/groups`#
 

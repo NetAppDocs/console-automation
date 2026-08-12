@@ -7,6 +7,7 @@ summary: 'Retrieve the service cloud compliance status using the service ID'
 ---
 
 = Retrieve the service cloud compliance status using the service ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cloud-compliance/{serviceId}/compliance-status`#
 
@@ -47,7 +48,7 @@ Status: Default, Default response
 |Required
 |Description
 
-|complianceBackupStatus
+|scanStatus
 |string
 |False
 a|
@@ -62,7 +63,7 @@ a|
 |False
 a|
 
-|scanStatus
+|complianceBackupStatus
 |string
 |False
 a|
@@ -75,20 +76,20 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "complianceBackupStatus": "string",
+  "scanStatus": "string",
   "complianceStatus": {
     "scanStatus": {
       "volumes": [
         {
-          "error": "string",
           "name": "string",
-          "status": "string"
+          "status": "string",
+          "error": "string"
         }
       ]
     }
   },
   "lastDeploymentError": "string",
-  "scanStatus": "string"
+  "complianceBackupStatus": "string"
 }
 ====
 
@@ -115,23 +116,23 @@ ComplianceScanStatusVolumeResponse
 |Required
 |Description
 
-|error
+|name
 |string
 |False
 a|
 
-|name
+|status
+|string
+|False
+a|
+
+|error
 |string
 |False
 a|
 
 |scopeId
 |link:#scopeId[scopeId]
-|False
-a|
-
-|status
-|string
 |False
 a|
 
@@ -149,12 +150,12 @@ ComplianceScanStatusResponse
 |Required
 |Description
 
-|notScanned
+|scanned
 |integer
 |False
 a|
 
-|scanned
+|notScanned
 |integer
 |False
 a|
@@ -178,7 +179,7 @@ ComplianceExtendedStatusResponse
 |Required
 |Description
 
-|nonSensitiveHits
+|sensitivePersonalHits
 |integer
 |False
 a|
@@ -188,13 +189,13 @@ a|
 |False
 a|
 
-|scanStatus
-|link:#ComplianceScanStatusResponse[ComplianceScanStatusResponse]
+|nonSensitiveHits
+|integer
 |False
 a|
 
-|sensitivePersonalHits
-|integer
+|scanStatus
+|link:#ComplianceScanStatusResponse[ComplianceScanStatusResponse]
 |False
 a|
 

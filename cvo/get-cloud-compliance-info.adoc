@@ -7,6 +7,7 @@ summary: 'Retrieve cloud compliance information'
 ---
 
 = Retrieve cloud compliance information
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cloud-compliance/info`#
 
@@ -29,8 +30,18 @@ Status: Default, Default response
 |Required
 |Description
 
-|containerActive
-|boolean
+|status
+|string
+|True
+a|
+
+|widgetUrl
+|string
+|False
+a|
+
+|privateIp
+|string
 |False
 a|
 
@@ -44,21 +55,24 @@ a|
 |False
 a|
 
-|privateIp
-|string
-|False
-a|
-
-|status
-|string
-|True
-a|
-
-|widgetUrl
-|string
+|containerActive
+|boolean
 |False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "status": "string",
+  "widgetUrl": "string",
+  "privateIp": "string",
+  "healthy": false,
+  "lastDeploymentError": "string"
+}
+====
 

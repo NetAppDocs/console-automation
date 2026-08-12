@@ -7,6 +7,7 @@ summary: 'Delete an existing system'
 ---
 
 = Delete an existing system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}`#
 

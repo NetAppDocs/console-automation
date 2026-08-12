@@ -7,6 +7,7 @@ summary: 'Retrieve the logged-in accounts relationship status'
 ---
 
 = Retrieve the logged-in accounts relationship status
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/relationships-stats`#
 
@@ -109,6 +110,22 @@ a|Array of bytes copied per day in the last 30 days
 
 |===
 
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "totalBytes": 0,
+  "totalFiles": 0,
+  "bytesCopiedInTheLast30Days": [
+    {
+      "date": "string",
+      "bytesCopied": 0
+    }
+  ]
+}
+====
 
 == Definitions
 

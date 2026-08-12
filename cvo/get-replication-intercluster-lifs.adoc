@@ -7,6 +7,7 @@ summary: 'Retrieve the intercluster LIFs'
 ---
 
 = Retrieve the intercluster LIFs
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/intercluster-lifs`#
 
@@ -56,14 +57,12 @@ Status: Default, Default response
 |interClusterLifs
 |array[link:#ReplicationInterClusterLif[ReplicationInterClusterLif]]
 |True
-a|System Intercluster LIFs
-
+a|
 
 |peerInterClusterLifs
 |array[link:#ReplicationInterClusterLif[ReplicationInterClusterLif]]
 |True
-a|Peer system Intercluster LIFs
-
+a|
 
 |===
 
@@ -74,10 +73,26 @@ a|Peer system Intercluster LIFs
 [source,json,subs=+macros]
 {
   "interClusterLifs": [
-    {}
+    {
+      "name": "string",
+      "address": "string",
+      "netmaskLength": 0,
+      "port": "string",
+      "node": "string",
+      "status": "string",
+      "isPeered": false
+    }
   ],
   "peerInterClusterLifs": [
-    {}
+    {
+      "name": "string",
+      "address": "string",
+      "netmaskLength": 0,
+      "port": "string",
+      "node": "string",
+      "status": "string",
+      "isPeered": false
+    }
   ]
 }
 ====
@@ -100,47 +115,40 @@ ReplicationInterClusterLif
 |Required
 |Description
 
-|address
-|string
-|True
-a|Address
-
-
-|isPeered
-|boolean
-|True
-a|Is Peered
-
-
 |name
 |string
 |True
-a|Specifies the name
+a|
 
+|address
+|string
+|True
+a|
 
 |netmaskLength
 |integer
 |True
-a|Netmask Length
-
-
-|node
-|string
-|True
-a|Node
-
+a|
 
 |port
 |string
 |True
-a|Port
+a|
 
+|node
+|string
+|True
+a|
 
 |status
 |string
 |True
-a|Status
+a|
 
+|isPeered
+|boolean
+|True
+a|
 
 |===
 

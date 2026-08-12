@@ -7,6 +7,7 @@ summary: 'Retrieve a list of projects'
 ---
 
 = Retrieve a list of projects
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/projects`#
 
@@ -37,17 +38,6 @@ a|
 |===
 
 
-.Example error response
-[%collapsible%closed]
-====
-[source,json,subs=+macros]
-{
-  "projects": [
-    {}
-  ]
-}
-====
-
 == Definitions
 
 [.api-def-first-level]
@@ -66,12 +56,12 @@ Hash mapping strings to string
 |Required
 |Description
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|
@@ -90,14 +80,19 @@ GcpProjectResponse
 |Required
 |Description
 
-|createTime
-|string
-|False
-a|
-
 |isDefault
 |boolean
 |True
+a|
+
+|projectNumber
+|string
+|True
+a|
+
+|projectId
+|string
+|False
 a|
 
 |lifecycleState
@@ -110,18 +105,13 @@ a|
 |False
 a|
 
-|parent
-|link:#parent[parent]
-|True
-a|
-
-|projectId
+|createTime
 |string
 |False
 a|
 
-|projectNumber
-|string
+|parent
+|link:#parent[parent]
 |True
 a|
 

@@ -7,6 +7,7 @@ summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/aggregates`#
 
@@ -53,9 +54,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|availabilityState
+|name
 |string
-|False
+|True
+a|
+
+|totalCapacity
+|link:#Capacity[Capacity]
+|True
 a|
 
 |availableCapacity
@@ -63,8 +69,8 @@ a|
 |False
 a|
 
-|commonDiskProperties
-|link:#CommonDiskProperties[CommonDiskProperties]
+|state
+|string
 |False
 a|
 
@@ -78,35 +84,9 @@ a|
 |False
 a|
 
-|name
-|string
-|True
-a|
-
 |objectStoreName
 |string
 |False
-a|
-
-|snaplockType
-|string
-|True
-a|Snaplock type
-
-
-|state
-|string
-|False
-a|
-
-|tieringRestriction
-|link:#TieringRestriction[TieringRestriction]
-|False
-a|
-
-|totalCapacity
-|link:#Capacity[Capacity]
-|True
 a|
 
 |usedCapacity
@@ -114,8 +94,60 @@ a|
 |False
 a|
 
+|snaplockType
+|string
+|True
+a|
+
+|tieringRestriction
+|link:#TieringRestriction[TieringRestriction]
+|False
+a|
+
+|availabilityState
+|string
+|False
+a|
+
+|commonDiskProperties
+|link:#CommonDiskProperties[CommonDiskProperties]
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "totalCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "availableCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "state": "string",
+  "isInactiveDataReportingEnabled": false,
+  "objectStoreName": "string",
+  "usedCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "snaplockType": "string",
+  "tieringRestriction": {
+    "restrictionReason": "string"
+  },
+  "availabilityState": "string",
+  "commonDiskProperties": {
+    "diskType": "string"
+  }
+}
+====
 
 == Definitions
 
@@ -138,14 +170,36 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
+a|
 
+|===
+
+
+[#TieringRestriction]
+[.api-collapsible-fifth-title]
+TieringRestriction
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|isTieringRestricted
+|boolean
+|False
+a|
+
+|restrictionReason
+|string
+|False
+a|
 
 |===
 
@@ -171,37 +225,13 @@ CommonDiskProperties
 |False
 a|
 
-|rpm
-|link:#rpm[rpm]
-|False
-a|
-
 |sizeKB
 |integer
 |False
 a|
 
-|===
-
-
-[#TieringRestriction]
-[.api-collapsible-fifth-title]
-TieringRestriction
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|isTieringRestricted
-|boolean
-|False
-a|
-
-|restrictionReason
-|string
+|rpm
+|link:#rpm[rpm]
 |False
 a|
 

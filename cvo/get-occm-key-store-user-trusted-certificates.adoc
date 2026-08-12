@@ -7,6 +7,7 @@ summary: 'Return the existing trusted certificates from the trust store'
 ---
 
 = Return the existing trusted certificates from the trust store
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/key-store/user-trusted-certificates`#
 
@@ -29,25 +30,42 @@ Status: Default, Default response
 |Required
 |Description
 
+|id
+|string
+|True
+a|
+
+|status
+|string
+|True
+a|
+
 |certificateInfo
 |link:#CertificateResponse[CertificateResponse]
 |True
 a|
 
-|id
-|string
-|True
-a|Specifies the ID
-
-
-|status
-|string
-|True
-a|Status
-
-
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "id": "string",
+  "status": "string",
+  "certificateInfo": {
+    "publicId": "string",
+    "directIssuerName": "string",
+    "subjectName": "string",
+    "startDate": 0,
+    "serialNumber": "string",
+    "certificate": "string",
+    "certificateType": "string"
+  }
+}
+====
 
 == Definitions
 
@@ -67,12 +85,7 @@ CertificateResponse
 |Required
 |Description
 
-|certificate
-|string
-|False
-a|
-
-|certificateType
+|publicId
 |string
 |False
 a|
@@ -82,17 +95,7 @@ a|
 |False
 a|
 
-|endDate
-|integer
-|False
-a|
-
-|publicId
-|string
-|False
-a|
-
-|serialNumber
+|subjectName
 |string
 |False
 a|
@@ -102,7 +105,22 @@ a|
 |True
 a|
 
-|subjectName
+|endDate
+|integer
+|False
+a|
+
+|serialNumber
+|string
+|False
+a|
+
+|certificate
+|string
+|False
+a|
+
+|certificateType
 |string
 |False
 a|

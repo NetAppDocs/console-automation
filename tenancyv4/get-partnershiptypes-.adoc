@@ -7,6 +7,7 @@ summary: 'Retrieve a partnership type'
 ---
 
 = Retrieve a partnership type
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnershiptypes/{partnershiptype_id}`#
 

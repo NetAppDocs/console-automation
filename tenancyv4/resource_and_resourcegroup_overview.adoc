@@ -7,6 +7,7 @@ summary: 'Resource and resourcegroup endpoints in the identity and access manage
 ---
 
 = Resource and resourcegroup endpoints in the identity and access management REST API for the NetApp Console
+:imagesdir: ../media/
 
 
 

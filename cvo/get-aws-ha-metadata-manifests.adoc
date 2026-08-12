@@ -7,6 +7,7 @@ summary: 'Retrieve all NetApp Console manifests'
 ---
 
 = Retrieve all NetApp Console manifests
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/manifests`#
 
@@ -37,8 +38,7 @@ a|
 |ontapManifests
 |array[link:#CloudOntapManifest[CloudOntapManifest]]
 |True
-a|ONTAP manifests
-
+a|
 
 |===
 
@@ -50,6 +50,89 @@ a|ONTAP manifests
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+[#OntapLicenseType]
+[.api-collapsible-fifth-title]
+OntapLicenseType
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|type
+|string
+|False
+a|
+
+|name
+|string
+|False
+a|
+
+|description
+|string
+|False
+a|
+
+|subName
+|string
+|False
+a|
+
+|subDescription
+|string
+|False
+a|
+
+|capacity_limit
+|string
+|False
+a|
+
+|platformLicenseRequired
+|boolean
+|False
+a|
+
+|default
+|boolean
+|False
+a|
+
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
+a|
+
+|===
+
+
 [#Region]
 [.api-collapsible-fifth-title]
 Region
@@ -61,6 +144,11 @@ Region
 |Required
 |Description
 
+|name
+|string
+|True
+a|
+
 |code
 |string
 |False
@@ -69,11 +157,6 @@ a|
 |location
 |string
 |False
-a|
-
-|name
-|string
-|True
 a|
 
 |s3Region
@@ -95,12 +178,12 @@ Hash mapping strings to array[string]
 |Required
 |Description
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|
@@ -119,12 +202,12 @@ Hash mapping strings to link:#MapStringListString[MapStringListString]
 |Required
 |Description
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|
@@ -143,98 +226,13 @@ Hash mapping strings to link:#MapStringListString[MapStringListString]
 |Required
 |Description
 
-|empty
-|boolean
-|False
-a|
-
 |traversableAgain
 |boolean
 |False
 a|
 
-|===
-
-
-[#Capacity]
-[.api-collapsible-fifth-title]
-Capacity
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|size
-|number
-|True
-a|Size
-
-
-|unit
-|string
-|True
-a|Unit
-
-
-|===
-
-
-[#OntapLicenseType]
-[.api-collapsible-fifth-title]
-OntapLicenseType
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|capacityLimit
-|link:#Capacity[Capacity]
-|True
-a|
-
-|capacity_limit
-|string
-|False
-a|
-
-|default
+|empty
 |boolean
-|False
-a|
-
-|description
-|string
-|False
-a|
-
-|name
-|string
-|False
-a|
-
-|platformLicenseRequired
-|boolean
-|False
-a|
-
-|subDescription
-|string
-|False
-a|
-
-|subName
-|string
-|False
-a|
-
-|type
-|string
 |False
 a|
 
@@ -252,13 +250,13 @@ FeatureProperties
 |Required
 |Description
 
-|end
+|start
 |string
 |False
 a|
 
-|excludedLicenseTypes
-|array[string]
+|end
+|string
 |False
 a|
 
@@ -267,8 +265,8 @@ a|
 |False
 a|
 
-|start
-|string
+|excludedLicenseTypes
+|array[string]
 |False
 a|
 
@@ -286,12 +284,12 @@ Hash mapping strings to link:#FeatureProperties[FeatureProperties]
 |Required
 |Description
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|
@@ -310,12 +308,12 @@ Hash mapping strings to link:#MapStringFeatureProperties[MapStringFeaturePropert
 |Required
 |Description
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|
@@ -334,7 +332,22 @@ GlobalManifest
 |Required
 |Description
 
+|license_types
+|array[link:#OntapLicenseType[OntapLicenseType]]
+|True
+a|
+
+|regions
+|array[link:#Region[Region]]
+|True
+a|
+
 |azureRegions
+|array[link:#Region[Region]]
+|False
+a|
+
+|gcpRegions
 |array[link:#Region[Region]]
 |False
 a|
@@ -347,21 +360,6 @@ a|
 |cot_versions_to_upgrade_to
 |link:#cot_versions_to_upgrade_to[cot_versions_to_upgrade_to]
 |False
-a|
-
-|gcpRegions
-|array[link:#Region[Region]]
-|False
-a|
-
-|license_types
-|array[link:#OntapLicenseType[OntapLicenseType]]
-|True
-a|
-
-|regions
-|array[link:#Region[Region]]
-|True
 a|
 
 |supportedFeatures
@@ -383,12 +381,12 @@ RegionalAmi
 |Required
 |Description
 
-|ami_id
+|region
 |string
 |False
 a|
 
-|region
+|ami_id
 |string
 |False
 a|
@@ -412,9 +410,9 @@ LicenseToAmis
 |Required
 |Description
 
-|amis
-|array[link:#RegionalAmi[RegionalAmi]]
-|True
+|license_type
+|string
+|False
 a|
 
 |instance_types
@@ -422,9 +420,9 @@ a|
 |False
 a|
 
-|license_type
-|string
-|False
+|amis
+|array[link:#RegionalAmi[RegionalAmi]]
+|True
 a|
 
 |===
@@ -441,6 +439,16 @@ CloudOntapManifest
 |Required
 |Description
 
+|ontap_version
+|string
+|False
+a|
+
+|ontap_image_versions_allowed_to_upgrade_from
+|array[string]
+|True
+a|
+
 |encryption_enabled_instance_types
 |array[string]
 |False
@@ -449,16 +457,6 @@ a|
 |license_to_ami_mapping
 |array[link:#LicenseToAmis[LicenseToAmis]]
 |True
-a|
-
-|ontap_image_versions_allowed_to_upgrade_from
-|array[string]
-|True
-a|
-
-|ontap_version
-|string
-|False
 a|
 
 |===

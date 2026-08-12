@@ -7,6 +7,7 @@ summary: 'Retrieve Azure availability zones by region'
 ---
 
 = Retrieve Azure availability zones by region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/availability-zones`#
 
@@ -62,14 +63,12 @@ Status: Default, Default response
 |region
 |string
 |True
-a|Region value
-
+a|
 
 |zones
 |array[link:#zones[zones]]
 |True
-a|Zone values
-
+a|
 
 |===
 
@@ -96,9 +95,6 @@ a|Zone values
 [#zones]
 [.api-collapsible-fifth-title]
 zones
-
-Zone values
-
 
 
 //end collapsible .Definitions block

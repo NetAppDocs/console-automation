@@ -7,6 +7,7 @@ summary: 'Retrieve all cloud storage buckets'
 ---
 
 = Retrieve all cloud storage buckets
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/buckets`#
 
@@ -47,6 +48,21 @@ Status: Default, Default response
 |Required
 |Description
 
+|name
+|string
+|True
+a|
+
+|location
+|string
+|False
+a|
+
+|storageClass
+|string
+|False
+a|
+
 |kmsKeyName
 |string
 |False
@@ -55,22 +71,6 @@ a|
 |labels
 |link:#MapStringString[MapStringString]
 |True
-a|Instance tags
-
-
-|location
-|string
-|False
-a|
-
-|name
-|string
-|True
-a|
-
-|storageClass
-|string
-|False
 a|
 
 |===
@@ -86,9 +86,6 @@ a|
 [#MapStringString]
 [.api-collapsible-fifth-title]
 MapStringString
-
-Instance tags
-
 Hash mapping strings to string
 [cols=4*,options=header]
 |===
@@ -97,12 +94,12 @@ Hash mapping strings to string
 |Required
 |Description
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|

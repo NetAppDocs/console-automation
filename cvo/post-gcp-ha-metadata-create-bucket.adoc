@@ -7,6 +7,7 @@ summary: 'Create a new bucket'
 ---
 
 = Create a new bucket
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/metadata/create-bucket`#
 
@@ -26,14 +27,14 @@ Creates a new bucket.
 |Required
 |Description
 
+|projectId
+|string
+|False
+a|
+
 |bucketName
 |string
 |True
-a|
-
-|kmsKeyName
-|string
-|False
 a|
 
 |location
@@ -41,12 +42,12 @@ a|
 |False
 a|
 
-|projectId
+|storageClass
 |string
 |False
 a|
 
-|storageClass
+|kmsKeyName
 |string
 |False
 a|
@@ -59,11 +60,11 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "bucketName": "string",
-  "kmsKeyName": "string",
-  "location": "string",
   "projectId": "string",
-  "storageClass": "string"
+  "bucketName": "string",
+  "location": "string",
+  "storageClass": "string",
+  "kmsKeyName": "string"
 }
 ====
 

@@ -7,6 +7,7 @@ summary: 'Retrieve the NetApp Console server information'
 ---
 
 = Retrieve the NetApp Console server information
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/about`#
 
@@ -29,8 +30,8 @@ Status: Default, Default response
 |Required
 |Description
 
-|beta
-|boolean
+|version
+|string
 |True
 a|
 
@@ -44,42 +45,12 @@ a|
 |True
 a|
 
-|demoMode
-|boolean
+|systemId
+|string
 |False
 a|
 
 |environment
-|string
-|False
-a|
-
-|isLegacySM
-|boolean
-|False
-a|
-
-|migrationPerformed
-|boolean
-|False
-a|
-
-|privateIp
-|string
-|False
-a|
-
-|releaseNumber
-|integer
-|True
-a|
-
-|serverTimeZone
-|link:#ServerTimeZone[ServerTimeZone]
-|True
-a|
-
-|simplicatorUrl
 |string
 |False
 a|
@@ -89,8 +60,33 @@ a|
 |True
 a|
 
-|systemId
+|serverTimeZone
+|link:#ServerTimeZone[ServerTimeZone]
+|True
+a|
+
+|beta
+|boolean
+|True
+a|
+
+|releaseNumber
+|integer
+|True
+a|
+
+|simplicatorUrl
 |string
+|False
+a|
+
+|migrationPerformed
+|boolean
+|False
+a|
+
+|demoMode
+|boolean
 |False
 a|
 
@@ -99,13 +95,44 @@ a|
 |False
 a|
 
-|version
+|privateIp
 |string
-|True
+|False
+a|
+
+|isLegacySM
+|boolean
+|False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "version": "string",
+  "build": "string",
+  "buildTimestamp": 0,
+  "systemId": "string",
+  "environment": "string",
+  "siteIdentifier": {
+    "company": "string",
+    "host": "string",
+    "site": "string"
+  },
+  "serverTimeZone": {
+    "timeZoneName": "string",
+    "formattedTimeZone": "string"
+  },
+  "beta": false,
+  "releaseNumber": 0,
+  "simplicatorUrl": "string",
+  "privateIp": "string"
+}
+====
 
 == Definitions
 
@@ -114,30 +141,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#ServerTimeZone]
-[.api-collapsible-fifth-title]
-ServerTimeZone
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|formattedTimeZone
-|string
-|False
-a|
-
-|timeZoneName
-|string
-|False
-a|
-
-|===
-
-
 [#SiteIdentifier]
 [.api-collapsible-fifth-title]
 SiteIdentifier
@@ -160,6 +163,30 @@ a|
 a|
 
 |site
+|string
+|False
+a|
+
+|===
+
+
+[#ServerTimeZone]
+[.api-collapsible-fifth-title]
+ServerTimeZone
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|timeZoneName
+|string
+|False
+a|
+
+|formattedTimeZone
 |string
 |False
 a|

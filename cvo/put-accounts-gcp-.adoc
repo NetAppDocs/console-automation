@@ -7,6 +7,7 @@ summary: 'Update a Google Cloud storage account'
 ---
 
 = Update a Google Cloud storage account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/gcp/{cloudProviderAccountId}`#
 
@@ -87,9 +88,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|accessKey
+|publicId
 |string
-|False
+|True
 a|
 
 |accountName
@@ -102,19 +103,19 @@ a|
 |False
 a|
 
-|occmRole
+|accessKey
 |string
 |False
-a|
-
-|publicId
-|string
-|True
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
+a|
+
+|occmRole
+|string
+|False
 a|
 
 |===
@@ -125,18 +126,18 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "accessKey": "string",
+  "publicId": "string",
   "accountName": "string",
   "accountType": "string",
-  "occmRole": "string",
-  "publicId": "string",
+  "accessKey": "string",
   "vsaList": [
     {
-      "name": "string",
       "publicId": "string",
+      "name": "string",
       "workingEnvironmentType": "string"
     }
-  ]
+  ],
+  "occmRole": "string"
 }
 ====
 
@@ -182,12 +183,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|name
+|publicId
 |string
 |False
 a|
 
-|publicId
+|name
 |string
 |False
 a|

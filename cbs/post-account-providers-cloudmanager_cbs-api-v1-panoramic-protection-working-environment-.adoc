@@ -7,6 +7,7 @@ summary: 'Activate comprehensive protection in a system (v1)'
 ---
 
 = Activate comprehensive protection in a system (v1)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/panoramic-protection/working-environment/{workingEnvironmentId}`#
 

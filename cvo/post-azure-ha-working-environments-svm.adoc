@@ -7,6 +7,7 @@ summary: 'Create a new SVM'
 ---
 
 = Create a new SVM
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/svm`#
 
@@ -44,18 +45,6 @@ a|
 |Required
 |Description
 
-|mgmtLif
-|boolean
-|True
-a|Create a management LIF for the SVM
-
-
-|rootVolumeAggregate
-|string
-|False
-a|Root volume aggregate name
-
-
 |svmName
 |string
 |False
@@ -66,8 +55,44 @@ a|
 |False
 a|
 
+|mgmtLif
+|boolean
+|True
+a|
+
+|rootVolumeAggregate
+|string
+|False
+a|
+
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "svmName": "string",
+  "svmPassword": {
+    "_1": "string",
+    "validatesWith": {
+      "regex": {
+        "pattern": {
+          "pattern": "string",
+          "flags": 0
+        },
+        "groupNames": [
+          "string"
+        ]
+      },
+      "message": "string"
+    }
+  },
+  "mgmtLif": false,
+  "rootVolumeAggregate": "string"
+}
+====
 
 == Error
 
@@ -93,8 +118,8 @@ pattern
 |Required
 |Description
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -103,8 +128,8 @@ a|
 |True
 a|
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -122,13 +147,13 @@ Regex
 |Required
 |Description
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
@@ -146,14 +171,14 @@ PatternMessage
 |Required
 |Description
 
-|message
-|string
-|False
-a|
-
 |regex
 |link:#Regex[Regex]
 |True
+a|
+
+|message
+|string
+|False
 a|
 
 |===

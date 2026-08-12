@@ -7,6 +7,7 @@ summary: 'Retrieve Azure VMware Solution private cloud clusters for a subscripti
 ---
 
 = Retrieve Azure VMware Solution private cloud clusters for a subscription
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/resourceGroups/{resourceGroupName}/avs-private-clouds/{privateCloudName}/clusters`#
 
@@ -69,18 +70,40 @@ a|
 |False
 a|
 
-|properties
-|link:#AvsPrivateCloudClusterProperties[AvsPrivateCloudClusterProperties]
-|True
-a|
-
 |tags
 |link:#tags[tags]
 |True
 a|
 
+|properties
+|link:#AvsPrivateCloudClusterProperties[AvsPrivateCloudClusterProperties]
+|True
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "id": "string",
+  "name": "string",
+  "tags": {
+    "traversableAgain": false
+  },
+  "properties": {
+    "clusterId": "string",
+    "clusterSize": "string",
+    "provisioningState": "string",
+    "vsanDatastoreName": "string",
+    "hosts": [
+      "string"
+    ]
+  }
+}
+====
 
 == Definitions
 
@@ -89,6 +112,30 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#tags]
+[.api-collapsible-fifth-title]
+tags
+Hash mapping strings to string
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|traversableAgain
+|boolean
+|True
+a|
+
+|empty
+|boolean
+|False
+a|
+
+|===
+
+
 [#AvsPrivateCloudClusterProperties]
 [.api-collapsible-fifth-title]
 AvsPrivateCloudClusterProperties
@@ -110,11 +157,6 @@ a|
 |False
 a|
 
-|hosts
-|array[string]
-|True
-a|
-
 |provisioningState
 |string
 |False
@@ -125,27 +167,8 @@ a|
 |False
 a|
 
-|===
-
-
-[#tags]
-[.api-collapsible-fifth-title]
-tags
-Hash mapping strings to string
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|empty
-|boolean
-|False
-a|
-
-|traversableAgain
-|boolean
+|hosts
+|array[string]
 |True
 a|
 

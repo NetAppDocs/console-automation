@@ -7,6 +7,7 @@ summary: 'Create an Azure resource group'
 ---
 
 = Create an Azure resource group
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resource-group`#
 

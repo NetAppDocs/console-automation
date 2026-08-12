@@ -7,6 +7,7 @@ summary: 'Retrieve feature flags'
 ---
 
 = Retrieve feature flags
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/feature-flags`#
 
@@ -36,4 +37,13 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "azure": false
+}
+====
 

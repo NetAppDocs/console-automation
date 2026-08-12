@@ -7,6 +7,7 @@ summary: 'Delete a service resource'
 ---
 
 = Delete a service resource
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenancy/service-resource/{resourceIdentifier}`#
 

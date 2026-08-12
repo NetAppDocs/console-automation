@@ -7,6 +7,7 @@ summary: 'Create a new volume'
 ---
 
 = Create a new volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/fsx/volumes`#
 
@@ -26,53 +27,18 @@ Creates a new volume.
 |Required
 |Description
 
-|ProtocolIscsiInfo
-|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
-|False
-a|
-
-|awsTags
-|array[link:#AwsTag[AwsTag]]
-|True
-a|Optionally, provide up to 50 key-value pairs to be used as volume tags.
-
-
-|enableStorageEfficiency
-|boolean
-|True
-a|Storage efficiency
-
-
-|exportPolicyInfo
-|link:#ExportPolicyInfo[ExportPolicyInfo]
-|False
-a|
-
 |fileSystemId
 |string
 |True
-a|Target file system ID
+a|
 
-
-|initialSize
-|link:#Capacity[Capacity]
-|False
+|svmName
+|string
+|True
 a|
 
 |name
 |string
-|False
-a|Volume name, unique within the SVM
-
-
-|numberOfConstituents
-|link:#numberOfConstituents[numberOfConstituents]
-|False
-a|Number of constituents for the FlexGroup volume
-
-
-|shareInfo
-|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
 |False
 a|
 
@@ -81,26 +47,123 @@ a|
 |True
 a|
 
+|initialSize
+|link:#Capacity[Capacity]
+|False
+a|
+
 |snapshotPolicyName
 |string
 |True
-a|Snapshot policy name
+a|
 
+|exportPolicyInfo
+|link:#ExportPolicyInfo[ExportPolicyInfo]
+|False
+a|
 
-|svmName
-|string
+|shareInfo
+|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
+|False
+a|
+
+|ProtocolIscsiInfo
+|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
+|False
+a|
+
+|enableStorageEfficiency
+|boolean
 |True
-a|SVM name
-
+a|
 
 |tieringPolicy
 |string
 |False
-a|Tiering policy
+a|
 
+|awsTags
+|array[link:#AwsTag[AwsTag]]
+|True
+a|
+
+|numberOfConstituents
+|link:#numberOfConstituents[numberOfConstituents]
+|False
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "fileSystemId": "string",
+  "svmName": "string",
+  "name": "string",
+  "size": {
+    "size": 0,
+    "unit": "string"
+  },
+  "initialSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "snapshotPolicyName": "string",
+  "exportPolicyInfo": {
+    "policyType": "string",
+    "ips": [
+      "string"
+    ],
+    "nfsVersion": [
+      "string"
+    ],
+    "rules": [
+      {
+        "ruleAccessControl": "string",
+        "ips": [
+          "string"
+        ],
+        "nfsVersion": [
+          "string"
+        ],
+        "superUser": false
+      }
+    ]
+  },
+  "shareInfo": {
+    "shareName": "string",
+    "accessControl": {
+      "permission": "string",
+      "users": [
+        "string"
+      ]
+    }
+  },
+  "ProtocolIscsiInfo": {
+    "osName": "string",
+    "igroupCreationRequest": {
+      "initiators": [
+        "string"
+      ],
+      "igroupName": "string"
+    },
+    "igroups": [
+      "string"
+    ]
+  },
+  "enableStorageEfficiency": false,
+  "tieringPolicy": "string",
+  "awsTags": [
+    {
+      "tagKey": "string",
+      "tagValue": "string"
+    }
+  ]
+}
+====
 
 == Error
 
@@ -115,6 +178,180 @@ Status: Default, Default response
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#PositiveCapacity]
+[.api-collapsible-fifth-title]
+PositiveCapacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
+[#index]
+[.api-collapsible-fifth-title]
+index
+
+
+[#ExportPolicyRule]
+[.api-collapsible-fifth-title]
+ExportPolicyRule
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|index
+|link:#index[index]
+|False
+a|
+
+|ruleAccessControl
+|string
+|True
+a|
+
+|ips
+|array[string]
+|True
+a|
+
+|nfsVersion
+|array[string]
+|False
+a|
+
+|superUser
+|boolean
+|True
+a|
+
+|===
+
+
+[#ExportPolicyInfo]
+[.api-collapsible-fifth-title]
+ExportPolicyInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|policyType
+|string
+|False
+a|
+
+|ips
+|array[string]
+|False
+a|
+
+|nfsVersion
+|array[string]
+|False
+a|
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|False
+a|
+
+|===
+
+
+[#CifsShareUserPermissions]
+[.api-collapsible-fifth-title]
+CifsShareUserPermissions
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|permission
+|string
+|False
+a|
+
+|users
+|array[string]
+|True
+a|
+
+|===
+
+
+[#CreateCifsShareInfoRequest]
+[.api-collapsible-fifth-title]
+CreateCifsShareInfoRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|shareName
+|string
+|False
+a|
+
+|accessControl
+|link:#CifsShareUserPermissions[CifsShareUserPermissions]
+|False
+a|
+
+|===
+
+
 [#IgroupCreationRequest]
 [.api-collapsible-fifth-title]
 IgroupCreationRequest
@@ -126,17 +363,15 @@ IgroupCreationRequest
 |Required
 |Description
 
-|igroupName
-|string
-|False
-a|Igroup name
-
-
 |initiators
 |array[string]
 |False
-a|Initiators
+a|
 
+|igroupName
+|string
+|False
+a|
 
 |===
 
@@ -152,6 +387,11 @@ CreateIscsiInfoRequest
 |Required
 |Description
 
+|osName
+|string
+|False
+a|
+
 |igroupCreationRequest
 |link:#IgroupCreationRequest[IgroupCreationRequest]
 |False
@@ -160,14 +400,7 @@ a|
 |igroups
 |array[string]
 |False
-a|Igroups
-
-
-|osName
-|string
-|False
-a|Operating system
-
+a|
 
 |===
 
@@ -196,205 +429,9 @@ a|
 |===
 
 
-[#index]
-[.api-collapsible-fifth-title]
-index
-
-Export policy rule index
-
-
-
-[#ExportPolicyRule]
-[.api-collapsible-fifth-title]
-ExportPolicyRule
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|index
-|link:#index[index]
-|False
-a|Export policy rule index
-
-
-|ips
-|array[string]
-|True
-a|Export policy rule list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy rule protocol
-
-
-|ruleAccessControl
-|string
-|True
-a|Export policy rule access control
-
-
-|superUser
-|boolean
-|True
-a|Export policy rule super user access
-
-
-|===
-
-
-[#ExportPolicyInfo]
-[.api-collapsible-fifth-title]
-ExportPolicyInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|ips
-|array[string]
-|False
-a|Custom export policy list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy protocol
-
-
-|policyType
-|string
-|False
-a|Export policy type
-
-
-|rules
-|array[link:#ExportPolicyRule[ExportPolicyRule]]
-|False
-a|Export policy rules
-
-
-|===
-
-
-[#Capacity]
-[.api-collapsible-fifth-title]
-Capacity
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|size
-|number
-|True
-a|Size
-
-
-|unit
-|string
-|True
-a|Unit
-
-
-|===
-
-
 [#numberOfConstituents]
 [.api-collapsible-fifth-title]
 numberOfConstituents
-
-Number of constituents for the FlexGroup volume
-
-
-
-[#CifsShareUserPermissions]
-[.api-collapsible-fifth-title]
-CifsShareUserPermissions
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|permission
-|string
-|False
-a|CIFS share permission type
-
-
-|users
-|array[string]
-|True
-a|List of users with the permission
-
-
-|===
-
-
-[#CreateCifsShareInfoRequest]
-[.api-collapsible-fifth-title]
-CreateCifsShareInfoRequest
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|accessControl
-|link:#CifsShareUserPermissions[CifsShareUserPermissions]
-|False
-a|
-
-|shareName
-|string
-|False
-a|Share name
-
-
-|===
-
-
-[#PositiveCapacity]
-[.api-collapsible-fifth-title]
-PositiveCapacity
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|size
-|number
-|True
-a|Size
-
-
-|unit
-|string
-|True
-a|Unit
-
-
-|===
 
 
 //end collapsible .Definitions block

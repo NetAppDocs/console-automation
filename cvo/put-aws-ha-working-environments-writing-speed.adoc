@@ -7,6 +7,7 @@ summary: 'Set the writing speed for a system'
 ---
 
 = Set the writing speed for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/writing-speed`#
 
@@ -47,8 +48,7 @@ a|
 |writingSpeedState
 |string
 |False
-a|Writing speed state
-
+a|
 
 |===
 

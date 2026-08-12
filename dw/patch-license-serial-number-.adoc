@@ -7,6 +7,7 @@ summary: 'Update a license by serial number'
 ---
 
 = Update a license by serial number
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/serial-number/{serialNumber}`#
 
@@ -23,6 +24,7 @@ If you use a user token, you must provide the NetApp License File (NLF). If you 
 * The `metadata` field value is appended to the existing metadata.
 * `Authorization` is a required field.
 * `serialNumber` is a required field when using this site. In general, you can specify its value as `null`.
+
 *Token usage:* Either a NetApp Console user token or service token.
 
 

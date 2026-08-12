@@ -7,6 +7,7 @@ summary: 'Create a new user'
 ---
 
 = Create a new user
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/users`#
 
@@ -26,85 +27,98 @@ Creates a new user.
 |Required
 |Description
 
-|accessKey
+|firstName
 |string
 |False
-a|The AWS access key of the user
+a|
 
-
-|azureCredentials
-|link:#AzureCredentialsRequest[AzureCredentialsRequest]
+|lastName
+|string
 |False
 a|
 
 |email
 |string
 |False
-a|The email address of the user
-
-
-|firstName
-|string
-|False
-a|The first name of the user
-
-
-|isLdap
-|boolean
-|True
-a|Indicates whether the user is an LDAP user
-
-
-|lastName
-|string
-|False
-a|The last name of the user
-
-
-|ldapUserName
-|string
-|False
-a|The LDAP user name
-
-
-|notificationsOptIn
-|boolean
-|False
-a|Email notifications opt-in
-
-
-|password
-|string
-|False
-a|User password
-
+a|
 
 |roleId
 |string
 |True
-a|Role ID of the user
-
-
-|s3Bucket
-|string
-|False
-a|The AWS S3 bucket of the user
-
-
-|secretKey
-|string
-|False
-a|The AWS secret key of the user
-
+a|
 
 |tenantId
 |string
 |False
-a|Tenant ID of the user
+a|
 
+|password
+|string
+|False
+a|
+
+|accessKey
+|string
+|False
+a|
+
+|secretKey
+|string
+|False
+a|
+
+|s3Bucket
+|string
+|False
+a|
+
+|azureCredentials
+|link:#AzureCredentialsRequest[AzureCredentialsRequest]
+|False
+a|
+
+|isLdap
+|boolean
+|True
+a|
+
+|ldapUserName
+|string
+|False
+a|
+
+|notificationsOptIn
+|boolean
+|False
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "roleId": "string",
+  "tenantId": "string",
+  "password": "string",
+  "accessKey": "string",
+  "secretKey": "string",
+  "s3Bucket": "string",
+  "azureCredentials": {
+    "subscriptionId": "string",
+    "tenantId": "string",
+    "applicationId": "string",
+    "applicationKey": "string"
+  },
+  "isLdap": false,
+  "ldapUserName": "string"
+}
+====
 
 == Error
 
@@ -120,11 +134,45 @@ Status: Default, Default response
 |Required
 |Description
 
+|publicId
+|string
+|True
+a|
+
 |assignedWorkingEnvironments
 |array[string]
 |True
-a|List of public IDs for all of the systems visible to the user
+a|
 
+|firstName
+|string
+|True
+a|
+
+|lastName
+|string
+|True
+a|
+
+|email
+|string
+|True
+a|
+
+|roleId
+|string
+|True
+a|
+
+|tenantId
+|string
+|True
+a|
+
+|createdWorkingEnvironments
+|array[link:#UserWorkingEnvironmentResponse[UserWorkingEnvironmentResponse]]
+|True
+a|
 
 |azureCredentials
 |link:#AzureCredentials[AzureCredentials]
@@ -136,74 +184,69 @@ a|
 |False
 a|
 
-|createdWorkingEnvironments
-|array[link:#UserWorkingEnvironmentResponse[UserWorkingEnvironmentResponse]]
-|True
-a|List of all systems created by the user
-
-
-|email
-|string
-|True
-a|The email address of the user
-
-
-|firstName
-|string
-|True
-a|The first name of the user
-
-
 |isLdap
 |boolean
 |True
-a|Indicates whether the user is an LDAP user
-
-
-|lastName
-|string
-|True
-a|The last name of the user
-
+a|
 
 |ldapUserName
 |string
 |True
-a|The LDAP user name
-
+a|
 
 |notificationsOptIn
 |boolean
 |True
-a|Notification opt-in
-
+a|
 
 |permissions
 |array[string]
 |True
-a|Permissions
-
-
-|publicId
-|string
-|True
-a|User public ID
-
-
-|roleId
-|string
-|True
-a|Role ID of the user
-
-
-|tenantId
-|string
-|True
-a|Tenant ID of the user
-
+a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "publicId": "string",
+  "assignedWorkingEnvironments": [
+    "string"
+  ],
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "roleId": "string",
+  "tenantId": "string",
+  "createdWorkingEnvironments": [
+    {
+      "publicId": "string",
+      "name": "string",
+      "workingEnvironmentType": "string"
+    }
+  ],
+  "azureCredentials": {
+    "subscriptionId": "string",
+    "tenantId": "string",
+    "applicationId": "string",
+    "applicationKey": "string"
+  },
+  "cloudSyncLicenseInformation": {
+    "cloudSyncLicenseTypes": [
+      "string"
+    ]
+  },
+  "isLdap": false,
+  "ldapUserName": "string",
+  "notificationsOptIn": false,
+  "permissions": [
+    "string"
+  ]
+}
+====
 
 == Definitions
 
@@ -223,29 +266,54 @@ AzureCredentialsRequest
 |Required
 |Description
 
-|applicationId
-|string
-|False
-a|The application ID
-
-
-|applicationKey
-|string
-|False
-a|The application key
-
-
 |subscriptionId
 |string
 |False
-a|The subscription ID
-
+a|
 
 |tenantId
 |string
 |False
-a|The tenant ID
+a|
 
+|applicationId
+|string
+|False
+a|
+
+|applicationKey
+|string
+|False
+a|
+
+|===
+
+
+[#UserWorkingEnvironmentResponse]
+[.api-collapsible-fifth-title]
+UserWorkingEnvironmentResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|publicId
+|string
+|True
+a|
+
+|name
+|string
+|True
+a|
+
+|workingEnvironmentType
+|string
+|True
+a|
 
 |===
 
@@ -261,22 +329,22 @@ AzureCredentials
 |Required
 |Description
 
-|applicationId
-|string
-|False
-a|
-
-|applicationKey
-|string
-|False
-a|
-
 |subscriptionId
 |string
 |False
 a|
 
 |tenantId
+|string
+|False
+a|
+
+|applicationId
+|string
+|False
+a|
+
+|applicationKey
 |string
 |False
 a|
@@ -298,46 +366,12 @@ CloudSyncLicenseInformation
 |cloudSyncLicenseTypes
 |array[string]
 |False
-a|Cloud Sync license types
-
+a|
 
 |licenseExpirationDate
 |integer
 |False
-a|Cloud Sync License Expiration Date
-
-
-|===
-
-
-[#UserWorkingEnvironmentResponse]
-[.api-collapsible-fifth-title]
-UserWorkingEnvironmentResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|True
-a|System name
-
-
-|publicId
-|string
-|True
-a|System public ID
-
-
-|workingEnvironmentType
-|string
-|True
-a|System type
-
+a|
 
 |===
 

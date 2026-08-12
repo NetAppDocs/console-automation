@@ -7,6 +7,7 @@ summary: 'Sign in to the NetApp Console'
 ---
 
 = Sign in to the NetApp Console
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/auth/login`#
 
@@ -29,14 +30,12 @@ Signs in to the NetApp Console.
 |email
 |string
 |True
-a|Email address of the user attempting to log in
-
+a|
 
 |password
 |string
 |True
-a|Password of the user attempting to log in
-
+a|
 
 |===
 

@@ -7,6 +7,7 @@ summary: 'Remove a user group from an organization'
 ---
 
 = Remove a user group from an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/usergroups/{usergroup_id}`#
 

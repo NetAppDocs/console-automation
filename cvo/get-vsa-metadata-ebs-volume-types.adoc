@@ -7,6 +7,7 @@ summary: 'Retrieve supported EBS volume types'
 ---
 
 = Retrieve supported EBS volume types
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/ebs-volume-types`#
 
@@ -34,13 +35,13 @@ Status: Default, Default response
 |True
 a|
 
-|isDefault
-|boolean
-|False
-a|
-
 |size
 |link:#Capacity[Capacity]
+|True
+a|
+
+|supportedVolumeTypes
+|array[string]
 |True
 a|
 
@@ -49,13 +50,32 @@ a|
 |False
 a|
 
-|supportedVolumeTypes
-|array[string]
-|True
+|isDefault
+|boolean
+|False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "description": "string",
+  "size": {
+    "size": 0,
+    "unit": "string"
+  },
+  "supportedVolumeTypes": [
+    "string"
+  ],
+  "supportedOccmLicenses": [
+    "string"
+  ]
+}
+====
 
 == Definitions
 
@@ -78,14 +98,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 

@@ -7,6 +7,7 @@ summary: 'Retrieve a resource from a grant in a partnership'
 ---
 
 = Retrieve a resource from a grant in a partnership
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/resources/{resource_id}`#
 

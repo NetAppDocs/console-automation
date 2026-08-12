@@ -7,6 +7,7 @@ summary: 'Retrieve all FlexCache volumes lists'
 ---
 
 = Retrieve all FlexCache volumes lists
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/flexcache/caches`#
 
@@ -53,12 +54,12 @@ Status: Default, Default response
 |Required
 |Description
 
-|destination
+|source
 |link:#FlexCacheSide[FlexCacheSide]
 |True
 a|
 
-|source
+|destination
 |link:#FlexCacheSide[FlexCacheSide]
 |True
 a|
@@ -71,21 +72,29 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "destination": {
-    "clusterName": "string",
-    "svm": "string",
-    "uuid": "string",
-    "volume": "string",
-    "workingEnvironmentId": "string",
-    "workingEnvironmentType": "string"
-  },
   "source": {
+    "workingEnvironmentId": "string",
+    "workingEnvironmentType": "string",
     "clusterName": "string",
     "svm": "string",
-    "uuid": "string",
     "volume": "string",
+    "uuid": "string",
+    "size": {
+      "size": 0,
+      "unit": "string"
+    }
+  },
+  "destination": {
     "workingEnvironmentId": "string",
-    "workingEnvironmentType": "string"
+    "workingEnvironmentType": "string",
+    "clusterName": "string",
+    "svm": "string",
+    "volume": "string",
+    "uuid": "string",
+    "size": {
+      "size": 0,
+      "unit": "string"
+    }
   }
 }
 ====
@@ -111,14 +120,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -134,46 +141,40 @@ FlexCacheSide
 |Required
 |Description
 
-|clusterName
+|workingEnvironmentId
 |string
 |False
-a|Cluster name
+a|
 
+|workingEnvironmentType
+|string
+|False
+a|
 
-|size
-|link:#Capacity[Capacity]
+|clusterName
+|string
 |False
 a|
 
 |svm
 |string
 |False
-a|SVM name
-
-
-|uuid
-|string
-|False
-a|Volume UUID
-
+a|
 
 |volume
 |string
 |False
-a|Volume name
+a|
 
-
-|workingEnvironmentId
+|uuid
 |string
 |False
-a|System ID
+a|
 
-
-|workingEnvironmentType
-|string
+|size
+|link:#Capacity[Capacity]
 |False
-a|System type
-
+a|
 
 |===
 

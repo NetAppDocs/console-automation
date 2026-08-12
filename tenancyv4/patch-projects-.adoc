@@ -7,6 +7,7 @@ summary: 'Update a project partially'
 ---
 
 = Update a project partially
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/projects/{project_id}`#
 

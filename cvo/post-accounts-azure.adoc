@@ -7,6 +7,7 @@ summary: 'Create an Azure account'
 ---
 
 = Create an Azure account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/azure`#
 
@@ -49,10 +50,10 @@ a|
 {
   "accountName": "string",
   "providerKeys": {
+    "tenantId": "string",
     "applicationId": "string",
     "applicationKey": "string",
-    "subscription": "string",
-    "tenantId": "string"
+    "subscription": "string"
   }
 }
 ====
@@ -71,6 +72,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|publicId
+|string
+|False
+a|
+
 |accountName
 |string
 |False
@@ -81,22 +87,17 @@ a|
 |False
 a|
 
+|tenantId
+|string
+|False
+a|
+
 |applicationId
 |string
 |False
 a|
 
 |occmRole
-|string
-|False
-a|
-
-|publicId
-|string
-|False
-a|
-
-|tenantId
 |string
 |False
 a|
@@ -114,16 +115,16 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "publicId": "string",
   "accountName": "string",
   "accountType": "string",
+  "tenantId": "string",
   "applicationId": "string",
   "occmRole": "string",
-  "publicId": "string",
-  "tenantId": "string",
   "vsaList": [
     {
-      "name": "string",
       "publicId": "string",
+      "name": "string",
       "workingEnvironmentType": "string"
     }
   ]
@@ -148,6 +149,11 @@ AzureKeys
 |Required
 |Description
 
+|tenantId
+|string
+|True
+a|
+
 |applicationId
 |string
 |False
@@ -161,12 +167,6 @@ a|
 |subscription
 |string
 |False
-a|Subscription
-
-
-|tenantId
-|string
-|True
 a|
 
 |===
@@ -183,12 +183,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|name
+|publicId
 |string
 |False
 a|
 
-|publicId
+|name
 |string
 |False
 a|

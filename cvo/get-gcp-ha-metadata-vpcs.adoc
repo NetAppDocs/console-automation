@@ -7,6 +7,7 @@ summary: 'Retrieve Google Cloud networks and subnetworks'
 ---
 
 = Retrieve Google Cloud networks and subnetworks
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/vpcs`#
 
@@ -53,38 +54,62 @@ Status: Default, Default response
 |Required
 |Description
 
-|firewalls
-|array[link:#GcpFirewallResponse[GcpFirewallResponse]]
-|True
-a|Firewalls
-
-
-|isShared
-|boolean
-|True
-a|isShared
-
-
 |name
 |string
 |True
-a|Virtual Network Name
-
-
-|subnets
-|array[link:#GcpSubnetResponse[GcpSubnetResponse]]
-|True
-a|Subnets
-
+a|
 
 |vpcPath
 |string
 |True
-a|Virtual Network path
+a|
 
+|subnets
+|array[link:#GcpSubnetResponse[GcpSubnetResponse]]
+|True
+a|
+
+|firewalls
+|array[link:#GcpFirewallResponse[GcpFirewallResponse]]
+|True
+a|
+
+|isShared
+|boolean
+|True
+a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "vpcPath": "string",
+  "subnets": [
+    {
+      "ipCidrRange": "string",
+      "name": "string",
+      "path": "string",
+      "availableIps": 0,
+      "minimumRequiredIps": 0
+    }
+  ],
+  "firewalls": [
+    {
+      "name": "string",
+      "vpc": "string",
+      "targetServiceAccount": [
+        "string"
+      ]
+    }
+  ],
+  "isShared": false
+}
+====
 
 == Definitions
 
@@ -93,6 +118,45 @@ a|Virtual Network path
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#GcpSubnetResponse]
+[.api-collapsible-fifth-title]
+GcpSubnetResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|ipCidrRange
+|string
+|True
+a|
+
+|name
+|string
+|True
+a|
+
+|path
+|string
+|True
+a|
+
+|availableIps
+|integer
+|True
+a|
+
+|minimumRequiredIps
+|integer
+|True
+a|
+
+|===
+
+
 [#GcpFirewallResponse]
 [.api-collapsible-fifth-title]
 GcpFirewallResponse
@@ -107,66 +171,17 @@ GcpFirewallResponse
 |name
 |string
 |True
-a|Firewall Name
-
-
-|targetServiceAccount
-|array[string]
-|True
-a|Target Service Account
-
+a|
 
 |vpc
 |string
 |True
-a|VPC
+a|
 
-
-|===
-
-
-[#GcpSubnetResponse]
-[.api-collapsible-fifth-title]
-GcpSubnetResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|availableIps
-|integer
+|targetServiceAccount
+|array[string]
 |True
-a|The number of available IP addresses on the subnet
-
-
-|ipCidrRange
-|string
-|True
-a|Classless Inter-Domain Routing (CIDR)
-
-
-|minimumRequiredIps
-|integer
-|True
-a|The minimum needed IP addresses for the Cloud Volumes ONTAP system creation
-
-* format: int32
-
-
-|name
-|string
-|True
-a|Subnet name
-
-
-|path
-|string
-|True
-a|Subnet path
-
+a|
 
 |===
 

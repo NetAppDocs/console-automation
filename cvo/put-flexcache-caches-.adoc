@@ -7,6 +7,7 @@ summary: 'Modify a FlexCache volume'
 ---
 
 = Modify a FlexCache volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/flexcache/{workingEnvironmentId}/caches/{cacheId}`#
 
@@ -50,29 +51,25 @@ a|
 |Required
 |Description
 
+|name
+|string
+|False
+a|
+
 |cacheVolumeSize
 |link:#cacheVolumeSize[cacheVolumeSize]
 |False
-a|FlexCache size
-
-
-|exportPolicy
-|string
-|False
-a|FlexCache NFS export policy
-
+a|
 
 |junctionPath
 |string
 |False
-a|FlexCache volume junction path
+a|
 
-
-|name
+|exportPolicy
 |string
 |False
-a|FlexCache volume name
-
+a|
 
 |===
 
@@ -82,9 +79,9 @@ a|FlexCache volume name
 ====
 [source,json,subs=+macros]
 {
-  "exportPolicy": "string",
+  "name": "string",
   "junctionPath": "string",
-  "name": "string"
+  "exportPolicy": "string"
 }
 ====
 
@@ -104,9 +101,6 @@ Status: Default, Default response
 [#cacheVolumeSize]
 [.api-collapsible-fifth-title]
 cacheVolumeSize
-
-FlexCache size
-
 
 
 //end collapsible .Definitions block

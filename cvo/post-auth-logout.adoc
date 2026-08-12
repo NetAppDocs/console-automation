@@ -7,6 +7,7 @@ summary: 'Sign out of the NetApp Console'
 ---
 
 = Sign out of the NetApp Console
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/auth/logout`#
 

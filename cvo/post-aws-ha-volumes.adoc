@@ -7,6 +7,7 @@ summary: 'Create a new volume'
 ---
 
 = Create a new volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes`#
 
@@ -44,110 +45,23 @@ a|
 |Required
 |Description
 
+|workingEnvironmentId
+|string
+|True
+a|
+
+|svmName
+|string
+|True
+a|
+
 |aggregateName
 |string
 |True
-a|Aggregate in which the volume will be created
-
-
-|capacityTier
-|string
-|False
-a|Capacity tier
-
-
-|comment
-|string
-|False
-a|Volume Comment
-
-
-|enableCompression
-|boolean
-|True
-a|Enable compression on the volume
-
-
-|enableDeduplication
-|boolean
-|True
-a|Enable deduplication on the volume
-
-
-|enableThinProvisioning
-|boolean
-|True
-a|Enable thin provisioning on the volume
-
-
-|evCapacityApprovedToAdd
-|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
-|False
 a|
-
-|exportPolicyInfo
-|link:#ExportPolicyInfo[ExportPolicyInfo]
-|False
-a|
-
-|flexGroupVolumeInfo
-|link:#FlexGroupVolumeInfo[FlexGroupVolumeInfo]
-|False
-a|
-
-|initialSize
-|link:#Capacity[Capacity]
-|False
-a|
-
-|iops
-|integer
-|False
-a|Provisioned IOPS
-
-
-|iscsiInfo
-|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
-|False
-a|
-
-|junctionPath
-|string
-|False
-a|Junction path
-
-
-|maxNumOfDisksApprovedToAdd
-|integer
-|True
-a|Maximum number of disks approved to allocate
-
-
-|minimumCoolingDays
-|link:#minimumCoolingDays[minimumCoolingDays]
-|False
-a|Cooling Days
-
 
 |name
 |string
-|False
-a|Volume name, unique within the SVM
-
-
-|providerVolumeType
-|string
-|False
-a|Provider volume type
-
-
-|qualityOfService
-|link:#VolumeQualityOfService[VolumeQualityOfService]
-|False
-a|
-
-|shareInfo
-|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
 |False
 a|
 
@@ -156,50 +70,227 @@ a|
 |True
 a|
 
+|initialSize
+|link:#Capacity[Capacity]
+|False
+a|
+
 |snapshotPolicyName
 |string
 |True
-a|Snapshot policy name
+a|
 
+|exportPolicyInfo
+|link:#ExportPolicyInfo[ExportPolicyInfo]
+|False
+a|
 
-|svmName
-|string
+|shareInfo
+|link:#CreateCifsShareInfoRequest[CreateCifsShareInfoRequest]
+|False
+a|
+
+|iscsiInfo
+|link:#CreateIscsiInfoRequest[CreateIscsiInfoRequest]
+|False
+a|
+
+|enableThinProvisioning
+|boolean
 |True
-a|SVM name
+a|
 
+|enableCompression
+|boolean
+|True
+a|
+
+|enableDeduplication
+|boolean
+|True
+a|
+
+|maxNumOfDisksApprovedToAdd
+|integer
+|True
+a|
+
+|evCapacityApprovedToAdd
+|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
+|False
+a|
+
+|providerVolumeType
+|string
+|False
+a|
 
 |syncToS3
 |boolean
 |True
-a|Add a cloud sync relationship
+a|
 
+|capacityTier
+|string
+|False
+a|
+
+|iops
+|integer
+|False
+a|
 
 |throughput
 |integer
 |False
-a|Provisioned throughput
-
+a|
 
 |tieringPolicy
 |string
 |False
-a|Tiering policy
+a|
 
+|junctionPath
+|string
+|False
+a|
+
+|qualityOfService
+|link:#VolumeQualityOfService[VolumeQualityOfService]
+|False
+a|
+
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|
 
 |volumeTags
 |array[link:#VolumeTags[VolumeTags]]
 |True
-a|Optionally, provide key-value pairs with which to tag the ONTAP volume using the App Template service.
+a|
 
-
-|workingEnvironmentId
+|comment
 |string
-|True
-a|Cloud Volumes ONTAP system ID
+|False
+a|
 
+|flexGroupVolumeInfo
+|link:#FlexGroupVolumeInfo[FlexGroupVolumeInfo]
+|False
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "workingEnvironmentId": "string",
+  "svmName": "string",
+  "aggregateName": "string",
+  "name": "string",
+  "size": {
+    "size": 0,
+    "unit": "string"
+  },
+  "initialSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "snapshotPolicyName": "string",
+  "exportPolicyInfo": {
+    "policyType": "string",
+    "ips": [
+      "string"
+    ],
+    "nfsVersion": [
+      "string"
+    ],
+    "rules": [
+      {
+        "ruleAccessControl": "string",
+        "ips": [
+          "string"
+        ],
+        "nfsVersion": [
+          "string"
+        ],
+        "superUser": false
+      }
+    ]
+  },
+  "shareInfo": {
+    "shareName": "string",
+    "accessControl": {
+      "permission": "string",
+      "users": [
+        "string"
+      ]
+    }
+  },
+  "iscsiInfo": {
+    "osName": "string",
+    "igroupCreationRequest": {
+      "initiators": [
+        "string"
+      ],
+      "igroupName": "string"
+    },
+    "igroups": [
+      "string"
+    ]
+  },
+  "enableThinProvisioning": false,
+  "enableCompression": false,
+  "enableDeduplication": false,
+  "maxNumOfDisksApprovedToAdd": 0,
+  "evCapacityApprovedToAdd": {
+    "totalCapacityToAdd": {
+      "size": 0,
+      "unit": "string"
+    },
+    "addedCapacityToExistingEvDisks": {
+      "size": 0,
+      "unit": "string"
+    },
+    "newRaidForEvInfo": [
+      {
+        "numOfDisks": 0,
+        "diskSize": {
+          "size": 0,
+          "unit": "string"
+        }
+      }
+    ]
+  },
+  "providerVolumeType": "string",
+  "syncToS3": false,
+  "capacityTier": "string",
+  "tieringPolicy": "string",
+  "junctionPath": "string",
+  "qualityOfService": {
+    "maxDataRate": {
+      "size": 0,
+      "unit": "string"
+    }
+  },
+  "volumeTags": [
+    {
+      "tagKey": "string",
+      "tagValue": "string"
+    }
+  ],
+  "comment": "string",
+  "flexGroupVolumeInfo": {
+    "aggregateList": [
+      "string"
+    ]
+  }
+}
+====
 
 == Error
 
@@ -214,6 +305,30 @@ Status: Default, Default response
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#PositiveCapacity]
+[.api-collapsible-fifth-title]
+PositiveCapacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
+
+|===
+
+
 [#Capacity]
 [.api-collapsible-fifth-title]
 Capacity
@@ -228,73 +343,11 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
-
-|===
-
-
-[#RaidInfoForEvAggregate]
-[.api-collapsible-fifth-title]
-RaidInfoForEvAggregate
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|diskSize
-|link:#Capacity[Capacity]
-|True
-a|
-
-|numOfDisks
-|integer
-|True
-a|Number of new disks needed for the RAID group
-
-
-|===
-
-
-[#ElasticVolumeQuoteInfo]
-[.api-collapsible-fifth-title]
-ElasticVolumeQuoteInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|addedCapacityToExistingEvDisks
-|link:#Capacity[Capacity]
-|False
-a|
-
-|newRaidForEvInfo
-|array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
-|False
-a|New RAID information
-
-
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
-|False
-a|
-
-|totalEvDisks
-|integer
-|False
 a|
 
 |===
@@ -303,9 +356,6 @@ a|
 [#index]
 [.api-collapsible-fifth-title]
 index
-
-Export policy rule index
-
 
 
 [#ExportPolicyRule]
@@ -322,32 +372,27 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|Export policy rule index
-
-
-|ips
-|array[string]
-|True
-a|Export policy rule list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy rule protocol
-
+a|
 
 |ruleAccessControl
 |string
 |True
-a|Export policy rule access control
+a|
 
+|ips
+|array[string]
+|True
+a|
+
+|nfsVersion
+|array[string]
+|False
+a|
 
 |superUser
 |boolean
 |True
-a|Export policy rule super user access
-
+a|
 
 |===
 
@@ -363,142 +408,23 @@ ExportPolicyInfo
 |Required
 |Description
 
+|policyType
+|string
+|False
+a|
+
 |ips
 |array[string]
 |False
-a|Custom export policy list of IPs
-
+a|
 
 |nfsVersion
 |array[string]
 |False
-a|Export policy protocol
-
-
-|policyType
-|string
-|False
-a|Export policy type
-
+a|
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
-|False
-a|Export policy rules
-
-
-|===
-
-
-[#FlexGroupVolumeInfo]
-[.api-collapsible-fifth-title]
-FlexGroupVolumeInfo
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|aggregateList
-|array[string]
-|False
-a|Names of aggregates for the FlexGroup volume
-
-
-|numberOfConstituents
-|integer
-|False
-a|Number of constituents for the flexgroup volume
-
-
-|===
-
-
-[#IgroupCreationRequest]
-[.api-collapsible-fifth-title]
-IgroupCreationRequest
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|igroupName
-|string
-|False
-a|Igroup name
-
-
-|initiators
-|array[string]
-|False
-a|Initiators
-
-
-|===
-
-
-[#CreateIscsiInfoRequest]
-[.api-collapsible-fifth-title]
-CreateIscsiInfoRequest
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|igroupCreationRequest
-|link:#IgroupCreationRequest[IgroupCreationRequest]
-|False
-a|
-
-|igroups
-|array[string]
-|False
-a|Igroups
-
-
-|osName
-|string
-|False
-a|Operating system
-
-
-|===
-
-
-[#minimumCoolingDays]
-[.api-collapsible-fifth-title]
-minimumCoolingDays
-
-Cooling Days
-
-
-
-[#VolumeQualityOfService]
-[.api-collapsible-fifth-title]
-VolumeQualityOfService
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|maxDataRate
-|link:#Capacity[Capacity]
-|False
-a|
-
-|maxIops
-|integer
 |False
 a|
 
@@ -519,14 +445,12 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|CIFS share permission type
-
+a|
 
 |users
 |array[string]
 |True
-a|List of users with the permission
-
+a|
 
 |===
 
@@ -542,23 +466,22 @@ CreateCifsShareInfoRequest
 |Required
 |Description
 
+|shareName
+|string
+|False
+a|
+
 |accessControl
 |link:#CifsShareUserPermissions[CifsShareUserPermissions]
 |False
 a|
 
-|shareName
-|string
-|False
-a|Share name
-
-
 |===
 
 
-[#PositiveCapacity]
+[#IgroupCreationRequest]
 [.api-collapsible-fifth-title]
-PositiveCapacity
+IgroupCreationRequest
 
 [cols=4*,options=header]
 |===
@@ -567,19 +490,133 @@ PositiveCapacity
 |Required
 |Description
 
-|size
-|number
-|True
-a|Size
+|initiators
+|array[string]
+|False
+a|
 
-
-|unit
+|igroupName
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
+
+
+[#CreateIscsiInfoRequest]
+[.api-collapsible-fifth-title]
+CreateIscsiInfoRequest
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|osName
+|string
+|False
+a|
+
+|igroupCreationRequest
+|link:#IgroupCreationRequest[IgroupCreationRequest]
+|False
+a|
+
+|igroups
+|array[string]
+|False
+a|
+
+|===
+
+
+[#RaidInfoForEvAggregate]
+[.api-collapsible-fifth-title]
+RaidInfoForEvAggregate
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|numOfDisks
+|integer
+|True
+a|
+
+|diskSize
+|link:#Capacity[Capacity]
+|True
+a|
+
+|===
+
+
+[#ElasticVolumeQuoteInfo]
+[.api-collapsible-fifth-title]
+ElasticVolumeQuoteInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
+|addedCapacityToExistingEvDisks
+|link:#Capacity[Capacity]
+|False
+a|
+
+|newRaidForEvInfo
+|array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
+|False
+a|
+
+|totalEvDisks
+|integer
+|False
+a|
+
+|===
+
+
+[#VolumeQualityOfService]
+[.api-collapsible-fifth-title]
+VolumeQualityOfService
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|maxIops
+|integer
+|False
+a|
+
+|maxDataRate
+|link:#Capacity[Capacity]
+|False
+a|
+
+|===
+
+
+[#minimumCoolingDays]
+[.api-collapsible-fifth-title]
+minimumCoolingDays
 
 
 [#VolumeTags]
@@ -600,6 +637,30 @@ a|
 
 |tagValue
 |string
+|False
+a|
+
+|===
+
+
+[#FlexGroupVolumeInfo]
+[.api-collapsible-fifth-title]
+FlexGroupVolumeInfo
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|aggregateList
+|array[string]
+|False
+a|
+
+|numberOfConstituents
+|integer
 |False
 a|
 

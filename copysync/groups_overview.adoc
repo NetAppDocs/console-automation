@@ -7,6 +7,7 @@ summary: 'Groups endpoints in the NetApp Copy and Sync REST API'
 ---
 
 = Groups endpoints in the NetApp Copy and Sync REST API
+:imagesdir: ../media/
 
 
 

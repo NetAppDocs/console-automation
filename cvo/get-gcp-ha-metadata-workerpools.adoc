@@ -7,6 +7,7 @@ summary: 'Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system'
 ---
 
 = Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/workerPools`#
 
@@ -29,15 +30,13 @@ Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a
 |string
 |query
 |False
-a|The project ID to use for the request
-
+a|
 
 |region
 |string
 |query
-|True
-a|The region in which to list worker pools
-
+|False
+a|
 
 |===
 
@@ -55,16 +54,25 @@ Status: Default, Default response
 |Required
 |Description
 
-|defined
-|boolean
-|False
-a|
-
 |empty
 |boolean
 |True
 a|
 
+|defined
+|boolean
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "empty": false
+}
+====
 

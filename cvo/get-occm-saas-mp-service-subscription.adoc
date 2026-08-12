@@ -7,6 +7,7 @@ summary: 'Retrieve SaaS marketplace subscriptions'
 ---
 
 = Retrieve SaaS marketplace subscriptions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/saas-mp-service/{workingEnvironmentId}/subscription`#
 
@@ -47,18 +48,34 @@ Status: Default, Default response
 |Required
 |Description
 
-|freeTrialExpiry
-|link:#freeTrialExpiry[freeTrialExpiry]
-|False
-a|
-
 |subscription
 |link:#SubscriptionResponse[SubscriptionResponse]
 |False
 a|
 
+|freeTrialExpiry
+|link:#freeTrialExpiry[freeTrialExpiry]
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "subscription": {
+    "id": "string",
+    "name": "string",
+    "provider": "string",
+    "active": false,
+    "contract": false,
+    "byNodeMode": false
+  }
+}
+====
 
 == Definitions
 
@@ -67,11 +84,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#freeTrialExpiry]
-[.api-collapsible-fifth-title]
-freeTrialExpiry
-
-
 [#SubscriptionResponse]
 [.api-collapsible-fifth-title]
 SubscriptionResponse
@@ -83,48 +95,42 @@ SubscriptionResponse
 |Required
 |Description
 
-|active
-|boolean
-|True
-a|Active
-
-
-|byNodeMode
-|boolean
-|True
-a|By node mode
-
-
-|contract
-|boolean
-|True
-a|contract
-
-
-|eligibleCvoPackages
-|array[string]
-|True
-a|Eligible Cloud Volumes ONTAP packages
-
-
 |id
 |string
 |True
-a|Specifies the ID
-
+a|
 
 |name
 |string
 |True
-a|Specifies the name
-
+a|
 
 |provider
 |string
 |True
 a|
 
+|active
+|boolean
+|True
+a|
+
+|contract
+|boolean
+|True
+a|
+
+|byNodeMode
+|boolean
+|True
+a|
+
 |===
+
+
+[#freeTrialExpiry]
+[.api-collapsible-fifth-title]
+freeTrialExpiry
 
 
 //end collapsible .Definitions block

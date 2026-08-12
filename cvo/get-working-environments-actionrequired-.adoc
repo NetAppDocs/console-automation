@@ -7,6 +7,7 @@ summary: 'Retrieve all non-premises system actions for a tenant ID'
 ---
 
 = Retrieve all non-premises system actions for a tenant ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/actionRequired/{tenantId}`#
 
@@ -62,10 +63,109 @@ a|
 {
   "weActions": [
     {
+      "publicId": "string",
       "actions": [
-        {}
-      ],
-      "publicId": "string"
+        {
+          "actionType": "string",
+          "parameters": {
+            "aggregateName": "string",
+            "numOfDisks": 0,
+            "totalCapacity": {
+              "size": 0,
+              "unit": "string"
+            },
+            "evCapacityDetails": {
+              "totalCapacityToAdd": {
+                "size": 0,
+                "unit": "string"
+              },
+              "addedCapacityToExistingEvDisks": {
+                "size": 0,
+                "unit": "string"
+              },
+              "newRaidForEvInfo": [
+                {
+                  "numOfDisks": 0,
+                  "diskSize": {
+                    "size": 0,
+                    "unit": "string"
+                  }
+                }
+              ]
+            },
+            "volumeNames": [
+              "string"
+            ],
+            "maxCapacity": {
+              "size": 0,
+              "unit": "string"
+            },
+            "licenseExpiryDate": 0,
+            "serialNumber": "string",
+            "volumeMoveParameters": {
+              "volumeName": "string",
+              "svmName": "string",
+              "targetAggregateName": "string",
+              "homeNode": "string"
+            },
+            "workingEnvironmentId": "string",
+            "licenseParameters": {
+              "newLicenseType": {
+                "type": "string",
+                "name": "string",
+                "description": "string",
+                "subName": "string",
+                "subDescription": "string",
+                "capacity_limit": "string",
+                "capacityLimit": {
+                  "size": 0,
+                  "unit": "string"
+                }
+              },
+              "newInstanceType": "string"
+            },
+            "resourcesToDelete": {
+              "instanceNameAndType": [
+                {
+                  "instanceName": "string",
+                  "instanceType": "string",
+                  "instanceId": "string"
+                }
+              ],
+              "numberOfDisksAndDiskSize": [
+                {
+                  "diskSize": {
+                    "size": 0,
+                    "unit": "string"
+                  },
+                  "diskType": "string"
+                }
+              ]
+            },
+            "instances": [
+              {
+                "instanceName": "string",
+                "instanceType": "string",
+                "instanceId": "string"
+              }
+            ],
+            "moreInfo": "string",
+            "providerVolumeType": "string",
+            "volumeInfo": {
+              "volumeName": "string",
+              "svmName": "string",
+              "newCapacity": {
+                "size": 0,
+                "unit": "string"
+              }
+            },
+            "currentInstanceType": "string",
+            "isComposite": false,
+            "isCapacityBased": false
+          },
+          "severity": "string"
+        }
+      ]
     }
   ]
 }
@@ -92,14 +192,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -115,16 +213,15 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|numOfDisks
+|integer
+|True
+a|
+
 |diskSize
 |link:#Capacity[Capacity]
 |True
 a|
-
-|numOfDisks
-|integer
-|True
-a|Number of new disks needed for the RAID group
-
 
 |===
 
@@ -140,6 +237,11 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -147,12 +249,6 @@ a|
 
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
-|False
-a|New RAID information
-
-
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
 |False
 a|
 
@@ -164,9 +260,9 @@ a|
 |===
 
 
-[#InstanceNameIdAndType]
+[#VolumeMoveParameters]
 [.api-collapsible-fifth-title]
-InstanceNameIdAndType
+VolumeMoveParameters
 
 [cols=4*,options=header]
 |===
@@ -175,17 +271,27 @@ InstanceNameIdAndType
 |Required
 |Description
 
-|instanceId
+|volumeName
 |string
 |False
 a|
 
-|instanceName
+|svmName
 |string
 |False
 a|
 
-|instanceType
+|targetAggregateName
+|string
+|False
+a|
+
+|isNewTargetAggregate
+|boolean
+|False
+a|
+
+|homeNode
 |string
 |False
 a|
@@ -204,22 +310,7 @@ OntapLicenseType
 |Required
 |Description
 
-|capacityLimit
-|link:#Capacity[Capacity]
-|True
-a|
-
-|capacity_limit
-|string
-|False
-a|
-
-|default
-|boolean
-|False
-a|
-
-|description
+|type
 |string
 |False
 a|
@@ -229,12 +320,7 @@ a|
 |False
 a|
 
-|platformLicenseRequired
-|boolean
-|False
-a|
-
-|subDescription
+|description
 |string
 |False
 a|
@@ -244,9 +330,29 @@ a|
 |False
 a|
 
-|type
+|subDescription
 |string
 |False
+a|
+
+|capacity_limit
+|string
+|False
+a|
+
+|platformLicenseRequired
+|boolean
+|False
+a|
+
+|default
+|boolean
+|False
+a|
+
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
 a|
 
 |===
@@ -263,13 +369,42 @@ ChangeLicenseParameters
 |Required
 |Description
 
+|newLicenseType
+|link:#OntapLicenseType[OntapLicenseType]
+|False
+a|
+
 |newInstanceType
 |string
 |False
 a|
 
-|newLicenseType
-|link:#OntapLicenseType[OntapLicenseType]
+|===
+
+
+[#InstanceNameIdAndType]
+[.api-collapsible-fifth-title]
+InstanceNameIdAndType
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|instanceName
+|string
+|False
+a|
+
+|instanceType
+|string
+|False
+a|
+
+|instanceId
+|string
 |False
 a|
 
@@ -287,6 +422,11 @@ DisksDetails
 |Required
 |Description
 
+|numberOfDisks
+|integer
+|False
+a|
+
 |diskSize
 |link:#Capacity[Capacity]
 |False
@@ -294,11 +434,6 @@ a|
 
 |diskType
 |string
-|False
-a|
-
-|numberOfDisks
-|integer
 |False
 a|
 
@@ -340,57 +475,18 @@ VolumeInfo
 |Required
 |Description
 
+|volumeName
+|string
+|False
+a|
+
+|svmName
+|string
+|False
+a|
+
 |newCapacity
 |link:#Capacity[Capacity]
-|False
-a|
-
-|svmName
-|string
-|False
-a|
-
-|volumeName
-|string
-|False
-a|
-
-|===
-
-
-[#VolumeMoveParameters]
-[.api-collapsible-fifth-title]
-VolumeMoveParameters
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|homeNode
-|string
-|False
-a|
-
-|isNewTargetAggregate
-|boolean
-|False
-a|
-
-|svmName
-|string
-|False
-a|
-
-|targetAggregateName
-|string
-|False
-a|
-
-|volumeName
-|string
 |False
 a|
 
@@ -411,47 +507,26 @@ ActionRequiredParameters
 |aggregateName
 |string
 |True
-a|Aggregate name
+a|
 
+|numOfDisks
+|integer
+|True
+a|
 
-|currentInstanceType
-|string
-|False
-a|Current instance type
-
+|totalCapacity
+|link:#Capacity[Capacity]
+|True
+a|
 
 |evCapacityDetails
 |link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
 |False
 a|
 
-|instances
-|array[link:#InstanceNameIdAndType[InstanceNameIdAndType]]
+|volumeNames
+|array[string]
 |True
-a|Instances information
-
-
-|isCapacityBased
-|boolean
-|True
-a|Indicates if the license type is a  capacity-based license type
-
-
-|isComposite
-|boolean
-|True
-a|Indicates if the aggregate is a composite aggregate
-
-
-|licenseExpiryDate
-|integer
-|True
-a|License expiry date
-
-
-|licenseParameters
-|link:#ChangeLicenseParameters[ChangeLicenseParameters]
-|False
 a|
 
 |maxCapacity
@@ -459,43 +534,14 @@ a|
 |True
 a|
 
-|moreInfo
-|string
-|False
-a|More information
-
-
-|numOfDisks
+|licenseExpiryDate
 |integer
 |True
-a|Number of disks relevant to the action
-
-
-|providerVolumeType
-|string
-|False
-a|Provider volume type
-
-
-|resourcesToDelete
-|link:#ResourcesToDelete[ResourcesToDelete]
-|False
 a|
 
 |serialNumber
 |string
 |True
-a|Platform Serial number
-
-
-|totalCapacity
-|link:#Capacity[Capacity]
-|True
-a|
-
-|volumeInfo
-|link:#VolumeInfo[VolumeInfo]
-|False
 a|
 
 |volumeMoveParameters
@@ -503,17 +549,55 @@ a|
 |False
 a|
 
-|volumeNames
-|array[string]
-|True
-a|A limited list of volumes on the aggregate
-
-
 |workingEnvironmentId
 |string
 |True
-a|System public ID
+a|
 
+|licenseParameters
+|link:#ChangeLicenseParameters[ChangeLicenseParameters]
+|False
+a|
+
+|resourcesToDelete
+|link:#ResourcesToDelete[ResourcesToDelete]
+|False
+a|
+
+|instances
+|array[link:#InstanceNameIdAndType[InstanceNameIdAndType]]
+|True
+a|
+
+|moreInfo
+|string
+|False
+a|
+
+|providerVolumeType
+|string
+|False
+a|
+
+|volumeInfo
+|link:#VolumeInfo[VolumeInfo]
+|False
+a|
+
+|currentInstanceType
+|string
+|False
+a|
+
+|isComposite
+|boolean
+|True
+a|
+
+|isCapacityBased
+|boolean
+|True
+a|
 
 |===
 
@@ -532,8 +616,7 @@ ActionRequired
 |actionType
 |string
 |True
-a|The type of the Action
-
+a|
 
 |parameters
 |link:#ActionRequiredParameters[ActionRequiredParameters]
@@ -543,8 +626,7 @@ a|
 |severity
 |string
 |True
-a|Action Severity
-
+a|
 
 |===
 
@@ -560,13 +642,13 @@ WeActionRequiredResponse
 |Required
 |Description
 
-|actions
-|array[link:#ActionRequired[ActionRequired]]
+|publicId
+|string
 |True
 a|
 
-|publicId
-|string
+|actions
+|array[link:#ActionRequired[ActionRequired]]
 |True
 a|
 

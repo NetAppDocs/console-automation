@@ -7,6 +7,7 @@ summary: 'Retrieve extra capacity licenses'
 ---
 
 = Retrieve extra capacity licenses
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
 
@@ -47,19 +48,19 @@ Status: Default, Default response
 |Required
 |Description
 
-|accountId
+|serialNumber
 |string
-|False
-a|
-
-|associatedResourceId
-|string
-|False
-a|
-
-|capacity
-|number
 |True
+a|
+
+|resourceId
+|string
+|False
+a|
+
+|licenseType
+|string
+|False
 a|
 
 |expirationDate
@@ -72,14 +73,9 @@ a|
 |False
 a|
 
-|licensePackage
-|string
-|False
-a|
-
-|licenseType
-|string
-|False
+|capacity
+|number
+|True
 a|
 
 |metadata
@@ -87,16 +83,33 @@ a|
 |False
 a|
 
-|resourceId
+|associatedResourceId
 |string
 |False
 a|
 
-|serialNumber
+|licensePackage
 |string
-|True
+|False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "serialNumber": "string",
+  "resourceId": "string",
+  "licenseType": "string",
+  "expirationDate": 0,
+  "license": "string",
+  "capacity": 0,
+  "metadata": "string",
+  "associatedResourceId": "string",
+  "licensePackage": "string"
+}
+====
 

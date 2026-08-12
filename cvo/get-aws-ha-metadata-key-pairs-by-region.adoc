@@ -7,6 +7,7 @@ summary: 'Retrieve AWS user key pairs for all regions'
 ---
 
 = Retrieve AWS user key pairs for all regions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/key-pairs-by-region`#
 
@@ -79,12 +80,12 @@ Hash mapping strings to array[string]
 |Required
 |Description
 
-|empty
+|traversableAgain
 |boolean
 |False
 a|
 
-|traversableAgain
+|empty
 |boolean
 |False
 a|

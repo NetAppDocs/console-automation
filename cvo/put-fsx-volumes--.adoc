@@ -7,6 +7,7 @@ summary: 'Modify an existing volume'
 ---
 
 = Modify an existing volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}`#
 
@@ -74,8 +75,18 @@ a|
 |Required
 |Description
 
+|snapshotPolicyName
+|string
+|False
+a|
+
 |exportPolicyInfo
 |link:#NamedExportPolicyInfo[NamedExportPolicyInfo]
+|False
+a|
+
+|tieringPolicy
+|string
 |False
 a|
 
@@ -83,18 +94,6 @@ a|
 |link:#CifsShareInfo[CifsShareInfo]
 |False
 a|
-
-|snapshotPolicyName
-|string
-|False
-a|Snapshot policy name
-
-
-|tieringPolicy
-|string
-|False
-a|Tiering policy
-
 
 |===
 
@@ -104,20 +103,32 @@ a|Tiering policy
 ====
 [source,json,subs=+macros]
 {
+  "snapshotPolicyName": "string",
   "exportPolicyInfo": {
+    "name": "string",
+    "policyType": "string",
     "ips": [
       "string"
     ],
-    "name": "string",
     "nfsVersion": [
       "string"
     ],
-    "policyType": "string",
     "rules": [
-      {}
+      {
+        "ruleAccessControl": "string",
+        "ips": [
+          "string"
+        ],
+        "nfsVersion": [
+          "string"
+        ],
+        "superUser": false
+      }
     ]
   },
+  "tieringPolicy": "string",
   "shareInfo": {
+    "shareName": "string",
     "accessControlList": [
       {
         "permission": "string",
@@ -126,11 +137,8 @@ a|Tiering policy
         ]
       }
     ],
-    "shareName": "string",
     "vscanFileOpPolicy": "string"
-  },
-  "snapshotPolicyName": "string",
-  "tieringPolicy": "string"
+  }
 }
 ====
 
@@ -158,8 +166,8 @@ pattern
 |Required
 |Description
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -168,8 +176,8 @@ a|
 |True
 a|
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -187,13 +195,13 @@ Regex
 |Required
 |Description
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
@@ -211,14 +219,14 @@ PatternMessage
 |Required
 |Description
 
-|message
-|string
-|False
-a|
-
 |regex
 |link:#Regex[Regex]
 |True
+a|
+
+|message
+|string
+|False
 a|
 
 |===
@@ -252,9 +260,6 @@ a|
 [.api-collapsible-fifth-title]
 index
 
-Export policy rule index
-
-
 
 [#ExportPolicyRule]
 [.api-collapsible-fifth-title]
@@ -270,32 +275,27 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|Export policy rule index
-
-
-|ips
-|array[string]
-|True
-a|Export policy rule list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy rule protocol
-
+a|
 
 |ruleAccessControl
 |string
 |True
-a|Export policy rule access control
+a|
 
+|ips
+|array[string]
+|True
+a|
+
+|nfsVersion
+|array[string]
+|False
+a|
 
 |superUser
 |boolean
 |True
-a|Export policy rule super user access
-
+a|
 
 |===
 
@@ -311,35 +311,30 @@ NamedExportPolicyInfo
 |Required
 |Description
 
-|ips
-|array[string]
-|True
-a|Custom export policy list of IPs
-
-
 |name
 |string
 |False
-a|Export policy name
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy protocol
-
+a|
 
 |policyType
 |string
 |True
-a|Export policy type
+a|
 
+|ips
+|array[string]
+|True
+a|
+
+|nfsVersion
+|array[string]
+|False
+a|
 
 |rules
 |array[link:#ExportPolicyRule[ExportPolicyRule]]
 |True
-a|Export policy rules
-
+a|
 
 |===
 
@@ -358,14 +353,12 @@ CifsShareUserPermissions
 |permission
 |string
 |False
-a|CIFS share permission type
-
+a|
 
 |users
 |array[string]
 |True
-a|List of users with the permission
-
+a|
 
 |===
 
@@ -381,23 +374,20 @@ CifsShareInfo
 |Required
 |Description
 
-|accessControlList
-|array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
-|True
-a|List of CIFS share permissions
-
-
 |shareName
 |string
 |True
-a|Share name
+a|
 
+|accessControlList
+|array[link:#CifsShareUserPermissions[CifsShareUserPermissions]]
+|True
+a|
 
 |vscanFileOpPolicy
 |string
 |False
-a|Vscan file operations profile
-
+a|
 
 |===
 

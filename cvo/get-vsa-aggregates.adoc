@@ -7,6 +7,7 @@ summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/aggregates`#
 
@@ -47,99 +48,15 @@ Status: Default, Default response
 |Required
 |Description
 
+|name
+|string
+|True
+a|
+
 |availableCapacity
 |link:#Capacity[Capacity]
 |True
 a|
-
-|capacityTier
-|string
-|False
-a|Capacity tier
-
-
-|capacityTierUsed
-|link:#Capacity[Capacity]
-|False
-a|
-
-|disks
-|array[link:#Disk[Disk]]
-|True
-a|Disks
-
-
-|encryptionKeyId
-|string
-|False
-a|Encryption Key
-
-
-|encryptionType
-|string
-|True
-a|Encryption Type
-
-
-|evCompatibilityType
-|string
-|True
-a|Elastic Volume Compatibility Type
-
-
-|homeNode
-|string
-|True
-a|Home node
-
-
-|iops
-|link:#iops[iops]
-|False
-a|Aggregate IOPS
-
-
-|isRoot
-|boolean
-|True
-a|Is Root
-
-
-|name
-|string
-|True
-a|Aggregate name
-
-
-|ownerNode
-|string
-|False
-a|Owner node
-
-
-|providerVolumes
-|array[link:#ProviderVolumeResponse[ProviderVolumeResponse]]
-|True
-a|Provider volumes
-
-
-|sidlEnabled
-|boolean
-|True
-a|SIDL enabled
-
-
-|snaplockType
-|string
-|True
-a|Snaplock type
-
-
-|state
-|string
-|False
-a|State
-
 
 |totalCapacity
 |link:#Capacity[Capacity]
@@ -154,11 +71,160 @@ a|
 |volumes
 |array[link:#Volume[Volume]]
 |True
-a|Volumes
+a|
 
+|providerVolumes
+|array[link:#ProviderVolumeResponse[ProviderVolumeResponse]]
+|True
+a|
+
+|disks
+|array[link:#Disk[Disk]]
+|True
+a|
+
+|state
+|string
+|False
+a|
+
+|encryptionType
+|string
+|True
+a|
+
+|encryptionKeyId
+|string
+|False
+a|
+
+|isRoot
+|boolean
+|True
+a|
+
+|homeNode
+|string
+|True
+a|
+
+|ownerNode
+|string
+|False
+a|
+
+|capacityTier
+|string
+|False
+a|
+
+|capacityTierUsed
+|link:#Capacity[Capacity]
+|False
+a|
+
+|sidlEnabled
+|boolean
+|True
+a|
+
+|snaplockType
+|string
+|True
+a|
+
+|evCompatibilityType
+|string
+|True
+a|
+
+|iops
+|link:#iops[iops]
+|False
+a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "availableCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "totalCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "usedCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "volumes": [
+    {
+      "name": "string",
+      "totalSize": {
+        "size": 0,
+        "unit": "string"
+      },
+      "usedSize": {
+        "size": 0,
+        "unit": "string"
+      },
+      "thinProvisioned": false,
+      "isClone": false,
+      "rootVolume": false
+    }
+  ],
+  "providerVolumes": [
+    {
+      "id": "string",
+      "name": "string",
+      "size": {
+        "size": 0,
+        "unit": "string"
+      },
+      "state": "string",
+      "device": "string",
+      "instanceId": "string",
+      "diskType": "string",
+      "encrypted": false,
+      "instance2Id": "string"
+    }
+  ],
+  "disks": [
+    {
+      "name": "string",
+      "containerType": "string",
+      "ownerNode": "string",
+      "device": "string",
+      "vmDiskProperties": {
+        "objectName": "string",
+        "storageAccountName": "string",
+        "containerName": "string"
+      }
+    }
+  ],
+  "state": "string",
+  "encryptionType": "string",
+  "encryptionKeyId": "string",
+  "isRoot": false,
+  "homeNode": "string",
+  "ownerNode": "string",
+  "capacityTier": "string",
+  "capacityTierUsed": {
+    "size": 0,
+    "unit": "string"
+  },
+  "sidlEnabled": false,
+  "snaplockType": "string",
+  "evCompatibilityType": "string"
+}
+====
 
 == Definitions
 
@@ -181,14 +247,125 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
+a|
 
+|===
+
+
+[#Volume]
+[.api-collapsible-fifth-title]
+Volume
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|True
+a|
+
+|totalSize
+|link:#Capacity[Capacity]
+|True
+a|
+
+|usedSize
+|link:#Capacity[Capacity]
+|True
+a|
+
+|thinProvisioned
+|boolean
+|True
+a|
+
+|isClone
+|boolean
+|True
+a|
+
+|rootVolume
+|boolean
+|True
+a|
+
+|===
+
+
+[#ProviderVolumeResponse]
+[.api-collapsible-fifth-title]
+ProviderVolumeResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|id
+|string
+|True
+a|
+
+|name
+|string
+|False
+a|
+
+|size
+|link:#Capacity[Capacity]
+|True
+a|
+
+|state
+|string
+|True
+a|
+
+|device
+|string
+|True
+a|
+
+|instanceId
+|string
+|True
+a|
+
+|diskType
+|string
+|True
+a|
+
+|encrypted
+|boolean
+|True
+a|
+
+|iops
+|integer
+|False
+a|
+
+|throughput
+|integer
+|False
+a|
+
+|instance2Id
+|string
+|False
+a|
 
 |===
 
@@ -204,17 +381,17 @@ VmDiskProperties
 |Required
 |Description
 
-|containerName
-|string
-|False
-a|
-
 |objectName
 |string
 |False
 a|
 
 |storageAccountName
+|string
+|False
+a|
+
+|containerName
 |string
 |False
 a|
@@ -233,29 +410,25 @@ Disk
 |Required
 |Description
 
-|containerType
-|string
-|True
-a|Container type
-
-
-|device
-|string
-|False
-a|Device
-
-
 |name
 |string
 |False
-a|Name
+a|
 
+|containerType
+|string
+|True
+a|
 
 |ownerNode
 |string
 |True
-a|Owner node
+a|
 
+|device
+|string
+|False
+a|
 
 |vmDiskProperties
 |link:#VmDiskProperties[VmDiskProperties]
@@ -268,136 +441,6 @@ a|
 [#iops]
 [.api-collapsible-fifth-title]
 iops
-
-Aggregate IOPS
-
-
-
-[#ProviderVolumeResponse]
-[.api-collapsible-fifth-title]
-ProviderVolumeResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|device
-|string
-|True
-a|Device
-
-
-|diskType
-|string
-|True
-a|Type
-
-
-|encrypted
-|boolean
-|True
-a|Encrypted
-
-
-|id
-|string
-|True
-a|Specifies the ID
-
-
-|instance2Id
-|string
-|False
-a|Instance2Id
-
-
-|instanceId
-|string
-|True
-a|InstanceId
-
-
-|iops
-|integer
-|False
-a|Provisioned IOPS
-
-
-|name
-|string
-|True
-a|Specifies the name
-
-
-|size
-|link:#Capacity[Capacity]
-|True
-a|
-
-|state
-|string
-|True
-a|State
-
-
-|throughput
-|integer
-|False
-a|Provisioned throughput
-
-
-|===
-
-
-[#Volume]
-[.api-collapsible-fifth-title]
-Volume
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|isClone
-|boolean
-|True
-a|Indicates if the volume is a clone volume
-
-
-|name
-|string
-|True
-a|Name
-
-
-|rootVolume
-|boolean
-|True
-a|Indicates if the volume is the root volume of the SVM
-
-
-|thinProvisioned
-|boolean
-|True
-a|Indicates if the volume is thin-provisioned
-
-
-|totalSize
-|link:#Capacity[Capacity]
-|True
-a|
-
-|usedSize
-|link:#Capacity[Capacity]
-|True
-a|
-
-|===
 
 
 //end collapsible .Definitions block

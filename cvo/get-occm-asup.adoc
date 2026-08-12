@@ -7,6 +7,7 @@ summary: 'Retrieve the AutoSupport configuration'
 ---
 
 = Retrieve the AutoSupport configuration
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup`#
 
@@ -29,14 +30,19 @@ Status: Default, Default response
 |Required
 |Description
 
-|company
-|string
-|False
-a|
-
 |enabled
 |boolean
 |True
+a|
+
+|site
+|string
+|True
+a|
+
+|company
+|string
+|False
 a|
 
 |hostName
@@ -54,11 +60,6 @@ a|
 |True
 a|
 
-|site
-|string
-|True
-a|
-
 |url
 |string
 |False
@@ -66,6 +67,26 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "enabled": false,
+  "site": "string",
+  "company": "string",
+  "hostName": "string",
+  "os": "string",
+  "schedule": {
+    "dayOfWeek": 0,
+    "interval": {
+      "unit": "string"
+    }
+  },
+  "url": "string"
+}
+====
 
 == Definitions
 

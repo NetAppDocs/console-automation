@@ -7,6 +7,7 @@ summary: 'Delete a license by resource ID'
 ---
 
 = Delete a license by resource ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/license/account/{accountId}/licenseResource/{resourceIdentifier}`#
 

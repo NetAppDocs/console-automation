@@ -7,6 +7,7 @@ summary: 'Retrieve all S3 buckets'
 ---
 
 = Retrieve all S3 buckets
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/get-buckets-details`#
 
@@ -34,11 +35,6 @@ Status: Default, Default response
 |True
 a|
 
-|totalBackupTargets
-|integer
-|False
-a|
-
 |totalBuckets
 |integer
 |True
@@ -54,8 +50,31 @@ a|
 |False
 a|
 
+|totalBackupTargets
+|integer
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "s3Buckets": [
+    {
+      "bucketName": "string",
+      "region": "string",
+      "tags": {
+        "traversableAgain": false
+      }
+    }
+  ],
+  "totalBuckets": 0
+}
+====
 
 == Definitions
 
@@ -75,14 +94,14 @@ Hash mapping strings to string
 |Required
 |Description
 
-|empty
-|boolean
-|False
-a|
-
 |traversableAgain
 |boolean
 |True
+a|
+
+|empty
+|boolean
+|False
 a|
 
 |===
@@ -104,16 +123,6 @@ S3BucketInfoDetails
 |True
 a|
 
-|isBackupTarget
-|boolean
-|False
-a|
-
-|isTieringTarget
-|boolean
-|False
-a|
-
 |region
 |string
 |False
@@ -122,6 +131,16 @@ a|
 |tags
 |link:#tags[tags]
 |True
+a|
+
+|isTieringTarget
+|boolean
+|False
+a|
+
+|isBackupTarget
+|boolean
+|False
 a|
 
 |===

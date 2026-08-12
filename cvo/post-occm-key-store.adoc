@@ -7,6 +7,7 @@ summary: 'Generate a new key pair and self-signed certificate'
 ---
 
 = Generate a new key pair and self-signed certificate
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/key-store`#
 

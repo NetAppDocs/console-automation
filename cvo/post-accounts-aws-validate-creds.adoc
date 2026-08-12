@@ -7,6 +7,7 @@ summary: 'Retrieve an AWS account ID for credentials'
 ---
 
 = Retrieve an AWS account ID for credentials
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/aws/validate-creds`#
 
@@ -54,11 +55,11 @@ a|
 {
   "accountName": "string",
   "providerKeys": {
-    "assumeRoleArn": "string",
     "awsAccessKeys": {
       "accessKey": "string",
       "secretKey": "string"
-    }
+    },
+    "assumeRoleArn": "string"
   },
   "subscriptionId": "string"
 }
@@ -114,13 +115,13 @@ AwsKeysRequest
 |Required
 |Description
 
-|assumeRoleArn
-|string
+|awsAccessKeys
+|link:#AwsAccessKeys[AwsAccessKeys]
 |False
 a|
 
-|awsAccessKeys
-|link:#AwsAccessKeys[AwsAccessKeys]
+|assumeRoleArn
+|string
 |False
 a|
 

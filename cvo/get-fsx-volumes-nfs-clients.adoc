@@ -7,6 +7,7 @@ summary: 'Retrieve an NFS clients list for an FSx system'
 ---
 
 = Retrieve an NFS clients list for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/nfs-clients`#
 
@@ -59,7 +60,12 @@ Status: Default, Default response
 |Required
 |Description
 
-|clientIp
+|volume
+|string
+|True
+a|
+
+|svm
 |string
 |False
 a|
@@ -69,19 +75,14 @@ a|
 |False
 a|
 
+|clientIp
+|string
+|False
+a|
+
 |idleDuration
 |string
 |False
-a|
-
-|svm
-|string
-|False
-a|
-
-|volume
-|string
-|True
 a|
 
 |===
@@ -92,11 +93,11 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "clientIp": "string",
-  "exportPolicy": "string",
-  "idleDuration": "string",
+  "volume": "string",
   "svm": "string",
-  "volume": "string"
+  "exportPolicy": "string",
+  "clientIp": "string",
+  "idleDuration": "string"
 }
 ====
 

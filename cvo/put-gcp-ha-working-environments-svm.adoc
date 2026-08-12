@@ -7,6 +7,7 @@ summary: 'Modify the SVM name of the Cloud Volumes ONTAP system'
 ---
 
 = Modify the SVM name of the Cloud Volumes ONTAP system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/svm`#
 
@@ -44,12 +45,12 @@ a|
 |Required
 |Description
 
-|svmName
+|svmNewName
 |string
 |False
 a|
 
-|svmNewName
+|svmName
 |string
 |False
 a|
@@ -62,8 +63,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "svmName": "string",
-  "svmNewName": "string"
+  "svmNewName": "string",
+  "svmName": "string"
 }
 ====
 

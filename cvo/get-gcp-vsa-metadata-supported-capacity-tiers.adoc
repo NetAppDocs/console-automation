@@ -7,6 +7,7 @@ summary: 'Retrieve supported capacity tiers for Google Cloud disk types'
 ---
 
 = Retrieve supported capacity tiers for Google Cloud disk types
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/supported-capacity-tiers`#
 
@@ -71,6 +72,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|supportedCapacityTiersPerVolumeType
+|array[link:#SupportedCapacityTiersResponse[SupportedCapacityTiersResponse]]
+|True
+a|
+
 |capacityTiersDisableReasons
 |array[string]
 |False
@@ -86,11 +92,6 @@ a|
 |False
 a|
 
-|supportedCapacityTiersPerVolumeType
-|array[link:#SupportedCapacityTiersResponse[SupportedCapacityTiersResponse]]
-|True
-a|
-
 |===
 
 
@@ -99,19 +100,19 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "capacityTiersDisableReasons": [
-    "string"
-  ],
   "supportedCapacityTiersPerVolumeType": [
     {
-      "availableTieringPolicies": [
-        "string"
-      ],
+      "volumeType": "string",
       "supportedCapacityTiers": [
         "string"
       ],
-      "volumeType": "string"
+      "availableTieringPolicies": [
+        "string"
+      ]
     }
+  ],
+  "capacityTiersDisableReasons": [
+    "string"
   ]
 }
 ====
@@ -134,8 +135,8 @@ SupportedCapacityTiersResponse
 |Required
 |Description
 
-|availableTieringPolicies
-|array[string]
+|volumeType
+|string
 |False
 a|
 
@@ -144,8 +145,8 @@ a|
 |False
 a|
 
-|volumeType
-|string
+|availableTieringPolicies
+|array[string]
 |False
 a|
 

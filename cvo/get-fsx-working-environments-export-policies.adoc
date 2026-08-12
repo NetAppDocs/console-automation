@@ -7,6 +7,7 @@ summary: 'Retrieve an export policies list for an FSx system'
 ---
 
 = Retrieve an export policies list for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/export-policies`#
 
@@ -58,14 +59,14 @@ Status: Default, Default response
 |True
 a|
 
-|rules
-|array[link:#ExportPolicyRule[ExportPolicyRule]]
-|True
-a|
-
 |svm
 |string
 |False
+a|
+
+|rules
+|array[link:#ExportPolicyRule[ExportPolicyRule]]
+|True
 a|
 
 |===
@@ -77,10 +78,19 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
+  "svm": "string",
   "rules": [
-    {}
-  ],
-  "svm": "string"
+    {
+      "ruleAccessControl": "string",
+      "ips": [
+        "string"
+      ],
+      "nfsVersion": [
+        "string"
+      ],
+      "superUser": false
+    }
+  ]
 }
 ====
 
@@ -94,9 +104,6 @@ a|
 [#index]
 [.api-collapsible-fifth-title]
 index
-
-Export policy rule index
-
 
 
 [#ExportPolicyRule]
@@ -113,32 +120,27 @@ ExportPolicyRule
 |index
 |link:#index[index]
 |False
-a|Export policy rule index
-
-
-|ips
-|array[string]
-|True
-a|Export policy rule list of IPs
-
-
-|nfsVersion
-|array[string]
-|False
-a|Export policy rule protocol
-
+a|
 
 |ruleAccessControl
 |string
 |True
-a|Export policy rule access control
+a|
 
+|ips
+|array[string]
+|True
+a|
+
+|nfsVersion
+|array[string]
+|False
+a|
 
 |superUser
 |boolean
 |True
-a|Export policy rule super user access
-
+a|
 
 |===
 

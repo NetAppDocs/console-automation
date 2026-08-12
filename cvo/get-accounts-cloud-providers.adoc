@@ -7,6 +7,7 @@ summary: 'Retrieve all cloud accounts'
 ---
 
 = Retrieve all cloud accounts
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/cloud-providers`#
 
@@ -80,38 +81,38 @@ a|
 {
   "awsAccounts": [
     {
-      "accessKey": "string",
-      "accountId": "string",
+      "publicId": "string",
       "accountName": "string",
       "accountType": "string",
+      "accountId": "string",
+      "accessKey": "string",
       "assumeRole": {
-        "accountId": "string",
-        "roleName": "string"
+        "roleName": "string",
+        "accountId": "string"
       },
       "occmRole": "string",
-      "publicId": "string",
-      "subscriptionId": "string",
       "vsaList": [
         {
-          "name": "string",
           "publicId": "string",
+          "name": "string",
           "workingEnvironmentType": "string"
         }
-      ]
+      ],
+      "subscriptionId": "string"
     }
   ],
   "azureAccounts": [
     {
+      "publicId": "string",
       "accountName": "string",
       "accountType": "string",
+      "tenantId": "string",
       "applicationId": "string",
       "occmRole": "string",
-      "publicId": "string",
-      "tenantId": "string",
       "vsaList": [
         {
-          "name": "string",
           "publicId": "string",
+          "name": "string",
           "workingEnvironmentType": "string"
         }
       ]
@@ -119,30 +120,30 @@ a|
   ],
   "gcpStorageAccounts": [
     {
-      "accessKey": "string",
+      "publicId": "string",
       "accountName": "string",
       "accountType": "string",
-      "occmRole": "string",
-      "publicId": "string",
+      "accessKey": "string",
       "vsaList": [
         {
-          "name": "string",
           "publicId": "string",
+          "name": "string",
           "workingEnvironmentType": "string"
         }
-      ]
+      ],
+      "occmRole": "string"
     }
   ],
   "nssAccounts": [
     {
+      "publicId": "string",
       "accountName": "string",
       "accountType": "string",
       "nssUserName": "string",
-      "publicId": "string",
       "vsaList": [
         {
-          "name": "string",
           "publicId": "string",
+          "name": "string",
           "workingEnvironmentType": "string"
         }
       ]
@@ -169,6 +170,11 @@ AssumeRole
 |Required
 |Description
 
+|roleName
+|string
+|False
+a|
+
 |accountId
 |string
 |False
@@ -176,11 +182,6 @@ a|
 
 |isGov
 |boolean
-|False
-a|
-
-|roleName
-|string
 |False
 a|
 
@@ -198,12 +199,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|name
+|publicId
 |string
 |False
 a|
 
-|publicId
+|name
 |string
 |False
 a|
@@ -227,7 +228,17 @@ AwsAccountResponse
 |Required
 |Description
 
-|accessKey
+|publicId
+|string
+|True
+a|
+
+|accountName
+|string
+|False
+a|
+
+|accountType
 |string
 |False
 a|
@@ -237,12 +248,7 @@ a|
 |False
 a|
 
-|accountName
-|string
-|False
-a|
-
-|accountType
+|accessKey
 |string
 |False
 a|
@@ -257,19 +263,14 @@ a|
 |False
 a|
 
-|publicId
-|string
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
 a|
 
 |subscriptionId
 |string
 |False
-a|
-
-|vsaList
-|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|True
 a|
 
 |===
@@ -286,6 +287,11 @@ AzureAccountResponse
 |Required
 |Description
 
+|publicId
+|string
+|False
+a|
+
 |accountName
 |string
 |False
@@ -296,22 +302,17 @@ a|
 |False
 a|
 
+|tenantId
+|string
+|False
+a|
+
 |applicationId
 |string
 |False
 a|
 
 |occmRole
-|string
-|False
-a|
-
-|publicId
-|string
-|False
-a|
-
-|tenantId
 |string
 |False
 a|
@@ -335,9 +336,9 @@ GcpAccountResponse
 |Required
 |Description
 
-|accessKey
+|publicId
 |string
-|False
+|True
 a|
 
 |accountName
@@ -350,19 +351,19 @@ a|
 |False
 a|
 
-|occmRole
+|accessKey
 |string
 |False
-a|
-
-|publicId
-|string
-|True
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
+a|
+
+|occmRole
+|string
+|False
 a|
 
 |===
@@ -379,6 +380,11 @@ NssAccountResponse
 |Required
 |Description
 
+|publicId
+|string
+|True
+a|
+
 |accountName
 |string
 |False
@@ -392,11 +398,6 @@ a|
 |nssUserName
 |string
 |False
-a|
-
-|publicId
-|string
-|True
 a|
 
 |vsaList

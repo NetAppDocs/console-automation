@@ -7,6 +7,7 @@ summary: 'Retrieve volumes for backup activation'
 ---
 
 = Retrieve volumes for backup activation
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/volumes/volumes-for-backup`#
 
@@ -77,9 +78,14 @@ Status: Default, Default response
 |Required
 |Description
 
-|allowedValuesForVolumesListFilter
-|link:#AllowedValuesForVolumesListFilter[AllowedValuesForVolumesListFilter]
-|False
+|volumes
+|array[link:#VolumeForBackupResponse[VolumeForBackupResponse]]
+|True
+a|
+
+|totalNumberOfVolumes
+|integer
+|True
 a|
 
 |filteredNumberOfVolumes
@@ -92,18 +98,58 @@ a|
 |False
 a|
 
-|totalNumberOfVolumes
-|integer
-|True
-a|
-
-|volumes
-|array[link:#VolumeForBackupResponse[VolumeForBackupResponse]]
-|True
+|allowedValuesForVolumesListFilter
+|link:#AllowedValuesForVolumesListFilter[AllowedValuesForVolumesListFilter]
+|False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "volumes": [
+    {
+      "name": "string",
+      "uuid": "string",
+      "svmName": "string",
+      "size": {
+        "size": 0,
+        "unit": "string"
+      },
+      "usedSize": {
+        "size": 0,
+        "unit": "string"
+      },
+      "state": "string",
+      "providerVolumeType": "string",
+      "volumeType": "string",
+      "isBackupOn": false,
+      "disableReasonBackup": [
+        "string"
+      ]
+    }
+  ],
+  "totalNumberOfVolumes": 0,
+  "allowedValuesForVolumesListFilter": {
+    "volumeTypes": [
+      "string"
+    ],
+    "diskTypes": [
+      "string"
+    ],
+    "svmNames": [
+      "string"
+    ],
+    "volumeStatus": [
+      "string"
+    ]
+  }
+}
+====
 
 == Definitions
 
@@ -150,50 +196,6 @@ a|
 |===
 
 
-[#AllowedValuesForVolumesListFilter]
-[.api-collapsible-fifth-title]
-AllowedValuesForVolumesListFilter
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|diskTypes
-|array[string]
-|False
-a|
-
-|svmNames
-|array[string]
-|False
-a|
-
-|volumeStatus
-|array[string]
-|False
-a|
-
-|volumeTypes
-|array[string]
-|False
-a|
-
-|===
-
-
-[#filteredNumberOfVolumes]
-[.api-collapsible-fifth-title]
-filteredNumberOfVolumes
-
-
-[#hasNextPage]
-[.api-collapsible-fifth-title]
-hasNextPage
-
-
 [#Capacity]
 [.api-collapsible-fifth-title]
 Capacity
@@ -208,14 +210,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -231,32 +231,12 @@ VolumeForBackupResponse
 |Required
 |Description
 
-|disableReasonBackup
-|array[string]
-|True
-a|
-
-|isBackupOn
-|boolean
-|True
-a|
-
 |name
 |string
 |True
 a|
 
-|providerVolumeType
-|string
-|False
-a|
-
-|size
-|link:#Capacity[Capacity]
-|True
-a|
-
-|state
+|uuid
 |string
 |False
 a|
@@ -266,18 +246,82 @@ a|
 |False
 a|
 
+|size
+|link:#Capacity[Capacity]
+|True
+a|
+
 |usedSize
 |link:#Capacity[Capacity]
 |False
 a|
 
-|uuid
+|state
+|string
+|False
+a|
+
+|providerVolumeType
 |string
 |False
 a|
 
 |volumeType
 |string
+|False
+a|
+
+|isBackupOn
+|boolean
+|True
+a|
+
+|disableReasonBackup
+|array[string]
+|True
+a|
+
+|===
+
+
+[#filteredNumberOfVolumes]
+[.api-collapsible-fifth-title]
+filteredNumberOfVolumes
+
+
+[#hasNextPage]
+[.api-collapsible-fifth-title]
+hasNextPage
+
+
+[#AllowedValuesForVolumesListFilter]
+[.api-collapsible-fifth-title]
+AllowedValuesForVolumesListFilter
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|volumeTypes
+|array[string]
+|False
+a|
+
+|diskTypes
+|array[string]
+|False
+a|
+
+|svmNames
+|array[string]
+|False
+a|
+
+|volumeStatus
+|array[string]
 |False
 a|
 

@@ -7,6 +7,7 @@ summary: 'Create a snapshot policy'
 ---
 
 = Create a snapshot policy
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/snapshot-policy`#
 
@@ -44,17 +45,15 @@ a|
 |Required
 |Description
 
-|schedules
-|array[link:#SnapshotPolicyScheduleRequest[SnapshotPolicyScheduleRequest]]
-|True
-a|Snapshot policy schedules
-
-
 |snapshotPolicyName
 |string
 |False
-a|Snapshot policy name
+a|
 
+|schedules
+|array[link:#SnapshotPolicyScheduleRequest[SnapshotPolicyScheduleRequest]]
+|True
+a|
 
 |===
 
@@ -64,10 +63,13 @@ a|Snapshot policy name
 ====
 [source,json,subs=+macros]
 {
+  "snapshotPolicyName": "string",
   "schedules": [
-    {}
-  ],
-  "snapshotPolicyName": "string"
+    {
+      "scheduleType": "string",
+      "retention": 0
+    }
+  ]
 }
 ====
 
@@ -95,17 +97,15 @@ SnapshotPolicyScheduleRequest
 |Required
 |Description
 
-|retention
-|integer
-|True
-a|Snapshot policy retention
-
-
 |scheduleType
 |string
 |True
-a|Snapshot policy schedule type
+a|
 
+|retention
+|integer
+|True
+a|
 
 |===
 

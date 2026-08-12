@@ -7,6 +7,7 @@ summary: 'Retrieve all Cloud Volumes ONTAP configurations'
 ---
 
 = Retrieve all Cloud Volumes ONTAP configurations
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/permutations`#
 
@@ -29,6 +30,26 @@ Status: Default, Default response
 |Required
 |Description
 
+|ontapVersion
+|string
+|True
+a|
+
+|license
+|link:#OntapLicenseType[OntapLicenseType]
+|True
+a|
+
+|instanceType
+|string
+|False
+a|
+
+|region
+|link:#Region[Region]
+|True
+a|
+
 |defaultInstance
 |boolean
 |False
@@ -39,26 +60,6 @@ a|
 |True
 a|
 
-|instanceType
-|string
-|False
-a|
-
-|license
-|link:#OntapLicenseType[OntapLicenseType]
-|True
-a|
-
-|ontapVersion
-|string
-|True
-a|
-
-|region
-|link:#Region[Region]
-|True
-a|
-
 |upgradeableFrom
 |array[string]
 |True
@@ -66,6 +67,40 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "ontapVersion": "string",
+  "license": {
+    "type": "string",
+    "name": "string",
+    "description": "string",
+    "subName": "string",
+    "subDescription": "string",
+    "capacity_limit": "string",
+    "capacityLimit": {
+      "size": 0,
+      "unit": "string"
+    }
+  },
+  "instanceType": "string",
+  "region": {
+    "name": "string",
+    "code": "string",
+    "location": "string",
+    "s3Region": "string"
+  },
+  "features": [
+    "string"
+  ],
+  "upgradeableFrom": [
+    "string"
+  ]
+}
+====
 
 == Definitions
 
@@ -88,14 +123,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -111,22 +144,7 @@ OntapLicenseType
 |Required
 |Description
 
-|capacityLimit
-|link:#Capacity[Capacity]
-|True
-a|
-
-|capacity_limit
-|string
-|False
-a|
-
-|default
-|boolean
-|False
-a|
-
-|description
+|type
 |string
 |False
 a|
@@ -136,12 +154,7 @@ a|
 |False
 a|
 
-|platformLicenseRequired
-|boolean
-|False
-a|
-
-|subDescription
+|description
 |string
 |False
 a|
@@ -151,9 +164,29 @@ a|
 |False
 a|
 
-|type
+|subDescription
 |string
 |False
+a|
+
+|capacity_limit
+|string
+|False
+a|
+
+|platformLicenseRequired
+|boolean
+|False
+a|
+
+|default
+|boolean
+|False
+a|
+
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
 a|
 
 |===
@@ -170,6 +203,11 @@ Region
 |Required
 |Description
 
+|name
+|string
+|True
+a|
+
 |code
 |string
 |False
@@ -178,11 +216,6 @@ a|
 |location
 |string
 |False
-a|
-
-|name
-|string
-|True
 a|
 
 |s3Region

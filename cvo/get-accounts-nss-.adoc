@@ -7,6 +7,7 @@ summary: 'Retrieve an NSS account'
 ---
 
 = Retrieve an NSS account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/nss/{cloudProviderAccountId}`#
 
@@ -47,6 +48,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|publicId
+|string
+|True
+a|
+
 |accountName
 |string
 |False
@@ -62,11 +68,6 @@ a|
 |False
 a|
 
-|publicId
-|string
-|True
-a|
-
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
@@ -80,14 +81,14 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "publicId": "string",
   "accountName": "string",
   "accountType": "string",
   "nssUserName": "string",
-  "publicId": "string",
   "vsaList": [
     {
-      "name": "string",
       "publicId": "string",
+      "name": "string",
       "workingEnvironmentType": "string"
     }
   ]
@@ -112,12 +113,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|name
+|publicId
 |string
 |False
 a|
 
-|publicId
+|name
 |string
 |False
 a|

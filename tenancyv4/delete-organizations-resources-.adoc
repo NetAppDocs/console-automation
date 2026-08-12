@@ -7,6 +7,7 @@ summary: 'Remove a resource from an organization'
 ---
 
 = Remove a resource from an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/resources/{resource_id}`#
 

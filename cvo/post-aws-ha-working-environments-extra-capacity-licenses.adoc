@@ -7,6 +7,7 @@ summary: 'Register an extra capacity license'
 ---
 
 = Register an extra capacity license
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
 

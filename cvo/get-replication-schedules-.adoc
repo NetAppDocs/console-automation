@@ -7,6 +7,7 @@ summary: 'Retrieve the replication schedules of a system'
 ---
 
 = Retrieve the replication schedules of a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/schedules/{workingEnvironmentId}`#
 
@@ -47,22 +48,20 @@ Status: Default, Default response
 |Required
 |Description
 
-|cronJobSchedule
-|link:#CronJobScheduleResponse[CronJobScheduleResponse]
+|name
+|string
 |True
 a|
 
 |description
 |string
 |False
-a|Description
+a|
 
-
-|name
-|string
+|cronJobSchedule
+|link:#CronJobScheduleResponse[CronJobScheduleResponse]
 |True
-a|Specifies the name
-
+a|
 
 |===
 
@@ -72,8 +71,16 @@ a|Specifies the name
 ====
 [source,json,subs=+macros]
 {
+  "name": "string",
+  "description": "string",
   "cronJobSchedule": {
+    "months": [
+      "integer"
+    ],
     "days": [
+      "integer"
+    ],
+    "weekDays": [
       "integer"
     ],
     "hours": [
@@ -81,16 +88,8 @@ a|Specifies the name
     ],
     "minutes": [
       "integer"
-    ],
-    "months": [
-      "integer"
-    ],
-    "weekDays": [
-      "integer"
     ]
-  },
-  "description": "string",
-  "name": "string"
+  }
 }
 ====
 
@@ -112,35 +111,30 @@ CronJobScheduleResponse
 |Required
 |Description
 
-|days
-|array[integer]
-|True
-a|List of days of the month
-
-
-|hours
-|array[integer]
-|True
-a|List of hours
-
-
-|minutes
-|array[integer]
-|True
-a|List of minutes
-
-
 |months
 |array[integer]
 |True
-a|List of months
+a|
 
+|days
+|array[integer]
+|True
+a|
 
 |weekDays
 |array[integer]
 |True
-a|List of week days
+a|
 
+|hours
+|array[integer]
+|True
+a|
+
+|minutes
+|array[integer]
+|True
+a|
 
 |===
 

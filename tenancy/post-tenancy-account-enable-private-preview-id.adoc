@@ -7,6 +7,7 @@ summary: 'Enable private preview for SaaS'
 ---
 
 = Enable private preview for SaaS
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/enable-private-preview/{privatePreviewEnabled}`#
 

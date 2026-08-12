@@ -7,6 +7,7 @@ summary: 'Set up StorageGRID backup to cloud'
 ---
 
 = Set up StorageGRID backup to cloud
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/sgws-cloud-backup-setup`#
 
@@ -44,15 +45,14 @@ a|
 |Required
 |Description
 
-|ipSpace
-|string
-|False
-a|IPspace
-
-
 |sgwsCredentials
 |link:#SgwsCredentialsRequest[SgwsCredentialsRequest]
 |True
+a|
+
+|ipSpace
+|string
+|False
 a|
 
 |===
@@ -63,12 +63,12 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "ipSpace": "string",
   "sgwsCredentials": {
     "accessKey": "string",
     "secretKey": "string",
     "serviceUrl": "string"
-  }
+  },
+  "ipSpace": "string"
 }
 ====
 
@@ -99,20 +99,17 @@ SgwsCredentialsRequest
 |accessKey
 |string
 |True
-a|StorageGRID access key
-
+a|
 
 |secretKey
 |string
 |True
-a|StorageGRID secret key
-
+a|
 
 |serviceUrl
 |string
 |False
-a|StorageGRID endpoint (protocol, FQDN, and port)
-
+a|
 
 |===
 

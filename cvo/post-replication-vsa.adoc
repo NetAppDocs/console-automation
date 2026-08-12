@@ -7,6 +7,7 @@ summary: 'Create a new replication for a Cloud Volumes ONTAP system'
 ---
 
 = Create a new replication for a Cloud Volumes ONTAP system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/vsa`#
 
@@ -39,6 +40,59 @@ a|
 |===
 
 
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "replicationRequest": {
+    "sourceWorkingEnvironmentId": "string",
+    "destinationWorkingEnvironmentId": "string",
+    "sourceInterclusterLifIps": [
+      "string"
+    ],
+    "destinationInterclusterLifIps": [
+      "string"
+    ],
+    "policyName": "string",
+    "scheduleName": "string",
+    "sourceIpSpace": "string",
+    "destinationIpSpace": "string"
+  },
+  "replicationVolume": {
+    "sourceSvmName": "string",
+    "sourceVolumeName": "string",
+    "destinationVolumeName": "string",
+    "destinationAggregateName": "string",
+    "numOfDisksApprovedToAdd": 0,
+    "evCapacityApprovedToAdd": {
+      "totalCapacityToAdd": {
+        "size": 0,
+        "unit": "string"
+      },
+      "addedCapacityToExistingEvDisks": {
+        "size": 0,
+        "unit": "string"
+      },
+      "newRaidForEvInfo": [
+        {
+          "numOfDisks": 0,
+          "diskSize": {
+            "size": 0,
+            "unit": "string"
+          }
+        }
+      ]
+    },
+    "advancedMode": false,
+    "destinationProviderVolumeType": "string",
+    "destinationCapacityTier": "string",
+    "destinationSvmName": "string",
+    "tieringPolicy": "string"
+  }
+}
+====
+
 == Error
 
 ```
@@ -63,59 +117,50 @@ ReplicationRequest
 |Required
 |Description
 
-|destinationInterclusterLifIps
-|array[string]
-|True
-a|Destination intercluster LIF IPs
-
-
-|destinationIpSpace
+|sourceWorkingEnvironmentId
 |string
-|False
-a|Destination IPspace
-
+|True
+a|
 
 |destinationWorkingEnvironmentId
 |string
 |True
-a|Destination system ID
-
-
-|maxTransferRate
-|integer
-|False
-a|Maximum transfer rate limit (KB/s). Use 0 for no limit, otherwise use number between 1024 and 2,147,482,624
-
-
-|policyName
-|string
-|True
-a|SnapMirror policy name
-
-
-|scheduleName
-|string
-|False
-a|Schedule name
-
+a|
 
 |sourceInterclusterLifIps
 |array[string]
 |True
-a|Source intercluster LIF IPs
+a|
 
+|destinationInterclusterLifIps
+|array[string]
+|True
+a|
+
+|policyName
+|string
+|True
+a|
+
+|scheduleName
+|string
+|False
+a|
+
+|maxTransferRate
+|integer
+|False
+a|
 
 |sourceIpSpace
 |string
 |False
-a|Source IPspace
+a|
 
-
-|sourceWorkingEnvironmentId
+|destinationIpSpace
 |string
-|True
-a|Source system ID
-
+|False
+a|
 
 |===
 
@@ -134,14 +179,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -157,16 +200,15 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|numOfDisks
+|integer
+|True
+a|
+
 |diskSize
 |link:#Capacity[Capacity]
 |True
 a|
-
-|numOfDisks
-|integer
-|True
-a|Number of new disks needed for the RAID group
-
 
 |===
 
@@ -182,6 +224,11 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -189,12 +236,6 @@ a|
 
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
-|False
-a|New RAID information
-
-
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
 |False
 a|
 
@@ -210,9 +251,6 @@ a|
 [.api-collapsible-fifth-title]
 minimumCoolingDays
 
-Cooling Days
-
-
 
 [#VsaVolumeRequest]
 [.api-collapsible-fifth-title]
@@ -225,88 +263,75 @@ VsaVolumeRequest
 |Required
 |Description
 
-|advancedMode
-|boolean
-|True
-a|Use advanced allocation for destination volume
-
-
-|destinationAggregateName
+|sourceSvmName
 |string
 |True
-a|Destination aggregate name
+a|
 
-
-|destinationCapacityTier
+|sourceVolumeName
 |string
-|False
-a|Destination aggregate capacity tier
-
-
-|destinationProviderVolumeType
-|string
-|False
-a|Destination provider volume type
-
-
-|destinationSvmName
-|string
-|False
-a|Destination SVM name
-
+|True
+a|
 
 |destinationVolumeName
 |string
 |True
-a|Destination volume name
+a|
 
+|destinationAggregateName
+|string
+|True
+a|
+
+|numOfDisksApprovedToAdd
+|integer
+|True
+a|
 
 |evCapacityApprovedToAdd
 |link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
 |False
 a|
 
+|advancedMode
+|boolean
+|True
+a|
+
+|destinationProviderVolumeType
+|string
+|False
+a|
+
+|destinationCapacityTier
+|string
+|False
+a|
+
+|destinationSvmName
+|string
+|False
+a|
+
 |iops
 |integer
 |False
-a|Provisioned IOPS
-
-
-|minimumCoolingDays
-|link:#minimumCoolingDays[minimumCoolingDays]
-|False
-a|Cooling Days
-
-
-|numOfDisksApprovedToAdd
-|integer
-|True
-a|Maximum number of disks approved to add
-
-
-|sourceSvmName
-|string
-|True
-a|Source SVM name
-
-
-|sourceVolumeName
-|string
-|True
-a|Source volume name
-
+a|
 
 |throughput
 |integer
 |False
-a|Provisioned throughput
-
+a|
 
 |tieringPolicy
 |string
 |False
-a|Tiering policy
+a|
 
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|
 
 |===
 

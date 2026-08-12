@@ -7,6 +7,7 @@ summary: 'Add a new key manager'
 ---
 
 = Add a new key manager
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/encryption/key-managers`#
 
@@ -26,12 +27,12 @@ Adds a new key manager.
 |Required
 |Description
 
-|address
+|name
 |string
 |False
 a|
 
-|name
+|address
 |string
 |False
 a|
@@ -54,8 +55,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "address": "string",
   "name": "string",
+  "address": "string",
   "usernameField": {
     "_1": "string"
   },
@@ -79,7 +80,7 @@ Status: Default, Default response
 |Required
 |Description
 
-|address
+|publicId
 |string
 |False
 a|
@@ -89,12 +90,7 @@ a|
 |False
 a|
 
-|publicId
-|string
-|False
-a|
-
-|status
+|address
 |string
 |False
 a|
@@ -109,6 +105,11 @@ a|
 |False
 a|
 
+|status
+|string
+|False
+a|
+
 |===
 
 
@@ -117,12 +118,12 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "address": "string",
-  "name": "string",
   "publicId": "string",
-  "status": "string",
+  "name": "string",
+  "address": "string",
   "usernameField": "string",
-  "usernameValue": "string"
+  "usernameValue": "string",
+  "status": "string"
 }
 ====
 

@@ -7,6 +7,7 @@ summary: 'Clone an existing volume'
 ---
 
 = Clone an existing volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/clone`#
 
@@ -59,14 +60,12 @@ a|
 |newVolumeName
 |string
 |True
-a|New volume name
-
+a|
 
 |parentSnapshot
 |string
 |False
-a|Snapshot name to use for the clone
-
+a|
 
 |===
 

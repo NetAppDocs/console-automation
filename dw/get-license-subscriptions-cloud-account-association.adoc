@@ -7,6 +7,7 @@ summary: 'Retrieve the associated subscription ID for cloud accounts'
 ---
 
 = Retrieve the associated subscription ID for cloud accounts
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/cloud-account/association`#
 
@@ -17,7 +18,8 @@ Retrieves the associated subscription ID for each cloud account ID.
 **Note:**
 
 * This API authorizes user calls and service calls with a predefined scope only.
- +
+
+{blank} +
 *Token usage:* Either a NetApp Console user token or service token.
 
 

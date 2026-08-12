@@ -7,6 +7,7 @@ summary: 'Re-index the catalog for all of the systems in an account'
 ---
 
 = Re-index the catalog for all of the systems in an account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/catalog/re-index`#
 

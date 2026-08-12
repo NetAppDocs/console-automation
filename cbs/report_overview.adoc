@@ -7,13 +7,14 @@ summary: 'Report endpoints in the NetApp Backup and Recovery REST API'
 ---
 
 = Report endpoints in the NetApp Backup and Recovery REST API
+:imagesdir: ../media/
 
 
 
 The report endpoints enable users to create and retrieve an inventory report for the whole account or a specific list of systems. It is also possible to generate reports for specific storage VMs under a system. You can perform the following operations by using the report endpoints:
 
-* Generate an inventory report
- +
+* Generate an inventory report +
+
 * Retrieve inventory reports
 
 

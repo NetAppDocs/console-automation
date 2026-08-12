@@ -7,6 +7,7 @@ summary: 'Save a system to the NetApp Console database'
 ---
 
 = Save a system to the NetApp Console database
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/discovery/recover`#
 
@@ -26,29 +27,6 @@ Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console d
 |Required
 |Description
 
-|cloudProviderAccount
-|string
-|False
-a|Cloud provider account
-
-
-|clusterCredentials
-|link:#ClusterCredentialsRequest[ClusterCredentialsRequest]
-|True
-a|
-
-|nssAccountId
-|string
-|False
-a|NetApp Support Site (NSS) account
-
-
-|providerAccount
-|string
-|False
-a|ID of the subscription where the VSA is located
-
-
 |region
 |string
 |True
@@ -59,7 +37,27 @@ a|
 |False
 a|
 
+|clusterCredentials
+|link:#ClusterCredentialsRequest[ClusterCredentialsRequest]
+|True
+a|
+
 |tenantId
+|string
+|False
+a|
+
+|providerAccount
+|string
+|False
+a|
+
+|cloudProviderAccount
+|string
+|False
+a|
+
+|nssAccountId
 |string
 |False
 a|
@@ -72,16 +70,16 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "cloudProviderAccount": "string",
-  "clusterCredentials": {
-    "password": "string",
-    "userName": "string"
-  },
-  "nssAccountId": "string",
-  "providerAccount": "string",
   "region": "string",
   "resourceGroupName": "string",
-  "tenantId": "string"
+  "clusterCredentials": {
+    "userName": "string",
+    "password": "string"
+  },
+  "tenantId": "string",
+  "providerAccount": "string",
+  "cloudProviderAccount": "string",
+  "nssAccountId": "string"
 }
 ====
 
@@ -99,7 +97,27 @@ Status: Default, Default response
 |Required
 |Description
 
-|cloudProviderAccount
+|name
+|string
+|True
+a|
+
+|publicId
+|string
+|False
+a|
+
+|tenantPublicId
+|string
+|False
+a|
+
+|region
+|string
+|False
+a|
+
+|vpcId
 |string
 |False
 a|
@@ -114,17 +132,7 @@ a|
 |True
 a|
 
-|isDirectMarketplace
-|link:#isDirectMarketplace[isDirectMarketplace]
-|False
-a|
-
-|name
-|string
-|True
-a|
-
-|nssAccountId
+|resourceGroup
 |string
 |False
 a|
@@ -134,33 +142,47 @@ a|
 |False
 a|
 
-|publicId
+|cloudProviderAccount
 |string
 |False
 a|
 
-|region
+|nssAccountId
 |string
 |False
 a|
 
-|resourceGroup
-|string
-|False
-a|
-
-|tenantPublicId
-|string
-|False
-a|
-
-|vpcId
-|string
+|isDirectMarketplace
+|link:#isDirectMarketplace[isDirectMarketplace]
 |False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "publicId": "string",
+  "tenantPublicId": "string",
+  "region": "string",
+  "vpcId": "string",
+  "clusterAddress": "string",
+  "clusterCredentials": {
+    "userName": "string",
+    "password": "string",
+    "id": 0,
+    "publicId": "string"
+  },
+  "resourceGroup": "string",
+  "providerAccount": "string",
+  "cloudProviderAccount": "string",
+  "nssAccountId": "string"
+}
+====
 
 == Definitions
 
@@ -180,14 +202,14 @@ ClusterCredentialsRequest
 |Required
 |Description
 
-|password
-|string
-|False
-a|
-
 |userName
 |string
 |True
+a|
+
+|password
+|string
+|False
 a|
 
 |===
@@ -204,9 +226,9 @@ ClusterCredentials
 |Required
 |Description
 
-|id
-|integer
-|True
+|userName
+|string
+|False
 a|
 
 |password
@@ -214,12 +236,12 @@ a|
 |True
 a|
 
-|publicId
-|string
-|False
+|id
+|integer
+|True
 a|
 
-|userName
+|publicId
 |string
 |False
 a|

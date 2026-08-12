@@ -7,6 +7,7 @@ summary: 'Create an AWS account'
 ---
 
 = Create an AWS account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/aws`#
 
@@ -54,11 +55,11 @@ a|
 {
   "accountName": "string",
   "providerKeys": {
-    "assumeRoleArn": "string",
     "awsAccessKeys": {
       "accessKey": "string",
       "secretKey": "string"
-    }
+    },
+    "assumeRoleArn": "string"
   },
   "subscriptionId": "string"
 }
@@ -78,7 +79,17 @@ Status: Default, Default response
 |Required
 |Description
 
-|accessKey
+|publicId
+|string
+|True
+a|
+
+|accountName
+|string
+|False
+a|
+
+|accountType
 |string
 |False
 a|
@@ -88,12 +99,7 @@ a|
 |False
 a|
 
-|accountName
-|string
-|False
-a|
-
-|accountType
+|accessKey
 |string
 |False
 a|
@@ -108,19 +114,14 @@ a|
 |False
 a|
 
-|publicId
-|string
+|vsaList
+|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
 a|
 
 |subscriptionId
 |string
 |False
-a|
-
-|vsaList
-|array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|True
 a|
 
 |===
@@ -131,24 +132,24 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "accessKey": "string",
-  "accountId": "string",
+  "publicId": "string",
   "accountName": "string",
   "accountType": "string",
+  "accountId": "string",
+  "accessKey": "string",
   "assumeRole": {
-    "accountId": "string",
-    "roleName": "string"
+    "roleName": "string",
+    "accountId": "string"
   },
   "occmRole": "string",
-  "publicId": "string",
-  "subscriptionId": "string",
   "vsaList": [
     {
-      "name": "string",
       "publicId": "string",
+      "name": "string",
       "workingEnvironmentType": "string"
     }
-  ]
+  ],
+  "subscriptionId": "string"
 }
 ====
 
@@ -194,13 +195,13 @@ AwsKeysRequest
 |Required
 |Description
 
-|assumeRoleArn
-|string
+|awsAccessKeys
+|link:#AwsAccessKeys[AwsAccessKeys]
 |False
 a|
 
-|awsAccessKeys
-|link:#AwsAccessKeys[AwsAccessKeys]
+|assumeRoleArn
+|string
 |False
 a|
 
@@ -218,6 +219,11 @@ AssumeRole
 |Required
 |Description
 
+|roleName
+|string
+|False
+a|
+
 |accountId
 |string
 |False
@@ -225,11 +231,6 @@ a|
 
 |isGov
 |boolean
-|False
-a|
-
-|roleName
-|string
 |False
 a|
 
@@ -247,12 +248,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|name
+|publicId
 |string
 |False
 a|
 
-|publicId
+|name
 |string
 |False
 a|

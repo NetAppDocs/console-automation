@@ -7,6 +7,7 @@ summary: 'Retrieve quotes for a new volume'
 ---
 
 = Retrieve quotes for a new volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes/quote`#
 
@@ -26,90 +27,104 @@ Retrieves quotes for a new volume. Returns the resource quote required for the r
 |Required
 |Description
 
-|aggregateName
+|workingEnvironmentId
 |string
-|False
-a|Optionally choose in which aggregate to create the volume
-
-
-|capacityTier
-|string
-|False
-a|Capacity tier
-
-
-|enableThinProvisioning
-|boolean
-|True
-a|Enable thin provisioning on the volume
-
-
-|initialSize
-|link:#Capacity[Capacity]
-|False
-a|
-
-|iops
-|integer
-|False
-a|Provisioned IOPS
-
-
-|isReplicationFlow
-|boolean
-|True
-a|Is replication flow
-
-
-|name
-|string
-|False
-a|Volume name, unique within the SVM
-
-
-|providerVolumeType
-|string
-|False
-a|Provider volume type
-
-
-|size
-|link:#PositiveCapacity[PositiveCapacity]
 |True
 a|
 
 |svmName
 |string
 |True
-a|SVM name
+a|
 
-
-|throughput
-|integer
-|False
-a|Provisioned throughput
-
-
-|tieringPolicy
+|aggregateName
 |string
 |False
-a|Tiering policy
+a|
 
+|name
+|string
+|False
+a|
+
+|size
+|link:#PositiveCapacity[PositiveCapacity]
+|True
+a|
+
+|initialSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|enableThinProvisioning
+|boolean
+|True
+a|
+
+|providerVolumeType
+|string
+|False
+a|
 
 |verifyNameUniqueness
 |boolean
 |True
-a|Verify volume name uniqueness within the SVM
+a|
 
-
-|workingEnvironmentId
+|capacityTier
 |string
-|True
-a|Cloud Volumes ONTAP system ID
+|False
+a|
 
+|isReplicationFlow
+|boolean
+|True
+a|
+
+|iops
+|integer
+|False
+a|
+
+|throughput
+|integer
+|False
+a|
+
+|tieringPolicy
+|string
+|False
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "workingEnvironmentId": "string",
+  "svmName": "string",
+  "aggregateName": "string",
+  "name": "string",
+  "size": {
+    "size": 0,
+    "unit": "string"
+  },
+  "initialSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "enableThinProvisioning": false,
+  "providerVolumeType": "string",
+  "verifyNameUniqueness": false,
+  "capacityTier": "string",
+  "isReplicationFlow": false,
+  "tieringPolicy": "string"
+}
+====
 
 == Error
 
@@ -125,20 +140,28 @@ Status: Default, Default response
 |Required
 |Description
 
-|aggregateName
-|string
+|numOfDisks
+|integer
 |True
-a|The aggregate on which the requested volume will be created
-
-
-|autoVsaCapacityManagement
-|boolean
-|True
-a|Indicates if automatic Cloud Volumes ONTAP capacity management is enabled
-
+a|
 
 |diskSize
 |link:#Capacity[Capacity]
+|True
+a|
+
+|aggregateName
+|string
+|True
+a|
+
+|newAggregate
+|boolean
+|True
+a|
+
+|autoVsaCapacityManagement
+|boolean
 |True
 a|
 
@@ -147,20 +170,43 @@ a|
 |False
 a|
 
-|newAggregate
-|boolean
-|True
-a|Indicates if the aggregate is a newly created aggregate
-
-
-|numOfDisks
-|integer
-|True
-a|Number of new disks needed
-
-
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "numOfDisks": 0,
+  "diskSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "aggregateName": "string",
+  "newAggregate": false,
+  "autoVsaCapacityManagement": false,
+  "elasticVolumeQuoteResponse": {
+    "totalCapacityToAdd": {
+      "size": 0,
+      "unit": "string"
+    },
+    "addedCapacityToExistingEvDisks": {
+      "size": 0,
+      "unit": "string"
+    },
+    "newRaidForEvInfo": [
+      {
+        "numOfDisks": 0,
+        "diskSize": {
+          "size": 0,
+          "unit": "string"
+        }
+      }
+    ]
+  }
+}
+====
 
 == Definitions
 
@@ -169,32 +215,6 @@ a|Number of new disks needed
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#Capacity]
-[.api-collapsible-fifth-title]
-Capacity
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|size
-|number
-|True
-a|Size
-
-
-|unit
-|string
-|True
-a|Unit
-
-
-|===
-
-
 [#PositiveCapacity]
 [.api-collapsible-fifth-title]
 PositiveCapacity
@@ -209,14 +229,36 @@ PositiveCapacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
+a|
 
+|===
+
+
+[#Capacity]
+[.api-collapsible-fifth-title]
+Capacity
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|size
+|number
+|True
+a|
+
+|unit
+|string
+|True
+a|
 
 |===
 
@@ -232,16 +274,15 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|numOfDisks
+|integer
+|True
+a|
+
 |diskSize
 |link:#Capacity[Capacity]
 |True
 a|
-
-|numOfDisks
-|integer
-|True
-a|Number of new disks needed for the RAID group
-
 
 |===
 
@@ -257,6 +298,11 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -264,12 +310,6 @@ a|
 
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
-|False
-a|New RAID information
-
-
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
 |False
 a|
 

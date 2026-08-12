@@ -7,6 +7,7 @@ summary: 'Move an existing volume'
 ---
 
 = Move an existing volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/move`#
 
@@ -56,49 +57,76 @@ a|
 |Required
 |Description
 
+|targetAggregateName
+|string
+|True
+a|
+
+|numOfDisksToAdd
+|integer
+|True
+a|
+
 |createTargetAggregate
 |boolean
 |True
-a|Specifies if the aggregate is a new target aggregate
+a|
 
-
-|evCapacityApprovedToAdd
-|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
+|newDiskTypeName
+|string
 |False
 a|
 
 |newCapacityTier
 |string
 |False
-a|New capacity tier
-
-
-|newDiskTypeName
-|string
-|False
-a|New disk type for the volume
-
+a|
 
 |newTieringPolicy
 |string
 |False
-a|New tiering policy
+a|
 
-
-|numOfDisksToAdd
-|integer
-|True
-a|Target aggregate number of disks to add
-
-
-|targetAggregateName
-|string
-|True
-a|Target aggregate name
-
+|evCapacityApprovedToAdd
+|link:#ElasticVolumeQuoteInfo[ElasticVolumeQuoteInfo]
+|False
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "targetAggregateName": "string",
+  "numOfDisksToAdd": 0,
+  "createTargetAggregate": false,
+  "newDiskTypeName": "string",
+  "newCapacityTier": "string",
+  "newTieringPolicy": "string",
+  "evCapacityApprovedToAdd": {
+    "totalCapacityToAdd": {
+      "size": 0,
+      "unit": "string"
+    },
+    "addedCapacityToExistingEvDisks": {
+      "size": 0,
+      "unit": "string"
+    },
+    "newRaidForEvInfo": [
+      {
+        "numOfDisks": 0,
+        "diskSize": {
+          "size": 0,
+          "unit": "string"
+        }
+      }
+    ]
+  }
+}
+====
 
 == Error
 
@@ -127,14 +155,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -150,16 +176,15 @@ RaidInfoForEvAggregate
 |Required
 |Description
 
+|numOfDisks
+|integer
+|True
+a|
+
 |diskSize
 |link:#Capacity[Capacity]
 |True
 a|
-
-|numOfDisks
-|integer
-|True
-a|Number of new disks needed for the RAID group
-
 
 |===
 
@@ -175,6 +200,11 @@ ElasticVolumeQuoteInfo
 |Required
 |Description
 
+|totalCapacityToAdd
+|link:#Capacity[Capacity]
+|False
+a|
+
 |addedCapacityToExistingEvDisks
 |link:#Capacity[Capacity]
 |False
@@ -182,12 +212,6 @@ a|
 
 |newRaidForEvInfo
 |array[link:#RaidInfoForEvAggregate[RaidInfoForEvAggregate]]
-|False
-a|New RAID information
-
-
-|totalCapacityToAdd
-|link:#Capacity[Capacity]
 |False
 a|
 

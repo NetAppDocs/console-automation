@@ -7,6 +7,7 @@ summary: 'Retrieve tenants'
 ---
 
 = Retrieve tenants
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenants`#
 
@@ -71,7 +72,13 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
-  "publicId": "string"
+  "publicId": "string",
+  "workingEnvironmentsInformation": {
+    "totalReservedSize": {
+      "size": 0,
+      "unit": "string"
+    }
+  }
 }
 ====
 
@@ -112,13 +119,13 @@ Expands
 |Required
 |Description
 
-|expands
-|array[link:#Expand[Expand]]
+|raw
+|string
 |True
 a|
 
-|raw
-|string
+|expands
+|array[link:#Expand[Expand]]
 |True
 a|
 
@@ -139,14 +146,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -165,8 +170,7 @@ WorkingEnvironmentsInformation
 |regionsCount
 |integer
 |False
-a|Number of regions for which systems exist over this tenant
-
+a|
 
 |totalReservedSize
 |link:#Capacity[Capacity]
@@ -176,8 +180,7 @@ a|
 |workingEnvironmentsCount
 |integer
 |False
-a|Number of systems created over this tenant
-
+a|
 
 |===
 

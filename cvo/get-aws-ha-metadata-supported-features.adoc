@@ -7,6 +7,7 @@ summary: 'Retrieve supported features'
 ---
 
 = Retrieve supported features
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/supported-features`#
 
@@ -71,27 +72,12 @@ Status: Default, Default response
 |Required
 |Description
 
-|awsLocalZones
+|wormSupportedVersion
 |boolean
-|False
-a|
-
-|azureHaManagedDisksSupported
-|boolean
-|False
+|True
 a|
 
 |cbsSupportedVersion
-|boolean
-|False
-a|
-
-|elasticVolumeSupportedAndEnabled
-|boolean
-|False
-a|
-
-|gp3SupportedVersion
 |boolean
 |False
 a|
@@ -101,12 +87,7 @@ a|
 |False
 a|
 
-|isAzureFlashcacheSupported
-|boolean
-|False
-a|
-
-|isAzureZonalSupported
+|tieringWithServiceAccount
 |boolean
 |False
 a|
@@ -116,17 +97,12 @@ a|
 |False
 a|
 
-|tieringWithServiceAccount
+|gp3SupportedVersion
 |boolean
 |False
 a|
 
-|wormSupportedVersion
-|boolean
-|True
-a|
-
-|wormWithBackupSupported
+|elasticVolumeSupportedAndEnabled
 |boolean
 |False
 a|
@@ -136,6 +112,40 @@ a|
 |False
 a|
 
+|isAzureFlashcacheSupported
+|boolean
+|False
+a|
+
+|wormWithBackupSupported
+|boolean
+|False
+a|
+
+|azureHaManagedDisksSupported
+|boolean
+|False
+a|
+
+|awsLocalZones
+|boolean
+|False
+a|
+
+|isAzureZonalSupported
+|boolean
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "wormSupportedVersion": false
+}
+====
 

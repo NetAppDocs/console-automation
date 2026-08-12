@@ -7,6 +7,7 @@ summary: 'Retrieve an active task'
 ---
 
 = Retrieve an active task
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/activeTask/{requestId}`#
 
@@ -47,8 +48,8 @@ Status: Default, Default response
 |Required
 |Description
 
-|actionName
-|string
+|status
+|integer
 |True
 a|
 
@@ -57,16 +58,28 @@ a|
 |True
 a|
 
+|actionName
+|string
+|True
+a|
+
 |error
 |string
 |False
 a|
 
-|status
-|integer
-|True
-a|
-
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "status": 0,
+  "closeTime": 0,
+  "actionName": "string",
+  "error": "string"
+}
+====
 

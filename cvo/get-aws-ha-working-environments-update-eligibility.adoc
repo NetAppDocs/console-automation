@@ -7,6 +7,7 @@ summary: 'Retrieve the eligibility support status of a system'
 ---
 
 = Retrieve the eligibility support status of a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/update-eligibility`#
 

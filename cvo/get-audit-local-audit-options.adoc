@@ -7,6 +7,7 @@ summary: 'Retrieve audit page filter options'
 ---
 
 = Retrieve audit page filter options
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}/options`#
 
@@ -29,6 +30,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|service
+|array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
+|True
+a|
+
 |action
 |array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
 |False
@@ -44,11 +50,6 @@ a|
 |False
 a|
 
-|service
-|array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
-|True
-a|
-
 |user
 |array[link:#CloudCentralAuditOptionsEntryResponse[CloudCentralAuditOptionsEntryResponse]]
 |False
@@ -62,6 +63,13 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "service": [
+    {
+      "column": "string",
+      "identifier": "string",
+      "label": "string"
+    }
+  ],
   "action": [
     {
       "column": "string",
@@ -77,13 +85,6 @@ a|
     }
   ],
   "resource": [
-    {
-      "column": "string",
-      "identifier": "string",
-      "label": "string"
-    }
-  ],
-  "service": [
     {
       "column": "string",
       "identifier": "string",

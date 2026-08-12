@@ -7,6 +7,7 @@ summary: 'Create a new replication for an on-premises system'
 ---
 
 = Create a new replication for an on-premises system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/onprem`#
 
@@ -45,26 +46,26 @@ a|
 [source,json,subs=+macros]
 {
   "replicationRequest": {
-    "destinationInterclusterLifIps": [
-      "string"
-    ],
-    "destinationIpSpace": "string",
+    "sourceWorkingEnvironmentId": "string",
     "destinationWorkingEnvironmentId": "string",
-    "policyName": "string",
-    "scheduleName": "string",
     "sourceInterclusterLifIps": [
       "string"
     ],
+    "destinationInterclusterLifIps": [
+      "string"
+    ],
+    "policyName": "string",
+    "scheduleName": "string",
     "sourceIpSpace": "string",
-    "sourceWorkingEnvironmentId": "string"
+    "destinationIpSpace": "string"
   },
   "replicationVolume": {
-    "destinationAggregateName": "string",
-    "destinationCapacityTier": "string",
-    "destinationSvmName": "string",
-    "destinationVolumeName": "string",
     "sourceSvmName": "string",
     "sourceVolumeName": "string",
+    "destinationVolumeName": "string",
+    "destinationAggregateName": "string",
+    "destinationSvmName": "string",
+    "destinationCapacityTier": "string",
     "tieringPolicy": "string"
   }
 }
@@ -94,59 +95,50 @@ ReplicationRequest
 |Required
 |Description
 
-|destinationInterclusterLifIps
-|array[string]
-|True
-a|Destination intercluster LIF IPs
-
-
-|destinationIpSpace
+|sourceWorkingEnvironmentId
 |string
-|False
-a|Destination IPspace
-
+|True
+a|
 
 |destinationWorkingEnvironmentId
 |string
 |True
-a|Destination system ID
-
-
-|maxTransferRate
-|integer
-|False
-a|Maximum transfer rate limit (KB/s). Use 0 for no limit, otherwise use number between 1024 and 2,147,482,624
-
-
-|policyName
-|string
-|True
-a|SnapMirror policy name
-
-
-|scheduleName
-|string
-|False
-a|Schedule name
-
+a|
 
 |sourceInterclusterLifIps
 |array[string]
 |True
-a|Source intercluster LIF IPs
+a|
 
+|destinationInterclusterLifIps
+|array[string]
+|True
+a|
+
+|policyName
+|string
+|True
+a|
+
+|scheduleName
+|string
+|False
+a|
+
+|maxTransferRate
+|integer
+|False
+a|
 
 |sourceIpSpace
 |string
 |False
-a|Source IPspace
+a|
 
-
-|sourceWorkingEnvironmentId
+|destinationIpSpace
 |string
-|True
-a|Source system ID
-
+|False
+a|
 
 |===
 
@@ -154,9 +146,6 @@ a|Source system ID
 [#minimumCoolingDays]
 [.api-collapsible-fifth-title]
 minimumCoolingDays
-
-Cooling Days
-
 
 
 [#OnPremVolumeRequest]
@@ -170,53 +159,45 @@ OnPremVolumeRequest
 |Required
 |Description
 
-|destinationAggregateName
-|string
-|True
-a|Destination aggregate name
-
-
-|destinationCapacityTier
-|string
-|False
-a|Destination aggregate capacity tier
-
-
-|destinationSvmName
-|string
-|True
-a|Destination SVM name
-
-
-|destinationVolumeName
-|string
-|True
-a|Destination volume name
-
-
-|minimumCoolingDays
-|link:#minimumCoolingDays[minimumCoolingDays]
-|False
-a|Cooling Days
-
-
 |sourceSvmName
 |string
 |True
-a|Source SVM name
-
+a|
 
 |sourceVolumeName
 |string
 |True
-a|Source volume name
+a|
 
+|destinationVolumeName
+|string
+|True
+a|
+
+|destinationAggregateName
+|string
+|True
+a|
+
+|destinationSvmName
+|string
+|True
+a|
+
+|destinationCapacityTier
+|string
+|False
+a|
 
 |tieringPolicy
 |string
 |False
-a|Tiering policy
+a|
 
+|minimumCoolingDays
+|link:#minimumCoolingDays[minimumCoolingDays]
+|False
+a|
 
 |===
 

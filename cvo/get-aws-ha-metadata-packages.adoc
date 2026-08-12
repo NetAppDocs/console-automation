@@ -7,6 +7,7 @@ summary: 'Retrieve packages configuration'
 ---
 
 = Retrieve packages configuration
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/packages`#
 
@@ -53,7 +54,12 @@ Status: Default, Default response
 |Required
 |Description
 
-|capacityTier
+|name
+|string
+|True
+a|
+
+|displayName
 |string
 |False
 a|
@@ -63,22 +69,7 @@ a|
 |False
 a|
 
-|diskSize
-|link:#Capacity[Capacity]
-|True
-a|
-
-|diskType
-|string
-|False
-a|
-
-|displayName
-|string
-|False
-a|
-
-|instanceTenancy
+|licenseType
 |string
 |False
 a|
@@ -88,23 +79,23 @@ a|
 |True
 a|
 
-|iops
-|link:#iops[iops]
-|False
-a|
-
-|licenseType
+|diskType
 |string
 |False
 a|
 
-|name
-|string
+|diskSize
+|link:#Capacity[Capacity]
 |True
 a|
 
-|throughput
-|link:#throughput[throughput]
+|capacityTier
+|string
+|False
+a|
+
+|instanceTenancy
+|string
 |False
 a|
 
@@ -113,8 +104,44 @@ a|
 |False
 a|
 
+|iops
+|link:#iops[iops]
+|False
+a|
+
+|throughput
+|link:#throughput[throughput]
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "displayName": "string",
+  "description": "string",
+  "licenseType": "string",
+  "instanceTypeMapping": [
+    {
+      "region": "string",
+      "instanceType": "string"
+    }
+  ],
+  "diskType": "string",
+  "diskSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "capacityTier": "string",
+  "instanceTenancy": "string",
+  "writingSpeedState": "string"
+}
+====
 
 == Definitions
 
@@ -123,6 +150,30 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#InstanceTypeRegionMapping]
+[.api-collapsible-fifth-title]
+InstanceTypeRegionMapping
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|region
+|string
+|False
+a|
+
+|instanceType
+|string
+|False
+a|
+
+|===
+
+
 [#Capacity]
 [.api-collapsible-fifth-title]
 Capacity
@@ -137,37 +188,11 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
-
-|===
-
-
-[#InstanceTypeRegionMapping]
-[.api-collapsible-fifth-title]
-InstanceTypeRegionMapping
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|instanceType
-|string
-|False
-a|
-
-|region
-|string
-|False
 a|
 
 |===

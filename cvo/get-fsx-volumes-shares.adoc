@@ -7,6 +7,7 @@ summary: 'Retrieve a CIFS share list for an FSx system'
 ---
 
 = Retrieve a CIFS share list for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/shares`#
 
@@ -64,6 +65,11 @@ Status: Default, Default response
 |True
 a|
 
+|volume
+|string
+|False
+a|
+
 |path
 |string
 |False
@@ -72,11 +78,6 @@ a|
 |permissions
 |array[link:#SharePermissions[SharePermissions]]
 |True
-a|
-
-|volume
-|string
-|False
 a|
 
 |===
@@ -88,14 +89,14 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
+  "volume": "string",
   "path": "string",
   "permissions": [
     {
-      "permission": "string",
-      "userOrGroup": "string"
+      "userOrGroup": "string",
+      "permission": "string"
     }
-  ],
-  "volume": "string"
+  ]
 }
 ====
 
@@ -117,12 +118,12 @@ SharePermissions
 |Required
 |Description
 
-|permission
+|userOrGroup
 |string
 |False
 a|
 
-|userOrGroup
+|permission
 |string
 |False
 a|

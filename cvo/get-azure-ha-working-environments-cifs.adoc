@@ -7,6 +7,7 @@ summary: 'Retrieve the CIFS configuration for a system'
 ---
 
 = Retrieve the CIFS configuration for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/cifs`#
 
@@ -53,41 +54,35 @@ Status: Default, Default response
 |Required
 |Description
 
-|activeDirectoryDomain
-|string
-|True
-a|Active Directory domain name
-
-
-|authenticationType
-|string
-|True
-a|Authentication type
-
-
 |dnsDomain
 |string
 |True
-a|DNS domain name
+a|
 
+|activeDirectoryDomain
+|string
+|True
+a|
 
 |ipAddresses
 |array[string]
 |True
-a|DNS server IP addresses
-
+a|
 
 |netBIOS
 |string
 |True
-a|CIFS server NetBIOS name
-
+a|
 
 |organizationalUnit
 |string
 |True
-a|Organizational unit for registration
+a|
 
+|authenticationType
+|string
+|True
+a|
 
 |===
 
@@ -97,14 +92,14 @@ a|Organizational unit for registration
 ====
 [source,json,subs=+macros]
 {
-  "activeDirectoryDomain": "string",
-  "authenticationType": "string",
   "dnsDomain": "string",
+  "activeDirectoryDomain": "string",
   "ipAddresses": [
     "string"
   ],
   "netBIOS": "string",
-  "organizationalUnit": "string"
+  "organizationalUnit": "string",
+  "authenticationType": "string"
 }
 ====
 

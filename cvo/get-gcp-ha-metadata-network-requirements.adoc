@@ -7,6 +7,7 @@ summary: 'Retrieve the minimum number of IP addresses for a system'
 ---
 
 = Retrieve the minimum number of IP addresses for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/network-requirements`#
 
@@ -29,16 +30,25 @@ Status: Default, Default response
 |Required
 |Description
 
-|haVsaMinimumRequiredIps
-|integer
-|False
-a|
-
 |vsaMinimumRequiredIps
 |integer
 |True
 a|
 
+|haVsaMinimumRequiredIps
+|integer
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "vsaMinimumRequiredIps": 0
+}
+====
 

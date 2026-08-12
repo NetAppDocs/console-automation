@@ -7,6 +7,7 @@ summary: 'Send Cloud Volumes ONTAP support data to NetApp support'
 ---
 
 = Send Cloud Volumes ONTAP support data to NetApp support
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/asup/send-Cot-Asup`#
 

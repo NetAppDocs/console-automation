@@ -7,6 +7,7 @@ summary: 'Perform an initial setup with NetApp Console'
 ---
 
 = Perform an initial setup with NetApp Console
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/init`#
 
@@ -44,28 +45,25 @@ a|
 |Required
 |Description
 
+|site
+|string
+|False
+a|
+
 |company
 |string
 |False
-a|Company
+a|
 
+|tenancyAccountId
+|string
+|False
+a|
 
 |proxyUrl
 |link:#ProxyUri[ProxyUri]
 |True
 a|
-
-|site
-|string
-|False
-a|Site
-
-
-|tenancyAccountId
-|string
-|False
-a|Tenancy account ID
-
 
 |===
 
@@ -75,15 +73,15 @@ a|Tenancy account ID
 ====
 [source,json,subs=+macros]
 {
-  "company": "string",
-  "proxyUrl": {
-    "proxyDomain": "string",
-    "proxyPassword": "string",
-    "proxyUserName": "string",
-    "uri": "string"
-  },
   "site": "string",
-  "tenancyAccountId": "string"
+  "company": "string",
+  "tenancyAccountId": "string",
+  "proxyUrl": {
+    "uri": "string",
+    "proxyUserName": "string",
+    "proxyPassword": "string",
+    "proxyDomain": "string"
+  }
 }
 ====
 
@@ -136,12 +134,7 @@ ProxyUri
 |Required
 |Description
 
-|proxyDomain
-|string
-|False
-a|
-
-|proxyPassword
+|uri
 |string
 |False
 a|
@@ -151,7 +144,12 @@ a|
 |False
 a|
 
-|uri
+|proxyPassword
+|string
+|False
+a|
+
+|proxyDomain
 |string
 |False
 a|

@@ -7,6 +7,7 @@ summary: 'Retrieve action parameters'
 ---
 
 = Retrieve action parameters
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/create-request-parameters`#
 
@@ -55,6 +56,17 @@ a|
 |===
 
 
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "parameters": {
+    "traversableAgain": false
+  }
+}
+====
+
 == Definitions
 
 [.api-def-first-level]
@@ -78,14 +90,14 @@ Hash mapping strings to link:#MapStringObject[MapStringObject]
 |Required
 |Description
 
-|empty
-|boolean
-|False
-a|
-
 |traversableAgain
 |boolean
 |True
+a|
+
+|empty
+|boolean
+|False
 a|
 
 |===

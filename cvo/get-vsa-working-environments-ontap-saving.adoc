@@ -7,6 +7,7 @@ summary: 'Retrieve systems ONTAP savings'
 ---
 
 = Retrieve systems ONTAP savings
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/ontap-saving`#
 
@@ -50,8 +51,7 @@ Status: Default, Default response
 |savings
 |array[link:#SavingsInfo[SavingsInfo]]
 |True
-a|List of savings
-
+a|
 
 |===
 
@@ -62,7 +62,13 @@ a|List of savings
 [source,json,subs=+macros]
 {
   "savings": [
-    {}
+    {
+      "name": "string",
+      "monthlySaving": {
+        "amount": 0,
+        "currency": "string"
+      }
+    }
   ]
 }
 ====
@@ -88,14 +94,12 @@ Money
 |amount
 |number
 |True
-a|Amount
-
+a|
 
 |currency
 |string
 |True
-a|Currency
-
+a|
 
 |===
 
@@ -111,16 +115,15 @@ SavingsInfo
 |Required
 |Description
 
+|name
+|string
+|True
+a|
+
 |monthlySaving
 |link:#Money[Money]
 |True
 a|
-
-|name
-|string
-|True
-a|Name of saving element
-
 
 |===
 

@@ -7,6 +7,7 @@ summary: 'Retrieve an Azure VMware Solution private cloud for a subscription'
 ---
 
 = Retrieve an Azure VMware Solution private cloud for a subscription
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/avs-private-clouds`#
 
@@ -52,18 +53,18 @@ Status: Default, Default response
 |True
 a|
 
-|location
-|string
-|False
-a|
-
 |name
 |string
 |False
 a|
 
-|properties
-|link:#AvsPrivateCloudProperties[AvsPrivateCloudProperties]
+|location
+|string
+|False
+a|
+
+|zones
+|array[string]
 |True
 a|
 
@@ -72,8 +73,8 @@ a|
 |True
 a|
 
-|zones
-|array[string]
+|properties
+|link:#AvsPrivateCloudProperties[AvsPrivateCloudProperties]
 |True
 a|
 
@@ -87,6 +88,30 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#tags]
+[.api-collapsible-fifth-title]
+tags
+Hash mapping strings to string
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|traversableAgain
+|boolean
+|False
+a|
+
+|empty
+|boolean
+|False
+a|
+
+|===
+
+
 [#AvsPrivateCloudEndpoints]
 [.api-collapsible-fifth-title]
 AvsPrivateCloudEndpoints
@@ -122,12 +147,12 @@ AvsPrivateCloudManagCluster
 |False
 a|
 
-|clusterSize
+|displayName
 |string
 |False
 a|
 
-|displayName
+|clusterSize
 |string
 |False
 a|
@@ -156,6 +181,11 @@ AvsPrivateCloudProperties
 |Required
 |Description
 
+|provisioningState
+|string
+|False
+a|
+
 |endpoints
 |link:#AvsPrivateCloudEndpoints[AvsPrivateCloudEndpoints]
 |True
@@ -164,35 +194,6 @@ a|
 |managementCluster
 |link:#AvsPrivateCloudManagCluster[AvsPrivateCloudManagCluster]
 |True
-a|
-
-|provisioningState
-|string
-|False
-a|
-
-|===
-
-
-[#tags]
-[.api-collapsible-fifth-title]
-tags
-Hash mapping strings to string
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|empty
-|boolean
-|False
-a|
-
-|traversableAgain
-|boolean
-|False
 a|
 
 |===

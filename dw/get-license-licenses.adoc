@@ -7,6 +7,7 @@ summary: 'Retrieve a license by type'
 ---
 
 = Retrieve a license by type
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/licenses`#
 
@@ -24,6 +25,7 @@ The license endpoints consult the used or consumed capacity under the `includeSu
 * The boolean parameter `fetchNlf` (optional) retrieves the most updated valid NetApp license file from NetApp systems.
 * If you use the boolean parameter `fetchNlf`, you must provide `accountId`, `serialNumber`, and `nssKeyId`.
 * `fetchNlf` and `includeSummaryInfo` can't be provided in the same request.
+
 *Token usage:* Either a NetApp Console user token or service token.
 
 

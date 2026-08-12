@@ -7,6 +7,7 @@ summary: 'Generate a new key pair and self-signed certificate at the key store'
 ---
 
 = Generate a new key pair and self-signed certificate at the key store
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/key-store/external-certificate-file`#
 
@@ -93,6 +94,36 @@ Status: Default, Default response
 |Required
 |Description
 
+|publicId
+|string
+|False
+a|
+
+|directIssuerName
+|string
+|False
+a|
+
+|subjectName
+|string
+|False
+a|
+
+|startDate
+|integer
+|True
+a|
+
+|endDate
+|integer
+|False
+a|
+
+|serialNumber
+|string
+|False
+a|
+
 |certificate
 |string
 |False
@@ -103,38 +134,23 @@ a|
 |False
 a|
 
-|directIssuerName
-|string
-|False
-a|
-
-|endDate
-|integer
-|False
-a|
-
-|publicId
-|string
-|False
-a|
-
-|serialNumber
-|string
-|False
-a|
-
-|startDate
-|integer
-|True
-a|
-
-|subjectName
-|string
-|False
-a|
-
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "publicId": "string",
+  "directIssuerName": "string",
+  "subjectName": "string",
+  "startDate": 0,
+  "serialNumber": "string",
+  "certificate": "string",
+  "certificateType": "string"
+}
+====
 
 == Definitions
 
@@ -143,25 +159,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#headers]
-[.api-collapsible-fifth-title]
-headers
-Hash mapping strings to array[string]
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|empty
-|boolean
-|False
-a|
-
-|===
-
-
 [#parameters]
 [.api-collapsible-fifth-title]
 parameters
@@ -178,9 +175,9 @@ mediaType
 |Required
 |Description
 
-|parameters
-|link:#parameters[parameters]
-|True
+|type
+|string
+|False
 a|
 
 |subtype
@@ -188,17 +185,36 @@ a|
 |False
 a|
 
-|type
-|string
-|False
+|parameters
+|link:#parameters[parameters]
+|True
 a|
 
 |wildcardSubtype
 |boolean
-|False
+|True
 a|
 
 |wildcardType
+|boolean
+|False
+a|
+
+|===
+
+
+[#headers]
+[.api-collapsible-fifth-title]
+headers
+Hash mapping strings to array[string]
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|empty
 |boolean
 |False
 a|
@@ -222,18 +238,18 @@ InputPart
 |True
 a|
 
+|mediaType
+|link:#mediaType[mediaType]
+|True
+a|
+
 |contentTypeFromMessage
 |boolean
-|True
+|False
 a|
 
 |headers
 |link:#headers[headers]
-|True
-a|
-
-|mediaType
-|link:#mediaType[mediaType]
 |True
 a|
 

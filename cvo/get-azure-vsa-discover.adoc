@@ -7,6 +7,7 @@ summary: 'Retrieve a list of discovered systems'
 ---
 
 = Retrieve a list of discovered systems
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/discover`#
 
@@ -59,14 +60,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|byol
-|boolean
-|False
-a|
-
-|clusterAddress
+|name
 |string
-|False
+|True
 a|
 
 |id
@@ -74,19 +70,9 @@ a|
 |False
 a|
 
-|name
-|string
-|True
-a|
-
 |publicId
 |string
 |False
-a|
-
-|recoverable
-|boolean
-|True
 a|
 
 |region
@@ -94,12 +80,12 @@ a|
 |False
 a|
 
-|registered
-|boolean
+|vnetName
+|string
 |False
 a|
 
-|resourceGroup
+|vnetId
 |string
 |False
 a|
@@ -114,16 +100,50 @@ a|
 |False
 a|
 
-|vnetId
+|resourceGroup
 |string
 |False
 a|
 
-|vnetName
+|clusterAddress
 |string
+|False
+a|
+
+|recoverable
+|boolean
+|True
+a|
+
+|byol
+|boolean
+|False
+a|
+
+|registered
+|boolean
 |False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "id": "string",
+  "publicId": "string",
+  "region": "string",
+  "vnetName": "string",
+  "vnetId": "string",
+  "subnetId": "string",
+  "subnetName": "string",
+  "resourceGroup": "string",
+  "clusterAddress": "string",
+  "recoverable": false
+}
+====
 

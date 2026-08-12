@@ -7,6 +7,7 @@ summary: 'Cloud endpoints in the NetApp Backup and Recovery REST API'
 ---
 
 = Cloud endpoints in the NetApp Backup and Recovery REST API
+:imagesdir: ../media/
 
 
 
@@ -14,9 +15,9 @@ The cloud endpoints enable you to retrieve information about various resources o
 
 You can perform the following actions by using the cloud endpoints:
 
-* Retrieve the accounts, AWS region keys, AWS region private links, AWS archival storage class, Azure subscription, Azure subscription regions, Azure subscription resource-group, Azure subscription VNet, Azure subscription vault key, Google Cloud projects, Google Cloud project region, Google KeyRings and more.
- +
-* Create a subscription resource-group.
- +
+* Retrieve the accounts, AWS region keys, AWS region private links, AWS archival storage class, Azure subscription, Azure subscription regions, Azure subscription resource-group, Azure subscription VNet, Azure subscription vault key, Google Cloud projects, Google Cloud project region, Google KeyRings and more. +
+
+* Create a subscription resource-group. +
+
 
 

@@ -7,6 +7,7 @@ summary: 'Create NetApp Support Site key credentials'
 ---
 
 = Create NetApp Support Site key credentials
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-key`#
 

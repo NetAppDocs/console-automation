@@ -7,6 +7,7 @@ summary: 'Retrieve audit group entries'
 ---
 
 = Retrieve audit group entries
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}`#
 
@@ -34,7 +35,7 @@ Status: Default, Default response
 |True
 a|
 
-|action
+|principalId
 |string
 |False
 a|
@@ -49,46 +50,6 @@ a|
 |False
 a|
 
-|endTime
-|link:#endTime[endTime]
-|False
-a|
-
-|errors
-|array[string]
-|True
-a|
-
-|hasFailedRecords
-|boolean
-|False
-a|
-
-|hasRecords
-|boolean
-|False
-a|
-
-|lastModified
-|integer
-|False
-a|
-
-|principalId
-|string
-|False
-a|
-
-|requestData
-|string
-|False
-a|
-
-|requestId
-|string
-|False
-a|
-
 |resourceId
 |string
 |False
@@ -99,7 +60,7 @@ a|
 |False
 a|
 
-|service
+|action
 |string
 |False
 a|
@@ -109,13 +70,76 @@ a|
 |True
 a|
 
+|endTime
+|link:#endTime[endTime]
+|False
+a|
+
 |status
 |string
 |False
 a|
 
+|requestId
+|string
+|False
+a|
+
+|service
+|string
+|False
+a|
+
+|errors
+|array[string]
+|True
+a|
+
+|requestData
+|string
+|False
+a|
+
+|hasRecords
+|boolean
+|False
+a|
+
+|hasFailedRecords
+|boolean
+|False
+a|
+
+|lastModified
+|integer
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string",
+  "principalId": "string",
+  "agentId": "string",
+  "agentName": "string",
+  "resourceId": "string",
+  "resourceName": "string",
+  "action": "string",
+  "startTime": 0,
+  "status": "string",
+  "requestId": "string",
+  "service": "string",
+  "errors": [
+    "string"
+  ],
+  "requestData": "string"
+}
+====
 
 == Definitions
 

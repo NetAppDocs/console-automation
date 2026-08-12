@@ -7,6 +7,7 @@ summary: 'Create a new tenant'
 ---
 
 = Create a new tenant
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenants`#
 
@@ -26,23 +27,20 @@ Creates a new tenant.
 |Required
 |Description
 
-|costCenter
+|name
 |string
 |False
-a|Tenant cost center
-
+a|
 
 |description
 |string
 |False
-a|Tenant description
+a|
 
-
-|name
+|costCenter
 |string
 |False
-a|Tenant name
-
+a|
 
 |nssKeys
 |link:#SetNssKeysRequest[SetNssKeysRequest]
@@ -57,12 +55,12 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "costCenter": "string",
-  "description": "string",
   "name": "string",
+  "description": "string",
+  "costCenter": "string",
   "nssKeys": {
-    "nssPassword": "string",
-    "nssUserName": "string"
+    "nssUserName": "string",
+    "nssPassword": "string"
   }
 }
 ====
@@ -105,7 +103,13 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
-  "publicId": "string"
+  "publicId": "string",
+  "workingEnvironmentsInformation": {
+    "totalReservedSize": {
+      "size": 0,
+      "unit": "string"
+    }
+  }
 }
 ====
 
@@ -127,17 +131,15 @@ SetNssKeysRequest
 |Required
 |Description
 
-|nssPassword
-|string
-|False
-a|NetApp Support Site password
-
-
 |nssUserName
 |string
 |False
-a|NetApp Support Site user name
+a|
 
+|nssPassword
+|string
+|False
+a|
 
 |===
 
@@ -156,14 +158,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -182,8 +182,7 @@ WorkingEnvironmentsInformation
 |regionsCount
 |integer
 |False
-a|Number of regions for which systems exist over this tenant
-
+a|
 
 |totalReservedSize
 |link:#Capacity[Capacity]
@@ -193,8 +192,7 @@ a|
 |workingEnvironmentsCount
 |integer
 |False
-a|Number of systems created over this tenant
-
+a|
 
 |===
 

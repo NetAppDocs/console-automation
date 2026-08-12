@@ -7,6 +7,7 @@ summary: 'Retrieve all license types and their associated instance types'
 ---
 
 = Retrieve all license types and their associated instance types
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/license-instance-type`#
 
@@ -47,21 +48,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|capacityLimit
-|link:#Capacity[Capacity]
-|True
-a|
-
-|description
-|string
-|False
-a|
-
-|instanceTypes
-|array[link:#InstanceTypeInfo[InstanceTypeInfo]]
-|True
-a|
-
 |licenseType
 |string
 |True
@@ -72,8 +58,47 @@ a|
 |False
 a|
 
+|description
+|string
+|False
+a|
+
+|capacityLimit
+|link:#Capacity[Capacity]
+|True
+a|
+
+|instanceTypes
+|array[link:#InstanceTypeInfo[InstanceTypeInfo]]
+|True
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "licenseType": "string",
+  "name": "string",
+  "description": "string",
+  "capacityLimit": {
+    "size": 0,
+    "unit": "string"
+  },
+  "instanceTypes": [
+    {
+      "instanceType": "string",
+      "supportsEncryption": false,
+      "supportedFeatures": [
+        "string"
+      ]
+    }
+  ]
+}
+====
 
 == Definitions
 
@@ -96,14 +121,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -124,9 +147,9 @@ InstanceTypeInfo
 |False
 a|
 
-|isDefault
+|supportsEncryption
 |boolean
-|False
+|True
 a|
 
 |supportedFeatures
@@ -134,9 +157,9 @@ a|
 |True
 a|
 
-|supportsEncryption
+|isDefault
 |boolean
-|True
+|False
 a|
 
 |===

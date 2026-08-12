@@ -7,6 +7,7 @@ summary: 'Validate prerequisites for converting a system'
 ---
 
 = Validate prerequisites for converting a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/validate-byol-to-capacity`#
 
@@ -47,31 +48,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|awsOldDeployment
-|boolean
-|False
-a|
-
-|capacityLicenses
-|array[link:#CapacityLicenseInfo[CapacityLicenseInfo]]
-|True
-a|
-
-|mpSub
-|array[link:#CloudAccountResponse[CloudAccountResponse]]
-|True
-a|
-
-|totalDpVolumes
-|link:#Capacity[Capacity]
-|False
-a|
-
-|totalPrimaryVolumes
-|link:#Capacity[Capacity]
-|True
-a|
-
 |validAccount
 |boolean
 |True
@@ -82,13 +58,77 @@ a|
 |False
 a|
 
+|mpSub
+|array[link:#CloudAccountResponse[CloudAccountResponse]]
+|True
+a|
+
+|capacityLicenses
+|array[link:#CapacityLicenseInfo[CapacityLicenseInfo]]
+|True
+a|
+
+|totalPrimaryVolumes
+|link:#Capacity[Capacity]
+|True
+a|
+
+|totalDpVolumes
+|link:#Capacity[Capacity]
+|False
+a|
+
 |vmPlan
 |string
 |False
 a|
 
+|awsOldDeployment
+|boolean
+|False
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "validAccount": false,
+  "mpSub": [
+    {
+      "cloudAccountId": "string",
+      "provider": "string",
+      "subscriptionId": "string"
+    }
+  ],
+  "capacityLicenses": [
+    {
+      "flavorType": "string",
+      "contractType": "string",
+      "totalLicensedCapacity": {
+        "capacity": 0,
+        "units": "string"
+      },
+      "totalConsumedCapacity": {
+        "capacity": 0,
+        "units": "string"
+      }
+    }
+  ],
+  "totalPrimaryVolumes": {
+    "size": 0,
+    "unit": "string"
+  },
+  "totalDpVolumes": {
+    "size": 0,
+    "unit": "string"
+  },
+  "vmPlan": "string"
+}
+====
 
 == Definitions
 
@@ -97,6 +137,35 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#CloudAccountResponse]
+[.api-collapsible-fifth-title]
+CloudAccountResponse
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cloudAccountId
+|string
+|True
+a|
+
+|provider
+|string
+|False
+a|
+
+|subscriptionId
+|string
+|False
+a|
+
+|===
+
+
 [#TotalCapacity]
 [.api-collapsible-fifth-title]
 TotalCapacity
@@ -132,18 +201,13 @@ CapacityLicenseInfo
 |Required
 |Description
 
-|contractType
-|string
-|False
-a|
-
 |flavorType
 |string
 |False
 a|
 
-|totalConsumedCapacity
-|link:#TotalCapacity[TotalCapacity]
+|contractType
+|string
 |False
 a|
 
@@ -152,32 +216,8 @@ a|
 |True
 a|
 
-|===
-
-
-[#CloudAccountResponse]
-[.api-collapsible-fifth-title]
-CloudAccountResponse
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|cloudAccountId
-|string
-|True
-a|
-
-|provider
-|string
-|False
-a|
-
-|subscriptionId
-|string
+|totalConsumedCapacity
+|link:#TotalCapacity[TotalCapacity]
 |False
 a|
 
@@ -198,14 +238,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 

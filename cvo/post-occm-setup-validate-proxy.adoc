@@ -7,6 +7,7 @@ summary: 'Validate a proxy URL'
 ---
 
 = Validate a proxy URL
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup/validate/proxy`#
 
@@ -26,12 +27,7 @@ Validates the specified proxy URL.
 |Required
 |Description
 
-|proxyDomain
-|string
-|False
-a|
-
-|proxyPassword
+|uri
 |string
 |False
 a|
@@ -41,7 +37,12 @@ a|
 |False
 a|
 
-|uri
+|proxyPassword
+|string
+|False
+a|
+
+|proxyDomain
 |string
 |False
 a|
@@ -54,10 +55,10 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "proxyDomain": "string",
-  "proxyPassword": "string",
+  "uri": "string",
   "proxyUserName": "string",
-  "uri": "string"
+  "proxyPassword": "string",
+  "proxyDomain": "string"
 }
 ====
 

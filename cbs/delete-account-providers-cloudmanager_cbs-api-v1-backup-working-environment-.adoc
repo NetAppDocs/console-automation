@@ -7,6 +7,7 @@ summary: 'Unregister a system'
 ---
 
 = Unregister a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}`#
 

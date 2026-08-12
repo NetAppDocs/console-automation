@@ -7,6 +7,7 @@ summary: 'Create an NSS account'
 ---
 
 = Create an NSS account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/nss`#
 
@@ -51,8 +52,8 @@ a|
 {
   "accountName": "string",
   "providerKeys": {
-    "nssPassword": "string",
-    "nssUserName": "string"
+    "nssUserName": "string",
+    "nssPassword": "string"
   },
   "vsaList": [
     "string"
@@ -74,6 +75,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|publicId
+|string
+|True
+a|
+
 |accountName
 |string
 |False
@@ -89,11 +95,6 @@ a|
 |False
 a|
 
-|publicId
-|string
-|True
-a|
-
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
 |True
@@ -107,14 +108,14 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "publicId": "string",
   "accountName": "string",
   "accountType": "string",
   "nssUserName": "string",
-  "publicId": "string",
   "vsaList": [
     {
-      "name": "string",
       "publicId": "string",
+      "name": "string",
       "workingEnvironmentType": "string"
     }
   ]
@@ -139,14 +140,14 @@ NssAccountCredentials
 |Required
 |Description
 
-|nssPassword
-|string
-|False
-a|
-
 |nssUserName
 |string
 |True
+a|
+
+|nssPassword
+|string
+|False
 a|
 
 |===
@@ -163,12 +164,12 @@ AccountWorkingEnvironmentResponse
 |Required
 |Description
 
-|name
+|publicId
 |string
 |False
 a|
 
-|publicId
+|name
 |string
 |False
 a|

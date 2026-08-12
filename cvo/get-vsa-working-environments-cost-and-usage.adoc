@@ -7,6 +7,7 @@ summary: 'Retrieve systems cost and usage'
 ---
 
 = Retrieve systems cost and usage
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/cost-and-usage`#
 
@@ -59,20 +60,59 @@ Status: Default, Default response
 |Required
 |Description
 
-|costByTime
-|array[link:#CostByTime[CostByTime]]
-|True
-a|System cost and usage details
-
-
 |hasPermissions
 |boolean
 |True
-a|Permissions to view the cost and usage details
+a|
 
+|costByTime
+|array[link:#CostByTime[CostByTime]]
+|True
+a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "hasPermissions": false,
+  "costByTime": [
+    {
+      "start": "string",
+      "end": "string",
+      "estimated": false,
+      "total": {
+        "amount": 0,
+        "currency": "string"
+      },
+      "costByService": [
+        {
+          "name": "string",
+          "total": {
+            "amount": 0,
+            "currency": "string"
+          },
+          "costByUsage": [
+            {
+              "name": "string",
+              "cost": {
+                "amount": 0,
+                "currency": "string"
+              },
+              "usage": {
+                "units": "string"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+====
 
 == Definitions
 
@@ -95,14 +135,12 @@ Money
 |amount
 |number
 |True
-a|Amount
-
+a|
 
 |currency
 |string
 |True
-a|Currency
-
+a|
 
 |===
 
@@ -121,14 +159,12 @@ Usage
 |amount
 |number
 |False
-a|Amount
-
+a|
 
 |units
 |string
 |True
-a|Units
-
+a|
 
 |===
 
@@ -144,16 +180,15 @@ CostByUsage
 |Required
 |Description
 
+|name
+|string
+|True
+a|
+
 |cost
 |link:#Money[Money]
 |True
 a|
-
-|name
-|string
-|True
-a|Breakdown element name
-
 
 |usage
 |link:#Usage[Usage]
@@ -174,20 +209,18 @@ CostByService
 |Required
 |Description
 
-|costByUsage
-|array[link:#CostByUsage[CostByUsage]]
-|True
-a|Cost domain breakdown
-
-
 |name
 |string
 |True
-a|Name of the cost domain (compute, disk/blob storage, object storage, data transfer)
-
+a|
 
 |total
 |link:#Money[Money]
+|True
+a|
+
+|costByUsage
+|array[link:#CostByUsage[CostByUsage]]
 |True
 a|
 
@@ -205,32 +238,28 @@ CostByTime
 |Required
 |Description
 
-|costByService
-|array[link:#CostByService[CostByService]]
+|start
+|string
 |True
-a|Monthly cost and usage details
-
+a|
 
 |end
 |string
 |True
-a|Cost period end date
-
+a|
 
 |estimated
 |boolean
 |True
-a|Indicates whether the cost is estimated
-
-
-|start
-|string
-|True
-a|Cost period start date
-
+a|
 
 |total
 |link:#Money[Money]
+|True
+a|
+
+|costByService
+|array[link:#CostByService[CostByService]]
 |True
 a|
 

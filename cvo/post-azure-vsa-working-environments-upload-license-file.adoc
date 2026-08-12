@@ -7,6 +7,7 @@ summary: 'Upload a cloud license file'
 ---
 
 = Upload a cloud license file
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/upload-license-file`#
 
@@ -86,25 +87,6 @@ Status: Default, Default response
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#headers]
-[.api-collapsible-fifth-title]
-headers
-Hash mapping strings to array[string]
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|empty
-|boolean
-|False
-a|
-
-|===
-
-
 [#parameters]
 [.api-collapsible-fifth-title]
 parameters
@@ -121,9 +103,9 @@ mediaType
 |Required
 |Description
 
-|parameters
-|link:#parameters[parameters]
-|True
+|type
+|string
+|False
 a|
 
 |subtype
@@ -131,17 +113,36 @@ a|
 |False
 a|
 
-|type
-|string
-|False
+|parameters
+|link:#parameters[parameters]
+|True
 a|
 
 |wildcardSubtype
 |boolean
-|False
+|True
 a|
 
 |wildcardType
+|boolean
+|False
+a|
+
+|===
+
+
+[#headers]
+[.api-collapsible-fifth-title]
+headers
+Hash mapping strings to array[string]
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|empty
 |boolean
 |False
 a|
@@ -165,18 +166,18 @@ InputPart
 |True
 a|
 
+|mediaType
+|link:#mediaType[mediaType]
+|True
+a|
+
 |contentTypeFromMessage
 |boolean
-|True
+|False
 a|
 
 |headers
 |link:#headers[headers]
-|True
-a|
-
-|mediaType
-|link:#mediaType[mediaType]
 |True
 a|
 

@@ -7,6 +7,7 @@ summary: 'Retrieve an access token'
 ---
 
 = Retrieve an access token
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/nss-key/{nssKeyId}/access-token`#
 

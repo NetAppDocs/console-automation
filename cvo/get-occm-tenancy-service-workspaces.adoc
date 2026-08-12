@@ -7,6 +7,7 @@ summary: 'Retrieve visible workspaces'
 ---
 
 = Retrieve visible workspaces
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/tenancy-service/workspaces`#
 
@@ -29,8 +30,8 @@ Status: Default, Default response
 |Required
 |Description
 
-|associatedToAgent
-|boolean
+|workspacePublicId
+|string
 |True
 a|
 
@@ -39,11 +40,22 @@ a|
 |False
 a|
 
-|workspacePublicId
-|string
+|associatedToAgent
+|boolean
 |True
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "workspacePublicId": "string",
+  "workspaceName": "string",
+  "associatedToAgent": false
+}
+====
 

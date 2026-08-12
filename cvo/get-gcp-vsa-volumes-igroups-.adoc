@@ -7,6 +7,7 @@ summary: 'Retrieve all igroups'
 ---
 
 = Retrieve all igroups
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/volumes/igroups/{workingEnvironmentId}/{svmName}`#
 
@@ -58,6 +59,16 @@ Status: Default, Default response
 |True
 a|
 
+|osType
+|string
+|False
+a|
+
+|portsetName
+|string
+|False
+a|
+
 |igroupType
 |string
 |True
@@ -68,24 +79,14 @@ a|
 |True
 a|
 
-|initiatorsWithConnStatus
-|array[link:#InitiatorsConnectivityStateNameObject[InitiatorsConnectivityStateNameObject]]
-|True
-a|
-
 |lunMaps
 |array[link:#LunMapsLun[LunMapsLun]]
 |True
 a|
 
-|osType
-|string
-|False
-a|
-
-|portsetName
-|string
-|False
+|initiatorsWithConnStatus
+|array[link:#InitiatorsConnectivityStateNameObject[InitiatorsConnectivityStateNameObject]]
+|True
 a|
 
 |===
@@ -97,17 +98,11 @@ a|
 [source,json,subs=+macros]
 {
   "igroupName": "string",
+  "osType": "string",
+  "portsetName": "string",
   "igroupType": "string",
   "initiators": [
     "string"
-  ],
-  "initiatorsWithConnStatus": [
-    {
-      "connectivity_tracking": {
-        "connection_state": "string"
-      },
-      "name": "string"
-    }
   ],
   "lunMaps": [
     {
@@ -117,8 +112,14 @@ a|
       }
     }
   ],
-  "osType": "string",
-  "portsetName": "string"
+  "initiatorsWithConnStatus": [
+    {
+      "connectivity_tracking": {
+        "connection_state": "string"
+      },
+      "name": "string"
+    }
+  ]
 }
 ====
 
@@ -129,49 +130,6 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#ConnectionState]
-[.api-collapsible-fifth-title]
-ConnectionState
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|connection_state
-|string
-|False
-a|
-
-|===
-
-
-[#InitiatorsConnectivityStateNameObject]
-[.api-collapsible-fifth-title]
-InitiatorsConnectivityStateNameObject
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|connectivity_tracking
-|link:#ConnectionState[ConnectionState]
-|True
-a|
-
-|name
-|string
-|False
-a|
-
-|===
-
-
 [#NameUuidObject]
 [.api-collapsible-fifth-title]
 NameUuidObject
@@ -210,6 +168,49 @@ LunMapsLun
 |lun
 |link:#NameUuidObject[NameUuidObject]
 |True
+a|
+
+|===
+
+
+[#ConnectionState]
+[.api-collapsible-fifth-title]
+ConnectionState
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|connection_state
+|string
+|False
+a|
+
+|===
+
+
+[#InitiatorsConnectivityStateNameObject]
+[.api-collapsible-fifth-title]
+InitiatorsConnectivityStateNameObject
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|connectivity_tracking
+|link:#ConnectionState[ConnectionState]
+|True
+a|
+
+|name
+|string
+|False
 a|
 
 |===

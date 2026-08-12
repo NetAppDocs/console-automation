@@ -7,6 +7,7 @@ summary: 'Retrieve the IBM buckets'
 ---
 
 = Retrieve the IBM buckets
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-ibm-buckets`#
 

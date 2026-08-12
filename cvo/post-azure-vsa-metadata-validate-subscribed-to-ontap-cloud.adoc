@@ -7,6 +7,7 @@ summary: 'Confirm the current user subscription'
 ---
 
 = Confirm the current user subscription
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/metadata/validate-subscribed-to-ontap-cloud`#
 
@@ -26,13 +27,13 @@ Validates that the current user is subscribed to the Cloud Volumes ONTAP product
 |Required
 |Description
 
-|cloudProviderAccount
-|string
-|False
-a|
-
 |region
 |string
+|True
+a|
+
+|vsaMetadata
+|link:#VsaMetadataRequest[VsaMetadataRequest]
 |True
 a|
 
@@ -41,9 +42,9 @@ a|
 |False
 a|
 
-|vsaMetadata
-|link:#VsaMetadataRequest[VsaMetadataRequest]
-|True
+|cloudProviderAccount
+|string
+|False
 a|
 
 |===
@@ -54,18 +55,18 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "cloudProviderAccount": "string",
   "region": "string",
-  "subscriptionId": "string",
   "vsaMetadata": {
-    "capacityPackageName": "string",
-    "instanceType": "string",
-    "keyStoneSubscription": "string",
-    "licenseType": "string",
     "ontapVersion": "string",
+    "licenseType": "string",
+    "instanceType": "string",
     "platformSerialNumber": "string",
-    "providedLicense": "string"
-  }
+    "providedLicense": "string",
+    "capacityPackageName": "string",
+    "keyStoneSubscription": "string"
+  },
+  "subscriptionId": "string",
+  "cloudProviderAccount": "string"
 }
 ====
 
@@ -96,6 +97,16 @@ a|
 |===
 
 
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "failureInfo": "string",
+  "isSubscribed": false
+}
+====
+
 == Definitions
 
 [.api-def-first-level]
@@ -114,53 +125,45 @@ VsaMetadataRequest
 |Required
 |Description
 
-|capacityPackageName
-|string
-|False
-a|Optional capacity-based package
-
-
-|instanceType
+|ontapVersion
 |string
 |True
-a|Instance type
-
-
-|keyStoneSubscription
-|string
-|False
-a|Keystone subscription ID
-
+a|
 
 |licenseType
 |string
 |True
-a|License type
+a|
 
-
-|ontapVersion
+|instanceType
 |string
 |True
-a|ONTAP version
-
+a|
 
 |platformSerialNumber
 |string
 |False
-a|Optional platform serial number
-
+a|
 
 |providedLicense
 |string
 |False
-a|Optional provided license
+a|
 
+|capacityPackageName
+|string
+|False
+a|
+
+|keyStoneSubscription
+|string
+|False
+a|
 
 |useLatestVersion
 |boolean
 |False
-a|Use the latest version
-
+a|
 
 |===
 

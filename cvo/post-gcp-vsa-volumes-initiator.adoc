@@ -7,6 +7,7 @@ summary: 'Add an iSCSI initiator'
 ---
 
 = Add an iSCSI initiator
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/volumes/initiator`#
 
@@ -29,14 +30,12 @@ Adds an iSCSI initiator.
 |aliasName
 |string
 |True
-a|Initiator alias
-
+a|
 
 |iqn
 |string
 |True
-a|Initiator IQN
-
+a|
 
 |===
 

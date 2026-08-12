@@ -7,6 +7,7 @@ summary: 'Set the instance type'
 ---
 
 = Set the instance type
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/license-instance-type`#
 
@@ -47,14 +48,12 @@ a|
 |instanceType
 |string
 |True
-a|New instance type
-
+a|
 
 |licenseType
 |string
 |True
-a|New license type
-
+a|
 
 |===
 

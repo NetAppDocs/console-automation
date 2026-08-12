@@ -7,6 +7,7 @@ summary: 'Perform an initial standalone setup with the local identity provider'
 ---
 
 = Perform an initial standalone setup with the local identity provider
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/init-standalone-local-auth`#
 
@@ -49,12 +50,12 @@ a|
 |True
 a|
 
-|company
+|site
 |string
 |False
 a|
 
-|site
+|company
 |string
 |False
 a|
@@ -69,11 +70,11 @@ a|
 {
   "adminUser": {
     "email": "string",
-    "fullName": "string",
-    "password": "string"
+    "password": "string",
+    "fullName": "string"
   },
-  "company": "string",
-  "site": "string"
+  "site": "string",
+  "company": "string"
 }
 ====
 
@@ -131,14 +132,14 @@ LocalAuthSetupUserRequest
 |False
 a|
 
-|fullName
-|string
-|True
-a|
-
 |password
 |string
 |False
+a|
+
+|fullName
+|string
+|True
 a|
 
 |===

@@ -7,6 +7,7 @@ summary: 'Delete a data broker group'
 ---
 
 = Delete a data broker group
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}`#
 

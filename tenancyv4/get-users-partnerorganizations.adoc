@@ -7,6 +7,7 @@ summary: 'List all partnership organizations for the specified user'
 ---
 
 = List all partnership organizations for the specified user
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}/partnerOrganizations`#
 

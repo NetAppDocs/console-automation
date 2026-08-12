@@ -7,6 +7,7 @@ summary: 'Add disks to an aggregate'
 ---
 
 = Add disks to an aggregate
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/aggregates/{workingEnvironmentId}/{aggregateName}/disks`#
 
@@ -53,11 +54,19 @@ a|
 |numberOfDisks
 |integer
 |True
-a|Number of disks
-
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "numberOfDisks": 0
+}
+====
 
 == Error
 

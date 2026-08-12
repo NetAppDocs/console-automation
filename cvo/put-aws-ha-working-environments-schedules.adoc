@@ -7,6 +7,7 @@ summary: 'Set the schedules for a system'
 ---
 
 = Set the schedules for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/schedules`#
 
@@ -61,7 +62,14 @@ a|
     {
       "name": "string",
       "schedule": [
-        {}
+        {
+          "stop": {
+            "day": 0
+          },
+          "start": {
+            "day": 0
+          }
+        }
       ]
     }
   ]
@@ -121,14 +129,14 @@ StartStopRange
 |Required
 |Description
 
-|start
-|link:#TimePoint[TimePoint]
-|False
-a|
-
 |stop
 |link:#TimePoint[TimePoint]
 |True
+a|
+
+|start
+|link:#TimePoint[TimePoint]
+|False
 a|
 
 |===
@@ -145,11 +153,6 @@ VsaSchedule
 |Required
 |Description
 
-|enabled
-|boolean
-|False
-a|
-
 |name
 |string
 |True
@@ -158,6 +161,11 @@ a|
 |schedule
 |array[link:#StartStopRange[StartStopRange]]
 |True
+a|
+
+|enabled
+|boolean
+|False
 a|
 
 |===

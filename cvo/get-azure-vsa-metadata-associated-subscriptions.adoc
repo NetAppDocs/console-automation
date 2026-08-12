@@ -7,6 +7,7 @@ summary: 'Retrieve associated subscriptions'
 ---
 
 = Retrieve associated subscriptions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/associated-subscriptions`#
 
@@ -47,14 +48,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|default
-|boolean
+|subscriptionId
+|string
 |True
-a|
-
-|highAvailabilityEnabled
-|link:#highAvailabilityEnabled[highAvailabilityEnabled]
-|False
 a|
 
 |name
@@ -62,14 +58,19 @@ a|
 |False
 a|
 
+|default
+|boolean
+|True
+a|
+
 |saasSubscriptionId
 |string
 |False
 a|
 
-|subscriptionId
-|string
-|True
+|highAvailabilityEnabled
+|link:#highAvailabilityEnabled[highAvailabilityEnabled]
+|False
 a|
 
 |vMOrchestratorZonalMultiFDEnabled
@@ -79,6 +80,18 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "subscriptionId": "string",
+  "name": "string",
+  "default": false,
+  "saasSubscriptionId": "string"
+}
+====
 
 == Definitions
 

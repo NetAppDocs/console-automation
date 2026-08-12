@@ -7,6 +7,7 @@ summary: 'Retrieve all vaults'
 ---
 
 = Retrieve all vaults
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/vaults`#
 
@@ -59,29 +60,25 @@ Status: Default, Default response
 |Required
 |Description
 
-|location
-|string
-|True
-a|Location
-
-
 |name
 |string
 |True
-a|Vault name
-
+a|
 
 |resourceGroup
 |string
 |True
-a|Resource group
+a|
 
+|location
+|string
+|True
+a|
 
 |vaultUri
 |string
 |True
-a|Vault URI
-
+a|
 
 |===
 
@@ -91,9 +88,9 @@ a|Vault URI
 ====
 [source,json,subs=+macros]
 {
-  "location": "string",
   "name": "string",
   "resourceGroup": "string",
+  "location": "string",
   "vaultUri": "string"
 }
 ====

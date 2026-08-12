@@ -7,6 +7,7 @@ summary: 'Restart a data broker'
 ---
 
 = Restart a data broker
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/restart`#
 

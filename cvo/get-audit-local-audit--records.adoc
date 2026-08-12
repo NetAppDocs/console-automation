@@ -7,6 +7,7 @@ summary: 'Retrieve an audit record'
 ---
 
 = Retrieve an audit record
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}/{service}/{requestId}/records`#
 
@@ -47,19 +48,19 @@ Status: Default, Default response
 |Required
 |Description
 
+|creationTime
+|integer
+|True
+a|
+
 |action
 |string
 |True
 a|
 
-|count
-|integer
+|status
+|string
 |False
-a|
-
-|creationTime
-|integer
-|True
 a|
 
 |data
@@ -77,11 +78,26 @@ a|
 |False
 a|
 
-|status
-|string
+|count
+|integer
 |False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "creationTime": 0,
+  "action": "string",
+  "status": "string",
+  "data": "string",
+  "errors": [
+    "string"
+  ]
+}
+====
 

@@ -7,6 +7,7 @@ summary: 'Retrieve SnapMirror policies'
 ---
 
 = Retrieve SnapMirror policies
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/metadata/snapmirror-svm-policies/{sourceWorkingEnvironmentId}/{svmName}/{targetWorkingEnvironmentId}`#
 
@@ -59,9 +60,24 @@ Status: Default, Default response
 |Required
 |Description
 
+|name
+|string
+|True
+a|
+
 |comment
 |string
 |False
+a|
+
+|policyType
+|string
+|False
+a|
+
+|rules
+|array[link:#SnapMirrorRuleResponse[SnapMirrorRuleResponse]]
+|True
 a|
 
 |isDefault
@@ -74,24 +90,9 @@ a|
 |False
 a|
 
-|name
-|string
-|True
-a|
-
-|policyType
-|string
-|False
-a|
-
 |reason
 |string
 |False
-a|
-
-|rules
-|array[link:#SnapMirrorRuleResponse[SnapMirrorRuleResponse]]
-|True
 a|
 
 |===
@@ -102,13 +103,16 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "comment": "string",
   "name": "string",
+  "comment": "string",
   "policyType": "string",
-  "reason": "string",
   "rules": [
-    {}
-  ]
+    {
+      "snapMirrorLabel": "string",
+      "retention": 0
+    }
+  ],
+  "reason": "string"
 }
 ====
 
@@ -130,14 +134,14 @@ SnapMirrorRuleResponse
 |Required
 |Description
 
-|retention
-|integer
-|True
-a|
-
 |snapMirrorLabel
 |string
 |False
+a|
+
+|retention
+|integer
+|True
 a|
 
 |===

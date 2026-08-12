@@ -7,6 +7,7 @@ summary: 'NetApp Backup and Recovery REST API'
 ---
 
 = NetApp Backup and Recovery REST API
+:imagesdir: ../media/
 
 
 

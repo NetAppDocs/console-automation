@@ -3,10 +3,11 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-volumes-storage-vms-volumes-sync-avs-host.html'
-summary: 'Synchronize Azure VMware Solution (AVS) hosts'
+summary: 'Synchronize Azure VMware Solution hosts'
 ---
 
-= Synchronize Azure VMware Solution (AVS) hosts
+= Synchronize Azure VMware Solution hosts
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/sync-avs-host`#
 
@@ -56,23 +57,20 @@ a|
 |Required
 |Description
 
-|clusterName
-|string
-|True
-a|Private cloud cluster name
-
-
 |privateCloudName
 |string
 |True
-a|Azure VMware Solution (AVS) private cloud name
+a|
 
+|clusterName
+|string
+|True
+a|
 
 |resourceGroup
 |string
 |True
-a|Private cloud resourceGroup name
-
+a|
 
 |===
 
@@ -82,8 +80,8 @@ a|Private cloud resourceGroup name
 ====
 [source,json,subs=+macros]
 {
-  "clusterName": "string",
   "privateCloudName": "string",
+  "clusterName": "string",
   "resourceGroup": "string"
 }
 ====
@@ -112,8 +110,8 @@ pattern
 |Required
 |Description
 
-|cursor
-|integer
+|pattern
+|string
 |False
 a|
 
@@ -122,8 +120,8 @@ a|
 |True
 a|
 
-|pattern
-|string
+|cursor
+|integer
 |False
 a|
 
@@ -141,13 +139,13 @@ Regex
 |Required
 |Description
 
-|groupNames
-|array[string]
+|pattern
+|link:#pattern[pattern]
 |True
 a|
 
-|pattern
-|link:#pattern[pattern]
+|groupNames
+|array[string]
 |True
 a|
 
@@ -165,14 +163,14 @@ PatternMessage
 |Required
 |Description
 
-|message
-|string
-|False
-a|
-
 |regex
 |link:#Regex[Regex]
 |True
+a|
+
+|message
+|string
+|False
 a|
 
 |===

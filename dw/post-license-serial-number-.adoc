@@ -7,6 +7,7 @@ summary: 'Associate a license'
 ---
 
 = Associate a license
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/serial-number/{serialNumber}`#
 
@@ -26,6 +27,7 @@ Associates a license with the NetApp Console either by providing a NetApp Licens
 * `capacity` is a required field unless you are registered with the NetApp Support Site.
 * `packageValue` is a required field (used only for internal purposes) unless you are registered with the NetApp Support Site.
 * `metadata` is not a required field and is used to add additional data to a license that is not included in other request body fields.
+
 *Token usage:* Either a NetApp Console user token or service token.
 
 

@@ -7,6 +7,7 @@ summary: 'List all users with a specific permission for a resource'
 ---
 
 = List all users with a specific permission for a resource
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resources/{resource_id}/permissions/{permission_id}/users`#
 

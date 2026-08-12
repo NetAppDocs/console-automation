@@ -7,6 +7,7 @@ summary: 'Retrieve all S3 buckets'
 ---
 
 = Retrieve all S3 buckets
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/buckets`#
 
@@ -65,6 +66,19 @@ a|
 |===
 
 
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "bucketName": "string",
+  "region": "string",
+  "tags": {
+    "traversableAgain": false
+  }
+}
+====
+
 == Definitions
 
 [.api-def-first-level]
@@ -83,14 +97,14 @@ Hash mapping strings to string
 |Required
 |Description
 
-|empty
-|boolean
-|False
-a|
-
 |traversableAgain
 |boolean
 |True
+a|
+
+|empty
+|boolean
+|False
 a|
 
 |===

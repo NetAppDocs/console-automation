@@ -7,6 +7,7 @@ summary: 'Update a BYOL license to a capacity-based license'
 ---
 
 = Update a BYOL license to a capacity-based license
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/byol-to-capacity`#
 
@@ -47,12 +48,6 @@ a|
 |capacityPackageName
 |string
 |True
-a|Capacity based package
-
-
-|deleteByNodeByolLicense
-|boolean
-|False
 a|
 
 |sendAsup
@@ -60,8 +55,23 @@ a|
 |True
 a|
 
+|deleteByNodeByolLicense
+|boolean
+|False
+a|
+
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "capacityPackageName": "string",
+  "sendAsup": false
+}
+====
 
 == Error
 

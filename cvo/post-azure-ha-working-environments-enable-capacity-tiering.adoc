@@ -7,6 +7,7 @@ summary: 'Enable capacity tiering'
 ---
 
 = Enable capacity tiering
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/enable-capacity-tiering`#
 
@@ -44,12 +45,12 @@ a|
 |Required
 |Description
 
-|gcpStorageAccountId
+|instanceProfileName
 |string
 |False
 a|
 
-|instanceProfileName
+|gcpStorageAccountId
 |string
 |False
 a|
@@ -67,8 +68,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "gcpStorageAccountId": "string",
   "instanceProfileName": "string",
+  "gcpStorageAccountId": "string",
   "storageAccountPrefix": "string"
 }
 ====

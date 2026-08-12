@@ -7,6 +7,7 @@ summary: 'Set up Azure backup to cloud'
 ---
 
 = Set up Azure backup to cloud
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/azure-cloud-backup-setup`#
 
@@ -44,29 +45,25 @@ a|
 |Required
 |Description
 
+|rgName
+|string
+|False
+a|
+
 |ipSpace
 |string
 |False
-a|IPspace
-
+a|
 
 |region
 |string
 |False
-a|The region. By default, the NetApp Console region.
-
-
-|rgName
-|string
-|False
-a|Azure resource group name. By default, it creates a new resource group.
-
+a|
 
 |subscriptionId
 |string
 |False
-a|The subscription ID. By default, the NetApp Console Azure subscription.
-
+a|
 
 |===
 
@@ -76,9 +73,9 @@ a|The subscription ID. By default, the NetApp Console Azure subscription.
 ====
 [source,json,subs=+macros]
 {
+  "rgName": "string",
   "ipSpace": "string",
   "region": "string",
-  "rgName": "string",
   "subscriptionId": "string"
 }
 ====

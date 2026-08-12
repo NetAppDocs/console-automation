@@ -7,6 +7,7 @@ summary: 'Retrieve AWS encryption keys by region'
 ---
 
 = Retrieve AWS encryption keys by region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/aws-encryption-keys`#
 
@@ -64,17 +65,7 @@ Status: Default, Default response
 |False
 a|
 
-|default
-|boolean
-|False
-a|
-
 |keyId
-|string
-|False
-a|
-
-|origin
 |string
 |False
 a|
@@ -89,6 +80,16 @@ a|
 |False
 a|
 
+|origin
+|string
+|False
+a|
+
+|default
+|boolean
+|False
+a|
+
 |===
 
 
@@ -99,8 +100,8 @@ a|
 {
   "alias": "string",
   "keyId": "string",
-  "origin": "string",
-  "status": "string"
+  "status": "string",
+  "origin": "string"
 }
 ====
 

@@ -7,6 +7,7 @@ summary: 'Add capacity to an elastic volume aggregate'
 ---
 
 = Add capacity to an elastic volume aggregate
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/aggregates/{workingEnvironmentId}/{aggregateName}/add-capacity`#
 
@@ -58,6 +59,18 @@ a|
 |===
 
 
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "capacityToAdd": {
+    "size": 0,
+    "unit": "string"
+  }
+}
+====
+
 == Error
 
 ```
@@ -85,14 +98,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 

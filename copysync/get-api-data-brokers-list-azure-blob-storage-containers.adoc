@@ -7,6 +7,7 @@ summary: 'Retrieve the Azure blob storage containers'
 ---
 
 = Retrieve the Azure blob storage containers
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-azure-blob-storage-containers`#
 

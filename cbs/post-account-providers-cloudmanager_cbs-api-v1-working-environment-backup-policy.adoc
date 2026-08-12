@@ -7,6 +7,7 @@ summary: 'Create a backup policy'
 ---
 
 = Create a backup policy
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/backup-policy`#
 

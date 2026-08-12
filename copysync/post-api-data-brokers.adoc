@@ -7,6 +7,7 @@ summary: 'Create a new installer for the NetApp data broker instance'
 ---
 
 = Create a new installer for the NetApp data broker instance
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/api/data-brokers`#
 

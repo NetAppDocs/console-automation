@@ -7,6 +7,7 @@ summary: 'Create a new FlexCache volume for an FSx system'
 ---
 
 = Create a new FlexCache volume for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/flexcache/fsx`#
 
@@ -26,80 +27,90 @@ Creates a new FlexCache volume in an FSx system.
 |Required
 |Description
 
-|cacheVolumePercentage
-|integer
-|True
-a|FlexCache volume percentage
-
-
-|destinationIpSpace
-|string
-|False
-a|Destination IPspace
-
-
-|destinationSvmName
+|sourceWorkingEnvironmentId
 |string
 |True
-a|Destination SVM name
-
+a|
 
 |destinationWorkingEnvironmentId
 |string
 |True
-a|Destination system ID
-
-
-|nameForSingleVolume
-|string
-|False
-a|FlexCache volume name for a single volume
-
-
-|namePrefix
-|string
-|False
-a|FlexCache name prefix
-
-
-|nameSuffix
-|string
-|False
-a|FlexCache name suffix
-
-
-|replicateNfsCifsShares
-|boolean
-|True
-a|Replicate NFS and CIFS shares as source volume
-
-
-|sourceIpSpace
-|string
-|False
-a|Source IPspace
-
+a|
 
 |sourceSvmName
 |string
 |True
-a|Source SVM name
+a|
 
+|destinationSvmName
+|string
+|True
+a|
+
+|sourceIpSpace
+|string
+|False
+a|
+
+|destinationIpSpace
+|string
+|False
+a|
 
 |sourceVolumes
 |array[string]
 |True
-a|Names of source volumes
+a|
 
-
-|sourceWorkingEnvironmentId
-|string
+|cacheVolumePercentage
+|integer
 |True
-a|Source system ID
+a|
 
+|nameForSingleVolume
+|string
+|False
+a|
+
+|namePrefix
+|string
+|False
+a|
+
+|nameSuffix
+|string
+|False
+a|
+
+|replicateNfsCifsShares
+|boolean
+|True
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "sourceWorkingEnvironmentId": "string",
+  "destinationWorkingEnvironmentId": "string",
+  "sourceSvmName": "string",
+  "destinationSvmName": "string",
+  "sourceIpSpace": "string",
+  "destinationIpSpace": "string",
+  "sourceVolumes": [
+    "string"
+  ],
+  "cacheVolumePercentage": 0,
+  "nameForSingleVolume": "string",
+  "namePrefix": "string",
+  "nameSuffix": "string",
+  "replicateNfsCifsShares": false
+}
+====
 
 == Error
 

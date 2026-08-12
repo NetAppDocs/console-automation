@@ -7,6 +7,7 @@ summary: 'Verify the address and credentials of a cluster'
 ---
 
 = Verify the address and credentials of a cluster
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/metadata/cluster-info`#
 
@@ -59,9 +60,9 @@ Status: Default, Default response
 |Required
 |Description
 
-|clusterIp
+|serialNumber
 |string
-|False
+|True
 a|
 
 |clusterName
@@ -74,9 +75,9 @@ a|
 |False
 a|
 
-|isAdmin
-|boolean
-|True
+|ontapVersion
+|string
+|False
 a|
 
 |nodeModels
@@ -84,16 +85,33 @@ a|
 |True
 a|
 
-|ontapVersion
+|isAdmin
+|boolean
+|True
+a|
+
+|clusterIp
 |string
 |False
 a|
 
-|serialNumber
-|string
-|True
-a|
-
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "serialNumber": "string",
+  "clusterName": "string",
+  "clusterUuid": "string",
+  "ontapVersion": "string",
+  "nodeModels": [
+    "string"
+  ],
+  "isAdmin": false,
+  "clusterIp": "string"
+}
+====
 

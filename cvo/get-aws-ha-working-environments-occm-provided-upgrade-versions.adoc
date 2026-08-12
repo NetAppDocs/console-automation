@@ -7,6 +7,7 @@ summary: 'Retrieve a list of upgrade versions'
 ---
 
 = Retrieve a list of upgrade versions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions`#
 
@@ -47,11 +48,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|autoUpdateAllowed
-|boolean
-|True
-a|
-
 |imageVersion
 |string
 |True
@@ -62,6 +58,22 @@ a|
 |True
 a|
 
+|autoUpdateAllowed
+|boolean
+|True
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "imageVersion": "string",
+  "lastModified": 0,
+  "autoUpdateAllowed": false
+}
+====
 

@@ -7,6 +7,7 @@ summary: 'Retrieve audit groups and group records'
 ---
 
 = Retrieve audit groups and group records
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/auditserver`#
 
@@ -34,17 +35,85 @@ Status: Default, Default response
 |True
 a|
 
+|id
+|string
+|True
+a|
+
+|requestId
+|string
+|True
+a|
+
+|startDate
+|integer
+|True
+a|
+
+|endDate
+|integer
+|False
+a|
+
 |actionName
 |string
 |True
-a|Audit group name
+a|
 
+|status
+|string
+|False
+a|
+
+|userName
+|string
+|False
+a|
+
+|tenantName
+|string
+|False
+a|
+
+|workingEnvironmentName
+|string
+|False
+a|
 
 |actionParameters
 |string
 |False
-a|Parameters of the user action
+a|
 
+|records
+|array[link:#AuditGroupSummaryRecord[AuditGroupSummaryRecord]]
+|True
+a|
+
+|errorMessage
+|string
+|False
+a|
+
+|version
+|string
+|True
+a|
+
+|parentId
+|link:#parentId[parentId]
+|False
+a|
+
+|userId
+|string
+|False
+a|
+
+|workingEnvironmentId
+|string
+|False
+a|
 
 |containsFailedRecords
 |boolean
@@ -56,89 +125,41 @@ a|
 |False
 a|
 
-|endDate
-|integer
-|False
-a|End date
-
-
-|errorMessage
-|string
-|False
-a|Audit failure information (if relevant)
-
-
-|id
-|string
-|True
-a|Audit group public ID
-
-
-|parentId
-|link:#parentId[parentId]
-|False
-a|
-
-|records
-|array[link:#AuditGroupSummaryRecord[AuditGroupSummaryRecord]]
-|True
-a|List of audit records
-
-
-|requestId
-|string
-|True
-a|Request ID of an action associated with the audit group
-
-
-|startDate
-|integer
-|True
-a|Start date
-
-
-|status
-|string
-|False
-a|Audit group status
-
-
-|tenantName
-|string
-|False
-a|Name of the tenant
-
-
-|userId
-|string
-|False
-a|
-
-|userName
-|string
-|False
-a|Name of the user who performed the action
-
-
-|version
-|string
-|True
-a|Version of NetApp Console used to create this audit
-
-
-|workingEnvironmentId
-|string
-|False
-a|
-
-|workingEnvironmentName
-|string
-|False
-a|Name of the system related to the user action
-
-
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "_id": 0,
+  "id": "string",
+  "requestId": "string",
+  "startDate": 0,
+  "actionName": "string",
+  "status": "string",
+  "userName": "string",
+  "tenantName": "string",
+  "workingEnvironmentName": "string",
+  "actionParameters": "string",
+  "records": [
+    {
+      "id": "string",
+      "date": 0,
+      "actionName": "string",
+      "status": "string",
+      "parameters": "string",
+      "errorMessage": "string",
+      "count": 0
+    }
+  ],
+  "errorMessage": "string",
+  "version": "string",
+  "userId": "string",
+  "workingEnvironmentId": "string"
+}
+====
 
 == Definitions
 
@@ -147,11 +168,6 @@ a|Name of the system related to the user action
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
-[#parentId]
-[.api-collapsible-fifth-title]
-parentId
-
-
 [#AuditGroupSummaryRecord]
 [.api-collapsible-fifth-title]
 AuditGroupSummaryRecord
@@ -163,49 +179,47 @@ AuditGroupSummaryRecord
 |Required
 |Description
 
-|actionName
+|id
 |string
 |True
-a|Action
-
-
-|count
-|integer
-|True
-a|Aggregated count of similar records
-
+a|
 
 |date
 |integer
 |True
-a|Date
+a|
 
-
-|errorMessage
-|string
-|False
-a|Audit failure information (if relevant)
-
-
-|id
+|actionName
 |string
 |True
-a|Audit record public ID
-
-
-|parameters
-|string
-|False
-a|Action parameters
-
+a|
 
 |status
 |string
 |True
-a|Status
+a|
 
+|parameters
+|string
+|False
+a|
+
+|errorMessage
+|string
+|False
+a|
+
+|count
+|integer
+|True
+a|
 
 |===
+
+
+[#parentId]
+[.api-collapsible-fifth-title]
+parentId
 
 
 //end collapsible .Definitions block

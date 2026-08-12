@@ -7,6 +7,7 @@ summary: 'Retrieve AWS regions'
 ---
 
 = Retrieve AWS regions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/regions`#
 
@@ -29,6 +30,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|name
+|string
+|True
+a|
+
 |code
 |string
 |False
@@ -37,11 +43,6 @@ a|
 |location
 |string
 |False
-a|
-
-|name
-|string
-|True
 a|
 
 |s3Region
@@ -57,9 +58,9 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "name": "string",
   "code": "string",
   "location": "string",
-  "name": "string",
   "s3Region": "string"
 }
 ====

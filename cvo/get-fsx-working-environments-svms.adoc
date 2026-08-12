@@ -7,6 +7,7 @@ summary: 'Retrieve an SVM list for an FSx system'
 ---
 
 = Retrieve an SVM list for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/svms`#
 
@@ -47,16 +48,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|allowedProtocols
-|array[string]
-|True
-a|
-
-|language
-|string
-|False
-a|
-
 |name
 |string
 |True
@@ -67,6 +58,16 @@ a|
 |False
 a|
 
+|language
+|string
+|False
+a|
+
+|allowedProtocols
+|array[string]
+|True
+a|
+
 |===
 
 
@@ -75,12 +76,12 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "name": "string",
+  "state": "string",
+  "language": "string",
   "allowedProtocols": [
     "string"
-  ],
-  "language": "string",
-  "name": "string",
-  "state": "string"
+  ]
 }
 ====
 

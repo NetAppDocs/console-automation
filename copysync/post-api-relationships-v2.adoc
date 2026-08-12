@@ -7,6 +7,7 @@ summary: 'Create a new relationship'
 ---
 
 = Create a new relationship
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/api/relationships-v2`#
 
@@ -214,6 +215,14 @@ a|
       "storageClass": "string",
       "provider": "string",
       "workingEnvironmentId": "string",
+      "glacier": {
+        "days": 0,
+        "tier": "string"
+      },
+      "deepArchive": {
+        "days": 0,
+        "tier": "string"
+      },
       "credentials": {
         "accessKey": "string",
         "secretKey": "string"
@@ -251,6 +260,17 @@ a|
       "storageClass": "string",
       "kmsKeyName": "string",
       "provider": "string"
+    },
+    "sftp": {
+      "host": "string",
+      "port": 0,
+      "path": "string",
+      "rootDirectory": "string",
+      "provider": "string",
+      "credentials": {
+        "username": "string",
+        "password": "string"
+      }
     },
     "box": {
       "rootDirectory": "string",
@@ -357,6 +377,14 @@ a|
       "storageClass": "string",
       "provider": "string",
       "workingEnvironmentId": "string",
+      "glacier": {
+        "days": 0,
+        "tier": "string"
+      },
+      "deepArchive": {
+        "days": 0,
+        "tier": "string"
+      },
       "credentials": {
         "accessKey": "string",
         "secretKey": "string"
@@ -394,6 +422,17 @@ a|
       "storageClass": "string",
       "kmsKeyName": "string",
       "provider": "string"
+    },
+    "sftp": {
+      "host": "string",
+      "port": 0,
+      "path": "string",
+      "rootDirectory": "string",
+      "provider": "string",
+      "credentials": {
+        "username": "string",
+        "password": "string"
+      }
     },
     "box": {
       "rootDirectory": "string",
@@ -661,6 +700,286 @@ a|
 
 |===
 
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "id": "string",
+  "isCM": "string",
+  "dataBroker": "string",
+  "relationshipId": "string",
+  "source": {
+    "protocol": "string",
+    "cifs": {
+      "host": "string",
+      "share": "string",
+      "provider": "string",
+      "path": "string",
+      "version": "string",
+      "workingEnvironmentId": "string",
+      "credentials": {
+        "username": "string",
+        "password": "string",
+        "domain": "string"
+      }
+    },
+    "nfs": {
+      "host": "string",
+      "export": "string",
+      "provider": "string",
+      "path": "string",
+      "version": "string",
+      "workingEnvironmentId": "string",
+      "accessPoint": "string"
+    },
+    "s3": {
+      "host": "string",
+      "bucket": "string",
+      "prefix": "string",
+      "region": "string",
+      "encryption": {
+        "protocol": "string",
+        "keyId": "string"
+      },
+      "privateLinkDns": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "storageClass": "string",
+      "provider": "string",
+      "workingEnvironmentId": "string",
+      "glacier": {
+        "days": 0,
+        "tier": "string"
+      },
+      "deepArchive": {
+        "days": 0,
+        "tier": "string"
+      }
+    },
+    "local": {
+      "path": "string"
+    },
+    "azure": {
+      "container": "string",
+      "storageAccountName": "string",
+      "prefix": "string",
+      "path": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "blobTier": "string",
+      "provider": "string"
+    },
+    "gcp": {
+      "bucket": "string",
+      "prefix": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "storageClass": "string",
+      "kmsKeyName": "string",
+      "provider": "string"
+    },
+    "gdrive": {
+      "driveId": "string",
+      "driveName": "string",
+      "folderId": "string",
+      "path": "string",
+      "provider": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "subject": "string"
+    },
+    "sftp": {
+      "host": "string",
+      "port": 0,
+      "path": "string",
+      "rootDirectory": "string",
+      "provider": "string"
+    },
+    "box": {
+      "rootDirectory": "string",
+      "path": "string",
+      "folderId": "string",
+      "clientId": "string",
+      "appName": "string",
+      "enterpriseId": "string",
+      "provider": "string"
+    }
+  },
+  "target": {
+    "protocol": "string",
+    "cifs": {
+      "host": "string",
+      "share": "string",
+      "provider": "string",
+      "path": "string",
+      "version": "string",
+      "workingEnvironmentId": "string",
+      "credentials": {
+        "username": "string",
+        "password": "string",
+        "domain": "string"
+      }
+    },
+    "nfs": {
+      "host": "string",
+      "export": "string",
+      "provider": "string",
+      "path": "string",
+      "version": "string",
+      "workingEnvironmentId": "string",
+      "accessPoint": "string"
+    },
+    "s3": {
+      "host": "string",
+      "bucket": "string",
+      "prefix": "string",
+      "region": "string",
+      "encryption": {
+        "protocol": "string",
+        "keyId": "string"
+      },
+      "privateLinkDns": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "storageClass": "string",
+      "provider": "string",
+      "workingEnvironmentId": "string",
+      "glacier": {
+        "days": 0,
+        "tier": "string"
+      },
+      "deepArchive": {
+        "days": 0,
+        "tier": "string"
+      }
+    },
+    "local": {
+      "path": "string"
+    },
+    "azure": {
+      "container": "string",
+      "storageAccountName": "string",
+      "prefix": "string",
+      "path": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "blobTier": "string",
+      "provider": "string"
+    },
+    "gcp": {
+      "bucket": "string",
+      "prefix": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "storageClass": "string",
+      "kmsKeyName": "string",
+      "provider": "string"
+    },
+    "gdrive": {
+      "driveId": "string",
+      "driveName": "string",
+      "folderId": "string",
+      "path": "string",
+      "provider": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "subject": "string"
+    },
+    "sftp": {
+      "host": "string",
+      "port": 0,
+      "path": "string",
+      "rootDirectory": "string",
+      "provider": "string"
+    },
+    "box": {
+      "rootDirectory": "string",
+      "path": "string",
+      "folderId": "string",
+      "clientId": "string",
+      "appName": "string",
+      "enterpriseId": "string",
+      "provider": "string"
+    }
+  },
+  "group": "string",
+  "activity": {
+    "syncType": "string",
+    "status": "string",
+    "type": "string",
+    "endTime": "string",
+    "startTime": "string",
+    "failureMessage": "string",
+    "lastMessageTime": "string",
+    "topFiveMostCommonRelationshipErrors": [
+      {
+        "step": "string",
+        "errorCode": "string",
+        "description": "string"
+      }
+    ],
+    "errors": [
+      {
+        "dataBrokerId": "string",
+        "reason": "string"
+      }
+    ]
+  },
+  "createdAt": 0,
+  "customHeaders": {
+    "x-netapp-external-request-id-src": "string",
+    "x-netapp-external-request-id-trg": "string",
+    "x-source-edge": "string",
+    "x-target-edge": "string",
+    "x-sync-source": "string",
+    "x-sync-target": "string"
+  },
+  "extraInformation": {
+    "dataSenseQueryUid": "string",
+    "connectorId": "string"
+  },
+  "tags": [
+    {
+      "key": "string",
+      "value": "string"
+    }
+  ]
+}
+====
 
 == Definitions
 

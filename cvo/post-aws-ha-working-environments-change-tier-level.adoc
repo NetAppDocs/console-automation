@@ -7,6 +7,7 @@ summary: 'Update the tier level'
 ---
 
 = Update the tier level
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/change-tier-level`#
 
@@ -47,8 +48,7 @@ a|
 |level
 |string
 |True
-a|Update tier level
-
+a|
 
 |===
 

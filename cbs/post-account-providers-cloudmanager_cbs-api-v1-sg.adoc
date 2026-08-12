@@ -7,6 +7,7 @@ summary: 'Discover a new StorageGRID WebScale server'
 ---
 
 = Discover a new StorageGRID WebScale server
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg`#
 

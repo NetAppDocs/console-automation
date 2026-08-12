@@ -7,6 +7,7 @@ summary: 'Delete a snapshot'
 ---
 
 = Delete a snapshot
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
 
@@ -59,8 +60,7 @@ a|
 |snapshotName
 |array[string]
 |True
-a|Snapshot name
-
+a|
 
 |===
 

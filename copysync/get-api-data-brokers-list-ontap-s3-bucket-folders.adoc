@@ -7,6 +7,7 @@ summary: 'Retrieve the ONTAP S3 bucket folders'
 ---
 
 = Retrieve the ONTAP S3 bucket folders
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-ontap-s3-bucket-folders`#
 

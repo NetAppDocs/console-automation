@@ -7,6 +7,7 @@ summary: 'Validate an active internet connection'
 ---
 
 = Validate an active internet connection
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup/validate/connectivity`#
 

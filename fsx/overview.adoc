@@ -7,6 +7,7 @@ summary: 'Amazon FSx for NetApp ONTAP management REST API'
 ---
 
 = Amazon FSx for NetApp ONTAP management REST API
+:imagesdir: ../media/
 
 
 

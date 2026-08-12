@@ -7,6 +7,7 @@ summary: 'Set up a proxy URL'
 ---
 
 = Set up a proxy URL
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/proxy/setup`#
 
@@ -26,7 +27,12 @@ Sets up a specified proxy URL.
 |Required
 |Description
 
-|proxyDomain
+|uri
+|string
+|True
+a|
+
+|proxyUserName
 |string
 |False
 a|
@@ -36,14 +42,9 @@ a|
 |False
 a|
 
-|proxyUserName
+|proxyDomain
 |string
 |False
-a|
-
-|uri
-|string
-|True
 a|
 
 |===
@@ -54,10 +55,10 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "proxyDomain": "string",
-  "proxyPassword": "string",
+  "uri": "string",
   "proxyUserName": "string",
-  "uri": "string"
+  "proxyPassword": "string",
+  "proxyDomain": "string"
 }
 ====
 

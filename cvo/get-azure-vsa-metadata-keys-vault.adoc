@@ -7,6 +7,7 @@ summary: 'Retrieve all keys in a vault'
 ---
 
 = Retrieve all keys in a vault
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/keys-vault`#
 
@@ -68,14 +69,12 @@ Status: Default, Default response
 |keyName
 |string
 |True
-a|Key name
-
+a|
 
 |kid
 |string
 |True
-a|Key id
-
+a|
 
 |===
 

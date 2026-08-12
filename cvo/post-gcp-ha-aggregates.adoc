@@ -7,6 +7,7 @@ summary: 'Create a new aggregate'
 ---
 
 = Create a new aggregate
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/aggregates`#
 
@@ -26,12 +27,27 @@ Creates a new aggregate.
 |Required
 |Description
 
-|capacityTier
+|name
 |string
 |False
 a|
 
+|workingEnvironmentId
+|string
+|True
+a|
+
+|numberOfDisks
+|integer
+|False
+a|
+
 |diskSize
+|link:#Capacity[Capacity]
+|False
+a|
+
+|initialEvAggregateSize
 |link:#Capacity[Capacity]
 |False
 a|
@@ -41,41 +57,24 @@ a|
 |False
 a|
 
-|initialEvAggregateSize
-|link:#Capacity[Capacity]
+|providerVolumeType
+|string
+|False
+a|
+
+|capacityTier
+|string
 |False
 a|
 
 |iops
 |integer
 |False
-a|Provisioned IOPS
-
-
-|name
-|string
-|False
-a|
-
-|numberOfDisks
-|integer
-|False
-a|
-
-|providerVolumeType
-|string
-|False
 a|
 
 |throughput
 |integer
 |False
-a|Provisioned throughput
-
-
-|workingEnvironmentId
-|string
-|True
 a|
 
 |===
@@ -86,11 +85,19 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "capacityTier": "string",
-  "homeNode": "string",
   "name": "string",
+  "workingEnvironmentId": "string",
+  "diskSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "initialEvAggregateSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "homeNode": "string",
   "providerVolumeType": "string",
-  "workingEnvironmentId": "string"
+  "capacityTier": "string"
 }
 ====
 
@@ -121,14 +128,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 

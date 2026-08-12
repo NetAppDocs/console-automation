@@ -7,6 +7,7 @@ summary: 'Retrieve snapshot policies for an FSx system'
 ---
 
 = Retrieve snapshot policies for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/snapshot-policies`#
 
@@ -47,23 +48,20 @@ Status: Default, Default response
 |Required
 |Description
 
-|description
-|string
-|True
-a|Description
-
-
 |name
 |string
 |True
-a|Name
-
+a|
 
 |schedules
 |array[link:#PolicySchedule[PolicySchedule]]
 |True
-a|Schedules
+a|
 
+|description
+|string
+|True
+a|
 
 |===
 
@@ -73,11 +71,14 @@ a|Schedules
 ====
 [source,json,subs=+macros]
 {
-  "description": "string",
   "name": "string",
   "schedules": [
-    {}
-  ]
+    {
+      "frequency": "string",
+      "retention": 0
+    }
+  ],
+  "description": "string"
 }
 ====
 
@@ -102,14 +103,12 @@ PolicySchedule
 |frequency
 |string
 |True
-a|Frequency
-
+a|
 
 |retention
 |integer
 |True
-a|Retention
-
+a|
 
 |===
 

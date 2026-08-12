@@ -7,6 +7,7 @@ summary: 'Link a tenant to a NetApp support site account'
 ---
 
 = Link a tenant to a NetApp support site account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/tenants/{tenantId}/nss-keys`#
 
@@ -44,17 +45,15 @@ a|
 |Required
 |Description
 
-|nssPassword
-|string
-|False
-a|NetApp Support Site password
-
-
 |nssUserName
 |string
 |False
-a|NetApp Support Site user name
+a|
 
+|nssPassword
+|string
+|False
+a|
 
 |===
 
@@ -64,8 +63,8 @@ a|NetApp Support Site user name
 ====
 [source,json,subs=+macros]
 {
-  "nssPassword": "string",
-  "nssUserName": "string"
+  "nssUserName": "string",
+  "nssPassword": "string"
 }
 ====
 
@@ -107,7 +106,13 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
-  "publicId": "string"
+  "publicId": "string",
+  "workingEnvironmentsInformation": {
+    "totalReservedSize": {
+      "size": 0,
+      "unit": "string"
+    }
+  }
 }
 ====
 
@@ -132,14 +137,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -158,8 +161,7 @@ WorkingEnvironmentsInformation
 |regionsCount
 |integer
 |False
-a|Number of regions for which systems exist over this tenant
-
+a|
 
 |totalReservedSize
 |link:#Capacity[Capacity]
@@ -169,8 +171,7 @@ a|
 |workingEnvironmentsCount
 |integer
 |False
-a|Number of systems created over this tenant
-
+a|
 
 |===
 

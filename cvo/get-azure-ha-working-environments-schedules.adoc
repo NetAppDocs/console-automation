@@ -7,6 +7,7 @@ summary: 'List the start/stop schedules for Cloud Volumes ONTAP'
 ---
 
 = List the start/stop schedules for Cloud Volumes ONTAP
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/schedules`#
 
@@ -47,11 +48,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|enabled
-|boolean
-|False
-a|
-
 |name
 |string
 |True
@@ -60,6 +56,11 @@ a|
 |schedule
 |array[link:#StartStopRange[StartStopRange]]
 |True
+a|
+
+|enabled
+|boolean
+|False
 a|
 
 |===
@@ -72,7 +73,14 @@ a|
 {
   "name": "string",
   "schedule": [
-    {}
+    {
+      "stop": {
+        "day": 0
+      },
+      "start": {
+        "day": 0
+      }
+    }
   ]
 }
 ====
@@ -124,14 +132,14 @@ StartStopRange
 |Required
 |Description
 
-|start
-|link:#TimePoint[TimePoint]
-|False
-a|
-
 |stop
 |link:#TimePoint[TimePoint]
 |True
+a|
+
+|start
+|link:#TimePoint[TimePoint]
+|False
 a|
 
 |===

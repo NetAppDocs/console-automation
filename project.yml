@@ -336,26 +336,26 @@ sidebar:
       entries:
       - title: AWS aggregates (HA)
         entries:
+        - title: Add capacity to an elastic volume aggregate
+          url: "/cvo/post-aws-ha-aggregates--add-capacity.html"
         - title: Retrieve aggregates
           url: "/cvo/get-aws-ha-aggregates.html"
         - title: Create a new aggregate
           url: "/cvo/post-aws-ha-aggregates.html"
         - title: Delete an aggregate
           url: "/cvo/delete-aws-ha-aggregates-.html"
-        - title: Add capacity to an elastic volume aggregate
-          url: "/cvo/post-aws-ha-aggregates--add-capacity.html"
         - title: Add disks to an existing aggregate
           url: "/cvo/post-aws-ha-aggregates--disks.html"
       - title: AWS aggregates (single-node)
         entries:
+        - title: Add the capacity to an existing elastic volume aggregate
+          url: "/cvo/post-vsa-aggregates--add-capacity.html"
         - title: Retrieve aggregates
           url: "/cvo/get-vsa-aggregates.html"
         - title: Create a new aggregate
           url: "/cvo/post-vsa-aggregates.html"
         - title: Delete an existing aggregate
           url: "/cvo/delete-vsa-aggregates-.html"
-        - title: Add the capacity to an existing elastic volume aggregate
-          url: "/cvo/post-vsa-aggregates--add-capacity.html"
         - title: Add disks to an existing aggregate
           url: "/cvo/post-vsa-aggregates--disks.html"
       - title: AWS system discovery (HA)
@@ -372,205 +372,208 @@ sidebar:
           url: "/cvo/post-vsa-recover.html"
       - title: AWS system encryption (HA)
         entries:
-        - title: Delete a key manager from a system
-          url: "/cvo/delete-aws-ha-encryption-key-managers-.html"
-        - title: Add a key manager to a system
-          url: "/cvo/post-aws-ha-encryption-key-managers-.html"
-        - title: Update client certificate on a system
-          url: "/cvo/post-aws-ha-encryption-update-client-certificate.html"
         - title: Update the key manager CA certificate on a system
           url: "/cvo/post-aws-ha-encryption-update-key-manager-ca-certificate.html"
+        - title: Update client certificate on a system
+          url: "/cvo/post-aws-ha-encryption-update-client-certificate.html"
+        - title: Add a key manager to a system
+          url: "/cvo/post-aws-ha-encryption-key-managers-.html"
+        - title: Delete a key manager from a system
+          url: "/cvo/delete-aws-ha-encryption-key-managers-.html"
       - title: AWS system encryption (single-node)
         entries:
-        - title: Delete a key manager
-          url: "/cvo/delete-vsa-encryption-key-managers-.html"
-        - title: Add a key manager
-          url: "/cvo/post-vsa-encryption-key-managers-.html"
-        - title: Update the client certificate
-          url: "/cvo/post-vsa-encryption-update-client-certificate.html"
         - title: Update the key manager CA certificate
           url: "/cvo/post-vsa-encryption-update-key-manager-ca-certificate.html"
+        - title: Update the client certificate
+          url: "/cvo/post-vsa-encryption-update-client-certificate.html"
+        - title: Add a key manager
+          url: "/cvo/post-vsa-encryption-key-managers-.html"
+        - title: Delete a key manager
+          url: "/cvo/delete-vsa-encryption-key-managers-.html"
       - title: AWS system metadata (HA)
         entries:
+        - title: Validate HA floating IP addresses
+          url: "/cvo/post-aws-ha-metadata-validate-floating-ips.html"
+        - title: Retrieve route tables per VPC and their subnet associations
+          url: "/cvo/get-aws-ha-metadata-route-tables.html"
+        - title: Retrieve all system configurations
+          url: "/cvo/get-aws-ha-metadata-permutations.html"
+        - title: Retrieve the minimum number of required IP addresses
+          url: "/cvo/get-aws-ha-metadata-network-requirements.html"
         - title: Retrieve AWS encryption keys by region
           url: "/cvo/get-aws-ha-metadata-aws-encryption-keys.html"
-        - title: Retrieve all S3 buckets
-          url: "/cvo/get-aws-ha-metadata-buckets.html"
-        - title: Create a new S3 bucket
-          url: "/cvo/post-aws-ha-metadata-create-bucket.html"
-        - title: Retrieve default snapshot policies available on a cluster
-          url: "/cvo/get-aws-ha-metadata-default-snapshot-policies.html"
-        - title: Retrieve supported EBS volume types
-          url: "/cvo/get-aws-ha-metadata-ebs-volume-types.html"
-        - title: Retrieve the S3 buckets policy status and tiering level
-          url: "/cvo/post-aws-ha-metadata-get-buckets-application-info.html"
+        - title: Confirm the current user subscription
+          url: "/cvo/post-aws-ha-metadata-validate-subscribed-to-ontap-cloud.html"
         - title: Retrieve all S3 buckets with additional information
           url: "/cvo/get-aws-ha-metadata-get-buckets-details.html"
+        - title: Retrieve the S3 buckets policy status and tiering level
+          url: "/cvo/post-aws-ha-metadata-get-buckets-application-info.html"
+        - title: Retrieve supported capacity tiers for EBS volume types
+          url: "/cvo/get-aws-ha-metadata-supported-capacity-tiers.html"
+        - title: Retrieve all S3 buckets
+          url: "/cvo/get-aws-ha-metadata-buckets.html"
         - title: Retrieve AWS instance profiles
           url: "/cvo/get-aws-ha-metadata-instance-profiles.html"
-        - title: Retrieve unsupported instance types for acceleration and capacity
-            tiering
-          url: "/cvo/get-aws-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
         - title: Retrieve AWS user key pairs by region
           url: "/cvo/get-aws-ha-metadata-key-pairs.html"
         - title: Retrieve AWS user key pairs for all regions
           url: "/cvo/get-aws-ha-metadata-key-pairs-by-region.html"
         - title: Retrieve all NetApp Console manifests
           url: "/cvo/get-aws-ha-metadata-manifests.html"
-        - title: Retrieve the minimum number of required IP addresses
-          url: "/cvo/get-aws-ha-metadata-network-requirements.html"
-        - title: Retrieve packages configuration
-          url: "/cvo/get-aws-ha-metadata-packages.html"
-        - title: Retrieve all system configurations
-          url: "/cvo/get-aws-ha-metadata-permutations.html"
-        - title: Retrieve AWS regions
-          url: "/cvo/get-aws-ha-metadata-regions.html"
-        - title: Retrieve route tables per VPC and their subnet associations
-          url: "/cvo/get-aws-ha-metadata-route-tables.html"
-        - title: Retrieve S3 buckets summary
-          url: "/cvo/get-aws-ha-metadata-s3-summary.html"
-        - title: Retrieve supported capacity tiers for EBS volume types
-          url: "/cvo/get-aws-ha-metadata-supported-capacity-tiers.html"
-        - title: Retrieve supported features
-          url: "/cvo/get-aws-ha-metadata-supported-features.html"
-        - title: Retrieve all tag names
-          url: "/cvo/get-aws-ha-metadata-tag-keys.html"
-        - title: Validate HA floating IP addresses
-          url: "/cvo/post-aws-ha-metadata-validate-floating-ips.html"
-        - title: Confirm the current user subscription
-          url: "/cvo/post-aws-ha-metadata-validate-subscribed-to-ontap-cloud.html"
         - title: Retrieve VPCs
           url: "/cvo/get-aws-ha-metadata-vpcs.html"
-      - title: AWS system metadata (single-node)
-        entries:
-        - title: Retrieve AWS encryption keys by region
-          url: "/cvo/get-vsa-metadata-aws-encryption-keys.html"
-        - title: Retrieve all S3 buckets
-          url: "/cvo/get-vsa-metadata-buckets.html"
+        - title: Retrieve S3 buckets summary
+          url: "/cvo/get-aws-ha-metadata-s3-summary.html"
         - title: Create a new S3 bucket
-          url: "/cvo/post-vsa-metadata-create-bucket.html"
-        - title: Retrieve default snapshot policies available on a cluster
-          url: "/cvo/get-vsa-metadata-default-snapshot-policies.html"
+          url: "/cvo/post-aws-ha-metadata-create-bucket.html"
         - title: Retrieve supported EBS volume types
-          url: "/cvo/get-vsa-metadata-ebs-volume-types.html"
-        - title: Retrieve S3 buckets policy status and tiering level
-          url: "/cvo/post-vsa-metadata-get-buckets-application-info.html"
-        - title: Retrieve all S3 buckets
-          url: "/cvo/get-vsa-metadata-get-buckets-details.html"
-        - title: Retrieve AWS instance profiles
-          url: "/cvo/get-vsa-metadata-instance-profiles.html"
+          url: "/cvo/get-aws-ha-metadata-ebs-volume-types.html"
+        - title: Retrieve all tag names
+          url: "/cvo/get-aws-ha-metadata-tag-keys.html"
+        - title: Retrieve AWS regions
+          url: "/cvo/get-aws-ha-metadata-regions.html"
+        - title: Retrieve default snapshot policies available on a cluster
+          url: "/cvo/get-aws-ha-metadata-default-snapshot-policies.html"
         - title: Retrieve unsupported instance types for acceleration and capacity
             tiering
-          url: "/cvo/get-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
+          url: "/cvo/get-aws-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
+        - title: Retrieve supported features
+          url: "/cvo/get-aws-ha-metadata-supported-features.html"
+        - title: Retrieve packages configuration
+          url: "/cvo/get-aws-ha-metadata-packages.html"
+      - title: AWS system metadata (single-node)
+        entries:
+        - title: Retrieve all Cloud Volumes ONTAP configurations
+          url: "/cvo/get-vsa-metadata-permutations.html"
+        - title: Retrieve the minimum number of required IP addresses
+          url: "/cvo/get-vsa-metadata-network-requirements.html"
+        - title: Retrieve AWS encryption keys by region
+          url: "/cvo/get-vsa-metadata-aws-encryption-keys.html"
+        - title: Comfirm that the current user is subscribed
+          url: "/cvo/post-vsa-metadata-validate-subscribed-to-ontap-cloud.html"
+        - title: Retrieve all S3 buckets
+          url: "/cvo/get-vsa-metadata-get-buckets-details.html"
+        - title: Retrieve S3 buckets policy status and tiering level
+          url: "/cvo/post-vsa-metadata-get-buckets-application-info.html"
+        - title: Retrieve supported capacity tiers for EBS volume types
+          url: "/cvo/get-vsa-metadata-supported-capacity-tiers.html"
+        - title: Retrieve all S3 buckets
+          url: "/cvo/get-vsa-metadata-buckets.html"
+        - title: Retrieve AWS instance profiles
+          url: "/cvo/get-vsa-metadata-instance-profiles.html"
         - title: Retrieve AWS user key pairs by region
           url: "/cvo/get-vsa-metadata-key-pairs.html"
         - title: Retrieve AWS user key pairs for all regions
           url: "/cvo/get-vsa-metadata-key-pairs-by-region.html"
         - title: Retrieve all NetApp Console manifests
           url: "/cvo/get-vsa-metadata-manifests.html"
-        - title: Retrieve the minimum number of required IP addresses
-          url: "/cvo/get-vsa-metadata-network-requirements.html"
-        - title: Retrieve package configurations
-          url: "/cvo/get-vsa-metadata-packages.html"
-        - title: Retrieve all Cloud Volumes ONTAP configurations
-          url: "/cvo/get-vsa-metadata-permutations.html"
-        - title: Retrieve AWS regions
-          url: "/cvo/get-vsa-metadata-regions.html"
-        - title: Retrieve S3 buckets summary
-          url: "/cvo/get-vsa-metadata-s3-summary.html"
-        - title: Retrieve supported capacity tiers for EBS volume types
-          url: "/cvo/get-vsa-metadata-supported-capacity-tiers.html"
-        - title: Retrieve supported features
-          url: "/cvo/get-vsa-metadata-supported-features.html"
-        - title: Retrieve all tag names
-          url: "/cvo/get-vsa-metadata-tag-keys.html"
-        - title: Comfirm that the current user is subscribed
-          url: "/cvo/post-vsa-metadata-validate-subscribed-to-ontap-cloud.html"
         - title: Retrieve VPCs
           url: "/cvo/get-vsa-metadata-vpcs.html"
+        - title: Retrieve S3 buckets summary
+          url: "/cvo/get-vsa-metadata-s3-summary.html"
+        - title: Create a new S3 bucket
+          url: "/cvo/post-vsa-metadata-create-bucket.html"
+        - title: Retrieve supported EBS volume types
+          url: "/cvo/get-vsa-metadata-ebs-volume-types.html"
+        - title: Retrieve all tag names
+          url: "/cvo/get-vsa-metadata-tag-keys.html"
+        - title: Retrieve AWS regions
+          url: "/cvo/get-vsa-metadata-regions.html"
+        - title: Retrieve default snapshot policies available on a cluster
+          url: "/cvo/get-vsa-metadata-default-snapshot-policies.html"
+        - title: Retrieve unsupported instance types for acceleration and capacity
+            tiering
+          url: "/cvo/get-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
+        - title: Retrieve supported features
+          url: "/cvo/get-vsa-metadata-supported-features.html"
+        - title: Retrieve package configurations
+          url: "/cvo/get-vsa-metadata-packages.html"
       - title: AWS systems (HA)
         entries:
         - title: Retrieve Cloud Volumes ONTAP systems
           url: "/cvo/get-aws-ha-working-environments.html"
         - title: Create a new AWS HA Cloud Volumes ONTAP system
           url: "/cvo/post-aws-ha-working-environments.html"
-        - title: Parse an uploaded cloud license file
-          url: "/cvo/post-aws-ha-working-environments-parse-license-file.html"
-        - title: Trigger subscription synchronization
-          url: "/cvo/post-aws-ha-working-environments-sync-subscription.html"
-        - title: Delete an existing system
-          url: "/cvo/delete-aws-ha-working-environments-.html"
+        - title: Update the route tables for an HA system
+          url: "/cvo/put-aws-ha-working-environments-route-tables.html"
+        - title: Check for non-persistent locks held on CIFS sessions
+          url: "/cvo/get-aws-ha-working-environments-cifs-locks-exist.html"
+        - title: Update the mediator for a system
+          url: "/cvo/post-aws-ha-working-environments-update-mediator.html"
         - title: Retrieve an HA system
           url: "/cvo/get-aws-ha-working-environments-.html"
-        - title: Activate FPolicy for ransomware files
-          url: "/cvo/put-aws-ha-working-environments-activate-fpolicy.html"
-        - title: Activate snapshot policy assignment for all unprotected read/write
-            volumes
-          url: "/cvo/put-aws-ha-working-environments-activate-snapshot-policy.html"
-        - title: Update a BYOL license to a capacity-based license
-          url: "/cvo/put-aws-ha-working-environments-byol-to-capacity.html"
-        - title: Update the serial number of a system
-          url: "/cvo/post-aws-ha-working-environments-change-serial.html"
-        - title: Update the tier level
-          url: "/cvo/post-aws-ha-working-environments-change-tier-level.html"
+        - title: Delete an existing system
+          url: "/cvo/delete-aws-ha-working-environments-.html"
+        - title: Delete the CIFS configuration for a system
+          url: "/cvo/post-aws-ha-working-environments-delete-cifs.html"
         - title: Retrieve the CIFS configuration for a system
           url: "/cvo/get-aws-ha-working-environments-cifs.html"
         - title: Create a new CIFS configuration for a system
           url: "/cvo/post-aws-ha-working-environments-cifs.html"
-        - title: Check for non-persistent locks held on CIFS sessions
-          url: "/cvo/get-aws-ha-working-environments-cifs-locks-exist.html"
-        - title: Retrieve the system cost and usage
-          url: "/cvo/get-aws-ha-working-environments-cost-and-usage.html"
-        - title: Retrieve action parameters
-          url: "/cvo/get-aws-ha-working-environments-create-request-parameters.html"
-        - title: Delete the CIFS configuration for a system
-          url: "/cvo/post-aws-ha-working-environments-delete-cifs.html"
-        - title: Disable FPolicy for ransomware files
-          url: "/cvo/put-aws-ha-working-environments-disable-fpolicy.html"
-        - title: Enable capacity tiering
-          url: "/cvo/post-aws-ha-working-environments-enable-capacity-tiering.html"
-        - title: Enable SnapLock for a system
-          url: "/cvo/put-aws-ha-working-environments-enable-worm.html"
-        - title: Retrieve extra capacity licenses
-          url: "/cvo/get-aws-ha-working-environments-extra-capacity-licenses.html"
-        - title: Register an extra capacity license
-          url: "/cvo/post-aws-ha-working-environments-extra-capacity-licenses.html"
-        - title: Update an extra capacity license
-          url: "/cvo/put-aws-ha-working-environments-extra-capacity-licenses.html"
-        - title: Delete extra capacity licenses using the serial number
-          url: "/cvo/delete-aws-ha-working-environments-extra-capacity-serials.html"
-        - title: Register extra capacity license serial numbers
-          url: "/cvo/post-aws-ha-working-environments-extra-capacity-serials.html"
-        - title: Update extra capacity license serial numbers
-          url: "/cvo/put-aws-ha-working-environments-extra-capacity-serials.html"
-        - title: Delete FPolicy for ransomware files
-          url: "/cvo/delete-aws-ha-working-environments-fpolicy.html"
+        - title: Validate prerequisites for converting a system
+          url: "/cvo/get-aws-ha-working-environments-validate-byol-to-capacity.html"
+        - title: Set the writing speed for a system
+          url: "/cvo/put-aws-ha-working-environments-writing-speed.html"
         - title: Retrieve all license types and their associated instance types
           url: "/cvo/get-aws-ha-working-environments-license-instance-type.html"
         - title: Set the instance type
           url: "/cvo/put-aws-ha-working-environments-license-instance-type.html"
-        - title: Modify the network port broadcast domain MTU
-          url: "/cvo/put-aws-ha-working-environments-networkoptimization.html"
-        - title: Set up an NTP server
-          url: "/cvo/post-aws-ha-working-environments-ntp.html"
-        - title: Retrieve a list of upgrade versions
-          url: "/cvo/get-aws-ha-working-environments-occm-provided-upgrade-versions.html"
-        - title: Activate an off-box configuration
-          url: "/cvo/put-aws-ha-working-environments-offbox.html"
         - title: Retrieve images already installed on system
           url: "/cvo/get-aws-ha-working-environments-ontap-available-images.html"
+        - title: Perform a complete image update operation
+          url: "/cvo/post-aws-ha-working-environments-update-image.html"
+        - title: Retrieve the eligibility support status of a system
+          url: "/cvo/get-aws-ha-working-environments-update-eligibility.html"
+        - title: Upload a cloud license file
+          url: "/cvo/post-aws-ha-working-environments-upload-license-file.html"
+        - title: Retrieve a list of upgrade versions
+          url: "/cvo/get-aws-ha-working-environments-occm-provided-upgrade-versions.html"
+        - title: Trigger subscription synchronization
+          url: "/cvo/post-aws-ha-working-environments-sync-subscription.html"
+        - title: Upload cloud license file content
+          url: "/cvo/post-aws-ha-working-environments-upload-licenses.html"
+        - title: Activate an off-box configuration
+          url: "/cvo/put-aws-ha-working-environments-offbox.html"
+        - title: Modify the network port broadcast domain MTU
+          url: "/cvo/put-aws-ha-working-environments-networkoptimization.html"
+        - title: Retrieve action parameters
+          url: "/cvo/get-aws-ha-working-environments-create-request-parameters.html"
+        - title: Enable capacity tiering
+          url: "/cvo/post-aws-ha-working-environments-enable-capacity-tiering.html"
+        - title: Retrieve the system cost and usage
+          url: "/cvo/get-aws-ha-working-environments-cost-and-usage.html"
         - title: Retrieve systems ONTAP savings
           url: "/cvo/get-aws-ha-working-environments-ontap-saving.html"
-        - title: Update the route tables for an HA system
-          url: "/cvo/put-aws-ha-working-environments-route-tables.html"
-        - title: List the start/stop schedules for a system
-          url: "/cvo/get-aws-ha-working-environments-schedules.html"
-        - title: Set the schedules for a system
-          url: "/cvo/put-aws-ha-working-environments-schedules.html"
-        - title: Set the cluster password for a system
-          url: "/cvo/put-aws-ha-working-environments-set-password.html"
-        - title: Create a snapshot policy
-          url: "/cvo/post-aws-ha-working-environments-snapshot-policy.html"
+        - title: Retrieve extra capacity licenses
+          url: "/cvo/get-aws-ha-working-environments-extra-capacity-licenses.html"
+        - title: Update an extra capacity license
+          url: "/cvo/put-aws-ha-working-environments-extra-capacity-licenses.html"
+        - title: Register an extra capacity license
+          url: "/cvo/post-aws-ha-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity license serial numbers
+          url: "/cvo/put-aws-ha-working-environments-extra-capacity-serials.html"
+        - title: Register extra capacity license serial numbers
+          url: "/cvo/post-aws-ha-working-environments-extra-capacity-serials.html"
+        - title: Delete extra capacity licenses using the serial number
+          url: "/cvo/delete-aws-ha-working-environments-extra-capacity-serials.html"
+        - title: Update the default Vscan file operation profile
+          url: "/cvo/put-aws-ha-working-environments-vscan-file-op.html"
+        - title: Retrieve editable tags for cloud resources
+          url: "/cvo/get-aws-ha-working-environments-user-tags.html"
+        - title: Modify user tags for cloud resources
+          url: "/cvo/put-aws-ha-working-environments-user-tags.html"
+        - title: Parse an uploaded cloud license file
+          url: "/cvo/post-aws-ha-working-environments-parse-license-file.html"
+        - title: Update the NetApp Console password
+          url: "/cvo/put-aws-ha-working-environments-update-credentials.html"
+        - title: Update the tier level
+          url: "/cvo/post-aws-ha-working-environments-change-tier-level.html"
+        - title: Enable SnapLock for a system
+          url: "/cvo/put-aws-ha-working-environments-enable-worm.html"
+        - title: Update a BYOL license to a capacity-based license
+          url: "/cvo/put-aws-ha-working-environments-byol-to-capacity.html"
+        - title: Set up an NTP server
+          url: "/cvo/post-aws-ha-working-environments-ntp.html"
         - title: Start a specific instance
           url: "/cvo/post-aws-ha-working-environments-start.html"
         - title: Stop a specific instance
@@ -579,108 +582,103 @@ sidebar:
           url: "/cvo/get-aws-ha-working-environments-support-registration.html"
         - title: Register a system with NetApp
           url: "/cvo/post-aws-ha-working-environments-support-registration.html"
+        - title: List the start/stop schedules for a system
+          url: "/cvo/get-aws-ha-working-environments-schedules.html"
+        - title: Set the schedules for a system
+          url: "/cvo/put-aws-ha-working-environments-schedules.html"
         - title: Modify the SVM name of a system
           url: "/cvo/put-aws-ha-working-environments-svm.html"
-        - title: Update the NetApp Console password
-          url: "/cvo/put-aws-ha-working-environments-update-credentials.html"
-        - title: Retrieve the eligibility support status of a system
-          url: "/cvo/get-aws-ha-working-environments-update-eligibility.html"
-        - title: Perform a complete image update operation
-          url: "/cvo/post-aws-ha-working-environments-update-image.html"
-        - title: Update the mediator for a system
-          url: "/cvo/post-aws-ha-working-environments-update-mediator.html"
-        - title: Upload a cloud license file
-          url: "/cvo/post-aws-ha-working-environments-upload-license-file.html"
-        - title: Upload cloud license file content
-          url: "/cvo/post-aws-ha-working-environments-upload-licenses.html"
-        - title: Retrieve editable tags for cloud resources
-          url: "/cvo/get-aws-ha-working-environments-user-tags.html"
-        - title: Modify user tags for cloud resources
-          url: "/cvo/put-aws-ha-working-environments-user-tags.html"
-        - title: Validate prerequisites for converting a system
-          url: "/cvo/get-aws-ha-working-environments-validate-byol-to-capacity.html"
-        - title: Update the default Vscan file operation profile
-          url: "/cvo/put-aws-ha-working-environments-vscan-file-op.html"
-        - title: Set the writing speed for a system
-          url: "/cvo/put-aws-ha-working-environments-writing-speed.html"
+        - title: Activate FPolicy for ransomware files
+          url: "/cvo/put-aws-ha-working-environments-activate-fpolicy.html"
+        - title: Disable FPolicy for ransomware files
+          url: "/cvo/put-aws-ha-working-environments-disable-fpolicy.html"
+        - title: Delete FPolicy for ransomware files
+          url: "/cvo/delete-aws-ha-working-environments-fpolicy.html"
+        - title: Activate snapshot policy assignment for all unprotected read/write
+            volumes
+          url: "/cvo/put-aws-ha-working-environments-activate-snapshot-policy.html"
+        - title: Create a snapshot policy
+          url: "/cvo/post-aws-ha-working-environments-snapshot-policy.html"
+        - title: Update the serial number of a system
+          url: "/cvo/post-aws-ha-working-environments-change-serial.html"
+        - title: Set the cluster password for a system
+          url: "/cvo/put-aws-ha-working-environments-set-password.html"
       - title: AWS systems (single-node)
         entries:
-        - title: Retrieve Cloud Volumes ONTAP systems
-          url: "/cvo/get-vsa-working-environments.html"
-        - title: Create a new Cloud Volumes ONTAP system
-          url: "/cvo/post-vsa-working-environments.html"
-        - title: Parse an uploaded cloud license file
-          url: "/cvo/post-vsa-working-environments-parse-license-file.html"
-        - title: Trigger subscription synchronization
-          url: "/cvo/post-vsa-working-environments-sync-subscription.html"
-        - title: Delete an existing Cloud Volumes ONTAP system
-          url: "/cvo/delete-vsa-working-environments-.html"
-        - title: Retrieve a Cloud Volumes ONTAP system
-          url: "/cvo/get-vsa-working-environments-.html"
-        - title: Activate the FPolicy for ransomware files
-          url: "/cvo/put-vsa-working-environments-activate-fpolicy.html"
-        - title: Activate snapshot policy assignments
-          url: "/cvo/put-vsa-working-environments-activate-snapshot-policy.html"
-        - title: Update the BYOL licence to a capacity-based license
-          url: "/cvo/put-vsa-working-environments-byol-to-capacity.html"
-        - title: Update the serial number of Cloud Volumes ONTAP
-          url: "/cvo/post-vsa-working-environments-change-serial.html"
-        - title: Modify the tier level
-          url: "/cvo/post-vsa-working-environments-change-tier-level.html"
+        - title: Delete the CIFS configuration for a system
+          url: "/cvo/post-vsa-working-environments-delete-cifs.html"
         - title: Retrieve a CIFS configuration for a system
           url: "/cvo/get-vsa-working-environments-cifs.html"
         - title: Set up a new CIFS configuration
           url: "/cvo/post-vsa-working-environments-cifs.html"
-        - title: Retrieve systems cost and usage
-          url: "/cvo/get-vsa-working-environments-cost-and-usage.html"
-        - title: Retrieve the action parameters
-          url: "/cvo/get-vsa-working-environments-create-request-parameters.html"
-        - title: Delete the CIFS configuration for a system
-          url: "/cvo/post-vsa-working-environments-delete-cifs.html"
-        - title: Disable the FPolicy for ransomware files
-          url: "/cvo/put-vsa-working-environments-disable-fpolicy.html"
-        - title: Enable capacity tiering
-          url: "/cvo/post-vsa-working-environments-enable-capacity-tiering.html"
-        - title: Enable SnapLock for an existing system
-          url: "/cvo/put-vsa-working-environments-enable-worm.html"
-        - title: Retrieve extra capacity licenses
-          url: "/cvo/get-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Register extra capacity licenses
-          url: "/cvo/post-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Update extra capacity licenses
-          url: "/cvo/put-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Delete extra capacity licenses by serial numbers
-          url: "/cvo/delete-vsa-working-environments-extra-capacity-serials.html"
-        - title: Register extra capacity serial numbers
-          url: "/cvo/post-vsa-working-environments-extra-capacity-serials.html"
-        - title: Update extra capacity serial numbers
-          url: "/cvo/put-vsa-working-environments-extra-capacity-serials.html"
-        - title: Delete the FPolicy for ransomware files
-          url: "/cvo/delete-vsa-working-environments-fpolicy.html"
+        - title: Validate prerequisites for converting a system
+          url: "/cvo/get-vsa-working-environments-validate-byol-to-capacity.html"
+        - title: Retrieve a Cloud Volumes ONTAP system
+          url: "/cvo/get-vsa-working-environments-.html"
+        - title: Delete an existing Cloud Volumes ONTAP system
+          url: "/cvo/delete-vsa-working-environments-.html"
+        - title: Set the writing speed for Cloud Volumes ONTAP
+          url: "/cvo/put-vsa-working-environments-writing-speed.html"
         - title: Retrieve all license types
           url: "/cvo/get-vsa-working-environments-license-instance-type.html"
         - title: Set the instance type
           url: "/cvo/put-vsa-working-environments-license-instance-type.html"
-        - title: Modify the network port broadcast domain MTU
-          url: "/cvo/put-vsa-working-environments-networkoptimization.html"
-        - title: Set up an NTP server
-          url: "/cvo/post-vsa-working-environments-ntp.html"
-        - title: Retrieve a list of upgrade versions
-          url: "/cvo/get-vsa-working-environments-occm-provided-upgrade-versions.html"
-        - title: Activate an off-box configuration
-          url: "/cvo/put-vsa-working-environments-offbox.html"
         - title: Retrieve images already installed on the system
           url: "/cvo/get-vsa-working-environments-ontap-available-images.html"
+        - title: Perform a complete image update
+          url: "/cvo/post-vsa-working-environments-update-image.html"
+        - title: Retrieve the eligibility support status
+          url: "/cvo/get-vsa-working-environments-update-eligibility.html"
+        - title: Upload a cloud license file
+          url: "/cvo/post-vsa-working-environments-upload-license-file.html"
+        - title: Retrieve a list of upgrade versions
+          url: "/cvo/get-vsa-working-environments-occm-provided-upgrade-versions.html"
+        - title: Trigger subscription synchronization
+          url: "/cvo/post-vsa-working-environments-sync-subscription.html"
+        - title: Upload cloud license file content
+          url: "/cvo/post-vsa-working-environments-upload-licenses.html"
+        - title: Activate an off-box configuration
+          url: "/cvo/put-vsa-working-environments-offbox.html"
+        - title: Modify the network port broadcast domain MTU
+          url: "/cvo/put-vsa-working-environments-networkoptimization.html"
+        - title: Retrieve the action parameters
+          url: "/cvo/get-vsa-working-environments-create-request-parameters.html"
+        - title: Enable capacity tiering
+          url: "/cvo/post-vsa-working-environments-enable-capacity-tiering.html"
+        - title: Retrieve systems cost and usage
+          url: "/cvo/get-vsa-working-environments-cost-and-usage.html"
         - title: Retrieve systems ONTAP savings
           url: "/cvo/get-vsa-working-environments-ontap-saving.html"
-        - title: List the start/stop schedules
-          url: "/cvo/get-vsa-working-environments-schedules.html"
-        - title: Set the schedules
-          url: "/cvo/put-vsa-working-environments-schedules.html"
-        - title: Set the cluster password
-          url: "/cvo/put-vsa-working-environments-set-password.html"
-        - title: Create a snapshot policy
-          url: "/cvo/post-vsa-working-environments-snapshot-policy.html"
+        - title: Retrieve extra capacity licenses
+          url: "/cvo/get-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity licenses
+          url: "/cvo/put-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Register extra capacity licenses
+          url: "/cvo/post-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity serial numbers
+          url: "/cvo/put-vsa-working-environments-extra-capacity-serials.html"
+        - title: Register extra capacity serial numbers
+          url: "/cvo/post-vsa-working-environments-extra-capacity-serials.html"
+        - title: Delete extra capacity licenses by serial numbers
+          url: "/cvo/delete-vsa-working-environments-extra-capacity-serials.html"
+        - title: Update the default Vscan file operation profile
+          url: "/cvo/put-vsa-working-environments-vscan-file-op.html"
+        - title: Retrieve editable tags for cloud resources
+          url: "/cvo/get-vsa-working-environments-user-tags.html"
+        - title: Modify user tags for cloud resources
+          url: "/cvo/put-vsa-working-environments-user-tags.html"
+        - title: Parse an uploaded cloud license file
+          url: "/cvo/post-vsa-working-environments-parse-license-file.html"
+        - title: Update the NetApp Console password
+          url: "/cvo/put-vsa-working-environments-update-credentials.html"
+        - title: Modify the tier level
+          url: "/cvo/post-vsa-working-environments-change-tier-level.html"
+        - title: Enable SnapLock for an existing system
+          url: "/cvo/put-vsa-working-environments-enable-worm.html"
+        - title: Update the BYOL licence to a capacity-based license
+          url: "/cvo/put-vsa-working-environments-byol-to-capacity.html"
+        - title: Set up an NTP server
+          url: "/cvo/post-vsa-working-environments-ntp.html"
         - title: Start a specific Cloud Volumes ONTAP instance
           url: "/cvo/post-vsa-working-environments-start.html"
         - title: Stop a specific Cloud Volumes ONTAP instance
@@ -689,408 +687,418 @@ sidebar:
           url: "/cvo/get-vsa-working-environments-support-registration.html"
         - title: Register a Cloud Volumes ONTAP system
           url: "/cvo/post-vsa-working-environments-support-registration.html"
+        - title: List the start/stop schedules
+          url: "/cvo/get-vsa-working-environments-schedules.html"
+        - title: Set the schedules
+          url: "/cvo/put-vsa-working-environments-schedules.html"
         - title: Modify the SVM name
           url: "/cvo/put-vsa-working-environments-svm.html"
-        - title: Update the NetApp Console password
-          url: "/cvo/put-vsa-working-environments-update-credentials.html"
-        - title: Retrieve the eligibility support status
-          url: "/cvo/get-vsa-working-environments-update-eligibility.html"
-        - title: Perform a complete image update
-          url: "/cvo/post-vsa-working-environments-update-image.html"
-        - title: Upload a cloud license file
-          url: "/cvo/post-vsa-working-environments-upload-license-file.html"
-        - title: Upload cloud license file content
-          url: "/cvo/post-vsa-working-environments-upload-licenses.html"
-        - title: Retrieve editable tags for cloud resources
-          url: "/cvo/get-vsa-working-environments-user-tags.html"
-        - title: Modify user tags for cloud resources
-          url: "/cvo/put-vsa-working-environments-user-tags.html"
-        - title: Validate prerequisites for converting a system
-          url: "/cvo/get-vsa-working-environments-validate-byol-to-capacity.html"
-        - title: Update the default Vscan file operation profile
-          url: "/cvo/put-vsa-working-environments-vscan-file-op.html"
-        - title: Set the writing speed for Cloud Volumes ONTAP
-          url: "/cvo/put-vsa-working-environments-writing-speed.html"
+        - title: Activate the FPolicy for ransomware files
+          url: "/cvo/put-vsa-working-environments-activate-fpolicy.html"
+        - title: Disable the FPolicy for ransomware files
+          url: "/cvo/put-vsa-working-environments-disable-fpolicy.html"
+        - title: Delete the FPolicy for ransomware files
+          url: "/cvo/delete-vsa-working-environments-fpolicy.html"
+        - title: Activate snapshot policy assignments
+          url: "/cvo/put-vsa-working-environments-activate-snapshot-policy.html"
+        - title: Create a snapshot policy
+          url: "/cvo/post-vsa-working-environments-snapshot-policy.html"
+        - title: Update the serial number of Cloud Volumes ONTAP
+          url: "/cvo/post-vsa-working-environments-change-serial.html"
+        - title: Set the cluster password
+          url: "/cvo/put-vsa-working-environments-set-password.html"
+        - title: Retrieve Cloud Volumes ONTAP systems
+          url: "/cvo/get-vsa-working-environments.html"
+        - title: Create a new Cloud Volumes ONTAP system
+          url: "/cvo/post-vsa-working-environments.html"
       - title: AWS volumes (HA)
         entries:
-        - title: Retrieve all volumes
-          url: "/cvo/get-aws-ha-volumes.html"
-        - title: Create a new volume
-          url: "/cvo/post-aws-ha-volumes.html"
+        - title: Modify an existing volume
+          url: "/cvo/put-aws-ha-volumes--.html"
+        - title: Delete an existing volume
+          url: "/cvo/delete-aws-ha-volumes--.html"
+        - title: Retrieve volumes for backup activation
+          url: "/cvo/get-aws-ha-volumes-volumes-for-backup.html"
+        - title: Retrieve quotes for a new volume
+          url: "/cvo/post-aws-ha-volumes-quote.html"
+        - title: Update the underlying volume tier
+          url: "/cvo/post-aws-ha-volumes--change-tier.html"
         - title: Retrieve all igroups
           url: "/cvo/get-aws-ha-volumes-igroups-.html"
         - title: Retrieve all iSCSI initiators
           url: "/cvo/get-aws-ha-volumes-initiator.html"
         - title: Add an iSCSI initiator
           url: "/cvo/post-aws-ha-volumes-initiator.html"
-        - title: Retrieve quotes for a new volume
-          url: "/cvo/post-aws-ha-volumes-quote.html"
-        - title: Retrieve volumes for backup activation
-          url: "/cvo/get-aws-ha-volumes-volumes-for-backup.html"
-        - title: Delete an existing volume
-          url: "/cvo/delete-aws-ha-volumes--.html"
-        - title: Modify an existing volume
-          url: "/cvo/put-aws-ha-volumes--.html"
-        - title: Update the underlying volume tier
-          url: "/cvo/post-aws-ha-volumes--change-tier.html"
-        - title: Clone an existing volume
-          url: "/cvo/post-aws-ha-volumes--clone.html"
-        - title: Add an export policy rule
-          url: "/cvo/put-aws-ha-volumes--exportpolicy.html"
-        - title: Move an existing volume
-          url: "/cvo/post-aws-ha-volumes--move.html"
-        - title: Delete a snapshot
-          url: "/cvo/delete-aws-ha-volumes--snapshot.html"
-        - title: Create a snapshot
-          url: "/cvo/post-aws-ha-volumes--snapshot.html"
         - title: Retrieve a list of snapshot descriptions for the volume
           url: "/cvo/get-aws-ha-volumes--snapshots.html"
+        - title: Add an export policy rule
+          url: "/cvo/put-aws-ha-volumes--exportpolicy.html"
+        - title: Clone an existing volume
+          url: "/cvo/post-aws-ha-volumes--clone.html"
+        - title: Create a snapshot
+          url: "/cvo/post-aws-ha-volumes--snapshot.html"
+        - title: Delete a snapshot
+          url: "/cvo/delete-aws-ha-volumes--snapshot.html"
+        - title: Move an existing volume
+          url: "/cvo/post-aws-ha-volumes--move.html"
+        - title: Retrieve all volumes
+          url: "/cvo/get-aws-ha-volumes.html"
+        - title: Create a new volume
+          url: "/cvo/post-aws-ha-volumes.html"
       - title: AWS volumes (single-node)
         entries:
-        - title: Retrieve volumes
-          url: "/cvo/get-vsa-volumes.html"
-        - title: Create a new volume
-          url: "/cvo/post-vsa-volumes.html"
+        - title: Modify an existing volume
+          url: "/cvo/put-vsa-volumes--.html"
+        - title: Delete an existing volume
+          url: "/cvo/delete-vsa-volumes--.html"
+        - title: Retrieve the volumes for backup activation
+          url: "/cvo/get-vsa-volumes-volumes-for-backup.html"
+        - title: Retrieve quotes for a new volume
+          url: "/cvo/post-vsa-volumes-quote.html"
+        - title: Update the underlying volume tier
+          url: "/cvo/post-vsa-volumes--change-tier.html"
         - title: Retrieve all igroups
           url: "/cvo/get-vsa-volumes-igroups-.html"
         - title: Retrieve all iSCSI initiators
           url: "/cvo/get-vsa-volumes-initiator.html"
         - title: Add an iSCSI initiator
           url: "/cvo/post-vsa-volumes-initiator.html"
-        - title: Retrieve quotes for a new volume
-          url: "/cvo/post-vsa-volumes-quote.html"
-        - title: Retrieve the volumes for backup activation
-          url: "/cvo/get-vsa-volumes-volumes-for-backup.html"
-        - title: Delete an existing volume
-          url: "/cvo/delete-vsa-volumes--.html"
-        - title: Modify an existing volume
-          url: "/cvo/put-vsa-volumes--.html"
-        - title: Update the underlying volume tier
-          url: "/cvo/post-vsa-volumes--change-tier.html"
-        - title: Clone an existing volume
-          url: "/cvo/post-vsa-volumes--clone.html"
-        - title: Add an export policy rule
-          url: "/cvo/put-vsa-volumes--exportpolicy.html"
-        - title: Move an existing volume
-          url: "/cvo/post-vsa-volumes--move.html"
-        - title: Delete a snapshot
-          url: "/cvo/delete-vsa-volumes--snapshot.html"
-        - title: Create a snapshot
-          url: "/cvo/post-vsa-volumes--snapshot.html"
         - title: Retrieve a list of snapshot descriptions for the volume
           url: "/cvo/get-vsa-volumes--snapshots.html"
+        - title: Add an export policy rule
+          url: "/cvo/put-vsa-volumes--exportpolicy.html"
+        - title: Clone an existing volume
+          url: "/cvo/post-vsa-volumes--clone.html"
+        - title: Create a snapshot
+          url: "/cvo/post-vsa-volumes--snapshot.html"
+        - title: Delete a snapshot
+          url: "/cvo/delete-vsa-volumes--snapshot.html"
+        - title: Move an existing volume
+          url: "/cvo/post-vsa-volumes--move.html"
+        - title: Retrieve volumes
+          url: "/cvo/get-vsa-volumes.html"
+        - title: Create a new volume
+          url: "/cvo/post-vsa-volumes.html"
       - title: Account operations
         entries:
-        - title: Retrieve accounts
-          url: "/cvo/get-accounts.html"
-        - title: Create an AWS account
-          url: "/cvo/post-accounts-aws.html"
-        - title: Retrieve an AWS account ID for credentials
-          url: "/cvo/post-accounts-aws-validate-creds.html"
-        - title: Retrieve an AWS account
-          url: "/cvo/get-accounts-aws-.html"
-        - title: Update an existing AWS account
-          url: "/cvo/put-accounts-aws-.html"
-        - title: Create an Azure account
-          url: "/cvo/post-accounts-azure.html"
-        - title: Validate an Azure account request
-          url: "/cvo/post-accounts-azure-validate-creds.html"
-        - title: Retrieve an Azure account
-          url: "/cvo/get-accounts-azure-.html"
-        - title: Update an Azure account
-          url: "/cvo/put-accounts-azure-.html"
         - title: Retrieve all cloud accounts
           url: "/cvo/get-accounts-cloud-providers.html"
-        - title: Create a Google Cloud storage account
-          url: "/cvo/post-accounts-gcp.html"
+        - title: Retrieve an AWS account ID for credentials
+          url: "/cvo/post-accounts-aws-validate-creds.html"
         - title: Validate the Google Cloud account request
           url: "/cvo/post-accounts-gcp-validate-creds.html"
+        - title: Validate an Azure account request
+          url: "/cvo/post-accounts-azure-validate-creds.html"
+        - title: Create an Azure account
+          url: "/cvo/post-accounts-azure.html"
+        - title: Create a Google Cloud storage account
+          url: "/cvo/post-accounts-gcp.html"
         - title: Retrieve a Google Cloud storage account
           url: "/cvo/get-accounts-gcp-.html"
         - title: Update a Google Cloud storage account
           url: "/cvo/put-accounts-gcp-.html"
-        - title: Create an NSS account
-          url: "/cvo/post-accounts-nss.html"
         - title: Update the VSA list of an NSS account
           url: "/cvo/put-accounts-nss-set-vsa-list-.html"
+        - title: Retrieve an AWS account
+          url: "/cvo/get-accounts-aws-.html"
+        - title: Update an existing AWS account
+          url: "/cvo/put-accounts-aws-.html"
+        - title: Create an AWS account
+          url: "/cvo/post-accounts-aws.html"
         - title: Retrieve an NSS account
           url: "/cvo/get-accounts-nss-.html"
         - title: Update an NSS account
           url: "/cvo/put-accounts-nss-.html"
         - title: Delete an existing account
           url: "/cvo/delete-accounts-.html"
+        - title: Retrieve an Azure account
+          url: "/cvo/get-accounts-azure-.html"
+        - title: Update an Azure account
+          url: "/cvo/put-accounts-azure-.html"
+        - title: Create an NSS account
+          url: "/cvo/post-accounts-nss.html"
+        - title: Retrieve accounts
+          url: "/cvo/get-accounts.html"
       - title: Amazon FSx for NetApp ONTAP management systems
         entries:
-        - title: Validate the credentials for an FSx system
-          url: "/cvo/post-fsx-working-environments-validate-credentials.html"
         - title: Retrieve CIFS configuration for an FSx system
           url: "/cvo/get-fsx-working-environments-cifs.html"
         - title: Create a new CIFS configuration for an FSx system
           url: "/cvo/post-fsx-working-environments-cifs.html"
         - title: Retrieve an export policies list for an FSx system
           url: "/cvo/get-fsx-working-environments-export-policies.html"
-        - title: Retrieve network interfaces lists for an FSx system
-          url: "/cvo/get-fsx-working-environments-interfaces.html"
         - title: Retrieve snapshot policies for an FSx system
           url: "/cvo/get-fsx-working-environments-snapshot-policies.html"
         - title: Retrieve an SVM list for an FSx system
           url: "/cvo/get-fsx-working-environments-svms.html"
+        - title: Retrieve network interfaces lists for an FSx system
+          url: "/cvo/get-fsx-working-environments-interfaces.html"
+        - title: Validate the credentials for an FSx system
+          url: "/cvo/post-fsx-working-environments-validate-credentials.html"
       - title: Amazon FSx for NetApp ONTAP management volumes
         entries:
-        - title: Create a new volume
-          url: "/cvo/post-fsx-volumes.html"
+        - title: Modify an existing volume
+          url: "/cvo/put-fsx-volumes--.html"
+        - title: Delete an existing volume
+          url: "/cvo/delete-fsx-volumes--.html"
+        - title: Retrieve volumes
+          url: "/cvo/get-fsx-volumes-.html"
+        - title: Retrieve a volume using the ID
+          url: "/cvo/get-fsx-volumes-.html"
+        - title: Retrieve an NFS clients list for an FSx system
+          url: "/cvo/get-fsx-volumes-nfs-clients.html"
+        - title: Retrieve a CIFS share list for an FSx system
+          url: "/cvo/get-fsx-volumes-shares.html"
+        - title: Retrieve the volume count
+          url: "/cvo/get-fsx-volumes-count.html"
         - title: Retrieve all igroups
           url: "/cvo/get-fsx-volumes-igroups-.html"
         - title: Retrieve all iSCSI initiators
           url: "/cvo/get-fsx-volumes-initiator.html"
         - title: Add an iSCSI initiator
           url: "/cvo/post-fsx-volumes-initiator.html"
-        - title: Retrieve volumes
-          url: "/cvo/get-fsx-volumes-.html"
-        - title: Retrieve the volume count
-          url: "/cvo/get-fsx-volumes-count.html"
-        - title: Retrieve an NFS clients list for an FSx system
-          url: "/cvo/get-fsx-volumes-nfs-clients.html"
-        - title: Retrieve a CIFS share list for an FSx system
-          url: "/cvo/get-fsx-volumes-shares.html"
-        - title: Delete an existing volume
-          url: "/cvo/delete-fsx-volumes--.html"
-        - title: Modify an existing volume
-          url: "/cvo/put-fsx-volumes--.html"
-        - title: Clone a volume
-          url: "/cvo/post-fsx-volumes--clone.html"
-        - title: Delete a snapshot
-          url: "/cvo/delete-fsx-volumes--snapshot.html"
-        - title: Create a snapshot
-          url: "/cvo/post-fsx-volumes--snapshot.html"
         - title: Retrieve a list of snapshot descriptions for a volume
           url: "/cvo/get-fsx-volumes--snapshots.html"
-        - title: Retrieve a volume using the ID
-          url: "/cvo/get-fsx-volumes-.html"
+        - title: Clone a volume
+          url: "/cvo/post-fsx-volumes--clone.html"
+        - title: Create a snapshot
+          url: "/cvo/post-fsx-volumes--snapshot.html"
+        - title: Delete a snapshot
+          url: "/cvo/delete-fsx-volumes--snapshot.html"
+        - title: Create a new volume
+          url: "/cvo/post-fsx-volumes.html"
       - title: Audit operations
         entries:
         - title: Retrieve audit group entries
           url: "/cvo/get-audit.html"
-        - title: Retrieve an active task
-          url: "/cvo/get-audit-activetask-.html"
         - title: Retrieve audit groups and group records
           url: "/cvo/get-audit-auditserver.html"
-        - title: Retrieve audit group entries
-          url: "/cvo/get-audit-local-audit-.html"
-        - title: Retrieve audit page filter options
-          url: "/cvo/get-audit-local-audit-options.html"
-        - title: Retrieve an audit record
-          url: "/cvo/get-audit-local-audit--records.html"
+        - title: Retrieve an active task
+          url: "/cvo/get-audit-activetask-.html"
         - title: Retrieve an audit group entry
           url: "/cvo/get-audit-.html"
+        - title: Retrieve audit group entries
+          url: "/cvo/get-audit-local-audit-.html"
+        - title: Retrieve an audit record
+          url: "/cvo/get-audit-local-audit--records.html"
+        - title: Retrieve audit page filter options
+          url: "/cvo/get-audit-local-audit-options.html"
       - title: Azure aggregates (HA)
         entries:
-        - title: Create a new aggregate
-          url: "/cvo/post-azure-ha-aggregates.html"
-        - title: Retrieve aggregates
-          url: "/cvo/get-azure-ha-aggregates-.html"
-        - title: Delete an aggregate
-          url: "/cvo/delete-azure-ha-aggregates-.html"
         - title: Update IOPS and throughput for disks in an existing aggregate
           url: "/cvo/put-azure-ha-aggregates-.html"
+        - title: Delete an aggregate
+          url: "/cvo/delete-azure-ha-aggregates-.html"
+        - title: Retrieve aggregates
+          url: "/cvo/get-azure-ha-aggregates-.html"
+        - title: Create a new aggregate
+          url: "/cvo/post-azure-ha-aggregates.html"
         - title: Add disks to an aggregate
           url: "/cvo/post-azure-ha-aggregates--disks.html"
       - title: Azure aggregates (single-node)
         entries:
-        - title: Create a new aggregate
-          url: "/cvo/post-azure-vsa-aggregates.html"
-        - title: Retrieve aggregates
-          url: "/cvo/get-azure-vsa-aggregates-.html"
-        - title: Delete an aggregate
-          url: "/cvo/delete-azure-vsa-aggregates-.html"
         - title: Update IOPS and throughput for disks in an existing aggregate (single-node)
           url: "/cvo/put-azure-vsa-aggregates-.html"
+        - title: Delete an aggregate
+          url: "/cvo/delete-azure-vsa-aggregates-.html"
+        - title: Retrieve aggregates
+          url: "/cvo/get-azure-vsa-aggregates-.html"
+        - title: Create a new aggregate
+          url: "/cvo/post-azure-vsa-aggregates.html"
         - title: Add disks to an aggregate
           url: "/cvo/post-azure-vsa-aggregates--disks.html"
       - title: Azure system discovery (HA)
         entries:
-        - title: Retrieve a list of systems for the Azure region
-          url: "/cvo/get-azure-ha-discovery-discover.html"
         - title: Save a system to the NetApp Console database
           url: "/cvo/post-azure-ha-discovery-recover.html"
+        - title: Retrieve a list of systems for the Azure region
+          url: "/cvo/get-azure-ha-discovery-discover.html"
       - title: Azure system discovery (single-node)
         entries:
-        - title: Retrieve a list of discovered systems
-          url: "/cvo/get-azure-vsa-discover.html"
         - title: Save a previously discovered Cloud Volumes ONTAP system
           url: "/cvo/post-azure-vsa-recover.html"
+        - title: Retrieve a list of discovered systems
+          url: "/cvo/get-azure-vsa-discover.html"
       - title: Azure system metadata (HA)
         entries:
+        - title: Retrieve all ONTAP cloud configurations
+          url: "/cvo/get-azure-ha-metadata-permutations.html"
+        - title: Retrieve the minimum number of IP addresses
+          url: "/cvo/get-azure-ha-metadata-network-requirements.html"
+        - title: Validate the Azure marketplace subscription
+          url: "/cvo/post-azure-ha-metadata-validate-subscribed-to-ontap-cloud.html"
         - title: Retrieve subscriptions
           url: "/cvo/get-azure-ha-metadata-associated-subscriptions.html"
-        - title: Retrieve Azure availability zones
-          url: "/cvo/get-azure-ha-metadata-availability-zones.html"
-        - title: Retrieve all blob containers
-          url: "/cvo/get-azure-ha-metadata-containers.html"
+        - title: Retrieve capacity tiers for Azure disk types
+          url: "/cvo/get-azure-ha-metadata-supported-capacity-tiers.html"
         - title: Create a new blob container
           url: "/cvo/post-azure-ha-metadata-create-container.html"
+        - title: Retrieve Azure availability zones
+          url: "/cvo/get-azure-ha-metadata-availability-zones.html"
+        - title: Retrieve network extended information
+          url: "/cvo/get-azure-ha-metadata-vnets.html"
+        - title: Retrieve all vaults
+          url: "/cvo/get-azure-ha-metadata-vaults.html"
+        - title: Retrieve all keys in a vault
+          url: "/cvo/get-azure-ha-metadata-keys-vault.html"
+        - title: Retrieve Azure resource groups
+          url: "/cvo/get-azure-ha-metadata-resource-groups.html"
+        - title: Retrieve Azure storage account types
+          url: "/cvo/get-azure-ha-metadata-storage-account-types.html"
+        - title: Retrieve tag names
+          url: "/cvo/get-azure-ha-metadata-tag-keys.html"
+        - title: Retrieve all blob containers
+          url: "/cvo/get-azure-ha-metadata-containers.html"
+        - title: Retrieve Azure regions
+          url: "/cvo/get-azure-ha-metadata-regions.html"
         - title: Retrieve the default snapshot policies
           url: "/cvo/get-azure-ha-metadata-default-snapshot-policies.html"
         - title: Retrieve unsupported instance types for acceleration and capacity
             tiering
           url: "/cvo/get-azure-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
-        - title: Retrieve all keys in a vault
-          url: "/cvo/get-azure-ha-metadata-keys-vault.html"
-        - title: Retrieve the minimum number of IP addresses
-          url: "/cvo/get-azure-ha-metadata-network-requirements.html"
-        - title: Retrieve the packages configuration
-          url: "/cvo/get-azure-ha-metadata-packages.html"
-        - title: Retrieve all ONTAP cloud configurations
-          url: "/cvo/get-azure-ha-metadata-permutations.html"
-        - title: Retrieve Azure regions
-          url: "/cvo/get-azure-ha-metadata-regions.html"
-        - title: Retrieve Azure resource groups
-          url: "/cvo/get-azure-ha-metadata-resource-groups.html"
-        - title: Retrieve Azure storage account types
-          url: "/cvo/get-azure-ha-metadata-storage-account-types.html"
-        - title: Retrieve capacity tiers for Azure disk types
-          url: "/cvo/get-azure-ha-metadata-supported-capacity-tiers.html"
         - title: Retrieve supported features
           url: "/cvo/get-azure-ha-metadata-supported-features.html"
-        - title: Retrieve tag names
-          url: "/cvo/get-azure-ha-metadata-tag-keys.html"
-        - title: Validate the Azure marketplace subscription
-          url: "/cvo/post-azure-ha-metadata-validate-subscribed-to-ontap-cloud.html"
-        - title: Retrieve all vaults
-          url: "/cvo/get-azure-ha-metadata-vaults.html"
-        - title: Retrieve network extended information
-          url: "/cvo/get-azure-ha-metadata-vnets.html"
+        - title: Retrieve the packages configuration
+          url: "/cvo/get-azure-ha-metadata-packages.html"
       - title: Azure system metadata (single-node)
         entries:
+        - title: Retrieve the minimum number of required IP addresses
+          url: "/cvo/get-azure-vsa-metadata-network-requirements.html"
+        - title: Confirm the current user subscription
+          url: "/cvo/post-azure-vsa-metadata-validate-subscribed-to-ontap-cloud.html"
         - title: Retrieve associated subscriptions
           url: "/cvo/get-azure-vsa-metadata-associated-subscriptions.html"
-        - title: Retrieve Azure availability zones by region
-          url: "/cvo/get-azure-vsa-metadata-availability-zones.html"
-        - title: Retrieve all blob containers
-          url: "/cvo/get-azure-vsa-metadata-containers.html"
+        - title: Retrieve supported capacity tiers for Azure disk types
+          url: "/cvo/get-azure-vsa-metadata-supported-capacity-tiers.html"
         - title: Create a new blob container
           url: "/cvo/post-azure-vsa-metadata-create-container.html"
+        - title: Retrieve Azure availability zones by region
+          url: "/cvo/get-azure-vsa-metadata-availability-zones.html"
+        - title: Retrieve network extended information
+          url: "/cvo/get-azure-vsa-metadata-vnets.html"
+        - title: Retrieve all vaults
+          url: "/cvo/get-azure-vsa-metadata-vaults.html"
+        - title: Retrieve all keys in a vault
+          url: "/cvo/get-azure-vsa-metadata-keys-vault.html"
+        - title: Retrieve Azure resource groups by region
+          url: "/cvo/get-azure-vsa-metadata-resource-groups.html"
+        - title: Retrieve supported Azure storage account types
+          url: "/cvo/get-azure-vsa-metadata-storage-account-types.html"
+        - title: Retrieve all tag names
+          url: "/cvo/get-azure-vsa-metadata-tag-keys.html"
+        - title: Retrieve all blob containers
+          url: "/cvo/get-azure-vsa-metadata-containers.html"
+        - title: Retrieve Azure regions
+          url: "/cvo/get-azure-vsa-metadata-regions.html"
+        - title: Retrieve all Cloud Volumes ONTAP configurations
+          url: "/cvo/get-azure-vsa-metadata-permutations.html"
         - title: Retrieve the default snapshot policies
           url: "/cvo/get-azure-vsa-metadata-default-snapshot-policies.html"
         - title: Retrieve unsupported instance types for acceleration and capacity
             tiering
           url: "/cvo/get-azure-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
-        - title: Retrieve all keys in a vault
-          url: "/cvo/get-azure-vsa-metadata-keys-vault.html"
-        - title: Retrieve the minimum number of required IP addresses
-          url: "/cvo/get-azure-vsa-metadata-network-requirements.html"
-        - title: Retrieve package configurations
-          url: "/cvo/get-azure-vsa-metadata-packages.html"
-        - title: Retrieve all Cloud Volumes ONTAP configurations
-          url: "/cvo/get-azure-vsa-metadata-permutations.html"
-        - title: Retrieve Azure regions
-          url: "/cvo/get-azure-vsa-metadata-regions.html"
-        - title: Retrieve Azure resource groups by region
-          url: "/cvo/get-azure-vsa-metadata-resource-groups.html"
-        - title: Retrieve supported Azure storage account types
-          url: "/cvo/get-azure-vsa-metadata-storage-account-types.html"
-        - title: Retrieve supported capacity tiers for Azure disk types
-          url: "/cvo/get-azure-vsa-metadata-supported-capacity-tiers.html"
         - title: Retrieve supported features
           url: "/cvo/get-azure-vsa-metadata-supported-features.html"
-        - title: Retrieve all tag names
-          url: "/cvo/get-azure-vsa-metadata-tag-keys.html"
-        - title: Confirm the current user subscription
-          url: "/cvo/post-azure-vsa-metadata-validate-subscribed-to-ontap-cloud.html"
-        - title: Retrieve all vaults
-          url: "/cvo/get-azure-vsa-metadata-vaults.html"
-        - title: Retrieve network extended information
-          url: "/cvo/get-azure-vsa-metadata-vnets.html"
+        - title: Retrieve package configurations
+          url: "/cvo/get-azure-vsa-metadata-packages.html"
       - title: Azure systems (HA)
         entries:
         - title: Retrieve HA systems
           url: "/cvo/get-azure-ha-working-environments.html"
         - title: Create a new Azure HA system
           url: "/cvo/post-azure-ha-working-environments.html"
-        - title: Parse an uploaded cloud license file
-          url: "/cvo/post-azure-ha-working-environments-parse-license-file.html"
-        - title: Check if a resource group with the specified name exists
-          url: "/cvo/get-azure-ha-working-environments-resource-group-exists-.html"
-        - title: Trigger subscription synchronization
-          url: "/cvo/post-azure-ha-working-environments-sync-subscription.html"
-        - title: Delete a system
-          url: "/cvo/delete-azure-ha-working-environments-.html"
-        - title: Retrieve a system
-          url: "/cvo/get-azure-ha-working-environments-.html"
-        - title: Activate FPolicy for ransomware files
-          url: "/cvo/put-azure-ha-working-environments-activate-fpolicy.html"
-        - title: Activate snapshot policy assignment
-          url: "/cvo/put-azure-ha-working-environments-activate-snapshot-policy.html"
-        - title: Retrieve available IP addresses in the subnet of a system
-          url: "/cvo/get-azure-ha-working-environments-available-ips-in-subnet.html"
-        - title: Retrieve an Azure VMware Solution private cloud for a subscription
-          url: "/cvo/get-azure-ha-working-environments-avs-private-clouds.html"
-        - title: Update a BYOL license to a capacity-based license
-          url: "/cvo/put-azure-ha-working-environments-byol-to-capacity.html"
-        - title: Update the serial number of a system
-          url: "/cvo/post-azure-ha-working-environments-change-serial.html"
-        - title: Update the tier level
-          url: "/cvo/post-azure-ha-working-environments-change-tier-level.html"
-        - title: Retrieve the CIFS configuration for a system
-          url: "/cvo/get-azure-ha-working-environments-cifs.html"
-        - title: Create a new CIFS configuration for a system
-          url: "/cvo/post-azure-ha-working-environments-cifs.html"
         - title: Check for non-persistent locks
           url: "/cvo/get-azure-ha-working-environments-cifs-locks-exist.html"
-        - title: Retrieve the system cost and usage
-          url: "/cvo/get-azure-ha-working-environments-cost-and-usage.html"
-        - title: Retrieve action parameters
-          url: "/cvo/get-azure-ha-working-environments-create-request-parameters.html"
-        - title: Delete the CIFS configuration for a system
-          url: "/cvo/post-azure-ha-working-environments-delete-cifs.html"
-        - title: Disable FPolicy for ransomware files
-          url: "/cvo/put-azure-ha-working-environments-disable-fpolicy.html"
-        - title: Enable capacity tiering
-          url: "/cvo/post-azure-ha-working-environments-enable-capacity-tiering.html"
-        - title: Enable SnapLock for a system
-          url: "/cvo/put-azure-ha-working-environments-enable-worm.html"
-        - title: Retrieve extra capacity licenses
-          url: "/cvo/get-azure-ha-working-environments-extra-capacity-licenses.html"
-        - title: Register an extra capacity license
-          url: "/cvo/post-azure-ha-working-environments-extra-capacity-licenses.html"
-        - title: Update an extra capacity license
-          url: "/cvo/put-azure-ha-working-environments-extra-capacity-licenses.html"
-        - title: Delete extra capacity licenses by serial number
-          url: "/cvo/delete-azure-ha-working-environments-extra-capacity-serials.html"
-        - title: Register extra capacity serial numbers
-          url: "/cvo/post-azure-ha-working-environments-extra-capacity-serials.html"
-        - title: Update extra capacity serial numbers
-          url: "/cvo/put-azure-ha-working-environments-extra-capacity-serials.html"
-        - title: Delete FPolicy for ransomware files
-          url: "/cvo/delete-azure-ha-working-environments-fpolicy.html"
-        - title: Retrieve all license types and their associated instance types
-          url: "/cvo/get-azure-ha-working-environments-license-instance-type.html"
-        - title: Set the instance type
-          url: "/cvo/put-azure-ha-working-environments-license-instance-type.html"
-        - title: Modify the network port broadcast domain MTU
-          url: "/cvo/put-azure-ha-working-environments-networkoptimization.html"
-        - title: Create an NTP server
-          url: "/cvo/post-azure-ha-working-environments-ntp.html"
-        - title: Retrieve a list of upgrade versions
-          url: "/cvo/get-azure-ha-working-environments-occm-provided-upgrade-versions.html"
-        - title: Activate the off-box configuration
-          url: "/cvo/put-azure-ha-working-environments-offbox.html"
-        - title: Retrieve images already installed on a system
-          url: "/cvo/get-azure-ha-working-environments-ontap-available-images.html"
-        - title: Retrieve system ONTAP savings
-          url: "/cvo/get-azure-ha-working-environments-ontap-saving.html"
+        - title: Delete an SVM
+          url: "/cvo/delete-azure-ha-working-environments-svm-.html"
+        - title: Modify the SVM name of the system
+          url: "/cvo/put-azure-ha-working-environments-svm.html"
+        - title: Create a new SVM
+          url: "/cvo/post-azure-ha-working-environments-svm.html"
         - title: Retrieve Azure VMware Solution private cloud clusters for a subscription
           url: "/cvo/get-azure-ha-working-environments-resourcegroups-avs-private-clouds-clusters.html"
         - title: Retrieve Azure VMware Solution cluster hosts for a subscription
           url: "/cvo/get-azure-ha-working-environments-resourcegroups-avs-private-clouds-clusters-hosts.html"
-        - title: List the start/stop schedules for Cloud Volumes ONTAP
-          url: "/cvo/get-azure-ha-working-environments-schedules.html"
-        - title: Set schedules for Cloud Volumes ONTAP
-          url: "/cvo/put-azure-ha-working-environments-schedules.html"
-        - title: Set the cluster password for a system
-          url: "/cvo/put-azure-ha-working-environments-set-password.html"
-        - title: Create a snapshot policy
-          url: "/cvo/post-azure-ha-working-environments-snapshot-policy.html"
+        - title: Retrieve available IP addresses in the subnet of a system
+          url: "/cvo/get-azure-ha-working-environments-available-ips-in-subnet.html"
+        - title: Check if a resource group with the specified name exists
+          url: "/cvo/get-azure-ha-working-environments-resource-group-exists-.html"
+        - title: Retrieve an Azure VMware Solution private cloud for a subscription
+          url: "/cvo/get-azure-ha-working-environments-avs-private-clouds.html"
+        - title: Retrieve a system
+          url: "/cvo/get-azure-ha-working-environments-.html"
+        - title: Delete a system
+          url: "/cvo/delete-azure-ha-working-environments-.html"
+        - title: Delete the CIFS configuration for a system
+          url: "/cvo/post-azure-ha-working-environments-delete-cifs.html"
+        - title: Retrieve the CIFS configuration for a system
+          url: "/cvo/get-azure-ha-working-environments-cifs.html"
+        - title: Create a new CIFS configuration for a system
+          url: "/cvo/post-azure-ha-working-environments-cifs.html"
+        - title: Validate prerequisites for converting a system
+          url: "/cvo/get-azure-ha-working-environments-validate-byol-to-capacity.html"
+        - title: Set the writing speed
+          url: "/cvo/put-azure-ha-working-environments-writing-speed.html"
+        - title: Retrieve all license types and their associated instance types
+          url: "/cvo/get-azure-ha-working-environments-license-instance-type.html"
+        - title: Set the instance type
+          url: "/cvo/put-azure-ha-working-environments-license-instance-type.html"
+        - title: Retrieve images already installed on a system
+          url: "/cvo/get-azure-ha-working-environments-ontap-available-images.html"
+        - title: Perform an image update on a single node
+          url: "/cvo/post-azure-ha-working-environments-update-image.html"
+        - title: Retrieve the eligibility support status of a system
+          url: "/cvo/get-azure-ha-working-environments-update-eligibility.html"
+        - title: Upload a cloud license file
+          url: "/cvo/post-azure-ha-working-environments-upload-license-file.html"
+        - title: Retrieve a list of upgrade versions
+          url: "/cvo/get-azure-ha-working-environments-occm-provided-upgrade-versions.html"
+        - title: Trigger subscription synchronization
+          url: "/cvo/post-azure-ha-working-environments-sync-subscription.html"
+        - title: Upload cloud license file content
+          url: "/cvo/post-azure-ha-working-environments-upload-licenses.html"
+        - title: Activate the off-box configuration
+          url: "/cvo/put-azure-ha-working-environments-offbox.html"
+        - title: Modify the network port broadcast domain MTU
+          url: "/cvo/put-azure-ha-working-environments-networkoptimization.html"
+        - title: Retrieve action parameters
+          url: "/cvo/get-azure-ha-working-environments-create-request-parameters.html"
+        - title: Enable capacity tiering
+          url: "/cvo/post-azure-ha-working-environments-enable-capacity-tiering.html"
+        - title: Retrieve the system cost and usage
+          url: "/cvo/get-azure-ha-working-environments-cost-and-usage.html"
+        - title: Retrieve system ONTAP savings
+          url: "/cvo/get-azure-ha-working-environments-ontap-saving.html"
+        - title: Retrieve extra capacity licenses
+          url: "/cvo/get-azure-ha-working-environments-extra-capacity-licenses.html"
+        - title: Update an extra capacity license
+          url: "/cvo/put-azure-ha-working-environments-extra-capacity-licenses.html"
+        - title: Register an extra capacity license
+          url: "/cvo/post-azure-ha-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity serial numbers
+          url: "/cvo/put-azure-ha-working-environments-extra-capacity-serials.html"
+        - title: Register extra capacity serial numbers
+          url: "/cvo/post-azure-ha-working-environments-extra-capacity-serials.html"
+        - title: Delete extra capacity licenses by serial number
+          url: "/cvo/delete-azure-ha-working-environments-extra-capacity-serials.html"
+        - title: Update the default Vscan file operation profile
+          url: "/cvo/put-azure-ha-working-environments-vscan-file-op.html"
+        - title: Retrieve editable tags for the cloud resources
+          url: "/cvo/get-azure-ha-working-environments-user-tags.html"
+        - title: Modify the user tags for cloud resources
+          url: "/cvo/put-azure-ha-working-environments-user-tags.html"
+        - title: Parse an uploaded cloud license file
+          url: "/cvo/post-azure-ha-working-environments-parse-license-file.html"
+        - title: Update the NetApp Console password
+          url: "/cvo/put-azure-ha-working-environments-update-credentials.html"
+        - title: Update the tier level
+          url: "/cvo/post-azure-ha-working-environments-change-tier-level.html"
+        - title: Enable SnapLock for a system
+          url: "/cvo/put-azure-ha-working-environments-enable-worm.html"
+        - title: Update a BYOL license to a capacity-based license
+          url: "/cvo/put-azure-ha-working-environments-byol-to-capacity.html"
+        - title: Create an NTP server
+          url: "/cvo/post-azure-ha-working-environments-ntp.html"
         - title: Start a Cloud Volumes ONTAP instance
           url: "/cvo/post-azure-ha-working-environments-start.html"
         - title: Stop a Cloud Volumes ONTAP instance
@@ -1099,120 +1107,120 @@ sidebar:
           url: "/cvo/get-azure-ha-working-environments-support-registration.html"
         - title: Register a Cloud Volumes ONTAP system with NetApp
           url: "/cvo/post-azure-ha-working-environments-support-registration.html"
-        - title: Create a new SVM
-          url: "/cvo/post-azure-ha-working-environments-svm.html"
-        - title: Modify the SVM name of the system
-          url: "/cvo/put-azure-ha-working-environments-svm.html"
-        - title: Delete an SVM
-          url: "/cvo/delete-azure-ha-working-environments-svm-.html"
-        - title: Update the NetApp Console password
-          url: "/cvo/put-azure-ha-working-environments-update-credentials.html"
-        - title: Retrieve the eligibility support status of a system
-          url: "/cvo/get-azure-ha-working-environments-update-eligibility.html"
-        - title: Perform an image update on a single node
-          url: "/cvo/post-azure-ha-working-environments-update-image.html"
-        - title: Upload a cloud license file
-          url: "/cvo/post-azure-ha-working-environments-upload-license-file.html"
-        - title: Upload cloud license file content
-          url: "/cvo/post-azure-ha-working-environments-upload-licenses.html"
-        - title: Retrieve editable tags for the cloud resources
-          url: "/cvo/get-azure-ha-working-environments-user-tags.html"
-        - title: Modify the user tags for cloud resources
-          url: "/cvo/put-azure-ha-working-environments-user-tags.html"
-        - title: Validate prerequisites for converting a system
-          url: "/cvo/get-azure-ha-working-environments-validate-byol-to-capacity.html"
-        - title: Update the default Vscan file operation profile
-          url: "/cvo/put-azure-ha-working-environments-vscan-file-op.html"
-        - title: Set the writing speed
-          url: "/cvo/put-azure-ha-working-environments-writing-speed.html"
+        - title: List the start/stop schedules for Cloud Volumes ONTAP
+          url: "/cvo/get-azure-ha-working-environments-schedules.html"
+        - title: Set schedules for Cloud Volumes ONTAP
+          url: "/cvo/put-azure-ha-working-environments-schedules.html"
+        - title: Activate FPolicy for ransomware files
+          url: "/cvo/put-azure-ha-working-environments-activate-fpolicy.html"
+        - title: Disable FPolicy for ransomware files
+          url: "/cvo/put-azure-ha-working-environments-disable-fpolicy.html"
+        - title: Delete FPolicy for ransomware files
+          url: "/cvo/delete-azure-ha-working-environments-fpolicy.html"
+        - title: Activate snapshot policy assignment
+          url: "/cvo/put-azure-ha-working-environments-activate-snapshot-policy.html"
+        - title: Create a snapshot policy
+          url: "/cvo/post-azure-ha-working-environments-snapshot-policy.html"
+        - title: Update the serial number of a system
+          url: "/cvo/post-azure-ha-working-environments-change-serial.html"
+        - title: Set the cluster password for a system
+          url: "/cvo/put-azure-ha-working-environments-set-password.html"
       - title: Azure systems (single-node)
         entries:
         - title: Retrieve Cloud Volumes ONTAP systems
           url: "/cvo/get-azure-vsa-working-environments.html"
         - title: Create a new Cloud Volumes ONTAP system
           url: "/cvo/post-azure-vsa-working-environments.html"
-        - title: Parse an uploaded cloud license file
-          url: "/cvo/post-azure-vsa-working-environments-parse-license-file.html"
-        - title: Check if a resource group with the specified name exists
-          url: "/cvo/get-azure-vsa-working-environments-resource-group-exists-.html"
-        - title: Trigger subscription synchronization
-          url: "/cvo/post-azure-vsa-working-environments-sync-subscription.html"
-        - title: Delete an existing Cloud Volumes ONTAP system
-          url: "/cvo/delete-azure-vsa-working-environments-.html"
-        - title: Retrieve a Cloud Volumes ONTAP system
-          url: "/cvo/get-azure-vsa-working-environments-.html"
-        - title: Activate the FPolicy for ransomware files
-          url: "/cvo/put-azure-vsa-working-environments-activate-fpolicy.html"
-        - title: Activate snapshot policy assignment
-          url: "/cvo/put-azure-vsa-working-environments-activate-snapshot-policy.html"
-        - title: Retrieve the number of available IP addresses
-          url: "/cvo/get-azure-vsa-working-environments-available-ips-in-subnet.html"
-        - title: Retrieve an Azure VMware Solution private cloud
-          url: "/cvo/get-azure-vsa-working-environments-avs-private-clouds.html"
-        - title: Update the BYOL licence to a capacity-based license
-          url: "/cvo/put-azure-vsa-working-environments-byol-to-capacity.html"
-        - title: Update the serial number of Cloud Volumes ONTAP
-          url: "/cvo/post-azure-vsa-working-environments-change-serial.html"
-        - title: Change the tier level
-          url: "/cvo/post-azure-vsa-working-environments-change-tier-level.html"
-        - title: Retrieve a CIFS configuration
-          url: "/cvo/get-azure-vsa-working-environments-cifs.html"
-        - title: Set up a new CIFS configuration
-          url: "/cvo/post-azure-vsa-working-environments-cifs.html"
-        - title: Retrieve systems cost and usage
-          url: "/cvo/get-azure-vsa-working-environments-cost-and-usage.html"
-        - title: Retrieve the action parameters
-          url: "/cvo/get-azure-vsa-working-environments-create-request-parameters.html"
-        - title: Delete a CIFS configuration
-          url: "/cvo/post-azure-vsa-working-environments-delete-cifs.html"
-        - title: Disable the FPolicy for ransomware files
-          url: "/cvo/put-azure-vsa-working-environments-disable-fpolicy.html"
-        - title: Enable capacity tiering
-          url: "/cvo/post-azure-vsa-working-environments-enable-capacity-tiering.html"
-        - title: Enable SnapLock for an existing system
-          url: "/cvo/put-azure-vsa-working-environments-enable-worm.html"
-        - title: Retrieve extra capacity licenses
-          url: "/cvo/get-azure-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Register extra capacity licenses
-          url: "/cvo/post-azure-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Update extra capacity licenses
-          url: "/cvo/put-azure-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Delete extra capacity licenses by serial numbers
-          url: "/cvo/delete-azure-vsa-working-environments-extra-capacity-serials.html"
-        - title: Register extra capacity serial numbers
-          url: "/cvo/post-azure-vsa-working-environments-extra-capacity-serials.html"
-        - title: Update extra capacity serial numbers
-          url: "/cvo/put-azure-vsa-working-environments-extra-capacity-serials.html"
-        - title: Delete the FPolicy for ransomware files
-          url: "/cvo/delete-azure-vsa-working-environments-fpolicy.html"
-        - title: Retrieve all license types
-          url: "/cvo/get-azure-vsa-working-environments-license-instance-type.html"
-        - title: Set the instance type
-          url: "/cvo/put-azure-vsa-working-environments-license-instance-type.html"
-        - title: Modify the network port broadcast domain MTU
-          url: "/cvo/put-azure-vsa-working-environments-networkoptimization.html"
-        - title: Set up an NTP server
-          url: "/cvo/post-azure-vsa-working-environments-ntp.html"
-        - title: Retrieve a list of upgrade versions
-          url: "/cvo/get-azure-vsa-working-environments-occm-provided-upgrade-versions.html"
-        - title: Activate an off-box configuration
-          url: "/cvo/put-azure-vsa-working-environments-offbox.html"
-        - title: Retrieve images already installed
-          url: "/cvo/get-azure-vsa-working-environments-ontap-available-images.html"
-        - title: Retrieve systems ONTAP savings
-          url: "/cvo/get-azure-vsa-working-environments-ontap-saving.html"
+        - title: Delete an SVM
+          url: "/cvo/delete-azure-vsa-working-environments-svm-.html"
+        - title: Modify the SVM name
+          url: "/cvo/put-azure-vsa-working-environments-svm.html"
+        - title: Create a new SVM
+          url: "/cvo/post-azure-vsa-working-environments-svm.html"
         - title: Retrieve Azure VMware Solution private cloud clusters
           url: "/cvo/get-azure-vsa-working-environments-resourcegroups-avs-private-clouds-clusters.html"
         - title: Retrieve Azure VMware Solution cluster hosts
           url: "/cvo/get-azure-vsa-working-environments-resourcegroups-avs-private-clouds-clusters-hosts.html"
-        - title: List the start-stop schedules
-          url: "/cvo/get-azure-vsa-working-environments-schedules.html"
-        - title: Set the schedules for Cloud Volumes ONTAP
-          url: "/cvo/put-azure-vsa-working-environments-schedules.html"
-        - title: Set the cluster password for a Cloud Volumes ONTAP system
-          url: "/cvo/put-azure-vsa-working-environments-set-password.html"
-        - title: Create a snapshot policy
-          url: "/cvo/post-azure-vsa-working-environments-snapshot-policy.html"
+        - title: Retrieve the number of available IP addresses
+          url: "/cvo/get-azure-vsa-working-environments-available-ips-in-subnet.html"
+        - title: Check if a resource group with the specified name exists
+          url: "/cvo/get-azure-vsa-working-environments-resource-group-exists-.html"
+        - title: Retrieve an Azure VMware Solution private cloud
+          url: "/cvo/get-azure-vsa-working-environments-avs-private-clouds.html"
+        - title: Retrieve a Cloud Volumes ONTAP system
+          url: "/cvo/get-azure-vsa-working-environments-.html"
+        - title: Delete an existing Cloud Volumes ONTAP system
+          url: "/cvo/delete-azure-vsa-working-environments-.html"
+        - title: Delete a CIFS configuration
+          url: "/cvo/post-azure-vsa-working-environments-delete-cifs.html"
+        - title: Retrieve a CIFS configuration
+          url: "/cvo/get-azure-vsa-working-environments-cifs.html"
+        - title: Set up a new CIFS configuration
+          url: "/cvo/post-azure-vsa-working-environments-cifs.html"
+        - title: Validate prerequisites for converting a system
+          url: "/cvo/get-azure-vsa-working-environments-validate-byol-to-capacity.html"
+        - title: Modify the writing speed
+          url: "/cvo/put-azure-vsa-working-environments-writing-speed.html"
+        - title: Retrieve all license types
+          url: "/cvo/get-azure-vsa-working-environments-license-instance-type.html"
+        - title: Set the instance type
+          url: "/cvo/put-azure-vsa-working-environments-license-instance-type.html"
+        - title: Retrieve images already installed
+          url: "/cvo/get-azure-vsa-working-environments-ontap-available-images.html"
+        - title: Perform a complete image update operation
+          url: "/cvo/post-azure-vsa-working-environments-update-image.html"
+        - title: Retrieve the eligibility support status
+          url: "/cvo/get-azure-vsa-working-environments-update-eligibility.html"
+        - title: Upload a cloud license file
+          url: "/cvo/post-azure-vsa-working-environments-upload-license-file.html"
+        - title: Retrieve a list of upgrade versions
+          url: "/cvo/get-azure-vsa-working-environments-occm-provided-upgrade-versions.html"
+        - title: Trigger subscription synchronization
+          url: "/cvo/post-azure-vsa-working-environments-sync-subscription.html"
+        - title: Upload cloud license file content
+          url: "/cvo/post-azure-vsa-working-environments-upload-licenses.html"
+        - title: Activate an off-box configuration
+          url: "/cvo/put-azure-vsa-working-environments-offbox.html"
+        - title: Modify the network port broadcast domain MTU
+          url: "/cvo/put-azure-vsa-working-environments-networkoptimization.html"
+        - title: Retrieve the action parameters
+          url: "/cvo/get-azure-vsa-working-environments-create-request-parameters.html"
+        - title: Enable capacity tiering
+          url: "/cvo/post-azure-vsa-working-environments-enable-capacity-tiering.html"
+        - title: Retrieve systems cost and usage
+          url: "/cvo/get-azure-vsa-working-environments-cost-and-usage.html"
+        - title: Retrieve systems ONTAP savings
+          url: "/cvo/get-azure-vsa-working-environments-ontap-saving.html"
+        - title: Retrieve extra capacity licenses
+          url: "/cvo/get-azure-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity licenses
+          url: "/cvo/put-azure-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Register extra capacity licenses
+          url: "/cvo/post-azure-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity serial numbers
+          url: "/cvo/put-azure-vsa-working-environments-extra-capacity-serials.html"
+        - title: Register extra capacity serial numbers
+          url: "/cvo/post-azure-vsa-working-environments-extra-capacity-serials.html"
+        - title: Delete extra capacity licenses by serial numbers
+          url: "/cvo/delete-azure-vsa-working-environments-extra-capacity-serials.html"
+        - title: Update the default Vscan file operation profile
+          url: "/cvo/put-azure-vsa-working-environments-vscan-file-op.html"
+        - title: Retrieve editable tags for cloud resources
+          url: "/cvo/get-azure-vsa-working-environments-user-tags.html"
+        - title: Modify user tags for cloud resources
+          url: "/cvo/put-azure-vsa-working-environments-user-tags.html"
+        - title: Parse an uploaded cloud license file
+          url: "/cvo/post-azure-vsa-working-environments-parse-license-file.html"
+        - title: Update the NetApp Console password
+          url: "/cvo/put-azure-vsa-working-environments-update-credentials.html"
+        - title: Change the tier level
+          url: "/cvo/post-azure-vsa-working-environments-change-tier-level.html"
+        - title: Enable SnapLock for an existing system
+          url: "/cvo/put-azure-vsa-working-environments-enable-worm.html"
+        - title: Update the BYOL licence to a capacity-based license
+          url: "/cvo/put-azure-vsa-working-environments-byol-to-capacity.html"
+        - title: Set up an NTP server
+          url: "/cvo/post-azure-vsa-working-environments-ntp.html"
         - title: Start a specific Cloud Volumes ONTAP instance
           url: "/cvo/post-azure-vsa-working-environments-start.html"
         - title: Stop a specific Cloud Volumes ONTAP instance
@@ -1221,185 +1229,167 @@ sidebar:
           url: "/cvo/get-azure-vsa-working-environments-support-registration.html"
         - title: Register a Cloud Volumes ONTAP system with NetApp
           url: "/cvo/post-azure-vsa-working-environments-support-registration.html"
-        - title: Create a new SVM
-          url: "/cvo/post-azure-vsa-working-environments-svm.html"
-        - title: Modify the SVM name
-          url: "/cvo/put-azure-vsa-working-environments-svm.html"
-        - title: Delete an SVM
-          url: "/cvo/delete-azure-vsa-working-environments-svm-.html"
-        - title: Update the NetApp Console password
-          url: "/cvo/put-azure-vsa-working-environments-update-credentials.html"
-        - title: Retrieve the eligibility support status
-          url: "/cvo/get-azure-vsa-working-environments-update-eligibility.html"
-        - title: Perform a complete image update operation
-          url: "/cvo/post-azure-vsa-working-environments-update-image.html"
-        - title: Upload a cloud license file
-          url: "/cvo/post-azure-vsa-working-environments-upload-license-file.html"
-        - title: Upload cloud license file content
-          url: "/cvo/post-azure-vsa-working-environments-upload-licenses.html"
-        - title: Retrieve editable tags for cloud resources
-          url: "/cvo/get-azure-vsa-working-environments-user-tags.html"
-        - title: Modify user tags for cloud resources
-          url: "/cvo/put-azure-vsa-working-environments-user-tags.html"
-        - title: Validate prerequisites for converting a system
-          url: "/cvo/get-azure-vsa-working-environments-validate-byol-to-capacity.html"
-        - title: Update the default Vscan file operation profile
-          url: "/cvo/put-azure-vsa-working-environments-vscan-file-op.html"
-        - title: Modify the writing speed
-          url: "/cvo/put-azure-vsa-working-environments-writing-speed.html"
+        - title: List the start-stop schedules
+          url: "/cvo/get-azure-vsa-working-environments-schedules.html"
+        - title: Set the schedules for Cloud Volumes ONTAP
+          url: "/cvo/put-azure-vsa-working-environments-schedules.html"
+        - title: Activate the FPolicy for ransomware files
+          url: "/cvo/put-azure-vsa-working-environments-activate-fpolicy.html"
+        - title: Disable the FPolicy for ransomware files
+          url: "/cvo/put-azure-vsa-working-environments-disable-fpolicy.html"
+        - title: Delete the FPolicy for ransomware files
+          url: "/cvo/delete-azure-vsa-working-environments-fpolicy.html"
+        - title: Activate snapshot policy assignment
+          url: "/cvo/put-azure-vsa-working-environments-activate-snapshot-policy.html"
+        - title: Create a snapshot policy
+          url: "/cvo/post-azure-vsa-working-environments-snapshot-policy.html"
+        - title: Update the serial number of Cloud Volumes ONTAP
+          url: "/cvo/post-azure-vsa-working-environments-change-serial.html"
+        - title: Set the cluster password for a Cloud Volumes ONTAP system
+          url: "/cvo/put-azure-vsa-working-environments-set-password.html"
       - title: Azure volumes (HA)
         entries:
-        - title: Retrieve volumes
-          url: "/cvo/get-azure-ha-volumes.html"
-        - title: Create a new volume
-          url: "/cvo/post-azure-ha-volumes.html"
+        - title: Synchronize Azure VMware Solution hosts
+          url: "/cvo/put-azure-ha-volumes-storage-vms-volumes-sync-avs-host.html"
+        - title: Remove Azure VMware Solution hosts on a volume
+          url: "/cvo/delete-azure-ha-volumes-storage-vms-volumes-remove-avs.html"
+        - title: Modify an existing volume
+          url: "/cvo/put-azure-ha-volumes--.html"
+        - title: Delete an existing volume
+          url: "/cvo/delete-azure-ha-volumes--.html"
+        - title: Retrieve volumes for backup activation
+          url: "/cvo/get-azure-ha-volumes-volumes-for-backup.html"
+        - title: Retrieve quotes for a new volume
+          url: "/cvo/post-azure-ha-volumes-quote.html"
+        - title: Update the underlying volume tier
+          url: "/cvo/post-azure-ha-volumes--change-tier.html"
         - title: Retrieve all igroups
           url: "/cvo/get-azure-ha-volumes-igroups-.html"
         - title: Retrieve all iSCSI initiators
           url: "/cvo/get-azure-ha-volumes-initiator.html"
         - title: Add an iSCSI initiator
           url: "/cvo/post-azure-ha-volumes-initiator.html"
-        - title: Retrieve quotes for a new volume
-          url: "/cvo/post-azure-ha-volumes-quote.html"
-        - title: Retrieve volumes for backup activation
-          url: "/cvo/get-azure-ha-volumes-volumes-for-backup.html"
-        - title: Remove AVS hosts on a volume
-          url: "/cvo/delete-azure-ha-volumes-storage-vms-volumes-remove-avs.html"
-        - title: Resize a volume and the respective AVS DataStore
-          url: "/cvo/put-azure-ha-volumes-storage-vms-volumes-resize-avs-ds.html"
-        - title: Set up Azure VMware Solution on a volume
-          url: "/cvo/put-azure-ha-volumes-storage-vms-volumes-setup-avs.html"
-        - title: Synchronize AVS hosts
-          url: "/cvo/put-azure-ha-volumes-storage-vms-volumes-sync-avs-host.html"
-        - title: Delete an existing volume
-          url: "/cvo/delete-azure-ha-volumes--.html"
-        - title: Modify an existing volume
-          url: "/cvo/put-azure-ha-volumes--.html"
-        - title: Update the underlying volume tier
-          url: "/cvo/post-azure-ha-volumes--change-tier.html"
-        - title: Clone an existing volume
-          url: "/cvo/post-azure-ha-volumes--clone.html"
-        - title: Add an export policy rule
-          url: "/cvo/put-azure-ha-volumes--exportpolicy.html"
-        - title: Move an existing volume
-          url: "/cvo/post-azure-ha-volumes--move.html"
-        - title: Delete a snapshot
-          url: "/cvo/delete-azure-ha-volumes--snapshot.html"
-        - title: Create a snapshot
-          url: "/cvo/post-azure-ha-volumes--snapshot.html"
         - title: Retrieve a list of volume snapshot descriptions
           url: "/cvo/get-azure-ha-volumes--snapshots.html"
+        - title: Add an export policy rule
+          url: "/cvo/put-azure-ha-volumes--exportpolicy.html"
+        - title: Set up Azure VMware Solution on a volume
+          url: "/cvo/put-azure-ha-volumes-storage-vms-volumes-setup-avs.html"
+        - title: Clone an existing volume
+          url: "/cvo/post-azure-ha-volumes--clone.html"
+        - title: Create a snapshot
+          url: "/cvo/post-azure-ha-volumes--snapshot.html"
+        - title: Delete a snapshot
+          url: "/cvo/delete-azure-ha-volumes--snapshot.html"
+        - title: Move an existing volume
+          url: "/cvo/post-azure-ha-volumes--move.html"
+        - title: Retrieve volumes
+          url: "/cvo/get-azure-ha-volumes.html"
+        - title: Create a new volume
+          url: "/cvo/post-azure-ha-volumes.html"
       - title: Azure volumes (single-node)
         entries:
-        - title: Retrieve all volumes
-          url: "/cvo/get-azure-vsa-volumes.html"
-        - title: Create a new volume
-          url: "/cvo/post-azure-vsa-volumes.html"
+        - title: Modify an existing volume
+          url: "/cvo/put-azure-vsa-volumes--.html"
+        - title: Delete an existing volume
+          url: "/cvo/delete-azure-vsa-volumes--.html"
+        - title: Retrieve volumes for backup activation
+          url: "/cvo/get-azure-vsa-volumes-volumes-for-backup.html"
+        - title: Retrieve quotes for a new Azure volume
+          url: "/cvo/post-azure-vsa-volumes-quote.html"
+        - title: Update the underlying volume tier
+          url: "/cvo/post-azure-vsa-volumes--change-tier.html"
         - title: Retrieve all igroups
           url: "/cvo/get-azure-vsa-volumes-igroups-.html"
         - title: Retrieve all iSCSI initiators
           url: "/cvo/get-azure-vsa-volumes-initiator.html"
         - title: Add an iSCSI initiator
           url: "/cvo/post-azure-vsa-volumes-initiator.html"
-        - title: Retrieve quotes for a new Azure volume
-          url: "/cvo/post-azure-vsa-volumes-quote.html"
-        - title: Retrieve volumes for backup activation
-          url: "/cvo/get-azure-vsa-volumes-volumes-for-backup.html"
-        - title: Delete an existing volume
-          url: "/cvo/delete-azure-vsa-volumes--.html"
-        - title: Modify an existing volume
-          url: "/cvo/put-azure-vsa-volumes--.html"
-        - title: Update the underlying volume tier
-          url: "/cvo/post-azure-vsa-volumes--change-tier.html"
-        - title: Clone an existing volume
-          url: "/cvo/post-azure-vsa-volumes--clone.html"
-        - title: Add an export policy rule
-          url: "/cvo/put-azure-vsa-volumes--exportpolicy.html"
-        - title: Move an existing volume
-          url: "/cvo/post-azure-vsa-volumes--move.html"
-        - title: Delete a snapshot
-          url: "/cvo/delete-azure-vsa-volumes--snapshot.html"
-        - title: Create a snapshot
-          url: "/cvo/post-azure-vsa-volumes--snapshot.html"
         - title: Retrieve a list of volume snapshot descriptions
           url: "/cvo/get-azure-vsa-volumes--snapshots.html"
+        - title: Add an export policy rule
+          url: "/cvo/put-azure-vsa-volumes--exportpolicy.html"
+        - title: Clone an existing volume
+          url: "/cvo/post-azure-vsa-volumes--clone.html"
+        - title: Create a snapshot
+          url: "/cvo/post-azure-vsa-volumes--snapshot.html"
+        - title: Delete a snapshot
+          url: "/cvo/delete-azure-vsa-volumes--snapshot.html"
+        - title: Move an existing volume
+          url: "/cvo/post-azure-vsa-volumes--move.html"
+        - title: Retrieve all volumes
+          url: "/cvo/get-azure-vsa-volumes.html"
+        - title: Create a new volume
+          url: "/cvo/post-azure-vsa-volumes.html"
       - title: Cloud compliance operations
         entries:
         - title: Deploy a cloud compliance instance by systems
           url: "/cvo/post-cloud-compliance-deploy-by-working-environments.html"
+        - title: Retrieve cloud compliance information
+          url: "/cvo/get-cloud-compliance-info.html"
+        - title: Disable on-premises scanning
+          url: "/cvo/post-cloud-compliance-disable-onprem-scan.html"
         - title: Retrieve the service cloud compliance status using the file system
             ID
           url: "/cvo/get-cloud-compliance-fsx-compliance-status.html"
-        - title: Disable scanning using the file system ID
-          url: "/cvo/post-cloud-compliance-fsx-disable-scan.html"
-        - title: Enable scanning using the file system ID
-          url: "/cvo/post-cloud-compliance-fsx-enable-scan.html"
-        - title: Retrieve cloud compliance information
-          url: "/cvo/get-cloud-compliance-info.html"
         - title: Retrieve the service cloud compliance status using the service ID
           url: "/cvo/get-cloud-compliance-compliance-status.html"
-        - title: Disable scanning using the service ID
-          url: "/cvo/post-cloud-compliance-disable-service-scan.html"
         - title: Enable scanning using the service ID
           url: "/cvo/post-cloud-compliance-enable-service-scan.html"
-        - title: Disable on-premises scanning
-          url: "/cvo/post-cloud-compliance-disable-onprem-scan.html"
-        - title: Disable scanning using the system ID
-          url: "/cvo/post-cloud-compliance-disable-scan.html"
-        - title: Enable on-premises scanning using the system ID
-          url: "/cvo/post-cloud-compliance-enable-onprem-scan.html"
+        - title: Disable scanning using the service ID
+          url: "/cvo/post-cloud-compliance-disable-service-scan.html"
         - title: Enable scanning using the system ID
           url: "/cvo/post-cloud-compliance-enable-scan.html"
+        - title: Disable scanning using the system ID
+          url: "/cvo/post-cloud-compliance-disable-scan.html"
+        - title: Enable scanning using the file system ID
+          url: "/cvo/post-cloud-compliance-fsx-enable-scan.html"
+        - title: Disable scanning using the file system ID
+          url: "/cvo/post-cloud-compliance-fsx-disable-scan.html"
+        - title: Enable on-premises scanning using the system ID
+          url: "/cvo/post-cloud-compliance-enable-onprem-scan.html"
       - title: Common system operations
         entries:
-        - title: Retrieve all systems
-          url: "/cvo/get-working-environments.html"
-        - title: Retrieve all non-premises system actions for a tenant ID
-          url: "/cvo/get-working-environments-actionrequired-.html"
-        - title: Retrieve capacity-based BYOL license metering details
-          url: "/cvo/get-working-environments-by-capacity-byol-details-v2.html"
         - title: Check if a system with the specified name exists
           url: "/cvo/get-working-environments-exists-.html"
-        - title: Trigger dark site capacity metering report generation
-          url: "/cvo/post-working-environments-metering-report.html"
+        - title: Retrieve all non-premises system actions for a tenant ID
+          url: "/cvo/get-working-environments-actionrequired-.html"
+        - title: Retrieve all systems
+          url: "/cvo/get-working-environments.html"
         - title: Retrieve a Cloud Volumes ONTAP system
           url: "/cvo/get-working-environments-.html"
       - title: FlexCache volume operations
         entries:
-        - title: Create a new FlexCache volume
-          url: "/cvo/post-flexcache.html"
-        - title: Retrieve all FlexCache volume relationships
-          url: "/cvo/get-flexcache-all-relationships.html"
-        - title: Retrieve all FlexCache volumes lists
-          url: "/cvo/get-flexcache-caches.html"
         - title: Create a new FlexCache volume for an FSx system
           url: "/cvo/post-flexcache-fsx.html"
-        - title: Delete a FlexCache volume
-          url: "/cvo/delete-flexcache-caches-.html"
+        - title: Retrieve all FlexCache volume relationships
+          url: "/cvo/get-flexcache-all-relationships.html"
         - title: Modify a FlexCache volume
           url: "/cvo/put-flexcache-caches-.html"
+        - title: Delete a FlexCache volume
+          url: "/cvo/delete-flexcache-caches-.html"
+        - title: Create a new FlexCache volume
+          url: "/cvo/post-flexcache.html"
+        - title: Retrieve all FlexCache volumes lists
+          url: "/cvo/get-flexcache-caches.html"
       - title: Google Cloud aggregates (HA)
         entries:
-        - title: Create a new aggregate
-          url: "/cvo/post-gcp-ha-aggregates.html"
         - title: Retrieve aggregates
           url: "/cvo/get-gcp-ha-aggregates-.html"
+        - title: Create a new aggregate
+          url: "/cvo/post-gcp-ha-aggregates.html"
         - title: Delete an aggregate
           url: "/cvo/delete-gcp-ha-aggregates-.html"
-        - title: Update IOPS and throughput for the disks in an existing aggregate
-          url: "/cvo/put-gcp-ha-aggregates-.html"
         - title: Add disks to an aggregate
           url: "/cvo/post-gcp-ha-aggregates--disks.html"
       - title: Google Cloud aggregates (single-node)
         entries:
-        - title: Create a new aggregate
-          url: "/cvo/post-gcp-vsa-aggregates.html"
         - title: Retrieve aggregates
           url: "/cvo/get-gcp-vsa-aggregates-.html"
+        - title: Create a new aggregate
+          url: "/cvo/post-gcp-vsa-aggregates.html"
         - title: Delete an aggregate
           url: "/cvo/delete-gcp-vsa-aggregates-.html"
-        - title: Update IOPS and throughput for the disks in an existing aggregate
-          url: "/cvo/put-gcp-vsa-aggregates-.html"
         - title: Add disks to an aggregate
           url: "/cvo/post-gcp-vsa-aggregates--disks.html"
       - title: Google Cloud system discovery (HA)
@@ -1416,270 +1406,278 @@ sidebar:
           url: "/cvo/post-gcp-vsa-recover.html"
       - title: Google Cloud system metadata (HA)
         entries:
-        - title: Retrieve all cloud storage buckets
-          url: "/cvo/get-gcp-ha-metadata-buckets.html"
-        - title: Create a new bucket
-          url: "/cvo/post-gcp-ha-metadata-create-bucket.html"
-        - title: Retrieve the default snapshot policies
-          url: "/cvo/get-gcp-ha-metadata-default-snapshot-policies.html"
-        - title: Retrieve the supported disk types
-          url: "/cvo/get-gcp-ha-metadata-gcp-disk-types.html"
-        - title: Retrieve Google Cloud encryption keys for a region
-          url: "/cvo/get-gcp-ha-metadata-gcp-encryption-keys.html"
-        - title: Retrieve instance types that do not support acceleration and capacity
-            tiering
-          url: "/cvo/get-gcp-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
-        - title: Retrieve the minimum number of IP addresses for a system
-          url: "/cvo/get-gcp-ha-metadata-network-requirements.html"
-        - title: Retrieve the packages configuration
-          url: "/cvo/get-gcp-ha-metadata-packages.html"
+        - title: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
+          url: "/cvo/get-gcp-vsa-metadata-workerpools.html"
+        - title: Retrieve Google Cloud networks and subnetworks
+          url: "/cvo/get-gcp-ha-metadata-vpcs.html"
+        - title: Retrieve Google Cloud regions and zones
+          url: "/cvo/get-gcp-ha-metadata-zones.html"
+        - title: Retrieve all labels for a project ID and region
+          url: "/cvo/get-gcp-ha-metadata-tag-keys.html"
         - title: Retrieve all Cloud Volumes ONTAP configurations
           url: "/cvo/get-gcp-ha-metadata-permutations.html"
-        - title: Retrieve a list of projects
-          url: "/cvo/get-gcp-ha-metadata-projects.html"
-        - title: Retrieve Google Cloud regions
-          url: "/cvo/get-gcp-ha-metadata-regions.html"
+        - title: Retrieve the minimum number of IP addresses for a system
+          url: "/cvo/get-gcp-ha-metadata-network-requirements.html"
+        - title: Retrieve Google Cloud encryption keys for a region
+          url: "/cvo/get-gcp-ha-metadata-gcp-encryption-keys.html"
         - title: Retrieve a list of service accounts
           url: "/cvo/get-gcp-ha-metadata-service-accounts.html"
         - title: Retrieve supported capacity tiers for Google Cloud disk types
           url: "/cvo/get-gcp-ha-metadata-supported-capacity-tiers.html"
+        - title: Retrieve all cloud storage buckets
+          url: "/cvo/get-gcp-ha-metadata-buckets.html"
+        - title: Create a new bucket
+          url: "/cvo/post-gcp-ha-metadata-create-bucket.html"
+        - title: Retrieve the supported disk types
+          url: "/cvo/get-gcp-ha-metadata-gcp-disk-types.html"
+        - title: Retrieve a list of projects
+          url: "/cvo/get-gcp-ha-metadata-projects.html"
+        - title: Retrieve Google Cloud regions
+          url: "/cvo/get-gcp-ha-metadata-regions.html"
+        - title: Retrieve the default snapshot policies
+          url: "/cvo/get-gcp-ha-metadata-default-snapshot-policies.html"
+        - title: Retrieve instance types that do not support acceleration and capacity
+            tiering
+          url: "/cvo/get-gcp-ha-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
         - title: Retrieve supported features
           url: "/cvo/get-gcp-ha-metadata-supported-features.html"
-        - title: Retrieve all labels for a project ID and region
-          url: "/cvo/get-gcp-ha-metadata-tag-keys.html"
-        - title: Retrieve Google Cloud networks and subnetworks
-          url: "/cvo/get-gcp-ha-metadata-vpcs.html"
-        - title: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
-          url: "/cvo/get-gcp-ha-metadata-workerpools.html"
-        - title: Retrieve Google Cloud regions and zones
-          url: "/cvo/get-gcp-ha-metadata-zones.html"
+        - title: Retrieve the packages configuration
+          url: "/cvo/get-gcp-ha-metadata-packages.html"
       - title: Google Cloud system metadata (single-node)
         entries:
-        - title: Retrieve all cloud storage buckets
-          url: "/cvo/get-gcp-vsa-metadata-buckets.html"
-        - title: Create a new bucket
-          url: "/cvo/post-gcp-vsa-metadata-create-bucket.html"
-        - title: Retrieve default snapshot policies
-          url: "/cvo/get-gcp-vsa-metadata-default-snapshot-policies.html"
-        - title: Retrieve the supported Google Cloud disk types
-          url: "/cvo/get-gcp-vsa-metadata-gcp-disk-types.html"
-        - title: Retrieve Google Cloud encryption keys for a region
-          url: "/cvo/get-gcp-vsa-metadata-gcp-encryption-keys.html"
-        - title: Retrieve the instance types that do not support acceleration and
-            capacity tiering
-          url: "/cvo/get-gcp-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
         - title: Retrieve the minimum number of IP addresses for a system
           url: "/cvo/get-gcp-vsa-metadata-network-requirements.html"
-        - title: Retrieve the packages configuration
-          url: "/cvo/get-gcp-vsa-metadata-packages.html"
-        - title: Retrieve all Cloud Volumes ONTAP configurations
-          url: "/cvo/get-gcp-vsa-metadata-permutations.html"
-        - title: Retrieve a list of projects
-          url: "/cvo/get-gcp-vsa-metadata-projects.html"
-        - title: Retrieve Google Cloud regions
-          url: "/cvo/get-gcp-vsa-metadata-regions.html"
+        - title: Retrieve Google Cloud encryption keys for a region
+          url: "/cvo/get-gcp-vsa-metadata-gcp-encryption-keys.html"
         - title: Retrieve a list of service accounts
           url: "/cvo/get-gcp-vsa-metadata-service-accounts.html"
         - title: Retrieve supported capacity tiers for Google Cloud disk types
           url: "/cvo/get-gcp-vsa-metadata-supported-capacity-tiers.html"
-        - title: Retrieve supported features
-          url: "/cvo/get-gcp-vsa-metadata-supported-features.html"
+        - title: Retrieve all cloud storage buckets
+          url: "/cvo/get-gcp-vsa-metadata-buckets.html"
+        - title: Create a new bucket
+          url: "/cvo/post-gcp-vsa-metadata-create-bucket.html"
+        - title: Retrieve the supported Google Cloud disk types
+          url: "/cvo/get-gcp-vsa-metadata-gcp-disk-types.html"
         - title: Retrieve all the labels for a project ID and zone
           url: "/cvo/get-gcp-vsa-metadata-tag-keys.html"
+        - title: Retrieve a list of projects
+          url: "/cvo/get-gcp-vsa-metadata-projects.html"
+        - title: Retrieve Google Cloud regions
+          url: "/cvo/get-gcp-vsa-metadata-regions.html"
+        - title: Retrieve all Cloud Volumes ONTAP configurations
+          url: "/cvo/get-gcp-vsa-metadata-permutations.html"
+        - title: Retrieve default snapshot policies
+          url: "/cvo/get-gcp-vsa-metadata-default-snapshot-policies.html"
+        - title: Retrieve the instance types that do not support acceleration and
+            capacity tiering
+          url: "/cvo/get-gcp-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html"
+        - title: Retrieve supported features
+          url: "/cvo/get-gcp-vsa-metadata-supported-features.html"
+        - title: Retrieve the packages configuration
+          url: "/cvo/get-gcp-vsa-metadata-packages.html"
         - title: Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
-          url: "/cvo/get-gcp-vsa-metadata-workerpools.html"
+          url: "/cvo/get-gcp-ha-metadata-workerpools.html"
       - title: Google Cloud systems (HA)
         entries:
         - title: Retrieve Cloud Volumes ONTAP systems
           url: "/cvo/get-gcp-ha-working-environments.html"
         - title: Create a new Cloud Volumes ONTAP Google Cloud HA system
           url: "/cvo/post-gcp-ha-working-environments.html"
-        - title: Parse an uploaded cloud license file
-          url: "/cvo/post-gcp-ha-working-environments-parse-license-file.html"
-        - title: Trigger subscription synchronization
-          url: "/cvo/post-gcp-ha-working-environments-sync-subscription.html"
-        - title: Delete an existing system
-          url: "/cvo/delete-gcp-ha-working-environments-.html"
+        - title: Stop a specific Cloud Volumes ONTAP instance
+          url: "/cvo/post-gcp-ha-working-environments-stop.html"
+        - title: Check for non-persistent locks held on CIFS sessions
+          url: "/cvo/get-gcp-ha-working-environments-cifs-locks-exist.html"
+        - title: Delete an SVM
+          url: "/cvo/delete-gcp-ha-working-environments-svm-.html"
+        - title: Modify the SVM name of the Cloud Volumes ONTAP system
+          url: "/cvo/put-gcp-ha-working-environments-svm.html"
+        - title: Create a new SVM
+          url: "/cvo/post-gcp-ha-working-environments-svm.html"
         - title: Retrieve a system
           url: "/cvo/get-gcp-ha-working-environments-.html"
-        - title: Activate FPolicy for ransomware files
-          url: "/cvo/put-gcp-ha-working-environments-activate-fpolicy.html"
-        - title: Activate snapshot policy assignment for unprotected read/write volumes
-          url: "/cvo/put-gcp-ha-working-environments-activate-snapshot-policy.html"
-        - title: Update a BYOL license to a capacity-based license
-          url: "/cvo/put-gcp-ha-working-environments-byol-to-capacity.html"
-        - title: Update the serial number of a system
-          url: "/cvo/post-gcp-ha-working-environments-change-serial.html"
-        - title: Update the tier level
-          url: "/cvo/post-gcp-ha-working-environments-change-tier-level.html"
+        - title: Delete an existing system
+          url: "/cvo/delete-gcp-ha-working-environments-.html"
+        - title: Delete the CIFS configuration for a system
+          url: "/cvo/post-gcp-ha-working-environments-delete-cifs.html"
         - title: Retrieve the CIFS configuration for a system
           url: "/cvo/get-gcp-ha-working-environments-cifs.html"
         - title: Create a new CIFS configuration for a system
           url: "/cvo/post-gcp-ha-working-environments-cifs.html"
-        - title: Check for non-persistent locks held on CIFS sessions
-          url: "/cvo/get-gcp-ha-working-environments-cifs-locks-exist.html"
-        - title: Retrieve the system cost and usage
-          url: "/cvo/get-gcp-ha-working-environments-cost-and-usage.html"
-        - title: Retrieve action parameters
-          url: "/cvo/get-gcp-ha-working-environments-create-request-parameters.html"
-        - title: Delete the CIFS configuration for a system
-          url: "/cvo/post-gcp-ha-working-environments-delete-cifs.html"
-        - title: Disable FPolicy for ransomware files
-          url: "/cvo/put-gcp-ha-working-environments-disable-fpolicy.html"
-        - title: Enable capacity tiering
-          url: "/cvo/post-gcp-ha-working-environments-enable-capacity-tiering.html"
-        - title: Enable SnapLock on a system
-          url: "/cvo/put-gcp-ha-working-environments-enable-worm.html"
-        - title: Retrieve extra capacity licenses
-          url: "/cvo/get-gcp-ha-working-environments-extra-capacity-licenses.html"
-        - title: Register an extra capacity license
-          url: "/cvo/post-gcp-ha-working-environments-extra-capacity-licenses.html"
-        - title: Update extra capacity licenses
-          url: "/cvo/put-gcp-ha-working-environments-extra-capacity-licenses.html"
-        - title: Delete extra capacity licenses using the license serial numbers
-          url: "/cvo/delete-gcp-ha-working-environments-extra-capacity-serials.html"
-        - title: Register extra capacity license serial numbers
-          url: "/cvo/post-gcp-ha-working-environments-extra-capacity-serials.html"
-        - title: Update extra capacity license serial numbers
-          url: "/cvo/put-gcp-ha-working-environments-extra-capacity-serials.html"
-        - title: Delete FPolicy for ransomware files
-          url: "/cvo/delete-gcp-ha-working-environments-fpolicy.html"
+        - title: Validate prerequisites for converting a system
+          url: "/cvo/get-gcp-ha-working-environments-validate-byol-to-capacity.html"
+        - title: Modify the writing speed for a system
+          url: "/cvo/put-gcp-ha-working-environments-writing-speed.html"
         - title: Retrieve all license types for a system
           url: "/cvo/get-gcp-ha-working-environments-license-instance-type.html"
         - title: Set the instance type
           url: "/cvo/put-gcp-ha-working-environments-license-instance-type.html"
-        - title: Modify the network port broadcast domain MTU
-          url: "/cvo/put-gcp-ha-working-environments-networkoptimization.html"
-        - title: Set up an NTP server
-          url: "/cvo/post-gcp-ha-working-environments-ntp.html"
-        - title: Retrieve a list of upgrade versions
-          url: "/cvo/get-gcp-ha-working-environments-occm-provided-upgrade-versions.html"
-        - title: Activate an off-box configuration
-          url: "/cvo/put-gcp-ha-working-environments-offbox.html"
         - title: Retrieve images already installed on a system
           url: "/cvo/get-gcp-ha-working-environments-ontap-available-images.html"
-        - title: Retrieve system ONTAP savings
-          url: "/cvo/get-gcp-ha-working-environments-ontap-saving.html"
-        - title: List the start/stop schedules for Cloud Volumes ONTAP
-          url: "/cvo/get-gcp-ha-working-environments-schedules.html"
-        - title: Set the schedules for Cloud Volumes ONTAP
-          url: "/cvo/put-gcp-ha-working-environments-schedules.html"
-        - title: Set the cluster password for a system
-          url: "/cvo/put-gcp-ha-working-environments-set-password.html"
-        - title: Create a snapshot policy
-          url: "/cvo/post-gcp-ha-working-environments-snapshot-policy.html"
-        - title: Start a Cloud Volumes ONTAP instance
-          url: "/cvo/post-gcp-ha-working-environments-start.html"
-        - title: Stop a specific Cloud Volumes ONTAP instance
-          url: "/cvo/post-gcp-ha-working-environments-stop.html"
-        - title: Retrieve the support registration status
-          url: "/cvo/get-gcp-ha-working-environments-support-registration.html"
-        - title: Register a Cloud Volumes ONTAP system with NetApp
-          url: "/cvo/post-gcp-ha-working-environments-support-registration.html"
-        - title: Create a new SVM
-          url: "/cvo/post-gcp-ha-working-environments-svm.html"
-        - title: Modify the SVM name of the Cloud Volumes ONTAP system
-          url: "/cvo/put-gcp-ha-working-environments-svm.html"
-        - title: Delete an SVM
-          url: "/cvo/delete-gcp-ha-working-environments-svm-.html"
-        - title: Update the NetApp Console password
-          url: "/cvo/put-gcp-ha-working-environments-update-credentials.html"
-        - title: Retrieve the eligibility support status
-          url: "/cvo/get-gcp-ha-working-environments-update-eligibility.html"
         - title: Perform a complete image update
           url: "/cvo/post-gcp-ha-working-environments-update-image.html"
+        - title: Retrieve the eligibility support status
+          url: "/cvo/get-gcp-ha-working-environments-update-eligibility.html"
         - title: Upload a cloud license file
           url: "/cvo/post-gcp-ha-working-environments-upload-license-file.html"
+        - title: Retrieve a list of upgrade versions
+          url: "/cvo/get-gcp-ha-working-environments-occm-provided-upgrade-versions.html"
+        - title: Trigger subscription synchronization
+          url: "/cvo/post-gcp-ha-working-environments-sync-subscription.html"
         - title: Upload cloud license file content
           url: "/cvo/post-gcp-ha-working-environments-upload-licenses.html"
+        - title: Activate an off-box configuration
+          url: "/cvo/put-gcp-ha-working-environments-offbox.html"
+        - title: Modify the network port broadcast domain MTU
+          url: "/cvo/put-gcp-ha-working-environments-networkoptimization.html"
+        - title: Retrieve action parameters
+          url: "/cvo/get-gcp-ha-working-environments-create-request-parameters.html"
+        - title: Enable capacity tiering
+          url: "/cvo/post-gcp-ha-working-environments-enable-capacity-tiering.html"
+        - title: Retrieve the system cost and usage
+          url: "/cvo/get-gcp-ha-working-environments-cost-and-usage.html"
+        - title: Retrieve system ONTAP savings
+          url: "/cvo/get-gcp-ha-working-environments-ontap-saving.html"
+        - title: Retrieve extra capacity licenses
+          url: "/cvo/get-gcp-ha-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity licenses
+          url: "/cvo/put-gcp-ha-working-environments-extra-capacity-licenses.html"
+        - title: Register an extra capacity license
+          url: "/cvo/post-gcp-ha-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity license serial numbers
+          url: "/cvo/put-gcp-ha-working-environments-extra-capacity-serials.html"
+        - title: Register extra capacity license serial numbers
+          url: "/cvo/post-gcp-ha-working-environments-extra-capacity-serials.html"
+        - title: Delete extra capacity licenses using the license serial numbers
+          url: "/cvo/delete-gcp-ha-working-environments-extra-capacity-serials.html"
+        - title: Update the default Vscan file operation profile
+          url: "/cvo/put-gcp-ha-working-environments-vscan-file-op.html"
         - title: Retrieve editable tags for cloud resources
           url: "/cvo/get-gcp-ha-working-environments-user-tags.html"
         - title: Modify user tags for cloud resources
           url: "/cvo/put-gcp-ha-working-environments-user-tags.html"
-        - title: Validate prerequisites for converting a system
-          url: "/cvo/get-gcp-ha-working-environments-validate-byol-to-capacity.html"
-        - title: Update the default Vscan file operation profile
-          url: "/cvo/put-gcp-ha-working-environments-vscan-file-op.html"
-        - title: Modify the writing speed for a system
-          url: "/cvo/put-gcp-ha-working-environments-writing-speed.html"
+        - title: Parse an uploaded cloud license file
+          url: "/cvo/post-gcp-ha-working-environments-parse-license-file.html"
+        - title: Update the NetApp Console password
+          url: "/cvo/put-gcp-ha-working-environments-update-credentials.html"
+        - title: Update the tier level
+          url: "/cvo/post-gcp-ha-working-environments-change-tier-level.html"
+        - title: Enable SnapLock on a system
+          url: "/cvo/put-gcp-ha-working-environments-enable-worm.html"
+        - title: Update a BYOL license to a capacity-based license
+          url: "/cvo/put-gcp-ha-working-environments-byol-to-capacity.html"
+        - title: Set up an NTP server
+          url: "/cvo/post-gcp-ha-working-environments-ntp.html"
+        - title: Start a Cloud Volumes ONTAP instance
+          url: "/cvo/post-gcp-ha-working-environments-start.html"
+        - title: Retrieve the support registration status
+          url: "/cvo/get-gcp-ha-working-environments-support-registration.html"
+        - title: Register a Cloud Volumes ONTAP system with NetApp
+          url: "/cvo/post-gcp-ha-working-environments-support-registration.html"
+        - title: List the start/stop schedules for Cloud Volumes ONTAP
+          url: "/cvo/get-gcp-ha-working-environments-schedules.html"
+        - title: Set the schedules for Cloud Volumes ONTAP
+          url: "/cvo/put-gcp-ha-working-environments-schedules.html"
+        - title: Activate FPolicy for ransomware files
+          url: "/cvo/put-gcp-ha-working-environments-activate-fpolicy.html"
+        - title: Disable FPolicy for ransomware files
+          url: "/cvo/put-gcp-ha-working-environments-disable-fpolicy.html"
+        - title: Delete FPolicy for ransomware files
+          url: "/cvo/delete-gcp-ha-working-environments-fpolicy.html"
+        - title: Activate snapshot policy assignment for unprotected read/write volumes
+          url: "/cvo/put-gcp-ha-working-environments-activate-snapshot-policy.html"
+        - title: Create a snapshot policy
+          url: "/cvo/post-gcp-ha-working-environments-snapshot-policy.html"
+        - title: Update the serial number of a system
+          url: "/cvo/post-gcp-ha-working-environments-change-serial.html"
+        - title: Set the cluster password for a system
+          url: "/cvo/put-gcp-ha-working-environments-set-password.html"
       - title: Google Cloud systems (single-node)
         entries:
         - title: Retrieve Cloud Volumes ONTAP systems
           url: "/cvo/get-gcp-vsa-working-environments.html"
         - title: Create a new Cloud Volumes ONTAP system
           url: "/cvo/post-gcp-vsa-working-environments.html"
-        - title: Parse an uploaded cloud license file
-          url: "/cvo/post-gcp-vsa-working-environments-parse-license-file.html"
-        - title: Trigger subscription synchronization
-          url: "/cvo/post-gcp-vsa-working-environments-sync-subscription.html"
-        - title: Delete an existing Cloud Volumes ONTAP system
-          url: "/cvo/delete-gcp-vsa-working-environments-.html"
+        - title: Delete an SVM
+          url: "/cvo/delete-gcp-vsa-working-environments-svm-.html"
+        - title: Modify the SVM name
+          url: "/cvo/put-gcp-vsa-working-environments-svm.html"
+        - title: Create a new SVM
+          url: "/cvo/post-gcp-vsa-working-environments-svm.html"
         - title: Retrieve a Cloud Volumes ONTAP system
           url: "/cvo/get-gcp-vsa-working-environments-.html"
-        - title: Activate the FPolicy for ransomware files
-          url: "/cvo/put-gcp-vsa-working-environments-activate-fpolicy.html"
-        - title: Activate snapshot policy assignment
-          url: "/cvo/put-gcp-vsa-working-environments-activate-snapshot-policy.html"
-        - title: Update a BYOL licence to a capacity-based license
-          url: "/cvo/put-gcp-vsa-working-environments-byol-to-capacity.html"
-        - title: Update the serial number of Cloud Volumes ONTAP
-          url: "/cvo/post-gcp-vsa-working-environments-change-serial.html"
-        - title: Update the tier level
-          url: "/cvo/post-gcp-vsa-working-environments-change-tier-level.html"
+        - title: Delete an existing Cloud Volumes ONTAP system
+          url: "/cvo/delete-gcp-vsa-working-environments-.html"
+        - title: Delete a CIFS configuration
+          url: "/cvo/post-gcp-vsa-working-environments-delete-cifs.html"
         - title: Retrieve a CIFS configuration
           url: "/cvo/get-gcp-vsa-working-environments-cifs.html"
         - title: Set up a new CIFS configuration
           url: "/cvo/post-gcp-vsa-working-environments-cifs.html"
-        - title: Retrieve system cost and usage
-          url: "/cvo/get-gcp-vsa-working-environments-cost-and-usage.html"
-        - title: Retrieve the action parameters
-          url: "/cvo/get-gcp-vsa-working-environments-create-request-parameters.html"
-        - title: Delete a CIFS configuration
-          url: "/cvo/post-gcp-vsa-working-environments-delete-cifs.html"
-        - title: Disable the FPolicy for ransomware files
-          url: "/cvo/put-gcp-vsa-working-environments-disable-fpolicy.html"
-        - title: Enable capacity tiering
-          url: "/cvo/post-gcp-vsa-working-environments-enable-capacity-tiering.html"
-        - title: Enable SnapLock for a system
-          url: "/cvo/put-gcp-vsa-working-environments-enable-worm.html"
-        - title: Retrieve extra capacity licenses
-          url: "/cvo/get-gcp-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Register extra capacity licenses
-          url: "/cvo/post-gcp-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Update extra capacity licenses
-          url: "/cvo/put-gcp-vsa-working-environments-extra-capacity-licenses.html"
-        - title: Delete extra capacity licenses by serial numbers
-          url: "/cvo/delete-gcp-vsa-working-environments-extra-capacity-serials.html"
-        - title: Register extra capacity serial numbers
-          url: "/cvo/post-gcp-vsa-working-environments-extra-capacity-serials.html"
-        - title: Update extra capacity serial numbers
-          url: "/cvo/put-gcp-vsa-working-environments-extra-capacity-serials.html"
-        - title: Delete the FPolicy for ransomware files
-          url: "/cvo/delete-gcp-vsa-working-environments-fpolicy.html"
+        - title: Validate prerequisites for converting a system
+          url: "/cvo/get-gcp-vsa-working-environments-validate-byol-to-capacity.html"
+        - title: Set the writing speed
+          url: "/cvo/put-gcp-vsa-working-environments-writing-speed.html"
         - title: Retrieve all license types and their associated instance types
           url: "/cvo/get-gcp-vsa-working-environments-license-instance-type.html"
         - title: Set the instance type
           url: "/cvo/put-gcp-vsa-working-environments-license-instance-type.html"
-        - title: Modify the network port broadcast domain MTU
-          url: "/cvo/put-gcp-vsa-working-environments-networkoptimization.html"
-        - title: Set up an NTP server
-          url: "/cvo/post-gcp-vsa-working-environments-ntp.html"
-        - title: Retrieve a list of upgrade versions
-          url: "/cvo/get-gcp-vsa-working-environments-occm-provided-upgrade-versions.html"
-        - title: Activate an offbox configuration
-          url: "/cvo/put-gcp-vsa-working-environments-offbox.html"
         - title: Retrieve images already installed
           url: "/cvo/get-gcp-vsa-working-environments-ontap-available-images.html"
+        - title: Perform a complete image update operation
+          url: "/cvo/post-gcp-vsa-working-environments-update-image.html"
+        - title: Retrieve the eligibility support status
+          url: "/cvo/get-gcp-vsa-working-environments-update-eligibility.html"
+        - title: Upload a cloud license file
+          url: "/cvo/post-gcp-vsa-working-environments-upload-license-file.html"
+        - title: Retrieve a list of upgrade versions
+          url: "/cvo/get-gcp-vsa-working-environments-occm-provided-upgrade-versions.html"
+        - title: Trigger subscription synchronization
+          url: "/cvo/post-gcp-vsa-working-environments-sync-subscription.html"
+        - title: Upload cloud license file content
+          url: "/cvo/post-gcp-vsa-working-environments-upload-licenses.html"
+        - title: Activate an offbox configuration
+          url: "/cvo/put-gcp-vsa-working-environments-offbox.html"
+        - title: Modify the network port broadcast domain MTU
+          url: "/cvo/put-gcp-vsa-working-environments-networkoptimization.html"
+        - title: Retrieve the action parameters
+          url: "/cvo/get-gcp-vsa-working-environments-create-request-parameters.html"
+        - title: Enable capacity tiering
+          url: "/cvo/post-gcp-vsa-working-environments-enable-capacity-tiering.html"
+        - title: Retrieve system cost and usage
+          url: "/cvo/get-gcp-vsa-working-environments-cost-and-usage.html"
         - title: Retrieve system ONTAP savings
           url: "/cvo/get-gcp-vsa-working-environments-ontap-saving.html"
-        - title: List the start/stop schedules
-          url: "/cvo/get-gcp-vsa-working-environments-schedules.html"
-        - title: Set the schedules for Cloud Volumes ONTAP
-          url: "/cvo/put-gcp-vsa-working-environments-schedules.html"
-        - title: Set the cluster password
-          url: "/cvo/put-gcp-vsa-working-environments-set-password.html"
-        - title: Create a snapshot policy
-          url: "/cvo/post-gcp-vsa-working-environments-snapshot-policy.html"
+        - title: Retrieve extra capacity licenses
+          url: "/cvo/get-gcp-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity licenses
+          url: "/cvo/put-gcp-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Register extra capacity licenses
+          url: "/cvo/post-gcp-vsa-working-environments-extra-capacity-licenses.html"
+        - title: Update extra capacity serial numbers
+          url: "/cvo/put-gcp-vsa-working-environments-extra-capacity-serials.html"
+        - title: Register extra capacity serial numbers
+          url: "/cvo/post-gcp-vsa-working-environments-extra-capacity-serials.html"
+        - title: Delete extra capacity licenses by serial numbers
+          url: "/cvo/delete-gcp-vsa-working-environments-extra-capacity-serials.html"
+        - title: Update the default Vscan file operation profile
+          url: "/cvo/put-gcp-vsa-working-environments-vscan-file-op.html"
+        - title: Retrieve editable tags
+          url: "/cvo/get-gcp-vsa-working-environments-user-tags.html"
+        - title: Modify user tags for cloud resources
+          url: "/cvo/put-gcp-vsa-working-environments-user-tags.html"
+        - title: Parse an uploaded cloud license file
+          url: "/cvo/post-gcp-vsa-working-environments-parse-license-file.html"
+        - title: Update the NetApp Console password
+          url: "/cvo/put-gcp-vsa-working-environments-update-credentials.html"
+        - title: Update the tier level
+          url: "/cvo/post-gcp-vsa-working-environments-change-tier-level.html"
+        - title: Enable SnapLock for a system
+          url: "/cvo/put-gcp-vsa-working-environments-enable-worm.html"
+        - title: Update a BYOL licence to a capacity-based license
+          url: "/cvo/put-gcp-vsa-working-environments-byol-to-capacity.html"
+        - title: Set up an NTP server
+          url: "/cvo/post-gcp-vsa-working-environments-ntp.html"
         - title: Start a Cloud Volumes ONTAP instance
           url: "/cvo/post-gcp-vsa-working-environments-start.html"
         - title: Stop a Cloud Volumes ONTAP instance
@@ -1688,100 +1686,92 @@ sidebar:
           url: "/cvo/get-gcp-vsa-working-environments-support-registration.html"
         - title: Register a Cloud Volumes ONTAP system
           url: "/cvo/post-gcp-vsa-working-environments-support-registration.html"
-        - title: Create a new SVM
-          url: "/cvo/post-gcp-vsa-working-environments-svm.html"
-        - title: Modify the SVM name
-          url: "/cvo/put-gcp-vsa-working-environments-svm.html"
-        - title: Delete an SVM
-          url: "/cvo/delete-gcp-vsa-working-environments-svm-.html"
-        - title: Update the NetApp Console password
-          url: "/cvo/put-gcp-vsa-working-environments-update-credentials.html"
-        - title: Retrieve the eligibility support status
-          url: "/cvo/get-gcp-vsa-working-environments-update-eligibility.html"
-        - title: Perform a complete image update operation
-          url: "/cvo/post-gcp-vsa-working-environments-update-image.html"
-        - title: Upload a cloud license file
-          url: "/cvo/post-gcp-vsa-working-environments-upload-license-file.html"
-        - title: Upload cloud license file content
-          url: "/cvo/post-gcp-vsa-working-environments-upload-licenses.html"
-        - title: Retrieve editable tags
-          url: "/cvo/get-gcp-vsa-working-environments-user-tags.html"
-        - title: Modify user tags for cloud resources
-          url: "/cvo/put-gcp-vsa-working-environments-user-tags.html"
-        - title: Validate prerequisites for converting a system
-          url: "/cvo/get-gcp-vsa-working-environments-validate-byol-to-capacity.html"
-        - title: Update the default Vscan file operation profile
-          url: "/cvo/put-gcp-vsa-working-environments-vscan-file-op.html"
-        - title: Set the writing speed
-          url: "/cvo/put-gcp-vsa-working-environments-writing-speed.html"
+        - title: List the start/stop schedules
+          url: "/cvo/get-gcp-vsa-working-environments-schedules.html"
+        - title: Set the schedules for Cloud Volumes ONTAP
+          url: "/cvo/put-gcp-vsa-working-environments-schedules.html"
+        - title: Activate the FPolicy for ransomware files
+          url: "/cvo/put-gcp-vsa-working-environments-activate-fpolicy.html"
+        - title: Disable the FPolicy for ransomware files
+          url: "/cvo/put-gcp-vsa-working-environments-disable-fpolicy.html"
+        - title: Delete the FPolicy for ransomware files
+          url: "/cvo/delete-gcp-vsa-working-environments-fpolicy.html"
+        - title: Activate snapshot policy assignment
+          url: "/cvo/put-gcp-vsa-working-environments-activate-snapshot-policy.html"
+        - title: Create a snapshot policy
+          url: "/cvo/post-gcp-vsa-working-environments-snapshot-policy.html"
+        - title: Update the serial number of Cloud Volumes ONTAP
+          url: "/cvo/post-gcp-vsa-working-environments-change-serial.html"
+        - title: Set the cluster password
+          url: "/cvo/put-gcp-vsa-working-environments-set-password.html"
       - title: Google Cloud volumes (HA)
         entries:
-        - title: Retrieve volumes
-          url: "/cvo/get-gcp-ha-volumes.html"
-        - title: Create a new volume
-          url: "/cvo/post-gcp-ha-volumes.html"
+        - title: Modify a volume
+          url: "/cvo/put-gcp-ha-volumes--.html"
+        - title: Delete a volume
+          url: "/cvo/delete-gcp-ha-volumes--.html"
+        - title: Retrieve volumes for backup activation
+          url: "/cvo/get-gcp-ha-volumes-volumes-for-backup.html"
+        - title: Retrieve quotes for a new volume
+          url: "/cvo/post-gcp-ha-volumes-quote.html"
+        - title: Update the underlying volume tier
+          url: "/cvo/post-gcp-ha-volumes--change-tier.html"
         - title: Retrieve all igroups
           url: "/cvo/get-gcp-ha-volumes-igroups-.html"
         - title: Retrieve all iSCSI initiators
           url: "/cvo/get-gcp-ha-volumes-initiator.html"
         - title: Add an iSCSI initiator
           url: "/cvo/post-gcp-ha-volumes-initiator.html"
-        - title: Retrieve quotes for a new volume
-          url: "/cvo/post-gcp-ha-volumes-quote.html"
-        - title: Retrieve volumes for backup activation
-          url: "/cvo/get-gcp-ha-volumes-volumes-for-backup.html"
-        - title: Delete a volume
-          url: "/cvo/delete-gcp-ha-volumes--.html"
-        - title: Modify a volume
-          url: "/cvo/put-gcp-ha-volumes--.html"
-        - title: Update the underlying volume tier
-          url: "/cvo/post-gcp-ha-volumes--change-tier.html"
-        - title: Clone an existing volume
-          url: "/cvo/post-gcp-ha-volumes--clone.html"
-        - title: Add an export policy rule
-          url: "/cvo/put-gcp-ha-volumes--exportpolicy.html"
-        - title: Move an existing volume
-          url: "/cvo/post-gcp-ha-volumes--move.html"
-        - title: Delete a snapshot
-          url: "/cvo/delete-gcp-ha-volumes--snapshot.html"
-        - title: Create a snapshot
-          url: "/cvo/post-gcp-ha-volumes--snapshot.html"
         - title: Retrieve a list of snapshot descriptions
           url: "/cvo/get-gcp-ha-volumes--snapshots.html"
+        - title: Add an export policy rule
+          url: "/cvo/put-gcp-ha-volumes--exportpolicy.html"
+        - title: Clone an existing volume
+          url: "/cvo/post-gcp-ha-volumes--clone.html"
+        - title: Create a snapshot
+          url: "/cvo/post-gcp-ha-volumes--snapshot.html"
+        - title: Delete a snapshot
+          url: "/cvo/delete-gcp-ha-volumes--snapshot.html"
+        - title: Move an existing volume
+          url: "/cvo/post-gcp-ha-volumes--move.html"
+        - title: Retrieve volumes
+          url: "/cvo/get-gcp-ha-volumes.html"
+        - title: Create a new volume
+          url: "/cvo/post-gcp-ha-volumes.html"
       - title: Google Cloud volumes (single-node)
         entries:
-        - title: Retrieve volumes
-          url: "/cvo/get-gcp-vsa-volumes.html"
-        - title: Create a new volume
-          url: "/cvo/post-gcp-vsa-volumes.html"
+        - title: Modify a volume
+          url: "/cvo/put-gcp-vsa-volumes--.html"
+        - title: Delete a volume
+          url: "/cvo/delete-gcp-vsa-volumes--.html"
+        - title: Retrieve volumes for backup activation
+          url: "/cvo/get-gcp-vsa-volumes-volumes-for-backup.html"
+        - title: Retrieve quotes for a new volume
+          url: "/cvo/post-gcp-vsa-volumes-quote.html"
+        - title: Update the underlying volume tier
+          url: "/cvo/post-gcp-vsa-volumes--change-tier.html"
         - title: Retrieve all igroups
           url: "/cvo/get-gcp-vsa-volumes-igroups-.html"
         - title: Retrieve all iSCSI initiators
           url: "/cvo/get-gcp-vsa-volumes-initiator.html"
         - title: Add an iSCSI initiator
           url: "/cvo/post-gcp-vsa-volumes-initiator.html"
-        - title: Retrieve quotes for a new volume
-          url: "/cvo/post-gcp-vsa-volumes-quote.html"
-        - title: Retrieve volumes for backup activation
-          url: "/cvo/get-gcp-vsa-volumes-volumes-for-backup.html"
-        - title: Delete a volume
-          url: "/cvo/delete-gcp-vsa-volumes--.html"
-        - title: Modify a volume
-          url: "/cvo/put-gcp-vsa-volumes--.html"
-        - title: Update the underlying volume tier
-          url: "/cvo/post-gcp-vsa-volumes--change-tier.html"
-        - title: Clone a volume
-          url: "/cvo/post-gcp-vsa-volumes--clone.html"
-        - title: Add an export policy rule
-          url: "/cvo/put-gcp-vsa-volumes--exportpolicy.html"
-        - title: Move a volume
-          url: "/cvo/post-gcp-vsa-volumes--move.html"
-        - title: Delete a snapshot
-          url: "/cvo/delete-gcp-vsa-volumes--snapshot.html"
-        - title: Create a snapshot
-          url: "/cvo/post-gcp-vsa-volumes--snapshot.html"
         - title: Retrieve a list of snapshot descriptions for a volume
           url: "/cvo/get-gcp-vsa-volumes--snapshots.html"
+        - title: Add an export policy rule
+          url: "/cvo/put-gcp-vsa-volumes--exportpolicy.html"
+        - title: Clone a volume
+          url: "/cvo/post-gcp-vsa-volumes--clone.html"
+        - title: Create a snapshot
+          url: "/cvo/post-gcp-vsa-volumes--snapshot.html"
+        - title: Delete a snapshot
+          url: "/cvo/delete-gcp-vsa-volumes--snapshot.html"
+        - title: Move a volume
+          url: "/cvo/post-gcp-vsa-volumes--move.html"
+        - title: Retrieve volumes
+          url: "/cvo/get-gcp-vsa-volumes.html"
+        - title: Create a new volume
+          url: "/cvo/post-gcp-vsa-volumes.html"
       - title: Monitoring operations
         entries:
         - title: Deploy a monitoring instance by systems
@@ -1794,8 +1784,6 @@ sidebar:
           url: "/cvo/post-monitoring-enable-monitoring.html"
       - title: 'NetApp Console '
         entries:
-        - title: Retrieve the NetApp Console server information
-          url: "/cvo/get-occm-system-about.html"
         - title: Check for a new version of the NetApp Console
           url: "/cvo/get-occm-system-available-update-versions.html"
         - title: Perform a fetch and process of image update metadata files
@@ -1805,61 +1793,63 @@ sidebar:
           url: "/cvo/post-occm-system-cloud-ontap-update-metadata.html"
         - title: Retrieve supported regions for the cloud providers
           url: "/cvo/get-occm-system-cloud-provider-regions.html"
-        - title: Retrieve the NetApp Console feedback configuration
-          url: "/cvo/get-occm-system-external-config.html"
-        - title: Retrieve feature flags
-          url: "/cvo/get-occm-system-feature-flags.html"
         - title: Activate the Cloud Volumes ONTAP capacity automatic management cycle
           url: "/cvo/post-occm-system-manually-activate-auto-vsa-capacity-management-cycle.html"
         - title: Trigger sending daily notifications
           url: "/cvo/post-occm-system-manually-trigger-send-daily-notification.html"
-        - title: Retrieve the region, VPC, and subnet
-          url: "/cvo/get-occm-system-occm-instance-placement.html"
-        - title: Update the NetApp Console with the specified patch version
-          url: "/cvo/post-occm-system-patch.html"
-        - title: Restart the server
-          url: "/cvo/post-occm-system-restart-server.html"
-        - title: Retrieve the NetApp Console support services information
-          url: "/cvo/get-occm-system-support-services.html"
         - title: Update the NetApp Console
           url: "/cvo/post-occm-system-update.html"
+        - title: Restart the server
+          url: "/cvo/post-occm-system-restart-server.html"
+        - title: Retrieve feature flags
+          url: "/cvo/get-occm-system-feature-flags.html"
+        - title: Retrieve the NetApp Console feedback configuration
+          url: "/cvo/get-occm-system-external-config.html"
+        - title: Retrieve the NetApp Console server information
+          url: "/cvo/get-occm-system-about.html"
+        - title: Retrieve the NetApp Console support services information
+          url: "/cvo/get-occm-system-support-services.html"
+        - title: Update the NetApp Console with the specified patch version
+          url: "/cvo/post-occm-system-patch.html"
+        - title: Retrieve the region, VPC, and subnet
+          url: "/cvo/get-occm-system-occm-instance-placement.html"
       - title: NetApp Console AutoSupport
         entries:
+        - title: Retrieve the signed URL for the NetApp Console support data
+          url: "/cvo/get-occm-asup-download-signed.html"
         - title: Retrieve the AutoSupport configuration
           url: "/cvo/get-occm-asup.html"
         - title: Update the AutoSupport configuration
           url: "/cvo/put-occm-asup.html"
-        - title: Download NetApp Console support data
-          url: "/cvo/get-occm-asup-download.html"
         - title: Download a compressed file of all the AutoSupport files from all
             VSAs
           url: "/cvo/get-occm-asup-download-ontap-cloud-asups.html"
-        - title: Retrieve the signed URL for the NetApp Console support data
-          url: "/cvo/get-occm-asup-download-signed.html"
+        - title: Send performance archive support data to NetApp support
+          url: "/cvo/post-occm-asup-send-cot-performance-asup-.html"
+        - title: Download NetApp Console support data
+          url: "/cvo/get-occm-asup-download.html"
         - title: Send NetApp Console support data to NetApp support
           url: "/cvo/post-occm-asup-send.html"
         - title: Send Cloud Volumes ONTAP support data to NetApp support
           url: "/cvo/post-occm-asup-send-cot-asup.html"
-        - title: Send performance archive support data to NetApp support
-          url: "/cvo/post-occm-asup-send-cot-performance-asup-.html"
       - title: 'NetApp Console CA certificates '
         entries:
         - title: Retrieve all key manager CA certificates
           url: "/cvo/get-occm-encryption-key-managers-ca-certificates.html"
         - title: Add a new key manager CA certificate
           url: "/cvo/post-occm-encryption-key-managers-ca-certificates.html"
-        - title: Delete a key manager CA certificate
-          url: "/cvo/delete-occm-encryption-key-managers-ca-certificates-.html"
         - title: Retrieve a key manager CA certificate
           url: "/cvo/get-occm-encryption-key-managers-ca-certificates-.html"
+        - title: Delete a key manager CA certificate
+          url: "/cvo/delete-occm-encryption-key-managers-ca-certificates-.html"
       - title: NetApp Console SaaS marketplace
         entries:
-        - title: Retrieve current SaaS marketplace accounts and subscriptions
-          url: "/cvo/get-occm-saas-mp-service-account.html"
         - title: Attach a SaaS subscription
           url: "/cvo/put-occm-saas-mp-service-attach-subscription-.html"
         - title: Retrieve SaaS marketplace subscriptions
           url: "/cvo/get-occm-saas-mp-service-subscription.html"
+        - title: Retrieve current SaaS marketplace accounts and subscriptions
+          url: "/cvo/get-occm-saas-mp-service-account.html"
       - title: NetApp Console certificate signing requests
         entries:
         - title: Retrieve a generated certificate signing request
@@ -1880,64 +1870,66 @@ sidebar:
           url: "/cvo/put-occm-config.html"
       - title: NetApp Console identity and access management
         entries:
-        - title: Retrieve visible workspaces
-          url: "/cvo/get-occm-tenancy-service-workspaces.html"
         - title: Associate a console agent with a workspace
           url: "/cvo/post-occm-tenancy-service-workspaces-associate.html"
+        - title: Update the current NetApp Console service user
+          url: "/cvo/put-occm-tenancy-service-users-update-current-user.html"
+        - title: Retrieve visible workspaces
+          url: "/cvo/get-occm-tenancy-service-workspaces.html"
       - title: NetApp Console initial setup
         entries:
-        - title: Complete the setup
-          url: "/cvo/post-occm-setup-portal-complete-connectivity-pending-setup.html"
+        - title: Validate a proxy URL
+          url: "/cvo/post-occm-setup-validate-proxy.html"
+        - title: Validate an active internet connection
+          url: "/cvo/post-occm-setup-validate-connectivity.html"
         - title: Perform an initial setup with NetApp Console
           url: "/cvo/post-occm-setup-portal-init.html"
         - title: Perform an initial standalone setup with the local identity provider
           url: "/cvo/post-occm-setup-portal-init-standalone-local-auth.html"
-        - title: Set up a proxy URL
-          url: "/cvo/post-occm-setup-portal-proxy-setup.html"
-        - title: Register NetApp Console
-          url: "/cvo/post-occm-setup-portal-register.html"
         - title: Register NetApp Console to a dark site
           url: "/cvo/post-occm-setup-portal-register-in-local-auth.html"
+        - title: Complete the setup
+          url: "/cvo/post-occm-setup-portal-complete-connectivity-pending-setup.html"
+        - title: Register NetApp Console
+          url: "/cvo/post-occm-setup-portal-register.html"
+        - title: Set up a proxy URL
+          url: "/cvo/post-occm-setup-portal-proxy-setup.html"
         - title: Confirm the NetApp Console active internet connection
           url: "/cvo/post-occm-setup-portal-validate-connectivity.html"
-        - title: Validate an active internet connection
-          url: "/cvo/post-occm-setup-validate-connectivity.html"
-        - title: Validate a proxy URL
-          url: "/cvo/post-occm-setup-validate-proxy.html"
       - title: NetApp Console key managers
         entries:
-        - title: Retrieve all key managers
-          url: "/cvo/get-occm-encryption-key-managers.html"
-        - title: Add a new key manager
-          url: "/cvo/post-occm-encryption-key-managers.html"
-        - title: Delete an existing key manager
-          url: "/cvo/delete-occm-encryption-key-managers-.html"
         - title: Retrieve a key manager using the public ID
           url: "/cvo/get-occm-encryption-key-managers-.html"
         - title: Update an existing key manager
           url: "/cvo/put-occm-encryption-key-managers-.html"
+        - title: Delete an existing key manager
+          url: "/cvo/delete-occm-encryption-key-managers-.html"
+        - title: Retrieve all key managers
+          url: "/cvo/get-occm-encryption-key-managers.html"
+        - title: Add a new key manager
+          url: "/cvo/post-occm-encryption-key-managers.html"
       - title: NetApp Console key store
         entries:
         - title: Generate a new key pair and self-signed certificate
           url: "/cvo/post-occm-key-store.html"
         - title: Generate a new key pair and self-signed certificate at the key store
-          url: "/cvo/post-occm-key-store-external-certificate.html"
-        - title: Generate a new key pair and self-signed certificate at the key store
           url: "/cvo/post-occm-key-store-external-certificate-file.html"
-        - title: Retrieve the self-signed certificate of the NetApp Console key store
-          url: "/cvo/get-occm-key-store-self-certificate.html"
+        - title: Validate and install the provided root CA chain
+          url: "/cvo/post-occm-key-store-signed-certificate-file.html"
+        - title: Generate a new key pair and self-signed certificate at the key store
+          url: "/cvo/post-occm-key-store-external-certificate.html"
+        - title: Validate and install the certificate in the trust store
+          url: "/cvo/post-occm-key-store-trusted-certificate-file.html"
         - title: Retrieve the CA signed certificate
           url: "/cvo/get-occm-key-store-signed-certificate.html"
         - title: Validate and install the provided root CA chain
           url: "/cvo/post-occm-key-store-signed-certificate.html"
-        - title: Validate and install the provided root CA chain
-          url: "/cvo/post-occm-key-store-signed-certificate-file.html"
-        - title: Validate and install the certificate in the trust store
-          url: "/cvo/post-occm-key-store-trusted-certificate-file.html"
-        - title: Delete an existing trusted certificate from the trust store
-          url: "/cvo/delete-occm-key-store-trusted-certificate-.html"
+        - title: Retrieve the self-signed certificate of the NetApp Console key store
+          url: "/cvo/get-occm-key-store-self-certificate.html"
         - title: Return the existing trusted certificates from the trust store
           url: "/cvo/get-occm-key-store-user-trusted-certificates.html"
+        - title: Delete an existing trusted certificate from the trust store
+          url: "/cvo/delete-occm-key-store-trusted-certificate-.html"
       - title: On-premises ONTAP cluster aggregates
         entries:
         - title: Retrieve aggregates
@@ -1948,132 +1940,132 @@ sidebar:
           url: "/cvo/get-onprem-metadata-cluster-info.html"
       - title: On-premises ONTAP cluster systems
         entries:
+        - title: Set up Azure backup to cloud
+          url: "/cvo/post-onprem-working-environments-azure-cloud-backup-setup.html"
+        - title: Set up AWS backup to cloud
+          url: "/cvo/post-onprem-working-environments-aws-cloud-backup-setup.html"
+        - title: Set up Google Cloud backup to cloud
+          url: "/cvo/post-onprem-working-environments-gcp-cloud-backup-setup.html"
+        - title: Set up StorageGRID backup to cloud
+          url: "/cvo/post-onprem-working-environments-sgws-cloud-backup-setup.html"
+        - title: Retrieve a CIFS configuration for a system
+          url: "/cvo/get-onprem-working-environments-cifs.html"
+        - title: Retrieve an on-premises ONTAP system
+          url: "/cvo/get-onprem-working-environments-.html"
+        - title: Delete an on-premises ONTAP system
+          url: "/cvo/delete-onprem-working-environments-.html"
+        - title: Modify the NetApp Console password
+          url: "/cvo/put-onprem-working-environments-update-credentials.html"
+        - title: Retrieve an IPspace list for an existing system
+          url: "/cvo/get-onprem-working-environments-ip-spaces.html"
         - title: Retrieve on-premises systems
           url: "/cvo/get-onprem-working-environments.html"
         - title: Discover an on-premises system
           url: "/cvo/post-onprem-working-environments.html"
-        - title: Delete an on-premises ONTAP system
-          url: "/cvo/delete-onprem-working-environments-.html"
-        - title: Retrieve an on-premises ONTAP system
-          url: "/cvo/get-onprem-working-environments-.html"
-        - title: Set up AWS backup to cloud
-          url: "/cvo/post-onprem-working-environments-aws-cloud-backup-setup.html"
-        - title: Set up Azure backup to cloud
-          url: "/cvo/post-onprem-working-environments-azure-cloud-backup-setup.html"
-        - title: Retrieve a CIFS configuration for a system
-          url: "/cvo/get-onprem-working-environments-cifs.html"
-        - title: Set up Google Cloud backup to cloud
-          url: "/cvo/post-onprem-working-environments-gcp-cloud-backup-setup.html"
-        - title: Retrieve an IPspace list for an existing system
-          url: "/cvo/get-onprem-working-environments-ip-spaces.html"
-        - title: Set up StorageGRID backup to cloud
-          url: "/cvo/post-onprem-working-environments-sgws-cloud-backup-setup.html"
-        - title: Modify the NetApp Console password
-          url: "/cvo/put-onprem-working-environments-update-credentials.html"
       - title: On-premises ONTAP cluster volumes
         entries:
+        - title: Modify an existing volume
+          url: "/cvo/put-onprem-volumes--.html"
+        - title: Delete an existing volume
+          url: "/cvo/delete-onprem-volumes--.html"
+        - title: Retrieve volumes for backup activation
+          url: "/cvo/get-onprem-volumes-volumes-for-backup.html"
+        - title: Retrieve a list of snapshot descriptions
+          url: "/cvo/get-onprem-volumes--snapshots.html"
+        - title: Clone an existing volume
+          url: "/cvo/post-onprem-volumes--clone.html"
+        - title: Create a snapshot
+          url: "/cvo/post-onprem-volumes--snapshot.html"
+        - title: Delete a snapshot
+          url: "/cvo/delete-onprem-volumes--snapshot.html"
         - title: Retrieve volumes
           url: "/cvo/get-onprem-volumes.html"
         - title: Create a new volume
           url: "/cvo/post-onprem-volumes.html"
-        - title: Retrieve volumes for backup activation
-          url: "/cvo/get-onprem-volumes-volumes-for-backup.html"
-        - title: Delete an existing volume
-          url: "/cvo/delete-onprem-volumes--.html"
-        - title: Modify an existing volume
-          url: "/cvo/put-onprem-volumes--.html"
-        - title: Clone an existing volume
-          url: "/cvo/post-onprem-volumes--clone.html"
-        - title: Delete a snapshot
-          url: "/cvo/delete-onprem-volumes--snapshot.html"
-        - title: Create a snapshot
-          url: "/cvo/post-onprem-volumes--snapshot.html"
-        - title: Retrieve a list of snapshot descriptions
-          url: "/cvo/get-onprem-volumes--snapshots.html"
       - title: Replication
         entries:
-        - title: Return pairs of relationships
-          url: "/cvo/get-replication-all-relationships.html"
-        - title: Break a SnapMirror replication relationship
-          url: "/cvo/post-replication-break--.html"
-        - title: Initialize an existing SnapMirror relationship
-          url: "/cvo/post-replication-initialize--.html"
-        - title: Retrieve the intercluster LIFs
-          url: "/cvo/get-replication-intercluster-lifs.html"
-        - title: Create a new replication for an on-premises system
-          url: "/cvo/post-replication-onprem.html"
         - title: Resync a SnapMirror replication relationship
           url: "/cvo/post-replication-resync--.html"
+        - title: Update the destination endpoint of the SnapMirror relationship
+          url: "/cvo/post-replication-update--.html"
+        - title: Remove a replication relationship
+          url: "/cvo/delete-replication--.html"
+        - title: Create a new replication for an FSx system
+          url: "/cvo/post-replication-fsx.html"
+        - title: Create a new replication for an on-premises system
+          url: "/cvo/post-replication-onprem.html"
+        - title: Create a new replication for a Cloud Volumes ONTAP system
+          url: "/cvo/post-replication-vsa.html"
+        - title: Initialize an existing SnapMirror relationship
+          url: "/cvo/post-replication-initialize--.html"
         - title: Reverse an existing SnapMirror relationship
           url: "/cvo/post-replication-reverse--.html"
+        - title: Modify a SnapMirror replication relationship
+          url: "/cvo/put-replication--.html"
         - title: Retrieve the replication schedules of a system
           url: "/cvo/get-replication-schedules-.html"
+        - title: Retrieve the intercluster LIFs
+          url: "/cvo/get-replication-intercluster-lifs.html"
+        - title: Break a SnapMirror replication relationship
+          url: "/cvo/post-replication-break--.html"
+        - title: Return pairs of relationships
+          url: "/cvo/get-replication-all-relationships.html"
         - title: Retrieve the status of all SnapMirror relationships
           url: "/cvo/get-replication-status.html"
         - title: Retrieve SnapMirror replication relationship status
           url: "/cvo/get-replication-status-.html"
-        - title: Update the destination endpoint of the SnapMirror relationship
-          url: "/cvo/post-replication-update--.html"
-        - title: Create a new replication for a Cloud Volumes ONTAP system
-          url: "/cvo/post-replication-vsa.html"
-        - title: Remove a replication relationship
-          url: "/cvo/delete-replication--.html"
-        - title: Modify a SnapMirror replication relationship
-          url: "/cvo/put-replication--.html"
       - title: Replication metadata
         entries:
         - title: Retrieve SnapMirror policies
-          url: "/cvo/get-replication-metadata-snapmirror-policies-.html"
-        - title: Retrieve SnapMirror policies
           url: "/cvo/get-replication-metadata-snapmirror-svm-policies--.html"
+        - title: Retrieve SnapMirror policies
+          url: "/cvo/get-replication-metadata-snapmirror-policies-.html"
         - title: Return a list of snapshot labels
           url: "/cvo/get-replication-metadata-snapshot-labels--.html"
       - title: Tenant operations
         entries:
-        - title: Retrieve tenants
-          url: "/cvo/get-tenants.html"
-        - title: Create a new tenant
-          url: "/cvo/post-tenants.html"
-        - title: Delete an existing tenant
-          url: "/cvo/delete-tenants-.html"
         - title: Retrieve a tenant
           url: "/cvo/get-tenants-.html"
         - title: Update an existing tenant
           url: "/cvo/put-tenants-.html"
+        - title: Delete an existing tenant
+          url: "/cvo/delete-tenants-.html"
         - title: Link a tenant to a NetApp support site account
           url: "/cvo/put-tenants-nss-keys.html"
+        - title: Retrieve tenants
+          url: "/cvo/get-tenants.html"
+        - title: Create a new tenant
+          url: "/cvo/post-tenants.html"
       - title: User management
         entries:
-        - title: Retrieve all users
-          url: "/cvo/get-users.html"
-        - title: Create a new user
-          url: "/cvo/post-users.html"
-        - title: Add a NetApp Cloud Central user to NetApp Console
-          url: "/cvo/post-users-add-user.html"
-        - title: Delete an existing user
-          url: "/cvo/delete-users-.html"
         - title: Retrieve a user
           url: "/cvo/get-users-.html"
         - title: Update an existing user
           url: "/cvo/put-users-.html"
-        - title: Remove a user from NetApp Console
-          url: "/cvo/delete-users-remove-user.html"
-        - title: Reset the password
-          url: "/cvo/put-users-reset-password.html"
+        - title: Delete an existing user
+          url: "/cvo/delete-users-.html"
         - title: Grant or revoke permissions to a user
           url: "/cvo/post-users-working-environments-grant-revoke.html"
+        - title: Reset the password
+          url: "/cvo/put-users-reset-password.html"
+        - title: Add a NetApp Cloud Central user to NetApp Console
+          url: "/cvo/post-users-add-user.html"
+        - title: Remove a user from NetApp Console
+          url: "/cvo/delete-users-remove-user.html"
+        - title: Retrieve all users
+          url: "/cvo/get-users.html"
+        - title: Create a new user
+          url: "/cvo/post-users.html"
       - title: 'User management authentication '
         entries:
+        - title: Sign out of the NetApp Console
+          url: "/cvo/post-auth-logout.html"
         - title: Retrieve user representation
           url: "/cvo/get-auth-current-user.html"
         - title: Update the user password
           url: "/cvo/put-auth-current-user-change-password.html"
         - title: Sign in to the NetApp Console
           url: "/cvo/post-auth-login.html"
-        - title: Sign out of the NetApp Console
-          url: "/cvo/post-auth-logout.html"
-        - title: Retrieve a user representation with roles
-          url: "/cvo/get-auth-v4-current-user.html"
   - title: Accounts (tenancy)
     entries:
     - title: Overview

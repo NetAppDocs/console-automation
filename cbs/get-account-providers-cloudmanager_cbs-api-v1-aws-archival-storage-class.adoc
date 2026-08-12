@@ -7,6 +7,7 @@ summary: 'Retrieve AWS storage classes'
 ---
 
 = Retrieve AWS storage classes
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/archival-storage-class`#
 

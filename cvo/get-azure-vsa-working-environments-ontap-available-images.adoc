@@ -7,6 +7,7 @@ summary: 'Retrieve images already installed'
 ---
 
 = Retrieve images already installed
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/ontap-available-images`#
 
@@ -47,11 +48,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|isCurrent
-|boolean
-|True
-a|
-
 |name
 |string
 |True
@@ -62,6 +58,22 @@ a|
 |False
 a|
 
+|isCurrent
+|boolean
+|True
+a|
+
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "version": "string",
+  "isCurrent": false
+}
+====
 

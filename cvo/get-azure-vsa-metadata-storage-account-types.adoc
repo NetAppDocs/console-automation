@@ -7,6 +7,7 @@ summary: 'Retrieve supported Azure storage account types'
 ---
 
 = Retrieve supported Azure storage account types
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/storage-account-types`#
 
@@ -59,13 +60,13 @@ Status: Default, Default response
 |Required
 |Description
 
-|availabilityTypes
-|array[string]
+|diskType
+|string
 |True
 a|
 
-|diskType
-|string
+|availabilityTypes
+|array[string]
 |True
 a|
 
@@ -82,12 +83,21 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "diskType": "string",
   "availabilityTypes": [
     "string"
   ],
-  "diskType": "string",
   "sizes": [
-    {}
+    {
+      "size": {
+        "size": 0,
+        "unit": "string"
+      },
+      "description": "string",
+      "supportedOccmLicenses": [
+        "string"
+      ]
+    }
   ]
 }
 ====
@@ -113,14 +123,12 @@ Capacity
 |size
 |number
 |True
-a|Size
-
+a|
 
 |unit
 |string
 |True
-a|Unit
-
+a|
 
 |===
 
@@ -136,23 +144,23 @@ AzureDiskSize
 |Required
 |Description
 
-|description
-|string
-|False
-a|
-
-|isDefault
-|boolean
-|False
-a|
-
 |size
 |link:#Capacity[Capacity]
 |True
 a|
 
+|description
+|string
+|False
+a|
+
 |supportedOccmLicenses
 |array[string]
+|False
+a|
+
+|isDefault
+|boolean
 |False
 a|
 

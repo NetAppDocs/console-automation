@@ -7,6 +7,7 @@ summary: 'Retrieve the support registration status of a system'
 ---
 
 = Retrieve the support registration status of a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/support-registration`#
 
@@ -47,6 +48,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|status
+|string
+|True
+a|
+
 |licenseExpiryDate
 |link:#licenseExpiryDate[licenseExpiryDate]
 |False
@@ -62,11 +68,6 @@ a|
 |False
 a|
 
-|status
-|string
-|True
-a|
-
 |===
 
 
@@ -75,8 +76,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "nssAccountId": "string",
-  "status": "string"
+  "status": "string",
+  "nssAccountId": "string"
 }
 ====
 

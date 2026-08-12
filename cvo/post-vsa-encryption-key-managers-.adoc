@@ -7,6 +7,7 @@ summary: 'Add a key manager'
 ---
 
 = Add a key manager
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}`#
 

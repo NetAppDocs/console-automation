@@ -7,6 +7,7 @@ summary: 'Set up Google Cloud backup to cloud'
 ---
 
 = Set up Google Cloud backup to cloud
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/gcp-cloud-backup-setup`#
 
@@ -44,35 +45,30 @@ a|
 |Required
 |Description
 
-|accessKey
-|string
-|False
-a|Google Cloud access key used by NetApp Backup and Recovery.
-
-
-|ipSpace
-|string
-|False
-a|IPspace
-
-
 |project
 |string
 |False
-a|Google Cloud project ID. By default, the NetApp Console project.
-
+a|
 
 |region
 |string
 |False
-a|The region. By default, the NetApp Console region.
+a|
 
+|accessKey
+|string
+|False
+a|
 
 |secretKey
 |string
 |False
-a|Google Cloud secret key used by NetApp Backup and Recovery.
+a|
 
+|ipSpace
+|string
+|False
+a|
 
 |===
 
@@ -82,11 +78,11 @@ a|Google Cloud secret key used by NetApp Backup and Recovery.
 ====
 [source,json,subs=+macros]
 {
-  "accessKey": "string",
-  "ipSpace": "string",
   "project": "string",
   "region": "string",
-  "secretKey": "string"
+  "accessKey": "string",
+  "secretKey": "string",
+  "ipSpace": "string"
 }
 ====
 

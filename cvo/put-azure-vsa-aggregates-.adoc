@@ -7,6 +7,7 @@ summary: 'Update IOPS and throughput for disks in an existing aggregate (single-
 ---
 
 = Update IOPS and throughput for disks in an existing aggregate (single-node)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/aggregates/{workingEnvironmentId}/{aggregateName}`#
 
@@ -53,17 +54,25 @@ a|
 |iops
 |integer
 |True
-a|New IOPS
-
+a|
 
 |throughput
 |integer
 |True
-a|New throughput
-
+a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "iops": 0,
+  "throughput": 0
+}
+====
 
 == Error
 

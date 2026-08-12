@@ -7,6 +7,7 @@ summary: 'Retrieve the region, VPC, and subnet'
 ---
 
 = Retrieve the region, VPC, and subnet
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/occm-instance-placement`#
 
@@ -47,95 +48,80 @@ Status: Default, Default response
 |Required
 |Description
 
-|account
-|string
-|False
-a|Account
-
-
-|china
-|boolean
-|False
-a|China
-
-
-|darkSite
-|boolean
-|False
-a|is dark site
-
-
-|govCloud
-|boolean
-|False
-a|Gov cloud
-
-
-|installLocation
-|string
-|False
-a|Install Location
-
-
-|instanceType
-|string
-|False
-a|instanceType
-
-
-|isLegacyInstance
-|boolean
-|False
-a|isLegacyInstance
-
-
-|isLegacyOs
-|boolean
-|False
-a|isLegacyOs
-
-
-|keyPair
-|string
-|False
-a|KeyPair
-
-
-|providerRoleType
-|string
-|False
-a|Provider Role Type
-
-
-|publicIp
-|string
-|False
-a|Public IP
-
-
 |region
 |string
 |False
-a|Region
-
-
-|role
-|string
-|False
-a|Role
-
-
-|subnetId
-|string
-|False
-a|Subnet
-
+a|
 
 |vpcId
 |string
 |False
-a|VPC
+a|
 
+|subnetId
+|string
+|False
+a|
+
+|keyPair
+|string
+|False
+a|
+
+|installLocation
+|string
+|False
+a|
+
+|role
+|string
+|False
+a|
+
+|providerRoleType
+|string
+|False
+a|
+
+|publicIp
+|string
+|False
+a|
+
+|account
+|string
+|False
+a|
+
+|govCloud
+|boolean
+|False
+a|
+
+|china
+|boolean
+|False
+a|
+
+|isLegacyInstance
+|boolean
+|False
+a|
+
+|instanceType
+|string
+|False
+a|
+
+|isLegacyOs
+|boolean
+|False
+a|
+
+|darkSite
+|boolean
+|False
+a|
 
 |===
 
@@ -145,16 +131,16 @@ a|VPC
 ====
 [source,json,subs=+macros]
 {
-  "account": "string",
-  "installLocation": "string",
-  "instanceType": "string",
+  "region": "string",
+  "vpcId": "string",
+  "subnetId": "string",
   "keyPair": "string",
+  "installLocation": "string",
+  "role": "string",
   "providerRoleType": "string",
   "publicIp": "string",
-  "region": "string",
-  "role": "string",
-  "subnetId": "string",
-  "vpcId": "string"
+  "account": "string",
+  "instanceType": "string"
 }
 ====
 

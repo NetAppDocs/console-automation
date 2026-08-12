@@ -7,6 +7,7 @@ summary: 'Retrieve a list of systems for the Azure region'
 ---
 
 = Retrieve a list of systems for the Azure region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/discovery/discover`#
 
@@ -59,21 +60,6 @@ Status: Default, Default response
 |Required
 |Description
 
-|byol
-|boolean
-|False
-a|
-
-|clusterAddress
-|string
-|False
-a|
-
-|isDirectMarketplace
-|boolean
-|False
-a|
-
 |name
 |string
 |True
@@ -84,22 +70,17 @@ a|
 |False
 a|
 
-|recoverable
-|boolean
-|True
-a|
-
 |region
 |string
 |False
 a|
 
-|registered
-|boolean
+|vnetName
+|string
 |False
 a|
 
-|resourceGroup
+|vnetId
 |string
 |False
 a|
@@ -114,16 +95,54 @@ a|
 |False
 a|
 
-|vnetId
+|resourceGroup
 |string
 |False
 a|
 
-|vnetName
+|clusterAddress
 |string
+|False
+a|
+
+|recoverable
+|boolean
+|True
+a|
+
+|byol
+|boolean
+|False
+a|
+
+|registered
+|boolean
+|False
+a|
+
+|isDirectMarketplace
+|boolean
 |False
 a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "string",
+  "publicId": "string",
+  "region": "string",
+  "vnetName": "string",
+  "vnetId": "string",
+  "subnetId": "string",
+  "subnetName": "string",
+  "resourceGroup": "string",
+  "clusterAddress": "string",
+  "recoverable": false
+}
+====
 

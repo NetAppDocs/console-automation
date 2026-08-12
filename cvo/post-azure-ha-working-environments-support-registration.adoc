@@ -7,6 +7,7 @@ summary: 'Register a Cloud Volumes ONTAP system with NetApp'
 ---
 
 = Register a Cloud Volumes ONTAP system with NetApp
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/support-registration`#
 
@@ -53,6 +54,11 @@ Status: Default, Default response
 |Required
 |Description
 
+|status
+|string
+|True
+a|
+
 |licenseExpiryDate
 |link:#licenseExpiryDate[licenseExpiryDate]
 |False
@@ -68,11 +74,6 @@ a|
 |False
 a|
 
-|status
-|string
-|True
-a|
-
 |===
 
 
@@ -81,8 +82,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "nssAccountId": "string",
-  "status": "string"
+  "status": "string",
+  "nssAccountId": "string"
 }
 ====
 

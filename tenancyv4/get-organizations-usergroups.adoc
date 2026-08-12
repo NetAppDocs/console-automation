@@ -7,6 +7,7 @@ summary: 'List all user groups under an organization'
 ---
 
 = List all user groups under an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/usergroups`#
 

@@ -7,6 +7,7 @@ summary: 'Set up a new CIFS configuration'
 ---
 
 = Set up a new CIFS configuration
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/cifs`#
 
@@ -44,53 +45,45 @@ a|
 |Required
 |Description
 
-|activeDirectoryDomain
-|string
-|True
-a|Active Directory domain name
-
-
-|activeDirectoryPassword
-|string
-|True
-a|Active Directory password
-
-
-|activeDirectoryUsername
-|string
-|True
-a|Active Directory username
-
-
 |dnsDomain
 |string
 |False
-a|DNS domain name
-
+a|
 
 |ipAddresses
 |array[string]
 |True
-a|DNS server IP addresses
-
+a|
 
 |netBIOS
 |string
 |True
-a|CIFS server NetBIOS name
-
+a|
 
 |organizationalUnit
 |string
 |True
-a|Organizational unit for registration
+a|
 
+|activeDirectoryDomain
+|string
+|True
+a|
+
+|activeDirectoryUsername
+|string
+|True
+a|
+
+|activeDirectoryPassword
+|string
+|True
+a|
 
 |svmName
 |string
 |False
-a|SVM name
-
+a|
 
 |===
 
@@ -100,15 +93,15 @@ a|SVM name
 ====
 [source,json,subs=+macros]
 {
-  "activeDirectoryDomain": "string",
-  "activeDirectoryPassword": "string",
-  "activeDirectoryUsername": "string",
   "dnsDomain": "string",
   "ipAddresses": [
     "string"
   ],
   "netBIOS": "string",
   "organizationalUnit": "string",
+  "activeDirectoryDomain": "string",
+  "activeDirectoryUsername": "string",
+  "activeDirectoryPassword": "string",
   "svmName": "string"
 }
 ====

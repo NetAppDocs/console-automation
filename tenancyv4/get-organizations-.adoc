@@ -7,6 +7,7 @@ summary: 'Retrieve an organization'
 ---
 
 = Retrieve an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}`#
 
