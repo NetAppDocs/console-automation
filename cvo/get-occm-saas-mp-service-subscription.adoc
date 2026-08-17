@@ -7,6 +7,7 @@ summary: 'Retrieve SaaS marketplace subscriptions'
 ---
 
 = Retrieve SaaS marketplace subscriptions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/saas-mp-service/{workingEnvironmentId}/subscription`#
 
@@ -59,6 +60,25 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "subscription": {
+    "active": false,
+    "byNodeMode": false,
+    "contract": false,
+    "eligibleCvoPackages": [
+      "string"
+    ],
+    "id": "string",
+    "name": "string",
+    "provider": "string"
+  }
+}
+====
 
 == Definitions
 

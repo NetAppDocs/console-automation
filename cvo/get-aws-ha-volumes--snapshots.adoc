@@ -7,6 +7,7 @@ summary: 'Retrieve a list of snapshot descriptions for the volume'
 ---
 
 = Retrieve a list of snapshot descriptions for the volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshots`#
 
@@ -76,4 +77,15 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accessTime": 0,
+  "label": "string",
+  "name": "string"
+}
+====
 

@@ -7,6 +7,7 @@ summary: 'Retrieve all non-premises system actions for a tenant ID'
 ---
 
 = Retrieve all non-premises system actions for a tenant ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/actionRequired/{tenantId}`#
 
@@ -63,7 +64,106 @@ a|
   "weActions": [
     {
       "actions": [
-        {}
+        {
+          "actionType": "string",
+          "parameters": {
+            "aggregateName": "string",
+            "currentInstanceType": "string",
+            "evCapacityDetails": {
+              "addedCapacityToExistingEvDisks": {
+                "size": 0,
+                "unit": "string"
+              },
+              "newRaidForEvInfo": [
+                {
+                  "diskSize": {
+                    "size": 0,
+                    "unit": "string"
+                  },
+                  "numOfDisks": 0
+                }
+              ],
+              "totalCapacityToAdd": {
+                "size": 0,
+                "unit": "string"
+              }
+            },
+            "instances": [
+              {
+                "instanceId": "string",
+                "instanceName": "string",
+                "instanceType": "string"
+              }
+            ],
+            "isCapacityBased": false,
+            "isComposite": false,
+            "licenseExpiryDate": 0,
+            "licenseParameters": {
+              "newInstanceType": "string",
+              "newLicenseType": {
+                "capacityLimit": {
+                  "size": 0,
+                  "unit": "string"
+                },
+                "capacity_limit": "string",
+                "description": "string",
+                "name": "string",
+                "subDescription": "string",
+                "subName": "string",
+                "type": "string"
+              }
+            },
+            "maxCapacity": {
+              "size": 0,
+              "unit": "string"
+            },
+            "moreInfo": "string",
+            "numOfDisks": 0,
+            "providerVolumeType": "string",
+            "resourcesToDelete": {
+              "instanceNameAndType": [
+                {
+                  "instanceId": "string",
+                  "instanceName": "string",
+                  "instanceType": "string"
+                }
+              ],
+              "numberOfDisksAndDiskSize": [
+                {
+                  "diskSize": {
+                    "size": 0,
+                    "unit": "string"
+                  },
+                  "diskType": "string"
+                }
+              ]
+            },
+            "serialNumber": "string",
+            "totalCapacity": {
+              "size": 0,
+              "unit": "string"
+            },
+            "volumeInfo": {
+              "newCapacity": {
+                "size": 0,
+                "unit": "string"
+              },
+              "svmName": "string",
+              "volumeName": "string"
+            },
+            "volumeMoveParameters": {
+              "homeNode": "string",
+              "svmName": "string",
+              "targetAggregateName": "string",
+              "volumeName": "string"
+            },
+            "volumeNames": [
+              "string"
+            ],
+            "workingEnvironmentId": "string"
+          },
+          "severity": "string"
+        }
       ],
       "publicId": "string"
     }

@@ -7,6 +7,7 @@ summary: 'Retrieve subscription configuration information'
 ---
 
 = Retrieve subscription configuration information
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/configuration`#
 
@@ -17,7 +18,8 @@ Retrieves the subscription configuration information for a specified subscriptio
 **Note:**
 
 * This API authorizes user calls and service calls with a predefined scope only.
- +
+
+{blank} +
 *Token usage:* Either a NetApp Console user token or service token.
 
 

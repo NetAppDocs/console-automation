@@ -7,6 +7,7 @@ summary: 'Modify multiple backed up volumes'
 ---
 
 = Modify multiple backed up volumes
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume`#
 

@@ -7,6 +7,7 @@ summary: 'Validate the Google Cloud account request'
 ---
 
 = Validate the Google Cloud account request
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/gcp/validate-creds`#
 

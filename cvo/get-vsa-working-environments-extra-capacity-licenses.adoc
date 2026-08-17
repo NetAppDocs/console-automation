@@ -7,6 +7,7 @@ summary: 'Retrieve extra capacity licenses'
 ---
 
 = Retrieve extra capacity licenses
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
 
@@ -99,4 +100,22 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string",
+  "associatedResourceId": "string",
+  "capacity": 0,
+  "expirationDate": 0,
+  "license": "string",
+  "licensePackage": "string",
+  "licenseType": "string",
+  "metadata": "string",
+  "resourceId": "string",
+  "serialNumber": "string"
+}
+====
 

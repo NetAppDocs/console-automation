@@ -7,6 +7,7 @@ summary: 'Remove a child folder from a parent folder'
 ---
 
 = Remove a child folder from a parent folder
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/folders/{folder_id}/folders/{childfolder_id}`#
 

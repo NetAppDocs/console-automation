@@ -7,6 +7,7 @@ summary: 'Stop a Cloud Volumes ONTAP instance'
 ---
 
 = Stop a Cloud Volumes ONTAP instance
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/stop`#
 

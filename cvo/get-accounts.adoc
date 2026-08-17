@@ -7,6 +7,7 @@ summary: 'Retrieve accounts'
 ---
 
 = Retrieve accounts
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts`#
 
@@ -357,12 +358,12 @@ a|
 
 |publicId
 |string
-|True
+|False
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|True
+|False
 a|
 
 |===
@@ -396,12 +397,12 @@ a|
 
 |publicId
 |string
-|True
+|False
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|True
+|False
 a|
 
 |===

@@ -7,6 +7,7 @@ summary: 'Retrieve on-prem ONTAP data'
 ---
 
 = Retrieve on-prem ONTAP data
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/onPrem/account/{accountId}/clusters`#
 

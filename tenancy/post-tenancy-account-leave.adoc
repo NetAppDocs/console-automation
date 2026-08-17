@@ -7,6 +7,7 @@ summary: 'Delete a user'
 ---
 
 = Delete a user
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/leave`#
 

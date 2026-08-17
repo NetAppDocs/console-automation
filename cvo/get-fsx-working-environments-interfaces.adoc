@@ -7,6 +7,7 @@ summary: 'Retrieve network interfaces lists for an FSx system'
 ---
 
 = Retrieve network interfaces lists for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/interfaces`#
 

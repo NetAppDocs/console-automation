@@ -7,6 +7,7 @@ summary: 'Retrieve the Alibaba bucket folders'
 ---
 
 = Retrieve the Alibaba bucket folders
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-alibaba-bucket-folders`#
 

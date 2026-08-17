@@ -7,6 +7,7 @@ summary: 'Retrieve NetApp Support Site data for accounts'
 ---
 
 = Retrieve NetApp Support Site data for accounts
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/accounts/nss-data`#
 

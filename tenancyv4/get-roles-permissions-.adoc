@@ -7,6 +7,7 @@ summary: 'Retrieve a permission for a role'
 ---
 
 = Retrieve a permission for a role
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/roles/{role_id}/permissions/{permission_id}`#
 

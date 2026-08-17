@@ -7,6 +7,7 @@ summary: 'Ransomware scan endpoints in the NetApp Backup and Recovery REST API'
 ---
 
 = Ransomware scan endpoints in the NetApp Backup and Recovery REST API
+:imagesdir: ../media/
 
 
 

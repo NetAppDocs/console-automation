@@ -7,6 +7,7 @@ summary: 'Retrieve an Azure VMware Solution private cloud for a subscription'
 ---
 
 = Retrieve an Azure VMware Solution private cloud for a subscription
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/avs-private-clouds`#
 

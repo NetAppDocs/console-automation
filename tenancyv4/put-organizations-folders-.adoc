@@ -7,6 +7,7 @@ summary: 'Update a folder under an organization'
 ---
 
 = Update a folder under an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/organizations/{organization_id}/folders/{folder_id}`#
 

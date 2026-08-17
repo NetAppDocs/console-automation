@@ -7,6 +7,7 @@ summary: 'Perform an image update on a single node'
 ---
 
 = Perform an image update on a single node
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/update-image`#
 

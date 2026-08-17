@@ -7,6 +7,7 @@ summary: 'List all permissions for a role'
 ---
 
 = List all permissions for a role
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/roles/{role_id}/permissions`#
 

@@ -7,6 +7,7 @@ summary: 'Complete the setup'
 ---
 
 = Complete the setup
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/complete-connectivity-pending-setup`#
 

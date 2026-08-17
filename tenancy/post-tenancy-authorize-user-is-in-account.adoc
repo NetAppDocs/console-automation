@@ -7,6 +7,7 @@ summary: 'Authorize a user for an account'
 ---
 
 = Authorize a user for an account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-user-is-in-account`#
 

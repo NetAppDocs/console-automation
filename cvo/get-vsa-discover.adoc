@@ -7,6 +7,7 @@ summary: 'Retrieve a list of discovered systems'
 ---
 
 = Retrieve a list of discovered systems
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/discover`#
 
@@ -126,4 +127,23 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "availabilityZone": "string",
+  "clusterAddress": "string",
+  "name": "string",
+  "publicId": "string",
+  "recoverable": false,
+  "region": "string",
+  "stackId": "string",
+  "stackName": "string",
+  "subnetId": "string",
+  "vpcId": "string",
+  "vpcName": "string"
+}
+====
 

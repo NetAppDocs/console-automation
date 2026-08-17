@@ -7,6 +7,7 @@ summary: 'Delete a snapshot'
 ---
 
 = Delete a snapshot
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
 

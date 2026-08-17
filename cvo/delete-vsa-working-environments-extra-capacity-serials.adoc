@@ -7,6 +7,7 @@ summary: 'Delete extra capacity licenses by serial numbers'
 ---
 
 = Delete extra capacity licenses by serial numbers
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
 

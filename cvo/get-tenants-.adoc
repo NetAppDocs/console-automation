@@ -7,6 +7,7 @@ summary: 'Retrieve a tenant'
 ---
 
 = Retrieve a tenant
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenants/{tenantId}`#
 
@@ -77,7 +78,13 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
-  "publicId": "string"
+  "publicId": "string",
+  "workingEnvironmentsInformation": {
+    "totalReservedSize": {
+      "size": 0,
+      "unit": "string"
+    }
+  }
 }
 ====
 

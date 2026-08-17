@@ -7,6 +7,7 @@ summary: 'Update the settings for a relationship'
 ---
 
 = Update the settings for a relationship
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/relationships-v2/{id}`#
 

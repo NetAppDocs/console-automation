@@ -7,6 +7,7 @@ summary: 'Delete the CIFS configuration for a system'
 ---
 
 = Delete the CIFS configuration for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/delete-cifs`#
 

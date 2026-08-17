@@ -7,6 +7,7 @@ summary: 'Delete a snapshot policy using the UUID'
 ---
 
 = Delete a snapshot policy using the UUID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policies/{policyId}`#
 

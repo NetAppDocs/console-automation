@@ -7,6 +7,7 @@ summary: 'Disassociate a resource'
 ---
 
 = Disassociate a resource
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-key/{nssKeyId}/disassociate`#
 

@@ -7,6 +7,7 @@ summary: 'Delete an existing account'
 ---
 
 = Delete an existing account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{cloudProviderAccountId}`#
 

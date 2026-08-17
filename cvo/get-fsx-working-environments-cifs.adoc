@@ -7,6 +7,7 @@ summary: 'Retrieve CIFS configuration for an FSx system'
 ---
 
 = Retrieve CIFS configuration for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/cifs`#
 

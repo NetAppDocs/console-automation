@@ -7,6 +7,7 @@ summary: 'Retrieve the subscription entitlements'
 ---
 
 = Retrieve the subscription entitlements
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/entitlements`#
 
@@ -17,7 +18,8 @@ Retrieves the subscription entitlements information for a specified service name
 **Note:**
 
 * This API authorizes service calls with a predefined scope only.
- +
+
+{blank} +
 *Token usage:* NetApp Console service token with the following scopes: %scopes%.
 
 

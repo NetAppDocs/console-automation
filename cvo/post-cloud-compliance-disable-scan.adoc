@@ -7,6 +7,7 @@ summary: 'Disable scanning using the system ID'
 ---
 
 = Disable scanning using the system ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{workingEnvironmentId}/disable-scan`#
 

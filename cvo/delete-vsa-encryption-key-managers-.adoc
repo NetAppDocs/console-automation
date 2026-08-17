@@ -7,6 +7,7 @@ summary: 'Delete a key manager'
 ---
 
 = Delete a key manager
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/vsa/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}`#
 

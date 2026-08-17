@@ -7,6 +7,7 @@ summary: 'Delete a domain'
 ---
 
 = Delete a domain
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/domains/{domain_id}`#
 

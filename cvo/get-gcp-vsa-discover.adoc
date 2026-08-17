@@ -7,6 +7,7 @@ summary: 'Retrieve a list of systems for a Google Cloud zone'
 ---
 
 = Retrieve a list of systems for a Google Cloud zone
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/discover`#
 
@@ -105,4 +106,22 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "clusterAddress": "string",
+  "id": "string",
+  "name": "string",
+  "projectName": "string",
+  "publicId": "string",
+  "recoverable": false,
+  "subnetName": "string",
+  "vnetId": "string",
+  "vnetName": "string",
+  "zone": "string"
+}
+====
 

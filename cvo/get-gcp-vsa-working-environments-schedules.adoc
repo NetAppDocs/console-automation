@@ -7,6 +7,7 @@ summary: 'List the start/stop schedules'
 ---
 
 = List the start/stop schedules
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/schedules`#
 
@@ -72,7 +73,14 @@ a|
 {
   "name": "string",
   "schedule": [
-    {}
+    {
+      "start": {
+        "day": 0
+      },
+      "stop": {
+        "day": 0
+      }
+    }
   ]
 }
 ====

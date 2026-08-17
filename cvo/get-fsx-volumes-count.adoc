@@ -7,6 +7,7 @@ summary: 'Retrieve the volume count'
 ---
 
 = Retrieve the volume count
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/count`#
 

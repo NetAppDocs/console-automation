@@ -7,6 +7,7 @@ summary: 'Return the existing trusted certificates from the trust store'
 ---
 
 = Return the existing trusted certificates from the trust store
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/key-store/user-trusted-certificates`#
 
@@ -48,6 +49,25 @@ a|Status
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "certificateInfo": {
+    "certificate": "string",
+    "certificateType": "string",
+    "directIssuerName": "string",
+    "publicId": "string",
+    "serialNumber": "string",
+    "startDate": 0,
+    "subjectName": "string"
+  },
+  "id": "string",
+  "status": "string"
+}
+====
 
 == Definitions
 

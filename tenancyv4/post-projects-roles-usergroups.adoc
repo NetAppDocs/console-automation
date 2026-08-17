@@ -7,6 +7,7 @@ summary: 'Create a new user group in a project'
 ---
 
 = Create a new user group in a project
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/projects/{project_id}/roles/{role_id}/usergroups`#
 

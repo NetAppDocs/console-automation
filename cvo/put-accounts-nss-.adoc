@@ -7,6 +7,7 @@ summary: 'Update an NSS account'
 ---
 
 = Update an NSS account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/nss/{cloudProviderAccountId}`#
 
@@ -109,12 +110,12 @@ a|
 
 |publicId
 |string
-|True
+|False
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|True
+|False
 a|
 
 |===

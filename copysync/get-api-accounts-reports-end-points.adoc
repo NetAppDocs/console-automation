@@ -7,6 +7,7 @@ summary: 'Retrieve a list of the reports endpoints'
 ---
 
 = Retrieve a list of the reports endpoints
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/reports/end-points`#
 

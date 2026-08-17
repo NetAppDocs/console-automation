@@ -7,6 +7,7 @@ summary: 'Retrieve the packages configuration'
 ---
 
 = Retrieve the packages configuration
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/packages`#
 
@@ -115,6 +116,32 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "capacityTier": "string",
+  "description": "string",
+  "diskSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "diskType": "string",
+  "displayName": "string",
+  "instanceTenancy": "string",
+  "instanceTypeMapping": [
+    {
+      "instanceType": "string",
+      "region": "string"
+    }
+  ],
+  "licenseType": "string",
+  "name": "string",
+  "writingSpeedState": "string"
+}
+====
 
 == Definitions
 

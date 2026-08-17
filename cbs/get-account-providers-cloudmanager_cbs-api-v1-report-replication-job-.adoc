@@ -7,6 +7,7 @@ summary: 'Retrieve replication report data'
 ---
 
 = Retrieve replication report data
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/report/replication/job/{jobId}`#
 

@@ -7,6 +7,7 @@ summary: 'Update the AutoSupport configuration'
 ---
 
 = Update the AutoSupport configuration
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/occm/asup`#
 
@@ -38,6 +39,21 @@ a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "enabled": false,
+  "schedule": {
+    "dayOfWeek": 0,
+    "interval": {
+      "unit": "string"
+    }
+  }
+}
+====
 
 == Error
 

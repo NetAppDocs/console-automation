@@ -7,6 +7,7 @@ summary: 'Retrieve subscription information using the subscription ID'
 ---
 
 = Retrieve subscription information using the subscription ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/subscription`#
 
@@ -17,7 +18,8 @@ Retrieves the subscription information for a specified subscription ID.
 **Note:**
 
 * This API authorizes service calls with a predefined scope only.
- +
+
+{blank} +
 *Token usage:* NetApp Console service token with the following scopes: %scopes%.
 
 

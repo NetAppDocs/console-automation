@@ -7,6 +7,7 @@ summary: 'Create a new report'
 ---
 
 = Create a new report
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/api/accounts/{accountId}/reports`#
 
@@ -100,7 +101,15 @@ a|
       ],
       "storageClass": "string",
       "provider": "string",
-      "workingEnvironmentId": "string"
+      "workingEnvironmentId": "string",
+      "glacier": {
+        "days": 0,
+        "tier": "string"
+      },
+      "deepArchive": {
+        "days": 0,
+        "tier": "string"
+      }
     },
     "local": {
       "path": "string"
@@ -145,6 +154,13 @@ a|
         }
       ],
       "subject": "string"
+    },
+    "sftp": {
+      "host": "string",
+      "port": 0,
+      "path": "string",
+      "rootDirectory": "string",
+      "provider": "string"
     },
     "box": {
       "rootDirectory": "string",
@@ -222,6 +238,141 @@ a|Failure reason
 
 |===
 
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "id": "string",
+  "endpoint": {
+    "protocol": "string",
+    "cifs": {
+      "host": "string",
+      "share": "string",
+      "provider": "string",
+      "path": "string",
+      "version": "string",
+      "workingEnvironmentId": "string",
+      "credentials": {
+        "username": "string",
+        "password": "string",
+        "domain": "string"
+      }
+    },
+    "nfs": {
+      "host": "string",
+      "export": "string",
+      "provider": "string",
+      "path": "string",
+      "version": "string",
+      "workingEnvironmentId": "string",
+      "accessPoint": "string"
+    },
+    "s3": {
+      "host": "string",
+      "bucket": "string",
+      "prefix": "string",
+      "region": "string",
+      "encryption": {
+        "protocol": "string",
+        "keyId": "string"
+      },
+      "privateLinkDns": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "storageClass": "string",
+      "provider": "string",
+      "workingEnvironmentId": "string",
+      "glacier": {
+        "days": 0,
+        "tier": "string"
+      },
+      "deepArchive": {
+        "days": 0,
+        "tier": "string"
+      }
+    },
+    "local": {
+      "path": "string"
+    },
+    "azure": {
+      "container": "string",
+      "storageAccountName": "string",
+      "prefix": "string",
+      "path": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "blobTier": "string",
+      "provider": "string"
+    },
+    "gcp": {
+      "bucket": "string",
+      "prefix": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "storageClass": "string",
+      "kmsKeyName": "string",
+      "provider": "string"
+    },
+    "gdrive": {
+      "driveId": "string",
+      "driveName": "string",
+      "folderId": "string",
+      "path": "string",
+      "provider": "string",
+      "tags": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "subject": "string"
+    },
+    "sftp": {
+      "host": "string",
+      "port": 0,
+      "path": "string",
+      "rootDirectory": "string",
+      "provider": "string"
+    },
+    "box": {
+      "rootDirectory": "string",
+      "path": "string",
+      "folderId": "string",
+      "clientId": "string",
+      "appName": "string",
+      "enterpriseId": "string",
+      "provider": "string"
+    }
+  },
+  "statistics": {
+    "errors": [
+      {
+        "errorCode": "string",
+        "description": "string"
+      }
+    ]
+  },
+  "status": "string",
+  "startTime": "string",
+  "endTime": "string",
+  "duration": 0,
+  "reason": "string"
+}
+====
 
 == Definitions
 

@@ -7,6 +7,7 @@ summary: 'Remove a user from a folder'
 ---
 
 = Remove a user from a folder
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/folders/{folder_id}/roles/{role_id}/users/{user_id}`#
 

@@ -7,6 +7,7 @@ summary: 'Retrieve route tables'
 ---
 
 = Retrieve route tables
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/route-tables`#
 

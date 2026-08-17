@@ -7,6 +7,7 @@ summary: 'Discover an on-premises system'
 ---
 
 = Discover an on-premises system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments`#
 
@@ -217,17 +218,132 @@ a|
 [source,json,subs=+macros]
 {
   "actionsRequired": [
-    {}
+    {
+      "actionType": "string",
+      "parameters": {
+        "aggregateName": "string",
+        "currentInstanceType": "string",
+        "evCapacityDetails": {
+          "addedCapacityToExistingEvDisks": {
+            "size": 0,
+            "unit": "string"
+          },
+          "newRaidForEvInfo": [
+            {
+              "diskSize": {
+                "size": 0,
+                "unit": "string"
+              },
+              "numOfDisks": 0
+            }
+          ],
+          "totalCapacityToAdd": {
+            "size": 0,
+            "unit": "string"
+          }
+        },
+        "instances": [
+          {
+            "instanceId": "string",
+            "instanceName": "string",
+            "instanceType": "string"
+          }
+        ],
+        "isCapacityBased": false,
+        "isComposite": false,
+        "licenseExpiryDate": 0,
+        "licenseParameters": {
+          "newInstanceType": "string",
+          "newLicenseType": {
+            "capacityLimit": {
+              "size": 0,
+              "unit": "string"
+            },
+            "capacity_limit": "string",
+            "description": "string",
+            "name": "string",
+            "subDescription": "string",
+            "subName": "string",
+            "type": "string"
+          }
+        },
+        "maxCapacity": {
+          "size": 0,
+          "unit": "string"
+        },
+        "moreInfo": "string",
+        "numOfDisks": 0,
+        "providerVolumeType": "string",
+        "resourcesToDelete": {
+          "instanceNameAndType": [
+            {
+              "instanceId": "string",
+              "instanceName": "string",
+              "instanceType": "string"
+            }
+          ],
+          "numberOfDisksAndDiskSize": [
+            {
+              "diskSize": {
+                "size": 0,
+                "unit": "string"
+              },
+              "diskType": "string"
+            }
+          ]
+        },
+        "serialNumber": "string",
+        "totalCapacity": {
+          "size": 0,
+          "unit": "string"
+        },
+        "volumeInfo": {
+          "newCapacity": {
+            "size": 0,
+            "unit": "string"
+          },
+          "svmName": "string",
+          "volumeName": "string"
+        },
+        "volumeMoveParameters": {
+          "homeNode": "string",
+          "svmName": "string",
+          "targetAggregateName": "string",
+          "volumeName": "string"
+        },
+        "volumeNames": [
+          "string"
+        ],
+        "workingEnvironmentId": "string"
+      },
+      "severity": "string"
+    }
   ],
   "capacityFeatures": {
+    "inactiveUserData": {
+      "size": 0,
+      "unit": "string"
+    },
     "objectStoreConfigExtended": {
       "objectStoreConfig": {
         "objectStoreName": "string",
         "providerType": "string",
         "s3Name": "string",
-        "server": "string"
+        "server": "string",
+        "usedSpace": {
+          "size": 0,
+          "unit": "string"
+        }
       },
       "tierLevel": "string"
+    },
+    "performanceTierUsedCapacity": {
+      "size": 0,
+      "unit": "string"
+    },
+    "rawCapacity": {
+      "size": 0,
+      "unit": "string"
     }
   },
   "cbsProperties": {
@@ -247,7 +363,11 @@ a|
       "gcpProjectId": "string",
       "gcpRegion": "string"
     },
-    "region": "string"
+    "region": "string",
+    "usedCapacity": {
+      "size": 0,
+      "unit": "string"
+    }
   },
   "cloudSyncProperties": {
     "dataBrokerProperties": {
@@ -285,7 +405,16 @@ a|
       "string"
     ],
     "lifs": [
-      {}
+      {
+        "dataProtocols": [
+          "string"
+        ],
+        "ip": "string",
+        "lifType": "string",
+        "netmask": "string",
+        "nodeName": "string",
+        "privateIp": false
+      }
     ],
     "nodeModels": [
       "string"
@@ -371,7 +500,16 @@ a|
       "string"
     ],
     "lifs": [
-      {}
+      {
+        "dataProtocols": [
+          "string"
+        ],
+        "ip": "string",
+        "lifType": "string",
+        "netmask": "string",
+        "nodeName": "string",
+        "privateIp": false
+      }
     ],
     "nodeModels": [
       "string"
@@ -390,22 +528,44 @@ a|
       "string"
     ]
   },
+  "reservedSize": {
+    "size": 0,
+    "unit": "string"
+  },
   "snapshotPolicies": [
     {
       "description": "string",
       "name": "string",
       "schedules": [
-        {}
+        {
+          "frequency": "string",
+          "retention": 0
+        }
       ]
     }
   ],
   "status": {
     "extendedFailureReason": "string",
+    "failureCauses": {
+      "invalidOntapCredentials": false
+    },
     "message": "string",
     "status": "string"
   },
   "svms": [
-    {}
+    {
+      "allowedAggregates": [
+        "string"
+      ],
+      "allowedProtocols": [
+        "object"
+      ],
+      "language": "string",
+      "name": "string",
+      "state": "string",
+      "ver3Enabled": false,
+      "ver4Enabled": false
+    }
   ],
   "tenantId": "string",
   "workingEnvironmentType": "string"

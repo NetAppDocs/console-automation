@@ -7,6 +7,7 @@ summary: 'Retrieve all S3 buckets'
 ---
 
 = Retrieve all S3 buckets
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/get-buckets-details`#
 
@@ -56,6 +57,24 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "s3Buckets": [
+    {
+      "bucketName": "string",
+      "region": "string",
+      "tags": {
+        "traversableAgain": false
+      }
+    }
+  ],
+  "totalBuckets": 0
+}
+====
 
 == Definitions
 

@@ -7,6 +7,7 @@ summary: 'Retrieve a CIFS share list for an FSx system'
 ---
 
 = Retrieve a CIFS share list for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/shares`#
 

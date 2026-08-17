@@ -7,6 +7,7 @@ summary: 'List all resource groups'
 ---
 
 = List all resource groups
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resourcegroups`#
 

@@ -7,6 +7,7 @@ summary: 'Update the default Vscan file operation profile'
 ---
 
 = Update the default Vscan file operation profile
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/vscan-file-op`#
 

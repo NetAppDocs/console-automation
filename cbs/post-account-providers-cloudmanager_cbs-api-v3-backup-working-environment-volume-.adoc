@@ -7,6 +7,7 @@ summary: 'Enable backup for a volume (v3)'
 ---
 
 = Enable backup for a volume (v3)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v3/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}`#
 

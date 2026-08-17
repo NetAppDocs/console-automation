@@ -7,6 +7,7 @@ summary: 'List all permissions for a resource'
 ---
 
 = List all permissions for a resource
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resources/{resource_id}/permissions`#
 

@@ -7,6 +7,7 @@ summary: 'Exchange a Cloud Volumes ONTAP license'
 ---
 
 = Exchange a Cloud Volumes ONTAP license
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/exchange`#
 
@@ -18,6 +19,7 @@ Exchanges an unused Cloud Volume ONTAP license with a data service license.
 To use this endpoint you must be an account administrator.
 
 * `accountId`, `targetLicenseType` and `resourceId` are required fields.
+
 *Token usage:* NetApp Console user token.
 
 

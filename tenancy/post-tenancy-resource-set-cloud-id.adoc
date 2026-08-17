@@ -7,6 +7,7 @@ summary: 'Set a cloud identifier'
 ---
 
 = Set a cloud identifier
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}/set-cloud-id`#
 

@@ -7,6 +7,7 @@ summary: 'Retrieve the backup status'
 ---
 
 = Retrieve the backup status
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/status`#
 

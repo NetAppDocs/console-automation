@@ -7,6 +7,7 @@ summary: 'Retrieve an audit group entry'
 ---
 
 = Retrieve an audit group entry
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{requestId}`#
 
@@ -163,6 +164,39 @@ a|Name of the system related to the user action
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "_id": 0,
+  "actionName": "string",
+  "actionParameters": "string",
+  "errorMessage": "string",
+  "id": "string",
+  "records": [
+    {
+      "actionName": "string",
+      "count": 0,
+      "date": 0,
+      "errorMessage": "string",
+      "id": "string",
+      "parameters": "string",
+      "status": "string"
+    }
+  ],
+  "requestId": "string",
+  "startDate": 0,
+  "status": "string",
+  "tenantName": "string",
+  "userId": "string",
+  "userName": "string",
+  "version": "string",
+  "workingEnvironmentId": "string",
+  "workingEnvironmentName": "string"
+}
+====
 
 == Definitions
 

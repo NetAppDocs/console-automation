@@ -7,6 +7,7 @@ summary: 'Modify the configuration'
 ---
 
 = Modify the configuration
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations`#
 

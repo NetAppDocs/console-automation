@@ -7,6 +7,7 @@ summary: 'Retrieve editable tags for cloud resources'
 ---
 
 = Retrieve editable tags for cloud resources
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/user-tags`#
 

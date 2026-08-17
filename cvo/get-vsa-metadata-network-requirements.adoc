@@ -7,6 +7,7 @@ summary: 'Retrieve the minimum number of required IP addresses'
 ---
 
 = Retrieve the minimum number of required IP addresses
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/network-requirements`#
 
@@ -46,4 +47,13 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "nonHaNodeMinimumRequiredIps": 0
+}
+====
 

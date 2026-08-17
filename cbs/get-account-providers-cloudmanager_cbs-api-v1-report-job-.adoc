@@ -7,6 +7,7 @@ summary: 'Retrieve inventory report data'
 ---
 
 = Retrieve inventory report data
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/report/job/{jobId}`#
 

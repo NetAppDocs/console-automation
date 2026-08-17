@@ -7,6 +7,7 @@ summary: 'Create a new volume'
 ---
 
 = Create a new volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/volumes`#
 
@@ -200,6 +201,115 @@ a|Cloud Volumes ONTAP system ID
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "aggregateName": "string",
+  "capacityTier": "string",
+  "comment": "string",
+  "enableCompression": false,
+  "enableDeduplication": false,
+  "enableThinProvisioning": false,
+  "evCapacityApprovedToAdd": {
+    "addedCapacityToExistingEvDisks": {
+      "size": 0,
+      "unit": "string"
+    },
+    "newRaidForEvInfo": [
+      {
+        "diskSize": {
+          "size": 0,
+          "unit": "string"
+        },
+        "numOfDisks": 0
+      }
+    ],
+    "totalCapacityToAdd": {
+      "size": 0,
+      "unit": "string"
+    }
+  },
+  "exportPolicyInfo": {
+    "ips": [
+      "string"
+    ],
+    "nfsVersion": [
+      "string"
+    ],
+    "policyType": "string",
+    "rules": [
+      {
+        "ips": [
+          "string"
+        ],
+        "nfsVersion": [
+          "string"
+        ],
+        "ruleAccessControl": "string",
+        "superUser": false
+      }
+    ]
+  },
+  "flexGroupVolumeInfo": {
+    "aggregateList": [
+      "string"
+    ]
+  },
+  "initialSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "iscsiInfo": {
+    "igroupCreationRequest": {
+      "igroupName": "string",
+      "initiators": [
+        "string"
+      ]
+    },
+    "igroups": [
+      "string"
+    ],
+    "osName": "string"
+  },
+  "junctionPath": "string",
+  "maxNumOfDisksApprovedToAdd": 0,
+  "name": "string",
+  "providerVolumeType": "string",
+  "qualityOfService": {
+    "maxDataRate": {
+      "size": 0,
+      "unit": "string"
+    }
+  },
+  "shareInfo": {
+    "accessControl": {
+      "permission": "string",
+      "users": [
+        "string"
+      ]
+    },
+    "shareName": "string"
+  },
+  "size": {
+    "size": 0,
+    "unit": "string"
+  },
+  "snapshotPolicyName": "string",
+  "svmName": "string",
+  "syncToS3": false,
+  "tieringPolicy": "string",
+  "volumeTags": [
+    {
+      "tagKey": "string",
+      "tagValue": "string"
+    }
+  ],
+  "workingEnvironmentId": "string"
+}
+====
 
 == Error
 

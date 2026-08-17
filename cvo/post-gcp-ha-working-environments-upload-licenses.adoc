@@ -7,6 +7,7 @@ summary: 'Upload cloud license file content'
 ---
 
 = Upload cloud license file content
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/upload-licenses`#
 

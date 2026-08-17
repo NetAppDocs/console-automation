@@ -7,6 +7,7 @@ summary: 'Add a resource to a workspace'
 ---
 
 = Add a resource to a workspace
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}/add-to-workspace/{workspacePublicId}`#
 

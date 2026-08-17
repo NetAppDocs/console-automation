@@ -7,6 +7,7 @@ summary: 'Move the data broker between groups'
 ---
 
 = Move the data broker between groups
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/move`#
 

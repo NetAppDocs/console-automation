@@ -7,6 +7,7 @@ summary: 'In-Product Automation REST API for the NetApp Console'
 ---
 
 = In-Product Automation REST API for the NetApp Console
+:imagesdir: ../media/
 
 
 

@@ -7,6 +7,7 @@ summary: 'Retrieve SnapMirror replication relationship status'
 ---
 
 = Retrieve SnapMirror replication relationship status
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/status/{workingEnvironmentId}`#
 
@@ -170,6 +171,92 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "currentTransferInfo": {
+    "transferError": "string",
+    "transferPriority": "string",
+    "transferType": "string"
+  },
+  "destination": {
+    "availabilityZone": "string",
+    "clusterName": "string",
+    "nodeName": "string",
+    "region": "string",
+    "svmName": "string",
+    "svmPeerAliasName": "string",
+    "volumeName": "string",
+    "workingEnvironmentId": "string",
+    "workingEnvironmentStatus": "string",
+    "workingEnvironmentType": "string"
+  },
+  "healthy": false,
+  "lagTime": {
+    "unit": "string"
+  },
+  "lastTransferInfo": {
+    "transferDuration": {
+      "unit": "string"
+    },
+    "transferEnded": "string",
+    "transferError": "string",
+    "transferSize": {
+      "size": 0,
+      "unit": "string"
+    },
+    "transferType": "string"
+  },
+  "maxTransferRate": {
+    "size": 0,
+    "unit": "string"
+  },
+  "mirrorState": "string",
+  "networkCompressionRatio": "string",
+  "newestSnapshotCreated": "string",
+  "newestSnapshotName": "string",
+  "policy": "string",
+  "policyType": "string",
+  "relationshipProgress": {
+    "size": 0,
+    "unit": "string"
+  },
+  "relationshipStatus": "string",
+  "relationshipType": "string",
+  "schedule": "string",
+  "source": {
+    "availabilityZone": "string",
+    "clusterName": "string",
+    "nodeName": "string",
+    "region": "string",
+    "svmName": "string",
+    "svmPeerAliasName": "string",
+    "volumeName": "string",
+    "workingEnvironmentId": "string",
+    "workingEnvironmentStatus": "string",
+    "workingEnvironmentType": "string"
+  },
+  "totalTransferSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "totalTransferTime": {
+    "unit": "string"
+  },
+  "unhealthyReason": "string",
+  "volumeCapacityTier": {
+    "size": 0,
+    "unit": "string"
+  },
+  "volumeUsedSize": {
+    "size": 0,
+    "unit": "string"
+  }
+}
+====
 
 == Definitions
 

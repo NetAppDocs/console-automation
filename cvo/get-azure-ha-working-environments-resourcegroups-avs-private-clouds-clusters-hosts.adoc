@@ -7,6 +7,7 @@ summary: 'Retrieve Azure VMware Solution cluster hosts for a subscription'
 ---
 
 = Retrieve Azure VMware Solution cluster hosts for a subscription
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/resourceGroups/{resourceGroupName}/avs-private-clouds/{privateCloudName}/clusters/{clusterName}/hosts`#
 

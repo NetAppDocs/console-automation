@@ -7,6 +7,7 @@ summary: 'Replication endpoints in the NetApp Backup and Recovery REST API'
 ---
 
 = Replication endpoints in the NetApp Backup and Recovery REST API
+:imagesdir: ../media/
 
 
 

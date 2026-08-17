@@ -7,6 +7,7 @@ summary: 'Retrieve all license types for a system'
 ---
 
 = Retrieve all license types for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/license-instance-type`#
 
@@ -74,6 +75,30 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "capacityLimit": {
+    "size": 0,
+    "unit": "string"
+  },
+  "description": "string",
+  "instanceTypes": [
+    {
+      "instanceType": "string",
+      "supportedFeatures": [
+        "string"
+      ],
+      "supportsEncryption": false
+    }
+  ],
+  "licenseType": "string",
+  "name": "string"
+}
+====
 
 == Definitions
 

@@ -7,6 +7,7 @@ summary: 'Associate a subscription (deprecated)'
 ---
 
 = Associate a subscription (deprecated)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/subscriptions/subscription/{subscriptionId}/account/{accountId}`#
 

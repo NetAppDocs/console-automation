@@ -7,6 +7,7 @@ summary: 'Domain endpoints in the Federation REST API for the NetApp Console'
 ---
 
 = Domain endpoints in the Federation REST API for the NetApp Console
+:imagesdir: ../media/
 
 
 

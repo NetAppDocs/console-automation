@@ -7,6 +7,7 @@ summary: 'Retrieve the default snapshot policies'
 ---
 
 = Retrieve the default snapshot policies
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/default-snapshot-policies`#
 
@@ -58,7 +59,10 @@ a|Schedules
   "description": "string",
   "name": "string",
   "schedules": [
-    {}
+    {
+      "frequency": "string",
+      "retention": 0
+    }
   ]
 }
 ====
