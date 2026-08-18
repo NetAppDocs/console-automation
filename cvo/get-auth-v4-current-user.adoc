@@ -7,6 +7,7 @@ summary: 'Retrieve a NetApp Console user representation with roles'
 ---
 
 = Retrieve a NetApp Console user representation with roles
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/auth/v4/current-user`#
 
@@ -113,6 +114,49 @@ a|Tenant ID of the user
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "assignedWorkingEnvironments": [
+    "string"
+  ],
+  "azureCredentials": {
+    "applicationId": "string",
+    "applicationKey": "string",
+    "subscriptionId": "string",
+    "tenantId": "string"
+  },
+  "cloudSyncLicenseInformation": {
+    "cloudSyncLicenseTypes": [
+      "string"
+    ]
+  },
+  "createdWorkingEnvironments": [
+    {
+      "name": "string",
+      "publicId": "string",
+      "workingEnvironmentType": "string"
+    }
+  ],
+  "email": "string",
+  "firstName": "string",
+  "isLdap": false,
+  "lastName": "string",
+  "ldapUserName": "string",
+  "notificationsOptIn": false,
+  "permissions": [
+    "string"
+  ],
+  "publicId": "string",
+  "roles": [
+    "string"
+  ],
+  "tenantId": "string"
+}
+====
 
 == Definitions
 

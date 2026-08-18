@@ -7,6 +7,7 @@ summary: 'Register a Cloud Volumes ONTAP system'
 ---
 
 = Register a Cloud Volumes ONTAP system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/support-registration`#
 

@@ -7,6 +7,7 @@ summary: 'Add resource groups to an organization'
 ---
 
 = Add resource groups to an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/resourcegroups`#
 

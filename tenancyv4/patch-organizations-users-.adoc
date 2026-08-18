@@ -7,6 +7,7 @@ summary: 'Modify a user'
 ---
 
 = Modify a user
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/organizations/{organization_id}/users/{user_id}`#
 

@@ -7,6 +7,7 @@ summary: 'Generate a new key pair and self-signed certificate at the key store'
 ---
 
 = Generate a new key pair and self-signed certificate at the key store
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/key-store/external-certificate`#
 
@@ -111,4 +112,19 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "certificate": "string",
+  "certificateType": "string",
+  "directIssuerName": "string",
+  "publicId": "string",
+  "serialNumber": "string",
+  "startDate": 0,
+  "subjectName": "string"
+}
+====
 

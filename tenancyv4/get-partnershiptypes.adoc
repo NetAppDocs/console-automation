@@ -7,6 +7,7 @@ summary: 'List all partnership types'
 ---
 
 = List all partnership types
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnershiptypes`#
 

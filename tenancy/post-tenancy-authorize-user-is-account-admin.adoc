@@ -7,6 +7,7 @@ summary: 'Authorize a user as account admin'
 ---
 
 = Authorize a user as account admin
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-user-is-account-admin`#
 

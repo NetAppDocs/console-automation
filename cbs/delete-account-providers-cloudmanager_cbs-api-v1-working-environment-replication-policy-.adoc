@@ -7,6 +7,7 @@ summary: 'Delete a replication policy'
 ---
 
 = Delete a replication policy
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy/{policyId}`#
 

@@ -7,6 +7,7 @@ summary: 'Delete all snapshots (system)'
 ---
 
 = Delete all snapshots (system)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}/snapshot`#
 

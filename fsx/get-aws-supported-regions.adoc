@@ -7,6 +7,7 @@ summary: 'Retrieve supported regions'
 ---
 
 = Retrieve supported regions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/supported-regions`#
 

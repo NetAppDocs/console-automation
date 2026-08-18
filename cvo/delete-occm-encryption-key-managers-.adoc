@@ -7,6 +7,7 @@ summary: 'Delete an existing key manager'
 ---
 
 = Delete an existing key manager
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/occm/encryption/key-managers/{keyManagerId}`#
 

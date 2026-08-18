@@ -7,6 +7,7 @@ summary: 'Configure object storage (v2)'
 ---
 
 = Configure object storage (v2)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/{workingEnvironmentId}/configure-object-store`#
 

@@ -7,6 +7,7 @@ summary: 'Edit the relationship tags'
 ---
 
 = Edit the relationship tags
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/relationships/{id}/tags`#
 

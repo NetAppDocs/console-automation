@@ -7,6 +7,7 @@ summary: 'Create a new CIFS configuration for an FSx system'
 ---
 
 = Create a new CIFS configuration for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/cifs`#
 

@@ -7,6 +7,7 @@ summary: 'Discover FSx ONTAP systems'
 ---
 
 = Discover FSx ONTAP systems
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/discovery/{accountId}/discover`#
 

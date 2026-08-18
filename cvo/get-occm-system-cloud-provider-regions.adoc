@@ -7,6 +7,7 @@ summary: 'Retrieve supported regions for the cloud providers'
 ---
 
 = Retrieve supported regions for the cloud providers
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/cloud-provider-regions`#
 

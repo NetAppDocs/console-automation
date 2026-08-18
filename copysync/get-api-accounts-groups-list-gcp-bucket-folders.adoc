@@ -7,6 +7,7 @@ summary: 'Retrieve the Google Cloud bucket folders'
 ---
 
 = Retrieve the Google Cloud bucket folders
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-gcp-bucket-folders`#
 

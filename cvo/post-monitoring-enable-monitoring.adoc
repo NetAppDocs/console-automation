@@ -7,6 +7,7 @@ summary: 'Enable monitoring'
 ---
 
 = Enable monitoring
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/monitoring/{workingEnvironmentId}/enable-monitoring`#
 

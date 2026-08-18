@@ -7,6 +7,7 @@ summary: 'Enable SnapLock for an existing system'
 ---
 
 = Enable SnapLock for an existing system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/enable-worm`#
 
@@ -51,6 +52,18 @@ a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "retentionPeriod": {
+    "length": 0,
+    "unit": "string"
+  }
+}
+====
 
 == Error
 

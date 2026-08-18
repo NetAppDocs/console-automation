@@ -7,6 +7,7 @@ summary: 'Set up Google Cloud backup to cloud'
 ---
 
 = Set up Google Cloud backup to cloud
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/gcp-cloud-backup-setup`#
 

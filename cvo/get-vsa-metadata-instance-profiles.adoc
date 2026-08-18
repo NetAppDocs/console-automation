@@ -7,6 +7,7 @@ summary: 'Retrieve AWS instance profiles'
 ---
 
 = Retrieve AWS instance profiles
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/instance-profiles`#
 

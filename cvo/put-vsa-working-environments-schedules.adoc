@@ -7,6 +7,7 @@ summary: 'Set the schedules'
 ---
 
 = Set the schedules
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/schedules`#
 
@@ -61,7 +62,14 @@ a|
     {
       "name": "string",
       "schedule": [
-        {}
+        {
+          "start": {
+            "day": 0
+          },
+          "stop": {
+            "day": 0
+          }
+        }
       ]
     }
   ]

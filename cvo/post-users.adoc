@@ -7,6 +7,7 @@ summary: 'Create a new user'
 ---
 
 = Create a new user
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/users`#
 
@@ -106,6 +107,31 @@ a|Tenant ID of the user
 |===
 
 
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accessKey": "string",
+  "azureCredentials": {
+    "applicationId": "string",
+    "applicationKey": "string",
+    "subscriptionId": "string",
+    "tenantId": "string"
+  },
+  "email": "string",
+  "firstName": "string",
+  "isLdap": false,
+  "lastName": "string",
+  "ldapUserName": "string",
+  "password": "string",
+  "roleId": "string",
+  "s3Bucket": "string",
+  "secretKey": "string",
+  "tenantId": "string"
+}
+====
+
 == Error
 
 ```
@@ -204,6 +230,47 @@ a|Tenant ID of the user
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "assignedWorkingEnvironments": [
+    "string"
+  ],
+  "azureCredentials": {
+    "applicationId": "string",
+    "applicationKey": "string",
+    "subscriptionId": "string",
+    "tenantId": "string"
+  },
+  "cloudSyncLicenseInformation": {
+    "cloudSyncLicenseTypes": [
+      "string"
+    ]
+  },
+  "createdWorkingEnvironments": [
+    {
+      "name": "string",
+      "publicId": "string",
+      "workingEnvironmentType": "string"
+    }
+  ],
+  "email": "string",
+  "firstName": "string",
+  "isLdap": false,
+  "lastName": "string",
+  "ldapUserName": "string",
+  "notificationsOptIn": false,
+  "permissions": [
+    "string"
+  ],
+  "publicId": "string",
+  "roleId": "string",
+  "tenantId": "string"
+}
+====
 
 == Definitions
 

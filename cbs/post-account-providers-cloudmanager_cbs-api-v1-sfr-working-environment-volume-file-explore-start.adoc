@@ -7,6 +7,7 @@ summary: 'Start a file and folder explore operation (v1)'
 ---
 
 = Start a file and folder explore operation (v1)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/file-explore/start`#
 

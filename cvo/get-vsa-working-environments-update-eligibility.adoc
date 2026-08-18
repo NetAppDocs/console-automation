@@ -7,6 +7,7 @@ summary: 'Retrieve the eligibility support status'
 ---
 
 = Retrieve the eligibility support status
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/update-eligibility`#
 

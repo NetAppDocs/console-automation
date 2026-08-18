@@ -7,6 +7,7 @@ summary: 'Retrieve a user in a user group'
 ---
 
 = Retrieve a user in a user group
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/usergroups/{usergroup_id}/users/{user_id}`#
 

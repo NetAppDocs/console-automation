@@ -7,6 +7,7 @@ summary: 'Authorize an agent workspace'
 ---
 
 = Authorize an agent workspace
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-agent-workspace`#
 

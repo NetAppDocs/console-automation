@@ -7,6 +7,7 @@ summary: 'Retrieve a generated certificate signing request'
 ---
 
 = Retrieve a generated certificate signing request
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/encryption/csr`#
 

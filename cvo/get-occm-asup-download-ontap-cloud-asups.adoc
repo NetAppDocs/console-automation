@@ -7,6 +7,7 @@ summary: 'Download a compressed file of all the AutoSupport files from all VSAs'
 ---
 
 = Download a compressed file of all the AutoSupport files from all VSAs
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup/download-ontap-cloud-asups`#
 

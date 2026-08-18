@@ -7,6 +7,7 @@ summary: 'Retrieve VPCs'
 ---
 
 = Retrieve VPCs
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/vpcs`#
 
@@ -115,4 +116,26 @@ a|
 
 |===
 
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "vpcId": "string",
+  "state": "string",
+  "cidrBlock": "string",
+  "tags": [
+    "string"
+  ],
+  "default": false,
+  "subnets": [
+    "string"
+  ],
+  "securityGroups": [
+    "string"
+  ],
+  "tenancy": "string"
+}
+====
 

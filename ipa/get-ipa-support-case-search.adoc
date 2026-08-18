@@ -7,6 +7,7 @@ summary: 'Retrieve support cases'
 ---
 
 = Retrieve support cases
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/support/case-search`#
 

@@ -7,6 +7,7 @@ summary: 'Register a subscription'
 ---
 
 = Register a subscription
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/account/{accountId}/subscriptions/{subscriptionId}`#
 
@@ -87,6 +88,16 @@ NOTE:
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "subscriptionType": "string",
+  "expirationDate": 0
+}
+====
 
 == Response
 

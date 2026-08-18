@@ -7,6 +7,7 @@ summary: 'Change the tier level'
 ---
 
 = Change the tier level
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/change-tier-level`#
 

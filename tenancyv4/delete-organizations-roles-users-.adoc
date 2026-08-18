@@ -7,6 +7,7 @@ summary: 'Remove a user from an organization'
 ---
 
 = Remove a user from an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/roles/{role_id}/users/{user_id}`#
 

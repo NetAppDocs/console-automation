@@ -7,6 +7,7 @@ summary: 'Create a new replication for a Cloud Volumes ONTAP system'
 ---
 
 = Create a new replication for a Cloud Volumes ONTAP system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/vsa`#
 
@@ -38,6 +39,59 @@ a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "replicationRequest": {
+    "destinationInterclusterLifIps": [
+      "string"
+    ],
+    "destinationIpSpace": "string",
+    "destinationWorkingEnvironmentId": "string",
+    "policyName": "string",
+    "scheduleName": "string",
+    "sourceInterclusterLifIps": [
+      "string"
+    ],
+    "sourceIpSpace": "string",
+    "sourceWorkingEnvironmentId": "string"
+  },
+  "replicationVolume": {
+    "advancedMode": false,
+    "destinationAggregateName": "string",
+    "destinationCapacityTier": "string",
+    "destinationProviderVolumeType": "string",
+    "destinationSvmName": "string",
+    "destinationVolumeName": "string",
+    "evCapacityApprovedToAdd": {
+      "addedCapacityToExistingEvDisks": {
+        "size": 0,
+        "unit": "string"
+      },
+      "newRaidForEvInfo": [
+        {
+          "diskSize": {
+            "size": 0,
+            "unit": "string"
+          },
+          "numOfDisks": 0
+        }
+      ],
+      "totalCapacityToAdd": {
+        "size": 0,
+        "unit": "string"
+      }
+    },
+    "numOfDisksApprovedToAdd": 0,
+    "sourceSvmName": "string",
+    "sourceVolumeName": "string",
+    "tieringPolicy": "string"
+  }
+}
+====
 
 == Error
 

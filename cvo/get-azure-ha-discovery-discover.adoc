@@ -7,6 +7,7 @@ summary: 'Retrieve a list of systems for the Azure region'
 ---
 
 = Retrieve a list of systems for the Azure region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/discovery/discover`#
 
@@ -126,4 +127,22 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "clusterAddress": "string",
+  "name": "string",
+  "publicId": "string",
+  "recoverable": false,
+  "region": "string",
+  "resourceGroup": "string",
+  "subnetId": "string",
+  "subnetName": "string",
+  "vnetId": "string",
+  "vnetName": "string"
+}
+====
 

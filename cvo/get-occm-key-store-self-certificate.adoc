@@ -7,6 +7,7 @@ summary: 'Retrieve the self-signed certificate of the NetApp Console key store'
 ---
 
 = Retrieve the self-signed certificate of the NetApp Console key store
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/key-store/self-certificate`#
 
@@ -71,4 +72,19 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "certificate": "string",
+  "certificateType": "string",
+  "directIssuerName": "string",
+  "publicId": "string",
+  "serialNumber": "string",
+  "startDate": 0,
+  "subjectName": "string"
+}
+====
 

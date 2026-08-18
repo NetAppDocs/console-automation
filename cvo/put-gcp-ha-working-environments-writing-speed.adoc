@@ -7,6 +7,7 @@ summary: 'Modify the writing speed for a system'
 ---
 
 = Modify the writing speed for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/writing-speed`#
 

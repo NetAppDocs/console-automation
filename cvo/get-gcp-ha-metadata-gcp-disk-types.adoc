@@ -7,6 +7,7 @@ summary: 'Retrieve the supported disk types'
 ---
 
 = Retrieve the supported disk types
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/gcp-disk-types`#
 
@@ -46,6 +47,24 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "size": {
+    "size": 0,
+    "unit": "string"
+  },
+  "supportedDiskTypes": [
+    "string"
+  ],
+  "supportedOccmLicenses": [
+    "string"
+  ]
+}
+====
 
 == Definitions
 

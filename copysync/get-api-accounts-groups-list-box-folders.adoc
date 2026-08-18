@@ -7,6 +7,7 @@ summary: 'Retrieve the Box API server folders'
 ---
 
 = Retrieve the Box API server folders
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-box-folders`#
 

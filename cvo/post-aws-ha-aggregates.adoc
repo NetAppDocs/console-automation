@@ -7,6 +7,7 @@ summary: 'Create a new aggregate'
 ---
 
 = Create a new aggregate
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/aggregates`#
 
@@ -87,7 +88,15 @@ a|
 [source,json,subs=+macros]
 {
   "capacityTier": "string",
+  "diskSize": {
+    "size": 0,
+    "unit": "string"
+  },
   "homeNode": "string",
+  "initialEvAggregateSize": {
+    "size": 0,
+    "unit": "string"
+  },
   "name": "string",
   "providerVolumeType": "string",
   "workingEnvironmentId": "string"

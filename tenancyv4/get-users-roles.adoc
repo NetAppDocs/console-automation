@@ -7,6 +7,7 @@ summary: 'List all the roles for a user'
 ---
 
 = List all the roles for a user
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}/roles`#
 

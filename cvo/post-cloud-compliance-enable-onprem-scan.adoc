@@ -7,6 +7,7 @@ summary: 'Enable on-premises scanning using the system ID'
 ---
 
 = Enable on-premises scanning using the system ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{workingEnvironmentId}/enable-onprem-scan`#
 

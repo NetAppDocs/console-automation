@@ -7,6 +7,7 @@ summary: 'Retrieve S3 buckets summary'
 ---
 
 = Retrieve S3 buckets summary
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/s3-summary`#
 
@@ -46,4 +47,14 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "isSupportable": false,
+  "numOfBuckets": 0
+}
+====
 

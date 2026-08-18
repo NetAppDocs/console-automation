@@ -7,6 +7,7 @@ summary: 'Create a new user group in an organization'
 ---
 
 = Create a new user group in an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/roles/{role_id}/usergroups`#
 

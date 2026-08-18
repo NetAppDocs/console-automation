@@ -7,6 +7,7 @@ summary: 'Update the proxy configuration for a data broker'
 ---
 
 = Update the proxy configuration for a data broker
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/proxy`#
 

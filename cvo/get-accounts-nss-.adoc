@@ -7,6 +7,7 @@ summary: 'Retrieve an NSS account'
 ---
 
 = Retrieve an NSS account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/nss/{cloudProviderAccountId}`#
 
@@ -64,12 +65,12 @@ a|
 
 |publicId
 |string
-|True
+|False
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|True
+|False
 a|
 
 |===

@@ -7,6 +7,7 @@ summary: 'Retrieve volumes'
 ---
 
 = Retrieve volumes
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/volumes`#
 
@@ -339,6 +340,123 @@ a|Used volume inodes size
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "aggregateName": "string",
+  "autoSizeMode": "string",
+  "capacityTier": "string",
+  "capacityTierUsedSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "cifsShareAccessPoint": "string",
+  "cloneNames": [
+    "string"
+  ],
+  "comment": "string",
+  "compression": false,
+  "compressionSpaceSaved": {
+    "size": 0,
+    "unit": "string"
+  },
+  "constituentsAggregates": [
+    "string"
+  ],
+  "deduplication": false,
+  "deduplicationSpaceSaved": {
+    "size": 0,
+    "unit": "string"
+  },
+  "exportPolicyInfo": {
+    "ips": [
+      "string"
+    ],
+    "name": "string",
+    "nfsVersion": [
+      "string"
+    ],
+    "policyType": "string",
+    "rules": [
+      {
+        "ips": [
+          "string"
+        ],
+        "nfsVersion": [
+          "string"
+        ],
+        "ruleAccessControl": "string",
+        "superUser": false
+      }
+    ]
+  },
+  "isFlexGroupVolume": false,
+  "iscsiEnabled": false,
+  "junctionPath": "string",
+  "maxGrowSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "mountPoint": "string",
+  "moving": false,
+  "name": "string",
+  "parentSnapshot": "string",
+  "parentVolumeName": "string",
+  "primaryCifsShareAccessPoint": "string",
+  "primaryNoFailoverMountPoint": "string",
+  "providerVolumeType": "string",
+  "qosPolicyGroupName": "string",
+  "rootVolume": false,
+  "secondaryCifsShareAccessPoint": "string",
+  "secondaryNoFailoverMountPoint": "string",
+  "securityStyle": "string",
+  "shareInfo": [
+    {
+      "accessControlList": [
+        {
+          "permission": "string",
+          "users": [
+            "string"
+          ]
+        }
+      ],
+      "shareName": "string",
+      "vscanFileOpPolicy": "string"
+    }
+  ],
+  "shareNames": [
+    "string"
+  ],
+  "size": {
+    "size": 0,
+    "unit": "string"
+  },
+  "snaplockType": "string",
+  "snapshotPolicy": "string",
+  "snapshotsUsedSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "state": "string",
+  "svmName": "string",
+  "targetName": "string",
+  "thinProvisioning": false,
+  "tierInactiveUserData": {
+    "size": 0,
+    "unit": "string"
+  },
+  "tieringPolicy": "string",
+  "usedSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "uuid": "string",
+  "volumeType": "string"
+}
+====
 
 == Definitions
 

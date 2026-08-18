@@ -7,6 +7,7 @@ summary: 'Retrieve user role and permissions'
 ---
 
 = Retrieve user role and permissions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/permissions-for-user`#
 

@@ -7,6 +7,7 @@ summary: 'Update the key manager CA certificate'
 ---
 
 = Update the key manager CA certificate
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/encryption/{workingEnvironmentId}/update-key-manager-ca-certificate`#
 
@@ -117,4 +118,19 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "certificate": "string",
+  "certificateType": "string",
+  "directIssuerName": "string",
+  "publicId": "string",
+  "serialNumber": "string",
+  "startDate": 0,
+  "subjectName": "string"
+}
+====
 

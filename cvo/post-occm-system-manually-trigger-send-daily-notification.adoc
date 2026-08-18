@@ -7,6 +7,7 @@ summary: 'Trigger sending daily notifications'
 ---
 
 = Trigger sending daily notifications
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/manually-trigger-send-daily-notification`#
 

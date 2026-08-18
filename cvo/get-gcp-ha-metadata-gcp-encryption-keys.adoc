@@ -7,6 +7,7 @@ summary: 'Retrieve Google Cloud encryption keys for a region'
 ---
 
 = Retrieve Google Cloud encryption keys for a region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/gcp-encryption-keys`#
 

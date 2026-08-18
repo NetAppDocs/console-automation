@@ -7,6 +7,7 @@ summary: 'Register NetApp Console to a dark site'
 ---
 
 = Register NetApp Console to a dark site
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/register-in-local-auth`#
 

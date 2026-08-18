@@ -7,6 +7,7 @@ summary: 'Restart the server'
 ---
 
 = Restart the server
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/restart-server`#
 

@@ -7,6 +7,7 @@ summary: 'Link a tenant to a NetApp support site account'
 ---
 
 = Link a tenant to a NetApp support site account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/tenants/{tenantId}/nss-keys`#
 
@@ -107,7 +108,13 @@ a|
 [source,json,subs=+macros]
 {
   "name": "string",
-  "publicId": "string"
+  "publicId": "string",
+  "workingEnvironmentsInformation": {
+    "totalReservedSize": {
+      "size": 0,
+      "unit": "string"
+    }
+  }
 }
 ====
 

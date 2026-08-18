@@ -7,6 +7,7 @@ summary: 'Retrieve SnapMirror policies'
 ---
 
 = Retrieve SnapMirror policies
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/metadata/snapmirror-svm-policies/{sourceWorkingEnvironmentId}/{svmName}/{targetWorkingEnvironmentId}`#
 
@@ -107,7 +108,10 @@ a|
   "policyType": "string",
   "reason": "string",
   "rules": [
-    {}
+    {
+      "retention": 0,
+      "snapMirrorLabel": "string"
+    }
   ]
 }
 ====

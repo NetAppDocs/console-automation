@@ -7,6 +7,7 @@ summary: 'Validate a proxy URL'
 ---
 
 = Validate a proxy URL
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup/validate/proxy`#
 

@@ -7,6 +7,7 @@ summary: 'Retrieve quotes for a new Azure volume'
 ---
 
 = Retrieve quotes for a new Azure volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/volumes/quote`#
 
@@ -111,6 +112,32 @@ a|Cloud Volumes ONTAP system ID
 |===
 
 
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "aggregateName": "string",
+  "capacityTier": "string",
+  "enableThinProvisioning": false,
+  "initialSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "isReplicationFlow": false,
+  "name": "string",
+  "providerVolumeType": "string",
+  "size": {
+    "size": 0,
+    "unit": "string"
+  },
+  "svmName": "string",
+  "tieringPolicy": "string",
+  "verifyNameUniqueness": false,
+  "workingEnvironmentId": "string"
+}
+====
+
 == Error
 
 ```
@@ -161,6 +188,41 @@ a|Number of new disks needed
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "aggregateName": "string",
+  "autoVsaCapacityManagement": false,
+  "diskSize": {
+    "size": 0,
+    "unit": "string"
+  },
+  "elasticVolumeQuoteResponse": {
+    "addedCapacityToExistingEvDisks": {
+      "size": 0,
+      "unit": "string"
+    },
+    "newRaidForEvInfo": [
+      {
+        "diskSize": {
+          "size": 0,
+          "unit": "string"
+        },
+        "numOfDisks": 0
+      }
+    ],
+    "totalCapacityToAdd": {
+      "size": 0,
+      "unit": "string"
+    }
+  },
+  "newAggregate": false,
+  "numOfDisks": 0
+}
+====
 
 == Definitions
 

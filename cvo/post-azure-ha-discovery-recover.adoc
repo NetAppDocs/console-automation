@@ -7,6 +7,7 @@ summary: 'Save a system to the NetApp Console database'
 ---
 
 = Save a system to the NetApp Console database
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/discovery/recover`#
 
@@ -161,6 +162,30 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "cloudProviderAccount": "string",
+  "clusterAddress": "string",
+  "clusterCredentials": {
+    "id": 0,
+    "password": "string",
+    "publicId": "string",
+    "userName": "string"
+  },
+  "name": "string",
+  "nssAccountId": "string",
+  "providerAccount": "string",
+  "publicId": "string",
+  "region": "string",
+  "resourceGroup": "string",
+  "tenantPublicId": "string",
+  "vpcId": "string"
+}
+====
 
 == Definitions
 

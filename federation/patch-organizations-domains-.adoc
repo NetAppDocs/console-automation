@@ -7,6 +7,7 @@ summary: 'Update a domain'
 ---
 
 = Update a domain
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/organizations/{organization_id}/domains/{domain_id}`#
 

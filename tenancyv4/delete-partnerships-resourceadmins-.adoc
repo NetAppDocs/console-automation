@@ -7,6 +7,7 @@ summary: 'Remove a user from a partnership ResourceAdmin group'
 ---
 
 = Remove a user from a partnership ResourceAdmin group
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/partnerships/{partnership_id}/resourceadmins/{user_id}`#
 

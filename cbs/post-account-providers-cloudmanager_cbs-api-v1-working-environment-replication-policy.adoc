@@ -7,6 +7,7 @@ summary: 'Create a replication policy in a system'
 ---
 
 = Create a replication policy in a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy`#
 

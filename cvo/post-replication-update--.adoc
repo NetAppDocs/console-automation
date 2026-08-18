@@ -7,6 +7,7 @@ summary: 'Update the destination endpoint of the SnapMirror relationship'
 ---
 
 = Update the destination endpoint of the SnapMirror relationship
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/update/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
 

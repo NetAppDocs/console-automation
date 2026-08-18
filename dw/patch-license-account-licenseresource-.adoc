@@ -7,6 +7,7 @@ summary: 'Update a license by resource ID'
 ---
 
 = Update a license by resource ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/account/{accountId}/licenseResource/{resourceIdentifier}`#
 

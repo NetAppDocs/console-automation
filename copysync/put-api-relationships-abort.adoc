@@ -7,6 +7,7 @@ summary: 'Stop the relationship data sync'
 ---
 
 = Stop the relationship data sync
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/relationships/{id}/abort`#
 

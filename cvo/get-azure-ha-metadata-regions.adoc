@@ -7,6 +7,7 @@ summary: 'Retrieve Azure regions'
 ---
 
 = Retrieve Azure regions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/regions`#
 
@@ -103,7 +104,13 @@ a|
           {
             "cidr": "string",
             "subnets": [
-              {}
+              {
+                "availableIps": 0,
+                "cidr": "string",
+                "id": "string",
+                "minimumRequiredIps": 0,
+                "name": "string"
+              }
             ]
           }
         ],

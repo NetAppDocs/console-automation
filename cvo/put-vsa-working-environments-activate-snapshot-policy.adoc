@@ -7,6 +7,7 @@ summary: 'Activate snapshot policy assignments'
 ---
 
 = Activate snapshot policy assignments
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/activate-snapshot-policy`#
 

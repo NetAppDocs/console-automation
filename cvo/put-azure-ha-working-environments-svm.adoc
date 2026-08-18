@@ -7,6 +7,7 @@ summary: 'Modify the SVM name of the system'
 ---
 
 = Modify the SVM name of the system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/svm`#
 

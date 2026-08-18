@@ -7,6 +7,7 @@ summary: 'Retrieve all subscriptions for an account'
 ---
 
 = Retrieve all subscriptions for an account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/account/{accountId}/subscriptions`#
 
@@ -20,6 +21,7 @@ Retrieves the subscription information for a specified subscription.
 * If the subscription ID is provided, the API returns only the subscription details or an empty response.
 * The API authorizes three types of calls: user calls, agent calls (Console agent), and service calls (with a predefined scope).
 * For a service call, you must send the subscription type as a query parameter (the API validates the scope against the subscription type).
+
 *Token usage:* NetApp Console service token.
 
 

@@ -7,6 +7,7 @@ summary: 'Retrieve an IPspace list for an existing system'
 ---
 
 = Retrieve an IPspace list for an existing system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/ip-spaces`#
 

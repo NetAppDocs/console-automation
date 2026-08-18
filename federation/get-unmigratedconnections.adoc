@@ -7,6 +7,7 @@ summary: 'List unmigrated connections'
 ---
 
 = List unmigrated connections
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/unmigratedconnections`#
 
@@ -48,7 +49,6 @@ a|
     {
       "adfsOptions": {
         "metadataFileProvided": true,
-        "metadataUrl": "https://example.com/FederationMetadata/2007-06/FederationMetadata.xml",
         "signInUrl": "https://example.com/adfs/ls/"
       },
       "creatorUsers": [
@@ -60,19 +60,9 @@ a|
         "example2.com"
       ],
       "emailDomain": "example.com",
-      "entraIdOptions": {
-        "clientId": "94e2a45c-64e6-48d1-a31e-1eee0ded5c2a",
-        "tenantDomain": "example.onmicrosoft.com"
-      },
       "id": "con_jxQFVfPHKSdiwoxs",
-      "name": "fed-example-com-waad",
-      "pingFederateOptions": {
-        "serverUrl": "https://example.com/saml/signin"
-      },
-      "providerType": "ENTRAID",
-      "samlOptions": {
-        "signInUrl": "https://example.com/saml/signin"
-      },
+      "name": "fed-example-com-adfs",
+      "providerType": "ADFS",
       "type": "application/vnd.netapp.bxp.unmigratedconnection",
       "version": "1.0"
     }

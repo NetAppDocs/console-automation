@@ -7,6 +7,7 @@ summary: 'Update support case notes or status'
 ---
 
 = Update support case notes or status
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/ipa/support/case/{caseNumber}`#
 

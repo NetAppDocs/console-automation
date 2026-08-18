@@ -7,6 +7,7 @@ summary: 'Modify an existing volume'
 ---
 
 = Modify an existing volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
 
@@ -120,7 +121,16 @@ a|Tiering policy
     ],
     "policyType": "string",
     "rules": [
-      {}
+      {
+        "ips": [
+          "string"
+        ],
+        "nfsVersion": [
+          "string"
+        ],
+        "ruleAccessControl": "string",
+        "superUser": false
+      }
     ]
   },
   "shareInfo": {
@@ -156,30 +166,6 @@ Status: Default, Default response
 [#pattern]
 [.api-collapsible-fifth-title]
 pattern
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|cursor
-|integer
-|False
-a|
-
-|flags
-|integer
-|True
-a|
-
-|pattern
-|string
-|False
-a|
-
-|===
 
 
 [#Regex]

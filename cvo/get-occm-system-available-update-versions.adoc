@@ -7,6 +7,7 @@ summary: 'Check for a new version of the NetApp Console'
 ---
 
 = Check for a new version of the NetApp Console
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/available-update-versions`#
 
@@ -49,4 +50,15 @@ a|Release Number
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "date": 0,
+  "name": "string",
+  "releaseNumber": 0
+}
+====
 

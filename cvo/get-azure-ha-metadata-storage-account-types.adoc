@@ -7,6 +7,7 @@ summary: 'Retrieve Azure storage account types'
 ---
 
 = Retrieve Azure storage account types
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/storage-account-types`#
 
@@ -87,7 +88,16 @@ a|
   ],
   "diskType": "string",
   "sizes": [
-    {}
+    {
+      "description": "string",
+      "size": {
+        "size": 0,
+        "unit": "string"
+      },
+      "supportedOccmLicenses": [
+        "string"
+      ]
+    }
   ]
 }
 ====

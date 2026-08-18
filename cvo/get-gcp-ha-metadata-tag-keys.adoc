@@ -7,6 +7,7 @@ summary: 'Retrieve all labels for a project ID and region'
 ---
 
 = Retrieve all labels for a project ID and region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/tag-keys`#
 

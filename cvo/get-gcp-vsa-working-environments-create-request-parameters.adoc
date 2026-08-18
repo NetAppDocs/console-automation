@@ -7,6 +7,7 @@ summary: 'Retrieve the action parameters'
 ---
 
 = Retrieve the action parameters
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/create-request-parameters`#
 
@@ -54,6 +55,17 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "parameters": {
+    "traversableAgain": false
+  }
+}
+====
 
 == Definitions
 

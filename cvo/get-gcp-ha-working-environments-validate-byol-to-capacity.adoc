@@ -7,6 +7,7 @@ summary: 'Validate prerequisites for converting a system'
 ---
 
 = Validate prerequisites for converting a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/validate-byol-to-capacity`#
 
@@ -89,6 +90,45 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "capacityLicenses": [
+    {
+      "contractType": "string",
+      "flavorType": "string",
+      "totalConsumedCapacity": {
+        "capacity": 0,
+        "units": "string"
+      },
+      "totalLicensedCapacity": {
+        "capacity": 0,
+        "units": "string"
+      }
+    }
+  ],
+  "mpSub": [
+    {
+      "cloudAccountId": "string",
+      "provider": "string",
+      "subscriptionId": "string"
+    }
+  ],
+  "totalDpVolumes": {
+    "size": 0,
+    "unit": "string"
+  },
+  "totalPrimaryVolumes": {
+    "size": 0,
+    "unit": "string"
+  },
+  "validAccount": false,
+  "vmPlan": "string"
+}
+====
 
 == Definitions
 

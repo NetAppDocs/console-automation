@@ -7,6 +7,7 @@ summary: 'Delete an existing tenant'
 ---
 
 = Delete an existing tenant
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenants/{tenantId}`#
 

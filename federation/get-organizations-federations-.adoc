@@ -7,6 +7,7 @@ summary: 'Retrieve a federation'
 ---
 
 = Retrieve a federation
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/federations/{federation_id}`#
 
@@ -200,50 +201,27 @@ a|Version of the resource.
 [source,json,subs=+macros]
 {
   "adfsOptions": {
-    "metadataUrl": "https://example.com/FederationMetadata/2007-06/FederationMetadata.xml",
     "signingCertificateFingerprint": "33:0E:66:6A:D0:89:EA:78:10:7D:5A:35:FF:C5:51:E9:3A:CB:47:A8"
   },
   "auth0Id": "con_jxQFVfPHKSdiwoxs",
-  "auth0Name": "fed-example-com-waad",
+  "auth0Name": "fed-example-com-adfs",
   "domains": [
     "example.com",
     "example2.com"
   ],
-  "entraIdOptions": {
-    "clientId": "94e2a45c-64e6-48d1-a31e-1eee0ded5c2a",
-    "clientSecretMasked": "qPz*******",
-    "groupsEnabled": true,
-    "maxGroupCount": 10,
-    "tenantDomain": "example.onmicrosoft.com"
-  },
   "expirationNotificationPeriod": "P30D",
   "expirationTimestamp": "2024-11-18T20:58:16.305662Z",
-  "id": "4336388b-2992-43af-81de-ba9284b7dc36",
+  "id": "645eae30-ea32-4542-af58-1d9012fed81a",
   "metadata": {
     "createdBy": "666a3f38-d4fa-5b62-a391-a69029758d32",
     "creationTimestamp": "2022-10-06T20:58:16.305662Z",
-    "labels": [
-      {
-        "name": "string",
-        "value": "string"
-      }
-    ],
     "modificationTimestamp": "2022-10-06T20:58:16.305662Z",
     "modifiedBy": "666a3f38-d4fa-5b62-a391-a69029758d32"
   },
-  "name": "Example Co.",
+  "name": "AD FS Federation",
   "organizationId": "9b0ee210-70a0-4158-b025-0decde66e4de",
-  "pingFederateOptions": {
-    "serverUrl": "https://example.com/saml/signin",
-    "signingCertificateFingerprint": "33:0E:66:6A:D0:89:EA:78:10:7D:5A:35:FF:C5:51:E9:3A:CB:47:A8"
-  },
-  "providerType": "ENTRAID",
+  "providerType": "ADFS",
   "resourceId": "862b6f03-58ac-479b-9ca5-5cb4429d8996",
-  "samlOptions": {
-    "signInUrl": "https://example.com/saml/signin",
-    "signOutUrl": "https://example.com/saml/signout",
-    "signingCertificateFingerprint": "33:0E:66:6A:D0:89:EA:78:10:7D:5A:35:FF:C5:51:E9:3A:CB:47:A8"
-  },
   "state": "ENABLED",
   "type": "application/vnd.netapp.bxp.federation",
   "version": "1.0"

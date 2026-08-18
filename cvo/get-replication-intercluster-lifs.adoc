@@ -7,6 +7,7 @@ summary: 'Retrieve the intercluster LIFs'
 ---
 
 = Retrieve the intercluster LIFs
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/intercluster-lifs`#
 
@@ -74,10 +75,26 @@ a|Peer system Intercluster LIFs
 [source,json,subs=+macros]
 {
   "interClusterLifs": [
-    {}
+    {
+      "address": "string",
+      "isPeered": false,
+      "name": "string",
+      "netmaskLength": 0,
+      "node": "string",
+      "port": "string",
+      "status": "string"
+    }
   ],
   "peerInterClusterLifs": [
-    {}
+    {
+      "address": "string",
+      "isPeered": false,
+      "name": "string",
+      "netmaskLength": 0,
+      "node": "string",
+      "port": "string",
+      "status": "string"
+    }
   ]
 }
 ====

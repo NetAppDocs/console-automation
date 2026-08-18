@@ -7,6 +7,7 @@ summary: 'Modify comprehensive protection for multiple volumes (v1)'
 ---
 
 = Modify comprehensive protection for multiple volumes (v1)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/panoramic-protection/working-environment/{workingEnvironmentId}/volume`#
 
@@ -75,17 +76,6 @@ a|
 
 |===
 
-
-.Example request
-[%collapsible%closed]
-====
-[source,json,subs=+macros]
-{
-  "volume": [
-    {}
-  ]
-}
-====
 
 == Response
 

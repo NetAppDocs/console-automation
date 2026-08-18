@@ -7,6 +7,7 @@ summary: 'Delete a resource from an account'
 ---
 
 = Delete a resource from an account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}`#
 

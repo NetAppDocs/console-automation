@@ -7,6 +7,7 @@ summary: 'Modify user tags for cloud resources'
 ---
 
 = Modify user tags for cloud resources
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/user-tags`#
 

@@ -7,6 +7,7 @@ summary: 'Create an Azure account'
 ---
 
 = Create an Azure account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/azure`#
 

@@ -7,6 +7,7 @@ summary: 'Delete a subscription using the account ID'
 ---
 
 = Delete a subscription using the account ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/license/subscriptions/account/{accountId}`#
 

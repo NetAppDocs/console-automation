@@ -7,6 +7,7 @@ summary: 'Retrieve a grant'
 ---
 
 = Retrieve a grant
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}`#
 

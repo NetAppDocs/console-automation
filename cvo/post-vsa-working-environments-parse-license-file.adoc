@@ -7,6 +7,7 @@ summary: 'Parse an uploaded cloud license file'
 ---
 
 = Parse an uploaded cloud license file
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/parse-license-file`#
 
@@ -120,20 +121,6 @@ a|
 [.api-collapsible-fifth-title]
 headers
 Hash mapping strings to array[string]
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|empty
-|boolean
-|False
-a|
-
-|===
-
 
 [#parameters]
 [.api-collapsible-fifth-title]

@@ -7,6 +7,7 @@ summary: 'Retrieve the account information'
 ---
 
 = Retrieve the account information
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/info`#
 
@@ -99,4 +100,19 @@ a|SaaS subscription type
 
 |===
 
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "accountId": "string",
+  "name": "string",
+  "noCharge": false,
+  "daysLeftForTrial": 0,
+  "subscriptionType": "string",
+  "subscriptionStatus": "string",
+  "subscriptionProvider": "string"
+}
+====
 

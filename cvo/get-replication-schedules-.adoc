@@ -7,6 +7,7 @@ summary: 'Retrieve the replication schedules of a system'
 ---
 
 = Retrieve the replication schedules of a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/schedules/{workingEnvironmentId}`#
 

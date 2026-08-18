@@ -7,6 +7,7 @@ summary: 'Retrieve a list of AWS S3 buckets from a region'
 ---
 
 = Retrieve a list of AWS S3 buckets from a region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/buckets`#
 

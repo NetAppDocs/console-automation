@@ -7,6 +7,7 @@ summary: 'Update an extra capacity license'
 ---
 
 = Update an extra capacity license
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
 

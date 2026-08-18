@@ -7,6 +7,7 @@ summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/aggregates/{workingEnvironmentId}`#
 
@@ -159,6 +160,86 @@ a|Volumes
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "availableCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "capacityTier": "string",
+  "capacityTierUsed": {
+    "size": 0,
+    "unit": "string"
+  },
+  "disks": [
+    {
+      "containerType": "string",
+      "device": "string",
+      "name": "string",
+      "ownerNode": "string",
+      "vmDiskProperties": {
+        "containerName": "string",
+        "objectName": "string",
+        "storageAccountName": "string"
+      }
+    }
+  ],
+  "encryptionKeyId": "string",
+  "encryptionType": "string",
+  "evCompatibilityType": "string",
+  "homeNode": "string",
+  "isRoot": false,
+  "name": "string",
+  "ownerNode": "string",
+  "providerVolumes": [
+    {
+      "device": "string",
+      "diskType": "string",
+      "encrypted": false,
+      "id": "string",
+      "instance2Id": "string",
+      "instanceId": "string",
+      "name": "string",
+      "size": {
+        "size": 0,
+        "unit": "string"
+      },
+      "state": "string"
+    }
+  ],
+  "sidlEnabled": false,
+  "snaplockType": "string",
+  "state": "string",
+  "totalCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "usedCapacity": {
+    "size": 0,
+    "unit": "string"
+  },
+  "volumes": [
+    {
+      "isClone": false,
+      "name": "string",
+      "rootVolume": false,
+      "thinProvisioned": false,
+      "totalSize": {
+        "size": 0,
+        "unit": "string"
+      },
+      "usedSize": {
+        "size": 0,
+        "unit": "string"
+      }
+    }
+  ]
+}
+====
 
 == Definitions
 

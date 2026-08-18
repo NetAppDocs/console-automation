@@ -7,6 +7,7 @@ summary: 'Create an NSS account'
 ---
 
 = Create an NSS account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/nss`#
 
@@ -91,12 +92,12 @@ a|
 
 |publicId
 |string
-|True
+|False
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|True
+|False
 a|
 
 |===

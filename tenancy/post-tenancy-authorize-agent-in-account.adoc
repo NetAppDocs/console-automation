@@ -7,6 +7,7 @@ summary: 'Authorize an agent'
 ---
 
 = Authorize an agent
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-agent-in-account`#
 

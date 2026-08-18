@@ -7,6 +7,7 @@ summary: 'Update the mediator for a system'
 ---
 
 = Update the mediator for a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/update-mediator`#
 

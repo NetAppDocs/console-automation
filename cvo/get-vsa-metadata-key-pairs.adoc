@@ -7,6 +7,7 @@ summary: 'Retrieve AWS user key pairs by region'
 ---
 
 = Retrieve AWS user key pairs by region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/key-pairs`#
 
