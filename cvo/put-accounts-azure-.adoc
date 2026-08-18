@@ -7,6 +7,7 @@ summary: 'Update an Azure account'
 ---
 
 = Update an Azure account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/azure/{cloudProviderAccountId}`#
 

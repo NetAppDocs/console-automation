@@ -7,6 +7,7 @@ summary: 'Retrieve a list of storage VMs'
 ---
 
 = Retrieve a list of storage VMs
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/{workingEnvironmentId}/svm`#
 

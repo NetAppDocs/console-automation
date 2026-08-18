@@ -7,6 +7,7 @@ summary: 'License endpoints in the License and subscriptions REST API for the Ne
 ---
 
 = License endpoints in the License and subscriptions REST API for the NetApp Console
+:imagesdir: ../media/
 
 
 

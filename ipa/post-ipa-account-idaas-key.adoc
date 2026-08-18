@@ -7,6 +7,7 @@ summary: 'Create an IDaaS NetApp Support Site key credential'
 ---
 
 = Create an IDaaS NetApp Support Site key credential
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/idaas-key`#
 

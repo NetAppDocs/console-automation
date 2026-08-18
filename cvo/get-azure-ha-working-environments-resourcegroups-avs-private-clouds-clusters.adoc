@@ -7,6 +7,7 @@ summary: 'Retrieve Azure VMware Solution private cloud clusters for a subscripti
 ---
 
 = Retrieve Azure VMware Solution private cloud clusters for a subscription
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/resourceGroups/{resourceGroupName}/avs-private-clouds/{privateCloudName}/clusters`#
 
@@ -81,6 +82,28 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "id": "string",
+  "name": "string",
+  "properties": {
+    "clusterId": "string",
+    "clusterSize": "string",
+    "hosts": [
+      "string"
+    ],
+    "provisioningState": "string",
+    "vsanDatastoreName": "string"
+  },
+  "tags": {
+    "traversableAgain": false
+  }
+}
+====
 
 == Definitions
 

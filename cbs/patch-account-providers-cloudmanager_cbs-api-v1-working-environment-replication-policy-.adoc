@@ -7,6 +7,7 @@ summary: 'Modify a replication policy in a system'
 ---
 
 = Modify a replication policy in a system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy/{policyId}`#
 

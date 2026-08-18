@@ -7,6 +7,7 @@ summary: 'Modify the network port broadcast domain MTU'
 ---
 
 = Modify the network port broadcast domain MTU
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/networkOptimization`#
 
@@ -51,6 +52,15 @@ a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "optimize": false
+}
+====
 
 == Error
 

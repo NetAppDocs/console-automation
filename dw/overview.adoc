@@ -7,6 +7,7 @@ summary: 'Licenses and subscriptions REST API for the NetApp Console'
 ---
 
 = Licenses and subscriptions REST API for the NetApp Console
+:imagesdir: ../media/
 
 
 

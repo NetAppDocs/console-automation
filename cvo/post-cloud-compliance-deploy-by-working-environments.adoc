@@ -7,6 +7,7 @@ summary: 'Deploy a cloud compliance instance by systems'
 ---
 
 = Deploy a cloud compliance instance by systems
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/deploy-by-working-environments`#
 

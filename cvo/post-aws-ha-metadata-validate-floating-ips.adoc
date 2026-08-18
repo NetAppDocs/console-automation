@@ -7,6 +7,7 @@ summary: 'Validate HA floating IP addresses'
 ---
 
 = Validate HA floating IP addresses
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/validate-floating-ips`#
 
@@ -106,6 +107,18 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "reasons": [
+    "string"
+  ],
+  "result": false
+}
+====
 
 == Definitions
 

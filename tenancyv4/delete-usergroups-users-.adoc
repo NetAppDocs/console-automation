@@ -7,6 +7,7 @@ summary: 'Remove a user from a user group'
 ---
 
 = Remove a user from a user group
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/usergroups/{usergroup_id}/users/{user_id}`#
 

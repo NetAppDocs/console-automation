@@ -7,6 +7,7 @@ summary: 'Update the NetApp Console'
 ---
 
 = Update the NetApp Console
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/update`#
 
@@ -43,6 +44,17 @@ a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "date": 0,
+  "name": "string",
+  "releaseNumber": 0
+}
+====
 
 == Error
 

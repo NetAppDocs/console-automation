@@ -7,6 +7,7 @@ summary: 'Confirm the NetApp Console active internet connection'
 ---
 
 = Confirm the NetApp Console active internet connection
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/validate/connectivity`#
 

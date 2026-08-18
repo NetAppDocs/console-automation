@@ -7,6 +7,7 @@ summary: 'Retrieve subscriptions'
 ---
 
 = Retrieve subscriptions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/associated-subscriptions`#
 
@@ -79,6 +80,18 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "default": false,
+  "name": "string",
+  "saasSubscriptionId": "string",
+  "subscriptionId": "string"
+}
+====
 
 == Definitions
 

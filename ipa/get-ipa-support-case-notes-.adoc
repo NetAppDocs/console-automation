@@ -7,6 +7,7 @@ summary: 'Retrieve a list of case notes'
 ---
 
 = Retrieve a list of case notes
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/support/case-notes/{caseNumber}`#
 

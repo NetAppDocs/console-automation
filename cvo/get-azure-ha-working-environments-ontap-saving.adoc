@@ -7,6 +7,7 @@ summary: 'Retrieve system ONTAP savings'
 ---
 
 = Retrieve system ONTAP savings
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/ontap-saving`#
 
@@ -62,7 +63,13 @@ a|List of savings
 [source,json,subs=+macros]
 {
   "savings": [
-    {}
+    {
+      "monthlySaving": {
+        "amount": 0,
+        "currency": "string"
+      },
+      "name": "string"
+    }
   ]
 }
 ====

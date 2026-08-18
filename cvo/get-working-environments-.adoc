@@ -7,6 +7,7 @@ summary: 'Retrieve a Cloud Volumes ONTAP system'
 ---
 
 = Retrieve a Cloud Volumes ONTAP system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/{workingEnvironmentId}`#
 
@@ -284,6 +285,30 @@ a|
 |===
 
 
+[#CapacityTierStatus]
+[.api-collapsible-fifth-title]
+CapacityTierStatus
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|message
+|string
+|False
+a|
+
+|status
+|string
+|False
+a|
+
+|===
+
+
 [#lastModifiedOffbox]
 [.api-collapsible-fifth-title]
 lastModifiedOffbox
@@ -480,6 +505,11 @@ a|
 
 |capacityTierInfo
 |link:#CapacityTierInfo[CapacityTierInfo]
+|False
+a|
+
+|capacityTierStatus
+|link:#CapacityTierStatus[CapacityTierStatus]
 |False
 a|
 

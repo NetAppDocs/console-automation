@@ -7,6 +7,7 @@ summary: 'Delete an existing NetApp data broker'
 ---
 
 = Delete an existing NetApp data broker
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/data-brokers/{id}`#
 

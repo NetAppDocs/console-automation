@@ -7,6 +7,7 @@ summary: 'Reverse an existing SnapMirror relationship'
 ---
 
 = Reverse an existing SnapMirror relationship
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/reverse/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
 

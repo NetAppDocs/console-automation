@@ -7,6 +7,7 @@ summary: 'Retrieve all system configurations'
 ---
 
 = Retrieve all system configurations
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/permutations`#
 
@@ -66,6 +67,40 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "features": [
+    "string"
+  ],
+  "instanceType": "string",
+  "license": {
+    "capacityLimit": {
+      "size": 0,
+      "unit": "string"
+    },
+    "capacity_limit": "string",
+    "description": "string",
+    "name": "string",
+    "subDescription": "string",
+    "subName": "string",
+    "type": "string"
+  },
+  "ontapVersion": "string",
+  "region": {
+    "code": "string",
+    "location": "string",
+    "name": "string",
+    "s3Region": "string"
+  },
+  "upgradeableFrom": [
+    "string"
+  ]
+}
+====
 
 == Definitions
 

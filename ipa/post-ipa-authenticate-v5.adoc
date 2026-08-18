@@ -7,6 +7,7 @@ summary: 'Authenticate an IPA license (v5)'
 ---
 
 = Authenticate an IPA license (v5)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/authenticate/v5`#
 

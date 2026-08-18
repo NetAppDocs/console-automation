@@ -7,6 +7,7 @@ summary: 'Retrieve a user under a project'
 ---
 
 = Retrieve a user under a project
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/projects/{project_id}/users/{user_id}`#
 

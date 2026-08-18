@@ -7,6 +7,7 @@ summary: 'Retrieve Azure availability zones by region'
 ---
 
 = Retrieve Azure availability zones by region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/availability-zones`#
 

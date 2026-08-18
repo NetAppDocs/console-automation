@@ -7,6 +7,7 @@ summary: 'Retrieve the IBM bucket folders'
 ---
 
 = Retrieve the IBM bucket folders
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-ibm-bucket-folders`#
 

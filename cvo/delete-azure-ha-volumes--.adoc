@@ -7,6 +7,7 @@ summary: 'Delete an existing volume'
 ---
 
 = Delete an existing volume
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
 

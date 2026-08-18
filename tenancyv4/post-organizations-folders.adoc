@@ -7,6 +7,7 @@ summary: 'Create a new folder under an organization'
 ---
 
 = Create a new folder under an organization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/folders`#
 

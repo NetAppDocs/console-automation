@@ -7,6 +7,7 @@ summary: 'Update the underlying volume tier'
 ---
 
 = Update the underlying volume tier
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/change-tier`#
 
@@ -117,6 +118,39 @@ a|Provisioned throughput
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "aggregateName": "string",
+  "evCapacityApprovedToAdd": {
+    "addedCapacityToExistingEvDisks": {
+      "size": 0,
+      "unit": "string"
+    },
+    "newRaidForEvInfo": [
+      {
+        "diskSize": {
+          "size": 0,
+          "unit": "string"
+        },
+        "numOfDisks": 0
+      }
+    ],
+    "totalCapacityToAdd": {
+      "size": 0,
+      "unit": "string"
+    }
+  },
+  "newAggregate": false,
+  "newCapacityTier": "string",
+  "newDiskTypeName": "string",
+  "newTieringPolicy": "string",
+  "numOfDisks": 0
+}
+====
 
 == Error
 

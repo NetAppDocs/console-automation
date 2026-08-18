@@ -7,6 +7,7 @@ summary: 'Set the writing speed for Cloud Volumes ONTAP'
 ---
 
 = Set the writing speed for Cloud Volumes ONTAP
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/writing-speed`#
 

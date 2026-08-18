@@ -7,6 +7,7 @@ summary: 'Remove a user from the UserAdmin group in a partnership'
 ---
 
 = Remove a user from the UserAdmin group in a partnership
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/partnerships/{partnership_id}/useradmins/{user_id}`#
 

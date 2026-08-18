@@ -7,6 +7,7 @@ summary: 'Grant or revoke permissions to a user'
 ---
 
 = Grant or revoke permissions to a user
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/users/{userId}/working-environments-grant-revoke`#
 

@@ -7,6 +7,7 @@ summary: 'Delete an existing Cloud Volumes ONTAP system'
 ---
 
 = Delete an existing Cloud Volumes ONTAP system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}`#
 

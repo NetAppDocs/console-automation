@@ -7,6 +7,7 @@ summary: 'Retrieve system cost and usage'
 ---
 
 = Retrieve system cost and usage
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/cost-and-usage`#
 
@@ -73,6 +74,47 @@ a|Permissions to view the cost and usage details
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "costByTime": [
+    {
+      "costByService": [
+        {
+          "costByUsage": [
+            {
+              "cost": {
+                "amount": 0,
+                "currency": "string"
+              },
+              "name": "string",
+              "usage": {
+                "units": "string"
+              }
+            }
+          ],
+          "name": "string",
+          "total": {
+            "amount": 0,
+            "currency": "string"
+          }
+        }
+      ],
+      "end": "string",
+      "estimated": false,
+      "start": "string",
+      "total": {
+        "amount": 0,
+        "currency": "string"
+      }
+    }
+  ],
+  "hasPermissions": false
+}
+====
 
 == Definitions
 

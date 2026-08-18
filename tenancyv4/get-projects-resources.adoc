@@ -7,6 +7,7 @@ summary: 'List all resources in a project'
 ---
 
 = List all resources in a project
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/projects/{project_id}/resources`#
 

@@ -7,6 +7,7 @@ summary: 'Retrieve snapshot policies for an FSx system'
 ---
 
 = Retrieve snapshot policies for an FSx system
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/snapshot-policies`#
 
@@ -76,7 +77,10 @@ a|Schedules
   "description": "string",
   "name": "string",
   "schedules": [
-    {}
+    {
+      "frequency": "string",
+      "retention": 0
+    }
   ]
 }
 ====

@@ -7,6 +7,7 @@ summary: 'Retrieve route tables per VPC and their subnet associations'
 ---
 
 = Retrieve route tables per VPC and their subnet associations
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/route-tables`#
 
@@ -87,6 +88,25 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "id": "string",
+  "main": false,
+  "subnets": [
+    "string"
+  ],
+  "tags": [
+    {
+      "key": "string",
+      "value": "string"
+    }
+  ]
+}
+====
 
 == Definitions
 

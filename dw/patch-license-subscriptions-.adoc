@@ -7,6 +7,7 @@ summary: 'Update a subscription expiration date using the subscription ID'
 ---
 
 = Update a subscription expiration date using the subscription ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/subscriptions/{subscriptionId}`#
 
@@ -80,6 +81,16 @@ NOTE:
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "subscriptionType": "string",
+  "expirationDate": 0
+}
+====
 
 == Response
 

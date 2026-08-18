@@ -7,6 +7,7 @@ summary: 'Register extra capacity serial numbers'
 ---
 
 = Register extra capacity serial numbers
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
 

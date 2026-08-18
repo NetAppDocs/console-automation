@@ -7,6 +7,7 @@ summary: 'Retrieve all the labels for a project ID and zone'
 ---
 
 = Retrieve all the labels for a project ID and zone
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/tag-keys`#
 

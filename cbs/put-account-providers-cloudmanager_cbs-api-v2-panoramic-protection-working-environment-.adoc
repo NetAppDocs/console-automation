@@ -7,6 +7,7 @@ summary: 'Modify the comprehensive protection configuration in a system (v2)'
 ---
 
 = Modify the comprehensive protection configuration in a system (v2)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/panoramic-protection/working-environment/{workingEnvironmentId}`#
 

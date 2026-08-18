@@ -7,6 +7,7 @@ summary: 'Update the preferred subscription ID for an account'
 ---
 
 = Update the preferred subscription ID for an account
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/license/account/{accountId}/subscriptions/preferred`#
 
@@ -17,6 +18,7 @@ Updates the preferred subscription for a specified account ID.
 **Note:**
 
 * This API authorizes user calls and service calls with a predefined scope only.
+
 *Token usage:* NetApp Console user token.
 
 

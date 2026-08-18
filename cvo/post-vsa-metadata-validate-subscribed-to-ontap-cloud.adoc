@@ -7,6 +7,7 @@ summary: 'Comfirm that the current user is subscribed'
 ---
 
 = Comfirm that the current user is subscribed
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/metadata/validate-subscribed-to-ontap-cloud`#
 
@@ -107,6 +108,16 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "failureInfo": "string",
+  "isSubscribed": false
+}
+====
 
 == Definitions
 

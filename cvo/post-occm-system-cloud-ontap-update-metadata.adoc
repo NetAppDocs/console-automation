@@ -7,6 +7,7 @@ summary: 'Perform a fetch and cache of Cloud Volumes ONTAP and NetApp Console fi
 ---
 
 = Perform a fetch and cache of Cloud Volumes ONTAP and NetApp Console files
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/cloud-ontap-update-metadata`#
 

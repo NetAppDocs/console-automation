@@ -7,6 +7,7 @@ summary: 'Enable scanning using the service ID'
 ---
 
 = Enable scanning using the service ID
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{serviceId}/enable-service-scan`#
 

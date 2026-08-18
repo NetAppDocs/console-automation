@@ -7,6 +7,7 @@ summary: 'Create a new SVM'
 ---
 
 = Create a new SVM
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/svm`#
 
@@ -69,6 +70,17 @@ a|
 |===
 
 
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "mgmtLif": false,
+  "rootVolumeAggregate": "string",
+  "svmName": "string"
+}
+====
+
 == Error
 
 ```
@@ -85,30 +97,6 @@ Status: Default, Default response
 [#pattern]
 [.api-collapsible-fifth-title]
 pattern
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|cursor
-|integer
-|False
-a|
-
-|flags
-|integer
-|True
-a|
-
-|pattern
-|string
-|False
-a|
-
-|===
 
 
 [#Regex]

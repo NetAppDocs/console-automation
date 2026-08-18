@@ -7,6 +7,7 @@ summary: 'Retrieve a list of HA systems for a Google Cloud region'
 ---
 
 = Retrieve a list of HA systems for a Google Cloud region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/discovery/discover`#
 
@@ -100,4 +101,27 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "clusterAddress": "string",
+  "id": "string",
+  "name": "string",
+  "projectName": "string",
+  "publicId": "string",
+  "recoverable": false,
+  "subnetIds": [
+    "string"
+  ],
+  "vpcs": [
+    "string"
+  ],
+  "zones": [
+    "string"
+  ]
+}
+====
 

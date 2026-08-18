@@ -7,6 +7,7 @@ summary: 'Retrieve Cloud Volumes ONTAP capacity-based BYOL license metering deta
 ---
 
 = Retrieve Cloud Volumes ONTAP capacity-based BYOL license metering details
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/by-capacity-byol-details-v2`#
 
@@ -48,10 +49,35 @@ a|
 [source,json,subs=+macros]
 {
   "flavourAggregatedInfo": [
-    {}
+    {
+      "contractType": "string",
+      "flavorType": "string",
+      "totalAllocatedLicensedCapacity": {
+        "capacity": 0,
+        "units": "string"
+      },
+      "totalConsumedCapacity": {
+        "capacity": 0,
+        "units": "string"
+      },
+      "totalLicensedCapacity": {
+        "capacity": 0,
+        "units": "string"
+      },
+      "totalPaygoCapacity": {
+        "capacity": 0,
+        "units": "string"
+      }
+    }
   ],
   "licenses": [
-    {}
+    {
+      "accountId": "string",
+      "expirationDate": 0,
+      "flavorType": "string",
+      "metadata": "string",
+      "serialNumber": "string"
+    }
   ]
 }
 ====

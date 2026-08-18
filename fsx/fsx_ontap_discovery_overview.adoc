@@ -7,6 +7,7 @@ summary: 'FSx ONTAP discovery endpoints in the Amazon FSx for NetApp ONTAP manag
 ---
 
 = FSx ONTAP discovery endpoints in the Amazon FSx for NetApp ONTAP management REST API
+:imagesdir: ../media/
 
 
 

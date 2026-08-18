@@ -7,6 +7,7 @@ summary: 'Retrieve AWS regions'
 ---
 
 = Retrieve AWS regions
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/regions`#
 

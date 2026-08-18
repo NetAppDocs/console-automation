@@ -7,6 +7,7 @@ summary: 'Retrieve license settings'
 ---
 
 = Retrieve license settings
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/license-settings`#
 
@@ -80,4 +81,17 @@ a|The number of the charged relationships
 
 |===
 
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "freeTrial": false,
+  "existingRelationships": 0,
+  "reservedRelationships": 0,
+  "totalReservedRelationships": 0,
+  "chargedRelationships": 0
+}
+====
 

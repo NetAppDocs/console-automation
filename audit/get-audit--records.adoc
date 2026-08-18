@@ -7,6 +7,7 @@ summary: 'Retrieve records by service'
 ---
 
 = Retrieve records by service
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{accountId}/{service}/{requestId}/records`#
 

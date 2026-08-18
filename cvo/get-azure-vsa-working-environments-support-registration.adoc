@@ -7,6 +7,7 @@ summary: 'Retrieve the support registration status'
 ---
 
 = Retrieve the support registration status
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/support-registration`#
 

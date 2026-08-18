@@ -7,6 +7,7 @@ summary: 'External services endpoints in the License and subscriptions REST API 
 ---
 
 = External services endpoints in the License and subscriptions REST API for the NetApp Console
+:imagesdir: ../media/
 
 
 

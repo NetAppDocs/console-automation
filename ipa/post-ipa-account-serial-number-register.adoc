@@ -7,6 +7,7 @@ summary: 'Register a license'
 ---
 
 = Register a license
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/serial-number/{serialNumber}/register`#
 

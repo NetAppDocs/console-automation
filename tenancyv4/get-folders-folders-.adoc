@@ -7,6 +7,7 @@ summary: 'Retrieve a child folder under a parent folder'
 ---
 
 = Retrieve a child folder under a parent folder
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders/{folder_id}/folders/{childfolder_id}`#
 

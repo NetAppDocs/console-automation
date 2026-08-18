@@ -7,6 +7,7 @@ summary: 'Retrieve users authorized for single resource'
 ---
 
 = Retrieve users authorized for single resource
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/users/for-action/{accountId}/{action}/{resourceId}`#
 

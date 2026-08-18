@@ -7,6 +7,7 @@ summary: 'Perform a volume, file, and folder-level restore operation (v3)'
 ---
 
 = Perform a volume, file, and folder-level restore operation (v3)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v3/restore`#
 
@@ -103,7 +104,14 @@ a|
       ]
     },
     "file": [
-      {}
+      {
+        "inode": "string",
+        "path": "string",
+        "type": "string",
+        "size": 0,
+        "mtime": 0,
+        "source-file-path": "string"
+      }
     ]
   }
 }

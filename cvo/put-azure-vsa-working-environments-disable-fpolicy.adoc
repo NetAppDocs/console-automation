@@ -7,6 +7,7 @@ summary: 'Disable the FPolicy for ransomware files'
 ---
 
 = Disable the FPolicy for ransomware files
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/disable-fpolicy`#
 

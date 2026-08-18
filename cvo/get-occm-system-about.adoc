@@ -7,6 +7,7 @@ summary: 'Retrieve the NetApp Console server information'
 ---
 
 = Retrieve the NetApp Console server information
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/about`#
 
@@ -106,6 +107,32 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "beta": false,
+  "build": "string",
+  "buildTimestamp": 0,
+  "environment": "string",
+  "privateIp": "string",
+  "releaseNumber": 0,
+  "serverTimeZone": {
+    "formattedTimeZone": "string",
+    "timeZoneName": "string"
+  },
+  "simplicatorUrl": "string",
+  "siteIdentifier": {
+    "company": "string",
+    "host": "string",
+    "site": "string"
+  },
+  "systemId": "string",
+  "version": "string"
+}
+====
 
 == Definitions
 

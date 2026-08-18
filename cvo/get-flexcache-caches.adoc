@@ -7,6 +7,7 @@ summary: 'Retrieve all FlexCache volumes lists'
 ---
 
 = Retrieve all FlexCache volumes lists
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/flexcache/caches`#
 
@@ -73,6 +74,10 @@ a|
 {
   "destination": {
     "clusterName": "string",
+    "size": {
+      "size": 0,
+      "unit": "string"
+    },
     "svm": "string",
     "uuid": "string",
     "volume": "string",
@@ -81,6 +86,10 @@ a|
   },
   "source": {
     "clusterName": "string",
+    "size": {
+      "size": 0,
+      "unit": "string"
+    },
     "svm": "string",
     "uuid": "string",
     "volume": "string",

@@ -7,6 +7,7 @@ summary: 'Deploy a monitoring instance by systems'
 ---
 
 = Deploy a monitoring instance by systems
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/monitoring/deploy-by-working-environments`#
 

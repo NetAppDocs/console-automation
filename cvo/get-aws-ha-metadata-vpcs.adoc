@@ -7,6 +7,7 @@ summary: 'Retrieve VPCs'
 ---
 
 = Retrieve VPCs
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/vpcs`#
 
@@ -109,6 +110,43 @@ a|The VPC identifier
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "cidrBlock": "string",
+  "default": false,
+  "securityGroups": [
+    {
+      "description": "string",
+      "name": "string",
+      "securityGroupId": "string"
+    }
+  ],
+  "state": "string",
+  "subnets": [
+    {
+      "availabilityZone": "string",
+      "availableIps": 0,
+      "cidr": "string",
+      "minimumRequiredIps": 0,
+      "outpostArn": "string",
+      "subnetId": "string",
+      "subnetName": "string"
+    }
+  ],
+  "tags": [
+    {
+      "key": "string",
+      "value": "string"
+    }
+  ],
+  "tenancy": "string",
+  "vpcId": "string"
+}
+====
 
 == Definitions
 

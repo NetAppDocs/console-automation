@@ -7,6 +7,7 @@ summary: 'Retrieve a list of KeyRings for a region'
 ---
 
 = Retrieve a list of KeyRings for a region
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/region/{locationId}/keyrings`#
 

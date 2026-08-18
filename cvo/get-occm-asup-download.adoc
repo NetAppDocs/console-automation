@@ -7,6 +7,7 @@ summary: 'Download NetApp Console support data'
 ---
 
 = Download NetApp Console support data
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup/download`#
 

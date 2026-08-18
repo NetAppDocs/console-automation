@@ -7,6 +7,7 @@ summary: 'Retrieve subscription information using the subscription ID (deprecate
 ---
 
 = Retrieve subscription information using the subscription ID (deprecated)
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/subscription/{subscriptionId}`#
 
@@ -17,7 +18,8 @@ Retrieves the subscription information for a specified subscription ID. A newer 
 **Note:**
 
 * This API authorizes service calls with a predefined scope only.
- +
+
+{blank} +
 *Token usage:* NetApp Console service token with the following scopes: %scopes%.
 
 

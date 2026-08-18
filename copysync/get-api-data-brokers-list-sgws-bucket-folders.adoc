@@ -7,6 +7,7 @@ summary: 'Retrieve the StorageGRID bucket folders'
 ---
 
 = Retrieve the StorageGRID bucket folders
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-sgws-bucket-folders`#
 

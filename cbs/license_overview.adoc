@@ -7,6 +7,7 @@ summary: 'License endpoints in the NetApp Backup and Recovery REST API'
 ---
 
 = License endpoints in the NetApp Backup and Recovery REST API
+:imagesdir: ../media/
 
 
 

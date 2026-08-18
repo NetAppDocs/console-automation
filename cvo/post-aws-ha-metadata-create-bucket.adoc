@@ -7,6 +7,7 @@ summary: 'Create a new S3 bucket'
 ---
 
 = Create a new S3 bucket
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/create-bucket`#
 

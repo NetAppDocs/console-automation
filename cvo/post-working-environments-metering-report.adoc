@@ -7,6 +7,7 @@ summary: 'Trigger NetApp Console dark site capacity metering report generation'
 ---
 
 = Trigger NetApp Console dark site capacity metering report generation
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/working-environments/metering-report`#
 
@@ -66,6 +67,29 @@ a|
 
 |===
 
+
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "bucketsGenerated": [
+    {
+      "accountId": "string",
+      "dimension": "string"
+    }
+  ],
+  "calculationTimeUtc": "string",
+  "capacityCvoCount": 0,
+  "minimumCapacityGb": 0,
+  "uploadedReports": [
+    {
+      "accountId": "string",
+      "dimension": "string"
+    }
+  ]
+}
+====
 
 == Definitions
 

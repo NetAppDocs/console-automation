@@ -7,6 +7,7 @@ summary: 'Trigger subscription synchronization'
 ---
 
 = Trigger subscription synchronization
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/sync-subscription`#
 

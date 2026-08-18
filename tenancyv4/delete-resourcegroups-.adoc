@@ -7,6 +7,7 @@ summary: 'Delete a resource group'
 ---
 
 = Delete a resource group
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/resourcegroups/{resourcegroup_id}`#
 

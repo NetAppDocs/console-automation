@@ -7,6 +7,7 @@ summary: 'Retrieve StorageGRID server version'
 ---
 
 = Retrieve StorageGRID server version
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/version`#
 

@@ -7,6 +7,7 @@ summary: 'Retrieve the S3 private links'
 ---
 
 = Retrieve the S3 private links
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/list-s3-private-links`#
 

@@ -7,6 +7,7 @@ summary: 'Delete a federation'
 ---
 
 = Delete a federation
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/federations/{federation_id}`#
 

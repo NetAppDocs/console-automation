@@ -7,6 +7,7 @@ summary: 'Configure modifiable NetApp Console parameters'
 ---
 
 = Configure modifiable NetApp Console parameters
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/occm/config`#
 
@@ -198,6 +199,27 @@ a|
 
 |===
 
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "cacheConfig": "string",
+  "debugLogLevel": {
+    "_1": "string"
+  },
+  "pollingIntervalSeconds": 0,
+  "proxyDomain": "string",
+  "proxyMode": "string",
+  "proxyPassword": "string",
+  "proxyUri": "string",
+  "proxyUserName": "string",
+  "simplicatorUri": {
+    "_1": "string"
+  }
+}
+====
 
 == Error
 

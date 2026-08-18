@@ -7,6 +7,7 @@ summary: 'Retrieve the NetApp Console feedback configuration'
 ---
 
 = Retrieve the NetApp Console feedback configuration
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/external-config`#
 

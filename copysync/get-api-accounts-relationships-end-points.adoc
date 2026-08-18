@@ -7,6 +7,7 @@ summary: 'Retrieve the relationship endpoints'
 ---
 
 = Retrieve the relationship endpoints
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/relationships/end-points`#
 

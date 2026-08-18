@@ -7,6 +7,7 @@ summary: 'Retrieve account records'
 ---
 
 = Retrieve account records
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{accountId}`#
 

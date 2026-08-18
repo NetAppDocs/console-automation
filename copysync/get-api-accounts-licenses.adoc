@@ -7,6 +7,7 @@ summary: 'Retrieve a list of all licenses'
 ---
 
 = Retrieve a list of all licenses
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/licenses`#
 
@@ -62,7 +63,11 @@ a|
 [source,json,subs=+macros]
 {
   "licenses": [
-    {}
+    {
+      "serialNumber": "string",
+      "reservedRelationships": 0,
+      "expirationDate": 0
+    }
   ]
 }
 ====

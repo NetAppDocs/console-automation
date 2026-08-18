@@ -7,6 +7,7 @@ summary: 'Remove a resource from a folder'
 ---
 
 = Remove a resource from a folder
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/folders/{folder_id}/resources/{resource_id}`#
 

@@ -7,6 +7,7 @@ summary: 'Modify the group settings'
 ---
 
 = Modify the group settings
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/settings`#
 
@@ -136,7 +137,44 @@ a|
       "fileLink": "string",
       "latestVersion": "string",
       "encryptionType": "string",
-      "groupId": "string"
+      "groupId": "string",
+      "placement": {
+        "instanceId": "string",
+        "hostname": "string",
+        "privateIp": "string",
+        "publicIp": "string",
+        "region": "string",
+        "availabilityZone": "string",
+        "vpcId": "string",
+        "vpcCidrBlock": "string",
+        "subnetId": "string",
+        "subnetCidrBlock": "string",
+        "version": "string",
+        "awsAccountId": "string",
+        "vault": "string",
+        "node": "string",
+        "cpu": "string",
+        "processMaxMem": "string",
+        "osTotalMem": "string",
+        "release": "string",
+        "os": "string",
+        "distribution": "string",
+        "resourceGroupName": "string",
+        "zone": "string",
+        "serviceAccount": "string",
+        "gcpProjectId": "string",
+        "scanner": {
+          "processes": 0,
+          "concurrency": 0
+        },
+        "transferrer": {
+          "processes": 0,
+          "concurrency": 0
+        },
+        "platform": "string",
+        "cpus": 0,
+        "proxy": "string"
+      }
     }
   ]
 }

@@ -7,6 +7,7 @@ summary: 'Retrieve a project under a folder'
 ---
 
 = Retrieve a project under a folder
+:imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders/{folder_id}/projects/{project_id}`#
 
