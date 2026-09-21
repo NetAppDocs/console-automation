@@ -167,6 +167,30 @@ Status: Default, Default response
 [.api-collapsible-fifth-title]
 pattern
 
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cursor
+|integer
+|False
+a|
+
+|flags
+|integer
+|True
+a|
+
+|pattern
+|string
+|False
+a|
+
+|===
+
 
 [#Regex]
 [.api-collapsible-fifth-title]
