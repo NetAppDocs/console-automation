@@ -15,14 +15,13 @@ summary: 'Retrieve ONTAP backup policies'
 
 Retrieves a list of ONTAP backup policies associated with a system. You can filter the policies based on the archival enablement status. This API endpoint retrieves the backup-policy name, rule, attached volume count, archive-after-days, and object-lock mode information.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,43 +32,51 @@ Retrieves a list of ONTAP backup policies associated with a system. You can filt
 |boolean
 |query
 |False
-a|
+a|Filters the policies based on the archival enablement status
+
 
 |is-mcc-cluster
 |boolean
 |query
 |False
-a|
+a|Filters the policies based on the remote-mcc-id environment
+
 
 |partial
 |boolean
 |query
 |False
-a|
+a|Returns the attached-volumes-count with the policy if set to true
+
 
 |accountId
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

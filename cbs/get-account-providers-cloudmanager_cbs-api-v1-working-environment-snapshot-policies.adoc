@@ -15,14 +15,13 @@ summary: 'List the snapshot policies associated with a system'
 
 Lists the snapshot policies associated with a system. The API will list the snapshot policies created on the cluster level for the specified system. The system ID is passed as a parameter for the API REST call. It returns the snapshot policies and the rules associated with the policies.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,25 +32,30 @@ Lists the snapshot policies associated with a system. The API will list the snap
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

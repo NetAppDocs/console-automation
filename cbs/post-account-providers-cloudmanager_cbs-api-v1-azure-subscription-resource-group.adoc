@@ -15,14 +15,13 @@ summary: 'Create an Azure resource group'
 
 Creates an Azure resource group in the specified subscription ID.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -56,11 +55,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -125,38 +125,3 @@ a|
 }
 ====
 
-== Definitions
-
-[.api-def-first-level]
-.See Definitions
-[%collapsible%closed]
-//Start collapsible Definitions block
-====                
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|True
-a|Name of the resource group to be created
-
-
-|region
-|string
-|True
-a|Region where the resource group needs to be created
-
-
-|===
-
-
-//end collapsible .Definitions block
-====

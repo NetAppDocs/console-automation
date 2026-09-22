@@ -20,7 +20,6 @@ Retrieves a list of features which are enabled or disabled for the account.
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -32,6 +31,7 @@ Retrieves a list of features which are enabled or disabled for the account.
 |path
 |True
 a|
+
 |===
 
 == Response

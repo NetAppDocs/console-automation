@@ -15,14 +15,13 @@ summary: 'Update a backup policy (v2)'
 
 Updates a backup policy in a system. This V2 version of the API endpoint facilitates modification of the rule, label, retention, archive-after-days, and StorageGRID archival details which also includes cloud storage pool information.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -56,11 +55,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -259,47 +259,6 @@ sgws-archival
 |link:#cloud-storage-pool[cloud-storage-pool]
 |False
 a|
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|policyName
-|string
-|True
-a|Backup policy name
-
-
-|rule
-|array[link:#rule[rule]]
-|True
-a|
-
-|sgws-archival
-|link:#sgws-archival[sgws-archival]
-|False
-a|
-
-|transfer-schedule
-|string
-|False
-a|
-
-|archive-after-days
-|string
-|False
-a|Archive after days value to which the policy will be modified, "never" implies the removal of the archive-after-days property from a backup policy.
-
 
 |===
 
