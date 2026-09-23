@@ -359,6 +359,21 @@ a|Writing speed state
   "svmPassword": "string",
   "tenantId": "string",
   "tierLevel": "string",
+  "username": {
+    "_1": "string",
+    "validatesWith": {
+      "message": "string",
+      "regex": {
+        "groupNames": [
+          "string"
+        ],
+        "pattern": {
+          "flags": 0,
+          "pattern": "string"
+        }
+      }
+    }
+  },
   "volume": {
     "exportPolicyInfo": {
       "ips": [
@@ -1516,6 +1531,30 @@ Open the security group to all IP ranges
 [#pattern]
 [.api-collapsible-fifth-title]
 pattern
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cursor
+|integer
+|False
+a|
+
+|flags
+|integer
+|True
+a|
+
+|pattern
+|string
+|False
+a|
+
+|===
 
 
 [#Regex]

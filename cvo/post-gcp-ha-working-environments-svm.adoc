@@ -77,7 +77,22 @@ a|
 {
   "mgmtLif": false,
   "rootVolumeAggregate": "string",
-  "svmName": "string"
+  "svmName": "string",
+  "svmPassword": {
+    "_1": "string",
+    "validatesWith": {
+      "message": "string",
+      "regex": {
+        "groupNames": [
+          "string"
+        ],
+        "pattern": {
+          "flags": 0,
+          "pattern": "string"
+        }
+      }
+    }
+  }
 }
 ====
 
@@ -97,6 +112,30 @@ Status: Default, Default response
 [#pattern]
 [.api-collapsible-fifth-title]
 pattern
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|cursor
+|integer
+|False
+a|
+
+|flags
+|integer
+|True
+a|
+
+|pattern
+|string
+|False
+a|
+
+|===
 
 
 [#Regex]
