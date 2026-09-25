@@ -8481,6 +8481,11 @@
               },
               "type": "array"
             },
+            "properties": {
+              "empty": {
+                "type": "boolean"
+              }
+            },
             "type": "object"
           },
           "mediaType": {
@@ -10537,9 +10542,16 @@
                 "type": "boolean"
               }
             },
+            "required": [
+              "traversableAgain"
+            ],
             "type": "array"
           }
         },
+        "required": [
+          "publicId",
+          "vsaList"
+        ],
         "type": "object"
       },
       "NssAccountVsaListRequest": {
@@ -12189,6 +12201,23 @@
             "type": "array"
           },
           "pattern": {
+            "properties": {
+              "cursor": {
+                "format": "int32",
+                "type": "integer",
+                "writeOnly": true
+              },
+              "flags": {
+                "format": "int32",
+                "type": "integer"
+              },
+              "pattern": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "flags"
+            ],
             "type": "object"
           }
         },
@@ -13147,6 +13176,9 @@
             "type": "boolean"
           }
         },
+        "required": [
+          "traversableAgain"
+        ],
         "type": "array"
       },
       "SeqActionRequired": {
@@ -22753,7 +22785,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_5",
+        "operationId": "setupCifsConfiguration_6",
         "parameters": [
           {
             "in": "path",
@@ -22896,7 +22928,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_6",
+        "operationId": "setupCifsConfiguration_5",
         "parameters": [
           {
             "in": "path",
@@ -26992,7 +27024,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration",
+        "operationId": "setupCifsConfiguration_1",
         "parameters": [
           {
             "in": "path",
@@ -27135,7 +27167,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_1",
+        "operationId": "setupCifsConfiguration",
         "parameters": [
           {
             "in": "path",
@@ -31153,7 +31185,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_9",
+        "operationId": "setupCifsConfiguration_10",
         "parameters": [
           {
             "in": "path",
@@ -36535,7 +36567,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_3",
+        "operationId": "setupCifsConfiguration_4",
         "parameters": [
           {
             "in": "path",
@@ -36678,7 +36710,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_4",
+        "operationId": "setupCifsConfiguration_3",
         "parameters": [
           {
             "in": "path",
@@ -40180,7 +40212,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_11",
+        "operationId": "setupCifsConfiguration_12",
         "parameters": [
           {
             "in": "path",
@@ -40292,7 +40324,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_12",
+        "operationId": "setupCifsConfiguration_11",
         "parameters": [
           {
             "in": "path",
@@ -48126,7 +48158,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_13",
+        "operationId": "setupCifsConfiguration_7",
         "parameters": [
           {
             "in": "path",
@@ -48238,7 +48270,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_7",
+        "operationId": "setupCifsConfiguration_13",
         "parameters": [
           {
             "in": "path",

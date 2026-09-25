@@ -397,12 +397,12 @@ a|
 
 |publicId
 |string
-|False
+|True
 a|
 
 |vsaList
 |array[link:#AccountWorkingEnvironmentResponse[AccountWorkingEnvironmentResponse]]
-|False
+|True
 a|
 
 |===
