@@ -15,14 +15,13 @@ summary: 'Configure object storage (v2)'
 
 Configures an object storage. This is a V2 version of the object store configure API. It verifies whether a private endpoint is enabled and a certificate is installed. You can verify whether previously created private endpoints are enabled for AWS and Azure. This API endpoint is called if no object stores are found when the NetApp Backup and Recovery service is enabled.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -56,11 +55,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -272,65 +272,6 @@ a|Required when the provider is Azure
 |False
 a|Required input field for an on-premises private link configuration
 
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|cloud-provider
-|string
-|True
-a|
-
-|object-store-name
-|string
-|True
-a|
-
-|ip-space
-|string
-|False
-a|
-
-|access-key
-|string
-|False
-a|
-
-|secret-password
-|string
-|False
-a|
-
-|storage-server
-|string
-|False
-a|
-
-|region
-|string
-|False
-a|
-
-|aws
-|link:#aws[aws]
-|False
-a|
-
-|azure
-|link:#azure[azure]
-|False
-a|
 
 |===
 

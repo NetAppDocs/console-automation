@@ -15,14 +15,13 @@ summary: 'Retrieve a list of snapshot details for a volume'
 
 Retrieves a list of snapshot details pertaining to a specific volume in a particular system. The system ID, volume ID, and snapshot ID are passed as parameters for the REST API call. You can query by passing parameters to specify the maximum number of records that should be returned, the next subsequent snapshot UUID to get results from, and the next `CP-COUNT` from where the results should be fetched.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,49 +32,65 @@ Retrieves a list of snapshot details pertaining to a specific volume in a partic
 |number
 |query
 |False
-a|
+a|Maximum records to return
+
 
 |cursor
 |string
 |query
 |False
-a|
+a|Next snapshot UUID to get results from
+
 
 |cp-count
 |number
 |query
 |False
-a|
+a|Next CP count to get results from
+
+
+|include-indexing-status
+|boolean
+|query
+|False
+a|Include the field named indexing-status on each snapshot in the response
+
 
 |accountId
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |volumeId
 |string
 |path
 |True
-a|
+a|Volume ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response
@@ -123,7 +138,8 @@ a|
   "snapshot": [
     {
       "id": "string",
-      "name": "string"
+      "name": "string",
+      "indexing-status": "string"
     }
   ],
   "cursor": "string"
@@ -167,6 +183,12 @@ a|
 |number
 |False
 a|
+
+|indexing-status
+|string
+|False
+a|Whether the snapshot has been indexed by the Indexed Catalog. Returned only for catalogs running version 2 indexing, and only when the name of the volume is known. A snapshot the catalog does not account for, including when the catalog cannot be reached, is reported as NOT_INDEXED.
+
 
 |===
 

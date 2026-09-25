@@ -13,16 +13,31 @@ summary: 'Modify comprehensive protection for multiple volumes (v1)'
 
 
 
-Modifies comprehensive protection for multiple volumes. If the selected volume already has an existing replication relationship, you can use the API to modify the replication policy. Otherwise, the API can be used to create a replication relationship. It creates a cluster-peer relationship, establishes a storage VM-peer relationship, creates a DP volume, and then performs the SnapMirror update/initialize process. Similarly, if the selected volume already has an existing "backup to the cloud" relationship, the API enables you to modify the backup policy. Alternatively, if there is no existing relationship, the API can be used to create SnapMirror cloud relationship. It creates a bucket in the specified cloud provider and then performs a SnapMirror cloud update/initialize operation.
+Modifies comprehensive protection for multiple volumes. If the
+selected volume already has an existing replication relationship, you
+can use the API to modify the replication policy. Otherwise, the API can
+be used to create a replication relationship. It creates a cluster
+peering relationship, SVM peering, and a DP volume, and then performs a SnapMirror update and initialize operation.
+Similarly, if the selected volume already has an existing backup to
+cloud relationship, the API enables you to modify the backup policy.
+Alternatively, if there is no existing relationship, the API can be used
+to create a SnapMirror Cloud relationship. It creates a bucket in
+the specified cloud provider and then perform a SnapMirror Cloud
+update and initialize operation.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console
+user token.
+
+NOTE: For new multi-bucket or per-volume
+object storage integrations, use the  https://review.docs.netapp.com/us-en/console-automation_aoife-br-updated-adoc/cbs/post-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html[v2
+panoramic protection API to
+enable backup on volumes].
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -56,11 +71,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -276,7 +292,7 @@ a|
 |workload
 |string
 |False
-a|Workload type of the volume. Currently only SQL, VOLUMES, VMWARE, ORACLE, HYPERV, K8S, KVM workloads are supported
+a|Workload type of the volume. Currently only SQL, VOLUMES, VMWARE, ORACLE, HYPERV, K8S, KVM workloads are supported.
 
 
 |type
@@ -303,7 +319,7 @@ a|Snapshot policy name
 |architecture
 |string
 |False
-a|Type of storage architecture. Fan-out or Cascading
+a|Type of storage architecture. Fan-out or cascading.
 
 
 |replication
@@ -313,25 +329,6 @@ a|
 
 |is-enabled
 |link:#is-enabled[is-enabled]
-|True
-a|
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|volume
-|array[link:#volume[volume]]
 |True
 a|
 

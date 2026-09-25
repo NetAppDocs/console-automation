@@ -15,14 +15,13 @@ summary: 'Modify the comprehensive protection configuration in a system (v2)'
 
 Modifies comprehensive protection configuration in a system. This API enables you to enhance the protection capabilities within a system by adding replication and backup functionalities. This enables the creation of fan-out or cascading backup topologies in the cloud. When replication is selected, the API first checks for the presence of an existing cluster-peering relationship. If a relationship is not found, the API creates the necessary cluster-peering relationship. Alternatively, if backup to the cloud is selected, the API creates a bucket in the specified cloud provider or appliance (AWS, AZURE, GCP, SGWS, ONTAP_S3) specifically for the system. This designated bucket is used for storing backups taken from the system. Archival tiers or DataLock/Ransomware capability can be set while enabling backup to cloud.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -56,11 +55,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -151,7 +151,7 @@ a|Exports pre-existing snapshots to object storage
 |architecture
 |string
 |False
-a|Type of storage architecture. Fan-out or Cascading
+a|Type of storage architecture. Fan-out or cascading.
 
 
 |snapshot-policy
@@ -640,19 +640,19 @@ cloud-storage-pool
 |provider
 |string
 |True
-a|Cloud provider where the cloud storage pool will be hosted
+a|Cloud provider where the cloud storage pool is hosted
 
 
 |provider-account-id
 |string
 |True
-a|Cloud provider account ID where the cloud storage pool will be hosted
+a|Cloud provider account ID where the cloud storage pool is hosted
 
 
 |region
 |string
 |True
-a|Cloud provider region where the cloud storage pool will be hosted
+a|Cloud provider region where the cloud storage pool is hosted
 
 
 |archive-storage-class
@@ -772,126 +772,6 @@ a|
 
 |aggregates
 |array[string]
-|False
-a|
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|state
-|string
-|False
-a|Updates the SnapMirror relationship state in the system to the state specified
-
-
-|provider
-|string
-|False
-a|Required input field for on-premises use cases
-
-* enum: ["AWS", "AZURE", "GCP", "SGWS", "ONTAP_S3", "S3_COMPATIBLE"]
-
-
-|region
-|string
-|False
-a|Required input field for on-premises
-
-
-|aws
-|link:#aws[aws]
-|False
-a|
-
-|azure
-|link:#azure[azure]
-|False
-a|
-
-|gcp
-|link:#gcp[gcp]
-|False
-a|
-
-|sgws
-|link:#sgws[sgws]
-|False
-a|
-
-|ontap-s3
-|link:#ontap-s3[ontap-s3]
-|False
-a|
-
-|s3-compatible
-|link:#s3-compatible[s3-compatible]
-|False
-a|
-
-|bucket
-|string
-|False
-a|Optional input
-
-
-|ip-space
-|string
-|False
-a|Required input field for on-premises use cases
-
-
-|backup-policy
-|link:#backup-policy[backup-policy]
-|False
-a|
-
-|max-transfer-rate
-|number
-|False
-a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second(kbps). A value of 0 implies unlimited throttling
-
-
-|export-existing-snapshots
-|boolean
-|False
-a|Exports pre-existing snapshots to object storage
-
-
-|architecture
-|string
-|False
-a|Type of storage architecture. Fan-out or Cascading
-
-
-|snapshot-policy
-|string
-|False
-a|Snapshot policy name. To disable local snapshot, pass the value as: none(case sensitive).
-
-
-|replication-target
-|link:#replication-target[replication-target]
-|False
-a|
-
-|fix-mismatch-labels
-|boolean
-|False
-a|
-
-|toggle-rsw-scan
-|boolean
 |False
 a|
 

@@ -13,7 +13,7 @@ summary: 'Start a file and folder explore operation (v1)'
 
 
 
-Starts a file and folder explore operation while initiating a single file restore (SFR) operation. This API endpoint initiates the deployment of an Active Data Connector container on the Console agent and mounts the snapshot under the /tmp folder to browse the files and folders. This API endpoint is currently supported on Cloud Volumes ONTAP on AWS, Azure, Google Cloud, and on-premises ONTAP systems. It supports retrieving files and folders from backups stored on AWS, Azure, Google Cloud, and StorageGRID cloud storage providers.
+Starts a file and folder explore operation while initiating a single file restore (SFR) operation. It initiates the deployment of an Active Data Connector container on the Console agent and mounts the snapshot under the `/opt/application/netapp` folder to browse the files and folders. This API endpoint is currently supported on Cloud Volumes ONTAP on AWS, Azure, Google Cloud, and on-premises ONTAP systems. It supports retrieving files and folders from backups stored on AWS, Azure, Google Cloud, and StorageGRID cloud storage providers.
 
 **Token usage:**NetApp Console user token.
 
@@ -22,7 +22,6 @@ Starts a file and folder explore operation while initiating a single file restor
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -34,8 +33,6 @@ Starts a file and folder explore operation while initiating a single file restor
 |query
 |False
 a|Location of the snapshot
-
-* enum: ["LOCAL", "CLOUD"]
 
 
 |snapshotId
@@ -63,7 +60,7 @@ a|System ID
 |string
 |path
 |True
-a|File system ID/Volume ID
+a|File system or volume ID
 
 
 |authorization
@@ -78,6 +75,7 @@ a|User token
 |header
 |True
 a|Request identifier
+
 
 |===
 

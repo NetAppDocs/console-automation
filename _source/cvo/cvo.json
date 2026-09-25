@@ -31297,7 +31297,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_9",
+        "operationId": "setupCifsConfiguration_10",
         "parameters": [
           {
             "in": "path",
