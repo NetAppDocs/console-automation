@@ -15,14 +15,13 @@ summary: 'Modify the snapshot policy in a system'
 
 Modifies the snapshot policy in a system. For existing schedules attached to a snapshot policy, the SnapMirror label and count can be modified, it also supports the addition and removal of schedules.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -63,11 +62,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -164,25 +164,6 @@ a|Label for SnapMirror operations
 |True
 a|Number of snapshots to maintain for this rule
 
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|rules
-|array[link:#rules[rules]]
-|False
-a|
 
 |===
 

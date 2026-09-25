@@ -15,14 +15,13 @@ summary: 'Retrieve volumes'
 
 Retrieves a list of volumes and their details from a specific system. This API endpoint retrieves the name, file-system-id, status, storage VM, type, style, capacity allocated, capacity used, and SnapMirror label information.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,73 +32,86 @@ Retrieves a list of volumes and their details from a specific system. This API e
 |boolean
 |query
 |False
-a|
+a|Returns only a partial response
+
 
 |name
 |string
 |query
 |False
-a|
+a|Name of the volume. Example - volumeName* , *volumeName
+
 
 |language
 |string
 |query
 |False
-a|
+a|Language of the volume. Example - C,C.UTF-8 etc
+
 
 |type
 |string
 |query
 |False
-a|
+a|Type of the volume. Example - rw/RW (Read-Write) dp/DP (Data Protection) etc
+
 
 |style
 |string
 |query
 |False
-a|
+a|Style of the volume. Example - flexvol\|flexgroup\|flexgroup-constituent
+
 
 |snaplockType
 |string
 |query
 |False
-a|
+a|snaplockType of the volume. Example - compliance, enterprise and non-snaplock
+
 
 |max-records
 |number
 |query
 |False
-a|
+a|Maximum records to return
+
 
 |cursor
 |string
 |query
 |False
-a|
+a|The next volume UUID to use to retrieve results
+
 
 |accountId
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

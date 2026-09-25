@@ -15,14 +15,13 @@ summary: 'Retrieve snapshot information for a volume'
 
 Retrieves snapshot information for a specified volume backed up using the NetApp Backup and Recovery service for a system. This API endpoint retrieves the details of the volume snapshots from the NetApp Console SaaS application. It retrieves the snapshot name, snapshot creation time, archive status, and size. It also retrieves the object-lock, ransomware-scan-status-failure, and ransomware-scan-status details.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,31 +32,44 @@ Retrieves snapshot information for a specified volume backed up using the NetApp
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |volumeId
 |string
 |path
 |True
-a|
+a|File system or volume ID
+
+
+|include-indexing-status
+|boolean
+|query
+|False
+a|Include the field named indexing-status on each snapshot in the response
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response
@@ -94,6 +106,7 @@ a|
       "object-lock": "string",
       "ransomware-scan-status-failure": "string",
       "ransomware-scan-status": "string",
+      "indexing-status": "string",
       "volume-id": "string",
       "volume-name": "string",
       "working-environment-id": "string",
@@ -166,6 +179,12 @@ a|
 |string
 |False
 a|
+
+|indexing-status
+|string
+|False
+a|Indicates whether the snapshot has been indexed by the Indexed Catalog. Returned only for catalogs running version 2 indexing, and only when the name of the volume is known. NOT_INDEXED is returned for a snapshot that the catalog does not account for, or if the catalog cannot be reached.
+
 
 |volume-id
 |string

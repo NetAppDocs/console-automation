@@ -15,14 +15,13 @@ summary: 'Retrieve a list of ONTAP relationships associated with a system'
 
 Retrieves a list of ONTAP relationships associated with a system. The system ID is passed as a parameter for the REST API call. You can query by passing parameters to specify the maximum number of records that should be returned, the next subsequent volume UUID to get results from, and the type of relationship.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,37 +32,44 @@ Retrieves a list of ONTAP relationships associated with a system. The system ID 
 |number
 |query
 |False
-a|
+a|Maximum records to return
+
 
 |cursor
 |string
 |query
 |False
-a|
+a|Next volume UUID to get results from
+
 
 |accountId
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response
