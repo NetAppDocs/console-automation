@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: federation/federation_overview.html
-redirect: console-automation/index.html
----

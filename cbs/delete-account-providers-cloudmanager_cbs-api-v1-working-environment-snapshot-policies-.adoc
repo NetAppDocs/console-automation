@@ -15,13 +15,14 @@ summary: 'Delete a snapshot policy using the UUID'
 
 Deletes the snapshot policy for the specified system.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,37 +33,31 @@ Deletes the snapshot policy for the specified system.
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|System ID
-
+a|
 
 |policyId
 |string
 |path
 |True
-a|Policy ID
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

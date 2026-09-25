@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: credential/generic_overview.html
-redirect: console-automation/index.html
----

@@ -13,15 +13,16 @@ summary: 'Retrieve a list of files and folders'
 
 
 
-Retrieves a list of files and folders within a specified volume snapshot in a paginated format during a file or folder restore operation (V2 version of the file-explore/list API). You can pass the number of pages and limit of the number of files that the API endpoint should retrieve while fetching the details in a paginated format. The volume snapshot is mounted under the `/opt/application/netapp` folder of the Console agent instance to create a file catalog for the "Browse and Restore" option.
+Retrieves a list of files and folders within a specified volume snapshot in a paginated format during a file or folder restore operation (V2 version of the file-explore/list API). You can pass the number of pages and limit of the number of files that the API endpoint should retrieve while fetching the details in a paginated format. The volume snapshot is mounted on under the /tmp folder of the Console agent instance to create a file catalog for the "Browse and Restore" option.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -34,6 +35,8 @@ Retrieves a list of files and folders within a specified volume snapshot in a pa
 |False
 a|Location of the snapshot
 
+* enum: ["LOCAL", "CLOUD"]
+
 
 |fileType
 |string
@@ -41,12 +44,16 @@ a|Location of the snapshot
 |False
 a|Type of the file
 
+* enum: ["FILE", "DIRECTORY", "ALL"]
+
 
 |sortBy
 |string
 |query
 |False
-a|Column name used for sorting
+a|The column name to sort with
+
+* enum: ["name", "size", "mtime"]
 
 
 |orderBy
@@ -54,6 +61,8 @@ a|Column name used for sorting
 |query
 |False
 a|Order of the results, either ASCENDING or DESCENDING
+
+* enum: ["ASC", "DESC"]
 
 
 |name
@@ -102,7 +111,7 @@ a|System ID
 |string
 |path
 |True
-a|File system or volume ID
+a|File system ID/Volume ID
 
 
 |snapshotId
@@ -124,7 +133,6 @@ a|User token
 |header
 |True
 a|Request identifier
-
 
 |===
 

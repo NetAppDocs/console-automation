@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: cbs/license_overview.html
-redirect: console-automation/index.html
----

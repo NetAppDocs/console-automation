@@ -15,13 +15,14 @@ summary: 'Revert a snapshot for a volume'
 
 Reverts a snapshot for a volume. It restores a snapshot to be the read-write parent volume for the volume family. This replaces the current working copy of the volume with the snapshot that results in a loss of all changes made since the snapshot was created. The system ID and volume ID are passed as parameters in the API REST call and the required snapshot to which the volume needs to restored to should be sent in the input body of the REST API.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -62,12 +63,11 @@ a|User token
 |True
 a|Request identifier
 
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -124,3 +124,31 @@ a|
 }
 ====
 
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|snapshot-name
+|string
+|True
+a|
+
+|===
+
+
+//end collapsible .Definitions block
+====

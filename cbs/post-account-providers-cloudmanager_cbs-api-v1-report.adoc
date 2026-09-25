@@ -20,6 +20,7 @@ Generates an inventory report. You can create the inventory report for the whole
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -46,12 +47,11 @@ a|User token
 |True
 a|Request identifier
 
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -157,6 +157,40 @@ a|
 
 |svm
 |array[string]
+|False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|inventory-type
+|string
+|False
+a|
+
+|protection-type
+|string
+|False
+a|
+
+|returnSnapshots
+|boolean
+|False
+a|
+
+|filters
+|array[link:#filters[filters]]
 |False
 a|
 

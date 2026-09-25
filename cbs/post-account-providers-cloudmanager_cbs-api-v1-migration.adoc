@@ -20,6 +20,7 @@ Triggers the migration of backups from the source ONTAP cluster to the target ON
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -38,12 +39,11 @@ a|Account ID
 |header
 |True
 a|
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -304,6 +304,56 @@ a|Required input field for on-premises use cases
 |False
 a|Required input field for on-premises use cases
 
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|
+
+|migrationWorkingEnvironmentId
+|string
+|True
+a|
+
+|migrationMappingDetails
+|array[link:#migrationMappingDetails[migrationMappingDetails]]
+|True
+a|
+
+|ip-space
+|string
+|False
+a|Required input field for on-premises use cases
+
+
+|aws
+|link:#aws[aws]
+|False
+a|
+
+|azure
+|link:#azure[azure]
+|False
+a|
+
+|gcp
+|link:#gcp[gcp]
+|False
+a|
 
 |===
 

@@ -15,13 +15,14 @@ summary: 'Retrieve a list of StorageGRID buckets'
 
 Retrieves a list of StorageGRID buckets from the StorageGRID server.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -55,12 +56,11 @@ a|User token
 |True
 a|Request identifier
 
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -144,6 +144,38 @@ a|
 [%collapsible%closed]
 //Start collapsible Definitions block
 ====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|storage-server
+|string
+|True
+a|StorageGRID server URL. Required input field for a StorageGRID provider
+
+
+|access-key
+|string
+|True
+a|Required input field for an on-premises use case
+
+
+|secret-password
+|string
+|True
+a|Required input field for an on-premises use case
+
+
+|===
+
+
 [#buckets]
 [.api-collapsible-fifth-title]
 buckets

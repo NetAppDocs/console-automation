@@ -13,15 +13,16 @@ summary: 'Retrieve IP spaces'
 
 
 
-Retrieves a list of IPspaces within a specified system.
+Retrieves a list of IP spaces within a specified system.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,30 +33,25 @@ Retrieves a list of IPspaces within a specified system.
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|System ID
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

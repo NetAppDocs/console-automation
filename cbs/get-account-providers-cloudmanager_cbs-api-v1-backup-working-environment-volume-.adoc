@@ -22,6 +22,7 @@ Retrieves information for a specified volume backed up by using the NetApp Backu
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,37 +33,31 @@ Retrieves information for a specified volume backed up by using the NetApp Backu
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|System ID
-
+a|
 
 |volumeId
 |string
 |path
 |True
-a|Volume ID
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

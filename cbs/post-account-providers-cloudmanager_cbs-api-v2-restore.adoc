@@ -17,13 +17,14 @@ Performs a volume and file level restore (V2 version) operation. This API valida
 
 If DataLock and ransomware protection is enabled on a system, ransomware scan is performed on the specified cloud backup that relates to a particular volume when it is chosen to be restored. To skip the scan, set the "skip-ransomware-check" parameter to "true".
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -50,12 +51,11 @@ a|User token
 |True
 a|Request identifier
 
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -346,6 +346,25 @@ a|Triggers an on-demand restore
 |False
 a|Optional input field to skip private endpoint creation for Azure
 
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|restore
+|link:#restore[restore]
+|True
+a|
 
 |===
 

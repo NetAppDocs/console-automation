@@ -15,13 +15,14 @@ summary: 'Initiate a ransomware scan'
 
 Initiates a ransomware scan on the specified cloud backup related to a volume snapshot transferred by the SnapMirror - Cloud engine to the cloud object storage system. It scans only cloud backups. It does not support scanning local snapshots. Ransomware attacks on local snapshots cannot be detected.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,44 +33,37 @@ Initiates a ransomware scan on the specified cloud backup related to a volume sn
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|System ID
-
+a|
 
 |volumeId
 |string
 |path
 |True
-a|Volume ID
-
+a|
 
 |snapshotId
 |string
 |path
 |True
-a|Snapshot ID
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

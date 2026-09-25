@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: copysync/reports_overview.html
-redirect: console-automation/index.html
----

@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: dw/subscription_overview.html
-redirect: console-automation/index.html
----

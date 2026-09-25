@@ -15,13 +15,14 @@ summary: 'Retrieve AWS storage classes'
 
 Retrieves a list of AWS storage classes available for archival support.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,23 +33,19 @@ Retrieves a list of AWS storage classes available for archival support.
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

@@ -15,13 +15,14 @@ summary: 'Retrieve the file and folder status'
 
 Returns the file and folder status when you initiate a file or folder search during a restore operation.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -40,6 +41,8 @@ a|The path of the directory
 |query
 |False
 a|Location of the snapshot
+
+* enum: ["LOCAL", "CLOUD"]
 
 
 |actualCount
@@ -67,7 +70,7 @@ a|System ID
 |string
 |path
 |True
-a|File system or volume ID
+a|File system ID/Volume ID
 
 
 |snapshotId
@@ -89,7 +92,6 @@ a|User token
 |header
 |True
 a|Request identifier
-
 
 |===
 

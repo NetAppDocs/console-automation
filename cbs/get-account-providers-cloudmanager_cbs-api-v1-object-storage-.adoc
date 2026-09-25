@@ -20,6 +20,7 @@ Retrieves buckets for the specified cloud provider.
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -39,6 +40,8 @@ a|Account ID
 |True
 a|Cloud provider type
 
+* enum: ["AWS", "GCP", "AZURE", "SGWS", "ONTAP_S3"]
+
 
 |authorization
 |string
@@ -53,12 +56,11 @@ a|Authorization token
 |True
 a|Agent ID
 
-
 |===
 
 == Response
 
 ```
-Status: 200, Default Response
+Status: 200, Default response
 ```
 

@@ -15,13 +15,14 @@ summary: 'Retrieve a list of KeyRings for a region'
 
 Retrieves a list of KeyRings for a region from a specific Google Cloud project.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,37 +33,31 @@ Retrieves a list of KeyRings for a region from a specific Google Cloud project.
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |projectId
 |string
 |path
 |True
-a|Project ID
-
+a|
 
 |locationId
 |string
 |path
 |True
-a|Region or location (for example, "us-east1")
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

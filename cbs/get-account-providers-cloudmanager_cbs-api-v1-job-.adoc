@@ -13,15 +13,16 @@ summary: 'Retrieve particular job details'
 
 
 
-Retrieves the details of specific jobs from the NetApp Console SaaS application.
+Retrieves the details of particular jobs from the NetApp Console SaaS application.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,30 +33,25 @@ Retrieves the details of specific jobs from the NetApp Console SaaS application.
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |jobId
 |string
 |path
 |True
-a|Job ID
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: ipa/nss_overview.html
-redirect: console-automation/index.html
----

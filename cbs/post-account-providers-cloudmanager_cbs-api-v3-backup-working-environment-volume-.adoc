@@ -13,31 +13,16 @@ summary: 'Enable backup for a volume (v3)'
 
 
 
-Enables backup for a specified volume (version V3). This version
-of the endpoint runs the job asynchronously. Backup is not allowed
-for a volume enabled with a SnapLock license (WORM license). You can
-configure the different backup modes. The AD_HOC mode creates an
-on-demand snapshot and stores a backup on the respective cloud.
-SCHEDULED mode (default mode) creates snapshots according to the ONTAP
-snapshot policy and stores a backup on the cloud according to the backup
-policy. Based on the defined backup policy, this API endpoint creates a
-SnapMirror to cloud relationship with a specific cloud object storage
-system. You can use this endpoint to set the archive after days
-parameter to move the volume data to the archive tier and also enable the
-object lock and ransomware detection feature on the volume.
+Enables backup for a specified volume (version V3). This version of the endpoint runs the job asynchronously. Backup is not allowed for a volume enabled with a SnapLock license (WORM license). You can configure the different backup modes. The AD_HOC mode creates an on-demand snapshot and stores a backup on the respective cloud. SCHEDULED mode (default mode) creates snapshots as per the ONTAP snapshot policy and stores a backup on the cloud as per the backup policy. Based on the defined backup policy, this API endpoint creates a SnapMirror to cloud relationship with a specific cloud object storage system. Using this endpoint, you can set the archive after days parameter to move the volume data to the archive tier and also enable object lock and ransomware detection feature on the volume.
 
-*Token usage:* NetApp Console user token.
-
-NOTE: NetApp recommends that you use this endpoint for on-demand
-(AD_HOC) backups of a volume. To enable backup on volumes, including for
-multi-bucket or per-volume object storage configurations, use the https://review.docs.netapp.com/us-en/console-automation_aoife-br-updated-adoc/cbs/post-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html[v2
-panoramic protection API].
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -78,12 +63,11 @@ a|User token
 |True
 a|Request identifier
 
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -252,6 +236,38 @@ a|
 
 |object-lock
 |string
+|False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|mode
+|string
+|False
+a|AD_HOC mode creates an on-demand snapshot and backs it up on the respective cloud. SCHEDULED mode creates snapshots as per the ONTAP snapshot policy and backs it up to the cloud as per the backup policy. [Deprecated] IMMEDIATE mode is designed for internal use cases and cannot be used for newer integrations
+
+* enum: ["AD_HOC", "SCHEDULED", "IMMEDIATE"]
+
+
+|adhoc-backup-details
+|link:#adhoc-backup-details[adhoc-backup-details]
+|False
+a|
+
+|backup-policy
+|link:#backup-policy[backup-policy]
 |False
 a|
 

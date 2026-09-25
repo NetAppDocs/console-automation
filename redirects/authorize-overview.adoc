@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: tenancy/authorize_overview.html
-redirect: console-automation/index.html
----

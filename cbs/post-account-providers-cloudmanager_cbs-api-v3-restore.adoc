@@ -21,13 +21,14 @@ To indicate that the volume restore is part of an application restore workflow, 
 
 This version adds support for accepting a list of target aggregates.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -54,12 +55,11 @@ a|User token
 |True
 a|Request identifier
 
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -369,6 +369,25 @@ a|Indicates that the volume restore is part of an application restore workflow
 |False
 a|Optional input field to skip private endpoint creation for Azure
 
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|restore
+|link:#restore[restore]
+|True
+a|
 
 |===
 

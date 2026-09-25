@@ -15,13 +15,14 @@ summary: 'Retrieve license validity'
 
 Retrieves the license validity of the systems from the NetApp Console SaaS application. The API retrieves the eligibility of the current license used and it also returns the days remaining if you are using a trial license.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,7 +33,8 @@ Retrieves the license validity of the systems from the NetApp Console SaaS appli
 |string
 |query
 |True
-a|
+a|* enum: ["AWS", "AZURE", "GCP", "SGWS"]
+
 
 |cloudProviderAccountId
 |string
@@ -67,7 +69,6 @@ a|User token
 |header
 |True
 a|Request identifier
-
 
 |===
 

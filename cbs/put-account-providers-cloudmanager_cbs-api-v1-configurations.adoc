@@ -20,6 +20,7 @@ Modifies the configuration.
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -45,12 +46,11 @@ a|Agent ID
 |path
 |True
 a|
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -77,7 +77,7 @@ a|Configuration value
 == Response
 
 ```
-Status: 200, Default Response
+Status: 200, Default response
 ```
 
 == Error
@@ -112,7 +112,7 @@ a|
 |===
 
 
-.Example error response
+.Example error
 [%collapsible%closed]
 ====
 [source,json,subs=+macros]
@@ -122,3 +122,38 @@ a|
 }
 ====
 
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|key
+|string
+|True
+a|Configuration key
+
+
+|value
+|
+|True
+a|Configuration value
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

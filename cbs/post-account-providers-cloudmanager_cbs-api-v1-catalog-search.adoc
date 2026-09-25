@@ -22,6 +22,7 @@ Searches for a specific file from the backups taken by the NetApp Backup and Rec
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -61,12 +62,11 @@ a|User token
 |True
 a|Request identifier
 
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -200,37 +200,6 @@ a|
 Status: 202, Default response
 ```
 
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|job-id
-|string
-|False
-a|
-
-|status
-|string
-|False
-a|
-
-|===
-
-
-.Example response
-[%collapsible%closed]
-====
-[source,json,subs=+macros]
-{
-  "job-id": "string",
-  "status": "string"
-}
-====
-
 == Definitions
 
 [.api-def-first-level]
@@ -288,6 +257,61 @@ a|
 |number
 |False
 a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|type
+|string
+|False
+a|Type of resource file/volume
+
+
+|workingEnvironmentId
+|array[string]
+|False
+a|
+
+|fileExtension
+|array[string]
+|False
+a|File extension
+
+
+|size
+|link:#size[size]
+|False
+a|Resource size in bytes
+
+
+|creationDate
+|link:#creationDate[creationDate]
+|False
+a|Creation date in milliseconds
+
+
+|backupLocation
+|string
+|False
+a|Snapshot location local/cloud
+
+
+|volumeId
+|string
+|False
+a|Volume ID
+
 
 |===
 
