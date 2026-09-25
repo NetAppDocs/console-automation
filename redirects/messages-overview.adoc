@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: copysync/messages_overview.html
-redirect: console-automation/index.html
----

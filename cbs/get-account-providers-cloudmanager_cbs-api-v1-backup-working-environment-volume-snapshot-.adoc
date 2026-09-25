@@ -15,13 +15,14 @@ summary: 'Retrieve specific snapshot information for a volume'
 
 Retrieves information of a particular snapshot for a specified volume backed up by using the NetApp Backup and Recovery service for a system. This API endpoint retrieves the details of the volume snapshots from the NetApp Console SaaS application. It retrieves the snapshot name, snapshot creation time, archive status, and size. It also retrieves the object-lock, ransomware-scan-status-failure, and ransomware-scan-status.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,44 +33,37 @@ Retrieves information of a particular snapshot for a specified volume backed up 
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|System ID
-
+a|
 
 |volumeId
 |string
 |path
 |True
-a|File system or volume ID
-
+a|
 
 |snapshotId
 |string
 |path
 |True
-a|Snapshot ID
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

@@ -15,13 +15,14 @@ summary: 'Retrieve Azure vault keys'
 
 Retrieves a list of Azure vault keys from a particular vault for a specific subscription ID in Azure cloud.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,37 +33,31 @@ Retrieves a list of Azure vault keys from a particular vault for a specific subs
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |subscriptionId
 |string
 |path
 |True
-a|Subscription ID
-
+a|
 
 |vaultName
 |string
 |path
 |True
-a|Azure key vault name
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response

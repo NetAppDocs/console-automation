@@ -20,6 +20,7 @@ Validates the migration of backups from the source ONTAP cluster to the target O
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -38,12 +39,11 @@ a|Account ID
 |header
 |True
 a|
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -149,6 +149,35 @@ a|
 |policyName
 |string
 |False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|sourceWorkingEnvironmentId
+|string
+|True
+a|
+
+|migrationWorkingEnvironmentId
+|string
+|True
+a|
+
+|migrationMappingDetails
+|array[link:#migrationMappingDetails[migrationMappingDetails]]
+|True
 a|
 
 |===

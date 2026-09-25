@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: ipa/services_overview.html
-redirect: console-automation/index.html
----

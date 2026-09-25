@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: cbs/report_overview.html
-redirect: console-automation/index.html
----

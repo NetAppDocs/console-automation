@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: ipa/license_overview.html
-redirect: console-automation/index.html
----

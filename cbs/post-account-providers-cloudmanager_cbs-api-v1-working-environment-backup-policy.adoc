@@ -17,13 +17,14 @@ Creates a backup policy in a system. The number of retained backups can be up to
 
 You can enable DataLock and Ransomware protection beginning with ONTAP 9.11.1 and later (supported for AWS, Azure, and StorageGRID). This is applicable only for new backup activation. Interoperability with archival policy is not supported. For AWS, DataLock and Ransomware Protection can be enabled in the "GOVERNANCE" mode or "COMPLIANCE" mode. For Azure, DataLock and Ransomware Protection can be enabled in the "UNLOCKED" mode or "LOCKED" mode.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -57,12 +58,11 @@ a|User token
 |True
 a|Request identifier
 
-
 |===
 
 == Request Body
 
-                   
+                
 
 [cols=4*,options=header]
 |===
@@ -270,6 +270,56 @@ sgws-archival
 
 |cloud-storage-pool
 |link:#cloud-storage-pool[cloud-storage-pool]
+|False
+a|
+
+|===
+
+
+[#body]
+[.api-collapsible-fifth-title]
+body
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|name
+|string
+|False
+a|
+
+|rule
+|array[link:#rule[rule]]
+|True
+a|
+
+|transfer-schedule
+|string
+|False
+a|
+
+|sgws-archival
+|link:#sgws-archival[sgws-archival]
+|False
+a|
+
+|archive-after-days
+|string
+|False
+a|
+
+|provider
+|string
+|False
+a|* enum: ["AWS", "AZURE", "GCP", "SGWS", "ONTAP_S3"]
+
+
+|object-lock
+|string
 |False
 a|
 

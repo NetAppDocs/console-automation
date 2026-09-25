@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: copysync/data_brokers_overview.html
-redirect: console-automation/index.html
----

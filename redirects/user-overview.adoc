@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: tenancy/user_overview.html
-redirect: console-automation/index.html
----

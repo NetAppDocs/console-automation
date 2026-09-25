@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: fsx/working_environments_overview.html
-redirect: console-automation/index.html
----

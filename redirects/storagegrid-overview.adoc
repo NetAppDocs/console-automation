@@ -1,5 +1,0 @@
----
-sidebar: sidebar
-permalink: cbs/storagegrid_overview.html
-redirect: console-automation/index.html
----

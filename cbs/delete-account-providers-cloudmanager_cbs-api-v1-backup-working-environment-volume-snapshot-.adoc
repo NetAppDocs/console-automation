@@ -13,15 +13,16 @@ summary: 'Delete a snapshot'
 
 
 
-Deletes the specified snapshot of a volume backed up using the NetApp Backup and Recovery service for a system.
+Deletes a specified snapshot of a specified volume backed up using the NetApp Backup and Recovery service for a system.
 
-*Token usage:* NetApp Console user token.
+**Token usage:** NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
+
 |Name
 |Type
 |In
@@ -32,44 +33,37 @@ Deletes the specified snapshot of a volume backed up using the NetApp Backup and
 |string
 |path
 |True
-a|Account ID
-
+a|
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|System ID
-
+a|
 
 |volumeId
 |string
 |path
 |True
-a|File system or volume ID
-
+a|
 
 |snapshotId
 |string
 |path
 |True
-a|Snapshot ID
-
+a|
 
 |authorization
 |string
 |header
 |True
-a|User token
-
+a|
 
 |X-Agent-Id
 |string
 |header
 |True
-a|Request identifier
-
-
+a|
 |===
 
 == Response
