@@ -3,10 +3,10 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v2-backup-working-environment-.html'
-summary: 'Modify the Backup and Recovery service backup configuration'
+summary: 'Modify the backup configuration'
 ---
 
-= Modify the Backup and Recovery service backup configuration
+= Modify the backup configuration
 :imagesdir: ../media/
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}`#
@@ -15,14 +15,13 @@ summary: 'Modify the Backup and Recovery service backup configuration'
 
 Modifies the NetApp Backup and Recovery service backup configuration for a particular system synchronously (V2 version). You can modify the state, backup policy, archive storage class, cloud storage pool, AWS/Azure/Google Cloud/StorageGRID access and secret key, IPspace, maximum transfer rate, and enable automatic backup.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -56,11 +55,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -96,7 +96,7 @@ a|Automatically backs up all volumes in the systems
 |max-transfer-rate
 |number
 |False
-a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second(kbps). A value of 0 implies unlimited throttling
+a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second (kbps). A value of 0 implies unlimited throttling.
 
 
 |delete-yearly-snapshots
@@ -114,7 +114,7 @@ a|Exports pre-existing snapshots to object storage
 |ip-space
 |string
 |False
-a|IP space for the backed up system
+a|IPspace for the backed up system
 
 
 |toggle-rsw-scan
@@ -460,98 +460,6 @@ a|
 |string
 |False
 a|StorageGRID ID. Required input field for StorageGRID provider
-
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|state
-|string
-|False
-a|Updates the SnapMirror relationship state in the system to the specified state
-
-
-|backup-policy
-|link:#backup-policy[backup-policy]
-|False
-a|Uses an existing policy or creates a new policy if not found in the list of ONTAP policies and modifies the backed up system relationships to use the existing one.
-
-
-|archive-storage-class
-|string
-|False
-a|Required for AWS if modifying the storage class or enabling archive for the first time.
-
-
-|auto-backup-enabled
-|boolean
-|False
-a|Automatically backs up all volumes in the systems
-
-
-|max-transfer-rate
-|number
-|False
-a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second(kbps). A value of 0 implies unlimited throttling
-
-
-|delete-yearly-snapshots
-|boolean
-|False
-a|Disables the deletion of local yearly snapshots after being transferred to object store
-
-
-|export-existing-snapshots
-|boolean
-|False
-a|Exports pre-existing snapshots to object storage
-
-
-|ip-space
-|string
-|False
-a|IP space for the backed up system
-
-
-|toggle-rsw-scan
-|boolean
-|False
-a|Toggles RSW scheduled scan on or off
-
-
-|rsw-scan-interval
-|string
-|False
-a|RSW scheduled scans interval
-
-
-|aws
-|link:#aws[aws]
-|False
-a|Accesses key and secret password for the system
-
-
-|gcp
-|link:#gcp[gcp]
-|False
-a|Accesses key and secret password for the system
-
-
-|sgws
-|link:#sgws[sgws]
-|False
-a|Accesses key and secret password for the system
 
 
 |===

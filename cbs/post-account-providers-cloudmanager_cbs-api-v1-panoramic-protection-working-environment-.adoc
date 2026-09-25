@@ -13,14 +13,23 @@ summary: 'Activate comprehensive protection in a system (v1)'
 
 
 
-Activates comprehensive protection in a system. Based on the cascading or fan-out backup workflow selected on the system, the API verifies whether a cluster peering relationship exists between primary and secondary clusters to set up replication. It creates a cluster peering relationship between the two clusters if one does not exist. To create a backup to cloud relationship, the API enables backup on the system and creates a bucket to which the backup will be transferred.
+Activates comprehensive protection for a system. Based on
+the selected backup topology (cascading or fan-out), this API verifies
+whether cluster peering exists between the primary and secondary
+clusters and creates it if needed. To enable backup to cloud, the API
+enables backup on the system and creates the object-store bucket used
+to transfer backups.
+
+NOTE: For new multi-bucket or per-volume
+object storage integrations, use the https://docs.netapp.com/us-en/console-automation/cbs/post-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html[v2
+panoramic protection API to
+enable backup on volumes].
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -54,11 +63,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -137,7 +147,7 @@ a|Automatically backs up all volumes in the system
 |max-transfer-rate
 |number
 |False
-a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second(kbps). A value of 0 implies unlimited throttling
+a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second (kbps). A value of 0 implies unlimited throttling.
 
 
 |export-existing-snapshots
@@ -149,7 +159,7 @@ a|Exports pre-existing snapshots to object storage
 |architecture
 |string
 |False
-a|Type of storage architecture. Fan-out or Cascading
+a|Type of storage architecture. Fan-out or cascading.
 
 
 |snapshot-policy
@@ -669,19 +679,19 @@ cloud-storage-pool
 |provider
 |string
 |True
-a|Cloud provider where the cloud storage pool will be hosted
+a|Cloud provider where the cloud storage pool is hosted
 
 
 |provider-account-id
 |string
 |True
-a|Cloud provider account ID where the cloud storage pool will be hosted
+a|Cloud provider account ID where the cloud storage pool is hosted
 
 
 |region
 |string
 |True
-a|Cloud provider region where the cloud storage pool will be hosted
+a|Cloud provider region where the cloud storage pool is hosted
 
 
 |access-key
@@ -813,121 +823,6 @@ a|
 
 |aggregates
 |array[string]
-|False
-a|
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|provider
-|string
-|False
-a|Required input field for on-premises use cases
-
-* enum: ["AWS", "AZURE", "GCP", "SGWS", "ONTAP_S3", "S3_COMPATIBLE"]
-
-
-|region
-|string
-|False
-a|Required input field for on-premises use cases
-
-
-|aws
-|link:#aws[aws]
-|False
-a|
-
-|azure
-|link:#azure[azure]
-|False
-a|
-
-|gcp
-|link:#gcp[gcp]
-|False
-a|
-
-|sgws
-|link:#sgws[sgws]
-|False
-a|
-
-|ontap-s3
-|link:#ontap-s3[ontap-s3]
-|False
-a|
-
-|s3-compatible
-|link:#s3-compatible[s3-compatible]
-|False
-a|
-
-|bucket
-|string
-|False
-a|Optional input
-
-
-|ip-space
-|string
-|False
-a|Required input field for on-premises use cases
-
-
-|backup-policy
-|link:#backup-policy[backup-policy]
-|False
-a|
-
-|auto-backup-enabled
-|boolean
-|False
-a|Automatically backs up all volumes in the system
-
-
-|max-transfer-rate
-|number
-|False
-a|Modifies node-level throttling of an ONTAP cluster. Value to be specified in kilo bytes per second(kbps). A value of 0 implies unlimited throttling
-
-
-|export-existing-snapshots
-|boolean
-|False
-a|Exports pre-existing snapshots to object storage
-
-
-|architecture
-|string
-|False
-a|Type of storage architecture. Fan-out or Cascading
-
-
-|snapshot-policy
-|string
-|False
-a|Snapshot policy name
-
-
-|replication-target
-|link:#replication-target[replication-target]
-|False
-a|
-
-|fix-mismatch-labels
-|boolean
 |False
 a|
 

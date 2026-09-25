@@ -15,14 +15,13 @@ summary: 'Retrieve system details'
 
 Retrieves the details of all systems that are backed up using the NetApp Backup and Recovery service within an account. It retrieves the backup enablement status, archive storage class, archive after days, catalog enablement status, auto enablement status, maximum transfer status, backup policy details, cloud storage pool, and remote MetroCluster ID.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -40,18 +39,14 @@ a|Returns only a partial response for the systems
 |boolean
 |query
 |False
-a|A filter to include/exclude fields named provider-access-key and ip-space
-
-* Default value: 1
+a|A filter to include or exclude fields named provider-access-key and ip-space.
 
 
 |capacity-details
 |boolean
 |query
 |False
-a|A filter to include/exclude fields named  used-capacity-gb, charging-capacity,logical-used-size,backed-up-volume-count
-
-* Default value: 1
+a|A filter to include or exclude fields named used-capacity-gb, charging-capacity,logical-used-size,backed-up-volume-count.
 
 
 |accountId
@@ -73,6 +68,7 @@ a|User token
 |header
 |True
 a|Request identifier
+
 
 |===
 

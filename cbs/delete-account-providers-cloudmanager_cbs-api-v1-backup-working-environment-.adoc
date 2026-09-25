@@ -15,14 +15,13 @@ summary: 'Unregister a system'
 
 Unregisters a system. You can remove the NetApp Backup and Recovery service from a system. Before you unregister, make sure that you delete all backups and disable the Backup and Recovery service on a system. This action also deletes the backup folder.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,25 +32,30 @@ Unregisters a system. You can remove the NetApp Backup and Recovery service from
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

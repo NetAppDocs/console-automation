@@ -15,14 +15,13 @@ summary: 'Create a snapshot for a volume'
 
 Creates a snapshot for a particular volume. The API initiates the creation of a snapshot of the volume-based on the snapshot policy assigned. The system ID, volume ID, and snapshot ID are passed as parameters for the REST API call. The snapshot name and label are used as headers.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -63,11 +62,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -130,36 +130,3 @@ a|
 }
 ====
 
-== Definitions
-
-[.api-def-first-level]
-.See Definitions
-[%collapsible%closed]
-//Start collapsible Definitions block
-====                
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|False
-a|
-
-|label
-|string
-|False
-a|
-
-|===
-
-
-//end collapsible .Definitions block
-====

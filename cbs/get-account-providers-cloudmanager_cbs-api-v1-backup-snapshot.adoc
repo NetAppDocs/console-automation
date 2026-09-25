@@ -15,14 +15,13 @@ summary: 'Retrieve a list of snapshots using the account ID'
 
 Retrieves snapshot information for a specified account by using the account ID. This API endpoint retrieves the details of the snapshots from the NetApp Console SaaS application. It retrieves the snapshot name, snapshot creation time, archive status, and size. It also retrieves the object-lock, ransomware-scan-status-failure, and ransomware-scan-status.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,19 +32,23 @@ Retrieves snapshot information for a specified account by using the account ID. 
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response
