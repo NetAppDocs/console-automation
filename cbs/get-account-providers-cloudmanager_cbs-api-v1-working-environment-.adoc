@@ -15,14 +15,13 @@ summary: 'Retrieve system details'
 
 Retrieves the details of a specific system. This API endpoint retrieves the name, region, status, type, cloud-provider, provider-accountId, ontap-version, and total-volumes-count of a specific system.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,31 +32,37 @@ Retrieves the details of a specific system. This API endpoint retrieves the name
 |boolean
 |query
 |False
-a|
+a|Returns only a partial response without a volumes count for a system
+
 
 |accountId
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

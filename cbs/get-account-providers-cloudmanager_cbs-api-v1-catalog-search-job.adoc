@@ -22,7 +22,6 @@ Searches for a specific file from the backups taken by the NetApp Backup and Rec
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,7 +32,8 @@ Searches for a specific file from the backups taken by the NetApp Backup and Rec
 |string
 |query
 |True
-a|
+a|Search string
+
 
 |jobId
 |string
@@ -45,19 +45,23 @@ a|
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

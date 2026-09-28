@@ -15,14 +15,13 @@ summary: 'Discover all volumes with relationships for a list of systems'
 
 Discovers all volumes with relationships for a list of systems.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -49,11 +48,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -68,6 +68,11 @@ a|Request identifier
 a|
 
 |discoverRelationships
+|boolean
+|False
+a|
+
+|discoverObjectStores
 |boolean
 |False
 a|
@@ -89,7 +94,7 @@ a|
 == Response
 
 ```
-Status: 202, Default response
+Status: 202, Default Response
 ```
 
 
@@ -117,36 +122,3 @@ a|
 }
 ====
 
-== Definitions
-
-[.api-def-first-level]
-.See Definitions
-[%collapsible%closed]
-//Start collapsible Definitions block
-====                
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|workingEnvironmentIds
-|array[string]
-|False
-a|
-
-|discoverRelationships
-|boolean
-|False
-a|
-
-|===
-
-
-//end collapsible .Definitions block
-====

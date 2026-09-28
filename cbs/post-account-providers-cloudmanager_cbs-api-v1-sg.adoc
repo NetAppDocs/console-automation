@@ -15,14 +15,13 @@ summary: 'Discover a new StorageGRID WebScale server'
 
 Discovers a new StorageGRID server in the NetApp Console SaaS application.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -49,11 +48,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -131,44 +131,3 @@ a|
 }
 ====
 
-== Definitions
-
-[.api-def-first-level]
-.See Definitions
-[%collapsible%closed]
-//Start collapsible Definitions block
-====                
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|admin-host
-|string
-|True
-a|StorageGRID Admin host IP address.
-
-
-|admin-username
-|string
-|True
-a|StorageGRID Admin username.
-
-
-|admin-password
-|string
-|True
-a|StorageGRID Admin password.
-
-
-|===
-
-
-//end collapsible .Definitions block
-====

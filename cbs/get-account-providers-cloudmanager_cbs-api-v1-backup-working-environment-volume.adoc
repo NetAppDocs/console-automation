@@ -15,14 +15,13 @@ summary: 'Retrieve volume details'
 
 Retrieves details of all the volumes for a specified system backed up by using the NetApp Backup and Recovery service. It retrieves the volume name, volume type, protocol, storage VM, backup status, last backup creation time, snapshot count, associated backup policy, and backup policy rules. It also retrieves details of the archive after days, object lock, ransomware scan status, last ransomware scan, and ransomware detected snapshots with last ransomware scan information.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,31 +32,37 @@ Retrieves details of all the volumes for a specified system backed up by using t
 |boolean
 |query
 |False
-a|
+a|Returns only a partial response from the NetApp Backup and Recovery service database. API calls with this query parameter skip fetching data from ONTAP.
+
 
 |accountId
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

@@ -20,7 +20,6 @@ Creates a bucket for the specified cloud provider.
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -89,11 +88,12 @@ a|Authorization token
 |True
 a|Agent ID
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -213,7 +213,7 @@ a|
 == Response
 
 ```
-Status: 202, Default response
+Status: 202, Default Response
 ```
 
 
@@ -480,74 +480,6 @@ ontap-s3
 |credential-id
 |string
 |True
-a|
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|provider
-|string
-|True
-a|Cloud provider
-
-
-|region
-|string
-|True
-a|Region
-
-
-|object-lock
-|string
-|True
-a|Object lock mode
-
-
-|object-store-name
-|string
-|True
-a|Object store name
-
-
-|tags
-|array[link:#tags[tags]]
-|False
-a|
-
-|aws
-|link:#aws[aws]
-|False
-a|
-
-|azure
-|link:#azure[azure]
-|False
-a|
-
-|gcp
-|link:#gcp[gcp]
-|False
-a|
-
-|sgws
-|link:#sgws[sgws]
-|False
-a|
-
-|ontap-s3
-|link:#ontap-s3[ontap-s3]
-|False
 a|
 
 |===

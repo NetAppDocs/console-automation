@@ -13,16 +13,15 @@ summary: 'Configure a service'
 
 
 
-Configures the service to include indexed cataloging services. It enables the AWS Athena interactive S3 query service and AWS Glue serverless data integration service for AWS setup, Azure Synapse analytics service for Azure setup, Google BigQuery service for Google Cloud setup and DuckDB installation for StorageGRID.
+Configures the service to include an indexed cataloging service. It enables the AWS Athena interactive S3 query service and AWS Glue serverless data integration service for AWS setup, Azure Synapse analytics service for Azure setup, Google BigQuery service for Google Cloud setup and DuckDB installation for StorageGRID.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,25 +32,30 @@ Configures the service to include indexed cataloging services. It enables the AW
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

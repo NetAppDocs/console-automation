@@ -15,14 +15,13 @@ summary: 'List the relationship details associated with a volume SnapMirror repl
 
 Lists the relationship details associated with a volume SnapMirror replication relationship. The API returns the source details, destination details, policy details, status, health, transfer type, and relationship status details.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,31 +32,37 @@ Lists the relationship details associated with a volume SnapMirror replication r
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |relationshipId
 |string
 |path
 |True
-a|
+a|Relationship ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

@@ -2080,8 +2080,6 @@ sidebar:
       url: "/tenancy/overview.html"
     - title: Account
       entries:
-      - title: Overview
-        url: "/tenancy/account_overview.html"
       - title: Create an account
         url: "/tenancy/post-tenancy-account-id.html"
       - title: Delete an account
@@ -2116,8 +2114,6 @@ sidebar:
         url: "/tenancy/post-tenancy-account-enable-3rd-party-services-id.html"
     - title: Authorize
       entries:
-      - title: Overview
-        url: "/tenancy/authorize_overview.html"
       - title: Authorize an external resource
         url: "/tenancy/post-tenancy-authorize.html"
       - title: Authorize an external agent
@@ -2132,8 +2128,6 @@ sidebar:
         url: "/tenancy/post-tenancy-authorize-agent-in-account.html"
     - title: Resource
       entries:
-      - title: Overview
-        url: "/tenancy/resource_overview.html"
       - title: Discover an external resource
         url: "/tenancy/post-tenancy-resource-discover.html"
       - title: Create an external resource
@@ -2160,8 +2154,6 @@ sidebar:
         url: "/tenancy/delete-tenancy-service-resource-.html"
     - title: Service account
       entries:
-      - title: Overview
-        url: "/tenancy/service_account_overview.html"
       - title: Create a service account
         url: "/tenancy/post-tenancy-account-service-account.html"
       - title: Delete a service account
@@ -2172,16 +2164,12 @@ sidebar:
         url: "/tenancy/post-tenancy-account-service-account-generate-service-account-secret.html"
     - title: User
       entries:
-      - title: Overview
-        url: "/tenancy/user_overview.html"
       - title: Retrieve users authorized for single resource
         url: "/tenancy/get-tenancy-users-for-action--id.html"
       - title: Retrieve users authorized for all resources
         url: "/tenancy/get-tenancy-users-for-action-id.html"
     - title: Workspace
       entries:
-      - title: Overview
-        url: "/tenancy/workspace_overview.html"
       - title: Create a workspace
         url: "/tenancy/post-tenancy-account-workspace-id.html"
       - title: Add a user
@@ -2208,16 +2196,12 @@ sidebar:
       url: "/fsx/overview.html"
     - title: AWS credentials
       entries:
-      - title: Overview
-        url: "/fsx/aws_credentials_overview.html"
       - title: Retrieve AWS credentials
         url: "/fsx/get-aws-credentials-.html"
       - title: Add AWS credentials
         url: "/fsx/post-aws-credentials-.html"
     - title: AWS operations
       entries:
-      - title: Overview
-        url: "/fsx/aws_operations_overview.html"
       - title: Retrieve VPCs
         url: "/fsx/get-aws-vpcs.html"
       - title: Retrieve route tables
@@ -2228,14 +2212,10 @@ sidebar:
         url: "/fsx/get-aws-supported-regions.html"
     - title: FSx ONTAP discovery
       entries:
-      - title: Overview
-        url: "/fsx/fsx_ontap_discovery_overview.html"
       - title: Discover FSx ONTAP systems
         url: "/fsx/get-discovery-discover.html"
     - title: Working environments
       entries:
-      - title: Overview
-        url: "/fsx/working_environments_overview.html"
       - title: Retrieve working environments
         url: "/fsx/get-working-environments-.html"
       - title: Create FSx for ONTAP working environments
@@ -2274,8 +2254,6 @@ sidebar:
       url: "/cbs/overview.html"
     - title: Backup
       entries:
-      - title: Overview
-        url: "/cbs/backup_overview.html"
       - title: Retrieve system details
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment.html"
       - title: Retrieve the details of all the systems that are backed up
@@ -2286,7 +2264,7 @@ sidebar:
         url: "/cbs/delete-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-.html"
       - title: Retrieve the backup status
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-status.html"
-      - title: Modify the Backup and Recovery service backup configuration
+      - title: Modify the backup configuration
         url: "/cbs/put-account-providers-cloudmanager_cbs-api-v2-backup-working-environment-.html"
       - title: Retrieve volume information
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume-.html"
@@ -2316,8 +2294,6 @@ sidebar:
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-snapshot.html"
     - title: Catalog
       entries:
-      - title: Overview
-        url: "/cbs/catalog_overview.html"
       - title: Configure a service
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v2-catalog-working-environments-setup.html"
       - title: Re-index the catalog for all of the systems in an account
@@ -2332,8 +2308,6 @@ sidebar:
         url: "/cbs/put-account-providers-cloudmanager_cbs-api-v1-catalog-working-environments-.html"
     - title: Cloud
       entries:
-      - title: Overview
-        url: "/cbs/cloud_overview.html"
       - title: Retrieve AWS accounts
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-account.html"
       - title: Retrieve subscribed AWS regions
@@ -2398,16 +2372,12 @@ sidebar:
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-feature-flags.html"
     - title: Job
       entries:
-      - title: Overview
-        url: "/cbs/job_overview.html"
       - title: Retrieve jobs
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-job.html"
       - title: Retrieve particular job details
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-job-.html"
     - title: License
       entries:
-      - title: Overview
-        url: "/cbs/license_overview.html"
       - title: Retrieve license validity
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-license-working-environment-.html"
       - title: Verify the valid licenses in a system
@@ -2430,8 +2400,6 @@ sidebar:
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-object-storage-provider.html"
     - title: Panoramic protection
       entries:
-      - title: Overview
-        url: "/cbs/panoramic_protection_overview.html"
       - title: Activate comprehensive protection in a system (v1)
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-.html"
       - title: Modify the comprehensive protection configuration in a system (v2)
@@ -2440,22 +2408,20 @@ sidebar:
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-volume.html"
       - title: Modify comprehensive protection for multiple volumes (v1)
         url: "/cbs/put-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-volume.html"
+      - title: Enable comprehensive panoramic protection for multiple volumes (v2)
+        url: "/cbs/post-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html"
+      - title: Modify panoramic protection settings for multiple volumes (v2)
+        url: "/cbs/put-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html"
     - title: Ransomware scan
       entries:
-      - title: Overview
-        url: "/cbs/ransomware_scan_overview.html"
       - title: Initiate a ransomware scan
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v1-ransomware-working-environment-volume-snapshot-.html"
     - title: Replication
       entries:
-      - title: Overview
-        url: "/cbs/replication_overview.html"
       - title: Perform an action on a volume with SnapMirror replication
         url: "/cbs/patch-account-providers-cloudmanager_cbs-api-v1-replication-working-environment-relationship.html"
     - title: Report
       entries:
-      - title: Overview
-        url: "/cbs/report_overview.html"
       - title: Generate an inventory report
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v1-report.html"
       - title: Retrieve inventory report data
@@ -2466,8 +2432,6 @@ sidebar:
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-report-replication-job-.html"
     - title: Restore
       entries:
-      - title: Overview
-        url: "/cbs/restore_overview.html"
       - title: Perform a volume and file-level restore (v2)
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v2-restore.html"
       - title: Perform a volume, file, and folder-level restore operation (v3)
@@ -2476,8 +2440,6 @@ sidebar:
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v1-revert-working-environment-volume-.html"
     - title: SFR
       entries:
-      - title: Overview
-        url: "/cbs/sfr_overview.html"
       - title: Start a file and folder explore operation (v1)
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v1-sfr-working-environment-volume-file-explore-start.html"
       - title: Retrieve a list of files and folders
@@ -2486,8 +2448,6 @@ sidebar:
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-sfr-working-environment-volume-snapshot-files-status.html"
     - title: StorageGRID
       entries:
-      - title: Overview
-        url: "/cbs/storagegrid_overview.html"
       - title: Retrieve StorageGRID server version
         url: "/cbs/post-account-providers-cloudmanager_cbs-api-v1-sg-version.html"
       - title: Discover a new StorageGRID WebScale server
@@ -2508,8 +2468,6 @@ sidebar:
         url: "/cbs/delete-account-providers-cloudmanager_cbs-api-v2-sg-credentials-.html"
     - title: System
       entries:
-      - title: Overview
-        url: "/cbs/system_overview.html"
       - title: Retrieve ONTAP backup policies
         url: "/cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-backup-policy.html"
       - title: Create a backup policy
@@ -2576,8 +2534,6 @@ sidebar:
       url: "/copysync/overview.html"
     - title: Accounts
       entries:
-      - title: Overview
-        url: "/copysync/accounts_overview.html"
       - title: Retrieve the tenancy accounts
         url: "/copysync/get-api-accounts.html"
       - title: Delete the current account
@@ -2604,8 +2560,6 @@ sidebar:
         url: "/copysync/delete-api-v2-accounts-nss-credentials-v2-.html"
     - title: Data brokers
       entries:
-      - title: Overview
-        url: "/copysync/data_brokers_overview.html"
       - title: Retrieve all the data brokers
         url: "/copysync/get-api-data-brokers.html"
       - title: Create a new installer for the NetApp data broker instance
@@ -2662,8 +2616,6 @@ sidebar:
         url: "/copysync/get-api-accounts-data-brokers-local-configuration.html"
     - title: Groups
       entries:
-      - title: Overview
-        url: "/copysync/groups_overview.html"
       - title: Retrieve all groups
         url: "/copysync/get-api-groups.html"
       - title: Download the data broker group logs
@@ -2732,14 +2684,10 @@ sidebar:
         url: "/copysync/delete-api-accounts-groups-.html"
     - title: Messages
       entries:
-      - title: Overview
-        url: "/copysync/messages_overview.html"
       - title: Retrieve the asynchronous messages
         url: "/copysync/get-api-messages-client.html"
     - title: Relationships
       entries:
-      - title: Overview
-        url: "/copysync/relationships_overview.html"
       - title: Retrieve all relationships
         url: "/copysync/get-api-relationships-v2.html"
       - title: Create a new relationship
@@ -2764,8 +2712,6 @@ sidebar:
         url: "/copysync/put-api-accounts-relationships-tags.html"
     - title: Reports
       entries:
-      - title: Overview
-        url: "/copysync/reports_overview.html"
       - title: Create a new report
         url: "/copysync/post-api-accounts-reports.html"
       - title: Retrieve a list of all reports
@@ -2778,14 +2724,10 @@ sidebar:
         url: "/copysync/get-api-accounts-reports-.html"
     - title: Storages
       entries:
-      - title: Overview
-        url: "/copysync/storages_overview.html"
       - title: Retrieve the storage type
         url: "/copysync/get-api-storages-.html"
     - title: Timelines
       entries:
-      - title: Overview
-        url: "/copysync/timelines_overview.html"
       - title: Retrieve timelines
         url: "/copysync/get-api-timelines.html"
   - title: Credentials
@@ -2794,8 +2736,6 @@ sidebar:
       url: "/credential/overview.html"
     - title: AWS
       entries:
-      - title: Overview
-        url: "/credential/aws_overview.html"
       - title: Create credentials
         url: "/credential/post-accounts-aws-assume-role.html"
       - title: Update credentials
@@ -2804,8 +2744,6 @@ sidebar:
         url: "/credential/get-accounts-aws-assume-role-.html"
     - title: Azure
       entries:
-      - title: Overview
-        url: "/credential/azure_overview.html"
       - title: Add service principal credentials
         url: "/credential/post-accounts-azure-service-principal.html"
       - title: Update service principal credentials
@@ -2818,8 +2756,6 @@ sidebar:
         url: "/credential/post-azure-generate-token.html"
     - title: Generic
       entries:
-      - title: Overview
-        url: "/credential/generic_overview.html"
       - title: Add generic credentials
         url: "/credential/post-accounts-credentials.html"
       - title: Retrieve credentials by type
@@ -2836,20 +2772,14 @@ sidebar:
       url: "/dw/overview.html"
     - title: Data services
       entries:
-      - title: Overview
-        url: "/dw/data_services_overview.html"
       - title: Retrieve data service eligibility details
         url: "/dw/get-license-data-service-eligibility-account-provider-.html"
     - title: External services
       entries:
-      - title: Overview
-        url: "/dw/external_services_overview.html"
       - title: Retrieve on-prem ONTAP data
         url: "/dw/get-license-onprem-account-clusters.html"
     - title: License
       entries:
-      - title: Overview
-        url: "/dw/license_overview.html"
       - title: Associate a license
         url: "/dw/post-license-serial-number-.html"
       - title: Update a license by serial number
@@ -2871,8 +2801,6 @@ sidebar:
         url: "/dw/patch-license-account-licenses.html"
     - title: Subscription
       entries:
-      - title: Overview
-        url: "/dw/subscription_overview.html"
       - title: Register a subscription
         url: "/dw/post-license-account-subscriptions-.html"
       - title: Retrieve all subscriptions for an account
@@ -2917,8 +2845,6 @@ sidebar:
       url: "/federation/overview.html"
     - title: Domain
       entries:
-      - title: Overview
-        url: "/federation/domain_overview.html"
       - title: List domains
         url: "/federation/get-organizations-domains.html"
       - title: Create a domain
@@ -2931,8 +2857,6 @@ sidebar:
         url: "/federation/patch-organizations-domains-.html"
     - title: Federation
       entries:
-      - title: Overview
-        url: "/federation/federation_overview.html"
       - title: List federations
         url: "/federation/get-organizations-federations.html"
       - title: Create a federation
@@ -2945,8 +2869,6 @@ sidebar:
         url: "/federation/patch-organizations-federations-.html"
     - title: Unmigrated connection
       entries:
-      - title: Overview
-        url: "/federation/unmigrated_connection_overview.html"
       - title: List unmigrated connections
         url: "/federation/get-unmigratedconnections.html"
       - title: Import a connection
@@ -2957,8 +2879,6 @@ sidebar:
       url: "/ipa/overview.html"
     - title: License
       entries:
-      - title: Overview
-        url: "/ipa/license_overview.html"
       - title: Register a license
         url: "/ipa/post-ipa-account-serial-number-register.html"
       - title: Deregister a license
@@ -2973,8 +2893,6 @@ sidebar:
         url: "/ipa/post-ipa-account-serial-number-status-v6.html"
     - title: NSS
       entries:
-      - title: Overview
-        url: "/ipa/nss_overview.html"
       - title: Retrieve NetApp Support Site key credentials
         url: "/ipa/get-ipa-account-nss-key-.html"
       - title: Update NetApp Support Site key credentials
@@ -3003,16 +2921,12 @@ sidebar:
         url: "/ipa/get-ipa-account-nss-key-nss-data.html"
     - title: Services
       entries:
-      - title: Overview
-        url: "/ipa/services_overview.html"
       - title: Retrieve an IPA serial number token
         url: "/ipa/post-ipa-services-account-sn-lookup-token.html"
       - title: Retrieve an IPA serial number
         url: "/ipa/post-ipa-services-sn-lookup.html"
     - title: Support
       entries:
-      - title: Overview
-        url: "/ipa/support_overview.html"
       - title: Check system entitlements
         url: "/ipa/post-ipa-support-case-system-entitlements.html"
       - title: Create a support case
@@ -3035,8 +2949,6 @@ sidebar:
       url: "/tenancyv4/overview.html"
     - title: Hierarchy
       entries:
-      - title: Overview
-        url: "/tenancyv4/hierarchy_overview.html"
       - title: List all folders
         url: "/tenancyv4/get-folders.html"
       - title: Create a new folder
@@ -3119,8 +3031,6 @@ sidebar:
         url: "/tenancyv4/put-projects-.html"
     - title: Partnership
       entries:
-      - title: Overview
-        url: "/tenancyv4/partnership_overview.html"
       - title: List all partnerships
         url: "/tenancyv4/get-partnerships.html"
       - title: Create a new partnership
@@ -3141,8 +3051,6 @@ sidebar:
         url: "/tenancyv4/get-partnerships-grants-.html"
     - title: Permission
       entries:
-      - title: Overview
-        url: "/tenancyv4/permission_overview.html"
       - title: List all permissions
         url: "/tenancyv4/get-permissions.html"
       - title: Retrieve a permission
@@ -3161,8 +3069,6 @@ sidebar:
         url: "/tenancyv4/get-users-resources-permissions-.html"
     - title: Resource and resourcegroup
       entries:
-      - title: Overview
-        url: "/tenancyv4/resource_and_resourcegroup_overview.html"
       - title: List all resources under a folder
         url: "/tenancyv4/get-folders-resources.html"
       - title: Add resources to a folder
@@ -3251,8 +3157,6 @@ sidebar:
         url: "/tenancyv4/get-users-resources-.html"
     - title: Role
       entries:
-      - title: Overview
-        url: "/tenancyv4/role_overview.html"
       - title: List all roles
         url: "/tenancyv4/get-roles.html"
       - title: Retrieve a role
@@ -3261,8 +3165,6 @@ sidebar:
         url: "/tenancyv4/get-users-roles.html"
     - title: User and usergroup
       entries:
-      - title: Overview
-        url: "/tenancyv4/user_and_usergroup_overview.html"
       - title: Create a new user group in a folder
         url: "/tenancyv4/post-folders-roles-usergroups.html"
       - title: Remove a user from a folder

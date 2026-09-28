@@ -15,14 +15,13 @@ summary: 'Delete a snapshot for a volume'
 
 Deletes a snapshot of a volume. The API deletes a specific snapshot of a particular volume belonging to a specific system. The system ID, volume ID, and snapshot ID are passed as parameters for the REST API call.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,37 +32,44 @@ Deletes a snapshot of a volume. The API deletes a specific snapshot of a particu
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |volumeId
 |string
 |path
 |True
-a|
+a|Volume ID
+
 
 |snapshotId
 |string
 |path
 |True
-a|
+a|Snapshot ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

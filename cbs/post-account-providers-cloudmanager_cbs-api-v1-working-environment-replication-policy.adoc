@@ -15,14 +15,13 @@ summary: 'Create a replication policy in a system'
 
 Creates a replication policy in a system.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -56,11 +55,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -158,54 +158,6 @@ a|
 |string
 |False
 a|
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|name
-|string
-|True
-a|
-
-|rule
-|array[link:#rule[rule]]
-|False
-a|
-
-|transfer-schedule
-|string
-|False
-a|Cron-based schedule for transfers. To disable the schedule, pass the value as: none(case sensitive). By default, an hourly schedule is selected.
-
-
-|copy-all-source-snapshots
-|boolean
-|False
-a|Copies all source snapshots to the replication detstination
-
-
-|copy-latest-source-snapshot
-|boolean
-|False
-a|Copies only the latest source snapshot to the replication detstination
-
-
-|svm-name
-|string
-|False
-a|Name of the SVM where the replication policy should be created
-
 
 |===
 

@@ -13,16 +13,15 @@ summary: 'Retrieve a list of ONTAP replication policies'
 
 
 
-Retrieves a list of ONTAP replication policies associated with a system. The API will list the SnapMirror policies created on the cluster level for the specified system. The system ID is passed as a parameter for the REST API call. It returns the SnapMirror policies and the rules associated with the policies.
+Retrieves a list of ONTAP replication policies associated with a system. The API lists the SnapMirror policies created on the cluster level for the specified system. The system ID is passed as a parameter for the REST API call. It returns the SnapMirror policies and the rules associated with the policies.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,31 +32,37 @@ Retrieves a list of ONTAP replication policies associated with a system. The API
 |boolean
 |query
 |False
-a|
+a|Returns the attached-volumes-count with the policy if set to true
+
 
 |accountId
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

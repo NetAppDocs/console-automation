@@ -15,14 +15,13 @@ summary: 'Retrieve system volume directories'
 
 Retrieves a list of system volume directories. You can run a query by using a target storage VM and the path of directories to browse within the volume.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,43 +32,51 @@ Retrieves a list of system volume directories. You can run a query by using a ta
 |string
 |query
 |False
-a|
+a|Target SVM
+
 
 |path
 |string
 |query
 |False
-a|
+a|Path of directories to browse within a volume
+
 
 |accountId
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |volumeId
 |string
 |path
 |True
-a|
+a|File system or volume ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

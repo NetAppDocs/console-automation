@@ -22,7 +22,6 @@ Removes the backup settings on a specified backed up volume. To disable backup o
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -33,31 +32,37 @@ Removes the backup settings on a specified backed up volume. To disable backup o
 |string
 |path
 |True
-a|
+a|Account ID
+
 
 |workingEnvironmentId
 |string
 |path
 |True
-a|
+a|System ID
+
 
 |volumeId
 |string
 |path
 |True
-a|
+a|File system or volume ID
+
 
 |authorization
 |string
 |header
 |True
-a|
+a|User token
+
 
 |X-Agent-Id
 |string
 |header
 |True
-a|
+a|Request identifier
+
+
 |===
 
 == Response

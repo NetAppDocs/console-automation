@@ -15,14 +15,13 @@ summary: 'Modify multiple backed up volumes'
 
 Modifies multiple backed-up volumes in a specific system. This API endpoint modifies the volume state, backup-policy, backup policy rule and retention, and archive-after-days parameters.
 
-**Token usage:** NetApp Console user token.
+*Token usage:* NetApp Console user token.
 
 
 == Parameters
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -56,11 +55,12 @@ a|User token
 |True
 a|Request identifier
 
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -222,25 +222,6 @@ a|
 |backup-policy
 |link:#backup-policy[backup-policy]
 |False
-a|
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|volume
-|array[link:#volume[volume]]
-|True
 a|
 
 |===

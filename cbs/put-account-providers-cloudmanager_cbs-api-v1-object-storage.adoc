@@ -20,7 +20,6 @@ Modifies the bucket properties for the specified provider.
 
 [cols=5*,options=header]
 |===
-
 |Name
 |Type
 |In
@@ -53,11 +52,12 @@ a|Job ID for the modify bucket operation
 |path
 |True
 a|
+
 |===
 
 == Request Body
 
-                
+                   
 
 [cols=4*,options=header]
 |===
@@ -135,7 +135,7 @@ a|
 == Response
 
 ```
-Status: 202, Default response
+Status: 202, Default Response
 ```
 
 
@@ -276,53 +276,6 @@ a|Google Cloud project ID
 |kms
 |link:#kms[kms]
 |True
-a|
-
-|===
-
-
-[#body]
-[.api-collapsible-fifth-title]
-body
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|provider
-|string
-|True
-a|Cloud provider type
-
-
-|region
-|string
-|True
-a|Region for the bucket
-
-
-|object-store-name
-|string
-|True
-a|Object store name
-
-
-|aws
-|link:#aws[aws]
-|False
-a|
-
-|azure
-|link:#azure[azure]
-|False
-a|
-
-|gcp
-|link:#gcp[gcp]
-|False
 a|
 
 |===

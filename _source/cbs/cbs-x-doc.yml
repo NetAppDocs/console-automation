@@ -123,7 +123,7 @@ paths:
         explorer: false
     put:
       x-doc:
-        title: Modify the Backup and Recovery service backup configuration
+        title: Modify the backup configuration
         category: Backup
         filename: put-account-providers-cloudmanager_cbs-api-v2-backup-working-environment-.html
         explorer: false
