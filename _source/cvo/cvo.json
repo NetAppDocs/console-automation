@@ -3,6 +3,12 @@
     "schemas": {
       "About": {
         "properties": {
+          "agentId": {
+            "type": "string"
+          },
+          "agentType": {
+            "type": "string"
+          },
           "beta": {
             "type": "boolean"
           },
@@ -635,6 +641,9 @@
             "type": "string"
           }
         },
+        "required": [
+          "unit"
+        ],
         "type": "object"
       },
       "AsupSchedule": {
@@ -655,10 +664,6 @@
             "type": "integer"
           }
         },
-        "required": [
-          "dayOfWeek",
-          "interval"
-        ],
         "type": "object"
       },
       "AuditGroupSummary": {
@@ -1532,9 +1537,16 @@
                 "type": "boolean"
               }
             },
+            "required": [
+              "traversableAgain"
+            ],
             "type": "array"
           }
         },
+        "required": [
+          "publicId",
+          "vsaList"
+        ],
         "type": "object"
       },
       "AzureAvailabilitySet": {
@@ -1968,6 +1980,10 @@
             "type": "array"
           }
         },
+        "required": [
+          "securityGroups",
+          "virtualNetworks"
+        ],
         "type": "object"
       },
       "AzureNetworkRequirementsResponse": {
@@ -2755,19 +2771,20 @@
       "Capacity": {
         "properties": {
           "size": {
-            "description": "Size",
             "format": "double",
             "type": "number"
           },
           "unit": {
-            "description": "Unit",
+            "enum": [
+              "Byte",
+              "KB",
+              "MB",
+              "GB",
+              "TB"
+            ],
             "type": "string"
           }
         },
-        "required": [
-          "size",
-          "unit"
-        ],
         "type": "object"
       },
       "CapacityBasedDetailedResponse": {
@@ -5102,7 +5119,7 @@
             "$ref": "#/components/schemas/VsaMetadataRequest"
           },
           "workerPool": {
-            "description": "The worker pool URI. Required for private mode Google Cloud deployments with Cloud Volumes ONTAP.",
+            "description": "The worker pool URI. Required for private mode Google Cloud deployments. Optionally provide if private worker pool is to be used.",
             "type": "string"
           },
           "wormRequest": {
@@ -6952,9 +6969,16 @@
                 "type": "boolean"
               }
             },
+            "required": [
+              "traversableAgain"
+            ],
             "type": "array"
           }
         },
+        "required": [
+          "publicId",
+          "vsaList"
+        ],
         "type": "object"
       },
       "GcpBucket": {
@@ -8481,11 +8505,6 @@
               },
               "type": "array"
             },
-            "properties": {
-              "empty": {
-                "type": "boolean"
-              }
-            },
             "type": "object"
           },
           "mediaType": {
@@ -8510,13 +8529,13 @@
               }
             },
             "required": [
-              "parameters"
+              "parameters",
+              "type"
             ],
             "type": "object"
           }
         },
         "required": [
-          "bodyAsString",
           "contentTypeFromMessage",
           "headers",
           "mediaType"
@@ -11542,10 +11561,17 @@
             "type": "integer"
           }
         },
+        "type": "object"
+      },
+      "OptOffMaintenanceEventRequest": {
+        "properties": {
+          "enabled": {
+            "description": "Enables ride-over (no freeze takeover/giveback) when set to true. Restores freeze takeover if set to false. Applied to each HA node sequentially.",
+            "type": "boolean"
+          }
+        },
         "required": [
-          "autoUpdateAllowed",
-          "imageVersion",
-          "lastModified"
+          "enabled"
         ],
         "type": "object"
       },
@@ -12201,23 +12227,6 @@
             "type": "array"
           },
           "pattern": {
-            "properties": {
-              "cursor": {
-                "format": "int32",
-                "type": "integer",
-                "writeOnly": true
-              },
-              "flags": {
-                "format": "int32",
-                "type": "integer"
-              },
-              "pattern": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "flags"
-            ],
             "type": "object"
           }
         },
@@ -15049,15 +15058,10 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "traversableAgain"
-        ],
         "type": "array"
       },
       "SeqString": {
-        "description": "DNS server IP addresses",
         "items": {
-          "description": "DNS server IP addresses",
           "type": "string"
         },
         "properties": {
@@ -15068,9 +15072,6 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "traversableAgain"
-        ],
         "type": "array"
       },
       "SeqSubnetResponse": {
@@ -16017,15 +16018,6 @@
             "type": "string"
           }
         },
-        "required": [
-          "active",
-          "byNodeMode",
-          "contract",
-          "eligibleCvoPackages",
-          "id",
-          "name",
-          "provider"
-        ],
         "type": "object"
       },
       "SupportRegistrationInformation": {
@@ -16636,9 +16628,6 @@
             "type": "integer"
           }
         },
-        "required": [
-          "day"
-        ],
         "type": "object"
       },
       "TotalCapacity": {
@@ -18322,14 +18311,10 @@
                 "type": "boolean"
               }
             },
-            "required": [
-              "traversableAgain"
-            ],
             "type": "array"
           }
         },
         "required": [
-          "name",
           "schedule"
         ],
         "type": "object"
@@ -22785,7 +22770,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_6",
+        "operationId": "setupCifsConfiguration_5",
         "parameters": [
           {
             "in": "path",
@@ -22928,7 +22913,7 @@
     "/aws/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_5",
+        "operationId": "setupCifsConfiguration_6",
         "parameters": [
           {
             "in": "path",
@@ -27024,7 +27009,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_1",
+        "operationId": "setupCifsConfiguration",
         "parameters": [
           {
             "in": "path",
@@ -27167,7 +27152,7 @@
     "/azure/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration",
+        "operationId": "setupCifsConfiguration_1",
         "parameters": [
           {
             "in": "path",
@@ -27824,6 +27809,43 @@
                   "$ref": "#/components/schemas/WorkingEnvironmentOntapSavingResponse"
                 }
               }
+            },
+            "description": "default response"
+          }
+        },
+        "tags": [
+          "ONTAP Cloud Azure HA system operations - Systems"
+        ]
+      }
+    },
+    "/azure/ha/working-environments/{workingEnvironmentId}/opt-off-maintenance-event": {
+      "put": {
+        "description": "Enables or disables Azure maintenance ride-over events on all Azure high-availability (HA) nodes in Cloud Volumes ONTAP. Sets the `bootarg.vmevd.debug.no_togb_action` bootarg on each HA node sequentially. A single API call updates the entire HA pair. This endpoint is only available for Azure HA pairs in ONTAP 9.19.1 or later. This endpoint cannot be used when a Cloud Volumes ONTAP create operation is in progress.",
+        "operationId": "setOptOffMaintenanceEvent",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workingEnvironmentId",
+            "description": "The public ID of the system",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OptOffMaintenanceEventRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "content": {
+              "application/json": {}
             },
             "description": "default response"
           }
@@ -31185,7 +31207,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_10",
+        "operationId": "setupCifsConfiguration_9",
         "parameters": [
           {
             "in": "path",
@@ -31297,7 +31319,7 @@
     "/azure/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_9",
+        "operationId": "setupCifsConfiguration_10",
         "parameters": [
           {
             "in": "path",
@@ -35269,7 +35291,7 @@
     },
     "/gcp/ha/metadata/workerPools": {
       "get": {
-        "description": "Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a private mode Cloud Volumes ONTAP system can be created.",
+        "description": "Retrieves Google Cloud worker pools using Infrastructure Manager (IM) for Cloud Volumes ONTAP deployments in private mode or when a private worker pool is to be used.",
         "operationId": "workerPools_1",
         "parameters": [
           {
@@ -36567,7 +36589,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_4",
+        "operationId": "setupCifsConfiguration_3",
         "parameters": [
           {
             "in": "path",
@@ -36710,7 +36732,7 @@
     "/gcp/ha/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_3",
+        "operationId": "setupCifsConfiguration_4",
         "parameters": [
           {
             "in": "path",
@@ -38925,7 +38947,7 @@
     },
     "/gcp/vsa/metadata/workerPools": {
       "get": {
-        "description": "Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a private mode Cloud Volumes ONTAP system can be created.",
+        "description": "Retrieves Google Cloud worker pools using Infrastructure Manager (IM) for Cloud Volumes ONTAP deployments in private mode or when a private worker pool is to be used.",
         "operationId": "workerPools",
         "parameters": [
           {
@@ -40212,7 +40234,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_12",
+        "operationId": "setupCifsConfiguration_11",
         "parameters": [
           {
             "in": "path",
@@ -40324,7 +40346,7 @@
     "/gcp/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_11",
+        "operationId": "setupCifsConfiguration_12",
         "parameters": [
           {
             "in": "path",
@@ -41862,6 +41884,50 @@
             }
           }
         },
+        "responses": {
+          "default": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "default response"
+          }
+        },
+        "tags": [
+          "Cloud Manager system operations - ASUP"
+        ]
+      }
+    },
+    "/occm/asup/commvault/download": {
+      "get": {
+        "description": "Downloads NetApp Console support data for the agent itself.",
+        "operationId": "downloadAsupFileForAgent",
+        "responses": {
+          "default": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "default response"
+          }
+        },
+        "tags": [
+          "Cloud Manager system operations - ASUP"
+        ]
+      }
+    },
+    "/occm/asup/commvault/send": {
+      "post": {
+        "description": "Sends NetApp Console support data to NetApp Support on behalf of the agent.",
+        "operationId": "sendAsupForAgent",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "serial",
+            "description": "The NetApp Console serial number.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "default": {
             "content": {
@@ -44584,7 +44650,7 @@
     "/replication/metadata/snapmirror-policies/{sourceWorkingEnvironmentId}/{targetWorkingEnvironmentId}": {
       "get": {
         "description": "Retrieves SnapMirror policies based on the source and destination Cloud Volumes ONTAP systems.",
-        "operationId": "describeSnapmirrorPolicies_1",
+        "operationId": "describeSnapmirrorPolicies",
         "parameters": [
           {
             "in": "path",
@@ -44634,7 +44700,7 @@
     "/replication/metadata/snapmirror-svm-policies/{sourceWorkingEnvironmentId}/{svmName}/{targetWorkingEnvironmentId}": {
       "get": {
         "description": "Retrieves SnapMirror policies based on the source and destination Cloud Volumes ONTAP systems.",
-        "operationId": "describeSnapmirrorPolicies",
+        "operationId": "describeSnapmirrorPolicies_1",
         "parameters": [
           {
             "in": "path",
@@ -48158,7 +48224,7 @@
       },
       "post": {
         "description": "Sets up a new CIFS configuration for an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_7",
+        "operationId": "setupCifsConfiguration_13",
         "parameters": [
           {
             "in": "path",
@@ -48270,7 +48336,7 @@
     "/vsa/working-environments/{workingEnvironmentId}/delete-cifs": {
       "post": {
         "description": "Deletes the CIFS configuration of an existing Cloud Volumes ONTAP system.",
-        "operationId": "setupCifsConfiguration_13",
+        "operationId": "setupCifsConfiguration_7",
         "parameters": [
           {
             "in": "path",

@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/post-occm-asup-commvault-send.html'
+summary: 'Send NetApp Console support data on behalf of the agent'
+---
+
+= Send NetApp Console support data on behalf of the agent
+:imagesdir: ../media/
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/asup/commvault/send`#
+
+
+
+Sends NetApp Console support data to NetApp Support on behalf of the agent.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|serial
+|string
+|header
+|False
+a|The NetApp Console serial number.
+
+
+|===
+
+== Error
+
+```
+Status: Default, Default response
+```
+

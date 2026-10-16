@@ -165,15 +165,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 
@@ -461,17 +459,17 @@ OntapUpdateImageMetadata
 
 |autoUpdateAllowed
 |boolean
-|True
+|False
 a|
 
 |imageVersion
 |string
-|True
+|False
 a|
 
 |lastModified
 |integer
-|True
+|False
 a|
 
 |===

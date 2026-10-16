@@ -30,6 +30,16 @@ Status: Default, Default response
 |Required
 |Description
 
+|agentId
+|string
+|False
+a|
+
+|agentType
+|string
+|False
+a|
+
 |beta
 |boolean
 |True
@@ -113,6 +123,8 @@ a|
 ====
 [source,json,subs=+macros]
 {
+  "agentId": "string",
+  "agentType": "string",
   "beta": false,
   "build": "string",
   "buildTimestamp": 0,

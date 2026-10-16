@@ -38,6 +38,17 @@ a|
 |===
 
 
+.Example error response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "projects": [
+    {}
+  ]
+}
+====
+
 == Definitions
 
 [.api-def-first-level]

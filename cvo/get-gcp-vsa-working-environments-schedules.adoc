@@ -55,7 +55,7 @@ a|
 
 |name
 |string
-|True
+|False
 a|
 
 |schedule
@@ -73,14 +73,7 @@ a|
 {
   "name": "string",
   "schedule": [
-    {
-      "start": {
-        "day": 0
-      },
-      "stop": {
-        "day": 0
-      }
-    }
+    {}
   ]
 }
 ====
@@ -105,7 +98,7 @@ TimePoint
 
 |day
 |integer
-|True
+|False
 a|
 
 |hour

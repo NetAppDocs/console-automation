@@ -82,7 +82,6 @@ a|
 [source,json,subs=+macros]
 {
   "capacityLimit": {
-    "size": 0,
     "unit": "string"
   },
   "description": "string",
@@ -120,15 +119,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 
