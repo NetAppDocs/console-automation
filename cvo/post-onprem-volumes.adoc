@@ -156,7 +156,6 @@ a|Target system ID
     ]
   },
   "initialSize": {
-    "size": 0,
     "unit": "string"
   },
   "iscsiInfo": {
@@ -340,15 +339,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

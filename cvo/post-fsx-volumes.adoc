@@ -150,7 +150,6 @@ a|Tiering policy
   },
   "fileSystemId": "string",
   "initialSize": {
-    "size": 0,
     "unit": "string"
   },
   "name": "string",
@@ -370,15 +369,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

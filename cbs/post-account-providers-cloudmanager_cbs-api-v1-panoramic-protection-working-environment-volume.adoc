@@ -94,6 +94,17 @@ a|
 |===
 
 
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "volume": [
+    {}
+  ]
+}
+====
+
 == Response
 
 ```

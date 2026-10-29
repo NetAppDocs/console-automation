@@ -79,7 +79,6 @@ a|
   "instanceType": "string",
   "license": {
     "capacityLimit": {
-      "size": 0,
       "unit": "string"
     },
     "capacity_limit": "string",
@@ -122,15 +121,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

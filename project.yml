@@ -1079,6 +1079,8 @@ sidebar:
           url: "/cvo/get-azure-ha-working-environments-ontap-available-images.html"
         - title: Retrieve system ONTAP savings
           url: "/cvo/get-azure-ha-working-environments-ontap-saving.html"
+        - title: Enable or disable Azure maintenance ride-over events on HA nodes
+          url: "/cvo/put-azure-ha-working-environments-opt-off-maintenance-event.html"
         - title: Retrieve Azure VMware Solution private cloud clusters for a subscription
           url: "/cvo/get-azure-ha-working-environments-resourcegroups-avs-private-clouds-clusters.html"
         - title: Retrieve Azure VMware Solution cluster hosts for a subscription
@@ -1829,6 +1831,10 @@ sidebar:
           url: "/cvo/get-occm-asup.html"
         - title: Update the AutoSupport configuration
           url: "/cvo/put-occm-asup.html"
+        - title: Download NetApp Console support data for the agent
+          url: "/cvo/get-occm-asup-commvault-download.html"
+        - title: Send NetApp Console support data on behalf of the agent
+          url: "/cvo/post-occm-asup-commvault-send.html"
         - title: Download NetApp Console support data
           url: "/cvo/get-occm-asup-download.html"
         - title: Download a compressed file of all the AutoSupport files from all
@@ -2244,10 +2250,10 @@ sidebar:
       url: "/audit/overview.html"
     - title: Retrieve account records
       url: "/audit/get-audit.html"
-    - title: Retrieve audit options
-      url: "/audit/get-audit-options.html"
     - title: Retrieve records by service
       url: "/audit/get-audit--records.html"
+    - title: Retrieve audit options
+      url: "/audit/get-audit-options.html"
   - title: Backup and Recovery
     entries:
     - title: Overview

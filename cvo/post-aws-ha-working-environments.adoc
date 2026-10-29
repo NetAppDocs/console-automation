@@ -303,7 +303,6 @@ a|Writing speed state
   "dataEncryptionType": "string",
   "description": "string",
   "ebsVolumeSize": {
-    "size": 0,
     "unit": "string"
   },
   "ebsVolumeType": "string",
@@ -359,21 +358,6 @@ a|Writing speed state
   "svmPassword": "string",
   "tenantId": "string",
   "tierLevel": "string",
-  "username": {
-    "_1": "string",
-    "validatesWith": {
-      "message": "string",
-      "regex": {
-        "groupNames": [
-          "string"
-        ],
-        "pattern": {
-          "flags": 0,
-          "pattern": "string"
-        }
-      }
-    }
-  },
   "volume": {
     "exportPolicyInfo": {
       "ips": [
@@ -397,7 +381,6 @@ a|Writing speed state
       ]
     },
     "initialSize": {
-      "size": 0,
       "unit": "string"
     },
     "iscsiInfo": {
@@ -416,7 +399,6 @@ a|Writing speed state
     "name": "string",
     "qualityOfService": {
       "maxDataRate": {
-        "size": 0,
         "unit": "string"
       }
     },
@@ -657,20 +639,17 @@ a|
         "currentInstanceType": "string",
         "evCapacityDetails": {
           "addedCapacityToExistingEvDisks": {
-            "size": 0,
             "unit": "string"
           },
           "newRaidForEvInfo": [
             {
               "diskSize": {
-                "size": 0,
                 "unit": "string"
               },
               "numOfDisks": 0
             }
           ],
           "totalCapacityToAdd": {
-            "size": 0,
             "unit": "string"
           }
         },
@@ -688,7 +667,6 @@ a|
           "newInstanceType": "string",
           "newLicenseType": {
             "capacityLimit": {
-              "size": 0,
               "unit": "string"
             },
             "capacity_limit": "string",
@@ -700,7 +678,6 @@ a|
           }
         },
         "maxCapacity": {
-          "size": 0,
           "unit": "string"
         },
         "moreInfo": "string",
@@ -717,7 +694,6 @@ a|
           "numberOfDisksAndDiskSize": [
             {
               "diskSize": {
-                "size": 0,
                 "unit": "string"
               },
               "diskType": "string"
@@ -726,12 +702,10 @@ a|
         },
         "serialNumber": "string",
         "totalCapacity": {
-          "size": 0,
           "unit": "string"
         },
         "volumeInfo": {
           "newCapacity": {
-            "size": 0,
             "unit": "string"
           },
           "svmName": "string",
@@ -760,6 +734,9 @@ a|
       "string"
     ],
     "cloudProviderAccountId": "string",
+    "instances": [
+      {}
+    ],
     "outpostArn": "string",
     "regionName": "string",
     "roleArn": "string",
@@ -781,7 +758,6 @@ a|
       "capacityTier": "string",
       "diskType": "string",
       "size": {
-        "size": 0,
         "unit": "string"
       }
     },
@@ -794,7 +770,6 @@ a|
           "reason": "string"
         },
         "size": {
-          "size": 0,
           "unit": "string"
         },
         "supportedVolumeTypes": [
@@ -838,7 +813,6 @@ a|
     },
     "region": "string",
     "usedCapacity": {
-      "size": 0,
       "unit": "string"
     }
   },
@@ -879,7 +853,6 @@ a|
     "instanceType": "string",
     "licenseType": {
       "capacityLimit": {
-        "size": 0,
         "unit": "string"
       },
       "name": "string"
@@ -906,9 +879,7 @@ a|
     "systemManagerUrl": "string",
     "upgradeVersions": [
       {
-        "autoUpdateAllowed": false,
-        "imageVersion": "string",
-        "lastModified": 0
+        "imageVersion": "string"
       }
     ],
     "writingSpeedState": "string"
@@ -1026,7 +997,6 @@ a|
   "licensesInformation": [
     {
       "capacityLimit": {
-        "size": 0,
         "unit": "string"
       },
       "expirations": [
@@ -1069,7 +1039,6 @@ a|
     ],
     "capacityTierInfo": {
       "capacityTierUsedSize": {
-        "size": 0,
         "unit": "string"
       },
       "s3BucketName": "string",
@@ -1084,7 +1053,6 @@ a|
     "licensePackageName": "string",
     "licenseType": {
       "capacityLimit": {
-        "size": 0,
         "unit": "string"
       },
       "name": "string"
@@ -1115,13 +1083,10 @@ a|
     "systemManagerUrl": "string",
     "upgradeVersions": [
       {
-        "autoUpdateAllowed": false,
-        "imageVersion": "string",
-        "lastModified": 0
+        "imageVersion": "string"
       }
     ],
     "usedCapacity": {
-      "size": 0,
       "unit": "string"
     },
     "userName": "string",
@@ -1138,7 +1103,6 @@ a|
     ]
   },
   "reservedSize": {
-    "size": 0,
     "unit": "string"
   },
   "saasProperties": {
@@ -1152,14 +1116,7 @@ a|
     {
       "name": "string",
       "schedule": [
-        {
-          "start": {
-            "day": 0
-          },
-          "stop": {
-            "day": 0
-          }
-        }
+        {}
       ]
     }
   ],
@@ -1344,15 +1301,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 
@@ -1531,30 +1486,6 @@ Open the security group to all IP ranges
 [#pattern]
 [.api-collapsible-fifth-title]
 pattern
-
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|cursor
-|integer
-|False
-a|
-
-|flags
-|integer
-|True
-a|
-
-|pattern
-|string
-|False
-a|
-
-|===
 
 
 [#Regex]
@@ -3407,17 +3338,17 @@ OntapUpdateImageMetadata
 
 |autoUpdateAllowed
 |boolean
-|True
+|False
 a|
 
 |imageVersion
 |string
-|True
+|False
 a|
 
 |lastModified
 |integer
-|True
+|False
 a|
 
 |===
@@ -4702,7 +4633,7 @@ TimePoint
 
 |day
 |integer
-|True
+|False
 a|
 
 |hour
@@ -4760,7 +4691,7 @@ a|
 
 |name
 |string
-|True
+|False
 a|
 
 |schedule

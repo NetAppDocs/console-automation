@@ -89,12 +89,10 @@ a|
 {
   "capacityTier": "string",
   "diskSize": {
-    "size": 0,
     "unit": "string"
   },
   "homeNode": "string",
   "initialEvAggregateSize": {
-    "size": 0,
     "unit": "string"
   },
   "name": "string",
@@ -129,15 +127,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

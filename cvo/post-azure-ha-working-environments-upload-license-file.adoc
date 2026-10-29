@@ -91,20 +91,6 @@ Status: Default, Default response
 [.api-collapsible-fifth-title]
 headers
 Hash mapping strings to array[string]
-[cols=4*,options=header]
-|===
-|Name
-|Type
-|Required
-|Description
-
-|empty
-|boolean
-|False
-a|
-
-|===
-
 
 [#parameters]
 [.api-collapsible-fifth-title]
@@ -134,7 +120,7 @@ a|
 
 |type
 |string
-|False
+|True
 a|
 
 |wildcardSubtype
@@ -163,7 +149,7 @@ InputPart
 
 |bodyAsString
 |string
-|True
+|False
 a|
 
 |contentTypeFromMessage

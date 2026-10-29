@@ -9450,6 +9450,42 @@
           "subcategory": null
         }
       }
+    },
+    "/azure/ha/working-environments/{workingEnvironmentId}/opt-off-maintenance-event": {
+      "put": {
+        "x-doc": {
+          "title": "Enable or disable Azure maintenance ride-over events on all HA nodes in Cloud Volumes ONTAP",
+          "category": "Azure systems (HA)",
+          "filename": "put-azure-ha-working-environments-opt-off-maintenance-event.html",
+          "sidebar_title": "Enable or disable Azure maintenance ride-over events on HA nodes",
+          "subcategory": null,
+          "explorer": false
+        }
+      }
+    },
+    "/occm/asup/commvault/download": {
+      "get": {
+        "x-doc": {
+          "title": "Download NetApp Console support data for the agent.",
+          "category": "NetApp Console AutoSupport",
+          "filename": "get-occm-asup-commvault-download.html",
+          "sidebar_title": "Download NetApp Console support data for the agent",
+          "subcategory": null,
+          "explorer": false
+        }
+      }
+    },
+    "/occm/asup/commvault/send": {
+      "post": {
+        "x-doc": {
+          "title": "Send NetApp Console support data on behalf of the agent",
+          "category": "NetApp Console AutoSupport",
+          "filename": "post-occm-asup-commvault-send.html",
+          "sidebar_title": "Send NetApp Console support data on behalf of the agent",
+          "subcategory": null,
+          "explorer": false
+        }
+      }
     }
   }
 }

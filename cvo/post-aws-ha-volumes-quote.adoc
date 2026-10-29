@@ -121,7 +121,6 @@ a|Cloud Volumes ONTAP system ID
   "capacityTier": "string",
   "enableThinProvisioning": false,
   "initialSize": {
-    "size": 0,
     "unit": "string"
   },
   "isReplicationFlow": false,
@@ -197,25 +196,21 @@ a|Number of new disks needed
   "aggregateName": "string",
   "autoVsaCapacityManagement": false,
   "diskSize": {
-    "size": 0,
     "unit": "string"
   },
   "elasticVolumeQuoteResponse": {
     "addedCapacityToExistingEvDisks": {
-      "size": 0,
       "unit": "string"
     },
     "newRaidForEvInfo": [
       {
         "diskSize": {
-          "size": 0,
           "unit": "string"
         },
         "numOfDisks": 0
       }
     ],
     "totalCapacityToAdd": {
-      "size": 0,
       "unit": "string"
     }
   },
@@ -244,15 +239,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

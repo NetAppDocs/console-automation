@@ -75,7 +75,6 @@ a|
   "destination": {
     "clusterName": "string",
     "size": {
-      "size": 0,
       "unit": "string"
     },
     "svm": "string",
@@ -87,7 +86,6 @@ a|
   "source": {
     "clusterName": "string",
     "size": {
-      "size": 0,
       "unit": "string"
     },
     "svm": "string",
@@ -119,15 +117,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 
