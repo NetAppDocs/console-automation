@@ -13,7 +13,7 @@ summary: 'Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system'
 
 
 
-Retrieves Google Cloud worker pools using Infrastructure Manager (IM) in which a private mode Cloud Volumes ONTAP system can be created.
+Retrieves Google Cloud worker pools using Infrastructure Manager (IM) for Cloud Volumes ONTAP deployments in private mode or when a private worker pool is to be used.
 
 
 == Parameters

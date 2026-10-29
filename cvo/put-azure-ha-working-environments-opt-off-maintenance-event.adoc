@@ -1,0 +1,72 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'cvo/put-azure-ha-working-environments-opt-off-maintenance-event.html'
+summary: 'Enable or disable Azure maintenance ride-over events on all HA nodes in Cloud Volumes ONTAP'
+---
+
+= Enable or disable Azure maintenance ride-over events on all HA nodes in Cloud Volumes ONTAP
+:imagesdir: ../media/
+
+[.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/opt-off-maintenance-event`#
+
+
+
+Enables or disables Azure maintenance ride-over events on all Azure high-availability (HA) nodes in Cloud Volumes ONTAP. Sets the `bootarg.vmevd.debug.no_togb_action` bootarg on each HA node sequentially. A single API call updates the entire HA pair. This endpoint is only available for Azure HA pairs in ONTAP 9.19.1 or later. This endpoint cannot be used when a Cloud Volumes ONTAP create operation is in progress.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+|Name
+|Type
+|In
+|Required
+|Description
+
+|workingEnvironmentId
+|string
+|path
+|True
+a|The public ID of the system
+
+
+|===
+
+== Request Body
+
+                   
+
+[cols=4*,options=header]
+|===
+|Name
+|Type
+|Required
+|Description
+
+|enabled
+|boolean
+|True
+a|Enables ride-over (no freeze takeover/giveback) when set to true. Restores freeze takeover if set to false. Applied to each HA node sequentially.
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "enabled": false
+}
+====
+
+== Error
+
+```
+Status: Default, Default response
+```
+

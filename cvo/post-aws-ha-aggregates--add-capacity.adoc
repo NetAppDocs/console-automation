@@ -65,7 +65,6 @@ a|
 [source,json,subs=+macros]
 {
   "capacityToAdd": {
-    "size": 0,
     "unit": "string"
   }
 }
@@ -97,15 +96,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

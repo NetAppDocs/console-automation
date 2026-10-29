@@ -185,20 +185,17 @@ a|
         "currentInstanceType": "string",
         "evCapacityDetails": {
           "addedCapacityToExistingEvDisks": {
-            "size": 0,
             "unit": "string"
           },
           "newRaidForEvInfo": [
             {
               "diskSize": {
-                "size": 0,
                 "unit": "string"
               },
               "numOfDisks": 0
             }
           ],
           "totalCapacityToAdd": {
-            "size": 0,
             "unit": "string"
           }
         },
@@ -216,7 +213,6 @@ a|
           "newInstanceType": "string",
           "newLicenseType": {
             "capacityLimit": {
-              "size": 0,
               "unit": "string"
             },
             "capacity_limit": "string",
@@ -228,7 +224,6 @@ a|
           }
         },
         "maxCapacity": {
-          "size": 0,
           "unit": "string"
         },
         "moreInfo": "string",
@@ -245,7 +240,6 @@ a|
           "numberOfDisksAndDiskSize": [
             {
               "diskSize": {
-                "size": 0,
                 "unit": "string"
               },
               "diskType": "string"
@@ -254,12 +248,10 @@ a|
         },
         "serialNumber": "string",
         "totalCapacity": {
-          "size": 0,
           "unit": "string"
         },
         "volumeInfo": {
           "newCapacity": {
-            "size": 0,
             "unit": "string"
           },
           "svmName": "string",
@@ -281,7 +273,6 @@ a|
   ],
   "capacityFeatures": {
     "inactiveUserData": {
-      "size": 0,
       "unit": "string"
     },
     "objectStoreConfigExtended": {
@@ -291,18 +282,15 @@ a|
         "s3Name": "string",
         "server": "string",
         "usedSpace": {
-          "size": 0,
           "unit": "string"
         }
       },
       "tierLevel": "string"
     },
     "performanceTierUsedCapacity": {
-      "size": 0,
       "unit": "string"
     },
     "rawCapacity": {
-      "size": 0,
       "unit": "string"
     }
   },
@@ -325,7 +313,6 @@ a|
     },
     "region": "string",
     "usedCapacity": {
-      "size": 0,
       "unit": "string"
     }
   },
@@ -489,7 +476,6 @@ a|
     ]
   },
   "reservedSize": {
-    "size": 0,
     "unit": "string"
   },
   "snapshotPolicies": [
@@ -595,15 +581,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

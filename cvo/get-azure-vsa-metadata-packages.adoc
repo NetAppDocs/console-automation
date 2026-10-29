@@ -125,7 +125,6 @@ a|
   "capacityTier": "string",
   "description": "string",
   "diskSize": {
-    "size": 0,
     "unit": "string"
   },
   "diskType": "string",
@@ -163,15 +162,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

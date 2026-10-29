@@ -50,17 +50,17 @@ Status: Default, Default response
 
 |autoUpdateAllowed
 |boolean
-|True
+|False
 a|
 
 |imageVersion
 |string
-|True
+|False
 a|
 
 |lastModified
 |integer
-|True
+|False
 a|
 
 |===
@@ -71,9 +71,7 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "autoUpdateAllowed": false,
-  "imageVersion": "string",
-  "lastModified": 0
+  "imageVersion": "string"
 }
 ====
 

@@ -350,7 +350,6 @@ a|Used volume inodes size
   "autoSizeMode": "string",
   "capacityTier": "string",
   "capacityTierUsedSize": {
-    "size": 0,
     "unit": "string"
   },
   "cifsShareAccessPoint": "string",
@@ -360,7 +359,6 @@ a|Used volume inodes size
   "comment": "string",
   "compression": false,
   "compressionSpaceSaved": {
-    "size": 0,
     "unit": "string"
   },
   "constituentsAggregates": [
@@ -368,7 +366,6 @@ a|Used volume inodes size
   ],
   "deduplication": false,
   "deduplicationSpaceSaved": {
-    "size": 0,
     "unit": "string"
   },
   "exportPolicyInfo": {
@@ -397,7 +394,6 @@ a|Used volume inodes size
   "iscsiEnabled": false,
   "junctionPath": "string",
   "maxGrowSize": {
-    "size": 0,
     "unit": "string"
   },
   "mountPoint": "string",
@@ -431,13 +427,11 @@ a|Used volume inodes size
     "string"
   ],
   "size": {
-    "size": 0,
     "unit": "string"
   },
   "snaplockType": "string",
   "snapshotPolicy": "string",
   "snapshotsUsedSize": {
-    "size": 0,
     "unit": "string"
   },
   "state": "string",
@@ -445,12 +439,10 @@ a|Used volume inodes size
   "targetName": "string",
   "thinProvisioning": false,
   "tierInactiveUserData": {
-    "size": 0,
     "unit": "string"
   },
   "tieringPolicy": "string",
   "usedSize": {
-    "size": 0,
     "unit": "string"
   },
   "uuid": "string",
@@ -478,15 +470,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

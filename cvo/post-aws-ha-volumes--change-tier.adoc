@@ -127,20 +127,17 @@ a|Provisioned throughput
   "aggregateName": "string",
   "evCapacityApprovedToAdd": {
     "addedCapacityToExistingEvDisks": {
-      "size": 0,
       "unit": "string"
     },
     "newRaidForEvInfo": [
       {
         "diskSize": {
-          "size": 0,
           "unit": "string"
         },
         "numOfDisks": 0
       }
     ],
     "totalCapacityToAdd": {
-      "size": 0,
       "unit": "string"
     }
   },
@@ -178,15 +175,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 

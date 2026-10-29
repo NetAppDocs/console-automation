@@ -47,7 +47,6 @@ a|
 {
   "enabled": false,
   "schedule": {
-    "dayOfWeek": 0,
     "interval": {
       "unit": "string"
     }
@@ -86,7 +85,7 @@ a|
 
 |unit
 |string
-|False
+|True
 a|
 
 |===
@@ -105,7 +104,7 @@ AsupSchedule
 
 |dayOfWeek
 |integer
-|True
+|False
 a|
 
 |hourOfDay
@@ -115,7 +114,7 @@ a|
 
 |interval
 |link:#AsupInterval[AsupInterval]
-|True
+|False
 a|
 
 |minuteOfHour

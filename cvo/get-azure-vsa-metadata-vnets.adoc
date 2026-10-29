@@ -62,12 +62,12 @@ Status: Default, Default response
 
 |securityGroups
 |array[link:#AzureSecurityGroupResponse[AzureSecurityGroupResponse]]
-|False
+|True
 a|
 
 |virtualNetworks
 |array[link:#AzureVirtualNetworkResponse[AzureVirtualNetworkResponse]]
-|False
+|True
 a|
 
 |===

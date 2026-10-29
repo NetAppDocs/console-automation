@@ -125,7 +125,6 @@ a|
 {
   "availabilityState": "string",
   "availableCapacity": {
-    "size": 0,
     "unit": "string"
   },
   "commonDiskProperties": {
@@ -140,11 +139,9 @@ a|
     "restrictionReason": "string"
   },
   "totalCapacity": {
-    "size": 0,
     "unit": "string"
   },
   "usedCapacity": {
-    "size": 0,
     "unit": "string"
   }
 }
@@ -170,15 +167,13 @@ Capacity
 
 |size
 |number
-|True
-a|Size
-
+|False
+a|
 
 |unit
 |string
-|True
-a|Unit
-
+|False
+a|
 
 |===
 
