@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-organizations-users-.html'
+keywords: 'remove user,delete user,organization user,user management,organization id,user id'
 summary: 'Remove a user from an organization'
 ---
 
 = Remove a user from an organization
 :imagesdir: ../media/
 
+[.lead]
+Deletes a user from an organization. Use this to revoke the user's access and remove their association with the specified organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/users/{user_id}`#
 
-
+== Usage notes
 
 Removes a user from the specified organization.
 

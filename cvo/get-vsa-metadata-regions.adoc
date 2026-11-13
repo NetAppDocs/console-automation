@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-regions.html'
+keywords: 'cloud volumes,ontap regions,aws regions,cloud ontap,region metadata'
 summary: 'Retrieve AWS regions'
 ---
 
 = Retrieve AWS regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves AWS regions in which a Cloud Volumes ONTAP system can be created.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/regions`#
 
-
+== Usage notes
 
 Retrieves AWS regions over which a Cloud Volumes ONTAP system can be created.
 

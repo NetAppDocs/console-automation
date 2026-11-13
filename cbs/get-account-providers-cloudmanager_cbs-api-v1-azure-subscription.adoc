@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-azure-subscription.html'
+keywords: 'azure subscription,azure account,cloudmanager cbs,netapp azure,account subscription'
 summary: 'Retrieve Azure subscriptions'
 ---
 
 = Retrieve Azure subscriptions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of Azure subscriptions for a particular account. Use this to view the subscriptions associated with your account for backup and recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription`#
 
+== Token usage
 
-
-Retrieves a list of Azure subscriptions for a particular account.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

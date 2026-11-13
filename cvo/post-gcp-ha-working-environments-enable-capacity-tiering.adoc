@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments-enable-capacity-tiering.html'
+keywords: 'capacity tiering,enable tiering,ha environments,working environments,gcp tiering'
 summary: 'Enable capacity tiering'
 ---
 
 = Enable capacity tiering
 :imagesdir: ../media/
 
+[.lead]
+Enables capacity tiering, configuring the system to use a cloud-based capacity tier for data storage. Use this to optimize storage utilization and reduce costs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/enable-capacity-tiering`#
-
-
-
-Enables capacity tiering.
-
 
 == Parameters
 

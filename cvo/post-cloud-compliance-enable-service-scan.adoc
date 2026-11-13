@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-enable-service-scan.html'
+keywords: 'enable scan,enable service scan,service scanning,cloud compliance,service id'
 summary: 'Enable scanning using the service ID'
 ---
 
 = Enable scanning using the service ID
 :imagesdir: ../media/
 
+[.lead]
+Enables scanning using the service ID, activating the scan functionality for the associated service. Use this to initiate scanning operations tied to a specific service instance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{serviceId}/enable-service-scan`#
-
-
-
-Enables scanning using the service ID.
-
 
 == Parameters
 

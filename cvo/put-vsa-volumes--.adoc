@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-volumes--.html'
+keywords: 'modify volume,volume update,ontap volume,svm volume,edit volume'
 summary: 'Modify an existing volume'
 ---
 
 = Modify an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Modifies an existing volume. Use this to update the volume’s configuration or attributes as required.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Modifies an existing volume.
-
 
 == Parameters
 

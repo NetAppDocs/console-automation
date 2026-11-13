@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-volumes-igroups-.html'
+keywords: 'igroup volumes,gcp volumes,netapp igroups,working environment,svm igroups'
 summary: 'Retrieve all igroups'
 ---
 
 = Retrieve all igroups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all initiator groups (igroups), providing the configurations available for managing host access to LUNs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/volumes/igroups/{workingEnvironmentId}/{svmName}`#
 
-
+== Usage notes
 
 Retrieves all igroups.
 

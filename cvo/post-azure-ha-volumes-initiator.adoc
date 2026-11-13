@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-volumes-initiator.html'
+keywords: 'iscsi initiator,add initiator,azure volumes,ha volumes,initiator management'
 summary: 'Add an iSCSI initiator'
 ---
 
 = Add an iSCSI initiator
 :imagesdir: ../media/
 
+[.lead]
+Creates an iSCSI initiator. Use this to define initiators for accessing storage resources over the iSCSI protocol.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/volumes/initiator`#
 
-
+== Usage notes
 
 Adds an iSCSI initiator.
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-license-working-environment-.html'
+keywords: 'license validity,trial license eligibility,license days remaining,netapp console license,working environment license'
 summary: 'Retrieve license validity'
 ---
 
 = Retrieve license validity
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the license validity of systems in the NetApp Console SaaS application. Use this to check the eligibility of the current license or view the days remaining for a trial license.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/license/working-environment/{workingEnvironmentId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves the license validity of the systems from the NetApp Console SaaS application. The API retrieves the eligibility of the current license used and it also returns the days remaining if you are using a trial license.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

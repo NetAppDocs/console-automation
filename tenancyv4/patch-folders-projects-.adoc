@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/patch-folders-projects-.html'
+keywords: 'folder update,project update,partial update,folder project,update project'
 summary: 'Update a project under a folder partially'
 ---
 
 = Update a project under a folder partially
 :imagesdir: ../media/
 
+[.lead]
+Updates a project under the specified folder with partial information, modifying only the fields provided in the request. Use this to make targeted changes to a project without altering its complete configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/folders/{folder_id}/projects/{project_id}`#
-
-
-
-Updates a project under the specified folder with partial information.
-
 
 == Parameters
 

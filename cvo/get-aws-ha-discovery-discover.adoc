@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-discovery-discover.html'
+keywords: 'aws ha discovery,discovered systems,aws region systems,cloud provider account,discovery systems'
 summary: 'Retrieve a list of discovered systems'
 ---
 
 = Retrieve a list of discovered systems
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of discovered systems visible in the specified AWS region. Use this to view the systems accessible to you in the region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/discovery/discover`#
 
-
+== Usage notes
 
 Retrieves a list of discovered systems visible to the current user in the specified AWS region.
 

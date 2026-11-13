@@ -1,6 +1,12 @@
 {
   "overview": "Licenses and subscriptions REST API for the NetApp Console",
   "permalink": "overview.html",
+  "root_overview": {
+    "ai-gen": {
+      "keywords": "licenses,subscriptions,cloud volumes ontap licenses,capacity licenses,license expiration,node licenses",
+      "lead": "Manage the licenses for Cloud Volumes ONTAP and the subscriptions to other NetApp Console services. Use these endpoints to view node, capacity, and data services licenses and to monitor their expiration and capacity usage."
+    }
+  },
   "paths": {
     "/license/serial-number/{serialNumber}": {
       "post": {
@@ -9,7 +15,11 @@
           "category": "License",
           "filename": "post-license-serial-number-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Creates an association between a license and the NetApp Console by specifying either a NetApp License File (NLF) or required fields such as `serialNumber` and `nssKeyId`. Use this endpoint to manage licenses for NetApp Console services based on your account or resource requirements.",
+            "keywords": "license association,netapp console,serial number,license file,license type,expiration date"
+          }
         }
       },
       "patch": {
@@ -18,7 +28,11 @@
           "category": "License",
           "filename": "patch-license-serial-number-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates a specified license by license serial number. Use this endpoint to modify license details, either by providing a NetApp License File (NLF) or by specifying individual fields to update.",
+            "keywords": "license update,serial number,netapp license,file overwrite,license metadata"
+          }
         }
       },
       "delete": {
@@ -27,7 +41,11 @@
           "category": "License",
           "filename": "delete-license-serial-number-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deletes a license by using a specified serial number. Use this endpoint to remove licenses that are no longer needed or valid.",
+            "keywords": "license deletion,serial number,license removal,delete license by serial number"
+          }
         }
       }
     },
@@ -38,7 +56,11 @@
           "category": "License",
           "filename": "get-license-licenses.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves a specified license by type, resource ID, or both. Use this endpoint to access license details, including consumed capacity and summary information for data services when applicable.",
+            "keywords": "license retrieval,license type,resource id,capacity usage,netapp license file"
+          }
         }
       }
     },
@@ -49,7 +71,11 @@
           "category": "License",
           "filename": "patch-license-account-licenseresource-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates a specified license by resource ID. Use this to modify license details for a particular resource in the NetApp Console service.",
+            "keywords": "license update,license resource,resource id,account license,netapp license"
+          }
         }
       },
       "delete": {
@@ -58,7 +84,11 @@
           "category": "License",
           "filename": "delete-license-account-licenseresource-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deletes a specified license by its resource ID. Use this to remove licenses that are no longer needed or applicable.",
+            "keywords": "license delete,remove license,license resource,delete license resource,account license"
+          }
         }
       }
     },
@@ -69,7 +99,11 @@
           "category": "License",
           "filename": "post-license-exchange.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Exchanges an unused Cloud Volumes ONTAP license for a data service license. Use this endpoint to transition your license allocation to support specific data service needs.",
+            "keywords": "cloud volume,ontap license,data service license,license exchange,account administrator"
+          }
         }
       }
     },
@@ -80,7 +114,11 @@
           "category": "Data Services",
           "filename": "get-license-data-service-eligibility-account-provider-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves data service eligibility details to determine whether an account is eligible to use a data service in an on-premises or cloud environment. Use this to identify licensing and feature requirements for specific configurations based on the provided account and service parameters.",
+            "keywords": "data service eligibility,license details,on-premises ontap,cloud volumes ontap,storagegrid backup"
+          }
         }
       }
     },
@@ -91,7 +129,11 @@
           "category": "Subscription",
           "filename": "post-license-account-subscriptions-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Registers a subscription with the NetApp Console, associating it with an account using the identity and access management service. Use this to manage subscriptions across multiple accounts efficiently.",
+            "keywords": "subscription registration,identity management,expiration date update,netapp console,account association"
+          }
         }
       }
     },
@@ -102,7 +144,11 @@
           "category": "Subscription",
           "filename": "get-license-account-subscriptions.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves all subscriptions for an account, providing subscription details based on the account and optional criteria such as subscription ID or type. Use this to review or manage subscriptions associated with a specific account.",
+            "keywords": "subscription information,subscription details,account subscriptions,subscription type,netapp license,service scope"
+          }
         }
       }
     },
@@ -113,7 +159,11 @@
           "category": "Subscription",
           "filename": "patch-license-subscriptions-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates a subscription expiration date using the specified subscription ID. You can use this endpoint to modify the subscription expiry date or update the subscription name for supported services.",
+            "keywords": "subscription expiration,update subscription,subscription name,modify subscription,expiration date,service subscription"
+          }
         }
       }
     },
@@ -124,7 +174,11 @@
           "category": "Subscription",
           "filename": "delete-license-account-subscription-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deletes a subscription identified by the subscription ID. Use this to remove a subscription from an account or disassociate it when multiple accounts are linked to the subscription.",
+            "keywords": "delete subscription,cloud volumes,account subscription,disassociate subscription,subscription removal,netapp console"
+          }
         }
       }
     },
@@ -135,7 +189,11 @@
           "category": "External Services",
           "filename": "get-license-onprem-account-clusters.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves on-premises ONTAP cluster data, including configuration details such as the cluster management IP address, capacity, contract date, and feature licenses. Use this endpoint to access telemetry and configuration data from clusters configured for AutoSupport.",
+            "keywords": "ontap cluster,on-premises ontap,cluster configuration,cluster management,feature licenses"
+          }
         }
       }
     },
@@ -146,7 +204,11 @@
           "category": "Subscription",
           "filename": "get-license-subscriptions-entitlements.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves subscription entitlement information for a specified service name. Use this to access details about authorized service calls within predefined scopes.",
+            "keywords": "subscription entitlements,service subscriptions,entitlement details,service entitlements,subscription information"
+          }
         }
       }
     },
@@ -157,7 +219,11 @@
           "category": "Subscription",
           "filename": "get-license-subscriptions-account-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves subscription information for a specified account. Use this to view entitlements or filter subscriptions by service name, depending on the parameters provided.",
+            "keywords": "subscription information,account subscriptions,subscription entitlements,service subscriptions,cloud provider subscriptions"
+          }
         }
       },
       "delete": {
@@ -166,7 +232,11 @@
           "category": "Subscription",
           "filename": "delete-license-subscriptions-account-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deletes a subscription associated with the specified account ID. Use this to remove or disassociate subscriptions that meet the required conditions.",
+            "keywords": "subscription delete,remove subscription,disassociate subscription,cloud volumes ontap,account subscription,subscription management"
+          }
         }
       },
       "post": {
@@ -175,7 +245,11 @@
           "category": "Subscription",
           "filename": "post-license-subscriptions-account-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Associates a subscription with an identity and access management service account. Use this to manage access permissions for multiple accounts linked to a subscription.",
+            "keywords": "subscription management,identity service,access account,associate subscription,multiple accounts"
+          }
         }
       }
     },
@@ -186,7 +260,11 @@
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves subscription information for a specified subscription ID. Use this to access details about an individual subscription in scenarios where the newer endpoint is not yet adopted.",
+            "keywords": "subscription information,deprecated endpoint,license subscriptions,subscription id,netapp console"
+          }
         }
       },
       "patch": {
@@ -195,7 +273,11 @@
           "category": "Subscription",
           "filename": "patch-license-subscriptions-subscription-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates a subscription expiration date or subscription name for services that support modification, using a specified subscription ID. Use this endpoint to manage subscription details as needed.",
+            "keywords": "subscription expiration,subscription update,modify subscription,update expiration date,subscription name update,service subscription"
+          }
         }
       }
     },
@@ -206,7 +288,11 @@
           "category": "Subscription",
           "filename": "delete-license-subscriptions-account-subscription-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deletes a subscription containing the specified subscription ID from an account. Use this endpoint to remove subscriptions that are not associated with a Cloud Volumes ONTAP instance or to disassociate an account from a subscription.",
+            "keywords": "delete subscription,disassociate subscription,cloud volumes ontap,account subscription,subscription management"
+          }
         }
       }
     },
@@ -217,7 +303,11 @@
           "category": "Subscription",
           "filename": "post-license-subscriptions-subscription-account-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Associates a subscription with an identity and access management service account. Use this to link subscriptions to one or more accounts for access management.",
+            "keywords": "subscription association,identity management,access account,deprecated endpoint,service account"
+          }
         }
       }
     },
@@ -228,7 +318,11 @@
           "category": "Subscription",
           "filename": "get-license-subscriptions-subscription.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves subscription information for a specified subscription ID. Use this to view details about an active subscription.",
+            "keywords": "subscription information,subscription id,license subscriptions,service scope,subscription details"
+          }
         }
       },
       "patch": {
@@ -237,7 +331,11 @@
           "category": "Subscription",
           "filename": "patch-license-subscriptions-subscription.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates a subscription expiration date or subscription name for services that support these modifications. Use this to manage subscription details based on your service requirements.",
+            "keywords": "subscription update,subscription expiration,modify subscription,expiration date update,subscription name change"
+          }
         }
       }
     },
@@ -248,7 +346,11 @@
           "category": "License",
           "filename": "post-license-extra-capacity-licenses-cvoid-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Associates extra-capacity per-node licenses with a Cloud Volumes ONTAP system. Use this endpoint to allocate licensing resources for single-node or high-availability Cloud Volumes ONTAP configurations.",
+            "keywords": "cloud volumes,extra capacity,netapp license,high availability,serial numbers"
+          }
         }
       }
     },
@@ -281,7 +383,11 @@
           "category": "License",
           "filename": "patch-license-account-licenses.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates all licenses under an organization ID. Use this to modify license details for the organization as needed.",
+            "keywords": "license update,organization licenses,account licenses,license management,metering status"
+          }
         }
       }
     },
@@ -303,7 +409,11 @@
           "category": "Subscription",
           "filename": "get-license-account-subscriptions-preferred.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves the preferred subscription ID for a specified account. Use this to identify the subscription designated as preferred for the account.",
+            "keywords": "preferred subscription,subscription id,cloud provider,account id,service calls"
+          }
         }
       },
       "put": {
@@ -312,7 +422,11 @@
           "category": "Subscription",
           "filename": "put-license-account-subscriptions-preferred.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates the preferred subscription ID for an account, specifying which subscription is prioritized for the associated account. Use this to manage subscription preferences for billing or service-related operations.",
+            "keywords": "preferred subscription,update subscription,account subscription,subscription management,preferred account"
+          }
         }
       }
     },
@@ -323,7 +437,11 @@
           "category": "Subscription",
           "filename": "get-license-subscriptions-configuration.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves subscription configuration information for a specified subscription ID. Use this to view details about the subscription's current settings.",
+            "keywords": "subscription configuration,subscription details,license subscription,account subscription,service scope"
+          }
         }
       },
       "patch": {
@@ -332,7 +450,11 @@
           "category": "Subscription",
           "filename": "patch-license-subscriptions-configuration.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Sets the subscription configuration. Use this to associate subscriptions with cloud accounts.",
+            "keywords": "subscription configuration,cloud accounts,subscription management,cloud account association,configure subscription"
+          }
         }
       }
     },
@@ -343,7 +465,11 @@
           "category": "Subscription",
           "filename": "get-license-subscriptions-cloud-account-association.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves the associated subscription ID for each cloud account, providing the subscription details linked to the specified accounts.",
+            "keywords": "cloud account,subscription id,cloud account association,subscription mapping,cloud account id"
+          }
         }
       }
     }
@@ -352,22 +478,38 @@
     {
       "id": "license",
       "title": "License endpoints in the License and subscriptions REST API for the NetApp Console",
-      "permalink": "license_overview.html"
+      "permalink": "license_overview.html",
+      "ai-gen": {
+        "lead": "Manage licenses by tracking expiration dates, capacity usage, and key details such as serial numbers, resource identifiers, and license types. Use these endpoints to ensure compliance and monitor resource allocation effectively.",
+        "keywords": "license management,license expiration,capacity usage,license type,permitted capacity,license monitoring"
+      }
     },
     {
       "id": "subscription",
       "title": "Subscription endpoints in the License and subscriptions REST API for the NetApp Console",
-      "permalink": "subscription_overview.html"
+      "permalink": "subscription_overview.html",
+      "ai-gen": {
+        "lead": "Use subscription endpoints to manage subscriptions to NetApp Console services. These endpoints handle CRUD operations for subscription records, linking them to identity and access management resources.",
+        "keywords": "subscriptions management,license subscriptions,netapp console,keystone subscriptions,subscription details"
+      }
     },
     {
       "id": "external services",
       "title": "External services endpoints in the License and subscriptions REST API for the NetApp Console",
-      "permalink": "external_services_overview.html"
+      "permalink": "external_services_overview.html",
+      "ai-gen": {
+        "lead": "Retrieve data from external services to display on the NetApp Console. Use these endpoints to read on-premises ONTAP cluster information as needed.",
+        "keywords": "external services,netapp console,on-prem ontap,ontap cluster,external data"
+      }
     },
     {
       "id": "data services",
       "title": "Data services endpoints in the License and subscriptions REST API for the NetApp Console",
-      "permalink": "data_services_overview.html"
+      "permalink": "data_services_overview.html",
+      "ai-gen": {
+        "lead": "Retrieve data service information managed in the NetApp Console using these endpoints. Use them to read eligibility details of an account for a data service.",
+        "keywords": "data services,license eligibility,netapp console,subscription details,data service management"
+      }
     }
   ]
 }

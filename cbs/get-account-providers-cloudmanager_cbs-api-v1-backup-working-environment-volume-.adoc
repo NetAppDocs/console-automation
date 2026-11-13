@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume-.html'
+keywords: 'netapp backup,volume details,cloud manager cbs,ransomware scan,object lock'
 summary: 'Retrieve volume information'
 ---
 
 = Retrieve volume information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves information for a specified volume backed up using the NetApp Backup and Recovery service. Use this to review detailed backup and ransomware-related attributes for the volume, such as capacity, object lock status, and ransomware detected snapshots.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves information for a specified volume backed up by using the NetApp Backup and Recovery service. It retrieves the details of the volume from the NetApp Console SaaS application. It retrieves the archive after days, backup status, relationship policy name, and capacity details. It also retrieves details of the archive after days, object lock, ransomware scan status, last ransomware scan, and ransomware detected snapshots with last ransomware scan information.
-
-**Token usage:**NetApp Console user token.
-
 
 == Parameters
 

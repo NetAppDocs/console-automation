@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/get-ipa-account-nss-key-resource-.html'
+keywords: 'netapp support,account credentials,resource validation,support site credentials,key validation'
 summary: 'Retrieve NetApp Support Site credentials'
 ---
 
 = Retrieve NetApp Support Site credentials
 :imagesdir: ../media/
 
+[.lead]
+Retrieves NetApp Support Site credentials for a specified resource ID, validating them if the validateKey field is true. Use this to confirm access credentials for integration or troubleshooting purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-key/resource/{resourceId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves NetApp Support Site credentials for a specified resource ID and validates them if the validateKey field is true.
-            +
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

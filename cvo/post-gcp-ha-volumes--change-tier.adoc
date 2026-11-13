@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-volumes--change-tier.html'
+keywords: 'volume tier,update tier,volume management,change tier,storage tier,cloud volumes'
 summary: 'Update the underlying volume tier'
 ---
 
 = Update the underlying volume tier
 :imagesdir: ../media/
 
+[.lead]
+Updates the underlying volume tier. Use this to change the storage tier associated with a volume in your Cloud Volumes ONTAP environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/change-tier`#
-
-
-
-Updates the underlying volume tier.
-
 
 == Parameters
 

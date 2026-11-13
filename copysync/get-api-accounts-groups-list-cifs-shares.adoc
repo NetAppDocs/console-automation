@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-cifs-shares.html'
+keywords: 'cifs shares,data broker,cifs server,cifs hostname,netapp tenancy,cifs version'
 summary: 'Retrieve the CIFS shares'
 ---
 
 = Retrieve the CIFS shares
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the CIFS shares accessible from a NetApp data broker. Use this to view the shares available for operations such as data migration or synchronization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-cifs-shares`#
-
-
-
-Retrieves the CIFS shares accessible from a NetApp data broker.
-
 
 == Parameters
 

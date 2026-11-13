@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/delete-tenancy-account-workspace-id.html'
+keywords: 'workspace delete,delete workspace,account workspace,workspace removal,workspace management,workspace id'
 summary: 'Delete a workspace'
 ---
 
 = Delete a workspace
 :imagesdir: ../media/
 
+[.lead]
+Deletes a specified workspace. Use this endpoint to remove workspaces that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Deletes a specified workspace.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-audit-local-audit--records.html'
+keywords: 'audit record,local ui,audit retrieval,request id lookup,service audit'
 summary: 'Retrieve an audit record'
 ---
 
 = Retrieve an audit record
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an audit record with the specified request ID for the local UI. Use this to examine detailed audit information for specific user actions or events.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}/{service}/{requestId}/records`#
-
-
-
-Retrieves an audit record with the specified request ID for the local UI.
-
 
 == Parameters
 

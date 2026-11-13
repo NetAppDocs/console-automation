@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-snapshot-policy.html'
+keywords: 'snapshot policy,create snapshot,snapshot management,working environment,gcp snapshot'
 summary: 'Create a snapshot policy'
 ---
 
 = Create a snapshot policy
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot policy, defining the rules and schedule for capturing snapshots of data. Use this to manage and automate data protection for your workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/snapshot-policy`#
-
-
-
-Creates a snapshot policy.
-
 
 == Parameters
 

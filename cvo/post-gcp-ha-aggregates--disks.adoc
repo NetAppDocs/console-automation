@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-aggregates--disks.html'
+keywords: 'disks addition,aggregate disks,gcp ha,working environment,aggregate expansion'
 summary: 'Add disks to an aggregate'
 ---
 
 = Add disks to an aggregate
 :imagesdir: ../media/
 
+[.lead]
+Adds disks to an aggregate, increasing the storage capacity of the existing aggregate. Use this to expand the aggregate to accommodate additional data.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}/disks`#
 
-
+== Usage notes
 
 Adds disks to an existing aggregate.
 

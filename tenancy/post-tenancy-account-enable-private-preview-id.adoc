@@ -3,21 +3,28 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-enable-private-preview-id.html'
+keywords: 'private preview,saas interface,enable preview,account settings,preview mode'
 summary: 'Enable private preview for SaaS'
 ---
 
 = Enable private preview for SaaS
 :imagesdir: ../media/
 
+[.lead]
+Modifies the private preview setting for a specified account, enabling or disabling access to the SaaS interface private preview. Use this to control feature availability during the preview phase.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/enable-private-preview/{privatePreviewEnabled}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Sets the privatePreviewEnabled property of the specified account.
             The privatePreviewEnabled property determines whether private preview of the SaaS interface is enabled.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

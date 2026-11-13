@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-working-environments-cost-and-usage.html'
+keywords: 'system cost,usage data,working environment,azure ha,cost usage'
 summary: 'Retrieve the system cost and usage'
 ---
 
 = Retrieve the system cost and usage
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the system cost and usage. Use this to monitor resource consumption and associated costs for your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/cost-and-usage`#
-
-
-
-Retrieves the system cost and usage.
-
 
 == Parameters
 

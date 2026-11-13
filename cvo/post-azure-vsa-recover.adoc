@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-recover.html'
+keywords: 'cloud volumes,ontap system,recover ontap,azure recover,netapp console,save system'
 summary: 'Save a previously discovered Cloud Volumes ONTAP system'
 ---
 
 = Save a previously discovered Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database. Use this to retain system information for future access and management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/recover`#
-
-
-
-Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database.
-
 
 == Request Body
 

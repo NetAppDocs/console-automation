@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-auth-logout.html'
+keywords: 'sign out,log out,netapp console,session end,user logout'
 summary: 'Sign out of the NetApp Console'
 ---
 
 = Sign out of the NetApp Console
 :imagesdir: ../media/
 
+[.lead]
+Deletes the active session in the NetApp Console, ending access for the signed-in user.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/auth/logout`#
 
-
+== Usage notes
 
 Signs out of the NetApp Console.
 

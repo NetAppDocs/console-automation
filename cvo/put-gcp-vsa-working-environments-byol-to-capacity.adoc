@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-vsa-working-environments-byol-to-capacity.html'
+keywords: 'byol license,capacity license,cloud volumes ontap,license update,working environment'
 summary: 'Update a BYOL licence to a capacity-based license'
 ---
 
 = Update a BYOL licence to a capacity-based license
 :imagesdir: ../media/
 
+[.lead]
+Updates a bring-your-own-license (BYOL) license to a capacity-based license for an existing Cloud Volumes ONTAP system. Use this to transition your licensing model for improved scalability or resource management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/byol-to-capacity`#
-
-
-
-Updates a bring-your-own-license (BYOL) license to a capacity-based license for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

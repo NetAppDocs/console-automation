@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-catalog-snapshots.html'
+keywords: 'snapshots query,local snapshots,cloud snapshots,volume snapshots,catalog index'
 summary: 'Retrieve snapshots'
 ---
 
 = Retrieve snapshots
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of local and cloud snapshots related to a particular volume using the catalog index query. Use this to identify snapshots available for backup or recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/snapshots`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves a list of local and cloud snapshots related to a particular volume by using the catalog index query.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

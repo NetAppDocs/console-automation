@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-partnerships-useradmins.html'
+keywords: 'partnership users,useradmin role,add useradmin,partnership management,useradmin assignment'
 summary: 'Add users to the UserAdmin role in a partnership'
 ---
 
 = Add users to the UserAdmin role in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Adds users with the UserAdmin role to a specified partnership, enabling administrative management of the partnership. Use this to assign administrative privileges to users within the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/partnerships/{partnership_id}/useradmins`#
-
-
-
-Adds users with the UserAdmin role to the specified partnership.
-
 
 == Parameters
 

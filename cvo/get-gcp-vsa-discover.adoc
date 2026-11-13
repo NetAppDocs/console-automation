@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-discover.html'
+keywords: 'google cloud,discovered systems,cloud zone,system discovery,netapp ontap'
 summary: 'Retrieve a list of systems for a Google Cloud zone'
 ---
 
 = Retrieve a list of systems for a Google Cloud zone
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of systems for a Google Cloud zone. Use this to view the discovered systems visible to you in the specified zone.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/discover`#
 
-
+== Usage notes
 
 Retrieves a list of discovered systems visible to the current user in the specified Google Cloud zone.
 

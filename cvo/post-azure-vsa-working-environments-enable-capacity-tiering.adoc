@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-enable-capacity-tiering.html'
+keywords: 'capacity tiering,enable tiering,working environment,azure tiering,storage optimization'
 summary: 'Enable capacity tiering'
 ---
 
 = Enable capacity tiering
 :imagesdir: ../media/
 
+[.lead]
+Enables capacity tiering to optimize storage usage by automatically moving inactive data to a lower-cost storage tier. Use this to improve cost efficiency while maintaining access to data when needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/enable-capacity-tiering`#
-
-
-
-Enables capacity tiering.
-
 
 == Parameters
 

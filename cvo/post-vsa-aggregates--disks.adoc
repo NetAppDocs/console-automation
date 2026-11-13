@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-aggregates--disks.html'
+keywords: 'aggregate disks,add disks,working environment,aggregate expansion,disk addition'
 summary: 'Add disks to an existing aggregate'
 ---
 
 = Add disks to an existing aggregate
 :imagesdir: ../media/
 
+[.lead]
+Adds disks to an existing aggregate to increase its storage capacity or improve performance. Use this endpoint to expand aggregates as your storage needs grow.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/aggregates/{workingEnvironmentId}/{aggregateName}/disks`#
-
-
-
-Adds disks to an existing aggregate.
-
 
 == Parameters
 

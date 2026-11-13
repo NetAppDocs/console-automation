@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-accounts-azure-validate-creds.html'
+keywords: 'azure account,validate creds,account validation,azure validation,validate account'
 summary: 'Validate an Azure account request'
 ---
 
 = Validate an Azure account request
 :imagesdir: ../media/
 
+[.lead]
+Validates an Azure account request to ensure the account credentials and configuration are correct. Use this to confirm the account is ready for use in Cloud Volumes ONTAP workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/azure/validate-creds`#
-
-
-
-Validates an Azure account request.
-
 
 
 CAUTION: This operation is deprecated.

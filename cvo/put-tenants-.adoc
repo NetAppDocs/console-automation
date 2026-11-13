@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-tenants-.html'
+keywords: 'tenant update,update tenant,existing tenant,tenant management,tenant operations'
 summary: 'Update an existing tenant'
 ---
 
 = Update an existing tenant
 :imagesdir: ../media/
 
+[.lead]
+Updates an existing tenant. Use this to modify tenant details as needed for your configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/tenants/{tenantId}`#
-
-
-
-Updates an existing tenant.
-
 
 == Parameters
 

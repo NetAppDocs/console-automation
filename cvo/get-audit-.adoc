@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-audit-.html'
+keywords: 'audit group,audit entry,request id,audit records,audit retrieval'
 summary: 'Retrieve an audit group entry'
 ---
 
 = Retrieve an audit group entry
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an audit group entry for the specified request ID. Use this to view the details of the audit group associated with your request.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{requestId}`#
-
-
-
-Retrieves the audit group entry for the specified request ID.
-
 
 == Parameters
 

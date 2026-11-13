@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-change-tier-level.html'
+keywords: 'tier level,working environments,change tier,azure vsa,update tier'
 summary: 'Change the tier level'
 ---
 
 = Change the tier level
 :imagesdir: ../media/
 
+[.lead]
+Updates the tier level, adjusting the storage tier configuration for a resource. Use this to optimize data placement across performance and capacity tiers.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/change-tier-level`#
-
-
-
-Updates the tier level.
-
 
 == Parameters
 

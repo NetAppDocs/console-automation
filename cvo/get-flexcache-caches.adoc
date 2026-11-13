@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-flexcache-caches.html'
+keywords: 'flexcache volumes,flexcache list,volume cache,flexcache retrieval,flexcache management'
 summary: 'Retrieve all FlexCache volumes lists'
 ---
 
 = Retrieve all FlexCache volumes lists
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all FlexCache volume lists, providing information about existing FlexCache volumes within the system. Use this to review the available FlexCache configurations for storage management or troubleshooting.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/flexcache/caches`#
-
-
-
-Retrieves all FlexCache volume lists.
-
 
 == Parameters
 

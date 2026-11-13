@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-metadata-validate-floating-ips.html'
+keywords: 'ha floating,validate ips,floating addresses,aws ha,high availability'
 summary: 'Validate HA floating IP addresses'
 ---
 
 = Validate HA floating IP addresses
 :imagesdir: ../media/
 
+[.lead]
+Validates HA floating IP addresses to ensure they meet the requirements for high availability configurations. Use this to confirm that the IP addresses are suitable for deployment in HA environments.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/validate-floating-ips`#
-
-
-
-Validates HA floating IP addresses.
-
 
 == Request Body
 

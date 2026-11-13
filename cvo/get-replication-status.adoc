@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-replication-status.html'
+keywords: 'snapmirror status,replication status,snapmirror relationships,replication monitoring,data replication'
 summary: 'Retrieve the status of all SnapMirror relationships'
 ---
 
 = Retrieve the status of all SnapMirror relationships
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the status of all SnapMirror relationships. Use this to monitor the replication state and health of your data protection configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/status`#
-
-
-
-Retrieves the status of all SnapMirror relationships.
-
 
 == Parameters
 

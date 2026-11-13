@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-buckets.html'
+keywords: 's3 buckets,metadata buckets,storage buckets,object storage,bucket list'
 summary: 'Retrieve all S3 buckets'
 ---
 
 = Retrieve all S3 buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all S3 buckets. Use this to view the available buckets in your Cloud Volumes ONTAP environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/buckets`#
-
-
-
-Retrieves all S3 buckets.
-
 
 == Parameters
 

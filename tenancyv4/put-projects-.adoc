@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/put-projects-.html'
+keywords: 'project management,update project,project replacement,modify project,project settings'
 summary: 'Modify a project'
 ---
 
 = Modify a project
 :imagesdir: ../media/
 
+[.lead]
+Modifies a project by replacing the specified project with new information. Use this to update project details to reflect changes in your tenancy configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/projects/{project_id}`#
 
-
+== Usage notes
 
 Replaces the specified project with new information.
 

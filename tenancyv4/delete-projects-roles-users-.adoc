@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-projects-roles-users-.html'
+keywords: 'remove user,project roles,delete role,user management,project access'
 summary: 'Remove a user from a project'
 ---
 
 = Remove a user from a project
 :imagesdir: ../media/
 
+[.lead]
+Deletes a user from the specified project. Use this to manage project membership by removing users who no longer require access.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/projects/{project_id}/roles/{role_id}/users/{user_id}`#
 
-
+== Usage notes
 
 Removes a user from the specified project.
 

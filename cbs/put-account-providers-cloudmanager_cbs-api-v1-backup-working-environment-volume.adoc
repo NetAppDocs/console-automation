@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume.html'
+keywords: 'volume modification,backup policy,volume retention,archival settings,cloud backup'
 summary: 'Modify multiple backed up volumes'
 ---
 
 = Modify multiple backed up volumes
 :imagesdir: ../media/
 
+[.lead]
+Modifies multiple backed-up volumes in a specific system, including parameters such as volume state, backup policy, backup policy rule and retention, and archive-after-days. Use this to adjust backup settings and manage retention policies for your volumes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume`#
 
+== Token usage
 
+NetApp Console user token.
 
-Modifies multiple backed-up volumes in a specific system. This API endpoint modifies the volume state, backup-policy, backup policy rule and retention, and archive-after-days parameters.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+This API endpoint modifies the volume state, backup-policy, backup policy rule and retention, and archive-after-days parameters.
 
 == Parameters
 

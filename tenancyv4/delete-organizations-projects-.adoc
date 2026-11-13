@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-organizations-projects-.html'
+keywords: 'project removal,organization projects,delete project,remove project,organization management,project management'
 summary: 'Remove a project from an organization'
 ---
 
 = Remove a project from an organization
 :imagesdir: ../media/
 
+[.lead]
+Deletes a project from an organization, removing the association between the project and the specified organization. Use this to manage organizational resources and ensure proper project alignment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/projects/{project_id}`#
 
-
+== Usage notes
 
 Removes a project from the specified organization.
 

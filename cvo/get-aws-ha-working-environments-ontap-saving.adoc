@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments-ontap-saving.html'
+keywords: 'ontap savings,working environments,aws ha,system savings,data efficiency'
 summary: 'Retrieve systems ONTAP savings'
 ---
 
 = Retrieve systems ONTAP savings
 :imagesdir: ../media/
 
+[.lead]
+Retrieves system ONTAP savings, providing information about resource efficiency and cost optimization. Use this to evaluate storage savings and make informed decisions about resource management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/ontap-saving`#
-
-
-
-Retrieves system ONTAP savings.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-encryption-certificate.html'
+keywords: 'certificate validation,install certificate,certificate overwrite,certificate signing request,encryption certificate'
 summary: 'Validate and install a certificate'
 ---
 
 = Validate and install a certificate
 :imagesdir: ../media/
 
+[.lead]
+Validates and installs a certificate. Use this to apply a certificate that matches a previously generated certificate signing request (CSR).
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/encryption/certificate`#
 
-
+== Usage notes
 
 Validates and installs the provided certificate. Successive API calls overwrite any previously installed certificates. The certificate must match a previously generated certificate signing request (CSR).
 

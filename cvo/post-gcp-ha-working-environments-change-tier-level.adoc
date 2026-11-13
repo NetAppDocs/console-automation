@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments-change-tier-level.html'
+keywords: 'tier level,gcp ha,tier update,working environment,change tier'
 summary: 'Update the tier level'
 ---
 
 = Update the tier level
 :imagesdir: ../media/
 
+[.lead]
+Updates the tier level for storage resources. Use this to adjust the performance or cost characteristics of the storage tier.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/change-tier-level`#
-
-
-
-Updates the tier level.
-
 
 == Parameters
 

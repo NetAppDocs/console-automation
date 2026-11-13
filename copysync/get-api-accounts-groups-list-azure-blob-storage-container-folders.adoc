@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-azure-blob-storage-container-folders.html'
+keywords: 'azure blob storage,blob container folders,azure storage account,container folder listing,netapp tenancy'
 summary: 'Retrieve the Azure blob storage container folders'
 ---
 
 = Retrieve the Azure blob storage container folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Azure blob storage container folders, providing access to the folder structure within a specified container. Use this to explore and manage the contents of your Azure blob storage.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-azure-blob-storage-container-folders`#
-
-
-
-Retrieves the Azure blob storage container folders.
-
 
 == Parameters
 

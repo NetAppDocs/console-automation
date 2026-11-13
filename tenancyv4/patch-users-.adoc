@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/patch-users-.html'
+keywords: 'update user,edit user,modify user,partial user update,user id'
 summary: 'Update a user partially'
 ---
 
 = Update a user partially
 :imagesdir: ../media/
 
+[.lead]
+Updates the specified user with partial information, allowing modifications to selected attributes without requiring a complete update. Use this endpoint to make targeted updates to user details efficiently.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/users/{user_id}`#
-
-
-
-Updates the specified user with partial information.
-
 
 == Parameters
 

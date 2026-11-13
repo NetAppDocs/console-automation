@@ -3,24 +3,31 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/patch-license-subscriptions-.html'
+keywords: 'subscription expiration,update subscription,subscription name,modify subscription,expiration date,service subscription'
 summary: 'Update a subscription expiration date using the subscription ID'
 ---
 
 = Update a subscription expiration date using the subscription ID
 :imagesdir: ../media/
 
+[.lead]
+Updates a subscription expiration date using the specified subscription ID. You can use this endpoint to modify the subscription expiry date or update the subscription name for supported services.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/subscriptions/{subscriptionId}`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of the services.
 
 **Note:** +
 To update the expiration date, the expiration date and service name are mandatory, dwAudit is optional. +
 To update the subscription name, provide only the subscription name. Do not provide a value for dwAudit.
-
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

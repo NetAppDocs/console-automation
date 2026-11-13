@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-schedules.html'
+keywords: 'cloud volumes,ontap schedules,azure ha,schedule management,working environment'
 summary: 'Set schedules for Cloud Volumes ONTAP'
 ---
 
 = Set schedules for Cloud Volumes ONTAP
 :imagesdir: ../media/
 
+[.lead]
+Sets schedules for Cloud Volumes ONTAP, defining the timing for specific operations or tasks. Use this to automate and manage recurring activities efficiently.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/schedules`#
-
-
-
-Sets schedules for Cloud Volumes ONTAP.
-
 
 == Parameters
 

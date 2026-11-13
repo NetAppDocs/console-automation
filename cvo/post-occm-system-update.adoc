@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-system-update.html'
+keywords: 'netapp console,console update,system update,update version,ontap update'
 summary: 'Update the NetApp Console'
 ---
 
 = Update the NetApp Console
 :imagesdir: ../media/
 
+[.lead]
+Updates the NetApp Console to the specified version. Use this to ensure you are running the latest supported version for improved features and stability.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/update`#
-
-
-
-Updates the NetApp Console to the specified version.
-
 
 == Request Body
 

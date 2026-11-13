@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-usergroups-.html'
+keywords: 'delete usergroup,user group removal,group deletion,usergroup id,remove user group,user management'
 summary: 'Delete a user group'
 ---
 
 = Delete a user group
 :imagesdir: ../media/
 
+[.lead]
+Deletes the specified user group. Use this to remove user groups that are no longer needed in your tenancy configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/usergroups/{usergroup_id}`#
-
-
-
-Deletes the specified user group.
-
 
 == Parameters
 

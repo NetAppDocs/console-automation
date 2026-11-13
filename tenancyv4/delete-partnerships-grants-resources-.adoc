@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-partnerships-grants-resources-.html'
+keywords: 'partnership resource,grant resource removal,resource deletion,partnership grant,remove resource'
 summary: 'Remove a resource from a grant in a partnership'
 ---
 
 = Remove a resource from a grant in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Deletes a resource from a grant in a partnership, removing the specified resource from the grant's permissions. Use this to manage access control within the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/resources/{resource_id}`#
 
-
+== Usage notes
 
 Removes a resource from the specified grant of a partnership.
 

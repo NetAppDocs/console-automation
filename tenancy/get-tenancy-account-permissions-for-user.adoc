@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/get-tenancy-account-permissions-for-user.html'
+keywords: 'user roles,permissions retrieval,account permissions,user access,account roles'
 summary: 'Retrieve user role and permissions'
 ---
 
 = Retrieve user role and permissions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the user role and permissions for the specified account. Use this to view the account's access rights and capabilities.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/permissions-for-user`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Retrieves the user role and permissions of the specified account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

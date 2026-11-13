@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,serial number,register serial,working environment,ha environment,gcp storage'
 summary: 'Register extra capacity license serial numbers'
 ---
 
 = Register extra capacity license serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Registers extra capacity license serial numbers. Use this to add additional capacity to your Cloud Volumes ONTAP system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
 
-
+== Usage notes
 
 Registers an extra capacity serial number.
 

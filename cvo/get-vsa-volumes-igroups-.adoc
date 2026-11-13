@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-volumes-igroups-.html'
+keywords: 'volumes igroups,retrieve igroups,igroup list,working environment,svm igroups,igroup details'
 summary: 'Retrieve all igroups'
 ---
 
 = Retrieve all igroups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all igroups, providing information about the available initiator groups configured in the system. Use this to review or manage access control for connected hosts.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/volumes/igroups/{workingEnvironmentId}/{svmName}`#
-
-
-
-Retrieves all igroups.
-
 
 == Parameters
 

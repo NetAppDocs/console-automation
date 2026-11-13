@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-replication-onprem.html'
+keywords: 'replication creation,on-premises replication,new replication,on-prem replication,replication setup'
 summary: 'Create a new replication for an on-premises system'
 ---
 
 = Create a new replication for an on-premises system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new replication to an on-premises system. Use this to establish data transfer or synchronization between Cloud Volumes ONTAP and your on-premises environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/onprem`#
-
-
-
-Creates a new replication to an on-premises system.
-
 
 == Request Body
 

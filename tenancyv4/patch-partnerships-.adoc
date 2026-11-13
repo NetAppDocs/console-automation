@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/patch-partnerships-.html'
+keywords: 'partnership update,partnership modify,partial update,source organization,destination organization'
 summary: 'Update a partnership partially'
 ---
 
 = Update a partnership partially
 :imagesdir: ../media/
 
+[.lead]
+Updates the specified partnership with partial information. Use this to modify specific attributes of a partnership without overwriting the entire configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/partnerships/{partnership_id}`#
-
-
-
-Updates the specified partnership with partial information.
-
 
 == Parameters
 

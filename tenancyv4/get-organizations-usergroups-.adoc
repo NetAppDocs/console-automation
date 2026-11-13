@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-usergroups-.html'
+keywords: 'organization usergroup,user group details,organization user group,usergroup lookup,user group retrieval'
 summary: 'Retrieve a user group under an organization'
 ---
 
 = Retrieve a user group under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a user group under the specified organization, providing details about the group's configuration and membership. Use this to manage or review group settings within the organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/usergroups/{usergroup_id}`#
-
-
-
-Retrieves a user group under the specified organization.
-
 
 == Parameters
 

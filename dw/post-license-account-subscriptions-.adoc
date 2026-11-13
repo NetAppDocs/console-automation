@@ -3,15 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/post-license-account-subscriptions-.html'
+keywords: 'subscription registration,identity management,expiration date update,netapp console,account association'
 summary: 'Register a subscription'
 ---
 
 = Register a subscription
 :imagesdir: ../media/
 
+[.lead]
+Registers a subscription with the NetApp Console, associating it with an account using the identity and access management service. Use this to manage subscriptions across multiple accounts efficiently.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/account/{accountId}/subscriptions/{subscriptionId}`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Registers a subscription with the NetApp Console and associates it with the account by using the identity and access management service. +
 Each subscription can be associated with multiple accounts.
@@ -19,9 +29,6 @@ Each subscription can be associated with multiple accounts.
 **Note:**
 
 This endpoint updates the expiration date based on the date provided in the request.
-
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments-cost-and-usage.html'
+keywords: 'cost usage,system cost,working environment,azure cost,usage data'
 summary: 'Retrieve systems cost and usage'
 ---
 
 = Retrieve systems cost and usage
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the system cost and usage. Use this to monitor resource expenses and consumption for your systems.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/cost-and-usage`#
-
-
-
-Retrieves the system cost and usage.
-
 
 == Parameters
 

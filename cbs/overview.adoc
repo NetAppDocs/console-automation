@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/overview.html'
+keywords: 'backup and recovery,data backup,restore,archiving,cloud volumes ontap,ransomware scan'
 summary: 'NetApp Backup and Recovery REST API'
 ---
 
 = NetApp Backup and Recovery REST API
 :imagesdir: ../media/
 
-
+[.lead]
+Automate backup, restore, and long-term archiving of data from Cloud Volumes ONTAP and on-premises ONTAP clusters. The endpoints cover components such as backups, restores, catalogs, ransomware scans, and replication.
 
 Backup and Recovery through the NetApp Console provides backup and restore for protection and long-term archiving of data residing in Cloud Volumes ONTAP and on-premises ONTAP clusters (AFF/FAS/OTS). You can generate and store backups in an object store and restore data any time and to any location.
 

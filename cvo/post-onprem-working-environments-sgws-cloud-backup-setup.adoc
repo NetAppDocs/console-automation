@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-onprem-working-environments-sgws-cloud-backup-setup.html'
+keywords: 'storagegrid backup,cloud backup setup,storagegrid cloud,working environment backup,on-premises backup'
 summary: 'Set up StorageGRID backup to cloud'
 ---
 
 = Set up StorageGRID backup to cloud
 :imagesdir: ../media/
 
+[.lead]
+Sets up StorageGRID backup to cloud on an on-premises system. Use this to configure cloud backup for your local StorageGRID deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/sgws-cloud-backup-setup`#
-
-
-
-Sets up StorageGRID backup to cloud on an on-premises system.
-
 
 == Parameters
 

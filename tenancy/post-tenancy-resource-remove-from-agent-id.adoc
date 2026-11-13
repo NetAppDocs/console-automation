@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-resource-remove-from-agent-id.html'
+keywords: 'resource removal,remove resource,tenancy resource,agent management,remove from agent'
 summary: 'Remove a resource from an agent'
 ---
 
 = Remove a resource from an agent
 :imagesdir: ../media/
 
+[.lead]
+Deletes a resource from a specified agent. Use this to manage resource associations within the agent as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}/remove-from-agent/{agentId}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Removes a resource from a specified agent.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

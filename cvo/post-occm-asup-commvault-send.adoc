@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-asup-commvault-send.html'
+keywords: 'support data,send support data,netapp support,console agent,autosupport,agent diagnostics'
 summary: 'Send NetApp Console support data on behalf of the agent'
 ---
 
 = Send NetApp Console support data on behalf of the agent
 :imagesdir: ../media/
 
+[.lead]
+Send the NetApp Console support data to NetApp Support on behalf of the agent.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/asup/commvault/send`#
 
-
+== Usage notes
 
 Sends NetApp Console support data to NetApp Support on behalf of the agent.
 

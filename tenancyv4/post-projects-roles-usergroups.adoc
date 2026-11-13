@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-projects-roles-usergroups.html'
+keywords: 'create user group,user group creation,new user group,project roles,user group roles'
 summary: 'Create a new user group in a project'
 ---
 
 = Create a new user group in a project
 :imagesdir: ../media/
 
+[.lead]
+Creates a new user group within a project. Use this to define a group for managing access permissions and roles in the project.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/projects/{project_id}/roles/{role_id}/usergroups`#
-
-
-
-Creates a new user group.
-
 
 == Request Body
 

@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-volumes-quote.html'
+keywords: 'volume quote,new volume,resource quote,volume creation,storage quote'
 summary: 'Retrieve quotes for a new volume'
 ---
 
 = Retrieve quotes for a new volume
 :imagesdir: ../media/
 
+[.lead]
+Retrieves quotes for a new volume, providing the resource requirements needed for the requested volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/volumes/quote`#
 
+== Usage notes
 
-
-Retrieves quotes for a new volume. Returns the resource quote required for the requested volume.
+Returns the resource quote required for the requested volume.
 
 
 == Request Body

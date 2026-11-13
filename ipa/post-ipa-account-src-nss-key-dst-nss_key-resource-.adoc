@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-account-src-nss-key-dst-nss_key-resource-.html'
+keywords: 'netapp support site,source data transfer,destination key transfer,resource transfer,account data'
 summary: 'Update a resource NetApp Support Site key'
 ---
 
 = Update a resource NetApp Support Site key
 :imagesdir: ../media/
 
+[.lead]
+Updates the NetApp Support Site key of a resource by transferring data from the source key to the destination key. Use this to manage or reassign Support Site data for the associated resource.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/src-nss-key/{srcNssKeyId}/dst-nss_key/{dstNssKeyId}/resource/{resourceId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Transfers the source NetApp Support Site data to the destination NetApp Support Site key of the associated resource.
-            +
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

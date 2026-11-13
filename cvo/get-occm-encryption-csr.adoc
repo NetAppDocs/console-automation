@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-encryption-csr.html'
+keywords: 'certificate signing,csr retrieval,latest csr,encryption csr,csr generation'
 summary: 'Retrieve a generated certificate signing request'
 ---
 
 = Retrieve a generated certificate signing request
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the most recently generated certificate signing request (CSR), if one has been created. Use this to obtain the CSR for certificate management workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/encryption/csr`#
 
-
+== Usage notes
 
 Retrieves the most recently generated certificate signing request (CSR), if it exists.
 

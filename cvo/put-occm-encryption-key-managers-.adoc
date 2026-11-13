@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-occm-encryption-key-managers-.html'
+keywords: 'key managers,update key manager,encryption key manager,key manager update,encryption update,key manager changes'
 summary: 'Update an existing key manager'
 ---
 
 = Update an existing key manager
 :imagesdir: ../media/
 
+[.lead]
+Updates an existing key manager. Use this to modify the configuration of a key manager for managing encryption keys in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/occm/encryption/key-managers/{keyManagerId}`#
-
-
-
-Updates an existing key manager.
-
 
 == Parameters
 

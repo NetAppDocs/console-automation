@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-partnerships-resourceadmins.html'
+keywords: 'partnership resourceadmin,add resourceadmin users,partnership role management,assign resourceadmin role,resourceadmin user addition'
 summary: 'Add users with the ResourceAdmin role to a partnership'
 ---
 
 = Add users with the ResourceAdmin role to a partnership
 :imagesdir: ../media/
 
+[.lead]
+Adds users to the ResourceAdmin role in a specified partnership. Use this to grant administrative permissions for managing resources within the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/partnerships/{partnership_id}/resourceadmins`#
-
-
-
-Adds users to the ResourceAdmin role in the specified partnership.
-
 
 == Parameters
 

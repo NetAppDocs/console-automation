@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-aws-ha-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,capacity license,license serial,serial update,working environment'
 summary: 'Update extra capacity license serial numbers'
 ---
 
 = Update extra capacity license serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Updates extra capacity license serial numbers to modify the license information for additional storage capacity. Use this when you need to adjust license details for your configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
 
-
+== Usage notes
 
 Updates an extra capacity license serial number.
 

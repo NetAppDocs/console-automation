@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-onprem-volumes--.html'
+keywords: 'volume delete,delete volume,existing volume,volume removal,svm volume,working environment'
 summary: 'Delete an existing volume'
 ---
 
 = Delete an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing volume. Use this to remove volumes that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Deletes an existing volume.
-
 
 == Parameters
 

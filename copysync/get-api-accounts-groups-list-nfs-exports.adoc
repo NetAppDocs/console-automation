@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-nfs-exports.html'
+keywords: 'nfs exports,data broker,nfs server,efs target,netapp tenancy'
 summary: 'Retrieve the NFS server exports'
 ---
 
 = Retrieve the NFS server exports
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the NFS server exports from a data broker, providing the export details needed for data transfer operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-nfs-exports`#
-
-
-
-Retrieves the NFS server exports from a data broker.
-
 
 == Parameters
 

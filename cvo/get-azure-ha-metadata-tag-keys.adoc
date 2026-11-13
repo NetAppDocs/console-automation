@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-tag-keys.html'
+keywords: 'tag names,metadata tags,azure ha,tag keys,cloud account'
 summary: 'Retrieve tag names'
 ---
 
 = Retrieve tag names
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all tag names. Use this to view the available tags for categorizing or identifying resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/tag-keys`#
 
-
+== Usage notes
 
 Retrieves all of the tag names.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-instance-profiles.html'
+keywords: 'aws instance profiles,ha metadata,instance profiles retrieval,cloud provider account,role arn'
 summary: 'Retrieve AWS instance profiles'
 ---
 
 = Retrieve AWS instance profiles
 :imagesdir: ../media/
 
+[.lead]
+Retrieves AWS instance profiles, providing the available profiles for configuring AWS resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/instance-profiles`#
-
-
-
-Retrieves AWS instance profiles.
-
 
 == Parameters
 

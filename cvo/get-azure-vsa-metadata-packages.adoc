@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-packages.html'
+keywords: 'packages configuration,retrieve packages,azure vsa,capacity package,deployment model'
 summary: 'Retrieve package configurations'
 ---
 
 = Retrieve package configurations
 :imagesdir: ../media/
 
+[.lead]
+Retrieves package configurations, providing the available settings for installed packages. Use this to review or verify package setups in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/packages`#
 
-
+== Usage notes
 
 Retrieves the packages configuration.
 

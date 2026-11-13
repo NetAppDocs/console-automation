@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-auth-current-user.html'
+keywords: 'current user,account details,user profile,user information,user account'
 summary: 'Retrieve user representation'
 ---
 
 = Retrieve user representation
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a representation of the current user. Use this to view details about your user account in the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/auth/current-user`#
-
-
-
-Retrieves a representation of the current user.
-
 
 == Error
 

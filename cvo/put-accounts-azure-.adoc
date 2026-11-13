@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-accounts-azure-.html'
+keywords: 'azure account,update account,cloud provider,azure integration,account update'
 summary: 'Update an Azure account'
 ---
 
 = Update an Azure account
 :imagesdir: ../media/
 
+[.lead]
+Updates an existing Azure account. Use this to modify account settings or update authentication details for managing resources in Azure.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/azure/{cloudProviderAccountId}`#
-
-
-
-Updates an existing Azure account.
-
 
 
 CAUTION: This operation is deprecated.

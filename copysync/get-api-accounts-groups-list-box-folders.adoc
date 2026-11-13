@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-box-folders.html'
+keywords: 'box folders,box data broker,netapp groups,box enterprise,box parent folder'
 summary: 'Retrieve the Box API server folders'
 ---
 
 = Retrieve the Box API server folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Box API server folders from a NetApp data broker group, providing access to the folder structure for data management operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-box-folders`#
-
-
-
-Retrieves the Box API server folders from a NetApp data broker group.
-
 
 == Parameters
 

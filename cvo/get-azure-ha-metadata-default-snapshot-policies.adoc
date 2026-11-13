@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-default-snapshot-policies.html'
+keywords: 'default snapshot policies,azure ha,snapshot policies cluster,cluster snapshot,ha metadata'
 summary: 'Retrieve the default snapshot policies'
 ---
 
 = Retrieve the default snapshot policies
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the default snapshot policies available on a cluster. Use this to review the predefined policies for managing snapshot operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/default-snapshot-policies`#
-
-
-
-Retrieves the default snapshot policies available on a cluster.
-
 
 == Error
 

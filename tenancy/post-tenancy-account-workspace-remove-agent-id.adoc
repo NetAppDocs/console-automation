@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-workspace-remove-agent-id.html'
+keywords: 'remove agent,workspace management,workspace agent,agent removal,workspace access'
 summary: 'Remove an agent'
 ---
 
 = Remove an agent
 :imagesdir: ../media/
 
+[.lead]
+Deletes an agent from a specified workspace. Use this to manage the agents associated with your workspaces.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}/remove-agent/{agentAuth0Id}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Removes an agent from a specified workspace.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

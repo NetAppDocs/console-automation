@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-aggregates--add-capacity.html'
+keywords: 'elastic volume,add capacity,volume aggregate,ha aggregates,working environment'
 summary: 'Add capacity to an elastic volume aggregate'
 ---
 
 = Add capacity to an elastic volume aggregate
 :imagesdir: ../media/
 
+[.lead]
+Adds capacity to an existing elastic volume aggregate. Use this to increase the storage capacity of the aggregate as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/aggregates/{workingEnvironmentId}/{aggregateName}/add-capacity`#
-
-
-
-Adds capacity to an existing elastic volume aggregate.
-
 
 == Parameters
 

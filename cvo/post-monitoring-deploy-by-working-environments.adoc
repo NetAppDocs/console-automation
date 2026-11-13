@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-monitoring-deploy-by-working-environments.html'
+keywords: 'monitoring instance,deploy monitoring,working environments,monitoring systems,deploy systems'
 summary: 'Deploy a monitoring instance by systems'
 ---
 
 = Deploy a monitoring instance by systems
 :imagesdir: ../media/
 
+[.lead]
+Deploys a monitoring instance by systems, enabling monitoring capabilities across specified systems. Use this to set up system monitoring tailored to your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/monitoring/deploy-by-working-environments`#
-
-
-
-Deploys a monitoring instance by systems.
-
 
 == Request Body
 

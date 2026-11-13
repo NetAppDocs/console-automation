@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-vsa-working-environments-offbox.html'
+keywords: 'offbox configuration,activate offbox,gcp working environments,working environment activation,offbox setup'
 summary: 'Activate an offbox configuration'
 ---
 
 = Activate an offbox configuration
 :imagesdir: ../media/
 
+[.lead]
+Activates an off-box configuration to enable its use for managing resources or workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/offbox`#
-
-
-
-Activates an off-box configuration.
-
 
 == Parameters
 

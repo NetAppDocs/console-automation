@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-organizations-organizations-.html'
+keywords: 'organization delete,remove organization,child organization,parent organization,delete child,organization hierarchy'
 summary: 'Remove a child organization from a parent organization'
 ---
 
 = Remove a child organization from a parent organization
 :imagesdir: ../media/
 
+[.lead]
+Deletes a child organization from a parent organization. Use this to disassociate the child organization when it is no longer required under the parent organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/organizations/{childorganization_id}`#
 
-
+== Usage notes
 
 Removes the specified child organization from a parent organization.
 

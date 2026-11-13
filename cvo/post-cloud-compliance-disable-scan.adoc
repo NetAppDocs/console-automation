@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-disable-scan.html'
+keywords: 'disable scan,cloud compliance,system id,working environment,scan disable'
 summary: 'Disable scanning using the system ID'
 ---
 
 = Disable scanning using the system ID
 :imagesdir: ../media/
 
+[.lead]
+Disables scanning for the specified system ID. Use this to stop scanning operations for the system when necessary.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{workingEnvironmentId}/disable-scan`#
 
-
+== Usage notes
 
 Disables scanning using the system ID.
 

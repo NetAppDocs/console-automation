@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-grants.html'
+keywords: 'partnership grants,partnership resources,provider organization,grant listing,partnership type'
 summary: 'List all grants for a partnership'
 ---
 
 = List all grants for a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of grants for a specified partnership. Use this to review the grants associated with the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants`#
 
-
+== Usage notes
 
 Lists all the grants for the specified partnership.
 

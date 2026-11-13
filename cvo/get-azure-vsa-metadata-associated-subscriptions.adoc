@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-associated-subscriptions.html'
+keywords: 'associated subscriptions,azure subscriptions,cloud provider account,subscription metadata,azure vsa'
 summary: 'Retrieve associated subscriptions'
 ---
 
 = Retrieve associated subscriptions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves associated subscriptions, providing information about the subscriptions linked to the resource. Use this to view subscription details for management or auditing purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/associated-subscriptions`#
-
-
-
-Retrieves associated subscriptions.
-
 
 == Parameters
 

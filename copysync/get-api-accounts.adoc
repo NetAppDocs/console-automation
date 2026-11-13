@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts.html'
+keywords: 'tenancy accounts,account retrieval,ontap accounts,account management,user accounts'
 summary: 'Retrieve the tenancy accounts'
 ---
 
 = Retrieve the tenancy accounts
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the tenancy accounts. Use this to view the accounts associated with a specific tenancy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts`#
-
-
-
-Retrieves the tenancy accounts.
-
 
 == Response
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-gcp-ha-working-environments-svm-.html'
+keywords: 'svm delete,working environment,ha delete,gcp svm,svm removal'
 summary: 'Delete an SVM'
 ---
 
 = Delete an SVM
 :imagesdir: ../media/
 
+[.lead]
+Deletes an SVM, removing the specified storage virtual machine and its associated resources. Use this when an SVM is no longer needed in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`#
-
-
-
-Deletes an SVM.
-
 
 == Parameters
 

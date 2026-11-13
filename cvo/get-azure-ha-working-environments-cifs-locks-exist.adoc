@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-working-environments-cifs-locks-exist.html'
+keywords: 'cifs locks,cifs sessions,non-persistent locks,azure ha,working environments'
 summary: 'Check for non-persistent locks'
 ---
 
 = Check for non-persistent locks
 :imagesdir: ../media/
 
+[.lead]
+Checks for non-persistent locks held on CIFS sessions, providing information about locks that may impact file access or operations. Use this to identify and manage potential conflicts in CIFS environments.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/cifs-locks-exist`#
-
-
-
-Checks for non-persistent locks held on CIFS sessions.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-ebs-volume-types.html'
+keywords: 'ebs volume,volume types,ebs storage,supported volumes,ebs metadata'
 summary: 'Retrieve supported EBS volume types'
 ---
 
 = Retrieve supported EBS volume types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves supported EBS volume types, providing the available options for configuring EBS volumes in Cloud Volumes ONTAP.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/ebs-volume-types`#
-
-
-
-Retrieves supported EBS volume types.
-
 
 == Error
 

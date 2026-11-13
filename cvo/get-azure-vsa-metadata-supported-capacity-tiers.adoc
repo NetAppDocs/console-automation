@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-supported-capacity-tiers.html'
+keywords: 'azure capacity tiers,disk types,supported tiers,ontap azure,supported disk types'
 summary: 'Retrieve supported capacity tiers for Azure disk types'
 ---
 
 = Retrieve supported capacity tiers for Azure disk types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported capacity tiers for Azure disk types, providing the available tier configurations applicable to Azure storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/supported-capacity-tiers`#
-
-
-
-Retrieves the supported capacity tiers for Azure disk types.
-
 
 == Parameters
 

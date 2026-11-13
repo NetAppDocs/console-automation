@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-supported-features.html'
+keywords: 'supported features,ha metadata,aws ha,ontap features,region features,license type'
 summary: 'Retrieve supported features'
 ---
 
 = Retrieve supported features
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported features, providing information about the capabilities available for use.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/supported-features`#
-
-
-
-Retrieves the supported features.
-
 
 == Parameters
 

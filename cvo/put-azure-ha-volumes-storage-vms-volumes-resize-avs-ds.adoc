@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-volumes-storage-vms-volumes-resize-avs-ds.html'
+keywords: 'volume resize,avs datastore,azure vmware,datastore resize,storage vm'
 summary: 'Resize an Azure volume and the respective AVS DataStore with Cloud Volumes ONTAP'
 ---
 
 = Resize an Azure volume and the respective AVS DataStore with Cloud Volumes ONTAP
 :imagesdir: ../media/
 
+[.lead]
+Resizes an Azure volume and its respective Azure VMware Solution (AVS) DataStore. Use this to adjust storage capacity to meet your workload requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/resize-avs-ds`#
 
-
+== Usage notes
 
 Resizes the volume and the respective Azure VMware Solution (AVS) DataStore.
 

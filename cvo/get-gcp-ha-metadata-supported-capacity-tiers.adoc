@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-supported-capacity-tiers.html'
+keywords: 'google cloud,ha metadata,capacity tiers,supported tiers,disk types'
 summary: 'Retrieve supported capacity tiers for Google Cloud disk types'
 ---
 
 = Retrieve supported capacity tiers for Google Cloud disk types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported capacity tiers for Google Cloud disk types. Use this to determine the available tier options for provisioning storage resources in Google Cloud.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/supported-capacity-tiers`#
-
-
-
-Retrieves the supported capacity tiers for Google Cloud disk types.
-
 
 == Parameters
 

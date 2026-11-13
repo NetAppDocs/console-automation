@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-volumes.html'
+keywords: 'volumes,azure volumes,working environment,volume retrieval,storage volumes'
 summary: 'Retrieve all volumes'
 ---
 
 = Retrieve all volumes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all volumes. Use this to view details about the volumes available in the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/volumes`#
-
-
-
-Retrieves all volumes.
-
 
 == Parameters
 

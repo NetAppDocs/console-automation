@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-useradmins-.html'
+keywords: 'partnership user,partnership useradmins,useradmin group,partnership user retrieval,user role'
 summary: 'Retrieve a user in the UserAdmin group in a partnership'
 ---
 
 = Retrieve a user in the UserAdmin group in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a user in the UserAdmin group within a specified partnership. Use this endpoint to view details about the user assigned administrative roles in the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/useradmins/{user_id}`#
 
-
+== Usage notes
 
 Retrieves a user in the UserAdmin group in the specified partnership.
 

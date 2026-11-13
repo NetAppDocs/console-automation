@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-sftp-root-directory.html'
+keywords: 'sftp root directory,sftp server hostname,netapp tenancy,sftp server port,data brokers,root directory retrieval'
 summary: 'Retrieve the SFTP root directory'
 ---
 
 = Retrieve the SFTP root directory
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the SFTP root directory, providing access to the directory structure for file transfer operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-sftp-root-directory`#
-
-
-
-Retrieves the SFTP root directory.
-
 
 == Parameters
 

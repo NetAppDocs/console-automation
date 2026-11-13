@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-volumes-count.html'
+keywords: 'volume count,filesystem volumes,netapp volumes,ontap filesystem,fsx volumes'
 summary: 'Retrieve the volume count'
 ---
 
 = Retrieve the volume count
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the volume count. Use this to determine the total number of volumes in the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/count`#
-
-
-
-Retrieves the volume count.
-
 
 == Parameters
 

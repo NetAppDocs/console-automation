@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-.html'
+keywords: 'organization details,organization id,retrieve organization,specific organization,organization information'
 summary: 'Retrieve an organization'
 ---
 
 = Retrieve an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified organization. Use this to access details about the organization for management or reporting purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}`#
-
-
-
-Retrieves the specified organization.
-
 
 == Parameters
 

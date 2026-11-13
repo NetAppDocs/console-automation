@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-audit-auditserver.html'
+keywords: 'audit server,audit groups,group records,audit logs,audit filtering'
 summary: 'Retrieve audit groups and group records'
 ---
 
 = Retrieve audit groups and group records
 :imagesdir: ../media/
 
+[.lead]
+Retrieves audit groups and group records, providing information about existing groups and their associated records. You can filter the results using query parameters to focus on specific audit data.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/auditserver`#
 
+== Usage notes
 
-
-Retrieves audit groups and group records. You can optionally filter by query parameters.
+You can optionally filter by query parameters.
 
 
 == Error

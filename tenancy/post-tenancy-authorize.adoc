@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-authorize.html'
+keywords: 'external resource,authorize actions,external authorization,perform actions,user authorization'
 summary: 'Authorize an external resource'
 ---
 
 = Authorize an external resource
 :imagesdir: ../media/
 
+[.lead]
+Authorizes an external resource to perform specific actions. Use this to grant the resource permissions based on BlueXP user token authentication.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Authorizes an external resource to perform specific actions.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-snapshot-policy.html'
+keywords: 'snapshot policy,create snapshot,azure ha,working environments,snapshot management'
 summary: 'Create a snapshot policy'
 ---
 
 = Create a snapshot policy
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot policy, defining the rules for capturing and retaining snapshots of your data. Use this to establish automated snapshot schedules tailored to your data protection needs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/snapshot-policy`#
-
-
-
-Creates a snapshot policy.
-
 
 == Parameters
 

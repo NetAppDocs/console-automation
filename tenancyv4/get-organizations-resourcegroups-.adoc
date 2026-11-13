@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-resourcegroups-.html'
+keywords: 'organization resourcegroup,organization resource group,resource group details,organization resources,resource group retrieval'
 summary: 'Retrieve a resource group under an organization'
 ---
 
 = Retrieve a resource group under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a resource group under the specified organization. Use this to view the resource groups associated with an organization for management or auditing purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/resourcegroups/{resourcegroup_id}`#
-
-
-
-Retrieves a resource group under the specified organization.
-
 
 == Parameters
 

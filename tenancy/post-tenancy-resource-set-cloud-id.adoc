@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-resource-set-cloud-id.html'
+keywords: 'cloud identifier,resource cloud,tenancy resource,set cloud id,resource identifier'
 summary: 'Set a cloud identifier'
 ---
 
 = Set a cloud identifier
 :imagesdir: ../media/
 
+[.lead]
+Sets the cloud identifier of a resource. Use this to associate a resource with a specific cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}/set-cloud-id`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Sets the cloud identifier of a resource.
-            +
-*Token usage:* BlueXP user token.
-
 
 
 CAUTION: This operation is deprecated.

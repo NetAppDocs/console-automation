@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-authenticate-v5.html'
+keywords: 'ipa license,license authentication,v5 license,netapp console,ipa authenticate'
 summary: 'Authenticate an IPA license (v5)'
 ---
 
 = Authenticate an IPA license (v5)
 :imagesdir: ../media/
 
+[.lead]
+Authenticates an IPA license (v5), verifying its validity for use with the IPA service. Use this to ensure compliance and access to licensed features.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/authenticate/v5`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Authenticates an IPA license (V5).
-            +
- +
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

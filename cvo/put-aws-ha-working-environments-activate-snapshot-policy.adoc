@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-aws-ha-working-environments-activate-snapshot-policy.html'
+keywords: 'snapshot policy,activate snapshot,snapshot protection,read write volumes,working environment'
 summary: 'Activate snapshot policy assignment for all unprotected read/write volumes'
 ---
 
 = Activate snapshot policy assignment for all unprotected read/write volumes
 :imagesdir: ../media/
 
+[.lead]
+Activates snapshot policy assignment for all unprotected read/write volumes. Use this to ensure snapshot policies are consistently applied across eligible volumes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/activate-snapshot-policy`#
-
-
-
-Activates snapshot policy assignment for all unprotected read/write volumes.
-
 
 == Parameters
 

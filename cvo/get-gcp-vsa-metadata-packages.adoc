@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-packages.html'
+keywords: 'packages configuration,deployment model,capacity package,gcp vsa,metadata packages'
 summary: 'Retrieve the packages configuration'
 ---
 
 = Retrieve the packages configuration
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the packages configuration, providing details about the installed or available packages for the system. Use this to review package settings or confirm configuration details.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/packages`#
-
-
-
-Retrieves the packages configuration.
-
 
 == Parameters
 

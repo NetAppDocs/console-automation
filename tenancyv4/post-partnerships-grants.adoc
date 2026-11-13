@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-partnerships-grants.html'
+keywords: 'partnership grants,create grant,partnership id,new grant,provider organization,grant creation'
 summary: 'Create a new grant'
 ---
 
 = Create a new grant
 :imagesdir: ../media/
 
+[.lead]
+Creates a new grant in the specified partnership. Use this to establish permissions and access rights within a tenancy context.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants`#
-
-
-
-Creates a new grant in the specified partnership.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-metadata-get-buckets-application-info.html'
+keywords: 's3 buckets,policy status,bucket tiering,tiering level,bucket metadata'
 summary: 'Retrieve the S3 buckets policy status and tiering level'
 ---
 
 = Retrieve the S3 buckets policy status and tiering level
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 buckets policy status and tiering level. Use this to assess the current policy settings and tiering configuration for your S3 buckets.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/get-buckets-application-info`#
-
-
-
-Retrieves the S3 buckets policy status and tiering level.
-
 
 == Request Body
 

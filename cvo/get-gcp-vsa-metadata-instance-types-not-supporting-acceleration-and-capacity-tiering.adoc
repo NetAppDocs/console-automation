@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html'
+keywords: 'instance types,capacity tiering,acceleration tiering,unsupported instance types,gcp instance'
 summary: 'Retrieve the instance types that do not support acceleration and capacity tiering'
 ---
 
 = Retrieve the instance types that do not support acceleration and capacity tiering
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the instance types that do not support acceleration and capacity tiering. Use this to identify instance types suitable for your deployment needs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/instance-types-not-supporting-acceleration-and-capacity-tiering`#
-
-
-
-Retrieves the instance types that do not support acceleration and capacity tiering.
-
 
 == Error
 

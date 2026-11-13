@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-tenancy-service-workspaces.html'
+keywords: 'workspaces,tenancy service,visible workspaces,user workspaces,current user'
 summary: 'Retrieve visible workspaces'
 ---
 
 = Retrieve visible workspaces
 :imagesdir: ../media/
 
+[.lead]
+Retrieves workspaces that are visible to the current user. Use this to view the workspaces accessible to you.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/tenancy-service/workspaces`#
-
-
-
-Retrieves workspaces that are visible to the current user.
-
 
 == Error
 

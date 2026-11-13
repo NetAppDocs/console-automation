@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-tenants.html'
+keywords: 'tenants,visible tenants,tenant list,tenant retrieval,visible users'
 summary: 'Retrieve tenants'
 ---
 
 = Retrieve tenants
 :imagesdir: ../media/
 
+[.lead]
+Retrieves tenants visible to the current user. Use this to view the tenants you have access to.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenants`#
 
-
+== Usage notes
 
 Retrieves tenants that are visible to the current user.
 

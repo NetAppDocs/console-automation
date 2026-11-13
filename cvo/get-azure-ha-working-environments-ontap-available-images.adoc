@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-working-environments-ontap-available-images.html'
+keywords: 'ontap images,cloud volumes,available images,ha environments,ontap system'
 summary: 'Retrieve images already installed on a system'
 ---
 
 = Retrieve images already installed on a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves images already installed on the Cloud Volumes ONTAP system, providing a list of available images for system operations or updates.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/ontap-available-images`#
-
-
-
-Retrieves images already installed on the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

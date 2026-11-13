@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-organizations-resources.html'
+keywords: 'organization resources,add resources,organization id,resource management,organization operations'
 summary: 'Add resources to an organization'
 ---
 
 = Add resources to an organization
 :imagesdir: ../media/
 
+[.lead]
+Adds resources to an organization, associating them with the specified organization for management and access purposes. Use this to organize resources under a common organizational structure.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/resources`#
 
-
+== Usage notes
 
 Adds resources to the specified organization.
 

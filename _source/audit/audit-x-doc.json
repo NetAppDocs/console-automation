@@ -1,40 +1,57 @@
 {
-    "overview": "Audit REST API for the NetApp Console",
-    "permalink": "overview.html",
-    "paths": {
-      "/audit/{accountId}": {
-        "get": {
-          "x-doc": {
-            "title": "Retrieve account records",
-            "category": null,
-            "filename": "get-audit.html",
-            "subcategory": null,
-            "explorer": false
+  "overview": "Audit REST API for the NetApp Console",
+  "permalink": "overview.html",
+  "root_overview": {
+    "ai-gen": {
+      "keywords": "audit records,audit service,console audit,compliance,forensic investigation,activity tracking",
+      "lead": "Find out which actions were performed in the NetApp Console, who performed them, and when. This audit data supports forensic investigations and compliance requirements."
+    }
+  },
+  "paths": {
+    "/audit/{accountId}": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve account records",
+          "category": null,
+          "filename": "get-audit.html",
+          "subcategory": null,
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves account records for a specified account public ID.",
+            "keywords": "audit records,retrieve records,account records,account audits,user audits"
           }
         }
-      },
-      "/audit/{accountId}/{service}/{requestId}/records": {
-        "get": {
-          "x-doc": {
-            "title": "Retrieve records by service",
-            "category": null,
-            "filename": "get-audit--records.html",
-            "subcategory": null,
-            "explorer": false
+      }
+    },
+    "/audit/{accountId}/{service}/{requestId}/records": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve records by service",
+          "category": null,
+          "filename": "get-audit--records.html",
+          "subcategory": null,
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves audit records filtered by account, service, and request ID.",
+            "keywords": "audit records,account records,service records,request records,specified records"
           }
         }
-      },
-      "/audit/{accountId}/options": {
-        "get": {
-          "x-doc": {
-            "title": "Retrieve audit options",
-            "category": null,
-            "filename": "get-audit-options.html",
-            "subcategory": null,
-            "explorer": false
+      }
+    },
+    "/audit/{accountId}/options": {
+      "get": {
+        "x-doc": {
+          "title": "Retrieve audit options",
+          "category": null,
+          "filename": "get-audit-options.html",
+          "subcategory": null,
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves audit filter options for a specified account ID. Use this to view the available filters for auditing activities.",
+            "keywords": "audit options,filter options,account filters,account logs,audit settings"
           }
         }
-     
       }
     }
   }
+}

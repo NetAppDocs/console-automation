@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-archival-storage-class.html'
+keywords: 'aws storage classes,archival storage,cloud manager cbs,aws archival,storage class options'
 summary: 'Retrieve AWS storage classes'
 ---
 
 = Retrieve AWS storage classes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of AWS storage classes available for archival support. Use this to view the storage class configurations supported by AWS for backup and recovery workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/archival-storage-class`#
 
+== Token usage
 
-
-Retrieves a list of AWS storage classes available for archival support.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-vsa-volumes--snapshot.html'
+keywords: 'snapshot delete,manual snapshot,azure volume snapshot,snapshot removal,ontap azure'
 summary: 'Delete a snapshot'
 ---
 
 = Delete a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Deletes a snapshot manually. Use this to remove snapshots that are no longer needed or to free up storage space.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Deletes a snapshot manually.
-
 
 == Parameters
 

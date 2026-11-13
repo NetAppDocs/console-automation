@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-svm.html'
+keywords: 'svm name,cloud volumes ontap,modify svm,azure ha,working environment'
 summary: 'Modify the SVM name of the system'
 ---
 
 = Modify the SVM name of the system
 :imagesdir: ../media/
 
+[.lead]
+Modifies the SVM name of the Cloud Volumes ONTAP system. Use this to update the name of the SVM as needed for organizational or operational purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/svm`#
-
-
-
-Modifies the SVM name of the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

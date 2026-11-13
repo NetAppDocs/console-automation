@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-manifests.html'
+keywords: 'netapp console,cloud volumes ontap,region codes,license types,instance types,ontap version'
 summary: 'Retrieve all NetApp Console manifests'
 ---
 
 = Retrieve all NetApp Console manifests
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all NetApp Console manifests. Use this to access information needed for creating a Cloud Volumes ONTAP system, such as region codes, license types, instance types, and version parameters.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/manifests`#
 
+== Usage notes
 
-
-Retrieves all NetApp Console manifests. Refer to the API Developers Guide in order to understand how to extract valid region codes, license types, instance types and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP system.
+Refer to the API Developers Guide in order to understand how to extract valid region codes, license types, instance types and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP system.
 
 
 == Error

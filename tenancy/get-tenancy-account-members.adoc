@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/get-tenancy-account-members.html'
+keywords: 'account members,retrieve users,service accounts,user data,account details'
 summary: 'Retrieve user and service account data'
 ---
 
 = Retrieve user and service account data
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the user and service account data of the specified account. Use this to access account-specific information for management or troubleshooting purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/members`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Retrieves the user and service account data of the specified account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-resourcegroups-.html'
+keywords: 'resource group,resourcegroup retrieval,group details,resource management,resourcegroup id'
 summary: 'Retrieve a resource group'
 ---
 
 = Retrieve a resource group
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified resource group. Use this to access details about the resource group for tenancy management or configuration purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resourcegroups/{resourcegroup_id}`#
-
-
-
-Retrieves the specified resource group.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-onprem-working-environments-.html'
+keywords: 'on-premises removal,working environment deletion,ontap system,netapp console management,system unmanage'
 summary: 'Delete an on-premises ONTAP system'
 ---
 
 = Delete an on-premises ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Deletes an on-premises ONTAP system from the NetApp Console. Use this to stop managing the system in the Console without affecting ONTAP.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}`#
 
-
+== Usage notes
 
 Removes an on-premises ONTAP system from the NetApp Console. The Console will no longer manage the system, but ONTAP is not affected.
 

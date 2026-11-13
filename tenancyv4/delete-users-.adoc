@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-users-.html'
+keywords: 'delete user,user management,user removal,remove account,account deletion,user id'
 summary: 'Delete a user'
 ---
 
 = Delete a user
 :imagesdir: ../media/
 
+[.lead]
+Deletes a user in the tenancy system. Use this to remove user accounts that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/users/{user_id}`#
 
-
+== Usage notes
 
 Deletes the specified user.
 

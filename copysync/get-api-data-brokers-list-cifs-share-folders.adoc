@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-cifs-share-folders.html'
+keywords: 'cifs folders,cifs shares,data broker,cifs server,cifs hostname,cifs path'
 summary: 'Retrieve the CIFS server folders'
 ---
 
 = Retrieve the CIFS server folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the CIFS server folders from a NetApp data broker. Use this to view the folder configurations available on the CIFS server.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-cifs-share-folders`#
-
-
-
-Retrieves the CIFS server folders from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-regions.html'
+keywords: 'google cloud,cloud volumes ontap,ha regions,gcp regions,ontap locations,cloud deployment'
 summary: 'Retrieve Google Cloud regions'
 ---
 
 = Retrieve Google Cloud regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Google Cloud regions where a Cloud Volumes ONTAP system can be created. Use this to identify regions available for deploying your Cloud Volumes ONTAP system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/regions`#
-
-
-
-Retrieves Google Cloud regions where a Cloud Volumes ONTAP system can be created.
-
 
 == Parameters
 

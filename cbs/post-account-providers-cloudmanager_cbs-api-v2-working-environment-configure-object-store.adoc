@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v2-working-environment-configure-object-store.html'
+keywords: 'object storage,private endpoint,backup recovery,certificate install,cloud provider,working environment'
 summary: 'Configure object storage (v2)'
 ---
 
 = Configure object storage (v2)
 :imagesdir: ../media/
 
+[.lead]
+Configures object storage in the NetApp Backup and Recovery service, verifying whether private endpoints are enabled and certificates are installed. Use this to ensure compatibility with AWS and Azure private endpoints when setting up object storage.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/{workingEnvironmentId}/configure-object-store`#
 
+== Token usage
 
+NetApp Console user token.
 
-Configures an object storage. This is a V2 version of the object store configure API. It verifies whether a private endpoint is enabled and a certificate is installed. You can verify whether previously created private endpoints are enabled for AWS and Azure. This API endpoint is called if no object stores are found when the NetApp Backup and Recovery service is enabled.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+This is a V2 version of the object store configure API. It verifies whether a private endpoint is enabled and a certificate is installed. You can verify whether previously created private endpoints are enabled for AWS and Azure. This API endpoint is called if no object stores are found when the NetApp Backup and Recovery service is enabled.
 
 == Parameters
 

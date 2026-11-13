@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-volumes--snapshots.html'
+keywords: 'snapshots list,volume snapshots,volume details,snapshot descriptions,storage volume snapshots,data protection'
 summary: 'Retrieve a list of snapshot descriptions'
 ---
 
 = Retrieve a list of snapshot descriptions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of snapshot descriptions for a volume. Use this to view the available snapshots and their details for the specified volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshots`#
 
-
+== Usage notes
 
 Returns a list of snapshot descriptions for the volume.
 

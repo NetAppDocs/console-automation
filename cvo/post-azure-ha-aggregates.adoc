@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-aggregates.html'
+keywords: 'azure ha,create aggregate,new aggregate,aggregate creation,ha aggregate,azure aggregate'
 summary: 'Create a new aggregate'
 ---
 
 = Create a new aggregate
 :imagesdir: ../media/
 
+[.lead]
+Creates a new aggregate. Use this to provision additional storage capacity for workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/aggregates`#
-
-
-
-Creates a new aggregate.
-
 
 == Request Body
 

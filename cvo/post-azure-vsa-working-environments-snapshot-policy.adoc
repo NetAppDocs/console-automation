@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-snapshot-policy.html'
+keywords: 'snapshot policy,create snapshot,working environment,azure snapshot,snapshot management'
 summary: 'Create a snapshot policy'
 ---
 
 = Create a snapshot policy
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot policy to define rules for automatically capturing snapshots of data. Use this to manage and schedule data protection for your resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/snapshot-policy`#
-
-
-
-Creates a snapshot policy.
-
 
 == Parameters
 

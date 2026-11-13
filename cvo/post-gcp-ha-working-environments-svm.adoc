@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments-svm.html'
+keywords: 'new svm,gcp ha,working environment,create svm,high availability'
 summary: 'Create a new SVM'
 ---
 
 = Create a new SVM
 :imagesdir: ../media/
 
+[.lead]
+Creates a new SVM, enabling configuration and management of storage resources within Cloud Volumes ONTAP. Use this to set up an environment tailored to your workload requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/svm`#
-
-
-
-Creates a new SVM.
-
 
 == Parameters
 

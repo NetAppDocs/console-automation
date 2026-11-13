@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-.html'
+keywords: 'comprehensive protection,cloud backup,replication configuration,cluster peering,backup bucket,cloud provider'
 summary: 'Modify the comprehensive protection configuration in a system (v2)'
 ---
 
 = Modify the comprehensive protection configuration in a system (v2)
 :imagesdir: ../media/
 
+[.lead]
+Modifies the comprehensive protection configuration in a system. Use this to enhance protection capabilities by adding replication and backup functionalities, enabling advanced backup topologies in the cloud.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/panoramic-protection/working-environment/{workingEnvironmentId}`#
 
+== Token usage
 
+NetApp Console user token.
 
-Modifies comprehensive protection configuration in a system. This API enables you to enhance the protection capabilities within a system by adding replication and backup functionalities. This enables the creation of fan-out or cascading backup topologies in the cloud. When replication is selected, the API first checks for the presence of an existing cluster-peering relationship. If a relationship is not found, the API creates the necessary cluster-peering relationship. Alternatively, if backup to the cloud is selected, the API creates a bucket in the specified cloud provider or appliance (AWS, AZURE, GCP, SGWS, ONTAP_S3) specifically for the system. This designated bucket is used for storing backups taken from the system. Archival tiers or DataLock/Ransomware capability can be set while enabling backup to cloud.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+This API enables you to enhance the protection capabilities within a system by adding replication and backup functionalities. This enables the creation of fan-out or cascading backup topologies in the cloud. When replication is selected, the API first checks for the presence of an existing cluster-peering relationship. If a relationship is not found, the API creates the necessary cluster-peering relationship. Alternatively, if backup to the cloud is selected, the API creates a bucket in the specified cloud provider or appliance (AWS, AZURE, GCP, SGWS, ONTAP_S3) specifically for the system. This designated bucket is used for storing backups taken from the system. Archival tiers or DataLock/Ransomware capability can be set while enabling backup to cloud.
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/delete-working-environments--workspace-.html'
+keywords: 'working environments,workspace removal,netapp console workspace,environment deletion,workspace cleanup'
 summary: 'Remove working environment from workspace'
 ---
 
 = Remove working environment from workspace
 :imagesdir: ../media/
 
+[.lead]
+Deletes a working environment from a workspace.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/working-environments/{accountId}/{workingEnvironmentId}/workspace/{workspaceId}`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Removes working environments from a workspace.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

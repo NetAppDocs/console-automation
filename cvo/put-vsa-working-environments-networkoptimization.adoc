@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-working-environments-networkoptimization.html'
+keywords: 'network optimization,cloud volumes,mtu configuration,broadcast domain,network port'
 summary: 'Modify the network port broadcast domain MTU'
 ---
 
 = Modify the network port broadcast domain MTU
 :imagesdir: ../media/
 
+[.lead]
+Modifies the network port broadcast domain MTU of the Cloud Volumes ONTAP system. Use this to adjust the MTU settings for optimized network performance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/networkOptimization`#
-
-
-
-Modifies the network port broadcast domain MTU of the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

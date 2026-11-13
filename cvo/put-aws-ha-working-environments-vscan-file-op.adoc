@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-aws-ha-working-environments-vscan-file-op.html'
+keywords: 'vscan file operation,working environment,cifs shares,vscan profile,default profile,write only mode'
 summary: 'Update the default Vscan file operation profile'
 ---
 
 = Update the default Vscan file operation profile
 :imagesdir: ../media/
 
+[.lead]
+Updates the default Vscan file operation profile, modifying how file operations are scanned for viruses. Use this to ensure proper virus scanning behavior across your CIFS shares.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/vscan-file-op`#
 
+== Usage notes
 
-
-Updates the default Vscan file operation profile. Profiles on existing CIFS shares will change only on writes-only mode.
+Profiles on existing CIFS shares will change only on writes-only mode.
 
 
 == Parameters

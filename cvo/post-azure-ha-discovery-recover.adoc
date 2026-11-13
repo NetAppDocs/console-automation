@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-discovery-recover.html'
+keywords: 'cloud volumes,ontap recovery,ha discovery,azure ontap,netapp console'
 summary: 'Save a system to the NetApp Console database'
 ---
 
 = Save a system to the NetApp Console database
 :imagesdir: ../media/
 
+[.lead]
+Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database. Use this to persist system information for management and tracking purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/discovery/recover`#
-
-
-
-Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database.
-
 
 == Request Body
 

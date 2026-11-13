@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-asup-download-signed.html'
+keywords: 'signed url,netapp console,support data,asup download,console support'
 summary: 'Retrieve the signed URL for the NetApp Console support data'
 ---
 
 = Retrieve the signed URL for the NetApp Console support data
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the signed URL for NetApp Console support data. Use this URL to access the support data for troubleshooting or analysis purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup/download-signed`#
-
-
-
-Retrieves the signed URL for NetApp Console support data.
-
 
 == Error
 

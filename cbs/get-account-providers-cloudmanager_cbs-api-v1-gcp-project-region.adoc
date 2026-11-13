@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-gcp-project-region.html'
+keywords: 'google cloud,cloud regions,gcp project,gcp region,netapp ontap'
 summary: 'Retrieve Google Cloud regions'
 ---
 
 = Retrieve Google Cloud regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of regions from a specific Google Cloud project. Use this to identify the regions available for configuring backup and recovery workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/region`#
 
+== Token usage
 
-
-Retrieves a list of regions from a specific Google Cloud project.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

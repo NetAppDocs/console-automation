@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-resources-.html'
+keywords: 'delete resource,remove resource,resource deletion,resource id,delete operation'
 summary: 'Delete a resource'
 ---
 
 = Delete a resource
 :imagesdir: ../media/
 
+[.lead]
+Deletes the specified resource, removing it from the tenancy system. Use this to manage and clean up resources no longer needed in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/resources/{resource_id}`#
-
-
-
-Deletes the specified resource.
-
 
 == Parameters
 

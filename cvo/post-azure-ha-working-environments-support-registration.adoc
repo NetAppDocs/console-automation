@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-support-registration.html'
+keywords: 'cloud volumes,ontap system,netapp registration,support registration,working environment'
 summary: 'Register a Cloud Volumes ONTAP system with NetApp'
 ---
 
 = Register a Cloud Volumes ONTAP system with NetApp
 :imagesdir: ../media/
 
+[.lead]
+Registers a Cloud Volumes ONTAP system with NetApp, enabling integration with NetApp services and features. Use this to manage and monitor the system through NetApp's ecosystem.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/support-registration`#
-
-
-
-Registers a Cloud Volumes ONTAP system with NetApp.
-
 
 == Parameters
 

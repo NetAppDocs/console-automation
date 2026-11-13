@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-projects.html'
+keywords: 'projects list,user permission,project metadata,ha projects,gcp projects'
 summary: 'Retrieve a list of projects'
 ---
 
 = Retrieve a list of projects
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of projects for which the user has permission. Use this to view the projects available to you within the specified scope.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/projects`#
-
-
-
-Retrieves a list of projects for which the user has permission.
-
 
 == Error
 

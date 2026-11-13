@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v2-catalog-re-index.html'
+keywords: 'catalog reindex,catalog systems,reindex systems,account catalog,reindex account'
 summary: 'Re-index the catalog for all of the systems in an account'
 ---
 
 = Re-index the catalog for all of the systems in an account
 :imagesdir: ../media/
 
+[.lead]
+Re-indexes the catalog for all systems in an account, updating the catalog information to ensure accuracy and completeness. Use this when changes to system data require the catalog to be refreshed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/catalog/re-index`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Re-indexes the catalog for all of the systems in an account
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-occm-encryption-key-managers-ca-certificates-.html'
+keywords: 'key manager,ca certificate,certificate deletion,key manager certificate,delete ca certificate,key authority'
 summary: 'Delete a key manager CA certificate'
 ---
 
 = Delete a key manager CA certificate
 :imagesdir: ../media/
 
+[.lead]
+Deletes a key manager certificate authority (CA) certificate. Use this to remove an outdated or invalid certificate from the key manager.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/occm/encryption/key-managers-ca-certificates/{keyManagerCaCertificateId}`#
 
-
+== Usage notes
 
 Deletes an existing key manager certificate authority (CA) certificate.
 

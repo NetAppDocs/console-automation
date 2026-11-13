@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-working-environments-upload-licenses.html'
+keywords: 'cloud license,upload licenses,cloud volumes ontap,license upload,working environment'
 summary: 'Upload cloud license file content'
 ---
 
 = Upload cloud license file content
 :imagesdir: ../media/
 
+[.lead]
+Uploads the content of a cloud license file to a specified Cloud Volumes ONTAP system. Use this to register or update licensing information for your deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/upload-licenses`#
 
-
+== Usage notes
 
 Uploads the content of a cloud license file on the specified Cloud Volumes ONTAP system.
 

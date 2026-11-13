@@ -3,21 +3,28 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-enable-3rd-party-services-id.html'
+keywords: 'third-party services,third-party enabled,enable services,account services,enable third-party'
 summary: 'Enable third-party services'
 ---
 
 = Enable third-party services
 :imagesdir: ../media/
 
+[.lead]
+Modifies the third-party enabled property of a specified account, determining whether third-party services are active for the account. Use this to configure account-level access to external services.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/enable-3rd-party-services/{enabled}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Sets the third-party enabled property of the specified account.
             The enabled property determines whether third-party services are enabled for the account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

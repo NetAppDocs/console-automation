@@ -70,6 +70,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves system details, including backup enablement status, archive
+            storage class, backup policy details, and related configurations. Use
+            this to review system settings and backup statuses within your account.
+          keywords: netapp backup,recovery service,working environment,backup status,cloud
+            storage,metrocluster
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}":
     get:
       x-doc:
@@ -79,6 +85,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the details of a specific system backed up within an account
+            using the Backup and Recovery service. Use this to access information
+            such as backup status, storage class, policy details, and related configurations.
+          keywords: backup details,backup service,working environment,archive storage,cloud
+            storage pool,metrocluster id
     post:
       x-doc:
         title: Enable the Backup and Recovery service
@@ -103,6 +115,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a system from Backup and Recovery. Use this to remove the
+            service and its associated backup folder after deleting all backups and
+            disabling the service on the system.
+          keywords: unregister system,delete backups,disable backup,recovery service,backup
+            folder
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/status":
     get:
       x-doc:
@@ -112,6 +130,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the backup status of a specified system, including details
+            such as backup enablement, archive storage class, backup policy, and cloud
+            storage settings. Use this to monitor the current backup configuration
+            and status for systems within your account.
+          keywords: backup status,netapp backup,working environment,backup policy,cloud
+            storage pool,archive storage
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}":
     post:
       x-doc:
@@ -129,6 +154,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies the backup configuration for a system in the NetApp Backup
+            and Recovery service. Use this to customize backup settings such as policies,
+            storage classes, cloud storage pools, access credentials, and automatic
+            backup options.
+          keywords: backup configuration,netapp backup,cloud storage pool,automatic
+            backup,archive storage,backup policy
   "/account/{accountId}/providers/cloudmanager_cbs/api/v3/backup/working-environment/{workingEnvironmentId}":
     post:
       x-doc:
@@ -155,6 +187,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves information for a specified volume backed up using the NetApp
+            Backup and Recovery service. Use this to review detailed backup and ransomware-related
+            attributes for the volume, such as capacity, object lock status, and ransomware
+            detected snapshots.
+          keywords: netapp backup,volume details,cloud manager cbs,ransomware scan,object
+            lock
     put:
       x-doc:
         title: Modify a backed up volume
@@ -163,6 +202,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies a specified backed-up volume, updating its state, backup
+            policy, retention rules, or archival settings. Use this endpoint to adjust
+            backup configurations for a volume to meet your data management requirements.
+          keywords: volume modification,backup policy,volume state,backup retention,archive
+            after days
     delete:
       x-doc:
         title: Remove backup settings
@@ -171,6 +216,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes the backup settings for a specified backed-up volume. Use
+            this to remove backup settings after deleting the associated volume snapshots.
+          keywords: backup settings,remove backup,disable backup,snapshot deletion,volume
+            settings
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}":
     post:
       x-doc:
@@ -189,6 +239,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Enables backup for a specified volume asynchronously. Use this endpoint
+            to configure backup modes, set archive parameters, and enable additional
+            features such as object lock and ransomware detection.
+          keywords: backup volume,cloud backup,ontap snapshot,snapmirror cloud,ransomware
+            detection,archive tier
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume":
     get:
       x-doc:
@@ -198,6 +254,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves details of all volumes for a specified system backed up
+            by using the NetApp Backup and Recovery service. Use this to examine backup-related
+            attributes such as backup status, last backup creation time, snapshot
+            details, and ransomware scan information.
+          keywords: volume details,backup status,storage vm,ransomware scan,backup
+            policy,ransomware detected
     post:
       x-doc:
         title: Enable backup of multiple volumes
@@ -214,6 +277,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies multiple backed-up volumes in a specific system, including
+            parameters such as volume state, backup policy, backup policy rule and
+            retention, and archive-after-days. Use this to adjust backup settings
+            and manage retention policies for your volumes.
+          keywords: volume modification,backup policy,volume retention,archival settings,cloud
+            backup
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}/volume":
     post:
       x-doc:
@@ -232,6 +302,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves information for a specific snapshot of a volume backed up
+            using the NetApp Backup and Recovery service. Use this to view snapshot
+            details, including name, creation time, archive status, size, and security-related
+            attributes.
+          keywords: snapshot details,volume snapshot,backup snapshot,netapp backup,working
+            environment
     delete:
       x-doc:
         title: Delete a snapshot
@@ -240,6 +317,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes the specified snapshot of a volume backed up using the NetApp
+            Backup and Recovery service. Use this to remove snapshots that are no
+            longer needed for backup or recovery workflows.
+          keywords: snapshot delete,delete snapshot,volume snapshot,backup snapshot,netapp
+            backup,netapp recovery
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot"
   : get:
       x-doc:
@@ -249,6 +332,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves snapshot information for a volume backed up using the NetApp
+            Backup and Recovery service. Use this to access details such as snapshot
+            name, creation time, archive status, size, and additional metadata.
+          keywords: snapshot details,volume snapshot,backup recovery,snapshot size,object
+            lock,ransomware scan
     delete:
       x-doc:
         title: Delete all snapshots (volume)
@@ -257,6 +346,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes all snapshots for a specified volume in the NetApp Backup
+            and Recovery service. Use this to remove all backups associated with the
+            volume.
+          keywords: backup snapshots,delete volume snapshots,remove snapshot metadata,volume
+            snapshot cleanup,object store cleanup
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}/snapshot":
     delete:
       x-doc:
@@ -266,6 +361,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes all snapshots for a specified system that are backed up using
+            the NetApp Backup and Recovery service. Use this to remove outdated or
+            unnecessary snapshots from the system's backup inventory.
+          keywords: snapshots deletion,backup recovery,snapshot cleanup,working environment,netapp
+            backup
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/restore":
     post:
       x-doc:
@@ -284,6 +385,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Performs a volume and file-level restore operation. Use this to recover
+            data from a backup while ensuring compatibility between the source and
+            target volumes.
+          keywords: volume restore,cloud backup,restore operation,data protection,ransomware
+            scan,snaplock license
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/restore/status":
     get:
       x-doc:
@@ -302,6 +409,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of ONTAP backup policies associated with a system.
+            Use this to view policy details, such as archival enablement status, attached
+            volumes, and object-lock mode.
+          keywords: ontap backup,backup policy,archival status,attached volumes,object
+            lock
     post:
       x-doc:
         title: Create a backup policy
@@ -310,6 +423,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a backup policy for a system, specifying rules for backup
+            retention and archival. Use this to configure features like DataLock and
+            Ransomware protection or to archive backups to supported cloud tiers.
+          keywords: backup policy,cloud archive,ontap version,dataprotection ransomware,aws
+            glacier
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/backup-policy/{policyName}":
     put:
       x-doc:
@@ -328,6 +447,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of IP spaces within a specified system. Use this
+            to view the discovered IP spaces available for network configuration and
+            management.
+          keywords: ip space,working environment,cloud manager,account id,system id
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment":
     get:
       x-doc:
@@ -337,6 +461,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of systems and their details, including information
+            such as name, region, status, type, cloud provider, provider account ID,
+            ONTAP version, and total number of volumes. Use this endpoint to view system
+            configurations for backup and recovery workflows.
+          keywords: systems details,cloud provider,region status,ontap version,total
+            volumes,provider account
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}":
     get:
       x-doc:
@@ -346,6 +477,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the details of a specific system, including its name, region,
+            status, type, cloud provider, provider account ID, ONTAP version, and
+            total number of volumes. Use this to review the configuration and status of
+            the system for operational or troubleshooting purposes.
+          keywords: system details,cloud provider,ontap version,working environment,account
+            id,total volumes
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/svm":
     get:
       x-doc:
@@ -364,6 +502,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of volumes and their details from a specific system,
+            including information such as name, file-system-id, status, storage VM,
+            type, style, capacity allocated, capacity used, and SnapMirror label.
+            Use this to review volume configurations and ensure proper system management.
+          keywords: volumes details,volume status,snapmirror label,storage vm,capacity
+            allocation,volume type
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/configure-object-store":
     post:
       x-doc:
@@ -382,6 +527,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Configures object storage in the NetApp Backup and Recovery service,
+            verifying whether private endpoints are enabled and certificates are installed.
+            Use this to ensure compatibility with AWS and Azure private endpoints
+            when setting up object storage.
+          keywords: object storage,private endpoint,backup recovery,certificate install,cloud
+            provider,working environment
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/list":
     get:
       x-doc:
@@ -391,6 +543,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of system volume directories. Use this to browse
+            directories within a volume on a target storage VM.
+          keywords: system volume,volume directories,storage vm,directory path,file
+            system
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/object-store-config/status":
     get:
       x-doc:
@@ -400,6 +557,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves an object store configuration status, providing details
+            about the current configuration. Use this to verify the status of your
+            object store setup in the backup and recovery environment.
+          keywords: object store,object store status,cloud provider,cbs configuration,working
+            environment
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/account":
     get:
       x-doc:
@@ -409,6 +572,10 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of AWS accounts from the NetApp Console. Use this
+            to view the accounts configured for backup and recovery operations.
+          keywords: aws accounts,netapp console,cloud manager,netapp aws,account list
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/region":
     get:
       x-doc:
@@ -418,6 +585,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of subscribed AWS regions. Use this to view the AWS
+            regions available for NCO Backup and Recovery operations.
+          keywords: aws regions,subscribed regions,cloudmanager cbs,netapp aws,aws
+            region list
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/region/{regionCode}/key":
     get:
       x-doc:
@@ -427,6 +599,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of AWS keys from a specified region that belongs
+            to a specified AWS account ID. Use this to view the discovered keys associated
+            with your account in the given region.
+          keywords: aws keys,aws region,aws account id,cloudmanager cbs,netapp ontap
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/region/{regionCode}/privateLink":
     get:
       x-doc:
@@ -436,6 +613,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of AWS private links from a specified region that
+            belongs to a specified AWS account ID. Use this to view the private links
+            available for backup and recovery workflows in your AWS environment.
+          keywords: aws private links,aws region links,private link retrieval,aws
+            account links,cloudmanager private link
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/archival-storage-class":
     get:
       x-doc:
@@ -445,6 +628,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of AWS storage classes available for archival support.
+            Use this to view the storage class configurations supported by AWS for
+            backup and recovery workflows.
+          keywords: aws storage classes,archival storage,cloud manager cbs,aws archival,storage
+            class options
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/region":
     get:
       x-doc:
@@ -454,6 +643,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of regions from a specific subscription ID in Azure.
+            Use this to view the available regions for backup and recovery operations.
+          keywords: azure regions,azure subscription,cloudmanager cbs,subscription
+            regions,netapp azure
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resource-group":
     post:
       x-doc:
@@ -463,6 +657,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates an Azure resource group in the specified subscription ID.
+            Use this to organize Azure resources within a subscription for better
+            management and access control.
+          keywords: azure resource group,create resource group,azure subscription,resource
+            group creation,netapp azure
     get:
       x-doc:
         title: Retrieve Azure resource groups
@@ -471,6 +671,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of Azure resource groups from a specific subscription
+            ID in Azure. Use this to view the available resource groups for backup
+            or recovery workflows.
+          keywords: azure resource groups,azure subscription,netapp azure integration,cloudmanager
+            cbs,azure resource management
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/vnet":
     get:
       x-doc:
@@ -480,6 +686,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of Azure virtual networks from a specific subscription
+            ID in Azure cloud. Use this to view the available networks for backup
+            and recovery operations.
+          keywords: azure virtual networks,azure subscription,virtual network list,azure
+            vnet,cloudmanager azure
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription":
     get:
       x-doc:
@@ -489,6 +701,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of Azure subscriptions for a particular account.
+            Use this to view the subscriptions associated with your account for backup
+            and recovery operations.
+          keywords: azure subscription,azure account,cloudmanager cbs,netapp azure,account
+            subscription
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/vault/{vaultName}/key":
     get:
       x-doc:
@@ -498,6 +716,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of Azure vault keys from a specific vault in Azure
+            cloud. Use this to access the keys associated with a subscription ID for
+            backup or recovery operations.
+          keywords: azure vault keys,azure subscription,vault key retrieval,key vault
+            azure,cloudmanager vault keys
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/vault":
     get:
       x-doc:
@@ -507,6 +731,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of Azure vaults for a specific subscription ID in
+            Azure cloud. Use this to view the available vaults associated with your
+            subscription for backup and recovery operations.
+          keywords: azure vaults,azure subscription,vault list,cloudmanager cbs,netapp
+            azure
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project":
     get:
       x-doc:
@@ -516,6 +746,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of Google Cloud projects. Use this to view the projects
+            associated with your NetApp Console user token.
+          keywords: google cloud,cloud projects,gcp project list,netapp ontap,gcp
+            integration,gcp project
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/region":
     get:
       x-doc:
@@ -525,6 +760,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of regions from a specific Google Cloud project.
+            Use this to identify the regions available for configuring backup and
+            recovery workflows.
+          keywords: google cloud,cloud regions,gcp project,gcp region,netapp ontap
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/job":
     get:
       x-doc:
@@ -534,6 +774,10 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of jobs from the NetApp Console SaaS application.
+            Use this to query jobs based on their type and status.
+          keywords: job type,job status,netapp console,cloudmanager jobs,account jobs
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/job/{jobId}":
     get:
       x-doc:
@@ -543,6 +787,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the details of specific jobs from the NetApp Console SaaS
+            application. Use this to view information about individual jobs within
+            the Backup and Recovery service.
+          keywords: netapp jobs,job details,cloudmanager cbs,specific jobs,netapp
+            console
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/working-environments/{workingEnvironmentId}/setup":
     post:
       x-doc:
@@ -561,6 +811,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Searches for a specific file from backup data across volumes and systems.
+            Use this to locate files based on criteria such as system, file extensions,
+            size ranges, creation date range, or backup location.
+          keywords: file search,backup recovery,volume search,creation date,backup
+            location,file extensions
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/snapshots":
     post:
       x-doc:
@@ -570,6 +826,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of local and cloud snapshots related to a particular
+            volume using the catalog index query. Use this to identify snapshots available
+            for backup or recovery operations.
+          keywords: snapshots query,local snapshots,cloud snapshots,volume snapshots,catalog
+            index
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/working-environments/{workingEnvironmentId}":
     put:
       x-doc:
@@ -579,6 +841,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies the indexed cataloging service for a specified system, enabling
+            or disabling it based on deployment requirements. Use this to manage cataloging
+            across AWS, Azure, Google Cloud, and on-premises or dark site environments.
+          keywords: indexed cataloging,working environments,cloud manager,enable cataloging,disable
+            cataloging
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/license/working-environment/{workingEnvironmentId}":
     get:
       x-doc:
@@ -588,6 +856,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the license validity of systems in the NetApp Console SaaS
+            application. Use this to check the eligibility of the current license
+            or view the days remaining for a trial license.
+          keywords: license validity,trial license eligibility,license days remaining,netapp
+            console license,working environment license
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/{workingEnvironmentId}/backup-policy":
     put:
       x-doc:
@@ -597,6 +871,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Updates a backup policy in a system, modifying details such as rules,
+            labels, retention settings, archival configurations, and associated cloud
+            storage pool information. Use this endpoint to customize backup policies
+            to meet specific data protection requirements.
+          keywords: backup policy,working environment,cloud storage,retention policy,storagegrid
+            archival,transfer schedule
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/catalog/working-environments/{workingEnvironmentId}/setup":
     post:
       x-doc:
@@ -606,6 +887,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Configures the service to include an indexed cataloging service, enabling
+            integration with supported analytics and query services across AWS, Azure,
+            Google Cloud, and StorageGRID environments. Use this to set up cataloging
+            capabilities tailored to your cloud platform.
+          keywords: cloudmanager cbs,working environments setup,aws athena,azure synapse,google
+            bigquery,duckdb installation
   "/api/account/{accountId}/v1/jobs":
     get:
       x-doc:
@@ -647,6 +935,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Initiates a ransomware scan on a cloud backup associated with a volume
+            snapshot transferred to the cloud object storage system. Use this to detect
+            potential ransomware threats in cloud backups.
+          keywords: ransomware scan,cloud backup,volume snapshot,snapmirror cloud,cloud
+            object storage
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/sfr/volume/{volumeId}/file-explore/start":
     post:
       x-doc:
@@ -665,6 +959,13 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Performs a volume, file, and folder-level restore operation. Use this
+            to validate backup availability and restore data, including multi-level
+            or nested folders, while adhering to system constraints and compatibility
+            checks.
+          keywords: volume restore,folder restore,file restore,nested folder,cloud
+            backup,ransomware scan
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/{workingEnvironmentId}/svm":
     get:
       x-doc:
@@ -674,6 +975,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of storage VMs and their details from a specific
+            system. Use this to view information about storage VMs, including their
+            associated aggregates and resource configurations.
+          keywords: storage vm,storage details,aggregate objects,aggregate size,aggregate
+            disk type,aggregate tiering status
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/region/{locationId}/keyrings":
     get:
       x-doc:
@@ -683,6 +990,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of KeyRings for a region from a specific Google Cloud
+            project. Use this to view the KeyRings available in the specified region
+            for backup or recovery workflows.
+          keywords: keyrings,gcp keyrings,google cloud keyrings,region keyrings,gcp
+            region keyrings,google cloud project keyrings
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/region/{locationId}/keyrings/{keyRingId}/cryptokey"
   : get:
       x-doc:
@@ -692,6 +1005,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of CryptoKeys for a KeyRing in a region from a specific
+            Google Cloud project. Use this to view the available encryption keys associated
+            with a KeyRing in the specified region.
+          keywords: cryptokey,key ring,google cloud,cloud manager,gcp project
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/version":
     post:
       x-doc:
@@ -701,6 +1019,11 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the version of the StorageGRID servers. Use this to verify
+            the server version for compatibility or troubleshooting purposes.
+          keywords: storagegrid version,retrieve storagegrid,storage servers,cloudmanager
+            cbs,storagegrid servers
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg":
     get:
       x-doc:
@@ -718,6 +1041,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Discovers a new StorageGRID server in the NetApp Console SaaS application.
+            Use this to identify and register additional servers for backup and recovery
+            operations.
+          keywords: storagegrid discovery,netapp console,storagegrid server,saas storagegrid,netapp
+            storagegrid
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/credentials/working-environment/{workingEnvironmentId}":
     post:
       x-doc:
@@ -727,6 +1056,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Saves the StorageGRID credentials, enabling authentication for accessing
+            StorageGRID resources. Use this to securely store credentials for integration
+            with Backup and Recovery workflows.
+          keywords: storagegrid credentials,storagegrid working environment,cloudmanager
+            storagegrid,storage server access,netapp storagegrid
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/file-explore/start"
   : post:
       x-doc:
@@ -736,6 +1071,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Starts a file and folder explore operation to initiate a single file
+            restore (SFR) workflow. Use this to browse files and folders from backups
+            stored on supported cloud storage providers.
+          keywords: file explore,start file restore,single file restore,active data
+            connector,browse snapshot,cloud volumes ontap
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}/file-explore/list"
   : get:
       x-doc:
@@ -745,6 +1086,12 @@ paths:
         explorer: false
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of files and folders within a specified volume snapshot
+            in a paginated format. Use this to explore snapshot contents and create
+            a file catalog for the "Browse and Restore" option.
+          keywords: file restore,file catalog,volume snapshot,browse restore,file
+            explorer
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}/files/status"
   : get:
       x-doc:
@@ -753,6 +1100,11 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-sfr-working-environment-volume-snapshot-files-status.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the file and folder status during a restore operation, providing
+            the results of a file or folder search you initiate.
+          keywords: snapshot status,file search,folder search,restore operation,snapshot
+            files
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment":
     get:
       x-doc:
@@ -761,6 +1113,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v2-backup-working-environment.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the details of all systems that are backed up using the
+            NetApp Backup and Recovery service within an account. Use this to review
+            backup configurations and enablement statuses across your systems.
+          keywords: netapp backup,recovery service,backup details,cloud storage pool,metrocluster
+            id,backup policy
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/volume/{volumeId}/snapshot":
     get:
       x-doc:
@@ -777,6 +1135,13 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-backup-snapshot.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves snapshot information for a specified account using the account
+            ID. Use this to view details such as snapshot name, creation time, archive
+            status, size, and additional attributes like object-lock and ransomware
+            scan status.
+          keywords: snapshots retrieval,snapshot details,netapp console snapshots,cloud
+            backup snapshots,ransomware scan
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/panoramic-protection/working-environment/{workingEnvironmentId}":
     post:
       x-doc:
@@ -785,6 +1150,13 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Activates comprehensive protection for a system, verifying cluster
+            peering and creating it if necessary based on the selected backup topology.
+            Use this endpoint to enable backup to cloud and set up the object-store
+            bucket for transferring backups.
+          keywords: comprehensive protection,backup topology,cluster peering,cloud
+            backup,object-store bucket
     put:
       x-doc:
         title: Modify the comprehensive protection configuration in a system (v1)
@@ -807,6 +1179,12 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies the comprehensive protection configuration in a system. Use
+            this to enhance protection capabilities by adding replication and backup
+            functionalities, enabling advanced backup topologies in the cloud.
+          keywords: comprehensive protection,cloud backup,replication configuration,cluster
+            peering,backup bucket,cloud provider
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/panoramic-protection/working-environment/{workingEnvironmentId}/volume":
     post:
       x-doc:
@@ -815,6 +1193,13 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-volume.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates comprehensive panoramic protection for multiple volumes by
+            establishing replication and backup relationships. Use this to ensure
+            data protection across clusters and object storage systems, supporting
+            cascading or fan-out workflows.
+          keywords: panoramic protection,backup workflow,cloud replication,cluster
+            peering,snapmirror cloud,secondary cluster
     put:
       x-doc:
         title: Modify comprehensive protection for multiple volumes (v1)
@@ -822,6 +1207,12 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-volume.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies comprehensive protection for multiple volumes. Use this to
+            update replication or backup policies for existing relationships, or to
+            create new SnapMirror or SnapMirror Cloud relationships when none exist.
+          keywords: volume replication,replication policy,backup policy,snapmirror
+            cloud,volume protection,cluster peering
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/snapshot":
     get:
       x-doc:
@@ -830,6 +1221,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-snapshot.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves snapshot information for a volume backed up using NetApp
+            Backup and Recovery. Use this to view details such as snapshot name, creation
+            time, archive status, and ransomware scan status.
+          keywords: snapshot details,volume snapshot,netapp backup,netapp recovery,snapshot
+            information,ransomware scan
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/replication/working-environment/{workingEnvironmentId}/relationship":
     patch:
       x-doc:
@@ -838,6 +1235,13 @@ paths:
         filename: patch-account-providers-cloudmanager_cbs-api-v1-replication-working-environment-relationship.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Performs an action on a volume with SnapMirror replication. Use this
+            to manage SnapMirror relationships, including updating, deleting, pausing,
+            resyncing, reverse-resyncing, aborting, and resuming functionality on
+            replicated volumes.
+          keywords: snapmirror replication,volume relationship,replication management,replicated
+            volume,relationship actions
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/revert/working-environment/{workingEnvironmentId}/volume/{volumeId}":
     post:
       x-doc:
@@ -846,6 +1250,13 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-revert-working-environment-volume-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Reverts a snapshot for a volume, restoring the snapshot as the read-write
+            parent volume for the volume family. Use this to replace the current working
+            copy of the volume with the snapshot, removing all changes made since
+            the snapshot was created.
+          keywords: snapshot revert,restore volume,snapshot restore,volume snapshot,revert
+            volume
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/backup-policy/{policyId}":
     delete:
       x-doc:
@@ -854,6 +1265,11 @@ paths:
         filename: delete-account-providers-cloudmanager_cbs-api-v1-working-environment-backup-policy-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a backup policy associated with a system. Use this to remove
+            policies that are no longer needed for managing backups.
+          keywords: backup policies,delete backup,cloud manager,working environment,backup
+            policy deletion,system backup
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/byPage/volume":
     get:
       x-doc:
@@ -870,6 +1286,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-working-environment-snapshot-policies.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the snapshot policies associated with a system, returning
+            the policies and their associated rules. Use this to view the snapshot
+            policies created at the cluster level for the specified system.
+          keywords: snapshot policies,cluster level snapshots,working environment
+            snapshots,system snapshot rules,netapp snapshot policies
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policies/{policyId}":
     delete:
       x-doc:
@@ -878,6 +1300,11 @@ paths:
         filename: delete-account-providers-cloudmanager_cbs-api-v1-working-environment-snapshot-policies-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a snapshot policy for a specified system. Use this to remove
+            policies that are no longer needed for managing snapshot operations.
+          keywords: snapshot policy,delete snapshot,working environment,system snapshot,policy
+            deletion
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy":
     get:
       x-doc:
@@ -886,6 +1313,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-working-environment-replication-policy.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of ONTAP replication policies associated with a system.
+            Use this to view SnapMirror policies and their rules created at the cluster
+            level for the specified system.
+          keywords: snapmirror policies,replication policy,cluster level policies,ontap
+            replication,working environment
     post:
       x-doc:
         title: Create a replication policy in a system 
@@ -893,6 +1326,13 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-working-environment-replication-policy.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a replication policy in a system, specifying the rules for
+            data replication between storage resources. Use this to define how data
+            is copied, synchronized, or retained across systems for backup and recovery
+            purposes.
+          keywords: replication policy,working environment,transfer schedule,source
+            snapshots,svm name
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy/{policyId}":
     delete:
       x-doc:
@@ -901,6 +1341,11 @@ paths:
         filename: delete-account-providers-cloudmanager_cbs-api-v1-working-environment-replication-policy-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a replication policy from the specified system. Use this to
+            remove SnapMirror policies created at the cluster level.
+          keywords: snapmirror policy,replication policy,cluster level,snapmirror
+            delete,working environment
     patch:
       x-doc:
         title: Modify a replication policy in a system
@@ -908,6 +1353,11 @@ paths:
         filename: patch-account-providers-cloudmanager_cbs-api-v1-working-environment-replication-policy-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies a replication policy in a system. Use this to update the
+            replication rules for efficient data synchronization or disaster recovery.
+          keywords: replication policy,modify replication,working environment,transfer
+            schedule,system replication,policy update
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/relationship":
     get:
       x-doc:
@@ -916,6 +1366,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-working-environment-relationship.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of ONTAP relationships associated with a system.
+            Use this to query relationships by specifying parameters such as the maximum
+            number of records, the next volume UUID, or the relationship type.
+          keywords: ontap relationships,system relationships,working environment,volume
+            uuid,relationship type
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/peercluster":
     get:
       x-doc:
@@ -924,6 +1380,11 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-working-environment-peercluster.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of ONTAP clusters peered to a specific system. Use
+            this to view the clusters associated with the specified system ID.
+          keywords: ontap clusters,peer clusters,working environment,system id,cloudmanager
+            cbs
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot":
     get:
       x-doc:
@@ -932,6 +1393,13 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-working-environment-volume-snapshot.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of snapshot details for a volume, providing information
+            about snapshots specific to the specified system and volume. Use this
+            to query snapshot records based on parameters such as maximum number of
+            results, snapshot UUID, or CP-COUNT.
+          keywords: snapshot details,volume snapshot,working environment,netapp snapshot,cloud
+            manager
     post:
       x-doc:
         title: Create a snapshot for a volume
@@ -939,6 +1407,11 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-working-environment-volume-snapshot.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a snapshot for a volume in Backup and Recovery. Use this to
+            capture the state of a volume for backup or recovery workflows.
+          keywords: snapshot creation,volume snapshot,snapshot policy,working environment,snapshot
+            label
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}"
   : delete:
       x-doc:
@@ -947,6 +1420,12 @@ paths:
         filename: delete-account-providers-cloudmanager_cbs-api-v1-working-environment-volume-snapshot-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a snapshot for a volume, removing the specified snapshot from
+            the associated system and volume. Use this to manage storage resources
+            by freeing up space or removing outdated snapshots.
+          keywords: snapshot delete,volume snapshot,delete snapshot,volume management,snapshot
+            removal
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/relationship/{relationshipId}":
     get:
       x-doc:
@@ -956,6 +1435,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-working-environment-relationship-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the relationship details associated with a volume SnapMirror
+            replication. Use this to review source, destination, policy, status, health,
+            transfer type, and relationship status information.
+          keywords: snapmirror relationship,volume replication,relationship status,replication
+            health,transfer type,policy details
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot-policy"
   : put:
       x-doc:
@@ -964,6 +1449,12 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v1-working-environment-volume-snapshot-policy.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies a snapshot policy to align with the volume snapshot policy
+            defined by the SnapMirror relationship for a volume in a system. Use this
+            to ensure consistency between snapshot policies and SnapMirror configurations.
+          keywords: snapshot policy,volume snapshot,snapmirror relationship,modify
+            snapshot,working environment
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/schedules":
     get:
       x-doc:
@@ -972,6 +1463,11 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-working-environment-schedules.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of schedules present in a system. Use this to view
+            and manage available schedules for backup and recovery operations.
+          keywords: schedules list,working environment,schedule retrieval,cloud manager,netapp
+            schedules
     post:
       x-doc:
         title: Create a new cron schedule in a system 
@@ -979,6 +1475,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-working-environment-schedules.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a new cron schedule in a system, defining the schedule for
+            automated tasks or backups. Use this to configure recurring operations
+            tailored to your system's requirements.
+          keywords: cron schedule,working environment,netapp console,cloudmanager
+            cbs,system schedule
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policy":
     post:
       x-doc:
@@ -987,6 +1489,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-working-environment-snapshot-policy.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a snapshot policy with a specified schedule, retention count,
+            and SnapMirror labels. Use this to define automated snapshot management
+            for your system.
+          keywords: snapshot policy,snapshot schedule,cloud backup,snapmirror labels,working
+            environment
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policy/{policyId}":
     patch:
       x-doc:
@@ -995,6 +1503,13 @@ paths:
         filename: patch-account-providers-cloudmanager_cbs-api-v1-working-environment-snapshot-policy-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies the snapshot policy in a system, including changes to existing
+            schedules such as adjusting the SnapMirror label and count or adding and
+            removing schedules. Use this to customize snapshot policies for your backup
+            and recovery workflows.
+          keywords: snapshot policy,modify snapshot,working environment,snapmirror
+            label,snapshot schedules
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/discover/volumes":
     post:
       x-doc:
@@ -1011,6 +1526,13 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v2-working-environment-discover-volumes.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Discovers all volumes with relationships for a list of systems, providing
+            visibility into existing volume relationships across the specified systems.
+            Use this to assess or manage linked volumes within your backup and recovery
+            workflows.
+          keywords: volume discovery,working environment,cloud manager volumes,volume
+            relationships,object store discovery
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/buckets":
     get:
       x-doc:
@@ -1019,6 +1541,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-aws-awsaccountid-buckets.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of AWS S3 buckets from a specified region that belong
+            to a specified AWS account. Use this to view the available buckets for
+            backup or recovery operations.
+          keywords: aws s3 buckets,aws account buckets,netapp console buckets,s3 bucket
+            list,cloud storage buckets
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/buckets/{bucketName}":
     get:
       x-doc:
@@ -1027,6 +1555,11 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-aws-awsaccountid-buckets-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a specific AWS S3 bucket from a specified region that belongs
+            to a specified AWS account. Use this to view the bucket details for backup
+            or recovery workflows.
+          keywords: aws bucket,s3 bucket,aws account,specific bucket,netapp console
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resourceGroup/{resourceGroup}/storageAccounts"
   : get:
       x-doc:
@@ -1035,6 +1568,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-azure-subscription-resourcegroup-storageaccounts.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of Azure storage accounts for a specific subscription
+            ID in a resource group. Use this to view the available storage accounts
+            for resource management or integration purposes.
+          keywords: azure storage,storage accounts,azure resource group,netapp console,azure
+            subscription
   ? "/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resourceGroup/{resourceGroup}/storageAccounts/{storageAccountName}"
   : get:
       x-doc:
@@ -1043,6 +1582,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-azure-subscription-resourcegroup-storageaccounts-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a specific Azure storage account for a subscription ID in
+            a resource group. Use this to view details about the storage account associated
+            with a subscription in Azure cloud.
+          keywords: azure storage,azure subscription,resource group,storage account,netapp
+            console,cloudmanager cbs
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/buckets":
     get:
       x-doc:
@@ -1051,6 +1596,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-gcp-project-buckets.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of buckets in a region from a specific Google Cloud
+            project. Use this to view the available buckets for storage operations
+            within the selected region.
+          keywords: netapp buckets,google cloud buckets,gcp project buckets,console
+            bucket listing,region bucket retrieval
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/buckets/{bucketName}":
     get:
       x-doc:
@@ -1059,6 +1610,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-gcp-project-buckets-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a specific Google Cloud bucket in a region from a Google
+            Cloud project. Use this to view the bucket details for backup or recovery
+            operations.
+          keywords: google cloud bucket,netapp console,gcp project,bucket region,specific
+            bucket
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/gcp/credentials":
     get:
       x-doc:
@@ -1067,6 +1624,11 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v2-gcp-credentials.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves Google Cloud credentials in the NetApp Console SaaS application.
+            Use this to view the credentials available for managing Google Cloud resources.
+          keywords: google cloud,netapp console,cloud credentials,gcp credentials,google
+            cloud integration,netapp saas
     post:
       x-doc:
         title: Register Google Cloud credentials 
@@ -1074,6 +1636,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v2-gcp-credentials.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Registers Google Cloud credentials for a Google Cloud project. Use
+            this endpoint to enable Backup and Recovery operations for resources in
+            the specified project.
+          keywords: google cloud,cloud credentials,netapp console,google project,register
+            credentials
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/gcp/credentials/{credentialsId}":
     put:
       x-doc:
@@ -1082,6 +1650,12 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v2-gcp-credentials-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Updates Google Cloud credentials for a Google Cloud project in the
+            NetApp Console SaaS application. Use this to refresh or modify credentials
+            associated with your Google Cloud project.
+          keywords: google cloud credentials,update credentials,google cloud project,netapp
+            console,gcp credentials
     delete:
       x-doc:
         title: Delete Google Cloud credentials
@@ -1089,6 +1663,12 @@ paths:
         filename: delete-account-providers-cloudmanager_cbs-api-v2-gcp-credentials-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes Google Cloud credentials for a Google Cloud project in the
+            NetApp Console SaaS application. Use this to remove credentials that are
+            no longer needed or require replacement.
+          keywords: google cloud,cloud credentials,delete credentials,netapp console,google
+            project
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/iamra/config-status":
     get:
       x-doc:
@@ -1122,6 +1702,11 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-feature-flags.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of features that are enabled or disabled for the
+            account. Use this to review the account's available capabilities and configurations.
+          keywords: feature flags,enabled features,disabled features,account features,cloudmanager
+            cbs,feature management
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/catalog/re-index":
     post:
       x-doc:
@@ -1130,6 +1715,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v2-catalog-re-index.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Re-indexes the catalog for all systems in an account, updating the
+            catalog information to ensure accuracy and completeness. Use this when
+            changes to system data require the catalog to be refreshed.
+          keywords: catalog reindex,catalog systems,reindex systems,account catalog,reindex
+            account
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/search/job":
     get:
       x-doc:
@@ -1138,6 +1729,13 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-catalog-search-job.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Searches for a specific file from backups taken by the NetApp Backup
+            and Recovery service across on-premises volumes and systems. Use this
+            to locate files or volumes based on criteria such as system, file extensions,
+            size ranges, creation date range, or backup location.
+          keywords: search file,backup search,file recovery,volume search,backup location,file
+            filter
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/license/working-environment/{workingEnvironmentId}/validity":
     get:
       x-doc:
@@ -1146,6 +1744,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-license-working-environment-validity.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the valid licenses in a system, verifying the marketplace
+            subscription, backup license, and SnapMirror license status. Use this
+            to confirm license validity for backup and recovery operations.
+          keywords: marketplace subscription,backup license,snapmirror license,validity
+            check,working environment
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/buckets":
     post:
       x-doc:
@@ -1154,6 +1758,11 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-sg-buckets.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of StorageGRID buckets from the StorageGRID server.
+            Use this to view the available buckets for backup or recovery operations.
+          keywords: storagegrid buckets,storagegrid server,cloudmanager buckets,netapp
+            storagegrid,bucket retrieval,storage server
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/buckets/{bucketName}":
     post:
       x-doc:
@@ -1162,6 +1771,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-sg-buckets-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves details of a specific bucket from the StorageGRID server.
+            Use this to view the bucket's configuration or properties for backup and
+            recovery purposes.
+          keywords: bucket details,storagegrid bucket,sgws bucket,storage server,bucket
+            fields
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/sg":
     get:
       x-doc:
@@ -1170,6 +1785,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v2-sg.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of StorageGRID servers in the NetApp Console SaaS
+            application. Use this to view the servers available for backup and recovery
+            operations.
+          keywords: storagegrid servers,netapp console,cloudmanager cbs,storagegrid
+            list,netapp saas
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/sg/credentials":
     post:
       x-doc:
@@ -1178,6 +1799,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v2-sg-credentials.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates new StorageGRID credentials in the NetApp Console SaaS application.
+            Use this to configure access to StorageGRID resources for backup or recovery
+            operations.
+          keywords: storagegrid credentials,storagegrid registration,netapp console
+            storagegrid,cloudmanager storagegrid,storagegrid access
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/sg/credentials/{storageServerName}":
     put:
       x-doc:
@@ -1186,6 +1813,11 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v2-sg-credentials-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Updates StorageGRID credentials in the NetApp Console SaaS application.
+            Use this to modify authentication details for accessing StorageGRID services.
+          keywords: storagegrid credentials,netapp console,update credentials,storagegrid
+            server,netapp saas
     delete:
       x-doc:
         title: Delete StorageGRID credentials 
@@ -1193,6 +1825,12 @@ paths:
         filename: delete-account-providers-cloudmanager_cbs-api-v2-sg-credentials-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes StorageGRID credentials in the NetApp Console SaaS application.
+            Use this to remove credentials that are no longer needed or to revoke
+            access to a StorageGRID instance.
+          keywords: storagegrid credentials,delete storagegrid,netapp console,storage
+            server,delete credentials
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/report":
     post:
       x-doc:
@@ -1201,6 +1839,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-report.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Generates an inventory report, providing details about account-level
+            resources, systems, or storage VMs. Use this to create reports for backup
+            actions or all actions based on the specified inventory type.
+          keywords: inventory report,storage vms,backup actions,protection type,return
+            snapshots
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/report/job/{jobId}":
     get:
       x-doc:
@@ -1209,6 +1853,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-report-job-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the inventory report data generated by the Inventory Report
+            POST API. Use this to download report data based on the specified scope,
+            such as account, system, or storage VM.
+          keywords: inventory report,job report,cloud manager,report data,report download,storage
+            vm
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/report/snapshot/job/{jobId}":
     get:
       x-doc:
@@ -1217,6 +1867,13 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-report-snapshot-job-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the local snapshots report data generated by the Local Snapshot
+            Inventory Report POST API. Use this to download snapshot report data based
+            on the scope specified during the deployment of the Replication Inventory
+            Report POST API.
+          keywords: local snapshots,local snapshot report,snapshot inventory,replication
+            report,snapshot job
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/report/replication/job/{jobId}":
     get:
       x-doc:
@@ -1225,6 +1882,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-report-replication-job-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves replication report data generated by the Replication Inventory
+            Report POST API. Use this to download report data based on the specified
+            scope, such as account or system.
+          keywords: replication report,replication job,replication inventory,report
+            data,account replication,cloudmanager cbs
   "/account/{accountId}/providers/cloudmanager_cbs/api/internal/working-environment/{workingEnvironmentId}/volume/{volumeId}":
     patch:
       x-doc:
@@ -1241,6 +1904,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-migration-validate.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Validates migration operations for backups from a source ONTAP cluster
+            to a target ONTAP cluster. Use this to confirm that the migration process
+            meets the necessary requirements before proceeding.
+          keywords: migration validation,backup migration,source cluster,target cluster,ontap
+            migration,cloud manager
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/migration":
     post:
       x-doc:
@@ -1249,6 +1918,12 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-migration.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Triggers the migration of backups from the source ONTAP cluster to
+            the target ONTAP cluster. Use this to initiate the transfer of backup
+            data between clusters for recovery or archival purposes.
+          keywords: ontap migration,backup migration,source ontap,target ontap,cloud
+            backup,migration mapping
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage":
     post:
       x-doc:
@@ -1257,6 +1932,11 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v1-object-storage.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a bucket for the specified cloud provider. Use this to store
+            and manage data in the cloud environment.
+          keywords: bucket creation,cloud provider,object storage,create bucket,cloud
+            manager,storage bucket
     put:
       x-doc:
         title: Modify bucket properties for a cloud provider
@@ -1264,6 +1944,12 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v1-object-storage.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies the bucket properties for the specified cloud provider. Use
+            this to update configuration settings as needed for storage management
+            or compliance.
+          keywords: bucket properties,cloud manager,object storage,modify bucket,cloud
+            providers,storage region
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage/{provider}":
     get:
       x-doc:
@@ -1272,6 +1958,11 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-object-storage-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves buckets for the specified cloud provider. Use this to view
+            and manage the storage buckets available for backup and recovery operations.
+          keywords: cloud buckets,cloud storage,object storage,bucket retrieval,cloud
+            provider buckets
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage/{provider}/{objectStoreName}":
     get:
       x-doc:
@@ -1280,6 +1971,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-object-storage-provider.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a specific bucket for the specified cloud provider. Use
+            this to access the bucket details necessary for managing backup or recovery
+            operations.
+          keywords: bucket retrieval,cloud bucket,object storage,bucket details,cloud
+            provider
   "/account/{accountId}/providers/cloudmanager_cbs/api/v3/credentials":
     post:
       x-doc:
@@ -1311,6 +2008,11 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v1-configurations.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies the configuration for NCO Backup and Recovery. Use this to
+            update settings for backup or recovery workflows.
+          keywords: cloudmanager configurations,modify configuration,cloud provider
+            configuration,update configuration,configuration settings
   "/account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations/{key}":
     get:
       x-doc:
@@ -1319,6 +2021,12 @@ paths:
         filename: get-account-providers-cloudmanager_cbs-api-v1-configurations-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the configuration value for the specified key. Use this
+            to access specific settings and ensure accurate configuration in your
+            backup and recovery workflows.
+          keywords: configuration value,retrieve configuration,cloudmanager cbs,account
+            configuration,account id,configuration key
   "/account/{accountId}/providers/cloudmanager_cbs/api/v2/panoramic-protection/working-environment/{workingEnvironmentId}/volume":
     post:
       x-doc:
@@ -1327,6 +2035,13 @@ paths:
         filename: post-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates comprehensive panoramic protection for multiple volumes by
+            establishing replication and backup relationships based on the selected
+            topology. Use this to ensure resilient data protection across clusters
+            and object stores.
+          keywords: panoramic protection,replication relationship,cluster peering,backup
+            to cloud,snapmirror cloud,storagegrid
     put:
       x-doc:
         title: Modify panoramic protection settings for multiple volumes (v2)
@@ -1334,43 +2049,135 @@ paths:
         filename: put-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies the panoramic protection settings for multiple volumes, including
+            backup and replication configurations. Use this to adjust auto-backup
+            settings, transfer rates, or snapshot policies for existing volumes.
+          keywords: panoramic protection,backup settings,replication settings,auto-backup,transfer
+            rates,snapshot policies
 categories:
 - id: sfr
   title: Single file restore endpoints in the NetApp Backup and Recovery REST API
   permalink: sfr_overview.html
+  ai-gen:
+    lead: Restore individual files from volume snapshots using single file restore
+      (SFR) endpoints. Use these endpoints to explore snapshot backups and retrieve
+      files during recovery operations.
+    keywords: single file restore,volume snapshots,snapshot backup,file explore,snapshot
+      restore
 - id: backup
   title: Backup endpoints in the NetApp Backup and Recovery REST API
   permalink: backup_overview.html
+  ai-gen:
+    lead: Use backup endpoints to manage backup operations for cloud and on-premises
+      resources and retrieve details about backup data. These endpoints help you configure,
+      modify, and disable backups for systems and volumes, as well as create on-demand
+      backups when needed.
+    keywords: backup operations,cloud backup,backup data,backup configuration,delete
+      backups,on-demand backups
 - id: restore
   title: Restore endpoints in the NetApp Backup and Recovery REST API
   permalink: restore_overview.html
+  ai-gen:
+    lead: Use the restore endpoints to recover volumes, folders, and files to their
+      previous states. You can also check the status of ongoing restore operations
+      to monitor progress and ensure successful recovery.
+    keywords: restore operations,volume restore,folder restore,file restore,restore
+      status
 - id: system
   title: System endpoints in the NetApp Backup and Recovery REST API
   permalink: system_overview.html
+  ai-gen:
+    lead: Use system endpoints to retrieve system details, configure backup policies,
+      and manage object stores associated with systems. These endpoints also support
+      operations such as listing directories, modifying policies, and accessing information
+      about storage resources and relationships.
+    keywords: systems management,backup policies,object store,volume directories,snapmirror
+      relationships
 - id: cloud
   title: Cloud endpoints in the NetApp Backup and Recovery REST API
   permalink: cloud_overview.html
+  ai-gen:
+    lead: Retrieve information about cloud resources across AWS, Azure, and Google
+      Cloud using these endpoints in the NetApp Backup and Recovery REST API. Use
+      them to access details like accounts, region keys, storage classes, subscription
+      settings, and project configurations, or to create Azure subscription resource-groups.
+    keywords: cloud endpoints,backup recovery,aws resources,azure subscription,google
+      cloud projects,netapp console
 - id: job
   title: Job endpoints in the NetApp Backup and Recovery REST API
   permalink: job_overview.html
+  ai-gen:
+    lead: Access information about jobs executed within the NetApp Console SaaS application
+      using these endpoints. Retrieve comprehensive details and listings to monitor
+      and review backup and recovery activities.
+    keywords: job details,netapp console,backup recovery,jobs list,saas application
 - id: catalog
   title: Catalog endpoints in the NetApp Backup and Recovery REST API
   permalink: catalog_overview.html
+  ai-gen:
+    lead: Use catalog endpoints to manage indexed catalog searches for files based
+      on specific queries. These endpoints support operations such as initiating searches,
+      retrieving snapshot lists for volumes, and configuring or modifying catalog
+      services across various environments, including cloud and on-premises deployments.
+    keywords: catalog search,indexed catalog,volume snapshots,catalog service,dark
+      sites,cloud catalog
 - id: license
   title: License endpoints in the NetApp Backup and Recovery REST API
   permalink: license_overview.html
+  ai-gen:
+    lead: Use license endpoints to check the validity and eligibility of system licenses
+      required for NetApp Backup and Recovery operations. These endpoints help you
+      verify activation status, create backups, restore data, and monitor trial license
+      durations.
+    keywords: license validity,license eligibility,trial license,backup activation,restore
+      backup
 - id: ransomware scan
   title: Ransomware scan endpoints in the NetApp Backup and Recovery REST API
   permalink: ransomware_scan_overview.html
+  ai-gen:
+    lead: Initiate ransomware scans on cloud backup snapshots stored in object-store
+      buckets to detect potential threats. These endpoints focus exclusively on scanning
+      cloud backups and do not support local snapshots.
+    keywords: ransomware scan,cloud backups,snapshot scan,ransomware detection,object
+      store
 - id: panoramic protection
   title: Panoramic protection endpoints in the NetApp Backup and Recovery REST API
   permalink: panoramic_protection_overview.html
+  ai-gen:
+    lead: Automate comprehensive 3-2-1 backup workflows to streamline data protection
+      using Panoramic Protection endpoints. Use these endpoints to configure, modify,
+      and manage cascading or fan-out topologies for replication and cloud backups
+      across your systems and volumes.
+    keywords: backup spectrum,3-2-1 model,volume replication,cloud backup,cascading
+      topology,fan-out topology
 - id: replication
   title: Replication endpoints in the NetApp Backup and Recovery REST API
   permalink: replication_overview.html
+  ai-gen:
+    lead: Manage SnapMirror replication relationships for volumes, including actions
+      such as update, delete, pause, resync, reverse-resync, abort, and resume, to
+      maintain data consistency and recovery readiness.
+    keywords: snapmirror replication,volume replication,replication update,relationship
+      resync,replicated volume
 - id: report
   title: Report endpoints in the NetApp Backup and Recovery REST API
   permalink: report_overview.html
+  ai-gen:
+    lead: Generate and access inventory reports to track account-wide resources, specific
+      systems, or storage VMs within a system. Use these endpoints to create detailed
+      summaries or retrieve existing reports for analysis.
+    keywords: inventory report,account inventory,storage vm report,system inventory,generate
+      report,retrieve report
 - id: storagegrid
   title: StorageGRID endpoints in the NetApp Backup and Recovery REST API
   permalink: storagegrid_overview.html
+  ai-gen:
+    lead: Use StorageGRID endpoints to access server version information, retrieve
+      server details, and discover or add StorageGRID WebScale servers in your environment.
+    keywords: storagegrid server,storagegrid version,storagegrid details,storagegrid
+      discovery,netapp console
+root_overview:
+  ai-gen:
+    keywords: backup and recovery,data backup,restore,archiving,cloud volumes ontap,ransomware scan
+    lead: Automate backup, restore, and long-term archiving of data from Cloud Volumes ONTAP and on-premises ONTAP clusters. The endpoints cover components such as backups, restores, catalogs, ransomware scans, and replication.

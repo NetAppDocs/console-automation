@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-metadata-create-container.html'
+keywords: 'blob container,create container,new container,azure ha,container creation'
 summary: 'Create a new blob container'
 ---
 
 = Create a new blob container
 :imagesdir: ../media/
 
+[.lead]
+Creates a new blob container. Use this to organize and store unstructured data in a cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/metadata/create-container`#
-
-
-
-Creates a new blob container.
-
 
 == Request Body
 

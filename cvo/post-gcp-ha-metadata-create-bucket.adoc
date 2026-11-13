@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-metadata-create-bucket.html'
+keywords: 'create bucket,new bucket,gcp bucket,ha bucket,metadata bucket'
 summary: 'Create a new bucket'
 ---
 
 = Create a new bucket
 :imagesdir: ../media/
 
+[.lead]
+Creates a new bucket. Use this to define and store objects within the bucket for data management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/metadata/create-bucket`#
-
-
-
-Creates a new bucket.
-
 
 == Request Body
 

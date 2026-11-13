@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-network-requirements.html'
+keywords: 'ha network,cloud volumes ontap,network requirements,ha mediator,ip addresses'
 summary: 'Retrieve the minimum number of required IP addresses'
 ---
 
 = Retrieve the minimum number of required IP addresses
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the minimum number of required IP addresses for a Cloud Volumes ONTAP system, including HA nodes and HA mediators. Use this to determine the IP address requirements for deployment planning.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/network-requirements`#
 
-
+== Usage notes
 
 Retrieves the minimum number of required IP addresses for a single Cloud Volumes ONTAP system, HA node, and HA mediator.
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-accounts-relationships-tags.html'
+keywords: 'relationship tags,edit tags,netapp relationship,update tags,tag management,relationship update'
 summary: 'Edit the relationship tags'
 ---
 
 = Edit the relationship tags
 :imagesdir: ../media/
 
+[.lead]
+Modifies the relationship tags for a specified resource. Use this to update tags that categorize or identify the resource for organizational or operational purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/relationships/{id}/tags`#
 
-
+== Usage notes
 
 Edits the relationship tags.
 

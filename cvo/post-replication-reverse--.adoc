@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-replication-reverse--.html'
+keywords: 'snapmirror reverse,snapmirror relationship,reverse replication,healthy snapmirror,idle snapmirror'
 summary: 'Reverse an existing SnapMirror relationship'
 ---
 
 = Reverse an existing SnapMirror relationship
 :imagesdir: ../media/
 
+[.lead]
+Reverses an existing SnapMirror relationship, changing the direction of replication between the source and destination volumes. Use this when the relationship is healthy and idle to enable replication in the opposite direction.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/reverse/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
 
+== Usage notes
 
-
-Reverses an existing SnapMirror relationship. This method can only be performed when the relationship has already been established and is healthy and idle.
+This method can only be performed when the relationship has already been established and is healthy and idle.
 
 
 == Parameters

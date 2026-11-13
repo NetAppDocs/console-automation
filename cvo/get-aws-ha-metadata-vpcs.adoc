@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-vpcs.html'
+keywords: 'vpcs,aws vpcs,ha metadata,vpc retrieval,cloud vpcs'
 summary: 'Retrieve VPCs'
 ---
 
 = Retrieve VPCs
 :imagesdir: ../media/
 
+[.lead]
+Retrieves VPCs. Use this to view the virtual private clouds available in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/vpcs`#
-
-
-
-Retrieves VPCs.
-
 
 == Parameters
 

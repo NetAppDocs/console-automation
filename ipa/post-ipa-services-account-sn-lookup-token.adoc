@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-services-account-sn-lookup-token.html'
+keywords: 'ipa serial number,serial number token,netapp console,serial lookup,service token'
 summary: 'Retrieve an IPA serial number token'
 ---
 
 = Retrieve an IPA serial number token
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an IPA serial number token. Use this token for authentication with the NetApp Console service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/services/account/{accountId}/sn-lookup-token`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Retrieves an IPA serial number token.
-            +
- +
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

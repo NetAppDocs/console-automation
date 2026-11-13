@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-grants-users.html'
+keywords: 'partnership users,grant users,partnership grant,grant user listing,user list partnership'
 summary: 'List all users for a grant in a partnership'
 ---
 
 = List all users for a grant in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of users associated with a specified grant in a partnership. Use this to view the users who have access to the grant within the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/users`#
 
-
+== Usage notes
 
 Lists all users in the specified grant for a partnership.
 

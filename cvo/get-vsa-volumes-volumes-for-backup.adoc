@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-volumes-volumes-for-backup.html'
+keywords: 'volumes backup,backup activation,volume retrieval,working environment,volume filtering,volume sorting'
 summary: 'Retrieve the volumes for backup activation'
 ---
 
 = Retrieve the volumes for backup activation
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all volumes for backup activation. Use this to identify the volumes available for initiating backup workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/volumes/volumes-for-backup`#
-
-
-
-Retrieves all volumes for backup activation.
-
 
 == Parameters
 

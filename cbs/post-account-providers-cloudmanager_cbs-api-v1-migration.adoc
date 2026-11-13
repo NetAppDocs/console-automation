@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-migration.html'
+keywords: 'ontap migration,backup migration,source ontap,target ontap,cloud backup,migration mapping'
 summary: 'Trigger backup migration'
 ---
 
 = Trigger backup migration
 :imagesdir: ../media/
 
+[.lead]
+Triggers the migration of backups from the source ONTAP cluster to the target ONTAP cluster. Use this to initiate the transfer of backup data between clusters for recovery or archival purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/migration`#
-
-
-
-Triggers the migration of backups from the source ONTAP cluster to the target ONTAP cluster.
-
 
 == Parameters
 

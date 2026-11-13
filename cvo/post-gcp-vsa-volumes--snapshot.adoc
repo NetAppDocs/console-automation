@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-volumes--snapshot.html'
+keywords: 'snapshot creation,snapshot manual,gcp snapshot,ontap snapshot,gcp volumes'
 summary: 'Create a snapshot'
 ---
 
 = Create a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot manually, providing a point-in-time copy of data for backup or recovery purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Creates a snapshot manually.
-
 
 == Parameters
 

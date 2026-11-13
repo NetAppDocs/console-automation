@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-folders-projects.html'
+keywords: 'create project,folder projects,project creation,folder id,specified folder'
 summary: 'Create a new project under a folder'
 ---
 
 = Create a new project under a folder
 :imagesdir: ../media/
 
+[.lead]
+Creates a project under the specified folder. Use this to organize resources and manage access within a tenancy structure.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/folders/{folder_id}/projects`#
-
-
-
-Creates a project under the specified folder.
-
 
 == Parameters
 

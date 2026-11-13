@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-aws-encryption-keys.html'
+keywords: 'aws encryption keys,encryption keys region,cloud provider account,encryption keys retrieval,aws region keys'
 summary: 'Retrieve AWS encryption keys by region'
 ---
 
 = Retrieve AWS encryption keys by region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves AWS encryption keys for a specific region. Use this to view the keys available in the designated region for encryption-related operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/aws-encryption-keys`#
-
-
-
-Retrieves AWS encryption keys for a specific region.
-
 
 == Parameters
 

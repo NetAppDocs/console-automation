@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-resource-remove-from-workspace-id.html'
+keywords: 'resource removal,workspace management,workspace resource,remove resource,resource workspace'
 summary: 'Remove a resource from a workspace'
 ---
 
 = Remove a resource from a workspace
 :imagesdir: ../media/
 
+[.lead]
+Deletes a resource from a specified workspace. Use this to manage workspace resources by removing unneeded items.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}/remove-from-workspace/{workspacePublicId}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Removes a resource from a specified workspace.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

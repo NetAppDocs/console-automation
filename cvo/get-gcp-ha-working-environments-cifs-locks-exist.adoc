@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-cifs-locks-exist.html'
+keywords: 'cifs locks,non persistent locks,cifs sessions,working environment,gcp ha'
 summary: 'Check for non-persistent locks held on CIFS sessions'
 ---
 
 = Check for non-persistent locks held on CIFS sessions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves non-persistent locks held on CIFS sessions. Use this to monitor session-specific locks that might impact file access or application performance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/cifs-locks-exist`#
 
-
+== Usage notes
 
 Checks for non-persistent locks held on CIFS sessions.
 

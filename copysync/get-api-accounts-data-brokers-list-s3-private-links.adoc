@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-data-brokers-list-s3-private-links.html'
+keywords: 's3 private links,data brokers,netapp tenancy,aws region,s3 bucket'
 summary: 'Retrieve the S3 private links'
 ---
 
 = Retrieve the S3 private links
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 private links, providing the information needed to access private endpoints for S3 services.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/list-s3-private-links`#
-
-
-
-Retrieves the S3 private links.
-
 
 
 CAUTION: This operation is deprecated.

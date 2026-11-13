@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-volumes-igroups-.html'
+keywords: 'igroup retrieval,volume igroups,ha volumes,working environment,svm igroups'
 summary: 'Retrieve all igroups'
 ---
 
 = Retrieve all igroups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all igroups, providing the list of initiator groups configured in the system. Use this to view available igroups for storage access management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/volumes/igroups/{workingEnvironmentId}/{svmName}`#
-
-
-
-Retrieves all igroups.
-
 
 == Parameters
 

@@ -3,21 +3,28 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/patch-tenancy-account-update-user.html'
+keywords: 'user notifications,notification preferences,bluexp notifications,update user,cloud manager notifications'
 summary: 'Enable Cloud Manager notifications'
 ---
 
 = Enable Cloud Manager notifications
 :imagesdir: ../media/
 
+[.lead]
+Updates the cloudManagerNotificationsOptIn property for an account, determining whether the user receives BlueXP notifications. Use this to manage notification preferences for your account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/tenancy/account/{accountId}/update-user`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Updates the user cloudManagerNotificationsOptIn property of the specified account.
             The cloudManagerNotificationsOptIn property determines whether the user receives BlueXP notifications.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

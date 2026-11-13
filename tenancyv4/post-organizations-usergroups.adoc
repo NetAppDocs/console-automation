@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-organizations-usergroups.html'
+keywords: 'organization usergroups,add usergroups,organization management,user group creation,usergroups organization'
 summary: 'Add user groups to an organization'
 ---
 
 = Add user groups to an organization
 :imagesdir: ../media/
 
+[.lead]
+Adds user groups to an organization, associating the specified groups with the organization for access management and permissions. Use this to manage group affiliations within the organization effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/usergroups`#
 
-
+== Usage notes
 
 Adds user groups to the specified organization.
 

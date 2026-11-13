@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-grants-users-.html'
+keywords: 'partnership user,grant user,partnership grant,user details,grant details'
 summary: 'Retrieve a user with a grant in a partnership'
 ---
 
 = Retrieve a user with a grant in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a user in the specified grant within a partnership. Use this to access user details associated with a particular grant in the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/users/{user_id}`#
 
-
+== Usage notes
 
 Retrieves a user in the specified grant in a partnership.
 

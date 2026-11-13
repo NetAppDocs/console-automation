@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-permutations.html'
+keywords: 'cloud volumes,ontap configurations,azure metadata,configuration permutations,cloud ontap'
 summary: 'Retrieve all Cloud Volumes ONTAP configurations'
 ---
 
 = Retrieve all Cloud Volumes ONTAP configurations
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all Cloud Volumes ONTAP configurations. Use this to view the available configurations for deployment or management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/permutations`#
-
-
-
-Retrieves all Cloud Volumes ONTAP configurations.
-
 
 == Error
 

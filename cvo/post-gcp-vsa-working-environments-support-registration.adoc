@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-support-registration.html'
+keywords: 'cloud volumes,ontap registration,netapp support,cloud system,working environment'
 summary: 'Register a Cloud Volumes ONTAP system'
 ---
 
 = Register a Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Registers a Cloud Volumes ONTAP system with NetApp. Use this to enable management and monitoring of the system through NetApp services.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/support-registration`#
-
-
-
-Registers a Cloud Volumes ONTAP system with NetApp.
-
 
 == Parameters
 

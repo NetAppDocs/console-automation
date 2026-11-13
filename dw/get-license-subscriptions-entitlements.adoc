@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-subscriptions-entitlements.html'
+keywords: 'subscription entitlements,service subscriptions,entitlement details,service entitlements,subscription information'
 summary: 'Retrieve the subscription entitlements'
 ---
 
 = Retrieve the subscription entitlements
 :imagesdir: ../media/
 
+[.lead]
+Retrieves subscription entitlement information for a specified service name. Use this to access details about authorized service calls within predefined scopes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/entitlements`#
 
-
+== Usage notes
 
 Retrieves the subscription entitlements information for a specified service name.
 

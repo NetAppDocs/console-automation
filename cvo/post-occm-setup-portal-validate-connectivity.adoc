@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-setup-portal-validate-connectivity.html'
+keywords: 'netapp console,internet connectivity,validate connectivity,setup portal,active connection'
 summary: 'Confirm the NetApp Console active internet connection'
 ---
 
 = Confirm the NetApp Console active internet connection
 :imagesdir: ../media/
 
+[.lead]
+Validates that the NetApp Console has an active internet connection. Use this to ensure connectivity for operations that require internet access.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/validate/connectivity`#
-
-
-
-Validates that the NetApp Console has an active internet connection.
-
 
 == Error
 

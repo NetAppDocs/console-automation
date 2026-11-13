@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-working-environment-schedules.html'
+keywords: 'cron schedule,working environment,netapp console,cloudmanager cbs,system schedule'
 summary: 'Create a new cron schedule in a system'
 ---
 
 = Create a new cron schedule in a system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new cron schedule in a system, defining the schedule for automated tasks or backups. Use this to configure recurring operations tailored to your system's requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/schedules`#
 
+== Token usage
 
-
-Creates a new cron schedule in a system.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

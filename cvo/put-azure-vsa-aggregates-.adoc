@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-vsa-aggregates-.html'
+keywords: 'azure aggregates,update iops,update throughput,disk performance,working environment,aggregate disks'
 summary: 'Update IOPS and throughput for disks in an existing aggregate (single-node)'
 ---
 
 = Update IOPS and throughput for disks in an existing aggregate (single-node)
 :imagesdir: ../media/
 
+[.lead]
+Updates IOPS and throughput for disks in an existing aggregate. Use this to adjust performance settings for the aggregate as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/aggregates/{workingEnvironmentId}/{aggregateName}`#
-
-
-
-Updates IOPS and throughput for the disks in an existing aggregate.
-
 
 == Parameters
 

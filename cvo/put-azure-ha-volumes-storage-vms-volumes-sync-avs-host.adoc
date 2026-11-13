@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-volumes-storage-vms-volumes-sync-avs-host.html'
+keywords: 'azure storage,vmware solution,avs host synchronization,volume sync,ha volumes'
 summary: 'Synchronize Azure VMware Solution (AVS) hosts'
 ---
 
 = Synchronize Azure VMware Solution (AVS) hosts
 :imagesdir: ../media/
 
+[.lead]
+Synchronizes Azure VMware Solution hosts on a volume. Use this to ensure host information is up-to-date for accurate volume management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/sync-avs-host`#
-
-
-
-Synchronizes Azure VMware Solution hosts on a volume.
-
 
 == Parameters
 

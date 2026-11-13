@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-system-about.html'
+keywords: 'netapp console,console server,server information,ontap system,system details'
 summary: 'Retrieve the NetApp Console server information'
 ---
 
 = Retrieve the NetApp Console server information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves NetApp Console server information. Use this to access details about the server configuration and status.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/about`#
-
-
-
-Retrieves NetApp Console server information.
-
 
 == Error
 

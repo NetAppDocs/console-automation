@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-roles.html'
+keywords: 'roles list,access roles,user roles,role management,permissions roles,roles overview'
 summary: 'List all roles'
 ---
 
 = List all roles
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of roles. Use this to review the roles available in the tenancy environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/roles`#
 
-
+== Usage notes
 
 Lists all roles.
 

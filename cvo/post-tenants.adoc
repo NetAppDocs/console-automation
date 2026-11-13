@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-tenants.html'
+keywords: 'tenant creation,new tenant,create tenant,tenant setup,tenant management,tenant provisioning'
 summary: 'Create a new tenant'
 ---
 
 = Create a new tenant
 :imagesdir: ../media/
 
+[.lead]
+Creates a new tenant. Use this to define and manage isolated environments for organizational or workload-specific resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenants`#
-
-
-
-Creates a new tenant.
-
 
 == Request Body
 

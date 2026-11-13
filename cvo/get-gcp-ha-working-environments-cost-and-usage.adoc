@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-cost-and-usage.html'
+keywords: 'cost usage,gcp system,gcp cost,system usage,working environment,cost analytics'
 summary: 'Retrieve the system cost and usage'
 ---
 
 = Retrieve the system cost and usage
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the system cost and usage, providing information to help you monitor resource consumption and expenses.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/cost-and-usage`#
-
-
-
-Retrieves the system cost and usage.
-
 
 == Parameters
 

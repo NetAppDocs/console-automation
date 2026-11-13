@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-volumes-initiator.html'
+keywords: 'iscsi initiators,iscsi volumes,gcp ha,high availability volumes,cloud storage initiators'
 summary: 'Retrieve all iSCSI initiators'
 ---
 
 = Retrieve all iSCSI initiators
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all iSCSI initiators. Use this to view the available initiators for configuring or managing iSCSI connections.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/volumes/initiator`#
-
-
-
-Retrieves all iSCSI initiators.
-
 
 == Error
 

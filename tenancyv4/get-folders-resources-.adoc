@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-folders-resources-.html'
+keywords: 'folder resource,folder id,resource retrieval,resource details,specific folder'
 summary: 'Retrieve a resource under a folder'
 ---
 
 = Retrieve a resource under a folder
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a resource under a folder, providing access to the specified resource within the folder's hierarchy. Use this to locate and manage individual resources organized under a folder.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders/{folder_id}/resources/{resource_id}`#
 
-
+== Usage notes
 
 Retrieves a resource under the specified folder.
 

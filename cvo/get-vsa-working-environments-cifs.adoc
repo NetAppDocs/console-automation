@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-working-environments-cifs.html'
+keywords: 'cifs configuration,cloud volumes,cloud ontap,working environment,cifs settings'
 summary: 'Retrieve a CIFS configuration for a system'
 ---
 
 = Retrieve a CIFS configuration for a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the CIFS configuration for an existing Cloud Volumes ONTAP system. Use this to view the current CIFS settings applied to the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/cifs`#
-
-
-
-Retrieves the CIFS configuration for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

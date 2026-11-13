@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-upload-licenses.html'
+keywords: 'cloud volumes,upload licenses,cloud license,ontap system,azure working environments'
 summary: 'Upload cloud license file content'
 ---
 
 = Upload cloud license file content
 :imagesdir: ../media/
 
+[.lead]
+Uploads the content of a cloud license file on the specified Cloud Volumes ONTAP system. Use this to manage licensing for your Cloud Volumes ONTAP deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/upload-licenses`#
-
-
-
-Uploads the content of a cloud license file on the specified Cloud Volumes ONTAP system.
-
 
 == Parameters
 

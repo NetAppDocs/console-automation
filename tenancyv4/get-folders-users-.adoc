@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-folders-users-.html'
+keywords: 'folder user,folder details,user details,folder lookup,user lookup,folder association'
 summary: 'Retrieve a user associated with a folder'
 ---
 
 = Retrieve a user associated with a folder
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a user associated with a specified folder. Use this to identify the user linked to a particular folder for tenancy management operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders/{folder_id}/users/{user_id}`#
-
-
-
-Retrieves a user associated with the specified folder.
-
 
 == Parameters
 

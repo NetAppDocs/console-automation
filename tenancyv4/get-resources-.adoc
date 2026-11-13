@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-resources-.html'
+keywords: 'resource retrieval,specified resource,resource lookup,resource fetch,resource details,retrieve resource'
 summary: 'Retrieve a resource'
 ---
 
 = Retrieve a resource
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified resource, providing details about its configuration and attributes. Use this to access information about resources in the tenancy environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resources/{resource_id}`#
-
-
-
-Retrieves the specified resource.
-
 
 == Parameters
 

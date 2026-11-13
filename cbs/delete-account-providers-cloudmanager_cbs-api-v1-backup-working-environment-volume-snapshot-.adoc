@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume-snapshot-.html'
+keywords: 'snapshot delete,delete snapshot,volume snapshot,backup snapshot,netapp backup,netapp recovery'
 summary: 'Delete a snapshot'
 ---
 
 = Delete a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Deletes the specified snapshot of a volume backed up using the NetApp Backup and Recovery service. Use this to remove snapshots that are no longer needed for backup or recovery workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Deletes the specified snapshot of a volume backed up using the NetApp Backup and Recovery service for a system.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-volumes-initiator.html'
+keywords: 'iscsi initiators,azure volumes,volume initiators,iscsi azure,ontap iscsi'
 summary: 'Retrieve all iSCSI initiators'
 ---
 
 = Retrieve all iSCSI initiators
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all iSCSI initiators. Use this to view the available initiators for iSCSI connections.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/volumes/initiator`#
-
-
-
-Retrieves all iSCSI initiators.
-
 
 == Error
 

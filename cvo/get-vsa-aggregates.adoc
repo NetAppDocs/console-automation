@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-aggregates.html'
+keywords: 'aggregates,retrieve aggregates,working environment,storage aggregates,data management'
 summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
 :imagesdir: ../media/
 
+[.lead]
+Retrieves aggregates, providing information about the available storage aggregates in the system. Use this to review aggregate configurations for capacity planning or management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/aggregates`#
-
-
-
-Retrieves aggregates.
-
 
 == Parameters
 

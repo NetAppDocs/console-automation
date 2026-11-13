@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-monitoring-enable-monitoring.html'
+keywords: 'enable monitoring,working environment,monitoring setup,environment monitoring,ontap monitoring'
 summary: 'Enable monitoring'
 ---
 
 = Enable monitoring
 :imagesdir: ../media/
 
+[.lead]
+Enables monitoring, activating the collection of metrics and data for performance analysis and system health tracking.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/monitoring/{workingEnvironmentId}/enable-monitoring`#
-
-
-
-Enables monitoring.
-
 
 == Parameters
 

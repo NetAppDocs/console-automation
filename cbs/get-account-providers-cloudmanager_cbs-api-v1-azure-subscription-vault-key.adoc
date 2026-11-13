@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-azure-subscription-vault-key.html'
+keywords: 'azure vault keys,azure subscription,vault key retrieval,key vault azure,cloudmanager vault keys'
 summary: 'Retrieve Azure vault keys'
 ---
 
 = Retrieve Azure vault keys
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of Azure vault keys from a specific vault in Azure cloud. Use this to access the keys associated with a subscription ID for backup or recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/vault/{vaultName}/key`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves a list of Azure vault keys from a particular vault for a specific subscription ID in Azure cloud.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

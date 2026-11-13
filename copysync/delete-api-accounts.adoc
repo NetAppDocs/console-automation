@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/delete-api-accounts.html'
+keywords: 'delete account,remove account,netapp account,account deletion,tenancy account'
 summary: 'Delete the current account'
 ---
 
 = Delete the current account
 :imagesdir: ../media/
 
+[.lead]
+Deletes the current account. Use this to remove an account from the Copy and Sync API when it is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/accounts`#
 
+== Usage notes
 
-
-Deletes the current account. WARNING: This action will delete the current account from the Copy and Sync API.
+WARNING: This action will delete the current account from the Copy and Sync API.
 
 
 == Parameters

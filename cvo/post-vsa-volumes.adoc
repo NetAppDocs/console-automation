@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-volumes.html'
+keywords: 'volume creation,new volume,aggregate suggestion,disk addition,create aggregate,volume request'
 summary: 'Create a new volume'
 ---
 
 = Create a new volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a new volume. Use this to provision storage capacity for workloads in your cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/volumes`#
 
+== Usage notes
 
-
-Creates a new volume. If the  aggregateName and maxNumOfDisksApprovedToAdd properties are not populated, the response fails with a suggested aggregate name and the number of disks that will need to be created in order to fulfill the request.
+If the  aggregateName and maxNumOfDisksApprovedToAdd properties are not populated, the response fails with a suggested aggregate name and the number of disks that will need to be created in order to fulfill the request.
 
 
 == Parameters

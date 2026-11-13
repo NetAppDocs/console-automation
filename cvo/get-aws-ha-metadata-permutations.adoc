@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-permutations.html'
+keywords: 'cloud volumes,ontap configurations,ha metadata,aws ha,configuration permutations'
 summary: 'Retrieve all system configurations'
 ---
 
 = Retrieve all system configurations
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all system configurations for Cloud Volumes ONTAP. Use this to review the existing configurations in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/permutations`#
 
-
+== Usage notes
 
 Retrieves all Cloud Volumes ONTAP configurations.
 

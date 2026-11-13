@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-folders-folders-.html'
+keywords: 'folder deletion,child folder removal,parent folder management,folder hierarchy,delete child folder'
 summary: 'Remove a child folder from a parent folder'
 ---
 
 = Remove a child folder from a parent folder
 :imagesdir: ../media/
 
+[.lead]
+Removes a child folder from a parent folder. Use this to manage folder hierarchy by detaching specified child folders from their parent.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/folders/{folder_id}/folders/{childfolder_id}`#
 
-
+== Usage notes
 
 Removes the specified child folder from a parent folder.
 

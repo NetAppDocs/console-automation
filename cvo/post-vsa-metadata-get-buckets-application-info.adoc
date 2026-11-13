@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-metadata-get-buckets-application-info.html'
+keywords: 'buckets policy,tiering level,s3 buckets,policy status,metadata retrieval'
 summary: 'Retrieve S3 buckets policy status and tiering level'
 ---
 
 = Retrieve S3 buckets policy status and tiering level
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 buckets policy status and tiering level. Use this to monitor bucket configurations and tiering settings in your cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/metadata/get-buckets-application-info`#
-
-
-
-Retrieves the S3 buckets policy status and tiering level.
-
 
 == Request Body
 

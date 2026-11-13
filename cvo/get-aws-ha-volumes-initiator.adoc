@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-volumes-initiator.html'
+keywords: 'iscsi initiators,iscsi volumes,ha volumes,aws iscsi,ontap iscsi'
 summary: 'Retrieve all iSCSI initiators'
 ---
 
 = Retrieve all iSCSI initiators
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all iSCSI initiators. Use this to view the available initiators for configuring iSCSI connections.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/volumes/initiator`#
-
-
-
-Retrieves all iSCSI initiators.
-
 
 == Error
 

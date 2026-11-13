@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-accounts-gcp-.html'
+keywords: 'google cloud,cloud account,storage account,update account,gcp storage,gcp account'
 summary: 'Update a Google Cloud storage account'
 ---
 
 = Update a Google Cloud storage account
 :imagesdir: ../media/
 
+[.lead]
+Updates an existing Google Cloud storage account. Use this to modify account settings or update credentials as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/gcp/{cloudProviderAccountId}`#
-
-
-
-Updates an existing Google Cloud storage account.
-
 
 
 CAUTION: This operation is deprecated.

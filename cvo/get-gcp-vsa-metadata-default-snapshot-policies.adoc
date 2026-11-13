@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-default-snapshot-policies.html'
+keywords: 'default snapshots,default policies,snapshot policies,cluster snapshots,metadata retrieval'
 summary: 'Retrieve default snapshot policies'
 ---
 
 = Retrieve default snapshot policies
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the default snapshot policies available on a cluster. Use this to review the predefined policies for managing snapshot operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/default-snapshot-policies`#
-
-
-
-Retrieves the default snapshot policies available on a cluster.
-
 
 == Error
 

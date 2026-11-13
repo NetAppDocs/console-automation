@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-s3-summary.html'
+keywords: 's3 buckets,s3 summary,ha metadata,aws storage,storage summary'
 summary: 'Retrieve S3 buckets summary'
 ---
 
 = Retrieve S3 buckets summary
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 buckets summary, providing an overview of the available bucket configurations. Use this to assess storage resources in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/s3-summary`#
-
-
-
-Retrieves the S3 buckets summary.
-
 
 == Error
 

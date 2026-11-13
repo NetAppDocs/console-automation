@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-accounts-aws-.html'
+keywords: 'aws account,update account,cloud provider,modify account,aws integration'
 summary: 'Update an existing AWS account'
 ---
 
 = Update an existing AWS account
 :imagesdir: ../media/
 
+[.lead]
+Updates an existing AWS account. Use this endpoint to modify account details or configuration settings.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/aws/{cloudProviderAccountId}`#
-
-
-
-Updates an existing AWS account.
-
 
 
 CAUTION: This operation is deprecated.

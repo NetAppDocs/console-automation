@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-onprem-working-environments.html'
+keywords: 'netapp console,on-premises system,working environments,system discovery,on-prem discovery'
 summary: 'Discover an on-premises system'
 ---
 
 = Discover an on-premises system
 :imagesdir: ../media/
 
+[.lead]
+Discovers an on-premises system in the NetApp Console. Use this to identify and integrate systems available in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments`#
-
-
-
-Discovers an on-premises system in the NetApp Console.
-
 
 == Request Body
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/delete-api-accounts-reports.html'
+keywords: 'delete reports,report id,account reports,netapp account,remove reports'
 summary: 'Delete the reports by a specified report ID'
 ---
 
 = Delete the reports by a specified report ID
 :imagesdir: ../media/
 
+[.lead]
+Deletes reports by a specified report ID. Use this endpoint to remove report data that is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/accounts/{accountId}/reports`#
-
-
-
-Deletes the reports by a specified report ID.
-
 
 == Parameters
 

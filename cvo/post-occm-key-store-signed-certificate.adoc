@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-key-store-signed-certificate.html'
+keywords: 'certificate authority,root certificate,ca chain,install certificate,validate certificate'
 summary: 'Validate and install the provided root CA chain'
 ---
 
 = Validate and install the provided root CA chain
 :imagesdir: ../media/
 
+[.lead]
+Validates and installs the provided root certificate authority (CA) chain. Use this to manage and update the root CA chain for secure communications.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/key-store/signed-certificate`#
 
+== Usage notes
 
-
-Validates and installs the provided root certificate authority (CA) chain. Successive calls will overwrite any previously installed root certificate authority (CA) chain.
+Successive calls will overwrite any previously installed root certificate authority (CA) chain.
 
 
 == Request Body

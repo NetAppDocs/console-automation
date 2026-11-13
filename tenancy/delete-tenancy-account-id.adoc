@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/delete-tenancy-account-id.html'
+keywords: 'delete account,remove account,account deletion,tenancy account,delete tenancy'
 summary: 'Delete an account'
 ---
 
 = Delete an account
 :imagesdir: ../media/
 
+[.lead]
+Deletes the specified account. Use this operation to remove an account that is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenancy/account/{accountId}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Deletes the specified account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-ebs-volume-types.html'
+keywords: 'ebs volume,volume types,ha metadata,aws storage,ebs options'
 summary: 'Retrieve supported EBS volume types'
 ---
 
 = Retrieve supported EBS volume types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves supported EBS volume types, providing the available volume configurations for Elastic Block Store resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/ebs-volume-types`#
-
-
-
-Retrieves supported EBS volume types.
-
 
 == Error
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-aws-ha-working-environments-route-tables.html'
+keywords: 'ha cloud volumes,route tables,working environment,update route tables,ontap ha'
 summary: 'Update the route tables for an HA system'
 ---
 
 = Update the route tables for an HA system
 :imagesdir: ../media/
 
+[.lead]
+Updates the route tables of an HA Cloud Volumes ONTAP system. Use this to modify routing configurations for network traffic management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/route-tables`#
-
-
-
-Updates the route tables of an HA Cloud Volumes ONTAP system.
-
 
 == Parameters
 

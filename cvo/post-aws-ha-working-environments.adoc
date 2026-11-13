@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-working-environments.html'
+keywords: 'aws ha,cloud volumes,ontap system,ha deployment,aws ontap'
 summary: 'Create a new AWS HA Cloud Volumes ONTAP system'
 ---
 
 = Create a new AWS HA Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new AWS HA Cloud Volumes ONTAP system. Use this to deploy high availability storage resources in AWS.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments`#
-
-
-
-Creates a new AWS HA Cloud Volumes ONTAP system.
-
 
 == Request Body
 

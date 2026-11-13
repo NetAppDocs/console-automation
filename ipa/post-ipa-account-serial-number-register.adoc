@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-account-serial-number-register.html'
+keywords: 'license register,serial number register,account license,license registration,netapp license'
 summary: 'Register a license'
 ---
 
 = Register a license
 :imagesdir: ../media/
 
+[.lead]
+Registers a license with IPA, activating the license for use within the service. Use this to enable features or services tied to the registered license.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/serial-number/{serialNumber}/register`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Registers a license with IPA.
-            +
- +
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

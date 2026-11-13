@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-resourceadmins.html'
+keywords: 'partnership users,resourceadmin role,partnership resourceadmin,resource permissions,partnership roles'
 summary: 'List all users for a partnership'
 ---
 
 = List all users for a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all users with the ResourceAdmin role in a specified partnership. Use this to view the administrative users associated with the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/resourceadmins`#
 
-
+== Usage notes
 
 Lists all users with the ResourceAdmin role in the specified partnership.
 

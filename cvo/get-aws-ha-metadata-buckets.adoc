@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-buckets.html'
+keywords: 's3 buckets,retrieve buckets,aws ha,metadata buckets,ha storage'
 summary: 'Retrieve all S3 buckets'
 ---
 
 = Retrieve all S3 buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all S3 buckets. Use this to view the available buckets in your Cloud Volumes ONTAP environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/buckets`#
-
-
-
-Retrieves all S3 buckets.
-
 
 == Parameters
 

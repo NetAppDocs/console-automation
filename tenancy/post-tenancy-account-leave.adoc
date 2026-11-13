@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-leave.html'
+keywords: 'remove user,leave account,account removal,tenancy account,user removal'
 summary: 'Delete a user'
 ---
 
 = Delete a user
 :imagesdir: ../media/
 
+[.lead]
+Deletes a user from the specified account. Use this endpoint to manage account access by removing users no longer associated with the account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/leave`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Removes the user from the specified account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

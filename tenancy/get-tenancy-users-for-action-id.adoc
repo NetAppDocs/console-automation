@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancy/get-tenancy-users-for-action-id.html'
+keywords: 'users authorized,authorized actions,resource access,tenancy users,action permissions'
 summary: 'Retrieve users authorized for all resources'
 ---
 
 = Retrieve users authorized for all resources
 :imagesdir: ../media/
 
+[.lead]
+Retrieves users authorized for actions across all resources. Use this to view the full list of users with permissions across the tenancy service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/users/for-action/{accountId}/{action}`#
 
+== Token usage
 
+BlueXP service token with the following scopes: tenancy:internal.
+
+== Usage notes
 
 Retrieves users authorized for actions across all resources.
-            +
-*Token usage:* BlueXP service token with the following scopes: tenancy:internal.
-
 
 == Parameters
 

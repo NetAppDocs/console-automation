@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-working-environments-.html'
+keywords: 'cloud volumes,cloud ontap,working environments,ontap system,gcp storage'
 summary: 'Retrieve a Cloud Volumes ONTAP system'
 ---
 
 = Retrieve a Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a Cloud Volumes ONTAP system. Use this to view system details for monitoring or management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}`#
-
-
-
-Retrieves a Cloud Volumes ONTAP system.
-
 
 == Parameters
 

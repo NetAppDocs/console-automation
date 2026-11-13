@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-aggregates.html'
+keywords: 'create aggregate,new aggregate,aggregate creation,ontap aggregate,storage aggregate'
 summary: 'Create a new aggregate'
 ---
 
 = Create a new aggregate
 :imagesdir: ../media/
 
+[.lead]
+Creates a new aggregate, providing additional storage capacity for your workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/aggregates`#
-
-
-
-Creates a new aggregate.
-
 
 == Request Body
 

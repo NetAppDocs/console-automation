@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,serial number,register serial,working environment,capacity registration'
 summary: 'Register extra capacity serial numbers'
 ---
 
 = Register extra capacity serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Registers extra capacity serial numbers to add additional capacity to your system. Use this to ensure the system can utilize the registered capacity for storage operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
 
-
+== Usage notes
 
 Registers an extra capacity serial number.
 

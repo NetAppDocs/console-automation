@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-working-environment-volume-snapshot-policy.html'
+keywords: 'snapshot policy,volume snapshot,snapmirror relationship,modify snapshot,working environment'
 summary: 'Modify a snapshot policy'
 ---
 
 = Modify a snapshot policy
 :imagesdir: ../media/
 
+[.lead]
+Modifies a snapshot policy to align with the volume snapshot policy defined by the SnapMirror relationship for a volume in a system. Use this to ensure consistency between snapshot policies and SnapMirror configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot-policy`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Modifies the snapshot policy to match the volume snapshot policy based on the SnapMirror relationship associated with the volume in a system.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

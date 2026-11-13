@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/post-organizations-federations.html'
+keywords: 'organization federation,create federation,new federation,organization integration,federation setup'
 summary: 'Create a federation'
 ---
 
 = Create a federation
 :imagesdir: ../media/
 
+[.lead]
+Creates a federation.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/federations`#
 
-
+== Usage notes
 
 Creates a new federation.
 

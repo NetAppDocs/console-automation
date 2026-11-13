@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-regions.html'
+keywords: 'azure regions,cloud volumes,ontap system,region metadata,cloud ontap'
 summary: 'Retrieve Azure regions'
 ---
 
 = Retrieve Azure regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Azure regions where a Cloud Volumes ONTAP system can be created. Use this to identify the regions available for deploying your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/regions`#
-
-
-
-Retrieves the Azure regions where a Cloud Volumes ONTAP system can be created.
-
 
 == Parameters
 

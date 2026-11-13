@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-accounts-nss-.html'
+keywords: 'netapp support,update account,cloud provider,existing account,nss account'
 summary: 'Update an NSS account'
 ---
 
 = Update an NSS account
 :imagesdir: ../media/
 
+[.lead]
+Updates an existing NetApp Support Site account. Use this to modify account details such as contact information or preferences.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/nss/{cloudProviderAccountId}`#
-
-
-
-Updates an existing NetApp Support Site account.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-onprem-volumes--snapshot.html'
+keywords: 'snapshot creation,manual snapshot,volume snapshot,ontap snapshot,svm snapshot,working environment'
 summary: 'Create a snapshot'
 ---
 
 = Create a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot manually. Use this to capture the current state of data for backup or recovery purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Creates a snapshot manually.
-
 
 == Parameters
 

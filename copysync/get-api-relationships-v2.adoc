@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-relationships-v2.html'
+keywords: 'relationships,relationship retrieval,account relationships,netapp tenancy,relationship management'
 summary: 'Retrieve all relationships'
 ---
 
 = Retrieve all relationships
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all relationships, providing details about the existing connections and their configurations. Use this to review relationship data for synchronization or management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/relationships-v2`#
-
-
-
-Retrieves all relationships.
-
 
 == Parameters
 

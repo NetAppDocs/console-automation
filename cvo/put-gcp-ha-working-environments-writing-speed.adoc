@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-ha-working-environments-writing-speed.html'
+keywords: 'writing speed,cloud volumes,cloud ontap,gcp ha,working environment'
 summary: 'Modify the writing speed for a system'
 ---
 
 = Modify the writing speed for a system
 :imagesdir: ../media/
 
+[.lead]
+Modifies the writing speed for a Cloud Volumes ONTAP system. Use this to optimize performance based on your workload requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/writing-speed`#
 
-
+== Usage notes
 
 Sets the writing speed for Cloud Volumes ONTAP.
 

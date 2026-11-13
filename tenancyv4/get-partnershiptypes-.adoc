@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnershiptypes-.html'
+keywords: 'partnership type,partnership details,relationship type,partnership id,type information'
 summary: 'Retrieve a partnership type'
 ---
 
 = Retrieve a partnership type
 :imagesdir: ../media/
 
+[.lead]
+Retrieves information about the specified partnership type, providing details about the type of partnership in your tenancy environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnershiptypes/{partnershiptype_id}`#
-
-
-
-Retrieves information about the specified partnership type.
-
 
 == Parameters
 

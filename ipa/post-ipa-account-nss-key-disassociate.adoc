@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-account-nss-key-disassociate.html'
+keywords: 'nss key,disassociate resource,netapp support,resource disassociation,support key'
 summary: 'Disassociate a resource'
 ---
 
 = Disassociate a resource
 :imagesdir: ../media/
 
+[.lead]
+Disassociates a resource from a specified NetApp Support Site key. Use this to manage resource relationships effectively within your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-key/{nssKeyId}/disassociate`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Disassociates a resource from a specified NetApp Support Site key.
-            +
- +
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

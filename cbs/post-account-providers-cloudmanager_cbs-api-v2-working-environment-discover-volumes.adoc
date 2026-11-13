@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v2-working-environment-discover-volumes.html'
+keywords: 'volume discovery,working environment,cloud manager volumes,volume relationships,object store discovery'
 summary: 'Discover all volumes with relationships for a list of systems'
 ---
 
 = Discover all volumes with relationships for a list of systems
 :imagesdir: ../media/
 
+[.lead]
+Discovers all volumes with relationships for a list of systems, providing visibility into existing volume relationships across the specified systems. Use this to assess or manage linked volumes within your backup and recovery workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/discover/volumes`#
 
+== Token usage
 
-
-Discovers all volumes with relationships for a list of systems.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

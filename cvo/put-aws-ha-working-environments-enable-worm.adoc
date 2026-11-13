@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-aws-ha-working-environments-enable-worm.html'
+keywords: 'snaplock,cloud volumes ontap,enable worm,working environment,snaplock enable'
 summary: 'Enable SnapLock for a system'
 ---
 
 = Enable SnapLock for a system
 :imagesdir: ../media/
 
+[.lead]
+Enables SnapLock for an existing Cloud Volumes ONTAP system to support regulatory compliance and data retention requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/enable-worm`#
-
-
-
-Enables SnapLock for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-discovery-discover.html'
+keywords: 'azure systems,discovered systems,azure region,cloud provider,subscription list'
 summary: 'Retrieve a list of systems for the Azure region'
 ---
 
 = Retrieve a list of systems for the Azure region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of systems for the Azure region, providing the discovered systems visible to you in the specified region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/discovery/discover`#
 
-
+== Usage notes
 
 Retrieves a list of discovered systems visible to the current user in the specified Azure region.
 

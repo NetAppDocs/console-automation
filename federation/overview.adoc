@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/overview.html'
+keywords: 'identity federation,single sign-on,identity provider,domain verification,federation,unmigrated connections'
 summary: 'Federation REST API for the NetApp Console'
 ---
 
 = Federation REST API for the NetApp Console
 :imagesdir: ../media/
 
-
+[.lead]
+Manage identity federation between the NetApp Console and your identity provider so that your corporate users can sign in with their existing credentials. Use the endpoints to manage domains, federations, and unmigrated connections.
 
 Federation through the NetApp Console manages identity federation between the Console and customer identity providers.
 Identity federation enables single sign-on with the Console so that your corporate users can log in using their credentials.

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-license-working-environment-validity.html'
+keywords: 'marketplace subscription,backup license,snapmirror license,validity check,working environment'
 summary: 'Verify the valid licenses in a system'
 ---
 
 = Verify the valid licenses in a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the valid licenses in a system, verifying the marketplace subscription, backup license, and SnapMirror license status. Use this to confirm license validity for backup and recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/license/working-environment/{workingEnvironmentId}/validity`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Checks if there is a valid marketplace subscription, backup license, and SnapMirror license in a system.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-box-root-folder.html'
+keywords: 'box root folder,retrieve box folder,netapp account groups,box data brokers,box enterprise integration'
 summary: 'Retrieve the Box API root folder'
 ---
 
 = Retrieve the Box API root folder
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Box API root folder, providing access to the top-level directory for managing content within the Box platform. Use this to view and organize files and folders at the root level.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-box-root-folder`#
-
-
-
-Retrieves the Box API root folder.
-
 
 == Parameters
 

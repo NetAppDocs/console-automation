@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-volume.html'
+keywords: 'volumes details,volume status,snapmirror label,storage vm,capacity allocation,volume type'
 summary: 'Retrieve volumes'
 ---
 
 = Retrieve volumes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of volumes and their details from a specific system, including information such as name, file-system-id, status, storage VM, type, style, capacity allocated, capacity used, and SnapMirror label. Use this to review volume configurations and ensure proper system management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves a list of volumes and their details from a specific system. This API endpoint retrieves the name, file-system-id, status, storage VM, type, style, capacity allocated, capacity used, and SnapMirror label information.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+This API endpoint retrieves the name, file-system-id, status, storage VM, type, style, capacity allocated, capacity used, and SnapMirror label information.
 
 == Parameters
 

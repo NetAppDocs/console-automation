@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-svm.html'
+keywords: 'svm creation,working environment,azure svm,new svm,storage virtual machine,ontap azure'
 summary: 'Create a new SVM'
 ---
 
 = Create a new SVM
 :imagesdir: ../media/
 
+[.lead]
+Creates a new SVM. Use this to define and configure a new storage virtual machine for your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/svm`#
-
-
-
-Creates a new SVM.
-
 
 == Parameters
 

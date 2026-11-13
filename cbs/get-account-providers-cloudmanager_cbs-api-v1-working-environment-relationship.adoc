@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-relationship.html'
+keywords: 'ontap relationships,system relationships,working environment,volume uuid,relationship type'
 summary: 'Retrieve a list of ONTAP relationships associated with a system'
 ---
 
 = Retrieve a list of ONTAP relationships associated with a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of ONTAP relationships associated with a system. Use this to query relationships by specifying parameters such as the maximum number of records, the next volume UUID, or the relationship type.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/relationship`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves a list of ONTAP relationships associated with a system. The system ID is passed as a parameter for the REST API call. You can query by passing parameters to specify the maximum number of records that should be returned, the next subsequent volume UUID to get results from, and the type of relationship.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+The system ID is passed as a parameter for the REST API call. You can query by passing parameters to specify the maximum number of records that should be returned, the next subsequent volume UUID to get results from, and the type of relationship.
 
 == Parameters
 

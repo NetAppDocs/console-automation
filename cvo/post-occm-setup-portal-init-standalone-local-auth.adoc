@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-setup-portal-init-standalone-local-auth.html'
+keywords: 'standalone setup,local identity,identity provider,initial setup,setup portal'
 summary: 'Perform an initial standalone setup with the local identity provider'
 ---
 
 = Perform an initial standalone setup with the local identity provider
 :imagesdir: ../media/
 
+[.lead]
+Performs an initial standalone setup with a local identity provider. Use this to configure the system for standalone operation with locally managed authentication.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/init-standalone-local-auth`#
-
-
-
-Performs initial standalone setup with a local identity provider.
-
 
 == Parameters
 

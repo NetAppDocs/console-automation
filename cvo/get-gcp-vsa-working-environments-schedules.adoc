@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-working-environments-schedules.html'
+keywords: 'cloud volumes,ontap schedules,start schedules,stop schedules,working environment,gcp ontap'
 summary: 'List the start/stop schedules'
 ---
 
 = List the start/stop schedules
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the start/stop schedules for Cloud Volumes ONTAP. Use this to view the configured schedules for starting and stopping operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/schedules`#
 
-
+== Usage notes
 
 Lists the start/stop schedules for Cloud Volumes ONTAP.
 

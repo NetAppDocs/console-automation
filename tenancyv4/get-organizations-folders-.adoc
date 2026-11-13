@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-folders-.html'
+keywords: 'organization folder,folder retrieval,organization structure,folder details,folder lookup,organization hierarchy'
 summary: 'Retrieve a folder under an organization'
 ---
 
 = Retrieve a folder under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a folder under an organization, providing access to the folder details within the specified organizational hierarchy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/folders/{folder_id}`#
 
-
+== Usage notes
 
 Retrieves a folder under the specified organization.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-s3-buckets.html'
+keywords: 'netapp s3 buckets,s3 bucket access,data broker groups,netapp data broker,s3 bucket retrieval,bucket list'
 summary: 'Retrieve the S3 buckets'
 ---
 
 = Retrieve the S3 buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 buckets accessible from a NetApp data broker, providing visibility into the available storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-s3-buckets`#
-
-
-
-Retrieves the S3 buckets accessible from a NetApp data broker.
-
 
 == Parameters
 

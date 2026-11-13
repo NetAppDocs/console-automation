@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-support-registration.html'
+keywords: 'cloud volumes,ontap registration,support registration,netapp ontap,working environment'
 summary: 'Register a Cloud Volumes ONTAP system with NetApp'
 ---
 
 = Register a Cloud Volumes ONTAP system with NetApp
 :imagesdir: ../media/
 
+[.lead]
+Registers a Cloud Volumes ONTAP system with NetApp, enabling integration with NetApp services and management tools.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/support-registration`#
-
-
-
-Registers a Cloud Volumes ONTAP system with NetApp.
-
 
 == Parameters
 

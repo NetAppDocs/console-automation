@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-vaults.html'
+keywords: 'vaults,azure ha,metadata vaults,cloud provider,region vaults,subscription vaults'
 summary: 'Retrieve all vaults'
 ---
 
 = Retrieve all vaults
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all vaults, providing the available vault configurations for data storage or backup workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/vaults`#
-
-
-
-Retrieves all vaults.
-
 
 == Parameters
 

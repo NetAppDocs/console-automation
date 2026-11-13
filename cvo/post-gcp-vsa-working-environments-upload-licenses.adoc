@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-upload-licenses.html'
+keywords: 'cloud license,cloud volumes ontap,license upload,working environment,ontap system'
 summary: 'Upload cloud license file content'
 ---
 
 = Upload cloud license file content
 :imagesdir: ../media/
 
+[.lead]
+Uploads the content of a cloud license file for a Cloud Volumes ONTAP system. Use this to update license information required to enable cloud services.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/upload-licenses`#
 
-
+== Usage notes
 
 Uploads the content of a cloud license file on the specified Cloud Volumes ONTAP system.
 

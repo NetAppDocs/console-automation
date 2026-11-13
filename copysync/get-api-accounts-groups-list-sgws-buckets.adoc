@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-sgws-buckets.html'
+keywords: 'storagegrid buckets,netapp data broker,storagegrid access,netapp tenancy,databrokers group'
 summary: 'Retrieve the StorageGRID buckets'
 ---
 
 = Retrieve the StorageGRID buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the StorageGRID buckets accessible from a NetApp data broker. Use this to view the buckets that can be managed or synchronized through the data broker.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-sgws-buckets`#
-
-
-
-Retrieves the StorageGRID buckets accessible from a NetApp data broker.
-
 
 == Parameters
 

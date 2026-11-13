@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/get-organizations-federations-.html'
+keywords: 'organization federation,federation details,federation retrieve,organization federation id,specified federation,federation lookup'
 summary: 'Retrieve a federation'
 ---
 
 = Retrieve a federation
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified federation, providing details about the federation’s configuration and status. Use this to examine the current state of the federation in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/federations/{federation_id}`#
-
-
-
-Retrieves the specified federation.
-
 
 == Parameters
 

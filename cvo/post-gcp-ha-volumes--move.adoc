@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-volumes--move.html'
+keywords: 'volume move,gcp volume,gcp ha,ha volumes,ontap volume'
 summary: 'Move an existing volume'
 ---
 
 = Move an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Moves an existing volume to a different aggregate. Use this to optimize storage distribution or manage capacity constraints.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/move`#
-
-
-
-Moves an existing volume.
-
 
 == Parameters
 

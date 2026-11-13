@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/delete-organizations-domains-.html'
+keywords: 'delete domain,remove domain,organization domain,domain management,domain deletion,domain id'
 summary: 'Delete a domain'
 ---
 
 = Delete a domain
 :imagesdir: ../media/
 
+[.lead]
+Deletes a domain from the federation configuration. Use this to remove an unused or obsolete domain.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/domains/{domain_id}`#
 
-
+== Usage notes
 
 Deletes the specified domain.
 

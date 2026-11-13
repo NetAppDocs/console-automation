@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-ha-volumes--snapshot.html'
+keywords: 'snapshot delete,azure ha,snapshot removal,volume snapshot,manual delete'
 summary: 'Delete a snapshot'
 ---
 
 = Delete a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Deletes a snapshot manually. Use this to remove snapshots that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Deletes a snapshot manually.
-
 
 == Parameters
 

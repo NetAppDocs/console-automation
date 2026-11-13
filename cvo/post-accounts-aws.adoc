@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-accounts-aws.html'
+keywords: 'aws account,create account,aws integration,account creation,cloud account'
 summary: 'Create an AWS account'
 ---
 
 = Create an AWS account
 :imagesdir: ../media/
 
+[.lead]
+Creates an AWS account for use with Cloud Volumes ONTAP. Use this to configure and manage storage resources in your AWS environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/aws`#
-
-
-
-Creates an AWS account.
-
 
 
 CAUTION: This operation is deprecated.

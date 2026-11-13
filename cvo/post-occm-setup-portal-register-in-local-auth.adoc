@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-setup-portal-register-in-local-auth.html'
+keywords: 'netapp console,dark site,local auth,setup portal,register console'
 summary: 'Register NetApp Console to a dark site'
 ---
 
 = Register NetApp Console to a dark site
 :imagesdir: ../media/
 
+[.lead]
+Registers NetApp Console in a dark site, enabling its use in environments with restricted internet access. Use this to configure connectivity and functionality in isolated networks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/register-in-local-auth`#
-
-
-
-Registers NetApp Console in a dark site.
-
 
 == Error
 

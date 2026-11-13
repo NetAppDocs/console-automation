@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-ha-aggregates-.html'
+keywords: 'aggregate delete,delete aggregate,azure ha,remove aggregate,aggregate management,ontap aggregate'
 summary: 'Delete an aggregate'
 ---
 
 = Delete an aggregate
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing aggregate. Use this to remove aggregates that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/aggregates/{workingEnvironmentId}/{aggregateName}`#
-
-
-
-Deletes an existing aggregate.
-
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v2-backup-working-environment-.html'
+keywords: 'backup configuration,netapp backup,cloud storage pool,automatic backup,archive storage,backup policy'
 summary: 'Modify the backup configuration'
 ---
 
 = Modify the backup configuration
 :imagesdir: ../media/
 
+[.lead]
+Modifies the backup configuration for a system in the NetApp Backup and Recovery service. Use this to customize backup settings such as policies, storage classes, cloud storage pools, access credentials, and automatic backup options.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Modifies the NetApp Backup and Recovery service backup configuration for a particular system synchronously (V2 version). You can modify the state, backup policy, archive storage class, cloud storage pool, AWS/Azure/Google Cloud/StorageGRID access and secret key, IPspace, maximum transfer rate, and enable automatic backup.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

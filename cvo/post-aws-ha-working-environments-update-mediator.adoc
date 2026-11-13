@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-working-environments-update-mediator.html'
+keywords: 'cloud volumes,mediator update,ontap system,working environment,aws ha'
 summary: 'Update the mediator for a system'
 ---
 
 = Update the mediator for a system
 :imagesdir: ../media/
 
+[.lead]
+Updates the mediator for the specified Cloud Volumes ONTAP system with the provided version. Use this to ensure the mediator is running the appropriate version for system compatibility and functionality.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/update-mediator`#
 
-
+== Usage notes
 
 Updates the mediator of the specified Cloud Volumes ONTAP system with the provided version.
 

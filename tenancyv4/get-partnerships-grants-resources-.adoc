@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-grants-resources-.html'
+keywords: 'partnership resource,grant resource,resource details,partnership grant,resource retrieval'
 summary: 'Retrieve a resource from a grant in a partnership'
 ---
 
 = Retrieve a resource from a grant in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a resource under the specified grant of a partnership. Use this to access details about the resource allocated within the grant.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/resources/{resource_id}`#
-
-
-
-Retrieves a resource under the specified grant of a partnership.
-
 
 == Parameters
 

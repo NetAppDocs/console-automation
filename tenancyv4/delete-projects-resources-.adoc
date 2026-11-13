@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-projects-resources-.html'
+keywords: 'delete resource,remove resource,project resource,decommission resource,resource management'
 summary: 'Remove a resource from a project'
 ---
 
 = Remove a resource from a project
 :imagesdir: ../media/
 
+[.lead]
+Deletes a resource from a project. Use this to manage project contents by removing resources that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/projects/{project_id}/resources/{resource_id}`#
 
-
+== Usage notes
 
 Removes a resource from the specified project.
 

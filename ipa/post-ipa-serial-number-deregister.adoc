@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-serial-number-deregister.html'
+keywords: 'license deregistration,serial number deregistration,ipa license,cloud account license,deregister license'
 summary: 'Deregister a license'
 ---
 
 = Deregister a license
 :imagesdir: ../media/
 
+[.lead]
+Deregisters a license from IPA.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/serial-number/{serialNumber}/deregister`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Deregisters a license from IPA.
-            +
- +
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

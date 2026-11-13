@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-sfr-working-environment-volume-file-explore-start.html'
+keywords: 'file explore,start file restore,single file restore,active data connector,browse snapshot,cloud volumes ontap'
 summary: 'Start a file and folder explore operation (v1)'
 ---
 
 = Start a file and folder explore operation (v1)
 :imagesdir: ../media/
 
+[.lead]
+Starts a file and folder explore operation to initiate a single file restore (SFR) workflow. Use this to browse files and folders from backups stored on supported cloud storage providers.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/file-explore/start`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Starts a file and folder explore operation while initiating a single file restore (SFR) operation. It initiates the deployment of an Active Data Connector container on the Console agent and mounts the snapshot under the `/opt/application/netapp` folder to browse the files and folders. This API endpoint is currently supported on Cloud Volumes ONTAP on AWS, Azure, Google Cloud, and on-premises ONTAP systems. It supports retrieving files and folders from backups stored on AWS, Azure, Google Cloud, and StorageGRID cloud storage providers.
-
-**Token usage:**NetApp Console user token.
-
 
 == Parameters
 

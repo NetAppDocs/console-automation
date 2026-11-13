@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/get-organizations-domains.html'
+keywords: 'domains list,organization domains,domain management,organization id,domain details'
 summary: 'List domains'
 ---
 
 = List domains
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of domains. Use this to view all available domains in the Federation API.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/domains`#
 
-
+== Usage notes
 
 Lists all domains.
 

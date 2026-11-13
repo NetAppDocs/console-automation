@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-aws-ha-working-environments-fpolicy.html'
+keywords: 'fpolicy delete,ransomware protection,ha working-environment,fpolicy removal,working environment'
 summary: 'Delete FPolicy for ransomware files'
 ---
 
 = Delete FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Deletes the FPolicy for ransomware files. Use this to remove policies that monitor and manage file access to prevent ransomware attacks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/fpolicy`#
-
-
-
-Deletes the FPolicy for ransomware files.
-
 
 == Parameters
 

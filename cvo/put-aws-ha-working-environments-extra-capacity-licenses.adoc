@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-aws-ha-working-environments-extra-capacity-licenses.html'
+keywords: 'extra capacity,capacity license,update license,ha environments,working environment'
 summary: 'Update an extra capacity license'
 ---
 
 = Update an extra capacity license
 :imagesdir: ../media/
 
+[.lead]
+Updates an extra capacity license, modifying the license details as needed to support capacity requirements. Use this to manage licensing adjustments for your storage environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
-
-
-
-Updates an extra capacity license.
-
 
 == Parameters
 

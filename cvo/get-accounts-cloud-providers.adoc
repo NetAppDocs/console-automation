@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-accounts-cloud-providers.html'
+keywords: 'cloud accounts,cloud providers,aws accounts,azure accounts,google cloud accounts,retrieve accounts'
 summary: 'Retrieve all cloud accounts'
 ---
 
 = Retrieve all cloud accounts
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all cloud accounts across AWS, Azure, and Google Cloud. Use this to view the available accounts for managing cloud resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/cloud-providers`#
 
-
+== Usage notes
 
 Retrieves all cloud accounts (AWS, Azure, and Google Cloud).
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-system-manually-trigger-send-daily-notification.html'
+keywords: 'daily notification,trigger notifications,send notifications,manual trigger,notification sending'
 summary: 'Trigger sending daily notifications'
 ---
 
 = Trigger sending daily notifications
 :imagesdir: ../media/
 
+[.lead]
+Triggers the sending of daily notifications manually. Use this endpoint to initiate notifications without waiting for the scheduled daily process.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/manually-trigger-send-daily-notification`#
 
-
+== Usage notes
 
 Triggers daily notification sending manually.
 

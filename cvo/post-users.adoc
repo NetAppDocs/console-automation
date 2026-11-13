@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-users.html'
+keywords: 'create user,new user,user creation,user management,user account,user profile'
 summary: 'Create a new user'
 ---
 
 = Create a new user
 :imagesdir: ../media/
 
+[.lead]
+Creates a new user. Use this to add user accounts for managing access and permissions.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/users`#
-
-
-
-Creates a new user.
-
 
 == Request Body
 

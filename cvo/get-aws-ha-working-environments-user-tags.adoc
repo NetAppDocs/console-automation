@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments-user-tags.html'
+keywords: 'cloud tags,cloud resources,editable tags,working environment,cloud volumes ontap'
 summary: 'Retrieve editable tags for cloud resources'
 ---
 
 = Retrieve editable tags for cloud resources
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the editable tags for cloud resources associated with a specific Cloud Volumes ONTAP instance. Use this to view and manage custom metadata for your cloud resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/user-tags`#
 
-
+== Usage notes
 
 Retrieves the editable tags for the cloud resources in a specific Cloud Volumes ONTAP instance.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-working-environments-extra-capacity-licenses.html'
+keywords: 'extra capacity,capacity licenses,cloud volumes,working environment,cloud ontap'
 summary: 'Retrieve extra capacity licenses'
 ---
 
 = Retrieve extra capacity licenses
 :imagesdir: ../media/
 
+[.lead]
+Retrieves extra capacity licenses for Cloud Volumes ONTAP. Use this to review the licenses available for managing additional storage capacity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
-
-
-
-Retrieves extra capacity licenses for Cloud Volumes ONTAP.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-start.html'
+keywords: 'cloud volumes,ontap instance,start instance,azure ontap,working environment'
 summary: 'Start a specific Cloud Volumes ONTAP instance'
 ---
 
 = Start a specific Cloud Volumes ONTAP instance
 :imagesdir: ../media/
 
+[.lead]
+Starts a specific Cloud Volumes ONTAP instance. Use this to activate the instance and make it available for managing storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/start`#
-
-
-
-Starts a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

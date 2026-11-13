@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-folders-.html'
+keywords: 'delete folder,folder removal,remove folder,folder id,delete operation,folder management'
 summary: 'Delete a folder'
 ---
 
 = Delete a folder
 :imagesdir: ../media/
 
+[.lead]
+Deletes the specified folder. Use this endpoint to remove a folder from the tenancy structure when it is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/folders/{folder_id}`#
-
-
-
-Deletes the specified folder.
-
 
 == Parameters
 

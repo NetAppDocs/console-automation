@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-asup-commvault-download.html'
+keywords: 'support data download,console agent,agent diagnostics,autosupport,support bundle'
 summary: 'Download NetApp Console support data for the agent.'
 ---
 
 = Download NetApp Console support data for the agent.
 :imagesdir: ../media/
 
+[.lead]
+Download the NetApp Console support data for the agent itself, for example to share it for troubleshooting.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup/commvault/download`#
 
-
+== Usage notes
 
 Downloads NetApp Console support data for the agent itself.
 

@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-sg-buckets.html'
+keywords: 'storagegrid buckets,storagegrid server,cloudmanager buckets,netapp storagegrid,bucket retrieval,storage server'
 summary: 'Retrieve a list of StorageGRID buckets'
 ---
 
 = Retrieve a list of StorageGRID buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of StorageGRID buckets from the StorageGRID server. Use this to view the available buckets for backup or recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/buckets`#
 
+== Token usage
 
-
-Retrieves a list of StorageGRID buckets from the StorageGRID server.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

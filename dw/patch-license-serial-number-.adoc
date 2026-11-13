@@ -3,17 +3,26 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/patch-license-serial-number-.html'
+keywords: 'license update,serial number,netapp license,file overwrite,license metadata'
 summary: 'Update a license by serial number'
 ---
 
 = Update a license by serial number
 :imagesdir: ../media/
 
+[.lead]
+Updates a specified license by license serial number. Use this endpoint to modify license details, either by providing a NetApp License File (NLF) or by specifying individual fields to update.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/serial-number/{serialNumber}`#
 
+== Token usage
 
+Either a NetApp Console user token or service token.
 
-Updates a specified license by license serial number. +
+== Usage notes
+
 If you use a user token, you must provide the NetApp License File (NLF). If you use the NetApp Console service token, provide either the NLF or values for `serialNumber` and the fields that you want to update.
 
 **Note:**
@@ -24,9 +33,6 @@ If you use a user token, you must provide the NetApp License File (NLF). If you 
 * The `metadata` field value is appended to the existing metadata.
 * `Authorization` is a required field.
 * `serialNumber` is a required field when using this site. In general, you can specify its value as `null`.
-
-*Token usage:* Either a NetApp Console user token or service token.
-
 
 == Parameters
 

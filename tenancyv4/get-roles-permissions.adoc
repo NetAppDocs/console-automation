@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-roles-permissions.html'
+keywords: 'role permissions,role management,permission list,user roles,access control'
 summary: 'List all permissions for a role'
 ---
 
 = List all permissions for a role
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all permissions for a specified role. Use this to review the actions and operations permitted for the role.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/roles/{role_id}/permissions`#
 
-
+== Usage notes
 
 Lists all permissions for the specified role.
 

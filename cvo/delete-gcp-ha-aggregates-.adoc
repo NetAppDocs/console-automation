@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-gcp-ha-aggregates-.html'
+keywords: 'aggregate delete,delete aggregate,gcp ha,ha aggregates,working environment'
 summary: 'Delete an aggregate'
 ---
 
 = Delete an aggregate
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing aggregate. Use this to remove aggregates that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}`#
-
-
-
-Deletes an existing aggregate.
-
 
 == Parameters
 

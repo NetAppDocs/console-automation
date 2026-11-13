@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/post-api-accounts-reports.html'
+keywords: 'report creation,netapp accounts,tenancy report,new report,account reports,generate report'
 summary: 'Create a new report'
 ---
 
 = Create a new report
 :imagesdir: ../media/
 
+[.lead]
+Creates a new report, providing the necessary data for generating and managing report content. Use this to produce reports tailored to your specific requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/api/accounts/{accountId}/reports`#
-
-
-
-Creates a new report.
-
 
 == Parameters
 

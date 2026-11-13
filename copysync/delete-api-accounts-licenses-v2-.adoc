@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/delete-api-accounts-licenses-v2-.html'
+keywords: 'license removal,delete license,license serial,account license,serial number'
 summary: 'Delete a license serial number'
 ---
 
 = Delete a license serial number
 :imagesdir: ../media/
 
+[.lead]
+Deletes a license serial number, removing the serial number from the system's license records. Use this to manage license allocations or revoke unused licenses.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/accounts/{accountId}/licenses-v2/{serialNumber}`#
-
-
-
-Deletes a license serial number.
-
 
 == Parameters
 

@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-azure-subscription-region.html'
+keywords: 'azure regions,azure subscription,cloudmanager cbs,subscription regions,netapp azure'
 summary: 'Retrieve regions'
 ---
 
 = Retrieve regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of regions from a specific subscription ID in Azure. Use this to view the available regions for backup and recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/region`#
 
+== Token usage
 
-
-Retrieves a list of regions from a specific subscription ID in Azure.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

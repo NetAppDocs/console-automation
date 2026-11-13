@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-key-store-signed-certificate.html'
+keywords: 'certificate authority,signed certificate,key store,netapp console,ca certificate'
 summary: 'Retrieve the CA signed certificate'
 ---
 
 = Retrieve the CA signed certificate
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the certificate authority (CA) signed certificate of the NetApp Console key store, if one exists. Use this to verify or manage secure communications for the NetApp Console.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/key-store/signed-certificate`#
-
-
-
-Retrieves the certificate authority (CA) signed certificate of the NetApp Console key store, if one exists.
-
 
 == Error
 

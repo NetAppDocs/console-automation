@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-license-settings.html'
+keywords: 'license settings,netapp license,account license,license retrieval,tenancy account'
 summary: 'Retrieve license settings'
 ---
 
 = Retrieve license settings
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the license settings, providing information about the current licensing configuration. Use this to verify or review the license details for your deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/license-settings`#
-
-
-
-Retrieves the license settings.
-
 
 == Parameters
 

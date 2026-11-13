@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,capacity license,license update,serial number,working environment,azure ha'
 summary: 'Update extra capacity serial numbers'
 ---
 
 = Update extra capacity serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Updates an extra capacity license serial number, modifying the serial number associated with an extra capacity license. Use this to ensure accurate licensing information for capacity tracking and compliance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
-
-
-
-Updates an extra capacity license serial number.
-
 
 == Parameters
 

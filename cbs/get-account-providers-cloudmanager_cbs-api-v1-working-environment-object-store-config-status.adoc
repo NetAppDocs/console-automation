@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-object-store-config-status.html'
+keywords: 'object store,object store status,cloud provider,cbs configuration,working environment'
 summary: 'Retrieve an object store configuration status'
 ---
 
 = Retrieve an object store configuration status
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an object store configuration status, providing details about the current configuration. Use this to verify the status of your object store setup in the backup and recovery environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/object-store-config/status`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves an object store configuration status. It uses the GET /api/cloud/targets ONTAP REST APIs to retrieve the details.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+It uses the GET /api/cloud/targets ONTAP REST APIs to retrieve the details.
 
 == Parameters
 

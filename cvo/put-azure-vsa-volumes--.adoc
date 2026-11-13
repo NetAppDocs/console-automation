@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-vsa-volumes--.html'
+keywords: 'modify volume,azure volume,volume update,working environment,svm volume'
 summary: 'Modify an existing volume'
 ---
 
 = Modify an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Modifies an existing volume to update its configuration or attributes. Use this to adjust settings or optimize the volume based on your requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Modifies an existing volume.
-
 
 == Parameters
 

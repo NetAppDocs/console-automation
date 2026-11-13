@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-working-environments-activate-fpolicy.html'
+keywords: 'fpolicy activation,ransomware protection,working environment,fpolicy enablement,ransomware files'
 summary: 'Activate the FPolicy for ransomware files'
 ---
 
 = Activate the FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Activates the FPolicy for ransomware files to detect and manage potential ransomware threats. Use this to enhance security by identifying and responding to malicious file activities.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/activate-fpolicy`#
-
-
-
-Activates the FPolicy for ransomware files.
-
 
 == Parameters
 

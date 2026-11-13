@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-working-environments-ontap-saving.html'
+keywords: 'ontap savings,gcp storage,working environment,storage efficiency,data savings'
 summary: 'Retrieve system ONTAP savings'
 ---
 
 = Retrieve system ONTAP savings
 :imagesdir: ../media/
 
+[.lead]
+Retrieves system ONTAP savings, providing details about storage efficiency and space utilization. Use this to evaluate the effectiveness of storage optimization strategies.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/ontap-saving`#
-
-
-
-Retrieves system ONTAP savings.
-
 
 == Parameters
 

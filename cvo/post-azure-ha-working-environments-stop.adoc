@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-stop.html'
+keywords: 'cloud volumes,ontap instance,stop instance,working environment,azure ha'
 summary: 'Stop a Cloud Volumes ONTAP instance'
 ---
 
 = Stop a Cloud Volumes ONTAP instance
 :imagesdir: ../media/
 
+[.lead]
+Stops a Cloud Volumes ONTAP instance, halting all services and operations running on the instance. Use this to perform maintenance or conserve resources when the instance is not in use.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/stop`#
 
-
+== Usage notes
 
 Stops a specific Cloud Volumes ONTAP instance.
 

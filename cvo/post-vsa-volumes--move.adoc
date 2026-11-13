@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-volumes--move.html'
+keywords: 'volume move,working environment,svm volume,volume migration,netapp volumes,ontap move'
 summary: 'Move an existing volume'
 ---
 
 = Move an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Moves an existing volume to a different aggregate or node. Use this to optimize storage performance or rebalance workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/move`#
-
-
-
-Moves an existing volume.
-
 
 == Parameters
 

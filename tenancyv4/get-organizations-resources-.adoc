@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-resources-.html'
+keywords: 'organization resources,retrieve resource,organization resource id,resource details,organization id'
 summary: 'Retrieve a resource under an organization'
 ---
 
 = Retrieve a resource under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a resource under the specified organization, providing details needed to view or manage the resource.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/resources/{resource_id}`#
-
-
-
-Retrieves a resource under the specified organization.
-
 
 == Parameters
 

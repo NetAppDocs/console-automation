@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-ontap-s3-buckets.html'
+keywords: 'ontap s3,netapp s3,bucket retrieval,data broker,s3 buckets'
 summary: 'Retrieve the ONTAP S3 buckets'
 ---
 
 = Retrieve the ONTAP S3 buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the ONTAP S3 buckets accessible from a NetApp data broker. Use this to view the available buckets for storage operations or data management tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-ontap-s3-buckets`#
-
-
-
-Retrieves the ONTAP S3 buckets accessible from a NetApp data broker.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-activate-fpolicy.html'
+keywords: 'fpolicy activation,ransomware files,activate fpolicy,ha working environments,azure fpolicy'
 summary: 'Activate FPolicy for ransomware files'
 ---
 
 = Activate FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Activates the FPolicy for ransomware files, enabling file screening to detect and prevent potential ransomware threats. Use this to enhance data protection and security measures.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/activate-fpolicy`#
-
-
-
-Activates the FPolicy for ransomware files.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-volumes-volumes-for-backup.html'
+keywords: 'volumes backup,backup activation,volume retrieval,working environment,backup volumes'
 summary: 'Retrieve volumes for backup activation'
 ---
 
 = Retrieve volumes for backup activation
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all volumes for backup activation. Use this to identify the volumes available for initiating a backup.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/volumes/volumes-for-backup`#
-
-
-
-Retrieves all volumes for backup activation.
-
 
 == Parameters
 

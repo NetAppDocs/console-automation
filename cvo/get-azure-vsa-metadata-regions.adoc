@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-regions.html'
+keywords: 'azure regions,cloud volumes ontap,cloud deployment regions,azure ontap locations,cloud regions lookup'
 summary: 'Retrieve Azure regions'
 ---
 
 = Retrieve Azure regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Azure regions where a Cloud Volumes ONTAP system can be created. Use this to view the available regions for deployment planning.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/regions`#
-
-
-
-Retrieves the Azure regions where a Cloud Volumes ONTAP system can be created.
-
 
 == Parameters
 

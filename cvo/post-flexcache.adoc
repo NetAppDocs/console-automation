@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-flexcache.html'
+keywords: 'flexcache,cloud volumes,volume creation,cloud ontap,flexcache volume,netapp flexcache'
 summary: 'Create a new FlexCache volume'
 ---
 
 = Create a new FlexCache volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a new FlexCache volume in a Cloud Volumes ONTAP system. Use this to optimize performance and reduce latency for frequently accessed data across distributed environments.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/flexcache`#
-
-
-
-Creates a new FlexCache volume in a Cloud Volumes ONTAP system.
-
 
 == Request Body
 

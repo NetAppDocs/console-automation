@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-working-environments-cost-and-usage.html'
+keywords: 'cost usage,gcp cost,working environment,gcp usage,system cost'
 summary: 'Retrieve system cost and usage'
 ---
 
 = Retrieve system cost and usage
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the system cost and usage, providing detailed information about resource consumption and associated expenses. Use this to monitor and analyze cost metrics for your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/cost-and-usage`#
-
-
-
-Retrieves the system cost and usage.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-disable-service-scan.html'
+keywords: 'disable scan,service scan,disable service,cloud compliance,service id'
 summary: 'Disable scanning using the service ID'
 ---
 
 = Disable scanning using the service ID
 :imagesdir: ../media/
 
+[.lead]
+Disables scanning using the service ID, stopping the scanning process for the specified service. Use this endpoint when you need to halt scanning operations for a particular service instance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{serviceId}/disable-service-scan`#
-
-
-
-Disables scanning using the service ID.
-
 
 == Parameters
 

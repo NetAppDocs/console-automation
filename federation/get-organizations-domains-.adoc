@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/get-organizations-domains-.html'
+keywords: 'domain retrieval,organization domain,domain details,domain id lookup,specified domain'
 summary: 'Retrieve a domain'
 ---
 
 = Retrieve a domain
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified domain for use in managing and configuring domain-related operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/domains/{domain_id}`#
-
-
-
-Retrieves the specified domain.
-
 
 == Parameters
 

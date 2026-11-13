@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-accounts-data-brokers-proxy.html'
+keywords: 'proxy configuration,data broker,update proxy,data broker proxy,netapp account,proxy settings'
 summary: 'Update the proxy configuration for a data broker'
 ---
 
 = Update the proxy configuration for a data broker
 :imagesdir: ../media/
 
+[.lead]
+Updates the proxy configuration for a data broker, modifying the connection settings used for network communication. Use this to adjust the proxy settings to match your environment or resolve connectivity issues.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/proxy`#
-
-
-
-Updates the proxy configuration for a data broker.
-
 
 == Parameters
 

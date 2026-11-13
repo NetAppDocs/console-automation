@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-setup-portal-complete-connectivity-pending-setup.html'
+keywords: 'setup connectivity,connectivity setup,pending setup,complete connectivity,setup portal,connectivity pending'
 summary: 'Complete the setup'
 ---
 
 = Complete the setup
 :imagesdir: ../media/
 
+[.lead]
+Completes the setup that is pending connectivity, finalizing the configuration process for successful operation. Use this to ensure that the system is ready for use after establishing connectivity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/complete-connectivity-pending-setup`#
-
-
-
-Completes the setup that is pending connectivity.
-
 
 == Error
 

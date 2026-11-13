@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-volumes.html'
+keywords: 'volume creation,ha volumes,aggregate creation,aws volumes,new volume'
 summary: 'Create a new volume'
 ---
 
 = Create a new volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a new volume. Use this endpoint to provision storage for workloads by specifying the necessary properties, such as aggregate name and disk requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes`#
 
+== Usage notes
 
-
-Creates a new volume. If the  aggregateName and maxNumOfDisksApprovedToAdd properties are not populated, the response fails with a suggested aggregate name and the number of disks that will need to be created in order to fulfill the request.
+If the  aggregateName and maxNumOfDisksApprovedToAdd properties are not populated, the response fails with a suggested aggregate name and the number of disks that will need to be created in order to fulfill the request.
 
 
 == Parameters

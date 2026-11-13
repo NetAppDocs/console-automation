@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v2-backup-working-environment-snapshot.html'
+keywords: 'snapshots deletion,backup recovery,snapshot cleanup,working environment,netapp backup'
 summary: 'Delete all snapshots (system)'
 ---
 
 = Delete all snapshots (system)
 :imagesdir: ../media/
 
+[.lead]
+Deletes all snapshots for a specified system that are backed up using the NetApp Backup and Recovery service. Use this to remove outdated or unnecessary snapshots from the system's backup inventory.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/backup/working-environment/{workingEnvironmentId}/snapshot`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Deletes all snapshots for a specified system that are backed up using the NetApp Backup and Recovery service (v2 version).
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

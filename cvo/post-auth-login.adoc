@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-auth-login.html'
+keywords: 'sign in,netapp console,user login,access netapp,console authentication'
 summary: 'Sign in to the NetApp Console'
 ---
 
 = Sign in to the NetApp Console
 :imagesdir: ../media/
 
+[.lead]
+Signs in to the NetApp Console, establishing access to manage and monitor resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/auth/login`#
-
-
-
-Signs in to the NetApp Console.
-
 
 == Request Body
 

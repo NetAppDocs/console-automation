@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'audit/get-audit-options.html'
+keywords: 'audit options,filter options,account filters,account logs,audit settings'
 summary: 'Retrieve audit options'
 ---
 
 = Retrieve audit options
 :imagesdir: ../media/
 
+[.lead]
+Retrieves audit filter options for a specified account ID. Use this to view the available filters for auditing activities.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{accountId}/options`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves filter options by a specified account ID.
-
-**Token usage:** NetApp Console user token.
-
 
 == Parameters
 

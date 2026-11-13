@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-azure-subscription-resource-group.html'
+keywords: 'azure resource groups,azure subscription,netapp azure integration,cloudmanager cbs,azure resource management'
 summary: 'Retrieve Azure resource groups'
 ---
 
 = Retrieve Azure resource groups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of Azure resource groups from a specific subscription ID in Azure. Use this to view the available resource groups for backup or recovery workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resource-group`#
 
+== Token usage
 
-
-Retrieves a list of Azure resource groups from a specific subscription ID in Azure.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

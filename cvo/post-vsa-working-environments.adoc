@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-working-environments.html'
+keywords: 'cloud volumes,ontap system,working environments,create ontap,cloud deployment,volume creation'
 summary: 'Create a new Cloud Volumes ONTAP system '
 ---
 
 = Create a new Cloud Volumes ONTAP system 
 :imagesdir: ../media/
 
+[.lead]
+Creates a new Cloud Volumes ONTAP system. Use this to deploy a system with specific configurations for region, license type, instance type, and version.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments`#
 
+== Usage notes
 
-
-Creates a new Cloud Volumes ONTAP system. Refer to the API Developers Guide in order to understand how to populate the values for the region, licenseType, instanceType, and version.
+Refer to the API Developers Guide in order to understand how to populate the values for the region, licenseType, instanceType, and version.
 
 
 == Request Body

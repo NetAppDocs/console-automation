@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-cifs-share-folders.html'
+keywords: 'cifs folders,cifs shares,netapp data broker,cifs server folders,netapp tenancy'
 summary: 'Retrieve the CIFS server folders'
 ---
 
 = Retrieve the CIFS server folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the CIFS server folders from a NetApp data broker. Use this to access and review folder information for further data management operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-cifs-share-folders`#
-
-
-
-Retrieves the CIFS server folders from a NetApp data broker.
-
 
 == Parameters
 

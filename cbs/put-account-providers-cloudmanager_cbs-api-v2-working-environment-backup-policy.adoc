@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v2-working-environment-backup-policy.html'
+keywords: 'backup policy,working environment,cloud storage,retention policy,storagegrid archival,transfer schedule'
 summary: 'Update a backup policy (v2)'
 ---
 
 = Update a backup policy (v2)
 :imagesdir: ../media/
 
+[.lead]
+Updates a backup policy in a system, modifying details such as rules, labels, retention settings, archival configurations, and associated cloud storage pool information. Use this endpoint to customize backup policies to meet specific data protection requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/working-environment/{workingEnvironmentId}/backup-policy`#
 
+== Token usage
 
+NetApp Console user token.
 
-Updates a backup policy in a system. This V2 version of the API endpoint facilitates modification of the rule, label, retention, archive-after-days, and StorageGRID archival details which also includes cloud storage pool information.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+This V2 version of the API endpoint facilitates modification of the rule, label, retention, archive-after-days, and StorageGRID archival details which also includes cloud storage pool information.
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-folders-folders.html'
+keywords: 'create folder,parent folder,new subfolder,folder hierarchy,folder management,new folder'
 summary: 'Create a child folder under a parent folder'
 ---
 
 = Create a child folder under a parent folder
 :imagesdir: ../media/
 
+[.lead]
+Creates a child folder under a parent folder, adding a new organizational structure within the specified parent folder. Use this to manage and organize resources hierarchically.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/folders/{folder_id}/folders`#
 
-
+== Usage notes
 
 Creates a new folder under the specified parent folder.
 

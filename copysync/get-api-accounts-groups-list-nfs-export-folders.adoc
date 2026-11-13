@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-nfs-export-folders.html'
+keywords: 'nfs folders,nfs server,data broker,nfs export,nfs version'
 summary: 'Retrieve the NFS server folders'
 ---
 
 = Retrieve the NFS server folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the NFS server folders from a data broker. Use this to access and review folder information for NFS server configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-nfs-export-folders`#
-
-
-
-Retrieves the NFS server folders from a data broker.
-
 
 == Parameters
 

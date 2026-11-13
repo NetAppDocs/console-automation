@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments-extra-capacity-licenses.html'
+keywords: 'extra capacity,cloud volumes,ontap licenses,working environment,capacity licenses'
 summary: 'Retrieve extra capacity licenses'
 ---
 
 = Retrieve extra capacity licenses
 :imagesdir: ../media/
 
+[.lead]
+Retrieves extra capacity licenses for Cloud Volumes ONTAP, providing information about available licensing options to support storage expansion.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
-
-
-
-Retrieves extra capacity licenses for Cloud Volumes ONTAP.
-
 
 == Parameters
 

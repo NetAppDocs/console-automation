@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-accounts-data-brokers-move.html'
+keywords: 'data broker,move data broker,netapp tenancy,broker groups,data management'
 summary: 'Move the data broker between groups'
 ---
 
 = Move the data broker between groups
 :imagesdir: ../media/
 
+[.lead]
+Moves the data broker between groups, reassigning it to a different group configuration. Use this to organize or update group associations for your data broker.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/move`#
-
-
-
-Moves the data broker between groups.
-
 
 == Parameters
 

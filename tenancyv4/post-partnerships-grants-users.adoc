@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-partnerships-grants-users.html'
+keywords: 'partnership users,grant users,add users,partnership grants,grant management'
 summary: 'Add users to a grant in a partnership'
 ---
 
 = Add users to a grant in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Adds users to a grant in a partnership, specifying the users who can access resources associated with the grant. Use this endpoint to manage access permissions within a partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/users`#
 
-
+== Usage notes
 
 Adds users to the specified grant in a partnership.
 

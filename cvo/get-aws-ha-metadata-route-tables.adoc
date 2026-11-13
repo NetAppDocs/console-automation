@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-route-tables.html'
+keywords: 'route tables,vpc route tables,subnet associations,aws ha,route table metadata'
 summary: 'Retrieve route tables per VPC and their subnet associations'
 ---
 
 = Retrieve route tables per VPC and their subnet associations
 :imagesdir: ../media/
 
+[.lead]
+Retrieves route tables for a specified VPC and their associated subnets. Use this to examine the network configurations and subnet relationships within the VPC.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/route-tables`#
 
-
+== Usage notes
 
 Retrieves route tables per VPC and their subnet associations.
 

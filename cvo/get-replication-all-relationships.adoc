@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-replication-all-relationships.html'
+keywords: 'relationships,replication pairs,replication relationships,all relationships,data replication'
 summary: 'Return pairs of relationships'
 ---
 
 = Return pairs of relationships
 :imagesdir: ../media/
 
+[.lead]
+Retrieves pairs of relationships, providing information about the relationship pairs available in the specified context.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/all-relationships`#
 
-
+== Usage notes
 
 Returns pairs of relationships.
 

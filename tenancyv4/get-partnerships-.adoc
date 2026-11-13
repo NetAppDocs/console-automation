@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-.html'
+keywords: 'partnership details,partnership info,source organization,destination organization,partnership type'
 summary: 'Retrieve a partnership'
 ---
 
 = Retrieve a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves information about the specified partnership, providing details about the partnership configuration and status. Use this to review or verify the partnership settings.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}`#
-
-
-
-Retrieves information about the specified partnership.
-
 
 == Parameters
 

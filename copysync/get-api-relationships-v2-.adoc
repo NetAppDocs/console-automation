@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-relationships-v2-.html'
+keywords: 'relationship retrieval,netapp tenancy,relationship id,account relationship,relationship details'
 summary: 'Retrieve a relationship'
 ---
 
 = Retrieve a relationship
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a relationship, providing the details of the connection between source and destination systems for data synchronization or replication workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/relationships-v2/{id}`#
-
-
-
-Retrieves a relationship.
-
 
 == Parameters
 

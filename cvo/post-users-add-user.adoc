@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-users-add-user.html'
+keywords: 'add user,netapp console,cloud central,user management,netapp user'
 summary: 'Add a NetApp Cloud Central user to NetApp Console'
 ---
 
 = Add a NetApp Cloud Central user to NetApp Console
 :imagesdir: ../media/
 
+[.lead]
+Adds an existing NetApp Cloud Central user to the NetApp Console, enabling access to manage resources and operations within the console.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/users/add-user`#
-
-
-
-Adds an existing NetApp Cloud Central user to the NetApp Console.
-
 
 == Request Body
 

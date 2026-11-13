@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-users-.html'
+keywords: 'user details,user retrieval,specific user,user id,retrieve user'
 summary: 'Retrieve a user'
 ---
 
 = Retrieve a user
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified user. Use this to view details about the user’s account or permissions.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}`#
-
-
-
-Retrieves the specified user.
-
 
 == Parameters
 

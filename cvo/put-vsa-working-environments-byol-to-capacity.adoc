@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-working-environments-byol-to-capacity.html'
+keywords: 'byol conversion,license update,capacity license,cloud volumes,ontap system'
 summary: 'Update the BYOL licence to a capacity-based license'
 ---
 
 = Update the BYOL licence to a capacity-based license
 :imagesdir: ../media/
 
+[.lead]
+Updates a bring-your-own-license (BYOL) license to a capacity-based license for an existing Cloud Volumes ONTAP system. Use this to switch licensing models based on your system's capacity requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/byol-to-capacity`#
-
-
-
-Updates a bring-your-own-license (BYOL) license to a capacity-based license for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

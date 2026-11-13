@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-encryption-update-key-manager-ca-certificate.html'
+keywords: 'key manager,ca certificate,cloud volumes,update certificate,encryption update,key manager certificate'
 summary: 'Update the key manager CA certificate'
 ---
 
 = Update the key manager CA certificate
 :imagesdir: ../media/
 
+[.lead]
+Updates the key manager certificate authority (CA) certificate on the Cloud Volumes ONTAP system. Use this to replace an outdated or compromised CA certificate to maintain secure communication with the key manager.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/encryption/{workingEnvironmentId}/update-key-manager-ca-certificate`#
-
-
-
-Updates the key manager certificate authority (CA) certificate on the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

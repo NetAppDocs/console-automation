@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-azure-datalake-storage-containers.html'
+keywords: 'azure data lake,azure storage containers,data lake storage,storage account name,data brokers group'
 summary: 'Retrieve the Azure Data Lake Gen2 storage containers'
 ---
 
 = Retrieve the Azure Data Lake Gen2 storage containers
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Azure Data Lake Gen2 storage containers. Use this to view the available containers for managing and organizing your data.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-azure-dataLake-storage-containers`#
-
-
-
-Retrieves the Azure Data Lake Gen2 storage containers.
-
 
 == Parameters
 

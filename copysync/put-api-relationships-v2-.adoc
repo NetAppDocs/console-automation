@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-relationships-v2-.html'
+keywords: 'relationship settings,netapp relationship,update relationship,netapp tenancy,relationship sync,relationship configuration'
 summary: 'Update the settings for a relationship'
 ---
 
 = Update the settings for a relationship
 :imagesdir: ../media/
 
+[.lead]
+Updates the settings for a relationship, modifying the configuration to reflect the desired state. Use this to adjust parameters for data synchronization or replication workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/relationships-v2/{id}`#
-
-
-
-Updates the settings for a relationship.
-
 
 == Parameters
 

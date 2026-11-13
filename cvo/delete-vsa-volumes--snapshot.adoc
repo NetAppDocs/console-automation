@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-vsa-volumes--snapshot.html'
+keywords: 'snapshot delete,delete snapshot,manual snapshot removal,volume snapshot,svm snapshot'
 summary: 'Delete a snapshot'
 ---
 
 = Delete a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Deletes a snapshot manually. Use this endpoint to remove snapshots that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Deletes a snapshot manually.
-
 
 == Parameters
 

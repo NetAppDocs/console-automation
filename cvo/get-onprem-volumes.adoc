@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-volumes.html'
+keywords: 'volumes retrieval,on-prem volumes,volume list,minimum cooling days,working environment'
 summary: 'Retrieve volumes'
 ---
 
 = Retrieve volumes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all volumes. Use this to view the available volume configurations for your cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/volumes`#
-
-
-
-Retrieves all volumes.
-
 
 == Parameters
 

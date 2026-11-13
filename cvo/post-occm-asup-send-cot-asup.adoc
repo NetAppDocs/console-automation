@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-asup-send-cot-asup.html'
+keywords: 'cloud volumes,ontap support,send asup,netapp support,asup data'
 summary: 'Send Cloud Volumes ONTAP support data to NetApp support'
 ---
 
 = Send Cloud Volumes ONTAP support data to NetApp support
 :imagesdir: ../media/
 
+[.lead]
+Sends Cloud Volumes ONTAP support data to NetApp Support, facilitating diagnostics and issue resolution. Use this to ensure timely assistance and troubleshooting for your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/asup/send-Cot-Asup`#
-
-
-
-Sends Cloud Volumes ONTAP support data to NetApp Support.
-
 
 == Parameters
 

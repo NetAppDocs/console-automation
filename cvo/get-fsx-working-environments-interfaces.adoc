@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-working-environments-interfaces.html'
+keywords: 'fsx interfaces,network interfaces,fsx system,fsx working environments,network list'
 summary: 'Retrieve network interfaces lists for an FSx system'
 ---
 
 = Retrieve network interfaces lists for an FSx system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a network interfaces list for an existing FSx system. Use this to view the available interfaces associated with the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/interfaces`#
-
-
-
-Retrieves a network interfaces list for an existing FSx system.
-
 
 == Parameters
 

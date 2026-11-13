@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-resourcegroups-resources.html'
+keywords: 'resource groups,resource group resources,resource list,resource association,resource group id'
 summary: 'List all resources for a resource group'
 ---
 
 = List all resources for a resource group
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all resources associated with a resource group. Use this to view the resources within a specific group for management or auditing purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resourcegroups/{resourcegroup_id}/resources`#
 
-
+== Usage notes
 
 Lists all resources associated with a resource group.
 

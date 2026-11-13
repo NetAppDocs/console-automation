@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-buckets.html'
+keywords: 'cloud storage,buckets,gcp buckets,project id,storage metadata'
 summary: 'Retrieve all cloud storage buckets'
 ---
 
 = Retrieve all cloud storage buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all cloud storage buckets. Use this to view the available buckets for managing cloud storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/buckets`#
-
-
-
-Retrieves all cloud storage buckets.
-
 
 == Parameters
 

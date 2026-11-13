@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-volume-snapshot.html'
+keywords: 'snapshot details,volume snapshot,working environment,netapp snapshot,cloud manager'
 summary: 'Retrieve a list of snapshot details for a volume'
 ---
 
 = Retrieve a list of snapshot details for a volume
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of snapshot details for a volume, providing information about snapshots specific to the specified system and volume. Use this to query snapshot records based on parameters such as maximum number of results, snapshot UUID, or CP-COUNT.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves a list of snapshot details pertaining to a specific volume in a particular system. The system ID, volume ID, and snapshot ID are passed as parameters for the REST API call. You can query by passing parameters to specify the maximum number of records that should be returned, the next subsequent snapshot UUID to get results from, and the next `CP-COUNT` from where the results should be fetched.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

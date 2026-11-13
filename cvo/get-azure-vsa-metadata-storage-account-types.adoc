@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-storage-account-types.html'
+keywords: 'azure storage,storage account types,azure metadata,supported storage types,managed disk support'
 summary: 'Retrieve supported Azure storage account types'
 ---
 
 = Retrieve supported Azure storage account types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves supported Azure storage account types. Use this to review the storage account types available for use in your Azure environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/storage-account-types`#
-
-
-
-Retrieves supported Azure storage account types.
-
 
 == Parameters
 

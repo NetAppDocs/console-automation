@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-stop.html'
+keywords: 'cloud volumes ontap,stop instance,cloud instance stop,working environment,google cloud ontap,vsa stop'
 summary: 'Stop a Cloud Volumes ONTAP instance'
 ---
 
 = Stop a Cloud Volumes ONTAP instance
 :imagesdir: ../media/
 
+[.lead]
+Stops a Cloud Volumes ONTAP instance, halting its operations and making it unavailable for use. Use this to perform maintenance or reduce resource consumption when the instance is not needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/stop`#
 
-
+== Usage notes
 
 Stops a specific Cloud Volumes ONTAP instance.
 

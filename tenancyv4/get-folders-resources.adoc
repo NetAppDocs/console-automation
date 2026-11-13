@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-folders-resources.html'
+keywords: 'folder resources,folder contents,resource listing,resource details,specified folder'
 summary: 'List all resources under a folder'
 ---
 
 = List all resources under a folder
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all resources under the specified folder. Use this to view the resources available within a folder for organizational or management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders/{folder_id}/resources`#
 
-
+== Usage notes
 
 Lists all resources under the specified folder.
 

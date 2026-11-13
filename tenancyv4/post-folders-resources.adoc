@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-folders-resources.html'
+keywords: 'folder resources,add resources,folder management,resource allocation,folder id'
 summary: 'Add resources to a folder'
 ---
 
 = Add resources to a folder
 :imagesdir: ../media/
 
+[.lead]
+Adds resources to a folder in the Tenancy API. Use this to organize and manage resources within specified folders.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/folders/{folder_id}/resources`#
 
-
+== Usage notes
 
 Adds resources to the specified folder.
 

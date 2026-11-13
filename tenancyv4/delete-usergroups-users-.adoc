@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-usergroups-users-.html'
+keywords: 'user management,remove user,user group,delete user,user group removal'
 summary: 'Remove a user from a user group'
 ---
 
 = Remove a user from a user group
 :imagesdir: ../media/
 
+[.lead]
+Deletes a user from a user group. Use this to manage group memberships by removing users from specific groups.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/usergroups/{usergroup_id}/users/{user_id}`#
 
-
+== Usage notes
 
 Removes a user from the specified user group.
 

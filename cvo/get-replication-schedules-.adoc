@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-replication-schedules-.html'
+keywords: 'replication schedules,working environment,system schedules,data replication,schedule retrieval'
 summary: 'Retrieve the replication schedules of a system'
 ---
 
 = Retrieve the replication schedules of a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the replication schedules of a system, providing the schedule details configured for replication operations. Use this to view or verify the replication timing for the specified system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/schedules/{workingEnvironmentId}`#
 
-
+== Usage notes
 
 Retrieves the replication schedules of a specific system.
 

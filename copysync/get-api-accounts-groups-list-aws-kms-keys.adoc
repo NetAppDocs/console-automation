@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-aws-kms-keys.html'
+keywords: 'aws kms keys,netapp data broker,data brokers group,aws encryption keys,list kms keys'
 summary: 'Retrieve the AWS KMS keys'
 ---
 
 = Retrieve the AWS KMS keys
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the AWS KMS keys from a NetApp data broker. Use this to access the encryption keys required for securing data operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-aws-kms-keys`#
-
-
-
-Retrieves the AWS KMS keys from a NetApp data broker.
-
 
 == Parameters
 

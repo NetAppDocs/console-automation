@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-working-environments-update-image.html'
+keywords: 'cloud volumes,ontap image,update operation,single node,image update,working environment'
 summary: 'Perform a complete image update'
 ---
 
 = Perform a complete image update
 :imagesdir: ../media/
 
+[.lead]
+Performs a complete image update operation on a single node of the specified Cloud Volumes ONTAP system. Use this to apply updates and ensure the node is running the latest image version.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/update-image`#
-
-
-
-Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP system.
-
 
 == Parameters
 

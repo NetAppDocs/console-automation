@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-packages.html'
+keywords: 'packages configuration,retrieve packages,ha metadata,gcp packages,capacity package'
 summary: 'Retrieve the packages configuration'
 ---
 
 = Retrieve the packages configuration
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the packages configuration, providing details about the available package settings for Cloud Volumes ONTAP. Use this to review or verify the current package configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/packages`#
-
-
-
-Retrieves the packages configuration.
-
 
 == Parameters
 

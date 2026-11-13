@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/get-working-environments--volumes.html'
+keywords: 'volume list,fsx volumes,working environment,netapp console volumes,fsx system'
 summary: 'Retrieve volumes'
 ---
 
 = Retrieve volumes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of volumes for an FSx for ONTAP system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/{accountId}/{workingEnvironmentId}/volumes`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Describes all volumes of an FSx system.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

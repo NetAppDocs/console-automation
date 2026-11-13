@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-update-eligibility.html'
+keywords: 'cloud volumes,ontap system,update eligibility,eligibility status,license expired'
 summary: 'Retrieve the eligibility support status'
 ---
 
 = Retrieve the eligibility support status
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Use this to determine whether the system meets the requirements for support and registration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/update-eligibility`#
 
+== Usage notes
 
-
-Retrieves the eligibility support status of a Cloud Volumes ONTAP system. Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, LICENSE_EXPIRED.
+Valid values are NSS_NOT_VALID, NOT_REGISTERED, IPA_PROBLEM, VALID, NSS_NOT_EXISTS, LICENSE_EXPIRED.
 
 
 == Parameters

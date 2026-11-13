@@ -3,15 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/post-license-extra-capacity-licenses-cvoid-.html'
+keywords: 'cloud volumes,extra capacity,netapp license,high availability,serial numbers'
 summary: 'Associate extra-capacity per-node licenses with a Cloud Volumes ONTAP system'
 ---
 
 = Associate extra-capacity per-node licenses with a Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Associates extra-capacity per-node licenses with a Cloud Volumes ONTAP system. Use this endpoint to allocate licensing resources for single-node or high-availability Cloud Volumes ONTAP configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/extra-capacity-licenses/cvoId/{cvoId}`#
 
+== Token usage
 
+Either a NetApp Console user token or service token.
+
+== Usage notes
 
 Associates extra-capacity per-node licenses with a Cloud Volumes ONTAP system either by providing NetApp License Files (NLF) in the `licenseFiles` body field or a value for both `serialNumbers` and `nssKeyId` body fields. A Cloud Volumes ONTAP resource is represented by the `cvoId` parameter. If it's a single-node Cloud Volumes ONTAP resource, only one license file or a serial number and a NetApp Support Site key should be provided. For high-availability (HA) Cloud Volumes ONTAP resource, two license files or two serial numbers and a NetApp Support Site key should be provided.
 
@@ -25,9 +35,6 @@ Associates extra-capacity per-node licenses with a Cloud Volumes ONTAP system ei
 * `nssKeyId` is a required field unless you provide a value for the `licenseFiles` body field. In the latter case, `nssKeyId` must be omitted.
 * `accountId` is a required field unless you use a service token.
 * The `serialNumbers` and `licenseFiles` fields are mutually exclusive - one must have a value but not both.
-
-*Token usage:* Either a NetApp Console user token or service token.
-
 
 == Parameters
 

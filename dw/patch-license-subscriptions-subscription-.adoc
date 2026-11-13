@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/patch-license-subscriptions-subscription-.html'
+keywords: 'subscription expiration,subscription update,modify subscription,update expiration date,subscription name update,service subscription'
 summary: 'Update a subscription expiration date (deprecated)'
 ---
 
 = Update a subscription expiration date (deprecated)
 :imagesdir: ../media/
 
+[.lead]
+Updates a subscription expiration date or subscription name for services that support modification, using a specified subscription ID. Use this endpoint to manage subscription details as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/subscriptions/subscription/{subscriptionId}`#
 
-
+== Usage notes
 
 Updates a subscription expiration date by using a specified subscription ID for services that support modification of the subscription expiry dates. Alternatively, you can update the subscription name of the services. A newer version of this deprecated endpoint is available https://docs.netapp.com/us-en/console-automation/dw/patch-license-subscriptions-subscription.html[here.]
 

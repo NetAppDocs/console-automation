@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-parse-license-file.html'
+keywords: 'cloud license,license parsing,azure ha,working environments,parse license'
 summary: 'Parse an uploaded cloud license file'
 ---
 
 = Parse an uploaded cloud license file
 :imagesdir: ../media/
 
+[.lead]
+Parses an uploaded cloud license file to extract and validate licensing information. Use this to confirm the details and eligibility of the uploaded license.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/parse-license-file`#
-
-
-
-Parses an uploaded cloud license file.
-
 
 == Parameters
 

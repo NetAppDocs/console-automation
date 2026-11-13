@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-manifests.html'
+keywords: 'netapp manifests,netapp console,cloud volumes ontap,license types,instance types,region codes'
 summary: 'Retrieve all NetApp Console manifests'
 ---
 
 = Retrieve all NetApp Console manifests
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all NetApp Console manifests, providing the necessary details for creating a Cloud Volumes ONTAP system. Use this to access information such as region codes, license types, instance types, and version parameters.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/manifests`#
 
+== Usage notes
 
-
-Retrieves all NetApp Console manifests. Refer to the API Developers Guide in order to understand how to extract valid region codes, license types, instance types and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP system.
+Refer to the API Developers Guide in order to understand how to extract valid region codes, license types, instance types and Cloud Volumes ONTAP version parameters for the creation of a Cloud Volumes ONTAP system.
 
 
 == Error

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments.html'
+keywords: 'cloud volumes,cloud ontap,create system,netapp gcp,gcp working environments'
 summary: 'Create a new Cloud Volumes ONTAP system'
 ---
 
 = Create a new Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new Cloud Volumes ONTAP system, provisioning resources for data management and storage in the cloud. Use this to deploy and configure a system tailored to your workload requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments`#
-
-
-
-Creates a new Cloud Volumes ONTAP system.
-
 
 == Request Body
 

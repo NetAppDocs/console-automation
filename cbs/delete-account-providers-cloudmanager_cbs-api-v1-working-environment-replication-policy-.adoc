@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v1-working-environment-replication-policy-.html'
+keywords: 'snapmirror policy,replication policy,cluster level,snapmirror delete,working environment'
 summary: 'Delete a replication policy'
 ---
 
 = Delete a replication policy
 :imagesdir: ../media/
 
+[.lead]
+Deletes a replication policy from the specified system. Use this to remove SnapMirror policies created at the cluster level.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy/{policyId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Deletes the SnapMirror policies created on the cluster level for the specified system.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

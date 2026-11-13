@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-encryption-key-managers-ca-certificates.html'
+keywords: 'key manager,ca certificate,key manager certificate,certificate authority,encryption certificate,key management'
 summary: 'Add a new key manager CA certificate'
 ---
 
 = Add a new key manager CA certificate
 :imagesdir: ../media/
 
+[.lead]
+Creates a new key manager certificate authority (CA) certificate. Use this to establish trusted communication with the key manager.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/encryption/key-managers-ca-certificates`#
 
-
+== Usage notes
 
 Adds a new key manager certificate authority (CA) certificate.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-setup-portal-register.html'
+keywords: 'netapp console,cloud central,setup portal,register console,netapp registration'
 summary: 'Register NetApp Console'
 ---
 
 = Register NetApp Console
 :imagesdir: ../media/
 
+[.lead]
+Registers the NetApp Console to NetApp Cloud Central, enabling integration with Cloud Central services. Use this to manage and monitor your cloud resources effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/register`#
-
-
-
-Registers the NetApp Console to NetApp Cloud Central.
-
 
 == Error
 

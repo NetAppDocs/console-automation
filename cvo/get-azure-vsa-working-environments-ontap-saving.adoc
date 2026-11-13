@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments-ontap-saving.html'
+keywords: 'ontap savings,system savings,storage efficiency,azure ontap,working environment'
 summary: 'Retrieve systems ONTAP savings'
 ---
 
 = Retrieve systems ONTAP savings
 :imagesdir: ../media/
 
+[.lead]
+Retrieves system ONTAP savings, providing insights into storage efficiencies achieved within the system. Use this to evaluate and optimize resource utilization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/ontap-saving`#
-
-
-
-Retrieves system ONTAP savings.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-replication-intercluster-lifs.html'
+keywords: 'intercluster lifs,cluster peering,replication lifs,intercluster relationship,netapp ontap'
 summary: 'Retrieve the intercluster LIFs'
 ---
 
 = Retrieve the intercluster LIFs
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the intercluster LIFs used in a cluster peering relationship. Use this to view the network interfaces facilitating communication between peer clusters.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/intercluster-lifs`#
-
-
-
-Retrieves the intercluster LIFs used in a cluster peering relationship.
-
 
 == Parameters
 

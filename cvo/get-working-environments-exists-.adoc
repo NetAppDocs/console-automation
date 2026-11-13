@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-working-environments-exists-.html'
+keywords: 'working environment,system exists,check system,name exists,validate name'
 summary: 'Check if a system with the specified name exists'
 ---
 
 = Check if a system with the specified name exists
 :imagesdir: ../media/
 
+[.lead]
+Checks if a system with the specified name exists, returning true if a system with that name is already present and false otherwise. Use this to confirm the existence of a system before performing operations that require a specific system name.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/exists/{workingEnvironmentName}`#
 
-
+== Usage notes
 
 Checks if a system with the specified name already exists. Returns true if a system with that name already exists, false otherwise.
 

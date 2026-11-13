@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/delete-api-v2-accounts-relationships.html'
+keywords: 'delete relationships,relationship ids,account relationships,netapp account,tenancy relationships'
 summary: 'Delete relationships'
 ---
 
 = Delete relationships
 :imagesdir: ../media/
 
+[.lead]
+Deletes relationships. Use this endpoint to remove existing relationships when they are no longer required.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/v2/accounts/{accountId}/relationships`#
-
-
-
-Deletes relationships.
-
 
 == Parameters
 

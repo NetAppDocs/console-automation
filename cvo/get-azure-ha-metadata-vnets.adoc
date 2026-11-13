@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-vnets.html'
+keywords: 'vnets metadata,azure vnets,ha network,extended network,network details,cloud region'
 summary: 'Retrieve network extended information'
 ---
 
 = Retrieve network extended information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves network extended information, providing detailed data about network configurations and settings. Use this to analyze or troubleshoot network-related aspects of your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/vnets`#
-
-
-
-Retrieves network extended information.
-
 
 == Parameters
 

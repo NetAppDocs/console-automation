@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments.html'
+keywords: 'cloud volumes,cloud ontap,azure ontap,create ontap,working environments'
 summary: 'Create a new Cloud Volumes ONTAP system'
 ---
 
 = Create a new Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new Cloud Volumes ONTAP system. Use this endpoint to provision and configure a new system for managing storage resources in the cloud.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments`#
-
-
-
-Creates a new Cloud Volumes ONTAP system.
-
 
 == Request Body
 

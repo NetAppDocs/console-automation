@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/overview.html'
+keywords: 'copy and sync,data migration,data brokers,sync relationships,object store,data synchronization'
 summary: 'NetApp Copy and Sync REST API'
 ---
 
 = NetApp Copy and Sync REST API
 :imagesdir: ../media/
 
-
+[.lead]
+Automate data migration to any location in the cloud or on your premises with the NetApp Copy and Sync service. Use the endpoints to manage accounts, data brokers, groups, relationships, storages, and reports.
 
 The NetApp Copy and Sync service offers a simple, secure, and automated way to migrate your data to any location in the cloud or on your premises. The service enables you to convert and move data stored in any object store including NFS or SMB servers, Amazon Simple Storage Service (S3), Google Drive, Box, and more. When using this service, you can create a sync relationship to copy data from any source to any destination target. +
  +

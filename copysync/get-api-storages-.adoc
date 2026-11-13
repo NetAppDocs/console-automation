@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-storages-.html'
+keywords: 'storage type,netapp storage,protocol storage,provider storage,tenancy account'
 summary: 'Retrieve the storage type'
 ---
 
 = Retrieve the storage type
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the storage type, providing information about the available storage configurations. Use this to determine the appropriate storage type for your operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/storages/{protocol}`#
-
-
-
-Retrieves the storage type.
-
 
 == Parameters
 

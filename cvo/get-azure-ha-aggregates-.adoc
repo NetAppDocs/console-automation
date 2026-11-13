@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-aggregates-.html'
+keywords: 'aggregates retrieval,azure ha,ha aggregates,working environment,aggregate data'
 summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
 :imagesdir: ../media/
 
+[.lead]
+Retrieves aggregates. Use this to view the available aggregate configurations in your Cloud Volumes ONTAP system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/aggregates/{workingEnvironmentId}`#
-
-
-
-Retrieves aggregates.
-
 
 == Parameters
 

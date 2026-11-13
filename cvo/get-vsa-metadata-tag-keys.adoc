@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-tag-keys.html'
+keywords: 'tag names,tag keys,metadata tags,cloud provider,role arn,metadata retrieval'
 summary: 'Retrieve all tag names'
 ---
 
 = Retrieve all tag names
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all tag names. Use this to view the available tags for resource categorization or management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/tag-keys`#
 
-
+== Usage notes
 
 Retrieves all of the tag names.
 

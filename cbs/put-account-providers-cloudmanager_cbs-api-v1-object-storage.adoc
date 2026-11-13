@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-object-storage.html'
+keywords: 'bucket properties,cloud manager,object storage,modify bucket,cloud providers,storage region'
 summary: 'Modify bucket properties for a cloud provider'
 ---
 
 = Modify bucket properties for a cloud provider
 :imagesdir: ../media/
 
+[.lead]
+Modifies the bucket properties for the specified cloud provider. Use this to update configuration settings as needed for storage management or compliance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage`#
 
-
+== Usage notes
 
 Modifies the bucket properties for the specified provider.
 

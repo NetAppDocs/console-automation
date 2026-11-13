@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-key-pairs.html'
+keywords: 'aws key pairs,aws metadata,ha key pairs,region key pairs,cloud account key pairs'
 summary: 'Retrieve AWS user key pairs by region'
 ---
 
 = Retrieve AWS user key pairs by region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves AWS user key pairs for a specific region. Use this to view the available key pairs associated with your AWS account in the specified region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/key-pairs`#
-
-
-
-Retrieves AWS user Key Pairs for a specific region.
-
 
 == Parameters
 

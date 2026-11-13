@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-flexcache-all-relationships.html'
+keywords: 'flexcache relationships,flexcache volumes,volume relationships,ontap flexcache,flexcache retrieval'
 summary: 'Retrieve all FlexCache volume relationships'
 ---
 
 = Retrieve all FlexCache volume relationships
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all FlexCache volume relationships. Use this to view the existing relationships associated with FlexCache volumes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/flexcache/all-relationships`#
-
-
-
-Retrieves all FlexCache volume relationships.
-
 
 == Parameters
 

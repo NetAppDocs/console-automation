@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-config.html'
+keywords: 'netapp console,console configuration,configuration parameters,netapp occm,occm config'
 summary: 'Retrieve NetApp Console configuration parameters'
 ---
 
 = Retrieve NetApp Console configuration parameters
 :imagesdir: ../media/
 
+[.lead]
+Retrieves NetApp Console configuration parameters. Use this to view the current configuration settings for the NetApp Console in your cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/config`#
-
-
-
-Retrieves NetApp Console configuration parameters.
-
 
 == Error
 

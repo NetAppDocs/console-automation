@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/patch-tenancy-account-workspace-id.html'
+keywords: 'workspace rename,rename workspace,account workspace,workspace management,workspace update,tenancy workspace'
 summary: 'Rename a workspace'
 ---
 
 = Rename a workspace
 :imagesdir: ../media/
 
+[.lead]
+Renames a workspace by assigning a specified new name. Use this to update the workspace name for better organization or clarity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Renames a workspace with a specified new name.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

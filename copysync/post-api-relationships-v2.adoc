@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/post-api-relationships-v2.html'
+keywords: 'relationship creation,edge cluster,source edge,target edge,data broker,encryption settings'
 summary: 'Create a new relationship'
 ---
 
 = Create a new relationship
 :imagesdir: ../media/
 
+[.lead]
+Creates a new relationship for data synchronization or replication.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/api/relationships-v2`#
-
-
-
-Creates a new relationship.
-
 
 == Parameters
 

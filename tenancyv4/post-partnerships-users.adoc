@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-partnerships-users.html'
+keywords: 'partnership users,add users,partnership management,user addition,partnership id,user partnership'
 summary: 'Add users to a partnership'
 ---
 
 = Add users to a partnership
 :imagesdir: ../media/
 
+[.lead]
+Adds users to a partnership, associating them with the specified partnership configuration. Use this to manage user access within a partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/partnerships/{partnership_id}/users`#
 
-
+== Usage notes
 
 Adds users to the specified partnership.
 

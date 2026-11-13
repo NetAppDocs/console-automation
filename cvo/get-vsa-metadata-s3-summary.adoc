@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-s3-summary.html'
+keywords: 's3 summary,s3 buckets,buckets summary,s3 metadata,storage summary'
 summary: 'Retrieve S3 buckets summary'
 ---
 
 = Retrieve S3 buckets summary
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 buckets summary, providing an overview of the available buckets for storage and management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/s3-summary`#
-
-
-
-Retrieves the S3 buckets summary.
-
 
 == Error
 

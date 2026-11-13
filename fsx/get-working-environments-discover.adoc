@@ -3,21 +3,28 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/get-working-environments-discover.html'
+keywords: 'fsx ontap,aws region,working environments,discover tenancy,different account'
 summary: 'Discover working environments'
 ---
 
 = Discover working environments
 :imagesdir: ../media/
 
+[.lead]
+Discovers FSx for ONTAP working environments in an AWS region using specified credentials. Use this to identify environments accessible within the region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/{accountId}/discover`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Discovers all FSx ONTAP working environments of an AWS region by using specified credentials.
  'inDifferentAccount' field  in response indicates that a user is already assigned to a different Tenancy account.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

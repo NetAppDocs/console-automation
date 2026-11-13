@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-working-environments-svm.html'
+keywords: 'svm name,cloud volumes,cloud ontap,working environment,modify svm,ontap system'
 summary: 'Modify the SVM name'
 ---
 
 = Modify the SVM name
 :imagesdir: ../media/
 
+[.lead]
+Modifies the SVM name of a Cloud Volumes ONTAP system. Use this to update the name to reflect changes in your environment or organizational naming conventions.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/svm`#
-
-
-
-Modifies the SVM name of the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

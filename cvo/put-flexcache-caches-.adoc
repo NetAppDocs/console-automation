@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-flexcache-caches-.html'
+keywords: 'flexcache volume,modify flexcache,flexcache management,working environment,cache update,volume modification'
 summary: 'Modify a FlexCache volume'
 ---
 
 = Modify a FlexCache volume
 :imagesdir: ../media/
 
+[.lead]
+Modifies a FlexCache volume. Use this to update the configuration or properties of an existing FlexCache volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/flexcache/{workingEnvironmentId}/caches/{cacheId}`#
-
-
-
-Modifies a FlexCache volume.
-
 
 == Parameters
 

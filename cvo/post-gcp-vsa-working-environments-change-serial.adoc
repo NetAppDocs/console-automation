@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-change-serial.html'
+keywords: 'cloud volumes,cloud ontap,serial number update,working environment,change serial'
 summary: 'Update the serial number of Cloud Volumes ONTAP'
 ---
 
 = Update the serial number of Cloud Volumes ONTAP
 :imagesdir: ../media/
 
+[.lead]
+Updates the serial number of a Cloud Volumes ONTAP system. Use this to modify the serial number in scenarios such as system migrations or hardware replacements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/change-serial`#
-
-
-
-Updates the serial number of a Cloud Volumes ONTAP system.
-
 
 == Parameters
 

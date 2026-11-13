@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-object-storage-provider.html'
+keywords: 'bucket retrieval,cloud bucket,object storage,bucket details,cloud provider'
 summary: 'Retrieve a bucket for a cloud provider'
 ---
 
 = Retrieve a bucket for a cloud provider
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a specific bucket for the specified cloud provider. Use this to access the bucket details necessary for managing backup or recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage/{provider}/{objectStoreName}`#
-
-
-
-Retrieves a specific bucket for the specified cloud provider.
-
 
 == Parameters
 

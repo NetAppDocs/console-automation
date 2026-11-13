@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-byol-to-capacity.html'
+keywords: 'byol license,capacity license,cloud volumes ontap,license update,azure ha,working environment'
 summary: 'Update a BYOL license to a capacity-based license'
 ---
 
 = Update a BYOL license to a capacity-based license
 :imagesdir: ../media/
 
+[.lead]
+Updates a bring-your-own-license (BYOL) license to a capacity-based license for an existing Cloud Volumes ONTAP system. Use this to transition to a capacity-based licensing model for managing your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/byol-to-capacity`#
-
-
-
-Updates a bring-your-own-license (BYOL) license to a capacity-based license for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

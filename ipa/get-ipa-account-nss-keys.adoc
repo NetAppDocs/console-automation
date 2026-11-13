@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/get-ipa-account-nss-keys.html'
+keywords: 'netapp support site,account credentials,nss keys,resource data,service request'
 summary: 'Retrieve a list of NetApp Support Site key credentials'
 ---
 
 = Retrieve a list of NetApp Support Site key credentials
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of NetApp Support Site key credentials associated with an account. Use this to view the credentials and optionally include resource data linked to a specific NetApp Support Site ID.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-keys`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves a list of NetApp Support Site key credentials associated with an account. You can optionally choose to include the resource data associated with a NetApp Support Site ID.
-                          +
- +
-*Token usage:* NetApp Console user token.
+== Usage notes
 
+You can optionally choose to include the resource data associated with a NetApp Support Site ID.
 
 == Parameters
 

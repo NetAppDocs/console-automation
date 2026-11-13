@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-aggregates-.html'
+keywords: 'aggregates retrieval,ha aggregates,gcp aggregates,working environment,ha storage'
 summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
 :imagesdir: ../media/
 
+[.lead]
+Retrieves aggregates, providing information about the available storage aggregates for resource management and capacity planning.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/aggregates/{workingEnvironmentId}`#
-
-
-
-Retrieves aggregates.
-
 
 == Parameters
 

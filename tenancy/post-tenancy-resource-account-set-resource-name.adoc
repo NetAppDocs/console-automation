@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-resource-account-set-resource-name.html'
+keywords: 'resource name,set resource name,rename resource,tenancy resource,resource management'
 summary: 'Set a resource name'
 ---
 
 = Set a resource name
 :imagesdir: ../media/
 
+[.lead]
+Modifies the name of a resource. Use this to update resource identifiers for clarity or consistency in your tenancy service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}/account/{accountId}/set-resource-name`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Sets the name of a resource.
-            +
-*Token usage:* BlueXP user token.
-
 
 
 CAUTION: This operation is deprecated.

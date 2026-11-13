@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-resourceadmins-.html'
+keywords: 'partnerships resourceadmins,user retrieval,resource admin,user details,partnership user'
 summary: 'Retrieve a user in a partnership ResourceAdmin group'
 ---
 
 = Retrieve a user in a partnership ResourceAdmin group
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a user in the ResourceAdmin group of a specified partnership. Use this to access details about the user’s role and permissions within the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/resourceadmins/{user_id}`#
-
-
-
-Retrieves a user in the ResourceAdmin group of the specified partnership.
-
 
 == Parameters
 

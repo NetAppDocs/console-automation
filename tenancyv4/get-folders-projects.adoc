@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-folders-projects.html'
+keywords: 'folder projects,folder id,projects list,specified folder,projects under folder'
 summary: 'List all projects under a folder'
 ---
 
 = List all projects under a folder
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all projects under a specified folder. Use this to view the projects associated with a particular folder in your tenancy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders/{folder_id}/projects`#
 
-
+== Usage notes
 
 Lists all projects under the specified folder.
 

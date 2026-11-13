@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations.html'
+keywords: 'organizations list,organization details,organization lookup,organization directory,view organizations'
 summary: 'List all organizations'
 ---
 
 = List all organizations
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of organizations. Use this to view the organizations available in the tenancy system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations`#
 
-
+== Usage notes
 
 Lists all organizations.
 

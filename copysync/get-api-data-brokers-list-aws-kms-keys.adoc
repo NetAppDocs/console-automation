@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-aws-kms-keys.html'
+keywords: 'aws kms keys,data broker,netapp data broker,aws bucket,netapp tenancy'
 summary: 'Retrieve the AWS KMS keys'
 ---
 
 = Retrieve the AWS KMS keys
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the AWS KMS keys from a NetApp data broker. Use this to view the keys available for encryption operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-aws-kms-keys`#
-
-
-
-Retrieves the AWS KMS keys from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

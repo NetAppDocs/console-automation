@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-alibaba-buckets.html'
+keywords: 'alibaba buckets,data broker,netapp account,storagegrid access,broker group'
 summary: 'Retrieve the Alibaba buckets'
 ---
 
 = Retrieve the Alibaba buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Alibaba buckets accessible from a data broker. Use this to view the available buckets for data transfer or synchronization tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-alibaba-buckets`#
-
-
-
-Retrieves the Alibaba buckets accessible from a data broker.
-
 
 == Parameters
 

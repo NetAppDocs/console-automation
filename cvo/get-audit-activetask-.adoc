@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-audit-activetask-.html'
+keywords: 'active task,retrieve task,task status,request id,audit task'
 summary: 'Retrieve an active task'
 ---
 
 = Retrieve an active task
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an active task for the specified request ID. Use this to monitor the progress or status of ongoing operations associated with the request.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/activeTask/{requestId}`#
 
-
+== Usage notes
 
 Retrieves the active task for the request ID.
 

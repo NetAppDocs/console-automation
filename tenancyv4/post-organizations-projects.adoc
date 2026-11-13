@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-organizations-projects.html'
+keywords: 'organization projects,create project,new project,organization id,project creation'
 summary: 'Create a new project under an organization'
 ---
 
 = Create a new project under an organization
 :imagesdir: ../media/
 
+[.lead]
+Creates a new project under the specified organization. Use this to define and manage resources within the organizational structure.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/projects`#
-
-
-
-Creates a new project under the specified organization.
-
 
 == Parameters
 

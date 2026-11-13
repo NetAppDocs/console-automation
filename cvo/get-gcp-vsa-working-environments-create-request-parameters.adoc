@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-working-environments-create-request-parameters.html'
+keywords: 'cloud volumes,working environments,create request,action parameters,ontap instance,gcp'
 summary: 'Retrieve the action parameters'
 ---
 
 = Retrieve the action parameters
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the action parameters used in the create request for a specific Cloud Volumes ONTAP instance. Use this to review the parameters required for provisioning or configuration tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/create-request-parameters`#
-
-
-
-Retrieves the action parameters used in the create request for a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

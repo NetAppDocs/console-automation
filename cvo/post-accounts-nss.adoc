@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-accounts-nss.html'
+keywords: 'netapp support,create account,support site,account creation,nss account,netapp site'
 summary: 'Create an NSS account'
 ---
 
 = Create an NSS account
 :imagesdir: ../media/
 
+[.lead]
+Creates a NetApp Support Site account. Use this to register for access to NetApp services and resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/nss`#
-
-
-
-Creates a NetApp Support Site account.
-
 
 == Request Body
 

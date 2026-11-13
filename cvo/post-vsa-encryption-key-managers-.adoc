@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-encryption-key-managers-.html'
+keywords: 'key manager,cloud volumes,key manager addition,encryption setup,ontap encryption,working environment'
 summary: 'Add a key manager'
 ---
 
 = Add a key manager
 :imagesdir: ../media/
 
+[.lead]
+Creates a key manager in Cloud Volumes ONTAP to manage encryption keys for secure data storage. Use this to configure key management services for your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}`#
 
-
+== Usage notes
 
 Adds a key manager to the Cloud Volumes ONTAP system.
 

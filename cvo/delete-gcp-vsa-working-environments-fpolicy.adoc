@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-gcp-vsa-working-environments-fpolicy.html'
+keywords: 'fpolicy delete,ransomware protection,working environment,gcp fpolicy,fpolicy removal,ransomware files'
 summary: 'Delete the FPolicy for ransomware files'
 ---
 
 = Delete the FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Deletes the FPolicy for ransomware files, removing the configuration used to detect and manage ransomware file activity. Use this to clean up unused or obsolete policies from your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/fpolicy`#
-
-
-
-Deletes the FPolicy for ransomware files.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-projects.html'
+keywords: 'projects list,gcp projects,user permissions,metadata projects,gcp vsa'
 summary: 'Retrieve a list of projects'
 ---
 
 = Retrieve a list of projects
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of projects for which the user has permission. Use this to view the projects available to you within the specified scope.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/projects`#
-
-
-
-Retrieves a list of projects for which the user has permission.
-
 
 == Error
 

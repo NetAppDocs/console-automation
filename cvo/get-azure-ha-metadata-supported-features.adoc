@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-supported-features.html'
+keywords: 'supported features,azure ha,ontap version,data encryption,license type,instance type'
 summary: 'Retrieve supported features'
 ---
 
 = Retrieve supported features
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported features, providing details about the capabilities available in the system. Use this to understand the features supported for your configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/supported-features`#
-
-
-
-Retrieves the supported features.
-
 
 == Parameters
 

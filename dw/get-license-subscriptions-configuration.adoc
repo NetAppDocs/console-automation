@@ -3,17 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-subscriptions-configuration.html'
+keywords: 'subscription configuration,subscription details,license subscription,account subscription,service scope'
 summary: 'Retrieve subscription configuration information'
 ---
 
 = Retrieve subscription configuration information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves subscription configuration information for a specified subscription ID. Use this to view details about the subscription's current settings.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/configuration`#
 
-
-
-Retrieves the subscription configuration information for a specified subscription ID.
+== Usage notes
 
 **Note:**
 

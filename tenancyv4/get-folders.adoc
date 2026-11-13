@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-folders.html'
+keywords: 'folders collection,folder list,collection folders,view folders,list folders'
 summary: 'List all folders'
 ---
 
 = List all folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all folders in the collection, providing access to the available folder configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders`#
 
-
+== Usage notes
 
 Lists all folders in the collection.
 

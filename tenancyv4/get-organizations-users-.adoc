@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-users-.html'
+keywords: 'organization users,organization user details,user management,organization user retrieval,user details'
 summary: 'Retrieve a user under an organization'
 ---
 
 = Retrieve a user under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a user under the specified organization, providing details about the user's association within the organization. Use this to review user information for organizational management or auditing purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/users/{user_id}`#
-
-
-
-Retrieves a user under the specified organization.
-
 
 == Parameters
 

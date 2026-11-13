@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-containers.html'
+keywords: 'blob containers,azure ha,cloud storage,resource group,storage account'
 summary: 'Retrieve all blob containers'
 ---
 
 = Retrieve all blob containers
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all blob containers. Use this to view the available blob containers in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/containers`#
-
-
-
-Retrieves all blob containers.
-
 
 == Parameters
 

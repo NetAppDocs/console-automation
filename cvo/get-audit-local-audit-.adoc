@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-audit-local-audit-.html'
+keywords: 'audit group,local audit,account entries,audit retrieval,ui filter'
 summary: 'Retrieve audit group entries'
 ---
 
 = Retrieve audit group entries
 :imagesdir: ../media/
 
+[.lead]
+Retrieves audit group entries, which can be filtered by query parameters for the local UI. Use this to review specific audit group information tailored to your needs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}`#
 
+== Usage notes
 
-
-Retrieves audit group entries. You can optionally filter by query parameters for the local UI.
+You can optionally filter by query parameters for the local UI.
 
 
 == Error

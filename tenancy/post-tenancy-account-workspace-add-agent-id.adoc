@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-workspace-add-agent-id.html'
+keywords: 'agent addition,workspace agent,add agent,workspace management,agent workspace'
 summary: 'Add an agent'
 ---
 
 = Add an agent
 :imagesdir: ../media/
 
+[.lead]
+Adds an agent to a specified workspace.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}/add-agent/{agentAuth0Id}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Adds an agent to a specified workspace.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-vsa-working-environments-svm.html'
+keywords: 'svm name,modify svm,cloud volumes ontap,working environment,ontap system'
 summary: 'Modify the SVM name'
 ---
 
 = Modify the SVM name
 :imagesdir: ../media/
 
+[.lead]
+Modifies the SVM name of a Cloud Volumes ONTAP system. Use this to update the name for organizational or operational purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/svm`#
-
-
-
-Modifies the SVM name of the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

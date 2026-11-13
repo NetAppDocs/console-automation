@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/delete-api-relationships-.html'
+keywords: 'relationship delete,delete relationship,existing relationship,netapp relationship,relationship management,relationship removal'
 summary: 'Delete an existing relationship'
 ---
 
 = Delete an existing relationship
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing relationship. Use this to remove relationships that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/relationships/{id}`#
-
-
-
-Deletes an existing relationship.
-
 
 
 CAUTION: This operation is deprecated.

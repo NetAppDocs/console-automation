@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-vpcs.html'
+keywords: 'google cloud networks,google cloud subnetworks,cloud volumes ontap,network metadata,gcp ha'
 summary: 'Retrieve Google Cloud networks and subnetworks'
 ---
 
 = Retrieve Google Cloud networks and subnetworks
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Google Cloud networks and subnetworks where a Cloud Volumes ONTAP system can be created. Use this to identify the available network configurations for deploying your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/vpcs`#
-
-
-
-Retrieves Google Cloud networks and subnetworks where a Cloud Volumes ONTAP system can be created.
-
 
 == Parameters
 

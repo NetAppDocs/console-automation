@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-volumes--change-tier.html'
+keywords: 'volume tier,change tier,volume updates,svm volume,tier updates'
 summary: 'Update the underlying volume tier'
 ---
 
 = Update the underlying volume tier
 :imagesdir: ../media/
 
+[.lead]
+Updates the underlying volume tier. Use this to adjust the storage tier configuration for optimal resource utilization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/change-tier`#
-
-
-
-Updates the underlying volume tier.
-
 
 == Parameters
 

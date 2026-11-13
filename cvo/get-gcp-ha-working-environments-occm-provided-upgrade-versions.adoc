@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-occm-provided-upgrade-versions.html'
+keywords: 'cloud volumes,ontap upgrade,version upgrade,gcp ha,working environment'
 summary: 'Retrieve a list of upgrade versions'
 ---
 
 = Retrieve a list of upgrade versions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of versions to which this Cloud Volumes ONTAP system can be upgraded. Use this to identify available upgrade options for your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions`#
-
-
-
-Retrieves a list of versions to which this Cloud Volumes ONTAP system can be upgraded.
-
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/post-working-environments-recover.html'
+keywords: 'recover working environment,tenancy account,netapp console,unassigned fsx'
 summary: 'Recover working environments'
 ---
 
 = Recover working environments
 :imagesdir: ../media/
 
+[.lead]
+Recovers an unassigned FSx for ONTAP working environment associated with a tenancy account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/working-environments/{accountId}/recover`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Recovers an unassigned FSx working environment related to a Tenancy account by using the `fsx:assigned` parameter.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

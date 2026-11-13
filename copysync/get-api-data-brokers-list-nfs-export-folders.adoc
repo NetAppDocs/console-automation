@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-nfs-export-folders.html'
+keywords: 'nfs server,export folders,data broker,nfs export,path retrieval,efs folders'
 summary: 'Retrieve the NFS server folders by ID'
 ---
 
 = Retrieve the NFS server folders by ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the NFS server folders by ID from the data broker. Use this to view specific folder configurations for NFS server resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-nfs-export-folders`#
 
-
+== Usage notes
 
 Retrieves the NFS server folders from the data broker.
 

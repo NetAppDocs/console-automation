@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-usergroups-.html'
+keywords: 'user groups,retrieve usergroup,user group details,usergroup id,user group management'
 summary: 'Retrieve a user group'
 ---
 
 = Retrieve a user group
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified user group. Use this to view details about the group's configuration and membership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/usergroups/{usergroup_id}`#
-
-
-
-Retrieves the specified user group.
-
 
 == Parameters
 

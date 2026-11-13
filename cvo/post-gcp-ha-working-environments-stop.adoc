@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments-stop.html'
+keywords: 'cloud volumes,ontap stop,cloud ontap,stop instance,working environment'
 summary: 'Stop a specific Cloud Volumes ONTAP instance'
 ---
 
 = Stop a specific Cloud Volumes ONTAP instance
 :imagesdir: ../media/
 
+[.lead]
+Stops a specific Cloud Volumes ONTAP instance. Use this endpoint to halt operations on the instance when maintenance or decommissioning is required.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/stop`#
-
-
-
-Stops a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

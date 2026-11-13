@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-key-pairs-by-region.html'
+keywords: 'aws regions,key pairs,cloud provider,role arn,user key pairs'
 summary: 'Retrieve AWS user key pairs for all regions'
 ---
 
 = Retrieve AWS user key pairs for all regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves AWS user Key Pairs for all regions, providing the available key pair configurations for cross-region access and management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/key-pairs-by-region`#
-
-
-
-Retrieves AWS user Key Pairs for all regions.
-
 
 == Parameters
 

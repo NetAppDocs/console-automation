@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-vsa-aggregates-.html'
+keywords: 'aggregate delete,delete aggregate,remove aggregate,storage aggregate,decommission aggregate'
 summary: 'Delete an existing aggregate'
 ---
 
 = Delete an existing aggregate
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing aggregate. Use this endpoint to remove aggregates that are no longer needed in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/vsa/aggregates/{workingEnvironmentId}/{aggregateName}`#
-
-
-
-Deletes an existing aggregate.
-
 
 == Parameters
 

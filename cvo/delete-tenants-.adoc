@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-tenants-.html'
+keywords: 'delete tenant,tenant management,remove tenant,tenant lifecycle,tenant deletion,system dependency'
 summary: 'Delete an existing tenant'
 ---
 
 = Delete an existing tenant
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing tenant. Use this to remove tenant configurations when they are no longer needed and no systems are associated with the tenant.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenants/{tenantId}`#
 
+== Usage notes
 
-
-Deletes an existing tenant. It is not possible to delete a tenant over which systems exist.
+It is not possible to delete a tenant over which systems exist.
 
 
 == Parameters

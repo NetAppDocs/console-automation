@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/patch-account-providers-cloudmanager_cbs-api-v1-working-environment-snapshot-policy-.html'
+keywords: 'snapshot policy,modify snapshot,working environment,snapmirror label,snapshot schedules'
 summary: 'Modify the snapshot policy in a system'
 ---
 
 = Modify the snapshot policy in a system
 :imagesdir: ../media/
 
+[.lead]
+Modifies the snapshot policy in a system, including changes to existing schedules such as adjusting the SnapMirror label and count or adding and removing schedules. Use this to customize snapshot policies for your backup and recovery workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policy/{policyId}`#
 
+== Token usage
 
+NetApp Console user token.
 
-Modifies the snapshot policy in a system. For existing schedules attached to a snapshot policy, the SnapMirror label and count can be modified, it also supports the addition and removal of schedules.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+For existing schedules attached to a snapshot policy, the SnapMirror label and count can be modified, it also supports the addition and removal of schedules.
 
 == Parameters
 

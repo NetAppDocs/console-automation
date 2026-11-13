@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-working-environments-stop.html'
+keywords: 'cloud volumes,cloud ontap,stop instance,working environment,ontap instance,ha environment'
 summary: 'Stop a specific instance'
 ---
 
 = Stop a specific instance
 :imagesdir: ../media/
 
+[.lead]
+Stops a specific Cloud Volumes ONTAP instance. Use this to halt operations on the instance when required.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/stop`#
-
-
-
-Stops a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

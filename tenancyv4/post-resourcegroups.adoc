@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-resourcegroups.html'
+keywords: 'resource groups,create resource,resource management,new resource group,group creation'
 summary: 'Create a new resource group'
 ---
 
 = Create a new resource group
 :imagesdir: ../media/
 
+[.lead]
+Creates a new resource group. Use this to define and organize resources within a tenancy for management or access control purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/resourcegroups`#
-
-
-
-Creates a new resource group.
-
 
 == Request Body
 

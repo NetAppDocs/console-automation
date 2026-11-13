@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-volumes--clone.html'
+keywords: 'volume clone,gcp volumes,existing volume,working environment,svm clone,volume replication'
 summary: 'Clone a volume'
 ---
 
 = Clone a volume
 :imagesdir: ../media/
 
+[.lead]
+Clones an existing volume, creating a duplicate that can be used for testing, backup, or other workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/clone`#
-
-
-
-Clones an existing volume.
-
 
 == Parameters
 

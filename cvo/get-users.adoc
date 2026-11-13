@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-users.html'
+keywords: 'users list,visible users,retrieve users,user management,user visibility'
 summary: 'Retrieve all users'
 ---
 
 = Retrieve all users
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all users visible to the current user. Use this to view the list of users accessible within your scope.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users`#
-
-
-
-Retrieves all users visible to the current user.
-
 
 == Error
 

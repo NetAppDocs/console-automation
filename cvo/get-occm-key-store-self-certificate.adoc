@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-key-store-self-certificate.html'
+keywords: 'self-signed certificate,key store,self certificate,netapp console,certificate retrieval'
 summary: 'Retrieve the self-signed certificate of the NetApp Console key store'
 ---
 
 = Retrieve the self-signed certificate of the NetApp Console key store
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the self-signed certificate of the NetApp Console key store, if one exists. Use this to verify the key store's certificate for secure communication.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/key-store/self-certificate`#
-
-
-
-Retrieves the self-signed certificate of NetApp Console key store, if one exists.
-
 
 == Error
 

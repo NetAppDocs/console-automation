@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-workerpools.html'
+keywords: 'google cloud,worker pools,infrastructure manager,private mode,cloud volumes ontap'
 summary: 'Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system'
 ---
 
 = Retrieve Google Cloud worker pools for a Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Google Cloud worker pools using Infrastructure Manager (IM) for creating a private mode Cloud Volumes ONTAP system. Use this to identify available worker pools for system deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/workerPools`#
 
-
+== Usage notes
 
 Retrieves Google Cloud worker pools using Infrastructure Manager (IM) for Cloud Volumes ONTAP deployments in private mode or when a private worker pool is to be used.
 

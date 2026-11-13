@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-partnerships-grants-.html'
+keywords: 'partnership grants,delete grant,partnership management,remove grant,partnership id'
 summary: 'Delete a grant'
 ---
 
 = Delete a grant
 :imagesdir: ../media/
 
+[.lead]
+Deletes the specified grant from a partnership. Use this to remove access permissions that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}`#
-
-
-
-Deletes the specified grant from a partnership.
-
 
 == Parameters
 

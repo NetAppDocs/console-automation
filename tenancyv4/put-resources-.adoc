@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/put-resources-.html'
+keywords: 'replace resource,update resource,resource management,modify resource,resource update'
 summary: 'Modify a resource'
 ---
 
 = Modify a resource
 :imagesdir: ../media/
 
+[.lead]
+Modifies a resource by replacing the specified resource with new information. Use this to update the resource with the latest data or configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/resources/{resource_id}`#
 
-
+== Usage notes
 
 Replaces the specified resource with new information.
 

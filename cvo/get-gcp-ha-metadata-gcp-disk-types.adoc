@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-gcp-disk-types.html'
+keywords: 'google cloud,cloud disk,ha metadata,disk types,gcp storage'
 summary: 'Retrieve the supported disk types'
 ---
 
 = Retrieve the supported disk types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported Google Cloud disk types. Use this to view the available disk configurations for provisioning storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/gcp-disk-types`#
-
-
-
-Retrieves the supported Google Cloud disk types.
-
 
 == Error
 

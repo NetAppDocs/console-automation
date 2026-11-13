@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-users.html'
+keywords: 'partnership users,list users,partnership id,view users,user management'
 summary: 'List all users for a partnership'
 ---
 
 = List all users for a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of users for a specified partnership. Use this to view the users associated with the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/users`#
 
-
+== Usage notes
 
 Lists all users in the specified partnership.
 

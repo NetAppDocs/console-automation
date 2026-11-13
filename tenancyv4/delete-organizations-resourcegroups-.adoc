@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-organizations-resourcegroups-.html'
+keywords: 'organization resourcegroup,delete resourcegroup,remove resourcegroup,organization resource management,resource group deletion'
 summary: 'Remove a resource group from an organization'
 ---
 
 = Remove a resource group from an organization
 :imagesdir: ../media/
 
+[.lead]
+Deletes a resource group from an organization. Use this to manage the organization’s resource allocations by removing groups that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/resourcegroups/{resourcegroup_id}`#
 
-
+== Usage notes
 
 Removes a resource group from the specified organization.
 

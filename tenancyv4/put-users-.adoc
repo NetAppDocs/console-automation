@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/put-users-.html'
+keywords: 'user update,user replace,user management,user id,user information'
 summary: 'Modify a user'
 ---
 
 = Modify a user
 :imagesdir: ../media/
 
+[.lead]
+Modifies a user by replacing the specified user with new information. Use this to update user details in a tenancy system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/users/{user_id}`#
 
-
+== Usage notes
 
 Replaces the specified user with new information.
 

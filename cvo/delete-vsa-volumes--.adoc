@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-vsa-volumes--.html'
+keywords: 'delete volume,remove volume,ontap volume,delete storage volume,manage volumes,volume deletion'
 summary: 'Delete an existing volume'
 ---
 
 = Delete an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing volume. Use this to remove a volume that is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Deletes an existing volume.
-
 
 == Parameters
 

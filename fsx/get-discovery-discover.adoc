@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/get-discovery-discover.html'
+keywords: 'fsx ontap,discover file systems,aws regions scan,ontap discovery,file system discovery'
 summary: 'Discover FSx ONTAP systems'
 ---
 
 = Discover FSx ONTAP systems
 :imagesdir: ../media/
 
+[.lead]
+Discovers FSx for ONTAP file systems across all relevant AWS regions.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/discovery/{accountId}/discover`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Discovers all FSx ONTAP file systems. All the relevant AWS regions will be scanned during this operation.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

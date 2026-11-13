@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-instance-types-not-supporting-acceleration-and-capacity-tiering.html'
+keywords: 'instance types,azure storage,capacity tiering,acceleration support,netapp ontap'
 summary: 'Retrieve unsupported instance types for acceleration and capacity tiering'
 ---
 
 = Retrieve unsupported instance types for acceleration and capacity tiering
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the instance types that do not support acceleration and capacity tiering. Use this to identify incompatible instance types for your deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/instance-types-not-supporting-acceleration-and-capacity-tiering`#
-
-
-
-Retrieves the instance types that do not support acceleration and capacity tiering.
-
 
 == Error
 

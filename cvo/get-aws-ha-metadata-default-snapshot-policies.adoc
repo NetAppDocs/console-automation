@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-default-snapshot-policies.html'
+keywords: 'snapshot policies,default policies,ha metadata,aws cluster,snapshot management'
 summary: 'Retrieve default snapshot policies available on a cluster'
 ---
 
 = Retrieve default snapshot policies available on a cluster
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the default snapshot policies available on a cluster, providing the predefined policies for managing cluster snapshots. Use this to review the options for scheduling and retaining snapshots on the cluster.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/default-snapshot-policies`#
-
-
-
-Retrieves the default snapshot policies available on a cluster.
-
 
 == Error
 

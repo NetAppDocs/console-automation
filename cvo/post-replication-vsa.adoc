@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-replication-vsa.html'
+keywords: 'replication setup,cloud volumes,cloud ontap,volume replication,data protection'
 summary: 'Create a new replication for a Cloud Volumes ONTAP system'
 ---
 
 = Create a new replication for a Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new replication for a Cloud Volumes ONTAP system. Use this to configure data replication between systems for disaster recovery or data migration purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/vsa`#
 
-
+== Usage notes
 
 Creates a new replication to a Cloud Volumes ONTAP system.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments-resourcegroups-avs-private-clouds-clusters.html'
+keywords: 'azure vmware,private cloud clusters,vmware solution,subscription clusters,resource group clusters'
 summary: 'Retrieve Azure VMware Solution private cloud clusters'
 ---
 
 = Retrieve Azure VMware Solution private cloud clusters
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Azure VMware Solution private cloud clusters for the existing subscription. Use this to view the available clusters associated with your subscription.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/resourceGroups/{resourceGroupName}/avs-private-clouds/{privateCloudName}/clusters`#
-
-
-
-Retrieves Azure VMware Solution private cloud clusters for the existing subscription.
-
 
 == Parameters
 

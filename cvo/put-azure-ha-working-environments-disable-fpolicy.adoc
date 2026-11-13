@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-disable-fpolicy.html'
+keywords: 'fpolicy disable,ransomware files,working environment,ha azure,fpolicy management'
 summary: 'Disable FPolicy for ransomware files'
 ---
 
 = Disable FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Disables the FPolicy for ransomware files, stopping the application of policies designed to detect and manage ransomware-related activities. Use this endpoint to cease monitoring and enforcement of ransomware-specific policies.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/disable-fpolicy`#
-
-
-
-Disables the FPolicy for ransomware files.
-
 
 == Parameters
 

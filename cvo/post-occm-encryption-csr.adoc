@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-encryption-csr.html'
+keywords: 'certificate signing request,csr generation,csr storage,certificate authority,netapp console'
 summary: 'Generate, store, and return a certificate signing request'
 ---
 
 = Generate, store, and return a certificate signing request
 :imagesdir: ../media/
 
+[.lead]
+Generates, stores, and returns a certificate signing request (CSR). Use this to obtain a CSR for signing by a certificate authority (CA) and subsequent installation in the NetApp Console.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/encryption/csr`#
 
+== Usage notes
 
-
-Generates, stores, and returns a certificate signing request (CSR). This CSR can be signed by a certificate authority (CA) and installed in the NetApp Console using /install_certificate. Successive calls will not overwrite previously generated CSRs.
+This CSR can be signed by a certificate authority (CA) and installed in the NetApp Console using /install_certificate. Successive calls will not overwrite previously generated CSRs.
 
 
 == Error

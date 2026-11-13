@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-partnerships-resourceadmins-.html'
+keywords: 'remove user,resource admin,delete resourceadmin,user removal,partnership management,resource group'
 summary: 'Remove a user from a partnership ResourceAdmin group'
 ---
 
 = Remove a user from a partnership ResourceAdmin group
 :imagesdir: ../media/
 
+[.lead]
+Removes a user from the ResourceAdmin group in a specified partnership, updating the group's membership to reflect this change. Use this to manage access control within partnership resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/partnerships/{partnership_id}/resourceadmins/{user_id}`#
-
-
-
-Removes a user from the ResourceAdmin group in the specified partnership.
-
 
 == Parameters
 

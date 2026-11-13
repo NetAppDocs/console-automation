@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-awsaccountid-region-key.html'
+keywords: 'aws keys,aws region,aws account id,cloudmanager cbs,netapp ontap'
 summary: 'Retrieve AWS keys'
 ---
 
 = Retrieve AWS keys
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of AWS keys from a specified region that belongs to a specified AWS account ID. Use this to view the discovered keys associated with your account in the given region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/region/{regionCode}/key`#
 
+== Token usage
 
-
-Retrieves a list of AWS keys from a specified region that belongs to a specified AWS account ID.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-working-environments.html'
+keywords: 'cloud volumes,ontap systems,working environments,azure ha,tenant visibility'
 summary: 'Retrieve HA systems'
 ---
 
 = Retrieve HA systems
 :imagesdir: ../media/
 
+[.lead]
+Retrieves HA systems visible to the current user. Use this to view the discovered Cloud Volumes ONTAP systems accessible in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments`#
 
-
+== Usage notes
 
 Retrieves Cloud Volumes ONTAP systems visible to the current user.
 

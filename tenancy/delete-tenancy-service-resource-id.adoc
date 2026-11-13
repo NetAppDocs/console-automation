@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancy/delete-tenancy-service-resource-id.html'
+keywords: 'service resource,delete resource,resource removal,tenancy service,account resource'
 summary: 'Delete a service resource'
 ---
 
 = Delete a service resource
 :imagesdir: ../media/
 
+[.lead]
+Deletes a service resource from a specified account. Use this to remove an unused or obsolete service resource associated with the account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenancy/service-resource/{resourceIdentifier}`#
 
+== Token usage
 
+BlueXP service token with the following scopes: tenancy:internal.
+
+== Usage notes
 
 Deletes a service resource from a specified account.
-            +
-*Token usage:* BlueXP service token with the following scopes: tenancy:internal.
-
 
 == Parameters
 

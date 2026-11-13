@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-metadata-create-bucket.html'
+keywords: 's3 bucket,create bucket,aws ha,ha metadata,new bucket'
 summary: 'Create a new S3 bucket'
 ---
 
 = Create a new S3 bucket
 :imagesdir: ../media/
 
+[.lead]
+Creates a new S3 bucket. Use this to store and manage objects in your cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/create-bucket`#
-
-
-
-Creates a new S3 bucket.
-
 
 == Parameters
 

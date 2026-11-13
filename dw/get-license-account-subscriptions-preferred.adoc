@@ -3,24 +3,31 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-account-subscriptions-preferred.html'
+keywords: 'preferred subscription,subscription id,cloud provider,account id,service calls'
 summary: 'Retrieve the preferred subscription ID for an account'
 ---
 
 = Retrieve the preferred subscription ID for an account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the preferred subscription ID for a specified account. Use this to identify the subscription designated as preferred for the account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/account/{accountId}/subscriptions/preferred`#
 
+== Token usage
 
+Either a NetApp Console user token or service token.
+
+== Usage notes
 
 Retrieves the preferred subscription ID for a specified account ID.
 
 **Note:**
 
 * This API authorizes user calls and service calls with a predefined scope only.
-
-*Token usage:* Either a NetApp Console user token or service token.
-
 
 == Parameters
 

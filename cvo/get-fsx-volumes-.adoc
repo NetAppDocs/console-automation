@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-volumes-.html'
+keywords: 'volume retrieval,volume id,filesystem id,fsx volume,ontap volumes'
 summary: 'Retrieve a volume using the ID'
 ---
 
 = Retrieve a volume using the ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a volume using its ID. Use this to view specific volume details for management or troubleshooting purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/{volumeId}`#
 
-
+== Usage notes
 
 Retrieves volume using the ID.
 

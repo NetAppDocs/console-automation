@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/get-tenancy-account-users.html'
+keywords: 'user data,account users,tenancy account,account details,user information'
 summary: 'Retrieve user data'
 ---
 
 = Retrieve user data
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the user data of a specified account. Use this to access account-specific information for tenancy management tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/users`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Retrieves the user data of the specified account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

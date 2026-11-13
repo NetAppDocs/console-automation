@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-discovery-discover.html'
+keywords: 'google cloud,discovered systems,cloud region,ha discovery,system visibility'
 summary: 'Retrieve a list of HA systems for a Google Cloud region'
 ---
 
 = Retrieve a list of HA systems for a Google Cloud region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of HA systems for a Google Cloud region. Use this to view the discovered systems accessible in the specified region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/discovery/discover`#
 
-
+== Usage notes
 
 Retrieves a list of discovered systems visible to the current user in the specified Google Cloud region.
 

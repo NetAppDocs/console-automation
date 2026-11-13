@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-replication-resync--.html'
+keywords: 'snapmirror resync,snapmirror relationship,replication resync,volume resync,destination svm,destination volume'
 summary: 'Resync a SnapMirror replication relationship'
 ---
 
 = Resync a SnapMirror replication relationship
 :imagesdir: ../media/
 
+[.lead]
+Resyncs a SnapMirror replication relationship to reestablish data synchronization between the source and destination volumes. Use this to recover from disruptions or restore consistency in the replication process.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/resync/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
-
-
-
-Resyncs a SnapMirror replication relationship.
-
 
 == Parameters
 

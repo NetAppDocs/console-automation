@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-activate-snapshot-policy.html'
+keywords: 'snapshot policy,activate snapshot,read write volumes,unprotected volumes,volume protection,working environment'
 summary: 'Activate snapshot policy assignment'
 ---
 
 = Activate snapshot policy assignment
 :imagesdir: ../media/
 
+[.lead]
+Activates snapshot policy assignment for all unprotected read/write volumes. Use this to ensure that snapshot policies are applied to volumes currently lacking protection.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/activate-snapshot-policy`#
-
-
-
-Activates snapshot policy assignment for all unprotected read/write volumes.
-
 
 == Parameters
 

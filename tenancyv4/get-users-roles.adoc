@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-users-roles.html'
+keywords: 'user roles,roles list,user permissions,user role management,account roles,role details'
 summary: 'List all the roles for a user'
 ---
 
 = List all the roles for a user
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all roles for the specified user, providing a list of the user's assigned permissions and access levels. Use this to review the roles associated with a particular user in the tenancy system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}/roles`#
 
-
+== Usage notes
 
 Lists all roles for the specified user.
 

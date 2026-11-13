@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/patch-working-environments-.html'
+keywords: 'fsx throughput,fsx update,ontap working environment,throughput capacity,fsx modify'
 summary: 'Update FSx ONTAP systems'
 ---
 
 = Update FSx ONTAP systems
 :imagesdir: ../media/
 
+[.lead]
+Updates the throughput capacity of an FSx for ONTAP working environment. Use this to adjust system performance based on workload requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/working-environments/{accountId}/{fileSystemId}`#
-
-
-
-Updates the throughput capacity of an FSx for ONTAP working environment.
-
 
 == Parameters
 

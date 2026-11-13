@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-awsaccountid-buckets.html'
+keywords: 'aws s3 buckets,aws account buckets,netapp console buckets,s3 bucket list,cloud storage buckets'
 summary: 'Retrieve a list of AWS S3 buckets from a region'
 ---
 
 = Retrieve a list of AWS S3 buckets from a region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of AWS S3 buckets from a specified region that belong to a specified AWS account. Use this to view the available buckets for backup or recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/buckets`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves a list of AWS S3 buckets from a specified region that belongs to a specified AWS account ID from the NetApp Console SaaS application.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

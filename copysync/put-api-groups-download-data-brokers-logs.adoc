@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-groups-download-data-brokers-logs.html'
+keywords: 'data broker logs,download logs,group logs,data broker group,netapp logs'
 summary: 'Download the data broker group logs'
 ---
 
 = Download the data broker group logs
 :imagesdir: ../media/
 
+[.lead]
+Downloads the data broker group logs, providing access to logs for monitoring or troubleshooting operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/groups/{id}/download-data-brokers-logs`#
-
-
-
-Downloads the data broker group logs.
-
 
 == Parameters
 

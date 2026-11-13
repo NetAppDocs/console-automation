@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/get-organizations-federations.html'
+keywords: 'organizations,federations,organization federations,list federations,organization details'
 summary: 'List federations'
 ---
 
 = List federations
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of federations. Use this to view all federations available in the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/federations`#
 
-
+== Usage notes
 
 Lists all federations.
 

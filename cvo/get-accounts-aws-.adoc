@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-accounts-aws-.html'
+keywords: 'aws account,retrieve aws,retrieve account,cloud provider,account id'
 summary: 'Retrieve an AWS account'
 ---
 
 = Retrieve an AWS account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an AWS account using the public ID. Use this to access details about the specified account for management or integration purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/aws/{cloudProviderAccountId}`#
-
-
-
-Retrieves an AWS account using the public ID.
-
 
 
 CAUTION: This operation is deprecated.

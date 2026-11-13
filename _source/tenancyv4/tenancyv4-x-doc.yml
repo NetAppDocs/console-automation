@@ -61,6 +61,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all folders in the collection, providing access to the available
+            folder configurations.
+          keywords: folders collection,folder list,collection folders,view folders,list
+            folders
     post:
       x-doc:
         title: Create a new folder
@@ -69,6 +74,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new folder. Use this to organize and manage your content
+            within the tenancy structure.
+          keywords: create folder,new folder,folder creation,folder management,folder
+            structure
   "/folders/{folder_id}":
     delete:
       x-doc:
@@ -78,6 +88,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes the specified folder. Use this endpoint to remove a folder
+            from the tenancy structure when it is no longer needed.
+          keywords: delete folder,folder removal,remove folder,folder id,delete operation,folder
+            management
     get:
       x-doc:
         title: Retrieve a folder
@@ -86,6 +101,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified folder, providing access to its contents or
+            metadata for organizational or management purposes. Use this to locate
+            and manage information within the folder efficiently.
+          keywords: folder retrieval,folder details,specified folder,folder id,access
+            folder
     patch:
       x-doc:
         title: Update a folder partially
@@ -94,6 +115,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates a folder partially with the specified information. Use this
+            to modify specific attributes of a folder without overwriting its entire
+            configuration.
+          keywords: update folder,folder management,modify folder,partial update,folder
+            id
     put:
       x-doc:
         title: Update a folder
@@ -102,6 +129,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates the specified folder with new information. Use this to modify
+            folder details as needed within your tenancy.
+          keywords: folder update,replace folder,folder management,folder id,new folder,folder
+            modification
   "/folders/{folder_id}/folders":
     get:
       x-doc:
@@ -111,6 +143,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all folders under a specified parent folder to help you
+            organize or navigate the folder structure.
+          keywords: folder listing,parent folder,subfolders,parent folder hierarchy,folder
+            structure
     post:
       x-doc:
         title: Create a child folder under a parent folder
@@ -119,6 +156,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a child folder under a parent folder, adding a new organizational
+            structure within the specified parent folder. Use this to manage and organize
+            resources hierarchically.
+          keywords: create folder,parent folder,new subfolder,folder hierarchy,folder
+            management,new folder
   "/folders/{folder_id}/folders/{childfolder_id}":
     delete:
       x-doc:
@@ -128,6 +171,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Removes a child folder from a parent folder. Use this to manage folder
+            hierarchy by detaching specified child folders from their parent.
+          keywords: folder deletion,child folder removal,parent folder management,folder
+            hierarchy,delete child folder
     get:
       x-doc:
         title: Retrieve a child folder under a parent folder
@@ -136,6 +184,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a child folder under the specified parent folder. Use this
+            to access folder structures within a tenancy hierarchy.
+          keywords: child folder,folder retrieval,parent folder,folder hierarchy,folder
+            structure
   "/folders/{folder_id}/projects":
     get:
       x-doc:
@@ -145,6 +198,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all projects under a specified folder. Use this to view
+            the projects associated with a particular folder in your tenancy.
+          keywords: folder projects,folder id,projects list,specified folder,projects
+            under folder
     post:
       x-doc:
         title: Create a new project under a folder
@@ -153,6 +211,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a project under the specified folder. Use this to organize
+            resources and manage access within a tenancy structure.
+          keywords: create project,folder projects,project creation,folder id,specified
+            folder
   "/folders/{folder_id}/projects/{project_id}":
     delete:
       x-doc:
@@ -162,6 +225,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Removes a project from a folder, detaching the project from the specified
+            folder structure. Use this operation to manage project organization within
+            your tenancy.
+          keywords: remove project,delete project,folder management,project removal,folder
+            project
     get:
       x-doc:
         title: Retrieve a project under a folder
@@ -170,6 +239,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a project under a folder, providing details about the specified
+            project for organizational or management purposes.
+          keywords: folder projects,project retrieval,folder project access,specific
+            folder projects,project details
     patch:
       x-doc:
         title: Update a project under a folder partially
@@ -178,6 +252,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates a project under the specified folder with partial information,
+            modifying only the fields provided in the request. Use this to make targeted
+            changes to a project without altering its complete configuration.
+          keywords: folder update,project update,partial update,folder project,update
+            project
     put:
       x-doc:
         title: Modify a project under a folder
@@ -186,6 +266,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Modifies a project under a folder, replacing the existing project
+            with updated information. Use this to update project details within a
+            specific folder.
+          keywords: folder projects,replace project,folder management,project update,project
+            replacement,folder project
   "/folders/{folder_id}/resourcegroups":
     get:
       x-doc:
@@ -229,6 +315,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all resources under the specified folder. Use this to view
+            the resources available within a folder for organizational or management
+            purposes.
+          keywords: folder resources,folder contents,resource listing,resource details,specified
+            folder
     post:
       x-doc:
         title: Add resources to a folder
@@ -237,6 +329,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds resources to a folder in the Tenancy API. Use this to organize
+            and manage resources within specified folders.
+          keywords: folder resources,add resources,folder management,resource allocation,folder
+            id
   "/folders/{folder_id}/resources/{resource_id}":
     delete:
       x-doc:
@@ -246,6 +343,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a resource from a folder. Use this to manage folder contents
+            by removing resources that are no longer needed.
+          keywords: remove resource,delete folder resource,folder resource removal,resource
+            management,folder cleanup
     get:
       x-doc:
         title: Retrieve a resource under a folder
@@ -254,6 +356,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a resource under a folder, providing access to the specified
+            resource within the folder's hierarchy. Use this to locate and manage
+            individual resources organized under a folder.
+          keywords: folder resource,folder id,resource retrieval,resource details,specific
+            folder
   "/folders/{folder_id}/usergroups":
     get:
       x-doc:
@@ -297,6 +405,10 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all users associated with the specified folder. Use this
+            to view the users who have access to the folder.
+          keywords: folder users,folder id,associated users,list users,specified folder
     post:
       x-doc:
         title: Add users to a folder
@@ -305,6 +417,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds users to a folder, granting them access to the specified folder's
+            contents. Use this to manage folder permissions effectively in a multi-user
+            environment.
+          keywords: folder users,add users,folder id,add to folder,specified folder
   "/folders/{folder_id}/users/{user_id}":
     delete:
       x-doc:
@@ -314,6 +431,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Removes a user from a specified folder. Use this to manage folder
+            access and permissions within your tenancy environment.
+          keywords: remove user,folder management,user removal,delete user,folder
+            access
     get:
       x-doc:
         title: Retrieve a user associated with a folder
@@ -322,6 +444,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a user associated with a specified folder. Use this to identify
+            the user linked to a particular folder for tenancy management operations.
+          keywords: folder user,folder details,user details,folder lookup,user lookup,folder
+            association
   "/organizations":
     get:
       x-doc:
@@ -331,6 +458,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of organizations. Use this to view the organizations
+            available in the tenancy system.
+          keywords: organizations list,organization details,organization lookup,organization
+            directory,view organizations
     post:
       x-doc:
         title: Create a new organization
@@ -339,6 +471,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new organization, establishing a distinct entity for managing
+            resources and configurations. Use this to set up organizational boundaries
+            within a multi-tenant environment.
+          keywords: create organization,new organization,organization creation,add
+            organization,organization management
   "/organizations/{organization_id}":
     delete:
       x-doc:
@@ -356,6 +494,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified organization. Use this to access details about
+            the organization for management or reporting purposes.
+          keywords: organization details,organization id,retrieve organization,specific
+            organization,organization information
     patch:
       x-doc:
         title: Update an organization partially
@@ -364,6 +507,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates the specified organization with partial information. Use this
+            to modify only the fields that require changes without affecting the entire
+            organization configuration.
+          keywords: organization update,partial update,organization modification,organization
+            details,organization id,update organization
     put:
       x-doc:
         title: Modify an organization
@@ -372,6 +521,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Modifies an organization by replacing the specified organization with
+            new information. Use this to update organization details as needed.
+          keywords: organization update,replace organization,update organization,organization
+            management,modify organization
   "/organizations/{organization_id}/folders":
     get:
       x-doc:
@@ -381,6 +535,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of folders under a specified organization. Use this
+            to view the folder structure associated with the organization.
+          keywords: organization folders,organization structure,list folders,folder
+            hierarchy,organization management
     post:
       x-doc:
         title: Create a new folder under an organization
@@ -389,6 +548,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new folder under an organization. Use this to organize resources
+            within the specified organization.
+          keywords: organization folders,create folder,new folder,organization structure,folder
+            management
   "/organizations/{organization_id}/folders/{folder_id}":
     delete:
       x-doc:
@@ -398,6 +562,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a folder from an organization. Use this to manage the organization’s
+            hierarchy by removing unnecessary or outdated folders.
+          keywords: organization folders,delete folder,remove folder,organization
+            management,folder deletion
     get:
       x-doc:
         title: Retrieve a folder under an organization
@@ -406,6 +575,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a folder under an organization, providing access to the
+            folder details within the specified organizational hierarchy.
+          keywords: organization folder,folder retrieval,organization structure,folder
+            details,folder lookup,organization hierarchy
     patch:
       x-doc:
         title: Update a folder under an organization partially
@@ -414,6 +588,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates a folder within a specified organization by modifying partial
+            information. Use this to change specific properties of a folder without
+            altering its entire configuration.
+          keywords: update folder,partial update,organization folder,folder management,edit
+            folder
     put:
       x-doc:
         title: Update a folder under an organization
@@ -422,6 +602,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates a folder under an organization, replacing the folder's information
+            with the new data provided. Use this to modify folder details within a
+            specific organization.
+          keywords: folder replacement,update folder,organization folder,replace folder,folder
+            management,organization structure
   "/organizations/{organization_id}/partnership-with":
     get:
       x-doc:
@@ -466,6 +652,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of projects under the specified organization. Use
+            this to view all projects associated with the organization for management
+            or reporting purposes.
+          keywords: organization projects,organization folders,list projects,project
+            management,folder projects
     post:
       x-doc:
         title: Create a new project under an organization
@@ -474,6 +666,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new project under the specified organization. Use this to
+            define and manage resources within the organizational structure.
+          keywords: organization projects,create project,new project,organization
+            id,project creation
   "/organizations/{organization_id}/projects/{project_id}":
     delete:
       x-doc:
@@ -483,6 +680,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a project from an organization, removing the association between
+            the project and the specified organization. Use this to manage organizational
+            resources and ensure proper project alignment.
+          keywords: project removal,organization projects,delete project,remove project,organization
+            management,project management
     get:
       x-doc:
         title: Retrieve a project under an organization
@@ -491,6 +694,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a project under the specified organization, providing details
+            about the project for organizational management or resource allocation.
+          keywords: organization projects,project details,organization hierarchy,project
+            retrieval,organization insights
     patch:
       x-doc:
         title: Update a project under an organization partially
@@ -499,6 +707,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates a project under the specified organization with partial information.
+            Use this to modify specific attributes of a project without requiring
+            a complete update.
+          keywords: update project,organization project,edit project,partial update,project
+            management,organization updates
     put:
       x-doc:
         title: Modify a project under an organization
@@ -507,6 +721,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Modifies a project under an organization by replacing it with updated
+            information. Use this to update project details within the specified organizational
+            context.
+          keywords: replace project,update project,organization projects,project management,edit
+            project,organization data
   "/organizations/{organization_id}/resourcegroups":
     get:
       x-doc:
@@ -516,6 +736,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of resource groups under a specified organization.
+            Use this to view the available resource groups associated with the organization.
+          keywords: organization resources,resource groups,organization resource groups,organization
+            hierarchy,list resources
     post:
       x-doc:
         title: Add resource groups to an organization
@@ -524,6 +749,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds resource groups to an organization, associating them with the
+            specified organization to manage resources collectively. Use this to organize
+            and control access to resources within your organization.
+          keywords: resource groups,organization management,add resources,organization
+            id,resource management,group creation
   "/organizations/{organization_id}/resourcegroups/{resourcegroup_id}":
     delete:
       x-doc:
@@ -533,6 +764,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a resource group from an organization. Use this to manage
+            the organization’s resource allocations by removing groups that are no
+            longer needed.
+          keywords: organization resourcegroup,delete resourcegroup,remove resourcegroup,organization
+            resource management,resource group deletion
     get:
       x-doc:
         title: Retrieve a resource group under an organization
@@ -541,6 +778,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a resource group under the specified organization. Use this
+            to view the resource groups associated with an organization for management
+            or auditing purposes.
+          keywords: organization resourcegroup,organization resource group,resource
+            group details,organization resources,resource group retrieval
   "/organizations/{organization_id}/resources":
     get:
       x-doc:
@@ -550,6 +793,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of resources under the specified organization. Use
+            this to view and manage the resources associated with the organization.
+          keywords: organization resources,organization id,resource list,specified
+            organization,resource details
     post:
       x-doc:
         title: Add resources to an organization
@@ -558,6 +806,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds resources to an organization, associating them with the specified
+            organization for management and access purposes. Use this to organize
+            resources under a common organizational structure.
+          keywords: organization resources,add resources,organization id,resource
+            management,organization operations
   "/organizations/{organization_id}/resources/{resource_id}":
     delete:
       x-doc:
@@ -567,6 +821,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a resource from an organization. Use this to manage organizational
+            resources by removing those that are no longer needed.
+          keywords: remove resource,delete resource,organization resources,resource
+            removal,delete organization resource
     get:
       x-doc:
         title: Retrieve a resource under an organization
@@ -575,6 +834,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a resource under the specified organization, providing details
+            needed to view or manage the resource.
+          keywords: organization resources,retrieve resource,organization resource
+            id,resource details,organization id
   "/organizations/{organization_id}/roles/{role_id}/users":
     post:
       x-doc:
@@ -584,6 +848,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Associates users with a role under an organization, linking them to
+            specific permissions and responsibilities. Use this to manage access control
+            within the organization.
+          keywords: organization roles,role management,user association,organization
+            users,role assignment,manage roles
   "/organizations/{organization_id}/serviceAccounts":
     get:
       x-doc:
@@ -601,6 +871,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a service account under an organization. Use this to manage
+            access and permissions for resources within the organization.
+          keywords: service account,organization management,create service account,organization
+            id,service account creation
   "/organizations/{organization_id}/serviceAccounts/{serviceaccount_id}":
     delete:
       x-doc:
@@ -610,6 +885,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a service account under an organization. Use this to remove
+            service accounts that are no longer needed.
+          keywords: delete service account,organization service account,remove service
+            account,service account management,service account deletion
     get:
       x-doc:
         title: Retrieve a service account
@@ -618,6 +898,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a service account under an organization. Use this to view
+            the details of a specific account associated with a tenant.
+          keywords: organization service account,organization details,retrieve service
+            account,service account lookup,organization account
     patch:
       x-doc:
         title: Update a service account partially
@@ -626,6 +911,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates a service account under an organization with partial information.
+            Use this to modify specific attributes of a service account without altering
+            its entire configuration.
+          keywords: organization updates,service account updates,partial updates,service
+            account modify,organization service account
     put:
       x-doc:
         title: Modify a service account
@@ -634,6 +925,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates a service account under an organization. Use this to change
+            account details or permissions within the specified organization.
+          keywords: update service account,service account management,organization
+            service account,modify service account,organization account
   "/organizations/{organization_id}/serviceAccounts/{serviceaccount_id}/clientSecret":
     post:
       x-doc:
@@ -643,6 +939,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new client secret for a service account, enabling secure
+            authentication for the service account's interactions. Use this to generate
+            credentials for accessing resources associated with the account.
+          keywords: organization client secret,service account secret,new client secret,create
+            client secret,organization service account
   "/organizations/{organization_id}/usergroups":
     get:
       x-doc:
@@ -652,6 +954,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of user groups under the specified organization.
+            Use this to view the groups available for managing user permissions and
+            access within the organization.
+          keywords: organization usergroups,organization user groups,list user groups,user
+            group management,organization groups
     post:
       x-doc:
         title: Add user groups to an organization
@@ -660,6 +968,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds user groups to an organization, associating the specified groups
+            with the organization for access management and permissions. Use this
+            to manage group affiliations within the organization effectively.
+          keywords: organization usergroups,add usergroups,organization management,user
+            group creation,usergroups organization
   "/organizations/{organization_id}/usergroups/{usergroup_id}":
     delete:
       x-doc:
@@ -669,6 +983,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Removes a user group from the specified organization. Use this to
+            manage access and permissions for organizational resources.
+          keywords: organization usergroup,remove usergroup,delete usergroup,organization
+            management,usergroup removal,usergroup deletion
     get:
       x-doc:
         title: Retrieve a user group under an organization
@@ -677,6 +996,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a user group under the specified organization, providing
+            details about the group's configuration and membership. Use this to manage
+            or review group settings within the organization.
+          keywords: organization usergroup,user group details,organization user group,usergroup
+            lookup,user group retrieval
   "/organizations/{organization_id}/users":
     get:
       x-doc:
@@ -686,6 +1011,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of users under the specified organization. Use this
+            to view all users associated with the organization.
+          keywords: organization users,organization id,organization members,list users,user
+            directory
     post:
       x-doc:
         title: Add users to an organization
@@ -694,6 +1024,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds users to an organization, granting them access to the specified
+            organization's resources and permissions. Use this to manage user memberships
+            within an organization.
+          keywords: organization users,add users,organization id,manage users,user
+            management
   "/organizations/{organization_id}/users/{user_id}":
     delete:
       x-doc:
@@ -703,6 +1039,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a user from an organization. Use this to revoke the user's
+            access and remove their association with the specified organization.
+          keywords: remove user,delete user,organization user,user management,organization
+            id,user id
     get:
       x-doc:
         title: Retrieve a user under an organization
@@ -711,6 +1052,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a user under the specified organization, providing details
+            about the user's association within the organization. Use this to review
+            user information for organizational management or auditing purposes.
+          keywords: organization users,organization user details,user management,organization
+            user retrieval,user details
     patch:
       x-doc:
         title: Modify a user
@@ -718,6 +1065,11 @@ paths:
         filename: patch-organizations-users-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Modifies the roles assigned to a specified user within an organization.
+            Use this to adjust permissions by elevating or downscoping roles as needed.
+          keywords: role elevation,role downscope,user roles,organization roles,user
+            management,organization user
   "/partnerships":
     get:
       x-doc:
@@ -727,6 +1079,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of all partnerships. Use this to view the existing
+            partnerships within your tenancy.
+          keywords: partnerships list,partnerships retrieval,partnerships details,partnerships
+            overview
     post:
       x-doc:
         title: Create a new partnership
@@ -735,6 +1092,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new partnership to establish a relationship between tenants
+            for resource sharing or collaboration. Use this to configure partnerships
+            that support inter-tenant activities.
+          keywords: create partnership,partnership creation,new partnership,partnership
+            setup,add partnership
   "/partnerships/{partnership_id}":
     delete:
       x-doc:
@@ -744,6 +1107,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a partnership, removing the specified connection between tenants.
+            Use this to discontinue resource sharing or collaboration between the
+            associated tenants.
+          keywords: partnership management,delete partnership,partnership removal,partnership
+            id,source organization,destination organization
     get:
       x-doc:
         title: Retrieve a partnership
@@ -752,6 +1121,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves information about the specified partnership, providing details
+            about the partnership configuration and status. Use this to review or
+            verify the partnership settings.
+          keywords: partnership details,partnership info,source organization,destination
+            organization,partnership type
     patch:
       x-doc:
         title: Update a partnership partially
@@ -760,6 +1135,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates the specified partnership with partial information. Use this
+            to modify specific attributes of a partnership without overwriting the
+            entire configuration.
+          keywords: partnership update,partnership modify,partial update,source organization,destination
+            organization
     put:
       x-doc:
         title: Modify a partnership 
@@ -777,6 +1158,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of partnership types. Use this to view the available
+            options for configuring partnerships.
+          keywords: partnership types,partnership list,relationship types,partnership
+            categories,relationship list
     post:
       x-doc:
         title: Create a new partnership type
@@ -802,6 +1188,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves information about the specified partnership type, providing
+            details about the type of partnership in your tenancy environment.
+          keywords: partnership type,partnership details,relationship type,partnership
+            id,type information
     patch:
       x-doc:
         title: Update a partnership type partially
@@ -827,6 +1218,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of permissions. Use this to view the available permissions
+            in the tenancy system.
+          keywords: permissions list,access permissions,user permissions,role permissions,permissions
+            management
     post:
       x-doc:
         title: Create a new permission
@@ -852,6 +1248,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified permission, providing details about the permission's
+            attributes and scope. Use this to review access controls relevant to your
+            tenancy environment.
+          keywords: permission details,permission id,retrieve permission,access permissions,specific
+            permission
     patch:
       x-doc:
         title: Update a permission partially
@@ -886,6 +1288,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of projects. Use this to view all projects associated
+            with the tenancy.
+          keywords: project list,project management,available projects,project overview,project
+            details
     post:
       x-doc:
         title: Create a new project
@@ -894,6 +1301,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new project. Use this to organize resources and manage access
+            within a specific scope.
+          keywords: create project,new project,project creation,add project,project
+            management
   "/projects/{project_id}":
     delete:
       x-doc:
@@ -903,6 +1315,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes the specified project. Use this endpoint to remove a project
+            that is no longer needed.
+          keywords: delete project,project removal,remove project,project deletion,delete
+            operation,project management
     get:
       x-doc:
         title: Retrieve a project
@@ -911,6 +1328,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified project. Use this to view details about the
+            project and its associated configuration.
+          keywords: project details,project retrieval,specified project,project id,retrieve
+            project
     patch:
       x-doc:
         title: Update a project partially
@@ -919,6 +1341,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates the specified project with partial information, modifying
+            only the fields provided in the request. Use this to make incremental
+            changes to a project's configuration without replacing existing data.
+          keywords: update project,project modification,partial update,project id,project
+            management
     put:
       x-doc:
         title: Modify a project
@@ -927,6 +1355,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Modifies a project by replacing the specified project with new information.
+            Use this to update project details to reflect changes in your tenancy
+            configuration.
+          keywords: project management,update project,project replacement,modify project,project
+            settings
   "/projects/{project_id}/resourcegroups":
     get:
       x-doc:
@@ -970,6 +1404,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all resources in the specified project. Use this to view
+            the resources associated with a particular project.
+          keywords: project resources,project id,resource list,project details,list
+            resources
     post:
       x-doc:
         title: Add resources to a project
@@ -978,6 +1417,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates resources in a specified project. Use this to allocate resources
+            for project activities or workflows.
+          keywords: project resources,add resources,project id,specified project,resource
+            management
   "/projects/{project_id}/resources/{resource_id}":
     delete:
       x-doc:
@@ -987,6 +1431,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a resource from a project. Use this to manage project contents
+            by removing resources that are no longer needed.
+          keywords: delete resource,remove resource,project resource,decommission
+            resource,resource management
     get:
       x-doc:
         title: Retrieve a resource in a project
@@ -995,6 +1444,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a resource in a specified project. Use this to access detailed
+            information about the resource within the context of the project.
+          keywords: project resource,retrieve resource,project details,resource details,specified
+            project
   "/projects/{project_id}/usergroups":
     get:
       x-doc:
@@ -1038,6 +1492,10 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all users in the specified project. Use this to view the
+            users associated with a particular project.
+          keywords: users,project users,project id,list users,specified project
     post:
       x-doc:
         title: Add users to a project
@@ -1046,6 +1504,10 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds users to a project, associating them with the specified project
+            for access and collaboration. Use this to manage project membership effectively.
+          keywords: project users,add users,project id,manage users,user assignment
   "/projects/{project_id}/users/{user_id}":
     delete:
       x-doc:
@@ -1055,6 +1517,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Removes a user from the specified project. Use this to manage project
+            access and ensure proper user permissions.
+          keywords: remove user,delete user,project user,project id,user removal,remove
+            from project
     get:
       x-doc:
         title: Retrieve a user under a project
@@ -1063,6 +1530,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a user under the specified project, providing details about
+            the user associated with that project. Use this to view information about
+            project-specific users.
+          keywords: project users,project user id,user retrieval,project details,user
+            identification,project members
   "/resourcegroups":
     get:
       x-doc:
@@ -1072,6 +1545,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of resource groups. Use this to view the available
+            groups within your tenancy.
+          keywords: resource groups,list resources,resource management,group listing,data
+            groups
     post:
       x-doc:
         title: Create a new resource group
@@ -1080,6 +1558,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new resource group. Use this to define and organize resources
+            within a tenancy for management or access control purposes.
+          keywords: resource groups,create resource,resource management,new resource
+            group,group creation
   "/resourcegroups/{resourcegroup_id}":
     delete:
       x-doc:
@@ -1089,6 +1572,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes the specified resource group. Use this to remove resource
+            groups that are no longer needed.
+          keywords: resource group,delete resource group,remove resource group,resource
+            management,resource deletion
     get:
       x-doc:
         title: Retrieve a resource group
@@ -1097,6 +1585,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified resource group. Use this to access details
+            about the resource group for tenancy management or configuration purposes.
+          keywords: resource group,resourcegroup retrieval,group details,resource
+            management,resourcegroup id
     patch:
       x-doc:
         title: Update a resource group
@@ -1105,6 +1598,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates a resource group with the specified partial information. Use
+            this to modify existing resource group properties without requiring full
+            replacement.
+          keywords: resource group,update resource,partial update,resource management,group
+            id,modify resource
     put:
       x-doc:
         title: Modify a resource group
@@ -1113,6 +1612,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Modifies a resource group by replacing the specified group with new
+            information. Use this endpoint to update resource group configurations
+            as needed.
+          keywords: resource group,replace resource group,resource group id,update
+            resource group,modify resource group,resource management
   "/resourcegroups/{resourcegroup_id}/bindings":
     get:
       x-doc:
@@ -1131,6 +1636,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all resources associated with a resource group. Use this
+            to view the resources within a specific group for management or auditing
+            purposes.
+          keywords: resource groups,resource group resources,resource list,resource
+            association,resource group id
     post:
       x-doc:
         title: Add resources to a resource group
@@ -1139,6 +1650,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds resources to a resource group, associating the specified resources
+            with the group for organizational or management purposes. Use this to
+            group resources logically for easier administration or policy application.
+          keywords: resource groups,add resources,resource group id,manage resources,group
+            resources
   "/resourcegroups/{resourcegroup_id}/resources/{resource_id}":
     delete:
       x-doc:
@@ -1148,6 +1665,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a resource from the specified resource group, removing it
+            from the group's configuration. Use this to manage and update the composition
+            of resource groups in your tenancy.
+          keywords: delete resource,remove resource,resource group management,resource
+            deletion,resource cleanup,manage resource groups
     get:
       x-doc:
         title: Retrieve a resource in a resource group
@@ -1156,6 +1679,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a resource in the specified resource group. Use this to
+            view the details of a specific resource within a particular group.
+          keywords: resource group,resource retrieval,resource id,group id,retrieve
+            resource
   "/resources":
     get:
       x-doc:
@@ -1165,6 +1693,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of resources within the tenancy environment. Use
+            this to view the available resources for management or auditing purposes.
+          keywords: resources list,resource management,list resources,data retrieval,resource
+            overview
     post:
       x-doc:
         title: Create a new resource
@@ -1173,6 +1706,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new resource in the tenancy system. Use this to provision
+            additional resources within your tenant environment.
+          keywords: create resource,new resource,resource creation,resource management,add
+            resource
   "/resources/{resource_id}":
     delete:
       x-doc:
@@ -1182,6 +1720,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes the specified resource, removing it from the tenancy system.
+            Use this to manage and clean up resources no longer needed in your environment.
+          keywords: delete resource,remove resource,resource deletion,resource id,delete
+            operation
     get:
       x-doc:
         title: Retrieve a resource
@@ -1190,6 +1733,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified resource, providing details about its configuration
+            and attributes. Use this to access information about resources in the
+            tenancy environment.
+          keywords: resource retrieval,specified resource,resource lookup,resource
+            fetch,resource details,retrieve resource
     patch:
       x-doc:
         title: Update a resource
@@ -1198,6 +1747,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates the specified resource with partial information. Use this
+            to modify specific attributes of a resource without altering its entire
+            configuration.
+          keywords: update resource,resource update,partial update,modify resource,resource
+            id,update endpoint
     put:
       x-doc:
         title: Modify a resource
@@ -1206,6 +1761,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Modifies a resource by replacing the specified resource with new information.
+            Use this to update the resource with the latest data or configuration.
+          keywords: replace resource,update resource,resource management,modify resource,resource
+            update
   "/resources/{resource_id}/bindings":
     get:
       x-doc:
@@ -1224,6 +1784,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all permissions for a specified resource, providing the
+            available permission configuration for that resource. Use this to review
+            access control settings.
+          keywords: resource permissions,resource access,permissions list,resource
+            rights,user permissions
   "/resources/{resource_id}/users":
     get:
       x-doc:
@@ -1233,6 +1799,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of users with permissions for a specified resource.
+            Use this to view and manage access to the resource.
+          keywords: resource users,resource permissions,list users,user permissions,resource
+            access,permission management
   "/resources/{resource_id}/permissions/{permission_id}/users":
     get:
       x-doc:
@@ -1242,6 +1813,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all users with a specific permission for a resource. Use
+            this to identify which users have the specified access for the resource.
+          keywords: resource permissions,permission users,resource users,list users,permission
+            access,user roles
   "/resourcetypes":
     get:
       x-doc:
@@ -1277,6 +1853,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of roles. Use this to review the roles available
+            in the tenancy environment.
+          keywords: roles list,access roles,user roles,role management,permissions
+            roles,roles overview
     post:
       x-doc:
         title: Create a new role
@@ -1302,6 +1883,10 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified role, providing its details for access control
+            or management purposes.
+          keywords: role retrieval,role details,specified role,role id,role information
     patch:
       x-doc:
         title: Update a role resource partially
@@ -1336,6 +1921,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all permissions for a specified role. Use this to review
+            the actions and operations permitted for the role.
+          keywords: role permissions,role management,permission list,user roles,access
+            control
     post:
       x-doc:
         title: Add a list of permissions to a role
@@ -1361,6 +1951,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a permission for a role, providing details about the specified
+            role’s access capabilities. Use this to review or validate the permissions
+            assigned to a particular role.
+          keywords: role permissions,permission retrieval,role management,access control,specific
+            role
   "/tags":
     get:
       x-doc:
@@ -1420,6 +2016,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all user groups in the collection. Use this to review the
+            available groups within your tenancy configuration.
+          keywords: user groups,group collection,list groups,group management,access
+            groups
     post:
       x-doc:
         title: Create a new user group
@@ -1428,6 +2029,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new user group. Use this to define and manage group-based
+            permissions for tenants.
+          keywords: create user group,user group creation,new user group,user group
+            management,user groups
   "/usergroups/{usergroup_id}":
     delete:
       x-doc:
@@ -1437,6 +2043,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes the specified user group. Use this to remove user groups that
+            are no longer needed in your tenancy configuration.
+          keywords: delete usergroup,user group removal,group deletion,usergroup id,remove
+            user group,user management
     get:
       x-doc:
         title: Retrieve a user group
@@ -1445,6 +2056,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified user group. Use this to view details about
+            the group's configuration and membership.
+          keywords: user groups,retrieve usergroup,user group details,usergroup id,user
+            group management
     patch:
       x-doc:
         title: Update a user group partially
@@ -1453,6 +2069,13 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates the specified user group with partial information, allowing
+            modifications to specific attributes without altering the entire group
+            configuration. Use this to make targeted updates to user group settings
+            as needed.
+          keywords: usergroups,update usergroup,edit user group,modify usergroup,partial
+            update
     put:
       x-doc:
         title: Modify a user group
@@ -1461,6 +2084,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Modifies a user group by replacing the specified group with updated
+            information. Use this to update group details or permissions as needed.
+          keywords: user groups,replace user group,update user group,user group id,modify
+            user group,edit user group
   "/usergroups/{usergroup_id}/bindings":
     get:
       x-doc:
@@ -1479,6 +2107,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all users for the specified user group, providing a list
+            of members associated with the group. Use this to review group membership
+            or manage user assignments.
+          keywords: user groups,group users,list users,user management,group membership,users
+            in group
     post:
       x-doc:
         title: Add users to a user group
@@ -1487,6 +2121,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Adds users to a user group, associating them with the specified group
+            for access or permissions management. Use this to manage group memberships
+            effectively within your tenancy environment.
+          keywords: user groups,add users,user group management,manage users,group
+            user addition,assign users
   "/usergroups/{usergroup_id}/users/{user_id}":
     delete:
       x-doc:
@@ -1496,6 +2136,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a user from a user group. Use this to manage group memberships
+            by removing users from specific groups.
+          keywords: user management,remove user,user group,delete user,user group
+            removal
     get:
       x-doc:
         title: Retrieve a user in a user group
@@ -1504,6 +2149,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a user in the specified user group, providing details about
+            the user's membership and attributes within the group. Use this to review
+            or manage user group associations.
+          keywords: user groups,group users,retrieve user,group user details,user
+            management
   "/users":
     get:
       x-doc:
@@ -1513,6 +2164,10 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all users in the collection. Use this to view the available
+            users within the specified tenancy.
+          keywords: users collection,users list,list users,collection users,all users
     post:
       x-doc:
         title: Create a new user
@@ -1521,6 +2176,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Creates a new user in the tenancy system, specifying the desired attributes
+            for the user account. Use this to establish accounts for individual access
+            to tenant resources.
+          keywords: create user,user creation,new user,add user,user management
   "/users/{user_id}":
     delete:
       x-doc:
@@ -1530,6 +2190,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a user in the tenancy system. Use this to remove user accounts
+            that are no longer needed.
+          keywords: delete user,user management,user removal,remove account,account
+            deletion,user id
     get:
       x-doc:
         title: Retrieve a user
@@ -1538,6 +2203,10 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified user. Use this to view details about the user’s
+            account or permissions.
+          keywords: user details,user retrieval,specific user,user id,retrieve user
     patch:
       x-doc:
         title: Update a user partially
@@ -1546,6 +2215,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Updates the specified user with partial information, allowing modifications
+            to selected attributes without requiring a complete update. Use this endpoint
+            to make targeted updates to user details efficiently.
+          keywords: update user,edit user,modify user,partial user update,user id
     put:
       x-doc:
         title: Modify a user
@@ -1554,6 +2228,10 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Modifies a user by replacing the specified user with new information.
+            Use this to update user details in a tenancy system.
+          keywords: user update,user replace,user management,user id,user information
   "/users/{user_id}/bindings":
     get:
       x-doc:
@@ -1572,6 +2250,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all permissions for a specified user, providing a detailed
+            view of the user's access rights. Use this to assess or audit the user's
+            permissions within the tenancy system.
+          keywords: user permissions,user roles,access rights,permission list,user
+            access
   "/users/{user_id}/permissions/{permission_id}/resources":
     get:
       x-doc:
@@ -1581,6 +2265,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of resources for a user with a specified permission.
+            Use this to determine which resources the user can access based on their
+            permissions.
+          keywords: user permissions,permission resources,user resources,resource
+            list,user access,permission details
   "/users/{user_id}/resources":
     get:
       x-doc:
@@ -1590,6 +2280,10 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all resources for a specified user. Use this to view the
+            resources associated with the user's account.
+          keywords: user resources,user id
   "/users/{user_id}/resources/{resource_id}":
     get:
       x-doc:
@@ -1599,6 +2293,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Checks if a user has permission for a specified resource. Use this
+            to confirm whether a user can access or perform actions on the resource
+            in question.
+          keywords: user permission,resource access,resource permission,user access,user
+            resource
   "/users/{user_id}/resources/{resource_id}/permissions":
     get:
       x-doc:
@@ -1608,6 +2308,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all permissions a user has for a specified resource. Use
+            this to view the user's access rights for the resource.
+          keywords: user permissions,resource permissions,user access,resource access,permissions
+            list,access rights
   "/users/{user_id}/resources/{resource_id}/permissions/{permission_id}":
     get:
       x-doc:
@@ -1617,6 +2322,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves a permission on a resource for the specified user, providing
+            details about the user's access rights to the resource. Use this to verify
+            or manage access permissions for specific users.
+          keywords: user permissions,resource permissions,resource access,user access,permission
+            details,user resource
   "/users/{user_id}/roles":
     get:
       x-doc:
@@ -1626,6 +2337,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Retrieves all roles for the specified user, providing a list of the
+            user's assigned permissions and access levels. Use this to review the
+            roles associated with a particular user in the tenancy system.
+          keywords: user roles,roles list,user permissions,user role management,account
+            roles,role details
   resources/{resource_id}/permissions/{permission_id}/users:
     get:
       x-doc:
@@ -1653,6 +2370,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Removes a user from a folder, revoking the user's access to the specified
+            folder. Use this to manage folder permissions effectively within your
+            tenancy.
+          keywords: folder management,remove user,folder roles,user roles,role removal,folder
+            access
   "/organizations/{organization_id}/roles/{role_id}/users/{user_id}":
     delete:
       x-doc:
@@ -1662,6 +2385,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Removes a user from an organization, eliminating their association
+            with the specified organization. Use this to manage organizational memberships
+            effectively.
+          keywords: remove user,organization roles,user roles,delete user,organization
+            management,role removal
   "/projects/{project_id}/roles/{role_id}/users":
     post:
       x-doc:
@@ -1680,6 +2409,11 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a user from the specified project. Use this to manage project
+            membership by removing users who no longer require access.
+          keywords: remove user,project roles,delete role,user management,project
+            access
   "/ui/organizations/{organization_id}/uihierarchy":
     get:
       x-doc:
@@ -1725,6 +2459,12 @@ paths:
         subcategory: 
         explorer: false
         explorer: false
+        ai-gen:
+          lead: Deletes a child organization from a parent organization. Use this
+            to disassociate the child organization when it is no longer required under
+            the parent organization.
+          keywords: organization delete,remove organization,child organization,parent
+            organization,delete child,organization hierarchy
   "/folders/{folder_id}/roles/{role_id}/usergroups":
     post:
       x-doc:
@@ -1733,6 +2473,12 @@ paths:
         filename: post-folders-roles-usergroups.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a new user group in a specified folder to organize and manage
+            user access within that folder. Use this to define custom groups for more
+            granular permission control.
+          keywords: user group,create user group,folder roles,user group creation,role
+            usergroups
   "/organizations/{organization_id}/roles/{role_id}/usergroups":
     post:
       x-doc:
@@ -1741,6 +2487,11 @@ paths:
         filename: post-organizations-roles-usergroups.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a new user group in an organization to organize
+            users based on roles or permissions.
+          keywords: user group,create user group,organization roles,role user group,new
+            user group
   "/organizations/{organization_id}/serviceaccounts/{serviceaccount_id}/publickeys":
     get:
       x-doc:
@@ -1749,6 +2500,12 @@ paths:
         filename: get-organizations-serviceaccounts-publickeys.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves all public keys for a specified service account. Use this
+            to view the keys associated with the account for authentication or verification
+            purposes.
+          keywords: public keys,service account keys,organization public keys,service
+            account access,public key management
     post:
       x-doc:
         title: Create a public key for a service account
@@ -1756,6 +2513,11 @@ paths:
         filename: post-organizations-serviceaccounts-publickeys.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a public key for the specified service account. Use this to
+            authenticate the service account in your tenancy workflows.
+          keywords: service account,public key,organization id,serviceaccount id,create
+            public key,key management
   "/organizations/{organization_id}/serviceaccounts/{serviceaccount_id}/publickeys/{publickey_id}":
     delete:
       x-doc:
@@ -1764,6 +2526,11 @@ paths:
         filename: delete-organizations-serviceaccounts-publickeys-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a public key for a service account, removing access associated
+            with the key. Use this to manage or revoke credentials for enhanced security.
+          keywords: public key,deletes key,organization key,service account key,remove
+            public key,key management
     patch:
       x-doc:
         title: Partially update a public key for a service account
@@ -1771,6 +2538,12 @@ paths:
         filename: patch-organizations-serviceaccounts-publickeys-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Updates a public key for a service account by modifying specified
+            attributes. Use this to manage keys for authentication or access control
+            purposes.
+          keywords: service account,public key,update public key,organization id,service
+            account key,update key
   "/partnerships/{partnership_id}/grants":
     get:
       x-doc:
@@ -1779,6 +2552,11 @@ paths:
         filename: get-partnerships-grants.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of grants for a specified partnership. Use this to
+            review the grants associated with the partnership.
+          keywords: partnership grants,partnership resources,provider organization,grant
+            listing,partnership type
     post:
       x-doc:
         title: Create a new grant
@@ -1786,6 +2564,11 @@ paths:
         filename: post-partnerships-grants.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a new grant in the specified partnership. Use this to establish
+            permissions and access rights within a tenancy context.
+          keywords: partnership grants,create grant,partnership id,new grant,provider
+            organization,grant creation
   "/partnerships/{partnership_id}/grants/{grant_id}":
     delete:
       x-doc:
@@ -1794,6 +2577,11 @@ paths:
         filename: delete-partnerships-grants-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes the specified grant from a partnership. Use this to remove
+            access permissions that are no longer needed.
+          keywords: partnership grants,delete grant,partnership management,remove
+            grant,partnership id
     get:
       x-doc:
         title: Retrieve a grant
@@ -1801,6 +2589,11 @@ paths:
         filename: get-partnerships-grants-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified grant and its components from a partnership.
+            Use this to examine the details of the grant and its associated elements.
+          keywords: partnership grants,grant components,partnership resources,provider
+            organization,grant retrieval
   "/partnerships/{partnership_id}/grants/{grant_id}/resources":
     get:
       x-doc:
@@ -1809,6 +2602,11 @@ paths:
         filename: get-partnerships-grants-resources.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves all resources associated with a grant in a partnership.
+            Use this to view the resources allocated under the specified grant.
+          keywords: partnership resources,grant resources,grant partnership,partnership
+            grants,resource list,partnership grant resources
     post:
       x-doc:
         title: Add resources to a grant in a partnership
@@ -1816,6 +2614,12 @@ paths:
         filename: post-partnerships-grants-resources.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Adds resources to a grant in a partnership, specifying which resources
+            are included in the grant. Use this to manage resource access within the
+            partnership.
+          keywords: partnership resources,grant resources,add resources,partnership
+            grants,resource management,grant allocation
   "/partnerships/{partnership_id}/grants/{grant_id}/resources/{resource_id}":
     delete:
       x-doc:
@@ -1824,6 +2628,12 @@ paths:
         filename: delete-partnerships-grants-resources-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a resource from a grant in a partnership, removing the specified
+            resource from the grant's permissions. Use this to manage access control
+            within the partnership.
+          keywords: partnership resource,grant resource removal,resource deletion,partnership
+            grant,remove resource
     get:
       x-doc:
         title: Retrieve a resource from a grant in a partnership
@@ -1831,6 +2641,11 @@ paths:
         filename: get-partnerships-grants-resources-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a resource under the specified grant of a partnership. Use
+            this to access details about the resource allocated within the grant.
+          keywords: partnership resource,grant resource,resource details,partnership
+            grant,resource retrieval
   "/partnerships/{partnership_id}/grants/{grant_id}/users":
     get:
       x-doc:
@@ -1839,6 +2654,11 @@ paths:
         filename: get-partnerships-grants-users.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of users associated with a specified grant in a partnership.
+            Use this to view the users who have access to the grant within the partnership.
+          keywords: partnership users,grant users,partnership grant,grant user listing,user
+            list partnership
     post:
       x-doc:
         title: Add users to a grant in a partnership
@@ -1846,6 +2666,12 @@ paths:
         filename: post-partnerships-grants-users.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Adds users to a grant in a partnership, specifying the users who can
+            access resources associated with the grant. Use this endpoint to manage
+            access permissions within a partnership.
+          keywords: partnership users,grant users,add users,partnership grants,grant
+            management
   "/partnerships/{partnership_id}/grants/{grant_id}/users/{user_id}":
     delete:
       x-doc:
@@ -1854,6 +2680,11 @@ paths:
         filename: delete-partnerships-grants-users-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a user from the specified grant in a partnership. Use this
+            to revoke the user's access to resources associated with the grant.
+          keywords: remove user,partnership grant,user removal,grant users,partnership
+            management
     get:
       x-doc:
         title: Retrieve a user with a grant in a partnership
@@ -1861,6 +2692,12 @@ paths:
         filename: get-partnerships-grants-users-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a user in the specified grant within a partnership. Use
+            this to access user details associated with a particular grant in the
+            partnership.
+          keywords: partnership user,grant user,partnership grant,user details,grant
+            details
   "/partnerships/{partnership_id}/resourceadmins":
     get:
       x-doc:
@@ -1869,6 +2706,11 @@ paths:
         filename: get-partnerships-resourceadmins.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves all users with the ResourceAdmin role in a specified partnership.
+            Use this to view the administrative users associated with the partnership.
+          keywords: partnership users,resourceadmin role,partnership resourceadmin,resource
+            permissions,partnership roles
     post:
       x-doc:
         title: Add users with the ResourceAdmin role to a partnership 
@@ -1876,6 +2718,12 @@ paths:
         filename: post-partnerships-resourceadmins.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Adds users to the ResourceAdmin role in a specified partnership. Use
+            this to grant administrative permissions for managing resources within
+            the partnership.
+          keywords: partnership resourceadmin,add resourceadmin users,partnership
+            role management,assign resourceadmin role,resourceadmin user addition
   "/partnerships/{partnership_id}/resourceadmins/{user_id}":
     delete:
       x-doc:
@@ -1884,6 +2732,12 @@ paths:
         filename: delete-partnerships-resourceadmins-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Removes a user from the ResourceAdmin group in a specified partnership,
+            updating the group's membership to reflect this change. Use this to manage
+            access control within partnership resources.
+          keywords: remove user,resource admin,delete resourceadmin,user removal,partnership
+            management,resource group
     get:
       x-doc:
         title: Retrieve a user in a partnership ResourceAdmin group
@@ -1891,6 +2745,12 @@ paths:
         filename: get-partnerships-resourceadmins-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a user in the ResourceAdmin group of a specified partnership.
+            Use this to access details about the user’s role and permissions within
+            the partnership.
+          keywords: partnerships resourceadmins,user retrieval,resource admin,user
+            details,partnership user
   "/partnerships/{partnership_id}/useradmins":
     get:
       x-doc:
@@ -1899,6 +2759,11 @@ paths:
         filename: get-partnerships-useradmins.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves all users with the UserAdmin role in a specified partnership.
+            Use this to view the administrative users associated with the partnership.
+          keywords: partnership users,useradmin role,partnership id,user management,useradmin
+            list
     post:
       x-doc:
         title: Add users to the UserAdmin role in a partnership
@@ -1906,6 +2771,12 @@ paths:
         filename: post-partnerships-useradmins.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Adds users with the UserAdmin role to a specified partnership, enabling
+            administrative management of the partnership. Use this to assign administrative
+            privileges to users within the partnership.
+          keywords: partnership users,useradmin role,add useradmin,partnership management,useradmin
+            assignment
   "/partnerships/{partnership_id}/useradmins/{user_id}":
     delete:
       x-doc:
@@ -1914,6 +2785,12 @@ paths:
         filename: delete-partnerships-useradmins-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Removes a user from the UserAdmin group in a partnership, ending their
+            administrative access within the specified partnership. Use this to manage
+            administrative roles and permissions within partnerships.
+          keywords: partnership removal,useradmin deletion,user group removal,partnership
+            user,user admin
     get:
       x-doc:
         title: Retrieve a user in the UserAdmin group in a partnership
@@ -1921,6 +2798,12 @@ paths:
         filename: get-partnerships-useradmins-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a user in the UserAdmin group within a specified partnership.
+            Use this endpoint to view details about the user assigned administrative
+            roles in the partnership.
+          keywords: partnership user,partnership useradmins,useradmin group,partnership
+            user retrieval,user role
   "/partnerships/{partnership_id}/users":
     get:
       x-doc:
@@ -1929,6 +2812,10 @@ paths:
         filename: get-partnerships-users.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of users for a specified partnership. Use this to
+            view the users associated with the partnership.
+          keywords: partnership users,list users,partnership id,view users,user management
     post:
       x-doc:
         title: Add users to a partnership
@@ -1936,6 +2823,11 @@ paths:
         filename: post-partnerships-users.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Adds users to a partnership, associating them with the specified partnership
+            configuration. Use this to manage user access within a partnership.
+          keywords: partnership users,add users,partnership management,user addition,partnership
+            id,user partnership
   "/partnerships/{partnership_id}/users/{user_id}":
     delete:
       x-doc:
@@ -1944,6 +2836,12 @@ paths:
         filename: delete-partnerships-users-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a user from a partnership, removing their association with
+            the specified partnership. Use this to manage user access or update partnership
+            configurations.
+          keywords: partnership removal,partnership user,remove user,delete user,partnership
+            management,user removal
     get:
       x-doc:
         title: Retrieve a user in a partnership
@@ -1951,6 +2849,12 @@ paths:
         filename: get-partnerships-users-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a user in the specified partnership, providing details about
+            the user's configuration and association within the partnership. Use this
+            to review or manage user information tied to a specific partnership.
+          keywords: partnership user,partnership details,user details,partnership
+            id,user id
   "/projects/{project_id}/roles/{role_id}/usergroups":
     post:
       x-doc:
@@ -1959,6 +2863,11 @@ paths:
         filename: post-projects-roles-usergroups.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a new user group within a project. Use this to define a group
+            for managing access permissions and roles in the project.
+          keywords: create user group,user group creation,new user group,project roles,user
+            group roles
   "/resources/{resource_id}/permissions/{permission_id}/users/{user_id}":
     get:
       x-doc:
@@ -1967,6 +2876,12 @@ paths:
         filename: get-resources-permissions-users-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a user with a permission for a resource, providing details
+            about the user's access level for the specified resource. Use this to
+            audit permissions or manage access control.
+          keywords: resource permissions,user permissions,resource access,permission
+            rules,access control
   "/users/{user_id}/partnerOrganizations":
     get:
       x-doc:
@@ -1975,6 +2890,12 @@ paths:
         filename: get-users-partnerorganizations.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of partnership organizations for the specified user.
+            Use this to view the organizations associated with the user in a tenancy
+            context.
+          keywords: user partners,partner organizations,user partnerships,user organizations,user
+            partner list
   "/users/{user_id}/permissions/{permission_id}/resources/{resource_id}":
     get:
       x-doc:
@@ -1983,22 +2904,74 @@ paths:
         filename: get-users-permissions-resources-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a resource for which a user has granted permission. Use
+            this to access resources that are available based on user-defined permissions.
+          keywords: user permissions,permission resources,resource access,user resource,user
+            permission retrieval,resource permission
 categories:
 - id: partnership
   title: Partnership endpoints in the identity and access management REST API for the NetApp Console
   permalink: partnership_overview.html
+  ai-gen:
+    lead: Use partnership endpoints to define and manage resource-sharing relationships
+      between organizations. These endpoints establish permissions that enable users
+      from one organization to access and manage designated resources in another organization.
+    keywords: partnership collaboration,resource sharing,source organization,destination
+      organization,access permissions,self-service
 - id: resource and resourcegroup
   title: Resource and resourcegroup endpoints in the identity and access management REST API for the NetApp Console
   permalink: resource_and_resourcegroup_overview.html
+  ai-gen:
+    lead: Manage identity and access management (IAM) resources, resource types, and
+      resource groups to organize and control access to working environments and associated
+      assets within your organization. Use these endpoints to classify resources,
+      handle telemetry-discovered assets, and group resources for streamlined management
+      across implicit and explicit hierarchies.
+    keywords: resource management,resource groups,identity access,resource types,implicit
+      groups,explicit groups
 - id: permission
   title: Permission endpoints in the identity and access management REST API for the NetApp Console
   permalink: permission_overview.html
+  ai-gen:
+    lead: Access permission endpoints to review and manage the low-level authorization
+      strings that determine user or service account actions within NetApp Console
+      IAM. Use these endpoints to define permissions across organizational resources,
+      folders, and projects, ensuring precise control over access at various levels
+      of the hierarchy.
+    keywords: permissions management,identity access,resource hierarchy,authorization
+      permissions,user permissions
 - id: role
   title: Role endpoints in the identity and access management REST API for the NetApp Console
   permalink: role_overview.html
+  ai-gen:
+    lead: Use role endpoints to create and view roles that define sets of permissions
+      in the NetApp Console identity and access management system. Roles determine
+      the actions users can perform and their level of access within the resource
+      hierarchy.
+    keywords: roles management,identity management,access permissions,user roles,resource
+      hierarchy
 - id: hierarchy
   title: Hierarchy endpoints in the identity and access management REST API for the NetApp Console
   permalink: hierarchy_overview.html
+  ai-gen:
+    lead: Use hierarchy endpoints to model your organization's resource structure
+      with organizations, folders, and projects. These elements help you define relationships
+      and group resources logically for streamlined identity and access management
+      in the NetApp Console.
+    keywords: hierarchy management,resource hierarchy,organization hierarchy,folders
+      management,projects management,resource association
 - id: user and usergroup
   title: User and usergroup endpoints in the identity and access management REST API for the NetApp Console
   permalink: user_and_usergroup_overview.html
+  ai-gen:
+    lead: Manage users and user groups within NetApp Console identity and access management
+      (IAM) to control access to resources. Use these endpoints to define individual
+      users or service accounts and organize them into implicit or explicit user groups
+      based on resource hierarchy or organizational structure.
+    keywords: user management,user groups,identity management,access control,resource
+      hierarchy,implicit groups
+root_overview:
+  ai-gen:
+    keywords: identity and access management,iam,roles,permissions,organization hierarchy,user groups
+    lead: Manage and control access to NetApp Console resources with the identity and access management (IAM) service. The endpoints cover hierarchy, permissions, partnerships, resources and resource groups, roles, and users and user groups.

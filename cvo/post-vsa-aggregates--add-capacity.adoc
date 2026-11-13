@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-aggregates--add-capacity.html'
+keywords: 'elastic volume,add capacity,elastic aggregate,working environment,aggregate capacity,netapp storage'
 summary: 'Add the capacity to an existing elastic volume aggregate'
 ---
 
 = Add the capacity to an existing elastic volume aggregate
 :imagesdir: ../media/
 
+[.lead]
+Adds capacity to an existing elastic volume aggregate. Use this to increase the aggregate's available storage for workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/aggregates/{workingEnvironmentId}/{aggregateName}/add-capacity`#
-
-
-
-Adds capacity to an existing elastic volume aggregate.
-
 
 == Parameters
 

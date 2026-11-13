@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-volumes--clone.html'
+keywords: 'volume clone,clone volume,azure volume,ontap volume,svm clone,working environment'
 summary: 'Clone an existing volume'
 ---
 
 = Clone an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a clone of an existing volume. Use this to duplicate volume data for testing, development, or backup purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/clone`#
 
-
+== Usage notes
 
 Clones an existing volume.
 

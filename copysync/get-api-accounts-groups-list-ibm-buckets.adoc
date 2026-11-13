@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-ibm-buckets.html'
+keywords: 'ibm buckets,data broker,netapp tenancy,storagegrid access,storagegrid secret'
 summary: 'Retrieve the IBM buckets'
 ---
 
 = Retrieve the IBM buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the IBM buckets accessible from a NetApp data broker. Use this to view the available buckets for data synchronization or other workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-ibm-buckets`#
-
-
-
-Retrieves the IBM buckets accessible from a NetApp data broker.
-
 
 == Parameters
 

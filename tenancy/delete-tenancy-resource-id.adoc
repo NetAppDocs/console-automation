@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/delete-tenancy-resource-id.html'
+keywords: 'delete resource,remove resource,tenancy resource,account resource,resource deletion'
 summary: 'Delete a resource from an account'
 ---
 
 = Delete a resource from an account
 :imagesdir: ../media/
 
+[.lead]
+Deletes a resource from a specified account. Use this to remove resources that are no longer needed within the account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Deletes a resource from a specified account. accountId must be passed to the X-Tenancy-Account-Id request header.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

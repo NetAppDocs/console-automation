@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-working-environments-support-registration.html'
+keywords: 'cloud volumes,ontap support,support registration,working environment,status retrieval'
 summary: 'Retrieve the registration support status'
 ---
 
 = Retrieve the registration support status
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the support registration status of a Cloud Volumes ONTAP system. Use this to determine whether the system is registered for support services.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/support-registration`#
-
-
-
-Retrieves the support registration status of a Cloud Volumes ONTAP system.
-
 
 == Parameters
 

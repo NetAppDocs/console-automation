@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/get-aws-vpcs.html'
+keywords: 'vpcs,aws vpcs,netapp console vpcs,region vpcs,aws region'
 summary: 'Retrieve VPCs'
 ---
 
 = Retrieve VPCs
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all VPCs by region using the specified credentials. Use this to view the available VPCs in a particular region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/vpcs`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Retrieves all VPCs by region by using the credentials.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

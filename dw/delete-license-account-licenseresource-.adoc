@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/delete-license-account-licenseresource-.html'
+keywords: 'license delete,remove license,license resource,delete license resource,account license'
 summary: 'Delete a license by resource ID'
 ---
 
 = Delete a license by resource ID
 :imagesdir: ../media/
 
+[.lead]
+Deletes a specified license by its resource ID. Use this to remove licenses that are no longer needed or applicable.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/license/account/{accountId}/licenseResource/{resourceIdentifier}`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Deletes a specified license by resource ID.
-
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

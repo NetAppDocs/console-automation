@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments.html'
+keywords: 'cloud volumes,ontap google,ha system,google cloud,working environments,create ha'
 summary: 'Create a new Cloud Volumes ONTAP Google Cloud HA system'
 ---
 
 = Create a new Cloud Volumes ONTAP Google Cloud HA system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new Cloud Volumes ONTAP Google Cloud HA system. Use this to deploy a high-availability configuration for managing storage resources in Google Cloud.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments`#
-
-
-
-Creates a new Cloud Volumes ONTAP Google Cloud HA system.
-
 
 == Request Body
 

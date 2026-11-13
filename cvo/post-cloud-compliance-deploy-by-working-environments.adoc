@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-deploy-by-working-environments.html'
+keywords: 'cloud compliance,deploy compliance,working environments,compliance systems,deploy instance'
 summary: 'Deploy a cloud compliance instance by systems'
 ---
 
 = Deploy a cloud compliance instance by systems
 :imagesdir: ../media/
 
+[.lead]
+Deploys a Cloud Compliance instance for the specified systems to support compliance monitoring and reporting.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/deploy-by-working-environments`#
 
-
+== Usage notes
 
 Deploys a Cloud Compliance instance by systems.
 

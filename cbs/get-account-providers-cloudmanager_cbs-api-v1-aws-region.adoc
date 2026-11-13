@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-region.html'
+keywords: 'aws regions,subscribed regions,cloudmanager cbs,netapp aws,aws region list'
 summary: 'Retrieve subscribed AWS regions'
 ---
 
 = Retrieve subscribed AWS regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of subscribed AWS regions. Use this to view the AWS regions available for NCO Backup and Recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/region`#
 
+== Token usage
 
-
-Retrieves a list of subscribed AWS regions.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

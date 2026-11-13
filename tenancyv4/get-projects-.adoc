@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-projects-.html'
+keywords: 'project details,project retrieval,specified project,project id,retrieve project'
 summary: 'Retrieve a project'
 ---
 
 = Retrieve a project
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified project. Use this to view details about the project and its associated configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/projects/{project_id}`#
-
-
-
-Retrieves the specified project.
-
 
 == Parameters
 

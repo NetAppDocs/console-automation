@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-volume-list.html'
+keywords: 'system volume,volume directories,storage vm,directory path,file system'
 summary: 'Retrieve system volume directories'
 ---
 
 = Retrieve system volume directories
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of system volume directories. Use this to browse directories within a volume on a target storage VM.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/list`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves a list of system volume directories. You can run a query by using a target storage VM and the path of directories to browse within the volume.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+You can run a query by using a target storage VM and the path of directories to browse within the volume.
 
 == Parameters
 

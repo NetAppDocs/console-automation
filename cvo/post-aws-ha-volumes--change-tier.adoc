@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-volumes--change-tier.html'
+keywords: 'volume tier,change tier,update volume,ha volumes,ontap aws'
 summary: 'Update the underlying volume tier'
 ---
 
 = Update the underlying volume tier
 :imagesdir: ../media/
 
+[.lead]
+Updates the underlying volume tier. Use this to manage the performance or cost characteristics of the storage tier associated with a volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/change-tier`#
-
-
-
-Updates the underlying volume tier.
-
 
 == Parameters
 

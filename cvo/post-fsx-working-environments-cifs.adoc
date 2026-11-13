@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-fsx-working-environments-cifs.html'
+keywords: 'fsx cifs,fsx configuration,fsx setup,cifs setup,cifs configuration,cifs fsx'
 summary: 'Create a new CIFS configuration for an FSx system'
 ---
 
 = Create a new CIFS configuration for an FSx system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new CIFS configuration for an FSx system. Use this to set up CIFS access for data sharing on the specified system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/cifs`#
 
-
+== Usage notes
 
 Sets up a new CIFS configuration for an existing FSx system.
 
