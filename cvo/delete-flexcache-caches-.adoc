@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-flexcache-caches-.html'
+keywords: 'flexcache delete,delete flexcache volume,remove flexcache,flexcache management,cache volume deletion'
 summary: 'Delete a FlexCache volume'
 ---
 
 = Delete a FlexCache volume
 :imagesdir: ../media/
 
+[.lead]
+Deletes a FlexCache volume. Use this to remove a FlexCache volume when it is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/flexcache/{workingEnvironmentId}/caches/{cacheId}`#
-
-
-
-Deletes a FlexCache volume.
-
 
 == Parameters
 

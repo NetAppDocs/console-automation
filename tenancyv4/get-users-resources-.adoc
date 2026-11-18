@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-users-resources-.html'
+keywords: 'user permission,resource access,resource permission,user access,user resource'
 summary: 'Check if a user has permission for a resource'
 ---
 
 = Check if a user has permission for a resource
 :imagesdir: ../media/
 
+[.lead]
+Checks if a user has permission for a specified resource. Use this to confirm whether a user can access or perform actions on the resource in question.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}/resources/{resource_id}`#
-
-
-
-Checks if a user has permission for a specified resource.
-
 
 == Parameters
 

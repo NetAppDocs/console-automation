@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-extra-capacity-licenses.html'
+keywords: 'extra capacity,capacity license,working environments,register license,license registration,azure vsa'
 summary: 'Register extra capacity licenses'
 ---
 
 = Register extra capacity licenses
 :imagesdir: ../media/
 
+[.lead]
+Registers an extra capacity license, enabling the use of additional storage capacity for Cloud Volumes ONTAP. Use this to expand storage resources as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
-
-
-
-Registers an extra capacity license.
-
 
 == Parameters
 

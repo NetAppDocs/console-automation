@@ -10,6 +10,11 @@ paths:
         filename: get-organizations-domains.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of domains. Use this to view all available domains
+            in the Federation API.
+          keywords: domains list,organization domains,domain management,organization
+            id,domain details
     post:
       x-doc:
         title: Create a domain
@@ -17,6 +22,11 @@ paths:
         filename: post-organizations-domains.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a domain in the Federation API, enabling domain-level organization
+            and management for your resources.
+          keywords: create domain,new domain,organization domain,domain management,add
+            domain,domain creation
   "/organizations/{organization_id}/domains/{domain_id}":
     delete:
       x-doc:
@@ -25,6 +35,11 @@ paths:
         filename: delete-organizations-domains-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes a domain from the federation configuration. Use this to remove
+            an unused or obsolete domain.
+          keywords: delete domain,remove domain,organization domain,domain management,domain
+            deletion,domain id
     get:
       x-doc:
         title: Retrieve a domain
@@ -32,6 +47,11 @@ paths:
         filename: get-organizations-domains-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified domain for use in managing and configuring
+            domain-related operations.
+          keywords: domain retrieval,organization domain,domain details,domain id
+            lookup,specified domain
     patch:
       x-doc:
         title: Update a domain
@@ -39,6 +59,11 @@ paths:
         filename: patch-organizations-domains-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Updates the specified domain. Use this to modify domain settings or
+            configurations as needed.
+          keywords: update domain,organization domain,domain management,edit domain,organization
+            settings
   "/organizations/{organization_id}/federations":
     get:
       x-doc:
@@ -47,6 +72,11 @@ paths:
         filename: get-organizations-federations.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of federations. Use this to view all federations
+            available in the system.
+          keywords: organizations,federations,organization federations,list federations,organization
+            details
     post:
       x-doc:
         title: Create a federation 
@@ -54,6 +84,10 @@ paths:
         filename: post-organizations-federations.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Creates a federation.
+          keywords: organization federation,create federation,new federation,organization
+            integration,federation setup
   "/organizations/{organization_id}/federations/{federation_id}":
     delete:
       x-doc:
@@ -62,6 +96,11 @@ paths:
         filename: delete-organizations-federations-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Deletes the specified federation. Use this to remove a federation
+            that is no longer needed.
+          keywords: delete federation,federation removal,organization federation,federation
+            management,remove federation,organization integration
     get:
       x-doc:
         title: Retrieve a federation
@@ -69,6 +108,12 @@ paths:
         filename: get-organizations-federations-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves the specified federation, providing details about the federation’s
+            configuration and status. Use this to examine the current state of the
+            federation in your environment.
+          keywords: organization federation,federation details,federation retrieve,organization
+            federation id,specified federation,federation lookup
     patch:
       x-doc:
         title: Update a federation
@@ -76,6 +121,11 @@ paths:
         filename: patch-organizations-federations-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Updates the specified federation to modify its configuration or settings.
+            Use this to ensure the federation aligns with your operational requirements.
+          keywords: update federation,federation id,organization federation,federation
+            management,federation update
   "/unmigratedconnections":
     get:
       x-doc:
@@ -84,6 +134,11 @@ paths:
         filename: get-unmigratedconnections.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Retrieves a list of unmigrated connections managed through Cloud Central.
+            Use this to identify connections eligible for import into the NetApp Console.
+          keywords: cloud connections,netapp console,cloud import,connection management,cloud
+            eligibility
   "/unmigratedconnections/{connection_id}":
     patch:
       x-doc:
@@ -92,13 +147,42 @@ paths:
         filename: patch-unmigratedconnections-.html
         subcategory: 
         explorer: false
+        ai-gen:
+          lead: Imports a connection into the NetApp Console, making it available
+            for use within the environment. Use this to integrate external connections
+            for centralized management or operations.
+          keywords: connection import,netapp console,auth0 connection,connection id,unmigrated
+            connections
 categories:
 - id: domain
   title: Domain endpoints in the Federation REST API for the NetApp Console
   permalink: domain_overview.html
+  ai-gen:
+    lead: Verify ownership of domain names using the domain endpoints. Use these endpoints
+      to manage domains that differ from your user's email address, including listing,
+      creating, deleting, retrieving, and updating domain records.
+    keywords: domain verification,verify domain,domain ownership,manage domains,update
+      domain,delete domain
 - id: federation
   title: Federation endpoints in the Federation REST API for the NetApp Console
   permalink: federation_overview.html
+  ai-gen:
+    lead: Use federation endpoints to create, retrieve, update, list, and delete federation
+      connections with identity providers. These endpoints support identity federation
+      management through the NetApp Console, replacing earlier functionality from
+      Cloud Central Federation Setup.
+    keywords: federation connections,identity providers,netapp console,federation
+      management,cloud central federation
 - id: unmigrated connection
   title: Unmigrated connection endpoints in the Federation REST API for the NetApp Console
   permalink: unmigrated_connection_overview.html
+  ai-gen:
+    lead: Use unmigrated connection endpoints to import connections from Cloud Central
+      into the NetApp Console. Once imported, these connections are managed exclusively
+      within the NetApp Console.
+    keywords: unmigrated connections,import connections,cloud central,netapp console,federation
+      setup
+root_overview:
+  ai-gen:
+    keywords: identity federation,single sign-on,identity provider,domain verification,federation,unmigrated connections
+    lead: Manage identity federation between the NetApp Console and your identity provider so that your corporate users can sign in with their existing credentials. Use the endpoints to manage domains, federations, and unmigrated connections.

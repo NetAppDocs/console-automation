@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments-resource-group-exists-.html'
+keywords: 'resource group,resource group exists,azure resource group,cloud resource group,working environments,resource group check'
 summary: 'Check if a resource group with the specified name exists'
 ---
 
 = Check if a resource group with the specified name exists
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the existence status of a resource group with the specified name. Use this to determine whether a resource group already exists before performing operations on it.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/resource-group-exists/{resourceGroupName}`#
 
-
+== Usage notes
 
 Checks if a resource group with the specified name already exists. Returns true if a resource group with that name already exists, false otherwise.
 

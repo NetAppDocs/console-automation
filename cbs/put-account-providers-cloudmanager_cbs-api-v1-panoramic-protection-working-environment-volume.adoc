@@ -3,17 +3,28 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-volume.html'
+keywords: 'volume replication,replication policy,backup policy,snapmirror cloud,volume protection,cluster peering'
 summary: 'Modify comprehensive protection for multiple volumes (v1)'
 ---
 
 = Modify comprehensive protection for multiple volumes (v1)
 :imagesdir: ../media/
 
+[.lead]
+Modifies comprehensive protection for multiple volumes. Use this to update replication or backup policies for existing relationships, or to create new SnapMirror or SnapMirror Cloud relationships when none exist.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/panoramic-protection/working-environment/{workingEnvironmentId}/volume`#
 
+== Token usage
 
+NetApp Console
+user token.
 
-Modifies comprehensive protection for multiple volumes. If the
+== Usage notes
+
+If the
 selected volume already has an existing replication relationship, you
 can use the API to modify the replication policy. Otherwise, the API can
 be used to create a replication relationship. It creates a cluster
@@ -25,14 +36,10 @@ to create a SnapMirror Cloud relationship. It creates a bucket in
 the specified cloud provider and then perform a SnapMirror Cloud
 update and initialize operation.
 
-*Token usage:* NetApp Console
-user token.
-
 NOTE: For new multi-bucket or per-volume
 object storage integrations, use the  https://docs.netapp.com/us-en/console-automation/cbs/post-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html[v2
 panoramic protection API to
 enable backup on volumes].
-
 
 == Parameters
 

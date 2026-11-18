@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-organizations-resourcegroups.html'
+keywords: 'resource groups,organization management,add resources,organization id,resource management,group creation'
 summary: 'Add resource groups to an organization'
 ---
 
 = Add resource groups to an organization
 :imagesdir: ../media/
 
+[.lead]
+Adds resource groups to an organization, associating them with the specified organization to manage resources collectively. Use this to organize and control access to resources within your organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/resourcegroups`#
 
-
+== Usage notes
 
 Adds resource groups to the specified organization.
 

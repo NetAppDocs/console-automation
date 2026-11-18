@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-metadata-validate-subscribed-to-ontap-cloud.html'
+keywords: 'cloud volumes,ontap cloud,azure marketplace,validate subscription,ha metadata'
 summary: 'Validate the Azure marketplace subscription'
 ---
 
 = Validate the Azure marketplace subscription
 :imagesdir: ../media/
 
+[.lead]
+Validates the Azure marketplace subscription to ensure the current user is subscribed to the Cloud Volumes ONTAP product. Use this to confirm subscription status before proceeding with deployment or management operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/metadata/validate-subscribed-to-ontap-cloud`#
 
-
+== Usage notes
 
 Validates that the current user is subscribed to the Cloud Volumes ONTAP product in the Azure marketplace.
 

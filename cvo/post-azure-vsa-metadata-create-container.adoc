@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-metadata-create-container.html'
+keywords: 'blob container,create container,new container,azure storage,azure blob'
 summary: 'Create a new blob container'
 ---
 
 = Create a new blob container
 :imagesdir: ../media/
 
+[.lead]
+Creates a new blob container. Use this to define a storage container for organizing and managing blobs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/metadata/create-container`#
-
-
-
-Creates a new blob container.
-
 
 == Request Body
 

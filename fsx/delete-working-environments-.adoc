@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/delete-working-environments-.html'
+keywords: 'fsx ontap,delete working environment,netapp console,working environment deletion,netapp fsx'
 summary: 'Delete an FSX working environment'
 ---
 
 = Delete an FSX working environment
 :imagesdir: ../media/
 
+[.lead]
+Deletes an FSx for ONTAP working environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/working-environments/{accountId}/{workingEnvironmentId}`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Deletes an FSx ONTAP working environment.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

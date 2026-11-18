@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-volumes-initiator.html'
+keywords: 'iscsi initiator,add initiator,volume initiator,initiator management,iscsi volume'
 summary: 'Add an iSCSI initiator'
 ---
 
 = Add an iSCSI initiator
 :imagesdir: ../media/
 
+[.lead]
+Creates an iSCSI initiator, establishing connectivity for iSCSI storage operations. Use this to configure access for iSCSI clients to storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/volumes/initiator`#
 
-
+== Usage notes
 
 Adds an iSCSI initiator.
 

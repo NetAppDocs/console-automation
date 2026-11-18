@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-extra-capacity-licenses.html'
+keywords: 'extra capacity,capacity license,register license,ha azure,working environment'
 summary: 'Register an extra capacity license'
 ---
 
 = Register an extra capacity license
 :imagesdir: ../media/
 
+[.lead]
+Registers an extra capacity license to activate additional storage capacity for your Cloud Volumes ONTAP system. Use this endpoint to ensure your system can accommodate increased storage needs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
-
-
-
-Registers an extra capacity license.
-
 
 == Parameters
 

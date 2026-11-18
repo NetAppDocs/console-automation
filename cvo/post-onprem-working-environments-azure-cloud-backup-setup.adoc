@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-onprem-working-environments-azure-cloud-backup-setup.html'
+keywords: 'azure backup,cloud setup,on-premises backup,azure cloud,working environment'
 summary: 'Set up Azure backup to cloud'
 ---
 
 = Set up Azure backup to cloud
 :imagesdir: ../media/
 
+[.lead]
+Sets up Azure backup to cloud on an on-premises system, configuring the system for cloud-based data protection workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/azure-cloud-backup-setup`#
-
-
-
-Sets up Azure backup to cloud on an on-premises system.
-
 
 == Parameters
 

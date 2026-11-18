@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-organizations-usergroups-.html'
+keywords: 'organization usergroup,remove usergroup,delete usergroup,organization management,usergroup removal,usergroup deletion'
 summary: 'Remove a user group from an organization'
 ---
 
 = Remove a user group from an organization
 :imagesdir: ../media/
 
+[.lead]
+Removes a user group from the specified organization. Use this to manage access and permissions for organizational resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/usergroups/{usergroup_id}`#
-
-
-
-Removes a user group from the specified organization.
-
 
 == Parameters
 

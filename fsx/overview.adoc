@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/overview.html'
+keywords: 'amazon fsx for ontap,fsx management,aws credentials,working environments,fsx discovery,aws operations'
 summary: 'Amazon FSx for NetApp ONTAP management REST API'
 ---
 
 = Amazon FSx for NetApp ONTAP management REST API
 :imagesdir: ../media/
 
-
+[.lead]
+Create, operate, and delete Amazon FSx for NetApp ONTAP storage. The endpoints cover AWS operations, AWS credentials, working environments, and FSx for ONTAP discovery.
 
 Amazon FSx for NetApp ONTAP is a Cloud Manager service that enables you to create, operate, and delete Amazon FSx storage facilities for ONTAP systems. +
 For more information about FSx for ONTAP, see https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html[Cloud Manager FSx ONTAP].

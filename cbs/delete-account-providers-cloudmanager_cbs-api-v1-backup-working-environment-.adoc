@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-.html'
+keywords: 'unregister system,delete backups,disable backup,recovery service,backup folder'
 summary: 'Unregister a system'
 ---
 
 = Unregister a system
 :imagesdir: ../media/
 
+[.lead]
+Deletes a system from Backup and Recovery. Use this to remove the service and its associated backup folder after deleting all backups and disabling the service on the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Unregisters a system. You can remove the NetApp Backup and Recovery service from a system. Before you unregister, make sure that you delete all backups and disable the Backup and Recovery service on a system. This action also deletes the backup folder.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

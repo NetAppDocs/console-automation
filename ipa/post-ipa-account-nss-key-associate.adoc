@@ -3,17 +3,22 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-account-nss-key-associate.html'
+keywords: 'netapp support,associate resource,support site key,nss key association,netapp console'
 summary: 'Associate a resource'
 ---
 
 = Associate a resource
 :imagesdir: ../media/
 
+[.lead]
+Associates a resource with a specified NetApp Support Site key. Use this to link resources to your support account for tracking and management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-key/{nssKeyId}/associate`#
 
+== Usage notes
 
-
-Associates a resource with a specified NetApp Support Site key. +
  +
 *Token usage:* NetApp Console user token.
 

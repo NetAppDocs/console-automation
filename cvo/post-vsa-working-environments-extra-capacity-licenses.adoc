@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-working-environments-extra-capacity-licenses.html'
+keywords: 'extra capacity,license registration,working environment,capacity license,register license'
 summary: 'Register extra capacity licenses'
 ---
 
 = Register extra capacity licenses
 :imagesdir: ../media/
 
+[.lead]
+Registers an extra capacity license, enabling the system to utilize additional storage capacity. Use this to expand available resources for your workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
-
-
-
-Registers an extra capacity license.
-
 
 == Parameters
 

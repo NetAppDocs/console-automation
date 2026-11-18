@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-partnerships.html'
+keywords: 'create partnership,partnership creation,new partnership,partnership setup,add partnership'
 summary: 'Create a new partnership'
 ---
 
 = Create a new partnership
 :imagesdir: ../media/
 
+[.lead]
+Creates a new partnership to establish a relationship between tenants for resource sharing or collaboration. Use this to configure partnerships that support inter-tenant activities.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/partnerships`#
-
-
-
-Creates a new partnership.
-
 
 == Request Body
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-resourcegroups.html'
+keywords: 'organization resources,resource groups,organization resource groups,organization hierarchy,list resources'
 summary: 'List all resource groups under an organization'
 ---
 
 = List all resource groups under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of resource groups under a specified organization. Use this to view the available resource groups associated with the organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/resourcegroups`#
 
-
+== Usage notes
 
 Lists all resource groups under the specified organization.
 

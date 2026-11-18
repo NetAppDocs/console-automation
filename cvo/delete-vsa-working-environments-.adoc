@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-vsa-working-environments-.html'
+keywords: 'cloud volumes,cloud deletion,working environment,deleting ontap,cloud resources'
 summary: 'Delete an existing Cloud Volumes ONTAP system'
 ---
 
 = Delete an existing Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing Cloud Volumes ONTAP system, including all associated cloud resources unless the localDelete flag is set to true. Use this to remove systems that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}`#
 
-
+== Usage notes
 
 Deletes an existing Cloud Volumes ONTAP system, including all cloud resources created for the system (unless the localDelete flag is set to true).
 

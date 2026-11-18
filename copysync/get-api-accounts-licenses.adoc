@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-licenses.html'
+keywords: 'licenses,account licenses,netapp licenses,license retrieval,account id'
 summary: 'Retrieve a list of all licenses'
 ---
 
 = Retrieve a list of all licenses
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of all licenses. Use this to view the licenses available in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/licenses`#
-
-
-
-Retrieves a list of all licenses.
-
 
 == Parameters
 

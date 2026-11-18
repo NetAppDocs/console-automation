@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/get-tenancy-account-workspace-agents.html'
+keywords: 'agents,workspace agents,account workspace,workspace association,workspace details'
 summary: 'Retrieve agents'
 ---
 
 = Retrieve agents
 :imagesdir: ../media/
 
+[.lead]
+Retrieves agents associated with a specified workspace. Use this to view the agents linked to the workspace for tenancy management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}/agents`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Retrieves agents associated with a specified workspace.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

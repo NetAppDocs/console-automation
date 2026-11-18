@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-ha-volumes--.html'
+keywords: 'modify volume,existing volume,gcp ha,volume update,working environment'
 summary: 'Modify a volume'
 ---
 
 = Modify a volume
 :imagesdir: ../media/
 
+[.lead]
+Modifies an existing volume to update its configuration or attributes. Use this to tailor volume settings to meet specific storage requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Modifies an existing volume.
-
 
 == Parameters
 

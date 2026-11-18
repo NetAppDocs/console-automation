@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-.html'
+keywords: 'system details,cloud provider,ontap version,working environment,account id,total volumes'
 summary: 'Retrieve system details'
 ---
 
 = Retrieve system details
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the details of a specific system, including its name, region, status, type, cloud provider, provider account ID, ONTAP version, and total number of volumes. Use this to review the configuration and status of the system for operational or troubleshooting purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves the details of a specific system. This API endpoint retrieves the name, region, status, type, cloud-provider, provider-accountId, ontap-version, and total-volumes-count of a specific system.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+This API endpoint retrieves the name, region, status, type, cloud-provider, provider-accountId, ontap-version, and total-volumes-count of a specific system.
 
 == Parameters
 

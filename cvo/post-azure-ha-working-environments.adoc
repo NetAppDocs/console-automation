@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments.html'
+keywords: 'azure ha,cloud volumes,ha system,ontap system,azure ontap,ha cloud'
 summary: 'Create a new Azure HA system'
 ---
 
 = Create a new Azure HA system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new Azure HA system, provisioning a Cloud Volumes ONTAP configuration for high availability in Azure. Use this to set up robust storage solutions in the cloud.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments`#
 
-
+== Usage notes
 
 Creates a new Azure HA Cloud Volumes ONTAP system.
 

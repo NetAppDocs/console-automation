@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-working-environments-svms.html'
+keywords: 'fsx system,working environments,svm list,fsx svm,retrieve svm'
 summary: 'Retrieve an SVM list for an FSx system'
 ---
 
 = Retrieve an SVM list for an FSx system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an SVM list for an existing FSx system, providing the available storage virtual machines associated with the system. Use this to view and manage the SVM configurations in your FSx environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/svms`#
-
-
-
-Retrieves an SVM list for an existing FSx system.
-
 
 == Parameters
 

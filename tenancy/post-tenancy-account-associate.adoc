@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-associate.html'
+keywords: 'associate user,associate account,user email,account association,user tenancy'
 summary: 'Associate a user'
 ---
 
 = Associate a user
 :imagesdir: ../media/
 
+[.lead]
+Associates a user with an account based on their email address. Use this to link a specific user to an account within the tenancy service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/associate`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Associates the user to the account by using the user email.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

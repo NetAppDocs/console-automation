@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-projects-.html'
+keywords: 'delete project,project removal,remove project,project deletion,delete operation,project management'
 summary: 'Delete a project'
 ---
 
 = Delete a project
 :imagesdir: ../media/
 
+[.lead]
+Deletes the specified project. Use this endpoint to remove a project that is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/projects/{project_id}`#
-
-
-
-Deletes the specified project.
-
 
 == Parameters
 

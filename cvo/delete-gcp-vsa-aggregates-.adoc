@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-gcp-vsa-aggregates-.html'
+keywords: 'aggregate delete,gcp aggregates,delete aggregate,gcp storage,working environment'
 summary: 'Delete an aggregate'
 ---
 
 = Delete an aggregate
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing aggregate. Use this to remove aggregates that are no longer needed in your configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/gcp/vsa/aggregates/{workingEnvironmentId}/{aggregateName}`#
-
-
-
-Deletes an existing aggregate.
-
 
 == Parameters
 

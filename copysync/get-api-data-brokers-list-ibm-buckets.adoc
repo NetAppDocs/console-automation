@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-ibm-buckets.html'
+keywords: 'ibm buckets,data broker,netapp storage,storagegrid buckets,ibm storage'
 summary: 'Retrieve the IBM buckets'
 ---
 
 = Retrieve the IBM buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the IBM buckets accessible from a NetApp data broker. Use this to view the available buckets for data synchronization or migration tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-ibm-buckets`#
-
-
-
-Retrieves the IBM buckets accessible from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

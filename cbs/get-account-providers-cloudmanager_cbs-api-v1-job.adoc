@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-job.html'
+keywords: 'job type,job status,netapp console,cloudmanager jobs,account jobs'
 summary: 'Retrieve jobs'
 ---
 
 = Retrieve jobs
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of jobs from the NetApp Console SaaS application. Use this to query jobs based on their type and status.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/job`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves a list of jobs from the NetApp Console SaaS application. You can query based on the job type and job status from the NetApp Console SaaS application.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+You can query based on the job type and job status from the NetApp Console SaaS application.
 
 == Parameters
 

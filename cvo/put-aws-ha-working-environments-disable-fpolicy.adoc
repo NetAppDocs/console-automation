@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-aws-ha-working-environments-disable-fpolicy.html'
+keywords: 'fpolicy disable,ransomware protection,ha working environments,disable fpolicy,netapp ontap'
 summary: 'Disable FPolicy for ransomware files'
 ---
 
 = Disable FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Disables the FPolicy for ransomware files, stopping ransomware file screening on the storage system. Use this to prevent FPolicy from interfering with file access or operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/disable-fpolicy`#
-
-
-
-Disables the FPolicy for ransomware files.
-
 
 == Parameters
 

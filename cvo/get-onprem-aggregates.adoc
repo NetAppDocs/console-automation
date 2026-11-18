@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-aggregates.html'
+keywords: 'aggregates,storage aggregates,working environment,data tiering,tiering restrictions'
 summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
 :imagesdir: ../media/
 
+[.lead]
+Retrieves aggregates, providing information about the available storage aggregates in the system. Use this to view and manage storage resources effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/aggregates`#
-
-
-
-Retrieves aggregates.
-
 
 == Parameters
 

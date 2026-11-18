@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-recover.html'
+keywords: 'cloud volumes,ontap system,netapp console,gcp recover,save ontap'
 summary: 'Save a system to the NetApp Console database'
 ---
 
 = Save a system to the NetApp Console database
 :imagesdir: ../media/
 
+[.lead]
+Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database, storing its details for future reference and management tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/recover`#
-
-
-
-Saves a previously discovered Cloud Volumes ONTAP system to the NetApp Console database.
-
 
 == Request Body
 

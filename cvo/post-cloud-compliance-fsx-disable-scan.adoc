@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-fsx-disable-scan.html'
+keywords: 'disable scanning,file system,fsx compliance,scan disable,file system scan,cloud compliance'
 summary: 'Disable scanning using the file system ID'
 ---
 
 = Disable scanning using the file system ID
 :imagesdir: ../media/
 
+[.lead]
+Disables scanning for a specified file system, preventing further scan operations on the associated file system ID. Use this to stop scans that are no longer needed or to manage scanning activities effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/fsx/{fileSystemId}/disable-scan`#
 
-
+== Usage notes
 
 Disables scanning using the file system ID.
 

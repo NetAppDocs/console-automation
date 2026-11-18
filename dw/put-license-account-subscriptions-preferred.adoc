@@ -3,24 +3,31 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/put-license-account-subscriptions-preferred.html'
+keywords: 'preferred subscription,update subscription,account subscription,subscription management,preferred account'
 summary: 'Update the preferred subscription ID for an account'
 ---
 
 = Update the preferred subscription ID for an account
 :imagesdir: ../media/
 
+[.lead]
+Updates the preferred subscription ID for an account, specifying which subscription is prioritized for the associated account. Use this to manage subscription preferences for billing or service-related operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/license/account/{accountId}/subscriptions/preferred`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Updates the preferred subscription for a specified account ID.
 
 **Note:**
 
 * This API authorizes user calls and service calls with a predefined scope only.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

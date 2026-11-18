@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-volumes-igroups-.html'
+keywords: 'igroup,azure ha,volume igroups,working environment,svm name'
 summary: 'Retrieve all igroups'
 ---
 
 = Retrieve all igroups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all igroups, providing details about the initiator groups configured in the system. Use this to review or manage access control for connected hosts.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/volumes/igroups/{workingEnvironmentId}/{svmName}`#
-
-
-
-Retrieves all igroups.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-vsa-working-environments-writing-speed.html'
+keywords: 'cloud volumes,writing speed,cloud ontap,working environment,gcp ontap'
 summary: 'Set the writing speed'
 ---
 
 = Set the writing speed
 :imagesdir: ../media/
 
+[.lead]
+Sets the writing speed for Cloud Volumes ONTAP. Use this to configure the desired performance level for write operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/writing-speed`#
-
-
-
-Sets the writing speed for Cloud Volumes ONTAP.
-
 
 == Parameters
 

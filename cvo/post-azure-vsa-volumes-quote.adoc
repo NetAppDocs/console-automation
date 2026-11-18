@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-volumes-quote.html'
+keywords: 'volume quote,resource quote,new volume,azure volume,volume resource'
 summary: 'Retrieve quotes for a new Azure volume'
 ---
 
 = Retrieve quotes for a new Azure volume
 :imagesdir: ../media/
 
+[.lead]
+Retrieves quotes for a new Azure volume, providing the resource requirements for the requested volume. Use this to assess resource availability before creating the volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/volumes/quote`#
 
-
+== Usage notes
 
 Retrieves quotes for a new volume. Returns the resource quote required for the requested volume.
 

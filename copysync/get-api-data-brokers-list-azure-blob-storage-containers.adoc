@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-azure-blob-storage-containers.html'
+keywords: 'azure blob storage,blob storage containers,azure storage account,netapp data broker,data broker containers'
 summary: 'Retrieve the Azure blob storage containers'
 ---
 
 = Retrieve the Azure blob storage containers
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Azure blob storage containers. Use this to view the available containers for data storage and management in Azure.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-azure-blob-storage-containers`#
-
-
-
-Retrieves the Azure blob storage containers.
-
 
 
 CAUTION: This operation is deprecated.

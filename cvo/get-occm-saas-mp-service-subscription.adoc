@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-saas-mp-service-subscription.html'
+keywords: 'cloud volumes,cloud subscriptions,saas marketplace,ontap subscriptions,working environment'
 summary: 'Retrieve SaaS marketplace subscriptions'
 ---
 
 = Retrieve SaaS marketplace subscriptions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the SaaS marketplace subscriptions for Cloud Volumes ONTAP. Use this to view the active subscriptions associated with your account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/saas-mp-service/{workingEnvironmentId}/subscription`#
-
-
-
-Retrieves the SaaS marketplace subscriptions for Cloud Volumes ONTAP.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-encryption-key-managers-.html'
+keywords: 'key manager,encryption key,key managers,key manager id,encryption service,key retrieval'
 summary: 'Retrieve a key manager using the public ID'
 ---
 
 = Retrieve a key manager using the public ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a key manager using the public ID. Use this to access details about a specific key manager for management or troubleshooting purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/encryption/key-managers/{keyManagerId}`#
 
-
+== Usage notes
 
 Returns specific key manager using the public ID.
 

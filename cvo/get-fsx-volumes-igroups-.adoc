@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-volumes-igroups-.html'
+keywords: 'igroups retrieval,fsx volumes,igroup management,netapp ontap,volume igroups,svm igroups'
 summary: 'Retrieve all igroups'
 ---
 
 = Retrieve all igroups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all igroups. Use this to view the list of initiator groups configured in the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/igroups/{fileSystemId}/{svmName}`#
-
-
-
-Retrieves all igroups.
-
 
 == Parameters
 

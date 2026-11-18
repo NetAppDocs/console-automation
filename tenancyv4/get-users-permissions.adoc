@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-users-permissions.html'
+keywords: 'user permissions,user roles,access rights,permission list,user access'
 summary: 'List all permissions for a user'
 ---
 
 = List all permissions for a user
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all permissions for a specified user, providing a detailed view of the user's access rights. Use this to assess or audit the user's permissions within the tenancy system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}/permissions`#
 
-
+== Usage notes
 
 Lists all permissions for the specified user.
 

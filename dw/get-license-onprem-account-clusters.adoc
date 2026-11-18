@@ -3,23 +3,29 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-onprem-account-clusters.html'
+keywords: 'ontap cluster,on-premises ontap,cluster configuration,cluster management,feature licenses'
 summary: 'Retrieve on-prem ONTAP data'
 ---
 
 = Retrieve on-prem ONTAP data
 :imagesdir: ../media/
 
+[.lead]
+Retrieves on-premises ONTAP cluster data, including configuration details such as the cluster management IP address, capacity, contract date, and feature licenses. Use this endpoint to access telemetry and configuration data from clusters configured for AutoSupport.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/onPrem/account/{accountId}/clusters`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves on-premises ONTAP cluster data. +
+== Usage notes
+
 The ONTAP cluster must be configured for AutoSupport to send back the telemetry and configuration data to NetApp.
 
 Data retrieved by this endpoint is comprised mostly of ONTAP cluster configuration details (such as the cluster management IP address, capacity, contract date, feature licenses, and more).
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

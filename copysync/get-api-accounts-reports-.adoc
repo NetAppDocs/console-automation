@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-reports-.html'
+keywords: 'reports retrieval,netapp reports,account reports,report id,tenancy account'
 summary: 'Retrieve a report by a specified ID'
 ---
 
 = Retrieve a report by a specified ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a report by a specified ID, providing the details of the report for review or further processing.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/reports/{id}`#
-
-
-
-Retrieves a report by a specified ID.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-subscriptions-cloud-account-association.html'
+keywords: 'cloud account,subscription id,cloud account association,subscription mapping,cloud account id'
 summary: 'Retrieve the associated subscription ID for cloud accounts'
 ---
 
 = Retrieve the associated subscription ID for cloud accounts
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the associated subscription ID for each cloud account, providing the subscription details linked to the specified accounts.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/cloud-account/association`#
 
-
+== Usage notes
 
 Retrieves the associated subscription ID for each cloud account ID.
 

@@ -3,22 +3,29 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/get-working-environments-id-.html'
+keywords: 'fsx working environments,working environment details,provider data,fsx volumes,netapp console'
 summary: 'Retrieve working environments by account'
 ---
 
 = Retrieve working environments by account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves FSx for ONTAP working environments by account, with options to include provider details or volume information.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/{accountId}/{workingEnvironmentId}`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Retrieves FSx working environments by specifying the workingEnvironmentId parameter.
    Pass provider-details:'true'  parameter to get provider data.
    Pass `volumes:'true'`  parameter to retrieve volumes.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

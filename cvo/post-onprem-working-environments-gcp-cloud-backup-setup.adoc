@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-onprem-working-environments-gcp-cloud-backup-setup.html'
+keywords: 'google cloud backup,on-premises backup,gcp cloud setup,cloud backup configuration,working environment setup'
 summary: 'Set up Google Cloud backup to cloud'
 ---
 
 = Set up Google Cloud backup to cloud
 :imagesdir: ../media/
 
+[.lead]
+Sets up Google Cloud backup to cloud on an on-premises system, configuring the system to use Google Cloud as the backup destination. Use this to establish backup workflows for data protection and recovery.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/gcp-cloud-backup-setup`#
-
-
-
-Sets up Google Cloud backup to cloud on an on-premises system.
-
 
 == Parameters
 

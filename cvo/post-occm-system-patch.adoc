@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-system-patch.html'
+keywords: 'netapp console,patch update,system patch,update console,patch file,multipart patch'
 summary: 'Update the NetApp Console with the specified patch version'
 ---
 
 = Update the NetApp Console with the specified patch version
 :imagesdir: ../media/
 
+[.lead]
+Updates the NetApp Console with the specified patch version. Use this to apply updates that include new features, fixes, or improvements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/patch`#
 
+== Usage notes
 
-
-Updates the NetApp Console with the specified patch version. Backups should be provided in multipart/form-data, with the file at a part named 'patch'.
+Backups should be provided in multipart/form-data, with the file at a part named 'patch'.
 
 
 == Parameters

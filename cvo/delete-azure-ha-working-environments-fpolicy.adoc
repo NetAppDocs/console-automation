@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-ha-working-environments-fpolicy.html'
+keywords: 'ransomware files,fpolicy delete,ha azure,working environments,fpolicy removal'
 summary: 'Delete FPolicy for ransomware files'
 ---
 
 = Delete FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Deletes the FPolicy for ransomware files, removing the policy that governs file access and operations related to ransomware detection. Use this to manage or update your security policies effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/fpolicy`#
-
-
-
-Deletes the FPolicy for ransomware files.
-
 
 == Parameters
 

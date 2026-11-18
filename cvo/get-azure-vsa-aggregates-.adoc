@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-aggregates-.html'
+keywords: 'aggregates azure,azure aggregates,retrieve aggregates,working environment,ontap aggregates'
 summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
 :imagesdir: ../media/
 
+[.lead]
+Retrieves aggregates, providing information about the available storage aggregates in the system. Use this to view aggregate configurations for capacity planning or management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/aggregates/{workingEnvironmentId}`#
-
-
-
-Retrieves aggregates.
-
 
 == Parameters
 

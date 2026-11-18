@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-volumes-initiator.html'
+keywords: 'iscsi initiator,add initiator,iscsi volumes,ha volumes,gcp iscsi'
 summary: 'Add an iSCSI initiator'
 ---
 
 = Add an iSCSI initiator
 :imagesdir: ../media/
 
+[.lead]
+Creates an iSCSI initiator. Use this to define and configure initiators for iSCSI data access.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/volumes/initiator`#
 
-
+== Usage notes
 
 Adds an iSCSI initiator.
 

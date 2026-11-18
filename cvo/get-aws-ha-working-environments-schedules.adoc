@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments-schedules.html'
+keywords: 'cloud volumes,start stop schedules,cloud ontap,ha schedules,working environment'
 summary: 'List the start/stop schedules for a system'
 ---
 
 = List the start/stop schedules for a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the start/stop schedules for a system. Use this to view the scheduled operations configured for Cloud Volumes ONTAP.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/schedules`#
 
-
+== Usage notes
 
 Lists the start/stop schedules for Cloud Volumes ONTAP.
 

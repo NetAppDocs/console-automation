@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-system-cloud-provider-regions.html'
+keywords: 'cloud provider regions,supported regions,cloud locations,region retrieval,cloud provider zones'
 summary: 'Retrieve supported regions for the cloud providers'
 ---
 
 = Retrieve supported regions for the cloud providers
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported regions for cloud providers. Use this to identify the regions available for deploying resources in the cloud.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/cloud-provider-regions`#
-
-
-
-Retrieves the supported regions for cloud providers.
-
 
 == Error
 

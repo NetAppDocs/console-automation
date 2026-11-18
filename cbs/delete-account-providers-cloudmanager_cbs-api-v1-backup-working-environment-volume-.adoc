@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume-.html'
+keywords: 'backup settings,remove backup,disable backup,snapshot deletion,volume settings'
 summary: 'Remove backup settings'
 ---
 
 = Remove backup settings
 :imagesdir: ../media/
 
+[.lead]
+Deletes the backup settings for a specified backed-up volume. Use this to remove backup settings after deleting the associated volume snapshots.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Removes the backup settings on a specified backed up volume. To disable backup on a volume, the volume snapshots must be deleted.
-
-**Token usage:**NetApp Console user token.
-
 
 == Parameters
 

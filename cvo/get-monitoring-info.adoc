@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-monitoring-info.html'
+keywords: 'monitoring info,system monitoring,performance metrics,ontap monitoring,health data,storage analytics'
 summary: 'Retrieve monitoring information'
 ---
 
 = Retrieve monitoring information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves monitoring information, providing visibility into the system's performance and operational status. Use this to assess system health or troubleshoot issues effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/monitoring/info`#
-
-
-
-Retrieves monitoring information.
-
 
 == Error
 

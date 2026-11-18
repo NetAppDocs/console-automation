@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-vsa-volumes--.html'
+keywords: 'delete volume,remove volume,azure volume,netapp volume,volume management,ontap azure'
 summary: 'Delete an existing volume'
 ---
 
 = Delete an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing volume, removing the specified volume and its associated data from the system. Use this to free up storage space or manage resources effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Deletes an existing volume.
-
 
 == Parameters
 

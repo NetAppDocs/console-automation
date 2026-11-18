@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments-avs-private-clouds.html'
+keywords: 'azure vmware,vmware solution,private cloud,retrieve private cloud,azure subscription'
 summary: 'Retrieve an Azure VMware Solution private cloud'
 ---
 
 = Retrieve an Azure VMware Solution private cloud
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an Azure VMware Solution private cloud for the existing subscription. Use this to view the private cloud associated with your subscription.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/avs-private-clouds`#
-
-
-
-Retrieves an Azure VMware Solution private cloud for the existing subscription.
-
 
 == Parameters
 

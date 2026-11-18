@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-accounts-groups-settings.html'
+keywords: 'data broker,broker group,group settings,modify settings,data management'
 summary: 'Modify the group settings'
 ---
 
 = Modify the group settings
 :imagesdir: ../media/
 
+[.lead]
+Modifies the data broker group settings to adjust the configuration of the group. Use this to manage settings that impact data synchronization and transfer operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/settings`#
-
-
-
-Modifies the data broker group settings.
-
 
 == Parameters
 

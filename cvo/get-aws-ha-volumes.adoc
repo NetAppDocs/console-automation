@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-volumes.html'
+keywords: 'volumes,ha volumes,working environment,aws volumes,volume retrieval'
 summary: 'Retrieve all volumes'
 ---
 
 = Retrieve all volumes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all volumes, providing information about the available storage resources. Use this to review the current volume configurations in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/volumes`#
-
-
-
-Retrieves all volumes.
-
 
 == Parameters
 

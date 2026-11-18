@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-replication--.html'
+keywords: 'replication removal,delete replication,volume replication,svm replication,destination volume,working environment'
 summary: 'Remove a replication relationship'
 ---
 
 = Remove a replication relationship
 :imagesdir: ../media/
 
+[.lead]
+Deletes a replication relationship. Use this to discontinue data replication between sources and destinations when it is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/replication/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
 
-
+== Usage notes
 
 Removes a replication relationship.
 

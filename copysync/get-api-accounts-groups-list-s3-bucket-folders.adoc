@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-s3-bucket-folders.html'
+keywords: 's3 bucket,netapp folders,data broker,folder listing,account folders,data broker group'
 summary: 'Retrieve the S3 bucket folders'
 ---
 
 = Retrieve the S3 bucket folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 bucket folders from a NetApp data broker. Use this to view the folder structure within a specified bucket.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-s3-bucket-folders`#
-
-
-
-Retrieves the S3 bucket folders from a NetApp data broker.
-
 
 == Parameters
 

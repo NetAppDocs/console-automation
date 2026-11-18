@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-system-restart-server.html'
+keywords: 'restart server,server management,system restart,ontap server,server operations'
 summary: 'Restart the server'
 ---
 
 = Restart the server
 :imagesdir: ../media/
 
+[.lead]
+Restarts the server, initiating a reboot process to restore functionality or apply configuration changes. Use this to troubleshoot issues or complete updates requiring a restart.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/restart-server`#
-
-
-
-Restarts the server.
-
 
 == Error
 

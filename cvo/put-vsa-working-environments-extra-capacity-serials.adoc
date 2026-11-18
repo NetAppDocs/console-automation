@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,capacity license,license serial,update license,working environment'
 summary: 'Update extra capacity serial numbers'
 ---
 
 = Update extra capacity serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Updates an extra capacity license serial number, modifying the serial number used for extra capacity licensing. Use this to ensure accurate tracking of extra capacity licenses.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
-
-
-
-Updates an extra capacity license serial number.
-
 
 == Parameters
 

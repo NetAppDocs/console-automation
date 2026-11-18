@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume-snapshot-.html'
+keywords: 'snapshot details,volume snapshot,backup snapshot,netapp backup,working environment'
 summary: 'Retrieve specific snapshot information for a volume'
 ---
 
 = Retrieve specific snapshot information for a volume
 :imagesdir: ../media/
 
+[.lead]
+Retrieves information for a specific snapshot of a volume backed up using the NetApp Backup and Recovery service. Use this to view snapshot details, including name, creation time, archive status, size, and security-related attributes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves information of a particular snapshot for a specified volume backed up by using the NetApp Backup and Recovery service for a system. This API endpoint retrieves the details of the volume snapshots from the NetApp Console SaaS application. It retrieves the snapshot name, snapshot creation time, archive status, and size. It also retrieves the object-lock, ransomware-scan-status-failure, and ransomware-scan-status.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

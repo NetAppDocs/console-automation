@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-resources.html'
+keywords: 'resources list,resource management,list resources,data retrieval,resource overview'
 summary: 'List all resources'
 ---
 
 = List all resources
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of resources within the tenancy environment. Use this to view the available resources for management or auditing purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resources`#
 
-
+== Usage notes
 
 Lists all resources.
 

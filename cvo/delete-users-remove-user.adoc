@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-users-remove-user.html'
+keywords: 'remove user,delete user,netapp console,user management,delete account,user removal'
 summary: 'Remove a user from NetApp Console'
 ---
 
 = Remove a user from NetApp Console
 :imagesdir: ../media/
 
+[.lead]
+Removes a user from the NetApp Console. Use this to manage user access and permissions within the console.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/users/{userId}/remove-user`#
-
-
-
-Removes a user from the NetApp Console.
-
 
 == Parameters
 

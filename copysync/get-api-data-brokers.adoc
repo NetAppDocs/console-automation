@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers.html'
+keywords: 'data brokers,netapp tenancy,account id,data management,data retrieval'
 summary: 'Retrieve all the data brokers'
 ---
 
 = Retrieve all the data brokers
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all the data brokers, providing information about available brokers for data transfer operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers`#
-
-
-
-Retrieves all the data brokers.
-
 
 == Parameters
 

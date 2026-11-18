@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/patch-account-providers-cloudmanager_cbs-api-v1-replication-working-environment-relationship.html'
+keywords: 'snapmirror replication,volume relationship,replication management,replicated volume,relationship actions'
 summary: 'Perform an action on a volume with SnapMirror replication'
 ---
 
 = Perform an action on a volume with SnapMirror replication
 :imagesdir: ../media/
 
+[.lead]
+Performs an action on a volume with SnapMirror replication. Use this to manage SnapMirror relationships, including updating, deleting, pausing, resyncing, reverse-resyncing, aborting, and resuming functionality on replicated volumes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/replication/working-environment/{workingEnvironmentId}/relationship`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Performs an action on a volume that has SnapMirror replication enabled. You can use this API to perform a SnapMirror relationship update, delete, pause, resync, reverse-resync, abort, and resume functionality on a replicated volume.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

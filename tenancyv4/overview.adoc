@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/overview.html'
+keywords: 'identity and access management,iam,roles,permissions,organization hierarchy,user groups'
 summary: 'Identity and access management REST API'
 ---
 
 = Identity and access management REST API
 :imagesdir: ../media/
 
-
+[.lead]
+Manage and control access to NetApp Console resources with the identity and access management (IAM) service. The endpoints cover hierarchy, permissions, partnerships, resources and resource groups, roles, and users and user groups.
 
 The NetApp Console identity and access management (IAM) service provides a centralized point for managing customer and partner information.
 IAM endpoints enable you to manage and control access to the Console resources.

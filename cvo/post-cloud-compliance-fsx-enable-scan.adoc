@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-fsx-enable-scan.html'
+keywords: 'file system,enable scan,scan activation,fsx compliance,cloud compliance'
 summary: 'Enable scanning using the file system ID'
 ---
 
 = Enable scanning using the file system ID
 :imagesdir: ../media/
 
+[.lead]
+Enables scanning using the file system ID to initiate file system-level scanning processes. Use this to perform scans based on specific file system identifiers.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/fsx/{fileSystemId}/enable-scan`#
-
-
-
-Enables scanning using the file system ID.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-ibm-bucket-folders.html'
+keywords: 'ibm bucket folders,netapp data broker,storagegrid access,netapp tenancy,broker group folders'
 summary: 'Retrieve the IBM bucket folders'
 ---
 
 = Retrieve the IBM bucket folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the IBM bucket folders from a NetApp data broker, providing access to folder information for data management tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-ibm-bucket-folders`#
-
-
-
-Retrieves the IBM bucket folders from a NetApp data broker.
-
 
 == Parameters
 

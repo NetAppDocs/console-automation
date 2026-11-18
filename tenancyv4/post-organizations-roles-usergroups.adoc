@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-organizations-roles-usergroups.html'
+keywords: 'user group,create user group,organization roles,role user group,new user group'
 summary: 'Create a new user group in an organization'
 ---
 
 = Create a new user group in an organization
 :imagesdir: ../media/
 
+[.lead]
+Creates a new user group in an organization to organize users based on roles or permissions.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/roles/{role_id}/usergroups`#
-
-
-
-Creates a new user group.
-
 
 == Request Body
 

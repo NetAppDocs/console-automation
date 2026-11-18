@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/get-tenancy-resource.html'
+keywords: 'resource retrieval,account resource,resource type,workspace resource,resource class'
 summary: 'Retrieve a resource'
 ---
 
 = Retrieve a resource
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a resource for an account. Use this to access the resource details associated with a specific account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/resource`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Retrieves a resource for an account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

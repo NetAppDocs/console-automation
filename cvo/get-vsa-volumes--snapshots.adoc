@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-volumes--snapshots.html'
+keywords: 'snapshots list,volume snapshots,snapshot descriptions,volume data,snapshot management,snapshot retrieval'
 summary: 'Retrieve a list of snapshot descriptions for the volume'
 ---
 
 = Retrieve a list of snapshot descriptions for the volume
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of snapshot descriptions for the volume. Use this to review the snapshots available for backup or recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshots`#
 
-
+== Usage notes
 
 Returns a list of snapshot descriptions for the volume.
 

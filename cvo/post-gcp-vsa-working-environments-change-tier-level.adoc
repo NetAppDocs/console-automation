@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-change-tier-level.html'
+keywords: 'tier level,gcp working environment,change tier,gcp storage tier,update tier level'
 summary: 'Update the tier level'
 ---
 
 = Update the tier level
 :imagesdir: ../media/
 
+[.lead]
+Updates the tier level, modifying the storage tier associated with a specific resource. Use this to optimize storage performance or cost based on your workload requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/change-tier-level`#
-
-
-
-Updates the tier level.
-
 
 == Parameters
 

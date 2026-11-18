@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-accounts-licenses-v2.html'
+keywords: 'license add,license management,netapp licenses,tenancy account,serial number'
 summary: 'Add a license'
 ---
 
 = Add a license
 :imagesdir: ../media/
 
+[.lead]
+Adds a license to the system, enabling access to additional features or services based on the license terms. Use this to activate capabilities that require a valid license.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/licenses-v2`#
-
-
-
-Adds a license.
-
 
 == Parameters
 

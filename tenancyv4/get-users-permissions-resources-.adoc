@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-users-permissions-resources-.html'
+keywords: 'user permissions,permission resources,resource access,user resource,user permission retrieval,resource permission'
 summary: 'Retrieve a resource for a user with a permission'
 ---
 
 = Retrieve a resource for a user with a permission
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a resource for which a user has granted permission. Use this to access resources that are available based on user-defined permissions.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}/permissions/{permission_id}/resources/{resource_id}`#
 
-
+== Usage notes
 
 Retrieves a resource for which a user has given permission
 

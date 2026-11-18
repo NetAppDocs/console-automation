@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-resource-account-update.html'
+keywords: 'resource update,update resource properties,resource identifier,account update,tenancy resource'
 summary: 'Update properties'
 ---
 
 = Update properties
 :imagesdir: ../media/
 
+[.lead]
+Updates properties of a specified resource. Use this to modify the resource's configuration or attributes as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource/{resourceIdentifier}/account/{accountId}/update`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Updates properties of a specified resource.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

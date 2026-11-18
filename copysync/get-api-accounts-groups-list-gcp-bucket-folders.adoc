@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-gcp-bucket-folders.html'
+keywords: 'gcp bucket folders,data broker,google cloud folders,netapp tenancy,container path'
 summary: 'Retrieve the Google Cloud bucket folders'
 ---
 
 = Retrieve the Google Cloud bucket folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Google Cloud bucket folders from a NetApp data broker. Use this to access the folder structure within a specified bucket.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-gcp-bucket-folders`#
-
-
-
-Retrieves the Google Cloud bucket folders from a NetApp data broker.
-
 
 == Parameters
 

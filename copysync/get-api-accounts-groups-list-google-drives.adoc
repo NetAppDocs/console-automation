@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-google-drives.html'
+keywords: 'google drives,google drive objects,netapp tenancy,google drive user,data brokers'
 summary: 'Retrieve the Google Drives'
 ---
 
 = Retrieve the Google Drives
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Google Drive objects for synchronization or data management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-google-drives`#
 
-
+== Usage notes
 
 Retrieves the Google drives objects.
 

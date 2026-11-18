@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-folders-folders-.html'
+keywords: 'child folder,folder retrieval,parent folder,folder hierarchy,folder structure'
 summary: 'Retrieve a child folder under a parent folder'
 ---
 
 = Retrieve a child folder under a parent folder
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a child folder under the specified parent folder. Use this to access folder structures within a tenancy hierarchy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders/{folder_id}/folders/{childfolder_id}`#
-
-
-
-Retrieves a child folder under the specified parent folder.
-
 
 == Parameters
 

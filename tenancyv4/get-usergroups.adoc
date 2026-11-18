@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-usergroups.html'
+keywords: 'user groups,group collection,list groups,group management,access groups'
 summary: 'List all user groups'
 ---
 
 = List all user groups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all user groups in the collection. Use this to review the available groups within your tenancy configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/usergroups`#
 
-
+== Usage notes
 
 Lists all user groups in the collection.
 

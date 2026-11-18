@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-volumes--move.html'
+keywords: 'volume move,existing volume,gcp volumes,volume migration,working environment'
 summary: 'Move a volume'
 ---
 
 = Move a volume
 :imagesdir: ../media/
 
+[.lead]
+Moves an existing volume to a different aggregate. Use this to optimize storage resources or improve performance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/move`#
-
-
-
-Moves an existing volume.
-
 
 == Parameters
 

@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-.html'
+keywords: 'comprehensive protection,backup topology,cluster peering,cloud backup,object-store bucket'
 summary: 'Activate comprehensive protection in a system (v1)'
 ---
 
 = Activate comprehensive protection in a system (v1)
 :imagesdir: ../media/
 
+[.lead]
+Activates comprehensive protection for a system, verifying cluster peering and creating it if necessary based on the selected backup topology. Use this endpoint to enable backup to cloud and set up the object-store bucket for transferring backups.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/panoramic-protection/working-environment/{workingEnvironmentId}`#
 
+== Usage notes
 
-
-Activates comprehensive protection for a system. Based on
+Based on
 the selected backup topology (cascading or fan-out), this API verifies
 whether cluster peering exists between the primary and secondary
 clusters and creates it if needed. To enable backup to cloud, the API

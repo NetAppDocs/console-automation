@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnershiptypes.html'
+keywords: 'partnership types,partnership list,relationship types,partnership categories,relationship list'
 summary: 'List all partnership types'
 ---
 
 = List all partnership types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of partnership types. Use this to view the available options for configuring partnerships.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnershiptypes`#
 
-
+== Usage notes
 
 Lists all partnership types.
 

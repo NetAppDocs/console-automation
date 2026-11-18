@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-enable-onprem-scan.html'
+keywords: 'on-premises scanning,enable scanning,working environment,onprem scan,system id'
 summary: 'Enable on-premises scanning using the system ID'
 ---
 
 = Enable on-premises scanning using the system ID
 :imagesdir: ../media/
 
+[.lead]
+Enables on-premises scanning using the system ID. Use this to activate scanning capabilities for systems in your on-premises environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{workingEnvironmentId}/enable-onprem-scan`#
-
-
-
-Enables on-premises scanning using the system ID.
-
 
 == Parameters
 

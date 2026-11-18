@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-cloud-compliance-info.html'
+keywords: 'cloud compliance,compliance info,cloud data,compliance report,cloud storage'
 summary: 'Retrieve cloud compliance information'
 ---
 
 = Retrieve cloud compliance information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Cloud Compliance information, providing details about compliance status and configurations for cloud resources. Use this to assess and manage compliance requirements in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cloud-compliance/info`#
-
-
-
-Retrieves Cloud Compliance information.
-
 
 == Error
 

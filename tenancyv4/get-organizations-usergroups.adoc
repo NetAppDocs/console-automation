@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-usergroups.html'
+keywords: 'organization usergroups,organization user groups,list user groups,user group management,organization groups'
 summary: 'List all user groups under an organization'
 ---
 
 = List all user groups under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of user groups under the specified organization. Use this to view the groups available for managing user permissions and access within the organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/usergroups`#
 
-
+== Usage notes
 
 Lists all user groups under the specified organization.
 

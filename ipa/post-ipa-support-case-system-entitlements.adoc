@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-support-case-system-entitlements.html'
+keywords: 'system entitlements,serial number check,case creation eligibility,netapp support,entitlement validation'
 summary: 'Check system entitlements'
 ---
 
 = Check system entitlements
 :imagesdir: ../media/
 
+[.lead]
+Checks system entitlements for a specified serial number to determine if you are entitled to create a case for the requested serial number.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/support/case/system-entitlements`#
 
+== Token usage
 
+Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
 
-Checks system entitlements for a specified serial number. This checks whether a user is entitled to create a case for the requested serial number.
-            +
- +
-*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+== Usage notes
 
+This checks whether a user is entitled to create a case for the requested serial number.
 
 == Parameters
 

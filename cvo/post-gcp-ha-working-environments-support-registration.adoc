@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments-support-registration.html'
+keywords: 'cloud volumes,cloud ontap,netapp registration,ha working environments,support registration'
 summary: 'Register a Cloud Volumes ONTAP system with NetApp'
 ---
 
 = Register a Cloud Volumes ONTAP system with NetApp
 :imagesdir: ../media/
 
+[.lead]
+Registers a Cloud Volumes ONTAP system with NetApp. Use this to integrate the system with NetApp services and enable management capabilities.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/support-registration`#
-
-
-
-Registers a Cloud Volumes ONTAP system with NetApp.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-projects.html'
+keywords: 'create project,new project,project creation,add project,project management'
 summary: 'Create a new project'
 ---
 
 = Create a new project
 :imagesdir: ../media/
 
+[.lead]
+Creates a new project. Use this to organize resources and manage access within a specific scope.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/projects`#
-
-
-
-Creates a new project.
-
 
 == Request Body
 

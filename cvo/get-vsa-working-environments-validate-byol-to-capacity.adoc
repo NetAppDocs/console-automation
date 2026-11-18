@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-working-environments-validate-byol-to-capacity.html'
+keywords: 'cloud volumes,ontap conversion,validate prerequisites,working environment,capacity conversion'
 summary: 'Validate prerequisites for converting a system'
 ---
 
 = Validate prerequisites for converting a system
 :imagesdir: ../media/
 
+[.lead]
+Validates the prerequisites for converting an existing Cloud Volumes ONTAP system. Use this to ensure the system meets the necessary requirements before initiating the conversion process.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/validate-byol-to-capacity`#
-
-
-
-Validates the prerequisites for converting an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

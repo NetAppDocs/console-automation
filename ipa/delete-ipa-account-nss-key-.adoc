@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/delete-ipa-account-nss-key-.html'
+keywords: 'netapp support,delete credentials,nss key,account key removal,key deletion,nss credential'
 summary: 'Delete NetApp Support Site key credentials'
 ---
 
 = Delete NetApp Support Site key credentials
 :imagesdir: ../media/
 
+[.lead]
+Deletes NetApp Support Site key credentials. Use this to remove stored credentials that are no longer needed for authentication.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-key/{nssKeyId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Deletes NetApp Support Site key credentials.
-            +
- +
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

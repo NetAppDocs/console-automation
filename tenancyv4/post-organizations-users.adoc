@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-organizations-users.html'
+keywords: 'organization users,add users,organization id,manage users,user management'
 summary: 'Add users to an organization'
 ---
 
 = Add users to an organization
 :imagesdir: ../media/
 
+[.lead]
+Adds users to an organization, granting them access to the specified organization's resources and permissions. Use this to manage user memberships within an organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/users`#
 
-
+== Usage notes
 
 Adds users to the specified organization.
 

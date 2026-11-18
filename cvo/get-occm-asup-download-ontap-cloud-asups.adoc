@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-asup-download-ontap-cloud-asups.html'
+keywords: 'autosupport files,download autosupport,compressed autosupport,vsa autosupport,ontap cloud'
 summary: 'Download a compressed file of all the AutoSupport files from all VSAs'
 ---
 
 = Download a compressed file of all the AutoSupport files from all VSAs
 :imagesdir: ../media/
 
+[.lead]
+Downloads a compressed file of all AutoSupport files from all VSAs. Use this to collect diagnostic and troubleshooting data across multiple virtual storage appliances.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup/download-ontap-cloud-asups`#
-
-
-
-Downloads a compressed file of all AutoSupport files from all VSAs.
-
 
 == Error
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-resources.html'
+keywords: 'organization resources,organization id,resource list,specified organization,resource details'
 summary: 'List all resources under an organization'
 ---
 
 = List all resources under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of resources under the specified organization. Use this to view and manage the resources associated with the organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/resources`#
 
-
+== Usage notes
 
 Lists all resources under the specified organization.
 

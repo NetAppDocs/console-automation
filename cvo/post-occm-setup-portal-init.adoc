@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-setup-portal-init.html'
+keywords: 'netapp setup,cloud central,initial setup,setup portal,cloud onboarding'
 summary: 'Perform an initial setup with NetApp Console'
 ---
 
 = Perform an initial setup with NetApp Console
 :imagesdir: ../media/
 
+[.lead]
+Performs an initial setup with NetApp Cloud Central, establishing the configuration required to begin using Cloud Volumes ONTAP. Use this to initialize your environment and prepare it for deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/init`#
-
-
-
-Performs initial setup with NetApp Cloud Central.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-replication-metadata-snapshot-labels--.html'
+keywords: 'snapshot labels,replication metadata,snapshot metadata,volume snapshots,volume labels'
 summary: 'Return a list of snapshot labels'
 ---
 
 = Return a list of snapshot labels
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of snapshot labels from a volume, matching them to labels provided in the request. Use this to identify snapshots associated with specific labels for further operations or analysis.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/metadata/snapshot-labels/{workingEnvironmentId}/{svmName}/{volumeName}`#
 
-
+== Usage notes
 
 Returns a list of snapshot labels from the volume that match labels in the provided list.
 

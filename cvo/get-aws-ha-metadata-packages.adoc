@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-packages.html'
+keywords: 'packages configuration,ha metadata,aws ha,deployment model,capacity package'
 summary: 'Retrieve packages configuration'
 ---
 
 = Retrieve packages configuration
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the packages configuration, providing details about the available packages and their settings. Use this to review or verify package configurations for your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/packages`#
-
-
-
-Retrieves the packages configuration.
-
 
 == Parameters
 

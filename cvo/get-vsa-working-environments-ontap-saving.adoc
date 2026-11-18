@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-working-environments-ontap-saving.html'
+keywords: 'ontap savings,working environments,storage efficiency,system savings,data reduction'
 summary: 'Retrieve systems ONTAP savings'
 ---
 
 = Retrieve systems ONTAP savings
 :imagesdir: ../media/
 
+[.lead]
+Retrieves system ONTAP savings, providing data to analyze storage efficiency and cost optimization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/ontap-saving`#
-
-
-
-Retrieves system ONTAP savings.
-
 
 == Parameters
 

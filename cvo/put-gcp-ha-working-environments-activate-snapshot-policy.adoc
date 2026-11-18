@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-ha-working-environments-activate-snapshot-policy.html'
+keywords: 'snapshot policy,activate snapshot,read write volumes,unprotected volumes,working environment'
 summary: 'Activate snapshot policy assignment for unprotected read/write volumes'
 ---
 
 = Activate snapshot policy assignment for unprotected read/write volumes
 :imagesdir: ../media/
 
+[.lead]
+Activates snapshot policy assignment for unprotected read/write volumes. Use this to ensure snapshot policies are applied consistently across these volumes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/activate-snapshot-policy`#
 
-
+== Usage notes
 
 Activates snapshot policy assignment for all unprotected read/write volumes.
 

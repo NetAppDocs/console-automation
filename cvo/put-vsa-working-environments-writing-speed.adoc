@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-working-environments-writing-speed.html'
+keywords: 'writing speed,cloud volumes,ontap writing,working environment,volume performance,speed configuration'
 summary: 'Set the writing speed for Cloud Volumes ONTAP'
 ---
 
 = Set the writing speed for Cloud Volumes ONTAP
 :imagesdir: ../media/
 
+[.lead]
+Sets the writing speed for Cloud Volumes ONTAP to optimize data transfer rates for storage operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/writing-speed`#
-
-
-
-Sets the writing speed for Cloud Volumes ONTAP.
-
 
 == Parameters
 

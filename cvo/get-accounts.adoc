@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-accounts.html'
+keywords: 'accounts list,account retrieval,provider type,manage accounts,retrieve accounts'
 summary: 'Retrieve accounts'
 ---
 
 = Retrieve accounts
 :imagesdir: ../media/
 
+[.lead]
+Retrieves accounts, providing account details for management or integration purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts`#
-
-
-
-Retrieves accounts.
-
 
 
 CAUTION: This operation is deprecated.

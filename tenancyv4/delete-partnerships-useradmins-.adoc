@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-partnerships-useradmins-.html'
+keywords: 'partnership removal,useradmin deletion,user group removal,partnership user,user admin'
 summary: 'Remove a user from the UserAdmin group in a partnership'
 ---
 
 = Remove a user from the UserAdmin group in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Removes a user from the UserAdmin group in a partnership, ending their administrative access within the specified partnership. Use this to manage administrative roles and permissions within partnerships.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/partnerships/{partnership_id}/useradmins/{user_id}`#
 
-
+== Usage notes
 
 Removes a user from the UserAdmin group of the specified partnership.
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-vsa-working-environments-writing-speed.html'
+keywords: 'writing speed,cloud volumes,cloud ontap,working environment,azure storage,volume performance'
 summary: 'Modify the writing speed'
 ---
 
 = Modify the writing speed
 :imagesdir: ../media/
 
+[.lead]
+Modifies the writing speed for Cloud Volumes ONTAP. Use this to adjust the speed based on performance requirements or workload demands.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/writing-speed`#
 
-
+== Usage notes
 
 Sets the writing speed for Cloud Volumes ONTAP.
 

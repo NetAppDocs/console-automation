@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-projects-.html'
+keywords: 'organization projects,project details,organization hierarchy,project retrieval,organization insights'
 summary: 'Retrieve a project under an organization'
 ---
 
 = Retrieve a project under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a project under the specified organization, providing details about the project for organizational management or resource allocation.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/projects/{project_id}`#
-
-
-
-Retrieves a project under the specified organization.
-
 
 == Parameters
 

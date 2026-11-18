@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-resource.html'
+keywords: 'bluexp resource,external resource,create resource,resource creation,tenancy resource'
 summary: 'Create an external resource'
 ---
 
 = Create an external resource
 :imagesdir: ../media/
 
+[.lead]
+Creates an external resource as a BlueXP resource. Use this endpoint to register a resource with the specified type in BlueXP.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Creates an external resource as a BlueXP resource. resourceType must be passed to the request.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

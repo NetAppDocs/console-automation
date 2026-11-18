@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-working-environments.html'
+keywords: 'on-premises systems,working environments,on-premises visibility,tenant systems,system retrieval,environment details'
 summary: 'Retrieve on-premises systems'
 ---
 
 = Retrieve on-premises systems
 :imagesdir: ../media/
 
+[.lead]
+Retrieves on-premises systems visible to the current user. Use this to view the systems accessible within your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/working-environments`#
-
-
-
-Retrieves on-premises systems visible to the current user.
-
 
 == Parameters
 

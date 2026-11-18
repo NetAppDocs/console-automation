@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-accounts-gcp-.html'
+keywords: 'google cloud,cloud storage,storage account,public id,retrieve account'
 summary: 'Retrieve a Google Cloud storage account'
 ---
 
 = Retrieve a Google Cloud storage account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a Google Cloud storage account using the public ID. Use this to identify and manage storage accounts available in your Google Cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/gcp/{cloudProviderAccountId}`#
-
-
-
-Retrieves a Google Cloud storage account using the public ID.
-
 
 
 CAUTION: This operation is deprecated.

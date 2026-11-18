@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-working-environments-change-tier-level.html'
+keywords: 'tier level,update tier,working environment,change tier level,tier management,tier update'
 summary: 'Modify the tier level'
 ---
 
 = Modify the tier level
 :imagesdir: ../media/
 
+[.lead]
+Updates the tier level for a Cloud Volumes ONTAP system. Use this to change the storage tier configuration based on your performance or cost requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/change-tier-level`#
-
-
-
-Updates the tier level.
-
 
 == Parameters
 

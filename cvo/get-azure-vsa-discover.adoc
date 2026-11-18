@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-discover.html'
+keywords: 'azure systems,discovered systems,azure region,cloud provider account,subscription details'
 summary: 'Retrieve a list of discovered systems'
 ---
 
 = Retrieve a list of discovered systems
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of discovered systems visible in the specified Azure region. Use this to view the systems accessible to you in that region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/discover`#
 
-
+== Usage notes
 
 Retrieves a list of discovered systems visible to the current user in the specified Azure region.
 

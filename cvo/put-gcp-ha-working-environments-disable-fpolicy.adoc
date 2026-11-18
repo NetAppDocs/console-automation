@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-ha-working-environments-disable-fpolicy.html'
+keywords: 'fpolicy disable,ransomware files,disable fpolicy,gcp ha,working environment'
 summary: 'Disable FPolicy for ransomware files'
 ---
 
 = Disable FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Disables the FPolicy for ransomware files, stopping the policy from monitoring or taking action on specified file types. Use this when you no longer need to enforce ransomware detection for these files.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/disable-fpolicy`#
-
-
-
-Disables the FPolicy for ransomware files.
-
 
 == Parameters
 

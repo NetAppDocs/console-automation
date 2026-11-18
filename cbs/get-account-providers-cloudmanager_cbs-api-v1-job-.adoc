@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-job-.html'
+keywords: 'netapp jobs,job details,cloudmanager cbs,specific jobs,netapp console'
 summary: 'Retrieve particular job details'
 ---
 
 = Retrieve particular job details
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the details of specific jobs from the NetApp Console SaaS application. Use this to view information about individual jobs within the Backup and Recovery service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/job/{jobId}`#
 
+== Token usage
 
-
-Retrieves the details of specific jobs from the NetApp Console SaaS application.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

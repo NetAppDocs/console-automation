@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/get-ipa-accounts-nss-data.html'
+keywords: 'netapp support,console accounts,nss data,account support,service data,retrieve support'
 summary: 'Retrieve NetApp Support Site data for accounts'
 ---
 
 = Retrieve NetApp Support Site data for accounts
 :imagesdir: ../media/
 
+[.lead]
+Retrieves NetApp Support Site data associated with NetApp Console accounts. Use this to access support-related information tied to your account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/accounts/nss-data`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Retrieves NetApp Support Site data associated with the NetApp Console accounts.
-            +
- +
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-volumes--snapshot.html'
+keywords: 'create snapshot,manual snapshot,azure ha,volume snapshot,ontap snapshot'
 summary: 'Create a snapshot'
 ---
 
 = Create a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot manually. Use this to capture the state of a resource at a specific point in time for backup or recovery purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Creates a snapshot manually.
-
 
 == Parameters
 

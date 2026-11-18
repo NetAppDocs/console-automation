@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-sgws-buckets.html'
+keywords: 'storagegrid buckets,data broker storagegrid,netapp storagegrid,bucket access,data broker buckets'
 summary: 'Retrieve the StorageGRID buckets'
 ---
 
 = Retrieve the StorageGRID buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the StorageGRID buckets accessible from a NetApp data broker. Use this to view the buckets available for data management operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-sgws-buckets`#
-
-
-
-Retrieves the StorageGRID buckets accessible from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

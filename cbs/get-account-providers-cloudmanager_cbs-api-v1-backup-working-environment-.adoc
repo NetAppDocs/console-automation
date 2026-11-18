@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-.html'
+keywords: 'backup details,backup service,working environment,archive storage,cloud storage pool,metrocluster id'
 summary: 'Retrieve specific system details'
 ---
 
 = Retrieve specific system details
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the details of a specific system backed up within an account using the Backup and Recovery service. Use this to access information such as backup status, storage class, policy details, and related configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves the details of a specific system backed up using the Backup and Recovery service within an account. It retrieves backup enablement status, archive storage class, archive after days, catalog enablement status, auto enablement status, maximum transfer status, backup policy details, cloud storage pool, and remote MetroCluster ID.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

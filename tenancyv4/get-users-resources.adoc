@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-users-resources.html'
+keywords: 'user resources,user id'
 summary: 'List all resources for a user'
 ---
 
 = List all resources for a user
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all resources for a specified user. Use this to view the resources associated with the user's account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}/resources`#
 
-
+== Usage notes
 
 Lists all resources for the specified user.
 

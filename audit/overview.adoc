@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'audit/overview.html'
+keywords: 'audit records,audit service,console audit,compliance,forensic investigation,activity tracking'
 summary: 'Audit REST API for the NetApp Console'
 ---
 
 = Audit REST API for the NetApp Console
 :imagesdir: ../media/
 
-
+[.lead]
+Find out which actions were performed in the NetApp Console, who performed them, and when. This audit data supports forensic investigations and compliance requirements.
 
 The Audit service records information about the operations performed by the NetApp Console services. This includes the originating IP addresses, workspaces, Console agents used, and other telemetry data.
 

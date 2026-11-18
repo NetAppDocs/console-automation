@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-users.html'
+keywords: 'organization users,organization id,organization members,list users,user directory'
 summary: 'List all users under an organization'
 ---
 
 = List all users under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of users under the specified organization. Use this to view all users associated with the organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/users`#
 
-
+== Usage notes
 
 Lists all users under the specified organization.
 

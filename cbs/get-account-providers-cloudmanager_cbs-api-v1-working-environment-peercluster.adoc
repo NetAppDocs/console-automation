@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-peercluster.html'
+keywords: 'ontap clusters,peer clusters,working environment,system id,cloudmanager cbs'
 summary: 'Retrieve a list of ONTAP clusters peered to a system'
 ---
 
 = Retrieve a list of ONTAP clusters peered to a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of ONTAP clusters peered to a specific system. Use this to view the clusters associated with the specified system ID.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/peercluster`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves a list of ONTAP clusters peered to a specific system. The required system ID is passed as a parameter for the API call.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+The required system ID is passed as a parameter for the API call.
 
 == Parameters
 

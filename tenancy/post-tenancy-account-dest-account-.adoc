@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancy/post-tenancy-account-dest-account-.html'
+keywords: 'source account,data migration,destination account,account transfer,tenancy support'
 summary: 'Move account data'
 ---
 
 = Move account data
 :imagesdir: ../media/
 
+[.lead]
+Moves account data from a source account to a destination account. Use this endpoint to transfer data between accounts as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{srcAccountId}/dest/account/{dstAccountId}`#
 
+== Token usage
 
+BlueXP service token with the following scopes: tenancy:support.
+
+== Usage notes
 
 Moves account data from the source account to the destination account.
-            +
-*Token usage:* BlueXP service token with the following scopes: tenancy:support.
-
 
 == Parameters
 

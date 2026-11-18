@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-get-buckets-details.html'
+keywords: 's3 buckets,buckets details,ha metadata,aws buckets,retrieve buckets'
 summary: 'Retrieve all S3 buckets with additional information'
 ---
 
 = Retrieve all S3 buckets with additional information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all S3 buckets with additional information. Use this to view detailed properties of the buckets in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/get-buckets-details`#
-
-
-
-Retrieves all S3 buckets with additional information.
-
 
 == Error
 

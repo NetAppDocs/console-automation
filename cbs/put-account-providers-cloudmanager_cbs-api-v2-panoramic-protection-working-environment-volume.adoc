@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html'
+keywords: 'panoramic protection,backup settings,replication settings,auto-backup,transfer rates,snapshot policies'
 summary: 'Modify panoramic protection settings for multiple volumes (v2)'
 ---
 
 = Modify panoramic protection settings for multiple volumes (v2)
 :imagesdir: ../media/
 
+[.lead]
+Modifies the panoramic protection settings for multiple volumes, including backup and replication configurations. Use this to adjust auto-backup settings, transfer rates, or snapshot policies for existing volumes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/panoramic-protection/working-environment/{workingEnvironmentId}/volume`#
 
+== Token usage
 
+NetApp Console user token.
 
-Modifies the panoramic protection settings for multiple volumes. This API allows you to change the backup and replication settings for existing volumes, including enabling or disabling auto-backup, adjusting transfer rates, and modifying snapshot policies.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+This API allows you to change the backup and replication settings for existing volumes, including enabling or disabling auto-backup, adjusting transfer rates, and modifying snapshot policies.
 
 == Parameters
 

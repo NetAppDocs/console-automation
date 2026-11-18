@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-ha-working-environments-activate-fpolicy.html'
+keywords: 'fpolicy activation,ransomware protection,ha environments,gcp fpolicy,working environment'
 summary: 'Activate FPolicy for ransomware files'
 ---
 
 = Activate FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Activates the FPolicy for ransomware files to enable file screening and detection for potential ransomware threats. Use this to help protect your data against unauthorized encryption or malicious file activity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/activate-fpolicy`#
-
-
-
-Activates the FPolicy for ransomware files.
-
 
 == Parameters
 

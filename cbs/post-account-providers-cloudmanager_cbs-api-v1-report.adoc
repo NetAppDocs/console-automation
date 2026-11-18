@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-report.html'
+keywords: 'inventory report,storage vms,backup actions,protection type,return snapshots'
 summary: 'Generate an inventory report'
 ---
 
 = Generate an inventory report
 :imagesdir: ../media/
 
+[.lead]
+Generates an inventory report, providing details about account-level resources, systems, or storage VMs. Use this to create reports for backup actions or all actions based on the specified inventory type.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/report`#
 
+== Usage notes
 
-
-Generates an inventory report. You can create the inventory report for the whole account or a specific list of systems. It is also possible to generate reports for storage VMs under a system. By setting the "inventory-type" as "BACKUP", you can create a report for the backup actions. By setting it as "ALL", you can create a report for all the actions.
+You can create the inventory report for the whole account or a specific list of systems. It is also possible to generate reports for storage VMs under a system. By setting the "inventory-type" as "BACKUP", you can create a report for the backup actions. By setting it as "ALL", you can create a report for all the actions.
 
 
 == Parameters

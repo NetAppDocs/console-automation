@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-aggregates--disks.html'
+keywords: 'add disks,azure ha,existing aggregate,aggregate disks,expand aggregate,working environment'
 summary: 'Add disks to an aggregate'
 ---
 
 = Add disks to an aggregate
 :imagesdir: ../media/
 
+[.lead]
+Adds disks to an existing aggregate. Use this to expand aggregate capacity for additional storage needs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/aggregates/{workingEnvironmentId}/{aggregateName}/disks`#
-
-
-
-Adds disks to an existing aggregate.
-
 
 == Parameters
 

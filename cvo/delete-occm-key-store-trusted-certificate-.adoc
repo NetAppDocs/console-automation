@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-occm-key-store-trusted-certificate-.html'
+keywords: 'trusted certificate,certificate delete,trust store,delete certificate,certificate management'
 summary: 'Delete an existing trusted certificate from the trust store'
 ---
 
 = Delete an existing trusted certificate from the trust store
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing trusted certificate from the trust store. Use this to remove certificates that are no longer needed or have expired.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/occm/key-store/trusted-certificate/{certificateId}`#
-
-
-
-Deletes an existing trusted certificate from the trust store.
-
 
 == Parameters
 

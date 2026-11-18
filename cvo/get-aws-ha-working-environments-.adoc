@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments-.html'
+keywords: 'ha cloud,cloud volumes,ontap system,working environment,ha volumes,retrieve ontap'
 summary: 'Retrieve an HA system'
 ---
 
 = Retrieve an HA system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an HA Cloud Volumes ONTAP system, providing details about the system for high availability configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}`#
-
-
-
-Retrieves an HA Cloud Volumes ONTAP system.
-
 
 == Parameters
 

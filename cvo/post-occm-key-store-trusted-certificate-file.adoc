@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-key-store-trusted-certificate-file.html'
+keywords: 'trusted certificate,trust store,certificate validation,install certificate,validate certificate'
 summary: 'Validate and install the certificate in the trust store'
 ---
 
 = Validate and install the certificate in the trust store
 :imagesdir: ../media/
 
+[.lead]
+Validates and installs the provided certificate in the trust store. Use this to ensure secure communication by managing trusted certificates.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/key-store/trusted-certificate-file`#
-
-
-
-Validates and installs the provided certificate in the trust store.
-
 
 == Parameters
 

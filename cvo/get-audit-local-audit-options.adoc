@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-audit-local-audit-options.html'
+keywords: 'audit options,local audit,account audit,filter options,audit page'
 summary: 'Retrieve audit page filter options'
 ---
 
 = Retrieve audit page filter options
 :imagesdir: ../media/
 
+[.lead]
+Retrieves audit page filter options for the local UI, providing the available filters to customize audit page views.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/local/audit/{accountId}/options`#
-
-
-
-Retrieves audit page filter options for the local UI.
-
 
 == Error
 

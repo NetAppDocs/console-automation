@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-asup.html'
+keywords: 'autosupport configuration,autosupport settings,autosupport retrieval,netapp autosupport,ontap autosupport'
 summary: 'Retrieve the AutoSupport configuration'
 ---
 
 = Retrieve the AutoSupport configuration
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the AutoSupport configuration, providing details about the current setup for monitoring and support purposes. Use this information to verify or review the existing AutoSupport settings.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/asup`#
-
-
-
-Retrieves the AutoSupport configuration.
-
 
 == Error
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments-ntp.html'
+keywords: 'ntp server,working environment,time sync,ntp setup,high availability'
 summary: 'Set up an NTP server'
 ---
 
 = Set up an NTP server
 :imagesdir: ../media/
 
+[.lead]
+Sets up an NTP server to synchronize system time across resources. Use this to ensure consistent timekeeping for operations and logs.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/ntp`#
-
-
-
-Sets up an NTP server.
-
 
 == Parameters
 

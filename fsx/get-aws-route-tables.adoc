@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/get-aws-route-tables.html'
+keywords: 'route tables,aws region,vpc route tables,netapp console credentials,network routing'
 summary: 'Retrieve route tables'
 ---
 
 = Retrieve route tables
 :imagesdir: ../media/
 
+[.lead]
+Retrieves route tables for a specified region and VPC. Use this to view the available route table configurations for network management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/route-tables`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Retrieves all route tables for a specified region and VPC by using the credentials.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

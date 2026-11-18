@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-volumes--snapshots.html'
+keywords: 'snapshots list,volume snapshots,ha volumes,azure snapshots,snapshot descriptions'
 summary: 'Retrieve a list of volume snapshot descriptions'
 ---
 
 = Retrieve a list of volume snapshot descriptions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of volume snapshot descriptions. Use this to view details about the snapshots associated with a specific volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshots`#
 
-
+== Usage notes
 
 Returns a list of snapshot descriptions for the volume.
 

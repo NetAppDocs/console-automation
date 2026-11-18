@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-schedules.html'
+keywords: 'schedules list,working environment,schedule retrieval,cloud manager,netapp schedules'
 summary: 'Retrieve a list of schedules in a system'
 ---
 
 = Retrieve a list of schedules in a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of schedules present in a system. Use this to view and manage available schedules for backup and recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/schedules`#
 
+== Token usage
 
-
-Retrieves a list of schedules present in a system.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

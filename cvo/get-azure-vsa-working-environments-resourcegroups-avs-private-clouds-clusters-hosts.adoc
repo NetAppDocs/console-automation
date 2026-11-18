@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments-resourcegroups-avs-private-clouds-clusters-hosts.html'
+keywords: 'azure vmware,vmware solution,avs clusters,cluster hosts,vmware subscription'
 summary: 'Retrieve Azure VMware Solution cluster hosts'
 ---
 
 = Retrieve Azure VMware Solution cluster hosts
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Azure VMware Solution cluster hosts for the existing subscription. Use this to view the hosts available within your subscription.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/resourceGroups/{resourceGroupName}/avs-private-clouds/{privateCloudName}/clusters/{clusterName}/hosts`#
-
-
-
-Retrieves Azure VMware Solution cluster hosts for the existing subscription.
-
 
 == Parameters
 

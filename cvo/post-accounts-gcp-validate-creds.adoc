@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-accounts-gcp-validate-creds.html'
+keywords: 'validate creds,gcp account,google cloud,gcp validation,provider account'
 summary: 'Validate the Google Cloud account request'
 ---
 
 = Validate the Google Cloud account request
 :imagesdir: ../media/
 
+[.lead]
+Validates a Google Cloud provider account request. Use this to confirm the accuracy and readiness of the account information before proceeding with further operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/gcp/validate-creds`#
-
-
-
-Validates a Google Cloud provider account request.
-
 
 
 CAUTION: This operation is deprecated.

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-volumes.html'
+keywords: 'volumes,gcp volumes,ha volumes,working environment,volume retrieval'
 summary: 'Retrieve volumes'
 ---
 
 = Retrieve volumes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all volumes. Use this to view the available volumes in the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/volumes`#
-
-
-
-Retrieves all volumes.
-
 
 == Parameters
 

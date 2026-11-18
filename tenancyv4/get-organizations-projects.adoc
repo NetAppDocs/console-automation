@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-projects.html'
+keywords: 'organization projects,organization folders,list projects,project management,folder projects'
 summary: 'List all projects under an organization'
 ---
 
 = List all projects under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of projects under the specified organization. Use this to view all projects associated with the organization for management or reporting purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/projects`#
 
-
+== Usage notes
 
 Lists all projects under the specified organization.
 

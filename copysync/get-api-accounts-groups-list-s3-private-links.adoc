@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-s3-private-links.html'
+keywords: 's3 private links,aws region,netapp account,data brokers,s3 bucket'
 summary: 'Retrieve the S3 private links'
 ---
 
 = Retrieve the S3 private links
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 private links, providing access to information about private links for S3 resources. Use this to identify and manage private connectivity to your S3 endpoints.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-s3-private-links`#
-
-
-
-Retrieves the S3 private links.
-
 
 == Parameters
 

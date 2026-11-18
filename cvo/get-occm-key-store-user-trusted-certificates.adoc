@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-key-store-user-trusted-certificates.html'
+keywords: 'trusted certificates,user certificates,trust store,certificate management,user trusted'
 summary: 'Return the existing trusted certificates from the trust store'
 ---
 
 = Return the existing trusted certificates from the trust store
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the existing trusted certificates from the trust store. Use this to review the certificates that have been added for secure communication.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/key-store/user-trusted-certificates`#
 
-
+== Usage notes
 
 Returns the existing trusted certificates added by the user from the trust store.
 

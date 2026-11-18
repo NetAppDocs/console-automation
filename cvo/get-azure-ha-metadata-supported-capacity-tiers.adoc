@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-supported-capacity-tiers.html'
+keywords: 'azure capacity tiers,disk types,supported tiers,ha metadata,supported capacity'
 summary: 'Retrieve capacity tiers for Azure disk types'
 ---
 
 = Retrieve capacity tiers for Azure disk types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported capacity tiers for Azure disk types, providing the available configurations for storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/supported-capacity-tiers`#
-
-
-
-Retrieves the supported capacity tiers for Azure disk types.
-
 
 == Parameters
 

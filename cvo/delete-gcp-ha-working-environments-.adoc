@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-gcp-ha-working-environments-.html'
+keywords: 'cloud volumes,cloud resources,working environments,ha delete,local delete'
 summary: 'Delete an existing system'
 ---
 
 = Delete an existing system
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing Cloud Volumes ONTAP system, including its associated cloud resources. Use this to remove systems no longer needed in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}`#
 
-
+== Usage notes
 
 Deletes an existing Cloud Volumes ONTAP system, including all cloud resources created for the system (unless the localDelete flag is set to true).
 

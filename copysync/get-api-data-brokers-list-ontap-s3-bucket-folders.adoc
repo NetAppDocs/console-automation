@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-ontap-s3-bucket-folders.html'
+keywords: 'ontap s3,netapp data broker,s3 bucket folders,storagegrid access,netapp tenancy'
 summary: 'Retrieve the ONTAP S3 bucket folders'
 ---
 
 = Retrieve the ONTAP S3 bucket folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the ONTAP S3 bucket folders from a NetApp data broker. Use this to view the available folder structures within the specified S3 bucket.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-ontap-s3-bucket-folders`#
-
-
-
-Retrieves the ONTAP S3 bucket folders from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

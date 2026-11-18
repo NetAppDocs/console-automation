@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-configurations-.html'
+keywords: 'configuration value,retrieve configuration,cloudmanager cbs,account configuration,account id,configuration key'
 summary: 'Retrieve the configuration value for the specified key'
 ---
 
 = Retrieve the configuration value for the specified key
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the configuration value for the specified key. Use this to access specific settings and ensure accurate configuration in your backup and recovery workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations/{key}`#
-
-
-
-Retrieves the configuration value for the specified key.
-
 
 == Parameters
 

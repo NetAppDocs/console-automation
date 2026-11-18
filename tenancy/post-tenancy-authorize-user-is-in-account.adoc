@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-authorize-user-is-in-account.html'
+keywords: 'authorize user,account authorization,user access,account access,tenancy authorization'
 summary: 'Authorize a user for an account'
 ---
 
 = Authorize a user for an account
 :imagesdir: ../media/
 
+[.lead]
+Authorizes a user for an account, granting access permissions to interact with resources associated with the specified account. Use this endpoint to manage user access within your tenancy environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-user-is-in-account`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Authorizes a user in a specified account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

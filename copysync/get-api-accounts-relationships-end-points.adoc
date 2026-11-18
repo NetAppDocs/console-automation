@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-relationships-end-points.html'
+keywords: 'relationships,relationship endpoints,netapp accounts,account relationships,tenancy accounts'
 summary: 'Retrieve the relationship endpoints'
 ---
 
 = Retrieve the relationship endpoints
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the relationship endpoints, providing access to the details of existing relationships for sync or copy operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/relationships/end-points`#
-
-
-
-Retrieves the relationship endpoints.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-fsx-volumes--clone.html'
+keywords: 'volume clone,clone volume,existing volume,fsx volume,netapp volume'
 summary: 'Clone a volume'
 ---
 
 = Clone a volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a clone of an existing volume. Use this to replicate volume data for testing or development purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}/clone`#
 
-
+== Usage notes
 
 Clones an existing volume.
 

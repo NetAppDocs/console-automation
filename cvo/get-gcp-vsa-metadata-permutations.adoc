@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-permutations.html'
+keywords: 'cloud volumes,ontap configurations,cloud storage,volume permutations,gcp ontap'
 summary: 'Retrieve all Cloud Volumes ONTAP configurations'
 ---
 
 = Retrieve all Cloud Volumes ONTAP configurations
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all Cloud Volumes ONTAP configurations. Use this to view the current configurations available for management or operational tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/permutations`#
-
-
-
-Retrieves all Cloud Volumes ONTAP configurations.
-
 
 == Error
 

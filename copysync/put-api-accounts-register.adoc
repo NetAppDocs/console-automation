@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-accounts-register.html'
+keywords: 'register account,netapp account,account registration,marketplace registration,netapp marketplace'
 summary: 'Register an account to a marketplace'
 ---
 
 = Register an account to a marketplace
 :imagesdir: ../media/
 
+[.lead]
+Registers an account with a marketplace.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/register`#
 
-
+== Usage notes
 
 Registers an account to a marketplace.
 

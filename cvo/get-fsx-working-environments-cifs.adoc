@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-working-environments-cifs.html'
+keywords: 'cifs configuration,retrieve cifs,fsx cifs,fsx system,cifs settings'
 summary: 'Retrieve CIFS configuration for an FSx system'
 ---
 
 = Retrieve CIFS configuration for an FSx system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a CIFS configuration for an FSx system. Use this to view the configuration details for an existing system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/cifs`#
 
-
+== Usage notes
 
 Retrieves a CIFS configuration for an existing FSx system.
 

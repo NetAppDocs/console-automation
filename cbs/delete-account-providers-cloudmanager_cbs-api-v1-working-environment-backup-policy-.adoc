@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v1-working-environment-backup-policy-.html'
+keywords: 'backup policies,delete backup,cloud manager,working environment,backup policy deletion,system backup'
 summary: 'Delete a backup policy'
 ---
 
 = Delete a backup policy
 :imagesdir: ../media/
 
+[.lead]
+Deletes a backup policy associated with a system. Use this to remove policies that are no longer needed for managing backups.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/backup-policy/{policyId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Deletes the backup policies associated with a system.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

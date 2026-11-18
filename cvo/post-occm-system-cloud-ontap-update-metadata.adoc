@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-system-cloud-ontap-update-metadata.html'
+keywords: 'cloud ontap,netapp console,version information,metadata update,s3 fetch'
 summary: 'Perform a fetch and cache of Cloud Volumes ONTAP and NetApp Console files'
 ---
 
 = Perform a fetch and cache of Cloud Volumes ONTAP and NetApp Console files
 :imagesdir: ../media/
 
+[.lead]
+Retrieves version information files for Cloud Volumes ONTAP and NetApp Console from S3, caching them for efficient access. Use this to ensure the latest version details are available for deployment or upgrade workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/cloud-ontap-update-metadata`#
 
-
+== Usage notes
 
 Performs fetch and cache of Cloud Volumes ONTAP and NetApp Console version information files from S3.
 

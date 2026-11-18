@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-usergroups.html'
+keywords: 'create user group,user group creation,new user group,user group management,user groups'
 summary: 'Create a new user group'
 ---
 
 = Create a new user group
 :imagesdir: ../media/
 
+[.lead]
+Creates a new user group. Use this to define and manage group-based permissions for tenants.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/usergroups`#
-
-
-
-Creates a new user group.
-
 
 == Request Body
 

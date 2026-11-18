@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-metadata-create-bucket.html'
+keywords: 's3 bucket,create bucket,new bucket,storage bucket,region bucket,bucket creation'
 summary: 'Create a new S3 bucket'
 ---
 
 = Create a new S3 bucket
 :imagesdir: ../media/
 
+[.lead]
+Creates a new S3 bucket. Use this to define a storage container for organizing and managing object data.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/metadata/create-bucket`#
-
-
-
-Creates a new S3 bucket.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-setup-portal-proxy-setup.html'
+keywords: 'proxy setup,proxy url,setup portal,portal proxy,proxy configuration'
 summary: 'Set up a proxy URL'
 ---
 
 = Set up a proxy URL
 :imagesdir: ../media/
 
+[.lead]
+Sets up a proxy URL for managing network requests through a specified intermediary server. Use this to configure proxy settings that optimize connectivity or enhance security.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup-portal/proxy/setup`#
 
-
+== Usage notes
 
 Sets up a specified proxy URL.
 

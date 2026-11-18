@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-license-instance-type.html'
+keywords: 'license types,instance types,cloud volumes,ontap instance,working environment'
 summary: 'Retrieve all license types for a system'
 ---
 
 = Retrieve all license types for a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all license types and their associated instance types for a specific Cloud Volumes ONTAP instance. Use this to view the available licensing options for the instance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/license-instance-type`#
-
-
-
-Retrieves all license types and their associated instance types for a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

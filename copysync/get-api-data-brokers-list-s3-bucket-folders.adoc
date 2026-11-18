@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-s3-bucket-folders.html'
+keywords: 'data brokers,s3 bucket folders,netapp data broker,bucket folders,s3 folder list'
 summary: 'Retrieve the S3 bucket folders'
 ---
 
 = Retrieve the S3 bucket folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 bucket folders from a NetApp data broker, providing the folder structure for data management tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-s3-bucket-folders`#
-
-
-
-Retrieves the S3 bucket folders from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

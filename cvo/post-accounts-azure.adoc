@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-accounts-azure.html'
+keywords: 'azure account,create azure,azure integration,azure setup,cloud account'
 summary: 'Create an Azure account'
 ---
 
 = Create an Azure account
 :imagesdir: ../media/
 
+[.lead]
+Creates an Azure account to configure and manage access to Azure resources. Use this to integrate Azure services with your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/azure`#
-
-
-
-Creates an Azure account.
-
 
 
 CAUTION: This operation is deprecated.

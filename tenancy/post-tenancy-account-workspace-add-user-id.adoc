@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-workspace-add-user-id.html'
+keywords: 'add user,workspace user,workspace access,account workspace,user management'
 summary: 'Add a user'
 ---
 
 = Add a user
 :imagesdir: ../media/
 
+[.lead]
+Adds a user to a specified workspace. Use this to grant the user access to the workspace.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{workspacePublicId}/add-user/{userPublicId}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Adds a user to a specified workspace.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

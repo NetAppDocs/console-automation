@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-object-storage.html'
+keywords: 'bucket creation,cloud provider,object storage,create bucket,cloud manager,storage bucket'
 summary: 'Create a bucket for a cloud provider'
 ---
 
 = Create a bucket for a cloud provider
 :imagesdir: ../media/
 
+[.lead]
+Creates a bucket for the specified cloud provider. Use this to store and manage data in the cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/object-storage`#
-
-
-
-Creates a bucket for the specified cloud provider.
-
 
 == Parameters
 

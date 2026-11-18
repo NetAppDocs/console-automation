@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-default-snapshot-policies.html'
+keywords: 'default snapshot,default policies,snapshot policies,azure cluster,cluster snapshots'
 summary: 'Retrieve the default snapshot policies'
 ---
 
 = Retrieve the default snapshot policies
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the default snapshot policies available on a cluster. Use this to review the policies preconfigured for snapshot management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/default-snapshot-policies`#
-
-
-
-Retrieves the default snapshot policies available on a cluster.
-
 
 == Error
 

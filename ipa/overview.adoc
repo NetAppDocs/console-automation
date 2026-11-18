@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/overview.html'
+keywords: 'in-product automation,ipa,license enforcement,netapp support site,nss,support'
 summary: 'In-Product Automation REST API for the NetApp Console'
 ---
 
 = In-Product Automation REST API for the NetApp Console
 :imagesdir: ../media/
 
-
+[.lead]
+Manage license enforcement and policy-driven operational control across NetApp product families with the In-Product Automation (IPA) service. Use the endpoints to work with licenses, services, NetApp Support Site (NSS) data, and support.
 
 In-Product Automation (IPA) is a core NetApp Console platform service enabling license enforcement and policy-driven operational control for a variety of software licensing models. It supports several different NetApp product families, including ONTAP (AFF, FAS, Cloud Volumes ONTAP), E-Series, StorageGRID, SolidFire as well as additional host-based solutions such as OnCommand Insight. IPA provides a REST API you can use to access the features available with the service.
 

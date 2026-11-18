@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments-license-instance-type.html'
+keywords: 'cloud volumes,ontap license,license types,instance types,ha environments,cloud ontap'
 summary: 'Retrieve all license types and their associated instance types'
 ---
 
 = Retrieve all license types and their associated instance types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all license types and their associated instance types for a specific Cloud Volumes ONTAP instance. Use this to view the licensing options and instance type details available for your deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/license-instance-type`#
-
-
-
-Retrieves all license types and their associated instance types for a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

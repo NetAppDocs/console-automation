@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-aggregates.html'
+keywords: 'aggregates,ha aggregates,working environment,aws aggregates,ha configuration'
 summary: 'Retrieve aggregates'
 ---
 
 = Retrieve aggregates
 :imagesdir: ../media/
 
+[.lead]
+Retrieves aggregates, providing information about the available storage aggregates in the system. Use this to review aggregate configurations and capacities.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/aggregates`#
-
-
-
-Retrieves aggregates.
-
 
 == Parameters
 

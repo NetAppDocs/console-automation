@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-aws-ha-encryption-key-managers-.html'
+keywords: 'key manager,delete key manager,cloud volumes,ontap encryption,ha encryption'
 summary: 'Delete a key manager from a system'
 ---
 
 = Delete a key manager from a system
 :imagesdir: ../media/
 
+[.lead]
+Deletes a key manager from the Cloud Volumes ONTAP system. Use this to remove an unused or decommissioned key manager.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/aws/ha/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}`#
-
-
-
-Deletes a key manager from the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/get-aws-supported-regions.html'
+keywords: 'fsx regions,aws regions,netapp console regions,supported regions,fsx aws'
 summary: 'Retrieve supported regions'
 ---
 
 = Retrieve supported regions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all supported FSx for ONTAP regions based on the provided credentials. Use this to identify the regions available for deployment or management tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/supported-regions`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Retrieves all supported FSx regions by using the provided credentials.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

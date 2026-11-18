@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-aggregates-.html'
+keywords: 'iops,throughput,update aggregate,azure aggregate,ha disks,aggregate performance'
 summary: 'Update IOPS and throughput for disks in an existing aggregate'
 ---
 
 = Update IOPS and throughput for disks in an existing aggregate
 :imagesdir: ../media/
 
+[.lead]
+Updates IOPS and throughput for the disks in an existing aggregate. Use this to adjust performance settings for the aggregate as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/aggregates/{workingEnvironmentId}/{aggregateName}`#
-
-
-
-Updates IOPS and throughput for the disks in an existing aggregate.
-
 
 == Parameters
 

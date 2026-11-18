@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-messages-client.html'
+keywords: 'asynchronous messages,long polling,client messages,message retrieval,netapp tenancy,messages endpoint'
 summary: 'Retrieve the asynchronous messages'
 ---
 
 = Retrieve the asynchronous messages
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the asynchronous messages. Use this endpoint to access a long polling mechanism for receiving asynchronous updates.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/messages/client`#
 
+== Usage notes
 
-
-Retrieves the asynchronous messages. This API endpoint refers to a long polling endpoint for asynchronous messages.
+This API endpoint refers to a long polling endpoint for asynchronous messages.
 
 
 == Parameters

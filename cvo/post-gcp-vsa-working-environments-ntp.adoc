@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-ntp.html'
+keywords: 'ntp server,working environment,gcp ntp,setup ntp,ntp configuration'
 summary: 'Set up an NTP server'
 ---
 
 = Set up an NTP server
 :imagesdir: ../media/
 
+[.lead]
+Sets up an NTP server to synchronize time across systems in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/ntp`#
-
-
-
-Sets up an NTP server.
-
 
 == Parameters
 

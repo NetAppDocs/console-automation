@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/patch-organizations-.html'
+keywords: 'organization update,partial update,organization modification,organization details,organization id,update organization'
 summary: 'Update an organization partially'
 ---
 
 = Update an organization partially
 :imagesdir: ../media/
 
+[.lead]
+Updates the specified organization with partial information. Use this to modify only the fields that require changes without affecting the entire organization configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/organizations/{organization_id}`#
-
-
-
-Updates the specified organization with partial information.
-
 
 == Parameters
 

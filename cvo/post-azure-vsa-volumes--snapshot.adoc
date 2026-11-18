@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-volumes--snapshot.html'
+keywords: 'snapshot creation,manual snapshot,azure volumes,ontap snapshot,volume snapshot'
 summary: 'Create a snapshot'
 ---
 
 = Create a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot manually to preserve the state of a volume at a specific point in time for data protection or recovery purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Creates a snapshot manually.
-
 
 == Parameters
 

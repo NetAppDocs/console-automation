@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-working-environments-support-registration.html'
+keywords: 'cloud volumes,ontap system,netapp registration,support registration,working environment'
 summary: 'Register a Cloud Volumes ONTAP system'
 ---
 
 = Register a Cloud Volumes ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Registers a Cloud Volumes ONTAP system with NetApp, enabling system management and integration with NetApp services. Use this to ensure the system is recognized and available for operations within your NetApp environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/support-registration`#
-
-
-
-Registers a Cloud Volumes ONTAP system with NetApp.
-
 
 == Parameters
 

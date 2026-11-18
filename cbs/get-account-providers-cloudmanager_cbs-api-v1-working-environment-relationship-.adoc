@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-relationship-.html'
+keywords: 'snapmirror relationship,volume replication,relationship status,replication health,transfer type,policy details'
 summary: 'List the relationship details associated with a volume SnapMirror replication'
 ---
 
 = List the relationship details associated with a volume SnapMirror replication
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the relationship details associated with a volume SnapMirror replication. Use this to review source, destination, policy, status, health, transfer type, and relationship status information.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/relationship/{relationshipId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Lists the relationship details associated with a volume SnapMirror replication relationship. The API returns the source details, destination details, policy details, status, health, transfer type, and relationship status details.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

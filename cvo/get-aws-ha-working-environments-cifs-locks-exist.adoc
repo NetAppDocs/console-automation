@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments-cifs-locks-exist.html'
+keywords: 'cifs locks,cifs sessions,non-persistent locks,working environment,cifs lock check'
 summary: 'Check for non-persistent locks held on CIFS sessions'
 ---
 
 = Check for non-persistent locks held on CIFS sessions
 :imagesdir: ../media/
 
+[.lead]
+Checks for non-persistent locks held on CIFS sessions to identify potential issues or conflicts with file access. Use this to monitor and troubleshoot CIFS session activity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/cifs-locks-exist`#
-
-
-
-Checks for non-persistent locks held on CIFS sessions.
-
 
 == Parameters
 

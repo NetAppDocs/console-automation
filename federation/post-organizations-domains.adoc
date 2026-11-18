@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/post-organizations-domains.html'
+keywords: 'create domain,new domain,organization domain,domain management,add domain,domain creation'
 summary: 'Create a domain'
 ---
 
 = Create a domain
 :imagesdir: ../media/
 
+[.lead]
+Creates a domain in the Federation API, enabling domain-level organization and management for your resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations/{organization_id}/domains`#
 
-
+== Usage notes
 
 Creates a new domain.
 

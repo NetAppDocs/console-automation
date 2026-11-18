@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/put-ipa-support-case-.html'
+keywords: 'support case,case notes,case status,update support,edit case'
 summary: 'Update support case notes or status'
 ---
 
 = Update support case notes or status
 :imagesdir: ../media/
 
+[.lead]
+Updates the notes or status of a support case. Use this to track progress or provide additional context for case resolution.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/ipa/support/case/{caseNumber}`#
 
+== Token usage
 
+Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+== Usage notes
 
 Updates the support case notes or status.
-            +
- +
-*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
-
 
 == Parameters
 

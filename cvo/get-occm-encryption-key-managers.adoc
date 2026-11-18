@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-encryption-key-managers.html'
+keywords: 'key managers,data encryption,encryption keys,key management,encryption tools,key security'
 summary: 'Retrieve all key managers'
 ---
 
 = Retrieve all key managers
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all key managers, providing a list of available key management configurations. Use this to review the key management options for your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/encryption/key-managers`#
-
-
-
-Retrieves all key managers.
-
 
 == Error
 

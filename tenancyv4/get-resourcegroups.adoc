@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-resourcegroups.html'
+keywords: 'resource groups,list resources,resource management,group listing,data groups'
 summary: 'List all resource groups'
 ---
 
 = List all resource groups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of resource groups. Use this to view the available groups within your tenancy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resourcegroups`#
 
-
+== Usage notes
 
 Lists all resource groups.
 

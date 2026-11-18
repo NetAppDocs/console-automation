@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/post-license-subscriptions-subscription-account-.html'
+keywords: 'subscription association,identity management,access account,deprecated endpoint,service account'
 summary: 'Associate a subscription (deprecated)'
 ---
 
 = Associate a subscription (deprecated)
 :imagesdir: ../media/
 
+[.lead]
+Associates a subscription with an identity and access management service account. Use this to link subscriptions to one or more accounts for access management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/license/subscriptions/subscription/{subscriptionId}/account/{accountId}`#
 
-
+== Usage notes
 
 Associate a subscription with an identity and access management service account. +
 Each subscription can be associated with multiple accounts. A newer version of this deprecated endpoint is available https://docs.netapp.com/us-en/console-automation/dw/post-license-subscriptions-account-.html[here.]

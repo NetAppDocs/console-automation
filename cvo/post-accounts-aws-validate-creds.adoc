@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-accounts-aws-validate-creds.html'
+keywords: 'aws account,validate credentials,cloud account,aws validation,account id,aws integration'
 summary: 'Retrieve an AWS account ID for credentials'
 ---
 
 = Retrieve an AWS account ID for credentials
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an AWS cloud account ID for the specified credentials. Use this to identify the account associated with your AWS credentials.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/aws/validate-creds`#
-
-
-
-Retrieves an AWS cloud account ID for the specified credentials.
-
 
 
 CAUTION: This operation is deprecated.

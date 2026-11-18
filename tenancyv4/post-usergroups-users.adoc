@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-usergroups-users.html'
+keywords: 'user groups,add users,user group management,manage users,group user addition,assign users'
 summary: 'Add users to a user group'
 ---
 
 = Add users to a user group
 :imagesdir: ../media/
 
+[.lead]
+Adds users to a user group, associating them with the specified group for access or permissions management. Use this to manage group memberships effectively within your tenancy environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/usergroups/{usergroup_id}/users`#
 
-
+== Usage notes
 
 Adds users to the specified user group.
 

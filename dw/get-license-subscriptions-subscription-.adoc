@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-subscriptions-subscription-.html'
+keywords: 'subscription information,deprecated endpoint,license subscriptions,subscription id,netapp console'
 summary: 'Retrieve subscription information using the subscription ID (deprecated)'
 ---
 
 = Retrieve subscription information using the subscription ID (deprecated)
 :imagesdir: ../media/
 
+[.lead]
+Retrieves subscription information for a specified subscription ID. Use this to access details about an individual subscription in scenarios where the newer endpoint is not yet adopted.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/subscription/{subscriptionId}`#
 
+== Usage notes
 
-
-Retrieves the subscription information for a specified subscription ID. A newer version of this deprecated endpoint is available https://docs.netapp.com/us-en/console-automation/dw/get-license-subscriptions-subscription.html[here.]
+A newer version of this deprecated endpoint is available https://docs.netapp.com/us-en/console-automation/dw/get-license-subscriptions-subscription.html[here.]
 
 **Note:**
 

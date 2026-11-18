@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-volumes-initiator.html'
+keywords: 'iscsi initiator,add initiator,aws ha,volume initiator,iscsi volume,initiator setup'
 summary: 'Add an iSCSI initiator'
 ---
 
 = Add an iSCSI initiator
 :imagesdir: ../media/
 
+[.lead]
+Creates an iSCSI initiator. Use this to configure access for iSCSI hosts to storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes/initiator`#
 
-
+== Usage notes
 
 Adds an iSCSI initiator.
 

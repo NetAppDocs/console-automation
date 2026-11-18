@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-projects.html'
+keywords: 'project list,project management,available projects,project overview,project details'
 summary: 'List all projects'
 ---
 
 = List all projects
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of projects. Use this to view all projects associated with the tenancy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/projects`#
 
-
+== Usage notes
 
 Lists all projects.
 

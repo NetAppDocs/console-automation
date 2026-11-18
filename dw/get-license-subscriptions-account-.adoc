@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-subscriptions-account-.html'
+keywords: 'subscription information,account subscriptions,subscription entitlements,service subscriptions,cloud provider subscriptions'
 summary: 'Retrieve subscription information for an account'
 ---
 
 = Retrieve subscription information for an account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves subscription information for a specified account. Use this to view entitlements or filter subscriptions by service name, depending on the parameters provided.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/account/{accountId}`#
 
-
+== Usage notes
 
 Retrieves the subscription information for a specified account ID.
 

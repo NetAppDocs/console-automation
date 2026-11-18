@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-sg-version.html'
+keywords: 'storagegrid version,retrieve storagegrid,storage servers,cloudmanager cbs,storagegrid servers'
 summary: 'Retrieve StorageGRID server version'
 ---
 
 = Retrieve StorageGRID server version
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the version of the StorageGRID servers. Use this to verify the server version for compatibility or troubleshooting purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/version`#
 
+== Token usage
 
-
-Retrieves the version of the StorageGRID servers.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

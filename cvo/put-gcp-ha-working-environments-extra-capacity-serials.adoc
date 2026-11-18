@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-ha-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,capacity license,license serial,serial update,working environment'
 summary: 'Update extra capacity license serial numbers'
 ---
 
 = Update extra capacity license serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Updates an extra capacity license serial number, modifying the license information to reflect the new serial number. Use this to ensure licensing accuracy for additional capacity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
-
-
-
-Updates an extra capacity license serial number.
-
 
 == Parameters
 

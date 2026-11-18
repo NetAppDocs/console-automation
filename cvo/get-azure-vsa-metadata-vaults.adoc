@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-vaults.html'
+keywords: 'vault retrieval,azure vaults,metadata vaults,cloud region,vault listing,cloud provider'
 summary: 'Retrieve all vaults'
 ---
 
 = Retrieve all vaults
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all vaults. Use this to view the available vaults for managing data protection and recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/vaults`#
-
-
-
-Retrieves all vaults.
-
 
 == Parameters
 

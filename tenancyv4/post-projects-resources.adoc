@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-projects-resources.html'
+keywords: 'project resources,add resources,project id,specified project,resource management'
 summary: 'Add resources to a project'
 ---
 
 = Add resources to a project
 :imagesdir: ../media/
 
+[.lead]
+Creates resources in a specified project. Use this to allocate resources for project activities or workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/projects/{project_id}/resources`#
 
-
+== Usage notes
 
 Adds resources to the specified project.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-reports.html'
+keywords: 'reports,account reports,netapp reports,tenancy reports,account data,reports list'
 summary: 'Retrieve a list of all reports'
 ---
 
 = Retrieve a list of all reports
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of all reports. Use this to view the available reports for monitoring or analysis purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/reports`#
-
-
-
-Retrieves a list of all reports.
-
 
 == Parameters
 

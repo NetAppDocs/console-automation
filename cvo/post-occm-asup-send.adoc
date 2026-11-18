@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-asup-send.html'
+keywords: 'console support,send support data,netapp support,asup data,send asup'
 summary: 'Send NetApp Console support data to NetApp support'
 ---
 
 = Send NetApp Console support data to NetApp support
 :imagesdir: ../media/
 
+[.lead]
+Sends NetApp Console support data to NetApp Support, facilitating diagnostics and troubleshooting for support cases.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/asup/send`#
-
-
-
-Sends NetApp Console support data to NetApp Support.
-
 
 == Parameters
 

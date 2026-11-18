@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-gcp-kms-keys.html'
+keywords: 'google cloud,cloud kms,netapp data broker,kms keys,data broker group'
 summary: 'Retrieve the Google Cloud KMS keys'
 ---
 
 = Retrieve the Google Cloud KMS keys
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Google Cloud KMS keys accessible from a NetApp data broker. Use this to view the available keys for encryption workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-gcp-kms-keys`#
-
-
-
-Retrieves the Google Cloud KMS keys accessible from a NetApp data broker.
-
 
 == Parameters
 

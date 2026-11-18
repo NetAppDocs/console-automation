@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/patch-license-account-licenseresource-.html'
+keywords: 'license update,license resource,resource id,account license,netapp license'
 summary: 'Update a license by resource ID'
 ---
 
 = Update a license by resource ID
 :imagesdir: ../media/
 
+[.lead]
+Updates a specified license by resource ID. Use this to modify license details for a particular resource in the NetApp Console service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/account/{accountId}/licenseResource/{resourceIdentifier}`#
 
+== Token usage
 
-
-Updates a specified license by resource ID.
-
-*Token usage:* NetApp Console service token.
-
+NetApp Console service token.
 
 == Parameters
 

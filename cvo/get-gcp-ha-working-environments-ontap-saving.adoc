@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-ontap-saving.html'
+keywords: 'ontap savings,gcp storage,savings retrieval,working environment,ha configuration'
 summary: 'Retrieve system ONTAP savings'
 ---
 
 = Retrieve system ONTAP savings
 :imagesdir: ../media/
 
+[.lead]
+Retrieves system ONTAP savings, providing information about the storage savings achieved by the system. Use this to assess space efficiency and optimization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/ontap-saving`#
-
-
-
-Retrieves system ONTAP savings.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-accounts-gcp.html'
+keywords: 'google cloud,google storage,cloud storage account,create storage account,gcp account'
 summary: 'Create a Google Cloud storage account'
 ---
 
 = Create a Google Cloud storage account
 :imagesdir: ../media/
 
+[.lead]
+Creates a Google Cloud storage account to manage and access storage resources within your cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/gcp`#
-
-
-
-Creates a Google Cloud storage account.
-
 
 
 CAUTION: This operation is deprecated.

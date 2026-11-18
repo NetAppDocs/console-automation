@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-volumes-igroups-.html'
+keywords: 'igroup volumes,azure storage,working environment,svm name,retrieve igroups,ontap igroups'
 summary: 'Retrieve all igroups'
 ---
 
 = Retrieve all igroups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all igroups, providing a list of initiator groups configured in the system. Use this to review or manage access control for connected hosts.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/volumes/igroups/{workingEnvironmentId}/{svmName}`#
-
-
-
-Retrieves all igroups.
-
 
 == Parameters
 

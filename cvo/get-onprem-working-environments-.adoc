@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-working-environments-.html'
+keywords: 'ontap system,on-premises ontap,working environments,ontap retrieval,working environment id'
 summary: 'Retrieve an on-premises ONTAP system'
 ---
 
 = Retrieve an on-premises ONTAP system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an on-premises ONTAP system. Use this to view the system details for monitoring or management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}`#
-
-
-
-Retrieves an on-premises ONTAP system.
-
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancy/get-tenancy-account-user-workspaces.html'
+keywords: 'user workspaces,account workspaces,user account workspaces,workspace retrieval,specific user workspaces'
 summary: 'Retrieve user account workspaces'
 ---
 
 = Retrieve user account workspaces
 :imagesdir: ../media/
 
+[.lead]
+Retrieves user account workspaces. Use this to view the workspaces associated with a specific user account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}/user/{userId}/workspaces`#
 
+== Token usage
 
+BlueXP service token with the following scopes: tenancy:external.
+
+== Usage notes
 
 Retrieves specified user account workspaces.
-            +
-*Token usage:* BlueXP service token with the following scopes: tenancy:external.
-
 
 == Parameters
 

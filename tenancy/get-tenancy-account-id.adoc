@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/get-tenancy-account-id.html'
+keywords: 'account details,account identifier,tenancy account,specific account,account retrieval'
 summary: 'Retrieve an account'
 ---
 
 = Retrieve an account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a specific account by its unique identifier. Use this to access detailed information about the account for management or auditing purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account/{accountId}`#
 
-
+== Usage notes
 
 Retrieves a specific account by an account identifier.
 

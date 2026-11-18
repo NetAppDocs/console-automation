@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-catalog-working-environments-.html'
+keywords: 'indexed cataloging,working environments,cloud manager,enable cataloging,disable cataloging'
 summary: 'Enable or disable the service'
 ---
 
 = Enable or disable the service
 :imagesdir: ../media/
 
+[.lead]
+Modifies the indexed cataloging service for a specified system, enabling or disabling it based on deployment requirements. Use this to manage cataloging across AWS, Azure, Google Cloud, and on-premises or dark site environments.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/working-environments/{workingEnvironmentId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Enables or disables the indexed cataloging service for a specified system on AWS, Azure, Google Cloud and on-premise or dark site deployments.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

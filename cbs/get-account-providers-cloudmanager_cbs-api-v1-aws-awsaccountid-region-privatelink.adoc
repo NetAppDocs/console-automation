@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-awsaccountid-region-privatelink.html'
+keywords: 'aws private links,aws region links,private link retrieval,aws account links,cloudmanager private link'
 summary: 'Retrieve AWS private links'
 ---
 
 = Retrieve AWS private links
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of AWS private links from a specified region that belongs to a specified AWS account ID. Use this to view the private links available for backup and recovery workflows in your AWS environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/awsAccountId/{awsAccountId}/region/{regionCode}/privateLink`#
 
+== Token usage
 
-
-Retrieves a list of AWS private links from a specified region that belongs to a specified AWS account ID.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

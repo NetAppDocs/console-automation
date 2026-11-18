@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-resources-permissions.html'
+keywords: 'resource permissions,resource access,permissions list,resource rights,user permissions'
 summary: 'List all permissions for a resource'
 ---
 
 = List all permissions for a resource
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all permissions for a specified resource, providing the available permission configuration for that resource. Use this to review access control settings.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resources/{resource_id}/permissions`#
 
-
+== Usage notes
 
 Lists all permissions available on the specified resource.
 

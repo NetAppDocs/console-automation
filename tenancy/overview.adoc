@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancy/overview.html'
+keywords: 'tenancy,accounts,role-based access control,workspaces,service accounts,restricted mode'
 summary: 'Accounts REST API'
 ---
 
 = Accounts REST API
 :imagesdir: ../media/
 
-
+[.lead]
+Control access to BlueXP resources with role-based access control (RBAC) when you use BlueXP in restricted mode or private mode. The endpoints cover accounts, authorization, resources, service accounts, users, and workspaces.
 
 The Tenancy service provides secure and granular role-based access control (RBAC) for the resources in the BlueXP platform when using BlueXP in restricted mode or private mode. +
 

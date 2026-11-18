@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-gcp-project-region-keyrings-cryptokey.html'
+keywords: 'cryptokey,key ring,google cloud,cloud manager,gcp project'
 summary: 'Retrieve a list of CryptoKeys'
 ---
 
 = Retrieve a list of CryptoKeys
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of CryptoKeys for a KeyRing in a region from a specific Google Cloud project. Use this to view the available encryption keys associated with a KeyRing in the specified region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/region/{locationId}/keyrings/{keyRingId}/cryptokey`#
 
+== Token usage
 
-
-Retrieves a list of CryptoKeys for a KeyRing in a region from a specific Google Cloud project.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

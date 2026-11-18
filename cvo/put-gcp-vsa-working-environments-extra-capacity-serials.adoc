@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-vsa-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,license serial,update license,working environment,serial number'
 summary: 'Update extra capacity serial numbers'
 ---
 
 = Update extra capacity serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Updates an extra capacity license serial number. Use this endpoint to modify the serial number associated with an extra capacity license.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
-
-
-
-Updates an extra capacity license serial number.
-
 
 == Parameters
 

@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-working-environment-replication-policy.html'
+keywords: 'replication policy,working environment,transfer schedule,source snapshots,svm name'
 summary: 'Create a replication policy in a system'
 ---
 
 = Create a replication policy in a system
 :imagesdir: ../media/
 
+[.lead]
+Creates a replication policy in a system, specifying the rules for data replication between storage resources. Use this to define how data is copied, synchronized, or retained across systems for backup and recovery purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy`#
 
+== Token usage
 
-
-Creates a replication policy in a system.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

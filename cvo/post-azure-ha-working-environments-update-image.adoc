@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-update-image.html'
+keywords: 'cloud volumes,ontap system,image update,single node,working environment'
 summary: 'Perform an image update on a single node'
 ---
 
 = Perform an image update on a single node
 :imagesdir: ../media/
 
+[.lead]
+Performs an image update operation on a single node. Use this to update the software image for a Cloud Volumes ONTAP system node.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/update-image`#
 
-
+== Usage notes
 
 Performs a complete image update operation on the single node of the specified Cloud Volumes ONTAP system.
 

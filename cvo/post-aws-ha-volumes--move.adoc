@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-volumes--move.html'
+keywords: 'volume move,ha volumes,working environment,svm volume,ontap volume'
 summary: 'Move an existing volume'
 ---
 
 = Move an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Moves an existing volume to a different aggregate to optimize storage resources or balance workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/move`#
-
-
-
-Moves an existing volume.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-availability-zones.html'
+keywords: 'azure availability zones,availability zones,azure regions,ha metadata,cloud region zones'
 summary: 'Retrieve Azure availability zones'
 ---
 
 = Retrieve Azure availability zones
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Azure availability zones by region. Use this to view the zones available for deploying resources in a specific region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/availability-zones`#
-
-
-
-Retrieves Azure availability zones by region.
-
 
 == Parameters
 

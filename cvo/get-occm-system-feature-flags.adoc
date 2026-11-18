@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-system-feature-flags.html'
+keywords: 'feature flags,system feature,ontap features,feature retrieval,netapp ontap'
 summary: 'Retrieve feature flags'
 ---
 
 = Retrieve feature flags
 :imagesdir: ../media/
 
+[.lead]
+Retrieves feature flags, providing information about the available features and their current state. Use this to determine which features are enabled or supported.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/feature-flags`#
-
-
-
-Retrieves feature flags.
-
 
 == Error
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-replication-metadata-snapmirror-svm-policies--.html'
+keywords: 'snapmirror policies,cloud volumes ontap,source svm,target svm,replication metadata,snapmirror svm'
 summary: 'Retrieve SnapMirror policies'
 ---
 
 = Retrieve SnapMirror policies
 :imagesdir: ../media/
 
+[.lead]
+Retrieves SnapMirror policies based on the source and destination Cloud Volumes ONTAP systems. Use this to view the policies configured for data replication and disaster recovery between systems.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/metadata/snapmirror-svm-policies/{sourceWorkingEnvironmentId}/{svmName}/{targetWorkingEnvironmentId}`#
-
-
-
-Retrieves SnapMirror policies based on the source and destination Cloud Volumes ONTAP systems.
-
 
 == Parameters
 

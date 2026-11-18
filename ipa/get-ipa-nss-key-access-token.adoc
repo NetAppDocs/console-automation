@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/get-ipa-nss-key-access-token.html'
+keywords: 'netapp support,access token,b2c token,nss key,user token,console service'
 summary: 'Retrieve an access token'
 ---
 
 = Retrieve an access token
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a NetApp Support Site user B2C access token, which is required for authenticating and accessing NetApp Console services.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/nss-key/{nssKeyId}/access-token`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Retrieves a NetApp Support Site user B2C access token.
-            +
- +
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-disassociate.html'
+keywords: 'disassociate account,user removal,account unlink,remove association,tenancy management'
 summary: 'Dissociate a user'
 ---
 
 = Dissociate a user
 :imagesdir: ../media/
 
+[.lead]
+Deletes the association between a user and a specific account. Use this to manage user access to accounts.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/disassociate`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Disassociates the user from the specified account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

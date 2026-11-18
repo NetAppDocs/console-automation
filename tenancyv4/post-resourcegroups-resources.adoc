@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-resourcegroups-resources.html'
+keywords: 'resource groups,add resources,resource group id,manage resources,group resources'
 summary: 'Add resources to a resource group'
 ---
 
 = Add resources to a resource group
 :imagesdir: ../media/
 
+[.lead]
+Adds resources to a resource group, associating the specified resources with the group for organizational or management purposes. Use this to group resources logically for easier administration or policy application.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/resourcegroups/{resourcegroup_id}/resources`#
 
-
+== Usage notes
 
 Adds resources to the specified resource group.
 

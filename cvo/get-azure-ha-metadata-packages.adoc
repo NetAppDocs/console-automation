@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-packages.html'
+keywords: 'packages configuration,deployment model,capacity package,azure ha,metadata packages'
 summary: 'Retrieve the packages configuration'
 ---
 
 = Retrieve the packages configuration
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the packages configuration, providing the available package settings for the service. Use this to review or verify the current configuration details.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/packages`#
-
-
-
-Retrieves the packages configuration.
-
 
 == Parameters
 

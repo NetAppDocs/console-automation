@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-relationships-stats.html'
+keywords: 'relationship status,netapp tenancy,source edge,target edge,cloud sync,azure netapp'
 summary: 'Retrieve the logged-in accounts relationship status'
 ---
 
 = Retrieve the logged-in accounts relationship status
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the logged-in account's relationship status. Use this to determine the current relationship state of your account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/relationships-stats`#
-
-
-
-Retrieves the logged-in account's relationship status.
-
 
 == Parameters
 

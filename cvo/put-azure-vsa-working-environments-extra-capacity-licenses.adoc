@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-vsa-working-environments-extra-capacity-licenses.html'
+keywords: 'extra capacity,capacity license,azure vsa,working environments,license update'
 summary: 'Update extra capacity licenses'
 ---
 
 = Update extra capacity licenses
 :imagesdir: ../media/
 
+[.lead]
+Updates an extra capacity license, modifying the license details to reflect additional capacity allocations. Use this to manage licensing changes for your storage requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
-
-
-
-Updates an extra capacity license.
-
 
 == Parameters
 

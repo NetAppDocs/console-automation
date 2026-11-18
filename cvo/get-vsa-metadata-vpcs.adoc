@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-vpcs.html'
+keywords: 'vpc metadata,vpc retrieval,cloud region,vpc details,vsa vpcs,cloud provider'
 summary: 'Retrieve VPCs'
 ---
 
 = Retrieve VPCs
 :imagesdir: ../media/
 
+[.lead]
+Retrieves VPCs, providing details about the virtual private clouds available for use.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/vpcs`#
-
-
-
-Retrieves VPCs.
-
 
 == Parameters
 

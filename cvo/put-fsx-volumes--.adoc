@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-fsx-volumes--.html'
+keywords: 'volume modify,edit volume,fsx volume,ontap volume,update volume'
 summary: 'Modify an existing volume'
 ---
 
 = Modify an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Modifies an existing volume. Use this to adjust volume attributes such as size or performance settings.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}`#
-
-
-
-Modifies an existing volume.
-
 
 == Parameters
 

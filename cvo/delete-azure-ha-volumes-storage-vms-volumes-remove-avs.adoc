@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-ha-volumes-storage-vms-volumes-remove-avs.html'
+keywords: 'azure vmware,remove avs,avs host removal,storage vm'
 summary: 'Remove AVS hosts on a volume'
 ---
 
 = Remove AVS hosts on a volume
 :imagesdir: ../media/
 
+[.lead]
+Deletes Azure VMware Solution hosts on a volume, removing the specified hosts from the volume's configuration. Use this to manage host assignments and free up resources on the volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/remove-avs`#
 
-
+== Usage notes
 
 Removes Azure VMware Solution hosts on a volume.
 

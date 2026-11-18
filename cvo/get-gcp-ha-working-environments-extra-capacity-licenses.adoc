@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-extra-capacity-licenses.html'
+keywords: 'cloud volumes ontap,extra capacity licenses,gcp working environments,capacity licensing,ontap licenses'
 summary: 'Retrieve extra capacity licenses'
 ---
 
 = Retrieve extra capacity licenses
 :imagesdir: ../media/
 
+[.lead]
+Retrieves extra capacity licenses for Cloud Volumes ONTAP. Use this to view the available licenses for managing additional storage capacity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/extra-capacity-licenses`#
-
-
-
-Retrieves extra capacity licenses for Cloud Volumes ONTAP.
-
 
 == Parameters
 

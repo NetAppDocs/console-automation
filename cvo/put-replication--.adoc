@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-replication--.html'
+keywords: 'snapmirror replication,update replication,snapmirror update,replication relationship,destination volume'
 summary: 'Modify a SnapMirror replication relationship'
 ---
 
 = Modify a SnapMirror replication relationship
 :imagesdir: ../media/
 
+[.lead]
+Updates a SnapMirror replication relationship. Use this to adjust the configuration or behavior of the relationship as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/replication/{workingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
-
-
-
-Updates a SnapMirror replication relationship.
-
 
 == Parameters
 

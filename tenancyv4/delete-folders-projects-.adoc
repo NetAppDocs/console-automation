@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-folders-projects-.html'
+keywords: 'remove project,delete project,folder management,project removal,folder project'
 summary: 'Remove a project from a folder'
 ---
 
 = Remove a project from a folder
 :imagesdir: ../media/
 
+[.lead]
+Removes a project from a folder, detaching the project from the specified folder structure. Use this operation to manage project organization within your tenancy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/folders/{folder_id}/projects/{project_id}`#
 
-
+== Usage notes
 
 Removes a project from the specified folder.
 

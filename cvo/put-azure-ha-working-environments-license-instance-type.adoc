@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-license-instance-type.html'
+keywords: 'cloud ontap,instance type,ha environments,license settings,azure ontap'
 summary: 'Set the instance type'
 ---
 
 = Set the instance type
 :imagesdir: ../media/
 
+[.lead]
+Sets the instance type of a specific Cloud Volumes ONTAP system. Use this to configure the system based on your performance and capacity requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/license-instance-type`#
-
-
-
-Sets the instance type of a specific Cloud Volumes ONTAP system.
-
 
 == Parameters
 

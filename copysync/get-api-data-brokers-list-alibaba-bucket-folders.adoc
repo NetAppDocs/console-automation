@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-alibaba-bucket-folders.html'
+keywords: 'alibaba bucket,alibaba folders,data broker,netapp tenancy,storagegrid access'
 summary: 'Retrieve the Alibaba bucket folders'
 ---
 
 = Retrieve the Alibaba bucket folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Alibaba bucket folders from a data broker. Use this to view the folder structure and manage data transfers within the bucket.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-alibaba-bucket-folders`#
-
-
-
-Retrieves the Alibaba bucket folders from a data broker.
-
 
 
 CAUTION: This operation is deprecated.

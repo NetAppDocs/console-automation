@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-encryption-key-managers.html'
+keywords: 'key manager,encryption setup,key management,new key,add encryption'
 summary: 'Add a new key manager'
 ---
 
 = Add a new key manager
 :imagesdir: ../media/
 
+[.lead]
+Creates a new key manager, adding a secure resource for encryption key management. Use this to configure encryption services in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/encryption/key-managers`#
 
-
+== Usage notes
 
 Adds a new key manager.
 

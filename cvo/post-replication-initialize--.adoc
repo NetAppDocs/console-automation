@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-replication-initialize--.html'
+keywords: 'snapmirror initialize,snapmirror relationship,initialize snapmirror,replication initialize,healthy snapmirror,idle snapmirror'
 summary: 'Initialize an existing SnapMirror relationship'
 ---
 
 = Initialize an existing SnapMirror relationship
 :imagesdir: ../media/
 
+[.lead]
+Initializes an existing SnapMirror relationship. Use this to restart the initial transfer if it was interrupted and the relationship is healthy, idle, and uninitialized.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/initialize/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
 
+== Usage notes
 
-
-Initializes an existing SnapMirror relationship. This method can only be performed when the relationship has already been established and is healthy, idle, and uninitialized. For example, if the initial transfer were interrupted, it can be restarted with this request.
+This method can only be performed when the relationship has already been established and is healthy, idle, and uninitialized. For example, if the initial transfer were interrupted, it can be restarted with this request.
 
 
 == Parameters

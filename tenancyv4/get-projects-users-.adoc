@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-projects-users-.html'
+keywords: 'project users,project user id,user retrieval,project details,user identification,project members'
 summary: 'Retrieve a user under a project'
 ---
 
 = Retrieve a user under a project
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a user under the specified project, providing details about the user associated with that project. Use this to view information about project-specific users.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/projects/{project_id}/users/{user_id}`#
-
-
-
-Retrieves a user under the specified project.
-
 
 == Parameters
 

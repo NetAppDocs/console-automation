@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-s3-buckets.html'
+keywords: 's3 buckets,netapp data broker,data broker buckets,accessible s3 buckets,netapp tenancy'
 summary: 'Retrieve the S3 buckets'
 ---
 
 = Retrieve the S3 buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the S3 buckets accessible from a NetApp data broker. Use this to view the available buckets for data management or synchronization tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-s3-buckets`#
-
-
-
-Retrieves the S3 buckets accessible from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

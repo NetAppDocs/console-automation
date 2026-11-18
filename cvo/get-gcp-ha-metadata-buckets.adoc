@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-buckets.html'
+keywords: 'cloud storage,buckets,storage buckets,gcp metadata,ha buckets'
 summary: 'Retrieve all cloud storage buckets'
 ---
 
 = Retrieve all cloud storage buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all cloud storage buckets. Use this to view the available buckets for cloud storage management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/buckets`#
-
-
-
-Retrieves all cloud storage buckets.
-
 
 == Parameters
 

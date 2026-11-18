@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'audit/get-audit.html'
+keywords: 'audit records,retrieve records,account records,account audits,user audits'
 summary: 'Retrieve account records'
 ---
 
 = Retrieve account records
 :imagesdir: ../media/
 
+[.lead]
+Retrieves account records for a specified account public ID.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{accountId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves account records by a specified account public ID.
-
-**Token usage:** NetApp Console user token.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/delete-api-accounts-groups-.html'
+keywords: 'data broker,delete group,netapp account,broker group,deletion endpoint'
 summary: 'Delete a data broker group'
 ---
 
 = Delete a data broker group
 :imagesdir: ../media/
 
-[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}`#
-
-
-
+[.lead]
 Deletes a data broker group.
 
+== HTTP method and endpoint
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}`#
 
 == Parameters
 

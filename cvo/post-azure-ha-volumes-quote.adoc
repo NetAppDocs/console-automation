@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-volumes-quote.html'
+keywords: 'volume quote,resource quote,new volume,azure ha,volume pricing,ha volumes'
 summary: 'Retrieve quotes for a new volume'
 ---
 
 = Retrieve quotes for a new volume
 :imagesdir: ../media/
 
+[.lead]
+Retrieves quotes for a new volume, providing the resource requirements for the requested volume. Use this to estimate the resources needed before creating the volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/volumes/quote`#
 
+== Usage notes
 
-
-Retrieves quotes for a new volume. Returns the resource quote required for the requested volume.
+Returns the resource quote required for the requested volume.
 
 
 == Request Body

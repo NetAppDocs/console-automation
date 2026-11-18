@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-auth-v4-current-user.html'
+keywords: 'current user,current roles,user roles,role retrieval,user details'
 summary: 'Retrieve a NetApp Console user representation with roles'
 ---
 
 = Retrieve a NetApp Console user representation with roles
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a representation of the current user along with their associated roles. Use this to view role-based access information for the NetApp Console user.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/auth/v4/current-user`#
 
-
+== Usage notes
 
 Retrieves a representation of the current user with the associated roles.
 

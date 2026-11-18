@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-projects-users.html'
+keywords: 'users,project users,project id,list users,specified project'
 summary: 'List all users for a project'
 ---
 
 = List all users for a project
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all users in the specified project. Use this to view the users associated with a particular project.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/projects/{project_id}/users`#
 
-
+== Usage notes
 
 Lists all users in the specified project.
 

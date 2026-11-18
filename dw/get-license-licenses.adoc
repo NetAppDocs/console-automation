@@ -3,15 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-licenses.html'
+keywords: 'license retrieval,license type,resource id,capacity usage,netapp license file'
 summary: 'Retrieve a license by type'
 ---
 
 = Retrieve a license by type
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a specified license by type, resource ID, or both. Use this endpoint to access license details, including consumed capacity and summary information for data services when applicable.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/licenses`#
 
+== Token usage
 
+Either a NetApp Console user token or service token.
+
+== Usage notes
 
 Retrieves a specified license by type (`LicenseType`), a resource ID (`resourceId`), or both. +
 The license endpoints consult the used or consumed capacity under the `includeSummaryInfo` parameter when retrieving licenses with the GET API call.
@@ -25,9 +35,6 @@ The license endpoints consult the used or consumed capacity under the `includeSu
 * The boolean parameter `fetchNlf` (optional) retrieves the most updated valid NetApp license file from NetApp systems.
 * If you use the boolean parameter `fetchNlf`, you must provide `accountId`, `serialNumber`, and `nssKeyId`.
 * `fetchNlf` and `includeSummaryInfo` can't be provided in the same request.
-
-*Token usage:* Either a NetApp Console user token or service token.
-
 
 == Parameters
 

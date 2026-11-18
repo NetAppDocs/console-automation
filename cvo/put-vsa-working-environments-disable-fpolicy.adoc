@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-working-environments-disable-fpolicy.html'
+keywords: 'fpolicy disable,ransomware protection,disable fpolicy,fpolicy management,working environment,netapp ontap'
 summary: 'Disable the FPolicy for ransomware files'
 ---
 
 = Disable the FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Disables the FPolicy for ransomware files, preventing it from monitoring or managing file access related to ransomware detection. Use this endpoint when you need to stop the ransomware-related FPolicy operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/disable-fpolicy`#
-
-
-
-Disables the FPolicy for ransomware files.
-
 
 == Parameters
 

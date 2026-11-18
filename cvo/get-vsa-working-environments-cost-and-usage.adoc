@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-working-environments-cost-and-usage.html'
+keywords: 'system cost,usage data,cost analysis,working environment,storage usage'
 summary: 'Retrieve systems cost and usage'
 ---
 
 = Retrieve systems cost and usage
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the system cost and usage, providing detailed information about resource consumption and associated costs. Use this to monitor and analyze usage patterns for cost optimization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/cost-and-usage`#
-
-
-
-Retrieves the system cost and usage.
-
 
 == Parameters
 

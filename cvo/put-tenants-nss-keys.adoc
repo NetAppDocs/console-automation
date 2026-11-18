@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-tenants-nss-keys.html'
+keywords: 'tenant link,netapp support,tenant account,link nss,netapp tenant,nss account'
 summary: 'Link a tenant to a NetApp support site account'
 ---
 
 = Link a tenant to a NetApp support site account
 :imagesdir: ../media/
 
+[.lead]
+Links an existing tenant to a NetApp Support Site account, enabling the tenant to access support services and resources associated with the account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/tenants/{tenantId}/nss-keys`#
-
-
-
-Links an existing tenant to a NetApp Support Site account.
-
 
 == Parameters
 

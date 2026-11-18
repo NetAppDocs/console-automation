@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-vsa-volumes--.html'
+keywords: 'modify volume,gcp volume,volume update,edit volume,ontap gcp'
 summary: 'Modify a volume'
 ---
 
 = Modify a volume
 :imagesdir: ../media/
 
+[.lead]
+Modifies an existing volume. Use this to adjust the configuration or properties of a volume as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Modifies an existing volume.
-
 
 == Parameters
 

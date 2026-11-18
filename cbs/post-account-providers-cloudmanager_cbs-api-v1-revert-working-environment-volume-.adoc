@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-revert-working-environment-volume-.html'
+keywords: 'snapshot revert,restore volume,snapshot restore,volume snapshot,revert volume'
 summary: 'Revert a snapshot for a volume'
 ---
 
 = Revert a snapshot for a volume
 :imagesdir: ../media/
 
+[.lead]
+Reverts a snapshot for a volume, restoring the snapshot as the read-write parent volume for the volume family. Use this to replace the current working copy of the volume with the snapshot, removing all changes made since the snapshot was created.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/revert/working-environment/{workingEnvironmentId}/volume/{volumeId}`#
 
+== Token usage
 
+NetApp Console user token.
 
-Reverts a snapshot for a volume. It restores a snapshot to be the read-write parent volume for the volume family. This replaces the current working copy of the volume with the snapshot that results in a loss of all changes made since the snapshot was created. The system ID and volume ID are passed as parameters in the API REST call and the required snapshot to which the volume needs to restored to should be sent in the input body of the REST API.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+It restores a snapshot to be the read-write parent volume for the volume family. This replaces the current working copy of the volume with the snapshot that results in a loss of all changes made since the snapshot was created. The system ID and volume ID are passed as parameters in the API REST call and the required snapshot to which the volume needs to restored to should be sent in the input body of the REST API.
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/delete-account-providers-cloudmanager_cbs-api-v1-working-environment-volume-snapshot-.html'
+keywords: 'snapshot delete,volume snapshot,delete snapshot,volume management,snapshot removal'
 summary: 'Delete a snapshot for a volume'
 ---
 
 = Delete a snapshot for a volume
 :imagesdir: ../media/
 
+[.lead]
+Deletes a snapshot for a volume, removing the specified snapshot from the associated system and volume. Use this to manage storage resources by freeing up space or removing outdated snapshots.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Deletes a snapshot of a volume. The API deletes a specific snapshot of a particular volume belonging to a specific system. The system ID, volume ID, and snapshot ID are passed as parameters for the REST API call.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

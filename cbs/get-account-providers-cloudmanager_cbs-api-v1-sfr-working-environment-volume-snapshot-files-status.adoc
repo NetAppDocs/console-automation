@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-sfr-working-environment-volume-snapshot-files-status.html'
+keywords: 'snapshot status,file search,folder search,restore operation,snapshot files'
 summary: 'Retrieve the file and folder status'
 ---
 
 = Retrieve the file and folder status
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the file and folder status during a restore operation, providing the results of a file or folder search you initiate.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sfr/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}/files/status`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Returns the file and folder status when you initiate a file or folder search during a restore operation.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

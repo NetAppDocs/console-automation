@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-folders-roles-users-.html'
+keywords: 'folder management,remove user,folder roles,user roles,role removal,folder access'
 summary: 'Remove a user from a folder'
 ---
 
 = Remove a user from a folder
 :imagesdir: ../media/
 
+[.lead]
+Removes a user from a folder, revoking the user's access to the specified folder. Use this to manage folder permissions effectively within your tenancy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/folders/{folder_id}/roles/{role_id}/users/{user_id}`#
 
-
+== Usage notes
 
 Removes a user from the specified folder.
 

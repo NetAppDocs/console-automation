@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/get-ipa-support-case-details.html'
+keywords: 'support case,retrieve case details,case details,case number,fetch attachments'
 summary: 'Retrieve support case details'
 ---
 
 = Retrieve support case details
 :imagesdir: ../media/
 
+[.lead]
+Retrieves support case details, providing information about a specific case for troubleshooting or review. Use this to access detailed case data when managing support activities.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/support/case/{caseNumber}/details`#
 
+== Token usage
 
+Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+== Usage notes
 
 Retrieves support case details.
-            +
- +
-*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
-
 
 == Parameters
 

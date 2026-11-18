@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-account-serial-number-status-v5.html'
+keywords: 'ipa license,status check,license validation,serial number lookup,account license'
 summary: 'Retrieve IPA license status (v5)'
 ---
 
 = Retrieve IPA license status (v5)
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an IPA license status, providing information about the current licensing state for the IPA service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/serial-number/{serialNumber}/status/v5`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Retrieves an IPA license status (V5).
-            +
- +
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

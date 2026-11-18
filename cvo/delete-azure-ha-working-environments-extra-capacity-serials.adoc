@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-ha-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,capacity licenses,serial numbers,delete licenses,ha azure,working environments'
 summary: 'Delete extra capacity licenses by serial number'
 ---
 
 = Delete extra capacity licenses by serial number
 :imagesdir: ../media/
 
+[.lead]
+Deletes extra capacity licenses by serial numbers, removing unused or unnecessary licenses from the system. Use this to manage license allocations effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
-
-
-
-Deletes extra capacity licenses by serial numbers.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-occm-saas-mp-service-attach-subscription-.html'
+keywords: 'attach subscription,saas subscription,cloud provider,cloud account,subscription attach'
 summary: 'Attach a SaaS subscription'
 ---
 
 = Attach a SaaS subscription
 :imagesdir: ../media/
 
+[.lead]
+Attaches a SaaS subscription to a cloud provider account, linking the subscription to enable service usage within the account. Use this to manage subscription integration with your cloud provider resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/occm/saas-mp-service/attach-subscription/{provider}/{cloudAccountId}`#
-
-
-
-Attaches a SaaS subscription to a cloud provider account.
-
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-replication-policy.html'
+keywords: 'snapmirror policies,replication policy,cluster level policies,ontap replication,working environment'
 summary: 'Retrieve a list of ONTAP replication policies'
 ---
 
 = Retrieve a list of ONTAP replication policies
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of ONTAP replication policies associated with a system. Use this to view SnapMirror policies and their rules created at the cluster level for the specified system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves a list of ONTAP replication policies associated with a system. The API lists the SnapMirror policies created on the cluster level for the specified system. The system ID is passed as a parameter for the REST API call. It returns the SnapMirror policies and the rules associated with the policies.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+The API lists the SnapMirror policies created on the cluster level for the specified system. The system ID is passed as a parameter for the REST API call. It returns the SnapMirror policies and the rules associated with the policies.
 
 == Parameters
 

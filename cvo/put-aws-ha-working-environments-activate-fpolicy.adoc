@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-aws-ha-working-environments-activate-fpolicy.html'
+keywords: 'fpolicy activation,ransomware protection,ha working environments,ransomware files,netapp ontap'
 summary: 'Activate FPolicy for ransomware files'
 ---
 
 = Activate FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Activates the FPolicy for ransomware files to help detect and respond to potential ransomware threats. Use this to enhance security by monitoring file operations for suspicious activity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/activate-fpolicy`#
-
-
-
-Activates the FPolicy for ransomware files.
-
 
 == Parameters
 

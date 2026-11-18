@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-vsa-working-environments-fpolicy.html'
+keywords: 'fpolicy delete,ransomware files,working environment,fpolicy removal,ransomware protection,fpolicy management'
 summary: 'Delete the FPolicy for ransomware files'
 ---
 
 = Delete the FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Deletes the FPolicy for ransomware files, removing the configuration used to detect and manage ransomware-related activity.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/fpolicy`#
-
-
-
-Deletes the FPolicy for ransomware files.
-
 
 == Parameters
 

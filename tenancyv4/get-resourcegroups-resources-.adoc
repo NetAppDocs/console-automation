@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-resourcegroups-resources-.html'
+keywords: 'resource group,resource retrieval,resource id,group id,retrieve resource'
 summary: 'Retrieve a resource in a resource group'
 ---
 
 = Retrieve a resource in a resource group
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a resource in the specified resource group. Use this to view the details of a specific resource within a particular group.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resourcegroups/{resourcegroup_id}/resources/{resource_id}`#
-
-
-
-Retrieves a resource in the specified resource group.
-
 
 == Parameters
 

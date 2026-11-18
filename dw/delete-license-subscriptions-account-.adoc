@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/delete-license-subscriptions-account-.html'
+keywords: 'subscription delete,remove subscription,disassociate subscription,cloud volumes ontap,account subscription,subscription management'
 summary: 'Delete a subscription using the account ID'
 ---
 
 = Delete a subscription using the account ID
 :imagesdir: ../media/
 
+[.lead]
+Deletes a subscription associated with the specified account ID. Use this to remove or disassociate subscriptions that meet the required conditions.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/license/subscriptions/account/{accountId}`#
 
-
+== Usage notes
 
 Deletes or disassociates a subscription that contains the specified subscription ID from an account.
 

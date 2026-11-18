@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-asup-send-cot-performance-asup-.html'
+keywords: 'cloud volumes,ontap performance,performance archive,support data,netapp support'
 summary: 'Send performance archive support data to NetApp support'
 ---
 
 = Send performance archive support data to NetApp support
 :imagesdir: ../media/
 
+[.lead]
+Sends performance archive support data to NetApp Support, enabling analysis and troubleshooting for Cloud Volumes ONTAP systems. Use this to provide relevant diagnostic information for resolving issues.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/asup/send-Cot-performance-Asup/{workingEnvironmentId}`#
 
-
+== Usage notes
 
 Sends Cloud Volumes ONTAP performance archive support data to NetApp Support.
 

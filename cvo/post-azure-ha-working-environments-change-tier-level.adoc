@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-change-tier-level.html'
+keywords: 'tier level,change tier,azure ha,working environments,tier update'
 summary: 'Update the tier level'
 ---
 
 = Update the tier level
 :imagesdir: ../media/
 
+[.lead]
+Updates the tier level, modifying the data tier configuration for a storage resource. Use this to adjust storage performance or cost efficiency based on your requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/change-tier-level`#
-
-
-
-Updates the tier level.
-
 
 == Parameters
 

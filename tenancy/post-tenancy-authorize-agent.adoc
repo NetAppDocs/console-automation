@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-authorize-agent.html'
+keywords: 'authorize agent,external agent,agent actions,tenancy authorization,service request'
 summary: 'Authorize an external agent'
 ---
 
 = Authorize an external agent
 :imagesdir: ../media/
 
+[.lead]
+Authorizes an external agent to perform specific actions. Use this to enable external integrations that require permissioned access.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-agent`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Authorizes an external agent to perform specific actions.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

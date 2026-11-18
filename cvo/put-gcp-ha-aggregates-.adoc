@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-ha-aggregates-.html'
+keywords: 'iops,throughput,update aggregate,gcp ha,aggregate disks,working environment'
 summary: 'Update IOPS and throughput for the disks in an existing Cloud Volumes ONTAP aggregate'
 ---
 
 = Update IOPS and throughput for the disks in an existing Cloud Volumes ONTAP aggregate
 :imagesdir: ../media/
 
+[.lead]
+Updates IOPS and throughput for the disks in an existing aggregate. Use this to adjust performance settings for your Cloud Volumes ONTAP aggregates as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/aggregates/{workingEnvironmentId}/{aggregateName}`#
 
+== Usage notes
 
-
-Updates IOPS and throughput for the disks in an existing aggregate. At least one of the parameters is required.
+At least one of the parameters is required.
 
 
 == Parameters

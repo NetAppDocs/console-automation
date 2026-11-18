@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-workspace-id.html'
+keywords: 'workspace creation,account workspace,specified account,workspace management,workspace name'
 summary: 'Create a workspace'
 ---
 
 = Create a workspace
 :imagesdir: ../media/
 
+[.lead]
+Creates a workspace in a specified account. Use this to set up an environment for managing resources within the account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/workspace/{name}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Creates a workspace in a specified account.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

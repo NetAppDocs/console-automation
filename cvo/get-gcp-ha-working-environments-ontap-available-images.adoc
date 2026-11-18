@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-ontap-available-images.html'
+keywords: 'ontap images,gcp ontap,cloud volumes images,working environment,installed images'
 summary: 'Retrieve images already installed on a system'
 ---
 
 = Retrieve images already installed on a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves images already installed on the Cloud Volumes ONTAP system, providing information about the available images for management or deployment purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/ontap-available-images`#
-
-
-
-Retrieves images already installed on the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

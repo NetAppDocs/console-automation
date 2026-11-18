@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/delete-license-subscriptions-account-subscription-.html'
+keywords: 'delete subscription,disassociate subscription,cloud volumes ontap,account subscription,subscription management'
 summary: 'Delete a subscription using the subscription ID (deprecated)'
 ---
 
 = Delete a subscription using the subscription ID (deprecated)
 :imagesdir: ../media/
 
+[.lead]
+Deletes a subscription containing the specified subscription ID from an account. Use this endpoint to remove subscriptions that are not associated with a Cloud Volumes ONTAP instance or to disassociate an account from a subscription.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/license/subscriptions/account/{accountId}/subscription/{subscriptionId}`#
 
-
+== Usage notes
 
 Deletes or disassociates a subscription that contains the specified subscription ID from an account. A newer version of this deprecated endpoint is available https://docs.netapp.com/us-en/console-automation/dw/delete-license-account-subscription-.html[here.]
 

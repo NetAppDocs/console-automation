@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/put-organizations-projects-.html'
+keywords: 'replace project,update project,organization projects,project management,edit project,organization data'
 summary: 'Modify a project under an organization'
 ---
 
 = Modify a project under an organization
 :imagesdir: ../media/
 
+[.lead]
+Modifies a project under an organization by replacing it with updated information. Use this to update project details within the specified organizational context.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/organizations/{organization_id}/projects/{project_id}`#
 
-
+== Usage notes
 
 Replaces a project under the specified organization with new information.
 

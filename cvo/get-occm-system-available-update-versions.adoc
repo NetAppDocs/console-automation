@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-system-available-update-versions.html'
+keywords: 'console update,available versions,system update,netapp console,new version'
 summary: 'Check for a new version of the NetApp Console'
 ---
 
 = Check for a new version of the NetApp Console
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the current version information for the NetApp Console. Use this to determine if a newer version is available for update or installation.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/available-update-versions`#
 
-
+== Usage notes
 
 Checks for a new version of the NetApp Console.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-info.html'
+keywords: 'account information,account details,netapp account,tenancy account,account retrieval'
 summary: 'Retrieve the account information'
 ---
 
 = Retrieve the account information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the account information, providing details about the specified account for reference or administrative purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/info`#
-
-
-
-Retrieves the account information.
-
 
 == Parameters
 

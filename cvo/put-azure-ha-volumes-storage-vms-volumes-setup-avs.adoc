@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-volumes-storage-vms-volumes-setup-avs.html'
+keywords: 'azure vmware,azure volume,ha volumes,storage vms,setup avs'
 summary: 'Set up Azure VMware Solution on a volume'
 ---
 
 = Set up Azure VMware Solution on a volume
 :imagesdir: ../media/
 
+[.lead]
+Sets up Azure VMware Solution on a volume, configuring the necessary resources for integration with Azure VMware environments. Use this to prepare volumes for deployment in Azure VMware workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/storage-vms/{svmName}/volumes/{volumeName}/setup-avs`#
-
-
-
-Sets up Azure VMware Solution on a volume.
-
 
 == Parameters
 

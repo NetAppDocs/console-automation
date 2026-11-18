@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-authorize-user-is-account-admin.html'
+keywords: 'user authorization,account admin,authorize user,account admin role,user roles'
 summary: 'Authorize a user as account admin'
 ---
 
 = Authorize a user as account admin
 :imagesdir: ../media/
 
+[.lead]
+Authorizes a user as an account admin. Use this to grant administrative access to manage account-level operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-user-is-account-admin`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Authorizes a user as an account admin.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

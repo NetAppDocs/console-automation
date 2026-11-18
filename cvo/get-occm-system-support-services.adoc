@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-system-support-services.html'
+keywords: 'netapp console,support services,system support,console support,ontap support'
 summary: 'Retrieve the NetApp Console support services information'
 ---
 
 = Retrieve the NetApp Console support services information
 :imagesdir: ../media/
 
+[.lead]
+Retrieves NetApp Console support services information. Use this to view details about available support options for your Cloud Volumes ONTAP environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/support-services`#
-
-
-
-Retrieves NetApp Console support services information.
-
 
 == Error
 

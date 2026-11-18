@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-catalog-search.html'
+keywords: 'file search,backup recovery,volume search,creation date,backup location,file extensions'
 summary: 'Search a specific file'
 ---
 
 = Search a specific file
 :imagesdir: ../media/
 
+[.lead]
+Searches for a specific file from backup data across volumes and systems. Use this to locate files based on criteria such as system, file extensions, size ranges, creation date range, or backup location.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/catalog/search`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Searches for a specific file from the backups taken by the NetApp Backup and Recovery service across volumes and systems. It can also search for a specified volume. It is possible to narrow down your file search based on a particular system, file extensions, size ranges, creation date range, and also location of a backup.
-
-**Token usage:**NetApp Console user token.
-
 
 == Parameters
 

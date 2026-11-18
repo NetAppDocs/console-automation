@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-id.html'
+keywords: 'create account,account creation,new account,account name,tenancy account'
 summary: 'Create an account'
 ---
 
 = Create an account
 :imagesdir: ../media/
 
+[.lead]
+Creates an account with the specified account name. Use this to establish a new account in the tenancy service for managing resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountName}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Creates a new account with the specified account name.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

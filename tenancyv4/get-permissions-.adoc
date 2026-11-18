@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-permissions-.html'
+keywords: 'permission details,permission id,retrieve permission,access permissions,specific permission'
 summary: 'Retrieve a permission'
 ---
 
 = Retrieve a permission
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified permission, providing details about the permission's attributes and scope. Use this to review access controls relevant to your tenancy environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/permissions/{permission_id}`#
-
-
-
-Retrieves the specified permission.
-
 
 == Parameters
 

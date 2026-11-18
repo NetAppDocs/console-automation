@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-working-environments-snapshot-policy.html'
+keywords: 'snapshot policy,create snapshot,working environment,snapshot management,data protection'
 summary: 'Create a snapshot policy'
 ---
 
 = Create a snapshot policy
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot policy, defining the rules and schedules for automatically capturing snapshots of data. Use this to manage data protection and recovery strategies effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/snapshot-policy`#
-
-
-
-Creates a snapshot policy.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-projects-resources.html'
+keywords: 'project resources,project id,resource list,project details,list resources'
 summary: 'List all resources in a project'
 ---
 
 = List all resources in a project
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all resources in the specified project. Use this to view the resources associated with a particular project.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/projects/{project_id}/resources`#
 
-
+== Usage notes
 
 Lists all resources in the specified project.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-working-environments-cifs.html'
+keywords: 'cifs configuration,cloud volumes ontap,cloud ontap cifs,ha working environments,cifs settings'
 summary: 'Retrieve the CIFS configuration for a system'
 ---
 
 = Retrieve the CIFS configuration for a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the CIFS configuration for an existing Cloud Volumes ONTAP system, providing details about the system's CIFS setup. Use this to review or verify CIFS settings for your Cloud Volumes ONTAP deployment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/cifs`#
-
-
-
-Retrieves the CIFS configuration for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

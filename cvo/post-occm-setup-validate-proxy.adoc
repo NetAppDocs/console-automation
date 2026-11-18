@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-setup-validate-proxy.html'
+keywords: 'proxy validation,validate proxy,proxy setup,proxy url,proxy configuration,proxy check'
 summary: 'Validate a proxy URL'
 ---
 
 = Validate a proxy URL
 :imagesdir: ../media/
 
+[.lead]
+Validates a proxy URL to ensure it is correctly configured for use in the system. Use this to confirm the functionality of a proxy before applying it.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/setup/validate/proxy`#
 
-
+== Usage notes
 
 Validates the specified proxy URL.
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-backup-working-environment-volume.html'
+keywords: 'volume details,backup status,storage vm,ransomware scan,backup policy,ransomware detected'
 summary: 'Retrieve volume details'
 ---
 
 = Retrieve volume details
 :imagesdir: ../media/
 
+[.lead]
+Retrieves details of all volumes for a specified system backed up by using the NetApp Backup and Recovery service. Use this to examine backup-related attributes such as backup status, last backup creation time, snapshot details, and ransomware scan information.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/backup/working-environment/{workingEnvironmentId}/volume`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves details of all the volumes for a specified system backed up by using the NetApp Backup and Recovery service. It retrieves the volume name, volume type, protocol, storage VM, backup status, last backup creation time, snapshot count, associated backup policy, and backup policy rules. It also retrieves details of the archive after days, object lock, ransomware scan status, last ransomware scan, and ransomware detected snapshots with last ransomware scan information.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+It retrieves the volume name, volume type, protocol, storage VM, backup status, last backup creation time, snapshot count, associated backup policy, and backup policy rules. It also retrieves details of the archive after days, object lock, ransomware scan status, last ransomware scan, and ransomware detected snapshots with last ransomware scan information.
 
 == Parameters
 

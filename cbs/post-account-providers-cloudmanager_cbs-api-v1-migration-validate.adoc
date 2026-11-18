@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-migration-validate.html'
+keywords: 'migration validation,backup migration,source cluster,target cluster,ontap migration,cloud manager'
 summary: 'Validate migration operations'
 ---
 
 = Validate migration operations
 :imagesdir: ../media/
 
+[.lead]
+Validates migration operations for backups from a source ONTAP cluster to a target ONTAP cluster. Use this to confirm that the migration process meets the necessary requirements before proceeding.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/migration/validate`#
 
-
+== Usage notes
 
 Validates the migration of backups from the source ONTAP cluster to the target ONTAP cluster.
 

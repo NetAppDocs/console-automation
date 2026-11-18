@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-tenants-.html'
+keywords: 'tenant retrieval,tenant details,tenant information,tenant lookup,tenant record,tenant id'
 summary: 'Retrieve a tenant'
 ---
 
 = Retrieve a tenant
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a tenant. Use this to view tenant-specific information and manage related resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenants/{tenantId}`#
-
-
-
-Retrieves a tenant.
-
 
 == Parameters
 

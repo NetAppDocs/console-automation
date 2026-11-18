@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/get-tenancy-account.html'
+keywords: 'account retrieval,user accounts,related accounts,tenancy accounts,account management,account details'
 summary: 'Retrieve user accounts'
 ---
 
 = Retrieve user accounts
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all accounts associated with a user. Use this to view and manage user-related account information.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/tenancy/account`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Retrieves all accounts related to the user.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

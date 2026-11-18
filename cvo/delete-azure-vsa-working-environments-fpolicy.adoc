@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-vsa-working-environments-fpolicy.html'
+keywords: 'fpolicy ransomware,deleting fpolicy,ransomware files,working environment,azure fpolicy'
 summary: 'Delete the FPolicy for ransomware files'
 ---
 
 = Delete the FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Deletes the FPolicy for ransomware files, removing the configuration used to detect and handle ransomware-related activity. Use this to manage or clear policies that are no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/fpolicy`#
-
-
-
-Deletes the FPolicy for ransomware files.
-
 
 == Parameters
 

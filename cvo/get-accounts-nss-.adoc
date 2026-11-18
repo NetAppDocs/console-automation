@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-accounts-nss-.html'
+keywords: 'netapp support,netapp account,support site account,cloud provider account,public id account,retrieve account'
 summary: 'Retrieve an NSS account'
 ---
 
 = Retrieve an NSS account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a NetApp Support Site account using its public identifier. Use this to access account details associated with the specified public ID.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/nss/{cloudProviderAccountId}`#
 
-
+== Usage notes
 
 Retrieves a NetApp Support Site account using the public ID.
 

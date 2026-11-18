@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/post-api-data-brokers.html'
+keywords: 'data broker,netapp installer,create installer,data broker instance,tenancy account,data broker setup'
 summary: 'Create a new installer for the NetApp data broker instance'
 ---
 
 = Create a new installer for the NetApp data broker instance
 :imagesdir: ../media/
 
+[.lead]
+Creates a new installer for the NetApp data broker instance, providing the necessary files to set up and configure the data broker. Use this to deploy a data broker in your environment for data movement operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/api/data-brokers`#
-
-
-
-Creates a new installer for the NetApp data broker instance.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-offbox.html'
+keywords: 'activate configuration,offbox setup,azure ha,working environment,off-box activation'
 summary: 'Activate the off-box configuration'
 ---
 
 = Activate the off-box configuration
 :imagesdir: ../media/
 
+[.lead]
+Activates an off-box configuration. Use this to initialize and enable external configuration settings for your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/offbox`#
-
-
-
-Activates an off-box configuration.
-
 
 == Parameters
 

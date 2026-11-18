@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-azure-subscription-resource-group.html'
+keywords: 'azure resource group,create resource group,azure subscription,resource group creation,netapp azure'
 summary: 'Create an Azure resource group'
 ---
 
 = Create an Azure resource group
 :imagesdir: ../media/
 
+[.lead]
+Creates an Azure resource group in the specified subscription ID. Use this to organize Azure resources within a subscription for better management and access control.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resource-group`#
 
+== Token usage
 
-
-Creates an Azure resource group in the specified subscription ID.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

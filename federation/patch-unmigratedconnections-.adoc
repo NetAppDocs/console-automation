@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/patch-unmigratedconnections-.html'
+keywords: 'connection import,netapp console,auth0 connection,connection id,unmigrated connections'
 summary: 'Import a connection'
 ---
 
 = Import a connection
 :imagesdir: ../media/
 
+[.lead]
+Imports a connection into the NetApp Console, making it available for use within the environment. Use this to integrate external connections for centralized management or operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/unmigratedconnections/{connection_id}`#
-
-
-
-Imports the connection into the NetApp Console.
-
 
 == Parameters
 

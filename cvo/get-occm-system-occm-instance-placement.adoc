@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-system-occm-instance-placement.html'
+keywords: 'region,VPC,subnet,instance placement,console instance,placement details'
 summary: 'Retrieve the region, VPC, and subnet'
 ---
 
 = Retrieve the region, VPC, and subnet
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the region, VPC, and subnet in which the NetApp Console instance is running. Use this to view the network configuration of the current instance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/occm-instance-placement`#
-
-
-
-Retrieves the region, VPC, and subnet in which the NetApp Console instance is running.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments-occm-provided-upgrade-versions.html'
+keywords: 'cloud volumes,ontap upgrade,upgrade versions,working environment,azure ontap'
 summary: 'Retrieve a list of upgrade versions'
 ---
 
 = Retrieve a list of upgrade versions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of versions to which a Cloud Volumes ONTAP system can be upgraded. Use this to identify available upgrade options for your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/occm-provided-upgrade-versions`#
 
-
+== Usage notes
 
 Retrieves a list of versions to which this Cloud Volumes ONTAP system can be upgraded.
 

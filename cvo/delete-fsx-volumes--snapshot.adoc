@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-fsx-volumes--snapshot.html'
+keywords: 'snapshot delete,delete snapshot,fsx snapshot,volume snapshot,manual snapshot deletion'
 summary: 'Delete a snapshot'
 ---
 
 = Delete a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Deletes a snapshot manually, removing the specified snapshot from the system. Use this to manage storage space or clean up outdated snapshots.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Deletes a snapshot manually.
-
 
 == Parameters
 

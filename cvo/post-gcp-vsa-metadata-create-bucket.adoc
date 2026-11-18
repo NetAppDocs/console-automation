@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-metadata-create-bucket.html'
+keywords: 'create bucket,gcp bucket,new bucket,storage bucket,cloud bucket'
 summary: 'Create a new bucket'
 ---
 
 = Create a new bucket
 :imagesdir: ../media/
 
+[.lead]
+Creates a new bucket to store and organize object data. Use this to manage data distribution and access within your cloud environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/metadata/create-bucket`#
-
-
-
-Creates a new bucket.
-
 
 == Request Body
 

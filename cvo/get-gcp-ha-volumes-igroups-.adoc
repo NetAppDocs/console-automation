@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-volumes-igroups-.html'
+keywords: 'igroups retrieval,igroup list,gcp volumes,ha volumes,working environment,svm name'
 summary: 'Retrieve all igroups'
 ---
 
 = Retrieve all igroups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all igroups. Use this to view the available igroups in your Cloud Volumes ONTAP instance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/volumes/igroups/{workingEnvironmentId}/{svmName}`#
-
-
-
-Retrieves all igroups.
-
 
 == Parameters
 

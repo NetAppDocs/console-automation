@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-timelines.html'
+keywords: 'timelines,netapp timelines,tenancy account,account id,timeline retrieval'
 summary: 'Retrieve timelines'
 ---
 
 = Retrieve timelines
 :imagesdir: ../media/
 
+[.lead]
+Retrieves timelines to provide a list of available timeline configurations for data synchronization or analysis.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/timelines`#
-
-
-
-Retrieves timelines.
-
 
 
 CAUTION: This operation is deprecated.

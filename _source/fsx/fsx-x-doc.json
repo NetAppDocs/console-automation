@@ -1,6 +1,12 @@
 {
   "overview": "Amazon FSx for NetApp ONTAP management REST API",
   "permalink": "overview.html",
+  "root_overview": {
+    "ai-gen": {
+      "keywords": "amazon fsx for ontap,fsx management,aws credentials,working environments,fsx discovery,aws operations",
+      "lead": "Create, operate, and delete Amazon FSx for NetApp ONTAP storage. The endpoints cover AWS operations, AWS credentials, working environments, and FSx for ONTAP discovery."
+    }
+  },
   "paths": {
     "/aws-credentials/{accountId}": {
       "get": {
@@ -8,7 +14,11 @@
           "title": "Retrieve AWS credentials",
           "category": "AWS Credentials",
           "filename": "get-aws-credentials-.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves AWS credentials for a specific tenancy account. Use this to access and manage tenancy-specific authentication details.",
+            "keywords": "aws credentials,tenancy account,netapp console,aws account"
+          }
         }
       },
       "post": {
@@ -16,7 +26,11 @@
           "title": "Add AWS credentials",
           "category": "AWS Credentials",
           "filename": "post-aws-credentials-.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Creates AWS credentials for the FSx for ONTAP service. Use this to establish access permissions for AWS resources.",
+            "keywords": "aws credentials,aws account,netapp console,create credentials,deprecated endpoint"
+          }
         }
       }
     },
@@ -26,7 +40,11 @@
           "title": "Retrieve working environments",
           "category": "Working Environments",
           "filename": "get-working-environments-.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves working environments for a specified account. Use this to filter by workspace ID or retrieve provider data using the provider-details parameter.",
+            "keywords": "working environments,fsx for ontap,netapp console,workspace id,provider details"
+          }
         }
       },
       "post": {
@@ -34,7 +52,11 @@
           "title": "Create FSx for ONTAP working environments",
           "category": "Working Environments",
           "filename": "post-working-environments-.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Creates an FSx for ONTAP working environment in the specified AWS account and region.",
+            "keywords": "fsx ontap,working environment,aws account,netapp console,aws region"
+          }
         }
       }
     },
@@ -44,7 +66,11 @@
           "title": "Discover working environments",
           "category": "Working Environments",
           "filename": "get-working-environments-discover.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Discovers FSx for ONTAP working environments in an AWS region using specified credentials. Use this to identify environments accessible within the region.",
+            "keywords": "fsx ontap,aws region,working environments,discover tenancy,different account"
+          }
         }
       }
     },
@@ -54,7 +80,11 @@
           "title": "Retrieve volumes",
           "category": "Working Environments",
           "filename": "get-working-environments--volumes.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves a list of volumes for an FSx for ONTAP system.",
+            "keywords": "volume list,fsx volumes,working environment,netapp console volumes,fsx system"
+          }
         }
       }
     },
@@ -64,7 +94,11 @@
           "title": "Retrieve ONTAP credentials",
           "category": "Working Environments",
           "filename": "get-working-environments--credentials.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves the ONTAP credentials of an FSx for ONTAP system.",
+            "keywords": "ontap credentials,fsx system,netapp console,working environment,account credentials"
+          }
         }
       },
       "post": {
@@ -72,7 +106,11 @@
           "title": "Create ONTAP credentials",
           "category": "Working Environments",
           "filename": "post-working-environments--credentials.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Creates ONTAP credentials for an FSx for ONTAP file system.",
+            "keywords": "ontap credentials,fsx system,fsx file system,create credentials,working environment"
+          }
         }
       }
     },
@@ -82,7 +120,11 @@
           "title": "Recover working environments",
           "category": "Working Environments",
           "filename": "post-working-environments-recover.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Recovers an unassigned FSx for ONTAP working environment associated with a tenancy account.",
+            "keywords": "recover working environment,tenancy account,netapp console,unassigned fsx"
+          }
         }
       }
     },
@@ -92,7 +134,11 @@
           "title": "Retrieve working environments by account",
           "category": "Working Environments",
           "filename": "get-working-environments-id-.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves FSx for ONTAP working environments by account, with options to include provider details or volume information.",
+            "keywords": "fsx working environments,working environment details,provider data,fsx volumes,netapp console"
+          }
         }
       },
       "delete": {
@@ -100,7 +146,11 @@
           "title": "Delete an FSX working environment",
           "category": "Working Environments",
           "filename": "delete-working-environments-.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deletes an FSx for ONTAP working environment.",
+            "keywords": "fsx ontap,delete working environment,netapp console,working environment deletion,netapp fsx"
+          }
         }
       }
     },
@@ -110,7 +160,11 @@
           "title": "Remove working environment from workspace",
           "category": "Working Environments",
           "filename": "delete-working-environments--workspace-.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deletes a working environment from a workspace.",
+            "keywords": "working environments,workspace removal,netapp console workspace,environment deletion,workspace cleanup"
+          }
         }
       }
     },
@@ -120,7 +174,11 @@
           "title": "Retrieve VPCs",
           "category": "AWS Operations",
           "filename": "get-aws-vpcs.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves all VPCs by region using the specified credentials. Use this to view the available VPCs in a particular region.",
+            "keywords": "vpcs,aws vpcs,netapp console vpcs,region vpcs,aws region"
+          }
         }
       }
     },
@@ -130,7 +188,11 @@
           "title": "Retrieve route tables",
           "category": "AWS Operations",
           "filename": "get-aws-route-tables.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves route tables for a specified region and VPC. Use this to view the available route table configurations for network management.",
+            "keywords": "route tables,aws region,vpc route tables,netapp console credentials,network routing"
+          }
         }
       }
     },
@@ -140,7 +202,11 @@
           "title": "Retrieve encryption keys",
           "category": "AWS Operations",
           "filename": "get-aws-encryption-keys.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves encryption keys for a specified region and VPC, using the provided credentials. Use this to access key information needed for secure operations.",
+            "keywords": "encryption keys,netapp console,encryption region,vpc encryption,aws encryption"
+          }
         }
       }
     },
@@ -150,7 +216,11 @@
           "title": "Update FSx ONTAP systems",
           "category": "Working Environments",
           "filename": "patch-working-environments-.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates the throughput capacity of an FSx for ONTAP working environment. Use this to adjust system performance based on workload requirements.",
+            "keywords": "fsx throughput,fsx update,ontap working environment,throughput capacity,fsx modify"
+          }
         }
       }
     },
@@ -160,7 +230,11 @@
           "title": "Discover FSx ONTAP systems",
           "category": "FSx ONTAP discovery",
           "filename": "get-discovery-discover.html",
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Discovers FSx for ONTAP file systems across all relevant AWS regions.",
+            "keywords": "fsx ontap,discover file systems,aws regions scan,ontap discovery,file system discovery"
+          }
         }
       }
     },
@@ -170,8 +244,12 @@
           "title": "Retrieve supported regions",
           "category": "AWS Operations",
           "filename": "get-aws-supported-regions.html",
-          "explorer": false
-      }
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves all supported FSx for ONTAP regions based on the provided credentials. Use this to identify the regions available for deployment or management tasks.",
+            "keywords": "fsx regions,aws regions,netapp console regions,supported regions,fsx aws"
+          }
+        }
       }
     }
   },
@@ -179,22 +257,38 @@
     {
       "id": "working environments",
       "title": "Working environments endpoints in the Amazon FSx for NetApp ONTAP management REST API",
-      "permalink": "working_environments_overview.html"
+      "permalink": "working_environments_overview.html",
+      "ai-gen": {
+        "lead": "Use working environment endpoints to create, manage, and retrieve details for FSx for ONTAP working environments in NetApp Console. These endpoints support operations such as updating throughput capacity, managing ONTAP credentials, and recovering or removing working environments from workspaces.",
+        "keywords": "working environments,fsx ontap management,netapp console operations,ontap credentials,volume details"
+      }
     },
     {
       "id": "aws operations",
       "title": "AWS operations endpoints in the Amazon FSx for NetApp ONTAP management REST API",
-      "permalink": "aws_operations_overview.html"
+      "permalink": "aws_operations_overview.html",
+      "ai-gen": {
+        "lead": "Use AWS operations endpoints to retrieve information about VPCs, route tables, and encryption keys associated with your AWS resources.",
+        "keywords": "aws operations,aws resources,aws vpcs,aws route tables,aws encryption keys,fsx ontap"
+      }
     },
     {
       "id": "aws credentials",
       "title": "AWS credentials endpoints in the Amazon FSx for NetApp ONTAP management REST API",
-      "permalink": "aws_credentials_overview.html"
+      "permalink": "aws_credentials_overview.html",
+      "ai-gen": {
+        "lead": "Use AWS credentials endpoints to retrieve credentials for accessing resources in your Amazon FSx for NetApp ONTAP environment.",
+        "keywords": "aws credentials,tenancy account,credentials service,fsx ontap,amazon fsx"
+      }
     },
     {
       "id": "fsx ontap discovery",
       "title": "FSx ONTAP discovery endpoints in the Amazon FSx for NetApp ONTAP management REST API",
-      "permalink": "fsx_ontap_discovery_overview.html"
+      "permalink": "fsx_ontap_discovery_overview.html",
+      "ai-gen": {
+        "lead": "Use discovery endpoints to find FSx for ONTAP systems associated with a specified account in NetApp Console.",
+        "keywords": "fsx ontap,fsx discovery,ontap systems,netapp console,fsx account"
+      }
     }
   ]
 }

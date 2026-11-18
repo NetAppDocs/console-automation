@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-accounts-azure-.html'
+keywords: 'azure account,cloud provider,public id,account retrieval,azure cloud'
 summary: 'Retrieve an Azure account'
 ---
 
 = Retrieve an Azure account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an Azure account using the public ID. Use this to access details about the account for management or integration purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/azure/{cloudProviderAccountId}`#
-
-
-
-Retrieves an Azure account using the public ID.
-
 
 
 CAUTION: This operation is deprecated.

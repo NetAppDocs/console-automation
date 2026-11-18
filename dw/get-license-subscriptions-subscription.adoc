@@ -3,17 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/get-license-subscriptions-subscription.html'
+keywords: 'subscription information,subscription id,license subscriptions,service scope,subscription details'
 summary: 'Retrieve subscription information using the subscription ID'
 ---
 
 = Retrieve subscription information using the subscription ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves subscription information for a specified subscription ID. Use this to view details about an active subscription.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/license/subscriptions/subscription`#
 
-
-
-Retrieves the subscription information for a specified subscription ID.
+== Usage notes
 
 **Note:**
 

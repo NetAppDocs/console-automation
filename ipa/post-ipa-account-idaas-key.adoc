@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-account-idaas-key.html'
+keywords: 'identity service,key credential,support site,netapp console,account id,id management'
 summary: 'Create an IDaaS NetApp Support Site key credential'
 ---
 
 = Create an IDaaS NetApp Support Site key credential
 :imagesdir: ../media/
 
+[.lead]
+Creates an identity-as-a-service (IDaaS) NetApp Support Site key credential. Use this endpoint to generate credentials for accessing NetApp Support Site resources through the IPA service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/account/{accountId}/idaas-key`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Creates an identity-as-a-service (IDaaS) NetApp Support Site key credential.
-            +
- +
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

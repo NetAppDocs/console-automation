@@ -3,15 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v3-restore.html'
+keywords: 'volume restore,folder restore,file restore,nested folder,cloud backup,ransomware scan'
 summary: 'Perform a volume, file, and folder-level restore operation (v3)'
 ---
 
 = Perform a volume, file, and folder-level restore operation (v3)
 :imagesdir: ../media/
 
+[.lead]
+Performs a volume, file, and folder-level restore operation. Use this to validate backup availability and restore data, including multi-level or nested folders, while adhering to system constraints and compatibility checks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v3/restore`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Performs a volume, file, and folder-level restore (version 3) operation. It is also possible to do a multi-level or nested-level folder restore operation. This API validates whether a backup of a volume exists. The restore operation is not supported on data protection volumes, a target volume with a different language code than the source volume, volumes with a size of less than 1GB, and volumes enabled with a SnapLock license (WORM license). In addition, restoring both files and folders is not supported. Restoring multiple folders is also not supported. The API checks whether the source and target cloud providers match and also verifies whether the backup and restore operation is supported in the system.
 
@@ -20,9 +30,6 @@ If DataLock and ransomware protection is enabled on a system, a ransomware scan 
 To indicate that the volume restore is part of an application restore workflow, set the "is-app-volume-restore" parameter to "true". This disables certain steps such as mounting the volume after the storage volume restore.
 
 This version adds support for accepting a list of target aggregates.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

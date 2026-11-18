@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-volumes-shares.html'
+keywords: 'fsx cifs shares,fsx volumes,cifs share list,fsx file system,cifs shares retrieval'
 summary: 'Retrieve a CIFS share list for an FSx system'
 ---
 
 = Retrieve a CIFS share list for an FSx system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a CIFS share list for an FSx system, providing details about the available shares on the specified system. Use this to review or manage CIFS share configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/shares`#
 
-
+== Usage notes
 
 Retrieves a CIFS share list for an existing FSx system.
 

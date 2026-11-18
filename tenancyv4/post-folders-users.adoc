@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-folders-users.html'
+keywords: 'folder users,add users,folder id,add to folder,specified folder'
 summary: 'Add users to a folder'
 ---
 
 = Add users to a folder
 :imagesdir: ../media/
 
+[.lead]
+Adds users to a folder, granting them access to the specified folder's contents. Use this to manage folder permissions effectively in a multi-user environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/folders/{folder_id}/users`#
 
-
+== Usage notes
 
 Adds users to the specified folder.
 

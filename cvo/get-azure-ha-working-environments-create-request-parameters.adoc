@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-working-environments-create-request-parameters.html'
+keywords: 'cloud volumes,ontap instance,create request,action parameters,working environments'
 summary: 'Retrieve action parameters'
 ---
 
 = Retrieve action parameters
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the action parameters used in the create request for a specific Cloud Volumes ONTAP instance. Use this to review the required parameters for provisioning or modifying an instance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/create-request-parameters`#
-
-
-
-Retrieves the action parameters used in the create request for a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

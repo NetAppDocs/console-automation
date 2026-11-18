@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-support-case-create.html'
+keywords: 'support case,create case,case priority,support category,case title,serial number'
 summary: 'Create a support case'
 ---
 
 = Create a support case
 :imagesdir: ../media/
 
+[.lead]
+Creates a support case, enabling communication with technical support for issue resolution. Use this to initiate assistance for troubleshooting or problem management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/support/case/create`#
 
+== Token usage
 
+Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+== Usage notes
 
 Creates a support case.
-            +
- +
-*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
-
 
 == Parameters
 

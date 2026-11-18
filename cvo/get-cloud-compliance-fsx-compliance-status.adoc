@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-cloud-compliance-fsx-compliance-status.html'
+keywords: 'cloud compliance,file system,compliance status,fsx compliance,cloud compliance status,fsx file system'
 summary: 'Retrieve the service cloud compliance status using the file system ID'
 ---
 
 = Retrieve the service cloud compliance status using the file system ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the service Cloud Compliance status using the file system ID. Use this to monitor compliance information for specific file systems.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cloud-compliance/fsx/{fileSystemId}/compliance-status`#
-
-
-
-Retrieves the service Cloud Compliance status using the file system ID.
-
 
 == Parameters
 

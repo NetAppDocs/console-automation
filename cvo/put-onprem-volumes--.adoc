@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-onprem-volumes--.html'
+keywords: 'modify volume,existing volume,volume update,netapp volumes,ontap volume'
 summary: 'Modify an existing volume'
 ---
 
 = Modify an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Modifies an existing volume. Use this to adjust the volume's configuration or properties as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/onprem/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Modifies an existing volume.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-keys-vault.html'
+keywords: 'keys vault,azure metadata,resource group,cloud account,subscription id'
 summary: 'Retrieve all keys in a vault'
 ---
 
 = Retrieve all keys in a vault
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all keys in a vault. Use this to view the available keys stored within the vault for management or integration purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/keys-vault`#
-
-
-
-Retrieves all keys in a vault.
-
 
 == Parameters
 

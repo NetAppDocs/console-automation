@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-encryption-key-managers-.html'
+keywords: 'key manager,cloud volumes,ontap encryption,ha encryption,key manager ip'
 summary: 'Add a key manager to a system'
 ---
 
 = Add a key manager to a system
 :imagesdir: ../media/
 
+[.lead]
+Adds a key manager to a Cloud Volumes ONTAP system, enabling encryption management for the system's data. Use this to configure secure key management for compliance or security requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}`#
-
-
-
-Adds a key manager to the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

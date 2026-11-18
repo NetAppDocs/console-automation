@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-authorize-agent-workspace.html'
+keywords: 'authorize agent,agent workspace,workspace authorization,agent access,tenancy workspace'
 summary: 'Authorize an agent workspace'
 ---
 
 = Authorize an agent workspace
 :imagesdir: ../media/
 
+[.lead]
+Authorizes an agent workspace. Use this to grant an agent access within a specific workspace.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-agent-workspace`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Authorize an agent in a workspace.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

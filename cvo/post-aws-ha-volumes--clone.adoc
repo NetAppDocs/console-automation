@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-volumes--clone.html'
+keywords: 'volume clone,clone volume,existing volume,ha volumes,aws high availability'
 summary: 'Clone an existing volume'
 ---
 
 = Clone an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Clones an existing volume, creating a duplicate of the specified volume for data replication or testing purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/clone`#
-
-
-
-Clones an existing volume.
-
 
 == Parameters
 

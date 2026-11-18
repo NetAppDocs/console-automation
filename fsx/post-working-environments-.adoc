@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/post-working-environments-.html'
+keywords: 'fsx ontap,working environment,aws account,netapp console,aws region'
 summary: 'Create FSx for ONTAP working environments'
 ---
 
 = Create FSx for ONTAP working environments
 :imagesdir: ../media/
 
+[.lead]
+Creates an FSx for ONTAP working environment in the specified AWS account and region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/working-environments/{accountId}`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Creates an FSx ONTAP working environment on the required AWS account and region.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

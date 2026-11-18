@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-working-environments-ip-spaces.html'
+keywords: 'ipspace list,on-premises ontap,working environments,ip space retrieval,vserver details'
 summary: 'Retrieve an IPspace list for an existing system'
 ---
 
 = Retrieve an IPspace list for an existing system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an IPspace list for an existing on-premises ONTAP system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/ip-spaces`#
 
-
+== Usage notes
 
 Retrieves an IPspace list for an existing Cloud Volumes ONTAP system.
 

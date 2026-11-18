@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-aggregates.html'
+keywords: 'aggregate creation,aws aggregate,ha aggregate,new aggregate,aggregate setup,high availability aggregate'
 summary: 'Create a new aggregate'
 ---
 
 = Create a new aggregate
 :imagesdir: ../media/
 
+[.lead]
+Creates a new aggregate. Use this to provision additional storage capacity for your Cloud Volumes ONTAP system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/aggregates`#
-
-
-
-Creates a new aggregate.
-
 
 == Request Body
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-working-environments-snapshot-policy.html'
+keywords: 'snapshot policy,create snapshot,working environment,aws snapshot,ha environments'
 summary: 'Create a snapshot policy'
 ---
 
 = Create a snapshot policy
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot policy, defining the criteria for creating and managing snapshots. Use this to automate snapshot creation based on specified schedules and retention policies.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/snapshot-policy`#
-
-
-
-Creates a snapshot policy.
-
 
 == Parameters
 

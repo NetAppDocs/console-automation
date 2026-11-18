@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-flexcache-fsx.html'
+keywords: 'flexcache volume,flexcache fsx,create flexcache,fsx system,new flexcache'
 summary: 'Create a new FlexCache volume for an FSx system'
 ---
 
 = Create a new FlexCache volume for an FSx system
 :imagesdir: ../media/
 
+[.lead]
+Creates a new FlexCache volume in an FSx system. Use this to enable caching for improved performance and reduced latency when accessing frequently used data.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/flexcache/fsx`#
-
-
-
-Creates a new FlexCache volume in an FSx system.
-
 
 == Request Body
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-encryption-certificate.html'
+keywords: 'certificate retrieval,installed certificate,encryption certificate,certificate management,ontap encryption'
 summary: 'Retrieve the installed certificate'
 ---
 
 = Retrieve the installed certificate
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the installed certificate, if one exists. Use this to check the current certificate configuration for secure communications.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/encryption/certificate`#
-
-
-
-Retrieves the installed certificate, if one exists.
-
 
 == Error
 

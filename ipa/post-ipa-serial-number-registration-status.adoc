@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-serial-number-registration-status.html'
+keywords: 'license registration,status check,serial number verification,registration status,license status'
 summary: 'Retrieve license status'
 ---
 
 = Retrieve license status
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the license registration status, providing information about the current state of license activation. Use this to verify whether licenses are properly registered.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/serial-number/{serialNumber}/registration-status`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves the license registration status.
-            +
- +
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

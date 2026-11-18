@@ -3,22 +3,29 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-working-environment-backup-policy.html'
+keywords: 'backup policy,cloud archive,ontap version,dataprotection ransomware,aws glacier'
 summary: 'Create a backup policy'
 ---
 
 = Create a backup policy
 :imagesdir: ../media/
 
+[.lead]
+Creates a backup policy for a system, specifying rules for backup retention and archival. Use this to configure features like DataLock and Ransomware protection or to archive backups to supported cloud tiers.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/backup-policy`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Creates a backup policy in a system. The number of retained backups can be up to a maximum of 1018 when no backup policies are assigned to a volume. You can edit a policy to create up to 4000 backups after you assign volumes to a policy through ONTAP CLI. This API endpoint validates whether the ONTAP version used by a system supports archiving. You can archive the backups to a cloud archive tier by setting the archive-after-days in the policy. You can archive to AWS Glacier, Deep Glacier, Azure Archive, and Google Archive.
 
 You can enable DataLock and Ransomware protection beginning with ONTAP 9.11.1 and later (supported for AWS, Azure, and StorageGRID). This is applicable only for new backup activation. Interoperability with archival policy is not supported. For AWS, DataLock and Ransomware Protection can be enabled in the "GOVERNANCE" mode or "COMPLIANCE" mode. For Azure, DataLock and Ransomware Protection can be enabled in the "UNLOCKED" mode or "LOCKED" mode.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

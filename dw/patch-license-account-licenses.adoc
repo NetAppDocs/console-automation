@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/patch-license-account-licenses.html'
+keywords: 'license update,organization licenses,account licenses,license management,metering status'
 summary: 'Update all licenses under an organization ID'
 ---
 
 = Update all licenses under an organization ID
 :imagesdir: ../media/
 
+[.lead]
+Updates all licenses under an organization ID. Use this to modify license details for the organization as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/account/{accountId}/licenses`#
 
+== Token usage
 
-
-Updates all licenses under an organization ID.
-
-*Token usage:* NetApp Console service token.
-
+NetApp Console service token.
 
 == Parameters
 

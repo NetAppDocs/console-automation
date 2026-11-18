@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-volumes--clone.html'
+keywords: 'volume clone,existing volume,google cloud ha,working environment,svm volume'
 summary: 'Clone an existing volume'
 ---
 
 = Clone an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a clone of an existing volume. Use this to create a writable copy of the original volume for tasks such as testing or development.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/clone`#
 
-
+== Usage notes
 
 Clones an existing volume.
 

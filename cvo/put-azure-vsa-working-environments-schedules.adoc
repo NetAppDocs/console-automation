@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-vsa-working-environments-schedules.html'
+keywords: 'cloud volumes,cloud ontap,schedule settings,working environments,azure schedules'
 summary: 'Set the schedules for Cloud Volumes ONTAP'
 ---
 
 = Set the schedules for Cloud Volumes ONTAP
 :imagesdir: ../media/
 
+[.lead]
+Sets schedules for Cloud Volumes ONTAP. Use this to define or update when specific tasks or operations should occur.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/schedules`#
-
-
-
-Sets schedules for Cloud Volumes ONTAP.
-
 
 == Parameters
 

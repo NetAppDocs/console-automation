@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-workspace-remove-user-id.html'
+keywords: 'remove user,workspace management,user removal,workspace access,account workspace'
 summary: 'Remove a user'
 ---
 
 = Remove a user
 :imagesdir: ../media/
 
+[.lead]
+Deletes a user from a specified workspace. Use this to manage access and remove users who no longer require workspace permissions.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountPublicId}/workspace/{workspacePublicId}/remove-user/{userPublicId}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Removes a user from a specified workspace.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-backup-policy.html'
+keywords: 'ontap backup,backup policy,archival status,attached volumes,object lock'
 summary: 'Retrieve ONTAP backup policies'
 ---
 
 = Retrieve ONTAP backup policies
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of ONTAP backup policies associated with a system. Use this to view policy details, such as archival enablement status, attached volumes, and object-lock mode.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/backup-policy`#
 
+== Token usage
 
+NetApp Console user token.
 
-Retrieves a list of ONTAP backup policies associated with a system. You can filter the policies based on the archival enablement status. This API endpoint retrieves the backup-policy name, rule, attached volume count, archive-after-days, and object-lock mode information.
+== Usage notes
 
-*Token usage:* NetApp Console user token.
-
+You can filter the policies based on the archival enablement status. This API endpoint retrieves the backup-policy name, rule, attached volume count, archive-after-days, and object-lock mode information.
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-resource-groups.html'
+keywords: 'azure resource groups,resource groups region,azure region resources,cloud provider account,subscription id'
 summary: 'Retrieve Azure resource groups by region'
 ---
 
 = Retrieve Azure resource groups by region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Azure resource groups by region. Use this to identify the resource groups available in a specific Azure region for deployment or management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/resource-groups`#
-
-
-
-Retrieves Azure resource groups by region.
-
 
 == Parameters
 

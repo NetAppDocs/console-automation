@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-volumes.html'
+keywords: 'volumes,working environment,volume retrieval,storage volumes,data storage'
 summary: 'Retrieve volumes'
 ---
 
 = Retrieve volumes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all volumes, providing information about the available storage resources in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/volumes`#
-
-
-
-Retrieves all volumes.
-
 
 == Parameters
 

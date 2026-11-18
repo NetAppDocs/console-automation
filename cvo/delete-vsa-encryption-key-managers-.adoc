@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-vsa-encryption-key-managers-.html'
+keywords: 'key manager,cloud volumes,ontap encryption,key manager delete,encryption key manager'
 summary: 'Delete a key manager'
 ---
 
 = Delete a key manager
 :imagesdir: ../media/
 
+[.lead]
+Deletes a key manager from the Cloud Volumes ONTAP system. Use this to remove an unused or outdated key manager configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/vsa/encryption/{workingEnvironmentId}/key-managers/{keyManagerIp}`#
-
-
-
-Deletes a key manager from the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

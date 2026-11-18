@@ -1,6 +1,12 @@
 {
   "overview": "Accounts REST API",
   "permalink": "overview.html",
+  "root_overview": {
+    "ai-gen": {
+      "keywords": "tenancy,accounts,role-based access control,workspaces,service accounts,restricted mode",
+      "lead": "Control access to BlueXP resources with role-based access control (RBAC) when you use BlueXP in restricted mode or private mode. The endpoints cover accounts, authorization, resources, service accounts, users, and workspaces."
+    }
+  },
   "paths": {
     "/tenancy/account/{accountName}": {
       "post": {
@@ -8,7 +14,11 @@
           "title": "Create an account",
           "category": "Account",
           "filename": "post-tenancy-account-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Creates an account with the specified account name. Use this to establish a new account in the tenancy service for managing resources.",
+            "keywords": "create account,account creation,new account,account name,tenancy account"
+          }
         }
       }
     },
@@ -18,7 +28,11 @@
           "title": "Delete an account",
           "category": "Account",
           "filename": "delete-tenancy-account-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes the specified account. Use this operation to remove an account that is no longer needed.",
+            "keywords": "delete account,remove account,account deletion,tenancy account,delete tenancy"
+          }
         }
       },
       "get": {
@@ -26,7 +40,11 @@
           "title": "Retrieve an account",
           "category": "Account",
           "filename": "get-tenancy-account-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves a specific account by its unique identifier. Use this to access detailed information about the account for management or auditing purposes.",
+            "keywords": "account details,account identifier,tenancy account,specific account,account retrieval"
+          }
         }
       }
     },
@@ -36,7 +54,11 @@
           "title": "Associate a user",
           "category": "Account",
           "filename": "post-tenancy-account-associate.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Associates a user with an account based on their email address. Use this to link a specific user to an account within the tenancy service.",
+            "keywords": "associate user,associate account,user email,account association,user tenancy"
+          }
         }
       }
     },
@@ -46,7 +68,11 @@
           "title": "Dissociate a user",
           "category": "Account",
           "filename": "post-tenancy-account-disassociate.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes the association between a user and a specific account. Use this to manage user access to accounts.",
+            "keywords": "disassociate account,user removal,account unlink,remove association,tenancy management"
+          }
         }
       }
     },
@@ -56,7 +82,11 @@
           "title": "Retrieve user data",
           "category": "Account",
           "filename": "get-tenancy-account-users.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves the user data of a specified account. Use this to access account-specific information for tenancy management tasks.",
+            "keywords": "user data,account users,tenancy account,account details,user information"
+          }
         }
       }
     },
@@ -66,7 +96,11 @@
           "title": "Retrieve service account data",
           "category": "Account",
           "filename": "get-tenancy-account-service-accounts.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves the service account data for a specified account. Use this to access detailed information about the account for management or audit purposes.",
+            "keywords": "service accounts,account data,tenancy account,account service,service account details"
+          }
         }
       }
     },
@@ -76,7 +110,11 @@
           "title": "Retrieve user and service account data",
           "category": "Account",
           "filename": "get-tenancy-account-members.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves the user and service account data of the specified account. Use this to access account-specific information for management or troubleshooting purposes.",
+            "keywords": "account members,retrieve users,service accounts,user data,account details"
+          }
         }
       }
     },
@@ -86,7 +124,11 @@
           "title": "Retrieve user role and permissions",
           "category": "Account",
           "filename": "get-tenancy-account-permissions-for-user.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves the user role and permissions for the specified account. Use this to view the account's access rights and capabilities.",
+            "keywords": "user roles,permissions retrieval,account permissions,user access,account roles"
+          }
         }
       }
     },
@@ -96,7 +138,11 @@
           "title": "Delete a user",
           "category": "Account",
           "filename": "post-tenancy-account-leave.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes a user from the specified account. Use this endpoint to manage account access by removing users no longer associated with the account.",
+            "keywords": "remove user,leave account,account removal,tenancy account,user removal"
+          }
         }
       }
     },
@@ -106,7 +152,11 @@
           "title": "Enable Cloud Manager notifications",
           "category": "Account",
           "filename": "patch-tenancy-account-update-user.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Updates the cloudManagerNotificationsOptIn property for an account, determining whether the user receives BlueXP notifications. Use this to manage notification preferences for your account.",
+            "keywords": "user notifications,notification preferences,bluexp notifications,update user,cloud manager notifications"
+          }
         }
       }
     },
@@ -116,7 +166,11 @@
           "title": "Retrieve user accounts",
           "category": "Account",
           "filename": "get-tenancy-account.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves all accounts associated with a user. Use this to view and manage user-related account information.",
+            "keywords": "account retrieval,user accounts,related accounts,tenancy accounts,account management,account details"
+          }
         }
       }
     },
@@ -127,7 +181,11 @@
           "category": "Account",
           "filename": "post-tenancy-account-dest-account-.html",
           "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Moves account data from a source account to a destination account. Use this endpoint to transfer data between accounts as needed.",
+            "keywords": "source account,data migration,destination account,account transfer,tenancy support"
+          }
         }
       }
     },
@@ -137,7 +195,11 @@
           "title": "Rename an account",
           "category": "Account",
           "filename": "post-tenancy-account-rename-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Modifies an account by updating its name to the specified new value. Use this endpoint to change an account’s name as needed.",
+            "keywords": "account rename,rename account,account name update,change account name,new account name"
+          }
         }
       }
     },
@@ -156,7 +218,11 @@
           "title": "Enable private preview for SaaS",
           "category": "Account",
           "filename": "post-tenancy-account-enable-private-preview-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Modifies the private preview setting for a specified account, enabling or disabling access to the SaaS interface private preview. Use this to control feature availability during the preview phase.",
+            "keywords": "private preview,saas interface,enable preview,account settings,preview mode"
+          }
         }
       }
     },
@@ -166,7 +232,11 @@
           "title": "Enable third-party services",
           "category": "Account",
           "filename": "post-tenancy-account-enable-3rd-party-services-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Modifies the third-party enabled property of a specified account, determining whether third-party services are active for the account. Use this to configure account-level access to external services.",
+            "keywords": "third-party services,third-party enabled,enable services,account services,enable third-party"
+          }
         }
       }
     },
@@ -176,7 +246,11 @@
           "title": "Authorize an external resource",
           "category": "Authorize",
           "filename": "post-tenancy-authorize.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Authorizes an external resource to perform specific actions. Use this to grant the resource permissions based on BlueXP user token authentication.",
+            "keywords": "external resource,authorize actions,external authorization,perform actions,user authorization"
+          }
         }
       }
     },
@@ -186,7 +260,11 @@
           "title": "Authorize an external agent",
           "category": "Authorize",
           "filename": "post-tenancy-authorize-agent.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Authorizes an external agent to perform specific actions. Use this to enable external integrations that require permissioned access.",
+            "keywords": "authorize agent,external agent,agent actions,tenancy authorization,service request"
+          }
         }
       }
     },
@@ -196,7 +274,11 @@
           "title": "Authorize an agent workspace",
           "category": "Authorize",
           "filename": "post-tenancy-authorize-agent-workspace.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Authorizes an agent workspace. Use this to grant an agent access within a specific workspace.",
+            "keywords": "authorize agent,agent workspace,workspace authorization,agent access,tenancy workspace"
+          }
         }
       }
     },
@@ -206,7 +288,11 @@
           "title": "Authorize a user as account admin",
           "category": "Authorize",
           "filename": "post-tenancy-authorize-user-is-account-admin.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Authorizes a user as an account admin. Use this to grant administrative access to manage account-level operations.",
+            "keywords": "user authorization,account admin,authorize user,account admin role,user roles"
+          }
         }
       }
     },
@@ -216,7 +302,11 @@
           "title": "Authorize a user for an account",
           "category": "Authorize",
           "filename": "post-tenancy-authorize-user-is-in-account.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Authorizes a user for an account, granting access permissions to interact with resources associated with the specified account. Use this endpoint to manage user access within your tenancy environment.",
+            "keywords": "authorize user,account authorization,user access,account access,tenancy authorization"
+          }
         }
       }
     },
@@ -227,7 +317,11 @@
           "category": "Authorize",
           "filename": "post-tenancy-authorize-agent-in-account.html",
           "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Authorizes an agent in a specified account. Use this to grant the agent the necessary permissions to perform actions on behalf of the account.",
+            "keywords": "agent authorization,account agent,authorize agent,service token,account authorization"
+          }
         }
       }
     },
@@ -237,7 +331,11 @@
           "title": "Discover an external resource",
           "category": "Resource",
           "filename": "post-tenancy-resource-discover.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Discovers an external resource to be added to BlueXP. Use this to identify resources for integration into your BlueXP environment.",
+            "keywords": "external resource,resource discovery,add resource,bluexp resource,discover resource"
+          }
         }
       }
     },
@@ -247,7 +345,11 @@
           "title": "Create an external resource",
           "category": "Resource",
           "filename": "post-tenancy-resource.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Creates an external resource as a BlueXP resource. Use this endpoint to register a resource with the specified type in BlueXP.",
+            "keywords": "bluexp resource,external resource,create resource,resource creation,tenancy resource"
+          }
         }
       },
       "get": {
@@ -255,7 +357,11 @@
           "title": "Retrieve a resource",
           "category": "Resource",
           "filename": "get-tenancy-resource.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves a resource for an account. Use this to access the resource details associated with a specific account.",
+            "keywords": "resource retrieval,account resource,resource type,workspace resource,resource class"
+          }
         }
       }
     },
@@ -266,7 +372,11 @@
           "category": "Resource",
           "filename": "delete-tenancy-service-resource-id.html",
           "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes a service resource from a specified account. Use this to remove an unused or obsolete service resource associated with the account.",
+            "keywords": "service resource,delete resource,resource removal,tenancy service,account resource"
+          }
         }
       }
     },
@@ -276,7 +386,11 @@
           "title": "Set a cloud identifier",
           "category": "Resource",
           "filename": "post-tenancy-resource-set-cloud-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Sets the cloud identifier of a resource. Use this to associate a resource with a specific cloud environment.",
+            "keywords": "cloud identifier,resource cloud,tenancy resource,set cloud id,resource identifier"
+          }
         }
       }
     },
@@ -286,7 +400,11 @@
           "title": "Set a resource name",
           "category": "Resource",
           "filename": "post-tenancy-resource-account-set-resource-name.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Modifies the name of a resource. Use this to update resource identifiers for clarity or consistency in your tenancy service.",
+            "keywords": "resource name,set resource name,rename resource,tenancy resource,resource management"
+          }
         }
       }
     },
@@ -296,7 +414,11 @@
           "title": "Add a resource to a workspace",
           "category": "Resource",
           "filename": "post-tenancy-resource-add-to-workspace-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Adds a resource to a specified workspace.",
+            "keywords": "resource workspace,add resource,workspace management,resource identifier,add to workspace"
+          }
         }
       }
     },
@@ -306,7 +428,11 @@
           "title": "Remove a resource from a workspace",
           "category": "Resource",
           "filename": "post-tenancy-resource-remove-from-workspace-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes a resource from a specified workspace. Use this to manage workspace resources by removing unneeded items.",
+            "keywords": "resource removal,workspace management,workspace resource,remove resource,resource workspace"
+          }
         }
       }
     },
@@ -316,7 +442,11 @@
           "title": "Remove a resource from an agent",
           "category": "Resource",
           "filename": "post-tenancy-resource-remove-from-agent-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes a resource from a specified agent. Use this to manage resource associations within the agent as needed.",
+            "keywords": "resource removal,remove resource,tenancy resource,agent management,remove from agent"
+          }
         }
       }
     },
@@ -326,7 +456,11 @@
           "title": "Delete a resource from an account",
           "category": "Resource",
           "filename": "delete-tenancy-resource-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes a resource from a specified account. Use this to remove resources that are no longer needed within the account.",
+            "keywords": "delete resource,remove resource,tenancy resource,account resource,resource deletion"
+          }
         }
       }
     },
@@ -336,7 +470,11 @@
           "title": "Update properties",
           "category": "Resource",
           "filename": "post-tenancy-resource-account-update.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Updates properties of a specified resource. Use this to modify the resource's configuration or attributes as needed.",
+            "keywords": "resource update,update resource properties,resource identifier,account update,tenancy resource"
+          }
         }
       }
     },
@@ -347,7 +485,11 @@
           "category": "Resource",
           "filename": "delete-tenancy-service-resource-.html",
           "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes service resources from a specified account. Use this to remove resources that are no longer needed for an account.",
+            "keywords": "delete service resources,service resources removal,tenancy service resources,remove service resources,delete tenancy resources"
+          }
         }
       }
     },
@@ -357,7 +499,11 @@
           "title": "Create a workspace",
           "category": "Workspace",
           "filename": "post-tenancy-account-workspace-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Creates a workspace in a specified account. Use this to set up an environment for managing resources within the account.",
+            "keywords": "workspace creation,account workspace,specified account,workspace management,workspace name"
+          }
         }
       }
     },
@@ -367,7 +513,11 @@
           "title": "Add a user",
           "category": "Workspace",
           "filename": "post-tenancy-account-workspace-add-user-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Adds a user to a specified workspace. Use this to grant the user access to the workspace.",
+            "keywords": "add user,workspace user,workspace access,account workspace,user management"
+          }
         }
       }
     },
@@ -377,7 +527,11 @@
           "title": "Remove a user",
           "category": "Workspace",
           "filename": "post-tenancy-account-workspace-remove-user-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes a user from a specified workspace. Use this to manage access and remove users who no longer require workspace permissions.",
+            "keywords": "remove user,workspace management,user removal,workspace access,account workspace"
+          }
         }
       }
     },
@@ -387,7 +541,11 @@
           "title": "Delete a workspace",
           "category": "Workspace",
           "filename": "delete-tenancy-account-workspace-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes a specified workspace. Use this endpoint to remove workspaces that are no longer needed.",
+            "keywords": "workspace delete,delete workspace,account workspace,workspace removal,workspace management,workspace id"
+          }
         }
       },
       "patch": {
@@ -395,7 +553,11 @@
           "title": "Rename a workspace",
           "category": "Workspace",
           "filename": "patch-tenancy-account-workspace-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Renames a workspace by assigning a specified new name. Use this to update the workspace name for better organization or clarity.",
+            "keywords": "workspace rename,rename workspace,account workspace,workspace management,workspace update,tenancy workspace"
+          }
         }
       }
     },
@@ -405,7 +567,11 @@
           "title": "Add an agent",
           "category": "Workspace",
           "filename": "post-tenancy-account-workspace-add-agent-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Adds an agent to a specified workspace.",
+            "keywords": "agent addition,workspace agent,add agent,workspace management,agent workspace"
+          }
         }
       }
     },
@@ -415,7 +581,11 @@
           "title": "Remove an agent",
           "category": "Workspace",
           "filename": "post-tenancy-account-workspace-remove-agent-id.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes an agent from a specified workspace. Use this to manage the agents associated with your workspaces.",
+            "keywords": "remove agent,workspace management,workspace agent,agent removal,workspace access"
+          }
         }
       }
     },
@@ -425,7 +595,11 @@
           "title": "Retrieve agents",
           "category": "Workspace",
           "filename": "get-tenancy-account-workspace-agents.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves agents associated with a specified workspace. Use this to view the agents linked to the workspace for tenancy management.",
+            "keywords": "agents,workspace agents,account workspace,workspace association,workspace details"
+          }
         }
       }
     },
@@ -435,7 +609,11 @@
           "title": "Retrieve workspaces",
           "category": "Workspace",
           "filename": "get-tenancy-account-workspace.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves workspaces associated with a specified account. Use this to view the workspaces linked to your account.",
+            "keywords": "workspace retrieval,account workspace,workspace details,account association,workspace listing"
+          }
         }
       }
     },
@@ -446,7 +624,11 @@
           "category": "Workspace",
           "filename": "get-tenancy-account-user-workspaces.html",
           "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves user account workspaces. Use this to view the workspaces associated with a specific user account.",
+            "keywords": "user workspaces,account workspaces,user account workspaces,workspace retrieval,specific user workspaces"
+          }
         }
       }
     },
@@ -457,7 +639,11 @@
           "category": "User",
           "filename": "get-tenancy-users-for-action--id.html",
           "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves users authorized for actions on a particular resource. Use this to identify which users have permissions for the specified resource.",
+            "keywords": "users authorized,action resource,resource access,tenancy users,permission management,access control"
+          }
         }
       }
     },
@@ -468,7 +654,11 @@
           "category": "User",
           "filename": "get-tenancy-users-for-action-id.html",
           "explorer": false,
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Retrieves users authorized for actions across all resources. Use this to view the full list of users with permissions across the tenancy service.",
+            "keywords": "users authorized,authorized actions,resource access,tenancy users,action permissions"
+          }
         }
       }
     },
@@ -478,7 +668,11 @@
           "title": "Create a service account",
           "category": "Service Account",
           "filename": "post-tenancy-account-service-account.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Creates a service account on a specified account. Use this to establish credentials for accessing resources associated with the account.",
+            "keywords": "create service account,service account creation,account service account,tenancy service account,specified account"
+          }
         }
       }
     },
@@ -488,7 +682,11 @@
           "title": "Delete a service account",
           "category": "Service Account",
           "filename": "delete-tenancy-account-service-account-del.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Deletes a service account from a specified account. Use this to remove unused or obsolete accounts from the tenancy service.",
+            "keywords": "service account,delete service account,account management,remove service account,service account deletion,account cleanup"
+          }
         }
       },
       "patch": {
@@ -496,7 +694,11 @@
           "title": "Update details",
           "category": "Service Account",
           "filename": "patch-tenancy-account-service-account-pat.html",
-          "subcategory": null
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Updates the service account details of a specified account. Use this to modify account settings as needed for your tenancy service.",
+            "keywords": "service account update,service account details,account service management,service account client id,tenancy account"
+          }
         }
       }
     },
@@ -506,8 +708,12 @@
           "title": "Generate a secret",
           "category": "Service Account",
           "filename": "post-tenancy-account-service-account-generate-service-account-secret.html",
-          "subcategory": null
-       }
+          "subcategory": null,
+          "ai-gen": {
+            "lead": "Generates a service account secret for use in authenticating requests. Use this to manage access credentials securely within your tenancy.",
+            "keywords": "service account,service account secret,generate secret,account id,client id"
+          }
+        }
       }
     }
   },
@@ -515,32 +721,56 @@
     {
       "id": "account",
       "title": "Account endpoints in the Accounts REST API",
-      "permalink": "account_overview.html"
+      "permalink": "account_overview.html",
+      "ai-gen": {
+        "lead": "Manage accounts to define identity, organize resources, and control access within the tenancy service. Use these endpoints to create, rename, or delete accounts, associate users and services, manage roles and permissions, and configure account-specific options.",
+        "keywords": "account management,account roles,account permissions,user association,service accounts,account workspaces"
+      }
     },
     {
       "id": "workspace",
       "title": "Workspace endpoints in the Accounts REST API",
-      "permalink": "workspace_overview.html"
+      "permalink": "workspace_overview.html",
+      "ai-gen": {
+        "lead": "Use workspace endpoints to manage granular access control within an account by configuring workspaces and their associated users, Connectors, and resources. These endpoints help isolate resources to enforce security and support organizational structures such as departments or projects. Typical actions include creating, modifying, and deleting workspaces, as well as managing their associated users and Connectors.",
+        "keywords": "workspace management,access control,workspace isolation,user permissions,resource isolation,account workspaces"
+      }
     },
     {
       "id": "authorize",
       "title": "Authorize endpoints in the Accounts REST API",
-      "permalink": "authorize_overview.html"
+      "permalink": "authorize_overview.html",
+      "ai-gen": {
+        "lead": "Use authorization endpoints to configure permissions for workspaces, Connectors, resources, users, and agents within an account. These endpoints help control access and define specific actions each entity can perform.",
+        "keywords": "authorize resource,authorize connector,authorize workspace,account administrator,authorize user,authorize agent"
+      }
     },
     {
       "id": "resource",
       "title": "Resource endpoints in the Accounts REST API",
-      "permalink": "resource_overview.html"
+      "permalink": "resource_overview.html",
+      "ai-gen": {
+        "lead": "Manage resources within your BlueXP account using endpoints that support discovery, creation, updates, deletion, and associations. These endpoints help you organize and control objects such as working environments, services, and storage types across workspaces and Connectors.",
+        "keywords": "resource management,resource ownership,resource association,resource discovery,resource deletion,resource workspace"
+      }
     },
     {
       "id": "service account",
       "title": "Service account endpoints in the Accounts REST API",
-      "permalink": "service_account_overview.html"
+      "permalink": "service_account_overview.html",
+      "ai-gen": {
+        "lead": "Manage service accounts to define administrative roles or delegate limited authority over workspaces. Use these endpoints to perform CRUD operations and generate service account secrets.",
+        "keywords": "service account,service account secret,account administrator,workspace authority,crud operations"
+      }
     },
     {
       "id": "user",
       "title": "User endpoints in the Accounts REST API",
-      "permalink": "user_overview.html"
+      "permalink": "user_overview.html",
+      "ai-gen": {
+        "lead": "Use user endpoints to manage and retrieve information about end users in the BlueXP platform, including their identifiers and authorization details. These endpoints help you determine user access rights for specific resources or across the entire platform.",
+        "keywords": "user endpoints,user component,end user,bluexp platform,account workspace"
+      }
     }
   ]
 }

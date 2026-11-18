@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-network-requirements.html'
+keywords: 'cloud volumes,gcp ha,network requirements,ip addresses,minimum ips,cloud ontap'
 summary: 'Retrieve the minimum number of IP addresses for a system'
 ---
 
 = Retrieve the minimum number of IP addresses for a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the minimum number of required IP addresses for a Cloud Volumes ONTAP system. Use this to determine the IP address requirements for deploying a system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/network-requirements`#
-
-
-
-Retrieves the minimum number of required IP addresses for a Cloud Volumes ONTAP system.
-
 
 == Error
 

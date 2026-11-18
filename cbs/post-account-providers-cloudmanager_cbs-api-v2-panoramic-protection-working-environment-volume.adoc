@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html'
+keywords: 'panoramic protection,replication relationship,cluster peering,backup to cloud,snapmirror cloud,storagegrid'
 summary: 'Enable comprehensive panoramic protection for multiple volumes (v2)'
 ---
 
 = Enable comprehensive panoramic protection for multiple volumes (v2)
 :imagesdir: ../media/
 
+[.lead]
+Creates comprehensive panoramic protection for multiple volumes by establishing replication and backup relationships based on the selected topology. Use this to ensure resilient data protection across clusters and object stores.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/panoramic-protection/working-environment/{workingEnvironmentId}/volume`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Enables comprehensive panoramic protection for multiple volumes. Based on the selected topology (cascading or fan-out), the API creates a replication relationship to the secondary cluster and a backup-to-cloud relationship to a cloud or StorageGRID object store. During replication setup, the API verifies cluster peering between the primary and secondary clusters and, if missing, creates cluster peering, SVM peering, and a DP volume on the secondary cluster. The API then runs SnapMirror create and initialize operations. For backup to cloud, the API creates a bucket and then creates and initializes the SnapMirror Cloud relationship.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

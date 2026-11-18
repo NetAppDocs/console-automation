@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-ransomware-working-environment-volume-snapshot-.html'
+keywords: 'ransomware scan,cloud backup,volume snapshot,snapmirror cloud,cloud object storage'
 summary: 'Initiate a ransomware scan'
 ---
 
 = Initiate a ransomware scan
 :imagesdir: ../media/
 
+[.lead]
+Initiates a ransomware scan on a cloud backup associated with a volume snapshot transferred to the cloud object storage system. Use this to detect potential ransomware threats in cloud backups.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/ransomware/working-environment/{workingEnvironmentId}/volume/{volumeId}/snapshot/{snapshotId}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Initiates a ransomware scan on the specified cloud backup related to a volume snapshot transferred by the SnapMirror - Cloud engine to the cloud object storage system. It scans only cloud backups. It does not support scanning local snapshots. Ransomware attacks on local snapshots cannot be detected.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-folders-folders.html'
+keywords: 'folder listing,parent folder,subfolders,parent folder hierarchy,folder structure'
 summary: 'List all folders under a parent folder'
 ---
 
 = List all folders under a parent folder
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all folders under a specified parent folder to help you organize or navigate the folder structure.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/folders/{folder_id}/folders`#
 
-
+== Usage notes
 
 Lists all folders under the specified parent folder.
 

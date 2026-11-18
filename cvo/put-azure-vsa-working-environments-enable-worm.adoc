@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-vsa-working-environments-enable-worm.html'
+keywords: 'snaplock,enable worm,cloud volumes,cloud ontap,snaplock enable'
 summary: 'Enable SnapLock for an existing system'
 ---
 
 = Enable SnapLock for an existing system
 :imagesdir: ../media/
 
+[.lead]
+Enables SnapLock for an existing Cloud Volumes ONTAP system. Use this to configure compliance or enterprise data retention policies for the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/enable-worm`#
-
-
-
-Enables SnapLock for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

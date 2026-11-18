@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-disable-onprem-scan.html'
+keywords: 'on-premises scanning,disable scan,working environment,cloud compliance,onprem scan'
 summary: 'Disable on-premises scanning'
 ---
 
 = Disable on-premises scanning
 :imagesdir: ../media/
 
+[.lead]
+Disables on-premises scanning to stop the scanning of local resources for potential issues or configuration changes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{workingEnvironmentId}/disable-onprem-scan`#
-
-
-
-Disables on-premises scanning.
-
 
 == Parameters
 

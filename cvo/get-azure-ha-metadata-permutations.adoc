@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-permutations.html'
+keywords: 'ontap cloud,cloud configurations,azure ha,ha metadata,configuration permutations'
 summary: 'Retrieve all ONTAP cloud configurations'
 ---
 
 = Retrieve all ONTAP cloud configurations
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all ONTAP cloud configurations. Use this to view the available configurations for managing cloud storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/permutations`#
-
-
-
-Retrieves all ONTAP cloud configurations.
-
 
 == Error
 

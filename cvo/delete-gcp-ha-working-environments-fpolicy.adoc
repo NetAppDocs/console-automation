@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-gcp-ha-working-environments-fpolicy.html'
+keywords: 'ransomware files,deletes fpolicy,working environment,fpolicy management,file policy'
 summary: 'Delete FPolicy for ransomware files'
 ---
 
 = Delete FPolicy for ransomware files
 :imagesdir: ../media/
 
+[.lead]
+Deletes the FPolicy for ransomware files, removing the associated configuration. Use this endpoint to manage security policies and mitigate ransomware threats.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/fpolicy`#
-
-
-
-Deletes the FPolicy for ransomware files.
-
 
 == Parameters
 

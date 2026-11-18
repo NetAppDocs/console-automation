@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-account-rename-id.html'
+keywords: 'account rename,rename account,account name update,change account name,new account name'
 summary: 'Rename an account'
 ---
 
 = Rename an account
 :imagesdir: ../media/
 
+[.lead]
+Modifies an account by updating its name to the specified new value. Use this endpoint to change an account’s name as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/account/{accountId}/rename/{newAccountName}`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Renames the specified account with a specified new name.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

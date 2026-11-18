@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: true
 permalink: 'tenancy/post-tenancy-resource-discover.html'
+keywords: 'external resource,resource discovery,add resource,bluexp resource,discover resource'
 summary: 'Discover an external resource'
 ---
 
 = Discover an external resource
 :imagesdir: ../media/
 
+[.lead]
+Discovers an external resource to be added to BlueXP. Use this to identify resources for integration into your BlueXP environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/resource/discover`#
 
+== Token usage
 
+BlueXP user token.
+
+== Usage notes
 
 Discovers an external resource to be added to BlueXP.
-            +
-*Token usage:* BlueXP user token.
-
 
 == Parameters
 

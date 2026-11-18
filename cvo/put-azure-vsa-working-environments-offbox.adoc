@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-vsa-working-environments-offbox.html'
+keywords: 'off-box configuration,activate off-box,azure working environment,working environment activation,off-box setup'
 summary: 'Activate an off-box configuration'
 ---
 
 = Activate an off-box configuration
 :imagesdir: ../media/
 
+[.lead]
+Activates an off-box configuration. Use this to apply the configuration settings stored outside the primary system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/offbox`#
-
-
-
-Activates an off-box configuration.
-
 
 == Parameters
 

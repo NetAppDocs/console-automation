@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-aggregates.html'
+keywords: 'create aggregate,gcp aggregate,aggregate creation,ha storage,ontap aggregate'
 summary: 'Create a new aggregate'
 ---
 
 = Create a new aggregate
 :imagesdir: ../media/
 
+[.lead]
+Creates a new aggregate. Use this to provision additional storage resources for your workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/aggregates`#
-
-
-
-Creates a new aggregate.
-
 
 == Request Body
 

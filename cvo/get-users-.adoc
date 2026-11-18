@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-users-.html'
+keywords: 'user retrieval,user details,specific user,user profile,find user,user information'
 summary: 'Retrieve a user'
 ---
 
 = Retrieve a user
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a specific user. Use this to view details about the user within your Cloud Volumes ONTAP environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{userId}`#
-
-
-
-Retrieves a specific user.
-
 
 == Parameters
 

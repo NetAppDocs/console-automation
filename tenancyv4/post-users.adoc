@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-users.html'
+keywords: 'create user,user creation,new user,add user,user management'
 summary: 'Create a new user'
 ---
 
 = Create a new user
 :imagesdir: ../media/
 
+[.lead]
+Creates a new user in the tenancy system, specifying the desired attributes for the user account. Use this to establish accounts for individual access to tenant resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/users`#
 
-
+== Usage notes
 
 Indicates the desired values for the user to be created.
 

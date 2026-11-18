@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-volumes--snapshot.html'
+keywords: 'snapshot creation,manual snapshot,volume snapshot,working environment,snapshot volume,svm snapshot'
 summary: 'Create a snapshot'
 ---
 
 = Create a snapshot
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot manually, capturing the state of a volume at a specific point in time. Use this to preserve data for recovery, backup, or archival purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/snapshot`#
-
-
-
-Creates a snapshot manually.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-fsx-volumes.html'
+keywords: 'create volume,fsx volume,new volume,ontap volume,volume creation'
 summary: 'Create a new volume'
 ---
 
 = Create a new volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a new volume. Use this to allocate storage for workloads or applications in your Amazon FSx for NetApp ONTAP environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/fsx/volumes`#
-
-
-
-Creates a new volume.
-
 
 == Request Body
 

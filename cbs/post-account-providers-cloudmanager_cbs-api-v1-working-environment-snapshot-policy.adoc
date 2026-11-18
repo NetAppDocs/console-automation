@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-working-environment-snapshot-policy.html'
+keywords: 'snapshot policy,snapshot schedule,cloud backup,snapmirror labels,working environment'
 summary: 'Create a snapshot policy'
 ---
 
 = Create a snapshot policy
 :imagesdir: ../media/
 
+[.lead]
+Creates a snapshot policy with a specified schedule, retention count, and SnapMirror labels. Use this to define automated snapshot management for your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/snapshot-policy`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Creates a snapshot policy with the user specified schedule, count and SnapMirror labels in a system.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

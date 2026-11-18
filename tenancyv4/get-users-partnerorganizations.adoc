@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-users-partnerorganizations.html'
+keywords: 'user partners,partner organizations,user partnerships,user organizations,user partner list'
 summary: 'List all partnership organizations for the specified user'
 ---
 
 = List all partnership organizations for the specified user
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of partnership organizations for the specified user. Use this to view the organizations associated with the user in a tenancy context.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/users/{user_id}/partnerOrganizations`#
 
-
+== Usage notes
 
 Lists all partnership organizations for the specified user.
 

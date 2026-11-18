@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-working-environments-change-tier-level.html'
+keywords: 'tier level,change tier,update tier,working environment,aws ha'
 summary: 'Update the tier level'
 ---
 
 = Update the tier level
 :imagesdir: ../media/
 
+[.lead]
+Updates the tier level for a Cloud Volumes ONTAP resource. Use this to adjust the storage tier configuration based on your performance or cost requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/change-tier-level`#
-
-
-
-Updates the tier level.
-
 
 == Parameters
 

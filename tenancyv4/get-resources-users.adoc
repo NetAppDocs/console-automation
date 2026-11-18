@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-resources-users.html'
+keywords: 'resource users,resource permissions,list users,user permissions,resource access,permission management'
 summary: 'List all users with permissions for a resource'
 ---
 
 = List all users with permissions for a resource
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of users with permissions for a specified resource. Use this to view and manage access to the resource.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resources/{resource_id}/users`#
 
-
+== Usage notes
 
 Lists all users with permissions for the specified resource.
 

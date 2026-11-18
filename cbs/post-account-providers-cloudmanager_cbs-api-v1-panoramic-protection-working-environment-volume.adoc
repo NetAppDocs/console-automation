@@ -3,15 +3,26 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-panoramic-protection-working-environment-volume.html'
+keywords: 'panoramic protection,backup workflow,cloud replication,cluster peering,snapmirror cloud,secondary cluster'
 summary: 'Enable comprehensive panoramic protection for multiple volumes (v1)'
 ---
 
 = Enable comprehensive panoramic protection for multiple volumes (v1)
 :imagesdir: ../media/
 
+[.lead]
+Creates comprehensive panoramic protection for multiple volumes by establishing replication and backup relationships. Use this to ensure data protection across clusters and object storage systems, supporting cascading or fan-out workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/panoramic-protection/working-environment/{workingEnvironmentId}/volume`#
 
+== Token usage
 
+NetApp Console user
+token.
+
+== Usage notes
 
 Enables comprehensive panoramic protection for multiple
 volumes. Based on whether the backup workflow is cascading or fan-out, the API creates a replication relationship with a volume in the secondary
@@ -26,14 +37,10 @@ backup to cloud relationship, it first creates a bucket to which the backup is
 transferred, and then a SnapMirror Cloud relationship is created and
 initialized.
 
-*Token usage:* NetApp Console user
-token.
-
 NOTE: For new multi-bucket or per-volume
 object storage integrations, use the https://docs.netapp.com/us-en/console-automation/cbs/post-account-providers-cloudmanager_cbs-api-v2-panoramic-protection-working-environment-volume.html[v2
 panoramic protection API to
 enable backup on volumes].
-
 
 == Parameters
 

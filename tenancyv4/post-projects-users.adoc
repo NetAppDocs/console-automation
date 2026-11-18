@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-projects-users.html'
+keywords: 'project users,add users,project id,manage users,user assignment'
 summary: 'Add users to a project'
 ---
 
 = Add users to a project
 :imagesdir: ../media/
 
+[.lead]
+Adds users to a project, associating them with the specified project for access and collaboration. Use this to manage project membership effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/projects/{project_id}/users`#
 
-
+== Usage notes
 
 Adds users to the specified project.
 

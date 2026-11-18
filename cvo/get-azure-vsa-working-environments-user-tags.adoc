@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments-user-tags.html'
+keywords: 'cloud resources,editable tags,cloud ontap,user tags,working environment,azure ontap'
 summary: 'Retrieve editable tags for cloud resources'
 ---
 
 = Retrieve editable tags for cloud resources
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the editable tags for cloud resources in a specific Cloud Volumes ONTAP instance. Use this to identify and manage tags associated with these resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/user-tags`#
-
-
-
-Retrieves the editable tags for the cloud resources in a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-projects-resources-.html'
+keywords: 'project resource,retrieve resource,project details,resource details,specified project'
 summary: 'Retrieve a resource in a project'
 ---
 
 = Retrieve a resource in a project
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a resource in a specified project. Use this to access detailed information about the resource within the context of the project.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/projects/{project_id}/resources/{resource_id}`#
-
-
-
-Retrieves a resource in a specified project.
-
 
 == Parameters
 

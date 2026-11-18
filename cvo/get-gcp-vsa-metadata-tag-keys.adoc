@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-tag-keys.html'
+keywords: 'labels,gcp project,project labels,tag keys,zone labels,metadata tags'
 summary: 'Retrieve all the labels for a project ID and zone'
 ---
 
 = Retrieve all the labels for a project ID and zone
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all of the labels for a specific project ID and zone. Use this to view the available labels associated with the specified project and zone.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/tag-keys`#
-
-
-
-Retrieves all of the labels for the specific project ID and zone.
-
 
 == Parameters
 

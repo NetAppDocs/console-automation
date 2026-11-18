@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-azure-blob-storage-container-folders.html'
+keywords: 'azure blob storage,blob storage folders,container folders,azure storage account,netapp data broker'
 summary: 'Retrieve the Azure blob storage container folders'
 ---
 
 = Retrieve the Azure blob storage container folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Azure blob storage container folders. Use this to view the folder structure within a specified container.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-azure-blob-storage-container-folders`#
-
-
-
-Retrieves the Azure blob storage container folders.
-
 
 
 CAUTION: This operation is deprecated.

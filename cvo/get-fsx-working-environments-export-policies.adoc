@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-working-environments-export-policies.html'
+keywords: 'fsx export policies,export policies list,fsx working environments,fsx export rules,fsx file system'
 summary: 'Retrieve an export policies list for an FSx system'
 ---
 
 = Retrieve an export policies list for an FSx system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an export policies list for an existing FSx system. Use this to view the policies governing file system access for the associated FSx system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/working-environments/{fileSystemId}/export-policies`#
-
-
-
-Retrieves an export policies list for an existing FSx system.
-
 
 == Parameters
 

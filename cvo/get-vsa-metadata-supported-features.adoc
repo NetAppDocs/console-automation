@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-vsa-metadata-supported-features.html'
+keywords: 'supported features,region features,ontap version,license type,data encryption,instance type'
 summary: 'Retrieve supported features'
 ---
 
 = Retrieve supported features
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported features, providing information about the capabilities available for use.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/vsa/metadata/supported-features`#
-
-
-
-Retrieves the supported features.
-
 
 == Parameters
 

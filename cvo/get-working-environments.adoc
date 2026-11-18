@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-working-environments.html'
+keywords: 'working environments,tenant systems,system retrieval,environment list,ontap systems'
 summary: 'Retrieve all systems'
 ---
 
 = Retrieve all systems
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all systems, providing a comprehensive list of available systems for management or monitoring purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments`#
-
-
-
-Retrieves all systems.
-
 
 == Parameters
 

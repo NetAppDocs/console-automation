@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-grants-.html'
+keywords: 'partnership grants,grant components,partnership resources,provider organization,grant retrieval'
 summary: 'Retrieve a grant'
 ---
 
 = Retrieve a grant
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified grant and its components from a partnership. Use this to examine the details of the grant and its associated elements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}`#
-
-
-
-Retrieves the specified grant and its components from a partnership.
-
 
 == Parameters
 

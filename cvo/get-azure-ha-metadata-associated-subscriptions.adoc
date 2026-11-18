@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-associated-subscriptions.html'
+keywords: 'associated subscriptions,azure subscriptions,cloud provider account,subscription metadata,azure ha'
 summary: 'Retrieve subscriptions'
 ---
 
 = Retrieve subscriptions
 :imagesdir: ../media/
 
+[.lead]
+Retrieves associated subscriptions. Use this to view the subscription details linked to your Cloud Volumes ONTAP instance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/associated-subscriptions`#
-
-
-
-Retrieves associated subscriptions.
-
 
 == Parameters
 

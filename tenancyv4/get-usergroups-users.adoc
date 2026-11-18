@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-usergroups-users.html'
+keywords: 'user groups,group users,list users,user management,group membership,users in group'
 summary: 'List all users for a user group'
 ---
 
 = List all users for a user group
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all users for the specified user group, providing a list of members associated with the group. Use this to review group membership or manage user assignments.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/usergroups/{usergroup_id}/users`#
 
-
+== Usage notes
 
 Lists all users for the specified user group.
 

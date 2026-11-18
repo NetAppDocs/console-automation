@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-volumes--clone.html'
+keywords: 'volume clone,clone volume,azure volume,ha volumes,volume replication'
 summary: 'Clone an existing volume'
 ---
 
 = Clone an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a clone of an existing volume. Use this to provision a new volume with the same data as the source volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/clone`#
 
-
+== Usage notes
 
 Clones an existing volume.
 

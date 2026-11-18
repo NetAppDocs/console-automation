@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-vsa-working-environments-enable-worm.html'
+keywords: 'snaplock,gcp snaplock,cloud volumes ontap,snaplock enable,working environment'
 summary: 'Enable SnapLock for a system'
 ---
 
 = Enable SnapLock for a system
 :imagesdir: ../media/
 
+[.lead]
+Enables SnapLock for an existing Cloud Volumes ONTAP system, configuring the system to use WORM (Write Once Read Many) storage for data retention and compliance purposes. Use this to enforce data immutability and meet regulatory requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/enable-worm`#
-
-
-
-Enables SnapLock for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

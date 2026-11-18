@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-azure-subscription-vnet.html'
+keywords: 'azure virtual networks,azure subscription,virtual network list,azure vnet,cloudmanager azure'
 summary: 'Retrieve Azure virtual networks'
 ---
 
 = Retrieve Azure virtual networks
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of Azure virtual networks from a specific subscription ID in Azure cloud. Use this to view the available networks for backup and recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/vnet`#
 
+== Token usage
 
-
-Retrieves a list of Azure virtual networks from a specific subscription ID in Azure cloud.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

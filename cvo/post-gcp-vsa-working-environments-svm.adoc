@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-svm.html'
+keywords: 'svm creation,new svm,create svm,gcp storage,working environment'
 summary: 'Create a new SVM'
 ---
 
 = Create a new SVM
 :imagesdir: ../media/
 
+[.lead]
+Creates a new SVM. Use this to provision and manage storage virtual machines in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/svm`#
-
-
-
-Creates a new SVM.
-
 
 == Parameters
 

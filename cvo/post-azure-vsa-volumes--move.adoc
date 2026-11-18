@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-volumes--move.html'
+keywords: 'volume move,azure volume,existing volume,volume relocation,ontap volume,svm volume'
 summary: 'Move an existing volume'
 ---
 
 = Move an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Moves an existing volume to a new aggregate or node. Use this to reallocate storage resources or optimize performance.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/move`#
-
-
-
-Moves an existing volume.
-
 
 == Parameters
 

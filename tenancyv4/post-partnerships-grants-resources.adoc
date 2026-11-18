@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-partnerships-grants-resources.html'
+keywords: 'partnership resources,grant resources,add resources,partnership grants,resource management,grant allocation'
 summary: 'Add resources to a grant in a partnership'
 ---
 
 = Add resources to a grant in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Adds resources to a grant in a partnership, specifying which resources are included in the grant. Use this to manage resource access within the partnership.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/resources`#
 
-
+== Usage notes
 
 Adds resources to the specified grant of a partnership.
 

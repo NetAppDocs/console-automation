@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-occm-asup.html'
+keywords: 'autosupport,autosupport configuration,update autosupport,ontap autosupport,modify autosupport'
 summary: 'Update the AutoSupport configuration'
 ---
 
 = Update the AutoSupport configuration
 :imagesdir: ../media/
 
+[.lead]
+Updates the AutoSupport configuration, applying changes to the settings that control automated support and diagnostic data collection. Use this to customize the configuration based on your support requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/occm/asup`#
-
-
-
-Updates the AutoSupport configuration.
-
 
 == Request Body
 

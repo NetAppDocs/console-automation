@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-supported-features.html'
+keywords: 'supported features,ha metadata,gcp features,ontap version,supported encryption'
 summary: 'Retrieve supported features'
 ---
 
 = Retrieve supported features
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported features, providing information about the capabilities available in the system. Use this to understand which features are supported for your configuration.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/supported-features`#
-
-
-
-Retrieves the supported features.
-
 
 == Parameters
 

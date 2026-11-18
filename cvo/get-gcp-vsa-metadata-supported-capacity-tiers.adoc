@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-supported-capacity-tiers.html'
+keywords: 'google cloud,capacity tiers,supported tiers,disk types,ontap version,data encryption'
 summary: 'Retrieve supported capacity tiers for Google Cloud disk types'
 ---
 
 = Retrieve supported capacity tiers for Google Cloud disk types
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported capacity tiers for Google Cloud disk types. Use this to identify the available capacity options for provisioning storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/supported-capacity-tiers`#
-
-
-
-Retrieves the supported capacity tiers for Google Cloud disk types.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,serial number,working environment,extra storage,capacity registration'
 summary: 'Register extra capacity serial numbers'
 ---
 
 = Register extra capacity serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Registers an extra capacity serial number to expand the available capacity for your Cloud Volumes ONTAP system. Use this endpoint to manage capacity upgrades effectively.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
-
-
-
-Registers an extra capacity serial number.
-
 
 == Parameters
 

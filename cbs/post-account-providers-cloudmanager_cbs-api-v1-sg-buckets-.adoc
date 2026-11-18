@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/post-account-providers-cloudmanager_cbs-api-v1-sg-buckets-.html'
+keywords: 'bucket details,storagegrid bucket,sgws bucket,storage server,bucket fields'
 summary: 'Retrieve details of a bucket from the StorageGRID server'
 ---
 
 = Retrieve details of a bucket from the StorageGRID server
 :imagesdir: ../media/
 
+[.lead]
+Retrieves details of a specific bucket from the StorageGRID server. Use this to view the bucket's configuration or properties for backup and recovery purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/sg/buckets/{bucketName}`#
 
+== Token usage
 
-
-Retrieves details of a specific bucket from the StorageGRID server.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-google-drive-folders.html'
+keywords: 'google drive folders,netapp tenancy,google drive id,data brokers,folder listing'
 summary: 'Retrieve the Google Drive folders'
 ---
 
 = Retrieve the Google Drive folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Google Drive folders, providing access to the folder hierarchy for file management or synchronization purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-google-drive-folders`#
-
-
-
-Retrieves the Google Drive folders.
-
 
 == Parameters
 

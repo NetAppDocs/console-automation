@@ -1,6 +1,12 @@
 {
   "overview": "In-Product Automation REST API for the NetApp Console",
   "permalink": "overview.html",
+  "root_overview": {
+    "ai-gen": {
+      "keywords": "in-product automation,ipa,license enforcement,netapp support site,nss,support",
+      "lead": "Manage license enforcement and policy-driven operational control across NetApp product families with the In-Product Automation (IPA) service. Use the endpoints to work with licenses, services, NetApp Support Site (NSS) data, and support."
+    }
+  },
   "paths": {
     "/ipa/account/{accountId}/serial-number/{serialNumber}/register": {
       "post": {
@@ -9,7 +15,11 @@
           "category": "License",
           "filename": "post-ipa-account-serial-number-register.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Registers a license with IPA, activating the license for use within the service. Use this to enable features or services tied to the registered license.",
+            "keywords": "license register,serial number register,account license,license registration,netapp license"
+          }
         }
       }
     },
@@ -20,7 +30,11 @@
           "category": "License",
           "filename": "post-ipa-serial-number-deregister.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deregisters a license from IPA.",
+            "keywords": "license deregistration,serial number deregistration,ipa license,cloud account license,deregister license"
+          }
         }
       }
     },
@@ -31,7 +45,11 @@
           "category": "License",
           "filename": "post-ipa-serial-number-registration-status.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves the license registration status, providing information about the current state of license activation. Use this to verify whether licenses are properly registered.",
+            "keywords": "license registration,status check,serial number verification,registration status,license status"
+          }
         }
       }
     },
@@ -42,7 +60,11 @@
           "category": "License",
           "filename": "post-ipa-account-serial-number-status-v5.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves an IPA license status, providing information about the current licensing state for the IPA service.",
+            "keywords": "ipa license,status check,license validation,serial number lookup,account license"
+          }
         }
       }
     },
@@ -53,7 +75,11 @@
           "category": "License",
           "filename": "post-ipa-authenticate-v5.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Authenticates an IPA license (v5), verifying its validity for use with the IPA service. Use this to ensure compliance and access to licensed features.",
+            "keywords": "ipa license,license authentication,v5 license,netapp console,ipa authenticate"
+          }
         }
       }
     },
@@ -64,7 +90,11 @@
           "category": "License",
           "filename": "post-ipa-account-serial-number-status-v6.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves an IPA license status (v6), providing information about the current license configuration. Use this to verify licensing details for the IPA service.",
+            "keywords": "ipa license,status v6,license status,serial number,status check,netapp console"
+          }
         }
       }
     },
@@ -75,7 +105,11 @@
           "category": "Services",
           "filename": "post-ipa-services-account-sn-lookup-token.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves an IPA serial number token. Use this token for authentication with the NetApp Console service.",
+            "keywords": "ipa serial number,serial number token,netapp console,serial lookup,service token"
+          }
         }
       }
     },
@@ -86,7 +120,11 @@
           "category": "Services",
           "filename": "post-ipa-services-sn-lookup.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves an IPA serial number. Use this to view the serial number associated with an IPA device.",
+            "keywords": "ipa services,serial number lookup,netapp console,license protocol,license package,host id"
+          }
         }
       }
     },
@@ -97,7 +135,11 @@
           "category": "NSS",
           "filename": "get-ipa-account-nss-key-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves the NetApp Support Site key credentials for a specified NetApp Support Site ID. Use this to access credentials associated with your Support Site account.",
+            "keywords": "netapp support site,netapp credentials,nss key,account id support,key retrieval,netapp id"
+          }
         }
       },
       "put": {
@@ -106,7 +148,11 @@
           "category": "NSS",
           "filename": "put-ipa-account-nss-key-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates NetApp Support Site key credentials to refresh the authentication information used for accessing NetApp services. Use this to ensure that the credentials remain valid and up to date.",
+            "keywords": "netapp support,update credentials,support site key,nss key,account credentials"
+          }
         }
       },
       "delete": {
@@ -115,7 +161,11 @@
           "category": "NSS",
           "filename": "delete-ipa-account-nss-key-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Deletes NetApp Support Site key credentials. Use this to remove stored credentials that are no longer needed for authentication.",
+            "keywords": "netapp support,delete credentials,nss key,account key removal,key deletion,nss credential"
+          }
         }
       }
     },
@@ -126,7 +176,11 @@
           "category": "NSS",
           "filename": "get-ipa-account-nss-keys.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves a list of NetApp Support Site key credentials associated with an account. Use this to view the credentials and optionally include resource data linked to a specific NetApp Support Site ID.",
+            "keywords": "netapp support site,account credentials,nss keys,resource data,service request"
+          }
         }
       }
     },
@@ -137,7 +191,11 @@
           "category": "NSS",
           "filename": "post-ipa-account-nss-key.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Creates NetApp Support Site key credentials. Use this to generate credentials for accessing NetApp Support Site resources.",
+            "keywords": "netapp support,netapp key,create credentials,nss key,netapp console"
+          }
         }
       }
     },
@@ -148,7 +206,11 @@
           "category": "NSS",
           "filename": "post-ipa-account-idaas-key.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Creates an identity-as-a-service (IDaaS) NetApp Support Site key credential. Use this endpoint to generate credentials for accessing NetApp Support Site resources through the IPA service.",
+            "keywords": "identity service,key credential,support site,netapp console,account id,id management"
+          }
         }
       }
     },
@@ -159,7 +221,11 @@
           "category": "NSS",
           "filename": "post-ipa-account-nss-key-associate.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Associates a resource with a specified NetApp Support Site key. Use this to link resources to your support account for tracking and management.",
+            "keywords": "netapp support,associate resource,support site key,nss key association,netapp console"
+          }
         }
       }
     },
@@ -170,7 +236,11 @@
           "category": "NSS",
           "filename": "post-ipa-account-nss-key-disassociate.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Disassociates a resource from a specified NetApp Support Site key. Use this to manage resource relationships effectively within your environment.",
+            "keywords": "nss key,disassociate resource,netapp support,resource disassociation,support key"
+          }
         }
       }
     },
@@ -181,7 +251,11 @@
           "category": "NSS",
           "filename": "post-ipa-account-src-nss-key-dst-nss_key-resource-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates the NetApp Support Site key of a resource by transferring data from the source key to the destination key. Use this to manage or reassign Support Site data for the associated resource.",
+            "keywords": "netapp support site,source data transfer,destination key transfer,resource transfer,account data"
+          }
         }
       }
     },
@@ -192,7 +266,11 @@
           "category": "NSS",
           "filename": "get-ipa-account-nss-key-resource-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves NetApp Support Site credentials for a specified resource ID, validating them if the validateKey field is true. Use this to confirm access credentials for integration or troubleshooting purposes.",
+            "keywords": "netapp support,account credentials,resource validation,support site credentials,key validation"
+          }
         }
       }
     },
@@ -213,7 +291,11 @@
           "category": "NSS",
           "filename": "get-ipa-nss-key-access-token.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves a NetApp Support Site user B2C access token, which is required for authenticating and accessing NetApp Console services.",
+            "keywords": "netapp support,access token,b2c token,nss key,user token,console service"
+          }
         }
       }
     },
@@ -224,7 +306,11 @@
           "category": "NSS",
           "filename": "get-ipa-accounts-nss-data.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves NetApp Support Site data associated with NetApp Console accounts. Use this to access support-related information tied to your account.",
+            "keywords": "netapp support,console accounts,nss data,account support,service data,retrieve support"
+          }
         }
       }
     },
@@ -235,7 +321,11 @@
           "category": "NSS",
           "filename": "get-ipa-account-nss-key-nss-data.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves NetApp Support Site data associated with an account ID and NetApp Support Site key ID. Use this to access account-specific support information linked to your NetApp Console user token.",
+            "keywords": "netapp support,account data,nss key,netapp console,support site data"
+          }
         }
       }
     },
@@ -246,7 +336,11 @@
           "category": "Support",
           "filename": "post-ipa-support-case-system-entitlements.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Checks system entitlements for a specified serial number to determine if you are entitled to create a case for the requested serial number.",
+            "keywords": "system entitlements,serial number check,case creation eligibility,netapp support,entitlement validation"
+          }
         }
       }
     },
@@ -257,7 +351,11 @@
           "category": "Support",
           "filename": "post-ipa-support-case-create.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Creates a support case, enabling communication with technical support for issue resolution. Use this to initiate assistance for troubleshooting or problem management.",
+            "keywords": "support case,create case,case priority,support category,case title,serial number"
+          }
         }
       }
     },
@@ -268,7 +366,11 @@
           "category": "Support",
           "filename": "post-ipa-support-case-upload.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Uploads an attachment file to a support case. Use this to provide additional information or supporting documentation for issue resolution.",
+            "keywords": "support case,file upload,attachment upload,case number,support attachment"
+          }
         }
       }
     },
@@ -279,7 +381,11 @@
           "category": "Support",
           "filename": "get-ipa-support-case-file-upload-url.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves a temporary URL for uploading an attachment file. Use this to upload files securely in workflows requiring attachment handling.",
+            "keywords": "upload attachment,temporary url,case file,upload file,case attachment"
+          }
         }
       }
     },
@@ -290,7 +396,11 @@
           "category": "Support",
           "filename": "get-ipa-support-case-search.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves a list of support cases based on specified filter parameters. Use this to review cases that match your criteria for further analysis or action.",
+            "keywords": "support cases,case search,retrieve cases,filter cases,support case list"
+          }
         }
       }
     },
@@ -301,7 +411,11 @@
           "category": "Support",
           "filename": "get-ipa-support-case-details.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves support case details, providing information about a specific case for troubleshooting or review. Use this to access detailed case data when managing support activities.",
+            "keywords": "support case,retrieve case details,case details,case number,fetch attachments"
+          }
         }
       }
     },
@@ -312,7 +426,11 @@
           "category": "Support",
           "filename": "put-ipa-support-case-.html",
           "subcategory": null,
-          "explorer": false
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Updates the notes or status of a support case. Use this to track progress or provide additional context for case resolution.",
+            "keywords": "support case,case notes,case status,update support,edit case"
+          }
         }
       }
     },
@@ -323,31 +441,51 @@
           "category": "Support",
           "filename": "get-ipa-support-case-notes-.html",
           "subcategory": null,
-          "explorer": false
-       }
+          "explorer": false,
+          "ai-gen": {
+            "lead": "Retrieves a list of case notes. Use this endpoint to review case-related information for tracking or analysis purposes.",
+            "keywords": "case notes,case retrieval,support case,case details,support notes"
+          }
+        }
       }
     }
   },
   "categories": [
     {
       "id": "license",
-      "title": "License endpoints in the In-Product Automation REST API for the NetApp Console", 
-      "permalink": "license_overview.html"
+      "title": "License endpoints in the In-Product Automation REST API for the NetApp Console",
+      "permalink": "license_overview.html",
+      "ai-gen": {
+        "lead": "Use license endpoints to register, deregister, and check the status of NetApp Console licenses within the IPA service. These endpoints support license management across multiple IPA service versions, ensuring compatibility and accurate status tracking.",
+        "keywords": "license registration,deregistration,license management,registration status,license status"
+      }
     },
     {
       "id": "services",
       "title": "Services endpoints in the In-Product Automation REST API for the NetApp Console",
-      "permalink": "services_overview.html"
+      "permalink": "services_overview.html",
+      "ai-gen": {
+        "lead": "Use the services endpoints to retrieve serial numbers and their lookup tokens within the NetApp Console environment. These endpoints handle operations like consulting lookup services and serial number services to streamline identification processes.",
+        "keywords": "serial number lookup,serial number token,serial number retrieval,lookup token,token retrieval"
+      }
     },
     {
       "id": "nss",
       "title": "NetApp Support Site endpoints in the In-Product Automation REST API for the NetApp Console",
-      "permalink": "nss_overview.html"
+      "permalink": "nss_overview.html",
+      "ai-gen": {
+        "lead": "Use NetApp Support Site endpoints to manage keys, migrate resources, and retrieve access tokens within the NetApp Console IPA service. These endpoints support tasks such as updating key associations, performing migrations, and accessing registration details.",
+        "keywords": "support site key,migrate key,key management,resource association,access token,username retrieval"
+      }
     },
     {
       "id": "support",
       "title": "Support endpoints in the In-Product Automation REST API for the NetApp Console",
-      "permalink": "support_overview.html"
+      "permalink": "support_overview.html",
+      "ai-gen": {
+        "lead": "Use support endpoints to verify system entitlements and create support cases directly within the NetApp Console. These operations help ensure proper access and streamline case management for your systems.",
+        "keywords": "support case,case creation,system entitlements,serial number entitlement,support operations"
+      }
     }
   ]
 }

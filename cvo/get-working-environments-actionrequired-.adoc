@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-working-environments-actionrequired-.html'
+keywords: 'tenant actions,non-premises actions,system actions,tenant required actions,working environments'
 summary: 'Retrieve all non-premises system actions for a tenant ID'
 ---
 
 = Retrieve all non-premises system actions for a tenant ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all non-premises system actions for a tenant ID, providing the necessary actions associated with the specified tenant.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/working-environments/actionRequired/{tenantId}`#
 
-
+== Usage notes
 
 Returns all non-premises system actions required for a specific tenant ID.
 

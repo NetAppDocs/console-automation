@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/delete-organizations-federations-.html'
+keywords: 'delete federation,federation removal,organization federation,federation management,remove federation,organization integration'
 summary: 'Delete a federation'
 ---
 
 = Delete a federation
 :imagesdir: ../media/
 
+[.lead]
+Deletes the specified federation. Use this to remove a federation that is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/organizations/{organization_id}/federations/{federation_id}`#
-
-
-
-Deletes the specified federation.
-
 
 == Parameters
 

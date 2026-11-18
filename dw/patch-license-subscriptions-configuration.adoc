@@ -3,17 +3,22 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/patch-license-subscriptions-configuration.html'
+keywords: 'subscription configuration,cloud accounts,subscription management,cloud account association,configure subscription'
 summary: 'Set the subscription configuration'
 ---
 
 = Set the subscription configuration
 :imagesdir: ../media/
 
+[.lead]
+Sets the subscription configuration. Use this to associate subscriptions with cloud accounts.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/license/subscriptions/configuration`#
 
+== Usage notes
 
-
-Sets the subscription configuration. +
 Associates subscriptions to cloud accounts.
 
 {blank} +

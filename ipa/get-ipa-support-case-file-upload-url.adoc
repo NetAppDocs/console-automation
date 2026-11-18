@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/get-ipa-support-case-file-upload-url.html'
+keywords: 'upload attachment,temporary url,case file,upload file,case attachment'
 summary: 'Retrieve a temporary URL for file attachment'
 ---
 
 = Retrieve a temporary URL for file attachment
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a temporary URL for uploading an attachment file. Use this to upload files securely in workflows requiring attachment handling.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/support/case/{caseNumber}/file/{fileName}/upload-url`#
 
+== Token usage
 
+Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+== Usage notes
 
 Retrieves a temporary URL for uploading an attachment file.
-            +
- +
-*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
-
 
 == Parameters
 

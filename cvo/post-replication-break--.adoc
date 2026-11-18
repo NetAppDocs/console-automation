@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-replication-break--.html'
+keywords: 'snapmirror break,replication break,snapmirror relationship,volume replication,break replication'
 summary: 'Break a SnapMirror replication relationship'
 ---
 
 = Break a SnapMirror replication relationship
 :imagesdir: ../media/
 
+[.lead]
+Breaks a SnapMirror replication relationship, stopping data replication between the source and destination volumes. Use this to make the destination volume writable for data access or management operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/replication/break/{destinationWorkingEnvironmentId}/{destinationSvmName}/{destinationVolumeName}`#
-
-
-
-Breaks a SnapMirror replication relationship.
-
 
 == Parameters
 

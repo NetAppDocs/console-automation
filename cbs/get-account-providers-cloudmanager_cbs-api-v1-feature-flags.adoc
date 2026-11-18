@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-feature-flags.html'
+keywords: 'feature flags,enabled features,disabled features,account features,cloudmanager cbs,feature management'
 summary: 'Retrieve a list of features which are enabled or disabled for the account'
 ---
 
 = Retrieve a list of features which are enabled or disabled for the account
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of features that are enabled or disabled for the account. Use this to review the account's available capabilities and configurations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/feature-flags`#
 
-
+== Usage notes
 
 Retrieves a list of features which are enabled or disabled for the account.
 

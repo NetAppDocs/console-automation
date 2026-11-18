@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-accounts-data-brokers-restart.html'
+keywords: 'data broker,data broker id,netapp tenancy,data broker restart'
 summary: 'Restart a data broker'
 ---
 
 = Restart a data broker
 :imagesdir: ../media/
 
+[.lead]
+Restarts a data broker to reinitialize its operations or resolve issues affecting its performance. Use this endpoint when you need to restore the data broker to a functional state.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/restart`#
-
-
-
-Restarts a data broker.
-
 
 == Parameters
 

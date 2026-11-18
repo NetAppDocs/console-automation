@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-vsa-working-environments-activate-snapshot-policy.html'
+keywords: 'snapshot policy,activate snapshot,snapshot assignment,read write volumes,unprotected volumes'
 summary: 'Activate snapshot policy assignments'
 ---
 
 = Activate snapshot policy assignments
 :imagesdir: ../media/
 
+[.lead]
+Activates snapshot policy assignments for unprotected read/write volumes. Use this to ensure snapshot policies are applied to volumes that currently lack protection.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/activate-snapshot-policy`#
 
-
+== Usage notes
 
 Activates snapshot policy assignment for all unprotected read/write volumes.
 

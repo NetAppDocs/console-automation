@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/put-account-providers-cloudmanager_cbs-api-v1-configurations.html'
+keywords: 'cloudmanager configurations,modify configuration,cloud provider configuration,update configuration,configuration settings'
 summary: 'Modify the configuration'
 ---
 
 = Modify the configuration
 :imagesdir: ../media/
 
+[.lead]
+Modifies the configuration for NCO Backup and Recovery. Use this to update settings for backup or recovery workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/configurations`#
-
-
-
-Modifies the configuration.
-
 
 == Parameters
 

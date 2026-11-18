@@ -3,21 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/post-ipa-support-case-upload.html'
+keywords: 'support case,file upload,attachment upload,case number,support attachment'
 summary: 'Upload an attachment for a support case'
 ---
 
 = Upload an attachment for a support case
 :imagesdir: ../media/
 
+[.lead]
+Uploads an attachment file to a support case. Use this to provide additional information or supporting documentation for issue resolution.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/ipa/support/case/{caseNumber}/upload`#
 
+== Token usage
 
+Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
+
+== Usage notes
 
 Uploads an attachment file to a support case.
-            +
- +
-*Token usage:* Both a NetApp Console user token and service token. The service token needs to include one of the following scopes: 'occm-access', 'ipa-internal'.
-
 
 == Parameters
 

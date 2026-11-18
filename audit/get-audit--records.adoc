@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'audit/get-audit--records.html'
+keywords: 'audit records,account records,service records,request records,specified records'
 summary: 'Retrieve records by service'
 ---
 
 = Retrieve records by service
 :imagesdir: ../media/
 
+[.lead]
+Retrieves audit records filtered by account, service, and request ID.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/audit/{accountId}/{service}/{requestId}/records`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves specified records by account, service, and request ID.
-
-**Token usage:** NetApp Console user token.
-
 
 == Parameters
 

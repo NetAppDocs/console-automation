@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-replication-status-.html'
+keywords: 'snapmirror replication,status check,replication status,snapmirror status,working environment,relationship status'
 summary: 'Retrieve SnapMirror replication relationship status'
 ---
 
 = Retrieve SnapMirror replication relationship status
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the SnapMirror replication relationship status of a specific system. Use this to monitor the replication state and ensure data synchronization between systems.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/replication/status/{workingEnvironmentId}`#
-
-
-
-Retrieves the SnapMirror replication relationship status of a specific system.
-
 
 == Parameters
 

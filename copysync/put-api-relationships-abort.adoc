@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-relationships-abort.html'
+keywords: 'relationship sync,stop sync,data replication,abort relationship,netapp relationship'
 summary: 'Stop the relationship data sync'
 ---
 
 = Stop the relationship data sync
 :imagesdir: ../media/
 
+[.lead]
+Stops a relationship data sync to interrupt the ongoing synchronization of data between connected systems. Use this to halt data transfer if adjustments or troubleshooting are required.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/relationships/{id}/abort`#
-
-
-
-Stops a relationship data sync.
-
 
 == Parameters
 

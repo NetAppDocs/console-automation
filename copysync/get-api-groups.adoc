@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-groups.html'
+keywords: 'groups,data broker,broker groups,netapp groups,tenancy account'
 summary: 'Retrieve all groups'
 ---
 
 = Retrieve all groups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all data broker groups, providing the available group configurations for managing data broker resources. Use this to review the current groups defined in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/groups`#
-
-
-
-Retrieves all data broker groups.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-working-environments-change-serial.html'
+keywords: 'cloud volumes,ontap system,serial number update,working environment,azure ontap'
 summary: 'Update the serial number of Cloud Volumes ONTAP'
 ---
 
 = Update the serial number of Cloud Volumes ONTAP
 :imagesdir: ../media/
 
+[.lead]
+Updates the serial number of a Cloud Volumes ONTAP system. Use this to change the serial number when required for system identification or compliance purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/working-environments/{workingEnvironmentId}/change-serial`#
-
-
-
-Updates the serial number of a Cloud Volumes ONTAP system.
-
 
 == Parameters
 

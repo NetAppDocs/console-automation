@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-system-manually-activate-auto-vsa-capacity-management-cycle.html'
+keywords: 'cloud volumes,ontap capacity,capacity management,auto management,manual activation'
 summary: 'Activate the Cloud Volumes ONTAP capacity automatic management cycle'
 ---
 
 = Activate the Cloud Volumes ONTAP capacity automatic management cycle
 :imagesdir: ../media/
 
+[.lead]
+Activates the Cloud Volumes ONTAP capacity automatic management cycle manually. Use this to initiate the cycle outside of its scheduled operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/system/manually-activate-auto-vsa-capacity-management-cycle`#
-
-
-
-Activates the Cloud Volumes ONTAP capacity automatic management cycle manually.
-
 
 == Error
 

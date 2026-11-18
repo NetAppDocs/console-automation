@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-volumes-initiator.html'
+keywords: 'iscsi initiators,azure volumes,ha volumes,initiator retrieval,iscsi setup,azure ha'
 summary: 'Retrieve all iSCSI initiators'
 ---
 
 = Retrieve all iSCSI initiators
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all iSCSI initiators. Use this to view the available initiators for managing iSCSI connections in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/volumes/initiator`#
-
-
-
-Retrieves all iSCSI initiators.
-
 
 == Error
 

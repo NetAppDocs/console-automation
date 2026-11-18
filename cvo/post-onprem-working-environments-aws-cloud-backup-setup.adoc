@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-onprem-working-environments-aws-cloud-backup-setup.html'
+keywords: 'aws backup,cloud backup,backup setup,aws cloud,on-premises backup'
 summary: 'Set up AWS backup to cloud'
 ---
 
 = Set up AWS backup to cloud
 :imagesdir: ../media/
 
+[.lead]
+Sets up AWS backup to cloud on an on-premises system, enabling backup operations to an AWS cloud storage target. Use this to configure cloud-based data protection for your on-premises resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/aws-cloud-backup-setup`#
-
-
-
-Sets up AWS backup to cloud on an on-premises system.
-
 
 == Parameters
 

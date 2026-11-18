@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/put-api-relationships-sync.html'
+keywords: 'relationship sync,data sync,relationship id,netapp tenancy,relationship management'
 summary: 'Initiate a relationship data sync'
 ---
 
 = Initiate a relationship data sync
 :imagesdir: ../media/
 
+[.lead]
+Initiates a relationship data sync, transferring data between systems to maintain synchronization. Use this to ensure consistency across related datasets.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/api/relationships/{id}/sync`#
-
-
-
-Initiates a relationship data sync.
-
 
 == Parameters
 

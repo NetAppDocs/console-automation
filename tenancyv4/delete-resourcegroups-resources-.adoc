@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-resourcegroups-resources-.html'
+keywords: 'delete resource,remove resource,resource group management,resource deletion,resource cleanup,manage resource groups'
 summary: 'Remove a resource from a resource group'
 ---
 
 = Remove a resource from a resource group
 :imagesdir: ../media/
 
+[.lead]
+Deletes a resource from the specified resource group, removing it from the group's configuration. Use this to manage and update the composition of resource groups in your tenancy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/resourcegroups/{resourcegroup_id}/resources/{resource_id}`#
-
-
-
-Deletes a resource from the specified resource group.
-
 
 == Parameters
 

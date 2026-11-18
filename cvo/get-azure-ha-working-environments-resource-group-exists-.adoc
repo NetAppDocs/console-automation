@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-working-environments-resource-group-exists-.html'
+keywords: 'resource group,resource group exists,azure resource group,check resource group,resource group validation'
 summary: 'Check if a resource group with the specified name exists'
 ---
 
 = Check if a resource group with the specified name exists
 :imagesdir: ../media/
 
+[.lead]
+Checks if a resource group with the specified name exists, verifying whether the name is already in use. Use this to confirm name availability before creating a new resource group.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/working-environments/resource-group-exists/{resourceGroupName}`#
 
-
+== Usage notes
 
 Checks if a resource group with the specified name already exists. Returns true if a resource group with that name already exists, false otherwise.
 

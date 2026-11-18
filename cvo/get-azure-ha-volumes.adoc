@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-volumes.html'
+keywords: 'volumes,azure volumes,high availability,working environment,volume retrieval'
 summary: 'Retrieve volumes'
 ---
 
 = Retrieve volumes
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all volumes. Use this to view the available volumes in your Cloud Volumes ONTAP environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/volumes`#
-
-
-
-Retrieves all volumes.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-metadata-tag-keys.html'
+keywords: 'tag keys,tag names,aws ha,metadata tags,cloud provider tags'
 summary: 'Retrieve all tag names'
 ---
 
 = Retrieve all tag names
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all tag names. Use this to view the available tags associated with your resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/metadata/tag-keys`#
 
-
+== Usage notes
 
 Retrieves all of the tag names.
 

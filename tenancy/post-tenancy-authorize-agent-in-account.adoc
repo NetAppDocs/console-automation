@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancy/post-tenancy-authorize-agent-in-account.html'
+keywords: 'agent authorization,account agent,authorize agent,service token,account authorization'
 summary: 'Authorize an agent'
 ---
 
 = Authorize an agent
 :imagesdir: ../media/
 
+[.lead]
+Authorizes an agent in a specified account. Use this to grant the agent the necessary permissions to perform actions on behalf of the account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/tenancy/authorize-agent-in-account`#
 
+== Token usage
 
+Both a BlueXP user token and service token. Pass the user token in the Authorization request header and the service token in the X-Agent-Token request header.
+
+== Usage notes
 
 Authorizes an agent in a specified account.
-            +
-*Token usage:* Both a BlueXP user token and service token. Pass the user token in the Authorization request header and the service token in the X-Agent-Token request header.
-
 
 == Parameters
 

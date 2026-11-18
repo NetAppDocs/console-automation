@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-ha-working-environments-start.html'
+keywords: 'cloud volumes,cloud ontap,start instance,working environment,gcp ha'
 summary: 'Start a Cloud Volumes ONTAP instance'
 ---
 
 = Start a Cloud Volumes ONTAP instance
 :imagesdir: ../media/
 
+[.lead]
+Starts a Cloud Volumes ONTAP instance, initiating the specified instance to become operational. Use this to activate an instance for storage management and other operational tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/start`#
 
-
+== Usage notes
 
 Starts a specific Cloud Volumes ONTAP instance.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-vsa-aggregates.html'
+keywords: 'aggregate creation,azure aggregates,new aggregate,ontap azure,aggregate management'
 summary: 'Create a new aggregate'
 ---
 
 = Create a new aggregate
 :imagesdir: ../media/
 
+[.lead]
+Creates a new aggregate. Use this to provision storage resources for workloads in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/vsa/aggregates`#
-
-
-
-Creates a new aggregate.
-
 
 == Request Body
 

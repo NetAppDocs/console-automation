@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-metadata-network-requirements.html'
+keywords: 'cloud volumes,ontap system,network requirements,ip addresses,azure ontap'
 summary: 'Retrieve the minimum number of required IP addresses'
 ---
 
 = Retrieve the minimum number of required IP addresses
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the minimum number of required IP addresses for a Cloud Volumes ONTAP system. Use this to determine the IP address requirements for deploying the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/metadata/network-requirements`#
-
-
-
-Retrieves the minimum number of required IP addresses for a Cloud Volumes ONTAP system.
-
 
 == Error
 

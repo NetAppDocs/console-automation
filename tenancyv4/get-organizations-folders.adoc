@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-organizations-folders.html'
+keywords: 'organization folders,organization structure,list folders,folder hierarchy,organization management'
 summary: 'List all folders under an organization'
 ---
 
 = List all folders under an organization
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of folders under a specified organization. Use this to view the folder structure associated with the organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/organizations/{organization_id}/folders`#
 
-
+== Usage notes
 
 Lists all folders under the specified organization.
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-working-environments-cifs.html'
+keywords: 'cifs configuration,on-premises ontap,cifs settings,working environment,cifs vserver'
 summary: 'Retrieve a CIFS configuration for a system'
 ---
 
 = Retrieve a CIFS configuration for a system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a CIFS configuration for an existing on-premises ONTAP system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/working-environments/{workingEnvironmentId}/cifs`#
 
-
+== Usage notes
 
 Retrieves CIFS configuration for an existing Cloud Volumes ONTAP system.
 

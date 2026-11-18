@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-working-environments-user-tags.html'
+keywords: 'cloud resources,user tags,cloud volumes,ontap instance,azure ha,working environment'
 summary: 'Modify the user tags for cloud resources'
 ---
 
 = Modify the user tags for cloud resources
 :imagesdir: ../media/
 
+[.lead]
+Modifies the user tags for cloud resources in a specific Cloud Volumes ONTAP instance. Use this to update metadata associated with your cloud resources for organizational or tracking purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/user-tags`#
-
-
-
-Modifies the user tags for cloud resources in a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 

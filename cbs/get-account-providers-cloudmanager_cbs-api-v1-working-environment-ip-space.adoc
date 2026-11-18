@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-working-environment-ip-space.html'
+keywords: 'ip space,working environment,cloud manager,account id,system id'
 summary: 'Retrieve IP spaces'
 ---
 
 = Retrieve IP spaces
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of IP spaces within a specified system. Use this to view the discovered IP spaces available for network configuration and management.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/ip-space`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves a list of IPspaces within a specified system.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

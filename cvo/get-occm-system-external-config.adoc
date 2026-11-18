@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-system-external-config.html'
+keywords: 'netapp console,feedback configuration,external config,system config,retrieve feedback'
 summary: 'Retrieve the NetApp Console feedback configuration'
 ---
 
 = Retrieve the NetApp Console feedback configuration
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the NetApp Console feedback configuration, providing details about the current feedback settings. Use this to review or confirm the feedback configuration applied to your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/system/external-config`#
-
-
-
-Retrieves NetApp Console feedback configuration.
-
 
 == Error
 

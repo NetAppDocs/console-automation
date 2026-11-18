@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-volumes--clone.html'
+keywords: 'volume clone,clone volume,ontap clone,netapp volume,working environment'
 summary: 'Clone an existing volume'
 ---
 
 = Clone an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Creates a clone of an existing volume. Use this to generate a writable copy of the original volume for testing or development purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/clone`#
 
-
+== Usage notes
 
 Clones an existing volume.
 

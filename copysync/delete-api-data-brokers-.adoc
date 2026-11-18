@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/delete-api-data-brokers-.html'
+keywords: 'data broker,delete broker,netapp data,tenancy account,broker id'
 summary: 'Delete an existing NetApp data broker'
 ---
 
 = Delete an existing NetApp data broker
 :imagesdir: ../media/
 
+[.lead]
+Deletes an existing NetApp data broker. Use this endpoint to remove a data broker that is no longer needed for your environment or workflows.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/api/data-brokers/{id}`#
-
-
-
-Deletes an existing NetApp data broker.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-gcp-ha-working-environments-enable-worm.html'
+keywords: 'snaplock,gcp ha,cloud volumes,enable worm,working environments'
 summary: 'Enable SnapLock on a system'
 ---
 
 = Enable SnapLock on a system
 :imagesdir: ../media/
 
+[.lead]
+Enables SnapLock for an existing Cloud Volumes ONTAP system to manage data retention and compliance requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/gcp/ha/working-environments/{workingEnvironmentId}/enable-worm`#
-
-
-
-Enables SnapLock for an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

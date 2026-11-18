@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-volumes-nfs-clients.html'
+keywords: 'fsx nfs,fsx volumes,nfs clients,fsx client list,file system nfs'
 summary: 'Retrieve an NFS clients list for an FSx system'
 ---
 
 = Retrieve an NFS clients list for an FSx system
 :imagesdir: ../media/
 
+[.lead]
+Retrieves an NFS client list for an existing FSx system. Use this to view the connected clients for monitoring or management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/nfs-clients`#
-
-
-
-Retrieves an NFS client list for an existing FSx system.
-
 
 == Parameters
 

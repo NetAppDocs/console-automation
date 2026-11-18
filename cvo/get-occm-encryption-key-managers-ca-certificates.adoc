@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-occm-encryption-key-managers-ca-certificates.html'
+keywords: 'key managers,certificate authority,encryption certificates,ca certificates,key manager certificates'
 summary: 'Retrieve all key manager CA certificates'
 ---
 
 = Retrieve all key manager CA certificates
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all key manager certificate authority (CA) certificates. Use this to view the available CA certificates for managing encryption keys.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/occm/encryption/key-managers-ca-certificates`#
-
-
-
-Retrieves all key manager certificate authority (CA) certificates.
-
 
 == Error
 

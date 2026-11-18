@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-partnerships-.html'
+keywords: 'partnership management,delete partnership,partnership removal,partnership id,source organization,destination organization'
 summary: 'Delete a partnership'
 ---
 
 = Delete a partnership
 :imagesdir: ../media/
 
+[.lead]
+Deletes a partnership, removing the specified connection between tenants. Use this to discontinue resource sharing or collaboration between the associated tenants.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/partnerships/{partnership_id}`#
 
-
+== Usage notes
 
 Deletes the specified partnership.
 

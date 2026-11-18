@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-volumes--snapshots.html'
+keywords: 'snapshot descriptions,volume snapshots,fsx volume,ontap snapshots,file system snapshots'
 summary: 'Retrieve a list of snapshot descriptions for a volume'
 ---
 
 = Retrieve a list of snapshot descriptions for a volume
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of snapshot descriptions for a volume. Use this to review the snapshots available for the specified volume.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/{fileSystemId}/{svmName}/{volumeName}/snapshots`#
 
-
+== Usage notes
 
 Returns a list of snapshot descriptions for the volume.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships.html'
+keywords: 'partnerships list,partnerships retrieval,partnerships details,partnerships overview'
 summary: 'List all partnerships'
 ---
 
 = List all partnerships
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of all partnerships. Use this to view the existing partnerships within your tenancy.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships`#
-
-
-
-Retrieves a list of all partnerships.
-
 
 == Parameters
 

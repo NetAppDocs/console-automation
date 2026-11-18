@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-azure-ha-volumes--.html'
+keywords: 'volume modify,ha volumes,azure storage,svm volume,working environment'
 summary: 'Modify an existing volume'
 ---
 
 = Modify an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Modifies an existing volume. Use this to update the configuration or properties of a volume to meet your storage requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}`#
-
-
-
-Modifies an existing volume.
-
 
 == Parameters
 

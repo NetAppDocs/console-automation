@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-azure-blob-storage-containers.html'
+keywords: 'azure blob,blob storage containers,netapp account,storage account name,data brokers group'
 summary: 'Retrieve the Azure blob storage containers'
 ---
 
 = Retrieve the Azure blob storage containers
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Azure blob storage containers. Use this to view the available containers for managing and organizing stored data.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-azure-blob-storage-containers`#
-
-
-
-Retrieves the Azure blob storage containers.
-
 
 == Parameters
 

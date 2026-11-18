@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/patch-account-providers-cloudmanager_cbs-api-v1-working-environment-replication-policy-.html'
+keywords: 'replication policy,modify replication,working environment,transfer schedule,system replication,policy update'
 summary: 'Modify a replication policy in a system'
 ---
 
 = Modify a replication policy in a system
 :imagesdir: ../media/
 
+[.lead]
+Modifies a replication policy in a system. Use this to update the replication rules for efficient data synchronization or disaster recovery.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/working-environment/{workingEnvironmentId}/replication-policy/{policyId}`#
 
+== Token usage
 
-
-Modifies a replication policy in a system.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

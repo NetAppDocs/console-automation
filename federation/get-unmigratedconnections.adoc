@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'federation/get-unmigratedconnections.html'
+keywords: 'cloud connections,netapp console,cloud import,connection management,cloud eligibility'
 summary: 'List unmigrated connections'
 ---
 
 = List unmigrated connections
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of unmigrated connections managed through Cloud Central. Use this to identify connections eligible for import into the NetApp Console.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/unmigratedconnections`#
 
-
+== Usage notes
 
 Lists connections managed through Cloud Central that you can import into the NetApp Console.
 Connections must be enabled in Cloud Central to be eligible for import.

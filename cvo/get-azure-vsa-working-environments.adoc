@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-vsa-working-environments.html'
+keywords: 'cloud volumes,ontap systems,working environments,azure ontap,tenant visibility'
 summary: 'Retrieve Cloud Volumes ONTAP systems'
 ---
 
 = Retrieve Cloud Volumes ONTAP systems
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Cloud Volumes ONTAP systems visible to the current user. Use this to view the systems accessible in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/vsa/working-environments`#
-
-
-
-Retrieves Cloud Volumes ONTAP systems visible to the current user.
-
 
 == Parameters
 

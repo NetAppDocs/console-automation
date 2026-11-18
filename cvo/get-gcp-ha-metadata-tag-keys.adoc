@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-ha-metadata-tag-keys.html'
+keywords: 'labels,project labels,region labels,tag keys,metadata tags,cloud labels'
 summary: 'Retrieve all labels for a project ID and region'
 ---
 
 = Retrieve all labels for a project ID and region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all labels for a specified project ID and region. Use this to view the labels associated with resources in the specified scope.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/ha/metadata/tag-keys`#
 
-
+== Usage notes
 
 Retrieves all labels in the specified project ID and region.
 

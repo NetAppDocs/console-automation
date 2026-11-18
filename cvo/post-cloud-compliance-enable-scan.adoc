@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-cloud-compliance-enable-scan.html'
+keywords: 'scanning enable,working environment,system id,enable scan,cloud compliance'
 summary: 'Enable scanning using the system ID'
 ---
 
 = Enable scanning using the system ID
 :imagesdir: ../media/
 
+[.lead]
+Enables scanning using the system ID, activating the specified system for scanning operations. Use this to initiate scan workflows tied to the system identifier.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud-compliance/{workingEnvironmentId}/enable-scan`#
-
-
-
-Enables scanning using the system ID.
-
 
 == Parameters
 

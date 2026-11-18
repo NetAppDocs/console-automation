@@ -3,17 +3,22 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'ipa/get-ipa-account-nss-key-nss-data.html'
+keywords: 'netapp support,account data,nss key,netapp console,support site data'
 summary: 'Retrieve NetApp Support Site data for an account and key ID'
 ---
 
 = Retrieve NetApp Support Site data for an account and key ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves NetApp Support Site data associated with an account ID and NetApp Support Site key ID. Use this to access account-specific support information linked to your NetApp Console user token.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/ipa/account/{accountId}/nss-key/{nssKeyId}/nss-data`#
 
+== Usage notes
 
-
-Retrieves NetApp Support Site data associated with an account ID and NetApp Support Site key ID. +
  +
 *Token usage:* NetApp Console user token.
 

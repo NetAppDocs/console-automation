@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-reports-end-points.html'
+keywords: 'report endpoints,account reports,netapp reports,endpoint list,tenancy account'
 summary: 'Retrieve a list of the reports endpoints'
 ---
 
 = Retrieve a list of the reports endpoints
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of report endpoints in the Console Copy and Sync service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/reports/end-points`#
 
-
+== Usage notes
 
 Retrieves a list of the reports endpoints.
 

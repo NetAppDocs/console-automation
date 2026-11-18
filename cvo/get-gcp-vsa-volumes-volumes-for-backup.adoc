@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-volumes-volumes-for-backup.html'
+keywords: 'volumes backup,gcp volumes,backup activation,netapp gcp,volume retrieval'
 summary: 'Retrieve volumes for backup activation'
 ---
 
 = Retrieve volumes for backup activation
 :imagesdir: ../media/
 
+[.lead]
+Retrieves volumes for backup activation, listing the available volumes that can be used in backup workflows. Use this to identify volumes for initiating backup operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/volumes/volumes-for-backup`#
 
-
+== Usage notes
 
 Retrieves all volumes for backup activation.
 

@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v2-sg.html'
+keywords: 'storagegrid servers,netapp console,cloudmanager cbs,storagegrid list,netapp saas'
 summary: 'List StorageGRID servers'
 ---
 
 = List StorageGRID servers
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of StorageGRID servers in the NetApp Console SaaS application. Use this to view the servers available for backup and recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v2/sg`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Lists the StorageGRID servers in the NetApp Console SaaS application.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-partnerships-grants-resources.html'
+keywords: 'partnership resources,grant resources,grant partnership,partnership grants,resource list,partnership grant resources'
 summary: 'List all resources for a grant in a partnership'
 ---
 
 = List all resources for a grant in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all resources associated with a grant in a partnership. Use this to view the resources allocated under the specified grant.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/resources`#
 
-
+== Usage notes
 
 Lists all resources under the specified grant of a partnership.
 

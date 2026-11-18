@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-cloud-compliance-compliance-status.html'
+keywords: 'cloud compliance,compliance status,service compliance,cloud service,service id'
 summary: 'Retrieve the service cloud compliance status using the service ID'
 ---
 
 = Retrieve the service cloud compliance status using the service ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Cloud Compliance status for a specified service. Use this to monitor and assess the compliance state of the service.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cloud-compliance/{serviceId}/compliance-status`#
 
-
+== Usage notes
 
 Retrieves the service Cloud Compliance status using the service ID.
 

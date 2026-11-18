@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-supported-features.html'
+keywords: 'supported features,gcp metadata,ontap features,data encryption,license type,instance type'
 summary: 'Retrieve supported features'
 ---
 
 = Retrieve supported features
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the supported features. Use this to view the capabilities available for the system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/supported-features`#
-
-
-
-Retrieves the supported features.
-
 
 == Parameters
 

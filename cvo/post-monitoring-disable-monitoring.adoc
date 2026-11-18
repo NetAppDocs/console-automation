@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-monitoring-disable-monitoring.html'
+keywords: 'disable monitoring,working environment,monitoring control,stop monitoring,monitoring disable'
 summary: 'Disable monitoring'
 ---
 
 = Disable monitoring
 :imagesdir: ../media/
 
+[.lead]
+Disables monitoring, stopping the collection of metrics and performance data. Use this to pause monitoring activities as needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/monitoring/{workingEnvironmentId}/disable-monitoring`#
-
-
-
-Disables monitoring.
-
 
 == Parameters
 

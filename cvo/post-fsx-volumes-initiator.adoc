@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-fsx-volumes-initiator.html'
+keywords: 'iscsi initiator,add initiator,fsx volumes,initiator setup,iscsi configuration'
 summary: 'Add an iSCSI initiator'
 ---
 
 = Add an iSCSI initiator
 :imagesdir: ../media/
 
+[.lead]
+Adds an iSCSI initiator, defining a new initiator for iSCSI access. Use this to configure connections to storage resources.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/fsx/volumes/initiator`#
-
-
-
-Adds an iSCSI initiator.
-
 
 == Request Body
 

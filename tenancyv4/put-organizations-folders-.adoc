@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/put-organizations-folders-.html'
+keywords: 'folder replacement,update folder,organization folder,replace folder,folder management,organization structure'
 summary: 'Update a folder under an organization'
 ---
 
 = Update a folder under an organization
 :imagesdir: ../media/
 
+[.lead]
+Updates a folder under an organization, replacing the folder's information with the new data provided. Use this to modify folder details within a specific organization.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/organizations/{organization_id}/folders/{folder_id}`#
 
-
+== Usage notes
 
 Replaces a folder under the specified organization with new information.
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments-validate-byol-to-capacity.html'
+keywords: 'cloud volumes,ontap system,validate prerequisites,byol conversion,working environment'
 summary: 'Validate prerequisites for converting a system'
 ---
 
 = Validate prerequisites for converting a system
 :imagesdir: ../media/
 
+[.lead]
+Validates the prerequisites for converting an existing Cloud Volumes ONTAP system. Use this to ensure that the system meets the necessary requirements before proceeding with the conversion process.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/validate-byol-to-capacity`#
-
-
-
-Validates the prerequisites for converting an existing Cloud Volumes ONTAP system.
-
 
 == Parameters
 

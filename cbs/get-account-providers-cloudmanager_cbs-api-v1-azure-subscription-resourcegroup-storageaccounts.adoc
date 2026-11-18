@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-azure-subscription-resourcegroup-storageaccounts.html'
+keywords: 'azure storage,storage accounts,azure resource group,netapp console,azure subscription'
 summary: 'Retrieve a list of Azure storage accounts for a subscription ID'
 ---
 
 = Retrieve a list of Azure storage accounts for a subscription ID
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of Azure storage accounts for a specific subscription ID in a resource group. Use this to view the available storage accounts for resource management or integration purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/azure/subscription/{subscriptionId}/resourceGroup/{resourceGroup}/storageAccounts`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves a list of Azure storage accounts for a specific subscription ID in a resource group in Azure cloud from the NetApp Console SaaS application.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

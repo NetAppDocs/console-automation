@@ -3,20 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-aws-account.html'
+keywords: 'aws accounts,netapp console,cloud manager,netapp aws,account list'
 summary: 'Retrieve AWS accounts'
 ---
 
 = Retrieve AWS accounts
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a list of AWS accounts from the NetApp Console. Use this to view the accounts configured for backup and recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/aws/account`#
 
+== Token usage
 
-
-Retrieves a list of AWS accounts from the NetApp Console.
-
-*Token usage:* NetApp Console user token.
-
+NetApp Console user token.
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-volumes--move.html'
+keywords: 'volume move,azure ha,existing volume,working environment,svm volume,volume transfer'
 summary: 'Move an existing volume'
 ---
 
 = Move an existing volume
 :imagesdir: ../media/
 
+[.lead]
+Moves an existing volume to a different aggregate or node. Use this to optimize resource allocation or balance workloads.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/volumes/{workingEnvironmentId}/{svmName}/{volumeName}/move`#
-
-
-
-Moves an existing volume.
-
 
 == Parameters
 

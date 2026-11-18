@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/get-roles-.html'
+keywords: 'role retrieval,role details,specified role,role id,role information'
 summary: 'Retrieve a role'
 ---
 
 = Retrieve a role
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the specified role, providing its details for access control or management purposes.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/roles/{role_id}`#
-
-
-
-Retrieves the specified role.
-
 
 == Parameters
 

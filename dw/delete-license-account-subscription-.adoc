@@ -3,24 +3,31 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/delete-license-account-subscription-.html'
+keywords: 'delete subscription,cloud volumes,account subscription,disassociate subscription,subscription removal,netapp console'
 summary: 'Delete a subscription using the subscription ID'
 ---
 
 = Delete a subscription using the subscription ID
 :imagesdir: ../media/
 
+[.lead]
+Deletes a subscription identified by the subscription ID. Use this to remove a subscription from an account or disassociate it when multiple accounts are linked to the subscription.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/license/account/{accountId}/subscription/{subscriptionId}`#
 
+== Token usage
 
+NetApp Console service token.
+
+== Usage notes
 
 Deletes or disassociates a subscription that contains the specified subscription ID from an account.
 
 The specified subscription must exist and not be associated with a Cloud Volumes ONTAP instance. +
 This endpoint deletes the subscription if no other account is associated with the subscription. +
 If more than one account is associated with the subscription, this endpoint disassociates the account provided in the `accountId` field and the subscription.
-
-*Token usage:* NetApp Console service token.
-
 
 == Parameters
 

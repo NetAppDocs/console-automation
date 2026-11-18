@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-metadata-validate-subscribed-to-ontap-cloud.html'
+keywords: 'cloud volumes,ontap cloud,amazon marketplace,validate subscription,cloud volumes ontap'
 summary: 'Confirm the current user subscription'
 ---
 
 = Confirm the current user subscription
 :imagesdir: ../media/
 
+[.lead]
+Validates the current user subscription to confirm eligibility for the Cloud Volumes ONTAP product in Amazon marketplace. Use this endpoint to ensure access to Cloud Volumes ONTAP services.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/metadata/validate-subscribed-to-ontap-cloud`#
 
-
+== Usage notes
 
 Validates that the current user is subscribed to the Cloud Volumes ONTAP product in Amazon marketplace.
 

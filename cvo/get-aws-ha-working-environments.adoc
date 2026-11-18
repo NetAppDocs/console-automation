@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-aws-ha-working-environments.html'
+keywords: 'cloud volumes,ontap systems,cloud ontap,working environments,tenant visibility,ha environments'
 summary: 'Retrieve Cloud Volumes ONTAP systems'
 ---
 
 = Retrieve Cloud Volumes ONTAP systems
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Cloud Volumes ONTAP systems visible to the current user. Use this to view the systems accessible within your account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/ha/working-environments`#
-
-
-
-Retrieves Cloud Volumes ONTAP systems visible to the current user.
-
 
 == Parameters
 

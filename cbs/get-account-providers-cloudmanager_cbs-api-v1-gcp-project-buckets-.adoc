@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cbs/get-account-providers-cloudmanager_cbs-api-v1-gcp-project-buckets-.html'
+keywords: 'google cloud bucket,netapp console,gcp project,bucket region,specific bucket'
 summary: 'Retrieve a Google Cloud bucket in a region'
 ---
 
 = Retrieve a Google Cloud bucket in a region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves a specific Google Cloud bucket in a region from a Google Cloud project. Use this to view the bucket details for backup or recovery operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/account/{accountId}/providers/cloudmanager_cbs/api/v1/gcp/project/{projectId}/buckets/{bucketName}`#
 
+== Token usage
 
+NetApp Console user token.
+
+== Usage notes
 
 Retrieves a specific Google Cloud bucket in a region from a specific Google Cloud project from the NetApp Console SaaS application.
-
-*Token usage:* NetApp Console user token.
-
 
 == Parameters
 

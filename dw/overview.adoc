@@ -3,13 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'dw/overview.html'
+keywords: 'licenses,subscriptions,cloud volumes ontap licenses,capacity licenses,license expiration,node licenses'
 summary: 'Licenses and subscriptions REST API for the NetApp Console'
 ---
 
 = Licenses and subscriptions REST API for the NetApp Console
 :imagesdir: ../media/
 
-
+[.lead]
+Manage the licenses for Cloud Volumes ONTAP and the subscriptions to other NetApp Console services. Use these endpoints to view node, capacity, and data services licenses and to monitor their expiration and capacity usage.
 
 NetApp Console manages licenses for Cloud Volumes ONTAP and subscriptions to other Console services.
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-occm-key-store-external-certificate-file.html'
+keywords: 'key pair,key store,external certificate,self-signed certificate,certificate signing request'
 summary: 'Generate a new key pair and self-signed certificate at the key store'
 ---
 
 = Generate a new key pair and self-signed certificate at the key store
 :imagesdir: ../media/
 
+[.lead]
+Generates a new key pair and self-signed certificate at the key store. Use this to obtain a certificate signing request (CSR) for further certificate management tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/occm/key-store/external-certificate-file`#
 
-
+== Usage notes
 
 Generates a new key pair and self-signed certificate at the key store and returns a certificate signing request (CSR).
 

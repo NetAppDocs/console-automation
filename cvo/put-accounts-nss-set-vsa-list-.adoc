@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/put-accounts-nss-set-vsa-list-.html'
+keywords: 'netapp support,update account,system list,cloud provider,netapp account'
 summary: 'Update the VSA list of an NSS account'
 ---
 
 = Update the VSA list of an NSS account
 :imagesdir: ../media/
 
+[.lead]
+Updates the system list of an existing NetApp Support Site account. Use this to maintain an accurate inventory of Virtual Storage Appliances associated with your account.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/nss/set-vsa-list/{cloudProviderAccountId}`#
-
-
-
-Updates the system list of an existing NetApp Support Site account.
-
 
 == Parameters
 

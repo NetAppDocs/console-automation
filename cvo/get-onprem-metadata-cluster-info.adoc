@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-onprem-metadata-cluster-info.html'
+keywords: 'cluster info,verify cluster,cluster address,cluster credentials,metadata cluster,cluster verification'
 summary: 'Verify the address and credentials of a cluster'
 ---
 
 = Verify the address and credentials of a cluster
 :imagesdir: ../media/
 
+[.lead]
+Verifies the address and credentials of a cluster, retrieving the cluster information to confirm connectivity and authentication details. Use this to ensure the cluster is accessible and properly configured.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/onprem/metadata/cluster-info`#
 
-
+== Usage notes
 
 Verifies the address and credentials of the specified cluster by retrieving the cluster information.
 

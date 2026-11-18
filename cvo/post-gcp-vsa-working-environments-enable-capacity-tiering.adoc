@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-gcp-vsa-working-environments-enable-capacity-tiering.html'
+keywords: 'capacity tiering,enable tiering,gcp tiering,working environment,cloud tiering'
 summary: 'Enable capacity tiering'
 ---
 
 = Enable capacity tiering
 :imagesdir: ../media/
 
+[.lead]
+Enables capacity tiering to optimize storage usage by automatically tiering inactive data to a lower-cost storage tier. Use this to manage storage costs effectively while maintaining access to your data.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/gcp/vsa/working-environments/{workingEnvironmentId}/enable-capacity-tiering`#
-
-
-
-Enables capacity tiering.
-
 
 == Parameters
 

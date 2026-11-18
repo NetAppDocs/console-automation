@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-organizations.html'
+keywords: 'create organization,new organization,organization creation,add organization,organization management'
 summary: 'Create a new organization'
 ---
 
 = Create a new organization
 :imagesdir: ../media/
 
+[.lead]
+Creates a new organization, establishing a distinct entity for managing resources and configurations. Use this to set up organizational boundaries within a multi-tenant environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/organizations`#
-
-
-
-Creates a new organization.
-
 
 == Request Body
 

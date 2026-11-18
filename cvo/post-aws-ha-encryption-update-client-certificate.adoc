@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-encryption-update-client-certificate.html'
+keywords: 'cloud volumes,update client certificate,ha encryption,working environment,cloud ontap'
 summary: 'Update client certificate on a system'
 ---
 
 = Update client certificate on a system
 :imagesdir: ../media/
 
+[.lead]
+Updates the client certificate on the Cloud Volumes ONTAP system. Use this to replace an existing certificate or install a new one for secure communication.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/encryption/{workingEnvironmentId}/update-client-certificate`#
-
-
-
-Updates the client certificate on the Cloud Volumes ONTAP system.
-
 
 == Parameters
 

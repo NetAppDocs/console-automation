@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-data-brokers-local-configuration.html'
+keywords: 'data broker,local configuration,netapp tenancy,account id,data broker id'
 summary: 'Retrieve the data broker local configuration'
 ---
 
 = Retrieve the data broker local configuration
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the data broker local configuration, providing the current settings for local data transfer operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/data-brokers/{id}/local-configuration`#
-
-
-
-Retrieves the data broker local configuration.
-
 
 == Parameters
 

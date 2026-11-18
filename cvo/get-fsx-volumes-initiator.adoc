@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-fsx-volumes-initiator.html'
+keywords: 'iscsi initiators,iscsi volumes,fsx initiators,fsx volumes,retrieve initiators,retrieve volumes'
 summary: 'Retrieve all iSCSI initiators'
 ---
 
 = Retrieve all iSCSI initiators
 :imagesdir: ../media/
 
+[.lead]
+Retrieves all iSCSI initiators. Use this to view details about the initiators configured in your system.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/fsx/volumes/initiator`#
-
-
-
-Retrieves all iSCSI initiators.
-
 
 == Error
 

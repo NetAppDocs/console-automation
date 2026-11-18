@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-azure-ha-metadata-resource-groups.html'
+keywords: 'azure resource groups,azure region,resource group metadata,cloud provider account,subscription id'
 summary: 'Retrieve Azure resource groups'
 ---
 
 = Retrieve Azure resource groups
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Azure resource groups by region. Use this to view the resource groups available in a specific Azure region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/azure/ha/metadata/resource-groups`#
-
-
-
-Retrieves Azure resource groups by region.
-
 
 == Parameters
 

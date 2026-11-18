@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/post-resources.html'
+keywords: 'create resource,new resource,resource creation,resource management,add resource'
 summary: 'Create a new resource'
 ---
 
 = Create a new resource
 :imagesdir: ../media/
 
+[.lead]
+Creates a new resource in the tenancy system. Use this to provision additional resources within your tenant environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/resources`#
-
-
-
-Creates a new resource.
-
 
 == Request Body
 

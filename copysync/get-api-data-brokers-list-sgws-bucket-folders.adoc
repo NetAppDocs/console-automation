@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-sgws-bucket-folders.html'
+keywords: 'storagegrid buckets,storagegrid folders,data broker storagegrid,netapp bucket folders,storagegrid prefix'
 summary: 'Retrieve the StorageGRID bucket folders'
 ---
 
 = Retrieve the StorageGRID bucket folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the StorageGRID bucket folders from a NetApp data broker, providing access to the folder structure within the bucket. Use this to review or manage folder configurations in StorageGRID.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-sgws-bucket-folders`#
-
-
-
-Retrieves the StorageGRID bucket folders from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

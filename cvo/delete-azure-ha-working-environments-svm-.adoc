@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/delete-azure-ha-working-environments-svm-.html'
+keywords: 'delete svm,remove svm,ha working environments,azure svm,deleting storage vm'
 summary: 'Delete an SVM'
 ---
 
 = Delete an SVM
 :imagesdir: ../media/
 
+[.lead]
+Deletes an SVM, removing the storage virtual machine and its associated resources. Use this to decommission an SVM that is no longer needed.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`#
-
-
-
-Deletes an SVM.
-
 
 == Parameters
 

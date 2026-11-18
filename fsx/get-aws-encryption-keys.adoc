@@ -3,20 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'fsx/get-aws-encryption-keys.html'
+keywords: 'encryption keys,netapp console,encryption region,vpc encryption,aws encryption'
 summary: 'Retrieve encryption keys'
 ---
 
 = Retrieve encryption keys
 :imagesdir: ../media/
 
+[.lead]
+Retrieves encryption keys for a specified region and VPC, using the provided credentials. Use this to access key information needed for secure operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/aws/encryption-keys`#
 
+== Token usage
 
+Cloud Manager user token.
+
+== Usage notes
 
 Retrieves all encryption keys for a specified region and VPC by using the credentials.
-
-**Token usage:** Cloud Manager user token.
-
 
 == Parameters
 

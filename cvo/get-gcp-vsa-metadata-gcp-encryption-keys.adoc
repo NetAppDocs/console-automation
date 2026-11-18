@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/get-gcp-vsa-metadata-gcp-encryption-keys.html'
+keywords: 'google cloud,encryption keys,gcp region,gcp project,retrieve keys,gcp metadata'
 summary: 'Retrieve Google Cloud encryption keys for a region'
 ---
 
 = Retrieve Google Cloud encryption keys for a region
 :imagesdir: ../media/
 
+[.lead]
+Retrieves Google Cloud encryption keys for a specific region. Use this to access the encryption keys associated with resources in the specified region.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/gcp/vsa/metadata/gcp-encryption-keys`#
-
-
-
-Retrieves Google Cloud encryption keys for a specific region.
-
 
 == Parameters
 

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-nfs-exports.html'
+keywords: 'nfs exports,data broker,nfs server,nfs folders,netapp tenancy,efs target'
 summary: 'Retrieve the NFS server folders'
 ---
 
 = Retrieve the NFS server folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the NFS server folders from a data broker. Use this to access folder information needed for data synchronization or migration tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-nfs-exports`#
-
-
-
-Retrieves the NFS server folders from a data broker.
-
 
 
 CAUTION: This operation is deprecated.

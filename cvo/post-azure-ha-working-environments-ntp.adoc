@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-ntp.html'
+keywords: 'ntp server,setup ntp,ha ntp,azure ntp,working environment'
 summary: 'Create an NTP server'
 ---
 
 = Create an NTP server
 :imagesdir: ../media/
 
+[.lead]
+Creates an NTP server to configure time synchronization for your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/ntp`#
 
-
+== Usage notes
 
 Sets up an NTP server.
 

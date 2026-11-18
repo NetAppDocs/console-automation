@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-azure-ha-working-environments-enable-capacity-tiering.html'
+keywords: 'capacity tiering,enable tiering,working environment,azure ha,capacity management'
 summary: 'Enable capacity tiering'
 ---
 
 = Enable capacity tiering
 :imagesdir: ../media/
 
+[.lead]
+Enables capacity tiering, allowing data to be tiered to lower-cost storage for optimized resource utilization. Use this to manage storage efficiency and reduce costs in your environment.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/azure/ha/working-environments/{workingEnvironmentId}/enable-capacity-tiering`#
-
-
-
-Enables capacity tiering.
-
 
 == Parameters
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-aws-ha-working-environments-extra-capacity-serials.html'
+keywords: 'extra capacity,serial number,working environment,register serial,ha environments'
 summary: 'Register extra capacity license serial numbers'
 ---
 
 = Register extra capacity license serial numbers
 :imagesdir: ../media/
 
+[.lead]
+Registers an extra capacity license serial number to enable additional storage capacity for Cloud Volumes ONTAP. Use this to expand capacity when your existing license does not meet storage requirements.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/aws/ha/working-environments/{workingEnvironmentId}/extra-capacity-serials`#
 
-
+== Usage notes
 
 Registers an extra capacity serial number.
 

@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'tenancyv4/delete-partnerships-grants-users-.html'
+keywords: 'remove user,partnership grant,user removal,grant users,partnership management'
 summary: 'Remove a user from a grant in a partnership'
 ---
 
 = Remove a user from a grant in a partnership
 :imagesdir: ../media/
 
+[.lead]
+Deletes a user from the specified grant in a partnership. Use this to revoke the user's access to resources associated with the grant.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/partnerships/{partnership_id}/grants/{grant_id}/users/{user_id}`#
 
-
+== Usage notes
 
 Removes a user from the specified grant in a partnership.
 

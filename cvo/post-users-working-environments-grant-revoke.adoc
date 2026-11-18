@@ -3,15 +3,21 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-users-working-environments-grant-revoke.html'
+keywords: 'permissions grant,permissions revoke,user permissions,working environments,user access'
 summary: 'Grant or revoke permissions to a user'
 ---
 
 = Grant or revoke permissions to a user
 :imagesdir: ../media/
 
+[.lead]
+Modifies permissions for a specified user, enabling access to perform operations on designated systems. Use this to manage user access rights across systems.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/users/{userId}/working-environments-grant-revoke`#
 
-
+== Usage notes
 
 Grants or revokes permissions to the specified user for performing operations over the specified systems.
 

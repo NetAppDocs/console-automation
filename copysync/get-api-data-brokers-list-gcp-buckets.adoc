@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-data-brokers-list-gcp-buckets.html'
+keywords: 'google cloud buckets,netapp data broker,gcp storage,accessible buckets,netapp tenancy'
 summary: 'Retrieve the Google Cloud buckets'
 ---
 
 = Retrieve the Google Cloud buckets
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Google Cloud buckets accessible from a NetApp data broker. Use this to view the available buckets for data copy and sync operations.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/data-brokers/{id}/list-gcp-buckets`#
-
-
-
-Retrieves the Google Cloud buckets accessible from a NetApp data broker.
-
 
 
 CAUTION: This operation is deprecated.

@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'copysync/get-api-accounts-groups-list-azure-datalake-storage-container-folders.html'
+keywords: 'azure storage,azure data lake,storage container folders,data lake gen2,container path'
 summary: 'Retrieve the Azure Data Lake Gen2 storage container folders'
 ---
 
 = Retrieve the Azure Data Lake Gen2 storage container folders
 :imagesdir: ../media/
 
+[.lead]
+Retrieves the Azure Data Lake Gen2 storage container folders. Use this to view the folder structure within a specified storage container.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/api/accounts/{accountId}/groups/{id}/list-azure-dataLake-storage-container-folders`#
-
-
-
-Retrieves the Azure Data Lake Gen2 storage container folders.
-
 
 == Parameters
 

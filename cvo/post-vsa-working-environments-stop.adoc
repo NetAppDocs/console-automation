@@ -3,18 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cvo/post-vsa-working-environments-stop.html'
+keywords: 'cloud volumes,ontap instance,stop ontap,working environment,cloud storage'
 summary: 'Stop a specific Cloud Volumes ONTAP instance'
 ---
 
 = Stop a specific Cloud Volumes ONTAP instance
 :imagesdir: ../media/
 
+[.lead]
+Stops a specific Cloud Volumes ONTAP instance. Use this to halt operations on the instance when needed for maintenance or other administrative tasks.
+
+== HTTP method and endpoint
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/vsa/working-environments/{workingEnvironmentId}/stop`#
-
-
-
-Stops a specific Cloud Volumes ONTAP instance.
-
 
 == Parameters
 
